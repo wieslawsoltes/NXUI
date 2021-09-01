@@ -10,7 +10,7 @@ class App : Application {
                 Title = "MinimalAvalonia",
                 Content = new TextBlock {
                     Text = "MinimalAvalonia"
-                    }
+                }
             };
             desktop.MainWindow = mainWindow;
         }
