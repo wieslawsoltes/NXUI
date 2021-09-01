@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.7" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Avalonia" />
+    <Import Include="Avalonia.Controls" />
+    <Import Include="Avalonia.Controls.ApplicationLifetimes" />
+    <Import Include="Avalonia.Themes.Fluent" />
+  </ItemGroup>
+</Project>
