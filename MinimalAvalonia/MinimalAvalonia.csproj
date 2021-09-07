@@ -17,6 +17,7 @@
     <Import Include="Avalonia.Controls" />
     <Import Include="Avalonia.Controls.ApplicationLifetimes" />
     <Import Include="Avalonia.Data" />
+    <Import Include="Avalonia.Interactivity" />
     <Import Include="Avalonia.Themes.Fluent" />
   </ItemGroup>
 </Project>
