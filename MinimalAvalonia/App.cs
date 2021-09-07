@@ -8,9 +8,7 @@ class App : Application {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop) {
             desktop.MainWindow = new Window {
                 Title = "MinimalAvalonia",
-                Content = new TextBlock {
-                    Text = "MinimalAvalonia"
-                }
+                Content = new TextBlock { Text = "MinimalAvalonia" }
             };
         }
         base.OnFrameworkInitializationCompleted();
