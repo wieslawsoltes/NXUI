@@ -2,9 +2,20 @@ AppBuilder.Configure<Application>()
           .UsePlatformDetect()
           .UseFluentTheme()
           .StartWithClassicDesktopLifetime(desktop => {
-              var tb = new TextBox() {  Text = "Minimal Avalonia" };
+              var count = 0;
+              var button = new Button() { Content = "Welcome to Avalonia, please click me!" };
+              var label = new Label() { 
+                  [!Label.ContentProperty] = button.OnClick()
+                                                   .Select(_ => count++)
+                                                   .Select(x => $"You clicked {x} times.")
+                                                   .ToBinding() 
+              };
               desktop.MainWindow = new Window {
-                  Content = tb,
-                  [!!Window.TitleProperty] = tb.GetObservable(TextBox.TextProperty).Select(x => x.ToUpper()).ToBinding()
+                  Content = new StackPanel() { 
+                      Children = {
+                          button,
+                          label
+                      }
+                  }
               };
           }, args);
