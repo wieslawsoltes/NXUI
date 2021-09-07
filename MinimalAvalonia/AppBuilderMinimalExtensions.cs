@@ -6,12 +6,17 @@
             builder.Instance.Styles.Add(new FluentTheme(new Uri($"avares://{System.Reflection.Assembly.GetExecutingAssembly().GetName()}")) { Mode = mode }));
     }
 
-    public static TAppBuilder WithClassicDesktopStyleApplicationLifetime<TAppBuilder>(this TAppBuilder builder, Action<IClassicDesktopStyleApplicationLifetime> callback)
-        where TAppBuilder : AppBuilderBase<TAppBuilder>, new() {
-        return builder.AfterSetup(_ => {
-            if (builder.Instance.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop) {
-                callback?.Invoke(desktop);
-            }
-        });
+    public static int StartWithClassicDesktopLifetime<T>(this T builder, Action<IClassicDesktopStyleApplicationLifetime> callback, string[]? args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose) where T : AppBuilderBase<T>, new()
+    {
+        var classicDesktopStyleApplicationLifetime = new ClassicDesktopStyleApplicationLifetime {
+            Args = args,
+            ShutdownMode = shutdownMode
+        };
+
+        builder.SetupWithLifetime(classicDesktopStyleApplicationLifetime);
+
+        callback?.Invoke(classicDesktopStyleApplicationLifetime);
+
+        return classicDesktopStyleApplicationLifetime.Start(args);
     }
 }
