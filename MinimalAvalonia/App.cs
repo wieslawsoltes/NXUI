@@ -1,6 +1,6 @@
 BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
 
-static AppBuilder BuildAvaloniaApp() => AppBuilder.Configure<App>().UsePlatformDetect().LogToTrace();
+static AppBuilder BuildAvaloniaApp() => AppBuilder.Configure<App>().UsePlatformDetect();
 
 class App : Application {
     public override void OnFrameworkInitializationCompleted() {
