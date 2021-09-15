@@ -4,6 +4,7 @@
     <TargetFrameworks>net6.0;net461</TargetFrameworks>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="All" />
@@ -11,10 +12,10 @@
     <PackageReference Include="Avalonia.Desktop" Version="0.10.7" />
   </ItemGroup>
   <ItemGroup>
-    <Import Include="System" />
-    <Import Include="Avalonia" />
-    <Import Include="Avalonia.Controls" />
-    <Import Include="Avalonia.Controls.ApplicationLifetimes" />
-    <Import Include="Avalonia.Themes.Fluent" />
+    <Using Include="System" />
+    <Using Include="Avalonia" />
+    <Using Include="Avalonia.Controls" />
+    <Using Include="Avalonia.Controls.ApplicationLifetimes" />
+    <Using Include="Avalonia.Themes.Fluent" />
   </ItemGroup>
 </Project>
