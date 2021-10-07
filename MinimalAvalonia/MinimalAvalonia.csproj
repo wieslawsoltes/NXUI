@@ -11,12 +11,12 @@
     <PackageReference Include="Avalonia.Desktop" Version="0.10.7" />
   </ItemGroup>
   <ItemGroup>
-    <Import Include="System" />
-    <Import Include="System.Reactive.Linq" />
-    <Import Include="Avalonia" />
-    <Import Include="Avalonia.Controls" />
-    <Import Include="Avalonia.Controls.ApplicationLifetimes" />
-    <Import Include="Avalonia.Data" />
-    <Import Include="Avalonia.Themes.Fluent" />
+    <Using Include="System" />
+    <Using Include="System.Reactive.Linq" />
+    <Using Include="Avalonia" />
+    <Using Include="Avalonia.Controls" />
+    <Using Include="Avalonia.Controls.ApplicationLifetimes" />
+    <Using Include="Avalonia.Data" />
+    <Using Include="Avalonia.Themes.Fluent" />
   </ItemGroup>
 </Project>
