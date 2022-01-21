@@ -17,6 +17,7 @@
     <Using Include="Avalonia.Controls" />
     <Using Include="Avalonia.Controls.ApplicationLifetimes" />
     <Using Include="Avalonia.Data" />
+    <Using Include="Avalonia.Interactivity" />
     <Using Include="Avalonia.Themes.Fluent" />
   </ItemGroup>
 </Project>
