@@ -1,4 +1,6 @@
-﻿public static class EventsExtensions
+﻿namespace MinimalAvalonia;
+
+public static class EventsExtensions
 {
     public static IObservable<RoutedEventArgs> OnClick(this Button button)
     {

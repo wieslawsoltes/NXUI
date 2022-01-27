@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MinimalAvalonia</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.10.11" />
@@ -19,5 +20,6 @@
     <Using Include="Avalonia.Data" />
     <Using Include="Avalonia.Interactivity" />
     <Using Include="Avalonia.Themes.Fluent" />
+    <Using Include="MinimalAvalonia" />
   </ItemGroup>
 </Project>
