@@ -17,7 +17,8 @@
             .OrientationHorizontal()
             .Spacing(12)
             .HorizontalAlignmentCenter()
-            .VerticalAlignmentCenter().Ref(out var stackPanel);
+            .VerticalAlignmentCenter()
+            .Ref(out var stackPanel);
         new Window()
             .Content(stackPanel)
             .Title("Counter")
