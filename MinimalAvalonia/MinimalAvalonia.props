@@ -1,3 +1,20 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildThisFileDirectory)\ImplicitUsings.props"/>
+  <ItemGroup>
+    <Using Include="System" />
+    <Using Include="System.Diagnostics" />
+    <Using Include="System.Reactive.Linq" />
+    <Using Include="System.Reactive.Subjects" />
+    <Using Include="Avalonia" />
+    <Using Include="Avalonia.Controls" />
+    <Using Include="Avalonia.Controls.Primitives" />
+    <Using Include="Avalonia.Controls.ApplicationLifetimes" />
+    <Using Include="Avalonia.Data" />
+    <Using Include="Avalonia.Interactivity" />
+    <Using Include="Avalonia.Input" />
+    <Using Include="Avalonia.Layout" />
+    <Using Include="Avalonia.Media" />
+    <Using Include="Avalonia.Themes.Fluent" />
+    <Using Include="MinimalAvalonia" />
+    <Using Include="MinimalAvalonia.Controls" />
+  </ItemGroup>
 </Project>
