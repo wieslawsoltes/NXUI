@@ -9,7 +9,7 @@
                     .OnClick(o => o.Subscribe(_ => count.OnNext(count.Value + 1)))
                     .Content("Count").Ref(out var button);
                 new Label()
-                    .HorizontalAlignmentCenter().VerticalAlignmentCenter()
+                    .HorizontalAlignmentCenter().VerticalAlignmentCenter().MinWidth(24)
                     .Content(count.ToBinding()).Ref(out var label);
                 return new StackPanel()
                     .OrientationHorizontal().Spacing(12)
