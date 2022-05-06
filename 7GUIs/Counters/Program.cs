@@ -19,7 +19,7 @@
             .Items(counters)
             .Ref(out var itemsControl);
         new Window()
-            .Title("Counter")
+            .Title("Counters")
             .Padding(12).SizeToContentManual().Width(300).Height(300)
             .Content(itemsControl).Ref(out var window);
         desktop.MainWindow = window;
