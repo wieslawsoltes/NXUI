@@ -4,28 +4,28 @@
     .StartWithClassicDesktopLifetime(desktop => {
         var count = new BehaviorSubject<int>(0);
         new Button()
-            .Content("Count")
             .OnClick(o => o.Subscribe(_ => count.OnNext(count.Value + 1)))
+            .Content("Count")
             .Ref(out var button);
         new Label()
-            .Content(count.ToBinding())
             .HorizontalAlignmentCenter()
             .VerticalAlignmentCenter()
+            .Content(count.ToBinding())
             .Ref(out var label);
         new StackPanel()
-            .Children(label, button)
             .OrientationHorizontal()
             .Spacing(12)
             .HorizontalAlignmentCenter()
             .VerticalAlignmentCenter()
+            .Children(label, button)
             .Ref(out var stackPanel);
         new Window()
-            .Content(stackPanel)
             .Title("Counter")
             .Padding(12)
             .SizeToContentManual()
             .Width(300)
             .Height(200)
+            .Content(stackPanel)
             .Ref(out var window);
         desktop.MainWindow = window;
     }, args);
