@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9
 # Usage
 
 ```xml
-<PackageReference Include="MinimalAvalonia" Version="0.10.13-preview.0" />
+<PackageReference Include="MinimalAvalonia" Version="0.10.13-preview.1" />
 ```
 
 ```C#
