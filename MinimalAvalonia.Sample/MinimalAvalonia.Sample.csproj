@@ -1,15 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
-    <IsPackable>true</IsPackable>
-    <RootNamespace>MinimalAvalonia</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>MinimalAvalonia.Sample</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.10.13" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.13" />
   </ItemGroup>
   <ItemGroup>
     <Using Include="System" />
@@ -21,5 +21,8 @@
     <Using Include="Avalonia.Interactivity" />
     <Using Include="Avalonia.Themes.Fluent" />
     <Using Include="MinimalAvalonia" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MinimalAvalonia\MinimalAvalonia.csproj" />
   </ItemGroup>
 </Project>
