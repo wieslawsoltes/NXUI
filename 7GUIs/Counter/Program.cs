@@ -2,14 +2,13 @@
     .UsePlatformDetect()
     .UseFluentTheme()
     .StartWithClassicDesktopLifetime(desktop => {
-        var count = 0;
+        var count = new BehaviorSubject<int>(0);
         new Button()
             .Content("Count")
-            .OnClick(o => o.Subscribe(_ => Debug.WriteLine($"Click {count}")))
+            .OnClick(o => o.Subscribe(_ => count.OnNext(count.Value + 1)))
             .Ref(out var button);
         new Label()
-            .Content(count)
-            .Content(button.OnClick().Select(_ => ++count).ToBinding())
+            .Content(count.ToBinding())
             .HorizontalAlignmentCenter()
             .VerticalAlignmentCenter()
             .Ref(out var label);
