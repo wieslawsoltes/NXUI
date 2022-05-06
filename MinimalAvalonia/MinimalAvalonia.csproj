@@ -7,19 +7,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>true</IsPackable>
     <RootNamespace>MinimalAvalonia</RootNamespace>
+    <PackageId>MinimalAvalonia</PackageId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.10.13" />
   </ItemGroup>
   <ItemGroup>
-    <Using Include="System" />
-    <Using Include="System.Reactive.Linq" />
-    <Using Include="Avalonia" />
-    <Using Include="Avalonia.Controls" />
-    <Using Include="Avalonia.Controls.ApplicationLifetimes" />
-    <Using Include="Avalonia.Data" />
-    <Using Include="Avalonia.Interactivity" />
-    <Using Include="Avalonia.Themes.Fluent" />
-    <Using Include="MinimalAvalonia" />
+    <Content Include="*.props">
+      <Pack>true</Pack>
+      <PackagePath>build\;buildTransitive\</PackagePath>
+    </Content>
   </ItemGroup>
+  <Import Project="ImplicitUsings.props" />
 </Project>
