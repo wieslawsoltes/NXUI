@@ -1,6 +1,6 @@
 ﻿namespace MinimalAvalonia;
 
-public static class AppBuilderMinimalExtensions
+public static class AppBuilderExtensions
 {
     public static TAppBuilder UseFluentTheme<TAppBuilder>(this TAppBuilder builder, FluentThemeMode mode = FluentThemeMode.Light)
         where TAppBuilder : AppBuilderBase<TAppBuilder>, new() {
