@@ -4,7 +4,7 @@
     .StartWithClassicDesktopLifetime(desktop => {
         var counters = Enumerable.Range(0, 5).Select(i => new BehaviorSubject<int>(i));
         new ItemsControl()
-            .ItemTemplate(new FuncDataTemplate<BehaviorSubject<int>>((count, ns) => {
+            .ItemTemplate(new FuncDataTemplate<BehaviorSubject<int>>((count, _) => {
                 new Button()
                     .OnClick(o => o.Subscribe(_ => count.OnNext(count.Value + 1)))
                     .Content("Count").Ref(out var button);
