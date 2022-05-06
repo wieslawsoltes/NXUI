@@ -3,6 +3,7 @@
     <Using Include="System" />
     <Using Include="System.Diagnostics" />
     <Using Include="System.Reactive.Linq" />
+    <Using Include="System.Reactive.Subjects" />
     <Using Include="Avalonia" />
     <Using Include="Avalonia.Controls" />
     <Using Include="Avalonia.Controls.Primitives" />
