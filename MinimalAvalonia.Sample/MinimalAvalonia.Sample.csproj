@@ -17,5 +17,5 @@
   <ItemGroup>
     <ProjectReference Include="..\MinimalAvalonia\MinimalAvalonia.csproj" />
   </ItemGroup>
-  <Import Project="..\MinimalAvalonia\MinimalAvalonia.Usings.props" />
+  <Import Project="..\MinimalAvalonia\MinimalAvalonia.props" />
 </Project>

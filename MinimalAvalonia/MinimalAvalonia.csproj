@@ -30,5 +30,5 @@
       <PackagePath>build\;buildTransitive\</PackagePath>
     </Content>
   </ItemGroup>
-  <Import Project="MinimalAvalonia.Usings.props" />
+  <Import Project="MinimalAvalonia.props" />
 </Project>
