@@ -1,4 +1,4 @@
-namespace MinimalAvalonia;
+namespace MinimalAvalonia.Controls;
 
 public static class TextBoxExtensions
 {
