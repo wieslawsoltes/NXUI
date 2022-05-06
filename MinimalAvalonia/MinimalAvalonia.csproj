@@ -3,11 +3,23 @@
     <OutputType>Library</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>true</IsPackable>
     <RootNamespace>MinimalAvalonia</RootNamespace>
     <PackageId>MinimalAvalonia</PackageId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VersionPrefix>0.10.13</VersionPrefix>
+    <VersionSuffix>preview.0</VersionSuffix>
+    <Authors>Wiesław Šoltés</Authors>
+    <Company>Wiesław Šoltés</Company>
+    <Copyright>Copyright © Wiesław Šoltés 2022</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/wieslawsoltes/MinimalAvalonia</PackageProjectUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.10.13" />
@@ -18,5 +30,5 @@
       <PackagePath>build\;buildTransitive\</PackagePath>
     </Content>
   </ItemGroup>
-  <Import Project="ImplicitUsings.props" />
+  <Import Project="MinimalAvalonia.Usings.props" />
 </Project>
