@@ -7,6 +7,7 @@
     <Using Include="Avalonia.Controls.ApplicationLifetimes" />
     <Using Include="Avalonia.Data" />
     <Using Include="Avalonia.Interactivity" />
+    <Using Include="Avalonia.Layout" />
     <Using Include="Avalonia.Themes.Fluent" />
     <Using Include="MinimalAvalonia" />
   </ItemGroup>
