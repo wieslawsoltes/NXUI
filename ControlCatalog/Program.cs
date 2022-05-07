@@ -57,7 +57,7 @@ AppBuilder.Configure<Application>()
             .Ref(out var templatedControl);
 
         new TextBlock()
-            .Background(Brushes.Aqua)
+            .Background(Brushes.WhiteSmoke)
             .Padding(4)
             .FontFamily(FontFamily.Default)
             .FontSize(12)
