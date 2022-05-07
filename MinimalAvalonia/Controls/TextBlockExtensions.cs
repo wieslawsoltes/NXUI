@@ -88,7 +88,7 @@ public static class TextBlockExtensions
 
     public static T TextTrimming<T>(this T textBlock, TextTrimming textTrimming) where T : TextBlock
     {
-        textBlock[TextBlock.TextDecorationsProperty] = textTrimming;
+        textBlock[TextBlock.TextTrimmingProperty] = textTrimming;
         return textBlock;
     }
 
