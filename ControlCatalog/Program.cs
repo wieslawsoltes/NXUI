@@ -6,6 +6,10 @@ AppBuilder.Configure<Application>()
     .StartWithClassicDesktopLifetime(desktop =>
     {
         new Border()
+            .Background(Brushes.WhiteSmoke)
+            .BorderBrush(Brushes.Black)
+            .BorderThickness(2)
+            .CornerRadius(4)
             .Ref(out var border);
 
         new Button()
@@ -78,6 +82,7 @@ AppBuilder.Configure<Application>()
             .Ref(out var textBox);
 
         new TabControl()
+            .ItemsPanel(new FuncTemplate<IPanel>(() => new StackPanel()))
             .TabStripPlacementLeft()
             .TabItem(
                 new TabItem().Header("Border").Content(border),
@@ -99,7 +104,7 @@ AppBuilder.Configure<Application>()
         new Window()
             .SizeToContentManual()
             .Title("ControlCatalog")
-            .Width(800).Height(600)
+            .Width(800).Height(700)
             .Content(controls).Ref(out var window);
 
         desktop.MainWindow = window;
