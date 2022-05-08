@@ -44,18 +44,18 @@ public static class KeyFrameExtensions
         return keyFrame;
     }
 
-    public static T Setters<T>(this T style, params IAnimationSetter[] setters) where T : KeyFrame
+    public static T Setters<T>(this T keyFrame, params IAnimationSetter[] setters) where T : KeyFrame
     {
         foreach (var setter in setters)
         {
-            style.Setters.Add(setter);
+            keyFrame.Setters.Add(setter);
         }
-        return style;
+        return keyFrame;
     }
 
-    public static T Setter<T>(this T style, AvaloniaProperty property, object value) where T : KeyFrame
+    public static T Setter<T>(this T keyFrame, AvaloniaProperty property, object value) where T : KeyFrame
     {
-        style.Setters.Add(new Setter(property, value));
-        return style;
+        keyFrame.Setters.Add(new Setter(property, value));
+        return keyFrame;
     }
 }
