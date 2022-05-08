@@ -15,7 +15,6 @@ AppBuilder.Configure<Application>()
 
         new Button()
             .OnClick(o => o.Subscribe(_ => Debug.WriteLine("Click")))
-            .Classes("animation")
             .Content("Button")
             .Ref(out var button);
 
@@ -35,8 +34,11 @@ AppBuilder.Configure<Application>()
             .Ref(out var itemsControl);
 
         new Label()
+            .Classes("animation")
             .Content("Label")
             .Ref(out var label);
+
+        // label.RenderTransform = new RotateTransform(0.0);
 
         new Layoutable()
             .Ref(out var layoutable);
@@ -115,8 +117,7 @@ AppBuilder.Configure<Application>()
             .Ref(out var style1);
 
         new Style()
-            .Selector(x => x.OfType<Button>().Class("animation"))
-            .Setter(TemplatedControl.BackgroundProperty, Brushes.Blue)
+            .Selector(x => x.OfType<Label>().Class("animation"))
             .Animation(
                 new Animation()
                     .Duration(TimeSpan.FromSeconds(5))
