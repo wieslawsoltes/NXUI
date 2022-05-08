@@ -48,7 +48,7 @@ AppBuilder.Configure<Application>()
             .Ref(out var stackPanel);
 
         new TabControl()
-            .TabItem(
+            .Items(
                 new TabItem().Header("TabItem1").Content("TabItem1"),
                 new TabItem().Header("TabItem2").Content("TabItem2"),
                 new TabItem().Header("TabItem3").Content("TabItem3"))
@@ -85,7 +85,7 @@ AppBuilder.Configure<Application>()
         new TabControl()
             .ItemsPanel(new FuncTemplate<IPanel>(() => new StackPanel()))
             .TabStripPlacementLeft()
-            .TabItem(
+            .Items(
                 new TabItem().Header("Border").Content(border),
                 new TabItem().Header("Button").Content(button),
                 new TabItem().Header("ContentControl").Content(contentControl),

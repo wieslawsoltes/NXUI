@@ -4,29 +4,29 @@ namespace MinimalAvalonia.Controls;
 
 public static class TabControlExtensions
 {
-    public static T TabItem<T>(this T tabControl, TabItem tabItem) where T : TabControl
+    public static T Items<T>(this T tabControl, object item) where T : TabControl
     {
         switch (tabControl.Items)
         {
-            case AvaloniaList<TabItem> list:
-                list.Add(tabItem);
+            case AvaloniaList<object> list:
+                list.Add(item);
                 break;
             default:
-                tabControl.Items = new AvaloniaList<TabItem>(tabItem);
+                tabControl.Items = new AvaloniaList<object>(item);
                 break;
         }
         return tabControl;
     }
 
-    public static T TabItem<T>(this T tabControl, params TabItem[] tabItems) where T : TabControl
+    public static T Items<T>(this T tabControl, params object[] items) where T : TabControl
     {
         switch (tabControl.Items)
         {
-            case AvaloniaList<TabItem> list:
-                list.AddRange(tabItems);
+            case AvaloniaList<object> list:
+                list.AddRange(items);
                 break;
             default:
-                tabControl.Items = new AvaloniaList<TabItem>(tabItems);
+                tabControl.Items = new AvaloniaList<object>(items);
                 break;
         }
         return tabControl;
