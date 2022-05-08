@@ -9,6 +9,7 @@
     <Using Include="System.Reactive.Linq" />
     <Using Include="System.Reactive.Subjects" />
     <Using Include="Avalonia" />
+    <Using Include="Avalonia.Animation" />
     <Using Include="Avalonia.Collections" />
     <Using Include="Avalonia.Controls" />
     <Using Include="Avalonia.Controls.ApplicationLifetimes" />
