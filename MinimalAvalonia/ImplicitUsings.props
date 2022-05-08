@@ -19,6 +19,7 @@
     <Using Include="Avalonia.Input" />
     <Using Include="Avalonia.Layout" />
     <Using Include="Avalonia.Media" />
+    <Using Include="Avalonia.Styling" />
     <Using Include="Avalonia.Themes.Fluent" />
     <Using Include="MinimalAvalonia" />
     <!--<Using Include="MinimalAvalonia.MinimalAvalonia" Static="true" />-->
