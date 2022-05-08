@@ -3,6 +3,7 @@
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
     .UseFluentTheme()
+    .WithApplicationName("ControlCatalog")
     .StartWithClassicDesktopLifetime(desktop =>
     {
         new Border()
