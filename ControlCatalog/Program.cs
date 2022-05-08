@@ -114,6 +114,9 @@ AppBuilder.Configure<Application>()
             .Ref(out var style2);
 
         window.Styles.Add(style2);
-
+        
+#if DEBUG
+        window.AttachDevTools();
+#endif
         desktop.MainWindow = window;
     }, args);
