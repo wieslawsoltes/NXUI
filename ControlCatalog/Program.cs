@@ -15,6 +15,7 @@ AppBuilder.Configure<Application>()
 
         new Button()
             .OnClick(o => o.Subscribe(_ => Debug.WriteLine("Click")))
+            .Classes("animation")
             .Content("Button")
             .Ref(out var button);
 
@@ -111,8 +112,21 @@ AppBuilder.Configure<Application>()
         new Style()
             .Selector(x => x.OfType<Button>().Class(":pointerover").Template().OfType<ContentPresenter>().Name("PART_ContentPresenter"))
             .Setter(TemplatedControl.BackgroundProperty, Brushes.Red)
+            .Ref(out var style1);
+
+        new Style()
+            .Selector(x => x.OfType<Button>().Class("animation"))
+            .Setter(TemplatedControl.BackgroundProperty, Brushes.Blue)
+            .Animation(
+                new Animation()
+                    .Duration(TimeSpan.FromSeconds(5))
+                    .IterationCountInfinite()
+                    .KeyFrames(
+                        new KeyFrame().Cue(0.0).Setter(RotateTransform.AngleProperty, 0),
+                        new KeyFrame().Cue(1.0).Setter(RotateTransform.AngleProperty, 360)))
             .Ref(out var style2);
 
+        window.Styles.Add(style1);
         window.Styles.Add(style2);
         
 #if DEBUG
