@@ -108,5 +108,12 @@ AppBuilder.Configure<Application>()
             .Width(800).Height(700)
             .Content(controls).Ref(out var window);
 
+        new Style()
+            .Selector(x => x.OfType<Button>().Class(":pointerover").Template().OfType<ContentPresenter>().Name("PART_ContentPresenter"))
+            .Setter(TemplatedControl.BackgroundProperty, Brushes.Red)
+            .Ref(out var style2);
+
+        window.Styles.Add(style2);
+
         desktop.MainWindow = window;
     }, args);
