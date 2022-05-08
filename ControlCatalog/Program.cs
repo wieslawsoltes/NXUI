@@ -41,7 +41,7 @@ AppBuilder.Configure<Application>()
             .Ref(out var layoutable);
 
         new Panel()
-            .Background(Brushes.White)
+            .Background(Brushes.WhiteSmoke)
             .Ref(out var panel);
 
         new StackPanel()
