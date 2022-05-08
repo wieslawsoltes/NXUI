@@ -1,5 +1,3 @@
-using Avalonia.Collections;
-
 namespace MinimalAvalonia.Controls;
 
 public static class TabControlExtensions
