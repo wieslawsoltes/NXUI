@@ -3,14 +3,17 @@
 public static class AppBuilderExtensions
 {
     public static TAppBuilder UseFluentTheme<TAppBuilder>(this TAppBuilder builder, FluentThemeMode mode = FluentThemeMode.Light)
-        where TAppBuilder : AppBuilderBase<TAppBuilder>, new() {
+        where TAppBuilder : AppBuilderBase<TAppBuilder>, new() 
+    {
         return builder.AfterSetup(_ =>
             builder.Instance.Styles.Add(new FluentTheme(new Uri($"avares://{System.Reflection.Assembly.GetExecutingAssembly().GetName()}")) { Mode = mode }));
     }
 
-    public static int StartWithClassicDesktopLifetime<T>(this T builder, Action<IClassicDesktopStyleApplicationLifetime> callback, string[]? args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose) where T : AppBuilderBase<T>, new()
+    public static int StartWithClassicDesktopLifetime<T>(this T builder, Action<IClassicDesktopStyleApplicationLifetime> callback, string[]? args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
+        where T : AppBuilderBase<T>, new()
     {
-        var classicDesktopStyleApplicationLifetime = new ClassicDesktopStyleApplicationLifetime {
+        var classicDesktopStyleApplicationLifetime = new ClassicDesktopStyleApplicationLifetime
+        {
             Args = args,
             ShutdownMode = shutdownMode
         };
