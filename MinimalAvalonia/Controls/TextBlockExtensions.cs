@@ -26,34 +26,34 @@ public static class TextBlockExtensions
         return textBlock;
     }
 
-    public static T FontFamily<T>(this T textBlock, FontFamily fontFamily) where T : Control
+    public static T FontFamily<T>(this T control, FontFamily fontFamily) where T : Control
     {
-        textBlock[Avalonia.Controls.TextBlock.FontFamilyProperty] = fontFamily;
-        return textBlock;
+        control[Avalonia.Controls.TextBlock.FontFamilyProperty] = fontFamily;
+        return control;
     }
 
-    public static T FontSize<T>(this T textBlock, double fontSize) where T : Control
+    public static T FontSize<T>(this T control, double fontSize) where T : Control
     {
-        textBlock[Avalonia.Controls.TextBlock.FontSizeProperty] = fontSize;
-        return textBlock;
+        control[Avalonia.Controls.TextBlock.FontSizeProperty] = fontSize;
+        return control;
     }
 
-    public static T FontStyle<T>(this T textBlock, FontStyle fontStyle) where T : Control
+    public static T FontStyle<T>(this T control, FontStyle fontStyle) where T : Control
     {
-        textBlock[Avalonia.Controls.TextBlock.FontStyleProperty] = fontStyle;
-        return textBlock;
+        control[Avalonia.Controls.TextBlock.FontStyleProperty] = fontStyle;
+        return control;
     }
 
-    public static T FontWeight<T>(this T textBlock, FontWeight fontWeight) where T : Control
+    public static T FontWeight<T>(this T control, FontWeight fontWeight) where T : Control
     {
-        textBlock[Avalonia.Controls.TextBlock.FontWeightProperty] = fontWeight;
-        return textBlock;
+        control[Avalonia.Controls.TextBlock.FontWeightProperty] = fontWeight;
+        return control;
     }
 
-    public static T Foreground<T>(this T textBlock, IBrush foreground) where T : Control
+    public static T Foreground<T>(this T control, IBrush foreground) where T : Control
     {
-        textBlock[Avalonia.Controls.TextBlock.ForegroundProperty] = foreground;
-        return textBlock;
+        control[Avalonia.Controls.TextBlock.ForegroundProperty] = foreground;
+        return control;
     }
 
     public static T LineHeight<T>(this T textBlock, double lineHeight) where T : TextBlock
