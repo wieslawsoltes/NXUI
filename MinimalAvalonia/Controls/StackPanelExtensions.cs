@@ -8,6 +8,12 @@ public static class StackPanelExtensions
         return stackPanel;
     }
 
+    public static T Orientation<T>(this T stackPanel, Orientation orientation) where T : StackPanel
+    {
+        stackPanel[Avalonia.Controls.StackPanel.OrientationProperty] = orientation;
+        return stackPanel;
+    }
+
     public static T OrientationHorizontal<T>(this T stackPanel) where T : StackPanel
     {
         stackPanel[Avalonia.Controls.StackPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
