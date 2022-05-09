@@ -25,7 +25,7 @@
     <Using Include="Avalonia.Styling" />
     <Using Include="Avalonia.Themes.Fluent" />
     <Using Include="MinimalAvalonia" />
-    <!--<Using Include="MinimalAvalonia.MinimalAvalonia" Static="true" />-->
+    <Using Include="MinimalAvalonia.MinimalAvalonia" Static="true" />
     <Using Include="MinimalAvalonia.Controls" />
   </ItemGroup>
 </Project>

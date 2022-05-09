@@ -32,25 +32,25 @@ public static class TabControlExtensions
 
     public static T TabStripPlacementLeft<T>(this T tabControl) where T : TabControl
     {
-        tabControl[TabControl.TabStripPlacementProperty] = Dock.Left;
+        tabControl[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Dock.Left;
         return tabControl;
     }
 
     public static T TabStripPlacementBottom<T>(this T tabControl) where T : TabControl
     {
-        tabControl[TabControl.TabStripPlacementProperty] = Dock.Bottom;
+        tabControl[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Dock.Bottom;
         return tabControl;
     }
 
     public static T TabStripPlacementRight<T>(this T tabControl) where T : TabControl
     {
-        tabControl[TabControl.TabStripPlacementProperty] = Dock.Right;
+        tabControl[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Dock.Right;
         return tabControl;
     }
 
     public static T TabStripPlacementTop<T>(this T tabControl) where T : TabControl
     {
-        tabControl[TabControl.TabStripPlacementProperty] = Dock.Top;
+        tabControl[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Dock.Top;
         return tabControl;
     }
 

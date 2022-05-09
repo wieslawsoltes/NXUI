@@ -4,115 +4,115 @@ public static class AnimationExtensions
 {
     public static T Duration<T>(this T animation, TimeSpan duration) where T : Animation
     {
-        animation[Animation.DurationProperty] = duration;
+        animation[Avalonia.Animation.Animation.DurationProperty] = duration;
         return animation;
     }
 
     public static T IterationCount<T>(this T animation, IterationCount iterationCount) where T : Animation
     {
-        animation[Animation.IterationCountProperty] = iterationCount;
+        animation[Avalonia.Animation.Animation.IterationCountProperty] = iterationCount;
         return animation;
     }
 
     public static T IterationCount<T>(this T animation, ulong value, IterationType type) where T : Animation
     {
-        animation[Animation.IterationCountProperty] = new IterationCount(value, type);
+        animation[Avalonia.Animation.Animation.IterationCountProperty] = new IterationCount(value, type);
         return animation;
     }
 
     public static T IterationCountMany<T>(this T animation, ulong value) where T : Animation
     {
-        animation[Animation.IterationCountProperty] = new IterationCount(value);
+        animation[Avalonia.Animation.Animation.IterationCountProperty] = new IterationCount(value);
         return animation;
     }
 
     public static T IterationCountInfinite<T>(this T animation) where T : Animation
     {
-        animation[Animation.IterationCountProperty] = Avalonia.Animation.IterationCount.Infinite;
+        animation[Avalonia.Animation.Animation.IterationCountProperty] = Avalonia.Animation.IterationCount.Infinite;
         return animation;
     }
 
     public static T PlaybackDirection<T>(this T animation, PlaybackDirection playbackDirection) where T : Animation
     {
-        animation[Animation.PlaybackDirectionProperty] = playbackDirection;
+        animation[Avalonia.Animation.Animation.PlaybackDirectionProperty] = playbackDirection;
         return animation;
     }
 
     public static T PlaybackDirectionNormal<T>(this T animation) where T : Animation
     {
-        animation[Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Normal;
+        animation[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Normal;
         return animation;
     }
 
     public static T PlaybackDirectionReverse<T>(this T animation) where T : Animation
     {
-        animation[Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Reverse;
+        animation[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Reverse;
         return animation;
     }
 
     public static T PlaybackDirectionAlternate<T>(this T animation) where T : Animation
     {
-        animation[Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Alternate;
+        animation[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Alternate;
         return animation;
     }
 
     public static T PlaybackDirectionAlternateReverse<T>(this T animation) where T : Animation
     {
-        animation[Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.AlternateReverse;
+        animation[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.AlternateReverse;
         return animation;
     }
 
     public static T FillMode<T>(this T animation, FillMode fillMode) where T : Animation
     {
-        animation[Animation.FillModeProperty] = fillMode;
+        animation[Avalonia.Animation.Animation.FillModeProperty] = fillMode;
         return animation;
     }
 
     public static T FillModeNone<T>(this T animation) where T : Animation
     {
-        animation[Animation.FillModeProperty] = Avalonia.Animation.FillMode.None;
+        animation[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.None;
         return animation;
     }
 
     public static T FillModeForward<T>(this T animation) where T : Animation
     {
-        animation[Animation.FillModeProperty] = Avalonia.Animation.FillMode.Forward;
+        animation[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Forward;
         return animation;
     }
 
     public static T FillModeBackward<T>(this T animation) where T : Animation
     {
-        animation[Animation.FillModeProperty] = Avalonia.Animation.FillMode.Backward;
+        animation[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Backward;
         return animation;
     }
 
     public static T FillModeBoth<T>(this T animation) where T : Animation
     {
-        animation[Animation.FillModeProperty] = Avalonia.Animation.FillMode.Both;
+        animation[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Both;
         return animation;
     }
 
     public static T Easing<T>(this T animation, Easing easing) where T : Animation
     {
-        animation[Animation.EasingProperty] = easing;
+        animation[Avalonia.Animation.Animation.EasingProperty] = easing;
         return animation;
     }
 
     public static T Delay<T>(this T animation, TimeSpan delay) where T : Animation
     {
-        animation[Animation.DelayProperty] = delay;
+        animation[Avalonia.Animation.Animation.DelayProperty] = delay;
         return animation;
     }
 
     public static T DelayBetweenIterations<T>(this T animation, TimeSpan delayBetweenIterations) where T : Animation
     {
-        animation[Animation.DelayBetweenIterationsProperty] = delayBetweenIterations;
+        animation[Avalonia.Animation.Animation.DelayBetweenIterationsProperty] = delayBetweenIterations;
         return animation;
     }
 
     public static T SpeedRatio<T>(this T animation, double speedRatio) where T : Animation
     {
-        animation[Animation.SpeedRatioProperty] = speedRatio;
+        animation[Avalonia.Animation.Animation.SpeedRatioProperty] = speedRatio;
         return animation;
     }
 

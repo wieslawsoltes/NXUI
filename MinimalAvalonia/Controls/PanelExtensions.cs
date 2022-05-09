@@ -4,7 +4,7 @@ public static class PanelExtensions
 {
     public static T Background<T>(this T panel, IBrush background) where T : Panel
     {
-        panel[Panel.BackgroundProperty] = background;
+        panel[Avalonia.Controls.Panel.BackgroundProperty] = background;
         return panel;
     }
 

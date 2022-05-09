@@ -4,7 +4,7 @@ public static class ContentControlExtensions
 {
     public static T Content<T>(this T contentControl, object content) where T : ContentControl
     {
-        contentControl[ContentControl.ContentProperty] = content;
+        contentControl[Avalonia.Controls.ContentControl.ContentProperty] = content;
         return contentControl;
     }
 
@@ -14,10 +14,10 @@ public static class ContentControlExtensions
         {
             case BindingMode.Default:
             case BindingMode.OneWay:
-                contentControl[!ContentControl.ContentProperty] = content;
+                contentControl[!Avalonia.Controls.ContentControl.ContentProperty] = content;
                 break;
             case BindingMode.TwoWay:
-                contentControl[!!ContentControl.ContentProperty] = content;
+                contentControl[!!Avalonia.Controls.ContentControl.ContentProperty] = content;
                 break;
             case BindingMode.OneTime:
                 // TODO:

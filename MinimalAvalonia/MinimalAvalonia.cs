@@ -1,84 +1,61 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace MinimalAvalonia;
 
+[SuppressMessage("ReSharper", "InconsistentNaming")]
 public static class MinimalAvalonia
 {
-    public static Border Border()
-    {
-        return new Border();
-    }
+    public static readonly StyledProperty<object> ContentControlContent = Avalonia.Controls.ContentControl.ContentProperty;
 
-    public static Button Button()
-    {
-        return new Button();
-    }
+    public static readonly StyledProperty<IBrush?> TemplatedControlBackground = Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty;
 
-    public static ContentControl ContentControl()
-    {
-        return new ContentControl();
-    }
+    public static readonly DirectProperty<TextBox, string> TextBoxText = Avalonia.Controls.TextBox.TextProperty;
 
-    public static Decorator Decorator()
-    {
-        return new Decorator();
-    }
+    public static readonly DirectProperty<TextBlock, string> TextBlockText = Avalonia.Controls.TextBlock.TextProperty;
 
-    public static HeaderedContentControl HeaderedContentControl()
-    {
-        return new HeaderedContentControl();
-    }
+    public static readonly StyledProperty<string> WindowTitle = Avalonia.Controls.Window.TitleProperty;
 
-    public static ItemsControl ItemsControl()
-    {
-        return new ItemsControl();
-    }
+    public static Animation Animation() => new();
 
-    public static Label Label()
-    {
-        return new Label();
-    }
+    public static Border Border() => new();
 
-    public static Layoutable Layoutable()
-    {
-        return new Layoutable();
-    }
+    public static Button Button() => new();
 
-    public static Panel Panel()
-    {
-        return new Panel();
-    }
+    public static ContentControl ContentControl() => new();
 
-    public static StackPanel StackPanel()
-    {
-        return new StackPanel();
-    }
+    public static Control Control() => new();
 
-    public static TabControl TabControl()
-    {
-        return new TabControl();
-    }
+    public static Decorator Decorator() => new();
 
-    public static TabItem TabItem()
-    {
-        return new TabItem();
-    }
+    public static HeaderedContentControl HeaderedContentControl() => new();
 
-    public static TemplatedControl TemplatedControl()
-    {
-        return new TemplatedControl();
-    }
+    public static ItemsControl ItemsControl() => new();
 
-    public static TextBlock TextBlock()
-    {
-        return new TextBlock();
-    }
+    public static KeyFrame KeyFrame() => new();
 
-    public static TextBox TextBox()
-    {
-        return new TextBox();
-    }
+    public static Label Label() => new();
 
-    public static Window Window()
-    {
-        return new Window();
-    }
+    public static Layoutable Layoutable() => new();
+
+    public static Panel Panel() => new();
+
+    public static StackPanel StackPanel() => new();
+
+    public static StyledElement StyledElement() => new();
+
+    public static Style Style() => new();
+
+    public static Setter Setter() => new();
+
+    public static TabControl TabControl() => new();
+
+    public static TabItem TabItem() => new();
+
+    public static TemplatedControl TemplatedControl() => new();
+
+    public static TextBlock TextBlock() => new();
+
+    public static TextBox TextBox() => new();
+
+    public static Window Window() => new();
 }

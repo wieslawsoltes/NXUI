@@ -4,19 +4,19 @@ public static class StyledElementExtensions
 {
     public static T DataContext<T>(this T styledElement, object dataContext) where T : StyledElement
     {
-        styledElement[StyledElement.DataContextProperty] = dataContext;
+        styledElement[Avalonia.StyledElement.DataContextProperty] = dataContext;
         return styledElement;
     }
     
     public static T Name<T>(this T styledElement, string? name) where T : StyledElement
     {
-        styledElement[StyledElement.NameProperty] = name;
+        styledElement[Avalonia.StyledElement.NameProperty] = name;
         return styledElement;
     }
     
     public static T TemplatedParent<T>(this T styledElement, ITemplatedControl? templatedParent) where T : StyledElement
     {
-        styledElement[StyledElement.TemplatedParentProperty] = templatedParent;
+        styledElement[Avalonia.StyledElement.TemplatedParentProperty] = templatedParent;
         return styledElement;
     }
     
