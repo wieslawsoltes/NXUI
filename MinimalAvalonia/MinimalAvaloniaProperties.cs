@@ -5,6 +5,8 @@ namespace MinimalAvalonia;
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 public static class MinimalAvaloniaProperties
 {
+    public static readonly StyledProperty<bool> VisualClipToBounds = Avalonia.Visual.ClipToBoundsProperty;
+
     public static readonly StyledProperty<object> ContentControlContent = Avalonia.Controls.ContentControl.ContentProperty;
 
     public static readonly StyledProperty<IBrush?> TemplatedControlBackground = Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty;
