@@ -7,6 +7,15 @@ public static class MinimalAvaloniaProperties
 {
     // Animation
 
+    public static readonly DirectProperty<Animation, TimeSpan> AnimationDuration = Avalonia.Animation.Animation.DurationProperty;
+    public static readonly DirectProperty<Animation, IterationCount> AnimationIterationCount = Avalonia.Animation.Animation.IterationCountProperty;
+    public static readonly DirectProperty<Animation, PlaybackDirection> AnimationPlaybackDirection = Avalonia.Animation.Animation.PlaybackDirectionProperty;
+    public static readonly DirectProperty<Animation, FillMode> AnimationFillMode = Avalonia.Animation.Animation.FillModeProperty;
+    public static readonly DirectProperty<Animation, Easing> AnimationEasing = Avalonia.Animation.Animation.EasingProperty;
+    public static readonly DirectProperty<Animation, TimeSpan> AnimationDelay = Avalonia.Animation.Animation.DelayProperty;
+    public static readonly DirectProperty<Animation, TimeSpan> AnimationDelayBetweenIterations = Avalonia.Animation.Animation.DelayBetweenIterationsProperty;
+    public static readonly DirectProperty<Animation, double> AnimationSpeedRatio = Avalonia.Animation.Animation.SpeedRatioProperty;
+
     // AnimationSetter
 
     // Border
