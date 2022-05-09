@@ -1,5 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
-
 namespace MinimalAvalonia;
 
 [SuppressMessage("ReSharper", "InconsistentNaming")]
