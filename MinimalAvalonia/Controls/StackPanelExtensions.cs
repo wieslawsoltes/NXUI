@@ -10,13 +10,13 @@ public static class StackPanelExtensions
 
     public static T OrientationHorizontal<T>(this T stackPanel) where T : StackPanel
     {
-        stackPanel[Avalonia.Controls.StackPanel.OrientationProperty] = Orientation.Horizontal;
+        stackPanel[Avalonia.Controls.StackPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return stackPanel;
     }
 
     public static T OrientationVertical<T>(this T stackPanel) where T : StackPanel
     {
-        stackPanel[Avalonia.Controls.StackPanel.OrientationProperty] = Orientation.Vertical;
+        stackPanel[Avalonia.Controls.StackPanel.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
         return stackPanel;
     }
 }
