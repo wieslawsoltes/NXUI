@@ -136,4 +136,10 @@ public static class MinimalAvaloniaProperties
     // Window
 
     public static StyledProperty<string> WindowTitle => Avalonia.Controls.Window.TitleProperty;
+
+    // WrapPanel
+
+    public static StyledProperty<Orientation> WrapPanelOrientation => Avalonia.Controls.WrapPanel.OrientationProperty;
+    public static StyledProperty<double> WrapPanelItemWidth => Avalonia.Controls.WrapPanel.ItemWidthProperty;
+    public static StyledProperty<double> WrapPanelItemHeight => Avalonia.Controls.WrapPanel.ItemHeightProperty;
 }
