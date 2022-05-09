@@ -64,6 +64,9 @@ public static class MinimalAvaloniaProperties
 
     // Decorator
 
+    public static StyledProperty<IControl> DecoratorChild => Avalonia.Controls.Decorator.ChildProperty;
+    public static StyledProperty<Thickness> DecoratorPadding => Avalonia.Controls.Decorator.PaddingProperty;
+
     // HeaderedContentControl
 
     public static StyledProperty<object?> HeaderedContentControlHeader => Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty;
