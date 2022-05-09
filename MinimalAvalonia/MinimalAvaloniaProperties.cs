@@ -3,6 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace MinimalAvalonia;
 
 [SuppressMessage("ReSharper", "InconsistentNaming")]
+[SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static class MinimalAvaloniaProperties
 {
     // Animatable
