@@ -72,6 +72,15 @@ public static class MinimalAvaloniaProperties
     public static AttachedProperty<Dock> DockPanelDock => Avalonia.Controls.DockPanel.DockProperty;
     public static StyledProperty<bool> DockPanelLastChildFill => Avalonia.Controls.DockPanel.LastChildFillProperty;
 
+    // Grid
+
+    public static StyledProperty<bool> GridShowGridLines => Avalonia.Controls.Grid.ShowGridLinesProperty;
+    public static AttachedProperty<int> GridColumn => Avalonia.Controls.Grid.ColumnProperty;
+    public static AttachedProperty<int> GridRow => Avalonia.Controls.Grid.RowProperty;
+    public static AttachedProperty<int> GridColumnSpan => Avalonia.Controls.Grid.ColumnSpanProperty;
+    public static AttachedProperty<int> GridRowSpan => Avalonia.Controls.Grid.RowSpanProperty;
+    public static AttachedProperty<bool> GridIsSharedSizeScope => Avalonia.Controls.Grid.IsSharedSizeScopeProperty;
+
     // HeaderedContentControl
 
     public static StyledProperty<object?> HeaderedContentControlHeader => Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty;
