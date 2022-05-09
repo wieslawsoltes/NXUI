@@ -265,7 +265,17 @@ public static class MinimalAvaloniaProperties
 
     // Visual
 
+    public static DirectProperty<Visual, Rect> VisualBounds => Avalonia.Visual.BoundsProperty;
+    public static DirectProperty<Visual, TransformedBounds?> VisualTransformedBounds => Avalonia.Visual.TransformedBoundsProperty;
     public static StyledProperty<bool> VisualClipToBounds => Avalonia.Visual.ClipToBoundsProperty;
+    public static StyledProperty<Geometry?> VisualClip => Avalonia.Visual.ClipProperty;
+    public static StyledProperty<bool> VisualIsVisible => Avalonia.Visual.IsVisibleProperty;
+    public static StyledProperty<double> VisualOpacity => Avalonia.Visual.OpacityProperty;
+    public static StyledProperty<IBrush?> VisualOpacityMask => Avalonia.Visual.OpacityMaskProperty;
+    public static StyledProperty<ITransform?> VisualRenderTransform => Avalonia.Visual.RenderTransformProperty;
+    public static StyledProperty<RelativePoint> VisualRenderTransformOrigin => Avalonia.Visual.RenderTransformOriginProperty;
+    public static DirectProperty<Visual, IVisual?> VisualVisualParent => Avalonia.Visual.VisualParentProperty;
+    public static StyledProperty<int> VisualZIndex => Avalonia.Visual.ZIndexProperty;
 
     // Window
 
