@@ -5,8 +5,7 @@ Window Build()
         .Title("Counter").Padding(12).SizeToContentManual().Width(300).Height(200)
         .Content(
             StackPanel()
-                .OrientationHorizontal().Spacing(12)
-                .HorizontalAlignmentCenter().VerticalAlignmentCenter()
+                .OrientationHorizontal().Spacing(12).HorizontalAlignmentCenter().VerticalAlignmentCenter()
                 .Children(
                     Label()
                         .HorizontalAlignmentCenter().VerticalAlignmentCenter()
