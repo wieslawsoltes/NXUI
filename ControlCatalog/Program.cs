@@ -35,6 +35,7 @@ AppBuilder.Configure<Application>()
 
         new Label()
             .Classes("animation")
+            .HorizontalAlignmentCenter().VerticalAlignmentCenter()
             .Content("Label")
             .Ref(out var label);
 
