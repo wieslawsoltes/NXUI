@@ -5,6 +5,11 @@ namespace MinimalAvalonia;
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 public static class MinimalAvaloniaProperties
 {
+    // Animatable
+
+    public static StyledProperty<IClock> AnimatableClock => Avalonia.Animation.Animatable.ClockProperty;
+    public static StyledProperty<Transitions?> AnimatableTransitions => Avalonia.Animation.Animatable.TransitionsProperty;
+
     // Animation
 
     public static DirectProperty<Animation, TimeSpan> AnimationDuration => Avalonia.Animation.Animation.DurationProperty;
