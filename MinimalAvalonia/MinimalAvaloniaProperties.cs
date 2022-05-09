@@ -66,6 +66,9 @@ public static class MinimalAvaloniaProperties
 
     // HeaderedContentControl
 
+    public static StyledProperty<object?> HeaderedContentControlHeader => Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty;
+    public static StyledProperty<IDataTemplate?> HeaderedContentControlHeaderTemplate => Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty;
+
     // InputElement
 
     public static StyledProperty<bool> InputElementFocusable => Avalonia.Input.InputElement.FocusableProperty;
