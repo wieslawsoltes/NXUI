@@ -122,8 +122,7 @@
                         KeyFrame().Cue(1.0).Setter(RotateTransform.AngleProperty, 360d)))
             .Ref(out var style2);
 
-        window.Styles.Add(style1);
-        window.Styles.Add(style2);
+        window.Styles(style1, style2);
 
 #if DEBUG
         window.AttachDevTools();
