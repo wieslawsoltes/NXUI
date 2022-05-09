@@ -107,6 +107,8 @@ public static class MinimalAvaloniaProperties
 
     // Panel
 
+    public static StyledProperty<IBrush> PanelBackground => Avalonia.Controls.Panel.BackgroundProperty;
+
     // StackPanel
 
     public static StyledProperty<double> StackPanelSpacing => Avalonia.Controls.StackPanel.SpacingProperty;
