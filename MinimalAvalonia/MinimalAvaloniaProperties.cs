@@ -223,7 +223,37 @@ public static class MinimalAvaloniaProperties
 
     // TextBox
 
+    public static StyledProperty<bool> TextBoxAcceptsReturn => Avalonia.Controls.TextBox.AcceptsReturnProperty;
+    public static StyledProperty<bool> TextBoxAcceptsTab => Avalonia.Controls.TextBox.AcceptsTabProperty;
+    public static DirectProperty<TextBox, int> TextBoxCaretIndex => Avalonia.Controls.TextBox.CaretIndexProperty;
+    public static StyledProperty<bool> TextBoxIsReadOnly => Avalonia.Controls.TextBox.IsReadOnlyProperty;
+    public static StyledProperty<char> TextBoxPasswordChar => Avalonia.Controls.TextBox.PasswordCharProperty;
+    public static StyledProperty<IBrush> TextBoxSelectionBrush => Avalonia.Controls.TextBox.SelectionBrushProperty;
+    public static StyledProperty<IBrush> TextBoxSelectionForegroundBrush => Avalonia.Controls.TextBox.SelectionForegroundBrushProperty;
+    public static StyledProperty<IBrush> TextBoxCaretBrush => Avalonia.Controls.TextBox.CaretBrushProperty;
+    public static DirectProperty<TextBox, int> TextBoxSelectionStart => Avalonia.Controls.TextBox.SelectionStartProperty;
+    public static DirectProperty<TextBox, int> TextBoxSelectionEnd => Avalonia.Controls.TextBox.SelectionEndProperty;
+    public static StyledProperty<int> TextBoxMaxLength => Avalonia.Controls.TextBox.MaxLengthProperty;
     public static DirectProperty<TextBox, string> TextBoxText => Avalonia.Controls.TextBox.TextProperty;
+    public static StyledProperty<TextAlignment> TextBoxTextAlignment => Avalonia.Controls.TextBox.TextAlignmentProperty;
+    public static StyledProperty<HorizontalAlignment> TextBoxHorizontalContentAlignment => Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty;
+    public static StyledProperty<VerticalAlignment> TextBoxVerticalContentAlignment => Avalonia.Controls.TextBox.VerticalContentAlignmentProperty;
+    public static StyledProperty<TextWrapping> TextBoxTextWrapping => Avalonia.Controls.TextBox.TextWrappingProperty;
+    public static StyledProperty<string> TextBoxWatermark => Avalonia.Controls.TextBox.WatermarkProperty;
+    public static StyledProperty<bool> TextBoxUseFloatingWatermark => Avalonia.Controls.TextBox.UseFloatingWatermarkProperty;
+    public static DirectProperty<TextBox, string> TextBoxNewLine => Avalonia.Controls.TextBox.NewLineProperty;
+    public static StyledProperty<object> TextBoxInnerLeftContent => Avalonia.Controls.TextBox.InnerLeftContentProperty;
+    public static StyledProperty<object> TextBoxInnerRightContent => Avalonia.Controls.TextBox.InnerRightContentProperty;
+    public static StyledProperty<bool> TextBoxRevealPassword => Avalonia.Controls.TextBox.RevealPasswordProperty;
+    public static DirectProperty<TextBox, bool> TextBoxCanCut => Avalonia.Controls.TextBox.CanCutProperty;
+    public static DirectProperty<TextBox, bool> TextBoxCanCopy => Avalonia.Controls.TextBox.CanCopyProperty;
+    public static DirectProperty<TextBox, bool> TextBoxCanPaste => Avalonia.Controls.TextBox.CanPasteProperty;
+    public static StyledProperty<bool> TextBoxIsUndoEnabled => Avalonia.Controls.TextBox.IsUndoEnabledProperty;
+    public static DirectProperty<TextBox, int> TextBoxUndoLimit => Avalonia.Controls.TextBox.UndoLimitProperty;
+    public static RoutedEvent<RoutedEventArgs> TextBoxCopyingToClipboard => Avalonia.Controls.TextBox.CopyingToClipboardEvent;
+    public static RoutedEvent<RoutedEventArgs> TextBoxCuttingToClipboard => Avalonia.Controls.TextBox.CuttingToClipboardEvent;
+    public static RoutedEvent<RoutedEventArgs> TextBoxPastingFromClipboard => Avalonia.Controls.TextBox.PastingFromClipboardEvent;
+
 
     // Visual
 
