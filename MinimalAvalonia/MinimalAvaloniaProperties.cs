@@ -109,6 +109,8 @@ public static class MinimalAvaloniaProperties
 
     // StackPanel
 
+    public static StyledProperty<double> StackPanelSpacing => Avalonia.Controls.StackPanel.SpacingProperty;
+    public static StyledProperty<Orientation> StackPanelOrientation => Avalonia.Controls.StackPanel.OrientationProperty;
 
     // StyledElement
 
