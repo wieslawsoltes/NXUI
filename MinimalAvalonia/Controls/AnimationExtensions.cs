@@ -127,4 +127,10 @@ public static class AnimationExtensions
         animation.Children.AddRange(keyFrames);
         return animation;
     }
+
+    public static T Animator<T>(this T animationSetter, Type value) where T : IAnimationSetter
+    {
+        Avalonia.Animation.Animation.SetAnimator(animationSetter, value);
+        return animationSetter;
+    }
 }
