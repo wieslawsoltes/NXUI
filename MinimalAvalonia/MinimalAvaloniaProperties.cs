@@ -103,6 +103,8 @@ public static class MinimalAvaloniaProperties
 
     // Label
 
+    public static DirectProperty<Label, IInputElement> LabelTarget = Avalonia.Controls.Label.TargetProperty;
+
     // Layoutable
 
     public static DirectProperty<Layoutable, Size> LayoutableDesiredSize => Avalonia.Layout.Layoutable.DesiredSizeProperty;
