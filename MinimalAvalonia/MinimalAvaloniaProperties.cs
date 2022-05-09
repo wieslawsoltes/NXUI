@@ -297,6 +297,11 @@ public static class MinimalAvaloniaProperties
     public static RoutedEvent WindowWindowClosed => Avalonia.Controls.Window.WindowClosedEvent;
     public static RoutedEvent WindowWindowOpened => Avalonia.Controls.Window.WindowOpenedEvent;
 
+    // WindowBase
+
+    public static DirectProperty<WindowBase, bool> WindowBaseIsActive => Avalonia.Controls.WindowBase.IsActiveProperty;
+    public static DirectProperty<WindowBase, WindowBase> WindowBaseOwner => Avalonia.Controls.WindowBase.OwnerProperty;
+    public static StyledProperty<bool> WindowBaseTopmost => Avalonia.Controls.WindowBase.TopmostProperty;
 
     // WrapPanel
 
