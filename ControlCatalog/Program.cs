@@ -129,7 +129,7 @@ AppBuilder.Configure<Application>()
 
         window.Styles.Add(style1);
         window.Styles.Add(style2);
-        
+
 #if DEBUG
         window.AttachDevTools();
 #endif
