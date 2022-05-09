@@ -206,7 +206,20 @@ public static class MinimalAvaloniaProperties
 
     // TextBlock
 
+    public static StyledProperty<IBrush> TextBlockBackground => Avalonia.Controls.TextBlock.BackgroundProperty;
+    public static StyledProperty<Thickness> TextBlockPadding => Avalonia.Controls.TextBlock.PaddingProperty;
+    public static AttachedProperty<FontFamily> TextBlockFontFamily => Avalonia.Controls.TextBlock.FontFamilyProperty;
+    public static AttachedProperty<double> TextBlockFontSize => Avalonia.Controls.TextBlock.FontSizeProperty;
+    public static AttachedProperty<FontStyle> TextBlockFontStyle => Avalonia.Controls.TextBlock.FontStyleProperty;
+    public static AttachedProperty<FontWeight> TextBlockFontWeight => Avalonia.Controls.TextBlock.FontWeightProperty;
+    public static AttachedProperty<IBrush> TextBlockForeground => Avalonia.Controls.TextBlock.ForegroundProperty;
+    public static StyledProperty<double> TextBlockLineHeight => Avalonia.Controls.TextBlock.LineHeightProperty;
+    public static StyledProperty<int> TextBlockMaxLines => Avalonia.Controls.TextBlock.MaxLinesProperty;
     public static DirectProperty<TextBlock, string> TextBlockText => Avalonia.Controls.TextBlock.TextProperty;
+    public static StyledProperty<TextAlignment> TextBlockTextAlignment => Avalonia.Controls.TextBlock.TextAlignmentProperty;
+    public static StyledProperty<TextWrapping> TextBlockTextWrapping => Avalonia.Controls.TextBlock.TextWrappingProperty;
+    public static StyledProperty<TextTrimming> TextBlockTextTrimming => Avalonia.Controls.TextBlock.TextTrimmingProperty;
+    public static StyledProperty<TextDecorationCollection> TextBlockTextDecorations => Avalonia.Controls.TextBlock.TextDecorationsProperty;
 
     // TextBox
 
