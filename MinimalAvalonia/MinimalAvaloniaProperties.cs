@@ -191,6 +191,18 @@ public static class MinimalAvaloniaProperties
     // TemplatedControl
 
     public static StyledProperty<IBrush?> TemplatedControlBackground => Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty;
+    public static StyledProperty<IBrush?> TemplatedControlBorderBrush => Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty;
+    public static StyledProperty<Thickness> TemplatedControlBorderThickness => Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty;
+    public static StyledProperty<CornerRadius> TemplatedControlCornerRadius => Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty;
+    public static StyledProperty<FontFamily> TemplatedControlFontFamily => Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty;
+    public static StyledProperty<double> TemplatedControlFontSize => Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty;
+    public static StyledProperty<FontStyle> TemplatedControlFontStyle => Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty;
+    public static StyledProperty<FontWeight> TemplatedControlFontWeight => Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty;
+    public static StyledProperty<IBrush?> TemplatedControlForeground => Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty;
+    public static StyledProperty<Thickness> TemplatedControlPadding => Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty;
+    public static StyledProperty<IControlTemplate?> TemplatedControlTemplate => Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty;
+    public static AttachedProperty<bool> TemplatedControlIsTemplateFocusTarget => Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty;
+    public static RoutedEvent<TemplateAppliedEventArgs> TemplatedControlTemplateApplied => Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent;
 
     // TextBlock
 
