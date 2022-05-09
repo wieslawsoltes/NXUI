@@ -100,6 +100,10 @@ public static class MinimalAvaloniaProperties
 
     // ItemsControl
 
+    public static DirectProperty<ItemsControl, IEnumerable> ItemsControlItems => Avalonia.Controls.ItemsControl.ItemsProperty;
+    public static DirectProperty<ItemsControl, int> ItemsControlItemCount => Avalonia.Controls.ItemsControl.ItemCountProperty;
+    public static StyledProperty<ITemplate<IPanel>> ItemsControlItemsPanel => Avalonia.Controls.ItemsControl.ItemsPanelProperty;
+    public static StyledProperty<IDataTemplate> ItemsControlItemTemplate => Avalonia.Controls.ItemsControl.ItemTemplateProperty;
 
     // Label
 
