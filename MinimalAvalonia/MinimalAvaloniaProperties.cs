@@ -254,6 +254,14 @@ public static class MinimalAvaloniaProperties
     public static RoutedEvent<RoutedEventArgs> TextBoxCuttingToClipboard => Avalonia.Controls.TextBox.CuttingToClipboardEvent;
     public static RoutedEvent<RoutedEventArgs> TextBoxPastingFromClipboard => Avalonia.Controls.TextBox.PastingFromClipboardEvent;
 
+    // TopLevel
+
+    public static DirectProperty<TopLevel, Size> TopLevelClientSize => Avalonia.Controls.TopLevel.ClientSizeProperty;
+    public static DirectProperty<TopLevel, Size?> TopLevelFrameSize => Avalonia.Controls.TopLevel.FrameSizeProperty;
+    public static StyledProperty<IInputElement> TopLevelPointerOverElement => Avalonia.Controls.TopLevel.PointerOverElementProperty;
+    public static StyledProperty<WindowTransparencyLevel> TopLevelTransparencyLevelHint => Avalonia.Controls.TopLevel.TransparencyLevelHintProperty;
+    public static DirectProperty<TopLevel, WindowTransparencyLevel> TopLevelActualTransparencyLevel => Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty;
+    public static StyledProperty<IBrush> TopLevelTransparencyBackgroundFallback => Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty;
 
     // Visual
 
