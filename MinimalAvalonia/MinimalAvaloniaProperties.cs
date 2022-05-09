@@ -65,6 +65,35 @@ public static class MinimalAvaloniaProperties
 
     // HeaderedContentControl
 
+    // InputElement
+
+    public static StyledProperty<bool> InputElementFocusable => Avalonia.Input.InputElement.FocusableProperty;
+    public static StyledProperty<bool> InputElementIsEnabled => Avalonia.Input.InputElement.IsEnabledProperty;
+    public static DirectProperty<InputElement, bool> InputElementIsEffectivelyEnabled => Avalonia.Input.InputElement.IsEffectivelyEnabledProperty;
+    public static StyledProperty<Cursor?> InputElementCursor => Avalonia.Input.InputElement.CursorProperty;
+    public static DirectProperty<InputElement, bool> InputElementIsKeyboardFocusWithin => Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty;
+    public static DirectProperty<InputElement, bool> InputElementIsFocused => Avalonia.Input.InputElement.IsFocusedProperty;
+    public static StyledProperty<bool> InputElementIsHitTestVisible => Avalonia.Input.InputElement.IsHitTestVisibleProperty;
+    public static DirectProperty<InputElement, bool> InputElementIsPointerOver => Avalonia.Input.InputElement.IsPointerOverProperty;
+    public static StyledProperty<bool> InputElementIsTabStop => Avalonia.Input.InputElement.IsTabStopProperty;
+    public static RoutedEvent<GotFocusEventArgs> InputElementGotFocus => Avalonia.Input.InputElement.GotFocusEvent;
+    public static RoutedEvent<RoutedEventArgs> InputElementLostFocus => Avalonia.Input.InputElement.LostFocusEvent;
+    public static RoutedEvent<KeyEventArgs> InputElementKeyDown => Avalonia.Input.InputElement.KeyDownEvent;
+    public static RoutedEvent<KeyEventArgs> InputElementKeyUp => Avalonia.Input.InputElement.KeyUpEvent;
+    public static StyledProperty<int> InputElementTabIndex => Avalonia.Input.InputElement.TabIndexProperty;
+    public static RoutedEvent<TextInputEventArgs> InputElementTextInput => Avalonia.Input.InputElement.TextInputEvent;
+    public static RoutedEvent<TextInputMethodClientRequestedEventArgs> InputElementTextInputMethodClientRequested => Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent;
+    public static RoutedEvent<TextInputOptionsQueryEventArgs> InputElementTextInputOptionsQuery => Avalonia.Input.InputElement.TextInputOptionsQueryEvent;
+    public static RoutedEvent<PointerEventArgs> InputElementPointerEnter => Avalonia.Input.InputElement.PointerEnterEvent;
+    public static RoutedEvent<PointerEventArgs> InputElementPointerLeave => Avalonia.Input.InputElement.PointerLeaveEvent;
+    public static RoutedEvent<PointerEventArgs> InputElementPointerMoved => Avalonia.Input.InputElement.PointerMovedEvent;
+    public static RoutedEvent<PointerPressedEventArgs> InputElementPointerPressed => Avalonia.Input.InputElement.PointerPressedEvent;
+    public static RoutedEvent<PointerReleasedEventArgs> InputElementPointerReleased => Avalonia.Input.InputElement.PointerReleasedEvent;
+    public static RoutedEvent<PointerCaptureLostEventArgs> InputElementPointerCaptureLost => Avalonia.Input.InputElement.PointerCaptureLostEvent;
+    public static RoutedEvent<PointerWheelEventArgs> InputElementPointerWheelChanged => Avalonia.Input.InputElement.PointerWheelChangedEvent;
+    public static RoutedEvent<RoutedEventArgs> InputElementTapped => Avalonia.Input.InputElement.TappedEvent;
+    public static RoutedEvent<RoutedEventArgs> InputElementDoubleTapped => Avalonia.Input.InputElement.DoubleTappedEvent;
+
     // ItemsControl
 
     // KeyFrame
