@@ -26,7 +26,8 @@
     <Using Include="Avalonia.Styling" />
     <Using Include="Avalonia.Themes.Fluent" />
     <Using Include="MinimalAvalonia" />
-    <Using Include="MinimalAvalonia.MinimalAvalonia" Static="true" />
     <Using Include="MinimalAvalonia.Controls" />
+    <Using Include="MinimalAvalonia.MinimalAvaloniaBuilders" Static="true" />
+    <Using Include="MinimalAvalonia.MinimalAvaloniaProperties" Static="true" />
   </ItemGroup>
 </Project>
