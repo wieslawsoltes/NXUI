@@ -22,7 +22,7 @@ public static class MinimalAvaloniaProperties
 
     // ContentControl
 
-    public static readonly StyledProperty<object> ContentControlContent = Avalonia.Controls.ContentControl.ContentProperty;
+    public static StyledProperty<object> ContentControlContent => Avalonia.Controls.ContentControl.ContentProperty;
 
     // Control
 
@@ -54,21 +54,21 @@ public static class MinimalAvaloniaProperties
 
     // TemplatedControl
 
-    public static readonly StyledProperty<IBrush?> TemplatedControlBackground = Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty;
+    public static StyledProperty<IBrush?> TemplatedControlBackground => Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty;
 
     // TextBlock
 
-    public static readonly DirectProperty<TextBlock, string> TextBlockText = Avalonia.Controls.TextBlock.TextProperty;
+    public static DirectProperty<TextBlock, string> TextBlockText => Avalonia.Controls.TextBlock.TextProperty;
 
     // TextBox
 
-    public static readonly DirectProperty<TextBox, string> TextBoxText = Avalonia.Controls.TextBox.TextProperty;
+    public static DirectProperty<TextBox, string> TextBoxText => Avalonia.Controls.TextBox.TextProperty;
 
     // Visual
 
-    public static readonly StyledProperty<bool> VisualClipToBounds = Avalonia.Visual.ClipToBoundsProperty;
+    public static StyledProperty<bool> VisualClipToBounds => Avalonia.Visual.ClipToBoundsProperty;
 
     // Window
 
-    public static readonly StyledProperty<string> WindowTitle = Avalonia.Controls.Window.TitleProperty;
+    public static StyledProperty<string> WindowTitle => Avalonia.Controls.Window.TitleProperty;
 }
