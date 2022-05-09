@@ -16,8 +16,6 @@ public static class MinimalAvaloniaProperties
     public static readonly DirectProperty<Animation, TimeSpan> AnimationDelayBetweenIterations = Avalonia.Animation.Animation.DelayBetweenIterationsProperty;
     public static readonly DirectProperty<Animation, double> AnimationSpeedRatio = Avalonia.Animation.Animation.SpeedRatioProperty;
 
-    // AnimationSetter
-
     // Border
 
     // Button
