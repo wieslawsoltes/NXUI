@@ -176,6 +176,13 @@ public static class MinimalAvaloniaProperties
 
     // TabControl
 
+    public static StyledProperty<Dock> TabControlTabStripPlacement => Avalonia.Controls.TabControl.TabStripPlacementProperty;
+    public static StyledProperty<HorizontalAlignment> TabControlHorizontalContentAlignment => Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty;
+    public static StyledProperty<VerticalAlignment> TabControlVerticalContentAlignment => Avalonia.Controls.TabControl.VerticalContentAlignmentProperty;
+    public static StyledProperty<IDataTemplate> TabControlContentTemplate => Avalonia.Controls.TabControl.ContentTemplateProperty;
+    public static StyledProperty<object> TabControlSelectedContent => Avalonia.Controls.TabControl.SelectedContentProperty;
+    public static StyledProperty<IDataTemplate> TabControlSelectedContentTemplate => Avalonia.Controls.TabControl.SelectedContentTemplateProperty;
+
     // TabItem
 
     // TemplatedControl
