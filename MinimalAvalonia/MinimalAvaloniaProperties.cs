@@ -109,9 +109,8 @@ public static class MinimalAvaloniaProperties
 
     // StackPanel
 
-    // StyledElement
 
-    // Style
+    // StyledElement
 
     // TabControl
 
