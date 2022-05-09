@@ -26,31 +26,31 @@ public static class TextBlockExtensions
         return textBlock;
     }
 
-    public static T FontFamily<T>(this T textBlock, FontFamily fontFamily) where T : TextBlock
+    public static T FontFamily<T>(this T textBlock, FontFamily fontFamily) where T : Control
     {
         textBlock[Avalonia.Controls.TextBlock.FontFamilyProperty] = fontFamily;
         return textBlock;
     }
 
-    public static T FontSize<T>(this T textBlock, double fontSize) where T : TextBlock
+    public static T FontSize<T>(this T textBlock, double fontSize) where T : Control
     {
         textBlock[Avalonia.Controls.TextBlock.FontSizeProperty] = fontSize;
         return textBlock;
     }
 
-    public static T FontStyle<T>(this T textBlock, FontStyle fontStyle) where T : TextBlock
+    public static T FontStyle<T>(this T textBlock, FontStyle fontStyle) where T : Control
     {
         textBlock[Avalonia.Controls.TextBlock.FontStyleProperty] = fontStyle;
         return textBlock;
     }
 
-    public static T FontWeight<T>(this T textBlock, FontWeight fontWeight) where T : TextBlock
+    public static T FontWeight<T>(this T textBlock, FontWeight fontWeight) where T : Control
     {
         textBlock[Avalonia.Controls.TextBlock.FontWeightProperty] = fontWeight;
         return textBlock;
     }
 
-    public static T Foreground<T>(this T textBlock, IBrush foreground) where T : TextBlock
+    public static T Foreground<T>(this T textBlock, IBrush foreground) where T : Control
     {
         textBlock[Avalonia.Controls.TextBlock.ForegroundProperty] = foreground;
         return textBlock;
