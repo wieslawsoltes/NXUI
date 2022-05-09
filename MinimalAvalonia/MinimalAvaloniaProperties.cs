@@ -185,6 +185,9 @@ public static class MinimalAvaloniaProperties
 
     // TabItem
 
+    public static StyledProperty<Dock> TabItemTabStripPlacement => Avalonia.Controls.TabItem.TabStripPlacementProperty;
+    public static StyledProperty<bool> TabItemIsSelected => Avalonia.Controls.TabItem.IsSelectedProperty;
+
     // TemplatedControl
 
     public static StyledProperty<IBrush?> TemplatedControlBackground => Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty;
