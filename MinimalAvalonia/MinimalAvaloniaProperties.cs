@@ -279,7 +279,24 @@ public static class MinimalAvaloniaProperties
 
     // Window
 
+    public static StyledProperty<SizeToContent> WindowSizeToContent => Avalonia.Controls.Window.SizeToContentProperty;
+    public static StyledProperty<bool> WindowExtendClientAreaToDecorationsHint => Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty;
+    public static StyledProperty<ExtendClientAreaChromeHints> WindowExtendClientAreaChromeHints => Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty;
+    public static StyledProperty<double> WindowExtendClientAreaTitleBarHeightHint => Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty;
+    public static DirectProperty<Window, bool> WindowIsExtendedIntoWindowDecorations => Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty;
+    public static DirectProperty<Window, Thickness> WindowWindowDecorationMargin => Avalonia.Controls.Window.WindowDecorationMarginProperty;
+    public static DirectProperty<Window, Thickness> WindowOffScreenMargin => Avalonia.Controls.Window.OffScreenMarginProperty;
+    public static StyledProperty<SystemDecorations> WindowSystemDecorations => Avalonia.Controls.Window.SystemDecorationsProperty;
+    public static StyledProperty<bool> WindowShowActivated => Avalonia.Controls.Window.ShowActivatedProperty;
+    public static StyledProperty<bool> WindowShowInTaskbar => Avalonia.Controls.Window.ShowInTaskbarProperty;
+    public static StyledProperty<WindowState> WindowWindowState => Avalonia.Controls.Window.WindowStateProperty;
     public static StyledProperty<string> WindowTitle => Avalonia.Controls.Window.TitleProperty;
+    public static StyledProperty<WindowIcon> WindowIcon => Avalonia.Controls.Window.IconProperty;
+    public static DirectProperty<Window, WindowStartupLocation> WindowWindowStartupLocation => Avalonia.Controls.Window.WindowStartupLocationProperty;
+    public static StyledProperty<bool> WindowCanResize => Avalonia.Controls.Window.CanResizeProperty;
+    public static RoutedEvent WindowWindowClosed => Avalonia.Controls.Window.WindowClosedEvent;
+    public static RoutedEvent WindowWindowOpened => Avalonia.Controls.Window.WindowOpenedEvent;
+
 
     // WrapPanel
 
