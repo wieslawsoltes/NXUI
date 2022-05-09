@@ -48,6 +48,9 @@ public static class MinimalAvaloniaProperties
     // ContentControl
 
     public static StyledProperty<object> ContentControlContent => Avalonia.Controls.ContentControl.ContentProperty;
+    public static StyledProperty<IDataTemplate> ContentControlContentTemplate => Avalonia.Controls.ContentControl.ContentTemplateProperty;
+    public static StyledProperty<HorizontalAlignment> ContentControlHorizontalContentAlignment => Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty;
+    public static StyledProperty<VerticalAlignment> ContentControlVerticalContentAlignment => Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty;
 
     // Control
 
