@@ -46,9 +46,8 @@ public static class MinimalAvaloniaProperties
 
     // Control
 
-    // Decorator
 
-    // Easing
+    // Decorator
 
     // HeaderedContentControl
 
