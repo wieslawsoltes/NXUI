@@ -6,6 +6,7 @@
     <Using Include="System.Collections.ObjectModel" />
     <Using Include="System.Collections" />
     <Using Include="System.Diagnostics" />
+    <Using Include="System.Diagnostics.CodeAnalysis" />
     <Using Include="System.Reactive.Linq" />
     <Using Include="System.Reactive.Subjects" />
     <Using Include="System.Reactive.Disposables" />
@@ -25,8 +26,10 @@
     <Using Include="Avalonia.Input.TextInput" />
     <Using Include="Avalonia.Layout" />
     <Using Include="Avalonia.Media" />
+    <Using Include="Avalonia.Platform" />
     <Using Include="Avalonia.Styling" />
     <Using Include="Avalonia.Themes.Fluent" />
+    <Using Include="Avalonia.VisualTree" />
     <Using Include="MinimalAvalonia" />
     <Using Include="MinimalAvalonia.Controls" />
     <Using Include="MinimalAvalonia.MinimalAvaloniaBuilders" Static="true" />
