@@ -100,7 +100,6 @@ public static class MinimalAvaloniaProperties
 
     // ItemsControl
 
-    // KeyFrame
 
     // Label
 
