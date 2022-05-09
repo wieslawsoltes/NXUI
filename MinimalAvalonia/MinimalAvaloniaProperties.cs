@@ -54,6 +54,12 @@ public static class MinimalAvaloniaProperties
 
     // Control
 
+    public static StyledProperty<ITemplate<IControl>?> ControlFocusAdorner => Avalonia.Controls.Control.FocusAdornerProperty;
+    public static StyledProperty<object?> ControlTag => Avalonia.Controls.Control.TagProperty;
+    public static StyledProperty<ContextMenu?> ControlContextMenu => Avalonia.Controls.Control.ContextMenuProperty;
+    public static StyledProperty<FlyoutBase?> ControlContextFlyout => Avalonia.Controls.Control.ContextFlyoutProperty;
+    public static RoutedEvent<RequestBringIntoViewEventArgs> ControlRequestBringIntoView => Avalonia.Controls.Control.RequestBringIntoViewEvent;
+    public static RoutedEvent<ContextRequestedEventArgs> ControlContextRequested => Avalonia.Controls.Control.ContextRequestedEvent;
 
     // Decorator
 
