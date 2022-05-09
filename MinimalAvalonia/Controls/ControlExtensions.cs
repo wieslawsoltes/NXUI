@@ -9,4 +9,10 @@ public static class ControlExtensions
     // ContextFlyoutProperty
     // RequestBringIntoViewEvent
     // ContextRequestedEvent
+
+    public static T DataTemplates<T>(this T control, params IDataTemplate[] dataTemplates) where T : Control
+    {
+        control.DataTemplates.AddRange(dataTemplates);
+        return control;
+    }
 }
