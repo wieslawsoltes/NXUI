@@ -124,8 +124,8 @@ AppBuilder.Configure<Application>()
                     .Duration(TimeSpan.FromSeconds(5))
                     .IterationCountInfinite()
                     .KeyFrames(
-                        new KeyFrame().Cue(0.0).Setter(RotateTransform.AngleProperty, 0),
-                        new KeyFrame().Cue(1.0).Setter(RotateTransform.AngleProperty, 360)))
+                        new KeyFrame().Cue(0.0).Setter(RotateTransform.AngleProperty, 0d),
+                        new KeyFrame().Cue(1.0).Setter(RotateTransform.AngleProperty, 360d)))
             .Ref(out var style2);
 
         window.Styles.Add(style1);
