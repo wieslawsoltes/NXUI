@@ -22,6 +22,7 @@
     <Using Include="Avalonia.Data" />
     <Using Include="Avalonia.Interactivity" />
     <Using Include="Avalonia.Input" />
+    <Using Include="Avalonia.Input.TextInput" />
     <Using Include="Avalonia.Layout" />
     <Using Include="Avalonia.Media" />
     <Using Include="Avalonia.Styling" />
