@@ -44,6 +44,12 @@ public static class MinimalAvaloniaProperties
     public static StyledProperty<bool> ButtonIsPressed => Avalonia.Controls.Button.IsPressedProperty;
     public static StyledProperty<FlyoutBase> ButtonFlyout => Avalonia.Controls.Button.FlyoutProperty;
 
+    // TODO: CheckBox
+
+    // TODO: ComboBox
+
+    // TODO: ComboBoxItem
+
     // ContentControl
 
     public static StyledProperty<object> ContentControlContent => Avalonia.Controls.ContentControl.ContentProperty;
@@ -138,9 +144,23 @@ public static class MinimalAvaloniaProperties
     public static StyledProperty<VerticalAlignment> LayoutableVerticalAlignment => Avalonia.Layout.Layoutable.VerticalAlignmentProperty;
     public static StyledProperty<bool> LayoutableUseLayoutRounding => Avalonia.Layout.Layoutable.UseLayoutRoundingProperty;
 
+    // TODO: ListBox
+
+    // TODO: ListBoxItem
+
+    // TODO: Menu
+
+    // TODO: MenuItem
+
     // Panel
 
     public static StyledProperty<IBrush> PanelBackground => Avalonia.Controls.Panel.BackgroundProperty;
+
+    // TODO: RadioButton
+
+    // TODO: SelectingItemsControl
+
+    // TODO: Separator
 
     // StackPanel
 
