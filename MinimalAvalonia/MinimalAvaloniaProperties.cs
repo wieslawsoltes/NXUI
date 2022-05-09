@@ -105,6 +105,18 @@ public static class MinimalAvaloniaProperties
 
     // Layoutable
 
+    public static DirectProperty<Layoutable, Size> LayoutableDesiredSize => Avalonia.Layout.Layoutable.DesiredSizeProperty;
+    public static StyledProperty<double> LayoutableWidth => Avalonia.Layout.Layoutable.WidthProperty;
+    public static StyledProperty<double> LayoutableHeight => Avalonia.Layout.Layoutable.HeightProperty;
+    public static StyledProperty<double> LayoutableMinWidth => Avalonia.Layout.Layoutable.MinWidthProperty;
+    public static StyledProperty<double> LayoutableMaxWidth => Avalonia.Layout.Layoutable.MaxWidthProperty;
+    public static StyledProperty<double> LayoutableMinHeight => Avalonia.Layout.Layoutable.MinHeightProperty;
+    public static StyledProperty<double> LayoutableMaxHeight => Avalonia.Layout.Layoutable.MaxHeightProperty;
+    public static StyledProperty<Thickness> LayoutableMargin => Avalonia.Layout.Layoutable.MarginProperty;
+    public static StyledProperty<HorizontalAlignment> LayoutableHorizontalAlignment => Avalonia.Layout.Layoutable.HorizontalAlignmentProperty;
+    public static StyledProperty<VerticalAlignment> LayoutableVerticalAlignment => Avalonia.Layout.Layoutable.VerticalAlignmentProperty;
+    public static StyledProperty<bool> LayoutableUseLayoutRounding => Avalonia.Layout.Layoutable.UseLayoutRoundingProperty;
+
     // Panel
 
     public static StyledProperty<IBrush> PanelBackground => Avalonia.Controls.Panel.BackgroundProperty;
