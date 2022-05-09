@@ -25,6 +25,21 @@ public static class AppBuilderExtensions
         return classicDesktopStyleApplicationLifetime.Start(args);
     }
 
+    public static int StartWithClassicDesktopLifetime<T>(this T builder, Func<Window> callback, string[]? args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
+        where T : AppBuilderBase<T>, new()
+    {
+        var classicDesktopStyleApplicationLifetime = new ClassicDesktopStyleApplicationLifetime
+        {
+            Args = args,
+            ShutdownMode = shutdownMode
+        };
+
+        builder.SetupWithLifetime(classicDesktopStyleApplicationLifetime);
+
+        classicDesktopStyleApplicationLifetime.MainWindow = callback?.Invoke();
+
+        return classicDesktopStyleApplicationLifetime.Start(args);
+    }
     public static TAppBuilder WithApplicationName<TAppBuilder>(this TAppBuilder builder, string name)
         where TAppBuilder : AppBuilderBase<TAppBuilder>, new()
     {
