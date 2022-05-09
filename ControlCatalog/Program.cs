@@ -118,7 +118,7 @@ AppBuilder.Configure<Application>()
 
         new Style()
             .Selector(x => x.OfType<Label>().Class("animation"))
-            .Animation(
+            .Animations(
                 new Animation()
                     .Duration(TimeSpan.FromSeconds(5))
                     .IterationCountInfinite()

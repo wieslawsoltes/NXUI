@@ -29,7 +29,7 @@ public static class StyleExtensions
         return style;
     }
 
-    public static T Resource<T>(this T style, object key, object value) where T : Style
+    public static T Resources<T>(this T style, object key, object value) where T : Style
     {
         style.Resources[key] = value;
         return style;
@@ -44,7 +44,7 @@ public static class StyleExtensions
         return style;
     }
 
-    public static T Animation<T>(this T style, IAnimation animation) where T : Style
+    public static T Animations<T>(this T style, IAnimation animation) where T : Style
     {
         style.Animations.Add(animation);
         return style;
