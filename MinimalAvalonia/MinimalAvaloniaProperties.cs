@@ -30,6 +30,16 @@ public static class MinimalAvaloniaProperties
 
     // Button
 
+    public static StyledProperty<ClickMode> ButtonClickMode => Avalonia.Controls.Button.ClickModeProperty;
+    public static DirectProperty<Button, ICommand> ButtonCommand => Avalonia.Controls.Button.CommandProperty;
+    public static StyledProperty<KeyGesture> ButtonHotKey => Avalonia.Controls.Button.HotKeyProperty;
+    public static StyledProperty<object> ButtonCommandParameter => Avalonia.Controls.Button.CommandParameterProperty;
+    public static StyledProperty<bool> ButtonIsDefault => Avalonia.Controls.Button.IsDefaultProperty;
+    public static StyledProperty<bool> ButtonIsCancel => Avalonia.Controls.Button.IsCancelProperty;
+    public static RoutedEvent<RoutedEventArgs> ButtonClick => Avalonia.Controls.Button.ClickEvent;
+    public static StyledProperty<bool> ButtonIsPressed => Avalonia.Controls.Button.IsPressedProperty;
+    public static StyledProperty<FlyoutBase> ButtonFlyout => Avalonia.Controls.Button.FlyoutProperty;
+
     // ContentControl
 
     public static StyledProperty<object> ContentControlContent => Avalonia.Controls.ContentControl.ContentProperty;
