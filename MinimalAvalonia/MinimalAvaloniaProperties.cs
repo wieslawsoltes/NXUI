@@ -18,6 +18,16 @@ public static class MinimalAvaloniaProperties
 
     // Border
 
+    public static StyledProperty<IBrush> BorderBackground => Avalonia.Controls.Border.BackgroundProperty;
+    public static StyledProperty<IBrush> BorderBorderBrush => Avalonia.Controls.Border.BorderBrushProperty;
+    public static StyledProperty<Thickness> BorderBorderThickness => Avalonia.Controls.Border.BorderThicknessProperty;
+    public static StyledProperty<CornerRadius> BorderCornerRadius => Avalonia.Controls.Border.CornerRadiusProperty;
+    public static StyledProperty<BoxShadows> BorderBoxShadow => Avalonia.Controls.Border.BoxShadowProperty;
+    public static StyledProperty<double> BorderBorderDashOffset => Avalonia.Controls.Border.BorderDashOffsetProperty;
+    public static StyledProperty<AvaloniaList<double>?> BorderBorderDashArray => Avalonia.Controls.Border.BorderDashArrayProperty;
+    public static StyledProperty<PenLineCap> BorderBorderLineCap => Avalonia.Controls.Border.BorderLineCapProperty;
+    public static StyledProperty<PenLineJoin> BorderBorderLineJoin => Avalonia.Controls.Border.BorderLineJoinProperty;
+
     // Button
 
     // ContentControl
