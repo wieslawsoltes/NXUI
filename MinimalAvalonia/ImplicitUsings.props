@@ -8,6 +8,7 @@
     <Using Include="System.Diagnostics" />
     <Using Include="System.Reactive.Linq" />
     <Using Include="System.Reactive.Subjects" />
+    <Using Include="System.Reactive.Disposables" />
     <Using Include="Avalonia" />
     <Using Include="Avalonia.Animation" />
     <Using Include="Avalonia.Animation.Easings" />
