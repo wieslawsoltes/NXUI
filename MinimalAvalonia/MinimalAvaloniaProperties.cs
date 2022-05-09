@@ -169,6 +169,11 @@ public static class MinimalAvaloniaProperties
 
     // StyledElement
 
+    public static StyledProperty<object?> StyledElementDataContext => Avalonia.StyledElement.DataContextProperty;
+    public static DirectProperty<StyledElement, string?> StyledElementName => Avalonia.StyledElement.NameProperty;
+    public static DirectProperty<StyledElement, IStyledElement?> StyledElementParent => Avalonia.StyledElement.ParentProperty;
+    public static DirectProperty<StyledElement, ITemplatedControl?> StyledElementTemplatedParent => Avalonia.StyledElement.TemplatedParentProperty;
+
     // TabControl
 
     // TabItem
