@@ -28,7 +28,7 @@ public static class WindowExtensions
 
     public static Window Title(this Window window, string title)
     {
-        window.Title = title;
+        window[Avalonia.Controls.Window.TitleProperty] = title;
         return window;
     }
 
