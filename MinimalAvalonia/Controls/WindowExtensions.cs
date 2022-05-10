@@ -32,6 +32,19 @@ public static class WindowExtensions
         return window;
     }
 
+    public static Window Title(this Window window, IBinding binding, BindingMode mode = BindingMode.TwoWay)
+    {
+        var property = Avalonia.Controls.Window.TitleProperty;
+        window[property.Bind().WithMode(mode)] = binding;
+        return window;
+    }
+
+    public static IBinding Title(this Window window, BindingMode mode = BindingMode.TwoWay)
+    {
+        var property = Avalonia.Controls.Window.TitleProperty;
+        return window[property.Bind().WithMode(mode)];
+    }
+
     // TODO:
     // HasSystemDecorationsProperty
     // ExtendClientAreaToDecorationsHintProperty
