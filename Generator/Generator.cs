@@ -15,7 +15,9 @@ public static void Generate()
         from domainAssembly in assemblies
         where domainAssembly?.FullName is not null && domainAssembly.FullName.StartsWith("Avalonia") 
         from assemblyType in domainAssembly.GetTypes()
-        where assemblyType is not null && assemblyType.IsSubclassOf(typeof(AvaloniaObject)) &&! assemblyType.IsAbstract
+        where assemblyType is not null 
+              && assemblyType.IsSubclassOf(typeof(AvaloniaObject))
+              &&! assemblyType.IsAbstract
         select assemblyType).ToArray();
 
     var classes = new List<Class>();
