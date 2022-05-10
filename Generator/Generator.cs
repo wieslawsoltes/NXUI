@@ -43,12 +43,21 @@ public static void Generate()
             if (property.OwnerType == type)
             {
                 //Console.WriteLine($"    {property.Name}, {property.OwnerType.Name}, {property.PropertyType.Name}, {property.GetType()}, {property.IsReadOnly}");
-                var p = new Property(property.Name, property.OwnerType.Name, property.PropertyType.Name, FixType(property.GetType().ToString()), property.IsReadOnly);
+                var p = new Property(
+                    property.Name, 
+                    FixType(property.OwnerType.ToString()), 
+                    FixType(property.PropertyType.ToString()), 
+                    FixType(property.GetType().ToString()), 
+                    property.IsReadOnly);
                 Properties.Add(p);
             }  
         }
 
-        var c = new Class(type.Name, type.ToString(), Properties.ToArray());
+        var c = new Class(
+            type.Name, 
+            FixType(type.ToString()), 
+            Properties.ToArray());
+
         classes.Add(c);
     }
 
@@ -62,13 +71,13 @@ string propertyMethodsTemplate = @"    //
         return obj;
     }
 
-    public static T %Name%<T>(this T obj, IBinding binding, BindingMode mode = BindingMode.TwoWay) where T : %OwnerType%
+    public static T %Name%<T>(this T obj, Avalonia.Data.IBinding binding, BindingMode mode = BindingMode.TwoWay) where T : %OwnerType%
     {
         obj[%ClassType%.%Name%Property.Bind().WithMode(mode)] = binding;
         return obj;
     }
 
-    public static IBinding %Name%(this %OwnerType% obj, BindingMode mode = BindingMode.TwoWay)
+    public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, BindingMode mode = BindingMode.TwoWay)
     {
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
     }";
@@ -77,7 +86,7 @@ string propertyMethodsTemplateReadOnly = @"    //
     // %Name%Property
     //
 
-    public static IBinding %Name%(this %OwnerType% obj, BindingMode mode = BindingMode.OneWay)
+    public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, BindingMode mode = BindingMode.OneWay)
     {
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
     }";
