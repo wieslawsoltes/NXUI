@@ -4,7 +4,7 @@ using Avalonia;
 namespace Generator;
 
 internal record Property(string Name, string OwnerType, string ValueType, string PropertyType, bool IsReadOnly = false);
-internal record Class(string Name, string Type, Property[] Properties);
+internal record Class(string Name, string Type, Property[] Properties, bool IsSealed = false);
 
 internal class ExtensionsGenerator
 { 
@@ -62,7 +62,8 @@ public static void Generate()
         var c = new Class(
             type.Name, 
             FixType(type.ToString()), 
-            Properties.ToArray());
+            Properties.ToArray(),
+            type.IsSealed);
 
         classes.Add(c);
     }
