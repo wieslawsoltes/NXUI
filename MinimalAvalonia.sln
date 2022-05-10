@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counters", "7GUIs\Counters\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlCatalog", "ControlCatalog\ControlCatalog.csproj", "{35EA80CF-B8BD-4DBA-9A2E-627A1A82A291}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "Generator\Generator.csproj", "{88DA60A3-1A64-427D-B624-4F42BD852BB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{35EA80CF-B8BD-4DBA-9A2E-627A1A82A291}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35EA80CF-B8BD-4DBA-9A2E-627A1A82A291}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35EA80CF-B8BD-4DBA-9A2E-627A1A82A291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DA60A3-1A64-427D-B624-4F42BD852BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DA60A3-1A64-427D-B624-4F42BD852BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DA60A3-1A64-427D-B624-4F42BD852BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DA60A3-1A64-427D-B624-4F42BD852BB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{551D61DA-C4A3-47F1-ACF3-50F591527CC7} = {6E47BA4B-2405-4281-8A1C-892A4D802A18}
