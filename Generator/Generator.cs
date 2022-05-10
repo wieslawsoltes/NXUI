@@ -34,6 +34,7 @@ public static void Generate()
             return t
                 .Replace("`1[", "<")
                 .Replace("`2[", "<")
+                .Replace("`3[", "<")
                 .Replace("]", ">");
         }
 
