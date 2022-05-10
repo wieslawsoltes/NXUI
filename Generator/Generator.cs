@@ -42,7 +42,7 @@ public static void Generate()
 
         foreach (var property in properties)
         {
-            if (property.OwnerType == type)
+            if (property.OwnerType == type && property.PropertyType.IsPublic)
             {
                 //Console.WriteLine($"    {property.Name}, {property.OwnerType.Name}, {property.PropertyType.Name}, {property.GetType()}, {property.IsReadOnly}");
                 var p = new Property(
