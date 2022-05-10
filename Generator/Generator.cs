@@ -71,13 +71,13 @@ string propertyMethodsTemplate = @"    //
         return obj;
     }
 
-    public static T %Name%<T>(this T obj, Avalonia.Data.IBinding binding, BindingMode mode = BindingMode.TwoWay) where T : %OwnerType%
+    public static T %Name%<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : %OwnerType%
     {
         obj[%ClassType%.%Name%Property.Bind().WithMode(mode)] = binding;
         return obj;
     }
 
-    public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, BindingMode mode = BindingMode.TwoWay)
+    public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
     }";
@@ -86,7 +86,7 @@ string propertyMethodsTemplateReadOnly = @"    //
     // %Name%Property
     //
 
-    public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, BindingMode mode = BindingMode.OneWay)
+    public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
     }";
