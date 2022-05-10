@@ -37,7 +37,8 @@ public static void Generate()
                 .Replace("`1[", "<")
                 .Replace("`2[", "<")
                 .Replace("`3[", "<")
-                .Replace("]", ">");
+                .Replace("]", ">")
+                .Replace("+", ".");
         }
 
         foreach (var property in properties)
