@@ -43,6 +43,9 @@ public static void Generate()
 
         foreach (var property in properties)
         {
+            if (!(type.GetField($"{property.Name}Property")?.IsPublic ?? false))
+                continue;
+
             if (property.OwnerType == type && property.PropertyType.IsPublic)
             {
                 //Console.WriteLine($"    {property.Name}, {property.OwnerType.Name}, {property.PropertyType.Name}, {property.GetType()}, {property.IsReadOnly}");
