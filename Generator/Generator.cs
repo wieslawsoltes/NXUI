@@ -89,6 +89,27 @@ string propertyMethodsTemplate = @"    //
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
     }";
 
+string propertyMethodsTemplateSealed = @"    //
+    // %Name%Property
+    //
+
+    public static %OwnerType% %Name%(this %OwnerType% obj, %ValueType% value)
+    {
+        obj[%ClassType%.%Name%Property] = value;
+        return obj;
+    }
+
+    public static %OwnerType% %Name%(this %OwnerType% obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[%ClassType%.%Name%Property.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
+    }";
+
 string propertyMethodsTemplateReadOnly = @"    //
     // %Name%Property
     //
@@ -137,7 +158,8 @@ foreach (var c in classes)
     for (var i = 0; i < c.Properties.Length; i++)
     {
         var p = c.Properties[i];
-        var propertyBuilder = new StringBuilder(p.IsReadOnly ? propertyMethodsTemplateReadOnly : propertyMethodsTemplate);
+        var template = p.IsReadOnly ? propertyMethodsTemplateReadOnly : c.IsSealed ? propertyMethodsTemplateSealed : propertyMethodsTemplate;
+        var propertyBuilder = new StringBuilder(template);
         propertyBuilder.Replace("%ClassType%", c.Type);
         propertyBuilder.Replace("%Name%", p.Name);
         propertyBuilder.Replace("%OwnerType%", p.OwnerType);
