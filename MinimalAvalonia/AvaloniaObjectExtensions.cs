@@ -25,6 +25,39 @@ public static class AvaloniaObjectExtensions
         return target;
     }
 
+    public static T BindOneWay<T>(
+        this T target, 
+        AvaloniaProperty targetProperty, 
+        IObservable<BindingValue<T>> source, 
+        CompositeDisposable? compositeDisposable = null) where T : IAvaloniaObject
+    {
+        var targetDisposable = target.Bind(targetProperty, source.ToBinding());
+        compositeDisposable?.Add(targetDisposable);
+        return target;
+    }
+
+    public static T BindOneWay<T>(
+        this T target, 
+        AvaloniaProperty<T> targetProperty, 
+        IObservable<object?> source, 
+        CompositeDisposable? compositeDisposable = null) where T : IAvaloniaObject
+    {
+        var targetDisposable = target.Bind(targetProperty, source);
+        compositeDisposable?.Add(targetDisposable);
+        return target;
+    }
+
+    public static T BindOneWay<T>(
+        this T target, 
+        AvaloniaProperty targetProperty, 
+        IObservable<object?> source, 
+        CompositeDisposable? compositeDisposable = null) where T : IAvaloniaObject
+    {
+        var targetDisposable = target.Bind(targetProperty, source);
+        compositeDisposable?.Add(targetDisposable);
+        return target;
+    }
+
     public static T BindTwoWay<T>(
         this T target,
         AvaloniaProperty targetProperty, 
