@@ -13,8 +13,10 @@ AppBuilder.Configure<App>()
         };
         x.Instance?.Styles.Add(theme);
 
-        ExtensionsGenerator.Generate(Console.WriteLine);
+        if (args.Length == 1)
+        {
+            ExtensionsGenerator.Generate(args[0]);
+        }
     })
-    .UseHeadless()
-    .SetupWithoutStarting();
+    .UseHeadless().SetupWithoutStarting();
     //.StartWithClassicDesktopLifetime(args);
