@@ -10,35 +10,45 @@ internal record Class(string Name, string Type, Property[] Properties, bool IsSe
 
 internal static class ExtensionsGenerator
 { 
-    public static void Generate(Action<string> writeLine) 
+    public static void Generate(string outputPath) 
     {
         var classes = GetClasses();
 
-        var fileHeaderBuilder = new StringBuilder(Templates.FileHeaderTemplate);
-        writeLine(fileHeaderBuilder.ToString());
+        if (!Directory.Exists(outputPath))
+        {
+            Directory.CreateDirectory(outputPath);
+        }
 
         foreach (var c in classes)
         {
+            var outputFile = Path.Combine(outputPath, $"{c.Name}Extensions.g.cs");
+
+            using var file = File.CreateText(outputFile);
+            void WriteLine(string x) => file.WriteLine(x);
+
+            var fileHeaderBuilder = new StringBuilder(Templates.FileHeaderTemplate);
+            WriteLine(fileHeaderBuilder.ToString());
+
             var classHeaderBuilder = new StringBuilder(Templates.ClassExtensionsHeaderTemplate);
             classHeaderBuilder.Replace("%ClassName%", c.Name);
-            writeLine(classHeaderBuilder.ToString());
+            WriteLine(classHeaderBuilder.ToString());
 
             // Properties
 
             if (c.Properties.Length > 0)
             {
-                writeLine("    //");
-                writeLine("    // Properties");
-                writeLine("    //");
-                writeLine("");
+                WriteLine("    //");
+                WriteLine("    // Properties");
+                WriteLine("    //");
+                WriteLine("");
 
                 for (var i = 0; i < c.Properties.Length; i++)
                 {
                     var p = c.Properties[i];
-                    writeLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
+                    WriteLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
                 }
 
-                writeLine("");
+                WriteLine("");
             }
 
             // Methods
@@ -59,7 +69,7 @@ internal static class ExtensionsGenerator
                 propertyBuilder.Replace("%OwnerType%", p.OwnerType);
                 propertyBuilder.Replace("%ValueType%", p.ValueType);
 
-                writeLine(propertyBuilder.ToString());
+                WriteLine(propertyBuilder.ToString());
 
                 if (p.IsEnum && !p.IsReadOnly && p.EnumNames is { })
                 {
@@ -77,18 +87,18 @@ internal static class ExtensionsGenerator
                         propertyEnumBuilder.Replace("%ValueType%", p.ValueType);
                         propertyEnumBuilder.Replace("%EnumValue%", enumName);
 
-                        writeLine(propertyEnumBuilder.ToString());
+                        WriteLine(propertyEnumBuilder.ToString());
                     }
                 }
 
                 if (i < c.Properties.Length - 1)
                 {
-                    writeLine("");
+                    WriteLine("");
                 }
             }
 
             var classFooterBuilder = new StringBuilder(Templates.ClassExtensionsFooterTemplate);
-            writeLine(classFooterBuilder.ToString());
+            WriteLine(classFooterBuilder.ToString());
         }
     }
 
