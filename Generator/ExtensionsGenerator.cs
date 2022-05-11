@@ -51,7 +51,6 @@ internal static class ExtensionsGenerator
         foreach (var c in classes)
         {
             var outputFile = Path.Combine(outputPath, $"{c.Name}.Extensions.g.cs");
-
             using var file = File.CreateText(outputFile);
             void WriteLine(string x) => file.WriteLine(x);
 
