@@ -61,6 +61,26 @@ internal static class ExtensionsGenerator
 
                 writeLine(propertyBuilder.ToString());
 
+                if (p.IsEnum && !p.IsReadOnly && p.EnumNames is { })
+                {
+                    foreach (var enumName in p.EnumNames)
+                    {
+                        var templateEnum = c.IsSealed 
+                                ? Templates.PropertyMethodEnumSealedTemplate 
+                                : Templates.PropertyMethodEnumTemplate;
+
+                        var propertyEnumBuilder = new StringBuilder(templateEnum);
+
+                        propertyEnumBuilder.Replace("%ClassType%", c.Type);
+                        propertyEnumBuilder.Replace("%Name%", p.Name);
+                        propertyEnumBuilder.Replace("%OwnerType%", p.OwnerType);
+                        propertyEnumBuilder.Replace("%ValueType%", p.ValueType);
+                        propertyEnumBuilder.Replace("%EnumValue%", enumName);
+
+                        writeLine(propertyEnumBuilder.ToString());
+                    }
+                }
+
                 if (i < c.Properties.Length - 1)
                 {
                     writeLine("");
