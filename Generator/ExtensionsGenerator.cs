@@ -115,8 +115,8 @@ internal static class ExtensionsGenerator
     }";
 
         var classExtensionsHeaderTemplate = @"
-    public static partial class %ClassName%Extensions
-    {";
+public static partial class %ClassName%Extensions
+{";
 
         var classExtensionsFooterTemplate = @"}";
 
