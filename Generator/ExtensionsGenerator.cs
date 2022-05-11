@@ -21,7 +21,36 @@ internal static class ExtensionsGenerator
 
         foreach (var c in classes)
         {
-            var outputFile = Path.Combine(outputPath, $"{c.Name}Extensions.g.cs");
+            var outputFile = Path.Combine(outputPath, $"{c.Name}.Properties.g.cs");
+
+            using var file = File.CreateText(outputFile);
+            void WriteLine(string x) => file.WriteLine(x);
+
+            var fileHeaderBuilder = new StringBuilder(Templates.PropertiesHeaderTemplate);
+            WriteLine(fileHeaderBuilder.ToString());
+
+            if (c.Properties.Length > 0)
+            {
+                for (var i = 0; i < c.Properties.Length; i++)
+                {
+                    var p = c.Properties[i];
+
+                    WriteLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
+
+                    if (i < c.Properties.Length - 1)
+                    {
+                        WriteLine("");
+                    }
+                }
+            }
+
+            var classFooterBuilder = new StringBuilder(Templates.PropertiesFooterTemplate);
+            WriteLine(classFooterBuilder.ToString());
+        }
+
+        foreach (var c in classes)
+        {
+            var outputFile = Path.Combine(outputPath, $"{c.Name}.Extensions.g.cs");
 
             using var file = File.CreateText(outputFile);
             void WriteLine(string x) => file.WriteLine(x);
@@ -32,25 +61,6 @@ internal static class ExtensionsGenerator
             var classHeaderBuilder = new StringBuilder(Templates.ClassExtensionsHeaderTemplate);
             classHeaderBuilder.Replace("%ClassName%", c.Name);
             WriteLine(classHeaderBuilder.ToString());
-
-            // Properties
-
-            if (c.Properties.Length > 0)
-            {
-                WriteLine("    //");
-                WriteLine("    // Properties");
-                WriteLine("    //");
-                WriteLine("");
-
-                foreach (var p in c.Properties)
-                {
-                    WriteLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
-                }
-
-                WriteLine("");
-            }
-
-            // Methods
 
             for (var i = 0; i < c.Properties.Length; i++)
             {
