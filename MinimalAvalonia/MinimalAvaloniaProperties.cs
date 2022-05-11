@@ -22,8 +22,8 @@ public static class MinimalAvaloniaProperties
 
     // Border
 
-    public static StyledProperty<IBrush> BorderBackground => Avalonia.Controls.Border.BackgroundProperty;
-    public static StyledProperty<IBrush> BorderBorderBrush => Avalonia.Controls.Border.BorderBrushProperty;
+    public static StyledProperty<IBrush?> BorderBackground => Avalonia.Controls.Border.BackgroundProperty;
+    public static StyledProperty<IBrush?> BorderBorderBrush => Avalonia.Controls.Border.BorderBrushProperty;
     public static StyledProperty<Thickness> BorderBorderThickness => Avalonia.Controls.Border.BorderThicknessProperty;
     public static StyledProperty<CornerRadius> BorderCornerRadius => Avalonia.Controls.Border.CornerRadiusProperty;
     public static StyledProperty<BoxShadows> BorderBoxShadow => Avalonia.Controls.Border.BoxShadowProperty;
@@ -35,14 +35,14 @@ public static class MinimalAvaloniaProperties
     // Button
 
     public static StyledProperty<ClickMode> ButtonClickMode => Avalonia.Controls.Button.ClickModeProperty;
-    public static DirectProperty<Button, ICommand> ButtonCommand => Avalonia.Controls.Button.CommandProperty;
-    public static StyledProperty<KeyGesture> ButtonHotKey => Avalonia.Controls.Button.HotKeyProperty;
-    public static StyledProperty<object> ButtonCommandParameter => Avalonia.Controls.Button.CommandParameterProperty;
+    public static DirectProperty<Button, ICommand?> ButtonCommand => Avalonia.Controls.Button.CommandProperty;
+    public static StyledProperty<KeyGesture?> ButtonHotKey => Avalonia.Controls.Button.HotKeyProperty;
+    public static StyledProperty<object?> ButtonCommandParameter => Avalonia.Controls.Button.CommandParameterProperty;
     public static StyledProperty<bool> ButtonIsDefault => Avalonia.Controls.Button.IsDefaultProperty;
     public static StyledProperty<bool> ButtonIsCancel => Avalonia.Controls.Button.IsCancelProperty;
     public static RoutedEvent<RoutedEventArgs> ButtonClick => Avalonia.Controls.Button.ClickEvent;
     public static StyledProperty<bool> ButtonIsPressed => Avalonia.Controls.Button.IsPressedProperty;
-    public static StyledProperty<FlyoutBase> ButtonFlyout => Avalonia.Controls.Button.FlyoutProperty;
+    public static StyledProperty<FlyoutBase?> ButtonFlyout => Avalonia.Controls.Button.FlyoutProperty;
 
     // TODO: CheckBox
 
@@ -52,8 +52,8 @@ public static class MinimalAvaloniaProperties
 
     // ContentControl
 
-    public static StyledProperty<object> ContentControlContent => Avalonia.Controls.ContentControl.ContentProperty;
-    public static StyledProperty<IDataTemplate> ContentControlContentTemplate => Avalonia.Controls.ContentControl.ContentTemplateProperty;
+    public static StyledProperty<object?> ContentControlContent => Avalonia.Controls.ContentControl.ContentProperty;
+    public static StyledProperty<IDataTemplate?> ContentControlContentTemplate => Avalonia.Controls.ContentControl.ContentTemplateProperty;
     public static StyledProperty<HorizontalAlignment> ContentControlHorizontalContentAlignment => Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty;
     public static StyledProperty<VerticalAlignment> ContentControlVerticalContentAlignment => Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty;
 
@@ -68,7 +68,7 @@ public static class MinimalAvaloniaProperties
 
     // Decorator
 
-    public static StyledProperty<IControl> DecoratorChild => Avalonia.Controls.Decorator.ChildProperty;
+    public static StyledProperty<IControl?> DecoratorChild => Avalonia.Controls.Decorator.ChildProperty;
     public static StyledProperty<Thickness> DecoratorPadding => Avalonia.Controls.Decorator.PaddingProperty;
 
     // DockPanel
@@ -108,7 +108,7 @@ public static class MinimalAvaloniaProperties
     public static StyledProperty<int> InputElementTabIndex => Avalonia.Input.InputElement.TabIndexProperty;
     public static RoutedEvent<TextInputEventArgs> InputElementTextInput => Avalonia.Input.InputElement.TextInputEvent;
     public static RoutedEvent<TextInputMethodClientRequestedEventArgs> InputElementTextInputMethodClientRequested => Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent;
-    public static RoutedEvent<TextInputOptionsQueryEventArgs> InputElementTextInputOptionsQuery => Avalonia.Input.InputElement.TextInputOptionsQueryEvent;
+    //public static RoutedEvent<TextInputOptionsQueryEventArgs> InputElementTextInputOptionsQuery => Avalonia.Input.InputElement.TextInputOptionsQueryEvent;
     public static RoutedEvent<PointerEventArgs> InputElementPointerEnter => Avalonia.Input.InputElement.PointerEnterEvent;
     public static RoutedEvent<PointerEventArgs> InputElementPointerLeave => Avalonia.Input.InputElement.PointerLeaveEvent;
     public static RoutedEvent<PointerEventArgs> InputElementPointerMoved => Avalonia.Input.InputElement.PointerMovedEvent;
@@ -116,19 +116,19 @@ public static class MinimalAvaloniaProperties
     public static RoutedEvent<PointerReleasedEventArgs> InputElementPointerReleased => Avalonia.Input.InputElement.PointerReleasedEvent;
     public static RoutedEvent<PointerCaptureLostEventArgs> InputElementPointerCaptureLost => Avalonia.Input.InputElement.PointerCaptureLostEvent;
     public static RoutedEvent<PointerWheelEventArgs> InputElementPointerWheelChanged => Avalonia.Input.InputElement.PointerWheelChangedEvent;
-    public static RoutedEvent<RoutedEventArgs> InputElementTapped => Avalonia.Input.InputElement.TappedEvent;
-    public static RoutedEvent<RoutedEventArgs> InputElementDoubleTapped => Avalonia.Input.InputElement.DoubleTappedEvent;
+    //public static RoutedEvent<RoutedEventArgs> InputElementTapped => Avalonia.Input.InputElement.TappedEvent;
+    //public static RoutedEvent<RoutedEventArgs> InputElementDoubleTapped => Avalonia.Input.InputElement.DoubleTappedEvent;
 
     // ItemsControl
 
-    public static DirectProperty<ItemsControl, IEnumerable> ItemsControlItems => Avalonia.Controls.ItemsControl.ItemsProperty;
+    public static DirectProperty<ItemsControl, IEnumerable?> ItemsControlItems => Avalonia.Controls.ItemsControl.ItemsProperty;
     public static DirectProperty<ItemsControl, int> ItemsControlItemCount => Avalonia.Controls.ItemsControl.ItemCountProperty;
     public static StyledProperty<ITemplate<IPanel>> ItemsControlItemsPanel => Avalonia.Controls.ItemsControl.ItemsPanelProperty;
-    public static StyledProperty<IDataTemplate> ItemsControlItemTemplate => Avalonia.Controls.ItemsControl.ItemTemplateProperty;
+    public static StyledProperty<IDataTemplate?> ItemsControlItemTemplate => Avalonia.Controls.ItemsControl.ItemTemplateProperty;
 
     // Label
 
-    public static DirectProperty<Label, IInputElement> LabelTarget = Avalonia.Controls.Label.TargetProperty;
+    public static DirectProperty<Label, IInputElement?> LabelTarget = Avalonia.Controls.Label.TargetProperty;
 
     // Layoutable
 
@@ -154,7 +154,7 @@ public static class MinimalAvaloniaProperties
 
     // Panel
 
-    public static StyledProperty<IBrush> PanelBackground => Avalonia.Controls.Panel.BackgroundProperty;
+    public static StyledProperty<IBrush?> PanelBackground => Avalonia.Controls.Panel.BackgroundProperty;
 
     // TODO: RadioButton
 
@@ -179,9 +179,9 @@ public static class MinimalAvaloniaProperties
     public static StyledProperty<Dock> TabControlTabStripPlacement => Avalonia.Controls.TabControl.TabStripPlacementProperty;
     public static StyledProperty<HorizontalAlignment> TabControlHorizontalContentAlignment => Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty;
     public static StyledProperty<VerticalAlignment> TabControlVerticalContentAlignment => Avalonia.Controls.TabControl.VerticalContentAlignmentProperty;
-    public static StyledProperty<IDataTemplate> TabControlContentTemplate => Avalonia.Controls.TabControl.ContentTemplateProperty;
-    public static StyledProperty<object> TabControlSelectedContent => Avalonia.Controls.TabControl.SelectedContentProperty;
-    public static StyledProperty<IDataTemplate> TabControlSelectedContentTemplate => Avalonia.Controls.TabControl.SelectedContentTemplateProperty;
+    public static StyledProperty<IDataTemplate?> TabControlContentTemplate => Avalonia.Controls.TabControl.ContentTemplateProperty;
+    public static StyledProperty<object?> TabControlSelectedContent => Avalonia.Controls.TabControl.SelectedContentProperty;
+    public static StyledProperty<IDataTemplate?> TabControlSelectedContentTemplate => Avalonia.Controls.TabControl.SelectedContentTemplateProperty;
 
     // TabItem
 
@@ -206,20 +206,20 @@ public static class MinimalAvaloniaProperties
 
     // TextBlock
 
-    public static StyledProperty<IBrush> TextBlockBackground => Avalonia.Controls.TextBlock.BackgroundProperty;
+    public static StyledProperty<IBrush?> TextBlockBackground => Avalonia.Controls.TextBlock.BackgroundProperty;
     public static StyledProperty<Thickness> TextBlockPadding => Avalonia.Controls.TextBlock.PaddingProperty;
-    public static AttachedProperty<FontFamily> TextBlockFontFamily => Avalonia.Controls.TextBlock.FontFamilyProperty;
-    public static AttachedProperty<double> TextBlockFontSize => Avalonia.Controls.TextBlock.FontSizeProperty;
-    public static AttachedProperty<FontStyle> TextBlockFontStyle => Avalonia.Controls.TextBlock.FontStyleProperty;
-    public static AttachedProperty<FontWeight> TextBlockFontWeight => Avalonia.Controls.TextBlock.FontWeightProperty;
-    public static AttachedProperty<IBrush> TextBlockForeground => Avalonia.Controls.TextBlock.ForegroundProperty;
+    public static StyledProperty<FontFamily> TextBlockFontFamily => Avalonia.Controls.TextBlock.FontFamilyProperty;
+    public static StyledProperty<double> TextBlockFontSize => Avalonia.Controls.TextBlock.FontSizeProperty;
+    public static StyledProperty<FontStyle> TextBlockFontStyle => Avalonia.Controls.TextBlock.FontStyleProperty;
+    public static StyledProperty<FontWeight> TextBlockFontWeight => Avalonia.Controls.TextBlock.FontWeightProperty;
+    public static StyledProperty<IBrush?> TextBlockForeground => Avalonia.Controls.TextBlock.ForegroundProperty;
     public static StyledProperty<double> TextBlockLineHeight => Avalonia.Controls.TextBlock.LineHeightProperty;
     public static StyledProperty<int> TextBlockMaxLines => Avalonia.Controls.TextBlock.MaxLinesProperty;
-    public static DirectProperty<TextBlock, string> TextBlockText => Avalonia.Controls.TextBlock.TextProperty;
+    public static DirectProperty<TextBlock, string?> TextBlockText => Avalonia.Controls.TextBlock.TextProperty;
     public static StyledProperty<TextAlignment> TextBlockTextAlignment => Avalonia.Controls.TextBlock.TextAlignmentProperty;
     public static StyledProperty<TextWrapping> TextBlockTextWrapping => Avalonia.Controls.TextBlock.TextWrappingProperty;
     public static StyledProperty<TextTrimming> TextBlockTextTrimming => Avalonia.Controls.TextBlock.TextTrimmingProperty;
-    public static StyledProperty<TextDecorationCollection> TextBlockTextDecorations => Avalonia.Controls.TextBlock.TextDecorationsProperty;
+    public static StyledProperty<TextDecorationCollection?> TextBlockTextDecorations => Avalonia.Controls.TextBlock.TextDecorationsProperty;
 
     // TextBox
 
@@ -228,18 +228,18 @@ public static class MinimalAvaloniaProperties
     public static DirectProperty<TextBox, int> TextBoxCaretIndex => Avalonia.Controls.TextBox.CaretIndexProperty;
     public static StyledProperty<bool> TextBoxIsReadOnly => Avalonia.Controls.TextBox.IsReadOnlyProperty;
     public static StyledProperty<char> TextBoxPasswordChar => Avalonia.Controls.TextBox.PasswordCharProperty;
-    public static StyledProperty<IBrush> TextBoxSelectionBrush => Avalonia.Controls.TextBox.SelectionBrushProperty;
-    public static StyledProperty<IBrush> TextBoxSelectionForegroundBrush => Avalonia.Controls.TextBox.SelectionForegroundBrushProperty;
-    public static StyledProperty<IBrush> TextBoxCaretBrush => Avalonia.Controls.TextBox.CaretBrushProperty;
+    public static StyledProperty<IBrush?> TextBoxSelectionBrush => Avalonia.Controls.TextBox.SelectionBrushProperty;
+    public static StyledProperty<IBrush?> TextBoxSelectionForegroundBrush => Avalonia.Controls.TextBox.SelectionForegroundBrushProperty;
+    public static StyledProperty<IBrush?> TextBoxCaretBrush => Avalonia.Controls.TextBox.CaretBrushProperty;
     public static DirectProperty<TextBox, int> TextBoxSelectionStart => Avalonia.Controls.TextBox.SelectionStartProperty;
     public static DirectProperty<TextBox, int> TextBoxSelectionEnd => Avalonia.Controls.TextBox.SelectionEndProperty;
     public static StyledProperty<int> TextBoxMaxLength => Avalonia.Controls.TextBox.MaxLengthProperty;
-    public static DirectProperty<TextBox, string> TextBoxText => Avalonia.Controls.TextBox.TextProperty;
+    public static DirectProperty<TextBox, string?> TextBoxText => Avalonia.Controls.TextBox.TextProperty;
     public static StyledProperty<TextAlignment> TextBoxTextAlignment => Avalonia.Controls.TextBox.TextAlignmentProperty;
     public static StyledProperty<HorizontalAlignment> TextBoxHorizontalContentAlignment => Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty;
     public static StyledProperty<VerticalAlignment> TextBoxVerticalContentAlignment => Avalonia.Controls.TextBox.VerticalContentAlignmentProperty;
     public static StyledProperty<TextWrapping> TextBoxTextWrapping => Avalonia.Controls.TextBox.TextWrappingProperty;
-    public static StyledProperty<string> TextBoxWatermark => Avalonia.Controls.TextBox.WatermarkProperty;
+    public static StyledProperty<string?> TextBoxWatermark => Avalonia.Controls.TextBox.WatermarkProperty;
     public static StyledProperty<bool> TextBoxUseFloatingWatermark => Avalonia.Controls.TextBox.UseFloatingWatermarkProperty;
     public static DirectProperty<TextBox, string> TextBoxNewLine => Avalonia.Controls.TextBox.NewLineProperty;
     public static StyledProperty<object> TextBoxInnerLeftContent => Avalonia.Controls.TextBox.InnerLeftContentProperty;
@@ -258,7 +258,7 @@ public static class MinimalAvaloniaProperties
 
     public static DirectProperty<TopLevel, Size> TopLevelClientSize => Avalonia.Controls.TopLevel.ClientSizeProperty;
     public static DirectProperty<TopLevel, Size?> TopLevelFrameSize => Avalonia.Controls.TopLevel.FrameSizeProperty;
-    public static StyledProperty<IInputElement> TopLevelPointerOverElement => Avalonia.Controls.TopLevel.PointerOverElementProperty;
+    public static StyledProperty<IInputElement?> TopLevelPointerOverElement => Avalonia.Controls.TopLevel.PointerOverElementProperty;
     public static StyledProperty<WindowTransparencyLevel> TopLevelTransparencyLevelHint => Avalonia.Controls.TopLevel.TransparencyLevelHintProperty;
     public static DirectProperty<TopLevel, WindowTransparencyLevel> TopLevelActualTransparencyLevel => Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty;
     public static StyledProperty<IBrush> TopLevelTransparencyBackgroundFallback => Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty;
@@ -290,8 +290,8 @@ public static class MinimalAvaloniaProperties
     public static StyledProperty<bool> WindowShowActivated => Avalonia.Controls.Window.ShowActivatedProperty;
     public static StyledProperty<bool> WindowShowInTaskbar => Avalonia.Controls.Window.ShowInTaskbarProperty;
     public static StyledProperty<WindowState> WindowWindowState => Avalonia.Controls.Window.WindowStateProperty;
-    public static StyledProperty<string> WindowTitle => Avalonia.Controls.Window.TitleProperty;
-    public static StyledProperty<WindowIcon> WindowIcon => Avalonia.Controls.Window.IconProperty;
+    public static StyledProperty<string?> WindowTitle => Avalonia.Controls.Window.TitleProperty;
+    public static StyledProperty<WindowIcon?> WindowIcon => Avalonia.Controls.Window.IconProperty;
     public static DirectProperty<Window, WindowStartupLocation> WindowWindowStartupLocation => Avalonia.Controls.Window.WindowStartupLocationProperty;
     public static StyledProperty<bool> WindowCanResize => Avalonia.Controls.Window.CanResizeProperty;
     public static RoutedEvent WindowWindowClosed => Avalonia.Controls.Window.WindowClosedEvent;
@@ -300,7 +300,7 @@ public static class MinimalAvaloniaProperties
     // WindowBase
 
     public static DirectProperty<WindowBase, bool> WindowBaseIsActive => Avalonia.Controls.WindowBase.IsActiveProperty;
-    public static DirectProperty<WindowBase, WindowBase> WindowBaseOwner => Avalonia.Controls.WindowBase.OwnerProperty;
+    public static DirectProperty<WindowBase, WindowBase?> WindowBaseOwner => Avalonia.Controls.WindowBase.OwnerProperty;
     public static StyledProperty<bool> WindowBaseTopmost => Avalonia.Controls.WindowBase.TopmostProperty;
 
     // WrapPanel
