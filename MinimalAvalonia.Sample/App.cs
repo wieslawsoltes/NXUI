@@ -17,7 +17,7 @@ AppBuilder.Configure<Application>()
               TextBox().Text("Minimal Avalonia").Ref(out var tb1);
               TextBox().Text(window.Title()).Ref(out var tb2);
               Label().Content(button.OnClick().Select(_ => ++count).Select(x => $"You clicked {x} times.").ToBinding()).Ref(out var label);
-              window.Title(tb1.GetObservable(TextBoxText).Select(x => x.ToUpper()).ToBinding());
+              window.Title(tb1.GetObservable(TextBoxText).Select(x => x?.ToUpper()).ToBinding());
               window.Content(StackPanel().Children(button, tb1, tb2, label));
 #endif
               desktop.MainWindow = window;
