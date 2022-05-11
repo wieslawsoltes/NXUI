@@ -151,15 +151,25 @@ internal static class ExtensionsGenerator
             for (var i = 0; i < c.Properties.Length; i++)
             {
                 var p = c.Properties[i];
-                var template = p.IsReadOnly ? propertyMethodsTemplateReadOnly : c.IsSealed ? propertyMethodsTemplateSealed : propertyMethodsTemplate;
+                var template = p.IsReadOnly 
+                    ? propertyMethodsTemplateReadOnly 
+                    : c.IsSealed 
+                        ? propertyMethodsTemplateSealed 
+                        : propertyMethodsTemplate;
+
                 var propertyBuilder = new StringBuilder(template);
+
                 propertyBuilder.Replace("%ClassType%", c.Type);
                 propertyBuilder.Replace("%Name%", p.Name);
                 propertyBuilder.Replace("%OwnerType%", p.OwnerType);
                 propertyBuilder.Replace("%ValueType%", p.ValueType);
+
                 writeLine(propertyBuilder.ToString());
+
                 if (i < c.Properties.Length - 1)
+                {
                     writeLine("");
+                }
             }
 
             var classFooterBuilder = new StringBuilder(classExtensionsFooterTemplate);
