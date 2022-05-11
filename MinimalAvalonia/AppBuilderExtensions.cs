@@ -6,10 +6,10 @@ public static class AppBuilderExtensions
         where TAppBuilder : AppBuilderBase<TAppBuilder>, new() 
     {
         return builder.AfterSetup(_ =>
-            builder.Instance.Styles.Add(new FluentTheme(new Uri($"avares://{System.Reflection.Assembly.GetExecutingAssembly().GetName()}")) { Mode = mode }));
+            builder.Instance?.Styles.Add(new FluentTheme(new Uri($"avares://{System.Reflection.Assembly.GetExecutingAssembly().GetName()}")) { Mode = mode }));
     }
 
-    public static int StartWithClassicDesktopLifetime<T>(this T builder, Action<IClassicDesktopStyleApplicationLifetime> callback, string[]? args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
+    public static int StartWithClassicDesktopLifetime<T>(this T builder, Action<IClassicDesktopStyleApplicationLifetime>? callback, string[] args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
         where T : AppBuilderBase<T>, new()
     {
         var classicDesktopStyleApplicationLifetime = new ClassicDesktopStyleApplicationLifetime
@@ -25,7 +25,7 @@ public static class AppBuilderExtensions
         return classicDesktopStyleApplicationLifetime.Start(args);
     }
 
-    public static int StartWithClassicDesktopLifetime<T>(this T builder, Func<Window> callback, string[]? args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
+    public static int StartWithClassicDesktopLifetime<T>(this T builder, Func<Window>? callback, string[] args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
         where T : AppBuilderBase<T>, new()
     {
         var classicDesktopStyleApplicationLifetime = new ClassicDesktopStyleApplicationLifetime
@@ -44,6 +44,11 @@ public static class AppBuilderExtensions
         where TAppBuilder : AppBuilderBase<TAppBuilder>, new()
     {
         return builder.AfterSetup(_ =>
-            builder.Instance.Name = name);
+        {
+            if (builder.Instance is { })
+            {
+                builder.Instance.Name = name;
+            }
+        });
     }
 }
