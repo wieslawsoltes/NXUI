@@ -148,16 +148,11 @@ internal static class ExtensionsGenerator
 
                 if (property.PropertyType.BaseType == typeof(Enum))
                 {
-                    var enumValues = Enum.GetValues(property.PropertyType);
+                    var names = Enum.GetNames(property.PropertyType);
 
-                    for (var i = 0; i < enumValues.Length; i++)
+                    for (var i = 0; i < names.Length; i++)
                     {
-                        // Retrieve the value of the ith enum item.
-                        var value = enumValues.GetValue(i)?.ToString();
-                        if (value is { })
-                        {
-                            enumNames.Add(value);
-                        }
+                        enumNames.Add(names[i]);
                     }
 
                     isEnum = true;
