@@ -1,5 +1,8 @@
-﻿namespace Generator;
+﻿using System.Diagnostics.CodeAnalysis;
 
+namespace Generator;
+
+[SuppressMessage("ReSharper", "InconsistentNaming")]
 internal static class Templates
 {
     public static string PropertyMethodEnumTemplate = @"
