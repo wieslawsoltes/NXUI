@@ -2,6 +2,20 @@
 
 internal static class Templates
 {
+    public static string PropertyMethodEnumTemplate = @"
+    public static T %Name%%EnumValue%<T>(this T obj) where T : %OwnerType%
+    {
+        obj[%ClassType%.%Name%Property] = %ValueType%.%EnumValue%;
+        return obj;
+    }";
+
+    public static string PropertyMethodEnumSealedTemplate = @"
+    public static %OwnerType% %Name%%EnumValue%(this %OwnerType% obj)
+    {
+        obj[%ClassType%.%Name%Property] = %ValueType%.%EnumValue%;
+        return obj;
+    }";
+
     public static string PropertyMethodsTemplate = @"    //
     // %Name%Property
     //
