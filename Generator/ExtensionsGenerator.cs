@@ -42,7 +42,7 @@ internal static class ExtensionsGenerator
             }
 
             // Methods
-            
+
             for (var i = 0; i < c.Properties.Length; i++)
             {
                 var p = c.Properties[i];
