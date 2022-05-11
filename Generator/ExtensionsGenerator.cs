@@ -9,7 +9,12 @@ internal record Property(string Name, string OwnerType, string ValueType, string
 internal record Class(string Name, string Type, Property[] Properties, bool IsSealed = false);
 
 internal static class ExtensionsGenerator
-{ 
+{
+    private static readonly HashSet<string> s_excludedClasses = new()
+    {
+        "AboutAvaloniaDialog"
+    };
+
     public static void Generate(string outputPath) 
     {
         var classes = GetClasses();
@@ -21,6 +26,11 @@ internal static class ExtensionsGenerator
 
         foreach (var c in classes)
         {
+            if (s_excludedClasses.Contains(c.Name))
+            {
+                continue;
+            }
+
             var outputFile = Path.Combine(outputPath, $"{c.Name}.Properties.g.cs");
 
             using var file = File.CreateText(outputFile);
@@ -50,6 +60,11 @@ internal static class ExtensionsGenerator
 
         foreach (var c in classes)
         {
+            if (s_excludedClasses.Contains(c.Name))
+            {
+                continue;
+            }
+
             var outputFile = Path.Combine(outputPath, $"{c.Name}.Extensions.g.cs");
             using var file = File.CreateText(outputFile);
             void WriteLine(string x) => file.WriteLine(x);
