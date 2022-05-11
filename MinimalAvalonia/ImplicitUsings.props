@@ -31,7 +31,7 @@
     <Using Include="Avalonia.Themes.Fluent" />
     <Using Include="Avalonia.VisualTree" />
     <Using Include="MinimalAvalonia" />
-    <Using Include="MinimalAvalonia.Controls" />
+    <Using Include="MinimalAvalonia.Extensions" />
     <Using Include="MinimalAvalonia.MinimalAvaloniaBuilders" Static="true" />
     <Using Include="MinimalAvalonia.MinimalAvaloniaProperties" Static="true" />
   </ItemGroup>
