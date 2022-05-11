@@ -19,9 +19,7 @@ internal static class Templates
         return obj;
     }";
 
-    public static string PropertyMethodsTemplate = @"    //
-    // %Name%Property
-    //
+    public static string PropertyMethodsTemplate = @"    // %Name%Property
 
     public static T %Name%<T>(this T obj, %ValueType% value) where T : %OwnerType%
     {
@@ -40,9 +38,7 @@ internal static class Templates
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
     }";
 
-    public static string PropertyMethodsTemplateSealed = @"    //
-    // %Name%Property
-    //
+    public static string PropertyMethodsTemplateSealed = @"    // %Name%Property
 
     public static %OwnerType% %Name%(this %OwnerType% obj, %ValueType% value)
     {
@@ -61,9 +57,7 @@ internal static class Templates
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
     }";
 
-    public static string PropertyMethodsTemplateReadOnly = @"    //
-    // %Name%Property
-    //
+    public static string PropertyMethodsTemplateReadOnly = @"    // %Name%Property
 
     public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
