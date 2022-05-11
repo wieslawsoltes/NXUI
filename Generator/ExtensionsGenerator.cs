@@ -43,6 +43,15 @@ internal static class ExtensionsGenerator
                     .Replace("+", ".");
             }
 
+            string FixClassNameType(string t)
+            {
+                return t
+                    .Replace("`1", "")
+                    .Replace("`2", "")
+                    .Replace("`3", "")
+                    .Replace("+", "");
+            }
+
             foreach (var property in avaloniaProperties)
             {
                 var fieldInfo = classType.GetField($"{property.Name}Property");
@@ -68,7 +77,7 @@ internal static class ExtensionsGenerator
                 properties.Add(p);
             }
 
-            var c = new Class(classType.Name, FixType(classType.ToString()), properties.ToArray(), classType.IsSealed);
+            var c = new Class(FixClassNameType(classType.Name), FixType(classType.ToString()), properties.ToArray(), classType.IsSealed);
             classes.Add(c);
         }
 
