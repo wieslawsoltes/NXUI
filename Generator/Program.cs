@@ -10,7 +10,7 @@ AppBuilder.Configure<App>()
         {
             Mode = FluentThemeMode.Light
         };
-        x.Instance.Styles.Add(theme);
+        x.Instance?.Styles.Add(theme);
 
         ExtensionsGenerator.Generate(Console.WriteLine);
     })
