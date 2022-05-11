@@ -42,9 +42,8 @@ internal static class ExtensionsGenerator
                 WriteLine("    //");
                 WriteLine("");
 
-                for (var i = 0; i < c.Properties.Length; i++)
+                foreach (var p in c.Properties)
                 {
-                    var p = c.Properties[i];
                     WriteLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
                 }
 
@@ -159,12 +158,7 @@ internal static class ExtensionsGenerator
                 if (property.PropertyType.BaseType == typeof(Enum))
                 {
                     var names = Enum.GetNames(property.PropertyType);
-
-                    for (var i = 0; i < names.Length; i++)
-                    {
-                        enumNames.Add(names[i]);
-                    }
-
+                    enumNames.AddRange(names);
                     isEnum = true;
                 }
 
