@@ -34,3 +34,18 @@ AppBuilder.Configure<Application>()
               desktop.MainWindow = window;
           }, args);
 ```
+
+# Generate
+
+```
+cd Generator
+dotnet run > Extensions.g.cs
+copy Extensions.g.cs ../MinimalAvalonia/Extensions.g.cs
+```
+
+# Issues
+
+```
+https://github.com/AvaloniaUI/Avalonia/pull/8114
+0.10.999-cibuild0020345-beta
+```
