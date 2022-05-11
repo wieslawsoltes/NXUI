@@ -218,8 +218,12 @@ internal static class ExtensionsGenerator
                 properties.Add(p);
             }
 
-            var c = new Class(FixClassNameType(classType.Name), FixType(classType.ToString()), properties.ToArray(),
+            var c = new Class(
+                FixClassNameType(classType.Name), 
+                FixType(classType.ToString()), 
+                properties.ToArray(),
                 classType.IsSealed);
+
             classes.Add(c);
         }
 
