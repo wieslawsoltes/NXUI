@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class TemplatedControlExtensions
+public static partial class TemplatedControlExtensions
 {
     public static T Background<T>(this T templatedControl, IBrush background) where T : TemplatedControl
     {

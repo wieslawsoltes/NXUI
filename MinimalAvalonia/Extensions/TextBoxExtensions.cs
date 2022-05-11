@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class TextBoxExtensions
+public static partial class TextBoxExtensions
 {
     //
     // Properties

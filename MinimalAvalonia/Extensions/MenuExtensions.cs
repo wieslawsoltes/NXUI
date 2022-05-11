@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class MenuExtensions
+public static partial class MenuExtensions
 {
     // TODO: Menu
     // 

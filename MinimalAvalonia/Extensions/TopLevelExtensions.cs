@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class TopLevelExtensions
+public static partial class TopLevelExtensions
 {
     // TODO:
     // ClientSizeProperty

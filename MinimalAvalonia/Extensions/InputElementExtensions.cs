@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class InputElementExtensions
+public static partial class InputElementExtensions
 {
     // TODO:
     // FocusableProperty

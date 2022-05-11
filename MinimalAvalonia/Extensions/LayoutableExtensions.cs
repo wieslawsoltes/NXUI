@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class LayoutableExtensions
+public static partial class LayoutableExtensions
 {
     public static T Width<T>(this T layoutable, double width) where T : Layoutable
     {

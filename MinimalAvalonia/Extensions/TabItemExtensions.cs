@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class TabItemExtensions
+public static partial class TabItemExtensions
 {
     public static T TabStripPlacementLeft<T>(this T tabItem) where T : TabItem
     {

@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class TabControlExtensions
+public static partial class TabControlExtensions
 {
     public static T Items<T>(this T tabControl, object item) where T : TabControl
     {

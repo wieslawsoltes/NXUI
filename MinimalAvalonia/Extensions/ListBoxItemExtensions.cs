@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class ListBoxItemExtensions
+public static partial class ListBoxItemExtensions
 {
     // TODO: ListBoxItem
     // 

@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class RadioButtonExtensions
+public static partial class RadioButtonExtensions
 {
     // TODO: RadioButton
     // 

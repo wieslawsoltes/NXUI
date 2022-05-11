@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class ComboBoxItemExtensions
+public static partial class ComboBoxItemExtensions
 {
     // TODO: ComboBoxItem
     // 

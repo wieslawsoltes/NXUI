@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class GridExtensions
+public static partial class GridExtensions
 {
     public static T ShowGridLines<T>(this T grid, bool showGridLines) where T : Grid
     {

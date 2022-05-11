@@ -1,6 +1,6 @@
 ﻿namespace MinimalAvalonia.Extensions;
 
-public static class WindowExtensions
+public static partial class WindowExtensions
 {
     public static Window SizeToContentManual(this Window window)
     {

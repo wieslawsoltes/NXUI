@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class ControlExtensions
+public static partial class ControlExtensions
 {
     // TODO:
     // FocusAdornerProperty

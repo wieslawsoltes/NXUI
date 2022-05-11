@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class AnimatableExtensions
+public static partial class AnimatableExtensions
 {
     public static T Clock<T>(this T animatable, IClock clock) where T : Animatable
     {

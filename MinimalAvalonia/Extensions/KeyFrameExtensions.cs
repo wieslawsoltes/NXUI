@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class KeyFrameExtensions
+public static partial class KeyFrameExtensions
 {
     public static T KeyTime<T>(this T keyFrame, TimeSpan keyTime) where T : KeyFrame
     {

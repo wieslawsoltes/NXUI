@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class TextBlockExtensions
+public static partial class TextBlockExtensions
 {
     public static T Background<T>(this T textBlock, IBrush background) where T : TextBlock
     {

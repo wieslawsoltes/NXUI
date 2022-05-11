@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class WrapPanelExtensions
+public static partial class WrapPanelExtensions
 {
     public static T Orientation<T>(this T wrapPanel, Orientation orientation) where T : WrapPanel
     {

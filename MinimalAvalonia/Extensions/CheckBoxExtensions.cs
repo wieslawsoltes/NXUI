@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class CheckBoxExtensions
+public static partial class CheckBoxExtensions
 {
     // TODO: CheckBox
     // 

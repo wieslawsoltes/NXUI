@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class DockPanelExtensions
+public static partial class DockPanelExtensions
 {
     public static T Dock<T>(this T control, Dock dock) where T : Control
     {

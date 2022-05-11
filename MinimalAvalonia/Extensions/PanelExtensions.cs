@@ -1,6 +1,6 @@
 ﻿namespace MinimalAvalonia.Extensions;
 
-public static class PanelExtensions
+public static partial class PanelExtensions
 {
     public static T Background<T>(this T panel, IBrush background) where T : Panel
     {

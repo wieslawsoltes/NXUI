@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class HeaderedContentControlExtensions
+public static partial class HeaderedContentControlExtensions
 {
     public static T Header<T>(this T headeredContentControl, object? content) where T : HeaderedContentControl
     {

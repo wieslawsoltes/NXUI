@@ -1,5 +1,5 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class InteractiveExtensions
+public static partial class InteractiveExtensions
 {
 }

@@ -1,6 +1,6 @@
 ﻿namespace MinimalAvalonia.Extensions;
 
-public static class ItemsControlExtensions
+public static partial class ItemsControlExtensions
 {
     public static T Items<T>(this T itemsControl, IEnumerable items) where T : ItemsControl
     {

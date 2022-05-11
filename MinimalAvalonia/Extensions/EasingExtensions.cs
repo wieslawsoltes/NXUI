@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class EasingExtensions
+public static partial class EasingExtensions
 {
     // TODO:
 }

@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class VisualExtensions
+public static partial class VisualExtensions
 {
     public static T ClipToBounds<T>(this T visual, bool clipToBounds) where T : Visual
     {

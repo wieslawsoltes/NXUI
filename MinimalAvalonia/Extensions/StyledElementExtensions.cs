@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class StyledElementExtensions
+public static partial class StyledElementExtensions
 {
     public static T DataContext<T>(this T styledElement, object dataContext) where T : StyledElement
     {

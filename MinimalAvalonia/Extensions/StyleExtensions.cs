@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class StyleExtensions
+public static partial class StyleExtensions
 {
     public static T Selector<T>(this T style, Func<Selector?, Selector> selector) where T : Style
     {

@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class SelectingItemsControlExtensions
+public static partial class SelectingItemsControlExtensions
 {
     // TODO: SelectingItemsControl
     // 

@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class ButtonExtensions
+public static partial class ButtonExtensions
 {
     public static Button OnClick(this Button button, Action<IObservable<RoutedEventArgs>> handler)
     {

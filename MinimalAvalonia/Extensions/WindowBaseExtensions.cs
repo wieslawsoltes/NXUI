@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class WindowBaseExtensions
+public static partial class WindowBaseExtensions
 {
     // TODO:
     // IsActiveProperty

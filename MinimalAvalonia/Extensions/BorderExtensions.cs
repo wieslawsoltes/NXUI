@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class BorderExtensions
+public static partial class BorderExtensions
 {
     public static T Background<T>(this T border, IBrush background) where T : Border
     {

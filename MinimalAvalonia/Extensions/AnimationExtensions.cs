@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class AnimationExtensions
+public static partial class AnimationExtensions
 {
     public static T Duration<T>(this T animation, TimeSpan duration) where T : Animation
     {

@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class ContentControlExtensions
+public static partial class ContentControlExtensions
 {
     public static T Content<T>(this T contentControl, object content) where T : ContentControl
     {

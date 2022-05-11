@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class SeparatorExtensions
+public static partial class SeparatorExtensions
 {
     // TODO: Separator
     // 

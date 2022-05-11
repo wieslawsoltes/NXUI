@@ -1,6 +1,6 @@
 ﻿namespace MinimalAvalonia.Extensions;
 
-public static class StackPanelExtensions
+public static partial class StackPanelExtensions
 {
     public static T Spacing<T>(this T stackPanel, double spacing) where T : StackPanel
     {

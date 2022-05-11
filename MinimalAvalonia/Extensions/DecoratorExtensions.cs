@@ -1,6 +1,6 @@
 namespace MinimalAvalonia.Extensions;
 
-public static class DecoratorExtensions
+public static partial class DecoratorExtensions
 {
     public static T Child<T>(this T decorator, IControl child) where T : Decorator
     {
