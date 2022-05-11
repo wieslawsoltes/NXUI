@@ -9,7 +9,7 @@ internal record Class(string Name, string Type, Property[] Properties, bool IsSe
 
 internal static class ExtensionsGenerator
 { 
-    public static void Generate() 
+    public static void Generate(Action<string> writeLine) 
     {
         var assemblies = AppDomain.CurrentDomain.GetAssemblies();
         var types = (
@@ -22,7 +22,7 @@ internal static class ExtensionsGenerator
             select assemblyType).ToArray();
 
         var classes = new List<Class>();
-        
+
         foreach (var type in types)
         {
             var avaloniaProperties = AvaloniaPropertyRegistry.Instance.GetRegistered(type);
@@ -46,28 +46,24 @@ internal static class ExtensionsGenerator
                 if (!(type.GetField($"{property.Name}Property")?.IsPublic ?? false))
                     continue;
 
-                if (property.OwnerType == type && property.PropertyType.IsPublic)
-                {
-                    var p = new Property(
-                        property.Name, 
-                        FixType(property.OwnerType.ToString()), 
-                        FixType(property.PropertyType.ToString()), 
-                        FixType(property.GetType().ToString()), 
-                        property.IsReadOnly);
-                    properties.Add(p);
-                }  
+                if (property.OwnerType != type || !property.PropertyType.IsPublic)
+                    continue;
+
+                var p = new Property(
+                    property.Name, 
+                    FixType(property.OwnerType.ToString()), 
+                    FixType(property.PropertyType.ToString()), 
+                    FixType(property.GetType().ToString()), 
+                    property.IsReadOnly);
+
+                properties.Add(p);
             }
 
-            var c = new Class(
-                type.Name, 
-                FixType(type.ToString()), 
-                properties.ToArray(),
-                type.IsSealed);
-
+            var c = new Class(type.Name, FixType(type.ToString()), properties.ToArray(), type.IsSealed);
             classes.Add(c);
         }
 
-        string propertyMethodsTemplate = @"    //
+        var propertyMethodsTemplate = @"    //
     // %Name%Property
     //
 
@@ -88,7 +84,7 @@ internal static class ExtensionsGenerator
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
     }";
 
-        string propertyMethodsTemplateSealed = @"    //
+        var propertyMethodsTemplateSealed = @"    //
     // %Name%Property
     //
 
@@ -118,58 +114,56 @@ internal static class ExtensionsGenerator
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
     }";
 
-    var classExtensionsHeaderTemplate = @"
+        var classExtensionsHeaderTemplate = @"
     public static class %ClassName%Extensions
     {";
 
-    var classExtensionsFooterTemplate = @"}";
+        var classExtensionsFooterTemplate = @"}";
 
-    Action<string> WriteLine = Console.WriteLine;
+        writeLine("namespace MinimalAvalonia.Extensions;");
 
-    WriteLine("namespace MinimalAvalonia.Controls;");
-
-    foreach (var c in classes)
-    {
-        var classHeaderBuilder = new StringBuilder(classExtensionsHeaderTemplate);
-        classHeaderBuilder.Replace("%ClassName%", c.Name);
-        WriteLine(classHeaderBuilder.ToString());
-
-        // Properties
-
-        if (c.Properties.Length > 0)
+        foreach (var c in classes)
         {
-            WriteLine("    //");
-            WriteLine("    // Properties");
-            WriteLine("    //");
-            WriteLine("");
+            var classHeaderBuilder = new StringBuilder(classExtensionsHeaderTemplate);
+            classHeaderBuilder.Replace("%ClassName%", c.Name);
+            writeLine(classHeaderBuilder.ToString());
 
+            // Properties
+
+            if (c.Properties.Length > 0)
+            {
+                writeLine("    //");
+                writeLine("    // Properties");
+                writeLine("    //");
+                writeLine("");
+
+                for (var i = 0; i < c.Properties.Length; i++)
+                {
+                    var p = c.Properties[i];
+                    writeLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
+                }
+
+                writeLine("");
+            }
+
+            // Methods
+            
             for (var i = 0; i < c.Properties.Length; i++)
             {
                 var p = c.Properties[i];
-                WriteLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
+                var template = p.IsReadOnly ? propertyMethodsTemplateReadOnly : c.IsSealed ? propertyMethodsTemplateSealed : propertyMethodsTemplate;
+                var propertyBuilder = new StringBuilder(template);
+                propertyBuilder.Replace("%ClassType%", c.Type);
+                propertyBuilder.Replace("%Name%", p.Name);
+                propertyBuilder.Replace("%OwnerType%", p.OwnerType);
+                propertyBuilder.Replace("%ValueType%", p.ValueType);
+                writeLine(propertyBuilder.ToString());
+                if (i < c.Properties.Length - 1)
+                    writeLine("");
             }
 
-            WriteLine("");
+            var classFooterBuilder = new StringBuilder(classExtensionsFooterTemplate);
+            writeLine(classFooterBuilder.ToString());
         }
-
-        // Methods
-        
-        for (var i = 0; i < c.Properties.Length; i++)
-        {
-            var p = c.Properties[i];
-            var template = p.IsReadOnly ? propertyMethodsTemplateReadOnly : c.IsSealed ? propertyMethodsTemplateSealed : propertyMethodsTemplate;
-            var propertyBuilder = new StringBuilder(template);
-            propertyBuilder.Replace("%ClassType%", c.Type);
-            propertyBuilder.Replace("%Name%", p.Name);
-            propertyBuilder.Replace("%OwnerType%", p.OwnerType);
-            propertyBuilder.Replace("%ValueType%", p.ValueType);
-            WriteLine(propertyBuilder.ToString());
-            if (i < c.Properties.Length - 1)
-                WriteLine("");
-        }
-
-        var classFooterBuilder = new StringBuilder(classExtensionsFooterTemplate);
-        WriteLine(classFooterBuilder.ToString());
-    }
     }
 }

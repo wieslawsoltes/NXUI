@@ -12,7 +12,7 @@ AppBuilder.Configure<App>()
         };
         x.Instance.Styles.Add(theme);
 
-        ExtensionsGenerator.Generate();
+        ExtensionsGenerator.Generate(Console.WriteLine);
     })
     .SetupWithoutStarting();
     //.StartWithClassicDesktopLifetime(args);
