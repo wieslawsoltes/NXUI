@@ -40,7 +40,7 @@ AppBuilder.Configure<Application>()
 ```
 cd Generator
 dotnet run > Extensions.g.cs
-copy Extensions.g.cs ../MinimalAvalonia/Extensions.g.cs
+copy Extensions.g.cs ../MinimalAvalonia/Extensions/Extensions.g.cs
 ```
 
 # Issues
