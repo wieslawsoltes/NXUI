@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Reflection;
+using System.Text;
 using Avalonia;
 
 namespace Generator;
@@ -12,20 +13,21 @@ internal static class ExtensionsGenerator
     public static void Generate(Action<string> writeLine) 
     {
         var assemblies = AppDomain.CurrentDomain.GetAssemblies();
-        var types = (
-            from domainAssembly in assemblies
-            where domainAssembly?.FullName is not null && domainAssembly.FullName.StartsWith("Avalonia") 
-            from assemblyType in domainAssembly.GetTypes()
+        var classTypes = (
+            from assembly in assemblies
+            where assembly?.FullName is not null && assembly.FullName.StartsWith("Avalonia") 
+            from assemblyType in assembly.GetTypes()
             where assemblyType is not null 
                   && assemblyType.IsSubclassOf(typeof(AvaloniaObject))
+                  && assemblyType.GetCustomAttributes().All(x => x.GetType().Name != "ObsoleteAttribute")
                   &&! assemblyType.IsAbstract
             select assemblyType).ToArray();
 
         var classes = new List<Class>();
 
-        foreach (var type in types)
+        foreach (var classType in classTypes)
         {
-            var avaloniaProperties = AvaloniaPropertyRegistry.Instance.GetRegistered(type);
+            var avaloniaProperties = AvaloniaPropertyRegistry.Instance.GetRegistered(classType);
             if (avaloniaProperties.Count <= 0)
                 continue;
 
@@ -43,10 +45,17 @@ internal static class ExtensionsGenerator
 
             foreach (var property in avaloniaProperties)
             {
-                if (!(type.GetField($"{property.Name}Property")?.IsPublic ?? false))
+                var fieldInfo = classType.GetField($"{property.Name}Property");
+                if (fieldInfo is null)
                     continue;
 
-                if (property.OwnerType != type || !property.PropertyType.IsPublic)
+                if (!fieldInfo.IsPublic)
+                    continue;
+
+                if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
+                    continue;
+
+                if (property.OwnerType != classType || !property.PropertyType.IsPublic)
                     continue;
 
                 var p = new Property(
@@ -59,7 +68,7 @@ internal static class ExtensionsGenerator
                 properties.Add(p);
             }
 
-            var c = new Class(type.Name, FixType(type.ToString()), properties.ToArray(), type.IsSealed);
+            var c = new Class(classType.Name, FixType(classType.ToString()), properties.ToArray(), classType.IsSealed);
             classes.Add(c);
         }
 
