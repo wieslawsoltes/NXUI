@@ -1,22 +1,21 @@
 ﻿Window Build() {
-    Border()
+    Border(out var border)
         .Background(Brushes.WhiteSmoke)
         .BorderBrush(Brushes.Black)
         .BorderThickness(2)
-        .CornerRadius(4)
-        .Ref(out var border);
+        .CornerRadius(4);
 
-    Button()
+    Button(out var button)
         .OnClick(o => o.Subscribe(_ => Debug.WriteLine("Click")))
-        .Content("Button")
-        .Ref(out var button);
+        .Content("Button");
 
-    ContentControl()
-        .Content("Content")
-        .Ref(out var contentControl);
+    ContentControl(out var contentControl)
+        .Content("Content");
 
-    Decorator()
-        .Ref(out var decorator);
+    Decorator(out var decorator)
+        .Child(
+            TextBox().Text("Child"))
+        .Padding(4);
 
     HeaderedContentControl()
         .Ref(out var headeredContentControl);
@@ -24,35 +23,37 @@
     ItemsControl()
         .Ref(out var itemsControl);
 
-    Label()
+    Label(out var label)
         .Classes("animation")
         .HorizontalAlignmentCenter().VerticalAlignmentCenter()
-        .Content("Label")
-        .Ref(out var label);
+        .Content("Label");
 
     Layoutable()
         .Ref(out var layoutable);
 
-    Panel()
+    Panel(out var panel)
         .Styles(RotateAnimation(TimeSpan.FromSeconds(5), 180d, 360d))
         .Width(200).Height(200)
-        .Background(Brushes.WhiteSmoke)
-        .Ref(out var panel);
+        .Background(Brushes.WhiteSmoke);
 
-    StackPanel()
-        .Ref(out var stackPanel);
+    StackPanel(out var stackPanel)
+        .Spacing(4)
+        .OrientationVertical()
+        .Children(
+            TextBlock().Text("Child 1"),
+            TextBlock().Text("Child 2"),
+            TextBlock().Text("Child 3"));
 
-    TabControl()
+    TabControl(out var tabControl)
         .Items(
             TabItem().Header("TabItem1").Content("TabItem1"),
             TabItem().Header("TabItem2").Content("TabItem2"),
-            TabItem().Header("TabItem3").Content("TabItem3"))
-        .Ref(out var tabControl);
+            TabItem().Header("TabItem3").Content("TabItem3"));
 
     TemplatedControl()
         .Ref(out var templatedControl);
 
-    TextBlock()
+    TextBlock(out var textBlock)
         .Background(Brushes.WhiteSmoke)
         .Padding(4)
         .FontFamily(FontFamily.Default)
@@ -66,18 +67,16 @@
         .TextAlignment(TextAlignment.Left)
         .TextWrapping(TextWrapping.NoWrap)
         .TextTrimming(TextTrimming.None)
-        .TextDecorations(new TextDecorationCollection())
-        .Ref(out var textBlock);
+        .TextDecorations(new TextDecorationCollection());
 
-    TextBox()
+    TextBox(out var textBox)
         .AcceptsReturn(true)
         .AcceptsTab(true)
         .CaretIndex(0)
         .IsReadOnly(false)
-        .Text("TextBox")
-        .Ref(out var textBox);
+        .Text("TextBox");
 
-    TabControl()
+    TabControl(out var controls)
         .ItemsPanel(new FuncTemplate<IPanel>(StackPanel))
         .TabStripPlacementLeft()
         .Items(
@@ -94,21 +93,19 @@
             TabItem().Header("TabControl").Content(tabControl),
             TabItem().Header("TemplatedControl").Content(templatedControl),
             TabItem().Header("TextBlock").Content(textBlock),
-            TabItem().Header("TextBox").Content(textBox))
-        .Ref(out var controls);
+            TabItem().Header("TextBox").Content(textBox));
 
-    Window()
+    Window(out var window)
         .SizeToContentManual()
         .Title("ControlCatalog")
         .Width(800).Height(700)
-        .Content(controls).Ref(out var window);
+        .Content(controls);
 
-    Style()
+    Style(out var style1)
         .Selector(x => x.OfType<Button>().Class(":pointerover").Template().OfType<ContentPresenter>().Name("PART_ContentPresenter"))
-        .Setter(TemplatedControlBackground, Brushes.Red)
-        .Ref(out var style1);
+        .Setter(TemplatedControlBackground, Brushes.Red);
 
-    Style()
+    Style(out var style2)
         .Selector(x => x.OfType<Label>().Class("animation"))
         .Animations(
             Animation()
@@ -116,8 +113,7 @@
                 .IterationCountInfinite()
                 .KeyFrames(
                     KeyFrame().Cue(0.0).Setter(RotateTransformAngle, 0d),
-                    KeyFrame().Cue(1.0).Setter(RotateTransformAngle, 360d)))
-        .Ref(out var style2);
+                    KeyFrame().Cue(1.0).Setter(RotateTransformAngle, 360d)));
 
     window.Styles(style1, style2);
 
