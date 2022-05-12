@@ -15,20 +15,34 @@ internal static class ExtensionsGenerator
         "AboutAvaloniaDialog"
     };
 
-    public static void Generate(string outputPath) 
+    public static void Generate(string outputPath)
     {
-        if (!Directory.Exists(outputPath))
-        {
-            Directory.CreateDirectory(outputPath);
-        }
+        var buildersPath = Path.Combine(outputPath, "Builders");
+        var propertiesPath = Path.Combine(outputPath, "Properties");
+        var extensionsPath = Path.Combine(outputPath, "Extensions");
 
         var classes = GetClasses();
 
-        GenerateBuilders(outputPath, classes);
+        if (!Directory.Exists(buildersPath))
+        {
+            Directory.CreateDirectory(buildersPath);
+        }
 
-        GenerateProperties(outputPath, classes);
+        GenerateBuilders(buildersPath, classes);
 
-        GenerateExtensions(outputPath, classes);
+        if (!Directory.Exists(propertiesPath))
+        {
+            Directory.CreateDirectory(propertiesPath);
+        }
+
+        GenerateProperties(propertiesPath, classes);
+
+        if (!Directory.Exists(extensionsPath))
+        {
+            Directory.CreateDirectory(extensionsPath);
+        }
+
+        GenerateExtensions(extensionsPath, classes);
     }
 
     private static void GenerateBuilders(string outputPath, List<Class> classes)
