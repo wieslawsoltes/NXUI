@@ -3,7 +3,7 @@
 Window Build()
     => Window()
         .Title("Counters")
-        .Padding(12).SizeToContentManual().Width(300).Height(300)
+        .Padding(12).Width(300).Height(200)
         .Content(
             ItemsControl()
                 .ItemTemplate(new FuncDataTemplate<BehaviorSubject<int>>((count, _) => 
