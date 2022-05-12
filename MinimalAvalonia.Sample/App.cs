@@ -12,13 +12,19 @@ AppBuilder.Configure<Application>()
               window[!!WindowTitle] = tb1.GetObservable(TextBoxText).Select(x => x.ToUpper()).ToBinding();
               window[ContentControlContent] = new StackPanel { Children = { button, tb1, tb2, label } };
 #else
-              Window().Ref(out var window);
-              Button().Content("Welcome to Avalonia, please click me!").Ref(out var button);
-              TextBox().Text("Minimal Avalonia").Ref(out var tb1);
-              TextBox().Text(window.Title()).Ref(out var tb2);
-              Label().Content(button.OnClick().Select(_ => ++count).Select(x => $"You clicked {x} times.").ToBinding()).Ref(out var label);
-              window.Title(tb1.GetObservable(TextBoxText).Select(x => x?.ToUpper()).ToBinding());
-              window.Content(StackPanel().Children(button, tb1, tb2, label));
+              Window(out var window)
+                  .Content(
+                      StackPanel()
+                          .Children(
+                              Button(out var button)
+                                  .Content("Welcome to Avalonia, please click me!"), 
+                              TextBox(out var tb1)
+                                  .Text("Minimal Avalonia"), 
+                              TextBox()
+                                  .Text(window.Title()), 
+                              Label()
+                                  .Content(button.OnClick().Select(_ => ++count).Select(x => $"You clicked {x} times.").ToBinding())))
+                  .Title(tb1.GetObservable(TextBoxText).Select(x => x?.ToUpper()).ToBinding());
 #endif
               desktop.MainWindow = window;
           }, args);
