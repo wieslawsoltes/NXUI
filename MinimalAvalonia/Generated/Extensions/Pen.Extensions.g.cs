@@ -33,6 +33,13 @@ public static partial class PenExtensions
         return obj.GetObservable(Avalonia.Media.Pen.BrushProperty);
     }
 
+    public static Avalonia.Media.Pen OnBrush(this Avalonia.Media.Pen obj, Action<IObservable<Avalonia.Media.IBrush>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.Pen.BrushProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ThicknessProperty
 
     public static Avalonia.Media.Pen Thickness(this Avalonia.Media.Pen obj, System.Double value)
@@ -61,6 +68,13 @@ public static partial class PenExtensions
     public static IObservable<System.Double> ObserveThickness(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.ThicknessProperty);
+    }
+
+    public static Avalonia.Media.Pen OnThickness(this Avalonia.Media.Pen obj, Action<IObservable<System.Double>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.Pen.ThicknessProperty);
+        handler(observable);
+        return obj;
     }
 
     // DashStyleProperty
@@ -93,6 +107,13 @@ public static partial class PenExtensions
         return obj.GetObservable(Avalonia.Media.Pen.DashStyleProperty);
     }
 
+    public static Avalonia.Media.Pen OnDashStyle(this Avalonia.Media.Pen obj, Action<IObservable<Avalonia.Media.IDashStyle>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.Pen.DashStyleProperty);
+        handler(observable);
+        return obj;
+    }
+
     // LineCapProperty
 
     public static Avalonia.Media.Pen LineCap(this Avalonia.Media.Pen obj, Avalonia.Media.PenLineCap value)
@@ -121,6 +142,13 @@ public static partial class PenExtensions
     public static IObservable<Avalonia.Media.PenLineCap> ObserveLineCap(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.LineCapProperty);
+    }
+
+    public static Avalonia.Media.Pen OnLineCap(this Avalonia.Media.Pen obj, Action<IObservable<Avalonia.Media.PenLineCap>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.Pen.LineCapProperty);
+        handler(observable);
+        return obj;
     }
 
     public static Avalonia.Media.Pen LineCapFlat(this Avalonia.Media.Pen obj)
@@ -171,6 +199,13 @@ public static partial class PenExtensions
         return obj.GetObservable(Avalonia.Media.Pen.LineJoinProperty);
     }
 
+    public static Avalonia.Media.Pen OnLineJoin(this Avalonia.Media.Pen obj, Action<IObservable<Avalonia.Media.PenLineJoin>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.Pen.LineJoinProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static Avalonia.Media.Pen LineJoinBevel(this Avalonia.Media.Pen obj)
     {
         obj[Avalonia.Media.Pen.LineJoinProperty] = Avalonia.Media.PenLineJoin.Bevel;
@@ -217,5 +252,12 @@ public static partial class PenExtensions
     public static IObservable<System.Double> ObserveMiterLimit(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.MiterLimitProperty);
+    }
+
+    public static Avalonia.Media.Pen OnMiterLimit(this Avalonia.Media.Pen obj, Action<IObservable<System.Double>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.Pen.MiterLimitProperty);
+        handler(observable);
+        return obj;
     }
 }

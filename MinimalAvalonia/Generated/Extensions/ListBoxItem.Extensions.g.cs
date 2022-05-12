@@ -32,4 +32,11 @@ public static partial class ListBoxItemExtensions
     {
         return obj.GetObservable(Avalonia.Controls.ListBoxItem.IsSelectedProperty);
     }
+
+    public static T OnIsSelected<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ListBoxItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ListBoxItem.IsSelectedProperty);
+        handler(observable);
+        return obj;
+    }
 }

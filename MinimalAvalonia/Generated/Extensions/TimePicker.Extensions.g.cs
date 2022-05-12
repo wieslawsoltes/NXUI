@@ -33,6 +33,13 @@ public static partial class TimePickerExtensions
         return obj.GetObservable(Avalonia.Controls.TimePicker.MinuteIncrementProperty);
     }
 
+    public static T OnMinuteIncrement<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TimePicker.MinuteIncrementProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ClockIdentifierProperty
 
     public static T ClockIdentifier<T>(this T obj, System.String value) where T : Avalonia.Controls.TimePicker
@@ -63,6 +70,13 @@ public static partial class TimePickerExtensions
         return obj.GetObservable(Avalonia.Controls.TimePicker.ClockIdentifierProperty);
     }
 
+    public static T OnClockIdentifier<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TimePicker.ClockIdentifierProperty);
+        handler(observable);
+        return obj;
+    }
+
     // SelectedTimeProperty
 
     public static T SelectedTime<T>(this T obj, System.Nullable<System.TimeSpan> value) where T : Avalonia.Controls.TimePicker
@@ -91,5 +105,12 @@ public static partial class TimePickerExtensions
     public static IObservable<System.Nullable<System.TimeSpan>> ObserveSelectedTime(this Avalonia.Controls.TimePicker obj)
     {
         return obj.GetObservable(Avalonia.Controls.TimePicker.SelectedTimeProperty);
+    }
+
+    public static T OnSelectedTime<T>(this T obj, Action<IObservable<System.Nullable<System.TimeSpan>>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TimePicker.SelectedTimeProperty);
+        handler(observable);
+        return obj;
     }
 }

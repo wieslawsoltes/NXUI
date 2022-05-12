@@ -33,6 +33,13 @@ public static partial class FluentThemeExtensions
         return obj.GetObservable(Avalonia.Themes.Fluent.FluentTheme.ModeProperty);
     }
 
+    public static T OnMode<T>(this T obj, Action<IObservable<Avalonia.Themes.Fluent.FluentThemeMode>> handler) where T : Avalonia.Themes.Fluent.FluentTheme
+    {
+        var observable = obj.GetObservable(Avalonia.Themes.Fluent.FluentTheme.ModeProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T ModeLight<T>(this T obj) where T : Avalonia.Themes.Fluent.FluentTheme
     {
         obj[Avalonia.Themes.Fluent.FluentTheme.ModeProperty] = Avalonia.Themes.Fluent.FluentThemeMode.Light;
@@ -73,6 +80,13 @@ public static partial class FluentThemeExtensions
     public static IObservable<Avalonia.Themes.Fluent.DensityStyle> ObserveDensityStyle(this Avalonia.Themes.Fluent.FluentTheme obj)
     {
         return obj.GetObservable(Avalonia.Themes.Fluent.FluentTheme.DensityStyleProperty);
+    }
+
+    public static T OnDensityStyle<T>(this T obj, Action<IObservable<Avalonia.Themes.Fluent.DensityStyle>> handler) where T : Avalonia.Themes.Fluent.FluentTheme
+    {
+        var observable = obj.GetObservable(Avalonia.Themes.Fluent.FluentTheme.DensityStyleProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T DensityStyleNormal<T>(this T obj) where T : Avalonia.Themes.Fluent.FluentTheme

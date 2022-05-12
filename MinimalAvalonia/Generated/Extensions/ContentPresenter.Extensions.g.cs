@@ -15,6 +15,13 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
     }
 
+    public static Avalonia.Controls.Presenters.ContentPresenter OnChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<IObservable<Avalonia.Controls.IControl>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
+        handler(observable);
+        return obj;
+    }
+
     // RecognizesAccessKeyProperty
 
     public static T RecognizesAccessKey<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Presenters.ContentPresenter
@@ -43,5 +50,12 @@ public static partial class ContentPresenterExtensions
     public static IObservable<System.Boolean> ObserveRecognizesAccessKey(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
+    }
+
+    public static T OnRecognizesAccessKey<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
+        handler(observable);
+        return obj;
     }
 }

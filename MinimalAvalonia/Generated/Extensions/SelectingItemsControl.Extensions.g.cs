@@ -33,6 +33,13 @@ public static partial class SelectingItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty);
     }
 
+    public static T OnAutoScrollToSelectedItem<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty);
+        handler(observable);
+        return obj;
+    }
+
     // SelectedIndexProperty
 
     public static T SelectedIndex<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
@@ -61,6 +68,13 @@ public static partial class SelectingItemsControlExtensions
     public static IObservable<System.Int32> ObserveSelectedIndex(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
+    }
+
+    public static T OnSelectedIndex<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
+        handler(observable);
+        return obj;
     }
 
     // SelectedItemProperty
@@ -93,6 +107,13 @@ public static partial class SelectingItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
     }
 
+    public static T OnSelectedItem<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsTextSearchEnabledProperty
 
     public static T IsTextSearchEnabled<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
@@ -121,5 +142,12 @@ public static partial class SelectingItemsControlExtensions
     public static IObservable<System.Boolean> ObserveIsTextSearchEnabled(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
+    }
+
+    public static T OnIsTextSearchEnabled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
+        handler(observable);
+        return obj;
     }
 }

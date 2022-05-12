@@ -33,6 +33,13 @@ public static partial class PathFigureExtensions
         return obj.GetObservable(Avalonia.Media.PathFigure.IsClosedProperty);
     }
 
+    public static Avalonia.Media.PathFigure OnIsClosed(this Avalonia.Media.PathFigure obj, Action<IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.PathFigure.IsClosedProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsFilledProperty
 
     public static Avalonia.Media.PathFigure IsFilled(this Avalonia.Media.PathFigure obj, System.Boolean value)
@@ -61,6 +68,13 @@ public static partial class PathFigureExtensions
     public static IObservable<System.Boolean> ObserveIsFilled(this Avalonia.Media.PathFigure obj)
     {
         return obj.GetObservable(Avalonia.Media.PathFigure.IsFilledProperty);
+    }
+
+    public static Avalonia.Media.PathFigure OnIsFilled(this Avalonia.Media.PathFigure obj, Action<IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.PathFigure.IsFilledProperty);
+        handler(observable);
+        return obj;
     }
 
     // SegmentsProperty
@@ -93,6 +107,13 @@ public static partial class PathFigureExtensions
         return obj.GetObservable(Avalonia.Media.PathFigure.SegmentsProperty);
     }
 
+    public static Avalonia.Media.PathFigure OnSegments(this Avalonia.Media.PathFigure obj, Action<IObservable<Avalonia.Media.PathSegments>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.PathFigure.SegmentsProperty);
+        handler(observable);
+        return obj;
+    }
+
     // StartPointProperty
 
     public static Avalonia.Media.PathFigure StartPoint(this Avalonia.Media.PathFigure obj, Avalonia.Point value)
@@ -121,5 +142,12 @@ public static partial class PathFigureExtensions
     public static IObservable<Avalonia.Point> ObserveStartPoint(this Avalonia.Media.PathFigure obj)
     {
         return obj.GetObservable(Avalonia.Media.PathFigure.StartPointProperty);
+    }
+
+    public static Avalonia.Media.PathFigure OnStartPoint(this Avalonia.Media.PathFigure obj, Action<IObservable<Avalonia.Point>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.PathFigure.StartPointProperty);
+        handler(observable);
+        return obj;
     }
 }

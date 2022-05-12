@@ -33,6 +33,13 @@ public static partial class WrapPanelExtensions
         return obj.GetObservable(Avalonia.Controls.WrapPanel.OrientationProperty);
     }
 
+    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.WrapPanel.OrientationProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Controls.WrapPanel
     {
         obj[Avalonia.Controls.WrapPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
@@ -75,6 +82,13 @@ public static partial class WrapPanelExtensions
         return obj.GetObservable(Avalonia.Controls.WrapPanel.ItemWidthProperty);
     }
 
+    public static T OnItemWidth<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.WrapPanel.ItemWidthProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ItemHeightProperty
 
     public static T ItemHeight<T>(this T obj, System.Double value) where T : Avalonia.Controls.WrapPanel
@@ -103,5 +117,12 @@ public static partial class WrapPanelExtensions
     public static IObservable<System.Double> ObserveItemHeight(this Avalonia.Controls.WrapPanel obj)
     {
         return obj.GetObservable(Avalonia.Controls.WrapPanel.ItemHeightProperty);
+    }
+
+    public static T OnItemHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.WrapPanel.ItemHeightProperty);
+        handler(observable);
+        return obj;
     }
 }

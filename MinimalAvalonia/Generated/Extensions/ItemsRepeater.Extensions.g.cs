@@ -33,6 +33,13 @@ public static partial class ItemsRepeaterExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty);
     }
 
+    public static T OnHorizontalCacheLength<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ItemsProperty
 
     public static T Items<T>(this T obj, System.Collections.IEnumerable value) where T : Avalonia.Controls.ItemsRepeater
@@ -61,6 +68,13 @@ public static partial class ItemsRepeaterExtensions
     public static IObservable<System.Collections.IEnumerable> ObserveItems(this Avalonia.Controls.ItemsRepeater obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemsProperty);
+    }
+
+    public static T OnItems<T>(this T obj, Action<IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemsProperty);
+        handler(observable);
+        return obj;
     }
 
     // LayoutProperty
@@ -93,6 +107,13 @@ public static partial class ItemsRepeaterExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
     }
 
+    public static T OnLayout<T>(this T obj, Action<IObservable<Avalonia.Layout.AttachedLayout>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
+        handler(observable);
+        return obj;
+    }
+
     // VerticalCacheLengthProperty
 
     public static T VerticalCacheLength<T>(this T obj, System.Double value) where T : Avalonia.Controls.ItemsRepeater
@@ -121,5 +142,12 @@ public static partial class ItemsRepeaterExtensions
     public static IObservable<System.Double> ObserveVerticalCacheLength(this Avalonia.Controls.ItemsRepeater obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty);
+    }
+
+    public static T OnVerticalCacheLength<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty);
+        handler(observable);
+        return obj;
     }
 }

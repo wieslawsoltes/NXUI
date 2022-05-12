@@ -32,4 +32,11 @@ public static partial class ReversibleStackPanelExtensions
     {
         return obj.GetObservable(Avalonia.Controls.ReversibleStackPanel.ReverseOrderProperty);
     }
+
+    public static T OnReverseOrder<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ReversibleStackPanel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ReversibleStackPanel.ReverseOrderProperty);
+        handler(observable);
+        return obj;
+    }
 }

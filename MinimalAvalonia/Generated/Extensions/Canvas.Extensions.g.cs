@@ -33,6 +33,13 @@ public static partial class CanvasExtensions
         return obj.GetObservable(Avalonia.Controls.Canvas.LeftProperty);
     }
 
+    public static T OnLeft<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Canvas.LeftProperty);
+        handler(observable);
+        return obj;
+    }
+
     // TopProperty
 
     public static T Top<T>(this T obj, System.Double value) where T : Avalonia.Controls.Control
@@ -61,6 +68,13 @@ public static partial class CanvasExtensions
     public static IObservable<System.Double> ObserveTop(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.Canvas.TopProperty);
+    }
+
+    public static T OnTop<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Canvas.TopProperty);
+        handler(observable);
+        return obj;
     }
 
     // RightProperty
@@ -93,6 +107,13 @@ public static partial class CanvasExtensions
         return obj.GetObservable(Avalonia.Controls.Canvas.RightProperty);
     }
 
+    public static T OnRight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Canvas.RightProperty);
+        handler(observable);
+        return obj;
+    }
+
     // BottomProperty
 
     public static T Bottom<T>(this T obj, System.Double value) where T : Avalonia.Controls.Control
@@ -121,5 +142,12 @@ public static partial class CanvasExtensions
     public static IObservable<System.Double> ObserveBottom(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.Canvas.BottomProperty);
+    }
+
+    public static T OnBottom<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Canvas.BottomProperty);
+        handler(observable);
+        return obj;
     }
 }

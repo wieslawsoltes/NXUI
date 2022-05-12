@@ -33,6 +33,13 @@ public static partial class SliderExtensions
         return obj.GetObservable(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
     }
 
+    public static T OnIsSnapToTickEnabled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
+        handler(observable);
+        return obj;
+    }
+
     // TickFrequencyProperty
 
     public static T TickFrequency<T>(this T obj, System.Double value) where T : Avalonia.Controls.Slider
@@ -63,6 +70,13 @@ public static partial class SliderExtensions
         return obj.GetObservable(Avalonia.Controls.Slider.TickFrequencyProperty);
     }
 
+    public static T OnTickFrequency<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Slider.TickFrequencyProperty);
+        handler(observable);
+        return obj;
+    }
+
     // TickPlacementProperty
 
     public static T TickPlacement<T>(this T obj, Avalonia.Controls.TickPlacement value) where T : Avalonia.Controls.Slider
@@ -91,6 +105,13 @@ public static partial class SliderExtensions
     public static IObservable<Avalonia.Controls.TickPlacement> ObserveTickPlacement(this Avalonia.Controls.Slider obj)
     {
         return obj.GetObservable(Avalonia.Controls.Slider.TickPlacementProperty);
+    }
+
+    public static T OnTickPlacement<T>(this T obj, Action<IObservable<Avalonia.Controls.TickPlacement>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Slider.TickPlacementProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T TickPlacementNone<T>(this T obj) where T : Avalonia.Controls.Slider

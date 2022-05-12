@@ -33,6 +33,13 @@ public static partial class EllipseGeometryExtensions
         return obj.GetObservable(Avalonia.Media.EllipseGeometry.RectProperty);
     }
 
+    public static T OnRect<T>(this T obj, Action<IObservable<Avalonia.Rect>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.EllipseGeometry.RectProperty);
+        handler(observable);
+        return obj;
+    }
+
     // RadiusXProperty
 
     public static T RadiusX<T>(this T obj, System.Double value) where T : Avalonia.Media.EllipseGeometry
@@ -61,6 +68,13 @@ public static partial class EllipseGeometryExtensions
     public static IObservable<System.Double> ObserveRadiusX(this Avalonia.Media.EllipseGeometry obj)
     {
         return obj.GetObservable(Avalonia.Media.EllipseGeometry.RadiusXProperty);
+    }
+
+    public static T OnRadiusX<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.EllipseGeometry.RadiusXProperty);
+        handler(observable);
+        return obj;
     }
 
     // RadiusYProperty
@@ -93,6 +107,13 @@ public static partial class EllipseGeometryExtensions
         return obj.GetObservable(Avalonia.Media.EllipseGeometry.RadiusYProperty);
     }
 
+    public static T OnRadiusY<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.EllipseGeometry.RadiusYProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CenterProperty
 
     public static T Center<T>(this T obj, Avalonia.Point value) where T : Avalonia.Media.EllipseGeometry
@@ -121,5 +142,12 @@ public static partial class EllipseGeometryExtensions
     public static IObservable<Avalonia.Point> ObserveCenter(this Avalonia.Media.EllipseGeometry obj)
     {
         return obj.GetObservable(Avalonia.Media.EllipseGeometry.CenterProperty);
+    }
+
+    public static T OnCenter<T>(this T obj, Action<IObservable<Avalonia.Point>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.EllipseGeometry.CenterProperty);
+        handler(observable);
+        return obj;
     }
 }

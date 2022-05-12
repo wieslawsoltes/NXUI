@@ -33,6 +33,13 @@ public static partial class ToolTipExtensions
         return obj.GetObservable(Avalonia.Controls.ToolTip.TipProperty);
     }
 
+    public static T OnTip<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToolTip.TipProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsOpenProperty
 
     public static T IsOpen<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Control
@@ -63,6 +70,13 @@ public static partial class ToolTipExtensions
         return obj.GetObservable(Avalonia.Controls.ToolTip.IsOpenProperty);
     }
 
+    public static T OnIsOpen<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToolTip.IsOpenProperty);
+        handler(observable);
+        return obj;
+    }
+
     // PlacementProperty
 
     public static T Placement<T>(this T obj, Avalonia.Controls.PlacementMode value) where T : Avalonia.Controls.Control
@@ -91,6 +105,13 @@ public static partial class ToolTipExtensions
     public static IObservable<Avalonia.Controls.PlacementMode> ObservePlacement(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.ToolTip.PlacementProperty);
+    }
+
+    public static T OnPlacement<T>(this T obj, Action<IObservable<Avalonia.Controls.PlacementMode>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToolTip.PlacementProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T PlacementPointer<T>(this T obj) where T : Avalonia.Controls.Control
@@ -159,6 +180,13 @@ public static partial class ToolTipExtensions
         return obj.GetObservable(Avalonia.Controls.ToolTip.HorizontalOffsetProperty);
     }
 
+    public static T OnHorizontalOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToolTip.HorizontalOffsetProperty);
+        handler(observable);
+        return obj;
+    }
+
     // VerticalOffsetProperty
 
     public static T VerticalOffset<T>(this T obj, System.Double value) where T : Avalonia.Controls.Control
@@ -189,6 +217,13 @@ public static partial class ToolTipExtensions
         return obj.GetObservable(Avalonia.Controls.ToolTip.VerticalOffsetProperty);
     }
 
+    public static T OnVerticalOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToolTip.VerticalOffsetProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ShowDelayProperty
 
     public static T ShowDelay<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.Control
@@ -217,5 +252,12 @@ public static partial class ToolTipExtensions
     public static IObservable<System.Int32> ObserveShowDelay(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.ToolTip.ShowDelayProperty);
+    }
+
+    public static T OnShowDelay<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToolTip.ShowDelayProperty);
+        handler(observable);
+        return obj;
     }
 }

@@ -33,6 +33,13 @@ public static partial class TreeViewExtensions
         return obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
     }
 
+    public static T OnSelectedItem<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
+        handler(observable);
+        return obj;
+    }
+
     // SelectedItemsProperty
 
     public static T SelectedItems<T>(this T obj, System.Collections.IList value) where T : Avalonia.Controls.TreeView
@@ -61,5 +68,12 @@ public static partial class TreeViewExtensions
     public static IObservable<System.Collections.IList> ObserveSelectedItems(this Avalonia.Controls.TreeView obj)
     {
         return obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemsProperty);
+    }
+
+    public static T OnSelectedItems<T>(this T obj, Action<IObservable<System.Collections.IList>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemsProperty);
+        handler(observable);
+        return obj;
     }
 }

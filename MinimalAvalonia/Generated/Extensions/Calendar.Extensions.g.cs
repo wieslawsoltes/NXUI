@@ -33,6 +33,13 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.FirstDayOfWeekProperty);
     }
 
+    public static T OnFirstDayOfWeek<T>(this T obj, Action<IObservable<System.DayOfWeek>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Calendar.FirstDayOfWeekProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T FirstDayOfWeekSunday<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Sunday;
@@ -105,6 +112,13 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.IsTodayHighlightedProperty);
     }
 
+    public static T OnIsTodayHighlighted<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Calendar.IsTodayHighlightedProperty);
+        handler(observable);
+        return obj;
+    }
+
     // HeaderBackgroundProperty
 
     public static T HeaderBackground<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Calendar
@@ -135,6 +149,13 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
     }
 
+    public static T OnHeaderBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
+        handler(observable);
+        return obj;
+    }
+
     // DisplayModeProperty
 
     public static T DisplayMode<T>(this T obj, Avalonia.Controls.CalendarMode value) where T : Avalonia.Controls.Calendar
@@ -163,6 +184,13 @@ public static partial class CalendarExtensions
     public static IObservable<Avalonia.Controls.CalendarMode> ObserveDisplayMode(this Avalonia.Controls.Calendar obj)
     {
         return obj.GetObservable(Avalonia.Controls.Calendar.DisplayModeProperty);
+    }
+
+    public static T OnDisplayMode<T>(this T obj, Action<IObservable<Avalonia.Controls.CalendarMode>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayModeProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T DisplayModeMonth<T>(this T obj) where T : Avalonia.Controls.Calendar
@@ -211,6 +239,13 @@ public static partial class CalendarExtensions
     public static IObservable<Avalonia.Controls.CalendarSelectionMode> ObserveSelectionMode(this Avalonia.Controls.Calendar obj)
     {
         return obj.GetObservable(Avalonia.Controls.Calendar.SelectionModeProperty);
+    }
+
+    public static T OnSelectionMode<T>(this T obj, Action<IObservable<Avalonia.Controls.CalendarSelectionMode>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Calendar.SelectionModeProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T SelectionModeSingleDate<T>(this T obj) where T : Avalonia.Controls.Calendar
@@ -267,6 +302,13 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.SelectedDateProperty);
     }
 
+    public static T OnSelectedDate<T>(this T obj, Action<IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Calendar.SelectedDateProperty);
+        handler(observable);
+        return obj;
+    }
+
     // DisplayDateProperty
 
     public static T DisplayDate<T>(this T obj, System.DateTime value) where T : Avalonia.Controls.Calendar
@@ -295,6 +337,13 @@ public static partial class CalendarExtensions
     public static IObservable<System.DateTime> ObserveDisplayDate(this Avalonia.Controls.Calendar obj)
     {
         return obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateProperty);
+    }
+
+    public static T OnDisplayDate<T>(this T obj, Action<IObservable<System.DateTime>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateProperty);
+        handler(observable);
+        return obj;
     }
 
     // DisplayDateStartProperty
@@ -327,6 +376,13 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateStartProperty);
     }
 
+    public static T OnDisplayDateStart<T>(this T obj, Action<IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateStartProperty);
+        handler(observable);
+        return obj;
+    }
+
     // DisplayDateEndProperty
 
     public static T DisplayDateEnd<T>(this T obj, System.Nullable<System.DateTime> value) where T : Avalonia.Controls.Calendar
@@ -355,5 +411,12 @@ public static partial class CalendarExtensions
     public static IObservable<System.Nullable<System.DateTime>> ObserveDisplayDateEnd(this Avalonia.Controls.Calendar obj)
     {
         return obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateEndProperty);
+    }
+
+    public static T OnDisplayDateEnd<T>(this T obj, Action<IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateEndProperty);
+        handler(observable);
+        return obj;
     }
 }

@@ -33,6 +33,13 @@ public static partial class RowDefinitionExtensions
         return obj.GetObservable(Avalonia.Controls.RowDefinition.MaxHeightProperty);
     }
 
+    public static T OnMaxHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.RowDefinition
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RowDefinition.MaxHeightProperty);
+        handler(observable);
+        return obj;
+    }
+
     // MinHeightProperty
 
     public static T MinHeight<T>(this T obj, System.Double value) where T : Avalonia.Controls.RowDefinition
@@ -63,6 +70,13 @@ public static partial class RowDefinitionExtensions
         return obj.GetObservable(Avalonia.Controls.RowDefinition.MinHeightProperty);
     }
 
+    public static T OnMinHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.RowDefinition
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RowDefinition.MinHeightProperty);
+        handler(observable);
+        return obj;
+    }
+
     // HeightProperty
 
     public static T Height<T>(this T obj, Avalonia.Controls.GridLength value) where T : Avalonia.Controls.RowDefinition
@@ -91,5 +105,12 @@ public static partial class RowDefinitionExtensions
     public static IObservable<Avalonia.Controls.GridLength> ObserveHeight(this Avalonia.Controls.RowDefinition obj)
     {
         return obj.GetObservable(Avalonia.Controls.RowDefinition.HeightProperty);
+    }
+
+    public static T OnHeight<T>(this T obj, Action<IObservable<Avalonia.Controls.GridLength>> handler) where T : Avalonia.Controls.RowDefinition
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RowDefinition.HeightProperty);
+        handler(observable);
+        return obj;
     }
 }

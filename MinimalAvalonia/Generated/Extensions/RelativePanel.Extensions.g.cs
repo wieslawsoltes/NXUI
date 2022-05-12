@@ -33,6 +33,13 @@ public static partial class RelativePanelExtensions
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AboveProperty);
     }
 
+    public static T OnAbove<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AboveProperty);
+        handler(observable);
+        return obj;
+    }
+
     // AlignBottomWithPanelProperty
 
     public static T AlignBottomWithPanel<T>(this T obj, System.Boolean value) where T : Avalonia.Layout.Layoutable
@@ -61,6 +68,13 @@ public static partial class RelativePanelExtensions
     public static IObservable<System.Boolean> ObserveAlignBottomWithPanel(this Avalonia.Layout.Layoutable obj)
     {
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty);
+    }
+
+    public static T OnAlignBottomWithPanel<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty);
+        handler(observable);
+        return obj;
     }
 
     // AlignBottomWithProperty
@@ -93,6 +107,13 @@ public static partial class RelativePanelExtensions
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignBottomWithProperty);
     }
 
+    public static T OnAlignBottomWith<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignBottomWithProperty);
+        handler(observable);
+        return obj;
+    }
+
     // AlignHorizontalCenterWithPanelProperty
 
     public static T AlignHorizontalCenterWithPanel<T>(this T obj, System.Boolean value) where T : Avalonia.Layout.Layoutable
@@ -121,6 +142,13 @@ public static partial class RelativePanelExtensions
     public static IObservable<System.Boolean> ObserveAlignHorizontalCenterWithPanel(this Avalonia.Layout.Layoutable obj)
     {
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty);
+    }
+
+    public static T OnAlignHorizontalCenterWithPanel<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty);
+        handler(observable);
+        return obj;
     }
 
     // AlignLeftWithPanelProperty
@@ -153,6 +181,13 @@ public static partial class RelativePanelExtensions
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty);
     }
 
+    public static T OnAlignLeftWithPanel<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty);
+        handler(observable);
+        return obj;
+    }
+
     // AlignLeftWithProperty
 
     public static T AlignLeftWith<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
@@ -181,6 +216,13 @@ public static partial class RelativePanelExtensions
     public static IObservable<System.Object> ObserveAlignLeftWith(this Avalonia.Layout.Layoutable obj)
     {
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
+    }
+
+    public static T OnAlignLeftWith<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
+        handler(observable);
+        return obj;
     }
 
     // AlignRightWithPanelProperty
@@ -213,6 +255,13 @@ public static partial class RelativePanelExtensions
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty);
     }
 
+    public static T OnAlignRightWithPanel<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty);
+        handler(observable);
+        return obj;
+    }
+
     // AlignRightWithProperty
 
     public static T AlignRightWith<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
@@ -241,6 +290,13 @@ public static partial class RelativePanelExtensions
     public static IObservable<System.Object> ObserveAlignRightWith(this Avalonia.Layout.Layoutable obj)
     {
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
+    }
+
+    public static T OnAlignRightWith<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
+        handler(observable);
+        return obj;
     }
 
     // AlignTopWithPanelProperty
@@ -273,6 +329,13 @@ public static partial class RelativePanelExtensions
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty);
     }
 
+    public static T OnAlignTopWithPanel<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty);
+        handler(observable);
+        return obj;
+    }
+
     // AlignTopWithProperty
 
     public static T AlignTopWith<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
@@ -301,6 +364,13 @@ public static partial class RelativePanelExtensions
     public static IObservable<System.Object> ObserveAlignTopWith(this Avalonia.Layout.Layoutable obj)
     {
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
+    }
+
+    public static T OnAlignTopWith<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
+        handler(observable);
+        return obj;
     }
 
     // AlignVerticalCenterWithPanelProperty
@@ -333,6 +403,13 @@ public static partial class RelativePanelExtensions
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty);
     }
 
+    public static T OnAlignVerticalCenterWithPanel<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty);
+        handler(observable);
+        return obj;
+    }
+
     // AlignVerticalCenterWithProperty
 
     public static T AlignVerticalCenterWith<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
@@ -361,6 +438,13 @@ public static partial class RelativePanelExtensions
     public static IObservable<System.Object> ObserveAlignVerticalCenterWith(this Avalonia.Layout.Layoutable obj)
     {
         return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
+    }
+
+    public static T OnAlignVerticalCenterWith<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
+        handler(observable);
+        return obj;
     }
 
     // BelowProperty
@@ -393,6 +477,13 @@ public static partial class RelativePanelExtensions
         return obj.GetObservable(Avalonia.Controls.RelativePanel.BelowProperty);
     }
 
+    public static T OnBelow<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.BelowProperty);
+        handler(observable);
+        return obj;
+    }
+
     // LeftOfProperty
 
     public static T LeftOf<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
@@ -423,6 +514,13 @@ public static partial class RelativePanelExtensions
         return obj.GetObservable(Avalonia.Controls.RelativePanel.LeftOfProperty);
     }
 
+    public static T OnLeftOf<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.LeftOfProperty);
+        handler(observable);
+        return obj;
+    }
+
     // RightOfProperty
 
     public static T RightOf<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
@@ -451,5 +549,12 @@ public static partial class RelativePanelExtensions
     public static IObservable<System.Object> ObserveRightOf(this Avalonia.Layout.Layoutable obj)
     {
         return obj.GetObservable(Avalonia.Controls.RelativePanel.RightOfProperty);
+    }
+
+    public static T OnRightOf<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.RightOfProperty);
+        handler(observable);
+        return obj;
     }
 }

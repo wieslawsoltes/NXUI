@@ -33,6 +33,13 @@ public static partial class SplitViewTemplateSettingsExtensions
         return obj.GetObservable(Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty);
     }
 
+    public static T OnClosedPaneWidth<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.SplitViewTemplateSettings
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty);
+        handler(observable);
+        return obj;
+    }
+
     // PaneColumnGridLengthProperty
 
     public static T PaneColumnGridLength<T>(this T obj, Avalonia.Controls.GridLength value) where T : Avalonia.Controls.SplitViewTemplateSettings
@@ -61,5 +68,12 @@ public static partial class SplitViewTemplateSettingsExtensions
     public static IObservable<Avalonia.Controls.GridLength> ObservePaneColumnGridLength(this Avalonia.Controls.SplitViewTemplateSettings obj)
     {
         return obj.GetObservable(Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty);
+    }
+
+    public static T OnPaneColumnGridLength<T>(this T obj, Action<IObservable<Avalonia.Controls.GridLength>> handler) where T : Avalonia.Controls.SplitViewTemplateSettings
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty);
+        handler(observable);
+        return obj;
     }
 }

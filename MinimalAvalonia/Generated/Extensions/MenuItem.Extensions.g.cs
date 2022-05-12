@@ -33,6 +33,13 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.CommandProperty);
     }
 
+    public static T OnCommand<T>(this T obj, Action<IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.CommandProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IconProperty
 
     public static T Icon<T>(this T obj, System.Object value) where T : Avalonia.Controls.MenuItem
@@ -61,6 +68,13 @@ public static partial class MenuItemExtensions
     public static IObservable<System.Object> ObserveIcon(this Avalonia.Controls.MenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.MenuItem.IconProperty);
+    }
+
+    public static T OnIcon<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.IconProperty);
+        handler(observable);
+        return obj;
     }
 
     // InputGestureProperty
@@ -93,6 +107,13 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
     }
 
+    public static T OnInputGesture<T>(this T obj, Action<IObservable<Avalonia.Input.KeyGesture>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsSubMenuOpenProperty
 
     public static T IsSubMenuOpen<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.MenuItem
@@ -123,6 +144,13 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty);
     }
 
+    public static T OnIsSubMenuOpen<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty);
+        handler(observable);
+        return obj;
+    }
+
     // StaysOpenOnClickProperty
 
     public static T StaysOpenOnClick<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.MenuItem
@@ -151,5 +179,12 @@ public static partial class MenuItemExtensions
     public static IObservable<System.Boolean> ObserveStaysOpenOnClick(this Avalonia.Controls.MenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
+    }
+
+    public static T OnStaysOpenOnClick<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
+        handler(observable);
+        return obj;
     }
 }

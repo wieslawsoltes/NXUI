@@ -32,4 +32,11 @@ public static partial class CarouselPresenterExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.CarouselPresenter.SelectedIndexProperty);
     }
+
+    public static T OnSelectedIndex<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Presenters.CarouselPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.CarouselPresenter.SelectedIndexProperty);
+        handler(observable);
+        return obj;
+    }
 }

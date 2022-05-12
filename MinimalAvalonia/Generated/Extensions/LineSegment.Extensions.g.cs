@@ -32,4 +32,11 @@ public static partial class LineSegmentExtensions
     {
         return obj.GetObservable(Avalonia.Media.LineSegment.PointProperty);
     }
+
+    public static Avalonia.Media.LineSegment OnPoint(this Avalonia.Media.LineSegment obj, Action<IObservable<Avalonia.Point>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.LineSegment.PointProperty);
+        handler(observable);
+        return obj;
+    }
 }

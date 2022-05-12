@@ -15,6 +15,13 @@ public static partial class WindowBaseExtensions
         return obj.GetObservable(Avalonia.Controls.WindowBase.IsActiveProperty);
     }
 
+    public static Avalonia.Controls.WindowBase OnIsActive(this Avalonia.Controls.WindowBase obj, Action<IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.WindowBase.IsActiveProperty);
+        handler(observable);
+        return obj;
+    }
+
     // OwnerProperty
 
     public static T Owner<T>(this T obj, Avalonia.Controls.WindowBase value) where T : Avalonia.Controls.WindowBase
@@ -45,6 +52,13 @@ public static partial class WindowBaseExtensions
         return obj.GetObservable(Avalonia.Controls.WindowBase.OwnerProperty);
     }
 
+    public static T OnOwner<T>(this T obj, Action<IObservable<Avalonia.Controls.WindowBase>> handler) where T : Avalonia.Controls.WindowBase
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.WindowBase.OwnerProperty);
+        handler(observable);
+        return obj;
+    }
+
     // TopmostProperty
 
     public static T Topmost<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.WindowBase
@@ -73,5 +87,12 @@ public static partial class WindowBaseExtensions
     public static IObservable<System.Boolean> ObserveTopmost(this Avalonia.Controls.WindowBase obj)
     {
         return obj.GetObservable(Avalonia.Controls.WindowBase.TopmostProperty);
+    }
+
+    public static T OnTopmost<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.WindowBase
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.WindowBase.TopmostProperty);
+        handler(observable);
+        return obj;
     }
 }

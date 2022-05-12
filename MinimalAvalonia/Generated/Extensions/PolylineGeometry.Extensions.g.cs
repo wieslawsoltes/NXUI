@@ -33,6 +33,13 @@ public static partial class PolylineGeometryExtensions
         return obj.GetObservable(Avalonia.Media.PolylineGeometry.PointsProperty);
     }
 
+    public static T OnPoints<T>(this T obj, Action<IObservable<Avalonia.Points>> handler) where T : Avalonia.Media.PolylineGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.PolylineGeometry.PointsProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsFilledProperty
 
     public static T IsFilled<T>(this T obj, System.Boolean value) where T : Avalonia.Media.PolylineGeometry
@@ -61,5 +68,12 @@ public static partial class PolylineGeometryExtensions
     public static IObservable<System.Boolean> ObserveIsFilled(this Avalonia.Media.PolylineGeometry obj)
     {
         return obj.GetObservable(Avalonia.Media.PolylineGeometry.IsFilledProperty);
+    }
+
+    public static T OnIsFilled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Media.PolylineGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.PolylineGeometry.IsFilledProperty);
+        handler(observable);
+        return obj;
     }
 }

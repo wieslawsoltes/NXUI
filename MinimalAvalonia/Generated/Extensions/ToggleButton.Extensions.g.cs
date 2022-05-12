@@ -33,6 +33,13 @@ public static partial class ToggleButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty);
     }
 
+    public static T OnIsChecked<T>(this T obj, Action<IObservable<System.Nullable<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.ToggleButton
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsThreeStateProperty
 
     public static T IsThreeState<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.ToggleButton
@@ -61,5 +68,12 @@ public static partial class ToggleButtonExtensions
     public static IObservable<System.Boolean> ObserveIsThreeState(this Avalonia.Controls.Primitives.ToggleButton obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty);
+    }
+
+    public static T OnIsThreeState<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.ToggleButton
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty);
+        handler(observable);
+        return obj;
     }
 }

@@ -33,6 +33,13 @@ public static partial class CroppedBitmapExtensions
         return obj.GetObservable(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty);
     }
 
+    public static T OnSource<T>(this T obj, Action<IObservable<Avalonia.Media.IImage>> handler) where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        var observable = obj.GetObservable(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty);
+        handler(observable);
+        return obj;
+    }
+
     // SourceRectProperty
 
     public static T SourceRect<T>(this T obj, Avalonia.PixelRect value) where T : Avalonia.Media.Imaging.CroppedBitmap
@@ -61,5 +68,12 @@ public static partial class CroppedBitmapExtensions
     public static IObservable<Avalonia.PixelRect> ObserveSourceRect(this Avalonia.Media.Imaging.CroppedBitmap obj)
     {
         return obj.GetObservable(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty);
+    }
+
+    public static T OnSourceRect<T>(this T obj, Action<IObservable<Avalonia.PixelRect>> handler) where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        var observable = obj.GetObservable(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty);
+        handler(observable);
+        return obj;
     }
 }

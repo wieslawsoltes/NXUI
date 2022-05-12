@@ -15,6 +15,13 @@ public static partial class NotificationCardExtensions
         return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
     }
 
+    public static Avalonia.Controls.Notifications.NotificationCard OnIsClosing(this Avalonia.Controls.Notifications.NotificationCard obj, Action<IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsClosedProperty
 
     public static T IsClosed<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Notifications.NotificationCard
@@ -45,6 +52,13 @@ public static partial class NotificationCardExtensions
         return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty);
     }
 
+    public static T OnIsClosed<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CloseOnClickProperty
 
     public static T CloseOnClick<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Button
@@ -73,5 +87,12 @@ public static partial class NotificationCardExtensions
     public static IObservable<System.Boolean> ObserveCloseOnClick(this Avalonia.Controls.Button obj)
     {
         return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty);
+    }
+
+    public static T OnCloseOnClick<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty);
+        handler(observable);
+        return obj;
     }
 }

@@ -33,6 +33,13 @@ public static partial class RadialGradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
     }
 
+    public static Avalonia.Media.RadialGradientBrush OnCenter(this Avalonia.Media.RadialGradientBrush obj, Action<IObservable<Avalonia.RelativePoint>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
+        handler(observable);
+        return obj;
+    }
+
     // GradientOriginProperty
 
     public static Avalonia.Media.RadialGradientBrush GradientOrigin(this Avalonia.Media.RadialGradientBrush obj, Avalonia.RelativePoint value)
@@ -63,6 +70,13 @@ public static partial class RadialGradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
     }
 
+    public static Avalonia.Media.RadialGradientBrush OnGradientOrigin(this Avalonia.Media.RadialGradientBrush obj, Action<IObservable<Avalonia.RelativePoint>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
+        handler(observable);
+        return obj;
+    }
+
     // RadiusProperty
 
     public static Avalonia.Media.RadialGradientBrush Radius(this Avalonia.Media.RadialGradientBrush obj, System.Double value)
@@ -91,5 +105,12 @@ public static partial class RadialGradientBrushExtensions
     public static IObservable<System.Double> ObserveRadius(this Avalonia.Media.RadialGradientBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.RadialGradientBrush.RadiusProperty);
+    }
+
+    public static Avalonia.Media.RadialGradientBrush OnRadius(this Avalonia.Media.RadialGradientBrush obj, Action<IObservable<System.Double>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.RadiusProperty);
+        handler(observable);
+        return obj;
     }
 }

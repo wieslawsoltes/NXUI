@@ -32,4 +32,11 @@ public static partial class DrawingImageExtensions
     {
         return obj.GetObservable(Avalonia.Media.DrawingImage.DrawingProperty);
     }
+
+    public static T OnDrawing<T>(this T obj, Action<IObservable<Avalonia.Media.Drawing>> handler) where T : Avalonia.Media.DrawingImage
+    {
+        var observable = obj.GetObservable(Avalonia.Media.DrawingImage.DrawingProperty);
+        handler(observable);
+        return obj;
+    }
 }

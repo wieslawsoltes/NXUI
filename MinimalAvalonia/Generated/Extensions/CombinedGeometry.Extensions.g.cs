@@ -33,6 +33,13 @@ public static partial class CombinedGeometryExtensions
         return obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
     }
 
+    public static T OnGeometry1<T>(this T obj, Action<IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.CombinedGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
+        handler(observable);
+        return obj;
+    }
+
     // Geometry2Property
 
     public static T Geometry2<T>(this T obj, Avalonia.Media.Geometry value) where T : Avalonia.Media.CombinedGeometry
@@ -63,6 +70,13 @@ public static partial class CombinedGeometryExtensions
         return obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
     }
 
+    public static T OnGeometry2<T>(this T obj, Action<IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.CombinedGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
+        handler(observable);
+        return obj;
+    }
+
     // GeometryCombineModeProperty
 
     public static T GeometryCombineMode<T>(this T obj, Avalonia.Media.GeometryCombineMode value) where T : Avalonia.Media.CombinedGeometry
@@ -91,6 +105,13 @@ public static partial class CombinedGeometryExtensions
     public static IObservable<Avalonia.Media.GeometryCombineMode> ObserveGeometryCombineMode(this Avalonia.Media.CombinedGeometry obj)
     {
         return obj.GetObservable(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
+    }
+
+    public static T OnGeometryCombineMode<T>(this T obj, Action<IObservable<Avalonia.Media.GeometryCombineMode>> handler) where T : Avalonia.Media.CombinedGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T GeometryCombineModeUnion<T>(this T obj) where T : Avalonia.Media.CombinedGeometry

@@ -32,4 +32,11 @@ public static partial class SplitButtonExtensions
     {
         return obj.GetObservable(Avalonia.Controls.SplitButton.CommandProperty);
     }
+
+    public static T OnCommand<T>(this T obj, Action<IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.SplitButton
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.SplitButton.CommandProperty);
+        handler(observable);
+        return obj;
+    }
 }

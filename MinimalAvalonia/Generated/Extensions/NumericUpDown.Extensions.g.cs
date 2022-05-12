@@ -33,6 +33,13 @@ public static partial class NumericUpDownExtensions
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty);
     }
 
+    public static T OnClipValueToMinMax<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty);
+        handler(observable);
+        return obj;
+    }
+
     // NumberFormatProperty
 
     public static T NumberFormat<T>(this T obj, System.Globalization.NumberFormatInfo value) where T : Avalonia.Controls.NumericUpDown
@@ -61,6 +68,13 @@ public static partial class NumericUpDownExtensions
     public static IObservable<System.Globalization.NumberFormatInfo> ObserveNumberFormat(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
+    }
+
+    public static T OnNumberFormat<T>(this T obj, Action<IObservable<System.Globalization.NumberFormatInfo>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
+        handler(observable);
+        return obj;
     }
 
     // FormatStringProperty
@@ -93,6 +107,13 @@ public static partial class NumericUpDownExtensions
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.FormatStringProperty);
     }
 
+    public static T OnFormatString<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.FormatStringProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IncrementProperty
 
     public static T Increment<T>(this T obj, System.Decimal value) where T : Avalonia.Controls.NumericUpDown
@@ -121,6 +142,13 @@ public static partial class NumericUpDownExtensions
     public static IObservable<System.Decimal> ObserveIncrement(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.IncrementProperty);
+    }
+
+    public static T OnIncrement<T>(this T obj, Action<IObservable<System.Decimal>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.IncrementProperty);
+        handler(observable);
+        return obj;
     }
 
     // IsReadOnlyProperty
@@ -153,6 +181,13 @@ public static partial class NumericUpDownExtensions
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty);
     }
 
+    public static T OnIsReadOnly<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty);
+        handler(observable);
+        return obj;
+    }
+
     // MaximumProperty
 
     public static T Maximum<T>(this T obj, System.Decimal value) where T : Avalonia.Controls.NumericUpDown
@@ -181,6 +216,13 @@ public static partial class NumericUpDownExtensions
     public static IObservable<System.Decimal> ObserveMaximum(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.MaximumProperty);
+    }
+
+    public static T OnMaximum<T>(this T obj, Action<IObservable<System.Decimal>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.MaximumProperty);
+        handler(observable);
+        return obj;
     }
 
     // MinimumProperty
@@ -213,6 +255,13 @@ public static partial class NumericUpDownExtensions
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.MinimumProperty);
     }
 
+    public static T OnMinimum<T>(this T obj, Action<IObservable<System.Decimal>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.MinimumProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ParsingNumberStyleProperty
 
     public static T ParsingNumberStyle<T>(this T obj, System.Globalization.NumberStyles value) where T : Avalonia.Controls.NumericUpDown
@@ -241,6 +290,13 @@ public static partial class NumericUpDownExtensions
     public static IObservable<System.Globalization.NumberStyles> ObserveParsingNumberStyle(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty);
+    }
+
+    public static T OnParsingNumberStyle<T>(this T obj, Action<IObservable<System.Globalization.NumberStyles>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T ParsingNumberStyleNone<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
@@ -375,6 +431,13 @@ public static partial class NumericUpDownExtensions
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.TextProperty);
     }
 
+    public static T OnText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.TextProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ValueProperty
 
     public static T Value<T>(this T obj, System.Decimal value) where T : Avalonia.Controls.NumericUpDown
@@ -405,6 +468,13 @@ public static partial class NumericUpDownExtensions
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.ValueProperty);
     }
 
+    public static T OnValue<T>(this T obj, Action<IObservable<System.Decimal>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ValueProperty);
+        handler(observable);
+        return obj;
+    }
+
     // WatermarkProperty
 
     public static T Watermark<T>(this T obj, System.String value) where T : Avalonia.Controls.NumericUpDown
@@ -433,5 +503,12 @@ public static partial class NumericUpDownExtensions
     public static IObservable<System.String> ObserveWatermark(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+    }
+
+    public static T OnWatermark<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+        handler(observable);
+        return obj;
     }
 }

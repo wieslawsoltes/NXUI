@@ -33,6 +33,13 @@ public static partial class GridSplitterExtensions
         return obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeDirectionProperty);
     }
 
+    public static T OnResizeDirection<T>(this T obj, Action<IObservable<Avalonia.Controls.GridResizeDirection>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeDirectionProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T ResizeDirectionAuto<T>(this T obj) where T : Avalonia.Controls.GridSplitter
     {
         obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = Avalonia.Controls.GridResizeDirection.Auto;
@@ -79,6 +86,13 @@ public static partial class GridSplitterExtensions
     public static IObservable<Avalonia.Controls.GridResizeBehavior> ObserveResizeBehavior(this Avalonia.Controls.GridSplitter obj)
     {
         return obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
+    }
+
+    public static T OnResizeBehavior<T>(this T obj, Action<IObservable<Avalonia.Controls.GridResizeBehavior>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T ResizeBehaviorBasedOnAlignment<T>(this T obj) where T : Avalonia.Controls.GridSplitter
@@ -135,6 +149,13 @@ public static partial class GridSplitterExtensions
         return obj.GetObservable(Avalonia.Controls.GridSplitter.ShowsPreviewProperty);
     }
 
+    public static T OnShowsPreview<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.ShowsPreviewProperty);
+        handler(observable);
+        return obj;
+    }
+
     // KeyboardIncrementProperty
 
     public static T KeyboardIncrement<T>(this T obj, System.Double value) where T : Avalonia.Controls.GridSplitter
@@ -163,6 +184,13 @@ public static partial class GridSplitterExtensions
     public static IObservable<System.Double> ObserveKeyboardIncrement(this Avalonia.Controls.GridSplitter obj)
     {
         return obj.GetObservable(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
+    }
+
+    public static T OnKeyboardIncrement<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
+        handler(observable);
+        return obj;
     }
 
     // DragIncrementProperty
@@ -195,6 +223,13 @@ public static partial class GridSplitterExtensions
         return obj.GetObservable(Avalonia.Controls.GridSplitter.DragIncrementProperty);
     }
 
+    public static T OnDragIncrement<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.DragIncrementProperty);
+        handler(observable);
+        return obj;
+    }
+
     // PreviewContentProperty
 
     public static T PreviewContent<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.IControl> value) where T : Avalonia.Controls.GridSplitter
@@ -223,5 +258,12 @@ public static partial class GridSplitterExtensions
     public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> ObservePreviewContent(this Avalonia.Controls.GridSplitter obj)
     {
         return obj.GetObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
+    }
+
+    public static T OnPreviewContent<T>(this T obj, Action<IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
+        handler(observable);
+        return obj;
     }
 }

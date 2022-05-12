@@ -33,6 +33,13 @@ public static partial class ButtonSpinnerExtensions
         return obj.GetObservable(Avalonia.Controls.ButtonSpinner.AllowSpinProperty);
     }
 
+    public static T OnAllowSpin<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ButtonSpinner
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ButtonSpinner.AllowSpinProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ShowButtonSpinnerProperty
 
     public static T ShowButtonSpinner<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.ButtonSpinner
@@ -63,6 +70,13 @@ public static partial class ButtonSpinnerExtensions
         return obj.GetObservable(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty);
     }
 
+    public static T OnShowButtonSpinner<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ButtonSpinner
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ButtonSpinnerLocationProperty
 
     public static T ButtonSpinnerLocation<T>(this T obj, Avalonia.Controls.Location value) where T : Avalonia.Controls.ButtonSpinner
@@ -91,6 +105,13 @@ public static partial class ButtonSpinnerExtensions
     public static IObservable<Avalonia.Controls.Location> ObserveButtonSpinnerLocation(this Avalonia.Controls.ButtonSpinner obj)
     {
         return obj.GetObservable(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty);
+    }
+
+    public static T OnButtonSpinnerLocation<T>(this T obj, Action<IObservable<Avalonia.Controls.Location>> handler) where T : Avalonia.Controls.ButtonSpinner
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T ButtonSpinnerLocationLeft<T>(this T obj) where T : Avalonia.Controls.ButtonSpinner

@@ -33,6 +33,13 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.MinimumProperty);
     }
 
+    public static T OnMinimum<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.MinimumProperty);
+        handler(observable);
+        return obj;
+    }
+
     // MaximumProperty
 
     public static T Maximum<T>(this T obj, System.Double value) where T : Avalonia.Controls.Primitives.Track
@@ -61,6 +68,13 @@ public static partial class TrackExtensions
     public static IObservable<System.Double> ObserveMaximum(this Avalonia.Controls.Primitives.Track obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.MaximumProperty);
+    }
+
+    public static T OnMaximum<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.MaximumProperty);
+        handler(observable);
+        return obj;
     }
 
     // ValueProperty
@@ -93,6 +107,13 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.ValueProperty);
     }
 
+    public static T OnValue<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.ValueProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ThumbProperty
 
     public static T Thumb<T>(this T obj, Avalonia.Controls.Primitives.Thumb value) where T : Avalonia.Controls.Primitives.Track
@@ -121,6 +142,13 @@ public static partial class TrackExtensions
     public static IObservable<Avalonia.Controls.Primitives.Thumb> ObserveThumb(this Avalonia.Controls.Primitives.Track obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
+    }
+
+    public static T OnThumb<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.Thumb>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
+        handler(observable);
+        return obj;
     }
 
     // IncreaseButtonProperty
@@ -153,6 +181,13 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
     }
 
+    public static T OnIncreaseButton<T>(this T obj, Action<IObservable<Avalonia.Controls.Button>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
+        handler(observable);
+        return obj;
+    }
+
     // DecreaseButtonProperty
 
     public static T DecreaseButton<T>(this T obj, Avalonia.Controls.Button value) where T : Avalonia.Controls.Primitives.Track
@@ -181,6 +216,13 @@ public static partial class TrackExtensions
     public static IObservable<Avalonia.Controls.Button> ObserveDecreaseButton(this Avalonia.Controls.Primitives.Track obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
+    }
+
+    public static T OnDecreaseButton<T>(this T obj, Action<IObservable<Avalonia.Controls.Button>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
+        handler(observable);
+        return obj;
     }
 
     // IsDirectionReversedProperty
@@ -213,6 +255,13 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
     }
 
+    public static T OnIsDirectionReversed<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IgnoreThumbDragProperty
 
     public static T IgnoreThumbDrag<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.Track
@@ -241,5 +290,12 @@ public static partial class TrackExtensions
     public static IObservable<System.Boolean> ObserveIgnoreThumbDrag(this Avalonia.Controls.Primitives.Track obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
+    }
+
+    public static T OnIgnoreThumbDrag<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
+        handler(observable);
+        return obj;
     }
 }

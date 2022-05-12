@@ -33,6 +33,13 @@ public static partial class DatePickerPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.DateProperty);
     }
 
+    public static T OnDate<T>(this T obj, Action<IObservable<System.DateTimeOffset>> handler) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DatePickerPresenter.DateProperty);
+        handler(observable);
+        return obj;
+    }
+
     // DayFormatProperty
 
     public static T DayFormat<T>(this T obj, System.String value) where T : Avalonia.Controls.DatePickerPresenter
@@ -61,6 +68,13 @@ public static partial class DatePickerPresenterExtensions
     public static IObservable<System.String> ObserveDayFormat(this Avalonia.Controls.DatePickerPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.DayFormatProperty);
+    }
+
+    public static T OnDayFormat<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DatePickerPresenter.DayFormatProperty);
+        handler(observable);
+        return obj;
     }
 
     // DayVisibleProperty
@@ -93,6 +107,13 @@ public static partial class DatePickerPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty);
     }
 
+    public static T OnDayVisible<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty);
+        handler(observable);
+        return obj;
+    }
+
     // MaxYearProperty
 
     public static T MaxYear<T>(this T obj, System.DateTimeOffset value) where T : Avalonia.Controls.DatePickerPresenter
@@ -121,6 +142,13 @@ public static partial class DatePickerPresenterExtensions
     public static IObservable<System.DateTimeOffset> ObserveMaxYear(this Avalonia.Controls.DatePickerPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MaxYearProperty);
+    }
+
+    public static T OnMaxYear<T>(this T obj, Action<IObservable<System.DateTimeOffset>> handler) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MaxYearProperty);
+        handler(observable);
+        return obj;
     }
 
     // MinYearProperty
@@ -153,6 +181,13 @@ public static partial class DatePickerPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MinYearProperty);
     }
 
+    public static T OnMinYear<T>(this T obj, Action<IObservable<System.DateTimeOffset>> handler) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MinYearProperty);
+        handler(observable);
+        return obj;
+    }
+
     // MonthFormatProperty
 
     public static T MonthFormat<T>(this T obj, System.String value) where T : Avalonia.Controls.DatePickerPresenter
@@ -181,6 +216,13 @@ public static partial class DatePickerPresenterExtensions
     public static IObservable<System.String> ObserveMonthFormat(this Avalonia.Controls.DatePickerPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty);
+    }
+
+    public static T OnMonthFormat<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty);
+        handler(observable);
+        return obj;
     }
 
     // MonthVisibleProperty
@@ -213,6 +255,13 @@ public static partial class DatePickerPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty);
     }
 
+    public static T OnMonthVisible<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty);
+        handler(observable);
+        return obj;
+    }
+
     // YearFormatProperty
 
     public static T YearFormat<T>(this T obj, System.String value) where T : Avalonia.Controls.DatePickerPresenter
@@ -243,6 +292,13 @@ public static partial class DatePickerPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.YearFormatProperty);
     }
 
+    public static T OnYearFormat<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DatePickerPresenter.YearFormatProperty);
+        handler(observable);
+        return obj;
+    }
+
     // YearVisibleProperty
 
     public static T YearVisible<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.DatePickerPresenter
@@ -271,5 +327,12 @@ public static partial class DatePickerPresenterExtensions
     public static IObservable<System.Boolean> ObserveYearVisible(this Avalonia.Controls.DatePickerPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty);
+    }
+
+    public static T OnYearVisible<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty);
+        handler(observable);
+        return obj;
     }
 }

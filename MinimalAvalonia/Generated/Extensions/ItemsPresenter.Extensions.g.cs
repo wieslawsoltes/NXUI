@@ -33,6 +33,13 @@ public static partial class ItemsPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty);
     }
 
+    public static T OnVirtualizationMode<T>(this T obj, Action<IObservable<Avalonia.Controls.ItemVirtualizationMode>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T VirtualizationModeNone<T>(this T obj) where T : Avalonia.Controls.Presenters.ItemsPresenter
     {
         obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;

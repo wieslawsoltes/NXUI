@@ -33,6 +33,13 @@ public static partial class TrayIconExtensions
         return obj.GetObservable(Avalonia.Controls.TrayIcon.CommandProperty);
     }
 
+    public static T OnCommand<T>(this T obj, Action<IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.CommandProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IconsProperty
 
     public static T Icons<T>(this T obj, Avalonia.Controls.TrayIcons value) where T : Avalonia.Application
@@ -61,6 +68,13 @@ public static partial class TrayIconExtensions
     public static IObservable<Avalonia.Controls.TrayIcons> ObserveIcons(this Avalonia.Application obj)
     {
         return obj.GetObservable(Avalonia.Controls.TrayIcon.IconsProperty);
+    }
+
+    public static T OnIcons<T>(this T obj, Action<IObservable<Avalonia.Controls.TrayIcons>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.IconsProperty);
+        handler(observable);
+        return obj;
     }
 
     // MenuProperty
@@ -93,6 +107,13 @@ public static partial class TrayIconExtensions
         return obj.GetObservable(Avalonia.Controls.TrayIcon.MenuProperty);
     }
 
+    public static T OnMenu<T>(this T obj, Action<IObservable<Avalonia.Controls.NativeMenu>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.MenuProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ToolTipTextProperty
 
     public static T ToolTipText<T>(this T obj, System.String value) where T : Avalonia.Controls.TrayIcon
@@ -121,5 +142,12 @@ public static partial class TrayIconExtensions
     public static IObservable<System.String> ObserveToolTipText(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
+    }
+
+    public static T OnToolTipText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
+        handler(observable);
+        return obj;
     }
 }
