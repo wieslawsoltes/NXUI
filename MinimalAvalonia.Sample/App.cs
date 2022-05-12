@@ -2,7 +2,7 @@ var count = 0;
 
 Window Build()
     => Window(out var window)
-        .Title("MinimalAvalonia")
+        .Title("MinimalAvalonia").Width(400).Height(300)
         .Content(
             StackPanel()
                 .Children(
