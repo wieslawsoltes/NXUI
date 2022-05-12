@@ -5,6 +5,13 @@ namespace Generator;
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 internal static class Templates
 {
+    public static string BuildersHeaderTemplate = @"namespace MinimalAvalonia;
+
+public static partial class MinimalAvaloniaBuilders
+{";
+
+    public static string BuildersFooterTemplate = @"}";
+
     public static string PropertiesHeaderTemplate = @"namespace MinimalAvalonia;
 
 [System.Diagnostics.CodeAnalysis.SuppressMessage(""ReSharper"", ""InconsistentNaming"")]
