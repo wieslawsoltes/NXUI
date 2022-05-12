@@ -17,4 +17,5 @@ Window Build()
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
     .UseFluentTheme()
+    .WithApplicationName("Counter")
     .StartWithClassicDesktopLifetime(Build, args);
