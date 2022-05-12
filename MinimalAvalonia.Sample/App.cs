@@ -22,10 +22,10 @@ AppBuilder.Configure<Application>()
                               TextBox(out var tb1)
                                   .Text("Minimal Avalonia"), 
                               TextBox()
-                                  .Text(window.Title()), 
+                                  .Text(window.BindTitle()), 
                               Label()
-                                  .Content(button.OnClick().Select(_ => ++count).Select(x => $"You clicked {x} times.").ToBinding())))
-                  .Title(tb1.GetObservable(TextBoxText).Select(x => x?.ToUpper()).ToBinding());
+                                  .Content(button.OnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
+                  .Title(tb1.ObserveText().Select(x => x?.ToUpper()), BindingMode.OneWay);
 #endif
               desktop.MainWindow = window;
           }, args);
