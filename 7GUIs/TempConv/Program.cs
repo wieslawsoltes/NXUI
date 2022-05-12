@@ -11,15 +11,14 @@ Window Build()
                     TextBox()
                         .Text(celsius)
                         .OnText(o => o.Subscribe(x => {
-                            if (x is null) return;
-                            if (!double.TryParse(x, out var c))
-                            {
-                                celsius.OnError(new Exception());
-                                return;
+                            if (x is null) {
+                                return; // TODO: Handle error.
+                            }
+                            if (!double.TryParse(x, out var c)) {
+                                return; // TODO: Handle error.
                             }
                             var f = Math.Round(c * (9d / 5d) + 32d);
                             fahrenheit.OnNext($"{f}");
-                            Debug.WriteLine($"Celsius = {x}");
                         })),
                     Label()
                         .HorizontalAlignmentCenter().VerticalAlignmentCenter()
@@ -27,11 +26,14 @@ Window Build()
                     TextBox()
                         .Text(fahrenheit)
                         .OnText(o => o.Subscribe(x => {
-                            if (x is null) return;
-                            if (!double.TryParse(x, out var f)) return;
+                            if (x is null) {
+                                return; // TODO: Handle error.
+                            }
+                            if (!double.TryParse(x, out var f)) {
+                                return; // TODO: Handle error.
+                            }
                             var c = Math.Round((f - 32d) * (5d / 9d));
                             celsius.OnNext($"{c}");
-                            Debug.WriteLine($"Fahrenheit = {f}");
                         })),
                     Label()
                         .HorizontalAlignmentCenter().VerticalAlignmentCenter()
