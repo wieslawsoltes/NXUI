@@ -6,7 +6,7 @@ namespace Generator;
 
 internal record Property(string Name, string OwnerType, string ValueType, string PropertyType, bool IsReadOnly = false, bool IsEnum = false, string[]? EnumNames = null);
 
-internal record Class(string Name, string Type, Property[] Properties, bool IsSealed = false);
+internal record Class(string Name, string Type, Property[] Properties, bool IsSealed = false, bool PublicCtor = true);
 
 internal static class ExtensionsGenerator
 {
@@ -46,6 +46,11 @@ internal static class ExtensionsGenerator
             var c = classes[i];
 
             if (s_excludedClasses.Contains(c.Name))
+            {
+                continue;
+            }
+
+            if (!c.PublicCtor)
             {
                 continue;
             }
@@ -242,11 +247,16 @@ internal static class ExtensionsGenerator
                 properties.Add(p);
             }
 
+            var publicCtor = classType
+                .GetConstructors()
+                .Any(x => x.IsPublic && x.GetParameters().Length == 0);
+
             var c = new Class(
                 FixClassNameType(classType.Name), 
                 FixType(classType.ToString()), 
                 properties.ToArray(),
-                classType.IsSealed);
+                classType.IsSealed,
+                publicCtor);
 
             classes.Add(c);
         }
