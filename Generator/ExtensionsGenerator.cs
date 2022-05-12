@@ -17,13 +17,20 @@ internal static class ExtensionsGenerator
 
     public static void Generate(string outputPath) 
     {
-        var classes = GetClasses();
-
         if (!Directory.Exists(outputPath))
         {
             Directory.CreateDirectory(outputPath);
         }
 
+        var classes = GetClasses();
+
+        GenerateProperties(outputPath, classes);
+
+        GenerateExtensions(outputPath, classes);
+    }
+
+    private static void GenerateProperties(string outputPath, List<Class> classes)
+    {
         foreach (var c in classes)
         {
             if (s_excludedClasses.Contains(c.Name))
@@ -57,7 +64,10 @@ internal static class ExtensionsGenerator
             var classFooterBuilder = new StringBuilder(Templates.PropertiesFooterTemplate);
             WriteLine(classFooterBuilder.ToString());
         }
+    }
 
+    private static void GenerateExtensions(string outputPath, List<Class> classes)
+    {
         foreach (var c in classes)
         {
             if (s_excludedClasses.Contains(c.Name))
@@ -79,10 +89,10 @@ internal static class ExtensionsGenerator
             for (var i = 0; i < c.Properties.Length; i++)
             {
                 var p = c.Properties[i];
-                var template = p.IsReadOnly 
-                    ? Templates.PropertyMethodsTemplateReadOnly 
-                    : c.IsSealed 
-                        ? Templates.PropertyMethodsTemplateSealed 
+                var template = p.IsReadOnly
+                    ? Templates.PropertyMethodsTemplateReadOnly
+                    : c.IsSealed
+                        ? Templates.PropertyMethodsTemplateSealed
                         : Templates.PropertyMethodsTemplate;
 
                 var propertyBuilder = new StringBuilder(template);
@@ -98,9 +108,9 @@ internal static class ExtensionsGenerator
                 {
                     foreach (var enumName in p.EnumNames)
                     {
-                        var templateEnum = c.IsSealed 
-                                ? Templates.PropertyMethodEnumSealedTemplate 
-                                : Templates.PropertyMethodEnumTemplate;
+                        var templateEnum = c.IsSealed
+                            ? Templates.PropertyMethodEnumSealedTemplate
+                            : Templates.PropertyMethodEnumTemplate;
 
                         var propertyEnumBuilder = new StringBuilder(templateEnum);
 
@@ -136,6 +146,7 @@ internal static class ExtensionsGenerator
                   && assemblyType.IsSubclassOf(typeof(AvaloniaObject))
                   && assemblyType.GetCustomAttributes().All(x => x.GetType().Name != "ObsoleteAttribute")
                   && !assemblyType.IsAbstract
+                  && assemblyType.IsPublic
             select assemblyType).ToArray();
 
         var classes = new List<Class>();
