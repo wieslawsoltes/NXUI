@@ -70,6 +70,8 @@ internal static class ExtensionsGenerator
             }
 
             WriteLine($"    public static {c.Type} {c.Name}() => new();");
+            WriteLine("");
+            WriteLine($"    public static {c.Type} {c.Name}(out {c.Type} @ref) => @ref = new();");
 
             if (i < classes.Count - 1)
             {
