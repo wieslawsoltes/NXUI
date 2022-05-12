@@ -2,17 +2,7 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class AnimatableExtensions
 {
-    public static T Clock<T>(this T animatable, IClock clock) where T : Animatable
-    {
-        animatable[Avalonia.Animation.Animatable.ClockProperty] = clock;
-        return animatable;
-    }
-
-    public static T Transitions<T>(this T animatable, Transitions? transitions) where T : Animatable
-    {
-        animatable[Avalonia.Animation.Animatable.TransitionsProperty] = transitions;
-        return animatable;
-    }
+    // Transitions
 
     public static T Transitions<T>(this T animatable, params ITransition[] transitions) where T : Animatable
     {

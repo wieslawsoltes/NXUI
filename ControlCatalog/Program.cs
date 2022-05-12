@@ -115,8 +115,8 @@
                 .Duration(TimeSpan.FromSeconds(5))
                 .IterationCountInfinite()
                 .KeyFrames(
-                    KeyFrame().Cue(0.0).Setter(RotateTransform.AngleProperty, 0d),
-                    KeyFrame().Cue(1.0).Setter(RotateTransform.AngleProperty, 360d)))
+                    KeyFrame().Cue(0.0).Setter(RotateTransformAngle, 0d),
+                    KeyFrame().Cue(1.0).Setter(RotateTransformAngle, 360d)))
         .Ref(out var style2);
 
     window.Styles(style1, style2);
@@ -137,8 +137,8 @@ Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle) =>
                 .IterationCountInfinite()
                 .PlaybackDirectionAlternateReverse()
                 .KeyFrames(
-                    KeyFrame().Cue(0.0).Setter(RotateTransform.AngleProperty, startAngle),
-                    KeyFrame().Cue(1.0).Setter(RotateTransform.AngleProperty, endAngle)));
+                    KeyFrame().Cue(0.0).Setter(RotateTransformAngle, startAngle),
+                    KeyFrame().Cue(1.0).Setter(RotateTransformAngle, endAngle)));
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()

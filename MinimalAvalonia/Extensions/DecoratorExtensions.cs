@@ -2,11 +2,7 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class DecoratorExtensions
 {
-    public static T Child<T>(this T decorator, IControl child) where T : Decorator
-    {
-        decorator[Avalonia.Controls.Decorator.ChildProperty] = child;
-        return decorator;
-    }
+    // PaddingProperty
 
     public static T Padding<T>(this T decorator, double uniformLength) where T : Decorator
     {

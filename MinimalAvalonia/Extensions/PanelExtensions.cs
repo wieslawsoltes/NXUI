@@ -2,11 +2,15 @@
 
 public static partial class PanelExtensions
 {
+    // BackgroundProperty
+
     public static T Background<T>(this T panel, IBrush background) where T : Panel
     {
         panel[Avalonia.Controls.Panel.BackgroundProperty] = background;
         return panel;
     }
+
+    // Children
 
     public static T Children<T>(this T panel, Control child) where T : Panel
     {

@@ -2,13 +2,7 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class ControlExtensions
 {
-    // TODO:
-    // FocusAdornerProperty
-    // TagProperty
-    // ContextMenuProperty
-    // ContextFlyoutProperty
-    // RequestBringIntoViewEvent
-    // ContextRequestedEvent
+    // DataTemplates
 
     public static T DataTemplates<T>(this T control, params IDataTemplate[] dataTemplates) where T : Control
     {

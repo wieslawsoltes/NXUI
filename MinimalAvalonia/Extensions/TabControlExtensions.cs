@@ -2,6 +2,8 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class TabControlExtensions
 {
+    // ItemsProperty
+
     public static T Items<T>(this T tabControl, object item) where T : TabControl
     {
         switch (tabControl.Items)
@@ -29,35 +31,4 @@ public static partial class TabControlExtensions
         }
         return tabControl;
     }
-
-    public static T TabStripPlacementLeft<T>(this T tabControl) where T : TabControl
-    {
-        tabControl[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Dock.Left;
-        return tabControl;
-    }
-
-    public static T TabStripPlacementBottom<T>(this T tabControl) where T : TabControl
-    {
-        tabControl[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Dock.Bottom;
-        return tabControl;
-    }
-
-    public static T TabStripPlacementRight<T>(this T tabControl) where T : TabControl
-    {
-        tabControl[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Dock.Right;
-        return tabControl;
-    }
-
-    public static T TabStripPlacementTop<T>(this T tabControl) where T : TabControl
-    {
-        tabControl[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Dock.Top;
-        return tabControl;
-    }
-
-    // TODO:
-    // HorizontalContentAlignmentProperty
-    // VerticalContentAlignmentProperty
-    // ContentTemplateProperty
-    // SelectedContentProperty
-    // SelectedContentTemplateProperty
 }

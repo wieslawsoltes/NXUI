@@ -2,17 +2,7 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class AnimationExtensions
 {
-    public static T Duration<T>(this T animation, TimeSpan duration) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.DurationProperty] = duration;
-        return animation;
-    }
-
-    public static T IterationCount<T>(this T animation, IterationCount iterationCount) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.IterationCountProperty] = iterationCount;
-        return animation;
-    }
+    // IterationCountProperty
 
     public static T IterationCount<T>(this T animation, ulong value, IterationType type) where T : Animation
     {
@@ -32,89 +22,7 @@ public static partial class AnimationExtensions
         return animation;
     }
 
-    public static T PlaybackDirection<T>(this T animation, PlaybackDirection playbackDirection) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.PlaybackDirectionProperty] = playbackDirection;
-        return animation;
-    }
-
-    public static T PlaybackDirectionNormal<T>(this T animation) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Normal;
-        return animation;
-    }
-
-    public static T PlaybackDirectionReverse<T>(this T animation) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Reverse;
-        return animation;
-    }
-
-    public static T PlaybackDirectionAlternate<T>(this T animation) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Alternate;
-        return animation;
-    }
-
-    public static T PlaybackDirectionAlternateReverse<T>(this T animation) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.AlternateReverse;
-        return animation;
-    }
-
-    public static T FillMode<T>(this T animation, FillMode fillMode) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.FillModeProperty] = fillMode;
-        return animation;
-    }
-
-    public static T FillModeNone<T>(this T animation) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.None;
-        return animation;
-    }
-
-    public static T FillModeForward<T>(this T animation) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Forward;
-        return animation;
-    }
-
-    public static T FillModeBackward<T>(this T animation) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Backward;
-        return animation;
-    }
-
-    public static T FillModeBoth<T>(this T animation) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Both;
-        return animation;
-    }
-
-    public static T Easing<T>(this T animation, Easing easing) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.EasingProperty] = easing;
-        return animation;
-    }
-
-    public static T Delay<T>(this T animation, TimeSpan delay) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.DelayProperty] = delay;
-        return animation;
-    }
-
-    public static T DelayBetweenIterations<T>(this T animation, TimeSpan delayBetweenIterations) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.DelayBetweenIterationsProperty] = delayBetweenIterations;
-        return animation;
-    }
-
-    public static T SpeedRatio<T>(this T animation, double speedRatio) where T : Animation
-    {
-        animation[Avalonia.Animation.Animation.SpeedRatioProperty] = speedRatio;
-        return animation;
-    }
+    // KeyFrames
 
     public static T KeyFrames<T>(this T animation, KeyFrame keyFrame) where T : Animation
     {
@@ -127,6 +35,8 @@ public static partial class AnimationExtensions
         animation.Children.AddRange(keyFrames);
         return animation;
     }
+
+    // Animator
 
     public static T Animator<T>(this T animationSetter, Type value) where T : IAnimationSetter
     {

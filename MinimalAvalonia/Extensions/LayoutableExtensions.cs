@@ -2,41 +2,7 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class LayoutableExtensions
 {
-    public static T Width<T>(this T layoutable, double width) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.WidthProperty] = width;
-        return layoutable;
-    }
-
-    public static T Height<T>(this T layoutable, double height) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.HeightProperty] = height;
-        return layoutable;
-    }
-
-    public static T MinWidth<T>(this T layoutable, double minWidth) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.MinWidthProperty] = minWidth;
-        return layoutable;
-    }
-
-    public static T MaxWidth<T>(this T layoutable, double maxWidth) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.MaxWidthProperty] = maxWidth;
-        return layoutable;
-    }
-
-    public static T MinHeight<T>(this T layoutable, double minHeight) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.MinHeightProperty] = minHeight;
-        return layoutable;
-    }
-
-    public static T MaxHeight<T>(this T layoutable, double maxHeight) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.MaxHeightProperty] = maxHeight;
-        return layoutable;
-    }
+    // MarginProperty
 
     public static T Margin<T>(this T layoutable, double uniformLength) where T : Layoutable
     {
@@ -53,60 +19,6 @@ public static partial class LayoutableExtensions
     public static T Margin<T>(this T layoutable, double left, double top, double right, double bottom) where T : Layoutable
     {
         layoutable[Avalonia.Layout.Layoutable.MarginProperty] = new Thickness(left, top, right, bottom);
-        return layoutable;
-    }
-
-    public static T HorizontalAlignmentStretch<T>(this T layoutable) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = HorizontalAlignment.Stretch;
-        return layoutable;
-    }
-
-    public static T HorizontalAlignmentLeft<T>(this T layoutable) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = HorizontalAlignment.Left;
-        return layoutable;
-    }
-
-    public static T HorizontalAlignmentCenter<T>(this T layoutable) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = HorizontalAlignment.Center;
-        return layoutable;
-    }
-
-    public static T HorizontalAlignmentRight<T>(this T layoutable) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = HorizontalAlignment.Right;
-        return layoutable;
-    }
-
-    public static T VerticalAlignmentStretch<T>(this T layoutable) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = VerticalAlignment.Stretch;
-        return layoutable;
-    }
-
-    public static T VerticalAlignmentTop<T>(this T layoutable) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = VerticalAlignment.Top;
-        return layoutable;
-    }
-
-    public static T VerticalAlignmentCenter<T>(this T layoutable) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = VerticalAlignment.Center;
-        return layoutable;
-    }
-
-    public static T VerticalAlignmentBottom<T>(this T layoutable) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = VerticalAlignment.Bottom;
-        return layoutable;
-    }
-
-    public static T UseLayoutRounding<T>(this T layoutable, bool useLayoutRounding = true) where T : Layoutable
-    {
-        layoutable[Avalonia.Layout.Layoutable.UseLayoutRoundingProperty] = useLayoutRounding;
         return layoutable;
     }
 }

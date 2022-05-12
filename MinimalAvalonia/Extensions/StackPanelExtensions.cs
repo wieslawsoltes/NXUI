@@ -2,11 +2,15 @@
 
 public static partial class StackPanelExtensions
 {
+    // SpacingProperty
+
     public static T Spacing<T>(this T stackPanel, double spacing) where T : StackPanel
     {
         stackPanel[Avalonia.Controls.StackPanel.SpacingProperty] = spacing;
         return stackPanel;
     }
+
+    // OrientationProperty
 
     public static T Orientation<T>(this T stackPanel, Orientation orientation) where T : StackPanel
     {

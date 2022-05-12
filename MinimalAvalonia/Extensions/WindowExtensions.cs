@@ -2,29 +2,33 @@
 
 public static partial class WindowExtensions
 {
+    // SizeToContentProperty
+
     public static Window SizeToContentManual(this Window window)
     {
-        window[Avalonia.Controls.Window.SizeToContentProperty] = SizeToContent.Manual;
+        window[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Manual;
         return window;
     }
 
     public static Window SizeToContentWidth(this Window window)
     {
-        window[Avalonia.Controls.Window.SizeToContentProperty] = SizeToContent.Width;
+        window[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Width;
         return window;
     }
 
     public static Window SizeToContentHeight(this Window window)
     {
-        window[Avalonia.Controls.Window.SizeToContentProperty] = SizeToContent.Height;
+        window[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Height;
         return window;
     }
 
     public static Window SizeToContentWidthAndHeight(this Window window)
     {
-        window[Avalonia.Controls.Window.SizeToContentProperty] = SizeToContent.WidthAndHeight;
+        window[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.WidthAndHeight;
         return window;
     }
+
+    // TitleProperty
 
     public static Window Title(this Window window, string title)
     {
@@ -38,25 +42,4 @@ public static partial class WindowExtensions
         window[property.Bind().WithMode(mode)] = binding;
         return window;
     }
-
-    public static IBinding Title(this Window window, BindingMode mode = BindingMode.TwoWay)
-    {
-        var property = Avalonia.Controls.Window.TitleProperty;
-        return window[property.Bind().WithMode(mode)];
-    }
-
-    // TODO:
-    // HasSystemDecorationsProperty
-    // ExtendClientAreaToDecorationsHintProperty
-    // ExtendClientAreaChromeHintsProperty
-    // ExtendClientAreaTitleBarHeightHintProperty
-    // SystemDecorationsProperty
-    // ShowActivatedProperty
-    // ShowInTaskbarProperty
-    // WindowStateProperty
-    // IconProperty
-    // WindowStartupLocationProperty
-    // CanResizeProperty
-    // WindowClosedEvent
-    // WindowOpenedEvent
 }

@@ -2,11 +2,15 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class StyleExtensions
 {
+    // Selector
+
     public static T Selector<T>(this T style, Func<Selector?, Selector> selector) where T : Style
     {
         style.Selector = selector(null);
         return style;
     }
+
+    // Setters
 
     public static T Setters<T>(this T style, params ISetter[] setters) where T : Style
     {
@@ -23,6 +27,8 @@ public static partial class StyleExtensions
         return style;
     }
 
+    // Resources
+
     public static T Resources<T>(this T style, IResourceDictionary resources) where T : Style
     {
         style.Resources = resources;
@@ -34,6 +40,8 @@ public static partial class StyleExtensions
         style.Resources[key] = value;
         return style;
     }
+
+    // Animations
 
     public static T Animations<T>(this T style, params IAnimation[] animations) where T : Style
     {

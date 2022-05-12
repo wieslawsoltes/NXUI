@@ -2,11 +2,15 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class KeyFrameExtensions
 {
+    // KeyTime
+
     public static T KeyTime<T>(this T keyFrame, TimeSpan keyTime) where T : KeyFrame
     {
         keyFrame.KeyTime = keyTime;
         return keyFrame;
     }
+
+    // Cue
 
     public static T Cue<T>(this T keyFrame, Cue cue) where T : KeyFrame
     {
@@ -26,6 +30,8 @@ public static partial class KeyFrameExtensions
         return keyFrame;
     }
 
+    // KeySpline
+
     public static T KeySpline<T>(this T keyFrame, KeySpline keySpline) where T : KeyFrame
     {
         keyFrame.KeySpline = keySpline;
@@ -44,6 +50,8 @@ public static partial class KeyFrameExtensions
         return keyFrame;
     }
 
+    // Setters
+
     public static T Setters<T>(this T keyFrame, params IAnimationSetter[] setters) where T : KeyFrame
     {
         foreach (var setter in setters)
@@ -52,6 +60,8 @@ public static partial class KeyFrameExtensions
         }
         return keyFrame;
     }
+
+    // Setter
 
     public static T Setter<T>(this T keyFrame, AvaloniaProperty property, object value) where T : KeyFrame
     {

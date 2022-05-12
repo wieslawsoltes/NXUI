@@ -2,6 +2,8 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class ButtonExtensions
 {
+    // Click
+
     public static Button OnClick(this Button button, Action<IObservable<RoutedEventArgs>> handler)
     {
         var observable = Observable
@@ -21,15 +23,4 @@ public static partial class ButtonExtensions
                 h => button.Click -= h)
             .Select(x => x.EventArgs);
     }
-
-    // TODO:
-    // ClickModeProperty
-    // CommandProperty
-    // HotKeyProperty
-    // CommandParameterProperty
-    // IsDefaultProperty
-    // IsCancelProperty
-    // ClickEvent
-    // IsPressedProperty
-    // FlyoutProperty
 }
