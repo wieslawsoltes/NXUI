@@ -1,31 +1,23 @@
+var count = 0;
+
+Window Build()
+    => Window(out var window)
+        .Title("MinimalAvalonia")
+        .Content(
+            StackPanel()
+                .Children(
+                    Button(out var button)
+                        .Content("Welcome to Avalonia, please click me!"),
+                    TextBox(out var tb1)
+                        .Text("Minimal Avalonia"),
+                    TextBox()
+                        .Text(window.BindTitle()),
+                    Label()
+                        .Content(button.OnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
+        .Title(tb1.ObserveText().Select(x => x?.ToUpper()), BindingMode.OneWay);
+
 AppBuilder.Configure<Application>()
           .UsePlatformDetect()
           .UseFluentTheme()
-          .StartWithClassicDesktopLifetime(desktop => {
-#if false
-              var count = 0;
-              var window = new Window();
-              var button = new Button { Content = "Welcome to Avalonia, please click me!" };
-              var tb1 = new TextBox { Text = "Minimal Avalonia" };
-              var tb2 = new TextBox { [!!TextBlockText] = window[!!WindowTitle] };
-              var label = new Label { [!ContentControlContent] = button.OnClick().Select(_ => ++count).Select(x => $"You clicked {x} times.").ToBinding() };
-              window[!!WindowTitle] = tb1.GetObservable(TextBoxText).Select(x => x.ToUpper()).ToBinding();
-              window[ContentControlContent] = new StackPanel { Children = { button, tb1, tb2, label } };
-#else
-              var count = 0;
-              Window(out var window)
-                  .Content(
-                      StackPanel()
-                          .Children(
-                              Button(out var button)
-                                  .Content("Welcome to Avalonia, please click me!"), 
-                              TextBox(out var tb1)
-                                  .Text("Minimal Avalonia"), 
-                              TextBox()
-                                  .Text(window.BindTitle()), 
-                              Label()
-                                  .Content(button.OnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
-                  .Title(tb1.ObserveText().Select(x => x?.ToUpper()), BindingMode.OneWay);
-#endif
-              desktop.MainWindow = window;
-          }, args);
+          .WithApplicationName("MinimalAvalonia")
+          .StartWithClassicDesktopLifetime(Build, args);
