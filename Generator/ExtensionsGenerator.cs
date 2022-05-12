@@ -173,6 +173,9 @@ internal static class ExtensionsGenerator
         }
     }
 
+    private static readonly FieldInfo? s_attached = 
+        typeof(AvaloniaPropertyRegistry).GetField("_attached", BindingFlags.NonPublic | BindingFlags.Instance);
+
     private static List<Class> GetClasses()
     {
         var assemblies = AppDomain.CurrentDomain.GetAssemblies();
@@ -188,9 +191,13 @@ internal static class ExtensionsGenerator
             select assemblyType).ToArray();
 
         var classes = new List<Class>();
+        var attachedRegistry = (Dictionary<Type, Dictionary<int, AvaloniaProperty>>?)s_attached?.GetValue(AvaloniaPropertyRegistry.Instance);
 
         foreach (var classType in classTypes)
         {
+            // var avaloniaPropertiesRegistered = AvaloniaPropertyRegistry.Instance.GetRegistered(classType);
+            // var avaloniaPropertiesAttached = AvaloniaPropertyRegistry.Instance.GetRegisteredAttached(classType);
+            // var avaloniaProperties = avaloniaPropertiesRegistered.Concat(avaloniaPropertiesAttached).ToList();
             var avaloniaProperties = AvaloniaPropertyRegistry.Instance.GetRegistered(classType);
             if (avaloniaProperties.Count <= 0)
                 continue;
@@ -228,6 +235,21 @@ internal static class ExtensionsGenerator
                 var isEnum = false;
                 var enumNames = new List<string>();
 
+                var ownerType = property.OwnerType;
+                if (property.IsAttached && attachedRegistry is { })
+                {
+                    foreach (var kvp1 in attachedRegistry)
+                    {
+                        foreach (var kvp2 in kvp1.Value)
+                        {
+                            if (kvp2.Value == property)
+                            {
+                                ownerType = kvp1.Key;
+                            }
+                        }
+                    }
+                }
+
                 if (property.PropertyType.BaseType == typeof(Enum))
                 {
                     var names = Enum.GetNames(property.PropertyType);
@@ -237,7 +259,7 @@ internal static class ExtensionsGenerator
 
                 var p = new Property(
                     property.Name,
-                    FixType(property.OwnerType.ToString()),
+                    FixType(ownerType.ToString()),
                     FixType(property.PropertyType.ToString()),
                     FixType(property.GetType().ToString()),
                     property.IsReadOnly,
