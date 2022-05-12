@@ -39,7 +39,7 @@ AppBuilder.Configure<Application>()
 
 ```
 cd Generator
-dotnet run -- ./Extensions
+dotnet run -- ./Generated
 ```
 
 # Issues
