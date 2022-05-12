@@ -14,7 +14,7 @@ Window Build()
                         .Text(window.BindTitle()),
                     Label()
                         .Content(button.OnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
-        .Title(tb1.ObserveText().Select(x => x?.ToUpper()), BindingMode.OneWay);
+        .Title(tb1.ObserveText().Select(x => x?.ToUpper()));
 
 AppBuilder.Configure<Application>()
           .UsePlatformDetect()
