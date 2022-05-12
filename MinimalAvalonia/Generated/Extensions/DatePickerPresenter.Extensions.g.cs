@@ -17,9 +17,20 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Date(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Date<T>(this T obj, IObservable<System.DateTimeOffset> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        obj[Avalonia.Controls.DatePickerPresenter.DateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDate(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DatePickerPresenter.DateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.DateTimeOffset> ObserveDate(this Avalonia.Controls.DatePickerPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.DateProperty);
     }
 
     // DayFormatProperty
@@ -36,9 +47,20 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DayFormat(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DayFormat<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        obj[Avalonia.Controls.DatePickerPresenter.DayFormatProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDayFormat(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DatePickerPresenter.DayFormatProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveDayFormat(this Avalonia.Controls.DatePickerPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.DayFormatProperty);
     }
 
     // DayVisibleProperty
@@ -55,9 +77,20 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DayVisible(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DayVisible<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        obj[Avalonia.Controls.DatePickerPresenter.DayVisibleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDayVisible(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DatePickerPresenter.DayVisibleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveDayVisible(this Avalonia.Controls.DatePickerPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty);
     }
 
     // MaxYearProperty
@@ -74,9 +107,20 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxYear(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxYear<T>(this T obj, IObservable<System.DateTimeOffset> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        obj[Avalonia.Controls.DatePickerPresenter.MaxYearProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxYear(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DatePickerPresenter.MaxYearProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.DateTimeOffset> ObserveMaxYear(this Avalonia.Controls.DatePickerPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MaxYearProperty);
     }
 
     // MinYearProperty
@@ -93,9 +137,20 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MinYear(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MinYear<T>(this T obj, IObservable<System.DateTimeOffset> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        obj[Avalonia.Controls.DatePickerPresenter.MinYearProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinYear(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DatePickerPresenter.MinYearProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.DateTimeOffset> ObserveMinYear(this Avalonia.Controls.DatePickerPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MinYearProperty);
     }
 
     // MonthFormatProperty
@@ -112,9 +167,20 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MonthFormat(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MonthFormat<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        obj[Avalonia.Controls.DatePickerPresenter.MonthFormatProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMonthFormat(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DatePickerPresenter.MonthFormatProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveMonthFormat(this Avalonia.Controls.DatePickerPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty);
     }
 
     // MonthVisibleProperty
@@ -131,9 +197,20 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MonthVisible(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MonthVisible<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        obj[Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMonthVisible(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveMonthVisible(this Avalonia.Controls.DatePickerPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty);
     }
 
     // YearFormatProperty
@@ -150,9 +227,20 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding YearFormat(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T YearFormat<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        obj[Avalonia.Controls.DatePickerPresenter.YearFormatProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindYearFormat(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DatePickerPresenter.YearFormatProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveYearFormat(this Avalonia.Controls.DatePickerPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.YearFormatProperty);
     }
 
     // YearVisibleProperty
@@ -169,8 +257,19 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding YearVisible(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T YearVisible<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        obj[Avalonia.Controls.DatePickerPresenter.YearVisibleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindYearVisible(this Avalonia.Controls.DatePickerPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DatePickerPresenter.YearVisibleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveYearVisible(this Avalonia.Controls.DatePickerPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty);
     }
 }

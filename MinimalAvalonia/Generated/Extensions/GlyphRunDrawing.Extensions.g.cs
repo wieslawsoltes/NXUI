@@ -17,9 +17,20 @@ public static partial class GlyphRunDrawingExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Foreground(this Avalonia.Media.GlyphRunDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Foreground<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.GlyphRunDrawing
+    {
+        obj[Avalonia.Media.GlyphRunDrawing.ForegroundProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindForeground(this Avalonia.Media.GlyphRunDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.GlyphRunDrawing.ForegroundProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveForeground(this Avalonia.Media.GlyphRunDrawing obj)
+    {
+        return obj.GetObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
     }
 
     // GlyphRunProperty
@@ -36,8 +47,19 @@ public static partial class GlyphRunDrawingExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding GlyphRun(this Avalonia.Media.GlyphRunDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T GlyphRun<T>(this T obj, IObservable<Avalonia.Media.GlyphRun> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.GlyphRunDrawing
+    {
+        obj[Avalonia.Media.GlyphRunDrawing.GlyphRunProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindGlyphRun(this Avalonia.Media.GlyphRunDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.GlyphRunDrawing.GlyphRunProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.GlyphRun> ObserveGlyphRun(this Avalonia.Media.GlyphRunDrawing obj)
+    {
+        return obj.GetObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
     }
 }

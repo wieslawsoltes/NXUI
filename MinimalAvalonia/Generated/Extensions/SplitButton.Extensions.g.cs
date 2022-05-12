@@ -17,8 +17,19 @@ public static partial class SplitButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Command(this Avalonia.Controls.SplitButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Command<T>(this T obj, IObservable<System.Windows.Input.ICommand> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitButton
+    {
+        obj[Avalonia.Controls.SplitButton.CommandProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCommand(this Avalonia.Controls.SplitButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitButton.CommandProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Windows.Input.ICommand> ObserveCommand(this Avalonia.Controls.SplitButton obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitButton.CommandProperty);
     }
 }

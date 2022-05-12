@@ -17,9 +17,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding WindowManagerAddShadowHint(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T WindowManagerAddShadowHint<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWindowManagerAddShadowHint(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveWindowManagerAddShadowHint(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty);
     }
 
     // ChildProperty
@@ -36,9 +47,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Child(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Child<T>(this T obj, IObservable<Avalonia.Controls.Control> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.ChildProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindChild(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.ChildProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Control> ObserveChild(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.ChildProperty);
     }
 
     // InheritsTransformProperty
@@ -55,9 +77,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding InheritsTransform(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T InheritsTransform<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.InheritsTransformProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindInheritsTransform(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.InheritsTransformProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveInheritsTransform(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty);
     }
 
     // IsOpenProperty
@@ -74,9 +107,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsOpen(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsOpen<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.IsOpenProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsOpen(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.IsOpenProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsOpen(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.IsOpenProperty);
     }
 
     // PlacementAnchorProperty
@@ -93,9 +137,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PlacementAnchor(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PlacementAnchor<T>(this T obj, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementAnchor(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> ObservePlacementAnchor(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty);
     }
 
     public static T PlacementAnchorNone<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
@@ -184,9 +239,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PlacementConstraintAdjustment(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PlacementConstraintAdjustment<T>(this T obj, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementConstraintAdjustment(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> ObservePlacementConstraintAdjustment(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty);
     }
 
     public static T PlacementConstraintAdjustmentNone<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
@@ -251,9 +317,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PlacementGravity(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PlacementGravity<T>(this T obj, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementGravity(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> ObservePlacementGravity(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty);
     }
 
     public static T PlacementGravityNone<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
@@ -324,9 +401,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PlacementMode(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PlacementMode<T>(this T obj, IObservable<Avalonia.Controls.PlacementMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementMode(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.PlacementMode> ObservePlacementMode(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementModeProperty);
     }
 
     public static T PlacementModePointer<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
@@ -379,9 +467,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PlacementRect(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PlacementRect<T>(this T obj, IObservable<System.Nullable<Avalonia.Rect>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.PlacementRectProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementRect(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.PlacementRectProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Nullable<Avalonia.Rect>> ObservePlacementRect(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementRectProperty);
     }
 
     // PlacementTargetProperty
@@ -398,9 +497,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PlacementTarget(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PlacementTarget<T>(this T obj, IObservable<Avalonia.Controls.Control> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.PlacementTargetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementTarget(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.PlacementTargetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Control> ObservePlacementTarget(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty);
     }
 
     // ObeyScreenEdgesProperty
@@ -417,9 +527,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ObeyScreenEdges(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ObeyScreenEdges<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.ObeyScreenEdgesProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindObeyScreenEdges(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.ObeyScreenEdgesProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveObeyScreenEdges(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.ObeyScreenEdgesProperty);
     }
 
     // OverlayDismissEventPassThroughProperty
@@ -436,9 +557,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding OverlayDismissEventPassThrough(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T OverlayDismissEventPassThrough<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOverlayDismissEventPassThrough(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveOverlayDismissEventPassThrough(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty);
     }
 
     // OverlayInputPassThroughElementProperty
@@ -455,9 +587,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding OverlayInputPassThroughElement(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T OverlayInputPassThroughElement<T>(this T obj, IObservable<Avalonia.Input.IInputElement> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOverlayInputPassThroughElement(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Input.IInputElement> ObserveOverlayInputPassThroughElement(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty);
     }
 
     // HorizontalOffsetProperty
@@ -474,9 +617,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HorizontalOffset(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HorizontalOffset<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalOffset(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveHorizontalOffset(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty);
     }
 
     // IsLightDismissEnabledProperty
@@ -493,9 +647,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsLightDismissEnabled(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsLightDismissEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsLightDismissEnabled(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsLightDismissEnabled(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty);
     }
 
     // VerticalOffsetProperty
@@ -512,9 +677,20 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding VerticalOffset(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T VerticalOffset<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalOffset(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveVerticalOffset(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty);
     }
 
     // TopmostProperty
@@ -531,8 +707,19 @@ public static partial class PopupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Topmost(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Topmost<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    {
+        obj[Avalonia.Controls.Primitives.Popup.TopmostProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTopmost(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Popup.TopmostProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveTopmost(this Avalonia.Controls.Primitives.Popup obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.TopmostProperty);
     }
 }

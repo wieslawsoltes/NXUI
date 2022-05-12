@@ -17,9 +17,20 @@ public static partial class WindowNotificationManagerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Position(this Avalonia.Controls.Notifications.WindowNotificationManager obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Position<T>(this T obj, IObservable<Avalonia.Controls.Notifications.NotificationPosition> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPosition(this Avalonia.Controls.Notifications.WindowNotificationManager obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Notifications.NotificationPosition> ObservePosition(this Avalonia.Controls.Notifications.WindowNotificationManager obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty);
     }
 
     public static T PositionTopLeft<T>(this T obj) where T : Avalonia.Controls.Notifications.WindowNotificationManager
@@ -60,8 +71,19 @@ public static partial class WindowNotificationManagerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxItems(this Avalonia.Controls.Notifications.WindowNotificationManager obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxItems<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        obj[Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxItems(this Avalonia.Controls.Notifications.WindowNotificationManager obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveMaxItems(this Avalonia.Controls.Notifications.WindowNotificationManager obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty);
     }
 }

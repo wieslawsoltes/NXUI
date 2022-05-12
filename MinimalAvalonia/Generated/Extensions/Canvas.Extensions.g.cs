@@ -17,9 +17,20 @@ public static partial class CanvasExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Left(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Left<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Canvas.LeftProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindLeft(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Canvas.LeftProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveLeft(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Canvas.LeftProperty);
     }
 
     // TopProperty
@@ -36,9 +47,20 @@ public static partial class CanvasExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Top(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Top<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Canvas.TopProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTop(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Canvas.TopProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveTop(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Canvas.TopProperty);
     }
 
     // RightProperty
@@ -55,9 +77,20 @@ public static partial class CanvasExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Right(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Right<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Canvas.RightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRight(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Canvas.RightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveRight(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Canvas.RightProperty);
     }
 
     // BottomProperty
@@ -74,8 +107,19 @@ public static partial class CanvasExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Bottom(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Bottom<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Canvas.BottomProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBottom(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Canvas.BottomProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveBottom(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Canvas.BottomProperty);
     }
 }

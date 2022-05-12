@@ -17,9 +17,20 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Errors(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Errors<T>(this T obj, IObservable<System.Collections.Generic.IEnumerable<System.Object>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.DataValidationErrors.ErrorsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindErrors(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DataValidationErrors.ErrorsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Collections.Generic.IEnumerable<System.Object>> ObserveErrors(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
     }
 
     // HasErrorsProperty
@@ -36,9 +47,20 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HasErrors(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HasErrors<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.DataValidationErrors.HasErrorsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHasErrors(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DataValidationErrors.HasErrorsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveHasErrors(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
     }
 
     // ErrorTemplateProperty
@@ -55,9 +77,20 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ErrorTemplate(this Avalonia.Controls.DataValidationErrors obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ErrorTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DataValidationErrors
+    {
+        obj[Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindErrorTemplate(this Avalonia.Controls.DataValidationErrors obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveErrorTemplate(this Avalonia.Controls.DataValidationErrors obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty);
     }
 
     // OwnerProperty
@@ -74,8 +107,19 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Owner(this Avalonia.Controls.DataValidationErrors obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Owner<T>(this T obj, IObservable<Avalonia.Controls.Control> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DataValidationErrors
+    {
+        obj[Avalonia.Controls.DataValidationErrors.OwnerProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOwner(this Avalonia.Controls.DataValidationErrors obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DataValidationErrors.OwnerProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Control> ObserveOwner(this Avalonia.Controls.DataValidationErrors obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
     }
 }

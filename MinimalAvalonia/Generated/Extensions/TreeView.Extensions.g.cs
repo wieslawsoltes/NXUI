@@ -17,9 +17,20 @@ public static partial class TreeViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedItem(this Avalonia.Controls.TreeView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedItem<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.SelectedItemProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedItem(this Avalonia.Controls.TreeView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TreeView.SelectedItemProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveSelectedItem(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
     }
 
     // SelectedItemsProperty
@@ -36,8 +47,19 @@ public static partial class TreeViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedItems(this Avalonia.Controls.TreeView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedItems<T>(this T obj, IObservable<System.Collections.IList> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.SelectedItemsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedItems(this Avalonia.Controls.TreeView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TreeView.SelectedItemsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Collections.IList> ObserveSelectedItems(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemsProperty);
     }
 }

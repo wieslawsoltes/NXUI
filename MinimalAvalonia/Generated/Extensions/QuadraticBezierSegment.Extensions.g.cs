@@ -17,9 +17,20 @@ public static partial class QuadraticBezierSegmentExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Point1(this Avalonia.Media.QuadraticBezierSegment obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.QuadraticBezierSegment Point1(this Avalonia.Media.QuadraticBezierSegment obj, IObservable<Avalonia.Point> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.QuadraticBezierSegment.Point1Property.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPoint1(this Avalonia.Media.QuadraticBezierSegment obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.QuadraticBezierSegment.Point1Property.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Point> ObservePoint1(this Avalonia.Media.QuadraticBezierSegment obj)
+    {
+        return obj.GetObservable(Avalonia.Media.QuadraticBezierSegment.Point1Property);
     }
 
     // Point2Property
@@ -36,8 +47,19 @@ public static partial class QuadraticBezierSegmentExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Point2(this Avalonia.Media.QuadraticBezierSegment obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.QuadraticBezierSegment Point2(this Avalonia.Media.QuadraticBezierSegment obj, IObservable<Avalonia.Point> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.QuadraticBezierSegment.Point2Property.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPoint2(this Avalonia.Media.QuadraticBezierSegment obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.QuadraticBezierSegment.Point2Property.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Point> ObservePoint2(this Avalonia.Media.QuadraticBezierSegment obj)
+    {
+        return obj.GetObservable(Avalonia.Media.QuadraticBezierSegment.Point2Property);
     }
 }

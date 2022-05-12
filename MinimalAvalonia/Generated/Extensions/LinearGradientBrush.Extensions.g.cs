@@ -17,9 +17,20 @@ public static partial class LinearGradientBrushExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StartPoint(this Avalonia.Media.LinearGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.LinearGradientBrush StartPoint(this Avalonia.Media.LinearGradientBrush obj, IObservable<Avalonia.RelativePoint> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.LinearGradientBrush.StartPointProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStartPoint(this Avalonia.Media.LinearGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.LinearGradientBrush.StartPointProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.RelativePoint> ObserveStartPoint(this Avalonia.Media.LinearGradientBrush obj)
+    {
+        return obj.GetObservable(Avalonia.Media.LinearGradientBrush.StartPointProperty);
     }
 
     // EndPointProperty
@@ -36,8 +47,19 @@ public static partial class LinearGradientBrushExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding EndPoint(this Avalonia.Media.LinearGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.LinearGradientBrush EndPoint(this Avalonia.Media.LinearGradientBrush obj, IObservable<Avalonia.RelativePoint> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.LinearGradientBrush.EndPointProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindEndPoint(this Avalonia.Media.LinearGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.LinearGradientBrush.EndPointProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.RelativePoint> ObserveEndPoint(this Avalonia.Media.LinearGradientBrush obj)
+    {
+        return obj.GetObservable(Avalonia.Media.LinearGradientBrush.EndPointProperty);
     }
 }

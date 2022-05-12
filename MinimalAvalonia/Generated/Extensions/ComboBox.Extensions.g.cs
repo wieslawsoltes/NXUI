@@ -17,9 +17,20 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsDropDownOpen(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsDropDownOpen<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.IsDropDownOpenProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsDropDownOpen(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ComboBox.IsDropDownOpenProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsDropDownOpen(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ComboBox.IsDropDownOpenProperty);
     }
 
     // MaxDropDownHeightProperty
@@ -36,16 +47,32 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxDropDownHeight(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxDropDownHeight<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.MaxDropDownHeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxDropDownHeight(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ComboBox.MaxDropDownHeightProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Double> ObserveMaxDropDownHeight(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty);
+    }
+
     // SelectionBoxItemProperty
 
-    public static Avalonia.Data.IBinding SelectionBoxItem(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindSelectionBoxItem(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ComboBox.SelectionBoxItemProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveSelectionBoxItem(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ComboBox.SelectionBoxItemProperty);
     }
 
     // PlaceholderTextProperty
@@ -62,9 +89,20 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PlaceholderText(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PlaceholderText<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.PlaceholderTextProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlaceholderText(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ComboBox.PlaceholderTextProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObservePlaceholderText(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderTextProperty);
     }
 
     // PlaceholderForegroundProperty
@@ -81,8 +119,19 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PlaceholderForeground(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PlaceholderForeground<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.PlaceholderForegroundProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlaceholderForeground(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ComboBox.PlaceholderForegroundProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObservePlaceholderForeground(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty);
     }
 }

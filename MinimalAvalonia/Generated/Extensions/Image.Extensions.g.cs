@@ -17,9 +17,20 @@ public static partial class ImageExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Source(this Avalonia.Controls.Image obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Source<T>(this T obj, IObservable<Avalonia.Media.IImage> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.SourceProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSource(this Avalonia.Controls.Image obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Image.SourceProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IImage> ObserveSource(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Image.SourceProperty);
     }
 
     // StretchProperty
@@ -36,9 +47,20 @@ public static partial class ImageExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Stretch(this Avalonia.Controls.Image obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Stretch<T>(this T obj, IObservable<Avalonia.Media.Stretch> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.StretchProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStretch(this Avalonia.Controls.Image obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Image.StretchProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Stretch> ObserveStretch(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Image.StretchProperty);
     }
 
     public static T StretchNone<T>(this T obj) where T : Avalonia.Controls.Image
@@ -79,9 +101,20 @@ public static partial class ImageExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StretchDirection(this Avalonia.Controls.Image obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StretchDirection<T>(this T obj, IObservable<Avalonia.Media.StretchDirection> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.StretchDirectionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStretchDirection(this Avalonia.Controls.Image obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Image.StretchDirectionProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.StretchDirection> ObserveStretchDirection(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Image.StretchDirectionProperty);
     }
 
     public static T StretchDirectionUpOnly<T>(this T obj) where T : Avalonia.Controls.Image

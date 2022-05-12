@@ -17,8 +17,19 @@ public static partial class TransformGroupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Children(this Avalonia.Media.TransformGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Children<T>(this T obj, IObservable<Avalonia.Media.Transforms> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TransformGroup
+    {
+        obj[Avalonia.Media.TransformGroup.ChildrenProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindChildren(this Avalonia.Media.TransformGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TransformGroup.ChildrenProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Transforms> ObserveChildren(this Avalonia.Media.TransformGroup obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TransformGroup.ChildrenProperty);
     }
 }

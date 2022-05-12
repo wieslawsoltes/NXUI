@@ -17,9 +17,20 @@ public static partial class TimePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MinuteIncrement(this Avalonia.Controls.TimePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MinuteIncrement<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TimePicker
+    {
+        obj[Avalonia.Controls.TimePicker.MinuteIncrementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinuteIncrement(this Avalonia.Controls.TimePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TimePicker.MinuteIncrementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveMinuteIncrement(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TimePicker.MinuteIncrementProperty);
     }
 
     // ClockIdentifierProperty
@@ -36,9 +47,20 @@ public static partial class TimePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ClockIdentifier(this Avalonia.Controls.TimePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ClockIdentifier<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TimePicker
+    {
+        obj[Avalonia.Controls.TimePicker.ClockIdentifierProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindClockIdentifier(this Avalonia.Controls.TimePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TimePicker.ClockIdentifierProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveClockIdentifier(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TimePicker.ClockIdentifierProperty);
     }
 
     // SelectedTimeProperty
@@ -55,8 +77,19 @@ public static partial class TimePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedTime(this Avalonia.Controls.TimePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedTime<T>(this T obj, IObservable<System.Nullable<System.TimeSpan>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TimePicker
+    {
+        obj[Avalonia.Controls.TimePicker.SelectedTimeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedTime(this Avalonia.Controls.TimePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TimePicker.SelectedTimeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Nullable<System.TimeSpan>> ObserveSelectedTime(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TimePicker.SelectedTimeProperty);
     }
 }

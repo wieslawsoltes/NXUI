@@ -17,9 +17,20 @@ public static partial class PenExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Brush(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.Pen Brush(this Avalonia.Media.Pen obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.Pen.BrushProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBrush(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.Pen.BrushProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveBrush(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetObservable(Avalonia.Media.Pen.BrushProperty);
     }
 
     // ThicknessProperty
@@ -36,9 +47,20 @@ public static partial class PenExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Thickness(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.Pen Thickness(this Avalonia.Media.Pen obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.Pen.ThicknessProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindThickness(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.Pen.ThicknessProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveThickness(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetObservable(Avalonia.Media.Pen.ThicknessProperty);
     }
 
     // DashStyleProperty
@@ -55,9 +77,20 @@ public static partial class PenExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DashStyle(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.Pen DashStyle(this Avalonia.Media.Pen obj, IObservable<Avalonia.Media.IDashStyle> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.Pen.DashStyleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDashStyle(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.Pen.DashStyleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IDashStyle> ObserveDashStyle(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetObservable(Avalonia.Media.Pen.DashStyleProperty);
     }
 
     // LineCapProperty
@@ -74,9 +107,20 @@ public static partial class PenExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding LineCap(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.Pen LineCap(this Avalonia.Media.Pen obj, IObservable<Avalonia.Media.PenLineCap> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.Pen.LineCapProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindLineCap(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.Pen.LineCapProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.PenLineCap> ObserveLineCap(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetObservable(Avalonia.Media.Pen.LineCapProperty);
     }
 
     public static Avalonia.Media.Pen LineCapFlat(this Avalonia.Media.Pen obj)
@@ -111,9 +155,20 @@ public static partial class PenExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding LineJoin(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.Pen LineJoin(this Avalonia.Media.Pen obj, IObservable<Avalonia.Media.PenLineJoin> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.Pen.LineJoinProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindLineJoin(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.Pen.LineJoinProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.PenLineJoin> ObserveLineJoin(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetObservable(Avalonia.Media.Pen.LineJoinProperty);
     }
 
     public static Avalonia.Media.Pen LineJoinBevel(this Avalonia.Media.Pen obj)
@@ -148,8 +203,19 @@ public static partial class PenExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MiterLimit(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.Pen MiterLimit(this Avalonia.Media.Pen obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.Pen.MiterLimitProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMiterLimit(this Avalonia.Media.Pen obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.Pen.MiterLimitProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMiterLimit(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetObservable(Avalonia.Media.Pen.MiterLimitProperty);
     }
 }

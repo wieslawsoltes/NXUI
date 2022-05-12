@@ -17,9 +17,20 @@ public static partial class ItemsPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding VirtualizationMode(this Avalonia.Controls.Presenters.ItemsPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T VirtualizationMode<T>(this T obj, IObservable<Avalonia.Controls.ItemVirtualizationMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVirtualizationMode(this Avalonia.Controls.Presenters.ItemsPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ItemVirtualizationMode> ObserveVirtualizationMode(this Avalonia.Controls.Presenters.ItemsPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty);
     }
 
     public static T VirtualizationModeNone<T>(this T obj) where T : Avalonia.Controls.Presenters.ItemsPresenter

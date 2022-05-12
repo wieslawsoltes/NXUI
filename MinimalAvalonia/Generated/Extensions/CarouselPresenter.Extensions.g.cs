@@ -17,8 +17,19 @@ public static partial class CarouselPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedIndex(this Avalonia.Controls.Presenters.CarouselPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedIndex<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.CarouselPresenter
+    {
+        obj[Avalonia.Controls.Presenters.CarouselPresenter.SelectedIndexProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedIndex(this Avalonia.Controls.Presenters.CarouselPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Presenters.CarouselPresenter.SelectedIndexProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveSelectedIndex(this Avalonia.Controls.Presenters.CarouselPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.CarouselPresenter.SelectedIndexProperty);
     }
 }

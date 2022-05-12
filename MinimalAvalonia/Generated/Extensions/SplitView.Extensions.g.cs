@@ -17,9 +17,20 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CompactPaneLength(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CompactPaneLength<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.CompactPaneLengthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCompactPaneLength(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitView.CompactPaneLengthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveCompactPaneLength(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.CompactPaneLengthProperty);
     }
 
     // DisplayModeProperty
@@ -36,9 +47,20 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DisplayMode(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DisplayMode<T>(this T obj, IObservable<Avalonia.Controls.SplitViewDisplayMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.DisplayModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDisplayMode(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitView.DisplayModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.SplitViewDisplayMode> ObserveDisplayMode(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.DisplayModeProperty);
     }
 
     public static T DisplayModeInline<T>(this T obj) where T : Avalonia.Controls.SplitView
@@ -79,9 +101,20 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsPaneOpen(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsPaneOpen<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.IsPaneOpenProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsPaneOpen(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitView.IsPaneOpenProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsPaneOpen(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.IsPaneOpenProperty);
     }
 
     // OpenPaneLengthProperty
@@ -98,9 +131,20 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding OpenPaneLength(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T OpenPaneLength<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.OpenPaneLengthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOpenPaneLength(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitView.OpenPaneLengthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveOpenPaneLength(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.OpenPaneLengthProperty);
     }
 
     // PaneBackgroundProperty
@@ -117,9 +161,20 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PaneBackground(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PaneBackground<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.PaneBackgroundProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPaneBackground(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitView.PaneBackgroundProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObservePaneBackground(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
     }
 
     // PanePlacementProperty
@@ -136,9 +191,20 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PanePlacement(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PanePlacement<T>(this T obj, IObservable<Avalonia.Controls.SplitViewPanePlacement> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.PanePlacementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPanePlacement(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitView.PanePlacementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.SplitViewPanePlacement> ObservePanePlacement(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.PanePlacementProperty);
     }
 
     public static T PanePlacementLeft<T>(this T obj) where T : Avalonia.Controls.SplitView
@@ -167,9 +233,20 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Pane(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Pane<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.PaneProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPane(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitView.PaneProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObservePane(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.PaneProperty);
     }
 
     // PaneTemplateProperty
@@ -186,9 +263,20 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PaneTemplate(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PaneTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.PaneTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPaneTemplate(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitView.PaneTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObservePaneTemplate(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.PaneTemplateProperty);
     }
 
     // UseLightDismissOverlayModeProperty
@@ -205,9 +293,20 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding UseLightDismissOverlayMode(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T UseLightDismissOverlayMode<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindUseLightDismissOverlayMode(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveUseLightDismissOverlayMode(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty);
     }
 
     // TemplateSettingsProperty
@@ -224,8 +323,19 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TemplateSettings(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TemplateSettings<T>(this T obj, IObservable<Avalonia.Controls.SplitViewTemplateSettings> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
+    {
+        obj[Avalonia.Controls.SplitView.TemplateSettingsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTemplateSettings(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.SplitView.TemplateSettingsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.SplitViewTemplateSettings> ObserveTemplateSettings(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.TemplateSettingsProperty);
     }
 }

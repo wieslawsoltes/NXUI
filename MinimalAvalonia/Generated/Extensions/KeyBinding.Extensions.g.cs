@@ -17,9 +17,20 @@ public static partial class KeyBindingExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Command(this Avalonia.Input.KeyBinding obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Command<T>(this T obj, IObservable<System.Windows.Input.ICommand> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Input.KeyBinding
+    {
+        obj[Avalonia.Input.KeyBinding.CommandProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCommand(this Avalonia.Input.KeyBinding obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Input.KeyBinding.CommandProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Windows.Input.ICommand> ObserveCommand(this Avalonia.Input.KeyBinding obj)
+    {
+        return obj.GetObservable(Avalonia.Input.KeyBinding.CommandProperty);
     }
 
     // CommandParameterProperty
@@ -36,9 +47,20 @@ public static partial class KeyBindingExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CommandParameter(this Avalonia.Input.KeyBinding obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CommandParameter<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Input.KeyBinding
+    {
+        obj[Avalonia.Input.KeyBinding.CommandParameterProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCommandParameter(this Avalonia.Input.KeyBinding obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Input.KeyBinding.CommandParameterProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveCommandParameter(this Avalonia.Input.KeyBinding obj)
+    {
+        return obj.GetObservable(Avalonia.Input.KeyBinding.CommandParameterProperty);
     }
 
     // GestureProperty
@@ -55,8 +77,19 @@ public static partial class KeyBindingExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Gesture(this Avalonia.Input.KeyBinding obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Gesture<T>(this T obj, IObservable<Avalonia.Input.KeyGesture> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Input.KeyBinding
+    {
+        obj[Avalonia.Input.KeyBinding.GestureProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindGesture(this Avalonia.Input.KeyBinding obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Input.KeyBinding.GestureProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Input.KeyGesture> ObserveGesture(this Avalonia.Input.KeyBinding obj)
+    {
+        return obj.GetObservable(Avalonia.Input.KeyBinding.GestureProperty);
     }
 }

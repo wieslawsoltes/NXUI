@@ -17,9 +17,20 @@ public static partial class WrapLayoutExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HorizontalSpacing(this Avalonia.Layout.WrapLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HorizontalSpacing<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.WrapLayout
+    {
+        obj[Avalonia.Layout.WrapLayout.HorizontalSpacingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalSpacing(this Avalonia.Layout.WrapLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.WrapLayout.HorizontalSpacingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveHorizontalSpacing(this Avalonia.Layout.WrapLayout obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty);
     }
 
     // VerticalSpacingProperty
@@ -36,9 +47,20 @@ public static partial class WrapLayoutExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding VerticalSpacing(this Avalonia.Layout.WrapLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T VerticalSpacing<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.WrapLayout
+    {
+        obj[Avalonia.Layout.WrapLayout.VerticalSpacingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalSpacing(this Avalonia.Layout.WrapLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.WrapLayout.VerticalSpacingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveVerticalSpacing(this Avalonia.Layout.WrapLayout obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.WrapLayout.VerticalSpacingProperty);
     }
 
     // OrientationProperty
@@ -55,9 +77,20 @@ public static partial class WrapLayoutExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Orientation(this Avalonia.Layout.WrapLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Orientation<T>(this T obj, IObservable<Avalonia.Layout.Orientation> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.WrapLayout
+    {
+        obj[Avalonia.Layout.WrapLayout.OrientationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOrientation(this Avalonia.Layout.WrapLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.WrapLayout.OrientationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.Orientation> ObserveOrientation(this Avalonia.Layout.WrapLayout obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.WrapLayout.OrientationProperty);
     }
 
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Layout.WrapLayout

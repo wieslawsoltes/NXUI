@@ -5,9 +5,14 @@ public static partial class WindowBaseExtensions
 {
     // IsActiveProperty
 
-    public static Avalonia.Data.IBinding IsActive(this Avalonia.Controls.WindowBase obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindIsActive(this Avalonia.Controls.WindowBase obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.WindowBase.IsActiveProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsActive(this Avalonia.Controls.WindowBase obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.WindowBase.IsActiveProperty);
     }
 
     // OwnerProperty
@@ -24,9 +29,20 @@ public static partial class WindowBaseExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Owner(this Avalonia.Controls.WindowBase obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Owner<T>(this T obj, IObservable<Avalonia.Controls.WindowBase> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.WindowBase
+    {
+        obj[Avalonia.Controls.WindowBase.OwnerProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOwner(this Avalonia.Controls.WindowBase obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.WindowBase.OwnerProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.WindowBase> ObserveOwner(this Avalonia.Controls.WindowBase obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.WindowBase.OwnerProperty);
     }
 
     // TopmostProperty
@@ -43,8 +59,19 @@ public static partial class WindowBaseExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Topmost(this Avalonia.Controls.WindowBase obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Topmost<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.WindowBase
+    {
+        obj[Avalonia.Controls.WindowBase.TopmostProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTopmost(this Avalonia.Controls.WindowBase obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.WindowBase.TopmostProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveTopmost(this Avalonia.Controls.WindowBase obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.WindowBase.TopmostProperty);
     }
 }

@@ -17,9 +17,20 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SizeToContent(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SizeToContent<T>(this T obj, IObservable<Avalonia.Controls.SizeToContent> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.SizeToContentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSizeToContent(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.SizeToContentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.SizeToContent> ObserveSizeToContent(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.SizeToContentProperty);
     }
 
     public static T SizeToContentManual<T>(this T obj) where T : Avalonia.Controls.Window
@@ -60,9 +71,20 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ExtendClientAreaToDecorationsHint(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ExtendClientAreaToDecorationsHint<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindExtendClientAreaToDecorationsHint(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveExtendClientAreaToDecorationsHint(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty);
     }
 
     // ExtendClientAreaChromeHintsProperty
@@ -79,9 +101,20 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ExtendClientAreaChromeHints(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ExtendClientAreaChromeHints<T>(this T obj, IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindExtendClientAreaChromeHints(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> ObserveExtendClientAreaChromeHints(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
     }
 
     public static T ExtendClientAreaChromeHintsNoChrome<T>(this T obj) where T : Avalonia.Controls.Window
@@ -128,30 +161,56 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ExtendClientAreaTitleBarHeightHint(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ExtendClientAreaTitleBarHeightHint<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindExtendClientAreaTitleBarHeightHint(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Double> ObserveExtendClientAreaTitleBarHeightHint(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty);
+    }
+
     // IsExtendedIntoWindowDecorationsProperty
 
-    public static Avalonia.Data.IBinding IsExtendedIntoWindowDecorations(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindIsExtendedIntoWindowDecorations(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Boolean> ObserveIsExtendedIntoWindowDecorations(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
+    }
+
     // WindowDecorationMarginProperty
 
-    public static Avalonia.Data.IBinding WindowDecorationMargin(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindWindowDecorationMargin(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.Window.WindowDecorationMarginProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<Avalonia.Thickness> ObserveWindowDecorationMargin(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.WindowDecorationMarginProperty);
+    }
+
     // OffScreenMarginProperty
 
-    public static Avalonia.Data.IBinding OffScreenMargin(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindOffScreenMargin(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.Window.OffScreenMarginProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Thickness> ObserveOffScreenMargin(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.OffScreenMarginProperty);
     }
 
     // SystemDecorationsProperty
@@ -168,9 +227,20 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SystemDecorations(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SystemDecorations<T>(this T obj, IObservable<Avalonia.Controls.SystemDecorations> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.SystemDecorationsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSystemDecorations(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.SystemDecorationsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.SystemDecorations> ObserveSystemDecorations(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
     }
 
     public static T SystemDecorationsNone<T>(this T obj) where T : Avalonia.Controls.Window
@@ -205,9 +275,20 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ShowActivated(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ShowActivated<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.ShowActivatedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindShowActivated(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.ShowActivatedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveShowActivated(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.ShowActivatedProperty);
     }
 
     // ShowInTaskbarProperty
@@ -224,9 +305,20 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ShowInTaskbar(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ShowInTaskbar<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.ShowInTaskbarProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindShowInTaskbar(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.ShowInTaskbarProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveShowInTaskbar(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.ShowInTaskbarProperty);
     }
 
     // WindowStateProperty
@@ -243,9 +335,20 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding WindowState(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T WindowState<T>(this T obj, IObservable<Avalonia.Controls.WindowState> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.WindowStateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWindowState(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.WindowStateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.WindowState> ObserveWindowState(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.WindowStateProperty);
     }
 
     public static T WindowStateNormal<T>(this T obj) where T : Avalonia.Controls.Window
@@ -286,9 +389,20 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Title(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Title<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.TitleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTitle(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.TitleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveTitle(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.TitleProperty);
     }
 
     // IconProperty
@@ -305,9 +419,20 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Icon(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Icon<T>(this T obj, IObservable<Avalonia.Controls.WindowIcon> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.IconProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIcon(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.IconProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.WindowIcon> ObserveIcon(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.IconProperty);
     }
 
     // WindowStartupLocationProperty
@@ -324,9 +449,20 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding WindowStartupLocation(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T WindowStartupLocation<T>(this T obj, IObservable<Avalonia.Controls.WindowStartupLocation> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.WindowStartupLocationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWindowStartupLocation(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.WindowStartupLocationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.WindowStartupLocation> ObserveWindowStartupLocation(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.WindowStartupLocationProperty);
     }
 
     public static T WindowStartupLocationManual<T>(this T obj) where T : Avalonia.Controls.Window
@@ -361,8 +497,19 @@ public static partial class WindowExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CanResize(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CanResize<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Window
+    {
+        obj[Avalonia.Controls.Window.CanResizeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCanResize(this Avalonia.Controls.Window obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Window.CanResizeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveCanResize(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Window.CanResizeProperty);
     }
 }

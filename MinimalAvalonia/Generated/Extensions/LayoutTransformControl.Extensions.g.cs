@@ -17,9 +17,20 @@ public static partial class LayoutTransformControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding LayoutTransform(this Avalonia.Controls.LayoutTransformControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T LayoutTransform<T>(this T obj, IObservable<Avalonia.Media.ITransform> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        obj[Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindLayoutTransform(this Avalonia.Controls.LayoutTransformControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.ITransform> ObserveLayoutTransform(this Avalonia.Controls.LayoutTransformControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
     }
 
     // UseRenderTransformProperty
@@ -36,8 +47,19 @@ public static partial class LayoutTransformControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding UseRenderTransform(this Avalonia.Controls.LayoutTransformControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T UseRenderTransform<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        obj[Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindUseRenderTransform(this Avalonia.Controls.LayoutTransformControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveUseRenderTransform(this Avalonia.Controls.LayoutTransformControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty);
     }
 }

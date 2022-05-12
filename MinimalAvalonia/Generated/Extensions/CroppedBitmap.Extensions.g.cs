@@ -17,9 +17,20 @@ public static partial class CroppedBitmapExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Source(this Avalonia.Media.Imaging.CroppedBitmap obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Source<T>(this T obj, IObservable<Avalonia.Media.IImage> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        obj[Avalonia.Media.Imaging.CroppedBitmap.SourceProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSource(this Avalonia.Media.Imaging.CroppedBitmap obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.Imaging.CroppedBitmap.SourceProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IImage> ObserveSource(this Avalonia.Media.Imaging.CroppedBitmap obj)
+    {
+        return obj.GetObservable(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty);
     }
 
     // SourceRectProperty
@@ -36,8 +47,19 @@ public static partial class CroppedBitmapExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SourceRect(this Avalonia.Media.Imaging.CroppedBitmap obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SourceRect<T>(this T obj, IObservable<Avalonia.PixelRect> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        obj[Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSourceRect(this Avalonia.Media.Imaging.CroppedBitmap obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.PixelRect> ObserveSourceRect(this Avalonia.Media.Imaging.CroppedBitmap obj)
+    {
+        return obj.GetObservable(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty);
     }
 }

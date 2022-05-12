@@ -17,8 +17,19 @@ public static partial class CalendarItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Controls.Primitives.CalendarItem DayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> ObserveDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
     }
 }

@@ -17,9 +17,20 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AutoScrollToSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AutoScrollToSelectedItem<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAutoScrollToSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAutoScrollToSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty);
     }
 
     // SelectedIndexProperty
@@ -36,9 +47,20 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedIndex(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedIndex<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedIndex(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveSelectedIndex(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
     }
 
     // SelectedItemProperty
@@ -55,9 +77,20 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedItem<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
     }
 
     // IsTextSearchEnabledProperty
@@ -74,8 +107,19 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsTextSearchEnabled(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsTextSearchEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsTextSearchEnabled(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsTextSearchEnabled(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
     }
 }

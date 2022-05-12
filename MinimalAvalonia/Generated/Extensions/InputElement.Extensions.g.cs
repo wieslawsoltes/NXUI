@@ -17,9 +17,20 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Focusable(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Focusable<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Input.InputElement
+    {
+        obj[Avalonia.Input.InputElement.FocusableProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFocusable(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Input.InputElement.FocusableProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveFocusable(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.FocusableProperty);
     }
 
     // IsEnabledProperty
@@ -36,16 +47,32 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsEnabled(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Input.InputElement
+    {
+        obj[Avalonia.Input.InputElement.IsEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsEnabled(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Input.InputElement.IsEnabledProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Boolean> ObserveIsEnabled(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.IsEnabledProperty);
+    }
+
     // IsEffectivelyEnabledProperty
 
-    public static Avalonia.Data.IBinding IsEffectivelyEnabled(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindIsEffectivelyEnabled(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Input.InputElement.IsEffectivelyEnabledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsEffectivelyEnabled(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.IsEffectivelyEnabledProperty);
     }
 
     // CursorProperty
@@ -62,23 +89,44 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Cursor(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Cursor<T>(this T obj, IObservable<Avalonia.Input.Cursor> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Input.InputElement
+    {
+        obj[Avalonia.Input.InputElement.CursorProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCursor(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Input.InputElement.CursorProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<Avalonia.Input.Cursor> ObserveCursor(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.CursorProperty);
+    }
+
     // IsKeyboardFocusWithinProperty
 
-    public static Avalonia.Data.IBinding IsKeyboardFocusWithin(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindIsKeyboardFocusWithin(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Boolean> ObserveIsKeyboardFocusWithin(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty);
+    }
+
     // IsFocusedProperty
 
-    public static Avalonia.Data.IBinding IsFocused(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindIsFocused(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Input.InputElement.IsFocusedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsFocused(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.IsFocusedProperty);
     }
 
     // IsHitTestVisibleProperty
@@ -95,15 +143,31 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsHitTestVisible(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsHitTestVisible<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Input.InputElement
+    {
+        obj[Avalonia.Input.InputElement.IsHitTestVisibleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsHitTestVisible(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Input.InputElement.IsHitTestVisibleProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Boolean> ObserveIsHitTestVisible(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.IsHitTestVisibleProperty);
+    }
+
     // IsPointerOverProperty
 
-    public static Avalonia.Data.IBinding IsPointerOver(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindIsPointerOver(this Avalonia.Input.InputElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Input.InputElement.IsPointerOverProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsPointerOver(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.IsPointerOverProperty);
     }
 }

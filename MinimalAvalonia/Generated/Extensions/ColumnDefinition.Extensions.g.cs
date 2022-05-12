@@ -17,9 +17,20 @@ public static partial class ColumnDefinitionExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxWidth(this Avalonia.Controls.ColumnDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxWidth<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ColumnDefinition
+    {
+        obj[Avalonia.Controls.ColumnDefinition.MaxWidthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxWidth(this Avalonia.Controls.ColumnDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ColumnDefinition.MaxWidthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMaxWidth(this Avalonia.Controls.ColumnDefinition obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ColumnDefinition.MaxWidthProperty);
     }
 
     // MinWidthProperty
@@ -36,9 +47,20 @@ public static partial class ColumnDefinitionExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MinWidth(this Avalonia.Controls.ColumnDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MinWidth<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ColumnDefinition
+    {
+        obj[Avalonia.Controls.ColumnDefinition.MinWidthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinWidth(this Avalonia.Controls.ColumnDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ColumnDefinition.MinWidthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMinWidth(this Avalonia.Controls.ColumnDefinition obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ColumnDefinition.MinWidthProperty);
     }
 
     // WidthProperty
@@ -55,8 +77,19 @@ public static partial class ColumnDefinitionExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Width(this Avalonia.Controls.ColumnDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Width<T>(this T obj, IObservable<Avalonia.Controls.GridLength> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ColumnDefinition
+    {
+        obj[Avalonia.Controls.ColumnDefinition.WidthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWidth(this Avalonia.Controls.ColumnDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ColumnDefinition.WidthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.GridLength> ObserveWidth(this Avalonia.Controls.ColumnDefinition obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ColumnDefinition.WidthProperty);
     }
 }

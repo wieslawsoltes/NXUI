@@ -17,9 +17,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AcceptsReturn(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AcceptsReturn<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.AcceptsReturnProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAcceptsReturn(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.AcceptsReturnProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAcceptsReturn(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.AcceptsReturnProperty);
     }
 
     // AcceptsTabProperty
@@ -36,9 +47,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AcceptsTab(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AcceptsTab<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.AcceptsTabProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAcceptsTab(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.AcceptsTabProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAcceptsTab(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.AcceptsTabProperty);
     }
 
     // CaretIndexProperty
@@ -55,9 +77,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CaretIndex(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CaretIndex<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.CaretIndexProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCaretIndex(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.CaretIndexProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveCaretIndex(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.CaretIndexProperty);
     }
 
     // IsReadOnlyProperty
@@ -74,9 +107,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsReadOnly(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsReadOnly<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.IsReadOnlyProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsReadOnly(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.IsReadOnlyProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsReadOnly(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.IsReadOnlyProperty);
     }
 
     // PasswordCharProperty
@@ -93,9 +137,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PasswordChar(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PasswordChar<T>(this T obj, IObservable<System.Char> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.PasswordCharProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPasswordChar(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.PasswordCharProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Char> ObservePasswordChar(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.PasswordCharProperty);
     }
 
     // SelectionBrushProperty
@@ -112,9 +167,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectionBrush(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectionBrush<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.SelectionBrushProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectionBrush(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.SelectionBrushProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveSelectionBrush(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.SelectionBrushProperty);
     }
 
     // SelectionForegroundBrushProperty
@@ -131,9 +197,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectionForegroundBrush(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectionForegroundBrush<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.SelectionForegroundBrushProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectionForegroundBrush(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.SelectionForegroundBrushProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveSelectionForegroundBrush(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty);
     }
 
     // CaretBrushProperty
@@ -150,9 +227,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CaretBrush(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CaretBrush<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.CaretBrushProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCaretBrush(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.CaretBrushProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveCaretBrush(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.CaretBrushProperty);
     }
 
     // SelectionStartProperty
@@ -169,9 +257,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectionStart(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectionStart<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.SelectionStartProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectionStart(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.SelectionStartProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveSelectionStart(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.SelectionStartProperty);
     }
 
     // SelectionEndProperty
@@ -188,9 +287,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectionEnd(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectionEnd<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.SelectionEndProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectionEnd(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.SelectionEndProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveSelectionEnd(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.SelectionEndProperty);
     }
 
     // MaxLengthProperty
@@ -207,9 +317,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxLength(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxLength<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.MaxLengthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxLength(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.MaxLengthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveMaxLength(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.MaxLengthProperty);
     }
 
     // MaxLinesProperty
@@ -226,9 +347,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxLines(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxLines<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.MaxLinesProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxLines(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.MaxLinesProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveMaxLines(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.MaxLinesProperty);
     }
 
     // TextProperty
@@ -245,9 +377,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Text(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Text<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindText(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.TextProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveText(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.TextProperty);
     }
 
     // WatermarkProperty
@@ -264,9 +407,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Watermark(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Watermark<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.WatermarkProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWatermark(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.WatermarkProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveWatermark(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.WatermarkProperty);
     }
 
     // UseFloatingWatermarkProperty
@@ -283,9 +437,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding UseFloatingWatermark(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T UseFloatingWatermark<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.UseFloatingWatermarkProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindUseFloatingWatermark(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.UseFloatingWatermarkProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveUseFloatingWatermark(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
     }
 
     // NewLineProperty
@@ -302,9 +467,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding NewLine(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T NewLine<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.NewLineProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindNewLine(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.NewLineProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveNewLine(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.NewLineProperty);
     }
 
     // InnerLeftContentProperty
@@ -321,9 +497,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding InnerLeftContent(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T InnerLeftContent<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.InnerLeftContentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindInnerLeftContent(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.InnerLeftContentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveInnerLeftContent(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.InnerLeftContentProperty);
     }
 
     // InnerRightContentProperty
@@ -340,9 +527,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding InnerRightContent(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T InnerRightContent<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.InnerRightContentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindInnerRightContent(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.InnerRightContentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveInnerRightContent(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.InnerRightContentProperty);
     }
 
     // RevealPasswordProperty
@@ -359,30 +557,56 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding RevealPassword(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T RevealPassword<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.RevealPasswordProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRevealPassword(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.RevealPasswordProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Boolean> ObserveRevealPassword(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.RevealPasswordProperty);
+    }
+
     // CanCutProperty
 
-    public static Avalonia.Data.IBinding CanCut(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindCanCut(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.TextBox.CanCutProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Boolean> ObserveCanCut(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.CanCutProperty);
+    }
+
     // CanCopyProperty
 
-    public static Avalonia.Data.IBinding CanCopy(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindCanCopy(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.TextBox.CanCopyProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Boolean> ObserveCanCopy(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.CanCopyProperty);
+    }
+
     // CanPasteProperty
 
-    public static Avalonia.Data.IBinding CanPaste(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindCanPaste(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.TextBox.CanPasteProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveCanPaste(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.CanPasteProperty);
     }
 
     // IsUndoEnabledProperty
@@ -399,9 +623,20 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsUndoEnabled(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsUndoEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.IsUndoEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsUndoEnabled(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.IsUndoEnabledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsUndoEnabled(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.IsUndoEnabledProperty);
     }
 
     // UndoLimitProperty
@@ -418,8 +653,19 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding UndoLimit(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T UndoLimit<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.UndoLimitProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindUndoLimit(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBox.UndoLimitProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveUndoLimit(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.UndoLimitProperty);
     }
 }

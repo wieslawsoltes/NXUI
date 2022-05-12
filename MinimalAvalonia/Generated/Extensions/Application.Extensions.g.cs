@@ -17,8 +17,19 @@ public static partial class ApplicationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Name(this Avalonia.Application obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Name<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Application
+    {
+        obj[Avalonia.Application.NameProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindName(this Avalonia.Application obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Application.NameProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveName(this Avalonia.Application obj)
+    {
+        return obj.GetObservable(Avalonia.Application.NameProperty);
     }
 }

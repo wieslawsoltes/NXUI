@@ -17,9 +17,20 @@ public static partial class StyledElementExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DataContext(this Avalonia.StyledElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DataContext<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.StyledElement
+    {
+        obj[Avalonia.StyledElement.DataContextProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDataContext(this Avalonia.StyledElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.StyledElement.DataContextProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveDataContext(this Avalonia.StyledElement obj)
+    {
+        return obj.GetObservable(Avalonia.StyledElement.DataContextProperty);
     }
 
     // NameProperty
@@ -36,16 +47,32 @@ public static partial class StyledElementExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Name(this Avalonia.StyledElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Name<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.StyledElement
+    {
+        obj[Avalonia.StyledElement.NameProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindName(this Avalonia.StyledElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.StyledElement.NameProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.String> ObserveName(this Avalonia.StyledElement obj)
+    {
+        return obj.GetObservable(Avalonia.StyledElement.NameProperty);
+    }
+
     // ParentProperty
 
-    public static Avalonia.Data.IBinding Parent(this Avalonia.StyledElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindParent(this Avalonia.StyledElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.StyledElement.ParentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.IStyledElement> ObserveParent(this Avalonia.StyledElement obj)
+    {
+        return obj.GetObservable(Avalonia.StyledElement.ParentProperty);
     }
 
     // TemplatedParentProperty
@@ -62,8 +89,19 @@ public static partial class StyledElementExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TemplatedParent(this Avalonia.StyledElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TemplatedParent<T>(this T obj, IObservable<Avalonia.Styling.ITemplatedControl> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.StyledElement
+    {
+        obj[Avalonia.StyledElement.TemplatedParentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTemplatedParent(this Avalonia.StyledElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.StyledElement.TemplatedParentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Styling.ITemplatedControl> ObserveTemplatedParent(this Avalonia.StyledElement obj)
+    {
+        return obj.GetObservable(Avalonia.StyledElement.TemplatedParentProperty);
     }
 }

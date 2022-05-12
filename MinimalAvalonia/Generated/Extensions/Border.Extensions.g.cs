@@ -17,9 +17,20 @@ public static partial class BorderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Background(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Background<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BackgroundProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBackground(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Border.BackgroundProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveBackground(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Border.BackgroundProperty);
     }
 
     // BorderBrushProperty
@@ -36,9 +47,20 @@ public static partial class BorderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding BorderBrush(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T BorderBrush<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BorderBrushProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBorderBrush(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Border.BorderBrushProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveBorderBrush(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Border.BorderBrushProperty);
     }
 
     // BorderThicknessProperty
@@ -55,9 +77,20 @@ public static partial class BorderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding BorderThickness(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T BorderThickness<T>(this T obj, IObservable<Avalonia.Thickness> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BorderThicknessProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBorderThickness(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Border.BorderThicknessProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Thickness> ObserveBorderThickness(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Border.BorderThicknessProperty);
     }
 
     // CornerRadiusProperty
@@ -74,9 +107,20 @@ public static partial class BorderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CornerRadius(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CornerRadius<T>(this T obj, IObservable<Avalonia.CornerRadius> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.CornerRadiusProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCornerRadius(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Border.CornerRadiusProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.CornerRadius> ObserveCornerRadius(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Border.CornerRadiusProperty);
     }
 
     // BoxShadowProperty
@@ -93,9 +137,20 @@ public static partial class BorderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding BoxShadow(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T BoxShadow<T>(this T obj, IObservable<Avalonia.Media.BoxShadows> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BoxShadowProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBoxShadow(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Border.BoxShadowProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.BoxShadows> ObserveBoxShadow(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Border.BoxShadowProperty);
     }
 
     // BorderDashOffsetProperty
@@ -112,9 +167,20 @@ public static partial class BorderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding BorderDashOffset(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T BorderDashOffset<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BorderDashOffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBorderDashOffset(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Border.BorderDashOffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveBorderDashOffset(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Border.BorderDashOffsetProperty);
     }
 
     // BorderDashArrayProperty
@@ -131,9 +197,20 @@ public static partial class BorderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding BorderDashArray(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T BorderDashArray<T>(this T obj, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BorderDashArrayProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBorderDashArray(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Border.BorderDashArrayProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>> ObserveBorderDashArray(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Border.BorderDashArrayProperty);
     }
 
     // BorderLineCapProperty
@@ -150,9 +227,20 @@ public static partial class BorderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding BorderLineCap(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T BorderLineCap<T>(this T obj, IObservable<Avalonia.Media.PenLineCap> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BorderLineCapProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBorderLineCap(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Border.BorderLineCapProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.PenLineCap> ObserveBorderLineCap(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Border.BorderLineCapProperty);
     }
 
     public static T BorderLineCapFlat<T>(this T obj) where T : Avalonia.Controls.Border
@@ -187,9 +275,20 @@ public static partial class BorderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding BorderLineJoin(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T BorderLineJoin<T>(this T obj, IObservable<Avalonia.Media.PenLineJoin> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BorderLineJoinProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBorderLineJoin(this Avalonia.Controls.Border obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Border.BorderLineJoinProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.PenLineJoin> ObserveBorderLineJoin(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Border.BorderLineJoinProperty);
     }
 
     public static T BorderLineJoinBevel<T>(this T obj) where T : Avalonia.Controls.Border

@@ -17,9 +17,20 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Orientation(this Avalonia.Controls.WrapPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Orientation<T>(this T obj, IObservable<Avalonia.Layout.Orientation> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.WrapPanel
+    {
+        obj[Avalonia.Controls.WrapPanel.OrientationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOrientation(this Avalonia.Controls.WrapPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.WrapPanel.OrientationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.Orientation> ObserveOrientation(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.WrapPanel.OrientationProperty);
     }
 
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Controls.WrapPanel
@@ -48,9 +59,20 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ItemWidth(this Avalonia.Controls.WrapPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ItemWidth<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.WrapPanel
+    {
+        obj[Avalonia.Controls.WrapPanel.ItemWidthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemWidth(this Avalonia.Controls.WrapPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.WrapPanel.ItemWidthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveItemWidth(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.WrapPanel.ItemWidthProperty);
     }
 
     // ItemHeightProperty
@@ -67,8 +89,19 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ItemHeight(this Avalonia.Controls.WrapPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ItemHeight<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.WrapPanel
+    {
+        obj[Avalonia.Controls.WrapPanel.ItemHeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemHeight(this Avalonia.Controls.WrapPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.WrapPanel.ItemHeightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveItemHeight(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.WrapPanel.ItemHeightProperty);
     }
 }

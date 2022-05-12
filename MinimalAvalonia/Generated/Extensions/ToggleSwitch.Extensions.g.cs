@@ -17,9 +17,20 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding OffContent(this Avalonia.Controls.ToggleSwitch obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T OffContent<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ToggleSwitch
+    {
+        obj[Avalonia.Controls.ToggleSwitch.OffContentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOffContent(this Avalonia.Controls.ToggleSwitch obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToggleSwitch.OffContentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveOffContent(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
     }
 
     // OffContentTemplateProperty
@@ -36,9 +47,20 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding OffContentTemplate(this Avalonia.Controls.ToggleSwitch obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T OffContentTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ToggleSwitch
+    {
+        obj[Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOffContentTemplate(this Avalonia.Controls.ToggleSwitch obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveOffContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
     }
 
     // OnContentProperty
@@ -55,9 +77,20 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding OnContent(this Avalonia.Controls.ToggleSwitch obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T OnContent<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ToggleSwitch
+    {
+        obj[Avalonia.Controls.ToggleSwitch.OnContentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOnContent(this Avalonia.Controls.ToggleSwitch obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToggleSwitch.OnContentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveOnContent(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
     }
 
     // OnContentTemplateProperty
@@ -74,8 +107,19 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding OnContentTemplate(this Avalonia.Controls.ToggleSwitch obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T OnContentTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ToggleSwitch
+    {
+        obj[Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOnContentTemplate(this Avalonia.Controls.ToggleSwitch obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveOnContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
     }
 }

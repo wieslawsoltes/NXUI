@@ -17,9 +17,20 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TintColor(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TintColor<T>(this T obj, IObservable<Avalonia.Media.Color> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        obj[Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTintColor(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Color> ObserveTintColor(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty);
     }
 
     // BackgroundSourceProperty
@@ -36,9 +47,20 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding BackgroundSource(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T BackgroundSource<T>(this T obj, IObservable<Avalonia.Media.AcrylicBackgroundSource> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        obj[Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBackgroundSource(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.AcrylicBackgroundSource> ObserveBackgroundSource(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty);
     }
 
     public static T BackgroundSourceNone<T>(this T obj) where T : Avalonia.Media.ExperimentalAcrylicMaterial
@@ -67,9 +89,20 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TintOpacity(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TintOpacity<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        obj[Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTintOpacity(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveTintOpacity(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty);
     }
 
     // MaterialOpacityProperty
@@ -86,9 +119,20 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaterialOpacity(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaterialOpacity<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        obj[Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaterialOpacity(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMaterialOpacity(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty);
     }
 
     // PlatformTransparencyCompensationLevelProperty
@@ -105,9 +149,20 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PlatformTransparencyCompensationLevel(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PlatformTransparencyCompensationLevel<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        obj[Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlatformTransparencyCompensationLevel(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObservePlatformTransparencyCompensationLevel(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty);
     }
 
     // FallbackColorProperty
@@ -124,8 +179,19 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding FallbackColor(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T FallbackColor<T>(this T obj, IObservable<Avalonia.Media.Color> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        obj[Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFallbackColor(this Avalonia.Media.ExperimentalAcrylicMaterial obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Color> ObserveFallbackColor(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty);
     }
 }

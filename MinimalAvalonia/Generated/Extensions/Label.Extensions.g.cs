@@ -17,8 +17,19 @@ public static partial class LabelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Target(this Avalonia.Controls.Label obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Target<T>(this T obj, IObservable<Avalonia.Input.IInputElement> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Label
+    {
+        obj[Avalonia.Controls.Label.TargetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTarget(this Avalonia.Controls.Label obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Label.TargetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Input.IInputElement> ObserveTarget(this Avalonia.Controls.Label obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Label.TargetProperty);
     }
 }

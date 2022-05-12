@@ -17,9 +17,20 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Duration(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Duration<T>(this T obj, IObservable<System.TimeSpan> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.Animation
+    {
+        obj[Avalonia.Animation.Animation.DurationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDuration(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.Animation.DurationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.TimeSpan> ObserveDuration(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animation.DurationProperty);
     }
 
     // IterationCountProperty
@@ -36,9 +47,20 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IterationCount(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IterationCount<T>(this T obj, IObservable<Avalonia.Animation.IterationCount> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.Animation
+    {
+        obj[Avalonia.Animation.Animation.IterationCountProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIterationCount(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.Animation.IterationCountProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Animation.IterationCount> ObserveIterationCount(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animation.IterationCountProperty);
     }
 
     // PlaybackDirectionProperty
@@ -55,9 +77,20 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PlaybackDirection(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PlaybackDirection<T>(this T obj, IObservable<Avalonia.Animation.PlaybackDirection> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.Animation
+    {
+        obj[Avalonia.Animation.Animation.PlaybackDirectionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlaybackDirection(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.Animation.PlaybackDirectionProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Animation.PlaybackDirection> ObservePlaybackDirection(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animation.PlaybackDirectionProperty);
     }
 
     public static T PlaybackDirectionNormal<T>(this T obj) where T : Avalonia.Animation.Animation
@@ -98,9 +131,20 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding FillMode(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T FillMode<T>(this T obj, IObservable<Avalonia.Animation.FillMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.Animation
+    {
+        obj[Avalonia.Animation.Animation.FillModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFillMode(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.Animation.FillModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Animation.FillMode> ObserveFillMode(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animation.FillModeProperty);
     }
 
     public static T FillModeNone<T>(this T obj) where T : Avalonia.Animation.Animation
@@ -141,9 +185,20 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Easing(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Easing<T>(this T obj, IObservable<Avalonia.Animation.Easings.Easing> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.Animation
+    {
+        obj[Avalonia.Animation.Animation.EasingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindEasing(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.Animation.EasingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Animation.Easings.Easing> ObserveEasing(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animation.EasingProperty);
     }
 
     // DelayProperty
@@ -160,9 +215,20 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Delay(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Delay<T>(this T obj, IObservable<System.TimeSpan> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.Animation
+    {
+        obj[Avalonia.Animation.Animation.DelayProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDelay(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.Animation.DelayProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.TimeSpan> ObserveDelay(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animation.DelayProperty);
     }
 
     // DelayBetweenIterationsProperty
@@ -179,9 +245,20 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DelayBetweenIterations(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DelayBetweenIterations<T>(this T obj, IObservable<System.TimeSpan> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.Animation
+    {
+        obj[Avalonia.Animation.Animation.DelayBetweenIterationsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDelayBetweenIterations(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.Animation.DelayBetweenIterationsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.TimeSpan> ObserveDelayBetweenIterations(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animation.DelayBetweenIterationsProperty);
     }
 
     // SpeedRatioProperty
@@ -198,8 +275,19 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SpeedRatio(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SpeedRatio<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.Animation
+    {
+        obj[Avalonia.Animation.Animation.SpeedRatioProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSpeedRatio(this Avalonia.Animation.Animation obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.Animation.SpeedRatioProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveSpeedRatio(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animation.SpeedRatioProperty);
     }
 }

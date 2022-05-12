@@ -17,8 +17,19 @@ public static partial class MatrixTransformExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Matrix(this Avalonia.Media.MatrixTransform obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Matrix<T>(this T obj, IObservable<Avalonia.Matrix> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.MatrixTransform
+    {
+        obj[Avalonia.Media.MatrixTransform.MatrixProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMatrix(this Avalonia.Media.MatrixTransform obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.MatrixTransform.MatrixProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Matrix> ObserveMatrix(this Avalonia.Media.MatrixTransform obj)
+    {
+        return obj.GetObservable(Avalonia.Media.MatrixTransform.MatrixProperty);
     }
 }

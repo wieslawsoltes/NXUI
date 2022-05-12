@@ -17,8 +17,19 @@ public static partial class VisualBrushExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Visual(this Avalonia.Media.VisualBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Visual<T>(this T obj, IObservable<Avalonia.VisualTree.IVisual> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.VisualBrush
+    {
+        obj[Avalonia.Media.VisualBrush.VisualProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVisual(this Avalonia.Media.VisualBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.VisualBrush.VisualProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.VisualTree.IVisual> ObserveVisual(this Avalonia.Media.VisualBrush obj)
+    {
+        return obj.GetObservable(Avalonia.Media.VisualBrush.VisualProperty);
     }
 }

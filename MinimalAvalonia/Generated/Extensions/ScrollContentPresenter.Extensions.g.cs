@@ -17,9 +17,20 @@ public static partial class ScrollContentPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CanHorizontallyScroll(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CanHorizontallyScroll<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        obj[Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCanHorizontallyScroll(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveCanHorizontallyScroll(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty);
     }
 
     // CanVerticallyScrollProperty
@@ -36,9 +47,20 @@ public static partial class ScrollContentPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CanVerticallyScroll(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CanVerticallyScroll<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        obj[Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCanVerticallyScroll(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveCanVerticallyScroll(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty);
     }
 
     // ExtentProperty
@@ -55,9 +77,20 @@ public static partial class ScrollContentPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Extent(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Extent<T>(this T obj, IObservable<Avalonia.Size> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        obj[Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindExtent(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Size> ObserveExtent(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty);
     }
 
     // OffsetProperty
@@ -74,9 +107,20 @@ public static partial class ScrollContentPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Offset(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Offset<T>(this T obj, IObservable<Avalonia.Vector> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        obj[Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOffset(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Vector> ObserveOffset(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty);
     }
 
     // ViewportProperty
@@ -93,8 +137,19 @@ public static partial class ScrollContentPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Viewport(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Viewport<T>(this T obj, IObservable<Avalonia.Size> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        obj[Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindViewport(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Size> ObserveViewport(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty);
     }
 }

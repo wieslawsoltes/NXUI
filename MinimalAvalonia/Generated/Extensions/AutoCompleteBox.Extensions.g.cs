@@ -17,9 +17,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MinimumPrefixLength(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MinimumPrefixLength<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinimumPrefixLength(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveMinimumPrefixLength(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty);
     }
 
     // MinimumPopulateDelayProperty
@@ -36,9 +47,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MinimumPopulateDelay(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MinimumPopulateDelay<T>(this T obj, IObservable<System.TimeSpan> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinimumPopulateDelay(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.TimeSpan> ObserveMinimumPopulateDelay(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty);
     }
 
     // MaxDropDownHeightProperty
@@ -55,9 +77,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxDropDownHeight(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxDropDownHeight<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxDropDownHeight(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMaxDropDownHeight(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty);
     }
 
     // IsTextCompletionEnabledProperty
@@ -74,9 +107,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsTextCompletionEnabled(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsTextCompletionEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsTextCompletionEnabled(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsTextCompletionEnabled(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty);
     }
 
     // ItemTemplateProperty
@@ -93,9 +137,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ItemTemplate(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ItemTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemTemplate(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty);
     }
 
     // IsDropDownOpenProperty
@@ -112,9 +167,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsDropDownOpen(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsDropDownOpen<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsDropDownOpen(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsDropDownOpen(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty);
     }
 
     // SelectedItemProperty
@@ -131,9 +197,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedItem(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedItem<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.SelectedItemProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedItem(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.SelectedItemProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveSelectedItem(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
     }
 
     // TextProperty
@@ -150,16 +227,32 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Text(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Text<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.TextProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindText(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.TextProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.String> ObserveText(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
+    }
+
     // SearchTextProperty
 
-    public static Avalonia.Data.IBinding SearchText(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindSearchText(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.SearchTextProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveSearchText(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
     }
 
     // FilterModeProperty
@@ -176,9 +269,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding FilterMode(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T FilterMode<T>(this T obj, IObservable<Avalonia.Controls.AutoCompleteFilterMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFilterMode(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.AutoCompleteFilterMode> ObserveFilterMode(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.FilterModeProperty);
     }
 
     public static T FilterModeNone<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
@@ -279,9 +383,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ItemFilter(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ItemFilter<T>(this T obj, IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.ItemFilterProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemFilter(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.ItemFilterProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>> ObserveItemFilter(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
     }
 
     // TextFilterProperty
@@ -298,9 +413,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TextFilter(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TextFilter<T>(this T obj, IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.TextFilterProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTextFilter(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.TextFilterProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>> ObserveTextFilter(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
     }
 
     // ItemSelectorProperty
@@ -317,9 +443,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ItemSelector(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ItemSelector<T>(this T obj, IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemSelector(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>> ObserveItemSelector(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
     }
 
     // TextSelectorProperty
@@ -336,9 +473,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TextSelector(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TextSelector<T>(this T obj, IObservable<Avalonia.Controls.AutoCompleteSelector<System.String>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.TextSelectorProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTextSelector(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.TextSelectorProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.AutoCompleteSelector<System.String>> ObserveTextSelector(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
     }
 
     // ItemsProperty
@@ -355,9 +503,20 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Items(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Items<T>(this T obj, IObservable<System.Collections.IEnumerable> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.ItemsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItems(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.ItemsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Collections.IEnumerable> ObserveItems(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemsProperty);
     }
 
     // AsyncPopulatorProperty
@@ -374,8 +533,19 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AsyncPopulator(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AsyncPopulator<T>(this T obj, IObservable<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAsyncPopulator(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>> ObserveAsyncPopulator(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
     }
 }

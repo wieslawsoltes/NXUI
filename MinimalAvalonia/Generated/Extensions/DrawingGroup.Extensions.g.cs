@@ -17,9 +17,20 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Opacity(this Avalonia.Media.DrawingGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Opacity<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.DrawingGroup
+    {
+        obj[Avalonia.Media.DrawingGroup.OpacityProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOpacity(this Avalonia.Media.DrawingGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.DrawingGroup.OpacityProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveOpacity(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetObservable(Avalonia.Media.DrawingGroup.OpacityProperty);
     }
 
     // TransformProperty
@@ -36,9 +47,20 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Transform(this Avalonia.Media.DrawingGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Transform<T>(this T obj, IObservable<Avalonia.Media.Transform> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.DrawingGroup
+    {
+        obj[Avalonia.Media.DrawingGroup.TransformProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTransform(this Avalonia.Media.DrawingGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.DrawingGroup.TransformProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Transform> ObserveTransform(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetObservable(Avalonia.Media.DrawingGroup.TransformProperty);
     }
 
     // ClipGeometryProperty
@@ -55,9 +77,20 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ClipGeometry(this Avalonia.Media.DrawingGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ClipGeometry<T>(this T obj, IObservable<Avalonia.Media.Geometry> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.DrawingGroup
+    {
+        obj[Avalonia.Media.DrawingGroup.ClipGeometryProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindClipGeometry(this Avalonia.Media.DrawingGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.DrawingGroup.ClipGeometryProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Geometry> ObserveClipGeometry(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
     }
 
     // OpacityMaskProperty
@@ -74,8 +107,19 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding OpacityMask(this Avalonia.Media.DrawingGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T OpacityMask<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.DrawingGroup
+    {
+        obj[Avalonia.Media.DrawingGroup.OpacityMaskProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOpacityMask(this Avalonia.Media.DrawingGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.DrawingGroup.OpacityMaskProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveOpacityMask(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
     }
 }

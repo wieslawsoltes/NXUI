@@ -17,9 +17,20 @@ public static partial class FluentThemeExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Mode(this Avalonia.Themes.Fluent.FluentTheme obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Mode<T>(this T obj, IObservable<Avalonia.Themes.Fluent.FluentThemeMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Themes.Fluent.FluentTheme
+    {
+        obj[Avalonia.Themes.Fluent.FluentTheme.ModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMode(this Avalonia.Themes.Fluent.FluentTheme obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Themes.Fluent.FluentTheme.ModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Themes.Fluent.FluentThemeMode> ObserveMode(this Avalonia.Themes.Fluent.FluentTheme obj)
+    {
+        return obj.GetObservable(Avalonia.Themes.Fluent.FluentTheme.ModeProperty);
     }
 
     public static T ModeLight<T>(this T obj) where T : Avalonia.Themes.Fluent.FluentTheme
@@ -48,9 +59,20 @@ public static partial class FluentThemeExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DensityStyle(this Avalonia.Themes.Fluent.FluentTheme obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DensityStyle<T>(this T obj, IObservable<Avalonia.Themes.Fluent.DensityStyle> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Themes.Fluent.FluentTheme
+    {
+        obj[Avalonia.Themes.Fluent.FluentTheme.DensityStyleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDensityStyle(this Avalonia.Themes.Fluent.FluentTheme obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Themes.Fluent.FluentTheme.DensityStyleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Themes.Fluent.DensityStyle> ObserveDensityStyle(this Avalonia.Themes.Fluent.FluentTheme obj)
+    {
+        return obj.GetObservable(Avalonia.Themes.Fluent.FluentTheme.DensityStyleProperty);
     }
 
     public static T DensityStyleNormal<T>(this T obj) where T : Avalonia.Themes.Fluent.FluentTheme

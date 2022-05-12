@@ -17,9 +17,20 @@ public static partial class HeaderedContentControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Header(this Avalonia.Controls.Primitives.HeaderedContentControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Header<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.HeaderedContentControl
+    {
+        obj[Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHeader(this Avalonia.Controls.Primitives.HeaderedContentControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveHeader(this Avalonia.Controls.Primitives.HeaderedContentControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty);
     }
 
     // HeaderTemplateProperty
@@ -36,8 +47,19 @@ public static partial class HeaderedContentControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HeaderTemplate(this Avalonia.Controls.Primitives.HeaderedContentControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HeaderTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.HeaderedContentControl
+    {
+        obj[Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHeaderTemplate(this Avalonia.Controls.Primitives.HeaderedContentControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveHeaderTemplate(this Avalonia.Controls.Primitives.HeaderedContentControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty);
     }
 }

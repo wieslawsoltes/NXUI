@@ -17,9 +17,20 @@ public static partial class RectangleExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding RadiusX(this Avalonia.Controls.Shapes.Rectangle obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T RadiusX<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Shapes.Rectangle
+    {
+        obj[Avalonia.Controls.Shapes.Rectangle.RadiusXProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRadiusX(this Avalonia.Controls.Shapes.Rectangle obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Shapes.Rectangle.RadiusXProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveRadiusX(this Avalonia.Controls.Shapes.Rectangle obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Shapes.Rectangle.RadiusXProperty);
     }
 
     // RadiusYProperty
@@ -36,8 +47,19 @@ public static partial class RectangleExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding RadiusY(this Avalonia.Controls.Shapes.Rectangle obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T RadiusY<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Shapes.Rectangle
+    {
+        obj[Avalonia.Controls.Shapes.Rectangle.RadiusYProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRadiusY(this Avalonia.Controls.Shapes.Rectangle obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Shapes.Rectangle.RadiusYProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveRadiusY(this Avalonia.Controls.Shapes.Rectangle obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Shapes.Rectangle.RadiusYProperty);
     }
 }

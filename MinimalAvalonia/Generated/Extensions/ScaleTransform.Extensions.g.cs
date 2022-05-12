@@ -17,9 +17,20 @@ public static partial class ScaleTransformExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ScaleX(this Avalonia.Media.ScaleTransform obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ScaleX<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ScaleTransform
+    {
+        obj[Avalonia.Media.ScaleTransform.ScaleXProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindScaleX(this Avalonia.Media.ScaleTransform obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ScaleTransform.ScaleXProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveScaleX(this Avalonia.Media.ScaleTransform obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ScaleTransform.ScaleXProperty);
     }
 
     // ScaleYProperty
@@ -36,8 +47,19 @@ public static partial class ScaleTransformExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ScaleY(this Avalonia.Media.ScaleTransform obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ScaleY<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ScaleTransform
+    {
+        obj[Avalonia.Media.ScaleTransform.ScaleYProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindScaleY(this Avalonia.Media.ScaleTransform obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ScaleTransform.ScaleYProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveScaleY(this Avalonia.Media.ScaleTransform obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ScaleTransform.ScaleYProperty);
     }
 }

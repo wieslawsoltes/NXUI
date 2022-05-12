@@ -17,9 +17,20 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HorizontalCacheLength(this Avalonia.Controls.ItemsRepeater obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HorizontalCacheLength<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ItemsRepeater
+    {
+        obj[Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalCacheLength(this Avalonia.Controls.ItemsRepeater obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveHorizontalCacheLength(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty);
     }
 
     // ItemsProperty
@@ -36,9 +47,20 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Items(this Avalonia.Controls.ItemsRepeater obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Items<T>(this T obj, IObservable<System.Collections.IEnumerable> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ItemsRepeater
+    {
+        obj[Avalonia.Controls.ItemsRepeater.ItemsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItems(this Avalonia.Controls.ItemsRepeater obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ItemsRepeater.ItemsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Collections.IEnumerable> ObserveItems(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemsProperty);
     }
 
     // LayoutProperty
@@ -55,9 +77,20 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Layout(this Avalonia.Controls.ItemsRepeater obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Layout<T>(this T obj, IObservable<Avalonia.Layout.AttachedLayout> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ItemsRepeater
+    {
+        obj[Avalonia.Controls.ItemsRepeater.LayoutProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindLayout(this Avalonia.Controls.ItemsRepeater obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ItemsRepeater.LayoutProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.AttachedLayout> ObserveLayout(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
     }
 
     // VerticalCacheLengthProperty
@@ -74,8 +107,19 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding VerticalCacheLength(this Avalonia.Controls.ItemsRepeater obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T VerticalCacheLength<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ItemsRepeater
+    {
+        obj[Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalCacheLength(this Avalonia.Controls.ItemsRepeater obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveVerticalCacheLength(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty);
     }
 }

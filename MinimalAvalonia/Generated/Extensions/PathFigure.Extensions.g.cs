@@ -17,9 +17,20 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsClosed(this Avalonia.Media.PathFigure obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.PathFigure IsClosed(this Avalonia.Media.PathFigure obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.PathFigure.IsClosedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsClosed(this Avalonia.Media.PathFigure obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.PathFigure.IsClosedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsClosed(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetObservable(Avalonia.Media.PathFigure.IsClosedProperty);
     }
 
     // IsFilledProperty
@@ -36,9 +47,20 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsFilled(this Avalonia.Media.PathFigure obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.PathFigure IsFilled(this Avalonia.Media.PathFigure obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.PathFigure.IsFilledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsFilled(this Avalonia.Media.PathFigure obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.PathFigure.IsFilledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsFilled(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetObservable(Avalonia.Media.PathFigure.IsFilledProperty);
     }
 
     // SegmentsProperty
@@ -55,9 +77,20 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Segments(this Avalonia.Media.PathFigure obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.PathFigure Segments(this Avalonia.Media.PathFigure obj, IObservable<Avalonia.Media.PathSegments> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.PathFigure.SegmentsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSegments(this Avalonia.Media.PathFigure obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.PathFigure.SegmentsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.PathSegments> ObserveSegments(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetObservable(Avalonia.Media.PathFigure.SegmentsProperty);
     }
 
     // StartPointProperty
@@ -74,8 +107,19 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StartPoint(this Avalonia.Media.PathFigure obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.PathFigure StartPoint(this Avalonia.Media.PathFigure obj, IObservable<Avalonia.Point> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.PathFigure.StartPointProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStartPoint(this Avalonia.Media.PathFigure obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.PathFigure.StartPointProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Point> ObserveStartPoint(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetObservable(Avalonia.Media.PathFigure.StartPointProperty);
     }
 }

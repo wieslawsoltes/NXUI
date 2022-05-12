@@ -17,9 +17,20 @@ public static partial class PolylineGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Points(this Avalonia.Media.PolylineGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Points<T>(this T obj, IObservable<Avalonia.Points> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.PolylineGeometry
+    {
+        obj[Avalonia.Media.PolylineGeometry.PointsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPoints(this Avalonia.Media.PolylineGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.PolylineGeometry.PointsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Points> ObservePoints(this Avalonia.Media.PolylineGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.PolylineGeometry.PointsProperty);
     }
 
     // IsFilledProperty
@@ -36,8 +47,19 @@ public static partial class PolylineGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsFilled(this Avalonia.Media.PolylineGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsFilled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.PolylineGeometry
+    {
+        obj[Avalonia.Media.PolylineGeometry.IsFilledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsFilled(this Avalonia.Media.PolylineGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.PolylineGeometry.IsFilledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsFilled(this Avalonia.Media.PolylineGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.PolylineGeometry.IsFilledProperty);
     }
 }

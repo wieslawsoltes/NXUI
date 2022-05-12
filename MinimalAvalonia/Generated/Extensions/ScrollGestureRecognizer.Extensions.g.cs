@@ -17,9 +17,20 @@ public static partial class ScrollGestureRecognizerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CanHorizontallyScroll(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CanHorizontallyScroll<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        obj[Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCanHorizontallyScroll(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveCanHorizontallyScroll(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj)
+    {
+        return obj.GetObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty);
     }
 
     // CanVerticallyScrollProperty
@@ -36,8 +47,19 @@ public static partial class ScrollGestureRecognizerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CanVerticallyScroll(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CanVerticallyScroll<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        obj[Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCanVerticallyScroll(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveCanVerticallyScroll(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj)
+    {
+        return obj.GetObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty);
     }
 }

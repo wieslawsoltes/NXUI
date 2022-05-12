@@ -17,9 +17,20 @@ public static partial class StackLayoutExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DisableVirtualization(this Avalonia.Layout.StackLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DisableVirtualization<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.StackLayout
+    {
+        obj[Avalonia.Layout.StackLayout.DisableVirtualizationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDisableVirtualization(this Avalonia.Layout.StackLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.StackLayout.DisableVirtualizationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveDisableVirtualization(this Avalonia.Layout.StackLayout obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.StackLayout.DisableVirtualizationProperty);
     }
 
     // OrientationProperty
@@ -36,9 +47,20 @@ public static partial class StackLayoutExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Orientation(this Avalonia.Layout.StackLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Orientation<T>(this T obj, IObservable<Avalonia.Layout.Orientation> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.StackLayout
+    {
+        obj[Avalonia.Layout.StackLayout.OrientationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOrientation(this Avalonia.Layout.StackLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.StackLayout.OrientationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.Orientation> ObserveOrientation(this Avalonia.Layout.StackLayout obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.StackLayout.OrientationProperty);
     }
 
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Layout.StackLayout
@@ -67,8 +89,19 @@ public static partial class StackLayoutExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Spacing(this Avalonia.Layout.StackLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Spacing<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.StackLayout
+    {
+        obj[Avalonia.Layout.StackLayout.SpacingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSpacing(this Avalonia.Layout.StackLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.StackLayout.SpacingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveSpacing(this Avalonia.Layout.StackLayout obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.StackLayout.SpacingProperty);
     }
 }

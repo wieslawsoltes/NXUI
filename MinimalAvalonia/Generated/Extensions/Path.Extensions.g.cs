@@ -17,8 +17,19 @@ public static partial class PathExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Data(this Avalonia.Controls.Shapes.Path obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Data<T>(this T obj, IObservable<Avalonia.Media.Geometry> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Shapes.Path
+    {
+        obj[Avalonia.Controls.Shapes.Path.DataProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindData(this Avalonia.Controls.Shapes.Path obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Shapes.Path.DataProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Geometry> ObserveData(this Avalonia.Controls.Shapes.Path obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Shapes.Path.DataProperty);
     }
 }

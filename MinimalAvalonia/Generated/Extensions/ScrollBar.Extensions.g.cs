@@ -17,9 +17,20 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ViewportSize(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ViewportSize<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        obj[Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindViewportSize(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveViewportSize(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty);
     }
 
     // VisibilityProperty
@@ -36,9 +47,20 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Visibility(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Visibility<T>(this T obj, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVisibility(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> ObserveVisibility(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty);
     }
 
     public static T VisibilityDisabled<T>(this T obj) where T : Avalonia.Controls.Primitives.ScrollBar
@@ -79,9 +101,20 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Orientation(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Orientation<T>(this T obj, IObservable<Avalonia.Layout.Orientation> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        obj[Avalonia.Controls.Primitives.ScrollBar.OrientationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOrientation(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.ScrollBar.OrientationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.Orientation> ObserveOrientation(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty);
     }
 
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Controls.Primitives.ScrollBar
@@ -98,9 +131,14 @@ public static partial class ScrollBarExtensions
 
     // IsExpandedProperty
 
-    public static Avalonia.Data.IBinding IsExpanded(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindIsExpanded(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsExpanded(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);
     }
 
     // AllowAutoHideProperty
@@ -117,9 +155,20 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AllowAutoHide(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AllowAutoHide<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        obj[Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAllowAutoHide(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAllowAutoHide(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty);
     }
 
     // HideDelayProperty
@@ -136,9 +185,20 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HideDelay(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HideDelay<T>(this T obj, IObservable<System.TimeSpan> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        obj[Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHideDelay(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.TimeSpan> ObserveHideDelay(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty);
     }
 
     // ShowDelayProperty
@@ -155,8 +215,19 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ShowDelay(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ShowDelay<T>(this T obj, IObservable<System.TimeSpan> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        obj[Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindShowDelay(this Avalonia.Controls.Primitives.ScrollBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.TimeSpan> ObserveShowDelay(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty);
     }
 }

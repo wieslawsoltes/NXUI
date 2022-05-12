@@ -17,9 +17,20 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Command(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Command<T>(this T obj, IObservable<System.Windows.Input.ICommand> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.CommandProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCommand(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MenuItem.CommandProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Windows.Input.ICommand> ObserveCommand(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuItem.CommandProperty);
     }
 
     // IconProperty
@@ -36,9 +47,20 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Icon(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Icon<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.IconProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIcon(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MenuItem.IconProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveIcon(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuItem.IconProperty);
     }
 
     // InputGestureProperty
@@ -55,9 +77,20 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding InputGesture(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T InputGesture<T>(this T obj, IObservable<Avalonia.Input.KeyGesture> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.InputGestureProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindInputGesture(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MenuItem.InputGestureProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Input.KeyGesture> ObserveInputGesture(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
     }
 
     // IsSubMenuOpenProperty
@@ -74,9 +107,20 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsSubMenuOpen(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsSubMenuOpen<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.IsSubMenuOpenProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsSubMenuOpen(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MenuItem.IsSubMenuOpenProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsSubMenuOpen(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty);
     }
 
     // StaysOpenOnClickProperty
@@ -93,8 +137,19 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StaysOpenOnClick(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StaysOpenOnClick<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.StaysOpenOnClickProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStaysOpenOnClick(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MenuItem.StaysOpenOnClickProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveStaysOpenOnClick(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
     }
 }

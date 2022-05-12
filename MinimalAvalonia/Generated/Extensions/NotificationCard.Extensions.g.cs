@@ -5,9 +5,14 @@ public static partial class NotificationCardExtensions
 {
     // IsClosingProperty
 
-    public static Avalonia.Data.IBinding IsClosing(this Avalonia.Controls.Notifications.NotificationCard obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindIsClosing(this Avalonia.Controls.Notifications.NotificationCard obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsClosing(this Avalonia.Controls.Notifications.NotificationCard obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
     }
 
     // IsClosedProperty
@@ -24,9 +29,20 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsClosed(this Avalonia.Controls.Notifications.NotificationCard obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsClosed<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        obj[Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsClosed(this Avalonia.Controls.Notifications.NotificationCard obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsClosed(this Avalonia.Controls.Notifications.NotificationCard obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty);
     }
 
     // CloseOnClickProperty
@@ -43,8 +59,19 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CloseOnClick(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CloseOnClick<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Button
+    {
+        obj[Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCloseOnClick(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveCloseOnClick(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty);
     }
 }

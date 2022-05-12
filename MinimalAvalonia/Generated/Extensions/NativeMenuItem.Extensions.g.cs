@@ -17,9 +17,20 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Menu(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Menu<T>(this T obj, IObservable<Avalonia.Controls.NativeMenu> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NativeMenuItem
+    {
+        obj[Avalonia.Controls.NativeMenuItem.MenuProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMenu(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenuItem.MenuProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.NativeMenu> ObserveMenu(this Avalonia.Controls.NativeMenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenuItem.MenuProperty);
     }
 
     // IconProperty
@@ -36,9 +47,20 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Icon(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Icon<T>(this T obj, IObservable<Avalonia.Media.Imaging.IBitmap> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NativeMenuItem
+    {
+        obj[Avalonia.Controls.NativeMenuItem.IconProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIcon(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenuItem.IconProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Imaging.IBitmap> ObserveIcon(this Avalonia.Controls.NativeMenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenuItem.IconProperty);
     }
 
     // HeaderProperty
@@ -55,9 +77,20 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Header(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Header<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NativeMenuItem
+    {
+        obj[Avalonia.Controls.NativeMenuItem.HeaderProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHeader(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenuItem.HeaderProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveHeader(this Avalonia.Controls.NativeMenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenuItem.HeaderProperty);
     }
 
     // GestureProperty
@@ -74,9 +107,20 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Gesture(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Gesture<T>(this T obj, IObservable<Avalonia.Input.KeyGesture> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NativeMenuItem
+    {
+        obj[Avalonia.Controls.NativeMenuItem.GestureProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindGesture(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenuItem.GestureProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Input.KeyGesture> ObserveGesture(this Avalonia.Controls.NativeMenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenuItem.GestureProperty);
     }
 
     // IsCheckedProperty
@@ -93,9 +137,20 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsChecked(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsChecked<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NativeMenuItem
+    {
+        obj[Avalonia.Controls.NativeMenuItem.IsCheckedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsChecked(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenuItem.IsCheckedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsChecked(this Avalonia.Controls.NativeMenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenuItem.IsCheckedProperty);
     }
 
     // ToggleTypeProperty
@@ -112,9 +167,20 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ToggleType(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ToggleType<T>(this T obj, IObservable<Avalonia.Controls.NativeMenuItemToggleType> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NativeMenuItem
+    {
+        obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindToggleType(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.NativeMenuItemToggleType> ObserveToggleType(this Avalonia.Controls.NativeMenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty);
     }
 
     public static T ToggleTypeNone<T>(this T obj) where T : Avalonia.Controls.NativeMenuItem
@@ -149,9 +215,20 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Command(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Command<T>(this T obj, IObservable<System.Windows.Input.ICommand> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NativeMenuItem
+    {
+        obj[Avalonia.Controls.NativeMenuItem.CommandProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCommand(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenuItem.CommandProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Windows.Input.ICommand> ObserveCommand(this Avalonia.Controls.NativeMenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenuItem.CommandProperty);
     }
 
     // IsEnabledProperty
@@ -168,8 +245,19 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsEnabled(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NativeMenuItem
+    {
+        obj[Avalonia.Controls.NativeMenuItem.IsEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsEnabled(this Avalonia.Controls.NativeMenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenuItem.IsEnabledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsEnabled(this Avalonia.Controls.NativeMenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenuItem.IsEnabledProperty);
     }
 }

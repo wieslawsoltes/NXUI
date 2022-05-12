@@ -17,9 +17,20 @@ public static partial class NativeMenuExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Parent(this Avalonia.Controls.NativeMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Parent<T>(this T obj, IObservable<Avalonia.Controls.NativeMenuItem> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NativeMenu
+    {
+        obj[Avalonia.Controls.NativeMenu.ParentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindParent(this Avalonia.Controls.NativeMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenu.ParentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.NativeMenuItem> ObserveParent(this Avalonia.Controls.NativeMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenu.ParentProperty);
     }
 
     // IsNativeMenuExportedProperty
@@ -36,9 +47,20 @@ public static partial class NativeMenuExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsNativeMenuExported(this Avalonia.Controls.TopLevel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsNativeMenuExported<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TopLevel
+    {
+        obj[Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsNativeMenuExported(this Avalonia.Controls.TopLevel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsNativeMenuExported(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty);
     }
 
     // MenuProperty
@@ -55,8 +77,19 @@ public static partial class NativeMenuExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Menu(this Avalonia.AvaloniaObject obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Menu<T>(this T obj, IObservable<Avalonia.Controls.NativeMenu> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.AvaloniaObject
+    {
+        obj[Avalonia.Controls.NativeMenu.MenuProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMenu(this Avalonia.AvaloniaObject obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NativeMenu.MenuProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.NativeMenu> ObserveMenu(this Avalonia.AvaloniaObject obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NativeMenu.MenuProperty);
     }
 }

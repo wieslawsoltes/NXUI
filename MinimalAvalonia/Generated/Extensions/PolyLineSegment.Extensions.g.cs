@@ -17,8 +17,19 @@ public static partial class PolyLineSegmentExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Points(this Avalonia.Media.PolyLineSegment obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.PolyLineSegment Points(this Avalonia.Media.PolyLineSegment obj, IObservable<Avalonia.Points> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.PolyLineSegment.PointsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPoints(this Avalonia.Media.PolyLineSegment obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.PolyLineSegment.PointsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Points> ObservePoints(this Avalonia.Media.PolyLineSegment obj)
+    {
+        return obj.GetObservable(Avalonia.Media.PolyLineSegment.PointsProperty);
     }
 }

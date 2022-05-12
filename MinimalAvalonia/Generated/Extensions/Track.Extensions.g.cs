@@ -17,9 +17,20 @@ public static partial class TrackExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Minimum(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Minimum<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Track
+    {
+        obj[Avalonia.Controls.Primitives.Track.MinimumProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinimum(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Track.MinimumProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMinimum(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Track.MinimumProperty);
     }
 
     // MaximumProperty
@@ -36,9 +47,20 @@ public static partial class TrackExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Maximum(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Maximum<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Track
+    {
+        obj[Avalonia.Controls.Primitives.Track.MaximumProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaximum(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Track.MaximumProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMaximum(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Track.MaximumProperty);
     }
 
     // ValueProperty
@@ -55,9 +77,20 @@ public static partial class TrackExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Value(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Value<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Track
+    {
+        obj[Avalonia.Controls.Primitives.Track.ValueProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindValue(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Track.ValueProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveValue(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Track.ValueProperty);
     }
 
     // ThumbProperty
@@ -74,9 +107,20 @@ public static partial class TrackExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Thumb(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Thumb<T>(this T obj, IObservable<Avalonia.Controls.Primitives.Thumb> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Track
+    {
+        obj[Avalonia.Controls.Primitives.Track.ThumbProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindThumb(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Track.ThumbProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.Thumb> ObserveThumb(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
     }
 
     // IncreaseButtonProperty
@@ -93,9 +137,20 @@ public static partial class TrackExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IncreaseButton(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IncreaseButton<T>(this T obj, IObservable<Avalonia.Controls.Button> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Track
+    {
+        obj[Avalonia.Controls.Primitives.Track.IncreaseButtonProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIncreaseButton(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Track.IncreaseButtonProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Button> ObserveIncreaseButton(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
     }
 
     // DecreaseButtonProperty
@@ -112,9 +167,20 @@ public static partial class TrackExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DecreaseButton(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DecreaseButton<T>(this T obj, IObservable<Avalonia.Controls.Button> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Track
+    {
+        obj[Avalonia.Controls.Primitives.Track.DecreaseButtonProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDecreaseButton(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Track.DecreaseButtonProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Button> ObserveDecreaseButton(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
     }
 
     // IsDirectionReversedProperty
@@ -131,9 +197,20 @@ public static partial class TrackExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsDirectionReversed(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsDirectionReversed<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Track
+    {
+        obj[Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsDirectionReversed(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsDirectionReversed(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
     }
 
     // IgnoreThumbDragProperty
@@ -150,8 +227,19 @@ public static partial class TrackExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IgnoreThumbDrag(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IgnoreThumbDrag<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Track
+    {
+        obj[Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIgnoreThumbDrag(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIgnoreThumbDrag(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
     }
 }

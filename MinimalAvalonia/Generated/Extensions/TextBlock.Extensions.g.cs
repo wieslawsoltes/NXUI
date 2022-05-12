@@ -17,9 +17,20 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding BaselineOffset(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T BaselineOffset<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.TextBlock.BaselineOffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBaselineOffset(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBlock.BaselineOffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveBaselineOffset(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.BaselineOffsetProperty);
     }
 
     // LineHeightProperty
@@ -36,9 +47,20 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding LineHeight(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T LineHeight<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.TextBlock.LineHeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindLineHeight(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBlock.LineHeightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveLineHeight(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.LineHeightProperty);
     }
 
     // MaxLinesProperty
@@ -55,9 +77,20 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxLines(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxLines<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.TextBlock.MaxLinesProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxLines(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBlock.MaxLinesProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveMaxLines(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.MaxLinesProperty);
     }
 
     // TextProperty
@@ -74,16 +107,32 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Text(this Avalonia.Controls.TextBlock obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Text<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBlock
+    {
+        obj[Avalonia.Controls.TextBlock.TextProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindText(this Avalonia.Controls.TextBlock obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBlock.TextProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.String> ObserveText(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.TextProperty);
+    }
+
     // InlinesProperty
 
-    public static Avalonia.Data.IBinding Inlines(this Avalonia.Controls.TextBlock obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindInlines(this Avalonia.Controls.TextBlock obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.TextBlock.InlinesProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Documents.InlineCollection> ObserveInlines(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.InlinesProperty);
     }
 
     // TextAlignmentProperty
@@ -100,9 +149,20 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TextAlignment(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TextAlignment<T>(this T obj, IObservable<Avalonia.Media.TextAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.TextBlock.TextAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTextAlignment(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBlock.TextAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextAlignment> ObserveTextAlignment(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.TextAlignmentProperty);
     }
 
     public static T TextAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.Control
@@ -137,9 +197,20 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TextWrapping(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TextWrapping<T>(this T obj, IObservable<Avalonia.Media.TextWrapping> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.TextBlock.TextWrappingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTextWrapping(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBlock.TextWrappingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextWrapping> ObserveTextWrapping(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.TextWrappingProperty);
     }
 
     public static T TextWrappingNoWrap<T>(this T obj) where T : Avalonia.Controls.Control
@@ -174,9 +245,20 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TextTrimming(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TextTrimming<T>(this T obj, IObservable<Avalonia.Media.TextTrimming> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.TextBlock.TextTrimmingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTextTrimming(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBlock.TextTrimmingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextTrimming> ObserveTextTrimming(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.TextTrimmingProperty);
     }
 
     // TextDecorationsProperty
@@ -193,8 +275,19 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TextDecorations(this Avalonia.Controls.TextBlock obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TextDecorations<T>(this T obj, IObservable<Avalonia.Media.TextDecorationCollection> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBlock
+    {
+        obj[Avalonia.Controls.TextBlock.TextDecorationsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTextDecorations(this Avalonia.Controls.TextBlock obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TextBlock.TextDecorationsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextDecorationCollection> ObserveTextDecorations(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.TextDecorationsProperty);
     }
 }

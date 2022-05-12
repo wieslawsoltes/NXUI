@@ -17,9 +17,20 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Fill(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Fill<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TickBar
+    {
+        obj[Avalonia.Controls.TickBar.FillProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFill(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TickBar.FillProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveFill(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TickBar.FillProperty);
     }
 
     // MinimumProperty
@@ -36,9 +47,20 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Minimum(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Minimum<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TickBar
+    {
+        obj[Avalonia.Controls.TickBar.MinimumProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinimum(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TickBar.MinimumProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMinimum(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TickBar.MinimumProperty);
     }
 
     // MaximumProperty
@@ -55,9 +77,20 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Maximum(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Maximum<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TickBar
+    {
+        obj[Avalonia.Controls.TickBar.MaximumProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaximum(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TickBar.MaximumProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMaximum(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TickBar.MaximumProperty);
     }
 
     // TickFrequencyProperty
@@ -74,9 +107,20 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TickFrequency(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TickFrequency<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TickBar
+    {
+        obj[Avalonia.Controls.TickBar.TickFrequencyProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTickFrequency(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TickBar.TickFrequencyProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveTickFrequency(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TickBar.TickFrequencyProperty);
     }
 
     // OrientationProperty
@@ -93,9 +137,20 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Orientation(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Orientation<T>(this T obj, IObservable<Avalonia.Layout.Orientation> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TickBar
+    {
+        obj[Avalonia.Controls.TickBar.OrientationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOrientation(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TickBar.OrientationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.Orientation> ObserveOrientation(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TickBar.OrientationProperty);
     }
 
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Controls.TickBar
@@ -124,9 +179,20 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Ticks(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Ticks<T>(this T obj, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TickBar
+    {
+        obj[Avalonia.Controls.TickBar.TicksProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTicks(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TickBar.TicksProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>> ObserveTicks(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TickBar.TicksProperty);
     }
 
     // IsDirectionReversedProperty
@@ -143,9 +209,20 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsDirectionReversed(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsDirectionReversed<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TickBar
+    {
+        obj[Avalonia.Controls.TickBar.IsDirectionReversedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsDirectionReversed(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TickBar.IsDirectionReversedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsDirectionReversed(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TickBar.IsDirectionReversedProperty);
     }
 
     // PlacementProperty
@@ -162,9 +239,20 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Placement(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Placement<T>(this T obj, IObservable<Avalonia.Controls.TickBarPlacement> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TickBar
+    {
+        obj[Avalonia.Controls.TickBar.PlacementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacement(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TickBar.PlacementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.TickBarPlacement> ObservePlacement(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TickBar.PlacementProperty);
     }
 
     public static T PlacementLeft<T>(this T obj) where T : Avalonia.Controls.TickBar
@@ -205,8 +293,19 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ReservedSpace(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ReservedSpace<T>(this T obj, IObservable<Avalonia.Rect> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TickBar
+    {
+        obj[Avalonia.Controls.TickBar.ReservedSpaceProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindReservedSpace(this Avalonia.Controls.TickBar obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TickBar.ReservedSpaceProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Rect> ObserveReservedSpace(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TickBar.ReservedSpaceProperty);
     }
 }

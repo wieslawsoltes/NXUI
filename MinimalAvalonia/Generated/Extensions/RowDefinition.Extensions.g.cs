@@ -17,9 +17,20 @@ public static partial class RowDefinitionExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxHeight(this Avalonia.Controls.RowDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxHeight<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.RowDefinition
+    {
+        obj[Avalonia.Controls.RowDefinition.MaxHeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxHeight(this Avalonia.Controls.RowDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RowDefinition.MaxHeightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMaxHeight(this Avalonia.Controls.RowDefinition obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RowDefinition.MaxHeightProperty);
     }
 
     // MinHeightProperty
@@ -36,9 +47,20 @@ public static partial class RowDefinitionExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MinHeight(this Avalonia.Controls.RowDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MinHeight<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.RowDefinition
+    {
+        obj[Avalonia.Controls.RowDefinition.MinHeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinHeight(this Avalonia.Controls.RowDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RowDefinition.MinHeightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMinHeight(this Avalonia.Controls.RowDefinition obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RowDefinition.MinHeightProperty);
     }
 
     // HeightProperty
@@ -55,8 +77,19 @@ public static partial class RowDefinitionExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Height(this Avalonia.Controls.RowDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Height<T>(this T obj, IObservable<Avalonia.Controls.GridLength> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.RowDefinition
+    {
+        obj[Avalonia.Controls.RowDefinition.HeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHeight(this Avalonia.Controls.RowDefinition obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RowDefinition.HeightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.GridLength> ObserveHeight(this Avalonia.Controls.RowDefinition obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RowDefinition.HeightProperty);
     }
 }

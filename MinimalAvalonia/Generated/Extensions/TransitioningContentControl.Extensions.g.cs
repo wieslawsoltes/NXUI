@@ -17,15 +17,31 @@ public static partial class TransitioningContentControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PageTransition(this Avalonia.Controls.TransitioningContentControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PageTransition<T>(this T obj, IObservable<Avalonia.Animation.IPageTransition> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TransitioningContentControl
+    {
+        obj[Avalonia.Controls.TransitioningContentControl.PageTransitionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPageTransition(this Avalonia.Controls.TransitioningContentControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TransitioningContentControl.PageTransitionProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<Avalonia.Animation.IPageTransition> ObservePageTransition(this Avalonia.Controls.TransitioningContentControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty);
+    }
+
     // CurrentContentProperty
 
-    public static Avalonia.Data.IBinding CurrentContent(this Avalonia.Controls.TransitioningContentControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindCurrentContent(this Avalonia.Controls.TransitioningContentControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.TransitioningContentControl.CurrentContentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveCurrentContent(this Avalonia.Controls.TransitioningContentControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TransitioningContentControl.CurrentContentProperty);
     }
 }

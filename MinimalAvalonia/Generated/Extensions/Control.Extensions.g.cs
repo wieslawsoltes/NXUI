@@ -17,9 +17,20 @@ public static partial class ControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding FocusAdorner(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T FocusAdorner<T>(this T obj, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Control.FocusAdornerProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFocusAdorner(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Control.FocusAdornerProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> ObserveFocusAdorner(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Control.FocusAdornerProperty);
     }
 
     // TagProperty
@@ -36,9 +47,20 @@ public static partial class ControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Tag(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Tag<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Control.TagProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTag(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Control.TagProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveTag(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Control.TagProperty);
     }
 
     // ContextMenuProperty
@@ -55,9 +77,20 @@ public static partial class ControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ContextMenu(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ContextMenu<T>(this T obj, IObservable<Avalonia.Controls.ContextMenu> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Control.ContextMenuProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindContextMenu(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Control.ContextMenuProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ContextMenu> ObserveContextMenu(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Control.ContextMenuProperty);
     }
 
     // ContextFlyoutProperty
@@ -74,9 +107,20 @@ public static partial class ControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ContextFlyout(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ContextFlyout<T>(this T obj, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Control.ContextFlyoutProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindContextFlyout(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Control.ContextFlyoutProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase> ObserveContextFlyout(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
     }
 
     // FlowDirectionProperty
@@ -93,9 +137,20 @@ public static partial class ControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding FlowDirection(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T FlowDirection<T>(this T obj, IObservable<Avalonia.Media.FlowDirection> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFlowDirection(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.FlowDirection> ObserveFlowDirection(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Control.FlowDirectionProperty);
     }
 
     public static T FlowDirectionLeftToRight<T>(this T obj) where T : Avalonia.Controls.Control

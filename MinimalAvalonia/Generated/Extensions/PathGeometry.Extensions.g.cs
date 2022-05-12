@@ -17,9 +17,20 @@ public static partial class PathGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Figures(this Avalonia.Media.PathGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Figures<T>(this T obj, IObservable<Avalonia.Media.PathFigures> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.PathGeometry
+    {
+        obj[Avalonia.Media.PathGeometry.FiguresProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFigures(this Avalonia.Media.PathGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.PathGeometry.FiguresProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.PathFigures> ObserveFigures(this Avalonia.Media.PathGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.PathGeometry.FiguresProperty);
     }
 
     // FillRuleProperty
@@ -36,9 +47,20 @@ public static partial class PathGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding FillRule(this Avalonia.Media.PathGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T FillRule<T>(this T obj, IObservable<Avalonia.Media.FillRule> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.PathGeometry
+    {
+        obj[Avalonia.Media.PathGeometry.FillRuleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFillRule(this Avalonia.Media.PathGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.PathGeometry.FillRuleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.FillRule> ObserveFillRule(this Avalonia.Media.PathGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.PathGeometry.FillRuleProperty);
     }
 
     public static T FillRuleEvenOdd<T>(this T obj) where T : Avalonia.Media.PathGeometry

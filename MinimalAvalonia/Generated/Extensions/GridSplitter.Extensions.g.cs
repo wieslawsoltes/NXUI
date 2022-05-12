@@ -17,9 +17,20 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ResizeDirection(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ResizeDirection<T>(this T obj, IObservable<Avalonia.Controls.GridResizeDirection> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.GridSplitter
+    {
+        obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindResizeDirection(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.GridResizeDirection> ObserveResizeDirection(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeDirectionProperty);
     }
 
     public static T ResizeDirectionAuto<T>(this T obj) where T : Avalonia.Controls.GridSplitter
@@ -54,9 +65,20 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ResizeBehavior(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ResizeBehavior<T>(this T obj, IObservable<Avalonia.Controls.GridResizeBehavior> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.GridSplitter
+    {
+        obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindResizeBehavior(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.GridResizeBehavior> ObserveResizeBehavior(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
     }
 
     public static T ResizeBehaviorBasedOnAlignment<T>(this T obj) where T : Avalonia.Controls.GridSplitter
@@ -97,9 +119,20 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ShowsPreview(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ShowsPreview<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.GridSplitter
+    {
+        obj[Avalonia.Controls.GridSplitter.ShowsPreviewProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindShowsPreview(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.GridSplitter.ShowsPreviewProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveShowsPreview(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.GridSplitter.ShowsPreviewProperty);
     }
 
     // KeyboardIncrementProperty
@@ -116,9 +149,20 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding KeyboardIncrement(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T KeyboardIncrement<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.GridSplitter
+    {
+        obj[Avalonia.Controls.GridSplitter.KeyboardIncrementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindKeyboardIncrement(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.GridSplitter.KeyboardIncrementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveKeyboardIncrement(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
     }
 
     // DragIncrementProperty
@@ -135,9 +179,20 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DragIncrement(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DragIncrement<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.GridSplitter
+    {
+        obj[Avalonia.Controls.GridSplitter.DragIncrementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDragIncrement(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.GridSplitter.DragIncrementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveDragIncrement(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.GridSplitter.DragIncrementProperty);
     }
 
     // PreviewContentProperty
@@ -154,8 +209,19 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PreviewContent(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PreviewContent<T>(this T obj, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.GridSplitter
+    {
+        obj[Avalonia.Controls.GridSplitter.PreviewContentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPreviewContent(this Avalonia.Controls.GridSplitter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.GridSplitter.PreviewContentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> ObservePreviewContent(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
     }
 }

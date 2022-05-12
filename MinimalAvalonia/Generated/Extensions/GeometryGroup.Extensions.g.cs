@@ -17,9 +17,20 @@ public static partial class GeometryGroupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Children(this Avalonia.Media.GeometryGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Children<T>(this T obj, IObservable<Avalonia.Media.GeometryCollection> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.GeometryGroup
+    {
+        obj[Avalonia.Media.GeometryGroup.ChildrenProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindChildren(this Avalonia.Media.GeometryGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.GeometryGroup.ChildrenProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.GeometryCollection> ObserveChildren(this Avalonia.Media.GeometryGroup obj)
+    {
+        return obj.GetObservable(Avalonia.Media.GeometryGroup.ChildrenProperty);
     }
 
     // FillRuleProperty
@@ -36,9 +47,20 @@ public static partial class GeometryGroupExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding FillRule(this Avalonia.Media.GeometryGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T FillRule<T>(this T obj, IObservable<Avalonia.Media.FillRule> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.GeometryGroup
+    {
+        obj[Avalonia.Media.GeometryGroup.FillRuleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFillRule(this Avalonia.Media.GeometryGroup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.GeometryGroup.FillRuleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.FillRule> ObserveFillRule(this Avalonia.Media.GeometryGroup obj)
+    {
+        return obj.GetObservable(Avalonia.Media.GeometryGroup.FillRuleProperty);
     }
 
     public static T FillRuleEvenOdd<T>(this T obj) where T : Avalonia.Media.GeometryGroup

@@ -17,8 +17,19 @@ public static partial class DrawingImageExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Drawing(this Avalonia.Media.DrawingImage obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Drawing<T>(this T obj, IObservable<Avalonia.Media.Drawing> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.DrawingImage
+    {
+        obj[Avalonia.Media.DrawingImage.DrawingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDrawing(this Avalonia.Media.DrawingImage obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.DrawingImage.DrawingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Drawing> ObserveDrawing(this Avalonia.Media.DrawingImage obj)
+    {
+        return obj.GetObservable(Avalonia.Media.DrawingImage.DrawingProperty);
     }
 }

@@ -17,9 +17,20 @@ public static partial class ToggleButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsChecked(this Avalonia.Controls.Primitives.ToggleButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsChecked<T>(this T obj, IObservable<System.Nullable<System.Boolean>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.ToggleButton
+    {
+        obj[Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsChecked(this Avalonia.Controls.Primitives.ToggleButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Nullable<System.Boolean>> ObserveIsChecked(this Avalonia.Controls.Primitives.ToggleButton obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty);
     }
 
     // IsThreeStateProperty
@@ -36,8 +47,19 @@ public static partial class ToggleButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsThreeState(this Avalonia.Controls.Primitives.ToggleButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsThreeState<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.ToggleButton
+    {
+        obj[Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsThreeState(this Avalonia.Controls.Primitives.ToggleButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsThreeState(this Avalonia.Controls.Primitives.ToggleButton obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty);
     }
 }

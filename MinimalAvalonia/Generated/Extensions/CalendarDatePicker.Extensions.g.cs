@@ -17,9 +17,20 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DisplayDate(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DisplayDate<T>(this T obj, IObservable<System.DateTime> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.DisplayDateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDisplayDate(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.CalendarDatePicker.DisplayDateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.DateTime> ObserveDisplayDate(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.DisplayDateProperty);
     }
 
     // DisplayDateStartProperty
@@ -36,9 +47,20 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DisplayDateStart(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DisplayDateStart<T>(this T obj, IObservable<System.Nullable<System.DateTime>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDisplayDateStart(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Nullable<System.DateTime>> ObserveDisplayDateStart(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty);
     }
 
     // DisplayDateEndProperty
@@ -55,9 +77,20 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding DisplayDateEnd(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T DisplayDateEnd<T>(this T obj, IObservable<System.Nullable<System.DateTime>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDisplayDateEnd(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Nullable<System.DateTime>> ObserveDisplayDateEnd(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty);
     }
 
     // FirstDayOfWeekProperty
@@ -74,9 +107,20 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding FirstDayOfWeek(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T FirstDayOfWeek<T>(this T obj, IObservable<System.DayOfWeek> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFirstDayOfWeek(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.DayOfWeek> ObserveFirstDayOfWeek(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty);
     }
 
     public static T FirstDayOfWeekSunday<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
@@ -135,9 +179,20 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsDropDownOpen(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsDropDownOpen<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsDropDownOpen(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsDropDownOpen(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty);
     }
 
     // IsTodayHighlightedProperty
@@ -154,9 +209,20 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsTodayHighlighted(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsTodayHighlighted<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsTodayHighlighted(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsTodayHighlighted(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty);
     }
 
     // SelectedDateProperty
@@ -173,9 +239,20 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedDate(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedDate<T>(this T obj, IObservable<System.Nullable<System.DateTime>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.SelectedDateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedDate(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.CalendarDatePicker.SelectedDateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Nullable<System.DateTime>> ObserveSelectedDate(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.SelectedDateProperty);
     }
 
     // SelectedDateFormatProperty
@@ -192,9 +269,20 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedDateFormat(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedDateFormat<T>(this T obj, IObservable<Avalonia.Controls.CalendarDatePickerFormat> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedDateFormat(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.CalendarDatePickerFormat> ObserveSelectedDateFormat(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty);
     }
 
     public static T SelectedDateFormatLong<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
@@ -229,9 +317,20 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CustomDateFormatString(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CustomDateFormatString<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCustomDateFormatString(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveCustomDateFormatString(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty);
     }
 
     // TextProperty
@@ -248,8 +347,19 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Text(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Text<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.TextProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindText(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.CalendarDatePicker.TextProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveText(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.TextProperty);
     }
 }

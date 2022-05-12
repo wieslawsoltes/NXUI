@@ -17,8 +17,19 @@ public static partial class ImageBrushExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Source(this Avalonia.Media.ImageBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Source<T>(this T obj, IObservable<Avalonia.Media.Imaging.IBitmap> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ImageBrush
+    {
+        obj[Avalonia.Media.ImageBrush.SourceProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSource(this Avalonia.Media.ImageBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ImageBrush.SourceProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Imaging.IBitmap> ObserveSource(this Avalonia.Media.ImageBrush obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ImageBrush.SourceProperty);
     }
 }

@@ -17,9 +17,20 @@ public static partial class CombinedGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Geometry1(this Avalonia.Media.CombinedGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Geometry1<T>(this T obj, IObservable<Avalonia.Media.Geometry> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.CombinedGeometry
+    {
+        obj[Avalonia.Media.CombinedGeometry.Geometry1Property.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindGeometry1(this Avalonia.Media.CombinedGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.CombinedGeometry.Geometry1Property.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Geometry> ObserveGeometry1(this Avalonia.Media.CombinedGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
     }
 
     // Geometry2Property
@@ -36,9 +47,20 @@ public static partial class CombinedGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Geometry2(this Avalonia.Media.CombinedGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Geometry2<T>(this T obj, IObservable<Avalonia.Media.Geometry> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.CombinedGeometry
+    {
+        obj[Avalonia.Media.CombinedGeometry.Geometry2Property.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindGeometry2(this Avalonia.Media.CombinedGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.CombinedGeometry.Geometry2Property.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Geometry> ObserveGeometry2(this Avalonia.Media.CombinedGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
     }
 
     // GeometryCombineModeProperty
@@ -55,9 +77,20 @@ public static partial class CombinedGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding GeometryCombineMode(this Avalonia.Media.CombinedGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T GeometryCombineMode<T>(this T obj, IObservable<Avalonia.Media.GeometryCombineMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.CombinedGeometry
+    {
+        obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindGeometryCombineMode(this Avalonia.Media.CombinedGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.GeometryCombineMode> ObserveGeometryCombineMode(this Avalonia.Media.CombinedGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
     }
 
     public static T GeometryCombineModeUnion<T>(this T obj) where T : Avalonia.Media.CombinedGeometry

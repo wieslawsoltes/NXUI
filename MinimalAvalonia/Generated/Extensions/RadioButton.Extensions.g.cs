@@ -17,8 +17,19 @@ public static partial class RadioButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding GroupName(this Avalonia.Controls.RadioButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T GroupName<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.RadioButton
+    {
+        obj[Avalonia.Controls.RadioButton.GroupNameProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindGroupName(this Avalonia.Controls.RadioButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RadioButton.GroupNameProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveGroupName(this Avalonia.Controls.RadioButton obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RadioButton.GroupNameProperty);
     }
 }

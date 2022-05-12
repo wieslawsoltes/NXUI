@@ -17,9 +17,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Above(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Above<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AboveProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAbove(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AboveProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveAbove(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AboveProperty);
     }
 
     // AlignBottomWithPanelProperty
@@ -36,9 +47,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignBottomWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignBottomWithPanel<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignBottomWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAlignBottomWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty);
     }
 
     // AlignBottomWithProperty
@@ -55,9 +77,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignBottomWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignBottomWith<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignBottomWithProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignBottomWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignBottomWithProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveAlignBottomWith(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignBottomWithProperty);
     }
 
     // AlignHorizontalCenterWithPanelProperty
@@ -74,9 +107,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignHorizontalCenterWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignHorizontalCenterWithPanel<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignHorizontalCenterWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAlignHorizontalCenterWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty);
     }
 
     // AlignLeftWithPanelProperty
@@ -93,9 +137,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignLeftWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignLeftWithPanel<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignLeftWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAlignLeftWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty);
     }
 
     // AlignLeftWithProperty
@@ -112,9 +167,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignLeftWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignLeftWith<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignLeftWithProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignLeftWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignLeftWithProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveAlignLeftWith(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
     }
 
     // AlignRightWithPanelProperty
@@ -131,9 +197,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignRightWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignRightWithPanel<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignRightWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAlignRightWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty);
     }
 
     // AlignRightWithProperty
@@ -150,9 +227,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignRightWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignRightWith<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignRightWithProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignRightWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignRightWithProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveAlignRightWith(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
     }
 
     // AlignTopWithPanelProperty
@@ -169,9 +257,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignTopWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignTopWithPanel<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignTopWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAlignTopWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty);
     }
 
     // AlignTopWithProperty
@@ -188,9 +287,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignTopWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignTopWith<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignTopWithProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignTopWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignTopWithProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveAlignTopWith(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
     }
 
     // AlignVerticalCenterWithPanelProperty
@@ -207,9 +317,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignVerticalCenterWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignVerticalCenterWithPanel<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignVerticalCenterWithPanel(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAlignVerticalCenterWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty);
     }
 
     // AlignVerticalCenterWithProperty
@@ -226,9 +347,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AlignVerticalCenterWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AlignVerticalCenterWith<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAlignVerticalCenterWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveAlignVerticalCenterWith(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
     }
 
     // BelowProperty
@@ -245,9 +377,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Below(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Below<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.BelowProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBelow(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.BelowProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveBelow(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.BelowProperty);
     }
 
     // LeftOfProperty
@@ -264,9 +407,20 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding LeftOf(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T LeftOf<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.LeftOfProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindLeftOf(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.LeftOfProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveLeftOf(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.LeftOfProperty);
     }
 
     // RightOfProperty
@@ -283,8 +437,19 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding RightOf(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T RightOf<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Controls.RelativePanel.RightOfProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRightOf(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.RelativePanel.RightOfProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveRightOf(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.RelativePanel.RightOfProperty);
     }
 }

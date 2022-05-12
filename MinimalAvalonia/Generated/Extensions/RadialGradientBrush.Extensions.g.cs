@@ -17,9 +17,20 @@ public static partial class RadialGradientBrushExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Center(this Avalonia.Media.RadialGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.RadialGradientBrush Center(this Avalonia.Media.RadialGradientBrush obj, IObservable<Avalonia.RelativePoint> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.RadialGradientBrush.CenterProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCenter(this Avalonia.Media.RadialGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.RadialGradientBrush.CenterProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.RelativePoint> ObserveCenter(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
     }
 
     // GradientOriginProperty
@@ -36,9 +47,20 @@ public static partial class RadialGradientBrushExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding GradientOrigin(this Avalonia.Media.RadialGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.RadialGradientBrush GradientOrigin(this Avalonia.Media.RadialGradientBrush obj, IObservable<Avalonia.RelativePoint> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.RadialGradientBrush.GradientOriginProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindGradientOrigin(this Avalonia.Media.RadialGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.RadialGradientBrush.GradientOriginProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.RelativePoint> ObserveGradientOrigin(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
     }
 
     // RadiusProperty
@@ -55,8 +77,19 @@ public static partial class RadialGradientBrushExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Radius(this Avalonia.Media.RadialGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.RadialGradientBrush Radius(this Avalonia.Media.RadialGradientBrush obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.RadialGradientBrush.RadiusProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRadius(this Avalonia.Media.RadialGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.RadialGradientBrush.RadiusProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveRadius(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetObservable(Avalonia.Media.RadialGradientBrush.RadiusProperty);
     }
 }

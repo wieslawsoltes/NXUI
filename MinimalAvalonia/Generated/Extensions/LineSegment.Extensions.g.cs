@@ -17,8 +17,19 @@ public static partial class LineSegmentExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Point(this Avalonia.Media.LineSegment obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.LineSegment Point(this Avalonia.Media.LineSegment obj, IObservable<Avalonia.Point> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.LineSegment.PointProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPoint(this Avalonia.Media.LineSegment obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.LineSegment.PointProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Point> ObservePoint(this Avalonia.Media.LineSegment obj)
+    {
+        return obj.GetObservable(Avalonia.Media.LineSegment.PointProperty);
     }
 }

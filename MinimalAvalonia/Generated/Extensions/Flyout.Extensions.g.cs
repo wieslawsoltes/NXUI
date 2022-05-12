@@ -17,8 +17,19 @@ public static partial class FlyoutExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Content(this Avalonia.Controls.Flyout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Content<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Flyout
+    {
+        obj[Avalonia.Controls.Flyout.ContentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindContent(this Avalonia.Controls.Flyout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Flyout.ContentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveContent(this Avalonia.Controls.Flyout obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Flyout.ContentProperty);
     }
 }

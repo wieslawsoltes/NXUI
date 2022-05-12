@@ -17,8 +17,19 @@ public static partial class RunExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Text(this Avalonia.Controls.Documents.Run obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Text<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Documents.Run
+    {
+        obj[Avalonia.Controls.Documents.Run.TextProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindText(this Avalonia.Controls.Documents.Run obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Documents.Run.TextProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveText(this Avalonia.Controls.Documents.Run obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Documents.Run.TextProperty);
     }
 }

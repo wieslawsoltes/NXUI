@@ -17,9 +17,20 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Location(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Location<T>(this T obj, IObservable<Avalonia.Media.TextDecorationLocation> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
+    {
+        obj[Avalonia.Media.TextDecoration.LocationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindLocation(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TextDecoration.LocationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextDecorationLocation> ObserveLocation(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TextDecoration.LocationProperty);
     }
 
     public static T LocationUnderline<T>(this T obj) where T : Avalonia.Media.TextDecoration
@@ -60,9 +71,20 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Stroke(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Stroke<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
+    {
+        obj[Avalonia.Media.TextDecoration.StrokeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStroke(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TextDecoration.StrokeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveStroke(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeProperty);
     }
 
     // StrokeThicknessUnitProperty
@@ -79,9 +101,20 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StrokeThicknessUnit(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StrokeThicknessUnit<T>(this T obj, IObservable<Avalonia.Media.TextDecorationUnit> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
+    {
+        obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStrokeThicknessUnit(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextDecorationUnit> ObserveStrokeThicknessUnit(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty);
     }
 
     public static T StrokeThicknessUnitFontRecommended<T>(this T obj) where T : Avalonia.Media.TextDecoration
@@ -116,9 +149,20 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StrokeDashArray(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StrokeDashArray<T>(this T obj, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
+    {
+        obj[Avalonia.Media.TextDecoration.StrokeDashArrayProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStrokeDashArray(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TextDecoration.StrokeDashArrayProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>> ObserveStrokeDashArray(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
     }
 
     // StrokeDashOffsetProperty
@@ -135,9 +179,20 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StrokeDashOffset(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StrokeDashOffset<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
+    {
+        obj[Avalonia.Media.TextDecoration.StrokeDashOffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStrokeDashOffset(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TextDecoration.StrokeDashOffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveStrokeDashOffset(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty);
     }
 
     // StrokeThicknessProperty
@@ -154,9 +209,20 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StrokeThickness(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StrokeThickness<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
+    {
+        obj[Avalonia.Media.TextDecoration.StrokeThicknessProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStrokeThickness(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TextDecoration.StrokeThicknessProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveStrokeThickness(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeThicknessProperty);
     }
 
     // StrokeLineCapProperty
@@ -173,9 +239,20 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StrokeLineCap(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StrokeLineCap<T>(this T obj, IObservable<Avalonia.Media.PenLineCap> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
+    {
+        obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStrokeLineCap(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.PenLineCap> ObserveStrokeLineCap(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeLineCapProperty);
     }
 
     public static T StrokeLineCapFlat<T>(this T obj) where T : Avalonia.Media.TextDecoration
@@ -210,9 +287,20 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StrokeOffset(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StrokeOffset<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
+    {
+        obj[Avalonia.Media.TextDecoration.StrokeOffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStrokeOffset(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TextDecoration.StrokeOffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveStrokeOffset(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeOffsetProperty);
     }
 
     // StrokeOffsetUnitProperty
@@ -229,9 +317,20 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StrokeOffsetUnit(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StrokeOffsetUnit<T>(this T obj, IObservable<Avalonia.Media.TextDecorationUnit> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
+    {
+        obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStrokeOffsetUnit(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextDecorationUnit> ObserveStrokeOffsetUnit(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty);
     }
 
     public static T StrokeOffsetUnitFontRecommended<T>(this T obj) where T : Avalonia.Media.TextDecoration

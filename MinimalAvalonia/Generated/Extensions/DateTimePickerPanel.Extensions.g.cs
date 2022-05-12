@@ -17,9 +17,20 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ItemHeight(this Avalonia.Controls.Primitives.DateTimePickerPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ItemHeight<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        obj[Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemHeight(this Avalonia.Controls.Primitives.DateTimePickerPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveItemHeight(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty);
     }
 
     // PanelTypeProperty
@@ -36,9 +47,20 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PanelType(this Avalonia.Controls.Primitives.DateTimePickerPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PanelType<T>(this T obj, IObservable<Avalonia.Controls.Primitives.DateTimePickerPanelType> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPanelType(this Avalonia.Controls.Primitives.DateTimePickerPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.DateTimePickerPanelType> ObservePanelType(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty);
     }
 
     public static T PanelTypeYear<T>(this T obj) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
@@ -91,9 +113,20 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ItemFormat(this Avalonia.Controls.Primitives.DateTimePickerPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ItemFormat<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        obj[Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemFormat(this Avalonia.Controls.Primitives.DateTimePickerPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveItemFormat(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty);
     }
 
     // ShouldLoopProperty
@@ -110,8 +143,19 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ShouldLoop(this Avalonia.Controls.Primitives.DateTimePickerPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ShouldLoop<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        obj[Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindShouldLoop(this Avalonia.Controls.Primitives.DateTimePickerPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveShouldLoop(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty);
     }
 }

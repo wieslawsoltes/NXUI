@@ -17,9 +17,20 @@ public static partial class TabControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TabStripPlacement(this Avalonia.Controls.TabControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TabStripPlacement<T>(this T obj, IObservable<Avalonia.Controls.Dock> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TabControl
+    {
+        obj[Avalonia.Controls.TabControl.TabStripPlacementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTabStripPlacement(this Avalonia.Controls.TabControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TabControl.TabStripPlacementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Dock> ObserveTabStripPlacement(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TabControl.TabStripPlacementProperty);
     }
 
     public static T TabStripPlacementLeft<T>(this T obj) where T : Avalonia.Controls.TabControl
@@ -60,9 +71,20 @@ public static partial class TabControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedContent(this Avalonia.Controls.TabControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedContent<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TabControl
+    {
+        obj[Avalonia.Controls.TabControl.SelectedContentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedContent(this Avalonia.Controls.TabControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TabControl.SelectedContentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveSelectedContent(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
     }
 
     // SelectedContentTemplateProperty
@@ -79,8 +101,19 @@ public static partial class TabControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SelectedContentTemplate(this Avalonia.Controls.TabControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SelectedContentTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TabControl
+    {
+        obj[Avalonia.Controls.TabControl.SelectedContentTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectedContentTemplate(this Avalonia.Controls.TabControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TabControl.SelectedContentTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveSelectedContentTemplate(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
     }
 }

@@ -17,9 +17,20 @@ public static partial class EllipseGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Rect(this Avalonia.Media.EllipseGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Rect<T>(this T obj, IObservable<Avalonia.Rect> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.EllipseGeometry
+    {
+        obj[Avalonia.Media.EllipseGeometry.RectProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRect(this Avalonia.Media.EllipseGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.EllipseGeometry.RectProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Rect> ObserveRect(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.EllipseGeometry.RectProperty);
     }
 
     // RadiusXProperty
@@ -36,9 +47,20 @@ public static partial class EllipseGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding RadiusX(this Avalonia.Media.EllipseGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T RadiusX<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.EllipseGeometry
+    {
+        obj[Avalonia.Media.EllipseGeometry.RadiusXProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRadiusX(this Avalonia.Media.EllipseGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.EllipseGeometry.RadiusXProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveRadiusX(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.EllipseGeometry.RadiusXProperty);
     }
 
     // RadiusYProperty
@@ -55,9 +77,20 @@ public static partial class EllipseGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding RadiusY(this Avalonia.Media.EllipseGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T RadiusY<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.EllipseGeometry
+    {
+        obj[Avalonia.Media.EllipseGeometry.RadiusYProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRadiusY(this Avalonia.Media.EllipseGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.EllipseGeometry.RadiusYProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveRadiusY(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.EllipseGeometry.RadiusYProperty);
     }
 
     // CenterProperty
@@ -74,8 +107,19 @@ public static partial class EllipseGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Center(this Avalonia.Media.EllipseGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Center<T>(this T obj, IObservable<Avalonia.Point> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.EllipseGeometry
+    {
+        obj[Avalonia.Media.EllipseGeometry.CenterProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCenter(this Avalonia.Media.EllipseGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.EllipseGeometry.CenterProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Point> ObserveCenter(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.EllipseGeometry.CenterProperty);
     }
 }

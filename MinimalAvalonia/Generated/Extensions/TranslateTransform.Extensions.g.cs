@@ -17,9 +17,20 @@ public static partial class TranslateTransformExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding X(this Avalonia.Media.TranslateTransform obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T X<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TranslateTransform
+    {
+        obj[Avalonia.Media.TranslateTransform.XProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindX(this Avalonia.Media.TranslateTransform obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TranslateTransform.XProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveX(this Avalonia.Media.TranslateTransform obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TranslateTransform.XProperty);
     }
 
     // YProperty
@@ -36,8 +47,19 @@ public static partial class TranslateTransformExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Y(this Avalonia.Media.TranslateTransform obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Y<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TranslateTransform
+    {
+        obj[Avalonia.Media.TranslateTransform.YProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindY(this Avalonia.Media.TranslateTransform obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.TranslateTransform.YProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveY(this Avalonia.Media.TranslateTransform obj)
+    {
+        return obj.GetObservable(Avalonia.Media.TranslateTransform.YProperty);
     }
 }

@@ -17,8 +17,19 @@ public static partial class ReversibleStackPanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ReverseOrder(this Avalonia.Controls.ReversibleStackPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ReverseOrder<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ReversibleStackPanel
+    {
+        obj[Avalonia.Controls.ReversibleStackPanel.ReverseOrderProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindReverseOrder(this Avalonia.Controls.ReversibleStackPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ReversibleStackPanel.ReverseOrderProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveReverseOrder(this Avalonia.Controls.ReversibleStackPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ReversibleStackPanel.ReverseOrderProperty);
     }
 }

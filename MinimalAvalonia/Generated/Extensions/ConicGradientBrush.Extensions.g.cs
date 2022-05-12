@@ -17,9 +17,20 @@ public static partial class ConicGradientBrushExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Center(this Avalonia.Media.ConicGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.ConicGradientBrush Center(this Avalonia.Media.ConicGradientBrush obj, IObservable<Avalonia.RelativePoint> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.ConicGradientBrush.CenterProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCenter(this Avalonia.Media.ConicGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ConicGradientBrush.CenterProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.RelativePoint> ObserveCenter(this Avalonia.Media.ConicGradientBrush obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ConicGradientBrush.CenterProperty);
     }
 
     // AngleProperty
@@ -36,8 +47,19 @@ public static partial class ConicGradientBrushExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Angle(this Avalonia.Media.ConicGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Media.ConicGradientBrush Angle(this Avalonia.Media.ConicGradientBrush obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Media.ConicGradientBrush.AngleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAngle(this Avalonia.Media.ConicGradientBrush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ConicGradientBrush.AngleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveAngle(this Avalonia.Media.ConicGradientBrush obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ConicGradientBrush.AngleProperty);
     }
 }

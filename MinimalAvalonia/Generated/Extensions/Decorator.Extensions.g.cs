@@ -17,9 +17,20 @@ public static partial class DecoratorExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Child(this Avalonia.Controls.Decorator obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Child<T>(this T obj, IObservable<Avalonia.Controls.IControl> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Decorator
+    {
+        obj[Avalonia.Controls.Decorator.ChildProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindChild(this Avalonia.Controls.Decorator obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Decorator.ChildProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.IControl> ObserveChild(this Avalonia.Controls.Decorator obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Decorator.ChildProperty);
     }
 
     // PaddingProperty
@@ -36,8 +47,19 @@ public static partial class DecoratorExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Padding(this Avalonia.Controls.Decorator obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Padding<T>(this T obj, IObservable<Avalonia.Thickness> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Decorator
+    {
+        obj[Avalonia.Controls.Decorator.PaddingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPadding(this Avalonia.Controls.Decorator obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Decorator.PaddingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Thickness> ObservePadding(this Avalonia.Controls.Decorator obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Decorator.PaddingProperty);
     }
 }

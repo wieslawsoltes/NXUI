@@ -5,9 +5,14 @@ public static partial class LayoutableExtensions
 {
     // DesiredSizeProperty
 
-    public static Avalonia.Data.IBinding DesiredSize(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindDesiredSize(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Layout.Layoutable.DesiredSizeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Size> ObserveDesiredSize(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.DesiredSizeProperty);
     }
 
     // WidthProperty
@@ -24,9 +29,20 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Width(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Width<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Layout.Layoutable.WidthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWidth(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.Layoutable.WidthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveWidth(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.WidthProperty);
     }
 
     // HeightProperty
@@ -43,9 +59,20 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Height(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Height<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Layout.Layoutable.HeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHeight(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.Layoutable.HeightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveHeight(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.HeightProperty);
     }
 
     // MinWidthProperty
@@ -62,9 +89,20 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MinWidth(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MinWidth<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Layout.Layoutable.MinWidthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinWidth(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.Layoutable.MinWidthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMinWidth(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.MinWidthProperty);
     }
 
     // MaxWidthProperty
@@ -81,9 +119,20 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxWidth(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxWidth<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Layout.Layoutable.MaxWidthProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxWidth(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.Layoutable.MaxWidthProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMaxWidth(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.MaxWidthProperty);
     }
 
     // MinHeightProperty
@@ -100,9 +149,20 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MinHeight(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MinHeight<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Layout.Layoutable.MinHeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinHeight(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.Layoutable.MinHeightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMinHeight(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.MinHeightProperty);
     }
 
     // MaxHeightProperty
@@ -119,9 +179,20 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding MaxHeight(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T MaxHeight<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Layout.Layoutable.MaxHeightProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxHeight(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.Layoutable.MaxHeightProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveMaxHeight(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.MaxHeightProperty);
     }
 
     // MarginProperty
@@ -138,9 +209,20 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Margin(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Margin<T>(this T obj, IObservable<Avalonia.Thickness> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Layout.Layoutable.MarginProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMargin(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.Layoutable.MarginProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Thickness> ObserveMargin(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.MarginProperty);
     }
 
     // HorizontalAlignmentProperty
@@ -157,9 +239,20 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HorizontalAlignment(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HorizontalAlignment<T>(this T obj, IObservable<Avalonia.Layout.HorizontalAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalAlignment(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.HorizontalAlignment> ObserveHorizontalAlignment(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty);
     }
 
     public static T HorizontalAlignmentStretch<T>(this T obj) where T : Avalonia.Layout.Layoutable
@@ -200,9 +293,20 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding VerticalAlignment(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T VerticalAlignment<T>(this T obj, IObservable<Avalonia.Layout.VerticalAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalAlignment(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.VerticalAlignment> ObserveVerticalAlignment(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.VerticalAlignmentProperty);
     }
 
     public static T VerticalAlignmentStretch<T>(this T obj) where T : Avalonia.Layout.Layoutable
@@ -243,8 +347,19 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding UseLayoutRounding(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T UseLayoutRounding<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
+    {
+        obj[Avalonia.Layout.Layoutable.UseLayoutRoundingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindUseLayoutRounding(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Layout.Layoutable.UseLayoutRoundingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveUseLayoutRounding(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty);
     }
 }

@@ -17,15 +17,31 @@ public static partial class TreeViewItemExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsExpanded(this Avalonia.Controls.TreeViewItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsExpanded<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TreeViewItem
+    {
+        obj[Avalonia.Controls.TreeViewItem.IsExpandedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsExpanded(this Avalonia.Controls.TreeViewItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.TreeViewItem.IsExpandedProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Boolean> ObserveIsExpanded(this Avalonia.Controls.TreeViewItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TreeViewItem.IsExpandedProperty);
+    }
+
     // LevelProperty
 
-    public static Avalonia.Data.IBinding Level(this Avalonia.Controls.TreeViewItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindLevel(this Avalonia.Controls.TreeViewItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.TreeViewItem.LevelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveLevel(this Avalonia.Controls.TreeViewItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
     }
 }

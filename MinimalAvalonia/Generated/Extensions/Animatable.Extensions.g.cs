@@ -17,9 +17,20 @@ public static partial class AnimatableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Clock(this Avalonia.Animation.Animatable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Clock<T>(this T obj, IObservable<Avalonia.Animation.IClock> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.Animatable
+    {
+        obj[Avalonia.Animation.Animatable.ClockProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindClock(this Avalonia.Animation.Animatable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.Animatable.ClockProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Animation.IClock> ObserveClock(this Avalonia.Animation.Animatable obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animatable.ClockProperty);
     }
 
     // TransitionsProperty
@@ -36,8 +47,19 @@ public static partial class AnimatableExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Transitions(this Avalonia.Animation.Animatable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Transitions<T>(this T obj, IObservable<Avalonia.Animation.Transitions> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.Animatable
+    {
+        obj[Avalonia.Animation.Animatable.TransitionsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTransitions(this Avalonia.Animation.Animatable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.Animatable.TransitionsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Animation.Transitions> ObserveTransitions(this Avalonia.Animation.Animatable obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.Animatable.TransitionsProperty);
     }
 }

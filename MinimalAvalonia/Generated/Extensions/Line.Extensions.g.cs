@@ -17,9 +17,20 @@ public static partial class LineExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StartPoint(this Avalonia.Controls.Shapes.Line obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StartPoint<T>(this T obj, IObservable<Avalonia.Point> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Shapes.Line
+    {
+        obj[Avalonia.Controls.Shapes.Line.StartPointProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStartPoint(this Avalonia.Controls.Shapes.Line obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Shapes.Line.StartPointProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Point> ObserveStartPoint(this Avalonia.Controls.Shapes.Line obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Shapes.Line.StartPointProperty);
     }
 
     // EndPointProperty
@@ -36,8 +47,19 @@ public static partial class LineExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding EndPoint(this Avalonia.Controls.Shapes.Line obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T EndPoint<T>(this T obj, IObservable<Avalonia.Point> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Shapes.Line
+    {
+        obj[Avalonia.Controls.Shapes.Line.EndPointProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindEndPoint(this Avalonia.Controls.Shapes.Line obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Shapes.Line.EndPointProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Point> ObserveEndPoint(this Avalonia.Controls.Shapes.Line obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Shapes.Line.EndPointProperty);
     }
 }

@@ -17,16 +17,32 @@ public static partial class ItemsControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Items(this Avalonia.Controls.ItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Items<T>(this T obj, IObservable<System.Collections.IEnumerable> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ItemsControl
+    {
+        obj[Avalonia.Controls.ItemsControl.ItemsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItems(this Avalonia.Controls.ItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ItemsControl.ItemsProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Collections.IEnumerable> ObserveItems(this Avalonia.Controls.ItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsProperty);
+    }
+
     // ItemCountProperty
 
-    public static Avalonia.Data.IBinding ItemCount(this Avalonia.Controls.ItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindItemCount(this Avalonia.Controls.ItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ItemsControl.ItemCountProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveItemCount(this Avalonia.Controls.ItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemCountProperty);
     }
 
     // ItemsPanelProperty
@@ -43,9 +59,20 @@ public static partial class ItemsControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ItemsPanel(this Avalonia.Controls.ItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ItemsPanel<T>(this T obj, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ItemsControl
+    {
+        obj[Avalonia.Controls.ItemsControl.ItemsPanelProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemsPanel(this Avalonia.Controls.ItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ItemsControl.ItemsPanelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>> ObserveItemsPanel(this Avalonia.Controls.ItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsPanelProperty);
     }
 
     // ItemTemplateProperty
@@ -62,8 +89,19 @@ public static partial class ItemsControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ItemTemplate(this Avalonia.Controls.ItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ItemTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ItemsControl
+    {
+        obj[Avalonia.Controls.ItemsControl.ItemTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemTemplate(this Avalonia.Controls.ItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ItemsControl.ItemTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate(this Avalonia.Controls.ItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemTemplateProperty);
     }
 }

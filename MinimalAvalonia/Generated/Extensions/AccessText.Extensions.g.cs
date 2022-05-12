@@ -17,8 +17,19 @@ public static partial class AccessTextExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ShowAccessKey(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ShowAccessKey<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindShowAccessKey(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveShowAccessKey(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty);
     }
 }

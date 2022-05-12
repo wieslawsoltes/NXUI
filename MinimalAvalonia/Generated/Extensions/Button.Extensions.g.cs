@@ -17,9 +17,20 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ClickMode(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ClickMode<T>(this T obj, IObservable<Avalonia.Controls.ClickMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Button
+    {
+        obj[Avalonia.Controls.Button.ClickModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindClickMode(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Button.ClickModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ClickMode> ObserveClickMode(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Button.ClickModeProperty);
     }
 
     public static T ClickModeRelease<T>(this T obj) where T : Avalonia.Controls.Button
@@ -48,9 +59,20 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Command(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Command<T>(this T obj, IObservable<System.Windows.Input.ICommand> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Button
+    {
+        obj[Avalonia.Controls.Button.CommandProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCommand(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Button.CommandProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Windows.Input.ICommand> ObserveCommand(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Button.CommandProperty);
     }
 
     // CommandParameterProperty
@@ -67,9 +89,20 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding CommandParameter(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T CommandParameter<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Button
+    {
+        obj[Avalonia.Controls.Button.CommandParameterProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCommandParameter(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Button.CommandParameterProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveCommandParameter(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Button.CommandParameterProperty);
     }
 
     // IsDefaultProperty
@@ -86,9 +119,20 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsDefault(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsDefault<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Button
+    {
+        obj[Avalonia.Controls.Button.IsDefaultProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsDefault(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Button.IsDefaultProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsDefault(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Button.IsDefaultProperty);
     }
 
     // IsCancelProperty
@@ -105,9 +149,20 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsCancel(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsCancel<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Button
+    {
+        obj[Avalonia.Controls.Button.IsCancelProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsCancel(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Button.IsCancelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsCancel(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Button.IsCancelProperty);
     }
 
     // IsPressedProperty
@@ -124,9 +179,20 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsPressed(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsPressed<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Button
+    {
+        obj[Avalonia.Controls.Button.IsPressedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsPressed(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Button.IsPressedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsPressed(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Button.IsPressedProperty);
     }
 
     // FlyoutProperty
@@ -143,8 +209,19 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Flyout(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Flyout<T>(this T obj, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Button
+    {
+        obj[Avalonia.Controls.Button.FlyoutProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFlyout(this Avalonia.Controls.Button obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Button.FlyoutProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase> ObserveFlyout(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Button.FlyoutProperty);
     }
 }

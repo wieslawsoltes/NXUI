@@ -5,9 +5,14 @@ public static partial class ContentPresenterExtensions
 {
     // ChildProperty
 
-    public static Avalonia.Data.IBinding Child(this Avalonia.Controls.Presenters.ContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.Presenters.ContentPresenter.ChildProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.IControl> ObserveChild(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
     }
 
     // RecognizesAccessKeyProperty
@@ -24,8 +29,19 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding RecognizesAccessKey(this Avalonia.Controls.Presenters.ContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T RecognizesAccessKey<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        obj[Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRecognizesAccessKey(this Avalonia.Controls.Presenters.ContentPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveRecognizesAccessKey(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
     }
 }

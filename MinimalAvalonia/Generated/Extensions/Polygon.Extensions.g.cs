@@ -17,8 +17,19 @@ public static partial class PolygonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Points(this Avalonia.Controls.Shapes.Polygon obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Points<T>(this T obj, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Shapes.Polygon
+    {
+        obj[Avalonia.Controls.Shapes.Polygon.PointsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPoints(this Avalonia.Controls.Shapes.Polygon obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Shapes.Polygon.PointsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Collections.Generic.IList<Avalonia.Point>> ObservePoints(this Avalonia.Controls.Shapes.Polygon obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Shapes.Polygon.PointsProperty);
     }
 }

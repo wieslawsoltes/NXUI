@@ -17,8 +17,19 @@ public static partial class AnimatorKeyFrameExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Value(this Avalonia.Animation.AnimatorKeyFrame obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Value<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Animation.AnimatorKeyFrame
+    {
+        obj[Avalonia.Animation.AnimatorKeyFrame.ValueProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindValue(this Avalonia.Animation.AnimatorKeyFrame obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Animation.AnimatorKeyFrame.ValueProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveValue(this Avalonia.Animation.AnimatorKeyFrame obj)
+    {
+        return obj.GetObservable(Avalonia.Animation.AnimatorKeyFrame.ValueProperty);
     }
 }

@@ -17,9 +17,20 @@ public static partial class ArcExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StartAngle(this Avalonia.Controls.Shapes.Arc obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StartAngle<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Shapes.Arc
+    {
+        obj[Avalonia.Controls.Shapes.Arc.StartAngleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStartAngle(this Avalonia.Controls.Shapes.Arc obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Shapes.Arc.StartAngleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveStartAngle(this Avalonia.Controls.Shapes.Arc obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Shapes.Arc.StartAngleProperty);
     }
 
     // SweepAngleProperty
@@ -36,8 +47,19 @@ public static partial class ArcExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding SweepAngle(this Avalonia.Controls.Shapes.Arc obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T SweepAngle<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Shapes.Arc
+    {
+        obj[Avalonia.Controls.Shapes.Arc.SweepAngleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSweepAngle(this Avalonia.Controls.Shapes.Arc obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Shapes.Arc.SweepAngleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveSweepAngle(this Avalonia.Controls.Shapes.Arc obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Shapes.Arc.SweepAngleProperty);
     }
 }

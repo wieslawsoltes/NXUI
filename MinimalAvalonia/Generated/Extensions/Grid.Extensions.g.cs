@@ -17,9 +17,20 @@ public static partial class GridExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ShowGridLines(this Avalonia.Controls.Grid obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ShowGridLines<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Grid
+    {
+        obj[Avalonia.Controls.Grid.ShowGridLinesProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindShowGridLines(this Avalonia.Controls.Grid obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Grid.ShowGridLinesProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveShowGridLines(this Avalonia.Controls.Grid obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Grid.ShowGridLinesProperty);
     }
 
     // ColumnProperty
@@ -36,9 +47,20 @@ public static partial class GridExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Column(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Column<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Grid.ColumnProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindColumn(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Grid.ColumnProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveColumn(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Grid.ColumnProperty);
     }
 
     // RowProperty
@@ -55,9 +77,20 @@ public static partial class GridExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Row(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Row<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Grid.RowProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRow(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Grid.RowProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveRow(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Grid.RowProperty);
     }
 
     // ColumnSpanProperty
@@ -74,9 +107,20 @@ public static partial class GridExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ColumnSpan(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ColumnSpan<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Grid.ColumnSpanProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindColumnSpan(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Grid.ColumnSpanProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveColumnSpan(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Grid.ColumnSpanProperty);
     }
 
     // RowSpanProperty
@@ -93,9 +137,20 @@ public static partial class GridExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding RowSpan(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T RowSpan<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Grid.RowSpanProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRowSpan(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Grid.RowSpanProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveRowSpan(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Grid.RowSpanProperty);
     }
 
     // IsSharedSizeScopeProperty
@@ -112,8 +167,19 @@ public static partial class GridExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsSharedSizeScope(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsSharedSizeScope<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Grid.IsSharedSizeScopeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsSharedSizeScope(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Grid.IsSharedSizeScopeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsSharedSizeScope(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Grid.IsSharedSizeScopeProperty);
     }
 }

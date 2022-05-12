@@ -17,8 +17,19 @@ public static partial class PopupRootExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Transform(this Avalonia.Controls.Primitives.PopupRoot obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Controls.Primitives.PopupRoot Transform(this Avalonia.Controls.Primitives.PopupRoot obj, IObservable<Avalonia.Media.Transform> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Controls.Primitives.PopupRoot.TransformProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTransform(this Avalonia.Controls.Primitives.PopupRoot obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.PopupRoot.TransformProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Transform> ObserveTransform(this Avalonia.Controls.Primitives.PopupRoot obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
     }
 }

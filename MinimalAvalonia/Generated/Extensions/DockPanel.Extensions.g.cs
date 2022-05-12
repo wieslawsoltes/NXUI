@@ -17,9 +17,20 @@ public static partial class DockPanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Dock(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Dock<T>(this T obj, IObservable<Avalonia.Controls.Dock> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.DockPanel.DockProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDock(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DockPanel.DockProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Dock> ObserveDock(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DockPanel.DockProperty);
     }
 
     public static T DockLeft<T>(this T obj) where T : Avalonia.Controls.Control
@@ -60,8 +71,19 @@ public static partial class DockPanelExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding LastChildFill(this Avalonia.Controls.DockPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T LastChildFill<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DockPanel
+    {
+        obj[Avalonia.Controls.DockPanel.LastChildFillProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindLastChildFill(this Avalonia.Controls.DockPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.DockPanel.LastChildFillProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveLastChildFill(this Avalonia.Controls.DockPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.DockPanel.LastChildFillProperty);
     }
 }

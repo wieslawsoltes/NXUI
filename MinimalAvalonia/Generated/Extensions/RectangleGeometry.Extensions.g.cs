@@ -17,8 +17,19 @@ public static partial class RectangleGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Rect(this Avalonia.Media.RectangleGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Rect<T>(this T obj, IObservable<Avalonia.Rect> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.RectangleGeometry
+    {
+        obj[Avalonia.Media.RectangleGeometry.RectProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRect(this Avalonia.Media.RectangleGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.RectangleGeometry.RectProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Rect> ObserveRect(this Avalonia.Media.RectangleGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.RectangleGeometry.RectProperty);
     }
 }

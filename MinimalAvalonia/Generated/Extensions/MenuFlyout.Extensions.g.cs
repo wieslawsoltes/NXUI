@@ -17,9 +17,20 @@ public static partial class MenuFlyoutExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Items(this Avalonia.Controls.MenuFlyout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Items<T>(this T obj, IObservable<System.Collections.IEnumerable> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuFlyout
+    {
+        obj[Avalonia.Controls.MenuFlyout.ItemsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItems(this Avalonia.Controls.MenuFlyout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MenuFlyout.ItemsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Collections.IEnumerable> ObserveItems(this Avalonia.Controls.MenuFlyout obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemsProperty);
     }
 
     // ItemTemplateProperty
@@ -36,8 +47,19 @@ public static partial class MenuFlyoutExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ItemTemplate(this Avalonia.Controls.MenuFlyout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ItemTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuFlyout
+    {
+        obj[Avalonia.Controls.MenuFlyout.ItemTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemTemplate(this Avalonia.Controls.MenuFlyout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MenuFlyout.ItemTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate(this Avalonia.Controls.MenuFlyout obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
     }
 }

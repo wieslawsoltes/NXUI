@@ -17,9 +17,20 @@ public static partial class SliderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsSnapToTickEnabled(this Avalonia.Controls.Slider obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsSnapToTickEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Slider
+    {
+        obj[Avalonia.Controls.Slider.IsSnapToTickEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsSnapToTickEnabled(this Avalonia.Controls.Slider obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Slider.IsSnapToTickEnabledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsSnapToTickEnabled(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
     }
 
     // TickFrequencyProperty
@@ -36,9 +47,20 @@ public static partial class SliderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TickFrequency(this Avalonia.Controls.Slider obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TickFrequency<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Slider
+    {
+        obj[Avalonia.Controls.Slider.TickFrequencyProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTickFrequency(this Avalonia.Controls.Slider obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Slider.TickFrequencyProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveTickFrequency(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Slider.TickFrequencyProperty);
     }
 
     // TickPlacementProperty
@@ -55,9 +77,20 @@ public static partial class SliderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding TickPlacement(this Avalonia.Controls.Slider obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T TickPlacement<T>(this T obj, IObservable<Avalonia.Controls.TickPlacement> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Slider
+    {
+        obj[Avalonia.Controls.Slider.TickPlacementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTickPlacement(this Avalonia.Controls.Slider obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Slider.TickPlacementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.TickPlacement> ObserveTickPlacement(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Slider.TickPlacementProperty);
     }
 
     public static T TickPlacementNone<T>(this T obj) where T : Avalonia.Controls.Slider

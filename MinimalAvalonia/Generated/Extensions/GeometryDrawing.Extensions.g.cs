@@ -17,9 +17,20 @@ public static partial class GeometryDrawingExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Geometry(this Avalonia.Media.GeometryDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Geometry<T>(this T obj, IObservable<Avalonia.Media.Geometry> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.GeometryDrawing
+    {
+        obj[Avalonia.Media.GeometryDrawing.GeometryProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindGeometry(this Avalonia.Media.GeometryDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.GeometryDrawing.GeometryProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Geometry> ObserveGeometry(this Avalonia.Media.GeometryDrawing obj)
+    {
+        return obj.GetObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
     }
 
     // BrushProperty
@@ -36,9 +47,20 @@ public static partial class GeometryDrawingExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Brush(this Avalonia.Media.GeometryDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Brush<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.GeometryDrawing
+    {
+        obj[Avalonia.Media.GeometryDrawing.BrushProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBrush(this Avalonia.Media.GeometryDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.GeometryDrawing.BrushProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveBrush(this Avalonia.Media.GeometryDrawing obj)
+    {
+        return obj.GetObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
     }
 
     // PenProperty
@@ -55,8 +77,19 @@ public static partial class GeometryDrawingExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Pen(this Avalonia.Media.GeometryDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Pen<T>(this T obj, IObservable<Avalonia.Media.Pen> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.GeometryDrawing
+    {
+        obj[Avalonia.Media.GeometryDrawing.PenProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPen(this Avalonia.Media.GeometryDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.GeometryDrawing.PenProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Pen> ObservePen(this Avalonia.Media.GeometryDrawing obj)
+    {
+        return obj.GetObservable(Avalonia.Media.GeometryDrawing.PenProperty);
     }
 }

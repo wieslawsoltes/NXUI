@@ -17,8 +17,19 @@ public static partial class ExperimentalAcrylicBorderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Material(this Avalonia.Controls.ExperimentalAcrylicBorder obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Material<T>(this T obj, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        obj[Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaterial(this Avalonia.Controls.ExperimentalAcrylicBorder obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> ObserveMaterial(this Avalonia.Controls.ExperimentalAcrylicBorder obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
     }
 }

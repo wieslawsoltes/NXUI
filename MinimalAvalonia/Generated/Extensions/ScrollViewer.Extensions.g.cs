@@ -5,16 +5,26 @@ public static partial class ScrollViewerExtensions
 {
     // CanHorizontallyScrollProperty
 
-    public static Avalonia.Data.IBinding CanHorizontallyScroll(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindCanHorizontallyScroll(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Boolean> ObserveCanHorizontallyScroll(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty);
+    }
+
     // CanVerticallyScrollProperty
 
-    public static Avalonia.Data.IBinding CanVerticallyScroll(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindCanVerticallyScroll(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveCanVerticallyScroll(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty);
     }
 
     // ExtentProperty
@@ -31,9 +41,20 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Extent(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Extent<T>(this T obj, IObservable<Avalonia.Size> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ScrollViewer
+    {
+        obj[Avalonia.Controls.ScrollViewer.ExtentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindExtent(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.ExtentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Size> ObserveExtent(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.ExtentProperty);
     }
 
     // OffsetProperty
@@ -50,9 +71,20 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Offset(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Offset<T>(this T obj, IObservable<Avalonia.Vector> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ScrollViewer
+    {
+        obj[Avalonia.Controls.ScrollViewer.OffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOffset(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.OffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Vector> ObserveOffset(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.OffsetProperty);
     }
 
     // ViewportProperty
@@ -69,30 +101,56 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Viewport(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Viewport<T>(this T obj, IObservable<Avalonia.Size> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ScrollViewer
+    {
+        obj[Avalonia.Controls.ScrollViewer.ViewportProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindViewport(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.ViewportProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<Avalonia.Size> ObserveViewport(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.ViewportProperty);
+    }
+
     // LargeChangeProperty
 
-    public static Avalonia.Data.IBinding LargeChange(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindLargeChange(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.LargeChangeProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<Avalonia.Size> ObserveLargeChange(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.LargeChangeProperty);
+    }
+
     // SmallChangeProperty
 
-    public static Avalonia.Data.IBinding SmallChange(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindSmallChange(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.SmallChangeProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<Avalonia.Size> ObserveSmallChange(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.SmallChangeProperty);
+    }
+
     // HorizontalScrollBarMaximumProperty
 
-    public static Avalonia.Data.IBinding HorizontalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindHorizontalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveHorizontalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty);
     }
 
     // HorizontalScrollBarValueProperty
@@ -109,16 +167,32 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HorizontalScrollBarValue(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HorizontalScrollBarValue<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ScrollViewer
+    {
+        obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalScrollBarValue(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Double> ObserveHorizontalScrollBarValue(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty);
+    }
+
     // HorizontalScrollBarViewportSizeProperty
 
-    public static Avalonia.Data.IBinding HorizontalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindHorizontalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveHorizontalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty);
     }
 
     // HorizontalScrollBarVisibilityProperty
@@ -135,9 +209,20 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HorizontalScrollBarVisibility(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HorizontalScrollBarVisibility<T>(this T obj, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalScrollBarVisibility(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> ObserveHorizontalScrollBarVisibility(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty);
     }
 
     public static T HorizontalScrollBarVisibilityDisabled<T>(this T obj) where T : Avalonia.Controls.Control
@@ -166,9 +251,14 @@ public static partial class ScrollViewerExtensions
 
     // VerticalScrollBarMaximumProperty
 
-    public static Avalonia.Data.IBinding VerticalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindVerticalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveVerticalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty);
     }
 
     // VerticalScrollBarValueProperty
@@ -185,16 +275,32 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding VerticalScrollBarValue(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T VerticalScrollBarValue<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ScrollViewer
+    {
+        obj[Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalScrollBarValue(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Double> ObserveVerticalScrollBarValue(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty);
+    }
+
     // VerticalScrollBarViewportSizeProperty
 
-    public static Avalonia.Data.IBinding VerticalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindVerticalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveVerticalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty);
     }
 
     // VerticalScrollBarVisibilityProperty
@@ -211,9 +317,20 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding VerticalScrollBarVisibility(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T VerticalScrollBarVisibility<T>(this T obj, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalScrollBarVisibility(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> ObserveVerticalScrollBarVisibility(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty);
     }
 
     public static T VerticalScrollBarVisibilityDisabled<T>(this T obj) where T : Avalonia.Controls.Control
@@ -242,9 +359,14 @@ public static partial class ScrollViewerExtensions
 
     // IsExpandedProperty
 
-    public static Avalonia.Data.IBinding IsExpanded(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindIsExpanded(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.IsExpandedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsExpanded(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.IsExpandedProperty);
     }
 
     // AllowAutoHideProperty
@@ -261,9 +383,20 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AllowAutoHide(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AllowAutoHide<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.AllowAutoHideProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAllowAutoHide(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.AllowAutoHideProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAllowAutoHide(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty);
     }
 
     // IsScrollChainingEnabledProperty
@@ -280,8 +413,19 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsScrollChainingEnabled(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsScrollChainingEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsScrollChainingEnabled(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsScrollChainingEnabled(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
     }
 }

@@ -17,9 +17,20 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AsciiOnly(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AsciiOnly<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MaskedTextBox
+    {
+        obj[Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAsciiOnly(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAsciiOnly(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty);
     }
 
     // CultureProperty
@@ -36,9 +47,20 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Culture(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Culture<T>(this T obj, IObservable<System.Globalization.CultureInfo> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MaskedTextBox
+    {
+        obj[Avalonia.Controls.MaskedTextBox.CultureProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCulture(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MaskedTextBox.CultureProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Globalization.CultureInfo> ObserveCulture(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
     }
 
     // HidePromptOnLeaveProperty
@@ -55,23 +77,44 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HidePromptOnLeave(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HidePromptOnLeave<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MaskedTextBox
+    {
+        obj[Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHidePromptOnLeave(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Boolean> ObserveHidePromptOnLeave(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty);
+    }
+
     // MaskCompletedProperty
 
-    public static Avalonia.Data.IBinding MaskCompleted(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindMaskCompleted(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.MaskedTextBox.MaskCompletedProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<System.Nullable<System.Boolean>> ObserveMaskCompleted(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskCompletedProperty);
+    }
+
     // MaskFullProperty
 
-    public static Avalonia.Data.IBinding MaskFull(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindMaskFull(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Controls.MaskedTextBox.MaskFullProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Nullable<System.Boolean>> ObserveMaskFull(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskFullProperty);
     }
 
     // MaskProperty
@@ -88,9 +131,20 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Mask(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Mask<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MaskedTextBox
+    {
+        obj[Avalonia.Controls.MaskedTextBox.MaskProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMask(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MaskedTextBox.MaskProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveMask(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
     }
 
     // PasswordCharProperty
@@ -107,9 +161,20 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PasswordChar(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PasswordChar<T>(this T obj, IObservable<System.Char> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MaskedTextBox
+    {
+        obj[Avalonia.Controls.MaskedTextBox.PasswordCharProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPasswordChar(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MaskedTextBox.PasswordCharProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Char> ObservePasswordChar(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.PasswordCharProperty);
     }
 
     // PromptCharProperty
@@ -126,9 +191,20 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PromptChar(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PromptChar<T>(this T obj, IObservable<System.Char> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MaskedTextBox
+    {
+        obj[Avalonia.Controls.MaskedTextBox.PromptCharProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPromptChar(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MaskedTextBox.PromptCharProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Char> ObservePromptChar(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.PromptCharProperty);
     }
 
     // ResetOnPromptProperty
@@ -145,9 +221,20 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ResetOnPrompt(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ResetOnPrompt<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MaskedTextBox
+    {
+        obj[Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindResetOnPrompt(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveResetOnPrompt(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty);
     }
 
     // ResetOnSpaceProperty
@@ -164,8 +251,19 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ResetOnSpace(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ResetOnSpace<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MaskedTextBox
+    {
+        obj[Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindResetOnSpace(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveResetOnSpace(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty);
     }
 }

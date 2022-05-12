@@ -17,8 +17,19 @@ public static partial class ToggleSplitButtonExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsChecked(this Avalonia.Controls.ToggleSplitButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsChecked<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ToggleSplitButton
+    {
+        obj[Avalonia.Controls.ToggleSplitButton.IsCheckedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsChecked(this Avalonia.Controls.ToggleSplitButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToggleSplitButton.IsCheckedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsChecked(this Avalonia.Controls.ToggleSplitButton obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty);
     }
 }

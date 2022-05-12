@@ -17,9 +17,20 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Template(this Avalonia.Controls.Primitives.TemplatedControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Template<T>(this T obj, IObservable<Avalonia.Controls.Templates.IControlTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTemplate(this Avalonia.Controls.Primitives.TemplatedControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IControlTemplate> ObserveTemplate(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
     }
 
     // IsTemplateFocusTargetProperty
@@ -36,8 +47,19 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsTemplateFocusTarget(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsTemplateFocusTarget<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsTemplateFocusTarget(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsTemplateFocusTarget(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
     }
 }

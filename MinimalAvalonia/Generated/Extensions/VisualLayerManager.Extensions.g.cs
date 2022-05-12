@@ -17,8 +17,19 @@ public static partial class VisualLayerManagerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ChromeOverlayLayer(this Avalonia.Controls.Primitives.VisualLayerManager obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ChromeOverlayLayer<T>(this T obj, IObservable<Avalonia.Controls.Primitives.ChromeOverlayLayer> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.VisualLayerManager
+    {
+        obj[Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindChromeOverlayLayer(this Avalonia.Controls.Primitives.VisualLayerManager obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.ChromeOverlayLayer> ObserveChromeOverlayLayer(this Avalonia.Controls.Primitives.VisualLayerManager obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty);
     }
 }

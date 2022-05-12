@@ -17,9 +17,20 @@ public static partial class CarouselExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsVirtualized(this Avalonia.Controls.Carousel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsVirtualized<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Carousel
+    {
+        obj[Avalonia.Controls.Carousel.IsVirtualizedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsVirtualized(this Avalonia.Controls.Carousel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Carousel.IsVirtualizedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsVirtualized(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Carousel.IsVirtualizedProperty);
     }
 
     // PageTransitionProperty
@@ -36,8 +47,19 @@ public static partial class CarouselExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding PageTransition(this Avalonia.Controls.Carousel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T PageTransition<T>(this T obj, IObservable<Avalonia.Animation.IPageTransition> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Carousel
+    {
+        obj[Avalonia.Controls.Carousel.PageTransitionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPageTransition(this Avalonia.Controls.Carousel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Carousel.PageTransitionProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Animation.IPageTransition> ObservePageTransition(this Avalonia.Controls.Carousel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Carousel.PageTransitionProperty);
     }
 }

@@ -17,9 +17,20 @@ public static partial class AdornerLayerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding AdornedElement(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T AdornedElement<T>(this T obj, IObservable<Avalonia.Visual> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAdornedElement(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Visual> ObserveAdornedElement(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty);
     }
 
     // IsClipEnabledProperty
@@ -36,8 +47,19 @@ public static partial class AdornerLayerExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsClipEnabled(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsClipEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsClipEnabled(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsClipEnabled(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty);
     }
 }

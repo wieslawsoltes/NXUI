@@ -17,9 +17,20 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Tip(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Tip<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.TipProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTip(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToolTip.TipProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveTip(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToolTip.TipProperty);
     }
 
     // IsOpenProperty
@@ -36,9 +47,20 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsOpen(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsOpen<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.IsOpenProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsOpen(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToolTip.IsOpenProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsOpen(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToolTip.IsOpenProperty);
     }
 
     // PlacementProperty
@@ -55,9 +77,20 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Placement(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Placement<T>(this T obj, IObservable<Avalonia.Controls.PlacementMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacement(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToolTip.PlacementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.PlacementMode> ObservePlacement(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToolTip.PlacementProperty);
     }
 
     public static T PlacementPointer<T>(this T obj) where T : Avalonia.Controls.Control
@@ -110,9 +143,20 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding HorizontalOffset(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T HorizontalOffset<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.HorizontalOffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalOffset(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToolTip.HorizontalOffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveHorizontalOffset(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToolTip.HorizontalOffsetProperty);
     }
 
     // VerticalOffsetProperty
@@ -129,9 +173,20 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding VerticalOffset(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T VerticalOffset<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.VerticalOffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalOffset(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToolTip.VerticalOffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveVerticalOffset(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToolTip.VerticalOffsetProperty);
     }
 
     // ShowDelayProperty
@@ -148,8 +203,19 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ShowDelay(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ShowDelay<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.ShowDelayProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindShowDelay(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ToolTip.ShowDelayProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveShowDelay(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToolTip.ShowDelayProperty);
     }
 }

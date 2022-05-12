@@ -17,9 +17,20 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ClipValueToMinMax(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ClipValueToMinMax<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindClipValueToMinMax(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveClipValueToMinMax(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty);
     }
 
     // NumberFormatProperty
@@ -36,9 +47,20 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding NumberFormat(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T NumberFormat<T>(this T obj, IObservable<System.Globalization.NumberFormatInfo> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.NumberFormatProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindNumberFormat(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.NumberFormatProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Globalization.NumberFormatInfo> ObserveNumberFormat(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
     }
 
     // FormatStringProperty
@@ -55,9 +77,20 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding FormatString(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T FormatString<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.FormatStringProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFormatString(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.FormatStringProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveFormatString(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.FormatStringProperty);
     }
 
     // IncrementProperty
@@ -74,9 +107,20 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Increment(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Increment<T>(this T obj, IObservable<System.Decimal> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.IncrementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIncrement(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.IncrementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Decimal> ObserveIncrement(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.IncrementProperty);
     }
 
     // IsReadOnlyProperty
@@ -93,9 +137,20 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsReadOnly(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsReadOnly<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.IsReadOnlyProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsReadOnly(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.IsReadOnlyProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsReadOnly(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty);
     }
 
     // MaximumProperty
@@ -112,9 +167,20 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Maximum(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Maximum<T>(this T obj, IObservable<System.Decimal> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.MaximumProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaximum(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.MaximumProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Decimal> ObserveMaximum(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.MaximumProperty);
     }
 
     // MinimumProperty
@@ -131,9 +197,20 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Minimum(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Minimum<T>(this T obj, IObservable<System.Decimal> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.MinimumProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMinimum(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.MinimumProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Decimal> ObserveMinimum(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.MinimumProperty);
     }
 
     // ParsingNumberStyleProperty
@@ -150,9 +227,20 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ParsingNumberStyle(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ParsingNumberStyle<T>(this T obj, IObservable<System.Globalization.NumberStyles> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindParsingNumberStyle(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Globalization.NumberStyles> ObserveParsingNumberStyle(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty);
     }
 
     public static T ParsingNumberStyleNone<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
@@ -271,9 +359,20 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Text(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Text<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.TextProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindText(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.TextProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveText(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.TextProperty);
     }
 
     // ValueProperty
@@ -290,9 +389,20 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Value(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Value<T>(this T obj, IObservable<System.Decimal> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ValueProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindValue(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.ValueProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Decimal> ObserveValue(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.ValueProperty);
     }
 
     // WatermarkProperty
@@ -309,8 +419,19 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Watermark(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Watermark<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.WatermarkProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWatermark(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.NumericUpDown.WatermarkProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveWatermark(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
     }
 }

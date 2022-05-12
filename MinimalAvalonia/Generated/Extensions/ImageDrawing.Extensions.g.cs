@@ -17,9 +17,20 @@ public static partial class ImageDrawingExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ImageSource(this Avalonia.Media.ImageDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ImageSource<T>(this T obj, IObservable<Avalonia.Media.IImage> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ImageDrawing
+    {
+        obj[Avalonia.Media.ImageDrawing.ImageSourceProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindImageSource(this Avalonia.Media.ImageDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ImageDrawing.ImageSourceProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IImage> ObserveImageSource(this Avalonia.Media.ImageDrawing obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
     }
 
     // RectProperty
@@ -36,8 +47,19 @@ public static partial class ImageDrawingExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Rect(this Avalonia.Media.ImageDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Rect<T>(this T obj, IObservable<Avalonia.Rect> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.ImageDrawing
+    {
+        obj[Avalonia.Media.ImageDrawing.RectProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRect(this Avalonia.Media.ImageDrawing obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.ImageDrawing.RectProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Rect> ObserveRect(this Avalonia.Media.ImageDrawing obj)
+    {
+        return obj.GetObservable(Avalonia.Media.ImageDrawing.RectProperty);
     }
 }

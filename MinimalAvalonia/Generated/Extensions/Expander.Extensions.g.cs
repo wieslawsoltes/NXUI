@@ -17,9 +17,20 @@ public static partial class ExpanderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ContentTransition(this Avalonia.Controls.Expander obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ContentTransition<T>(this T obj, IObservable<Avalonia.Animation.IPageTransition> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Expander
+    {
+        obj[Avalonia.Controls.Expander.ContentTransitionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindContentTransition(this Avalonia.Controls.Expander obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Expander.ContentTransitionProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Animation.IPageTransition> ObserveContentTransition(this Avalonia.Controls.Expander obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
     }
 
     // ExpandDirectionProperty
@@ -36,9 +47,20 @@ public static partial class ExpanderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ExpandDirection(this Avalonia.Controls.Expander obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ExpandDirection<T>(this T obj, IObservable<Avalonia.Controls.ExpandDirection> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Expander
+    {
+        obj[Avalonia.Controls.Expander.ExpandDirectionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindExpandDirection(this Avalonia.Controls.Expander obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Expander.ExpandDirectionProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ExpandDirection> ObserveExpandDirection(this Avalonia.Controls.Expander obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Expander.ExpandDirectionProperty);
     }
 
     public static T ExpandDirectionDown<T>(this T obj) where T : Avalonia.Controls.Expander
@@ -79,8 +101,19 @@ public static partial class ExpanderExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsExpanded(this Avalonia.Controls.Expander obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsExpanded<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Expander
+    {
+        obj[Avalonia.Controls.Expander.IsExpandedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsExpanded(this Avalonia.Controls.Expander obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.Expander.IsExpandedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsExpanded(this Avalonia.Controls.Expander obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Expander.IsExpandedProperty);
     }
 }

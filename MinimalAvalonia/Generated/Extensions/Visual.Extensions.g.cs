@@ -5,16 +5,26 @@ public static partial class VisualExtensions
 {
     // BoundsProperty
 
-    public static Avalonia.Data.IBinding Bounds(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindBounds(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Visual.BoundsProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<Avalonia.Rect> ObserveBounds(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.BoundsProperty);
+    }
+
     // TransformedBoundsProperty
 
-    public static Avalonia.Data.IBinding TransformedBounds(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindTransformedBounds(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Visual.TransformedBoundsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Nullable<Avalonia.VisualTree.TransformedBounds>> ObserveTransformedBounds(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.TransformedBoundsProperty);
     }
 
     // ClipToBoundsProperty
@@ -31,9 +41,20 @@ public static partial class VisualExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ClipToBounds(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ClipToBounds<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.ClipToBoundsProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindClipToBounds(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Visual.ClipToBoundsProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveClipToBounds(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.ClipToBoundsProperty);
     }
 
     // ClipProperty
@@ -50,9 +71,20 @@ public static partial class VisualExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Clip(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Clip<T>(this T obj, IObservable<Avalonia.Media.Geometry> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.ClipProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindClip(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Visual.ClipProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Geometry> ObserveClip(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.ClipProperty);
     }
 
     // IsVisibleProperty
@@ -69,9 +101,20 @@ public static partial class VisualExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding IsVisible(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T IsVisible<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.IsVisibleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsVisible(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Visual.IsVisibleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsVisible(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.IsVisibleProperty);
     }
 
     // OpacityProperty
@@ -88,9 +131,20 @@ public static partial class VisualExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding Opacity(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T Opacity<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.OpacityProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOpacity(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Visual.OpacityProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveOpacity(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.OpacityProperty);
     }
 
     // OpacityMaskProperty
@@ -107,16 +161,32 @@ public static partial class VisualExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding OpacityMask(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T OpacityMask<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.OpacityMaskProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOpacityMask(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Visual.OpacityMaskProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<Avalonia.Media.IBrush> ObserveOpacityMask(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.OpacityMaskProperty);
+    }
+
     // HasMirrorTransformProperty
 
-    public static Avalonia.Data.IBinding HasMirrorTransform(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindHasMirrorTransform(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Visual.HasMirrorTransformProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveHasMirrorTransform(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.HasMirrorTransformProperty);
     }
 
     // RenderTransformProperty
@@ -133,9 +203,20 @@ public static partial class VisualExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding RenderTransform(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T RenderTransform<T>(this T obj, IObservable<Avalonia.Media.ITransform> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.RenderTransformProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRenderTransform(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Visual.RenderTransformProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.ITransform> ObserveRenderTransform(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.RenderTransformProperty);
     }
 
     // RenderTransformOriginProperty
@@ -152,16 +233,32 @@ public static partial class VisualExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding RenderTransformOrigin(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T RenderTransformOrigin<T>(this T obj, IObservable<Avalonia.RelativePoint> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.RenderTransformOriginProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindRenderTransformOrigin(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Visual.RenderTransformOriginProperty.Bind().WithMode(mode)];
     }
 
+    public static IObservable<Avalonia.RelativePoint> ObserveRenderTransformOrigin(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.RenderTransformOriginProperty);
+    }
+
     // VisualParentProperty
 
-    public static Avalonia.Data.IBinding VisualParent(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding BindVisualParent(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[Avalonia.Visual.VisualParentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.VisualTree.IVisual> ObserveVisualParent(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.VisualParentProperty);
     }
 
     // ZIndexProperty
@@ -178,8 +275,19 @@ public static partial class VisualExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding ZIndex(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T ZIndex<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.ZIndexProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindZIndex(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Visual.ZIndexProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveZIndex(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.ZIndexProperty);
     }
 }

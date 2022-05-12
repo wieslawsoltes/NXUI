@@ -17,9 +17,20 @@ public static partial class LineGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding StartPoint(this Avalonia.Media.LineGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T StartPoint<T>(this T obj, IObservable<Avalonia.Point> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.LineGeometry
+    {
+        obj[Avalonia.Media.LineGeometry.StartPointProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindStartPoint(this Avalonia.Media.LineGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.LineGeometry.StartPointProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Point> ObserveStartPoint(this Avalonia.Media.LineGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.LineGeometry.StartPointProperty);
     }
 
     // EndPointProperty
@@ -36,8 +47,19 @@ public static partial class LineGeometryExtensions
         return obj;
     }
 
-    public static Avalonia.Data.IBinding EndPoint(this Avalonia.Media.LineGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T EndPoint<T>(this T obj, IObservable<Avalonia.Point> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.LineGeometry
+    {
+        obj[Avalonia.Media.LineGeometry.EndPointProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindEndPoint(this Avalonia.Media.LineGeometry obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Media.LineGeometry.EndPointProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Point> ObserveEndPoint(this Avalonia.Media.LineGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.LineGeometry.EndPointProperty);
     }
 }
