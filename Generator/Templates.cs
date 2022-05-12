@@ -49,9 +49,20 @@ public static partial class MinimalAvaloniaProperties
         return obj;
     }
 
-    public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static T %Name%<T>(this T obj, IObservable<%ValueType%> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : %OwnerType%
+    {
+        obj[%ClassType%.%Name%Property.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding Bind%Name%(this %OwnerType% obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<%ValueType%> Observe%Name%(this %OwnerType% obj)
+    {
+        return obj.GetObservable(%ClassType%.%Name%Property);
     }";
 
     public static string PropertyMethodsTemplateSealed = @"    // %Name%Property
@@ -68,16 +79,32 @@ public static partial class MinimalAvaloniaProperties
         return obj;
     }
 
-    public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static %OwnerType% %Name%(this %OwnerType% obj, IObservable<%ValueType%> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[%ClassType%.%Name%Property.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding Bind%Name%(this %OwnerType% obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<%ValueType%> Observe%Name%(this %OwnerType% obj)
+    {
+        return obj.GetObservable(%OwnerType%.%Name%Property);
     }";
 
     public static string PropertyMethodsTemplateReadOnly = @"    // %Name%Property
 
-    public static Avalonia.Data.IBinding %Name%(this %OwnerType% obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    public static Avalonia.Data.IBinding Bind%Name%(this %OwnerType% obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
     {
         return obj[%ClassType%.%Name%Property.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<%ValueType%> Observe%Name%(this %OwnerType% obj)
+    {
+        return obj.GetObservable(%ClassType%.%Name%Property);
     }";
 
     public static string ClassExtensionsHeaderTemplate = @"
