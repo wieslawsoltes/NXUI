@@ -32,4 +32,11 @@ public static partial class VisualLayerManagerExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty);
     }
+
+    public static T OnChromeOverlayLayer<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.ChromeOverlayLayer>> handler) where T : Avalonia.Controls.Primitives.VisualLayerManager
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty);
+        handler(observable);
+        return obj;
+    }
 }

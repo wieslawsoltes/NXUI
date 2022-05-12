@@ -33,6 +33,13 @@ public static partial class ToggleSwitchExtensions
         return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
     }
 
+    public static T OnOffContent<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
+        handler(observable);
+        return obj;
+    }
+
     // OffContentTemplateProperty
 
     public static T OffContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ToggleSwitch
@@ -61,6 +68,13 @@ public static partial class ToggleSwitchExtensions
     public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveOffContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
     {
         return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
+    }
+
+    public static T OnOffContentTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
+        handler(observable);
+        return obj;
     }
 
     // OnContentProperty
@@ -93,6 +107,13 @@ public static partial class ToggleSwitchExtensions
         return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
     }
 
+    public static T OnOnContent<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
+        handler(observable);
+        return obj;
+    }
+
     // OnContentTemplateProperty
 
     public static T OnContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ToggleSwitch
@@ -121,5 +142,12 @@ public static partial class ToggleSwitchExtensions
     public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveOnContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
     {
         return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
+    }
+
+    public static T OnOnContentTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
+        handler(observable);
+        return obj;
     }
 }

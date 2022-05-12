@@ -33,6 +33,13 @@ public static partial class MenuFlyoutExtensions
         return obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemsProperty);
     }
 
+    public static T OnItems<T>(this T obj, Action<IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.MenuFlyout
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemsProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ItemTemplateProperty
 
     public static T ItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.MenuFlyout
@@ -61,5 +68,12 @@ public static partial class MenuFlyoutExtensions
     public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate(this Avalonia.Controls.MenuFlyout obj)
     {
         return obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
+    }
+
+    public static T OnItemTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.MenuFlyout
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
+        handler(observable);
+        return obj;
     }
 }

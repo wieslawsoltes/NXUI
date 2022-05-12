@@ -32,4 +32,11 @@ public static partial class InlineUIContainerExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty);
     }
+
+    public static T OnChild<T>(this T obj, Action<IObservable<Avalonia.Controls.IControl>> handler) where T : Avalonia.Controls.Documents.InlineUIContainer
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty);
+        handler(observable);
+        return obj;
+    }
 }

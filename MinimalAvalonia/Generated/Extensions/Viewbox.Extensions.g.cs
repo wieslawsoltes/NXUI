@@ -33,6 +33,13 @@ public static partial class ViewboxExtensions
         return obj.GetObservable(Avalonia.Controls.Viewbox.StretchProperty);
     }
 
+    public static T OnStretch<T>(this T obj, Action<IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Controls.Viewbox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Viewbox.StretchProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T StretchNone<T>(this T obj) where T : Avalonia.Controls.Viewbox
     {
         obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.None;
@@ -85,6 +92,13 @@ public static partial class ViewboxExtensions
     public static IObservable<Avalonia.Media.StretchDirection> ObserveStretchDirection(this Avalonia.Controls.Viewbox obj)
     {
         return obj.GetObservable(Avalonia.Controls.Viewbox.StretchDirectionProperty);
+    }
+
+    public static T OnStretchDirection<T>(this T obj, Action<IObservable<Avalonia.Media.StretchDirection>> handler) where T : Avalonia.Controls.Viewbox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Viewbox.StretchDirectionProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T StretchDirectionUpOnly<T>(this T obj) where T : Avalonia.Controls.Viewbox

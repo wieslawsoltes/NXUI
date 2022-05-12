@@ -33,6 +33,13 @@ public static partial class WindowNotificationManagerExtensions
         return obj.GetObservable(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty);
     }
 
+    public static T OnPosition<T>(this T obj, Action<IObservable<Avalonia.Controls.Notifications.NotificationPosition>> handler) where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T PositionTopLeft<T>(this T obj) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.TopLeft;
@@ -85,5 +92,12 @@ public static partial class WindowNotificationManagerExtensions
     public static IObservable<System.Int32> ObserveMaxItems(this Avalonia.Controls.Notifications.WindowNotificationManager obj)
     {
         return obj.GetObservable(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty);
+    }
+
+    public static T OnMaxItems<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty);
+        handler(observable);
+        return obj;
     }
 }

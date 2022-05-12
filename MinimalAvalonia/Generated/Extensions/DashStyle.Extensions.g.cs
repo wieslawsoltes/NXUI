@@ -33,6 +33,13 @@ public static partial class DashStyleExtensions
         return obj.GetObservable(Avalonia.Media.DashStyle.DashesProperty);
     }
 
+    public static T OnDashes<T>(this T obj, Action<IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Media.DashStyle
+    {
+        var observable = obj.GetObservable(Avalonia.Media.DashStyle.DashesProperty);
+        handler(observable);
+        return obj;
+    }
+
     // OffsetProperty
 
     public static T Offset<T>(this T obj, System.Double value) where T : Avalonia.Media.DashStyle
@@ -61,5 +68,12 @@ public static partial class DashStyleExtensions
     public static IObservable<System.Double> ObserveOffset(this Avalonia.Media.DashStyle obj)
     {
         return obj.GetObservable(Avalonia.Media.DashStyle.OffsetProperty);
+    }
+
+    public static T OnOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.DashStyle
+    {
+        var observable = obj.GetObservable(Avalonia.Media.DashStyle.OffsetProperty);
+        handler(observable);
+        return obj;
     }
 }

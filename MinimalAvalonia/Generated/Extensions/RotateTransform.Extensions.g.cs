@@ -33,6 +33,13 @@ public static partial class RotateTransformExtensions
         return obj.GetObservable(Avalonia.Media.RotateTransform.AngleProperty);
     }
 
+    public static T OnAngle<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.RotateTransform
+    {
+        var observable = obj.GetObservable(Avalonia.Media.RotateTransform.AngleProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CenterXProperty
 
     public static T CenterX<T>(this T obj, System.Double value) where T : Avalonia.Media.RotateTransform
@@ -63,6 +70,13 @@ public static partial class RotateTransformExtensions
         return obj.GetObservable(Avalonia.Media.RotateTransform.CenterXProperty);
     }
 
+    public static T OnCenterX<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.RotateTransform
+    {
+        var observable = obj.GetObservable(Avalonia.Media.RotateTransform.CenterXProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CenterYProperty
 
     public static T CenterY<T>(this T obj, System.Double value) where T : Avalonia.Media.RotateTransform
@@ -91,5 +105,12 @@ public static partial class RotateTransformExtensions
     public static IObservable<System.Double> ObserveCenterY(this Avalonia.Media.RotateTransform obj)
     {
         return obj.GetObservable(Avalonia.Media.RotateTransform.CenterYProperty);
+    }
+
+    public static T OnCenterY<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.RotateTransform
+    {
+        var observable = obj.GetObservable(Avalonia.Media.RotateTransform.CenterYProperty);
+        handler(observable);
+        return obj;
     }
 }

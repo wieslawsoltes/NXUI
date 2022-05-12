@@ -32,4 +32,11 @@ public static partial class CalendarItemExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
     }
+
+    public static Avalonia.Controls.Primitives.CalendarItem OnDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Action<IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
+        handler(observable);
+        return obj;
+    }
 }

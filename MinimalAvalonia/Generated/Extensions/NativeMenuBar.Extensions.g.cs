@@ -32,4 +32,11 @@ public static partial class NativeMenuBarExtensions
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty);
     }
+
+    public static T OnEnableMenuItemClickForwarding<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty);
+        handler(observable);
+        return obj;
+    }
 }

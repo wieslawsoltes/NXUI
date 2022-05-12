@@ -33,6 +33,13 @@ public static partial class ScrollBarExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty);
     }
 
+    public static T OnViewportSize<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty);
+        handler(observable);
+        return obj;
+    }
+
     // VisibilityProperty
 
     public static T Visibility<T>(this T obj, Avalonia.Controls.Primitives.ScrollBarVisibility value) where T : Avalonia.Controls.Primitives.ScrollBar
@@ -61,6 +68,13 @@ public static partial class ScrollBarExtensions
     public static IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> ObserveVisibility(this Avalonia.Controls.Primitives.ScrollBar obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty);
+    }
+
+    public static T OnVisibility<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T VisibilityDisabled<T>(this T obj) where T : Avalonia.Controls.Primitives.ScrollBar
@@ -117,6 +131,13 @@ public static partial class ScrollBarExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty);
     }
 
+    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Controls.Primitives.ScrollBar
     {
         obj[Avalonia.Controls.Primitives.ScrollBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
@@ -139,6 +160,13 @@ public static partial class ScrollBarExtensions
     public static IObservable<System.Boolean> ObserveIsExpanded(this Avalonia.Controls.Primitives.ScrollBar obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);
+    }
+
+    public static Avalonia.Controls.Primitives.ScrollBar OnIsExpanded(this Avalonia.Controls.Primitives.ScrollBar obj, Action<IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);
+        handler(observable);
+        return obj;
     }
 
     // AllowAutoHideProperty
@@ -171,6 +199,13 @@ public static partial class ScrollBarExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty);
     }
 
+    public static T OnAllowAutoHide<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty);
+        handler(observable);
+        return obj;
+    }
+
     // HideDelayProperty
 
     public static T HideDelay<T>(this T obj, System.TimeSpan value) where T : Avalonia.Controls.Primitives.ScrollBar
@@ -201,6 +236,13 @@ public static partial class ScrollBarExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty);
     }
 
+    public static T OnHideDelay<T>(this T obj, Action<IObservable<System.TimeSpan>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ShowDelayProperty
 
     public static T ShowDelay<T>(this T obj, System.TimeSpan value) where T : Avalonia.Controls.Primitives.ScrollBar
@@ -229,5 +271,12 @@ public static partial class ScrollBarExtensions
     public static IObservable<System.TimeSpan> ObserveShowDelay(this Avalonia.Controls.Primitives.ScrollBar obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty);
+    }
+
+    public static T OnShowDelay<T>(this T obj, Action<IObservable<System.TimeSpan>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty);
+        handler(observable);
+        return obj;
     }
 }

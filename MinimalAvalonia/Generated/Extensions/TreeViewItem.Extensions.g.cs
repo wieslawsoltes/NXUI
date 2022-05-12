@@ -33,6 +33,13 @@ public static partial class TreeViewItemExtensions
         return obj.GetObservable(Avalonia.Controls.TreeViewItem.IsExpandedProperty);
     }
 
+    public static T OnIsExpanded<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TreeViewItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TreeViewItem.IsExpandedProperty);
+        handler(observable);
+        return obj;
+    }
+
     // LevelProperty
 
     public static Avalonia.Data.IBinding BindLevel(this Avalonia.Controls.TreeViewItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
@@ -43,5 +50,12 @@ public static partial class TreeViewItemExtensions
     public static IObservable<System.Int32> ObserveLevel(this Avalonia.Controls.TreeViewItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
+    }
+
+    public static Avalonia.Controls.TreeViewItem OnLevel(this Avalonia.Controls.TreeViewItem obj, Action<IObservable<System.Int32>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
+        handler(observable);
+        return obj;
     }
 }

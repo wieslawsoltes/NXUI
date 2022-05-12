@@ -14,4 +14,11 @@ public static partial class ListBoxExtensions
     {
         return obj.GetObservable(Avalonia.Controls.ListBox.ScrollProperty);
     }
+
+    public static Avalonia.Controls.ListBox OnScroll(this Avalonia.Controls.ListBox obj, Action<IObservable<Avalonia.Controls.Primitives.IScrollable>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ListBox.ScrollProperty);
+        handler(observable);
+        return obj;
+    }
 }

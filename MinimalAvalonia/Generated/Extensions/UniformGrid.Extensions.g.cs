@@ -33,6 +33,13 @@ public static partial class UniformGridExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.RowsProperty);
     }
 
+    public static T OnRows<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.RowsProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ColumnsProperty
 
     public static T Columns<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.Primitives.UniformGrid
@@ -63,6 +70,13 @@ public static partial class UniformGridExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty);
     }
 
+    public static T OnColumns<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty);
+        handler(observable);
+        return obj;
+    }
+
     // FirstColumnProperty
 
     public static T FirstColumn<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.Primitives.UniformGrid
@@ -91,5 +105,12 @@ public static partial class UniformGridExtensions
     public static IObservable<System.Int32> ObserveFirstColumn(this Avalonia.Controls.Primitives.UniformGrid obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty);
+    }
+
+    public static T OnFirstColumn<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty);
+        handler(observable);
+        return obj;
     }
 }

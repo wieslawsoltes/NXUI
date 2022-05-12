@@ -33,6 +33,13 @@ public static partial class QuadraticBezierSegmentExtensions
         return obj.GetObservable(Avalonia.Media.QuadraticBezierSegment.Point1Property);
     }
 
+    public static Avalonia.Media.QuadraticBezierSegment OnPoint1(this Avalonia.Media.QuadraticBezierSegment obj, Action<IObservable<Avalonia.Point>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.QuadraticBezierSegment.Point1Property);
+        handler(observable);
+        return obj;
+    }
+
     // Point2Property
 
     public static Avalonia.Media.QuadraticBezierSegment Point2(this Avalonia.Media.QuadraticBezierSegment obj, Avalonia.Point value)
@@ -61,5 +68,12 @@ public static partial class QuadraticBezierSegmentExtensions
     public static IObservable<Avalonia.Point> ObservePoint2(this Avalonia.Media.QuadraticBezierSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.QuadraticBezierSegment.Point2Property);
+    }
+
+    public static Avalonia.Media.QuadraticBezierSegment OnPoint2(this Avalonia.Media.QuadraticBezierSegment obj, Action<IObservable<Avalonia.Point>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Media.QuadraticBezierSegment.Point2Property);
+        handler(observable);
+        return obj;
     }
 }

@@ -33,6 +33,13 @@ public static partial class LineExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Line.StartPointProperty);
     }
 
+    public static T OnStartPoint<T>(this T obj, Action<IObservable<Avalonia.Point>> handler) where T : Avalonia.Controls.Shapes.Line
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Shapes.Line.StartPointProperty);
+        handler(observable);
+        return obj;
+    }
+
     // EndPointProperty
 
     public static T EndPoint<T>(this T obj, Avalonia.Point value) where T : Avalonia.Controls.Shapes.Line
@@ -61,5 +68,12 @@ public static partial class LineExtensions
     public static IObservable<Avalonia.Point> ObserveEndPoint(this Avalonia.Controls.Shapes.Line obj)
     {
         return obj.GetObservable(Avalonia.Controls.Shapes.Line.EndPointProperty);
+    }
+
+    public static T OnEndPoint<T>(this T obj, Action<IObservable<Avalonia.Point>> handler) where T : Avalonia.Controls.Shapes.Line
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Shapes.Line.EndPointProperty);
+        handler(observable);
+        return obj;
     }
 }

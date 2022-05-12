@@ -33,6 +33,13 @@ public static partial class TextDecorationExtensions
         return obj.GetObservable(Avalonia.Media.TextDecoration.LocationProperty);
     }
 
+    public static T OnLocation<T>(this T obj, Action<IObservable<Avalonia.Media.TextDecorationLocation>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetObservable(Avalonia.Media.TextDecoration.LocationProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T LocationUnderline<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Underline;
@@ -87,6 +94,13 @@ public static partial class TextDecorationExtensions
         return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeProperty);
     }
 
+    public static T OnStroke<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeProperty);
+        handler(observable);
+        return obj;
+    }
+
     // StrokeThicknessUnitProperty
 
     public static T StrokeThicknessUnit<T>(this T obj, Avalonia.Media.TextDecorationUnit value) where T : Avalonia.Media.TextDecoration
@@ -115,6 +129,13 @@ public static partial class TextDecorationExtensions
     public static IObservable<Avalonia.Media.TextDecorationUnit> ObserveStrokeThicknessUnit(this Avalonia.Media.TextDecoration obj)
     {
         return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty);
+    }
+
+    public static T OnStrokeThicknessUnit<T>(this T obj, Action<IObservable<Avalonia.Media.TextDecorationUnit>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T StrokeThicknessUnitFontRecommended<T>(this T obj) where T : Avalonia.Media.TextDecoration
@@ -165,6 +186,13 @@ public static partial class TextDecorationExtensions
         return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
     }
 
+    public static T OnStrokeDashArray<T>(this T obj, Action<IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
+        handler(observable);
+        return obj;
+    }
+
     // StrokeDashOffsetProperty
 
     public static T StrokeDashOffset<T>(this T obj, System.Double value) where T : Avalonia.Media.TextDecoration
@@ -193,6 +221,13 @@ public static partial class TextDecorationExtensions
     public static IObservable<System.Double> ObserveStrokeDashOffset(this Avalonia.Media.TextDecoration obj)
     {
         return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty);
+    }
+
+    public static T OnStrokeDashOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty);
+        handler(observable);
+        return obj;
     }
 
     // StrokeThicknessProperty
@@ -225,6 +260,13 @@ public static partial class TextDecorationExtensions
         return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeThicknessProperty);
     }
 
+    public static T OnStrokeThickness<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeThicknessProperty);
+        handler(observable);
+        return obj;
+    }
+
     // StrokeLineCapProperty
 
     public static T StrokeLineCap<T>(this T obj, Avalonia.Media.PenLineCap value) where T : Avalonia.Media.TextDecoration
@@ -253,6 +295,13 @@ public static partial class TextDecorationExtensions
     public static IObservable<Avalonia.Media.PenLineCap> ObserveStrokeLineCap(this Avalonia.Media.TextDecoration obj)
     {
         return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeLineCapProperty);
+    }
+
+    public static T OnStrokeLineCap<T>(this T obj, Action<IObservable<Avalonia.Media.PenLineCap>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeLineCapProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T StrokeLineCapFlat<T>(this T obj) where T : Avalonia.Media.TextDecoration
@@ -303,6 +352,13 @@ public static partial class TextDecorationExtensions
         return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeOffsetProperty);
     }
 
+    public static T OnStrokeOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeOffsetProperty);
+        handler(observable);
+        return obj;
+    }
+
     // StrokeOffsetUnitProperty
 
     public static T StrokeOffsetUnit<T>(this T obj, Avalonia.Media.TextDecorationUnit value) where T : Avalonia.Media.TextDecoration
@@ -331,6 +387,13 @@ public static partial class TextDecorationExtensions
     public static IObservable<Avalonia.Media.TextDecorationUnit> ObserveStrokeOffsetUnit(this Avalonia.Media.TextDecoration obj)
     {
         return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty);
+    }
+
+    public static T OnStrokeOffsetUnit<T>(this T obj, Action<IObservable<Avalonia.Media.TextDecorationUnit>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T StrokeOffsetUnitFontRecommended<T>(this T obj) where T : Avalonia.Media.TextDecoration

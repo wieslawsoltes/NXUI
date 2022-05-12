@@ -63,6 +63,13 @@ public static partial class MinimalAvaloniaProperties
     public static IObservable<%ValueType%> Observe%Name%(this %OwnerType% obj)
     {
         return obj.GetObservable(%ClassType%.%Name%Property);
+    }
+
+    public static T On%Name%<T>(this T obj, Action<IObservable<%ValueType%>> handler) where T : %OwnerType%
+    {
+        var observable = obj.GetObservable(%ClassType%.%Name%Property);
+        handler(observable);
+        return obj;
     }";
 
     public static string PropertyMethodsTemplateSealed = @"    // %Name%Property
@@ -93,6 +100,13 @@ public static partial class MinimalAvaloniaProperties
     public static IObservable<%ValueType%> Observe%Name%(this %OwnerType% obj)
     {
         return obj.GetObservable(%OwnerType%.%Name%Property);
+    }
+
+    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<IObservable<%ValueType%>> handler)
+    {
+        var observable = obj.GetObservable(%ClassType%.%Name%Property);
+        handler(observable);
+        return obj;
     }";
 
     public static string PropertyMethodsTemplateReadOnly = @"    // %Name%Property
@@ -105,6 +119,13 @@ public static partial class MinimalAvaloniaProperties
     public static IObservable<%ValueType%> Observe%Name%(this %OwnerType% obj)
     {
         return obj.GetObservable(%ClassType%.%Name%Property);
+    }
+
+    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<IObservable<%ValueType%>> handler)
+    {
+        var observable = obj.GetObservable(%ClassType%.%Name%Property);
+        handler(observable);
+        return obj;
     }";
 
     public static string ClassExtensionsHeaderTemplate = @"

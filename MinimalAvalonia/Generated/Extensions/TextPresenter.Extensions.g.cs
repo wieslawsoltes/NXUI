@@ -33,6 +33,13 @@ public static partial class TextPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty);
     }
 
+    public static T OnCaretIndex<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty);
+        handler(observable);
+        return obj;
+    }
+
     // RevealPasswordProperty
 
     public static T RevealPassword<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Presenters.TextPresenter
@@ -61,6 +68,13 @@ public static partial class TextPresenterExtensions
     public static IObservable<System.Boolean> ObserveRevealPassword(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty);
+    }
+
+    public static T OnRevealPassword<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty);
+        handler(observable);
+        return obj;
     }
 
     // PasswordCharProperty
@@ -93,6 +107,13 @@ public static partial class TextPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty);
     }
 
+    public static T OnPasswordChar<T>(this T obj, Action<IObservable<System.Char>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty);
+        handler(observable);
+        return obj;
+    }
+
     // SelectionBrushProperty
 
     public static T SelectionBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
@@ -121,6 +142,13 @@ public static partial class TextPresenterExtensions
     public static IObservable<Avalonia.Media.IBrush> ObserveSelectionBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty);
+    }
+
+    public static T OnSelectionBrush<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty);
+        handler(observable);
+        return obj;
     }
 
     // SelectionForegroundBrushProperty
@@ -153,6 +181,13 @@ public static partial class TextPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
     }
 
+    public static T OnSelectionForegroundBrush<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CaretBrushProperty
 
     public static T CaretBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
@@ -181,6 +216,13 @@ public static partial class TextPresenterExtensions
     public static IObservable<Avalonia.Media.IBrush> ObserveCaretBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty);
+    }
+
+    public static T OnCaretBrush<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty);
+        handler(observable);
+        return obj;
     }
 
     // SelectionStartProperty
@@ -213,6 +255,13 @@ public static partial class TextPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty);
     }
 
+    public static T OnSelectionStart<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty);
+        handler(observable);
+        return obj;
+    }
+
     // SelectionEndProperty
 
     public static T SelectionEnd<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.Presenters.TextPresenter
@@ -243,6 +292,13 @@ public static partial class TextPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty);
     }
 
+    public static T OnSelectionEnd<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty);
+        handler(observable);
+        return obj;
+    }
+
     // TextProperty
 
     public static T Text<T>(this T obj, System.String value) where T : Avalonia.Controls.Presenters.TextPresenter
@@ -271,5 +327,12 @@ public static partial class TextPresenterExtensions
     public static IObservable<System.String> ObserveText(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextProperty);
+    }
+
+    public static T OnText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextProperty);
+        handler(observable);
+        return obj;
     }
 }

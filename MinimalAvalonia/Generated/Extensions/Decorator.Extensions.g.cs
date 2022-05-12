@@ -33,6 +33,13 @@ public static partial class DecoratorExtensions
         return obj.GetObservable(Avalonia.Controls.Decorator.ChildProperty);
     }
 
+    public static T OnChild<T>(this T obj, Action<IObservable<Avalonia.Controls.IControl>> handler) where T : Avalonia.Controls.Decorator
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Decorator.ChildProperty);
+        handler(observable);
+        return obj;
+    }
+
     // PaddingProperty
 
     public static T Padding<T>(this T obj, Avalonia.Thickness value) where T : Avalonia.Controls.Decorator
@@ -61,5 +68,12 @@ public static partial class DecoratorExtensions
     public static IObservable<Avalonia.Thickness> ObservePadding(this Avalonia.Controls.Decorator obj)
     {
         return obj.GetObservable(Avalonia.Controls.Decorator.PaddingProperty);
+    }
+
+    public static T OnPadding<T>(this T obj, Action<IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Decorator
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Decorator.PaddingProperty);
+        handler(observable);
+        return obj;
     }
 }

@@ -32,4 +32,11 @@ public static partial class PathIconExtensions
     {
         return obj.GetObservable(Avalonia.Controls.PathIcon.DataProperty);
     }
+
+    public static T OnData<T>(this T obj, Action<IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Controls.PathIcon
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.PathIcon.DataProperty);
+        handler(observable);
+        return obj;
+    }
 }

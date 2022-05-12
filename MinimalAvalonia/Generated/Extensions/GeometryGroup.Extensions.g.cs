@@ -33,6 +33,13 @@ public static partial class GeometryGroupExtensions
         return obj.GetObservable(Avalonia.Media.GeometryGroup.ChildrenProperty);
     }
 
+    public static T OnChildren<T>(this T obj, Action<IObservable<Avalonia.Media.GeometryCollection>> handler) where T : Avalonia.Media.GeometryGroup
+    {
+        var observable = obj.GetObservable(Avalonia.Media.GeometryGroup.ChildrenProperty);
+        handler(observable);
+        return obj;
+    }
+
     // FillRuleProperty
 
     public static T FillRule<T>(this T obj, Avalonia.Media.FillRule value) where T : Avalonia.Media.GeometryGroup
@@ -61,6 +68,13 @@ public static partial class GeometryGroupExtensions
     public static IObservable<Avalonia.Media.FillRule> ObserveFillRule(this Avalonia.Media.GeometryGroup obj)
     {
         return obj.GetObservable(Avalonia.Media.GeometryGroup.FillRuleProperty);
+    }
+
+    public static T OnFillRule<T>(this T obj, Action<IObservable<Avalonia.Media.FillRule>> handler) where T : Avalonia.Media.GeometryGroup
+    {
+        var observable = obj.GetObservable(Avalonia.Media.GeometryGroup.FillRuleProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T FillRuleEvenOdd<T>(this T obj) where T : Avalonia.Media.GeometryGroup

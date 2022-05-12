@@ -32,4 +32,11 @@ public static partial class AccessTextExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty);
     }
+
+    public static T OnShowAccessKey<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty);
+        handler(observable);
+        return obj;
+    }
 }

@@ -33,6 +33,13 @@ public static partial class ContentControlExtensions
         return obj.GetObservable(Avalonia.Controls.ContentControl.ContentProperty);
     }
 
+    public static T OnContent<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContentControl.ContentProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ContentTemplateProperty
 
     public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ContentControl
@@ -63,6 +70,13 @@ public static partial class ContentControlExtensions
         return obj.GetObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
     }
 
+    public static T OnContentTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
+        handler(observable);
+        return obj;
+    }
+
     // HorizontalContentAlignmentProperty
 
     public static T HorizontalContentAlignment<T>(this T obj, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Controls.ContentControl
@@ -91,6 +105,13 @@ public static partial class ContentControlExtensions
     public static IObservable<Avalonia.Layout.HorizontalAlignment> ObserveHorizontalContentAlignment(this Avalonia.Controls.ContentControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty);
+    }
+
+    public static T OnHorizontalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T HorizontalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.ContentControl
@@ -145,6 +166,13 @@ public static partial class ContentControlExtensions
     public static IObservable<Avalonia.Layout.VerticalAlignment> ObserveVerticalContentAlignment(this Avalonia.Controls.ContentControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty);
+    }
+
+    public static T OnVerticalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T VerticalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.ContentControl

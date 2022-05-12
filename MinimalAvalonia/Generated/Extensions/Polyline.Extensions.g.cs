@@ -32,4 +32,11 @@ public static partial class PolylineExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Shapes.Polyline.PointsProperty);
     }
+
+    public static T OnPoints<T>(this T obj, Action<IObservable<System.Collections.Generic.IList<Avalonia.Point>>> handler) where T : Avalonia.Controls.Shapes.Polyline
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Shapes.Polyline.PointsProperty);
+        handler(observable);
+        return obj;
+    }
 }

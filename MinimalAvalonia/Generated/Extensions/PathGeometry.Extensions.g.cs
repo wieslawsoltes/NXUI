@@ -33,6 +33,13 @@ public static partial class PathGeometryExtensions
         return obj.GetObservable(Avalonia.Media.PathGeometry.FiguresProperty);
     }
 
+    public static T OnFigures<T>(this T obj, Action<IObservable<Avalonia.Media.PathFigures>> handler) where T : Avalonia.Media.PathGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.PathGeometry.FiguresProperty);
+        handler(observable);
+        return obj;
+    }
+
     // FillRuleProperty
 
     public static T FillRule<T>(this T obj, Avalonia.Media.FillRule value) where T : Avalonia.Media.PathGeometry
@@ -61,6 +68,13 @@ public static partial class PathGeometryExtensions
     public static IObservable<Avalonia.Media.FillRule> ObserveFillRule(this Avalonia.Media.PathGeometry obj)
     {
         return obj.GetObservable(Avalonia.Media.PathGeometry.FillRuleProperty);
+    }
+
+    public static T OnFillRule<T>(this T obj, Action<IObservable<Avalonia.Media.FillRule>> handler) where T : Avalonia.Media.PathGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.PathGeometry.FillRuleProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T FillRuleEvenOdd<T>(this T obj) where T : Avalonia.Media.PathGeometry

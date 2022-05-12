@@ -33,6 +33,13 @@ public static partial class ScaleTransformExtensions
         return obj.GetObservable(Avalonia.Media.ScaleTransform.ScaleXProperty);
     }
 
+    public static T OnScaleX<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.ScaleTransform
+    {
+        var observable = obj.GetObservable(Avalonia.Media.ScaleTransform.ScaleXProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ScaleYProperty
 
     public static T ScaleY<T>(this T obj, System.Double value) where T : Avalonia.Media.ScaleTransform
@@ -61,5 +68,12 @@ public static partial class ScaleTransformExtensions
     public static IObservable<System.Double> ObserveScaleY(this Avalonia.Media.ScaleTransform obj)
     {
         return obj.GetObservable(Avalonia.Media.ScaleTransform.ScaleYProperty);
+    }
+
+    public static T OnScaleY<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.ScaleTransform
+    {
+        var observable = obj.GetObservable(Avalonia.Media.ScaleTransform.ScaleYProperty);
+        handler(observable);
+        return obj;
     }
 }

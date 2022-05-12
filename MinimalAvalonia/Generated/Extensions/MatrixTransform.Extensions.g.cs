@@ -32,4 +32,11 @@ public static partial class MatrixTransformExtensions
     {
         return obj.GetObservable(Avalonia.Media.MatrixTransform.MatrixProperty);
     }
+
+    public static T OnMatrix<T>(this T obj, Action<IObservable<Avalonia.Matrix>> handler) where T : Avalonia.Media.MatrixTransform
+    {
+        var observable = obj.GetObservable(Avalonia.Media.MatrixTransform.MatrixProperty);
+        handler(observable);
+        return obj;
+    }
 }

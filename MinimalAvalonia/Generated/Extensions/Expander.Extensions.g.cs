@@ -33,6 +33,13 @@ public static partial class ExpanderExtensions
         return obj.GetObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
     }
 
+    public static T OnContentTransition<T>(this T obj, Action<IObservable<Avalonia.Animation.IPageTransition>> handler) where T : Avalonia.Controls.Expander
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ExpandDirectionProperty
 
     public static T ExpandDirection<T>(this T obj, Avalonia.Controls.ExpandDirection value) where T : Avalonia.Controls.Expander
@@ -61,6 +68,13 @@ public static partial class ExpanderExtensions
     public static IObservable<Avalonia.Controls.ExpandDirection> ObserveExpandDirection(this Avalonia.Controls.Expander obj)
     {
         return obj.GetObservable(Avalonia.Controls.Expander.ExpandDirectionProperty);
+    }
+
+    public static T OnExpandDirection<T>(this T obj, Action<IObservable<Avalonia.Controls.ExpandDirection>> handler) where T : Avalonia.Controls.Expander
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Expander.ExpandDirectionProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T ExpandDirectionDown<T>(this T obj) where T : Avalonia.Controls.Expander
@@ -115,5 +129,12 @@ public static partial class ExpanderExtensions
     public static IObservable<System.Boolean> ObserveIsExpanded(this Avalonia.Controls.Expander obj)
     {
         return obj.GetObservable(Avalonia.Controls.Expander.IsExpandedProperty);
+    }
+
+    public static T OnIsExpanded<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Expander
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Expander.IsExpandedProperty);
+        handler(observable);
+        return obj;
     }
 }

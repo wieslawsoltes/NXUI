@@ -33,6 +33,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.AcceptsReturnProperty);
     }
 
+    public static T OnAcceptsReturn<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.AcceptsReturnProperty);
+        handler(observable);
+        return obj;
+    }
+
     // AcceptsTabProperty
 
     public static T AcceptsTab<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.TextBox
@@ -61,6 +68,13 @@ public static partial class TextBoxExtensions
     public static IObservable<System.Boolean> ObserveAcceptsTab(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.AcceptsTabProperty);
+    }
+
+    public static T OnAcceptsTab<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.AcceptsTabProperty);
+        handler(observable);
+        return obj;
     }
 
     // CaretIndexProperty
@@ -93,6 +107,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.CaretIndexProperty);
     }
 
+    public static T OnCaretIndex<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CaretIndexProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsReadOnlyProperty
 
     public static T IsReadOnly<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.TextBox
@@ -121,6 +142,13 @@ public static partial class TextBoxExtensions
     public static IObservable<System.Boolean> ObserveIsReadOnly(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.IsReadOnlyProperty);
+    }
+
+    public static T OnIsReadOnly<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.IsReadOnlyProperty);
+        handler(observable);
+        return obj;
     }
 
     // PasswordCharProperty
@@ -153,6 +181,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.PasswordCharProperty);
     }
 
+    public static T OnPasswordChar<T>(this T obj, Action<IObservable<System.Char>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.PasswordCharProperty);
+        handler(observable);
+        return obj;
+    }
+
     // SelectionBrushProperty
 
     public static T SelectionBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
@@ -181,6 +216,13 @@ public static partial class TextBoxExtensions
     public static IObservable<Avalonia.Media.IBrush> ObserveSelectionBrush(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.SelectionBrushProperty);
+    }
+
+    public static T OnSelectionBrush<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.SelectionBrushProperty);
+        handler(observable);
+        return obj;
     }
 
     // SelectionForegroundBrushProperty
@@ -213,6 +255,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty);
     }
 
+    public static T OnSelectionForegroundBrush<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CaretBrushProperty
 
     public static T CaretBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
@@ -241,6 +290,13 @@ public static partial class TextBoxExtensions
     public static IObservable<Avalonia.Media.IBrush> ObserveCaretBrush(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.CaretBrushProperty);
+    }
+
+    public static T OnCaretBrush<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CaretBrushProperty);
+        handler(observable);
+        return obj;
     }
 
     // SelectionStartProperty
@@ -273,6 +329,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.SelectionStartProperty);
     }
 
+    public static T OnSelectionStart<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.SelectionStartProperty);
+        handler(observable);
+        return obj;
+    }
+
     // SelectionEndProperty
 
     public static T SelectionEnd<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.TextBox
@@ -301,6 +364,13 @@ public static partial class TextBoxExtensions
     public static IObservable<System.Int32> ObserveSelectionEnd(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.SelectionEndProperty);
+    }
+
+    public static T OnSelectionEnd<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.SelectionEndProperty);
+        handler(observable);
+        return obj;
     }
 
     // MaxLengthProperty
@@ -333,6 +403,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.MaxLengthProperty);
     }
 
+    public static T OnMaxLength<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.MaxLengthProperty);
+        handler(observable);
+        return obj;
+    }
+
     // MaxLinesProperty
 
     public static T MaxLines<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.TextBox
@@ -361,6 +438,13 @@ public static partial class TextBoxExtensions
     public static IObservable<System.Int32> ObserveMaxLines(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.MaxLinesProperty);
+    }
+
+    public static T OnMaxLines<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.MaxLinesProperty);
+        handler(observable);
+        return obj;
     }
 
     // TextProperty
@@ -393,6 +477,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.TextProperty);
     }
 
+    public static T OnText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.TextProperty);
+        handler(observable);
+        return obj;
+    }
+
     // WatermarkProperty
 
     public static T Watermark<T>(this T obj, System.String value) where T : Avalonia.Controls.TextBox
@@ -421,6 +512,13 @@ public static partial class TextBoxExtensions
     public static IObservable<System.String> ObserveWatermark(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.WatermarkProperty);
+    }
+
+    public static T OnWatermark<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.WatermarkProperty);
+        handler(observable);
+        return obj;
     }
 
     // UseFloatingWatermarkProperty
@@ -453,6 +551,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
     }
 
+    public static T OnUseFloatingWatermark<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
+        handler(observable);
+        return obj;
+    }
+
     // NewLineProperty
 
     public static T NewLine<T>(this T obj, System.String value) where T : Avalonia.Controls.TextBox
@@ -481,6 +586,13 @@ public static partial class TextBoxExtensions
     public static IObservable<System.String> ObserveNewLine(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.NewLineProperty);
+    }
+
+    public static T OnNewLine<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.NewLineProperty);
+        handler(observable);
+        return obj;
     }
 
     // InnerLeftContentProperty
@@ -513,6 +625,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.InnerLeftContentProperty);
     }
 
+    public static T OnInnerLeftContent<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.InnerLeftContentProperty);
+        handler(observable);
+        return obj;
+    }
+
     // InnerRightContentProperty
 
     public static T InnerRightContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.TextBox
@@ -541,6 +660,13 @@ public static partial class TextBoxExtensions
     public static IObservable<System.Object> ObserveInnerRightContent(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.InnerRightContentProperty);
+    }
+
+    public static T OnInnerRightContent<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.InnerRightContentProperty);
+        handler(observable);
+        return obj;
     }
 
     // RevealPasswordProperty
@@ -573,6 +699,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.RevealPasswordProperty);
     }
 
+    public static T OnRevealPassword<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.RevealPasswordProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CanCutProperty
 
     public static Avalonia.Data.IBinding BindCanCut(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
@@ -583,6 +716,13 @@ public static partial class TextBoxExtensions
     public static IObservable<System.Boolean> ObserveCanCut(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.CanCutProperty);
+    }
+
+    public static Avalonia.Controls.TextBox OnCanCut(this Avalonia.Controls.TextBox obj, Action<IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanCutProperty);
+        handler(observable);
+        return obj;
     }
 
     // CanCopyProperty
@@ -597,6 +737,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.CanCopyProperty);
     }
 
+    public static Avalonia.Controls.TextBox OnCanCopy(this Avalonia.Controls.TextBox obj, Action<IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanCopyProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CanPasteProperty
 
     public static Avalonia.Data.IBinding BindCanPaste(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
@@ -607,6 +754,13 @@ public static partial class TextBoxExtensions
     public static IObservable<System.Boolean> ObserveCanPaste(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.CanPasteProperty);
+    }
+
+    public static Avalonia.Controls.TextBox OnCanPaste(this Avalonia.Controls.TextBox obj, Action<IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanPasteProperty);
+        handler(observable);
+        return obj;
     }
 
     // IsUndoEnabledProperty
@@ -639,6 +793,13 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.IsUndoEnabledProperty);
     }
 
+    public static T OnIsUndoEnabled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.IsUndoEnabledProperty);
+        handler(observable);
+        return obj;
+    }
+
     // UndoLimitProperty
 
     public static T UndoLimit<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.TextBox
@@ -667,5 +828,12 @@ public static partial class TextBoxExtensions
     public static IObservable<System.Int32> ObserveUndoLimit(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.UndoLimitProperty);
+    }
+
+    public static T OnUndoLimit<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.UndoLimitProperty);
+        handler(observable);
+        return obj;
     }
 }

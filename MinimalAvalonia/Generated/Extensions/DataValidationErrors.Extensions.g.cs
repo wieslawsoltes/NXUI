@@ -33,6 +33,13 @@ public static partial class DataValidationErrorsExtensions
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
     }
 
+    public static T OnErrors<T>(this T obj, Action<IObservable<System.Collections.Generic.IEnumerable<System.Object>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
+        handler(observable);
+        return obj;
+    }
+
     // HasErrorsProperty
 
     public static T HasErrors<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Control
@@ -61,6 +68,13 @@ public static partial class DataValidationErrorsExtensions
     public static IObservable<System.Boolean> ObserveHasErrors(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
+    }
+
+    public static T OnHasErrors<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
+        handler(observable);
+        return obj;
     }
 
     // ErrorTemplateProperty
@@ -93,6 +107,13 @@ public static partial class DataValidationErrorsExtensions
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty);
     }
 
+    public static T OnErrorTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.DataValidationErrors
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty);
+        handler(observable);
+        return obj;
+    }
+
     // OwnerProperty
 
     public static T Owner<T>(this T obj, Avalonia.Controls.Control value) where T : Avalonia.Controls.DataValidationErrors
@@ -121,5 +142,12 @@ public static partial class DataValidationErrorsExtensions
     public static IObservable<Avalonia.Controls.Control> ObserveOwner(this Avalonia.Controls.DataValidationErrors obj)
     {
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
+    }
+
+    public static T OnOwner<T>(this T obj, Action<IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.DataValidationErrors
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
+        handler(observable);
+        return obj;
     }
 }

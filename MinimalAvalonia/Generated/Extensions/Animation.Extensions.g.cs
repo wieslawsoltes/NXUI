@@ -33,6 +33,13 @@ public static partial class AnimationExtensions
         return obj.GetObservable(Avalonia.Animation.Animation.DurationProperty);
     }
 
+    public static T OnDuration<T>(this T obj, Action<IObservable<System.TimeSpan>> handler) where T : Avalonia.Animation.Animation
+    {
+        var observable = obj.GetObservable(Avalonia.Animation.Animation.DurationProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IterationCountProperty
 
     public static T IterationCount<T>(this T obj, Avalonia.Animation.IterationCount value) where T : Avalonia.Animation.Animation
@@ -63,6 +70,13 @@ public static partial class AnimationExtensions
         return obj.GetObservable(Avalonia.Animation.Animation.IterationCountProperty);
     }
 
+    public static T OnIterationCount<T>(this T obj, Action<IObservable<Avalonia.Animation.IterationCount>> handler) where T : Avalonia.Animation.Animation
+    {
+        var observable = obj.GetObservable(Avalonia.Animation.Animation.IterationCountProperty);
+        handler(observable);
+        return obj;
+    }
+
     // PlaybackDirectionProperty
 
     public static T PlaybackDirection<T>(this T obj, Avalonia.Animation.PlaybackDirection value) where T : Avalonia.Animation.Animation
@@ -91,6 +105,13 @@ public static partial class AnimationExtensions
     public static IObservable<Avalonia.Animation.PlaybackDirection> ObservePlaybackDirection(this Avalonia.Animation.Animation obj)
     {
         return obj.GetObservable(Avalonia.Animation.Animation.PlaybackDirectionProperty);
+    }
+
+    public static T OnPlaybackDirection<T>(this T obj, Action<IObservable<Avalonia.Animation.PlaybackDirection>> handler) where T : Avalonia.Animation.Animation
+    {
+        var observable = obj.GetObservable(Avalonia.Animation.Animation.PlaybackDirectionProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T PlaybackDirectionNormal<T>(this T obj) where T : Avalonia.Animation.Animation
@@ -147,6 +168,13 @@ public static partial class AnimationExtensions
         return obj.GetObservable(Avalonia.Animation.Animation.FillModeProperty);
     }
 
+    public static T OnFillMode<T>(this T obj, Action<IObservable<Avalonia.Animation.FillMode>> handler) where T : Avalonia.Animation.Animation
+    {
+        var observable = obj.GetObservable(Avalonia.Animation.Animation.FillModeProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T FillModeNone<T>(this T obj) where T : Avalonia.Animation.Animation
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.None;
@@ -201,6 +229,13 @@ public static partial class AnimationExtensions
         return obj.GetObservable(Avalonia.Animation.Animation.EasingProperty);
     }
 
+    public static T OnEasing<T>(this T obj, Action<IObservable<Avalonia.Animation.Easings.Easing>> handler) where T : Avalonia.Animation.Animation
+    {
+        var observable = obj.GetObservable(Avalonia.Animation.Animation.EasingProperty);
+        handler(observable);
+        return obj;
+    }
+
     // DelayProperty
 
     public static T Delay<T>(this T obj, System.TimeSpan value) where T : Avalonia.Animation.Animation
@@ -229,6 +264,13 @@ public static partial class AnimationExtensions
     public static IObservable<System.TimeSpan> ObserveDelay(this Avalonia.Animation.Animation obj)
     {
         return obj.GetObservable(Avalonia.Animation.Animation.DelayProperty);
+    }
+
+    public static T OnDelay<T>(this T obj, Action<IObservable<System.TimeSpan>> handler) where T : Avalonia.Animation.Animation
+    {
+        var observable = obj.GetObservable(Avalonia.Animation.Animation.DelayProperty);
+        handler(observable);
+        return obj;
     }
 
     // DelayBetweenIterationsProperty
@@ -261,6 +303,13 @@ public static partial class AnimationExtensions
         return obj.GetObservable(Avalonia.Animation.Animation.DelayBetweenIterationsProperty);
     }
 
+    public static T OnDelayBetweenIterations<T>(this T obj, Action<IObservable<System.TimeSpan>> handler) where T : Avalonia.Animation.Animation
+    {
+        var observable = obj.GetObservable(Avalonia.Animation.Animation.DelayBetweenIterationsProperty);
+        handler(observable);
+        return obj;
+    }
+
     // SpeedRatioProperty
 
     public static T SpeedRatio<T>(this T obj, System.Double value) where T : Avalonia.Animation.Animation
@@ -289,5 +338,12 @@ public static partial class AnimationExtensions
     public static IObservable<System.Double> ObserveSpeedRatio(this Avalonia.Animation.Animation obj)
     {
         return obj.GetObservable(Avalonia.Animation.Animation.SpeedRatioProperty);
+    }
+
+    public static T OnSpeedRatio<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Animation.Animation
+    {
+        var observable = obj.GetObservable(Avalonia.Animation.Animation.SpeedRatioProperty);
+        handler(observable);
+        return obj;
     }
 }

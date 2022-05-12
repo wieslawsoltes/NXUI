@@ -33,6 +33,13 @@ public static partial class ColumnDefinitionExtensions
         return obj.GetObservable(Avalonia.Controls.ColumnDefinition.MaxWidthProperty);
     }
 
+    public static T OnMaxWidth<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ColumnDefinition
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ColumnDefinition.MaxWidthProperty);
+        handler(observable);
+        return obj;
+    }
+
     // MinWidthProperty
 
     public static T MinWidth<T>(this T obj, System.Double value) where T : Avalonia.Controls.ColumnDefinition
@@ -63,6 +70,13 @@ public static partial class ColumnDefinitionExtensions
         return obj.GetObservable(Avalonia.Controls.ColumnDefinition.MinWidthProperty);
     }
 
+    public static T OnMinWidth<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ColumnDefinition
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ColumnDefinition.MinWidthProperty);
+        handler(observable);
+        return obj;
+    }
+
     // WidthProperty
 
     public static T Width<T>(this T obj, Avalonia.Controls.GridLength value) where T : Avalonia.Controls.ColumnDefinition
@@ -91,5 +105,12 @@ public static partial class ColumnDefinitionExtensions
     public static IObservable<Avalonia.Controls.GridLength> ObserveWidth(this Avalonia.Controls.ColumnDefinition obj)
     {
         return obj.GetObservable(Avalonia.Controls.ColumnDefinition.WidthProperty);
+    }
+
+    public static T OnWidth<T>(this T obj, Action<IObservable<Avalonia.Controls.GridLength>> handler) where T : Avalonia.Controls.ColumnDefinition
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ColumnDefinition.WidthProperty);
+        handler(observable);
+        return obj;
     }
 }

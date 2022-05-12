@@ -33,6 +33,13 @@ public static partial class ScrollContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty);
     }
 
+    public static T OnCanHorizontallyScroll<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CanVerticallyScrollProperty
 
     public static T CanVerticallyScroll<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
@@ -61,6 +68,13 @@ public static partial class ScrollContentPresenterExtensions
     public static IObservable<System.Boolean> ObserveCanVerticallyScroll(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty);
+    }
+
+    public static T OnCanVerticallyScroll<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty);
+        handler(observable);
+        return obj;
     }
 
     // ExtentProperty
@@ -93,6 +107,13 @@ public static partial class ScrollContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty);
     }
 
+    public static T OnExtent<T>(this T obj, Action<IObservable<Avalonia.Size>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty);
+        handler(observable);
+        return obj;
+    }
+
     // OffsetProperty
 
     public static T Offset<T>(this T obj, Avalonia.Vector value) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
@@ -123,6 +144,13 @@ public static partial class ScrollContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty);
     }
 
+    public static T OnOffset<T>(this T obj, Action<IObservable<Avalonia.Vector>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ViewportProperty
 
     public static T Viewport<T>(this T obj, Avalonia.Size value) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
@@ -151,5 +179,12 @@ public static partial class ScrollContentPresenterExtensions
     public static IObservable<Avalonia.Size> ObserveViewport(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty);
+    }
+
+    public static T OnViewport<T>(this T obj, Action<IObservable<Avalonia.Size>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty);
+        handler(observable);
+        return obj;
     }
 }

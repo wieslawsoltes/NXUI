@@ -33,6 +33,13 @@ public static partial class KeyBindingExtensions
         return obj.GetObservable(Avalonia.Input.KeyBinding.CommandProperty);
     }
 
+    public static T OnCommand<T>(this T obj, Action<IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Input.KeyBinding
+    {
+        var observable = obj.GetObservable(Avalonia.Input.KeyBinding.CommandProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CommandParameterProperty
 
     public static T CommandParameter<T>(this T obj, System.Object value) where T : Avalonia.Input.KeyBinding
@@ -63,6 +70,13 @@ public static partial class KeyBindingExtensions
         return obj.GetObservable(Avalonia.Input.KeyBinding.CommandParameterProperty);
     }
 
+    public static T OnCommandParameter<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Input.KeyBinding
+    {
+        var observable = obj.GetObservable(Avalonia.Input.KeyBinding.CommandParameterProperty);
+        handler(observable);
+        return obj;
+    }
+
     // GestureProperty
 
     public static T Gesture<T>(this T obj, Avalonia.Input.KeyGesture value) where T : Avalonia.Input.KeyBinding
@@ -91,5 +105,12 @@ public static partial class KeyBindingExtensions
     public static IObservable<Avalonia.Input.KeyGesture> ObserveGesture(this Avalonia.Input.KeyBinding obj)
     {
         return obj.GetObservable(Avalonia.Input.KeyBinding.GestureProperty);
+    }
+
+    public static T OnGesture<T>(this T obj, Action<IObservable<Avalonia.Input.KeyGesture>> handler) where T : Avalonia.Input.KeyBinding
+    {
+        var observable = obj.GetObservable(Avalonia.Input.KeyBinding.GestureProperty);
+        handler(observable);
+        return obj;
     }
 }

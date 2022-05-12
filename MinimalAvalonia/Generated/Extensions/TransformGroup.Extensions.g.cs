@@ -32,4 +32,11 @@ public static partial class TransformGroupExtensions
     {
         return obj.GetObservable(Avalonia.Media.TransformGroup.ChildrenProperty);
     }
+
+    public static T OnChildren<T>(this T obj, Action<IObservable<Avalonia.Media.Transforms>> handler) where T : Avalonia.Media.TransformGroup
+    {
+        var observable = obj.GetObservable(Avalonia.Media.TransformGroup.ChildrenProperty);
+        handler(observable);
+        return obj;
+    }
 }

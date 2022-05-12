@@ -33,6 +33,13 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.ClickModeProperty);
     }
 
+    public static T OnClickMode<T>(this T obj, Action<IObservable<Avalonia.Controls.ClickMode>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Button.ClickModeProperty);
+        handler(observable);
+        return obj;
+    }
+
     public static T ClickModeRelease<T>(this T obj) where T : Avalonia.Controls.Button
     {
         obj[Avalonia.Controls.Button.ClickModeProperty] = Avalonia.Controls.ClickMode.Release;
@@ -75,6 +82,13 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.CommandProperty);
     }
 
+    public static T OnCommand<T>(this T obj, Action<IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Button.CommandProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CommandParameterProperty
 
     public static T CommandParameter<T>(this T obj, System.Object value) where T : Avalonia.Controls.Button
@@ -103,6 +117,13 @@ public static partial class ButtonExtensions
     public static IObservable<System.Object> ObserveCommandParameter(this Avalonia.Controls.Button obj)
     {
         return obj.GetObservable(Avalonia.Controls.Button.CommandParameterProperty);
+    }
+
+    public static T OnCommandParameter<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Button.CommandParameterProperty);
+        handler(observable);
+        return obj;
     }
 
     // IsDefaultProperty
@@ -135,6 +156,13 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.IsDefaultProperty);
     }
 
+    public static T OnIsDefault<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Button.IsDefaultProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsCancelProperty
 
     public static T IsCancel<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Button
@@ -163,6 +191,13 @@ public static partial class ButtonExtensions
     public static IObservable<System.Boolean> ObserveIsCancel(this Avalonia.Controls.Button obj)
     {
         return obj.GetObservable(Avalonia.Controls.Button.IsCancelProperty);
+    }
+
+    public static T OnIsCancel<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Button.IsCancelProperty);
+        handler(observable);
+        return obj;
     }
 
     // IsPressedProperty
@@ -195,6 +230,13 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.IsPressedProperty);
     }
 
+    public static T OnIsPressed<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Button.IsPressedProperty);
+        handler(observable);
+        return obj;
+    }
+
     // FlyoutProperty
 
     public static T Flyout<T>(this T obj, Avalonia.Controls.Primitives.FlyoutBase value) where T : Avalonia.Controls.Button
@@ -223,5 +265,12 @@ public static partial class ButtonExtensions
     public static IObservable<Avalonia.Controls.Primitives.FlyoutBase> ObserveFlyout(this Avalonia.Controls.Button obj)
     {
         return obj.GetObservable(Avalonia.Controls.Button.FlyoutProperty);
+    }
+
+    public static T OnFlyout<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Button.FlyoutProperty);
+        handler(observable);
+        return obj;
     }
 }

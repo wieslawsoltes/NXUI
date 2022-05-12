@@ -33,6 +33,13 @@ public static partial class TransitioningContentControlExtensions
         return obj.GetObservable(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty);
     }
 
+    public static T OnPageTransition<T>(this T obj, Action<IObservable<Avalonia.Animation.IPageTransition>> handler) where T : Avalonia.Controls.TransitioningContentControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty);
+        handler(observable);
+        return obj;
+    }
+
     // CurrentContentProperty
 
     public static Avalonia.Data.IBinding BindCurrentContent(this Avalonia.Controls.TransitioningContentControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
@@ -43,5 +50,12 @@ public static partial class TransitioningContentControlExtensions
     public static IObservable<System.Object> ObserveCurrentContent(this Avalonia.Controls.TransitioningContentControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.TransitioningContentControl.CurrentContentProperty);
+    }
+
+    public static Avalonia.Controls.TransitioningContentControl OnCurrentContent(this Avalonia.Controls.TransitioningContentControl obj, Action<IObservable<System.Object>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TransitioningContentControl.CurrentContentProperty);
+        handler(observable);
+        return obj;
     }
 }

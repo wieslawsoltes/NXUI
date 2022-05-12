@@ -32,4 +32,11 @@ public static partial class RunExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Documents.Run.TextProperty);
     }
+
+    public static T OnText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.Documents.Run
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Documents.Run.TextProperty);
+        handler(observable);
+        return obj;
+    }
 }

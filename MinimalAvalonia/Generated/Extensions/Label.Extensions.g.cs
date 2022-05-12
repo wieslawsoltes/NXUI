@@ -32,4 +32,11 @@ public static partial class LabelExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Label.TargetProperty);
     }
+
+    public static T OnTarget<T>(this T obj, Action<IObservable<Avalonia.Input.IInputElement>> handler) where T : Avalonia.Controls.Label
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Label.TargetProperty);
+        handler(observable);
+        return obj;
+    }
 }

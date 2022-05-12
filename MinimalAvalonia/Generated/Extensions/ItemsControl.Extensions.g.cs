@@ -33,6 +33,13 @@ public static partial class ItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsProperty);
     }
 
+    public static T OnItems<T>(this T obj, Action<IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.ItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ItemCountProperty
 
     public static Avalonia.Data.IBinding BindItemCount(this Avalonia.Controls.ItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
@@ -43,6 +50,13 @@ public static partial class ItemsControlExtensions
     public static IObservable<System.Int32> ObserveItemCount(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemCountProperty);
+    }
+
+    public static Avalonia.Controls.ItemsControl OnItemCount(this Avalonia.Controls.ItemsControl obj, Action<IObservable<System.Int32>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemCountProperty);
+        handler(observable);
+        return obj;
     }
 
     // ItemsPanelProperty
@@ -75,6 +89,13 @@ public static partial class ItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsPanelProperty);
     }
 
+    public static T OnItemsPanel<T>(this T obj, Action<IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>>> handler) where T : Avalonia.Controls.ItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsPanelProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ItemTemplateProperty
 
     public static T ItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ItemsControl
@@ -103,5 +124,12 @@ public static partial class ItemsControlExtensions
     public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemTemplateProperty);
+    }
+
+    public static T OnItemTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemTemplateProperty);
+        handler(observable);
+        return obj;
     }
 }

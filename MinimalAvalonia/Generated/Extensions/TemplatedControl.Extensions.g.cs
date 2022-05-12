@@ -33,6 +33,13 @@ public static partial class TemplatedControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
     }
 
+    public static T OnTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IControlTemplate>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsTemplateFocusTargetProperty
 
     public static T IsTemplateFocusTarget<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Control
@@ -61,5 +68,12 @@ public static partial class TemplatedControlExtensions
     public static IObservable<System.Boolean> ObserveIsTemplateFocusTarget(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
+    }
+
+    public static T OnIsTemplateFocusTarget<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
+        handler(observable);
+        return obj;
     }
 }

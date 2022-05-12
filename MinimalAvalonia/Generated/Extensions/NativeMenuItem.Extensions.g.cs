@@ -33,6 +33,13 @@ public static partial class NativeMenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.MenuProperty);
     }
 
+    public static T OnMenu<T>(this T obj, Action<IObservable<Avalonia.Controls.NativeMenu>> handler) where T : Avalonia.Controls.NativeMenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.MenuProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IconProperty
 
     public static T Icon<T>(this T obj, Avalonia.Media.Imaging.IBitmap value) where T : Avalonia.Controls.NativeMenuItem
@@ -61,6 +68,13 @@ public static partial class NativeMenuItemExtensions
     public static IObservable<Avalonia.Media.Imaging.IBitmap> ObserveIcon(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.IconProperty);
+    }
+
+    public static T OnIcon<T>(this T obj, Action<IObservable<Avalonia.Media.Imaging.IBitmap>> handler) where T : Avalonia.Controls.NativeMenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.IconProperty);
+        handler(observable);
+        return obj;
     }
 
     // HeaderProperty
@@ -93,6 +107,13 @@ public static partial class NativeMenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.HeaderProperty);
     }
 
+    public static T OnHeader<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.NativeMenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.HeaderProperty);
+        handler(observable);
+        return obj;
+    }
+
     // GestureProperty
 
     public static T Gesture<T>(this T obj, Avalonia.Input.KeyGesture value) where T : Avalonia.Controls.NativeMenuItem
@@ -121,6 +142,13 @@ public static partial class NativeMenuItemExtensions
     public static IObservable<Avalonia.Input.KeyGesture> ObserveGesture(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.GestureProperty);
+    }
+
+    public static T OnGesture<T>(this T obj, Action<IObservable<Avalonia.Input.KeyGesture>> handler) where T : Avalonia.Controls.NativeMenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.GestureProperty);
+        handler(observable);
+        return obj;
     }
 
     // IsCheckedProperty
@@ -153,6 +181,13 @@ public static partial class NativeMenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.IsCheckedProperty);
     }
 
+    public static T OnIsChecked<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.NativeMenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.IsCheckedProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ToggleTypeProperty
 
     public static T ToggleType<T>(this T obj, Avalonia.Controls.NativeMenuItemToggleType value) where T : Avalonia.Controls.NativeMenuItem
@@ -181,6 +216,13 @@ public static partial class NativeMenuItemExtensions
     public static IObservable<Avalonia.Controls.NativeMenuItemToggleType> ObserveToggleType(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty);
+    }
+
+    public static T OnToggleType<T>(this T obj, Action<IObservable<Avalonia.Controls.NativeMenuItemToggleType>> handler) where T : Avalonia.Controls.NativeMenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty);
+        handler(observable);
+        return obj;
     }
 
     public static T ToggleTypeNone<T>(this T obj) where T : Avalonia.Controls.NativeMenuItem
@@ -231,6 +273,13 @@ public static partial class NativeMenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.CommandProperty);
     }
 
+    public static T OnCommand<T>(this T obj, Action<IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.NativeMenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.CommandProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IsEnabledProperty
 
     public static T IsEnabled<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.NativeMenuItem
@@ -259,5 +308,12 @@ public static partial class NativeMenuItemExtensions
     public static IObservable<System.Boolean> ObserveIsEnabled(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.IsEnabledProperty);
+    }
+
+    public static T OnIsEnabled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.NativeMenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.IsEnabledProperty);
+        handler(observable);
+        return obj;
     }
 }
