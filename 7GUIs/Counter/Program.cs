@@ -2,7 +2,7 @@
 
 Window Build() 
     => Window()
-        .Title("Counter").Padding(12).SizeToContentManual().Width(300).Height(200)
+        .Title("Counter").Padding(12).Width(300).Height(200)
         .Content(
             StackPanel()
                 .OrientationHorizontal().Spacing(12).HorizontalAlignmentCenter().VerticalAlignmentCenter()
