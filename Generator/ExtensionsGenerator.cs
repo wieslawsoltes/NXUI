@@ -24,9 +24,42 @@ internal static class ExtensionsGenerator
 
         var classes = GetClasses();
 
+        GenerateBuilders(outputPath, classes);
+
         GenerateProperties(outputPath, classes);
 
         GenerateExtensions(outputPath, classes);
+    }
+
+    private static void GenerateBuilders(string outputPath, List<Class> classes)
+    {
+        var outputFile = Path.Combine(outputPath, $"Builders.g.cs");
+
+        using var file = File.CreateText(outputFile);
+        void WriteLine(string x) => file.WriteLine(x);
+
+        var fileHeaderBuilder = new StringBuilder(Templates.BuildersHeaderTemplate);
+        WriteLine(fileHeaderBuilder.ToString());
+
+        for (var i = 0; i < classes.Count; i++)
+        {
+            var c = classes[i];
+
+            if (s_excludedClasses.Contains(c.Name))
+            {
+                continue;
+            }
+
+            WriteLine($"    public static {c.Type} {c.Name} => new();");
+
+            if (i < classes.Count - 1)
+            {
+                WriteLine("");
+            }
+        }
+
+        var classFooterBuilder = new StringBuilder(Templates.BuildersFooterTemplate);
+        WriteLine(classFooterBuilder.ToString());
     }
 
     private static void GenerateProperties(string outputPath, List<Class> classes)
