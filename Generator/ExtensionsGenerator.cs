@@ -69,7 +69,7 @@ internal static class ExtensionsGenerator
                 continue;
             }
 
-            WriteLine($"    public static {c.Type} {c.Name} => new();");
+            WriteLine($"    public static {c.Type} {c.Name}() => new();");
 
             if (i < classes.Count - 1)
             {
