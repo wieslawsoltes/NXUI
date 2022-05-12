@@ -2,7 +2,7 @@
 
 public static class AppBuilderExtensions
 {
-    public static TAppBuilder UseFluentTheme<TAppBuilder>(this TAppBuilder builder, FluentThemeMode mode = FluentThemeMode.Light)
+    public static TAppBuilder UseFluentTheme<TAppBuilder>(this TAppBuilder builder, FluentThemeMode mode = Avalonia.Themes.Fluent.FluentThemeMode.Light)
         where TAppBuilder : AppBuilderBase<TAppBuilder>, new() 
     {
         return builder.AfterSetup(_ =>
