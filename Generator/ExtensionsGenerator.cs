@@ -15,6 +15,9 @@ internal static class ExtensionsGenerator
         "AboutAvaloniaDialog"
     };
 
+    private static readonly FieldInfo? s_attached = 
+        typeof(AvaloniaPropertyRegistry).GetField("_attached", BindingFlags.NonPublic | BindingFlags.Instance);
+
     public static void Generate(string outputPath)
     {
         var buildersPath = Path.Combine(outputPath, "Builders");
@@ -188,9 +191,6 @@ internal static class ExtensionsGenerator
             WriteLine(classFooterBuilder.ToString());
         }
     }
-
-    private static readonly FieldInfo? s_attached = 
-        typeof(AvaloniaPropertyRegistry).GetField("_attached", BindingFlags.NonPublic | BindingFlags.Instance);
 
     private static List<Class> GetClasses()
     {
