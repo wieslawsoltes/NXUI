@@ -39,7 +39,7 @@ AppBuilder.Configure<Application>()
 
 ```
 cd Generator
-dotnet run -- ./Generated
+dotnet run -- ../MinimalAvalonia/Generated
 ```
 
 # Issues
