@@ -211,9 +211,6 @@ internal static class ExtensionsGenerator
 
         foreach (var classType in classTypes)
         {
-            // var avaloniaPropertiesRegistered = AvaloniaPropertyRegistry.Instance.GetRegistered(classType);
-            // var avaloniaPropertiesAttached = AvaloniaPropertyRegistry.Instance.GetRegisteredAttached(classType);
-            // var avaloniaProperties = avaloniaPropertiesRegistered.Concat(avaloniaPropertiesAttached).ToList();
             var avaloniaProperties = AvaloniaPropertyRegistry.Instance.GetRegistered(classType);
             if (avaloniaProperties.Count <= 0)
                 continue;
