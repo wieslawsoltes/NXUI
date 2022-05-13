@@ -6,7 +6,7 @@ namespace Generator;
 
 internal record Property(string Name, string OwnerType, string ValueType, string PropertyType, bool IsReadOnly = false, bool IsEnum = false, string[]? EnumNames = null);
 
-internal record Class(string Name, string Type, Property[] Properties, bool IsSealed = false, bool PublicCtor = true);
+internal record Class(string Name, string Type, Property[] Properties, bool IsSealed = false, bool PublicCtor = true, bool IsAbstract = false);
 
 internal static class ExtensionsGenerator
 {
@@ -68,6 +68,11 @@ internal static class ExtensionsGenerator
             }
 
             if (!c.PublicCtor)
+            {
+                continue;
+            }
+
+            if (c.IsAbstract)
             {
                 continue;
             }
@@ -202,7 +207,6 @@ internal static class ExtensionsGenerator
             where assemblyType is not null
                   && assemblyType.IsSubclassOf(typeof(AvaloniaObject))
                   && assemblyType.GetCustomAttributes().All(x => x.GetType().Name != "ObsoleteAttribute")
-                  && !assemblyType.IsAbstract
                   && assemblyType.IsPublic
             select assemblyType).ToArray();
 
@@ -291,7 +295,8 @@ internal static class ExtensionsGenerator
                 FixType(classType.ToString()), 
                 properties.ToArray(),
                 classType.IsSealed,
-                publicCtor);
+                publicCtor,
+                classType.IsAbstract);
 
             classes.Add(c);
         }
