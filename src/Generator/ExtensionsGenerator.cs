@@ -205,6 +205,19 @@ internal static class ExtensionsGenerator
         }
     }
 
+    private static string FixType(string t)
+        => t.Replace("`1[", "<")
+            .Replace("`2[", "<")
+            .Replace("`3[", "<")
+            .Replace("]", ">")
+            .Replace("+", ".");
+
+    private static string FixClassNameType(string t)
+        => t.Replace("`1", "")
+            .Replace("`2", "")
+            .Replace("`3", "")
+            .Replace("+", "");
+
     private static List<Class>? GetClasses()
     {
         var assemblies = AppDomain.CurrentDomain.GetAssemblies();
@@ -222,6 +235,7 @@ internal static class ExtensionsGenerator
 
         foreach (var classType in classTypes)
         {
+            Console.WriteLine($"Class: {classType.Name}");
             System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(classType.TypeHandle);
         }
 
@@ -240,26 +254,9 @@ internal static class ExtensionsGenerator
         {
             if (!registered.TryGetValue(classType, out var registeredProperties))
                 continue;
- 
-            if (registeredProperties.Count <= 0)
-                continue;
 
             var avaloniaProperties = registeredProperties.Values;
-
             var properties = new List<Property>();
-
-            static string FixType(string t)
-                => t.Replace("`1[", "<")
-                    .Replace("`2[", "<")
-                    .Replace("`3[", "<")
-                    .Replace("]", ">")
-                    .Replace("+", ".");
-
-            static string FixClassNameType(string t)
-                => t.Replace("`1", "")
-                    .Replace("`2", "")
-                    .Replace("`3", "")
-                    .Replace("+", "");
 
             foreach (var property in avaloniaProperties)
             {
@@ -282,10 +279,10 @@ internal static class ExtensionsGenerator
                     ownerType = classType;
                 }
 
-                Console.WriteLine($"Class: {classType.Name} Property: {property.Name} Owner: {property.OwnerType.Name}, IsAttached: {property.IsAttached}, {fieldInfo.FieldType}");
-
                 var propertyType = fieldInfo.FieldType; // property.GetType()
                 var valueType = property.PropertyType;
+
+                //Console.WriteLine($"Class: {classType.Name} Property: {property.Name} Owner: {property.OwnerType.Name}, IsAttached: {property.IsAttached}, {fieldInfo.FieldType}");
 
                 if (property.IsAttached && property.GetType() == fieldInfo.FieldType && attached is { })
                 {
