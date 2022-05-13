@@ -246,9 +246,12 @@ internal static class ExtensionsGenerator
                 if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
                     continue;
 
-                if (property.OwnerType != classType || !property.PropertyType.IsPublic)
+                if (!property.PropertyType.IsPublic)
                     continue;
-
+   
+                if (property.OwnerType != classType)
+                    continue;
+    
                 var isEnum = false;
                 var enumNames = new List<string>();
 
