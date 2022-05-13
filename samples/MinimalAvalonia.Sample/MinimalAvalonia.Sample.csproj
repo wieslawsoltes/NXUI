@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
-    <RootNamespace>Counters</RootNamespace>
+    <RootNamespace>MinimalAvalonia.Sample</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>
     <AnalysisLevel>latest</AnalysisLevel>
@@ -15,7 +15,7 @@
     <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MinimalAvalonia\MinimalAvalonia.csproj" />
+    <ProjectReference Include="..\..\src\MinimalAvalonia\MinimalAvalonia.csproj" />
   </ItemGroup>
-  <Import Project="..\..\MinimalAvalonia\MinimalAvalonia.props" />
+  <Import Project="..\..\src\MinimalAvalonia\MinimalAvalonia.props" />
 </Project>

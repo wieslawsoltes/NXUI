@@ -16,7 +16,7 @@
     <PackageReference Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MinimalAvalonia\MinimalAvalonia.csproj" />
+    <ProjectReference Include="..\..\src\MinimalAvalonia\MinimalAvalonia.csproj" />
   </ItemGroup>
-  <Import Project="..\MinimalAvalonia\MinimalAvalonia.props" />
+  <Import Project="..\..\src\MinimalAvalonia\MinimalAvalonia.props" />
 </Project>
