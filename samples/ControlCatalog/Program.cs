@@ -74,6 +74,11 @@
         .AcceptsTab(true)
         .CaretIndex(0)
         .IsReadOnly(false)
+        .FontFamily(FontFamily.Default)
+        .FontSize(12)
+        .FontStyle(FontStyle.Normal)
+        .FontWeight(FontWeight.Normal)
+        .Foreground(Brushes.Black)
         .Text("TextBox");
 
     TabControl(out var controls)
