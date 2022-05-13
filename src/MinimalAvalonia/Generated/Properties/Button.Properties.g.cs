@@ -8,6 +8,8 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.DirectProperty<Avalonia.Controls.Button,System.Windows.Input.ICommand> ButtonCommand => Avalonia.Controls.Button.CommandProperty;
 
+    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> ButtonHotKey => Avalonia.Controls.Button.HotKeyProperty;
+
     public static Avalonia.StyledProperty<System.Object> ButtonCommandParameter => Avalonia.Controls.Button.CommandParameterProperty;
 
     public static Avalonia.StyledProperty<System.Boolean> ButtonIsDefault => Avalonia.Controls.Button.IsDefaultProperty;

@@ -3,4 +3,89 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class StackPanelExtensions
 {
+    // SpacingProperty
+
+    public static T Spacing<T>(this T obj, System.Double value) where T : Avalonia.Controls.StackPanel
+    {
+        obj[Avalonia.Controls.StackPanel.SpacingProperty] = value;
+        return obj;
+    }
+
+    public static T Spacing<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.StackPanel
+    {
+        obj[Avalonia.Controls.StackPanel.SpacingProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Spacing<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.StackPanel
+    {
+        obj[Avalonia.Controls.StackPanel.SpacingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSpacing(this Avalonia.Controls.StackPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.StackPanel.SpacingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveSpacing(this Avalonia.Controls.StackPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.StackPanel.SpacingProperty);
+    }
+
+    public static T OnSpacing<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.StackPanel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.StackPanel.SpacingProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // OrientationProperty
+
+    public static T Orientation<T>(this T obj, Avalonia.Layout.Orientation value) where T : Avalonia.Controls.StackPanel
+    {
+        obj[Avalonia.Controls.StackPanel.OrientationProperty] = value;
+        return obj;
+    }
+
+    public static T Orientation<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.StackPanel
+    {
+        obj[Avalonia.Controls.StackPanel.OrientationProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Orientation<T>(this T obj, IObservable<Avalonia.Layout.Orientation> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.StackPanel
+    {
+        obj[Avalonia.Controls.StackPanel.OrientationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOrientation(this Avalonia.Controls.StackPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.StackPanel.OrientationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.Orientation> ObserveOrientation(this Avalonia.Controls.StackPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.StackPanel.OrientationProperty);
+    }
+
+    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.StackPanel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.StackPanel.OrientationProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Controls.StackPanel
+    {
+        obj[Avalonia.Controls.StackPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        return obj;
+    }
+
+    public static T OrientationVertical<T>(this T obj) where T : Avalonia.Controls.StackPanel
+    {
+        obj[Avalonia.Controls.StackPanel.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        return obj;
+    }
 }

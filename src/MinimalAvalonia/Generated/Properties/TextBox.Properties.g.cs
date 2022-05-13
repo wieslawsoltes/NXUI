@@ -30,6 +30,14 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.String> TextBoxText => Avalonia.Controls.TextBox.TextProperty;
 
+    public static Avalonia.StyledProperty<Avalonia.Media.TextAlignment> TextBoxTextAlignment => Avalonia.Controls.TextBox.TextAlignmentProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> TextBoxHorizontalContentAlignment => Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> TextBoxVerticalContentAlignment => Avalonia.Controls.TextBox.VerticalContentAlignmentProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> TextBoxTextWrapping => Avalonia.Controls.TextBox.TextWrappingProperty;
+
     public static Avalonia.StyledProperty<System.String> TextBoxWatermark => Avalonia.Controls.TextBox.WatermarkProperty;
 
     public static Avalonia.StyledProperty<System.Boolean> TextBoxUseFloatingWatermark => Avalonia.Controls.TextBox.UseFloatingWatermarkProperty;

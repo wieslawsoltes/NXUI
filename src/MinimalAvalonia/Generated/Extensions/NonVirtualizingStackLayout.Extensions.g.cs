@@ -3,4 +3,89 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class NonVirtualizingStackLayoutExtensions
 {
+    // OrientationProperty
+
+    public static T Orientation<T>(this T obj, Avalonia.Layout.Orientation value) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    {
+        obj[Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty] = value;
+        return obj;
+    }
+
+    public static T Orientation<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    {
+        obj[Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Orientation<T>(this T obj, IObservable<Avalonia.Layout.Orientation> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    {
+        obj[Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOrientation(this Avalonia.Layout.NonVirtualizingStackLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.Orientation> ObserveOrientation(this Avalonia.Layout.NonVirtualizingStackLayout obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty);
+    }
+
+    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    {
+        var observable = obj.GetObservable(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    {
+        obj[Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        return obj;
+    }
+
+    public static T OrientationVertical<T>(this T obj) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    {
+        obj[Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        return obj;
+    }
+
+    // SpacingProperty
+
+    public static T Spacing<T>(this T obj, System.Double value) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    {
+        obj[Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty] = value;
+        return obj;
+    }
+
+    public static T Spacing<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    {
+        obj[Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Spacing<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    {
+        obj[Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSpacing(this Avalonia.Layout.NonVirtualizingStackLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveSpacing(this Avalonia.Layout.NonVirtualizingStackLayout obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty);
+    }
+
+    public static T OnSpacing<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    {
+        var observable = obj.GetObservable(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty);
+        handler(observable);
+        return obj;
+    }
 }

@@ -335,4 +335,41 @@ public static partial class TextPresenterExtensions
         handler(observable);
         return obj;
     }
+
+    // BackgroundProperty
+
+    public static T Background<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty] = value;
+        return obj;
+    }
+
+    public static T Background<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Background<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBackground(this Avalonia.Controls.Presenters.TextPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveBackground(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
+    }
+
+    public static T OnBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
+        handler(observable);
+        return obj;
+    }
 }

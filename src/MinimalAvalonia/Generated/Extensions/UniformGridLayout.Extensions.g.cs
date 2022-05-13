@@ -315,4 +315,53 @@ public static partial class UniformGridLayoutExtensions
         handler(observable);
         return obj;
     }
+
+    // OrientationProperty
+
+    public static T Orientation<T>(this T obj, Avalonia.Layout.Orientation value) where T : Avalonia.Layout.UniformGridLayout
+    {
+        obj[Avalonia.Layout.UniformGridLayout.OrientationProperty] = value;
+        return obj;
+    }
+
+    public static T Orientation<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.UniformGridLayout
+    {
+        obj[Avalonia.Layout.UniformGridLayout.OrientationProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Orientation<T>(this T obj, IObservable<Avalonia.Layout.Orientation> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.UniformGridLayout
+    {
+        obj[Avalonia.Layout.UniformGridLayout.OrientationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindOrientation(this Avalonia.Layout.UniformGridLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Layout.UniformGridLayout.OrientationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.Orientation> ObserveOrientation(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetObservable(Avalonia.Layout.UniformGridLayout.OrientationProperty);
+    }
+
+    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.OrientationProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
+    {
+        obj[Avalonia.Layout.UniformGridLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        return obj;
+    }
+
+    public static T OrientationVertical<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
+    {
+        obj[Avalonia.Layout.UniformGridLayout.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        return obj;
+    }
 }

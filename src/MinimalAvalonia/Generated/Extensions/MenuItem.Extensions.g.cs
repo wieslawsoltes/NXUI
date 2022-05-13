@@ -40,6 +40,43 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    // CommandParameterProperty
+
+    public static T CommandParameter<T>(this T obj, System.Object value) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.CommandParameterProperty] = value;
+        return obj;
+    }
+
+    public static T CommandParameter<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.CommandParameterProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T CommandParameter<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.CommandParameterProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCommandParameter(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.MenuItem.CommandParameterProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveCommandParameter(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuItem.CommandParameterProperty);
+    }
+
+    public static T OnCommandParameter<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.CommandParameterProperty);
+        handler(observable);
+        return obj;
+    }
+
     // IconProperty
 
     public static T Icon<T>(this T obj, System.Object value) where T : Avalonia.Controls.MenuItem
@@ -110,6 +147,43 @@ public static partial class MenuItemExtensions
     public static T OnInputGesture<T>(this T obj, Action<IObservable<Avalonia.Input.KeyGesture>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // IsSelectedProperty
+
+    public static T IsSelected<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.IsSelectedProperty] = value;
+        return obj;
+    }
+
+    public static T IsSelected<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.IsSelectedProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T IsSelected<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.IsSelectedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsSelected(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.MenuItem.IsSelectedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsSelected(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuItem.IsSelectedProperty);
+    }
+
+    public static T OnIsSelected<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.IsSelectedProperty);
         handler(observable);
         return obj;
     }

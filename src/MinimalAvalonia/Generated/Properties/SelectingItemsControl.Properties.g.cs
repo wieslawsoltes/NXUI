@@ -11,4 +11,6 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.SelectingItemsControl,System.Object> SelectingItemsControlSelectedItem => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty;
 
     public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControlIsTextSearchEnabled => Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty;
+
+    public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControlWrapSelection => Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty;
 }

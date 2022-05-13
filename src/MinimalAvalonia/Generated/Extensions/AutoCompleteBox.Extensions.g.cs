@@ -3,6 +3,43 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class AutoCompleteBoxExtensions
 {
+    // WatermarkProperty
+
+    public static T Watermark<T>(this T obj, System.String value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.WatermarkProperty] = value;
+        return obj;
+    }
+
+    public static T Watermark<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.WatermarkProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Watermark<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.WatermarkProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWatermark(this Avalonia.Controls.AutoCompleteBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.AutoCompleteBox.WatermarkProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveWatermark(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
+    }
+
+    public static T OnWatermark<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
+        handler(observable);
+        return obj;
+    }
+
     // MinimumPrefixLengthProperty
 
     public static T MinimumPrefixLength<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.AutoCompleteBox

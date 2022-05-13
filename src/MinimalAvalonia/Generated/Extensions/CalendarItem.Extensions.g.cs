@@ -3,6 +3,43 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class CalendarItemExtensions
 {
+    // HeaderBackgroundProperty
+
+    public static Avalonia.Controls.Primitives.CalendarItem HeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Avalonia.Media.IBrush value)
+    {
+        obj[Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty] = value;
+        return obj;
+    }
+
+    public static Avalonia.Controls.Primitives.CalendarItem HeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static Avalonia.Controls.Primitives.CalendarItem HeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        obj[Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
+    }
+
+    public static Avalonia.Controls.Primitives.CalendarItem OnHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Action<IObservable<Avalonia.Media.IBrush>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
+        handler(observable);
+        return obj;
+    }
+
     // DayTitleTemplateProperty
 
     public static Avalonia.Controls.Primitives.CalendarItem DayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Avalonia.Controls.ITemplate<Avalonia.Controls.IControl> value)

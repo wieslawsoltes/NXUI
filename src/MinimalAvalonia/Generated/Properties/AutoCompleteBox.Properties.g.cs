@@ -4,6 +4,8 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
+    public static Avalonia.StyledProperty<System.String> AutoCompleteBoxWatermark => Avalonia.Controls.AutoCompleteBox.WatermarkProperty;
+
     public static Avalonia.StyledProperty<System.Int32> AutoCompleteBoxMinimumPrefixLength => Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty;
 
     public static Avalonia.StyledProperty<System.TimeSpan> AutoCompleteBoxMinimumPopulateDelay => Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty;

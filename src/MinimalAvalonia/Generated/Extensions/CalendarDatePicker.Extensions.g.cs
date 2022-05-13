@@ -432,4 +432,200 @@ public static partial class CalendarDatePickerExtensions
         handler(observable);
         return obj;
     }
+
+    // WatermarkProperty
+
+    public static T Watermark<T>(this T obj, System.String value) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.WatermarkProperty] = value;
+        return obj;
+    }
+
+    public static T Watermark<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.WatermarkProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Watermark<T>(this T obj, IObservable<System.String> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.WatermarkProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWatermark(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.CalendarDatePicker.WatermarkProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.String> ObserveWatermark(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
+    }
+
+    public static T OnWatermark<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // UseFloatingWatermarkProperty
+
+    public static T UseFloatingWatermark<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty] = value;
+        return obj;
+    }
+
+    public static T UseFloatingWatermark<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T UseFloatingWatermark<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindUseFloatingWatermark(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveUseFloatingWatermark(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
+    }
+
+    public static T OnUseFloatingWatermark<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // HorizontalContentAlignmentProperty
+
+    public static T HorizontalContentAlignment<T>(this T obj, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = value;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignment<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignment<T>(this T obj, IObservable<Avalonia.Layout.HorizontalAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalContentAlignment(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.HorizontalAlignment> ObserveHorizontalContentAlignment(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty);
+    }
+
+    public static T OnHorizontalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentRight<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        return obj;
+    }
+
+    // VerticalContentAlignmentProperty
+
+    public static T VerticalContentAlignment<T>(this T obj, Avalonia.Layout.VerticalAlignment value) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = value;
+        return obj;
+    }
+
+    public static T VerticalContentAlignment<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T VerticalContentAlignment<T>(this T obj, IObservable<Avalonia.Layout.VerticalAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalContentAlignment(this Avalonia.Controls.CalendarDatePicker obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.VerticalAlignment> ObserveVerticalContentAlignment(this Avalonia.Controls.CalendarDatePicker obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty);
+    }
+
+    public static T OnVerticalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentTop<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentBottom<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
+    {
+        obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
+        return obj;
+    }
 }

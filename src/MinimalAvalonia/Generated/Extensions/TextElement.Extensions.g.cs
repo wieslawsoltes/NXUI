@@ -3,6 +3,43 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class TextElementExtensions
 {
+    // BackgroundProperty
+
+    public static T Background<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Documents.TextElement
+    {
+        obj[Avalonia.Controls.Documents.TextElement.BackgroundProperty] = value;
+        return obj;
+    }
+
+    public static T Background<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Documents.TextElement
+    {
+        obj[Avalonia.Controls.Documents.TextElement.BackgroundProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Background<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Documents.TextElement
+    {
+        obj[Avalonia.Controls.Documents.TextElement.BackgroundProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBackground(this Avalonia.Controls.Documents.TextElement obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Documents.TextElement.BackgroundProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveBackground(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
+    }
+
+    public static T OnBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
+        handler(observable);
+        return obj;
+    }
+
     // FontFamilyProperty
 
     public static T FontFamily<T>(this T obj, Avalonia.Media.FontFamily value) where T : Avalonia.Controls.Control

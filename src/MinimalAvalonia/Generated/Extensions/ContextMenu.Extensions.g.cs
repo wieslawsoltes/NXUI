@@ -3,4 +3,546 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class ContextMenuExtensions
 {
+    // HorizontalOffsetProperty
+
+    public static T HorizontalOffset<T>(this T obj, System.Double value) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.HorizontalOffsetProperty] = value;
+        return obj;
+    }
+
+    public static T HorizontalOffset<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.HorizontalOffsetProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T HorizontalOffset<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.HorizontalOffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalOffset(this Avalonia.Controls.ContextMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ContextMenu.HorizontalOffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveHorizontalOffset(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty);
+    }
+
+    public static T OnHorizontalOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // VerticalOffsetProperty
+
+    public static T VerticalOffset<T>(this T obj, System.Double value) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.VerticalOffsetProperty] = value;
+        return obj;
+    }
+
+    public static T VerticalOffset<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.VerticalOffsetProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T VerticalOffset<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.VerticalOffsetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalOffset(this Avalonia.Controls.ContextMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ContextMenu.VerticalOffsetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Double> ObserveVerticalOffset(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.VerticalOffsetProperty);
+    }
+
+    public static T OnVerticalOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.VerticalOffsetProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // PlacementAnchorProperty
+
+    public static T PlacementAnchor<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = value;
+        return obj;
+    }
+
+    public static T PlacementAnchor<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T PlacementAnchor<T>(this T obj, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementAnchor(this Avalonia.Controls.ContextMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> ObservePlacementAnchor(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementAnchorProperty);
+    }
+
+    public static T OnPlacementAnchor<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementAnchorProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T PlacementAnchorNone<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None;
+        return obj;
+    }
+
+    public static T PlacementAnchorTop<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top;
+        return obj;
+    }
+
+    public static T PlacementAnchorBottom<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom;
+        return obj;
+    }
+
+    public static T PlacementAnchorVerticalMask<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask;
+        return obj;
+    }
+
+    public static T PlacementAnchorLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left;
+        return obj;
+    }
+
+    public static T PlacementAnchorTopLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft;
+        return obj;
+    }
+
+    public static T PlacementAnchorBottomLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft;
+        return obj;
+    }
+
+    public static T PlacementAnchorRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right;
+        return obj;
+    }
+
+    public static T PlacementAnchorTopRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight;
+        return obj;
+    }
+
+    public static T PlacementAnchorBottomRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight;
+        return obj;
+    }
+
+    public static T PlacementAnchorHorizontalMask<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask;
+        return obj;
+    }
+
+    public static T PlacementAnchorAllMask<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.AllMask;
+        return obj;
+    }
+
+    // PlacementConstraintAdjustmentProperty
+
+    public static T PlacementConstraintAdjustment<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = value;
+        return obj;
+    }
+
+    public static T PlacementConstraintAdjustment<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T PlacementConstraintAdjustment<T>(this T obj, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementConstraintAdjustment(this Avalonia.Controls.ContextMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> ObservePlacementConstraintAdjustment(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty);
+    }
+
+    public static T OnPlacementConstraintAdjustment<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T PlacementConstraintAdjustmentNone<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None;
+        return obj;
+    }
+
+    public static T PlacementConstraintAdjustmentSlideX<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX;
+        return obj;
+    }
+
+    public static T PlacementConstraintAdjustmentSlideY<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY;
+        return obj;
+    }
+
+    public static T PlacementConstraintAdjustmentFlipX<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX;
+        return obj;
+    }
+
+    public static T PlacementConstraintAdjustmentFlipY<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY;
+        return obj;
+    }
+
+    public static T PlacementConstraintAdjustmentResizeX<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX;
+        return obj;
+    }
+
+    public static T PlacementConstraintAdjustmentResizeY<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY;
+        return obj;
+    }
+
+    public static T PlacementConstraintAdjustmentAll<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.All;
+        return obj;
+    }
+
+    // PlacementGravityProperty
+
+    public static T PlacementGravity<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = value;
+        return obj;
+    }
+
+    public static T PlacementGravity<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T PlacementGravity<T>(this T obj, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementGravity(this Avalonia.Controls.ContextMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> ObservePlacementGravity(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementGravityProperty);
+    }
+
+    public static T OnPlacementGravity<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementGravityProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T PlacementGravityNone<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None;
+        return obj;
+    }
+
+    public static T PlacementGravityTop<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top;
+        return obj;
+    }
+
+    public static T PlacementGravityBottom<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom;
+        return obj;
+    }
+
+    public static T PlacementGravityLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left;
+        return obj;
+    }
+
+    public static T PlacementGravityTopLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft;
+        return obj;
+    }
+
+    public static T PlacementGravityBottomLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft;
+        return obj;
+    }
+
+    public static T PlacementGravityRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right;
+        return obj;
+    }
+
+    public static T PlacementGravityTopRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight;
+        return obj;
+    }
+
+    public static T PlacementGravityBottomRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomRight;
+        return obj;
+    }
+
+    // PlacementModeProperty
+
+    public static T PlacementMode<T>(this T obj, Avalonia.Controls.PlacementMode value) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = value;
+        return obj;
+    }
+
+    public static T PlacementMode<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T PlacementMode<T>(this T obj, IObservable<Avalonia.Controls.PlacementMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementMode(this Avalonia.Controls.ContextMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ContextMenu.PlacementModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.PlacementMode> ObservePlacementMode(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementModeProperty);
+    }
+
+    public static T OnPlacementMode<T>(this T obj, Action<IObservable<Avalonia.Controls.PlacementMode>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementModeProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T PlacementModePointer<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Pointer;
+        return obj;
+    }
+
+    public static T PlacementModeBottom<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Bottom;
+        return obj;
+    }
+
+    public static T PlacementModeRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Right;
+        return obj;
+    }
+
+    public static T PlacementModeLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Left;
+        return obj;
+    }
+
+    public static T PlacementModeTop<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Top;
+        return obj;
+    }
+
+    public static T PlacementModeAnchorAndGravity<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;
+        return obj;
+    }
+
+    // PlacementRectProperty
+
+    public static T PlacementRect<T>(this T obj, System.Nullable<Avalonia.Rect> value) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementRectProperty] = value;
+        return obj;
+    }
+
+    public static T PlacementRect<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementRectProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T PlacementRect<T>(this T obj, IObservable<System.Nullable<Avalonia.Rect>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementRectProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementRect(this Avalonia.Controls.ContextMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ContextMenu.PlacementRectProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Nullable<Avalonia.Rect>> ObservePlacementRect(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementRectProperty);
+    }
+
+    public static T OnPlacementRect<T>(this T obj, Action<IObservable<System.Nullable<Avalonia.Rect>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementRectProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // WindowManagerAddShadowHintProperty
+
+    public static T WindowManagerAddShadowHint<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty] = value;
+        return obj;
+    }
+
+    public static T WindowManagerAddShadowHint<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T WindowManagerAddShadowHint<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWindowManagerAddShadowHint(this Avalonia.Controls.ContextMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveWindowManagerAddShadowHint(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty);
+    }
+
+    public static T OnWindowManagerAddShadowHint<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // PlacementTargetProperty
+
+    public static T PlacementTarget<T>(this T obj, Avalonia.Controls.Control value) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementTargetProperty] = value;
+        return obj;
+    }
+
+    public static T PlacementTarget<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementTargetProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T PlacementTarget<T>(this T obj, IObservable<Avalonia.Controls.Control> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementTargetProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPlacementTarget(this Avalonia.Controls.ContextMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ContextMenu.PlacementTargetProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Control> ObservePlacementTarget(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
+    }
+
+    public static T OnPlacementTarget<T>(this T obj, Action<IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
+        handler(observable);
+        return obj;
+    }
 }

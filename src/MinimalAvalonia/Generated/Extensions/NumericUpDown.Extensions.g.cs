@@ -3,6 +3,129 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class NumericUpDownExtensions
 {
+    // AllowSpinProperty
+
+    public static T AllowSpin<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.AllowSpinProperty] = value;
+        return obj;
+    }
+
+    public static T AllowSpin<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.AllowSpinProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T AllowSpin<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.AllowSpinProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAllowSpin(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.NumericUpDown.AllowSpinProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAllowSpin(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.AllowSpinProperty);
+    }
+
+    public static T OnAllowSpin<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.AllowSpinProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // ButtonSpinnerLocationProperty
+
+    public static T ButtonSpinnerLocation<T>(this T obj, Avalonia.Controls.Location value) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty] = value;
+        return obj;
+    }
+
+    public static T ButtonSpinnerLocation<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T ButtonSpinnerLocation<T>(this T obj, IObservable<Avalonia.Controls.Location> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindButtonSpinnerLocation(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Location> ObserveButtonSpinnerLocation(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty);
+    }
+
+    public static T OnButtonSpinnerLocation<T>(this T obj, Action<IObservable<Avalonia.Controls.Location>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T ButtonSpinnerLocationLeft<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Left;
+        return obj;
+    }
+
+    public static T ButtonSpinnerLocationRight<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Right;
+        return obj;
+    }
+
+    // ShowButtonSpinnerProperty
+
+    public static T ShowButtonSpinner<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty] = value;
+        return obj;
+    }
+
+    public static T ShowButtonSpinner<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T ShowButtonSpinner<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindShowButtonSpinner(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveShowButtonSpinner(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty);
+    }
+
+    public static T OnShowButtonSpinner<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ClipValueToMinMaxProperty
 
     public static T ClipValueToMinMax<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.NumericUpDown
@@ -509,6 +632,128 @@ public static partial class NumericUpDownExtensions
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
         handler(observable);
+        return obj;
+    }
+
+    // HorizontalContentAlignmentProperty
+
+    public static T HorizontalContentAlignment<T>(this T obj, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = value;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignment<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignment<T>(this T obj, IObservable<Avalonia.Layout.HorizontalAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalContentAlignment(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.HorizontalAlignment> ObserveHorizontalContentAlignment(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty);
+    }
+
+    public static T OnHorizontalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentRight<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        return obj;
+    }
+
+    // VerticalContentAlignmentProperty
+
+    public static T VerticalContentAlignment<T>(this T obj, Avalonia.Layout.VerticalAlignment value) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = value;
+        return obj;
+    }
+
+    public static T VerticalContentAlignment<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T VerticalContentAlignment<T>(this T obj, IObservable<Avalonia.Layout.VerticalAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalContentAlignment(this Avalonia.Controls.NumericUpDown obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.VerticalAlignment> ObserveVerticalContentAlignment(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty);
+    }
+
+    public static T OnVerticalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentTop<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentBottom<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
         return obj;
     }
 }

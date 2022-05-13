@@ -3,6 +3,80 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class TextBlockExtensions
 {
+    // BackgroundProperty
+
+    public static T Background<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBlock
+    {
+        obj[Avalonia.Controls.TextBlock.BackgroundProperty] = value;
+        return obj;
+    }
+
+    public static T Background<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBlock
+    {
+        obj[Avalonia.Controls.TextBlock.BackgroundProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Background<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBlock
+    {
+        obj[Avalonia.Controls.TextBlock.BackgroundProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindBackground(this Avalonia.Controls.TextBlock obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TextBlock.BackgroundProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.IBrush> ObserveBackground(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.BackgroundProperty);
+    }
+
+    public static T OnBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBlock.BackgroundProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // PaddingProperty
+
+    public static T Padding<T>(this T obj, Avalonia.Thickness value) where T : Avalonia.Controls.TextBlock
+    {
+        obj[Avalonia.Controls.TextBlock.PaddingProperty] = value;
+        return obj;
+    }
+
+    public static T Padding<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBlock
+    {
+        obj[Avalonia.Controls.TextBlock.PaddingProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Padding<T>(this T obj, IObservable<Avalonia.Thickness> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBlock
+    {
+        obj[Avalonia.Controls.TextBlock.PaddingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindPadding(this Avalonia.Controls.TextBlock obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TextBlock.PaddingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Thickness> ObservePadding(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.PaddingProperty);
+    }
+
+    public static T OnPadding<T>(this T obj, Action<IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBlock.PaddingProperty);
+        handler(observable);
+        return obj;
+    }
+
     // BaselineOffsetProperty
 
     public static T BaselineOffset<T>(this T obj, System.Double value) where T : Avalonia.Controls.Control

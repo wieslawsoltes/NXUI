@@ -7,4 +7,6 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<Avalonia.Media.Stretch> ViewboxStretch => Avalonia.Controls.Viewbox.StretchProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Media.StretchDirection> ViewboxStretchDirection => Avalonia.Controls.Viewbox.StretchDirectionProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Controls.IControl> ViewboxChild => Avalonia.Controls.Viewbox.ChildProperty;
 }

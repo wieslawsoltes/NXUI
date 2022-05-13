@@ -10,6 +10,10 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.Track,System.Double> TrackValue => Avalonia.Controls.Primitives.Track.ValueProperty;
 
+    public static Avalonia.StyledProperty<System.Double> TrackViewportSize => Avalonia.Controls.Primitives.Track.ViewportSizeProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> TrackOrientation => Avalonia.Controls.Primitives.Track.OrientationProperty;
+
     public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.Thumb> TrackThumb => Avalonia.Controls.Primitives.Track.ThumbProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Controls.Button> TrackIncreaseButton => Avalonia.Controls.Primitives.Track.IncreaseButtonProperty;

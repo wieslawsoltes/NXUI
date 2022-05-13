@@ -19,4 +19,8 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<System.Boolean> InputElementIsHitTestVisible => Avalonia.Input.InputElement.IsHitTestVisibleProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Input.InputElement,System.Boolean> InputElementIsPointerOver => Avalonia.Input.InputElement.IsPointerOverProperty;
+
+    public static Avalonia.StyledProperty<System.Boolean> InputElementIsTabStop => Avalonia.Input.InputElement.IsTabStopProperty;
+
+    public static Avalonia.StyledProperty<System.Int32> InputElementTabIndex => Avalonia.Input.InputElement.TabIndexProperty;
 }

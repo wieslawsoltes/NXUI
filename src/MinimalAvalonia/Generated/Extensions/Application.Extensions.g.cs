@@ -3,6 +3,43 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class ApplicationExtensions
 {
+    // DataContextProperty
+
+    public static T DataContext<T>(this T obj, System.Object value) where T : Avalonia.Application
+    {
+        obj[Avalonia.Application.DataContextProperty] = value;
+        return obj;
+    }
+
+    public static T DataContext<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Application
+    {
+        obj[Avalonia.Application.DataContextProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T DataContext<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Application
+    {
+        obj[Avalonia.Application.DataContextProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindDataContext(this Avalonia.Application obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Application.DataContextProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveDataContext(this Avalonia.Application obj)
+    {
+        return obj.GetObservable(Avalonia.Application.DataContextProperty);
+    }
+
+    public static T OnDataContext<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetObservable(Avalonia.Application.DataContextProperty);
+        handler(observable);
+        return obj;
+    }
+
     // NameProperty
 
     public static T Name<T>(this T obj, System.String value) where T : Avalonia.Application

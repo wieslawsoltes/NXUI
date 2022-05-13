@@ -40,6 +40,43 @@ public static partial class TreeViewItemExtensions
         return obj;
     }
 
+    // IsSelectedProperty
+
+    public static T IsSelected<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.TreeViewItem
+    {
+        obj[Avalonia.Controls.TreeViewItem.IsSelectedProperty] = value;
+        return obj;
+    }
+
+    public static T IsSelected<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TreeViewItem
+    {
+        obj[Avalonia.Controls.TreeViewItem.IsSelectedProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T IsSelected<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TreeViewItem
+    {
+        obj[Avalonia.Controls.TreeViewItem.IsSelectedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsSelected(this Avalonia.Controls.TreeViewItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TreeViewItem.IsSelectedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsSelected(this Avalonia.Controls.TreeViewItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TreeViewItem.IsSelectedProperty);
+    }
+
+    public static T OnIsSelected<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TreeViewItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TreeViewItem.IsSelectedProperty);
+        handler(observable);
+        return obj;
+    }
+
     // LevelProperty
 
     public static Avalonia.Data.IBinding BindLevel(this Avalonia.Controls.TreeViewItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)

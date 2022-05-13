@@ -3,4 +3,40 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class HeaderedSelectingItemsControlExtensions
 {
+    // HeaderProperty
+
+    public static T Header<T>(this T obj, System.Object value) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty] = value;
+        return obj;
+    }
+
+    public static T Header<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Header<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHeader(this Avalonia.Controls.Primitives.HeaderedSelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveHeader(this Avalonia.Controls.Primitives.HeaderedSelectingItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty);
+    }
+
+    public static T OnHeader<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty);
+        handler(observable);
+        return obj;
+    }
 }

@@ -3,6 +3,43 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class TreeViewExtensions
 {
+    // AutoScrollToSelectedItemProperty
+
+    public static T AutoScrollToSelectedItem<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty] = value;
+        return obj;
+    }
+
+    public static T AutoScrollToSelectedItem<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T AutoScrollToSelectedItem<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindAutoScrollToSelectedItem(this Avalonia.Controls.TreeView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveAutoScrollToSelectedItem(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty);
+    }
+
+    public static T OnAutoScrollToSelectedItem<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty);
+        handler(observable);
+        return obj;
+    }
+
     // SelectedItemProperty
 
     public static T SelectedItem<T>(this T obj, System.Object value) where T : Avalonia.Controls.TreeView
@@ -74,6 +111,67 @@ public static partial class TreeViewExtensions
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemsProperty);
         handler(observable);
+        return obj;
+    }
+
+    // SelectionModeProperty
+
+    public static T SelectionMode<T>(this T obj, Avalonia.Controls.SelectionMode value) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.SelectionModeProperty] = value;
+        return obj;
+    }
+
+    public static T SelectionMode<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.SelectionModeProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T SelectionMode<T>(this T obj, IObservable<Avalonia.Controls.SelectionMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.SelectionModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindSelectionMode(this Avalonia.Controls.TreeView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TreeView.SelectionModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.SelectionMode> ObserveSelectionMode(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TreeView.SelectionModeProperty);
+    }
+
+    public static T OnSelectionMode<T>(this T obj, Action<IObservable<Avalonia.Controls.SelectionMode>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TreeView.SelectionModeProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T SelectionModeSingle<T>(this T obj) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Single;
+        return obj;
+    }
+
+    public static T SelectionModeMultiple<T>(this T obj) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Multiple;
+        return obj;
+    }
+
+    public static T SelectionModeToggle<T>(this T obj) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Toggle;
+        return obj;
+    }
+
+    public static T SelectionModeAlwaysSelected<T>(this T obj) where T : Avalonia.Controls.TreeView
+    {
+        obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.AlwaysSelected;
         return obj;
     }
 }

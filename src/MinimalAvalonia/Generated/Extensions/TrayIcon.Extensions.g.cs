@@ -114,6 +114,43 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
+    // IconProperty
+
+    public static T Icon<T>(this T obj, Avalonia.Controls.WindowIcon value) where T : Avalonia.Controls.TrayIcon
+    {
+        obj[Avalonia.Controls.TrayIcon.IconProperty] = value;
+        return obj;
+    }
+
+    public static T Icon<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TrayIcon
+    {
+        obj[Avalonia.Controls.TrayIcon.IconProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Icon<T>(this T obj, IObservable<Avalonia.Controls.WindowIcon> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TrayIcon
+    {
+        obj[Avalonia.Controls.TrayIcon.IconProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIcon(this Avalonia.Controls.TrayIcon obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TrayIcon.IconProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.WindowIcon> ObserveIcon(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TrayIcon.IconProperty);
+    }
+
+    public static T OnIcon<T>(this T obj, Action<IObservable<Avalonia.Controls.WindowIcon>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.IconProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ToolTipTextProperty
 
     public static T ToolTipText<T>(this T obj, System.String value) where T : Avalonia.Controls.TrayIcon
@@ -147,6 +184,43 @@ public static partial class TrayIconExtensions
     public static T OnToolTipText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // IsVisibleProperty
+
+    public static T IsVisible<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.TrayIcon
+    {
+        obj[Avalonia.Controls.TrayIcon.IsVisibleProperty] = value;
+        return obj;
+    }
+
+    public static T IsVisible<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TrayIcon
+    {
+        obj[Avalonia.Controls.TrayIcon.IsVisibleProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T IsVisible<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TrayIcon
+    {
+        obj[Avalonia.Controls.TrayIcon.IsVisibleProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsVisible(this Avalonia.Controls.TrayIcon obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TrayIcon.IsVisibleProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsVisible(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TrayIcon.IsVisibleProperty);
+    }
+
+    public static T OnIsVisible<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.IsVisibleProperty);
         handler(observable);
         return obj;
     }

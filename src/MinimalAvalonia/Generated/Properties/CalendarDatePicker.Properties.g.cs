@@ -23,4 +23,12 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<System.String> CalendarDatePickerCustomDateFormatString => Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.CalendarDatePicker,System.String> CalendarDatePickerText => Avalonia.Controls.CalendarDatePicker.TextProperty;
+
+    public static Avalonia.StyledProperty<System.String> CalendarDatePickerWatermark => Avalonia.Controls.CalendarDatePicker.WatermarkProperty;
+
+    public static Avalonia.StyledProperty<System.Boolean> CalendarDatePickerUseFloatingWatermark => Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> CalendarDatePickerHorizontalContentAlignment => Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> CalendarDatePickerVerticalContentAlignment => Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty;
 }

@@ -4,6 +4,8 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextElementBackground => Avalonia.Controls.Documents.TextElement.BackgroundProperty;
+
     public static Avalonia.AttachedProperty<Avalonia.Media.FontFamily> TextElementFontFamily => Avalonia.Controls.Documents.TextElement.FontFamilyProperty;
 
     public static Avalonia.AttachedProperty<System.Double> TextElementFontSize => Avalonia.Controls.Documents.TextElement.FontSizeProperty;

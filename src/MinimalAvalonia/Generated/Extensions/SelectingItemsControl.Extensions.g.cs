@@ -150,4 +150,41 @@ public static partial class SelectingItemsControlExtensions
         handler(observable);
         return obj;
     }
+
+    // WrapSelectionProperty
+
+    public static T WrapSelection<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty] = value;
+        return obj;
+    }
+
+    public static T WrapSelection<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T WrapSelection<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWrapSelection(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveWrapSelection(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
+    }
+
+    public static T OnWrapSelection<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
+        handler(observable);
+        return obj;
+    }
 }

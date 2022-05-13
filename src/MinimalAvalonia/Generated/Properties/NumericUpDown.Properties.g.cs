@@ -4,6 +4,12 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
+    public static Avalonia.StyledProperty<System.Boolean> NumericUpDownAllowSpin => Avalonia.Controls.NumericUpDown.AllowSpinProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Controls.Location> NumericUpDownButtonSpinnerLocation => Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty;
+
+    public static Avalonia.StyledProperty<System.Boolean> NumericUpDownShowButtonSpinner => Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty;
+
     public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,System.Boolean> NumericUpDownClipValueToMinMax => Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,System.Globalization.NumberFormatInfo> NumericUpDownNumberFormat => Avalonia.Controls.NumericUpDown.NumberFormatProperty;
@@ -25,4 +31,8 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,System.Decimal> NumericUpDownValue => Avalonia.Controls.NumericUpDown.ValueProperty;
 
     public static Avalonia.StyledProperty<System.String> NumericUpDownWatermark => Avalonia.Controls.NumericUpDown.WatermarkProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> NumericUpDownHorizontalContentAlignment => Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> NumericUpDownVerticalContentAlignment => Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty;
 }

@@ -3,4 +3,101 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class TabItemExtensions
 {
+    // TabStripPlacementProperty
+
+    public static T TabStripPlacement<T>(this T obj, Avalonia.Controls.Dock value) where T : Avalonia.Controls.TabItem
+    {
+        obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = value;
+        return obj;
+    }
+
+    public static T TabStripPlacement<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TabItem
+    {
+        obj[Avalonia.Controls.TabItem.TabStripPlacementProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T TabStripPlacement<T>(this T obj, IObservable<Avalonia.Controls.Dock> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TabItem
+    {
+        obj[Avalonia.Controls.TabItem.TabStripPlacementProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTabStripPlacement(this Avalonia.Controls.TabItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TabItem.TabStripPlacementProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Dock> ObserveTabStripPlacement(this Avalonia.Controls.TabItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TabItem.TabStripPlacementProperty);
+    }
+
+    public static T OnTabStripPlacement<T>(this T obj, Action<IObservable<Avalonia.Controls.Dock>> handler) where T : Avalonia.Controls.TabItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TabItem.TabStripPlacementProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T TabStripPlacementLeft<T>(this T obj) where T : Avalonia.Controls.TabItem
+    {
+        obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Left;
+        return obj;
+    }
+
+    public static T TabStripPlacementBottom<T>(this T obj) where T : Avalonia.Controls.TabItem
+    {
+        obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Bottom;
+        return obj;
+    }
+
+    public static T TabStripPlacementRight<T>(this T obj) where T : Avalonia.Controls.TabItem
+    {
+        obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Right;
+        return obj;
+    }
+
+    public static T TabStripPlacementTop<T>(this T obj) where T : Avalonia.Controls.TabItem
+    {
+        obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Top;
+        return obj;
+    }
+
+    // IsSelectedProperty
+
+    public static T IsSelected<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.TabItem
+    {
+        obj[Avalonia.Controls.TabItem.IsSelectedProperty] = value;
+        return obj;
+    }
+
+    public static T IsSelected<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TabItem
+    {
+        obj[Avalonia.Controls.TabItem.IsSelectedProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T IsSelected<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TabItem
+    {
+        obj[Avalonia.Controls.TabItem.IsSelectedProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsSelected(this Avalonia.Controls.TabItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TabItem.IsSelectedProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsSelected(this Avalonia.Controls.TabItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TabItem.IsSelectedProperty);
+    }
+
+    public static T OnIsSelected<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TabItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TabItem.IsSelectedProperty);
+        handler(observable);
+        return obj;
+    }
 }

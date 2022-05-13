@@ -39,4 +39,78 @@ public static partial class ItemsPresenterBaseExtensions
         handler(observable);
         return obj;
     }
+
+    // ItemsPanelProperty
+
+    public static T ItemsPanel<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel> value) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty] = value;
+        return obj;
+    }
+
+    public static T ItemsPanel<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T ItemsPanel<T>(this T obj, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemsPanel(this Avalonia.Controls.Presenters.ItemsPresenterBase obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>> ObserveItemsPanel(this Avalonia.Controls.Presenters.ItemsPresenterBase obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty);
+    }
+
+    public static T OnItemsPanel<T>(this T obj, Action<IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // ItemTemplateProperty
+
+    public static T ItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty] = value;
+        return obj;
+    }
+
+    public static T ItemTemplate<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T ItemTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemTemplate(this Avalonia.Controls.Presenters.ItemsPresenterBase obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate(this Avalonia.Controls.Presenters.ItemsPresenterBase obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty);
+    }
+
+    public static T OnItemTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty);
+        handler(observable);
+        return obj;
+    }
 }

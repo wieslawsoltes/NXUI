@@ -96,6 +96,55 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
+    // VirtualizationModeProperty
+
+    public static T VirtualizationMode<T>(this T obj, Avalonia.Controls.ItemVirtualizationMode value) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty] = value;
+        return obj;
+    }
+
+    public static T VirtualizationMode<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T VirtualizationMode<T>(this T obj, IObservable<Avalonia.Controls.ItemVirtualizationMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVirtualizationMode(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ItemVirtualizationMode> ObserveVirtualizationMode(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ComboBox.VirtualizationModeProperty);
+    }
+
+    public static T OnVirtualizationMode<T>(this T obj, Action<IObservable<Avalonia.Controls.ItemVirtualizationMode>> handler) where T : Avalonia.Controls.ComboBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ComboBox.VirtualizationModeProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T VirtualizationModeNone<T>(this T obj) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
+        return obj;
+    }
+
+    public static T VirtualizationModeSimple<T>(this T obj) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.Simple;
+        return obj;
+    }
+
     // PlaceholderTextProperty
 
     public static T PlaceholderText<T>(this T obj, System.String value) where T : Avalonia.Controls.ComboBox
@@ -167,6 +216,128 @@ public static partial class ComboBoxExtensions
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty);
         handler(observable);
+        return obj;
+    }
+
+    // HorizontalContentAlignmentProperty
+
+    public static T HorizontalContentAlignment<T>(this T obj, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = value;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignment<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignment<T>(this T obj, IObservable<Avalonia.Layout.HorizontalAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindHorizontalContentAlignment(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.HorizontalAlignment> ObserveHorizontalContentAlignment(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty);
+    }
+
+    public static T OnHorizontalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.ComboBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        return obj;
+    }
+
+    public static T HorizontalContentAlignmentRight<T>(this T obj) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        return obj;
+    }
+
+    // VerticalContentAlignmentProperty
+
+    public static T VerticalContentAlignment<T>(this T obj, Avalonia.Layout.VerticalAlignment value) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = value;
+        return obj;
+    }
+
+    public static T VerticalContentAlignment<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T VerticalContentAlignment<T>(this T obj, IObservable<Avalonia.Layout.VerticalAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVerticalContentAlignment(this Avalonia.Controls.ComboBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Layout.VerticalAlignment> ObserveVerticalContentAlignment(this Avalonia.Controls.ComboBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty);
+    }
+
+    public static T OnVerticalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.ComboBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentTop<T>(this T obj) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        return obj;
+    }
+
+    public static T VerticalContentAlignmentBottom<T>(this T obj) where T : Avalonia.Controls.ComboBox
+    {
+        obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
         return obj;
     }
 }

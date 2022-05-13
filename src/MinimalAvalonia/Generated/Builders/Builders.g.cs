@@ -182,6 +182,10 @@ public static partial class MinimalAvaloniaBuilders
 
     public static Avalonia.Controls.NativeMenuItem NativeMenuItem(out Avalonia.Controls.NativeMenuItem @ref) => @ref = new();
 
+    public static Avalonia.Controls.NativeMenuItemSeparator NativeMenuItemSeparator() => new();
+
+    public static Avalonia.Controls.NativeMenuItemSeparator NativeMenuItemSeparator(out Avalonia.Controls.NativeMenuItemSeparator @ref) => @ref = new();
+
     public static Avalonia.Controls.ReversibleStackPanel ReversibleStackPanel() => new();
 
     public static Avalonia.Controls.ReversibleStackPanel ReversibleStackPanel(out Avalonia.Controls.ReversibleStackPanel @ref) => @ref = new();

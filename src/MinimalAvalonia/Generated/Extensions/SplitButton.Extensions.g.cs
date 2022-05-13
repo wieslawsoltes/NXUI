@@ -39,4 +39,78 @@ public static partial class SplitButtonExtensions
         handler(observable);
         return obj;
     }
+
+    // CommandParameterProperty
+
+    public static T CommandParameter<T>(this T obj, System.Object value) where T : Avalonia.Controls.SplitButton
+    {
+        obj[Avalonia.Controls.SplitButton.CommandParameterProperty] = value;
+        return obj;
+    }
+
+    public static T CommandParameter<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitButton
+    {
+        obj[Avalonia.Controls.SplitButton.CommandParameterProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T CommandParameter<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitButton
+    {
+        obj[Avalonia.Controls.SplitButton.CommandParameterProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindCommandParameter(this Avalonia.Controls.SplitButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.SplitButton.CommandParameterProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Object> ObserveCommandParameter(this Avalonia.Controls.SplitButton obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
+    }
+
+    public static T OnCommandParameter<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.SplitButton
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
+        handler(observable);
+        return obj;
+    }
+
+    // FlyoutProperty
+
+    public static T Flyout<T>(this T obj, Avalonia.Controls.Primitives.FlyoutBase value) where T : Avalonia.Controls.SplitButton
+    {
+        obj[Avalonia.Controls.SplitButton.FlyoutProperty] = value;
+        return obj;
+    }
+
+    public static T Flyout<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitButton
+    {
+        obj[Avalonia.Controls.SplitButton.FlyoutProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Flyout<T>(this T obj, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitButton
+    {
+        obj[Avalonia.Controls.SplitButton.FlyoutProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindFlyout(this Avalonia.Controls.SplitButton obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.SplitButton.FlyoutProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase> ObserveFlyout(this Avalonia.Controls.SplitButton obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
+    }
+
+    public static T OnFlyout<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.SplitButton
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
+        handler(observable);
+        return obj;
+    }
 }

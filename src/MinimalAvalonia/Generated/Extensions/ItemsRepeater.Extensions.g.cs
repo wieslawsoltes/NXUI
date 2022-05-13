@@ -40,6 +40,43 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
+    // ItemTemplateProperty
+
+    public static T ItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ItemsRepeater
+    {
+        obj[Avalonia.Controls.ItemsRepeater.ItemTemplateProperty] = value;
+        return obj;
+    }
+
+    public static T ItemTemplate<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ItemsRepeater
+    {
+        obj[Avalonia.Controls.ItemsRepeater.ItemTemplateProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T ItemTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ItemsRepeater
+    {
+        obj[Avalonia.Controls.ItemsRepeater.ItemTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindItemTemplate(this Avalonia.Controls.ItemsRepeater obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ItemsRepeater.ItemTemplateProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
+    }
+
+    public static T OnItemTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
+        handler(observable);
+        return obj;
+    }
+
     // ItemsProperty
 
     public static T Items<T>(this T obj, System.Collections.IEnumerable value) where T : Avalonia.Controls.ItemsRepeater

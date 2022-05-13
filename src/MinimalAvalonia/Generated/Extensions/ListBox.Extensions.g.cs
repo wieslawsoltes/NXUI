@@ -21,4 +21,53 @@ public static partial class ListBoxExtensions
         handler(observable);
         return obj;
     }
+
+    // VirtualizationModeProperty
+
+    public static T VirtualizationMode<T>(this T obj, Avalonia.Controls.ItemVirtualizationMode value) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.VirtualizationModeProperty] = value;
+        return obj;
+    }
+
+    public static T VirtualizationMode<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.VirtualizationModeProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T VirtualizationMode<T>(this T obj, IObservable<Avalonia.Controls.ItemVirtualizationMode> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.VirtualizationModeProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindVirtualizationMode(this Avalonia.Controls.ListBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.ListBox.VirtualizationModeProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Controls.ItemVirtualizationMode> ObserveVirtualizationMode(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ListBox.VirtualizationModeProperty);
+    }
+
+    public static T OnVirtualizationMode<T>(this T obj, Action<IObservable<Avalonia.Controls.ItemVirtualizationMode>> handler) where T : Avalonia.Controls.ListBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ListBox.VirtualizationModeProperty);
+        handler(observable);
+        return obj;
+    }
+
+    public static T VirtualizationModeNone<T>(this T obj) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
+        return obj;
+    }
+
+    public static T VirtualizationModeSimple<T>(this T obj) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.Simple;
+        return obj;
+    }
 }
