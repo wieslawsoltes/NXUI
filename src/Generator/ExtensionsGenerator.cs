@@ -4,7 +4,7 @@ using Avalonia;
 
 namespace Generator;
 
-internal record Property(string Name, string OwnerType, string ValueType, string PropertyType, bool IsReadOnly = false, bool IsEnum = false, string[]? EnumNames = null);
+internal record Property(string Name, string OwnerType, string ValueType, string PropertyType, bool AlreadyExists, bool IsReadOnly = false, bool IsEnum = false, string[]? EnumNames = null);
 
 internal record Class(string Name, string Type, Property[] Properties, bool IsSealed = false, bool PublicCtor = true, bool IsAbstract = false);
 
@@ -159,6 +159,11 @@ internal static class ExtensionsGenerator
             for (var i = 0; i < c.Properties.Length; i++)
             {
                 var p = c.Properties[i];
+                if (p.AlreadyExists)
+                {
+                    continue;
+                }
+
                 var template = p.IsReadOnly
                     ? Templates.PropertyMethodsTemplateReadOnly
                     : c.IsSealed
@@ -274,18 +279,13 @@ internal static class ExtensionsGenerator
                     if (!property.PropertyType.IsPublic)
                         continue;
 
-                    var ownerType = property.OwnerType;
-                    if (property.OwnerType != classType)
-                    {
-                        ownerType = classType;
-                    }
-
                     var propertyType = fieldInfo.FieldType; // property.GetType()
                     var valueType = property.PropertyType;
+                    var ownerType = property.OwnerType;
 
-                    //Console.WriteLine($"Class: {classType.Name} Property: {property.Name} Owner: {property.OwnerType.Name}, IsAttached: {property.IsAttached}, {fieldInfo.FieldType}");
-
-                    if (property.IsAttached && property.GetType() == fieldInfo.FieldType && attached is { })
+                    if (property.IsAttached 
+                        // && property.GetType() == fieldInfo.FieldType 
+                        && attached is { })
                     {
                         foreach (var kvp1 in attached)
                         {
@@ -297,6 +297,26 @@ internal static class ExtensionsGenerator
                                 }
                             }
                         }
+                    }
+
+                    var alreadyExists = false;
+
+                    if (property.OwnerType != classType)
+                    {
+                        var t = classType;
+
+                        while (t != null)
+                        {
+                            if (ownerType == t)
+                            {
+                                alreadyExists = true;
+                                break;
+                            }
+
+                            t = t.BaseType;
+                        }
+
+                        ownerType = classType;
                     }
 
                     var isEnum = false;
@@ -314,6 +334,7 @@ internal static class ExtensionsGenerator
                         FixType(ownerType.ToString()),
                         FixType(valueType.ToString()),
                         FixType(propertyType.ToString()),
+                        alreadyExists,
                         property.IsReadOnly,
                         isEnum,
                         isEnum ? enumNames.ToArray() : null);
