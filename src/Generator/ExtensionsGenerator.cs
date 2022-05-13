@@ -15,6 +15,9 @@ internal static class ExtensionsGenerator
         "AboutAvaloniaDialog"
     };
 
+    private static readonly FieldInfo? s_registered = 
+        typeof(AvaloniaPropertyRegistry).GetField("_registered", BindingFlags.NonPublic | BindingFlags.Instance);
+
     private static readonly FieldInfo? s_attached = 
         typeof(AvaloniaPropertyRegistry).GetField("_attached", BindingFlags.NonPublic | BindingFlags.Instance);
 
@@ -25,6 +28,11 @@ internal static class ExtensionsGenerator
         var extensionsPath = Path.Combine(outputPath, "Extensions");
 
         var classes = GetClasses();
+
+        if (classes is null)
+        {
+            return;
+        }
 
         if (!Directory.Exists(buildersPath))
         {
@@ -197,7 +205,7 @@ internal static class ExtensionsGenerator
         }
     }
 
-    private static List<Class> GetClasses()
+    private static List<Class>? GetClasses()
     {
         var assemblies = AppDomain.CurrentDomain.GetAssemblies();
         var classTypes = (
@@ -211,13 +219,32 @@ internal static class ExtensionsGenerator
             select assemblyType).ToArray();
 
         var classes = new List<Class>();
-        var attachedRegistry = (Dictionary<Type, Dictionary<int, AvaloniaProperty>>?)s_attached?.GetValue(AvaloniaPropertyRegistry.Instance);
 
         foreach (var classType in classTypes)
         {
-            var avaloniaProperties = AvaloniaPropertyRegistry.Instance.GetRegistered(classType);
-            if (avaloniaProperties.Count <= 0)
+            System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(classType.TypeHandle);
+        }
+
+        var registered = (Dictionary<Type, Dictionary<int, AvaloniaProperty>>?)
+            s_registered?.GetValue(AvaloniaPropertyRegistry.Instance);
+
+        var attached = (Dictionary<Type, Dictionary<int, AvaloniaProperty>>?)
+            s_attached?.GetValue(AvaloniaPropertyRegistry.Instance);
+
+        if (registered is null || attached is null)
+        {
+            return null;
+        }
+
+        foreach (var classType in classTypes)
+        {
+            if (!registered.TryGetValue(classType, out var registeredProperties))
                 continue;
+ 
+            if (registeredProperties.Count <= 0)
+                continue;
+
+            var avaloniaProperties = registeredProperties.Values;
 
             var properties = new List<Property>();
 
@@ -248,17 +275,21 @@ internal static class ExtensionsGenerator
 
                 if (!property.PropertyType.IsPublic)
                     continue;
-   
-                if (property.OwnerType != classType)
-                    continue;
-    
-                var isEnum = false;
-                var enumNames = new List<string>();
 
                 var ownerType = property.OwnerType;
-                if (property.IsAttached && attachedRegistry is { })
+                if (property.OwnerType != classType)
                 {
-                    foreach (var kvp1 in attachedRegistry)
+                    ownerType = classType;
+                }
+
+                Console.WriteLine($"Class: {classType.Name} Property: {property.Name} Owner: {property.OwnerType.Name}, IsAttached: {property.IsAttached}, {fieldInfo.FieldType}");
+
+                var propertyType = fieldInfo.FieldType; // property.GetType()
+                var valueType = property.PropertyType;
+
+                if (property.IsAttached && property.GetType() == fieldInfo.FieldType && attached is { })
+                {
+                    foreach (var kvp1 in attached)
                     {
                         foreach (var kvp2 in kvp1.Value)
                         {
@@ -270,6 +301,9 @@ internal static class ExtensionsGenerator
                     }
                 }
 
+                var isEnum = false;
+                var enumNames = new List<string>();
+
                 if (property.PropertyType.BaseType == typeof(Enum))
                 {
                     var names = Enum.GetNames(property.PropertyType);
@@ -280,8 +314,8 @@ internal static class ExtensionsGenerator
                 var p = new Property(
                     property.Name,
                     FixType(ownerType.ToString()),
-                    FixType(property.PropertyType.ToString()),
-                    FixType(property.GetType().ToString()),
+                    FixType(valueType.ToString()),
+                    FixType(propertyType.ToString()),
                     property.IsReadOnly,
                     isEnum,
                     isEnum ? enumNames.ToArray() : null);
