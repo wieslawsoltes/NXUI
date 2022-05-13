@@ -235,7 +235,6 @@ internal static class ExtensionsGenerator
 
         foreach (var classType in classTypes)
         {
-            Console.WriteLine($"Class: {classType.Name}");
             System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(classType.TypeHandle);
         }
 
@@ -252,72 +251,75 @@ internal static class ExtensionsGenerator
 
         foreach (var classType in classTypes)
         {
-            if (!registered.TryGetValue(classType, out var registeredProperties))
-                continue;
-
-            var avaloniaProperties = registeredProperties.Values;
             var properties = new List<Property>();
 
-            foreach (var property in avaloniaProperties)
+            registered.TryGetValue(classType, out var registeredProperties);
+
+            if (registeredProperties is { })
             {
-                var fieldInfo = classType.GetField($"{property.Name}Property");
-                if (fieldInfo is null)
-                    continue;
+                var avaloniaProperties = registeredProperties.Values;
 
-                if (!fieldInfo.IsPublic)
-                    continue;
-
-                if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
-                    continue;
-
-                if (!property.PropertyType.IsPublic)
-                    continue;
-
-                var ownerType = property.OwnerType;
-                if (property.OwnerType != classType)
+                foreach (var property in avaloniaProperties)
                 {
-                    ownerType = classType;
-                }
+                    var fieldInfo = classType.GetField($"{property.Name}Property");
+                    if (fieldInfo is null)
+                        continue;
 
-                var propertyType = fieldInfo.FieldType; // property.GetType()
-                var valueType = property.PropertyType;
+                    if (!fieldInfo.IsPublic)
+                        continue;
 
-                //Console.WriteLine($"Class: {classType.Name} Property: {property.Name} Owner: {property.OwnerType.Name}, IsAttached: {property.IsAttached}, {fieldInfo.FieldType}");
+                    if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
+                        continue;
 
-                if (property.IsAttached && property.GetType() == fieldInfo.FieldType && attached is { })
-                {
-                    foreach (var kvp1 in attached)
+                    if (!property.PropertyType.IsPublic)
+                        continue;
+
+                    var ownerType = property.OwnerType;
+                    if (property.OwnerType != classType)
                     {
-                        foreach (var kvp2 in kvp1.Value)
+                        ownerType = classType;
+                    }
+
+                    var propertyType = fieldInfo.FieldType; // property.GetType()
+                    var valueType = property.PropertyType;
+
+                    //Console.WriteLine($"Class: {classType.Name} Property: {property.Name} Owner: {property.OwnerType.Name}, IsAttached: {property.IsAttached}, {fieldInfo.FieldType}");
+
+                    if (property.IsAttached && property.GetType() == fieldInfo.FieldType && attached is { })
+                    {
+                        foreach (var kvp1 in attached)
                         {
-                            if (kvp2.Value == property)
+                            foreach (var kvp2 in kvp1.Value)
                             {
-                                ownerType = kvp1.Key;
+                                if (kvp2.Value == property)
+                                {
+                                    ownerType = kvp1.Key;
+                                }
                             }
                         }
                     }
+
+                    var isEnum = false;
+                    var enumNames = new List<string>();
+
+                    if (property.PropertyType.BaseType == typeof(Enum))
+                    {
+                        var names = Enum.GetNames(property.PropertyType);
+                        enumNames.AddRange(names);
+                        isEnum = true;
+                    }
+
+                    var p = new Property(
+                        property.Name,
+                        FixType(ownerType.ToString()),
+                        FixType(valueType.ToString()),
+                        FixType(propertyType.ToString()),
+                        property.IsReadOnly,
+                        isEnum,
+                        isEnum ? enumNames.ToArray() : null);
+
+                    properties.Add(p);
                 }
-
-                var isEnum = false;
-                var enumNames = new List<string>();
-
-                if (property.PropertyType.BaseType == typeof(Enum))
-                {
-                    var names = Enum.GetNames(property.PropertyType);
-                    enumNames.AddRange(names);
-                    isEnum = true;
-                }
-
-                var p = new Property(
-                    property.Name,
-                    FixType(ownerType.ToString()),
-                    FixType(valueType.ToString()),
-                    FixType(propertyType.ToString()),
-                    property.IsReadOnly,
-                    isEnum,
-                    isEnum ? enumNames.ToArray() : null);
-
-                properties.Add(p);
             }
 
             var publicCtor = classType
