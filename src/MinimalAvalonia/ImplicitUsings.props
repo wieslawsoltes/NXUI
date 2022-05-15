@@ -35,5 +35,6 @@
     <Using Include="MinimalAvalonia.Extensions" />
     <Using Include="MinimalAvalonia.MinimalAvaloniaBuilders" Static="true" />
     <Using Include="MinimalAvalonia.MinimalAvaloniaProperties" Static="true" />
+    <Using Include="MinimalAvalonia.MinimalAvaloniaEvents" Static="true" />
   </ItemGroup>
 </Project>
