@@ -1,5 +1,5 @@
-﻿var celsius = new Subject<string?>();
-var fahrenheit = new Subject<string?>();
+﻿var celsius = new Subject<double?>();
+var fahrenheit = new Subject<double?>();
 
 Window Build() 
     => Window()
@@ -9,7 +9,7 @@ Window Build()
                 .OrientationHorizontal().Spacing(12).HorizontalAlignmentCenter().VerticalAlignmentCenter()
                 .Children(
                     TextBox()
-                        .Text(celsius)
+                        .Text(celsius.Select(x => x.ToString()))
                         .OnText((tc, o) => o.Subscribe(x => {
                             tc.Errors(Enumerable.Empty<string>());
                             if (string.IsNullOrWhiteSpace(x)) {
@@ -20,13 +20,13 @@ Window Build()
                                 return;
                             }
                             var f = Math.Round(c * (9d / 5d) + 32d);
-                            fahrenheit.OnNext($"{f}");
+                            fahrenheit.OnNext(f);
                         })),
                     Label()
                         .HorizontalAlignmentCenter().VerticalAlignmentCenter()
                         .Content("Celsius = "),
                     TextBox()
-                        .Text(fahrenheit)
+                        .Text(fahrenheit.Select(x => x.ToString()))
                         .OnText((tf, o) => o.Subscribe(x => {
                             tf.Errors(Enumerable.Empty<string>());
                             if (string.IsNullOrWhiteSpace(x)) {
@@ -37,7 +37,7 @@ Window Build()
                                 return;
                             }
                             var c = Math.Round((f - 32d) * (5d / 9d));
-                            celsius.OnNext($"{c}");
+                            celsius.OnNext(c);
                         })),
                     Label()
                         .HorizontalAlignmentCenter().VerticalAlignmentCenter()
