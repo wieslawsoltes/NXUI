@@ -1,12 +1,15 @@
 ﻿using System.Reflection;
 using System.Text;
 using Avalonia;
+using Avalonia.Interactivity;
 
 namespace Generator;
 
 internal record Property(string Name, string OwnerType, string ValueType, string PropertyType, bool AlreadyExists, bool IsReadOnly = false, bool IsEnum = false, string[]? EnumNames = null);
 
-internal record Class(string Name, string Type, Property[] Properties, bool IsSealed = false, bool PublicCtor = true, bool IsAbstract = false);
+internal record Event(string Name, string OwnerType, string ArgsType, string EventType);
+
+internal record Class(string Name, string Type, Property[] Properties, Event[] Events, bool IsSealed = false, bool PublicCtor = true, bool IsAbstract = false);
 
 internal static class ExtensionsGenerator
 {
@@ -21,10 +24,14 @@ internal static class ExtensionsGenerator
     private static readonly FieldInfo? s_attached = 
         typeof(AvaloniaPropertyRegistry).GetField("_attached", BindingFlags.NonPublic | BindingFlags.Instance);
 
+    private static readonly FieldInfo? s_registeredRoutedEvents = 
+        typeof(RoutedEventRegistry).GetField("_registeredRoutedEvents", BindingFlags.NonPublic | BindingFlags.Instance);
+
     public static void Generate(string outputPath)
     {
         var buildersPath = Path.Combine(outputPath, "Builders");
         var propertiesPath = Path.Combine(outputPath, "Properties");
+        var eventsPath = Path.Combine(outputPath, "Events");
         var extensionsPath = Path.Combine(outputPath, "Extensions");
 
         var classes = GetClasses();
@@ -38,21 +45,24 @@ internal static class ExtensionsGenerator
         {
             Directory.CreateDirectory(buildersPath);
         }
-
         GenerateBuilders(buildersPath, classes);
 
         if (!Directory.Exists(propertiesPath))
         {
             Directory.CreateDirectory(propertiesPath);
         }
-
         GenerateProperties(propertiesPath, classes);
+
+        if (!Directory.Exists(eventsPath))
+        {
+            Directory.CreateDirectory(eventsPath);
+        }
+        GenerateEvents(eventsPath, classes);
 
         if (!Directory.Exists(extensionsPath))
         {
             Directory.CreateDirectory(extensionsPath);
         }
-
         GenerateExtensions(extensionsPath, classes);
     }
 
@@ -132,6 +142,45 @@ internal static class ExtensionsGenerator
             }
 
             var classFooterBuilder = new StringBuilder(Templates.PropertiesFooterTemplate);
+            WriteLine(classFooterBuilder.ToString());
+        }
+    }
+
+    private static void GenerateEvents(string outputPath, List<Class> classes)
+    {
+        foreach (var c in classes)
+        {
+            if (s_excludedClasses.Contains(c.Name))
+            {
+                continue;
+            }
+
+            if (c.Events.Length <= 0)
+            {
+                continue;
+            }
+
+            var outputFile = Path.Combine(outputPath, $"{c.Name}.Events.g.cs");
+
+            using var file = File.CreateText(outputFile);
+            void WriteLine(string x) => file.WriteLine(x);
+
+            var fileHeaderBuilder = new StringBuilder(Templates.EventsHeaderTemplate);
+            WriteLine(fileHeaderBuilder.ToString());
+
+            for (var i = 0; i < c.Events.Length; i++)
+            {
+                var e = c.Events[i];
+
+                WriteLine($"    public static {e.EventType} {c.Name}{e.Name} => {c.Type}.{e.Name}Event;");
+
+                if (i < c.Events.Length - 1)
+                {
+                    WriteLine("");
+                }
+            }
+
+            var classFooterBuilder = new StringBuilder(Templates.EventsFooterTemplate);
             WriteLine(classFooterBuilder.ToString());
         }
     }
@@ -249,13 +298,16 @@ internal static class ExtensionsGenerator
             System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(classType.TypeHandle);
         }
 
-        var registered = (Dictionary<Type, Dictionary<int, AvaloniaProperty>>?)
+        var registeredProperties = (Dictionary<Type, Dictionary<int, AvaloniaProperty>>?)
             s_registered?.GetValue(AvaloniaPropertyRegistry.Instance);
 
-        var attached = (Dictionary<Type, Dictionary<int, AvaloniaProperty>>?)
+        var registeredAttachedProperties = (Dictionary<Type, Dictionary<int, AvaloniaProperty>>?)
             s_attached?.GetValue(AvaloniaPropertyRegistry.Instance);
 
-        if (registered is null || attached is null)
+        var registeredRoutedEvents = (Dictionary<Type, List<RoutedEvent>>?)
+            s_registeredRoutedEvents?.GetValue(RoutedEventRegistry.Instance);
+
+        if (registeredProperties is null || registeredAttachedProperties is null || registeredRoutedEvents is null)
         {
             return null;
         }
@@ -263,12 +315,12 @@ internal static class ExtensionsGenerator
         foreach (var classType in classTypes)
         {
             var properties = new List<Property>();
+            var events = new List<Event>();
 
-            registered.TryGetValue(classType, out var registeredProperties);
-
-            if (registeredProperties is { })
+            registeredProperties.TryGetValue(classType, out var registeredPropertiesDict);
+            if (registeredPropertiesDict is { })
             {
-                var avaloniaProperties = registeredProperties.Values;
+                var avaloniaProperties = registeredPropertiesDict.Values;
 
                 foreach (var property in avaloniaProperties)
                 {
@@ -291,9 +343,9 @@ internal static class ExtensionsGenerator
 
                     if (property.IsAttached 
                         // && property.GetType() == fieldInfo.FieldType 
-                        && attached is { })
+                        && registeredAttachedProperties is { })
                     {
-                        foreach (var kvp1 in attached)
+                        foreach (var kvp1 in registeredAttachedProperties)
                         {
                             foreach (var kvp2 in kvp1.Value)
                             {
@@ -349,6 +401,40 @@ internal static class ExtensionsGenerator
                 }
             }
 
+            registeredRoutedEvents.TryGetValue(classType, out var registeredRoutedEventsDict);
+            if (registeredRoutedEventsDict is { })
+            {
+                var avaloniaRoutedEvents = registeredRoutedEventsDict;
+ 
+                foreach (var @event in avaloniaRoutedEvents)
+                {
+                    var fieldInfo = classType.GetField($"{@event.Name}Event");
+                    if (fieldInfo is null)
+                        continue;
+
+                    if (!fieldInfo.IsPublic)
+                        continue;
+
+                    if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
+                        continue;
+
+                    if (!@event.EventArgsType.IsPublic)
+                        continue;
+
+                    var eventType = fieldInfo.FieldType; // property.GetType()
+                    var argsType = @event.EventArgsType;
+                    var ownerType = @event.OwnerType;
+
+                    var e = new Event(
+                        @event.Name,
+                        FixType(ownerType.ToString()),
+                        FixType(argsType.ToString()),
+                        FixType(eventType.ToString()));
+
+                    events.Add(e);
+                }
+            }
+
             var publicCtor = classType
                 .GetConstructors()
                 .Any(x => x.IsPublic && x.GetParameters().Length == 0);
@@ -357,6 +443,7 @@ internal static class ExtensionsGenerator
                 FixClassNameType(classType.Name), 
                 FixType(classType.ToString()), 
                 properties.ToArray(),
+                events.ToArray(),
                 classType.IsSealed,
                 publicCtor,
                 classType.IsAbstract);
