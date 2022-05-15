@@ -21,6 +21,15 @@ public static partial class MinimalAvaloniaProperties
 
     public static string PropertiesFooterTemplate = @"}";
 
+    public static string EventsHeaderTemplate = @"namespace MinimalAvalonia;
+
+[System.Diagnostics.CodeAnalysis.SuppressMessage(""ReSharper"", ""InconsistentNaming"")]
+[System.Diagnostics.CodeAnalysis.SuppressMessage(""ReSharper"", ""RedundantNameQualifier"")]
+public static partial class MinimalAvaloniaEvents
+{";
+
+    public static string EventsFooterTemplate = @"}";
+
     public static string PropertyMethodEnumTemplate = @"
     public static T %Name%%EnumValue%<T>(this T obj) where T : %OwnerType%
     {
