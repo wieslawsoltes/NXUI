@@ -196,6 +196,11 @@ internal static class ExtensionsGenerator
                 continue;
             }
 
+            if (c.Properties.Length <= 0)
+            {
+                continue;
+            }
+
             var outputFile = Path.Combine(outputPath, $"{c.Name}.Extensions.g.cs");
             using var file = File.CreateText(outputFile);
             void WriteLine(string x) => file.WriteLine(x);
