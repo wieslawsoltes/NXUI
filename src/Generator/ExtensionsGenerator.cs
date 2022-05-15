@@ -211,17 +211,23 @@ internal static class ExtensionsGenerator
     }
 
     private static string FixType(string t)
-        => t.Replace("`1[", "<")
+    {
+        return t
+            .Replace("`1[", "<")
             .Replace("`2[", "<")
             .Replace("`3[", "<")
             .Replace("]", ">")
             .Replace("+", ".");
+    }
 
     private static string FixClassNameType(string t)
-        => t.Replace("`1", "")
+    {
+        return t
+            .Replace("`1", "")
             .Replace("`2", "")
             .Replace("`3", "")
             .Replace("+", "");
+    }
 
     private static List<Class>? GetClasses()
     {
