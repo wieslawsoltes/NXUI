@@ -33,10 +33,10 @@ public static partial class DrawingGroupExtensions
         return obj.GetObservable(Avalonia.Media.DrawingGroup.OpacityProperty);
     }
 
-    public static T OnOpacity<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.DrawingGroup
+    public static T OnOpacity<T>(this T obj, Action<Avalonia.Media.DrawingGroup, IObservable<System.Double>> handler) where T : Avalonia.Media.DrawingGroup
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.OpacityProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class DrawingGroupExtensions
         return obj.GetObservable(Avalonia.Media.DrawingGroup.TransformProperty);
     }
 
-    public static T OnTransform<T>(this T obj, Action<IObservable<Avalonia.Media.Transform>> handler) where T : Avalonia.Media.DrawingGroup
+    public static T OnTransform<T>(this T obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Transform>> handler) where T : Avalonia.Media.DrawingGroup
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.TransformProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class DrawingGroupExtensions
         return obj.GetObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
     }
 
-    public static T OnClipGeometry<T>(this T obj, Action<IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.DrawingGroup
+    public static T OnClipGeometry<T>(this T obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.DrawingGroup
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class DrawingGroupExtensions
         return obj.GetObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
     }
 
-    public static T OnOpacityMask<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Media.DrawingGroup
+    public static T OnOpacityMask<T>(this T obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Media.DrawingGroup
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

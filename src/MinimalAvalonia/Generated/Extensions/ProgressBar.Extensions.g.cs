@@ -33,10 +33,10 @@ public static partial class ProgressBarExtensions
         return obj.GetObservable(Avalonia.Controls.ProgressBar.IsIndeterminateProperty);
     }
 
-    public static T OnIsIndeterminate<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ProgressBar
+    public static T OnIsIndeterminate<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ProgressBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.ProgressBar.IsIndeterminateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ProgressBarExtensions
         return obj.GetObservable(Avalonia.Controls.ProgressBar.ShowProgressTextProperty);
     }
 
-    public static T OnShowProgressText<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ProgressBar
+    public static T OnShowProgressText<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ProgressBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.ProgressBar.ShowProgressTextProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class ProgressBarExtensions
         return obj.GetObservable(Avalonia.Controls.ProgressBar.OrientationProperty);
     }
 
-    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.ProgressBar
+    public static T OnOrientation<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.ProgressBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.ProgressBar.OrientationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

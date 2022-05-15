@@ -33,10 +33,10 @@ public static partial class RectangleGeometryExtensions
         return obj.GetObservable(Avalonia.Media.RectangleGeometry.RectProperty);
     }
 
-    public static T OnRect<T>(this T obj, Action<IObservable<Avalonia.Rect>> handler) where T : Avalonia.Media.RectangleGeometry
+    public static T OnRect<T>(this T obj, Action<Avalonia.Media.RectangleGeometry, IObservable<Avalonia.Rect>> handler) where T : Avalonia.Media.RectangleGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.RectangleGeometry.RectProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

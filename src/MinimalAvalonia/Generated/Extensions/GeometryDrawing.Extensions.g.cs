@@ -33,10 +33,10 @@ public static partial class GeometryDrawingExtensions
         return obj.GetObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
     }
 
-    public static T OnGeometry<T>(this T obj, Action<IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.GeometryDrawing
+    public static T OnGeometry<T>(this T obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.GeometryDrawing
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class GeometryDrawingExtensions
         return obj.GetObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
     }
 
-    public static T OnBrush<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Media.GeometryDrawing
+    public static T OnBrush<T>(this T obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Media.GeometryDrawing
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class GeometryDrawingExtensions
         return obj.GetObservable(Avalonia.Media.GeometryDrawing.PenProperty);
     }
 
-    public static T OnPen<T>(this T obj, Action<IObservable<Avalonia.Media.Pen>> handler) where T : Avalonia.Media.GeometryDrawing
+    public static T OnPen<T>(this T obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.Pen>> handler) where T : Avalonia.Media.GeometryDrawing
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.PenProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

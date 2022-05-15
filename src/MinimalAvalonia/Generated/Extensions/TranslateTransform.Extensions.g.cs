@@ -33,10 +33,10 @@ public static partial class TranslateTransformExtensions
         return obj.GetObservable(Avalonia.Media.TranslateTransform.XProperty);
     }
 
-    public static T OnX<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.TranslateTransform
+    public static T OnX<T>(this T obj, Action<Avalonia.Media.TranslateTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.TranslateTransform
     {
         var observable = obj.GetObservable(Avalonia.Media.TranslateTransform.XProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TranslateTransformExtensions
         return obj.GetObservable(Avalonia.Media.TranslateTransform.YProperty);
     }
 
-    public static T OnY<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.TranslateTransform
+    public static T OnY<T>(this T obj, Action<Avalonia.Media.TranslateTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.TranslateTransform
     {
         var observable = obj.GetObservable(Avalonia.Media.TranslateTransform.YProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.SizeToContentProperty);
     }
 
-    public static T OnSizeToContent<T>(this T obj, Action<IObservable<Avalonia.Controls.SizeToContent>> handler) where T : Avalonia.Controls.Window
+    public static T OnSizeToContent<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.SizeToContent>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.SizeToContentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -94,10 +94,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty);
     }
 
-    public static T OnExtendClientAreaToDecorationsHint<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
+    public static T OnExtendClientAreaToDecorationsHint<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -131,10 +131,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
     }
 
-    public static T OnExtendClientAreaChromeHints<T>(this T obj, Action<IObservable<Avalonia.Platform.ExtendClientAreaChromeHints>> handler) where T : Avalonia.Controls.Window
+    public static T OnExtendClientAreaChromeHints<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Platform.ExtendClientAreaChromeHints>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -198,10 +198,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty);
     }
 
-    public static T OnExtendClientAreaTitleBarHeightHint<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Window
+    public static T OnExtendClientAreaTitleBarHeightHint<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.Double>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -217,10 +217,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
     }
 
-    public static Avalonia.Controls.Window OnIsExtendedIntoWindowDecorations(this Avalonia.Controls.Window obj, Action<IObservable<System.Boolean>> handler)
+    public static Avalonia.Controls.Window OnIsExtendedIntoWindowDecorations(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -236,10 +236,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.WindowDecorationMarginProperty);
     }
 
-    public static Avalonia.Controls.Window OnWindowDecorationMargin(this Avalonia.Controls.Window obj, Action<IObservable<Avalonia.Thickness>> handler)
+    public static Avalonia.Controls.Window OnWindowDecorationMargin(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Thickness>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.WindowDecorationMarginProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -255,10 +255,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.OffScreenMarginProperty);
     }
 
-    public static Avalonia.Controls.Window OnOffScreenMargin(this Avalonia.Controls.Window obj, Action<IObservable<Avalonia.Thickness>> handler)
+    public static Avalonia.Controls.Window OnOffScreenMargin(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Thickness>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.OffScreenMarginProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -292,10 +292,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
     }
 
-    public static T OnSystemDecorations<T>(this T obj, Action<IObservable<Avalonia.Controls.SystemDecorations>> handler) where T : Avalonia.Controls.Window
+    public static T OnSystemDecorations<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.SystemDecorations>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -347,10 +347,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.ShowActivatedProperty);
     }
 
-    public static T OnShowActivated<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
+    public static T OnShowActivated<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.ShowActivatedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -384,10 +384,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.ShowInTaskbarProperty);
     }
 
-    public static T OnShowInTaskbar<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
+    public static T OnShowInTaskbar<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.ShowInTaskbarProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -421,10 +421,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.WindowStateProperty);
     }
 
-    public static T OnWindowState<T>(this T obj, Action<IObservable<Avalonia.Controls.WindowState>> handler) where T : Avalonia.Controls.Window
+    public static T OnWindowState<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.WindowState>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.WindowStateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -482,10 +482,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.TitleProperty);
     }
 
-    public static T OnTitle<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.Window
+    public static T OnTitle<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.String>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.TitleProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -519,10 +519,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.IconProperty);
     }
 
-    public static T OnIcon<T>(this T obj, Action<IObservable<Avalonia.Controls.WindowIcon>> handler) where T : Avalonia.Controls.Window
+    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.WindowIcon>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.IconProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -556,10 +556,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.WindowStartupLocationProperty);
     }
 
-    public static T OnWindowStartupLocation<T>(this T obj, Action<IObservable<Avalonia.Controls.WindowStartupLocation>> handler) where T : Avalonia.Controls.Window
+    public static T OnWindowStartupLocation<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.WindowStartupLocation>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.WindowStartupLocationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -611,10 +611,10 @@ public static partial class WindowExtensions
         return obj.GetObservable(Avalonia.Controls.Window.CanResizeProperty);
     }
 
-    public static T OnCanResize<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
+    public static T OnCanResize<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.CanResizeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class CarouselPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.CarouselPresenter.IsVirtualizedProperty);
     }
 
-    public static T OnIsVirtualized<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.CarouselPresenter
+    public static T OnIsVirtualized<T>(this T obj, Action<Avalonia.Controls.Presenters.CarouselPresenter, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.CarouselPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.CarouselPresenter.IsVirtualizedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class CarouselPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.CarouselPresenter.SelectedIndexProperty);
     }
 
-    public static T OnSelectedIndex<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Presenters.CarouselPresenter
+    public static T OnSelectedIndex<T>(this T obj, Action<Avalonia.Controls.Presenters.CarouselPresenter, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Presenters.CarouselPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.CarouselPresenter.SelectedIndexProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class CarouselPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.CarouselPresenter.PageTransitionProperty);
     }
 
-    public static T OnPageTransition<T>(this T obj, Action<IObservable<Avalonia.Animation.IPageTransition>> handler) where T : Avalonia.Controls.Presenters.CarouselPresenter
+    public static T OnPageTransition<T>(this T obj, Action<Avalonia.Controls.Presenters.CarouselPresenter, IObservable<Avalonia.Animation.IPageTransition>> handler) where T : Avalonia.Controls.Presenters.CarouselPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.CarouselPresenter.PageTransitionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

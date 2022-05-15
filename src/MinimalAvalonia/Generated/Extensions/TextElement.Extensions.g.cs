@@ -33,10 +33,10 @@ public static partial class TextElementExtensions
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
     }
 
-    public static T OnBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Documents.TextElement
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TextElementExtensions
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontFamilyProperty);
     }
 
-    public static T OnFontFamily<T>(this T obj, Action<IObservable<Avalonia.Media.FontFamily>> handler) where T : Avalonia.Controls.Control
+    public static T OnFontFamily<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FontFamily>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontFamilyProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class TextElementExtensions
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontSizeProperty);
     }
 
-    public static T OnFontSize<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    public static T OnFontSize<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontSizeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class TextElementExtensions
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontStyleProperty);
     }
 
-    public static T OnFontStyle<T>(this T obj, Action<IObservable<Avalonia.Media.FontStyle>> handler) where T : Avalonia.Controls.Control
+    public static T OnFontStyle<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FontStyle>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontStyleProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -199,10 +199,10 @@ public static partial class TextElementExtensions
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontWeightProperty);
     }
 
-    public static T OnFontWeight<T>(this T obj, Action<IObservable<Avalonia.Media.FontWeight>> handler) where T : Avalonia.Controls.Control
+    public static T OnFontWeight<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FontWeight>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontWeightProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -338,10 +338,10 @@ public static partial class TextElementExtensions
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontStretchProperty);
     }
 
-    public static T OnFontStretch<T>(this T obj, Action<IObservable<Avalonia.Media.FontStretch>> handler) where T : Avalonia.Controls.Control
+    public static T OnFontStretch<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FontStretch>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontStretchProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -429,10 +429,10 @@ public static partial class TextElementExtensions
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
     }
 
-    public static T OnForeground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Control
+    public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class TimePickerExtensions
         return obj.GetObservable(Avalonia.Controls.TimePicker.MinuteIncrementProperty);
     }
 
-    public static T OnMinuteIncrement<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.TimePicker
+    public static T OnMinuteIncrement<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<System.Int32>> handler) where T : Avalonia.Controls.TimePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.TimePicker.MinuteIncrementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TimePickerExtensions
         return obj.GetObservable(Avalonia.Controls.TimePicker.HeaderProperty);
     }
 
-    public static T OnHeader<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.TimePicker
+    public static T OnHeader<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<System.Object>> handler) where T : Avalonia.Controls.TimePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.TimePicker.HeaderProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class TimePickerExtensions
         return obj.GetObservable(Avalonia.Controls.TimePicker.HeaderTemplateProperty);
     }
 
-    public static T OnHeaderTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.TimePicker
+    public static T OnHeaderTemplate<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.TimePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.TimePicker.HeaderTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class TimePickerExtensions
         return obj.GetObservable(Avalonia.Controls.TimePicker.ClockIdentifierProperty);
     }
 
-    public static T OnClockIdentifier<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.TimePicker
+    public static T OnClockIdentifier<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<System.String>> handler) where T : Avalonia.Controls.TimePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.TimePicker.ClockIdentifierProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class TimePickerExtensions
         return obj.GetObservable(Avalonia.Controls.TimePicker.SelectedTimeProperty);
     }
 
-    public static T OnSelectedTime<T>(this T obj, Action<IObservable<System.Nullable<System.TimeSpan>>> handler) where T : Avalonia.Controls.TimePicker
+    public static T OnSelectedTime<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<System.Nullable<System.TimeSpan>>> handler) where T : Avalonia.Controls.TimePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.TimePicker.SelectedTimeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

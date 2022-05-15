@@ -33,10 +33,10 @@ public static partial class CombinedGeometryExtensions
         return obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
     }
 
-    public static T OnGeometry1<T>(this T obj, Action<IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.CombinedGeometry
+    public static T OnGeometry1<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.CombinedGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class CombinedGeometryExtensions
         return obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
     }
 
-    public static T OnGeometry2<T>(this T obj, Action<IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.CombinedGeometry
+    public static T OnGeometry2<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.CombinedGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class CombinedGeometryExtensions
         return obj.GetObservable(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
     }
 
-    public static T OnGeometryCombineMode<T>(this T obj, Action<IObservable<Avalonia.Media.GeometryCombineMode>> handler) where T : Avalonia.Media.CombinedGeometry
+    public static T OnGeometryCombineMode<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<Avalonia.Media.GeometryCombineMode>> handler) where T : Avalonia.Media.CombinedGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

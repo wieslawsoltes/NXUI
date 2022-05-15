@@ -33,10 +33,10 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.MinimumProperty);
     }
 
-    public static T OnMinimum<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnMinimum<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.MinimumProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.MaximumProperty);
     }
 
-    public static T OnMaximum<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnMaximum<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.MaximumProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.ValueProperty);
     }
 
-    public static T OnValue<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnValue<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.ValueProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.ViewportSizeProperty);
     }
 
-    public static T OnViewportSize<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnViewportSize<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.ViewportSizeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.OrientationProperty);
     }
 
-    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnOrientation<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.OrientationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -230,10 +230,10 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
     }
 
-    public static T OnThumb<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.Thumb>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnThumb<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Controls.Primitives.Thumb>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -267,10 +267,10 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
     }
 
-    public static T OnIncreaseButton<T>(this T obj, Action<IObservable<Avalonia.Controls.Button>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnIncreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Controls.Button>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -304,10 +304,10 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
     }
 
-    public static T OnDecreaseButton<T>(this T obj, Action<IObservable<Avalonia.Controls.Button>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnDecreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Controls.Button>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -341,10 +341,10 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
     }
 
-    public static T OnIsDirectionReversed<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnIsDirectionReversed<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -378,10 +378,10 @@ public static partial class TrackExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
     }
 
-    public static T OnIgnoreThumbDrag<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnIgnoreThumbDrag<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

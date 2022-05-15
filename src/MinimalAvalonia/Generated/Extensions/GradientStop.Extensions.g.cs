@@ -33,10 +33,10 @@ public static partial class GradientStopExtensions
         return obj.GetObservable(Avalonia.Media.GradientStop.OffsetProperty);
     }
 
-    public static Avalonia.Media.GradientStop OnOffset(this Avalonia.Media.GradientStop obj, Action<IObservable<System.Double>> handler)
+    public static Avalonia.Media.GradientStop OnOffset(this Avalonia.Media.GradientStop obj, Action<Avalonia.Media.GradientStop, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GradientStop.OffsetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class GradientStopExtensions
         return obj.GetObservable(Avalonia.Media.GradientStop.ColorProperty);
     }
 
-    public static Avalonia.Media.GradientStop OnColor(this Avalonia.Media.GradientStop obj, Action<IObservable<Avalonia.Media.Color>> handler)
+    public static Avalonia.Media.GradientStop OnColor(this Avalonia.Media.GradientStop obj, Action<Avalonia.Media.GradientStop, IObservable<Avalonia.Media.Color>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GradientStop.ColorProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

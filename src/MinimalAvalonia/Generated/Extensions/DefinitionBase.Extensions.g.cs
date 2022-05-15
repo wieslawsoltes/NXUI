@@ -33,10 +33,10 @@ public static partial class DefinitionBaseExtensions
         return obj.GetObservable(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty);
     }
 
-    public static T OnSharedSizeGroup<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.Control
+    public static T OnSharedSizeGroup<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.String>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

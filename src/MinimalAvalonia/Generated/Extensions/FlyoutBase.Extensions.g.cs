@@ -15,10 +15,10 @@ public static partial class FlyoutBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
     }
 
-    public static Avalonia.Controls.Primitives.FlyoutBase OnIsOpen(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<IObservable<System.Boolean>> handler)
+    public static Avalonia.Controls.Primitives.FlyoutBase OnIsOpen(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -34,10 +34,10 @@ public static partial class FlyoutBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
     }
 
-    public static Avalonia.Controls.Primitives.FlyoutBase OnTarget(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<IObservable<Avalonia.Controls.Control>> handler)
+    public static Avalonia.Controls.Primitives.FlyoutBase OnTarget(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<Avalonia.Controls.Control>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -71,10 +71,10 @@ public static partial class FlyoutBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty);
     }
 
-    public static T OnPlacement<T>(this T obj, Action<IObservable<Avalonia.Controls.FlyoutPlacementMode>> handler) where T : Avalonia.Controls.Primitives.FlyoutBase
+    public static T OnPlacement<T>(this T obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<Avalonia.Controls.FlyoutPlacementMode>> handler) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -186,10 +186,10 @@ public static partial class FlyoutBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty);
     }
 
-    public static T OnShowMode<T>(this T obj, Action<IObservable<Avalonia.Controls.FlyoutShowMode>> handler) where T : Avalonia.Controls.Primitives.FlyoutBase
+    public static T OnShowMode<T>(this T obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<Avalonia.Controls.FlyoutShowMode>> handler) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -241,10 +241,10 @@ public static partial class FlyoutBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
     }
 
-    public static T OnAttachedFlyout<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Control
+    public static T OnAttachedFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

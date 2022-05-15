@@ -33,10 +33,10 @@ public static partial class NativeMenuExtensions
         return obj.GetObservable(Avalonia.Controls.NativeMenu.ParentProperty);
     }
 
-    public static T OnParent<T>(this T obj, Action<IObservable<Avalonia.Controls.NativeMenuItem>> handler) where T : Avalonia.Controls.NativeMenu
+    public static T OnParent<T>(this T obj, Action<Avalonia.Controls.NativeMenu, IObservable<Avalonia.Controls.NativeMenuItem>> handler) where T : Avalonia.Controls.NativeMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenu.ParentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class NativeMenuExtensions
         return obj.GetObservable(Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty);
     }
 
-    public static T OnIsNativeMenuExported<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TopLevel
+    public static T OnIsNativeMenuExported<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class NativeMenuExtensions
         return obj.GetObservable(Avalonia.Controls.NativeMenu.MenuProperty);
     }
 
-    public static T OnMenu<T>(this T obj, Action<IObservable<Avalonia.Controls.NativeMenu>> handler) where T : Avalonia.AvaloniaObject
+    public static T OnMenu<T>(this T obj, Action<Avalonia.AvaloniaObject, IObservable<Avalonia.Controls.NativeMenu>> handler) where T : Avalonia.AvaloniaObject
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenu.MenuProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

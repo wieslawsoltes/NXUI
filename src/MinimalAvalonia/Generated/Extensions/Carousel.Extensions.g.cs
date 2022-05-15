@@ -33,10 +33,10 @@ public static partial class CarouselExtensions
         return obj.GetObservable(Avalonia.Controls.Carousel.IsVirtualizedProperty);
     }
 
-    public static T OnIsVirtualized<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Carousel
+    public static T OnIsVirtualized<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Carousel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Carousel.IsVirtualizedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class CarouselExtensions
         return obj.GetObservable(Avalonia.Controls.Carousel.PageTransitionProperty);
     }
 
-    public static T OnPageTransition<T>(this T obj, Action<IObservable<Avalonia.Animation.IPageTransition>> handler) where T : Avalonia.Controls.Carousel
+    public static T OnPageTransition<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<Avalonia.Animation.IPageTransition>> handler) where T : Avalonia.Controls.Carousel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Carousel.PageTransitionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

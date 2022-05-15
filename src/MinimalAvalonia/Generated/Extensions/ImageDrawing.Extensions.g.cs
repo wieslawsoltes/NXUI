@@ -33,10 +33,10 @@ public static partial class ImageDrawingExtensions
         return obj.GetObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
     }
 
-    public static T OnImageSource<T>(this T obj, Action<IObservable<Avalonia.Media.IImage>> handler) where T : Avalonia.Media.ImageDrawing
+    public static T OnImageSource<T>(this T obj, Action<Avalonia.Media.ImageDrawing, IObservable<Avalonia.Media.IImage>> handler) where T : Avalonia.Media.ImageDrawing
     {
         var observable = obj.GetObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ImageDrawingExtensions
         return obj.GetObservable(Avalonia.Media.ImageDrawing.RectProperty);
     }
 
-    public static T OnRect<T>(this T obj, Action<IObservable<Avalonia.Rect>> handler) where T : Avalonia.Media.ImageDrawing
+    public static T OnRect<T>(this T obj, Action<Avalonia.Media.ImageDrawing, IObservable<Avalonia.Rect>> handler) where T : Avalonia.Media.ImageDrawing
     {
         var observable = obj.GetObservable(Avalonia.Media.ImageDrawing.RectProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

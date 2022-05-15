@@ -33,10 +33,10 @@ public static partial class ColumnDefinitionExtensions
         return obj.GetObservable(Avalonia.Controls.ColumnDefinition.MaxWidthProperty);
     }
 
-    public static T OnMaxWidth<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ColumnDefinition
+    public static T OnMaxWidth<T>(this T obj, Action<Avalonia.Controls.ColumnDefinition, IObservable<System.Double>> handler) where T : Avalonia.Controls.ColumnDefinition
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColumnDefinition.MaxWidthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ColumnDefinitionExtensions
         return obj.GetObservable(Avalonia.Controls.ColumnDefinition.MinWidthProperty);
     }
 
-    public static T OnMinWidth<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ColumnDefinition
+    public static T OnMinWidth<T>(this T obj, Action<Avalonia.Controls.ColumnDefinition, IObservable<System.Double>> handler) where T : Avalonia.Controls.ColumnDefinition
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColumnDefinition.MinWidthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class ColumnDefinitionExtensions
         return obj.GetObservable(Avalonia.Controls.ColumnDefinition.WidthProperty);
     }
 
-    public static T OnWidth<T>(this T obj, Action<IObservable<Avalonia.Controls.GridLength>> handler) where T : Avalonia.Controls.ColumnDefinition
+    public static T OnWidth<T>(this T obj, Action<Avalonia.Controls.ColumnDefinition, IObservable<Avalonia.Controls.GridLength>> handler) where T : Avalonia.Controls.ColumnDefinition
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColumnDefinition.WidthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

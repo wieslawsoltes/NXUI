@@ -33,10 +33,10 @@ public static partial class StackPanelExtensions
         return obj.GetObservable(Avalonia.Controls.StackPanel.SpacingProperty);
     }
 
-    public static T OnSpacing<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.StackPanel
+    public static T OnSpacing<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<System.Double>> handler) where T : Avalonia.Controls.StackPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.StackPanel.SpacingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class StackPanelExtensions
         return obj.GetObservable(Avalonia.Controls.StackPanel.OrientationProperty);
     }
 
-    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.StackPanel
+    public static T OnOrientation<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.StackPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.StackPanel.OrientationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

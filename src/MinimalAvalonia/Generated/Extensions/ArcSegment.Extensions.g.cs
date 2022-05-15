@@ -33,10 +33,10 @@ public static partial class ArcSegmentExtensions
         return obj.GetObservable(Avalonia.Media.ArcSegment.IsLargeArcProperty);
     }
 
-    public static Avalonia.Media.ArcSegment OnIsLargeArc(this Avalonia.Media.ArcSegment obj, Action<IObservable<System.Boolean>> handler)
+    public static Avalonia.Media.ArcSegment OnIsLargeArc(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.IsLargeArcProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ArcSegmentExtensions
         return obj.GetObservable(Avalonia.Media.ArcSegment.PointProperty);
     }
 
-    public static Avalonia.Media.ArcSegment OnPoint(this Avalonia.Media.ArcSegment obj, Action<IObservable<Avalonia.Point>> handler)
+    public static Avalonia.Media.ArcSegment OnPoint(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.PointProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class ArcSegmentExtensions
         return obj.GetObservable(Avalonia.Media.ArcSegment.RotationAngleProperty);
     }
 
-    public static Avalonia.Media.ArcSegment OnRotationAngle(this Avalonia.Media.ArcSegment obj, Action<IObservable<System.Double>> handler)
+    public static Avalonia.Media.ArcSegment OnRotationAngle(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.RotationAngleProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class ArcSegmentExtensions
         return obj.GetObservable(Avalonia.Media.ArcSegment.SizeProperty);
     }
 
-    public static Avalonia.Media.ArcSegment OnSize(this Avalonia.Media.ArcSegment obj, Action<IObservable<Avalonia.Size>> handler)
+    public static Avalonia.Media.ArcSegment OnSize(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.SizeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class ArcSegmentExtensions
         return obj.GetObservable(Avalonia.Media.ArcSegment.SweepDirectionProperty);
     }
 
-    public static Avalonia.Media.ArcSegment OnSweepDirection(this Avalonia.Media.ArcSegment obj, Action<IObservable<Avalonia.Media.SweepDirection>> handler)
+    public static Avalonia.Media.ArcSegment OnSweepDirection(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<Avalonia.Media.SweepDirection>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.SweepDirectionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

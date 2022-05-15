@@ -33,10 +33,10 @@ public static partial class SolidColorBrushExtensions
         return obj.GetObservable(Avalonia.Media.SolidColorBrush.ColorProperty);
     }
 
-    public static T OnColor<T>(this T obj, Action<IObservable<Avalonia.Media.Color>> handler) where T : Avalonia.Media.SolidColorBrush
+    public static T OnColor<T>(this T obj, Action<Avalonia.Media.SolidColorBrush, IObservable<Avalonia.Media.Color>> handler) where T : Avalonia.Media.SolidColorBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.SolidColorBrush.ColorProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class RadialGradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
     }
 
-    public static Avalonia.Media.RadialGradientBrush OnCenter(this Avalonia.Media.RadialGradientBrush obj, Action<IObservable<Avalonia.RelativePoint>> handler)
+    public static Avalonia.Media.RadialGradientBrush OnCenter(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class RadialGradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
     }
 
-    public static Avalonia.Media.RadialGradientBrush OnGradientOrigin(this Avalonia.Media.RadialGradientBrush obj, Action<IObservable<Avalonia.RelativePoint>> handler)
+    public static Avalonia.Media.RadialGradientBrush OnGradientOrigin(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class RadialGradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.RadialGradientBrush.RadiusProperty);
     }
 
-    public static Avalonia.Media.RadialGradientBrush OnRadius(this Avalonia.Media.RadialGradientBrush obj, Action<IObservable<System.Double>> handler)
+    public static Avalonia.Media.RadialGradientBrush OnRadius(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.RadiusProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

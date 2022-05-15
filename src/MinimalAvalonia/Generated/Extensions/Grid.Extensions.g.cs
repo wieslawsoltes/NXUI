@@ -33,10 +33,10 @@ public static partial class GridExtensions
         return obj.GetObservable(Avalonia.Controls.Grid.ShowGridLinesProperty);
     }
 
-    public static T OnShowGridLines<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Grid
+    public static T OnShowGridLines<T>(this T obj, Action<Avalonia.Controls.Grid, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Grid
     {
         var observable = obj.GetObservable(Avalonia.Controls.Grid.ShowGridLinesProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class GridExtensions
         return obj.GetObservable(Avalonia.Controls.Grid.ColumnProperty);
     }
 
-    public static T OnColumn<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
+    public static T OnColumn<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Grid.ColumnProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class GridExtensions
         return obj.GetObservable(Avalonia.Controls.Grid.RowProperty);
     }
 
-    public static T OnRow<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
+    public static T OnRow<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Grid.RowProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class GridExtensions
         return obj.GetObservable(Avalonia.Controls.Grid.ColumnSpanProperty);
     }
 
-    public static T OnColumnSpan<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
+    public static T OnColumnSpan<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Grid.ColumnSpanProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class GridExtensions
         return obj.GetObservable(Avalonia.Controls.Grid.RowSpanProperty);
     }
 
-    public static T OnRowSpan<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
+    public static T OnRowSpan<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Grid.RowSpanProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -218,10 +218,10 @@ public static partial class GridExtensions
         return obj.GetObservable(Avalonia.Controls.Grid.IsSharedSizeScopeProperty);
     }
 
-    public static T OnIsSharedSizeScope<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    public static T OnIsSharedSizeScope<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Grid.IsSharedSizeScopeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

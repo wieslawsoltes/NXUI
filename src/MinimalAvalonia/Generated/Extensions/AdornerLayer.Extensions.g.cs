@@ -33,10 +33,10 @@ public static partial class AdornerLayerExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty);
     }
 
-    public static T OnAdornedElement<T>(this T obj, Action<IObservable<Avalonia.Visual>> handler) where T : Avalonia.Visual
+    public static T OnAdornedElement<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Visual>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class AdornerLayerExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty);
     }
 
-    public static T OnIsClipEnabled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Visual
+    public static T OnIsClipEnabled<T>(this T obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

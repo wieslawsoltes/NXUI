@@ -33,10 +33,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.DisplayDateProperty);
     }
 
-    public static T OnDisplayDate<T>(this T obj, Action<IObservable<System.DateTime>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnDisplayDate<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.DateTime>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.DisplayDateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty);
     }
 
-    public static T OnDisplayDateStart<T>(this T obj, Action<IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnDisplayDateStart<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty);
     }
 
-    public static T OnDisplayDateEnd<T>(this T obj, Action<IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnDisplayDateEnd<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty);
     }
 
-    public static T OnFirstDayOfWeek<T>(this T obj, Action<IObservable<System.DayOfWeek>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnFirstDayOfWeek<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.DayOfWeek>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -223,10 +223,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty);
     }
 
-    public static T OnIsDropDownOpen<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnIsDropDownOpen<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -260,10 +260,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty);
     }
 
-    public static T OnIsTodayHighlighted<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnIsTodayHighlighted<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -297,10 +297,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.SelectedDateProperty);
     }
 
-    public static T OnSelectedDate<T>(this T obj, Action<IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnSelectedDate<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.SelectedDateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -334,10 +334,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty);
     }
 
-    public static T OnSelectedDateFormat<T>(this T obj, Action<IObservable<Avalonia.Controls.CalendarDatePickerFormat>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnSelectedDateFormat<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<Avalonia.Controls.CalendarDatePickerFormat>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -389,10 +389,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty);
     }
 
-    public static T OnCustomDateFormatString<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnCustomDateFormatString<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.String>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -426,10 +426,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.TextProperty);
     }
 
-    public static T OnText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnText<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.String>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.TextProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -463,10 +463,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
     }
 
-    public static T OnWatermark<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.String>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -500,10 +500,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
     }
 
-    public static T OnUseFloatingWatermark<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnUseFloatingWatermark<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -537,10 +537,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty);
     }
 
-    public static T OnHorizontalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -598,10 +598,10 @@ public static partial class CalendarDatePickerExtensions
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty);
     }
 
-    public static T OnVerticalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

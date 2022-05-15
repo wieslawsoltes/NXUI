@@ -33,10 +33,10 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.FirstDayOfWeekProperty);
     }
 
-    public static T OnFirstDayOfWeek<T>(this T obj, Action<IObservable<System.DayOfWeek>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnFirstDayOfWeek<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<System.DayOfWeek>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.FirstDayOfWeekProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -112,10 +112,10 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.IsTodayHighlightedProperty);
     }
 
-    public static T OnIsTodayHighlighted<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnIsTodayHighlighted<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.IsTodayHighlightedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -149,10 +149,10 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
     }
 
-    public static T OnHeaderBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnHeaderBackground<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -186,10 +186,10 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.DisplayModeProperty);
     }
 
-    public static T OnDisplayMode<T>(this T obj, Action<IObservable<Avalonia.Controls.CalendarMode>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnDisplayMode<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<Avalonia.Controls.CalendarMode>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -241,10 +241,10 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.SelectionModeProperty);
     }
 
-    public static T OnSelectionMode<T>(this T obj, Action<IObservable<Avalonia.Controls.CalendarSelectionMode>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnSelectionMode<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<Avalonia.Controls.CalendarSelectionMode>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.SelectionModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -302,10 +302,10 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.SelectedDateProperty);
     }
 
-    public static T OnSelectedDate<T>(this T obj, Action<IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnSelectedDate<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.SelectedDateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -339,10 +339,10 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateProperty);
     }
 
-    public static T OnDisplayDate<T>(this T obj, Action<IObservable<System.DateTime>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnDisplayDate<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<System.DateTime>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -376,10 +376,10 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateStartProperty);
     }
 
-    public static T OnDisplayDateStart<T>(this T obj, Action<IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnDisplayDateStart<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateStartProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -413,10 +413,10 @@ public static partial class CalendarExtensions
         return obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateEndProperty);
     }
 
-    public static T OnDisplayDateEnd<T>(this T obj, Action<IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnDisplayDateEnd<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateEndProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

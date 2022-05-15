@@ -33,10 +33,10 @@ public static partial class PopupRootExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
     }
 
-    public static Avalonia.Controls.Primitives.PopupRoot OnTransform(this Avalonia.Controls.Primitives.PopupRoot obj, Action<IObservable<Avalonia.Media.Transform>> handler)
+    public static Avalonia.Controls.Primitives.PopupRoot OnTransform(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<Avalonia.Media.Transform>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class PathFigureExtensions
         return obj.GetObservable(Avalonia.Media.PathFigure.IsClosedProperty);
     }
 
-    public static Avalonia.Media.PathFigure OnIsClosed(this Avalonia.Media.PathFigure obj, Action<IObservable<System.Boolean>> handler)
+    public static Avalonia.Media.PathFigure OnIsClosed(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.IsClosedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class PathFigureExtensions
         return obj.GetObservable(Avalonia.Media.PathFigure.IsFilledProperty);
     }
 
-    public static Avalonia.Media.PathFigure OnIsFilled(this Avalonia.Media.PathFigure obj, Action<IObservable<System.Boolean>> handler)
+    public static Avalonia.Media.PathFigure OnIsFilled(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.IsFilledProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class PathFigureExtensions
         return obj.GetObservable(Avalonia.Media.PathFigure.SegmentsProperty);
     }
 
-    public static Avalonia.Media.PathFigure OnSegments(this Avalonia.Media.PathFigure obj, Action<IObservable<Avalonia.Media.PathSegments>> handler)
+    public static Avalonia.Media.PathFigure OnSegments(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<Avalonia.Media.PathSegments>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.SegmentsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class PathFigureExtensions
         return obj.GetObservable(Avalonia.Media.PathFigure.StartPointProperty);
     }
 
-    public static Avalonia.Media.PathFigure OnStartPoint(this Avalonia.Media.PathFigure obj, Action<IObservable<Avalonia.Point>> handler)
+    public static Avalonia.Media.PathFigure OnStartPoint(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.StartPointProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

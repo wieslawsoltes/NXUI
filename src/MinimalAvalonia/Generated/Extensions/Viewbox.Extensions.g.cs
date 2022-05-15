@@ -33,10 +33,10 @@ public static partial class ViewboxExtensions
         return obj.GetObservable(Avalonia.Controls.Viewbox.StretchProperty);
     }
 
-    public static T OnStretch<T>(this T obj, Action<IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Controls.Viewbox
+    public static T OnStretch<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Controls.Viewbox
     {
         var observable = obj.GetObservable(Avalonia.Controls.Viewbox.StretchProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -94,10 +94,10 @@ public static partial class ViewboxExtensions
         return obj.GetObservable(Avalonia.Controls.Viewbox.StretchDirectionProperty);
     }
 
-    public static T OnStretchDirection<T>(this T obj, Action<IObservable<Avalonia.Media.StretchDirection>> handler) where T : Avalonia.Controls.Viewbox
+    public static T OnStretchDirection<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<Avalonia.Media.StretchDirection>> handler) where T : Avalonia.Controls.Viewbox
     {
         var observable = obj.GetObservable(Avalonia.Controls.Viewbox.StretchDirectionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -149,10 +149,10 @@ public static partial class ViewboxExtensions
         return obj.GetObservable(Avalonia.Controls.Viewbox.ChildProperty);
     }
 
-    public static T OnChild<T>(this T obj, Action<IObservable<Avalonia.Controls.IControl>> handler) where T : Avalonia.Controls.Viewbox
+    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<Avalonia.Controls.IControl>> handler) where T : Avalonia.Controls.Viewbox
     {
         var observable = obj.GetObservable(Avalonia.Controls.Viewbox.ChildProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class LineGeometryExtensions
         return obj.GetObservable(Avalonia.Media.LineGeometry.StartPointProperty);
     }
 
-    public static T OnStartPoint<T>(this T obj, Action<IObservable<Avalonia.Point>> handler) where T : Avalonia.Media.LineGeometry
+    public static T OnStartPoint<T>(this T obj, Action<Avalonia.Media.LineGeometry, IObservable<Avalonia.Point>> handler) where T : Avalonia.Media.LineGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.LineGeometry.StartPointProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class LineGeometryExtensions
         return obj.GetObservable(Avalonia.Media.LineGeometry.EndPointProperty);
     }
 
-    public static T OnEndPoint<T>(this T obj, Action<IObservable<Avalonia.Point>> handler) where T : Avalonia.Media.LineGeometry
+    public static T OnEndPoint<T>(this T obj, Action<Avalonia.Media.LineGeometry, IObservable<Avalonia.Point>> handler) where T : Avalonia.Media.LineGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.LineGeometry.EndPointProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

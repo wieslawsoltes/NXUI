@@ -33,10 +33,10 @@ public static partial class ExperimentalAcrylicBorderExtensions
         return obj.GetObservable(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty);
     }
 
-    public static T OnCornerRadius<T>(this T obj, Action<IObservable<Avalonia.CornerRadius>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    public static T OnCornerRadius<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<Avalonia.CornerRadius>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
         var observable = obj.GetObservable(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ExperimentalAcrylicBorderExtensions
         return obj.GetObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
     }
 
-    public static T OnMaterial<T>(this T obj, Action<IObservable<Avalonia.Media.ExperimentalAcrylicMaterial>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    public static T OnMaterial<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
         var observable = obj.GetObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

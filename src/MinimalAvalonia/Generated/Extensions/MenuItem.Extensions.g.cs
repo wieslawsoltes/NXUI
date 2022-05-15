@@ -33,10 +33,10 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.CommandProperty);
     }
 
-    public static T OnCommand<T>(this T obj, Action<IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.MenuItem
+    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.CommandProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.CommandParameterProperty);
     }
 
-    public static T OnCommandParameter<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.MenuItem
+    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.Object>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.CommandParameterProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.IconProperty);
     }
 
-    public static T OnIcon<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.MenuItem
+    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.Object>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.IconProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
     }
 
-    public static T OnInputGesture<T>(this T obj, Action<IObservable<Avalonia.Input.KeyGesture>> handler) where T : Avalonia.Controls.MenuItem
+    public static T OnInputGesture<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<Avalonia.Input.KeyGesture>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.IsSelectedProperty);
     }
 
-    public static T OnIsSelected<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
+    public static T OnIsSelected<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.IsSelectedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -218,10 +218,10 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty);
     }
 
-    public static T OnIsSubMenuOpen<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
+    public static T OnIsSubMenuOpen<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -255,10 +255,10 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
     }
 
-    public static T OnStaysOpenOnClick<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
+    public static T OnStaysOpenOnClick<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

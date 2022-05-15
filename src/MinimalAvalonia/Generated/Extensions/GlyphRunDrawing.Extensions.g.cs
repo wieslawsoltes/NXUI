@@ -33,10 +33,10 @@ public static partial class GlyphRunDrawingExtensions
         return obj.GetObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
     }
 
-    public static T OnForeground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Media.GlyphRunDrawing
+    public static T OnForeground<T>(this T obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Media.GlyphRunDrawing
     {
         var observable = obj.GetObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class GlyphRunDrawingExtensions
         return obj.GetObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
     }
 
-    public static T OnGlyphRun<T>(this T obj, Action<IObservable<Avalonia.Media.GlyphRun>> handler) where T : Avalonia.Media.GlyphRunDrawing
+    public static T OnGlyphRun<T>(this T obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<Avalonia.Media.GlyphRun>> handler) where T : Avalonia.Media.GlyphRunDrawing
     {
         var observable = obj.GetObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

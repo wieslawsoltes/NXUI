@@ -33,10 +33,10 @@ public static partial class ContextMenuExtensions
         return obj.GetObservable(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty);
     }
 
-    public static T OnHorizontalOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnHorizontalOffset<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<System.Double>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ContextMenuExtensions
         return obj.GetObservable(Avalonia.Controls.ContextMenu.VerticalOffsetProperty);
     }
 
-    public static T OnVerticalOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnVerticalOffset<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<System.Double>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.VerticalOffsetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class ContextMenuExtensions
         return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementAnchorProperty);
     }
 
-    public static T OnPlacementAnchor<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnPlacementAnchor<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementAnchorProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -216,10 +216,10 @@ public static partial class ContextMenuExtensions
         return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty);
     }
 
-    public static T OnPlacementConstraintAdjustment<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnPlacementConstraintAdjustment<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -301,10 +301,10 @@ public static partial class ContextMenuExtensions
         return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementGravityProperty);
     }
 
-    public static T OnPlacementGravity<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnPlacementGravity<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementGravityProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -392,10 +392,10 @@ public static partial class ContextMenuExtensions
         return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementModeProperty);
     }
 
-    public static T OnPlacementMode<T>(this T obj, Action<IObservable<Avalonia.Controls.PlacementMode>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnPlacementMode<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.PlacementMode>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -465,10 +465,10 @@ public static partial class ContextMenuExtensions
         return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementRectProperty);
     }
 
-    public static T OnPlacementRect<T>(this T obj, Action<IObservable<System.Nullable<Avalonia.Rect>>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnPlacementRect<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<System.Nullable<Avalonia.Rect>>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementRectProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -502,10 +502,10 @@ public static partial class ContextMenuExtensions
         return obj.GetObservable(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty);
     }
 
-    public static T OnWindowManagerAddShadowHint<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnWindowManagerAddShadowHint<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -539,10 +539,10 @@ public static partial class ContextMenuExtensions
         return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
     }
 
-    public static T OnPlacementTarget<T>(this T obj, Action<IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnPlacementTarget<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

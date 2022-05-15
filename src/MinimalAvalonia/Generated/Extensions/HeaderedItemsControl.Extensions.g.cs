@@ -33,10 +33,10 @@ public static partial class HeaderedItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty);
     }
 
-    public static T OnHeader<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.HeaderedItemsControl
+    public static T OnHeader<T>(this T obj, Action<Avalonia.Controls.Primitives.HeaderedItemsControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.HeaderedItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

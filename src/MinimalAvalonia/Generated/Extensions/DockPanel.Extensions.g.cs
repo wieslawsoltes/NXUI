@@ -33,10 +33,10 @@ public static partial class DockPanelExtensions
         return obj.GetObservable(Avalonia.Controls.DockPanel.DockProperty);
     }
 
-    public static T OnDock<T>(this T obj, Action<IObservable<Avalonia.Controls.Dock>> handler) where T : Avalonia.Controls.Control
+    public static T OnDock<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Dock>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.DockPanel.DockProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -94,10 +94,10 @@ public static partial class DockPanelExtensions
         return obj.GetObservable(Avalonia.Controls.DockPanel.LastChildFillProperty);
     }
 
-    public static T OnLastChildFill<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.DockPanel
+    public static T OnLastChildFill<T>(this T obj, Action<Avalonia.Controls.DockPanel, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.DockPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.DockPanel.LastChildFillProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

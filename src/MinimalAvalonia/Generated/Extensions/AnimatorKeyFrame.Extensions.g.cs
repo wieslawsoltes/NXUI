@@ -33,10 +33,10 @@ public static partial class AnimatorKeyFrameExtensions
         return obj.GetObservable(Avalonia.Animation.AnimatorKeyFrame.ValueProperty);
     }
 
-    public static T OnValue<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Animation.AnimatorKeyFrame
+    public static T OnValue<T>(this T obj, Action<Avalonia.Animation.AnimatorKeyFrame, IObservable<System.Object>> handler) where T : Avalonia.Animation.AnimatorKeyFrame
     {
         var observable = obj.GetObservable(Avalonia.Animation.AnimatorKeyFrame.ValueProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

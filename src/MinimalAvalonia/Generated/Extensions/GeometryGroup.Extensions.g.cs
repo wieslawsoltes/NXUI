@@ -33,10 +33,10 @@ public static partial class GeometryGroupExtensions
         return obj.GetObservable(Avalonia.Media.GeometryGroup.ChildrenProperty);
     }
 
-    public static T OnChildren<T>(this T obj, Action<IObservable<Avalonia.Media.GeometryCollection>> handler) where T : Avalonia.Media.GeometryGroup
+    public static T OnChildren<T>(this T obj, Action<Avalonia.Media.GeometryGroup, IObservable<Avalonia.Media.GeometryCollection>> handler) where T : Avalonia.Media.GeometryGroup
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryGroup.ChildrenProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class GeometryGroupExtensions
         return obj.GetObservable(Avalonia.Media.GeometryGroup.FillRuleProperty);
     }
 
-    public static T OnFillRule<T>(this T obj, Action<IObservable<Avalonia.Media.FillRule>> handler) where T : Avalonia.Media.GeometryGroup
+    public static T OnFillRule<T>(this T obj, Action<Avalonia.Media.GeometryGroup, IObservable<Avalonia.Media.FillRule>> handler) where T : Avalonia.Media.GeometryGroup
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryGroup.FillRuleProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

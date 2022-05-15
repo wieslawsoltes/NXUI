@@ -33,10 +33,10 @@ public static partial class OverlayPopupHostExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty);
     }
 
-    public static T OnTransform<T>(this T obj, Action<IObservable<Avalonia.Media.Transform>> handler) where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    public static T OnTransform<T>(this T obj, Action<Avalonia.Controls.Primitives.OverlayPopupHost, IObservable<Avalonia.Media.Transform>> handler) where T : Avalonia.Controls.Primitives.OverlayPopupHost
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

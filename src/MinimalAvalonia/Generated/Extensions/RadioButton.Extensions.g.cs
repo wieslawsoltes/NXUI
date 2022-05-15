@@ -33,10 +33,10 @@ public static partial class RadioButtonExtensions
         return obj.GetObservable(Avalonia.Controls.RadioButton.GroupNameProperty);
     }
 
-    public static T OnGroupName<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.RadioButton
+    public static T OnGroupName<T>(this T obj, Action<Avalonia.Controls.RadioButton, IObservable<System.String>> handler) where T : Avalonia.Controls.RadioButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.RadioButton.GroupNameProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

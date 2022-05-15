@@ -33,10 +33,10 @@ public static partial class SelectingItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty);
     }
 
-    public static T OnAutoScrollToSelectedItem<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnAutoScrollToSelectedItem<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class SelectingItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
     }
 
-    public static T OnSelectedIndex<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnSelectedIndex<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class SelectingItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
     }
 
-    public static T OnSelectedItem<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnSelectedItem<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class SelectingItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
     }
 
-    public static T OnIsTextSearchEnabled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnIsTextSearchEnabled<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class SelectingItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
     }
 
-    public static T OnWrapSelection<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnWrapSelection<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

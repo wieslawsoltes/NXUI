@@ -33,10 +33,10 @@ public static partial class ConicGradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.ConicGradientBrush.CenterProperty);
     }
 
-    public static Avalonia.Media.ConicGradientBrush OnCenter(this Avalonia.Media.ConicGradientBrush obj, Action<IObservable<Avalonia.RelativePoint>> handler)
+    public static Avalonia.Media.ConicGradientBrush OnCenter(this Avalonia.Media.ConicGradientBrush obj, Action<Avalonia.Media.ConicGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ConicGradientBrush.CenterProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ConicGradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.ConicGradientBrush.AngleProperty);
     }
 
-    public static Avalonia.Media.ConicGradientBrush OnAngle(this Avalonia.Media.ConicGradientBrush obj, Action<IObservable<System.Double>> handler)
+    public static Avalonia.Media.ConicGradientBrush OnAngle(this Avalonia.Media.ConicGradientBrush obj, Action<Avalonia.Media.ConicGradientBrush, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ConicGradientBrush.AngleProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

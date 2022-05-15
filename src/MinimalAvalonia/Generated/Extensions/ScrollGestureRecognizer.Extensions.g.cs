@@ -33,10 +33,10 @@ public static partial class ScrollGestureRecognizerExtensions
         return obj.GetObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty);
     }
 
-    public static T OnCanHorizontallyScroll<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    public static T OnCanHorizontallyScroll<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<System.Boolean>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
         var observable = obj.GetObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ScrollGestureRecognizerExtensions
         return obj.GetObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty);
     }
 
-    public static T OnCanVerticallyScroll<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    public static T OnCanVerticallyScroll<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<System.Boolean>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
         var observable = obj.GetObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

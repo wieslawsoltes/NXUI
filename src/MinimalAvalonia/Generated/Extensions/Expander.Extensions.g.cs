@@ -33,10 +33,10 @@ public static partial class ExpanderExtensions
         return obj.GetObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
     }
 
-    public static T OnContentTransition<T>(this T obj, Action<IObservable<Avalonia.Animation.IPageTransition>> handler) where T : Avalonia.Controls.Expander
+    public static T OnContentTransition<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<Avalonia.Animation.IPageTransition>> handler) where T : Avalonia.Controls.Expander
     {
         var observable = obj.GetObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ExpanderExtensions
         return obj.GetObservable(Avalonia.Controls.Expander.ExpandDirectionProperty);
     }
 
-    public static T OnExpandDirection<T>(this T obj, Action<IObservable<Avalonia.Controls.ExpandDirection>> handler) where T : Avalonia.Controls.Expander
+    public static T OnExpandDirection<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<Avalonia.Controls.ExpandDirection>> handler) where T : Avalonia.Controls.Expander
     {
         var observable = obj.GetObservable(Avalonia.Controls.Expander.ExpandDirectionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -131,10 +131,10 @@ public static partial class ExpanderExtensions
         return obj.GetObservable(Avalonia.Controls.Expander.IsExpandedProperty);
     }
 
-    public static T OnIsExpanded<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Expander
+    public static T OnIsExpanded<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Expander
     {
         var observable = obj.GetObservable(Avalonia.Controls.Expander.IsExpandedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

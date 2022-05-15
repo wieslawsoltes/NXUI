@@ -33,10 +33,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty);
     }
 
-    public static T OnWindowManagerAddShadowHint<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnWindowManagerAddShadowHint<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.ChildProperty);
     }
 
-    public static T OnChild<T>(this T obj, Action<IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.ChildProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty);
     }
 
-    public static T OnInheritsTransform<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnInheritsTransform<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.IsOpenProperty);
     }
 
-    public static T OnIsOpen<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnIsOpen<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.IsOpenProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty);
     }
 
-    public static T OnPlacementAnchor<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnPlacementAnchor<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -290,10 +290,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty);
     }
 
-    public static T OnPlacementConstraintAdjustment<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnPlacementConstraintAdjustment<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -375,10 +375,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty);
     }
 
-    public static T OnPlacementGravity<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnPlacementGravity<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -466,10 +466,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementModeProperty);
     }
 
-    public static T OnPlacementMode<T>(this T obj, Action<IObservable<Avalonia.Controls.PlacementMode>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnPlacementMode<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.PlacementMode>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -539,10 +539,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementRectProperty);
     }
 
-    public static T OnPlacementRect<T>(this T obj, Action<IObservable<System.Nullable<Avalonia.Rect>>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnPlacementRect<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Nullable<Avalonia.Rect>>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementRectProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -576,10 +576,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty);
     }
 
-    public static T OnPlacementTarget<T>(this T obj, Action<IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnPlacementTarget<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -613,10 +613,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.ObeyScreenEdgesProperty);
     }
 
-    public static T OnObeyScreenEdges<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnObeyScreenEdges<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.ObeyScreenEdgesProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -650,10 +650,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty);
     }
 
-    public static T OnOverlayDismissEventPassThrough<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnOverlayDismissEventPassThrough<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -687,10 +687,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty);
     }
 
-    public static T OnOverlayInputPassThroughElement<T>(this T obj, Action<IObservable<Avalonia.Input.IInputElement>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnOverlayInputPassThroughElement<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Input.IInputElement>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -724,10 +724,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty);
     }
 
-    public static T OnHorizontalOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnHorizontalOffset<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -761,10 +761,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty);
     }
 
-    public static T OnIsLightDismissEnabled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnIsLightDismissEnabled<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -798,10 +798,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty);
     }
 
-    public static T OnVerticalOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnVerticalOffset<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -835,10 +835,10 @@ public static partial class PopupExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.TopmostProperty);
     }
 
-    public static T OnTopmost<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnTopmost<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.TopmostProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

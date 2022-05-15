@@ -33,10 +33,10 @@ public static partial class PenExtensions
         return obj.GetObservable(Avalonia.Media.Pen.BrushProperty);
     }
 
-    public static Avalonia.Media.Pen OnBrush(this Avalonia.Media.Pen obj, Action<IObservable<Avalonia.Media.IBrush>> handler)
+    public static Avalonia.Media.Pen OnBrush(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.IBrush>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.BrushProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class PenExtensions
         return obj.GetObservable(Avalonia.Media.Pen.ThicknessProperty);
     }
 
-    public static Avalonia.Media.Pen OnThickness(this Avalonia.Media.Pen obj, Action<IObservable<System.Double>> handler)
+    public static Avalonia.Media.Pen OnThickness(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.ThicknessProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class PenExtensions
         return obj.GetObservable(Avalonia.Media.Pen.DashStyleProperty);
     }
 
-    public static Avalonia.Media.Pen OnDashStyle(this Avalonia.Media.Pen obj, Action<IObservable<Avalonia.Media.IDashStyle>> handler)
+    public static Avalonia.Media.Pen OnDashStyle(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.IDashStyle>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.DashStyleProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class PenExtensions
         return obj.GetObservable(Avalonia.Media.Pen.LineCapProperty);
     }
 
-    public static Avalonia.Media.Pen OnLineCap(this Avalonia.Media.Pen obj, Action<IObservable<Avalonia.Media.PenLineCap>> handler)
+    public static Avalonia.Media.Pen OnLineCap(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.PenLineCap>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.LineCapProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -199,10 +199,10 @@ public static partial class PenExtensions
         return obj.GetObservable(Avalonia.Media.Pen.LineJoinProperty);
     }
 
-    public static Avalonia.Media.Pen OnLineJoin(this Avalonia.Media.Pen obj, Action<IObservable<Avalonia.Media.PenLineJoin>> handler)
+    public static Avalonia.Media.Pen OnLineJoin(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.PenLineJoin>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.LineJoinProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -254,10 +254,10 @@ public static partial class PenExtensions
         return obj.GetObservable(Avalonia.Media.Pen.MiterLimitProperty);
     }
 
-    public static Avalonia.Media.Pen OnMiterLimit(this Avalonia.Media.Pen obj, Action<IObservable<System.Double>> handler)
+    public static Avalonia.Media.Pen OnMiterLimit(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.MiterLimitProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

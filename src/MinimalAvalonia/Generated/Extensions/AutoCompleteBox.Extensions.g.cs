@@ -33,10 +33,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
     }
 
-    public static T OnWatermark<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty);
     }
 
-    public static T OnMinimumPrefixLength<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnMinimumPrefixLength<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Int32>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty);
     }
 
-    public static T OnMinimumPopulateDelay<T>(this T obj, Action<IObservable<System.TimeSpan>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnMinimumPopulateDelay<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.TimeSpan>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty);
     }
 
-    public static T OnMaxDropDownHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnMaxDropDownHeight<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Double>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty);
     }
 
-    public static T OnIsTextCompletionEnabled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnIsTextCompletionEnabled<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -218,10 +218,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty);
     }
 
-    public static T OnItemTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -255,10 +255,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty);
     }
 
-    public static T OnIsDropDownOpen<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnIsDropDownOpen<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -292,10 +292,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
     }
 
-    public static T OnSelectedItem<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnSelectedItem<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Object>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -329,10 +329,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
     }
 
-    public static T OnText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnText<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -348,10 +348,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
     }
 
-    public static Avalonia.Controls.AutoCompleteBox OnSearchText(this Avalonia.Controls.AutoCompleteBox obj, Action<IObservable<System.String>> handler)
+    public static Avalonia.Controls.AutoCompleteBox OnSearchText(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -385,10 +385,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.FilterModeProperty);
     }
 
-    public static T OnFilterMode<T>(this T obj, Action<IObservable<Avalonia.Controls.AutoCompleteFilterMode>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnFilterMode<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteFilterMode>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.FilterModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -506,10 +506,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
     }
 
-    public static T OnItemFilter<T>(this T obj, Action<IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnItemFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -543,10 +543,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
     }
 
-    public static T OnTextFilter<T>(this T obj, Action<IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnTextFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -580,10 +580,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
     }
 
-    public static T OnItemSelector<T>(this T obj, Action<IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnItemSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -617,10 +617,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
     }
 
-    public static T OnTextSelector<T>(this T obj, Action<IObservable<Avalonia.Controls.AutoCompleteSelector<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnTextSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteSelector<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -654,10 +654,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemsProperty);
     }
 
-    public static T OnItems<T>(this T obj, Action<IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnItems<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -691,10 +691,10 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
     }
 
-    public static T OnAsyncPopulator<T>(this T obj, Action<IObservable<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnAsyncPopulator<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

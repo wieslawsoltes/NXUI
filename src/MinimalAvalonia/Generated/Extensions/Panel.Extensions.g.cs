@@ -33,10 +33,10 @@ public static partial class PanelExtensions
         return obj.GetObservable(Avalonia.Controls.Panel.BackgroundProperty);
     }
 
-    public static T OnBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Panel
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Panel, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Panel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Panel.BackgroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

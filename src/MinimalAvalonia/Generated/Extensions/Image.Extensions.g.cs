@@ -33,10 +33,10 @@ public static partial class ImageExtensions
         return obj.GetObservable(Avalonia.Controls.Image.SourceProperty);
     }
 
-    public static T OnSource<T>(this T obj, Action<IObservable<Avalonia.Media.IImage>> handler) where T : Avalonia.Controls.Image
+    public static T OnSource<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<Avalonia.Media.IImage>> handler) where T : Avalonia.Controls.Image
     {
         var observable = obj.GetObservable(Avalonia.Controls.Image.SourceProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ImageExtensions
         return obj.GetObservable(Avalonia.Controls.Image.StretchProperty);
     }
 
-    public static T OnStretch<T>(this T obj, Action<IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Controls.Image
+    public static T OnStretch<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Controls.Image
     {
         var observable = obj.GetObservable(Avalonia.Controls.Image.StretchProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -131,10 +131,10 @@ public static partial class ImageExtensions
         return obj.GetObservable(Avalonia.Controls.Image.StretchDirectionProperty);
     }
 
-    public static T OnStretchDirection<T>(this T obj, Action<IObservable<Avalonia.Media.StretchDirection>> handler) where T : Avalonia.Controls.Image
+    public static T OnStretchDirection<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<Avalonia.Media.StretchDirection>> handler) where T : Avalonia.Controls.Image
     {
         var observable = obj.GetObservable(Avalonia.Controls.Image.StretchDirectionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

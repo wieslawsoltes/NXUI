@@ -33,10 +33,10 @@ public static partial class CalendarItemExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
     }
 
-    public static Avalonia.Controls.Primitives.CalendarItem OnHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Action<IObservable<Avalonia.Media.IBrush>> handler)
+    public static Avalonia.Controls.Primitives.CalendarItem OnHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<Avalonia.Media.IBrush>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class CalendarItemExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
     }
 
-    public static Avalonia.Controls.Primitives.CalendarItem OnDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Action<IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>>> handler)
+    public static Avalonia.Controls.Primitives.CalendarItem OnDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

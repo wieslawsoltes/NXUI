@@ -33,10 +33,10 @@ public static partial class PolygonExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Polygon.PointsProperty);
     }
 
-    public static T OnPoints<T>(this T obj, Action<IObservable<System.Collections.Generic.IList<Avalonia.Point>>> handler) where T : Avalonia.Controls.Shapes.Polygon
+    public static T OnPoints<T>(this T obj, Action<Avalonia.Controls.Shapes.Polygon, IObservable<System.Collections.Generic.IList<Avalonia.Point>>> handler) where T : Avalonia.Controls.Shapes.Polygon
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Polygon.PointsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

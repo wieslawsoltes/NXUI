@@ -33,10 +33,10 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.ClickModeProperty);
     }
 
-    public static T OnClickMode<T>(this T obj, Action<IObservable<Avalonia.Controls.ClickMode>> handler) where T : Avalonia.Controls.Button
+    public static T OnClickMode<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<Avalonia.Controls.ClickMode>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.ClickModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -82,10 +82,10 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.CommandProperty);
     }
 
-    public static T OnCommand<T>(this T obj, Action<IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.Button
+    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.CommandProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -119,10 +119,10 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.CommandParameterProperty);
     }
 
-    public static T OnCommandParameter<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Button
+    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Object>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.CommandParameterProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -156,10 +156,10 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.IsDefaultProperty);
     }
 
-    public static T OnIsDefault<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
+    public static T OnIsDefault<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.IsDefaultProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -193,10 +193,10 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.IsCancelProperty);
     }
 
-    public static T OnIsCancel<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
+    public static T OnIsCancel<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.IsCancelProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -230,10 +230,10 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.IsPressedProperty);
     }
 
-    public static T OnIsPressed<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
+    public static T OnIsPressed<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.IsPressedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -267,10 +267,10 @@ public static partial class ButtonExtensions
         return obj.GetObservable(Avalonia.Controls.Button.FlyoutProperty);
     }
 
-    public static T OnFlyout<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Button
+    public static T OnFlyout<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.FlyoutProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

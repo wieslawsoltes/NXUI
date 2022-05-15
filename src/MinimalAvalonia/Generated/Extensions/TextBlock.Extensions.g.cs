@@ -33,10 +33,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.BackgroundProperty);
     }
 
-    public static T OnBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBlock
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.BackgroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.PaddingProperty);
     }
 
-    public static T OnPadding<T>(this T obj, Action<IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.TextBlock
+    public static T OnPadding<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.PaddingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.BaselineOffsetProperty);
     }
 
-    public static T OnBaselineOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    public static T OnBaselineOffset<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.BaselineOffsetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.LineHeightProperty);
     }
 
-    public static T OnLineHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    public static T OnLineHeight<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.LineHeightProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.MaxLinesProperty);
     }
 
-    public static T OnMaxLines<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
+    public static T OnMaxLines<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.MaxLinesProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -218,10 +218,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.TextProperty);
     }
 
-    public static T OnText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.TextBlock
+    public static T OnText<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<System.String>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.TextProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -237,10 +237,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.InlinesProperty);
     }
 
-    public static Avalonia.Controls.TextBlock OnInlines(this Avalonia.Controls.TextBlock obj, Action<IObservable<Avalonia.Controls.Documents.InlineCollection>> handler)
+    public static Avalonia.Controls.TextBlock OnInlines(this Avalonia.Controls.TextBlock obj, Action<Avalonia.Controls.TextBlock, IObservable<Avalonia.Controls.Documents.InlineCollection>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.InlinesProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -274,10 +274,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.TextAlignmentProperty);
     }
 
-    public static T OnTextAlignment<T>(this T obj, Action<IObservable<Avalonia.Media.TextAlignment>> handler) where T : Avalonia.Controls.Control
+    public static T OnTextAlignment<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.TextAlignment>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.TextAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -329,10 +329,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.TextWrappingProperty);
     }
 
-    public static T OnTextWrapping<T>(this T obj, Action<IObservable<Avalonia.Media.TextWrapping>> handler) where T : Avalonia.Controls.Control
+    public static T OnTextWrapping<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.TextWrapping>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.TextWrappingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -384,10 +384,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.TextTrimmingProperty);
     }
 
-    public static T OnTextTrimming<T>(this T obj, Action<IObservable<Avalonia.Media.TextTrimming>> handler) where T : Avalonia.Controls.Control
+    public static T OnTextTrimming<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.TextTrimming>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.TextTrimmingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -421,10 +421,10 @@ public static partial class TextBlockExtensions
         return obj.GetObservable(Avalonia.Controls.TextBlock.TextDecorationsProperty);
     }
 
-    public static T OnTextDecorations<T>(this T obj, Action<IObservable<Avalonia.Media.TextDecorationCollection>> handler) where T : Avalonia.Controls.TextBlock
+    public static T OnTextDecorations<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<Avalonia.Media.TextDecorationCollection>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.TextDecorationsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

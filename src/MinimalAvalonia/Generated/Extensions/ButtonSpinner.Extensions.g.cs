@@ -33,10 +33,10 @@ public static partial class ButtonSpinnerExtensions
         return obj.GetObservable(Avalonia.Controls.ButtonSpinner.AllowSpinProperty);
     }
 
-    public static T OnAllowSpin<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ButtonSpinner
+    public static T OnAllowSpin<T>(this T obj, Action<Avalonia.Controls.ButtonSpinner, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ButtonSpinner
     {
         var observable = obj.GetObservable(Avalonia.Controls.ButtonSpinner.AllowSpinProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ButtonSpinnerExtensions
         return obj.GetObservable(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty);
     }
 
-    public static T OnShowButtonSpinner<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ButtonSpinner
+    public static T OnShowButtonSpinner<T>(this T obj, Action<Avalonia.Controls.ButtonSpinner, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ButtonSpinner
     {
         var observable = obj.GetObservable(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class ButtonSpinnerExtensions
         return obj.GetObservable(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty);
     }
 
-    public static T OnButtonSpinnerLocation<T>(this T obj, Action<IObservable<Avalonia.Controls.Location>> handler) where T : Avalonia.Controls.ButtonSpinner
+    public static T OnButtonSpinnerLocation<T>(this T obj, Action<Avalonia.Controls.ButtonSpinner, IObservable<Avalonia.Controls.Location>> handler) where T : Avalonia.Controls.ButtonSpinner
     {
         var observable = obj.GetObservable(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

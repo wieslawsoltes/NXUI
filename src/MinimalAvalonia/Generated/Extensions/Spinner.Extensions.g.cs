@@ -33,10 +33,10 @@ public static partial class SpinnerExtensions
         return obj.GetObservable(Avalonia.Controls.Spinner.ValidSpinDirectionProperty);
     }
 
-    public static T OnValidSpinDirection<T>(this T obj, Action<IObservable<Avalonia.Controls.ValidSpinDirections>> handler) where T : Avalonia.Controls.Spinner
+    public static T OnValidSpinDirection<T>(this T obj, Action<Avalonia.Controls.Spinner, IObservable<Avalonia.Controls.ValidSpinDirections>> handler) where T : Avalonia.Controls.Spinner
     {
         var observable = obj.GetObservable(Avalonia.Controls.Spinner.ValidSpinDirectionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

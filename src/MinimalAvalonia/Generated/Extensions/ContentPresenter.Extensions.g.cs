@@ -33,10 +33,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
     }
 
-    public static T OnBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
     }
 
-    public static T OnBorderBrush<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBorderBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty);
     }
 
-    public static T OnBorderThickness<T>(this T obj, Action<IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBorderThickness<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty);
     }
 
-    public static T OnCornerRadius<T>(this T obj, Action<IObservable<Avalonia.CornerRadius>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnCornerRadius<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.CornerRadius>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty);
     }
 
-    public static T OnBoxShadow<T>(this T obj, Action<IObservable<Avalonia.Media.BoxShadows>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBoxShadow<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.BoxShadows>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -200,10 +200,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
     }
 
-    public static Avalonia.Controls.Presenters.ContentPresenter OnChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<IObservable<Avalonia.Controls.IControl>> handler)
+    public static Avalonia.Controls.Presenters.ContentPresenter OnChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Controls.IControl>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -237,10 +237,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
     }
 
-    public static T OnContent<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<System.Object>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -274,10 +274,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
     }
 
-    public static T OnContentTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -311,10 +311,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty);
     }
 
-    public static T OnHorizontalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -372,10 +372,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty);
     }
 
-    public static T OnVerticalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -433,10 +433,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty);
     }
 
-    public static T OnPadding<T>(this T obj, Action<IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnPadding<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -470,10 +470,10 @@ public static partial class ContentPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
     }
 
-    public static T OnRecognizesAccessKey<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnRecognizesAccessKey<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

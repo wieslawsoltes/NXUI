@@ -33,10 +33,10 @@ public static partial class BrushExtensions
         return obj.GetObservable(Avalonia.Media.Brush.OpacityProperty);
     }
 
-    public static T OnOpacity<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.Brush
+    public static T OnOpacity<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<System.Double>> handler) where T : Avalonia.Media.Brush
     {
         var observable = obj.GetObservable(Avalonia.Media.Brush.OpacityProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class BrushExtensions
         return obj.GetObservable(Avalonia.Media.Brush.TransformProperty);
     }
 
-    public static T OnTransform<T>(this T obj, Action<IObservable<Avalonia.Media.ITransform>> handler) where T : Avalonia.Media.Brush
+    public static T OnTransform<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<Avalonia.Media.ITransform>> handler) where T : Avalonia.Media.Brush
     {
         var observable = obj.GetObservable(Avalonia.Media.Brush.TransformProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

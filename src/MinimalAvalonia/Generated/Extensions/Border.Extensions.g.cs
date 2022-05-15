@@ -33,10 +33,10 @@ public static partial class BorderExtensions
         return obj.GetObservable(Avalonia.Controls.Border.BackgroundProperty);
     }
 
-    public static T OnBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Border
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BackgroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class BorderExtensions
         return obj.GetObservable(Avalonia.Controls.Border.BorderBrushProperty);
     }
 
-    public static T OnBorderBrush<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Border
+    public static T OnBorderBrush<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BorderBrushProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class BorderExtensions
         return obj.GetObservable(Avalonia.Controls.Border.BorderThicknessProperty);
     }
 
-    public static T OnBorderThickness<T>(this T obj, Action<IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Border
+    public static T OnBorderThickness<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BorderThicknessProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class BorderExtensions
         return obj.GetObservable(Avalonia.Controls.Border.CornerRadiusProperty);
     }
 
-    public static T OnCornerRadius<T>(this T obj, Action<IObservable<Avalonia.CornerRadius>> handler) where T : Avalonia.Controls.Border
+    public static T OnCornerRadius<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.CornerRadius>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.CornerRadiusProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class BorderExtensions
         return obj.GetObservable(Avalonia.Controls.Border.BoxShadowProperty);
     }
 
-    public static T OnBoxShadow<T>(this T obj, Action<IObservable<Avalonia.Media.BoxShadows>> handler) where T : Avalonia.Controls.Border
+    public static T OnBoxShadow<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.BoxShadows>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BoxShadowProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -218,10 +218,10 @@ public static partial class BorderExtensions
         return obj.GetObservable(Avalonia.Controls.Border.BorderDashOffsetProperty);
     }
 
-    public static T OnBorderDashOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Border
+    public static T OnBorderDashOffset<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<System.Double>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BorderDashOffsetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -255,10 +255,10 @@ public static partial class BorderExtensions
         return obj.GetObservable(Avalonia.Controls.Border.BorderDashArrayProperty);
     }
 
-    public static T OnBorderDashArray<T>(this T obj, Action<IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.Border
+    public static T OnBorderDashArray<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BorderDashArrayProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -292,10 +292,10 @@ public static partial class BorderExtensions
         return obj.GetObservable(Avalonia.Controls.Border.BorderLineCapProperty);
     }
 
-    public static T OnBorderLineCap<T>(this T obj, Action<IObservable<Avalonia.Media.PenLineCap>> handler) where T : Avalonia.Controls.Border
+    public static T OnBorderLineCap<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.PenLineCap>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BorderLineCapProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -347,10 +347,10 @@ public static partial class BorderExtensions
         return obj.GetObservable(Avalonia.Controls.Border.BorderLineJoinProperty);
     }
 
-    public static T OnBorderLineJoin<T>(this T obj, Action<IObservable<Avalonia.Media.PenLineJoin>> handler) where T : Avalonia.Controls.Border
+    public static T OnBorderLineJoin<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.PenLineJoin>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BorderLineJoinProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

@@ -33,10 +33,10 @@ public static partial class SliderExtensions
         return obj.GetObservable(Avalonia.Controls.Slider.OrientationProperty);
     }
 
-    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.Slider
+    public static T OnOrientation<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Slider.OrientationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -82,10 +82,10 @@ public static partial class SliderExtensions
         return obj.GetObservable(Avalonia.Controls.Slider.IsDirectionReversedProperty);
     }
 
-    public static T OnIsDirectionReversed<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Slider
+    public static T OnIsDirectionReversed<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Slider.IsDirectionReversedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -119,10 +119,10 @@ public static partial class SliderExtensions
         return obj.GetObservable(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
     }
 
-    public static T OnIsSnapToTickEnabled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Slider
+    public static T OnIsSnapToTickEnabled<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -156,10 +156,10 @@ public static partial class SliderExtensions
         return obj.GetObservable(Avalonia.Controls.Slider.TickFrequencyProperty);
     }
 
-    public static T OnTickFrequency<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Slider
+    public static T OnTickFrequency<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<System.Double>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Slider.TickFrequencyProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -193,10 +193,10 @@ public static partial class SliderExtensions
         return obj.GetObservable(Avalonia.Controls.Slider.TickPlacementProperty);
     }
 
-    public static T OnTickPlacement<T>(this T obj, Action<IObservable<Avalonia.Controls.TickPlacement>> handler) where T : Avalonia.Controls.Slider
+    public static T OnTickPlacement<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<Avalonia.Controls.TickPlacement>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Slider.TickPlacementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -254,10 +254,10 @@ public static partial class SliderExtensions
         return obj.GetObservable(Avalonia.Controls.Slider.TicksProperty);
     }
 
-    public static T OnTicks<T>(this T obj, Action<IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.Slider
+    public static T OnTicks<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Slider.TicksProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class GeometryExtensions
         return obj.GetObservable(Avalonia.Media.Geometry.TransformProperty);
     }
 
-    public static T OnTransform<T>(this T obj, Action<IObservable<Avalonia.Media.Transform>> handler) where T : Avalonia.Media.Geometry
+    public static T OnTransform<T>(this T obj, Action<Avalonia.Media.Geometry, IObservable<Avalonia.Media.Transform>> handler) where T : Avalonia.Media.Geometry
     {
         var observable = obj.GetObservable(Avalonia.Media.Geometry.TransformProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

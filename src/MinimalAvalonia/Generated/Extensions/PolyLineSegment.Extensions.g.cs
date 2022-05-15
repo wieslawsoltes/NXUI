@@ -33,10 +33,10 @@ public static partial class PolyLineSegmentExtensions
         return obj.GetObservable(Avalonia.Media.PolyLineSegment.PointsProperty);
     }
 
-    public static Avalonia.Media.PolyLineSegment OnPoints(this Avalonia.Media.PolyLineSegment obj, Action<IObservable<Avalonia.Points>> handler)
+    public static Avalonia.Media.PolyLineSegment OnPoints(this Avalonia.Media.PolyLineSegment obj, Action<Avalonia.Media.PolyLineSegment, IObservable<Avalonia.Points>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PolyLineSegment.PointsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

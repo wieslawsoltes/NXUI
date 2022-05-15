@@ -33,10 +33,10 @@ public static partial class NonVirtualizingStackLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty);
     }
 
-    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    public static T OnOrientation<T>(this T obj, Action<Avalonia.Layout.NonVirtualizingStackLayout, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.NonVirtualizingStackLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -82,10 +82,10 @@ public static partial class NonVirtualizingStackLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty);
     }
 
-    public static T OnSpacing<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.NonVirtualizingStackLayout
+    public static T OnSpacing<T>(this T obj, Action<Avalonia.Layout.NonVirtualizingStackLayout, IObservable<System.Double>> handler) where T : Avalonia.Layout.NonVirtualizingStackLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -15,10 +15,10 @@ public static partial class TopLevelExtensions
         return obj.GetObservable(Avalonia.Controls.TopLevel.ClientSizeProperty);
     }
 
-    public static Avalonia.Controls.TopLevel OnClientSize(this Avalonia.Controls.TopLevel obj, Action<IObservable<Avalonia.Size>> handler)
+    public static Avalonia.Controls.TopLevel OnClientSize(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.ClientSizeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -34,10 +34,10 @@ public static partial class TopLevelExtensions
         return obj.GetObservable(Avalonia.Controls.TopLevel.FrameSizeProperty);
     }
 
-    public static Avalonia.Controls.TopLevel OnFrameSize(this Avalonia.Controls.TopLevel obj, Action<IObservable<System.Nullable<Avalonia.Size>>> handler)
+    public static Avalonia.Controls.TopLevel OnFrameSize(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<System.Nullable<Avalonia.Size>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.FrameSizeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -71,10 +71,10 @@ public static partial class TopLevelExtensions
         return obj.GetObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
     }
 
-    public static T OnPointerOverElement<T>(this T obj, Action<IObservable<Avalonia.Input.IInputElement>> handler) where T : Avalonia.Controls.TopLevel
+    public static T OnPointerOverElement<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Input.IInputElement>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -108,10 +108,10 @@ public static partial class TopLevelExtensions
         return obj.GetObservable(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty);
     }
 
-    public static T OnTransparencyLevelHint<T>(this T obj, Action<IObservable<Avalonia.Controls.WindowTransparencyLevel>> handler) where T : Avalonia.Controls.TopLevel
+    public static T OnTransparencyLevelHint<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Controls.WindowTransparencyLevel>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -163,10 +163,10 @@ public static partial class TopLevelExtensions
         return obj.GetObservable(Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty);
     }
 
-    public static Avalonia.Controls.TopLevel OnActualTransparencyLevel(this Avalonia.Controls.TopLevel obj, Action<IObservable<Avalonia.Controls.WindowTransparencyLevel>> handler)
+    public static Avalonia.Controls.TopLevel OnActualTransparencyLevel(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Controls.WindowTransparencyLevel>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -200,10 +200,10 @@ public static partial class TopLevelExtensions
         return obj.GetObservable(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty);
     }
 
-    public static T OnTransparencyBackgroundFallback<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TopLevel
+    public static T OnTransparencyBackgroundFallback<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

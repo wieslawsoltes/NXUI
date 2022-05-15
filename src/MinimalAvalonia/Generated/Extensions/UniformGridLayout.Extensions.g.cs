@@ -33,10 +33,10 @@ public static partial class UniformGridLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty);
     }
 
-    public static T OnItemsJustification<T>(this T obj, Action<IObservable<Avalonia.Layout.UniformGridLayoutItemsJustification>> handler) where T : Avalonia.Layout.UniformGridLayout
+    public static T OnItemsJustification<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<Avalonia.Layout.UniformGridLayoutItemsJustification>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -106,10 +106,10 @@ public static partial class UniformGridLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty);
     }
 
-    public static T OnItemsStretch<T>(this T obj, Action<IObservable<Avalonia.Layout.UniformGridLayoutItemsStretch>> handler) where T : Avalonia.Layout.UniformGridLayout
+    public static T OnItemsStretch<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<Avalonia.Layout.UniformGridLayoutItemsStretch>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -161,10 +161,10 @@ public static partial class UniformGridLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty);
     }
 
-    public static T OnMinColumnSpacing<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.UniformGridLayout
+    public static T OnMinColumnSpacing<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<System.Double>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -198,10 +198,10 @@ public static partial class UniformGridLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty);
     }
 
-    public static T OnMinItemHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.UniformGridLayout
+    public static T OnMinItemHeight<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<System.Double>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -235,10 +235,10 @@ public static partial class UniformGridLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty);
     }
 
-    public static T OnMinItemWidth<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.UniformGridLayout
+    public static T OnMinItemWidth<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<System.Double>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -272,10 +272,10 @@ public static partial class UniformGridLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty);
     }
 
-    public static T OnMinRowSpacing<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.UniformGridLayout
+    public static T OnMinRowSpacing<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<System.Double>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -309,10 +309,10 @@ public static partial class UniformGridLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty);
     }
 
-    public static T OnMaximumRowsOrColumns<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Layout.UniformGridLayout
+    public static T OnMaximumRowsOrColumns<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<System.Int32>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -346,10 +346,10 @@ public static partial class UniformGridLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.UniformGridLayout.OrientationProperty);
     }
 
-    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.UniformGridLayout
+    public static T OnOrientation<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.OrientationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

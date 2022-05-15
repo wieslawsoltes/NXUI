@@ -33,10 +33,10 @@ public static partial class TileBrushExtensions
         return obj.GetObservable(Avalonia.Media.TileBrush.AlignmentXProperty);
     }
 
-    public static T OnAlignmentX<T>(this T obj, Action<IObservable<Avalonia.Media.AlignmentX>> handler) where T : Avalonia.Media.TileBrush
+    public static T OnAlignmentX<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<Avalonia.Media.AlignmentX>> handler) where T : Avalonia.Media.TileBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.TileBrush.AlignmentXProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -88,10 +88,10 @@ public static partial class TileBrushExtensions
         return obj.GetObservable(Avalonia.Media.TileBrush.AlignmentYProperty);
     }
 
-    public static T OnAlignmentY<T>(this T obj, Action<IObservable<Avalonia.Media.AlignmentY>> handler) where T : Avalonia.Media.TileBrush
+    public static T OnAlignmentY<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<Avalonia.Media.AlignmentY>> handler) where T : Avalonia.Media.TileBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.TileBrush.AlignmentYProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -143,10 +143,10 @@ public static partial class TileBrushExtensions
         return obj.GetObservable(Avalonia.Media.TileBrush.DestinationRectProperty);
     }
 
-    public static T OnDestinationRect<T>(this T obj, Action<IObservable<Avalonia.RelativeRect>> handler) where T : Avalonia.Media.TileBrush
+    public static T OnDestinationRect<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<Avalonia.RelativeRect>> handler) where T : Avalonia.Media.TileBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.TileBrush.DestinationRectProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -180,10 +180,10 @@ public static partial class TileBrushExtensions
         return obj.GetObservable(Avalonia.Media.TileBrush.SourceRectProperty);
     }
 
-    public static T OnSourceRect<T>(this T obj, Action<IObservable<Avalonia.RelativeRect>> handler) where T : Avalonia.Media.TileBrush
+    public static T OnSourceRect<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<Avalonia.RelativeRect>> handler) where T : Avalonia.Media.TileBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.TileBrush.SourceRectProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -217,10 +217,10 @@ public static partial class TileBrushExtensions
         return obj.GetObservable(Avalonia.Media.TileBrush.StretchProperty);
     }
 
-    public static T OnStretch<T>(this T obj, Action<IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Media.TileBrush
+    public static T OnStretch<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Media.TileBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.TileBrush.StretchProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -278,10 +278,10 @@ public static partial class TileBrushExtensions
         return obj.GetObservable(Avalonia.Media.TileBrush.TileModeProperty);
     }
 
-    public static T OnTileMode<T>(this T obj, Action<IObservable<Avalonia.Media.TileMode>> handler) where T : Avalonia.Media.TileBrush
+    public static T OnTileMode<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<Avalonia.Media.TileMode>> handler) where T : Avalonia.Media.TileBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.TileBrush.TileModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

@@ -33,10 +33,10 @@ public static partial class UniformGridExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.RowsProperty);
     }
 
-    public static T OnRows<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    public static T OnRows<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.RowsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class UniformGridExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty);
     }
 
-    public static T OnColumns<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    public static T OnColumns<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class UniformGridExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty);
     }
 
-    public static T OnFirstColumn<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    public static T OnFirstColumn<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

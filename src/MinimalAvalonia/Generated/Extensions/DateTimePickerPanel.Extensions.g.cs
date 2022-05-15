@@ -33,10 +33,10 @@ public static partial class DateTimePickerPanelExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty);
     }
 
-    public static T OnItemHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    public static T OnItemHeight<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class DateTimePickerPanelExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty);
     }
 
-    public static T OnPanelType<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.DateTimePickerPanelType>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    public static T OnPanelType<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<Avalonia.Controls.Primitives.DateTimePickerPanelType>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -143,10 +143,10 @@ public static partial class DateTimePickerPanelExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty);
     }
 
-    public static T OnItemFormat<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    public static T OnItemFormat<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<System.String>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -180,10 +180,10 @@ public static partial class DateTimePickerPanelExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty);
     }
 
-    public static T OnShouldLoop<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    public static T OnShouldLoop<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

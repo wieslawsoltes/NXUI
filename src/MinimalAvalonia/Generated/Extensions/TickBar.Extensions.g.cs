@@ -33,10 +33,10 @@ public static partial class TickBarExtensions
         return obj.GetObservable(Avalonia.Controls.TickBar.FillProperty);
     }
 
-    public static T OnFill<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnFill<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.FillProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TickBarExtensions
         return obj.GetObservable(Avalonia.Controls.TickBar.MinimumProperty);
     }
 
-    public static T OnMinimum<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnMinimum<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<System.Double>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.MinimumProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class TickBarExtensions
         return obj.GetObservable(Avalonia.Controls.TickBar.MaximumProperty);
     }
 
-    public static T OnMaximum<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnMaximum<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<System.Double>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.MaximumProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class TickBarExtensions
         return obj.GetObservable(Avalonia.Controls.TickBar.TickFrequencyProperty);
     }
 
-    public static T OnTickFrequency<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnTickFrequency<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<System.Double>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.TickFrequencyProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class TickBarExtensions
         return obj.GetObservable(Avalonia.Controls.TickBar.OrientationProperty);
     }
 
-    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnOrientation<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.OrientationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -230,10 +230,10 @@ public static partial class TickBarExtensions
         return obj.GetObservable(Avalonia.Controls.TickBar.TicksProperty);
     }
 
-    public static T OnTicks<T>(this T obj, Action<IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnTicks<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.TicksProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -267,10 +267,10 @@ public static partial class TickBarExtensions
         return obj.GetObservable(Avalonia.Controls.TickBar.IsDirectionReversedProperty);
     }
 
-    public static T OnIsDirectionReversed<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnIsDirectionReversed<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.IsDirectionReversedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -304,10 +304,10 @@ public static partial class TickBarExtensions
         return obj.GetObservable(Avalonia.Controls.TickBar.PlacementProperty);
     }
 
-    public static T OnPlacement<T>(this T obj, Action<IObservable<Avalonia.Controls.TickBarPlacement>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnPlacement<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Controls.TickBarPlacement>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.PlacementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -365,10 +365,10 @@ public static partial class TickBarExtensions
         return obj.GetObservable(Avalonia.Controls.TickBar.ReservedSpaceProperty);
     }
 
-    public static T OnReservedSpace<T>(this T obj, Action<IObservable<Avalonia.Rect>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnReservedSpace<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Rect>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.ReservedSpaceProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

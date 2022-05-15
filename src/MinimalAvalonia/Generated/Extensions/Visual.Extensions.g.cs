@@ -15,10 +15,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.BoundsProperty);
     }
 
-    public static Avalonia.Visual OnBounds(this Avalonia.Visual obj, Action<IObservable<Avalonia.Rect>> handler)
+    public static Avalonia.Visual OnBounds(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<Avalonia.Rect>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.BoundsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -34,10 +34,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.TransformedBoundsProperty);
     }
 
-    public static Avalonia.Visual OnTransformedBounds(this Avalonia.Visual obj, Action<IObservable<System.Nullable<Avalonia.VisualTree.TransformedBounds>>> handler)
+    public static Avalonia.Visual OnTransformedBounds(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<System.Nullable<Avalonia.VisualTree.TransformedBounds>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.TransformedBoundsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -71,10 +71,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.ClipToBoundsProperty);
     }
 
-    public static T OnClipToBounds<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Visual
+    public static T OnClipToBounds<T>(this T obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.ClipToBoundsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -108,10 +108,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.ClipProperty);
     }
 
-    public static T OnClip<T>(this T obj, Action<IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Visual
+    public static T OnClip<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.ClipProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -145,10 +145,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.IsVisibleProperty);
     }
 
-    public static T OnIsVisible<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Visual
+    public static T OnIsVisible<T>(this T obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.IsVisibleProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -182,10 +182,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.OpacityProperty);
     }
 
-    public static T OnOpacity<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Visual
+    public static T OnOpacity<T>(this T obj, Action<Avalonia.Visual, IObservable<System.Double>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.OpacityProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -219,10 +219,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.OpacityMaskProperty);
     }
 
-    public static T OnOpacityMask<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Visual
+    public static T OnOpacityMask<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.OpacityMaskProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -238,10 +238,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.HasMirrorTransformProperty);
     }
 
-    public static Avalonia.Visual OnHasMirrorTransform(this Avalonia.Visual obj, Action<IObservable<System.Boolean>> handler)
+    public static Avalonia.Visual OnHasMirrorTransform(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.HasMirrorTransformProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -275,10 +275,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.RenderTransformProperty);
     }
 
-    public static T OnRenderTransform<T>(this T obj, Action<IObservable<Avalonia.Media.ITransform>> handler) where T : Avalonia.Visual
+    public static T OnRenderTransform<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.ITransform>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.RenderTransformProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -312,10 +312,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.RenderTransformOriginProperty);
     }
 
-    public static T OnRenderTransformOrigin<T>(this T obj, Action<IObservable<Avalonia.RelativePoint>> handler) where T : Avalonia.Visual
+    public static T OnRenderTransformOrigin<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.RelativePoint>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.RenderTransformOriginProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -331,10 +331,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.VisualParentProperty);
     }
 
-    public static Avalonia.Visual OnVisualParent(this Avalonia.Visual obj, Action<IObservable<Avalonia.VisualTree.IVisual>> handler)
+    public static Avalonia.Visual OnVisualParent(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<Avalonia.VisualTree.IVisual>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.VisualParentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -368,10 +368,10 @@ public static partial class VisualExtensions
         return obj.GetObservable(Avalonia.Visual.ZIndexProperty);
     }
 
-    public static T OnZIndex<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Visual
+    public static T OnZIndex<T>(this T obj, Action<Avalonia.Visual, IObservable<System.Int32>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.ZIndexProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

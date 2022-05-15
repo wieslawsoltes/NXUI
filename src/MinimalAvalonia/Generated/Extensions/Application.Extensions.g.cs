@@ -33,10 +33,10 @@ public static partial class ApplicationExtensions
         return obj.GetObservable(Avalonia.Application.DataContextProperty);
     }
 
-    public static T OnDataContext<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Application
+    public static T OnDataContext<T>(this T obj, Action<Avalonia.Application, IObservable<System.Object>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetObservable(Avalonia.Application.DataContextProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ApplicationExtensions
         return obj.GetObservable(Avalonia.Application.NameProperty);
     }
 
-    public static T OnName<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Application
+    public static T OnName<T>(this T obj, Action<Avalonia.Application, IObservable<System.String>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetObservable(Avalonia.Application.NameProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

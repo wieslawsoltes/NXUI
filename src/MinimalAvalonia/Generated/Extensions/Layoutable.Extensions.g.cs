@@ -15,10 +15,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.DesiredSizeProperty);
     }
 
-    public static Avalonia.Layout.Layoutable OnDesiredSize(this Avalonia.Layout.Layoutable obj, Action<IObservable<Avalonia.Size>> handler)
+    public static Avalonia.Layout.Layoutable OnDesiredSize(this Avalonia.Layout.Layoutable obj, Action<Avalonia.Layout.Layoutable, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.DesiredSizeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -52,10 +52,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.WidthProperty);
     }
 
-    public static T OnWidth<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
+    public static T OnWidth<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.WidthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -89,10 +89,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.HeightProperty);
     }
 
-    public static T OnHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
+    public static T OnHeight<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.HeightProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -126,10 +126,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.MinWidthProperty);
     }
 
-    public static T OnMinWidth<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
+    public static T OnMinWidth<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.MinWidthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -163,10 +163,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.MaxWidthProperty);
     }
 
-    public static T OnMaxWidth<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
+    public static T OnMaxWidth<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.MaxWidthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -200,10 +200,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.MinHeightProperty);
     }
 
-    public static T OnMinHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
+    public static T OnMinHeight<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.MinHeightProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -237,10 +237,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.MaxHeightProperty);
     }
 
-    public static T OnMaxHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
+    public static T OnMaxHeight<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.MaxHeightProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -274,10 +274,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.MarginProperty);
     }
 
-    public static T OnMargin<T>(this T obj, Action<IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Layout.Layoutable
+    public static T OnMargin<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.MarginProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -311,10 +311,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty);
     }
 
-    public static T OnHorizontalAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Layout.Layoutable
+    public static T OnHorizontalAlignment<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -372,10 +372,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.VerticalAlignmentProperty);
     }
 
-    public static T OnVerticalAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Layout.Layoutable
+    public static T OnVerticalAlignment<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.VerticalAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -433,10 +433,10 @@ public static partial class LayoutableExtensions
         return obj.GetObservable(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty);
     }
 
-    public static T OnUseLayoutRounding<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
+    public static T OnUseLayoutRounding<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

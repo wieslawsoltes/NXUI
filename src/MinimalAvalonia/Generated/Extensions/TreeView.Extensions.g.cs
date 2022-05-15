@@ -33,10 +33,10 @@ public static partial class TreeViewExtensions
         return obj.GetObservable(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty);
     }
 
-    public static T OnAutoScrollToSelectedItem<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TreeView
+    public static T OnAutoScrollToSelectedItem<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TreeView
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TreeViewExtensions
         return obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
     }
 
-    public static T OnSelectedItem<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.TreeView
+    public static T OnSelectedItem<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<System.Object>> handler) where T : Avalonia.Controls.TreeView
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class TreeViewExtensions
         return obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemsProperty);
     }
 
-    public static T OnSelectedItems<T>(this T obj, Action<IObservable<System.Collections.IList>> handler) where T : Avalonia.Controls.TreeView
+    public static T OnSelectedItems<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<System.Collections.IList>> handler) where T : Avalonia.Controls.TreeView
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class TreeViewExtensions
         return obj.GetObservable(Avalonia.Controls.TreeView.SelectionModeProperty);
     }
 
-    public static T OnSelectionMode<T>(this T obj, Action<IObservable<Avalonia.Controls.SelectionMode>> handler) where T : Avalonia.Controls.TreeView
+    public static T OnSelectionMode<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<Avalonia.Controls.SelectionMode>> handler) where T : Avalonia.Controls.TreeView
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeView.SelectionModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

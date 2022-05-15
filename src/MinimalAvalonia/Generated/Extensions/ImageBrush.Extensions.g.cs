@@ -33,10 +33,10 @@ public static partial class ImageBrushExtensions
         return obj.GetObservable(Avalonia.Media.ImageBrush.SourceProperty);
     }
 
-    public static T OnSource<T>(this T obj, Action<IObservable<Avalonia.Media.Imaging.IBitmap>> handler) where T : Avalonia.Media.ImageBrush
+    public static T OnSource<T>(this T obj, Action<Avalonia.Media.ImageBrush, IObservable<Avalonia.Media.Imaging.IBitmap>> handler) where T : Avalonia.Media.ImageBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.ImageBrush.SourceProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

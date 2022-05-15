@@ -33,10 +33,10 @@ public static partial class TabItemExtensions
         return obj.GetObservable(Avalonia.Controls.TabItem.TabStripPlacementProperty);
     }
 
-    public static T OnTabStripPlacement<T>(this T obj, Action<IObservable<Avalonia.Controls.Dock>> handler) where T : Avalonia.Controls.TabItem
+    public static T OnTabStripPlacement<T>(this T obj, Action<Avalonia.Controls.TabItem, IObservable<Avalonia.Controls.Dock>> handler) where T : Avalonia.Controls.TabItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabItem.TabStripPlacementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -94,10 +94,10 @@ public static partial class TabItemExtensions
         return obj.GetObservable(Avalonia.Controls.TabItem.IsSelectedProperty);
     }
 
-    public static T OnIsSelected<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TabItem
+    public static T OnIsSelected<T>(this T obj, Action<Avalonia.Controls.TabItem, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TabItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabItem.IsSelectedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class RectangleExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Rectangle.RadiusXProperty);
     }
 
-    public static T OnRadiusX<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Rectangle
+    public static T OnRadiusX<T>(this T obj, Action<Avalonia.Controls.Shapes.Rectangle, IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Rectangle
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Rectangle.RadiusXProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class RectangleExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Rectangle.RadiusYProperty);
     }
 
-    public static T OnRadiusY<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Rectangle
+    public static T OnRadiusY<T>(this T obj, Action<Avalonia.Controls.Shapes.Rectangle, IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Rectangle
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Rectangle.RadiusYProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

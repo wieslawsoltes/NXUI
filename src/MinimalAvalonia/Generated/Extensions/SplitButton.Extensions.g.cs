@@ -33,10 +33,10 @@ public static partial class SplitButtonExtensions
         return obj.GetObservable(Avalonia.Controls.SplitButton.CommandProperty);
     }
 
-    public static T OnCommand<T>(this T obj, Action<IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.SplitButton
+    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitButton.CommandProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class SplitButtonExtensions
         return obj.GetObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
     }
 
-    public static T OnCommandParameter<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.SplitButton
+    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<System.Object>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class SplitButtonExtensions
         return obj.GetObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
     }
 
-    public static T OnFlyout<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.SplitButton
+    public static T OnFlyout<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

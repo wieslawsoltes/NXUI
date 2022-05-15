@@ -33,10 +33,10 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty);
     }
 
-    public static T OnTintColor<T>(this T obj, Action<IObservable<Avalonia.Media.Color>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    public static T OnTintColor<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<Avalonia.Media.Color>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         var observable = obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty);
     }
 
-    public static T OnBackgroundSource<T>(this T obj, Action<IObservable<Avalonia.Media.AcrylicBackgroundSource>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    public static T OnBackgroundSource<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<Avalonia.Media.AcrylicBackgroundSource>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         var observable = obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -119,10 +119,10 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty);
     }
 
-    public static T OnTintOpacity<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    public static T OnTintOpacity<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<System.Double>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         var observable = obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -156,10 +156,10 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty);
     }
 
-    public static T OnMaterialOpacity<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    public static T OnMaterialOpacity<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<System.Double>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         var observable = obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -193,10 +193,10 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty);
     }
 
-    public static T OnPlatformTransparencyCompensationLevel<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    public static T OnPlatformTransparencyCompensationLevel<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<System.Double>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         var observable = obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -230,10 +230,10 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty);
     }
 
-    public static T OnFallbackColor<T>(this T obj, Action<IObservable<Avalonia.Media.Color>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    public static T OnFallbackColor<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<Avalonia.Media.Color>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         var observable = obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

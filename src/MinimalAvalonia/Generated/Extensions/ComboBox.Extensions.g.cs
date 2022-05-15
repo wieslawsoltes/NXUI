@@ -33,10 +33,10 @@ public static partial class ComboBoxExtensions
         return obj.GetObservable(Avalonia.Controls.ComboBox.IsDropDownOpenProperty);
     }
 
-    public static T OnIsDropDownOpen<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnIsDropDownOpen<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.IsDropDownOpenProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ComboBoxExtensions
         return obj.GetObservable(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty);
     }
 
-    public static T OnMaxDropDownHeight<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnMaxDropDownHeight<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<System.Double>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -89,10 +89,10 @@ public static partial class ComboBoxExtensions
         return obj.GetObservable(Avalonia.Controls.ComboBox.SelectionBoxItemProperty);
     }
 
-    public static Avalonia.Controls.ComboBox OnSelectionBoxItem(this Avalonia.Controls.ComboBox obj, Action<IObservable<System.Object>> handler)
+    public static Avalonia.Controls.ComboBox OnSelectionBoxItem(this Avalonia.Controls.ComboBox obj, Action<Avalonia.Controls.ComboBox, IObservable<System.Object>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.SelectionBoxItemProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -126,10 +126,10 @@ public static partial class ComboBoxExtensions
         return obj.GetObservable(Avalonia.Controls.ComboBox.VirtualizationModeProperty);
     }
 
-    public static T OnVirtualizationMode<T>(this T obj, Action<IObservable<Avalonia.Controls.ItemVirtualizationMode>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnVirtualizationMode<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<Avalonia.Controls.ItemVirtualizationMode>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.VirtualizationModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -175,10 +175,10 @@ public static partial class ComboBoxExtensions
         return obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderTextProperty);
     }
 
-    public static T OnPlaceholderText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnPlaceholderText<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<System.String>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderTextProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -212,10 +212,10 @@ public static partial class ComboBoxExtensions
         return obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty);
     }
 
-    public static T OnPlaceholderForeground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -249,10 +249,10 @@ public static partial class ComboBoxExtensions
         return obj.GetObservable(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty);
     }
 
-    public static T OnHorizontalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -310,10 +310,10 @@ public static partial class ComboBoxExtensions
         return obj.GetObservable(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty);
     }
 
-    public static T OnVerticalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

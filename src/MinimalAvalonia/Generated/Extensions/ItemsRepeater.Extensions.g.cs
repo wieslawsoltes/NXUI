@@ -33,10 +33,10 @@ public static partial class ItemsRepeaterExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty);
     }
 
-    public static T OnHorizontalCacheLength<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnHorizontalCacheLength<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<System.Double>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ItemsRepeaterExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
     }
 
-    public static T OnItemTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class ItemsRepeaterExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemsProperty);
     }
 
-    public static T OnItems<T>(this T obj, Action<IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnItems<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class ItemsRepeaterExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
     }
 
-    public static T OnLayout<T>(this T obj, Action<IObservable<Avalonia.Layout.AttachedLayout>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnLayout<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<Avalonia.Layout.AttachedLayout>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class ItemsRepeaterExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty);
     }
 
-    public static T OnVerticalCacheLength<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnVerticalCacheLength<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<System.Double>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

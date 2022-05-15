@@ -33,10 +33,10 @@ public static partial class LinearGradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.LinearGradientBrush.StartPointProperty);
     }
 
-    public static Avalonia.Media.LinearGradientBrush OnStartPoint(this Avalonia.Media.LinearGradientBrush obj, Action<IObservable<Avalonia.RelativePoint>> handler)
+    public static Avalonia.Media.LinearGradientBrush OnStartPoint(this Avalonia.Media.LinearGradientBrush obj, Action<Avalonia.Media.LinearGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.LinearGradientBrush.StartPointProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class LinearGradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.LinearGradientBrush.EndPointProperty);
     }
 
-    public static Avalonia.Media.LinearGradientBrush OnEndPoint(this Avalonia.Media.LinearGradientBrush obj, Action<IObservable<Avalonia.RelativePoint>> handler)
+    public static Avalonia.Media.LinearGradientBrush OnEndPoint(this Avalonia.Media.LinearGradientBrush obj, Action<Avalonia.Media.LinearGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.LinearGradientBrush.EndPointProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

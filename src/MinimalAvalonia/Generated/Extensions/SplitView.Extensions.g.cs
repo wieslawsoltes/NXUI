@@ -33,10 +33,10 @@ public static partial class SplitViewExtensions
         return obj.GetObservable(Avalonia.Controls.SplitView.CompactPaneLengthProperty);
     }
 
-    public static T OnCompactPaneLength<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnCompactPaneLength<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<System.Double>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.CompactPaneLengthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class SplitViewExtensions
         return obj.GetObservable(Avalonia.Controls.SplitView.DisplayModeProperty);
     }
 
-    public static T OnDisplayMode<T>(this T obj, Action<IObservable<Avalonia.Controls.SplitViewDisplayMode>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnDisplayMode<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.SplitViewDisplayMode>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.DisplayModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -131,10 +131,10 @@ public static partial class SplitViewExtensions
         return obj.GetObservable(Avalonia.Controls.SplitView.IsPaneOpenProperty);
     }
 
-    public static T OnIsPaneOpen<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnIsPaneOpen<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.IsPaneOpenProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -168,10 +168,10 @@ public static partial class SplitViewExtensions
         return obj.GetObservable(Avalonia.Controls.SplitView.OpenPaneLengthProperty);
     }
 
-    public static T OnOpenPaneLength<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnOpenPaneLength<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<System.Double>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.OpenPaneLengthProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -205,10 +205,10 @@ public static partial class SplitViewExtensions
         return obj.GetObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
     }
 
-    public static T OnPaneBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnPaneBackground<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -242,10 +242,10 @@ public static partial class SplitViewExtensions
         return obj.GetObservable(Avalonia.Controls.SplitView.PanePlacementProperty);
     }
 
-    public static T OnPanePlacement<T>(this T obj, Action<IObservable<Avalonia.Controls.SplitViewPanePlacement>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnPanePlacement<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.SplitViewPanePlacement>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.PanePlacementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -291,10 +291,10 @@ public static partial class SplitViewExtensions
         return obj.GetObservable(Avalonia.Controls.SplitView.PaneProperty);
     }
 
-    public static T OnPane<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnPane<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<System.Object>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -328,10 +328,10 @@ public static partial class SplitViewExtensions
         return obj.GetObservable(Avalonia.Controls.SplitView.PaneTemplateProperty);
     }
 
-    public static T OnPaneTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnPaneTemplate<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -365,10 +365,10 @@ public static partial class SplitViewExtensions
         return obj.GetObservable(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty);
     }
 
-    public static T OnUseLightDismissOverlayMode<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnUseLightDismissOverlayMode<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -402,10 +402,10 @@ public static partial class SplitViewExtensions
         return obj.GetObservable(Avalonia.Controls.SplitView.TemplateSettingsProperty);
     }
 
-    public static T OnTemplateSettings<T>(this T obj, Action<IObservable<Avalonia.Controls.SplitViewTemplateSettings>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnTemplateSettings<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.SplitViewTemplateSettings>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.TemplateSettingsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class DataValidationErrorsExtensions
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
     }
 
-    public static T OnErrors<T>(this T obj, Action<IObservable<System.Collections.Generic.IEnumerable<System.Object>>> handler) where T : Avalonia.Controls.Control
+    public static T OnErrors<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Collections.Generic.IEnumerable<System.Object>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class DataValidationErrorsExtensions
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
     }
 
-    public static T OnHasErrors<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    public static T OnHasErrors<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class DataValidationErrorsExtensions
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty);
     }
 
-    public static T OnErrorTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.DataValidationErrors
+    public static T OnErrorTemplate<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.DataValidationErrors
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class DataValidationErrorsExtensions
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
     }
 
-    public static T OnOwner<T>(this T obj, Action<IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.DataValidationErrors
+    public static T OnOwner<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.DataValidationErrors
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

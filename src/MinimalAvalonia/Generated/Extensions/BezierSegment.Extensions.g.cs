@@ -33,10 +33,10 @@ public static partial class BezierSegmentExtensions
         return obj.GetObservable(Avalonia.Media.BezierSegment.Point1Property);
     }
 
-    public static Avalonia.Media.BezierSegment OnPoint1(this Avalonia.Media.BezierSegment obj, Action<IObservable<Avalonia.Point>> handler)
+    public static Avalonia.Media.BezierSegment OnPoint1(this Avalonia.Media.BezierSegment obj, Action<Avalonia.Media.BezierSegment, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.BezierSegment.Point1Property);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class BezierSegmentExtensions
         return obj.GetObservable(Avalonia.Media.BezierSegment.Point2Property);
     }
 
-    public static Avalonia.Media.BezierSegment OnPoint2(this Avalonia.Media.BezierSegment obj, Action<IObservable<Avalonia.Point>> handler)
+    public static Avalonia.Media.BezierSegment OnPoint2(this Avalonia.Media.BezierSegment obj, Action<Avalonia.Media.BezierSegment, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.BezierSegment.Point2Property);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class BezierSegmentExtensions
         return obj.GetObservable(Avalonia.Media.BezierSegment.Point3Property);
     }
 
-    public static Avalonia.Media.BezierSegment OnPoint3(this Avalonia.Media.BezierSegment obj, Action<IObservable<Avalonia.Point>> handler)
+    public static Avalonia.Media.BezierSegment OnPoint3(this Avalonia.Media.BezierSegment obj, Action<Avalonia.Media.BezierSegment, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.BezierSegment.Point3Property);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

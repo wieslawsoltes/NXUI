@@ -33,10 +33,10 @@ public static partial class AnimatableExtensions
         return obj.GetObservable(Avalonia.Animation.Animatable.ClockProperty);
     }
 
-    public static T OnClock<T>(this T obj, Action<IObservable<Avalonia.Animation.IClock>> handler) where T : Avalonia.Animation.Animatable
+    public static T OnClock<T>(this T obj, Action<Avalonia.Animation.Animatable, IObservable<Avalonia.Animation.IClock>> handler) where T : Avalonia.Animation.Animatable
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animatable.ClockProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class AnimatableExtensions
         return obj.GetObservable(Avalonia.Animation.Animatable.TransitionsProperty);
     }
 
-    public static T OnTransitions<T>(this T obj, Action<IObservable<Avalonia.Animation.Transitions>> handler) where T : Avalonia.Animation.Animatable
+    public static T OnTransitions<T>(this T obj, Action<Avalonia.Animation.Animatable, IObservable<Avalonia.Animation.Transitions>> handler) where T : Avalonia.Animation.Animatable
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animatable.TransitionsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class TimePickerPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty);
     }
 
-    public static T OnMinuteIncrement<T>(this T obj, Action<IObservable<System.Int32>> handler) where T : Avalonia.Controls.TimePickerPresenter
+    public static T OnMinuteIncrement<T>(this T obj, Action<Avalonia.Controls.TimePickerPresenter, IObservable<System.Int32>> handler) where T : Avalonia.Controls.TimePickerPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TimePickerPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty);
     }
 
-    public static T OnClockIdentifier<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.TimePickerPresenter
+    public static T OnClockIdentifier<T>(this T obj, Action<Avalonia.Controls.TimePickerPresenter, IObservable<System.String>> handler) where T : Avalonia.Controls.TimePickerPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class TimePickerPresenterExtensions
         return obj.GetObservable(Avalonia.Controls.TimePickerPresenter.TimeProperty);
     }
 
-    public static T OnTime<T>(this T obj, Action<IObservable<System.TimeSpan>> handler) where T : Avalonia.Controls.TimePickerPresenter
+    public static T OnTime<T>(this T obj, Action<Avalonia.Controls.TimePickerPresenter, IObservable<System.TimeSpan>> handler) where T : Avalonia.Controls.TimePickerPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.TimePickerPresenter.TimeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

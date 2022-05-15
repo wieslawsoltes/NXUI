@@ -33,10 +33,10 @@ public static partial class HeaderedContentControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty);
     }
 
-    public static T OnHeader<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.HeaderedContentControl
+    public static T OnHeader<T>(this T obj, Action<Avalonia.Controls.Primitives.HeaderedContentControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.HeaderedContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class HeaderedContentControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty);
     }
 
-    public static T OnHeaderTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.Primitives.HeaderedContentControl
+    public static T OnHeaderTemplate<T>(this T obj, Action<Avalonia.Controls.Primitives.HeaderedContentControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.Primitives.HeaderedContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

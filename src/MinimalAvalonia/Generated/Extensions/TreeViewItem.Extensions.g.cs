@@ -33,10 +33,10 @@ public static partial class TreeViewItemExtensions
         return obj.GetObservable(Avalonia.Controls.TreeViewItem.IsExpandedProperty);
     }
 
-    public static T OnIsExpanded<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TreeViewItem
+    public static T OnIsExpanded<T>(this T obj, Action<Avalonia.Controls.TreeViewItem, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TreeViewItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeViewItem.IsExpandedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TreeViewItemExtensions
         return obj.GetObservable(Avalonia.Controls.TreeViewItem.IsSelectedProperty);
     }
 
-    public static T OnIsSelected<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TreeViewItem
+    public static T OnIsSelected<T>(this T obj, Action<Avalonia.Controls.TreeViewItem, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TreeViewItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeViewItem.IsSelectedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -89,10 +89,10 @@ public static partial class TreeViewItemExtensions
         return obj.GetObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
     }
 
-    public static Avalonia.Controls.TreeViewItem OnLevel(this Avalonia.Controls.TreeViewItem obj, Action<IObservable<System.Int32>> handler)
+    public static Avalonia.Controls.TreeViewItem OnLevel(this Avalonia.Controls.TreeViewItem obj, Action<Avalonia.Controls.TreeViewItem, IObservable<System.Int32>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

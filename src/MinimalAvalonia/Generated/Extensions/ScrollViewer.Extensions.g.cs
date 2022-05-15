@@ -15,10 +15,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty);
     }
 
-    public static Avalonia.Controls.ScrollViewer OnCanHorizontallyScroll(this Avalonia.Controls.ScrollViewer obj, Action<IObservable<System.Boolean>> handler)
+    public static Avalonia.Controls.ScrollViewer OnCanHorizontallyScroll(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -34,10 +34,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty);
     }
 
-    public static Avalonia.Controls.ScrollViewer OnCanVerticallyScroll(this Avalonia.Controls.ScrollViewer obj, Action<IObservable<System.Boolean>> handler)
+    public static Avalonia.Controls.ScrollViewer OnCanVerticallyScroll(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -71,10 +71,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.ExtentProperty);
     }
 
-    public static T OnExtent<T>(this T obj, Action<IObservable<Avalonia.Size>> handler) where T : Avalonia.Controls.ScrollViewer
+    public static T OnExtent<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Size>> handler) where T : Avalonia.Controls.ScrollViewer
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.ExtentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -108,10 +108,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.OffsetProperty);
     }
 
-    public static T OnOffset<T>(this T obj, Action<IObservable<Avalonia.Vector>> handler) where T : Avalonia.Controls.ScrollViewer
+    public static T OnOffset<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Vector>> handler) where T : Avalonia.Controls.ScrollViewer
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.OffsetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -145,10 +145,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.ViewportProperty);
     }
 
-    public static T OnViewport<T>(this T obj, Action<IObservable<Avalonia.Size>> handler) where T : Avalonia.Controls.ScrollViewer
+    public static T OnViewport<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Size>> handler) where T : Avalonia.Controls.ScrollViewer
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.ViewportProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -164,10 +164,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.LargeChangeProperty);
     }
 
-    public static Avalonia.Controls.ScrollViewer OnLargeChange(this Avalonia.Controls.ScrollViewer obj, Action<IObservable<Avalonia.Size>> handler)
+    public static Avalonia.Controls.ScrollViewer OnLargeChange(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.LargeChangeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -183,10 +183,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.SmallChangeProperty);
     }
 
-    public static Avalonia.Controls.ScrollViewer OnSmallChange(this Avalonia.Controls.ScrollViewer obj, Action<IObservable<Avalonia.Size>> handler)
+    public static Avalonia.Controls.ScrollViewer OnSmallChange(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.SmallChangeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -202,10 +202,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty);
     }
 
-    public static Avalonia.Controls.ScrollViewer OnHorizontalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Action<IObservable<System.Double>> handler)
+    public static Avalonia.Controls.ScrollViewer OnHorizontalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -239,10 +239,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty);
     }
 
-    public static T OnHorizontalScrollBarValue<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ScrollViewer
+    public static T OnHorizontalScrollBarValue<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler) where T : Avalonia.Controls.ScrollViewer
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -258,10 +258,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty);
     }
 
-    public static Avalonia.Controls.ScrollViewer OnHorizontalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj, Action<IObservable<System.Double>> handler)
+    public static Avalonia.Controls.ScrollViewer OnHorizontalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -295,10 +295,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty);
     }
 
-    public static T OnHorizontalScrollBarVisibility<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility>> handler) where T : Avalonia.Controls.Control
+    public static T OnHorizontalScrollBarVisibility<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -338,10 +338,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty);
     }
 
-    public static Avalonia.Controls.ScrollViewer OnVerticalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Action<IObservable<System.Double>> handler)
+    public static Avalonia.Controls.ScrollViewer OnVerticalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -375,10 +375,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty);
     }
 
-    public static T OnVerticalScrollBarValue<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.ScrollViewer
+    public static T OnVerticalScrollBarValue<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler) where T : Avalonia.Controls.ScrollViewer
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -394,10 +394,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty);
     }
 
-    public static Avalonia.Controls.ScrollViewer OnVerticalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj, Action<IObservable<System.Double>> handler)
+    public static Avalonia.Controls.ScrollViewer OnVerticalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -431,10 +431,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty);
     }
 
-    public static T OnVerticalScrollBarVisibility<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility>> handler) where T : Avalonia.Controls.Control
+    public static T OnVerticalScrollBarVisibility<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -474,10 +474,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.IsExpandedProperty);
     }
 
-    public static Avalonia.Controls.ScrollViewer OnIsExpanded(this Avalonia.Controls.ScrollViewer obj, Action<IObservable<System.Boolean>> handler)
+    public static Avalonia.Controls.ScrollViewer OnIsExpanded(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.IsExpandedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -511,10 +511,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty);
     }
 
-    public static T OnAllowAutoHide<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    public static T OnAllowAutoHide<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -548,10 +548,10 @@ public static partial class ScrollViewerExtensions
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
     }
 
-    public static T OnIsScrollChainingEnabled<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    public static T OnIsScrollChainingEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

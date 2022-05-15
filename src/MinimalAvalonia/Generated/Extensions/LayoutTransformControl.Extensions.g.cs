@@ -33,10 +33,10 @@ public static partial class LayoutTransformControlExtensions
         return obj.GetObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
     }
 
-    public static T OnLayoutTransform<T>(this T obj, Action<IObservable<Avalonia.Media.ITransform>> handler) where T : Avalonia.Controls.LayoutTransformControl
+    public static T OnLayoutTransform<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<Avalonia.Media.ITransform>> handler) where T : Avalonia.Controls.LayoutTransformControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class LayoutTransformControlExtensions
         return obj.GetObservable(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty);
     }
 
-    public static T OnUseRenderTransform<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.LayoutTransformControl
+    public static T OnUseRenderTransform<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.LayoutTransformControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

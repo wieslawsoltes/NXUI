@@ -33,10 +33,10 @@ public static partial class InlineExtensions
         return obj.GetObservable(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
     }
 
-    public static T OnTextDecorations<T>(this T obj, Action<IObservable<Avalonia.Media.TextDecorationCollection>> handler) where T : Avalonia.Controls.Documents.Inline
+    public static T OnTextDecorations<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<Avalonia.Media.TextDecorationCollection>> handler) where T : Avalonia.Controls.Documents.Inline
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class InlineExtensions
         return obj.GetObservable(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty);
     }
 
-    public static T OnBaselineAlignment<T>(this T obj, Action<IObservable<Avalonia.Media.BaselineAlignment>> handler) where T : Avalonia.Controls.Documents.Inline
+    public static T OnBaselineAlignment<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<Avalonia.Media.BaselineAlignment>> handler) where T : Avalonia.Controls.Documents.Inline
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

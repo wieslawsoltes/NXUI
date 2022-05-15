@@ -33,10 +33,10 @@ public static partial class GradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.GradientBrush.SpreadMethodProperty);
     }
 
-    public static T OnSpreadMethod<T>(this T obj, Action<IObservable<Avalonia.Media.GradientSpreadMethod>> handler) where T : Avalonia.Media.GradientBrush
+    public static T OnSpreadMethod<T>(this T obj, Action<Avalonia.Media.GradientBrush, IObservable<Avalonia.Media.GradientSpreadMethod>> handler) where T : Avalonia.Media.GradientBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.GradientBrush.SpreadMethodProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -88,10 +88,10 @@ public static partial class GradientBrushExtensions
         return obj.GetObservable(Avalonia.Media.GradientBrush.GradientStopsProperty);
     }
 
-    public static T OnGradientStops<T>(this T obj, Action<IObservable<Avalonia.Media.GradientStops>> handler) where T : Avalonia.Media.GradientBrush
+    public static T OnGradientStops<T>(this T obj, Action<Avalonia.Media.GradientBrush, IObservable<Avalonia.Media.GradientStops>> handler) where T : Avalonia.Media.GradientBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.GradientBrush.GradientStopsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

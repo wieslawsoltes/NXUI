@@ -15,10 +15,10 @@ public static partial class SpanExtensions
         return obj.GetObservable(Avalonia.Controls.Documents.Span.InlinesProperty);
     }
 
-    public static Avalonia.Controls.Documents.Span OnInlines(this Avalonia.Controls.Documents.Span obj, Action<IObservable<Avalonia.Controls.Documents.InlineCollection>> handler)
+    public static Avalonia.Controls.Documents.Span OnInlines(this Avalonia.Controls.Documents.Span obj, Action<Avalonia.Controls.Documents.Span, IObservable<Avalonia.Controls.Documents.InlineCollection>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.Span.InlinesProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

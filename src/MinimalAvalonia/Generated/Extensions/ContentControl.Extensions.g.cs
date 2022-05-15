@@ -33,10 +33,10 @@ public static partial class ContentControlExtensions
         return obj.GetObservable(Avalonia.Controls.ContentControl.ContentProperty);
     }
 
-    public static T OnContent<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.ContentControl
+    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.ContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContentControl.ContentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ContentControlExtensions
         return obj.GetObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
     }
 
-    public static T OnContentTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ContentControl
+    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class ContentControlExtensions
         return obj.GetObservable(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty);
     }
 
-    public static T OnHorizontalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.ContentControl
+    public static T OnHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.ContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -168,10 +168,10 @@ public static partial class ContentControlExtensions
         return obj.GetObservable(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty);
     }
 
-    public static T OnVerticalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.ContentControl
+    public static T OnVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.ContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

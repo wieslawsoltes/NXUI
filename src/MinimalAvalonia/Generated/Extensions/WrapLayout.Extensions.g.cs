@@ -33,10 +33,10 @@ public static partial class WrapLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty);
     }
 
-    public static T OnHorizontalSpacing<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.WrapLayout
+    public static T OnHorizontalSpacing<T>(this T obj, Action<Avalonia.Layout.WrapLayout, IObservable<System.Double>> handler) where T : Avalonia.Layout.WrapLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class WrapLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.WrapLayout.VerticalSpacingProperty);
     }
 
-    public static T OnVerticalSpacing<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Layout.WrapLayout
+    public static T OnVerticalSpacing<T>(this T obj, Action<Avalonia.Layout.WrapLayout, IObservable<System.Double>> handler) where T : Avalonia.Layout.WrapLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.WrapLayout.VerticalSpacingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class WrapLayoutExtensions
         return obj.GetObservable(Avalonia.Layout.WrapLayout.OrientationProperty);
     }
 
-    public static T OnOrientation<T>(this T obj, Action<IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.WrapLayout
+    public static T OnOrientation<T>(this T obj, Action<Avalonia.Layout.WrapLayout, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.WrapLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.WrapLayout.OrientationProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

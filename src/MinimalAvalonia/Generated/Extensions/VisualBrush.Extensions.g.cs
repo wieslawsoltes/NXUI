@@ -33,10 +33,10 @@ public static partial class VisualBrushExtensions
         return obj.GetObservable(Avalonia.Media.VisualBrush.VisualProperty);
     }
 
-    public static T OnVisual<T>(this T obj, Action<IObservable<Avalonia.VisualTree.IVisual>> handler) where T : Avalonia.Media.VisualBrush
+    public static T OnVisual<T>(this T obj, Action<Avalonia.Media.VisualBrush, IObservable<Avalonia.VisualTree.IVisual>> handler) where T : Avalonia.Media.VisualBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.VisualBrush.VisualProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

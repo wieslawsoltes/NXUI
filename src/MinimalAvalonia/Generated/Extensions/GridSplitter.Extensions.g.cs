@@ -33,10 +33,10 @@ public static partial class GridSplitterExtensions
         return obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeDirectionProperty);
     }
 
-    public static T OnResizeDirection<T>(this T obj, Action<IObservable<Avalonia.Controls.GridResizeDirection>> handler) where T : Avalonia.Controls.GridSplitter
+    public static T OnResizeDirection<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<Avalonia.Controls.GridResizeDirection>> handler) where T : Avalonia.Controls.GridSplitter
     {
         var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeDirectionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -88,10 +88,10 @@ public static partial class GridSplitterExtensions
         return obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
     }
 
-    public static T OnResizeBehavior<T>(this T obj, Action<IObservable<Avalonia.Controls.GridResizeBehavior>> handler) where T : Avalonia.Controls.GridSplitter
+    public static T OnResizeBehavior<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<Avalonia.Controls.GridResizeBehavior>> handler) where T : Avalonia.Controls.GridSplitter
     {
         var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -149,10 +149,10 @@ public static partial class GridSplitterExtensions
         return obj.GetObservable(Avalonia.Controls.GridSplitter.ShowsPreviewProperty);
     }
 
-    public static T OnShowsPreview<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.GridSplitter
+    public static T OnShowsPreview<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.GridSplitter
     {
         var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.ShowsPreviewProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -186,10 +186,10 @@ public static partial class GridSplitterExtensions
         return obj.GetObservable(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
     }
 
-    public static T OnKeyboardIncrement<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.GridSplitter
+    public static T OnKeyboardIncrement<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<System.Double>> handler) where T : Avalonia.Controls.GridSplitter
     {
         var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -223,10 +223,10 @@ public static partial class GridSplitterExtensions
         return obj.GetObservable(Avalonia.Controls.GridSplitter.DragIncrementProperty);
     }
 
-    public static T OnDragIncrement<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.GridSplitter
+    public static T OnDragIncrement<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<System.Double>> handler) where T : Avalonia.Controls.GridSplitter
     {
         var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.DragIncrementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -260,10 +260,10 @@ public static partial class GridSplitterExtensions
         return obj.GetObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
     }
 
-    public static T OnPreviewContent<T>(this T obj, Action<IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>>> handler) where T : Avalonia.Controls.GridSplitter
+    public static T OnPreviewContent<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>>> handler) where T : Avalonia.Controls.GridSplitter
     {
         var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class TrayIconExtensions
         return obj.GetObservable(Avalonia.Controls.TrayIcon.CommandProperty);
     }
 
-    public static T OnCommand<T>(this T obj, Action<IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.CommandProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TrayIconExtensions
         return obj.GetObservable(Avalonia.Controls.TrayIcon.IconsProperty);
     }
 
-    public static T OnIcons<T>(this T obj, Action<IObservable<Avalonia.Controls.TrayIcons>> handler) where T : Avalonia.Application
+    public static T OnIcons<T>(this T obj, Action<Avalonia.Application, IObservable<Avalonia.Controls.TrayIcons>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.IconsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class TrayIconExtensions
         return obj.GetObservable(Avalonia.Controls.TrayIcon.MenuProperty);
     }
 
-    public static T OnMenu<T>(this T obj, Action<IObservable<Avalonia.Controls.NativeMenu>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnMenu<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<Avalonia.Controls.NativeMenu>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.MenuProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class TrayIconExtensions
         return obj.GetObservable(Avalonia.Controls.TrayIcon.IconProperty);
     }
 
-    public static T OnIcon<T>(this T obj, Action<IObservable<Avalonia.Controls.WindowIcon>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<Avalonia.Controls.WindowIcon>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.IconProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class TrayIconExtensions
         return obj.GetObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
     }
 
-    public static T OnToolTipText<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnToolTipText<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.String>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -218,10 +218,10 @@ public static partial class TrayIconExtensions
         return obj.GetObservable(Avalonia.Controls.TrayIcon.IsVisibleProperty);
     }
 
-    public static T OnIsVisible<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnIsVisible<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.IsVisibleProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

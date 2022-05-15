@@ -33,10 +33,10 @@ public static partial class MaskedTextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty);
     }
 
-    public static T OnAsciiOnly<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnAsciiOnly<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class MaskedTextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
     }
 
-    public static T OnCulture<T>(this T obj, Action<IObservable<System.Globalization.CultureInfo>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnCulture<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Globalization.CultureInfo>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class MaskedTextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty);
     }
 
-    public static T OnHidePromptOnLeave<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnHidePromptOnLeave<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -126,10 +126,10 @@ public static partial class MaskedTextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskCompletedProperty);
     }
 
-    public static Avalonia.Controls.MaskedTextBox OnMaskCompleted(this Avalonia.Controls.MaskedTextBox obj, Action<IObservable<System.Nullable<System.Boolean>>> handler)
+    public static Avalonia.Controls.MaskedTextBox OnMaskCompleted(this Avalonia.Controls.MaskedTextBox obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Nullable<System.Boolean>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskCompletedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -145,10 +145,10 @@ public static partial class MaskedTextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskFullProperty);
     }
 
-    public static Avalonia.Controls.MaskedTextBox OnMaskFull(this Avalonia.Controls.MaskedTextBox obj, Action<IObservable<System.Nullable<System.Boolean>>> handler)
+    public static Avalonia.Controls.MaskedTextBox OnMaskFull(this Avalonia.Controls.MaskedTextBox obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Nullable<System.Boolean>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskFullProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -182,10 +182,10 @@ public static partial class MaskedTextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
     }
 
-    public static T OnMask<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnMask<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.String>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -219,10 +219,10 @@ public static partial class MaskedTextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.PasswordCharProperty);
     }
 
-    public static T OnPasswordChar<T>(this T obj, Action<IObservable<System.Char>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnPasswordChar<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Char>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.PasswordCharProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -256,10 +256,10 @@ public static partial class MaskedTextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.PromptCharProperty);
     }
 
-    public static T OnPromptChar<T>(this T obj, Action<IObservable<System.Char>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnPromptChar<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Char>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.PromptCharProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -293,10 +293,10 @@ public static partial class MaskedTextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty);
     }
 
-    public static T OnResetOnPrompt<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnResetOnPrompt<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -330,10 +330,10 @@ public static partial class MaskedTextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty);
     }
 
-    public static T OnResetOnSpace<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnResetOnSpace<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

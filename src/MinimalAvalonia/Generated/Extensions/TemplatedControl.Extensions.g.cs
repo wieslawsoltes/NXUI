@@ -33,10 +33,10 @@ public static partial class TemplatedControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
     }
 
-    public static T OnBackground<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class TemplatedControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
     }
 
-    public static T OnBorderBrush<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnBorderBrush<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class TemplatedControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty);
     }
 
-    public static T OnBorderThickness<T>(this T obj, Action<IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnBorderThickness<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class TemplatedControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty);
     }
 
-    public static T OnCornerRadius<T>(this T obj, Action<IObservable<Avalonia.CornerRadius>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnCornerRadius<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.CornerRadius>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class TemplatedControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty);
     }
 
-    public static T OnPadding<T>(this T obj, Action<IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnPadding<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -218,10 +218,10 @@ public static partial class TemplatedControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
     }
 
-    public static T OnTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IControlTemplate>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnTemplate<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Controls.Templates.IControlTemplate>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -255,10 +255,10 @@ public static partial class TemplatedControlExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
     }
 
-    public static T OnIsTemplateFocusTarget<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    public static T OnIsTemplateFocusTarget<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class RangeBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.MinimumProperty);
     }
 
-    public static T OnMinimum<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    public static T OnMinimum<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.MinimumProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class RangeBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.MaximumProperty);
     }
 
-    public static T OnMaximum<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    public static T OnMaximum<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.MaximumProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class RangeBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.ValueProperty);
     }
 
-    public static T OnValue<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    public static T OnValue<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.ValueProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class RangeBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty);
     }
 
-    public static T OnSmallChange<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    public static T OnSmallChange<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class RangeBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty);
     }
 
-    public static T OnLargeChange<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    public static T OnLargeChange<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

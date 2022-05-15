@@ -33,10 +33,10 @@ public static partial class ItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsProperty);
     }
 
-    public static T OnItems<T>(this T obj, Action<IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnItems<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -52,10 +52,10 @@ public static partial class ItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemCountProperty);
     }
 
-    public static Avalonia.Controls.ItemsControl OnItemCount(this Avalonia.Controls.ItemsControl obj, Action<IObservable<System.Int32>> handler)
+    public static Avalonia.Controls.ItemsControl OnItemCount(this Avalonia.Controls.ItemsControl obj, Action<Avalonia.Controls.ItemsControl, IObservable<System.Int32>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemCountProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -89,10 +89,10 @@ public static partial class ItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsPanelProperty);
     }
 
-    public static T OnItemsPanel<T>(this T obj, Action<IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnItemsPanel<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsPanelProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -126,10 +126,10 @@ public static partial class ItemsControlExtensions
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemTemplateProperty);
     }
 
-    public static T OnItemTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

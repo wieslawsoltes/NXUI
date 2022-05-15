@@ -33,10 +33,10 @@ public static partial class FlyoutExtensions
         return obj.GetObservable(Avalonia.Controls.Flyout.ContentProperty);
     }
 
-    public static T OnContent<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Flyout
+    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<System.Object>> handler) where T : Avalonia.Controls.Flyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.Flyout.ContentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

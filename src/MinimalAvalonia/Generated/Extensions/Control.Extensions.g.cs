@@ -33,10 +33,10 @@ public static partial class ControlExtensions
         return obj.GetObservable(Avalonia.Controls.Control.FocusAdornerProperty);
     }
 
-    public static T OnFocusAdorner<T>(this T obj, Action<IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>>> handler) where T : Avalonia.Controls.Control
+    public static T OnFocusAdorner<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.FocusAdornerProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ControlExtensions
         return obj.GetObservable(Avalonia.Controls.Control.TagProperty);
     }
 
-    public static T OnTag<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.Control
+    public static T OnTag<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Object>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.TagProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class ControlExtensions
         return obj.GetObservable(Avalonia.Controls.Control.ContextMenuProperty);
     }
 
-    public static T OnContextMenu<T>(this T obj, Action<IObservable<Avalonia.Controls.ContextMenu>> handler) where T : Avalonia.Controls.Control
+    public static T OnContextMenu<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.ContextMenu>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.ContextMenuProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -144,10 +144,10 @@ public static partial class ControlExtensions
         return obj.GetObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
     }
 
-    public static T OnContextFlyout<T>(this T obj, Action<IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Control
+    public static T OnContextFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -181,10 +181,10 @@ public static partial class ControlExtensions
         return obj.GetObservable(Avalonia.Controls.Control.FlowDirectionProperty);
     }
 
-    public static T OnFlowDirection<T>(this T obj, Action<IObservable<Avalonia.Media.FlowDirection>> handler) where T : Avalonia.Controls.Control
+    public static T OnFlowDirection<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FlowDirection>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.FlowDirectionProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

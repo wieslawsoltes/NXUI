@@ -33,10 +33,10 @@ public static partial class StyledElementExtensions
         return obj.GetObservable(Avalonia.StyledElement.DataContextProperty);
     }
 
-    public static T OnDataContext<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.StyledElement
+    public static T OnDataContext<T>(this T obj, Action<Avalonia.StyledElement, IObservable<System.Object>> handler) where T : Avalonia.StyledElement
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.DataContextProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class StyledElementExtensions
         return obj.GetObservable(Avalonia.StyledElement.NameProperty);
     }
 
-    public static T OnName<T>(this T obj, Action<IObservable<System.String>> handler) where T : Avalonia.StyledElement
+    public static T OnName<T>(this T obj, Action<Avalonia.StyledElement, IObservable<System.String>> handler) where T : Avalonia.StyledElement
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.NameProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -89,10 +89,10 @@ public static partial class StyledElementExtensions
         return obj.GetObservable(Avalonia.StyledElement.ParentProperty);
     }
 
-    public static Avalonia.StyledElement OnParent(this Avalonia.StyledElement obj, Action<IObservable<Avalonia.IStyledElement>> handler)
+    public static Avalonia.StyledElement OnParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<Avalonia.IStyledElement>> handler)
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.ParentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -126,10 +126,10 @@ public static partial class StyledElementExtensions
         return obj.GetObservable(Avalonia.StyledElement.TemplatedParentProperty);
     }
 
-    public static T OnTemplatedParent<T>(this T obj, Action<IObservable<Avalonia.Styling.ITemplatedControl>> handler) where T : Avalonia.StyledElement
+    public static T OnTemplatedParent<T>(this T obj, Action<Avalonia.StyledElement, IObservable<Avalonia.Styling.ITemplatedControl>> handler) where T : Avalonia.StyledElement
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.TemplatedParentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

@@ -33,10 +33,10 @@ public static partial class ArcExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Arc.StartAngleProperty);
     }
 
-    public static T OnStartAngle<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Arc
+    public static T OnStartAngle<T>(this T obj, Action<Avalonia.Controls.Shapes.Arc, IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Arc
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Arc.StartAngleProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ArcExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Arc.SweepAngleProperty);
     }
 
-    public static T OnSweepAngle<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Arc
+    public static T OnSweepAngle<T>(this T obj, Action<Avalonia.Controls.Shapes.Arc, IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Arc
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Arc.SweepAngleProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

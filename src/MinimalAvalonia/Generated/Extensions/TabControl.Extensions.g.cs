@@ -33,10 +33,10 @@ public static partial class TabControlExtensions
         return obj.GetObservable(Avalonia.Controls.TabControl.TabStripPlacementProperty);
     }
 
-    public static T OnTabStripPlacement<T>(this T obj, Action<IObservable<Avalonia.Controls.Dock>> handler) where T : Avalonia.Controls.TabControl
+    public static T OnTabStripPlacement<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Dock>> handler) where T : Avalonia.Controls.TabControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.TabStripPlacementProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -94,10 +94,10 @@ public static partial class TabControlExtensions
         return obj.GetObservable(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty);
     }
 
-    public static T OnHorizontalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.TabControl
+    public static T OnHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.TabControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -155,10 +155,10 @@ public static partial class TabControlExtensions
         return obj.GetObservable(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty);
     }
 
-    public static T OnVerticalContentAlignment<T>(this T obj, Action<IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.TabControl
+    public static T OnVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.TabControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -216,10 +216,10 @@ public static partial class TabControlExtensions
         return obj.GetObservable(Avalonia.Controls.TabControl.ContentTemplateProperty);
     }
 
-    public static T OnContentTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.TabControl
+    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.TabControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.ContentTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -253,10 +253,10 @@ public static partial class TabControlExtensions
         return obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
     }
 
-    public static T OnSelectedContent<T>(this T obj, Action<IObservable<System.Object>> handler) where T : Avalonia.Controls.TabControl
+    public static T OnSelectedContent<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.TabControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -290,10 +290,10 @@ public static partial class TabControlExtensions
         return obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
     }
 
-    public static T OnSelectedContentTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.TabControl
+    public static T OnSelectedContentTemplate<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.TabControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

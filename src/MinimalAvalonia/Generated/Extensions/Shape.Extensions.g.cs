@@ -33,10 +33,10 @@ public static partial class ShapeExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.FillProperty);
     }
 
-    public static T OnFill<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnFill<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.FillProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ShapeExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.StretchProperty);
     }
 
-    public static T OnStretch<T>(this T obj, Action<IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnStretch<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StretchProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -131,10 +131,10 @@ public static partial class ShapeExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeProperty);
     }
 
-    public static T OnStroke<T>(this T obj, Action<IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnStroke<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -168,10 +168,10 @@ public static partial class ShapeExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
     }
 
-    public static T OnStrokeDashArray<T>(this T obj, Action<IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnStrokeDashArray<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -205,10 +205,10 @@ public static partial class ShapeExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty);
     }
 
-    public static T OnStrokeDashOffset<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnStrokeDashOffset<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -242,10 +242,10 @@ public static partial class ShapeExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty);
     }
 
-    public static T OnStrokeThickness<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnStrokeThickness<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -279,10 +279,10 @@ public static partial class ShapeExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty);
     }
 
-    public static T OnStrokeLineCap<T>(this T obj, Action<IObservable<Avalonia.Media.PenLineCap>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnStrokeLineCap<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.PenLineCap>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -334,10 +334,10 @@ public static partial class ShapeExtensions
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty);
     }
 
-    public static T OnStrokeJoin<T>(this T obj, Action<IObservable<Avalonia.Media.PenLineJoin>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnStrokeJoin<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.PenLineJoin>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

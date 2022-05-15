@@ -33,10 +33,10 @@ public static partial class ToggleSplitButtonExtensions
         return obj.GetObservable(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty);
     }
 
-    public static T OnIsChecked<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ToggleSplitButton
+    public static T OnIsChecked<T>(this T obj, Action<Avalonia.Controls.ToggleSplitButton, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ToggleSplitButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

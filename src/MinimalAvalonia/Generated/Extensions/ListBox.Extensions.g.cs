@@ -15,10 +15,10 @@ public static partial class ListBoxExtensions
         return obj.GetObservable(Avalonia.Controls.ListBox.ScrollProperty);
     }
 
-    public static Avalonia.Controls.ListBox OnScroll(this Avalonia.Controls.ListBox obj, Action<IObservable<Avalonia.Controls.Primitives.IScrollable>> handler)
+    public static Avalonia.Controls.ListBox OnScroll(this Avalonia.Controls.ListBox obj, Action<Avalonia.Controls.ListBox, IObservable<Avalonia.Controls.Primitives.IScrollable>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ListBox.ScrollProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -52,10 +52,10 @@ public static partial class ListBoxExtensions
         return obj.GetObservable(Avalonia.Controls.ListBox.VirtualizationModeProperty);
     }
 
-    public static T OnVirtualizationMode<T>(this T obj, Action<IObservable<Avalonia.Controls.ItemVirtualizationMode>> handler) where T : Avalonia.Controls.ListBox
+    public static T OnVirtualizationMode<T>(this T obj, Action<Avalonia.Controls.ListBox, IObservable<Avalonia.Controls.ItemVirtualizationMode>> handler) where T : Avalonia.Controls.ListBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ListBox.VirtualizationModeProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 

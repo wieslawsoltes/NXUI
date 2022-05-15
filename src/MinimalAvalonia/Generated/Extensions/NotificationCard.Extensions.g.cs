@@ -15,10 +15,10 @@ public static partial class NotificationCardExtensions
         return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
     }
 
-    public static Avalonia.Controls.Notifications.NotificationCard OnIsClosing(this Avalonia.Controls.Notifications.NotificationCard obj, Action<IObservable<System.Boolean>> handler)
+    public static Avalonia.Controls.Notifications.NotificationCard OnIsClosing(this Avalonia.Controls.Notifications.NotificationCard obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -52,10 +52,10 @@ public static partial class NotificationCardExtensions
         return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty);
     }
 
-    public static T OnIsClosed<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
+    public static T OnIsClosed<T>(this T obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
     {
         var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -89,10 +89,10 @@ public static partial class NotificationCardExtensions
         return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty);
     }
 
-    public static T OnCloseOnClick<T>(this T obj, Action<IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
+    public static T OnCloseOnClick<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

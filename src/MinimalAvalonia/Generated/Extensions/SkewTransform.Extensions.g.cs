@@ -33,10 +33,10 @@ public static partial class SkewTransformExtensions
         return obj.GetObservable(Avalonia.Media.SkewTransform.AngleXProperty);
     }
 
-    public static T OnAngleX<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.SkewTransform
+    public static T OnAngleX<T>(this T obj, Action<Avalonia.Media.SkewTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.SkewTransform
     {
         var observable = obj.GetObservable(Avalonia.Media.SkewTransform.AngleXProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class SkewTransformExtensions
         return obj.GetObservable(Avalonia.Media.SkewTransform.AngleYProperty);
     }
 
-    public static T OnAngleY<T>(this T obj, Action<IObservable<System.Double>> handler) where T : Avalonia.Media.SkewTransform
+    public static T OnAngleY<T>(this T obj, Action<Avalonia.Media.SkewTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.SkewTransform
     {
         var observable = obj.GetObservable(Avalonia.Media.SkewTransform.AngleYProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }

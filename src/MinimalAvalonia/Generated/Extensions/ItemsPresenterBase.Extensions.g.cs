@@ -33,10 +33,10 @@ public static partial class ItemsPresenterBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty);
     }
 
-    public static T OnItems<T>(this T obj, Action<IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    public static T OnItems<T>(this T obj, Action<Avalonia.Controls.Presenters.ItemsPresenterBase, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -70,10 +70,10 @@ public static partial class ItemsPresenterBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty);
     }
 
-    public static T OnItemsPanel<T>(this T obj, Action<IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    public static T OnItemsPanel<T>(this T obj, Action<Avalonia.Controls.Presenters.ItemsPresenterBase, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -107,10 +107,10 @@ public static partial class ItemsPresenterBaseExtensions
         return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty);
     }
 
-    public static T OnItemTemplate<T>(this T obj, Action<IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.Presenters.ItemsPresenterBase, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenterBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 }
