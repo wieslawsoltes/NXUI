@@ -65,10 +65,10 @@ public static partial class MinimalAvaloniaProperties
         return obj.GetObservable(%ClassType%.%Name%Property);
     }
 
-    public static T On%Name%<T>(this T obj, Action<IObservable<%ValueType%>> handler) where T : %OwnerType%
+    public static T On%Name%<T>(this T obj, Action<%OwnerType%, IObservable<%ValueType%>> handler) where T : %OwnerType%
     {
         var observable = obj.GetObservable(%ClassType%.%Name%Property);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }";
 
@@ -102,10 +102,10 @@ public static partial class MinimalAvaloniaProperties
         return obj.GetObservable(%OwnerType%.%Name%Property);
     }
 
-    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<IObservable<%ValueType%>> handler)
+    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ValueType%>> handler)
     {
         var observable = obj.GetObservable(%ClassType%.%Name%Property);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }";
 
@@ -121,10 +121,10 @@ public static partial class MinimalAvaloniaProperties
         return obj.GetObservable(%ClassType%.%Name%Property);
     }
 
-    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<IObservable<%ValueType%>> handler)
+    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ValueType%>> handler)
     {
         var observable = obj.GetObservable(%ClassType%.%Name%Property);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }";
 
