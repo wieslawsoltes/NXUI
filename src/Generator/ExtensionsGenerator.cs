@@ -118,6 +118,11 @@ internal static class ExtensionsGenerator
                 continue;
             }
 
+            if (c.Properties.Length <= 0)
+            {
+                continue;
+            }
+
             var outputFile = Path.Combine(outputPath, $"{c.Name}.Properties.g.cs");
 
             using var file = File.CreateText(outputFile);
@@ -126,18 +131,15 @@ internal static class ExtensionsGenerator
             var fileHeaderBuilder = new StringBuilder(Templates.PropertiesHeaderTemplate);
             WriteLine(fileHeaderBuilder.ToString());
 
-            if (c.Properties.Length > 0)
+            for (var i = 0; i < c.Properties.Length; i++)
             {
-                for (var i = 0; i < c.Properties.Length; i++)
+                var p = c.Properties[i];
+
+                WriteLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
+
+                if (i < c.Properties.Length - 1)
                 {
-                    var p = c.Properties[i];
-
-                    WriteLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
-
-                    if (i < c.Properties.Length - 1)
-                    {
-                        WriteLine("");
-                    }
+                    WriteLine("");
                 }
             }
 
