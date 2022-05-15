@@ -11,7 +11,7 @@ Window Build()
                         .HorizontalAlignmentCenter().VerticalAlignmentCenter()
                         .Content(count.ToBinding()),
                     Button()
-                        .OnClick(o => o.Subscribe(_ => count.OnNext(count.Value + 1)))
+                        .OnClick((_, o) => o.Subscribe(_ => count.OnNext(count.Value + 1)))
                         .Content("Count")));
 
 AppBuilder.Configure<Application>()

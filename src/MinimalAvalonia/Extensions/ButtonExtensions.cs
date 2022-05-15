@@ -4,14 +4,14 @@ public static partial class ButtonExtensions
 {
     // Click
 
-    public static Button OnClick(this Button button, Action<IObservable<RoutedEventArgs>> handler)
+    public static Button OnClick(this Button button, Action<Button, IObservable<RoutedEventArgs>> handler)
     {
         var observable = Observable
             .FromEventPattern<EventHandler<RoutedEventArgs>, RoutedEventArgs>(
                 h => button.Click += h, 
                 h => button.Click -= h)
             .Select(x => x.EventArgs);
-        handler(observable);
+        handler(button, observable);
         return button;
     }
 

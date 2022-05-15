@@ -6,7 +6,7 @@
         .CornerRadius(4);
 
     Button(out var button)
-        .OnClick(o => o.Subscribe(_ => Debug.WriteLine("Click")))
+        .OnClick((_, o) => o.Subscribe(_ => Debug.WriteLine("Click")))
         .Content("Button");
 
     ContentControl(out var contentControl)
