@@ -3,7 +3,7 @@ var fahrenheit = new Subject<string?>();
 
 Window Build() 
     => Window()
-        .Title("TempConv").Padding(12).Width(350).Height(200)
+        .Title("TempConv").Padding(12).Width(450).Height(200)
         .Content(
             StackPanel()
                 .OrientationHorizontal().Spacing(12).HorizontalAlignmentCenter().VerticalAlignmentCenter()
