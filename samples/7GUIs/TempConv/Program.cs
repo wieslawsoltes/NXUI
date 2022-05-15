@@ -10,12 +10,14 @@ Window Build()
                 .Children(
                     TextBox()
                         .Text(celsius)
-                        .OnText(o => o.Subscribe(x => {
-                            if (x is null) {
-                                return; // TODO: Handle error.
+                        .OnText((tc, o) => o.Subscribe(x => {
+                            tc.Errors(Enumerable.Empty<string>());
+                            if (string.IsNullOrWhiteSpace(x)) {
+                                return;
                             }
                             if (!double.TryParse(x, out var c)) {
-                                return; // TODO: Handle error.
+                                tc.Errors(new[] { "Invalid number." });
+                                return;
                             }
                             var f = Math.Round(c * (9d / 5d) + 32d);
                             fahrenheit.OnNext($"{f}");
@@ -25,12 +27,14 @@ Window Build()
                         .Content("Celsius = "),
                     TextBox()
                         .Text(fahrenheit)
-                        .OnText(o => o.Subscribe(x => {
-                            if (x is null) {
-                                return; // TODO: Handle error.
+                        .OnText((tf, o) => o.Subscribe(x => {
+                            tf.Errors(Enumerable.Empty<string>());
+                            if (string.IsNullOrWhiteSpace(x)) {
+                                return;
                             }
                             if (!double.TryParse(x, out var f)) {
-                                return; // TODO: Handle error.
+                                tf.Errors(new[] { "Invalid number." });
+                                return;
                             }
                             var c = Math.Round((f - 32d) * (5d / 9d));
                             celsius.OnNext($"{c}");
