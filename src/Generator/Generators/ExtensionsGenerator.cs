@@ -69,7 +69,7 @@ internal static class ExtensionsGenerator
                     }
                 }
 
-                if (i < c.Properties.Length - 1)
+                if (i < c.Properties.Length - 1 || c.Events.Length > 0)
                 {
                     WriteLine("");
                 }
@@ -87,7 +87,20 @@ internal static class ExtensionsGenerator
                 eventBuilder.Replace("%Name%", e.Name);
                 eventBuilder.Replace("%OwnerType%", e.OwnerType);
                 eventBuilder.Replace("%ArgsType%", e.ArgsType);
-                eventBuilder.Replace("%RoutingStrategies%", e.RoutingStrategies);
+
+                var routes = e.RoutingStrategies.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
+                var routingStrategiesBuilder = new StringBuilder();
+                for (var j = 0; j < routes.Length; j++)
+                {
+                    if (j > 0)
+                    {
+                        routingStrategiesBuilder.Append(" | ");
+                    }
+                    routingStrategiesBuilder.Append("Avalonia.Interactivity.RoutingStrategies.");
+                    routingStrategiesBuilder.Append(routes[j]);
+                }
+
+                eventBuilder.Replace("%RoutingStrategies%", routingStrategiesBuilder.ToString());
 
                 WriteLine(eventBuilder.ToString());
 
