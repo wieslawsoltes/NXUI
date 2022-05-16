@@ -756,4 +756,28 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
         return obj;
     }
+
+    // ValueChangedEvent
+
+    public static Avalonia.Controls.NumericUpDown OnValueChangedHandler(this Avalonia.Controls.NumericUpDown obj, Action<Avalonia.Controls.NumericUpDown, Avalonia.Controls.NumericUpDownValueChangedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        obj.AddHandler(Avalonia.Controls.NumericUpDown.ValueChangedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static Avalonia.Controls.NumericUpDown OnValueChanged(this Avalonia.Controls.NumericUpDown obj, Action<Avalonia.Controls.NumericUpDown, IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ValueChangedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs> ObserveOnValueChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.NumericUpDownValueChangedEventArgs>, Avalonia.Controls.NumericUpDownValueChangedEventArgs>(
+                h => obj.ValueChanged += h, 
+                h => obj.ValueChanged -= h)
+            .Select(x => x.EventArgs);
+    }
 }

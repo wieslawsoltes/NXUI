@@ -95,4 +95,28 @@ public static partial class NotificationCardExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // NotificationClosedEvent
+
+    public static Avalonia.Controls.Notifications.NotificationCard OnNotificationClosedHandler(this Avalonia.Controls.Notifications.NotificationCard obj, Action<Avalonia.Controls.Notifications.NotificationCard, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        obj.AddHandler(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static Avalonia.Controls.Notifications.NotificationCard OnNotificationClosed(this Avalonia.Controls.Notifications.NotificationCard obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnNotificationClosed(this Avalonia.Controls.Notifications.NotificationCard obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.NotificationClosed += h, 
+                h => obj.NotificationClosed -= h)
+            .Select(x => x.EventArgs);
+    }
 }

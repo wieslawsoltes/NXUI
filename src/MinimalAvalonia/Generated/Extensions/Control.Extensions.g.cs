@@ -199,4 +199,53 @@ public static partial class ControlExtensions
         obj[Avalonia.Controls.Control.FlowDirectionProperty] = Avalonia.Media.FlowDirection.RightToLeft;
         return obj;
     }
+
+    // RequestBringIntoViewEvent
+
+    public static Avalonia.Controls.Control OnRequestBringIntoViewHandler(this Avalonia.Controls.Control obj, Action<Avalonia.Controls.Control, Avalonia.Controls.RequestBringIntoViewEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        obj.AddHandler(Avalonia.Controls.Control.RequestBringIntoViewEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static Avalonia.Controls.Control OnRequestBringIntoView(this Avalonia.Controls.Control obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Control.RequestBringIntoViewEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // TODO: https://github.com/AvaloniaUI/Avalonia/pull/8147
+    /*public static IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs> ObserveOnRequestBringIntoView(this Avalonia.Controls.Control obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.RequestBringIntoViewEventArgs>, Avalonia.Controls.RequestBringIntoViewEventArgs>(
+                h => obj.RequestBringIntoView += h, 
+                h => obj.RequestBringIntoView -= h)
+            .Select(x => x.EventArgs);
+    }*/
+
+    // ContextRequestedEvent
+
+    public static Avalonia.Controls.Control OnContextRequestedHandler(this Avalonia.Controls.Control obj, Action<Avalonia.Controls.Control, Avalonia.Controls.ContextRequestedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        obj.AddHandler(Avalonia.Controls.Control.ContextRequestedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static Avalonia.Controls.Control OnContextRequested(this Avalonia.Controls.Control obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Control.ContextRequestedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequested(this Avalonia.Controls.Control obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(
+                h => obj.ContextRequested += h, 
+                h => obj.ContextRequested -= h)
+            .Select(x => x.EventArgs);
+    }
 }

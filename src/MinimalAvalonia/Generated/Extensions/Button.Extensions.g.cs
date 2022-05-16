@@ -273,4 +273,28 @@ public static partial class ButtonExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // ClickEvent
+
+    public static Avalonia.Controls.Button OnClickHandler(this Avalonia.Controls.Button obj, Action<Avalonia.Controls.Button, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        obj.AddHandler(Avalonia.Controls.Button.ClickEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static Avalonia.Controls.Button OnClick(this Avalonia.Controls.Button obj, Action<Avalonia.Controls.Button, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Button.ClickEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnClick(this Avalonia.Controls.Button obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.Click += h, 
+                h => obj.Click -= h)
+            .Select(x => x.EventArgs);
+    }
 }

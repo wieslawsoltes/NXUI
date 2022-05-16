@@ -697,4 +697,28 @@ public static partial class AutoCompleteBoxExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // SelectionChangedEvent
+
+    public static Avalonia.Controls.AutoCompleteBox OnSelectionChangedHandler(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, Avalonia.Controls.SelectionChangedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        obj.AddHandler(Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static Avalonia.Controls.AutoCompleteBox OnSelectionChanged(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.SelectionChangedEventArgs>, Avalonia.Controls.SelectionChangedEventArgs>(
+                h => obj.SelectionChanged += h, 
+                h => obj.SelectionChanged -= h)
+            .Select(x => x.EventArgs);
+    }
 }

@@ -76,4 +76,76 @@ public static partial class ToggleButtonExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // CheckedEvent
+
+    public static Avalonia.Controls.Primitives.ToggleButton OnCheckedHandler(this Avalonia.Controls.Primitives.ToggleButton obj, Action<Avalonia.Controls.Primitives.ToggleButton, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        obj.AddHandler(Avalonia.Controls.Primitives.ToggleButton.CheckedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static Avalonia.Controls.Primitives.ToggleButton OnChecked(this Avalonia.Controls.Primitives.ToggleButton obj, Action<Avalonia.Controls.Primitives.ToggleButton, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.CheckedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnChecked(this Avalonia.Controls.Primitives.ToggleButton obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.Checked += h, 
+                h => obj.Checked -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // UncheckedEvent
+
+    public static Avalonia.Controls.Primitives.ToggleButton OnUncheckedHandler(this Avalonia.Controls.Primitives.ToggleButton obj, Action<Avalonia.Controls.Primitives.ToggleButton, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        obj.AddHandler(Avalonia.Controls.Primitives.ToggleButton.UncheckedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static Avalonia.Controls.Primitives.ToggleButton OnUnchecked(this Avalonia.Controls.Primitives.ToggleButton obj, Action<Avalonia.Controls.Primitives.ToggleButton, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.UncheckedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUnchecked(this Avalonia.Controls.Primitives.ToggleButton obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.Unchecked += h, 
+                h => obj.Unchecked -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // IndeterminateEvent
+
+    public static Avalonia.Controls.Primitives.ToggleButton OnIndeterminateHandler(this Avalonia.Controls.Primitives.ToggleButton obj, Action<Avalonia.Controls.Primitives.ToggleButton, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        obj.AddHandler(Avalonia.Controls.Primitives.ToggleButton.IndeterminateEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static Avalonia.Controls.Primitives.ToggleButton OnIndeterminate(this Avalonia.Controls.Primitives.ToggleButton obj, Action<Avalonia.Controls.Primitives.ToggleButton, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IndeterminateEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIndeterminate(this Avalonia.Controls.Primitives.ToggleButton obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.Indeterminate += h, 
+                h => obj.Indeterminate -= h)
+            .Select(x => x.EventArgs);
+    }
 }

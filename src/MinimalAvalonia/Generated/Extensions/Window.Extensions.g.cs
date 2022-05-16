@@ -617,4 +617,58 @@ public static partial class WindowExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // WindowClosedEvent
+
+    // TODO: https://github.com/AvaloniaUI/Avalonia/pull/8147
+    /*public static Avalonia.Controls.Window OnWindowClosedHandler(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        obj.AddHandler(Avalonia.Controls.Window.WindowClosedEvent, (w, args) => action(obj, args), routes);
+        return obj;
+    }*/
+
+    // TODO: https://github.com/AvaloniaUI/Avalonia/pull/8147
+    /*public static Avalonia.Controls.Window OnWindowClosed(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Window.WindowClosedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }*/
+
+    // TODO: https://github.com/AvaloniaUI/Avalonia/pull/8147
+    /*public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnWindowClosed(this Avalonia.Controls.Window obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.WindowClosed += h, 
+                h => obj.WindowClosed -= h)
+            .Select(x => x.EventArgs);
+    }*/
+
+    // WindowOpenedEvent
+
+    // TODO: https://github.com/AvaloniaUI/Avalonia/pull/8147
+    /*public static Avalonia.Controls.Window OnWindowOpenedHandler(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        obj.AddHandler(Avalonia.Controls.Window.WindowOpenedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }*/
+
+    // TODO: https://github.com/AvaloniaUI/Avalonia/pull/8147
+    /*public static Avalonia.Controls.Window OnWindowOpened(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Window.WindowOpenedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }*/
+
+    // TODO: https://github.com/AvaloniaUI/Avalonia/pull/8147
+    /*public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnWindowOpened(this Avalonia.Controls.Window obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.WindowOpened += h, 
+                h => obj.WindowOpened -= h)
+            .Select(x => x.EventArgs);
+    }*/
 }
