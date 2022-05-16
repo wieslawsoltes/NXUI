@@ -113,7 +113,32 @@ internal static partial class Templates
         return obj;
     }";
 
+
     public static string EventMethodsTemplate = @"    // %Name%Event
+
+    public static T On%Name%Handler<T>(this T obj, Action<T, %ArgsType%> action, Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%) where T : %OwnerType%
+    {
+        obj.AddHandler(%OwnerType%.%Name%Event, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static T On%Name%<T>(this T obj, Action<T, IObservable<%ArgsType%>> handler,  Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%) where T : %OwnerType%
+    {
+        var observable = obj.GetObservable(%OwnerType%.%Name%Event, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<%ArgsType%> ObserveOn%Name%(this %OwnerType% obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<%ArgsType%>, %ArgsType%>(
+                h => obj.%Name% += h, 
+                h => obj.%Name% -= h)
+            .Select(x => x.EventArgs);
+    }";
+
+    public static string EventMethodsTemplateSealed = @"    // %Name%Event
 
     public static %OwnerType% On%Name%Handler(this %OwnerType% obj, Action<%OwnerType%, %ArgsType%> action, Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
     {
