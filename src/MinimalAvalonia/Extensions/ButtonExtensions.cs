@@ -2,7 +2,7 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class ButtonExtensions
 {
-    // Click
+    // ClickEvent
 
     public static Button OnClickHandler(this Button obj, Action<Button, RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
