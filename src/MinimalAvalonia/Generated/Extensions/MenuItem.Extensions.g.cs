@@ -264,13 +264,13 @@ public static partial class MenuItemExtensions
 
     // ClickEvent
 
-    public static Avalonia.Controls.MenuItem OnClickHandler(this Avalonia.Controls.MenuItem obj, Action<Avalonia.Controls.MenuItem, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnClickHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
     {
         obj.AddHandler(Avalonia.Controls.MenuItem.ClickEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.MenuItem OnClick(this Avalonia.Controls.MenuItem obj, Action<Avalonia.Controls.MenuItem, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnClick<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.ClickEvent, routes);
         handler(obj, observable);
@@ -288,13 +288,13 @@ public static partial class MenuItemExtensions
 
     // SubmenuOpenedEvent
 
-    public static Avalonia.Controls.MenuItem OnSubmenuOpenedHandler(this Avalonia.Controls.MenuItem obj, Action<Avalonia.Controls.MenuItem, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnSubmenuOpenedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
     {
         obj.AddHandler(Avalonia.Controls.MenuItem.SubmenuOpenedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.MenuItem OnSubmenuOpened(this Avalonia.Controls.MenuItem obj, Action<Avalonia.Controls.MenuItem, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnSubmenuOpened<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.SubmenuOpenedEvent, routes);
         handler(obj, observable);

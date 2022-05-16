@@ -961,13 +961,13 @@ public static partial class TextBoxExtensions
 
     // CopyingToClipboardEvent
 
-    public static Avalonia.Controls.TextBox OnCopyingToClipboardHandler(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnCopyingToClipboardHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
         obj.AddHandler(Avalonia.Controls.TextBox.CopyingToClipboardEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.TextBox OnCopyingToClipboard(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnCopyingToClipboard<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.CopyingToClipboardEvent, routes);
         handler(obj, observable);
@@ -985,13 +985,13 @@ public static partial class TextBoxExtensions
 
     // CuttingToClipboardEvent
 
-    public static Avalonia.Controls.TextBox OnCuttingToClipboardHandler(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnCuttingToClipboardHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
         obj.AddHandler(Avalonia.Controls.TextBox.CuttingToClipboardEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.TextBox OnCuttingToClipboard(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnCuttingToClipboard<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.CuttingToClipboardEvent, routes);
         handler(obj, observable);
@@ -1009,13 +1009,13 @@ public static partial class TextBoxExtensions
 
     // PastingFromClipboardEvent
 
-    public static Avalonia.Controls.TextBox OnPastingFromClipboardHandler(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnPastingFromClipboardHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
         obj.AddHandler(Avalonia.Controls.TextBox.PastingFromClipboardEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.TextBox OnPastingFromClipboard(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnPastingFromClipboard<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.PastingFromClipboardEvent, routes);
         handler(obj, observable);

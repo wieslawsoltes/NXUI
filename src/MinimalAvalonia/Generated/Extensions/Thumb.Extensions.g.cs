@@ -5,13 +5,13 @@ public static partial class ThumbExtensions
 {
     // DragStartedEvent
 
-    public static Avalonia.Controls.Primitives.Thumb OnDragStartedHandler(this Avalonia.Controls.Primitives.Thumb obj, Action<Avalonia.Controls.Primitives.Thumb, Avalonia.Input.VectorEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnDragStartedHandler<T>(this T obj, Action<T, Avalonia.Input.VectorEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.Thumb
     {
         obj.AddHandler(Avalonia.Controls.Primitives.Thumb.DragStartedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.Primitives.Thumb OnDragStarted(this Avalonia.Controls.Primitives.Thumb obj, Action<Avalonia.Controls.Primitives.Thumb, IObservable<Avalonia.Input.VectorEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnDragStarted<T>(this T obj, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.Thumb
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Thumb.DragStartedEvent, routes);
         handler(obj, observable);
@@ -29,13 +29,13 @@ public static partial class ThumbExtensions
 
     // DragDeltaEvent
 
-    public static Avalonia.Controls.Primitives.Thumb OnDragDeltaHandler(this Avalonia.Controls.Primitives.Thumb obj, Action<Avalonia.Controls.Primitives.Thumb, Avalonia.Input.VectorEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnDragDeltaHandler<T>(this T obj, Action<T, Avalonia.Input.VectorEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.Thumb
     {
         obj.AddHandler(Avalonia.Controls.Primitives.Thumb.DragDeltaEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.Primitives.Thumb OnDragDelta(this Avalonia.Controls.Primitives.Thumb obj, Action<Avalonia.Controls.Primitives.Thumb, IObservable<Avalonia.Input.VectorEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnDragDelta<T>(this T obj, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.Thumb
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Thumb.DragDeltaEvent, routes);
         handler(obj, observable);
@@ -53,13 +53,13 @@ public static partial class ThumbExtensions
 
     // DragCompletedEvent
 
-    public static Avalonia.Controls.Primitives.Thumb OnDragCompletedHandler(this Avalonia.Controls.Primitives.Thumb obj, Action<Avalonia.Controls.Primitives.Thumb, Avalonia.Input.VectorEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnDragCompletedHandler<T>(this T obj, Action<T, Avalonia.Input.VectorEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.Thumb
     {
         obj.AddHandler(Avalonia.Controls.Primitives.Thumb.DragCompletedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.Primitives.Thumb OnDragCompleted(this Avalonia.Controls.Primitives.Thumb obj, Action<Avalonia.Controls.Primitives.Thumb, IObservable<Avalonia.Input.VectorEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnDragCompleted<T>(this T obj, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.Thumb
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Thumb.DragCompletedEvent, routes);
         handler(obj, observable);

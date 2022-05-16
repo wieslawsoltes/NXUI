@@ -60,13 +60,13 @@ public static partial class SpinnerExtensions
 
     // SpinEvent
 
-    public static Avalonia.Controls.Spinner OnSpinHandler(this Avalonia.Controls.Spinner obj, Action<Avalonia.Controls.Spinner, Avalonia.Controls.SpinEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnSpinHandler<T>(this T obj, Action<T, Avalonia.Controls.SpinEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Spinner
     {
         obj.AddHandler(Avalonia.Controls.Spinner.SpinEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.Spinner OnSpin(this Avalonia.Controls.Spinner obj, Action<Avalonia.Controls.Spinner, IObservable<Avalonia.Controls.SpinEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnSpin<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Spinner
     {
         var observable = obj.GetObservable(Avalonia.Controls.Spinner.SpinEvent, routes);
         handler(obj, observable);

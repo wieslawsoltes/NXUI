@@ -759,13 +759,13 @@ public static partial class NumericUpDownExtensions
 
     // ValueChangedEvent
 
-    public static Avalonia.Controls.NumericUpDown OnValueChangedHandler(this Avalonia.Controls.NumericUpDown obj, Action<Avalonia.Controls.NumericUpDown, Avalonia.Controls.NumericUpDownValueChangedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnValueChangedHandler<T>(this T obj, Action<T, Avalonia.Controls.NumericUpDownValueChangedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.NumericUpDown
     {
         obj.AddHandler(Avalonia.Controls.NumericUpDown.ValueChangedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.NumericUpDown OnValueChanged(this Avalonia.Controls.NumericUpDown obj, Action<Avalonia.Controls.NumericUpDown, IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnValueChanged<T>(this T obj, Action<T, IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ValueChangedEvent, routes);
         handler(obj, observable);

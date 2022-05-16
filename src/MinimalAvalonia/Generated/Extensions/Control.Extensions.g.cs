@@ -202,38 +202,37 @@ public static partial class ControlExtensions
 
     // RequestBringIntoViewEvent
 
-    public static Avalonia.Controls.Control OnRequestBringIntoViewHandler(this Avalonia.Controls.Control obj, Action<Avalonia.Controls.Control, Avalonia.Controls.RequestBringIntoViewEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnRequestBringIntoViewHandler<T>(this T obj, Action<T, Avalonia.Controls.RequestBringIntoViewEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
     {
         obj.AddHandler(Avalonia.Controls.Control.RequestBringIntoViewEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.Control OnRequestBringIntoView(this Avalonia.Controls.Control obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnRequestBringIntoView<T>(this T obj, Action<T, IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.RequestBringIntoViewEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
-    // TODO: https://github.com/AvaloniaUI/Avalonia/pull/8147
-    /*public static IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs> ObserveOnRequestBringIntoView(this Avalonia.Controls.Control obj)
-    {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.RequestBringIntoViewEventArgs>, Avalonia.Controls.RequestBringIntoViewEventArgs>(
-                h => obj.RequestBringIntoView += h, 
-                h => obj.RequestBringIntoView -= h)
-            .Select(x => x.EventArgs);
-    }*/
+    // public static IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs> ObserveOnRequestBringIntoView(this Avalonia.Controls.Control obj)
+    // {
+    //     return Observable
+    //         .FromEventPattern<EventHandler<Avalonia.Controls.RequestBringIntoViewEventArgs>, Avalonia.Controls.RequestBringIntoViewEventArgs>(
+    //             h => obj.RequestBringIntoView += h, 
+    //             h => obj.RequestBringIntoView -= h)
+    //         .Select(x => x.EventArgs);
+    // }
 
     // ContextRequestedEvent
 
-    public static Avalonia.Controls.Control OnContextRequestedHandler(this Avalonia.Controls.Control obj, Action<Avalonia.Controls.Control, Avalonia.Controls.ContextRequestedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnContextRequestedHandler<T>(this T obj, Action<T, Avalonia.Controls.ContextRequestedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
     {
         obj.AddHandler(Avalonia.Controls.Control.ContextRequestedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.Control OnContextRequested(this Avalonia.Controls.Control obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnContextRequested<T>(this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.ContextRequestedEvent, routes);
         handler(obj, observable);

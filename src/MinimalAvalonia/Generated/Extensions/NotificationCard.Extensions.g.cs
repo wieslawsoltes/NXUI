@@ -98,13 +98,13 @@ public static partial class NotificationCardExtensions
 
     // NotificationClosedEvent
 
-    public static Avalonia.Controls.Notifications.NotificationCard OnNotificationClosedHandler(this Avalonia.Controls.Notifications.NotificationCard obj, Action<Avalonia.Controls.Notifications.NotificationCard, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnNotificationClosedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Notifications.NotificationCard
     {
         obj.AddHandler(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.Notifications.NotificationCard OnNotificationClosed(this Avalonia.Controls.Notifications.NotificationCard obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnNotificationClosed<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Notifications.NotificationCard
     {
         var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, routes);
         handler(obj, observable);

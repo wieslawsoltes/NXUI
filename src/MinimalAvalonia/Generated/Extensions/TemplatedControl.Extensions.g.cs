@@ -264,13 +264,13 @@ public static partial class TemplatedControlExtensions
 
     // TemplateAppliedEvent
 
-    public static Avalonia.Controls.Primitives.TemplatedControl OnTemplateAppliedHandler(this Avalonia.Controls.Primitives.TemplatedControl obj, Action<Avalonia.Controls.Primitives.TemplatedControl, Avalonia.Controls.Primitives.TemplateAppliedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    public static T OnTemplateAppliedHandler<T>(this T obj, Action<T, Avalonia.Controls.Primitives.TemplateAppliedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         obj.AddHandler(Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.Primitives.TemplatedControl OnTemplateApplied(this Avalonia.Controls.Primitives.TemplatedControl obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    public static T OnTemplateApplied<T>(this T obj, Action<T, IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent, routes);
         handler(obj, observable);

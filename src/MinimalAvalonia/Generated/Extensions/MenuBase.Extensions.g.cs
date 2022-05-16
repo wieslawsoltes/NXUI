@@ -5,13 +5,13 @@ public static partial class MenuBaseExtensions
 {
     // MenuOpenedEvent
 
-    public static Avalonia.Controls.MenuBase OnMenuOpenedHandler(this Avalonia.Controls.MenuBase obj, Action<Avalonia.Controls.MenuBase, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnMenuOpenedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuBase
     {
         obj.AddHandler(Avalonia.Controls.MenuBase.MenuOpenedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.MenuBase OnMenuOpened(this Avalonia.Controls.MenuBase obj, Action<Avalonia.Controls.MenuBase, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnMenuOpened<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuBase.MenuOpenedEvent, routes);
         handler(obj, observable);
@@ -29,13 +29,13 @@ public static partial class MenuBaseExtensions
 
     // MenuClosedEvent
 
-    public static Avalonia.Controls.MenuBase OnMenuClosedHandler(this Avalonia.Controls.MenuBase obj, Action<Avalonia.Controls.MenuBase, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnMenuClosedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuBase
     {
         obj.AddHandler(Avalonia.Controls.MenuBase.MenuClosedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.MenuBase OnMenuClosed(this Avalonia.Controls.MenuBase obj, Action<Avalonia.Controls.MenuBase, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnMenuClosed<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuBase.MenuClosedEvent, routes);
         handler(obj, observable);

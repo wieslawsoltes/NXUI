@@ -190,38 +190,37 @@ public static partial class SelectingItemsControlExtensions
 
     // IsSelectedChangedEvent
 
-    public static Avalonia.Controls.Primitives.SelectingItemsControl OnIsSelectedChangedHandler(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnIsSelectedChangedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         obj.AddHandler(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.Primitives.SelectingItemsControl OnIsSelectedChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnIsSelectedChanged<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
-    // TODO: https://github.com/AvaloniaUI/Avalonia/pull/8147
-    /*public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIsSelectedChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
-    {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-                h => obj.IsSelectedChanged += h, 
-                h => obj.IsSelectedChanged -= h)
-            .Select(x => x.EventArgs);
-    }*/
+    // public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIsSelectedChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    // {
+    //     return Observable
+    //         .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+    //             h => obj.IsSelectedChanged += h, 
+    //             h => obj.IsSelectedChanged -= h)
+    //         .Select(x => x.EventArgs);
+    // }
 
     // SelectionChangedEvent
 
-    public static Avalonia.Controls.Primitives.SelectingItemsControl OnSelectionChangedHandler(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, Avalonia.Controls.SelectionChangedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnSelectionChangedHandler<T>(this T obj, Action<T, Avalonia.Controls.SelectionChangedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         obj.AddHandler(Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.Primitives.SelectingItemsControl OnSelectionChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnSelectionChanged<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, routes);
         handler(obj, observable);

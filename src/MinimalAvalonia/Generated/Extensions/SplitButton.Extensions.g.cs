@@ -116,13 +116,13 @@ public static partial class SplitButtonExtensions
 
     // ClickEvent
 
-    public static Avalonia.Controls.SplitButton OnClickHandler(this Avalonia.Controls.SplitButton obj, Action<Avalonia.Controls.SplitButton, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnClickHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitButton
     {
         obj.AddHandler(Avalonia.Controls.SplitButton.ClickEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static Avalonia.Controls.SplitButton OnClick(this Avalonia.Controls.SplitButton obj, Action<Avalonia.Controls.SplitButton, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    public static T OnClick<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitButton.ClickEvent, routes);
         handler(obj, observable);
