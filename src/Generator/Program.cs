@@ -15,7 +15,7 @@ AppBuilder.Configure<App>()
 
         if (args.Length == 1)
         {
-            ExtensionsGenerator.Generate(args[0]);
+            MinimalGenerator.Generate(args[0]);
         }
     })
     .UseHeadless().SetupWithoutStarting();

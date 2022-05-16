@@ -11,62 +11,9 @@ internal record Event(string Name, string OwnerType, string ArgsType, string Eve
 
 internal record Class(string Name, string Type, Property[] Properties, Event[] Events, bool IsSealed = false, bool PublicCtor = true, bool IsAbstract = false);
 
-internal static class ExtensionsGenerator
+internal static class BuildersGenerator
 {
-    private static readonly HashSet<string> s_excludedClasses = new()
-    {
-        "AboutAvaloniaDialog"
-    };
-
-    private static readonly FieldInfo? s_registered = 
-        typeof(AvaloniaPropertyRegistry).GetField("_registered", BindingFlags.NonPublic | BindingFlags.Instance);
-
-    private static readonly FieldInfo? s_attached = 
-        typeof(AvaloniaPropertyRegistry).GetField("_attached", BindingFlags.NonPublic | BindingFlags.Instance);
-
-    private static readonly FieldInfo? s_registeredRoutedEvents = 
-        typeof(RoutedEventRegistry).GetField("_registeredRoutedEvents", BindingFlags.NonPublic | BindingFlags.Instance);
-
-    public static void Generate(string outputPath)
-    {
-        var buildersPath = Path.Combine(outputPath, "Builders");
-        var propertiesPath = Path.Combine(outputPath, "Properties");
-        var eventsPath = Path.Combine(outputPath, "Events");
-        var extensionsPath = Path.Combine(outputPath, "Extensions");
-
-        var classes = GetClasses();
-
-        if (classes is null)
-        {
-            return;
-        }
-
-        if (!Directory.Exists(buildersPath))
-        {
-            Directory.CreateDirectory(buildersPath);
-        }
-        GenerateBuilders(buildersPath, classes);
-
-        if (!Directory.Exists(propertiesPath))
-        {
-            Directory.CreateDirectory(propertiesPath);
-        }
-        GenerateProperties(propertiesPath, classes);
-
-        if (!Directory.Exists(eventsPath))
-        {
-            Directory.CreateDirectory(eventsPath);
-        }
-        GenerateEvents(eventsPath, classes);
-
-        if (!Directory.Exists(extensionsPath))
-        {
-            Directory.CreateDirectory(extensionsPath);
-        }
-        GenerateExtensions(extensionsPath, classes);
-    }
-
-    private static void GenerateBuilders(string outputPath, List<Class> classes)
+    public static void Generate(string outputPath, List<Class> classes)
     {
         var outputFile = Path.Combine(outputPath, $"Builders.g.cs");
 
@@ -79,11 +26,6 @@ internal static class ExtensionsGenerator
         for (var i = 0; i < classes.Count; i++)
         {
             var c = classes[i];
-
-            if (s_excludedClasses.Contains(c.Name))
-            {
-                continue;
-            }
 
             if (!c.PublicCtor)
             {
@@ -108,16 +50,14 @@ internal static class ExtensionsGenerator
         var classFooterBuilder = new StringBuilder(Templates.BuildersFooterTemplate);
         WriteLine(classFooterBuilder.ToString());
     }
+}
 
-    private static void GenerateProperties(string outputPath, List<Class> classes)
+internal static class PropertiesGenerator
+{
+    public static void Generate(string outputPath, List<Class> classes)
     {
         foreach (var c in classes)
         {
-            if (s_excludedClasses.Contains(c.Name))
-            {
-                continue;
-            }
-
             if (c.Properties.Length <= 0)
             {
                 continue;
@@ -147,16 +87,14 @@ internal static class ExtensionsGenerator
             WriteLine(classFooterBuilder.ToString());
         }
     }
+}
 
-    private static void GenerateEvents(string outputPath, List<Class> classes)
+internal static class EventsGenerator
+{
+    public static void Generate(string outputPath, List<Class> classes)
     {
         foreach (var c in classes)
         {
-            if (s_excludedClasses.Contains(c.Name))
-            {
-                continue;
-            }
-
             if (c.Events.Length <= 0)
             {
                 continue;
@@ -186,16 +124,14 @@ internal static class ExtensionsGenerator
             WriteLine(classFooterBuilder.ToString());
         }
     }
+}
 
-    private static void GenerateExtensions(string outputPath, List<Class> classes)
+internal static class ExtensionsGenerator
+{
+    public static void Generate(string outputPath, List<Class> classes)
     {
         foreach (var c in classes)
         {
-            if (s_excludedClasses.Contains(c.Name))
-            {
-                continue;
-            }
-
             if (c.Properties.Length <= 0)
             {
                 continue;
@@ -265,6 +201,63 @@ internal static class ExtensionsGenerator
             WriteLine(classFooterBuilder.ToString());
         }
     }
+}
+
+internal static class MinimalGenerator
+{
+    private static readonly HashSet<string> s_excludedClasses = new()
+    {
+        "AboutAvaloniaDialog"
+    };
+
+    private static readonly FieldInfo? s_registered = 
+        typeof(AvaloniaPropertyRegistry).GetField("_registered", BindingFlags.NonPublic | BindingFlags.Instance);
+
+    private static readonly FieldInfo? s_attached = 
+        typeof(AvaloniaPropertyRegistry).GetField("_attached", BindingFlags.NonPublic | BindingFlags.Instance);
+
+    private static readonly FieldInfo? s_registeredRoutedEvents = 
+        typeof(RoutedEventRegistry).GetField("_registeredRoutedEvents", BindingFlags.NonPublic | BindingFlags.Instance);
+
+    public static void Generate(string outputPath)
+    {
+        var buildersPath = Path.Combine(outputPath, "Builders");
+        var propertiesPath = Path.Combine(outputPath, "Properties");
+        var eventsPath = Path.Combine(outputPath, "Events");
+        var extensionsPath = Path.Combine(outputPath, "Extensions");
+
+        var classes = GetClasses();
+
+        if (classes is null)
+        {
+            return;
+        }
+
+        if (!Directory.Exists(buildersPath))
+        {
+            Directory.CreateDirectory(buildersPath);
+        }
+        
+        BuildersGenerator.Generate(buildersPath, classes);
+
+        if (!Directory.Exists(propertiesPath))
+        {
+            Directory.CreateDirectory(propertiesPath);
+        }
+        PropertiesGenerator.Generate(propertiesPath, classes);
+
+        if (!Directory.Exists(eventsPath))
+        {
+            Directory.CreateDirectory(eventsPath);
+        }
+        EventsGenerator.Generate(eventsPath, classes);
+
+        if (!Directory.Exists(extensionsPath))
+        {
+            Directory.CreateDirectory(extensionsPath);
+        }
+        ExtensionsGenerator.Generate(extensionsPath, classes);
+    }
 
     private static string FixType(string t)
     {
@@ -321,6 +314,11 @@ internal static class ExtensionsGenerator
 
         foreach (var classType in classTypes)
         {
+            if (s_excludedClasses.Contains(classType.Name))
+            {
+                continue;
+            }
+
             var properties = new List<Property>();
             var events = new List<Event>();
 
