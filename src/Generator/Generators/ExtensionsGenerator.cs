@@ -10,7 +10,7 @@ internal static class ExtensionsGenerator
     {
         foreach (var c in classes)
         {
-            if (c.Properties.Length <= 0)
+            if (c.Properties.Length <= 0 && c.Events.Length <= 0)
             {
                 continue;
             }
@@ -70,6 +70,28 @@ internal static class ExtensionsGenerator
                 }
 
                 if (i < c.Properties.Length - 1)
+                {
+                    WriteLine("");
+                }
+            }
+
+            for (var i = 0; i < c.Events.Length; i++)
+            {
+                var e = c.Events[i];
+
+                var template = Templates.EventMethodsTemplate;
+
+                var eventBuilder = new StringBuilder(template);
+
+                eventBuilder.Replace("%ClassType%", c.Type);
+                eventBuilder.Replace("%Name%", e.Name);
+                eventBuilder.Replace("%OwnerType%", e.OwnerType);
+                eventBuilder.Replace("%ArgsType%", e.ArgsType);
+                eventBuilder.Replace("%RoutingStrategies%", e.RoutingStrategies);
+
+                WriteLine(eventBuilder.ToString());
+
+                if (i < c.Events.Length - 1)
                 {
                     WriteLine("");
                 }
