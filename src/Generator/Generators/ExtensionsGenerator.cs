@@ -79,7 +79,9 @@ internal static class ExtensionsGenerator
             {
                 var e = c.Events[i];
 
-                var template = Templates.EventMethodsTemplate;
+                var template = c.IsSealed
+                    ? Templates.EventMethodsTemplateSealed
+                    : Templates.EventMethodsTemplate;
 
                 var eventBuilder = new StringBuilder(template);
 
