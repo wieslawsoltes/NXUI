@@ -17,7 +17,7 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-    public static IObservable<RoutedEventArgs> OnClick(this Button obj)
+    public static IObservable<RoutedEventArgs> ObserveOnClick(this Button obj)
     {
         return Observable
             .FromEventPattern<EventHandler<RoutedEventArgs>, RoutedEventArgs>(

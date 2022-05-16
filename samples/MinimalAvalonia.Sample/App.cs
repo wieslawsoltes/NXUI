@@ -13,7 +13,7 @@ Window Build()
                     TextBox()
                         .Text(window.BindTitle()),
                     Label()
-                        .Content(button.OnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
+                        .Content(button.ObserveOnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
         .Title(tb1.ObserveText().Select(x => x?.ToUpper()));
 
 AppBuilder.Configure<Application>()
