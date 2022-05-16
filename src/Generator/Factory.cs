@@ -197,12 +197,14 @@ internal static class Factory
                     var eventType = fieldInfo.FieldType; // property.GetType()
                     var argsType = @event.EventArgsType;
                     var ownerType = @event.OwnerType;
+                    var routingStrategies = @event.RoutingStrategies;
 
                     var e = new Event(
                         @event.Name,
                         FixType(ownerType.ToString()),
                         FixType(argsType.ToString()),
-                        FixType(eventType.ToString()));
+                        FixType(eventType.ToString()),
+                        routingStrategies.ToString());
 
                     events.Add(e);
                 }
