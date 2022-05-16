@@ -22,7 +22,13 @@
         .OnPointerMoved((i, o) => o.Subscribe(x =>
         {
             Debug.WriteLine($"PointerMoved {x.GetPosition(i)}");
-        }));
+        }))
+        .Self(i =>
+        {
+            i.ObserveOnPointerPressed().Subscribe(x => Debug.WriteLine($"Self().PointerPressed {x.GetPosition(i)}"));
+            i.ObserveOnPointerReleased().Subscribe(x => Debug.WriteLine($"Self().PointerReleased {x.GetPosition(i)}"));
+            i.ObserveOnPointerMoved().Subscribe(x => Debug.WriteLine($"Self().PointerMoved {x.GetPosition(i)}"));
+        });
 
     ContentControl(out var contentControl)
         .Content("Content");
