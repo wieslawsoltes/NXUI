@@ -20,6 +20,8 @@ public static partial class MinimalAvaloniaEvents
 
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs> InputElementPointerLeave => Avalonia.Input.InputElement.PointerLeaveEvent;
 
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs> InputElementPointerMoved => Avalonia.Input.InputElement.PointerMovedEvent;
+
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerPressedEventArgs> InputElementPointerPressed => Avalonia.Input.InputElement.PointerPressedEvent;
 
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerReleasedEventArgs> InputElementPointerReleased => Avalonia.Input.InputElement.PointerReleasedEvent;
