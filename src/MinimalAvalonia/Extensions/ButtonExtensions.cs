@@ -6,7 +6,7 @@ public static partial class ButtonExtensions
 
     public static Button OnClickHandler(this Button obj, Action<Button, RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        obj.AddHandler(Avalonia.Controls.Button.ClickEvent, (_, args) => action(obj, args), Avalonia.Interactivity.RoutingStrategies.Bubble);
+        obj.AddHandler(Avalonia.Controls.Button.ClickEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
