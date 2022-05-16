@@ -11,23 +11,23 @@
 
     Canvas(out var canvas)
         .Background(Brushes.WhiteSmoke)
-        .OnPointerPressed((i, o) => o.Subscribe(x =>
+        .OnPointerPressed((c, o) => o.Subscribe(x =>
         {
-            Debug.WriteLine($"PointerPressed {x.GetPosition(i)}");
+            Debug.WriteLine($"PointerPressed {x.GetPosition(c)}");
         }))
-        .OnPointerReleased((i, o) => o.Subscribe(x =>
+        .OnPointerReleased((c, o) => o.Subscribe(x =>
         {
-            Debug.WriteLine($"PointerReleased {x.GetPosition(i)}");
+            Debug.WriteLine($"PointerReleased {x.GetPosition(c)}");
         }))
-        .OnPointerMoved((i, o) => o.Subscribe(x =>
+        .OnPointerMoved((c, o) => o.Subscribe(x =>
         {
-            Debug.WriteLine($"PointerMoved {x.GetPosition(i)}");
+            Debug.WriteLine($"PointerMoved {x.GetPosition(c)}");
         }))
-        .Self(i =>
+        .Self(c =>
         {
-            i.ObserveOnPointerPressed().Subscribe(x => Debug.WriteLine($"Self().PointerPressed {x.GetPosition(i)}"));
-            i.ObserveOnPointerReleased().Subscribe(x => Debug.WriteLine($"Self().PointerReleased {x.GetPosition(i)}"));
-            i.ObserveOnPointerMoved().Subscribe(x => Debug.WriteLine($"Self().PointerMoved {x.GetPosition(i)}"));
+            c.ObserveOnPointerPressed().Subscribe(x => Debug.WriteLine($"Self().PointerPressed {x.GetPosition(c)}"));
+            c.ObserveOnPointerReleased().Subscribe(x => Debug.WriteLine($"Self().PointerReleased {x.GetPosition(c)}"));
+            c.ObserveOnPointerMoved().Subscribe(x => Debug.WriteLine($"Self().PointerMoved {x.GetPosition(c)}"));
         });
 
     ContentControl(out var contentControl)
