@@ -9,6 +9,21 @@
         .OnClick((_, o) => o.Subscribe(_ => Debug.WriteLine("Click")))
         .Content("Button");
 
+    Canvas(out var canvas)
+        .Background(Brushes.WhiteSmoke)
+        .OnPointerPressed((i, o) => o.Subscribe(x =>
+        {
+            Debug.WriteLine($"PointerPressed {x.GetPosition(i)}");
+        }))
+        .OnPointerReleased((i, o) => o.Subscribe(x =>
+        {
+            Debug.WriteLine($"PointerReleased {x.GetPosition(i)}");
+        }))
+        .OnPointerMoved((i, o) => o.Subscribe(x =>
+        {
+            Debug.WriteLine($"PointerMoved {x.GetPosition(i)}");
+        }));
+
     ContentControl(out var contentControl)
         .Content("Content");
 
@@ -87,6 +102,7 @@
         .Items(
             TabItem().Header("Border").Content(border),
             TabItem().Header("Button").Content(button),
+            TabItem().Header("Canvas").Content(canvas),
             TabItem().Header("ContentControl").Content(contentControl),
             TabItem().Header("Decorator").Content(decorator),
             TabItem().Header("HeaderedContentControl").Content(headeredContentControl),
