@@ -7,4 +7,10 @@ public static class ObjectExtensions
         @ref = obj;
         return obj;
     }
+
+    public static T Self<T>(this T obj, Action<T>? callback)
+    {
+        callback?.Invoke(obj);
+        return obj;
+    }
 }
