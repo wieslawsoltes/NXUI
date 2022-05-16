@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
+// ReSharper disable once CheckNamespace
 namespace Generator;
 
 [SuppressMessage("ReSharper", "InconsistentNaming")]
