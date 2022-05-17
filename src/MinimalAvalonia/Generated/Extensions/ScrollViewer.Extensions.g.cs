@@ -570,7 +570,25 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Controls.ScrollChangedEventArgs> ObserveOnScrollChanged(this Avalonia.Controls.ScrollViewer obj)
+    public static IObservable<Avalonia.Controls.ScrollChangedEventArgs> ObserveOnScrollChanged(this Avalonia.Controls.ScrollViewer obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.ScrollChangedEvent, routes);
+    }
+
+    // ScrollChanged
+
+    public static T OnScrollChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.ScrollChangedEventArgs>> handler) where T : Avalonia.Controls.ScrollViewer
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.ScrollChangedEventArgs>, Avalonia.Controls.ScrollChangedEventArgs>(
+                h => obj.ScrollChanged += h, 
+                h => obj.ScrollChanged -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Controls.ScrollChangedEventArgs> ObserveOnScrollChangedEvent(this Avalonia.Controls.ScrollViewer obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Controls.ScrollChangedEventArgs>, Avalonia.Controls.ScrollChangedEventArgs>(

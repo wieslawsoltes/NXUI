@@ -55,7 +55,25 @@ public static partial class ToggleSplitButtonExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIsCheckedChanged(this Avalonia.Controls.ToggleSplitButton obj)
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIsCheckedChanged(this Avalonia.Controls.ToggleSplitButton obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToggleSplitButton.IsCheckedChangedEvent, routes);
+    }
+
+    // IsCheckedChanged
+
+    public static T OnIsCheckedChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.ToggleSplitButton
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.IsCheckedChanged += h, 
+                h => obj.IsCheckedChanged -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIsCheckedChangedEvent(this Avalonia.Controls.ToggleSplitButton obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(

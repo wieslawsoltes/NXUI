@@ -974,13 +974,9 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboard(this Avalonia.Controls.TextBox obj)
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboard(this Avalonia.Controls.TextBox obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-                h => obj.CopyingToClipboard += h, 
-                h => obj.CopyingToClipboard -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Controls.TextBox.CopyingToClipboardEvent, routes);
     }
 
     // CuttingToClipboardEvent
@@ -998,13 +994,9 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCuttingToClipboard(this Avalonia.Controls.TextBox obj)
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCuttingToClipboard(this Avalonia.Controls.TextBox obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-                h => obj.CuttingToClipboard += h, 
-                h => obj.CuttingToClipboard -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Controls.TextBox.CuttingToClipboardEvent, routes);
     }
 
     // PastingFromClipboardEvent
@@ -1022,7 +1014,69 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPastingFromClipboard(this Avalonia.Controls.TextBox obj)
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPastingFromClipboard(this Avalonia.Controls.TextBox obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.PastingFromClipboardEvent, routes);
+    }
+
+    // CopyingToClipboard
+
+    public static T OnCopyingToClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.CopyingToClipboard += h, 
+                h => obj.CopyingToClipboard -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboardEvent(this Avalonia.Controls.TextBox obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.CopyingToClipboard += h, 
+                h => obj.CopyingToClipboard -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // CuttingToClipboard
+
+    public static T OnCuttingToClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.CuttingToClipboard += h, 
+                h => obj.CuttingToClipboard -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCuttingToClipboardEvent(this Avalonia.Controls.TextBox obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.CuttingToClipboard += h, 
+                h => obj.CuttingToClipboard -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // PastingFromClipboard
+
+    public static T OnPastingFromClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.PastingFromClipboard += h, 
+                h => obj.PastingFromClipboard -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPastingFromClipboardEvent(this Avalonia.Controls.TextBox obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(

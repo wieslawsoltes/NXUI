@@ -215,14 +215,10 @@ public static partial class ControlExtensions
         return obj;
     }
 
-    // public static IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs> ObserveOnRequestBringIntoView(this Avalonia.Controls.Control obj)
-    // {
-    //     return Observable
-    //         .FromEventPattern<EventHandler<Avalonia.Controls.RequestBringIntoViewEventArgs>, Avalonia.Controls.RequestBringIntoViewEventArgs>(
-    //             h => obj.RequestBringIntoView += h, 
-    //             h => obj.RequestBringIntoView -= h)
-    //         .Select(x => x.EventArgs);
-    // }
+    public static IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs> ObserveOnRequestBringIntoView(this Avalonia.Controls.Control obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.Control.RequestBringIntoViewEvent, routes);
+    }
 
     // ContextRequestedEvent
 
@@ -239,7 +235,25 @@ public static partial class ControlExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequested(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequested(this Avalonia.Controls.Control obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.Control.ContextRequestedEvent, routes);
+    }
+
+    // ContextRequested
+
+    public static T OnContextRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(
+                h => obj.ContextRequested += h, 
+                h => obj.ContextRequested -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequestedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(

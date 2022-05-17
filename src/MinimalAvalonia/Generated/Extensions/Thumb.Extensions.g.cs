@@ -18,13 +18,9 @@ public static partial class ThumbExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragStarted(this Avalonia.Controls.Primitives.Thumb obj)
+    public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragStarted(this Avalonia.Controls.Primitives.Thumb obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
-                h => obj.DragStarted += h, 
-                h => obj.DragStarted -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Controls.Primitives.Thumb.DragStartedEvent, routes);
     }
 
     // DragDeltaEvent
@@ -42,13 +38,9 @@ public static partial class ThumbExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragDelta(this Avalonia.Controls.Primitives.Thumb obj)
+    public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragDelta(this Avalonia.Controls.Primitives.Thumb obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
-                h => obj.DragDelta += h, 
-                h => obj.DragDelta -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Controls.Primitives.Thumb.DragDeltaEvent, routes);
     }
 
     // DragCompletedEvent
@@ -66,7 +58,69 @@ public static partial class ThumbExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragCompleted(this Avalonia.Controls.Primitives.Thumb obj)
+    public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragCompleted(this Avalonia.Controls.Primitives.Thumb obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.Thumb.DragCompletedEvent, routes);
+    }
+
+    // DragStarted
+
+    public static T OnDragStartedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler) where T : Avalonia.Controls.Primitives.Thumb
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+                h => obj.DragStarted += h, 
+                h => obj.DragStarted -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragStartedEvent(this Avalonia.Controls.Primitives.Thumb obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+                h => obj.DragStarted += h, 
+                h => obj.DragStarted -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // DragDelta
+
+    public static T OnDragDeltaEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler) where T : Avalonia.Controls.Primitives.Thumb
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+                h => obj.DragDelta += h, 
+                h => obj.DragDelta -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragDeltaEvent(this Avalonia.Controls.Primitives.Thumb obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+                h => obj.DragDelta += h, 
+                h => obj.DragDelta -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // DragCompleted
+
+    public static T OnDragCompletedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler) where T : Avalonia.Controls.Primitives.Thumb
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+                h => obj.DragCompleted += h, 
+                h => obj.DragCompleted -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragCompletedEvent(this Avalonia.Controls.Primitives.Thumb obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(

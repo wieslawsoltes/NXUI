@@ -242,13 +242,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.GotFocusEventArgs> ObserveOnGotFocus(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.GotFocusEventArgs> ObserveOnGotFocus(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.GotFocusEventArgs>, Avalonia.Input.GotFocusEventArgs>(
-                h => obj.GotFocus += h, 
-                h => obj.GotFocus -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.GotFocusEvent, routes);
     }
 
     // LostFocusEvent
@@ -266,13 +262,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLostFocus(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLostFocus(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-                h => obj.LostFocus += h, 
-                h => obj.LostFocus -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.LostFocusEvent, routes);
     }
 
     // KeyDownEvent
@@ -290,13 +282,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyDown(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyDown(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.KeyEventArgs>, Avalonia.Input.KeyEventArgs>(
-                h => obj.KeyDown += h, 
-                h => obj.KeyDown -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.KeyDownEvent, routes);
     }
 
     // KeyUpEvent
@@ -314,13 +302,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyUp(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyUp(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.KeyEventArgs>, Avalonia.Input.KeyEventArgs>(
-                h => obj.KeyUp += h, 
-                h => obj.KeyUp -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.KeyUpEvent, routes);
     }
 
     // TextInputEvent
@@ -338,13 +322,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.TextInputEventArgs> ObserveOnTextInput(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.TextInputEventArgs> ObserveOnTextInput(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.TextInputEventArgs>, Avalonia.Input.TextInputEventArgs>(
-                h => obj.TextInput += h, 
-                h => obj.TextInput -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.TextInputEvent, routes);
     }
 
     // TextInputMethodClientRequestedEvent
@@ -362,13 +342,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs> ObserveOnTextInputMethodClientRequested(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs> ObserveOnTextInputMethodClientRequested(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>, Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>(
-                h => obj.TextInputMethodClientRequested += h, 
-                h => obj.TextInputMethodClientRequested -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, routes);
     }
 
     // PointerEnterEvent
@@ -386,13 +362,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnter(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnter(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerEnter += h, 
-                h => obj.PointerEnter -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerEnterEvent, routes);
     }
 
     // PointerLeaveEvent
@@ -410,13 +382,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerLeave(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerLeave(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerLeave += h, 
-                h => obj.PointerLeave -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerLeaveEvent, routes);
     }
 
     // PointerMovedEvent
@@ -434,13 +402,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerMoved(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerMoved(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerMoved += h, 
-                h => obj.PointerMoved -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerMovedEvent, routes);
     }
 
     // PointerPressedEvent
@@ -458,13 +422,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerPressedEventArgs> ObserveOnPointerPressed(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.PointerPressedEventArgs> ObserveOnPointerPressed(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.PointerPressedEventArgs>, Avalonia.Input.PointerPressedEventArgs>(
-                h => obj.PointerPressed += h, 
-                h => obj.PointerPressed -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerPressedEvent, routes);
     }
 
     // PointerReleasedEvent
@@ -482,13 +442,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerReleasedEventArgs> ObserveOnPointerReleased(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.PointerReleasedEventArgs> ObserveOnPointerReleased(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.PointerReleasedEventArgs>, Avalonia.Input.PointerReleasedEventArgs>(
-                h => obj.PointerReleased += h, 
-                h => obj.PointerReleased -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerReleasedEvent, routes);
     }
 
     // PointerCaptureLostEvent
@@ -506,13 +462,9 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerCaptureLostEventArgs> ObserveOnPointerCaptureLost(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.PointerCaptureLostEventArgs> ObserveOnPointerCaptureLost(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
     {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.PointerCaptureLostEventArgs>, Avalonia.Input.PointerCaptureLostEventArgs>(
-                h => obj.PointerCaptureLost += h, 
-                h => obj.PointerCaptureLost -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerCaptureLostEvent, routes);
     }
 
     // PointerWheelChangedEvent
@@ -530,12 +482,338 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerWheelEventArgs> ObserveOnPointerWheelChanged(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.PointerWheelEventArgs> ObserveOnPointerWheelChanged(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerWheelChangedEvent, routes);
+    }
+
+    // GotFocus
+
+    public static T OnGotFocusEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.GotFocusEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.GotFocusEventArgs>, Avalonia.Input.GotFocusEventArgs>(
+                h => obj.GotFocus += h, 
+                h => obj.GotFocus -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.GotFocusEventArgs> ObserveOnGotFocusEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.GotFocusEventArgs>, Avalonia.Input.GotFocusEventArgs>(
+                h => obj.GotFocus += h, 
+                h => obj.GotFocus -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // LostFocus
+
+    public static T OnLostFocusEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.LostFocus += h, 
+                h => obj.LostFocus -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLostFocusEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.LostFocus += h, 
+                h => obj.LostFocus -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // KeyDown
+
+    public static T OnKeyDownEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.KeyEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.KeyEventArgs>, Avalonia.Input.KeyEventArgs>(
+                h => obj.KeyDown += h, 
+                h => obj.KeyDown -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyDownEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.KeyEventArgs>, Avalonia.Input.KeyEventArgs>(
+                h => obj.KeyDown += h, 
+                h => obj.KeyDown -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // KeyUp
+
+    public static T OnKeyUpEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.KeyEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.KeyEventArgs>, Avalonia.Input.KeyEventArgs>(
+                h => obj.KeyUp += h, 
+                h => obj.KeyUp -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyUpEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.KeyEventArgs>, Avalonia.Input.KeyEventArgs>(
+                h => obj.KeyUp += h, 
+                h => obj.KeyUp -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // TextInput
+
+    public static T OnTextInputEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TextInputEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.TextInputEventArgs>, Avalonia.Input.TextInputEventArgs>(
+                h => obj.TextInput += h, 
+                h => obj.TextInput -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.TextInputEventArgs> ObserveOnTextInputEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.TextInputEventArgs>, Avalonia.Input.TextInputEventArgs>(
+                h => obj.TextInput += h, 
+                h => obj.TextInput -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // TextInputMethodClientRequested
+
+    public static T OnTextInputMethodClientRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>, Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>(
+                h => obj.TextInputMethodClientRequested += h, 
+                h => obj.TextInputMethodClientRequested -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs> ObserveOnTextInputMethodClientRequestedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>, Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>(
+                h => obj.TextInputMethodClientRequested += h, 
+                h => obj.TextInputMethodClientRequested -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // PointerEnter
+
+    public static T OnPointerEnterEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
+                h => obj.PointerEnter += h, 
+                h => obj.PointerEnter -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnterEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
+                h => obj.PointerEnter += h, 
+                h => obj.PointerEnter -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // PointerLeave
+
+    public static T OnPointerLeaveEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
+                h => obj.PointerLeave += h, 
+                h => obj.PointerLeave -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerLeaveEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
+                h => obj.PointerLeave += h, 
+                h => obj.PointerLeave -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // PointerMoved
+
+    public static T OnPointerMovedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
+                h => obj.PointerMoved += h, 
+                h => obj.PointerMoved -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerMovedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
+                h => obj.PointerMoved += h, 
+                h => obj.PointerMoved -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // PointerPressed
+
+    public static T OnPointerPressedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerPressedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerPressedEventArgs>, Avalonia.Input.PointerPressedEventArgs>(
+                h => obj.PointerPressed += h, 
+                h => obj.PointerPressed -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.PointerPressedEventArgs> ObserveOnPointerPressedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerPressedEventArgs>, Avalonia.Input.PointerPressedEventArgs>(
+                h => obj.PointerPressed += h, 
+                h => obj.PointerPressed -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // PointerReleased
+
+    public static T OnPointerReleasedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerReleasedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerReleasedEventArgs>, Avalonia.Input.PointerReleasedEventArgs>(
+                h => obj.PointerReleased += h, 
+                h => obj.PointerReleased -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.PointerReleasedEventArgs> ObserveOnPointerReleasedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerReleasedEventArgs>, Avalonia.Input.PointerReleasedEventArgs>(
+                h => obj.PointerReleased += h, 
+                h => obj.PointerReleased -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // PointerCaptureLost
+
+    public static T OnPointerCaptureLostEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerCaptureLostEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerCaptureLostEventArgs>, Avalonia.Input.PointerCaptureLostEventArgs>(
+                h => obj.PointerCaptureLost += h, 
+                h => obj.PointerCaptureLost -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.PointerCaptureLostEventArgs> ObserveOnPointerCaptureLostEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerCaptureLostEventArgs>, Avalonia.Input.PointerCaptureLostEventArgs>(
+                h => obj.PointerCaptureLost += h, 
+                h => obj.PointerCaptureLost -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // PointerWheelChanged
+
+    public static T OnPointerWheelChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerWheelEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.PointerWheelEventArgs>, Avalonia.Input.PointerWheelEventArgs>(
+                h => obj.PointerWheelChanged += h, 
+                h => obj.PointerWheelChanged -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.PointerWheelEventArgs> ObserveOnPointerWheelChangedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Input.PointerWheelEventArgs>, Avalonia.Input.PointerWheelEventArgs>(
                 h => obj.PointerWheelChanged += h, 
                 h => obj.PointerWheelChanged -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Tapped
+
+    public static T OnTappedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
+                h => obj.Tapped += h, 
+                h => obj.Tapped -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnTappedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
+                h => obj.Tapped += h, 
+                h => obj.Tapped -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // DoubleTapped
+
+    public static T OnDoubleTappedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
+                h => obj.DoubleTapped += h, 
+                h => obj.DoubleTapped -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnDoubleTappedEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
+                h => obj.DoubleTapped += h, 
+                h => obj.DoubleTapped -= h)
             .Select(x => x.EventArgs);
     }
 }

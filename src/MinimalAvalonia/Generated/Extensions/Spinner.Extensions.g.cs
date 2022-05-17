@@ -73,7 +73,25 @@ public static partial class SpinnerExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpin(this Avalonia.Controls.Spinner obj)
+    public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpin(this Avalonia.Controls.Spinner obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.Spinner.SpinEvent, routes);
+    }
+
+    // Spin
+
+    public static T OnSpinEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler) where T : Avalonia.Controls.Spinner
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.SpinEventArgs>, Avalonia.Controls.SpinEventArgs>(
+                h => obj.Spin += h, 
+                h => obj.Spin -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpinEvent(this Avalonia.Controls.Spinner obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Controls.SpinEventArgs>, Avalonia.Controls.SpinEventArgs>(

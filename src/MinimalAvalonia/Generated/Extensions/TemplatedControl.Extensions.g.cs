@@ -277,7 +277,25 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs> ObserveOnTemplateApplied(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs> ObserveOnTemplateApplied(this Avalonia.Controls.Primitives.TemplatedControl obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent, routes);
+    }
+
+    // TemplateApplied
+
+    public static T OnTemplateAppliedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.Primitives.TemplateAppliedEventArgs>, Avalonia.Controls.Primitives.TemplateAppliedEventArgs>(
+                h => obj.TemplateApplied += h, 
+                h => obj.TemplateApplied -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs> ObserveOnTemplateAppliedEvent(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Controls.Primitives.TemplateAppliedEventArgs>, Avalonia.Controls.Primitives.TemplateAppliedEventArgs>(
