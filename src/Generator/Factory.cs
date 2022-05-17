@@ -75,7 +75,7 @@ internal static class Factory
             if (!property.PropertyType.IsPublic)
                 continue;
 
-            var propertyType = fieldInfo.FieldType; // property.GetType()
+            var propertyType = fieldInfo.FieldType;
             var valueType = property.PropertyType;
             var ownerType = property.OwnerType;
 
