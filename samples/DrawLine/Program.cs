@@ -5,19 +5,19 @@
             Canvas()
                 .Background(Brushes.WhiteSmoke)
                 .Var(default(Line), out var line)
-                .OnPointerPressed((c, o)
-                    => o.Select(x => x.GetPosition(c)).Subscribe(x =>
+                .OnPointerPressed((canvas, o)
+                    => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
                     {
-                        c.Children(line = Line().StartPoint(x).EndPoint(x));
+                        canvas.Children(line = Line().StartPoint(x).EndPoint(x));
                     }))
-                .OnPointerReleased((c, o)
-                    => o.Select(x => x.GetPosition(c)).Subscribe(_ =>
+                .OnPointerReleased((canvas, o)
+                    => o.Select(x => x.GetPosition(canvas)).Subscribe(_ =>
                     {
                         line = null;
                     }))
                 .OnPointerMoved(
-                    (c, o)
-                    => o.Select(x => x.GetPosition(c)).Subscribe(x =>
+                    (canvas, o)
+                    => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
                     {
                         line?.EndPoint(x);
                     }))
