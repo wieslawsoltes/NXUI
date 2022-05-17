@@ -20,6 +20,7 @@
     <Using Include="Avalonia.Controls.Documents" />
     <Using Include="Avalonia.Controls.Presenters" />
     <Using Include="Avalonia.Controls.Primitives" />
+    <Using Include="Avalonia.Controls.Shapes" />
     <Using Include="Avalonia.Controls.Templates" />
     <Using Include="Avalonia.Data" />
     <Using Include="Avalonia.Interactivity" />
