@@ -114,7 +114,7 @@ internal static partial class Templates
     }";
 
 
-    public static string EventMethodsTemplate = @"    // %Name%Event
+    public static string RoutedEventMethodsTemplate = @"    // %Name%Event
 
     public static T On%Name%Handler<T>(this T obj, Action<T, %ArgsType%> action, Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%) where T : %OwnerType%
     {
@@ -129,16 +129,12 @@ internal static partial class Templates
         return obj;
     }
 
-    public static IObservable<%ArgsType%> ObserveOn%Name%(this %OwnerType% obj)
+    public static IObservable<%ArgsType%> ObserveOn%Name%(this %OwnerType% obj,  Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
     {
-        return Observable
-            .FromEventPattern<EventHandler<%ArgsType%>, %ArgsType%>(
-                h => obj.%Name% += h, 
-                h => obj.%Name% -= h)
-            .Select(x => x.EventArgs);
+        return obj.GetObservable(%OwnerType%.%Name%Event, routes);
     }";
 
-    public static string EventMethodsTemplateSealed = @"    // %Name%Event
+    public static string RoutedEventMethodsTemplateSealed = @"    // %Name%Event
 
     public static %OwnerType% On%Name%Handler(this %OwnerType% obj, Action<%OwnerType%, %ArgsType%> action, Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
     {
@@ -150,6 +146,46 @@ internal static partial class Templates
     {
         var observable = obj.GetObservable(%OwnerType%.%Name%Event, routes);
         handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<%ArgsType%> ObserveOn%Name%(this %OwnerType% obj,  Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
+    {
+        return obj.GetObservable(%OwnerType%.%Name%Event, routes);
+    }";
+
+    public static string EventMethodsTemplate = @"    // %Name%
+
+    public static T On%Name%<T>(this T obj, Action<T, IObservable<%ArgsType%>> handler) where T : %OwnerType%
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<%ArgsType%>, %ArgsType%>(
+                h => obj.%Name% += h, 
+                h => obj.%Name% -= h)
+            .Select(x => x.EventArgs);
+        handler(observable);
+        return obj;
+    }
+
+    public static IObservable<%ArgsType%> ObserveOn%Name%(this %OwnerType% obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<%ArgsType%>, %ArgsType%>(
+                h => obj.%Name% += h, 
+                h => obj.%Name% -= h)
+            .Select(x => x.EventArgs);
+    }";
+
+    public static string EventMethodsTemplateSealed = @"    // %Name%
+
+    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ArgsType%>> handler)
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<%ArgsType%>, %ArgsType%>(
+                h => obj.%Name% += h, 
+                h => obj.%Name% -= h)
+            .Select(x => x.EventArgs);
+        handler(observable);
         return obj;
     }
 
