@@ -175,12 +175,42 @@ internal static class Factory
             var ownerType = routedEvent.OwnerType;
             var routingStrategies = routedEvent.RoutingStrategies;
 
-            events.Add(new Event(
+            var e = new Event(
                 routedEvent.Name,
                 FixType(ownerType.ToString()),
                 FixType(argsType.ToString()),
                 FixType(eventType.ToString()),
-                routingStrategies.ToString()));
+                routingStrategies.ToString());
+            events.Add(e);
+        }
+
+        var eventInfos = classType.GetEvents(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
+        foreach (var eventInfo in eventInfos)
+        {
+            if (eventInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
+                continue;
+
+            var eventHandlerType = eventInfo.EventHandlerType;
+            if (eventHandlerType is null)
+                continue;
+
+            if (!eventHandlerType.IsPublic)
+                continue;
+
+            var argsType = eventHandlerType.GetGenericArguments().FirstOrDefault();
+            if (argsType is null)
+                continue;
+
+            if (!argsType.IsPublic)
+                continue;
+
+            var e = new Event(
+                eventInfo.Name,
+                FixType(classType.ToString()),
+                FixType(argsType.ToString()),
+                null,
+                null);
+            events.Add(e);
         }
 
         return events;
