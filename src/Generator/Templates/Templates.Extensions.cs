@@ -156,7 +156,7 @@ internal static partial class Templates
 
     public static string EventMethodsTemplate = @"    // %Name%
 
-    public static T On%Name%<T>(this T obj, Action<T, IObservable<%ArgsType%>> handler) where T : %OwnerType%
+    public static T On%Name%Event<T>(this T obj, Action<T, IObservable<%ArgsType%>> handler) where T : %OwnerType%
     {
         var observable = Observable
             .FromEventPattern<EventHandler<%ArgsType%>, %ArgsType%>(
@@ -167,7 +167,7 @@ internal static partial class Templates
         return obj;
     }
 
-    public static IObservable<%ArgsType%> ObserveOn%Name%(this %OwnerType% obj)
+    public static IObservable<%ArgsType%> ObserveOn%Name%Event(this %OwnerType% obj)
     {
         return Observable
             .FromEventPattern<EventHandler<%ArgsType%>, %ArgsType%>(
@@ -178,7 +178,7 @@ internal static partial class Templates
 
     public static string EventMethodsTemplateSealed = @"    // %Name%
 
-    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ArgsType%>> handler)
+    public static %OwnerType% On%Name%Event(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ArgsType%>> handler)
     {
         var observable = Observable
             .FromEventPattern<EventHandler<%ArgsType%>, %ArgsType%>(
@@ -189,7 +189,7 @@ internal static partial class Templates
         return obj;
     }
 
-    public static IObservable<%ArgsType%> ObserveOn%Name%(this %OwnerType% obj)
+    public static IObservable<%ArgsType%> ObserveOn%Name%Event(this %OwnerType% obj)
     {
         return Observable
             .FromEventPattern<EventHandler<%ArgsType%>, %ArgsType%>(
