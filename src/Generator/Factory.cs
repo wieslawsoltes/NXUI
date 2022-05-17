@@ -123,7 +123,7 @@ internal static class Factory
                 isEnum = true;
             }
 
-            properties.Add(new Property(
+            var p = new Property(
                 property.Name,
                 FixType(ownerType.ToString()),
                 FixType(valueType.ToString()),
@@ -131,7 +131,8 @@ internal static class Factory
                 alreadyExists,
                 property.IsReadOnly,
                 isEnum,
-                isEnum ? enumNames.ToArray() : null));
+                isEnum ? enumNames.ToArray() : null);
+            properties.Add(p);
         }
 
         return properties;
