@@ -9,26 +9,35 @@
         .OnClick((_, o) => o.Subscribe(_ => Debug.WriteLine("Click")))
         .Content("Button");
 
-    Canvas(out var canvas)
+    Canvas(out var canvas1)
         .Background(Brushes.WhiteSmoke)
-        .OnPointerPressed((c, o) => o.Subscribe(x =>
-        {
-            Debug.WriteLine($"PointerPressed {x.GetPosition(c)}");
-        }))
-        .OnPointerReleased((c, o) => o.Subscribe(x =>
-        {
-            Debug.WriteLine($"PointerReleased {x.GetPosition(c)}");
-        }))
-        .OnPointerMoved((c, o) => o.Subscribe(x =>
-        {
-            Debug.WriteLine($"PointerMoved {x.GetPosition(c)}");
-        }))
         .Self(c =>
         {
-            c.ObserveOnPointerPressed().Subscribe(x => Debug.WriteLine($"Self().PointerPressed {x.GetPosition(c)}"));
-            c.ObserveOnPointerReleased().Subscribe(x => Debug.WriteLine($"Self().PointerReleased {x.GetPosition(c)}"));
-            c.ObserveOnPointerMoved().Subscribe(x => Debug.WriteLine($"Self().PointerMoved {x.GetPosition(c)}"));
+            var line = default(Line);
+            c.ObserveOnPointerPressed()
+                .Select(x => x.GetPosition(c))
+                .Subscribe(x => c.Children(line = Line().StartPoint(x).EndPoint(x).Stroke(SolidColorBrush().Color(Colors.Black)).StrokeThickness(2)));
+            c.ObserveOnPointerReleased()
+                .Select(x => x.GetPosition(c))
+                .Subscribe(x => line = null);
+            c.ObserveOnPointerMoved()
+                .Select(x => x.GetPosition(c))
+                .Subscribe(x => line?.EndPoint(x));
         });
+
+    Canvas(out var canvas2)
+        .Background(Brushes.WhiteSmoke)
+        .Var(default(Line), out var l)
+        .OnPointerPressed((c, o)
+            => o.Select(x => x.GetPosition(c)).Subscribe(x => c.Children(l = Line().StartPoint(x).EndPoint(x))))
+        .OnPointerReleased((c, o)
+            => o.Select(x => x.GetPosition(c)).Subscribe(x => l = null))
+        .OnPointerMoved((c, o)
+            => o.Select(x => x.GetPosition(c)).Subscribe(x => l?.EndPoint(x)))
+        .Styles(Style()
+            .Selector(x => x.OfType<Line>())
+            .Setter(ShapeStroke, Brushes.Black)
+            .Setter(ShapeStrokeThickness, 2d));
 
     ContentControl(out var contentControl)
         .Content("Content");
@@ -108,7 +117,8 @@
         .Items(
             TabItem().Header("Border").Content(border),
             TabItem().Header("Button").Content(button),
-            TabItem().Header("Canvas").Content(canvas),
+            TabItem().Header("Canvas 1").Content(canvas1),
+            TabItem().Header("Canvas 2").Content(canvas2),
             TabItem().Header("ContentControl").Content(contentControl),
             TabItem().Header("Decorator").Content(decorator),
             TabItem().Header("HeaderedContentControl").Content(headeredContentControl),
