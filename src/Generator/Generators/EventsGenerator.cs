@@ -10,7 +10,8 @@ internal static class EventsGenerator
     {
         foreach (var c in classes)
         {
-            if (c.Events.Length <= 0)
+            var events = c.Events.Where(x => x.RoutingStrategies is not null).ToArray();
+            if (events.Length <= 0)
             {
                 continue;
             }
@@ -23,13 +24,13 @@ internal static class EventsGenerator
             var fileHeaderBuilder = new StringBuilder(Templates.EventsHeaderTemplate);
             WriteLine(fileHeaderBuilder.ToString());
 
-            for (var i = 0; i < c.Events.Length; i++)
+            for (var i = 0; i <events.Length; i++)
             {
-                var e = c.Events[i];
+                var e = events[i];
 
                 WriteLine($"    public static {e.EventType} {c.Name}{e.Name} => {c.Type}.{e.Name}Event;");
 
-                if (i < c.Events.Length - 1)
+                if (i  < events.Length - 1)
                 {
                     WriteLine("");
                 }
