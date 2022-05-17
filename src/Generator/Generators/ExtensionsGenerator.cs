@@ -85,8 +85,8 @@ internal static class ExtensionsGenerator
                     continue;
 
                 var template = c.IsSealed
-                    ? Templates.EventMethodsTemplateSealed
-                    : Templates.EventMethodsTemplate;
+                    ? Templates.RoutedEventMethodsTemplateSealed
+                    : Templates.RoutedEventMethodsTemplate;
 
                 var eventBuilder = new StringBuilder(template);
 
@@ -112,13 +112,36 @@ internal static class ExtensionsGenerator
 
                 WriteLine(eventBuilder.ToString());
 
-                if (i < routedEvents.Length - 1)
+                if (i < routedEvents.Length - 1 || clrEvents.Length > 0)
                 {
                     WriteLine("");
                 }
             }
 
-            // TODO: clrEvents
+            for (var i = 0; i < clrEvents.Length; i++)
+            {
+                var e = clrEvents[i];
+                if (e.RoutingStrategies is { })
+                    continue;
+
+                var template = c.IsSealed
+                    ? Templates.EventMethodsTemplateSealed
+                    : Templates.EventMethodsTemplate;
+
+                var eventBuilder = new StringBuilder(template);
+
+                eventBuilder.Replace("%ClassType%", c.Type);
+                eventBuilder.Replace("%Name%", e.Name);
+                eventBuilder.Replace("%OwnerType%", e.OwnerType);
+                eventBuilder.Replace("%ArgsType%", e.ArgsType);
+
+                WriteLine(eventBuilder.ToString());
+
+                if (i < routedEvents.Length - 1)
+                {
+                    WriteLine("");
+                }
+            }
 
             var classFooterBuilder = new StringBuilder(Templates.ClassExtensionsFooterTemplate);
             WriteLine(classFooterBuilder.ToString());
