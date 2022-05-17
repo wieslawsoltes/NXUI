@@ -19,7 +19,7 @@ internal class Registry
 
     public Dictionary<Type, Dictionary<int, AvaloniaProperty>>? RegisteredAttachedProperties { get; }
 
-    public Dictionary<Type, List<Avalonia.Interactivity.RoutedEvent>>? RegisteredRoutedEvents { get; }
+    public Dictionary<Type, List<RoutedEvent>>? RegisteredRoutedEvents { get; }
 
     public Registry(Type[] classTypes)
     {
@@ -34,7 +34,7 @@ internal class Registry
         RegisteredAttachedProperties = (Dictionary<Type, Dictionary<int, AvaloniaProperty>>?)
             s_attached?.GetValue(AvaloniaPropertyRegistry.Instance);
 
-        RegisteredRoutedEvents = (Dictionary<Type, List<Avalonia.Interactivity.RoutedEvent>>?)
+        RegisteredRoutedEvents = (Dictionary<Type, List<RoutedEvent>>?)
             s_registeredRoutedEvents?.GetValue(RoutedEventRegistry.Instance);
     }
 }
