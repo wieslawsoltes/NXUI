@@ -75,50 +75,50 @@ internal static class ExtensionsGenerator
                 }
             }
 
-            for (var i = 0; i < c.Events.Length; i++)
+            var routedEvents = c.Events.Where(x => x.RoutingStrategies is not null).ToArray();
+            var clrEvents = c.Events.Where(x => x.RoutingStrategies is null).ToArray();
+
+            for (var i = 0; i < routedEvents.Length; i++)
             {
-                var e = c.Events[i];
+                var e = routedEvents[i];
+                if (e.RoutingStrategies is null)
+                    continue;
 
-                if (e.RoutingStrategies is { })
+                var template = c.IsSealed
+                    ? Templates.EventMethodsTemplateSealed
+                    : Templates.EventMethodsTemplate;
+
+                var eventBuilder = new StringBuilder(template);
+
+                eventBuilder.Replace("%ClassType%", c.Type);
+                eventBuilder.Replace("%Name%", e.Name);
+                eventBuilder.Replace("%OwnerType%", e.OwnerType);
+                eventBuilder.Replace("%ArgsType%", e.ArgsType);
+
+                var routes = e.RoutingStrategies.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                var routingStrategiesBuilder = new StringBuilder();
+                for (var j = 0; j < routes.Length; j++)
                 {
-                    var template = c.IsSealed
-                        ? Templates.EventMethodsTemplateSealed
-                        : Templates.EventMethodsTemplate;
-
-                    var eventBuilder = new StringBuilder(template);
-
-                    eventBuilder.Replace("%ClassType%", c.Type);
-                    eventBuilder.Replace("%Name%", e.Name);
-                    eventBuilder.Replace("%OwnerType%", e.OwnerType);
-                    eventBuilder.Replace("%ArgsType%", e.ArgsType);
-
-                    var routes = e.RoutingStrategies.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    var routingStrategiesBuilder = new StringBuilder();
-                    for (var j = 0; j < routes.Length; j++)
+                    if (j > 0)
                     {
-                        if (j > 0)
-                        {
-                            routingStrategiesBuilder.Append(" | ");
-                        }
-
-                        routingStrategiesBuilder.Append("Avalonia.Interactivity.RoutingStrategies.");
-                        routingStrategiesBuilder.Append(routes[j]);
+                        routingStrategiesBuilder.Append(" | ");
                     }
 
-                    eventBuilder.Replace("%RoutingStrategies%", routingStrategiesBuilder.ToString());
-
-                    WriteLine(eventBuilder.ToString());
-                }
-                else
-                {
-                    // TODO:
+                    routingStrategiesBuilder.Append("Avalonia.Interactivity.RoutingStrategies.");
+                    routingStrategiesBuilder.Append(routes[j]);
                 }
 
-                if (i < c.Events.Length - 1)
+                eventBuilder.Replace("%RoutingStrategies%", routingStrategiesBuilder.ToString());
+
+                WriteLine(eventBuilder.ToString());
+
+                if (i < routedEvents.Length - 1)
                 {
                     WriteLine("");
                 }
             }
+
+            // TODO: clrEvents
 
             var classFooterBuilder = new StringBuilder(Templates.ClassExtensionsFooterTemplate);
             WriteLine(classFooterBuilder.ToString());
