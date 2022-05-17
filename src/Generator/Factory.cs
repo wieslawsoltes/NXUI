@@ -242,14 +242,15 @@ internal static class Factory
 
             var events = GetEvents(classType, registry);
 
-            classes.Add(new Class(
-                FixClassNameType(classType.Name), 
-                FixType(classType.ToString()), 
+            var c = new Class(
+                FixClassNameType(classType.Name),
+                FixType(classType.ToString()),
                 properties.ToArray(),
                 events.ToArray(),
                 classType.IsSealed,
                 publicCtor,
-                classType.IsAbstract));
+                classType.IsAbstract);
+            classes.Add(c);
         }
 
         return classes;
