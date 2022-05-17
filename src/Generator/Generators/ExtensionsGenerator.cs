@@ -79,32 +79,40 @@ internal static class ExtensionsGenerator
             {
                 var e = c.Events[i];
 
-                var template = c.IsSealed
-                    ? Templates.EventMethodsTemplateSealed
-                    : Templates.EventMethodsTemplate;
-
-                var eventBuilder = new StringBuilder(template);
-
-                eventBuilder.Replace("%ClassType%", c.Type);
-                eventBuilder.Replace("%Name%", e.Name);
-                eventBuilder.Replace("%OwnerType%", e.OwnerType);
-                eventBuilder.Replace("%ArgsType%", e.ArgsType);
-
-                var routes = e.RoutingStrategies.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
-                var routingStrategiesBuilder = new StringBuilder();
-                for (var j = 0; j < routes.Length; j++)
+                if (e.RoutingStrategies is { })
                 {
-                    if (j > 0)
+                    var template = c.IsSealed
+                        ? Templates.EventMethodsTemplateSealed
+                        : Templates.EventMethodsTemplate;
+
+                    var eventBuilder = new StringBuilder(template);
+
+                    eventBuilder.Replace("%ClassType%", c.Type);
+                    eventBuilder.Replace("%Name%", e.Name);
+                    eventBuilder.Replace("%OwnerType%", e.OwnerType);
+                    eventBuilder.Replace("%ArgsType%", e.ArgsType);
+
+                    var routes = e.RoutingStrategies.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                    var routingStrategiesBuilder = new StringBuilder();
+                    for (var j = 0; j < routes.Length; j++)
                     {
-                        routingStrategiesBuilder.Append(" | ");
+                        if (j > 0)
+                        {
+                            routingStrategiesBuilder.Append(" | ");
+                        }
+
+                        routingStrategiesBuilder.Append("Avalonia.Interactivity.RoutingStrategies.");
+                        routingStrategiesBuilder.Append(routes[j]);
                     }
-                    routingStrategiesBuilder.Append("Avalonia.Interactivity.RoutingStrategies.");
-                    routingStrategiesBuilder.Append(routes[j]);
+
+                    eventBuilder.Replace("%RoutingStrategies%", routingStrategiesBuilder.ToString());
+
+                    WriteLine(eventBuilder.ToString());
                 }
-
-                eventBuilder.Replace("%RoutingStrategies%", routingStrategiesBuilder.ToString());
-
-                WriteLine(eventBuilder.ToString());
+                else
+                {
+                    // TODO:
+                }
 
                 if (i < c.Events.Length - 1)
                 {
