@@ -1,9 +1,4 @@
-﻿using System.Reflection;
-using Avalonia;
-using Avalonia.Interactivity;
-using Generator.Model;
-
-// ReSharper disable once CheckNamespace
+﻿// ReSharper disable once CheckNamespace
 namespace Generator;
 
 internal static class MinimalGenerator
