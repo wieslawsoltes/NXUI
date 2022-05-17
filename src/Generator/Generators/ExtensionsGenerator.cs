@@ -137,7 +137,7 @@ internal static class ExtensionsGenerator
 
                 WriteLine(eventBuilder.ToString());
 
-                if (i < routedEvents.Length - 1)
+                if (i < clrEvents.Length - 1)
                 {
                     WriteLine("");
                 }
