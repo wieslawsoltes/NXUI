@@ -139,7 +139,7 @@ internal static class Factory
         return properties;
     }
     
-    private static List<Event> GetRoutedEvents(Type classType, Registry registry)
+    private static List<Event> GetEvents(Type classType, Registry registry)
     {
         var events = new List<Event>();
 
@@ -211,13 +211,13 @@ internal static class Factory
 
             var properties = GetProperties(classType, registry);
 
-            var routedEvents = GetRoutedEvents(classType, registry);
+            var events = GetEvents(classType, registry);
 
             classes.Add(new Class(
                 FixClassNameType(classType.Name), 
                 FixType(classType.ToString()), 
                 properties.ToArray(),
-                routedEvents.ToArray(),
+                events.ToArray(),
                 classType.IsSealed,
                 publicCtor,
                 classType.IsAbstract));
