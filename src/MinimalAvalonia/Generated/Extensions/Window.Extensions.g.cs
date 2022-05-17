@@ -620,49 +620,63 @@ public static partial class WindowExtensions
 
     // WindowClosedEvent
 
-    // public static T OnWindowClosedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
-    // {
-    //     obj.AddHandler(Avalonia.Controls.Window.WindowClosedEvent, (_, args) => action(obj, args), routes);
-    //     return obj;
-    // }
+    public static T OnWindowClosedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
+    {
+        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Window.WindowClosedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
 
-    // public static T OnWindowClosed<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
-    // {
-    //     var observable = obj.GetObservable(Avalonia.Controls.Window.WindowClosedEvent, routes);
-    //     handler(obj, observable);
-    //     return obj;
-    // }
+    public static T OnWindowClosed<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Window.WindowClosedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
 
-    // public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnWindowClosed(this Avalonia.Controls.Window obj)
-    // {
-    //     return Observable
-    //         .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-    //             h => obj.WindowClosed += h, 
-    //             h => obj.WindowClosed -= h)
-    //         .Select(x => x.EventArgs);
-    // }
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnWindowClosed(this Avalonia.Controls.Window obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Window.WindowClosedEvent, routes);
+    }
 
     // WindowOpenedEvent
 
-    // public static T OnWindowOpenedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
-    // {
-    //     obj.AddHandler(Avalonia.Controls.Window.WindowOpenedEvent, (_, args) => action(obj, args), routes);
-    //     return obj;
-    // }
+    public static T OnWindowOpenedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
+    {
+        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Window.WindowOpenedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
 
-    // public static T OnWindowOpened<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
-    // {
-    //     var observable = obj.GetObservable(Avalonia.Controls.Window.WindowOpenedEvent, routes);
-    //     handler(obj, observable);
-    //     return obj;
-    // }
+    public static T OnWindowOpened<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Window.WindowOpenedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
 
-    // public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnWindowOpened(this Avalonia.Controls.Window obj)
-    // {
-    //     return Observable
-    //         .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-    //             h => obj.WindowOpened += h, 
-    //             h => obj.WindowOpened -= h)
-    //         .Select(x => x.EventArgs);
-    // }
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnWindowOpened(this Avalonia.Controls.Window obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Window.WindowOpenedEvent, routes);
+    }
+
+    // Closing
+
+    public static T OnClosingEvent<T>(this T obj, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<System.ComponentModel.CancelEventArgs>, System.ComponentModel.CancelEventArgs>(
+                h => obj.Closing += h, 
+                h => obj.Closing -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<System.ComponentModel.CancelEventArgs> ObserveOnClosingEvent(this Avalonia.Controls.Window obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<System.ComponentModel.CancelEventArgs>, System.ComponentModel.CancelEventArgs>(
+                h => obj.Closing += h, 
+                h => obj.Closing -= h)
+            .Select(x => x.EventArgs);
+    }
 }
