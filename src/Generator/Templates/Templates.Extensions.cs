@@ -163,7 +163,7 @@ internal static partial class Templates
                 h => obj.%Name% += h, 
                 h => obj.%Name% -= h)
             .Select(x => x.EventArgs);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
@@ -185,7 +185,7 @@ internal static partial class Templates
                 h => obj.%Name% += h, 
                 h => obj.%Name% -= h)
             .Select(x => x.EventArgs);
-        handler(observable);
+        handler(obj, observable);
         return obj;
     }
 
