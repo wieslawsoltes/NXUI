@@ -11,10 +11,11 @@
                     => o.Select(x => x.GetPosition(c)).Subscribe(_ => l = null))
                 .OnPointerMoved((c, o)
                     => o.Select(x => x.GetPosition(c)).Subscribe(x => l?.EndPoint(x)))
-                .Styles(Style()
-                    .Selector(x => x.OfType<Line>())
-                    .Setter(ShapeStroke, Brushes.Black)
-                    .Setter(ShapeStrokeThickness, 2d)));
+                .Styles(
+                    Style()
+                        .Selector(x => x.OfType<Line>())
+                        .Setter(ShapeStroke, Brushes.Black)
+                        .Setter(ShapeStrokeThickness, 2d)));
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
