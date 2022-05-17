@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>DrawLine</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MinimalAvalonia\MinimalAvalonia.csproj" />
+  </ItemGroup>
+  <Import Project="..\..\src\MinimalAvalonia\MinimalAvalonia.props" />
+</Project>
