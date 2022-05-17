@@ -15,8 +15,7 @@
                     {
                         line = null;
                     }))
-                .OnPointerMoved(
-                    (canvas, o)
+                .OnPointerMoved((canvas, o)
                     => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
                     {
                         line?.EndPoint(x);
