@@ -13,4 +13,10 @@ public static class ObjectExtensions
         callback?.Invoke(obj);
         return obj;
     }
+
+    public static T Var<T, TU>(this T obj, TU value, out TU @ref)
+    {
+        @ref = value;
+        return obj;
+    }
 }
