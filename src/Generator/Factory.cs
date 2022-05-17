@@ -79,9 +79,7 @@ internal static class Factory
             var valueType = property.PropertyType;
             var ownerType = property.OwnerType;
 
-            if (property.IsAttached 
-                // && property.GetType() == fieldInfo.FieldType 
-                && registry.RegisteredAttachedProperties is { })
+            if (property.IsAttached && registry.RegisteredAttachedProperties is { })
             {
                 foreach (var kvp1 in registry.RegisteredAttachedProperties)
                 {
