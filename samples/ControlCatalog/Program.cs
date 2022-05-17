@@ -16,13 +16,22 @@
             var line = default(Line);
             c.ObserveOnPointerPressed()
                 .Select(x => x.GetPosition(c))
-                .Subscribe(x => c.Children(line = Line().StartPoint(x).EndPoint(x).Stroke(SolidColorBrush().Color(Colors.Black)).StrokeThickness(2)));
+                .Subscribe(x =>
+                {
+                    c.Children(line = Line().StartPoint(x).EndPoint(x).Stroke(SolidColorBrush().Color(Colors.Black)).StrokeThickness(2));
+                });
             c.ObserveOnPointerReleased()
                 .Select(x => x.GetPosition(c))
-                .Subscribe(_ => line = null);
+                .Subscribe(_ =>
+                {
+                    line = null;
+                });
             c.ObserveOnPointerMoved()
                 .Select(x => x.GetPosition(c))
-                .Subscribe(x => line?.EndPoint(x));
+                .Subscribe(x =>
+                {
+                    line?.EndPoint(x);
+                });
         });
 
     ContentControl(out var contentControl)
