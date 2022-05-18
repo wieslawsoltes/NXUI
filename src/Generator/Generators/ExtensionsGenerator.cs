@@ -26,6 +26,10 @@ internal static class ExtensionsGenerator
             classHeaderBuilder.Replace("%ClassName%", c.Name);
             WriteLine(classHeaderBuilder.ToString());
 
+            var addedProperties = new HashSet<string>();
+            var addedRoutedEvents = new HashSet<string>();
+            var addedClrEvents = new HashSet<string>();
+
             for (var i = 0; i < c.Properties.Length; i++)
             {
                 var p = c.Properties[i];
@@ -33,6 +37,13 @@ internal static class ExtensionsGenerator
                 {
                     continue;
                 }
+
+                if (addedProperties.Contains(p.Name))
+                {
+                    Console.WriteLine($"Property {c.Name}.{p.Name} extensions have been already added.");
+                    continue;
+                }
+                addedProperties.Add(p.Name);
 
                 var template = p.IsReadOnly
                     ? Templates.PropertyMethodsTemplateReadOnly
@@ -81,6 +92,14 @@ internal static class ExtensionsGenerator
             for (var i = 0; i < routedEvents.Length; i++)
             {
                 var e = routedEvents[i];
+
+                if (addedRoutedEvents.Contains(e.Name))
+                {
+                    Console.WriteLine($"Routed event {c.Name}.{e.Name} extensions have been already added.");
+                    continue;
+                }
+                addedRoutedEvents.Add(e.Name);
+
                 if (e.RoutingStrategies is null)
                     continue;
 
@@ -121,6 +140,14 @@ internal static class ExtensionsGenerator
             for (var i = 0; i < clrEvents.Length; i++)
             {
                 var e = clrEvents[i];
+
+                if (addedClrEvents.Contains(e.Name))
+                {
+                    Console.WriteLine($"Clr event {c.Name}.{e.Name} extensions have been already added.");
+                    continue;
+                }
+                addedClrEvents.Add(e.Name);
+
                 if (e.RoutingStrategies is { })
                     continue;
 
