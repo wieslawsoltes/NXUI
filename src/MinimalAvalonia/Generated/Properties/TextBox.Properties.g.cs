@@ -14,19 +14,11 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<System.Char> TextBoxPasswordChar => Avalonia.Controls.TextBox.PasswordCharProperty;
 
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBoxSelectionBrush => Avalonia.Controls.TextBox.SelectionBrushProperty;
-
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBoxSelectionForegroundBrush => Avalonia.Controls.TextBox.SelectionForegroundBrushProperty;
-
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBoxCaretBrush => Avalonia.Controls.TextBox.CaretBrushProperty;
-
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Int32> TextBoxSelectionStart => Avalonia.Controls.TextBox.SelectionStartProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Int32> TextBoxSelectionEnd => Avalonia.Controls.TextBox.SelectionEndProperty;
 
     public static Avalonia.StyledProperty<System.Int32> TextBoxMaxLength => Avalonia.Controls.TextBox.MaxLengthProperty;
-
-    public static Avalonia.StyledProperty<System.Int32> TextBoxMaxLines => Avalonia.Controls.TextBox.MaxLinesProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.String> TextBoxText => Avalonia.Controls.TextBox.TextProperty;
 
@@ -37,8 +29,6 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> TextBoxVerticalContentAlignment => Avalonia.Controls.TextBox.VerticalContentAlignmentProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> TextBoxTextWrapping => Avalonia.Controls.TextBox.TextWrappingProperty;
-
-    public static Avalonia.StyledProperty<System.Double> TextBoxLineHeight => Avalonia.Controls.TextBox.LineHeightProperty;
 
     public static Avalonia.StyledProperty<System.String> TextBoxWatermark => Avalonia.Controls.TextBox.WatermarkProperty;
 
@@ -61,4 +51,6 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<System.Boolean> TextBoxIsUndoEnabled => Avalonia.Controls.TextBox.IsUndoEnabledProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Int32> TextBoxUndoLimit => Avalonia.Controls.TextBox.UndoLimitProperty;
+
+    //public static Avalonia.StyledProperty<System.Char> TextBoxPasswordChar => Avalonia.Controls.TextBox.PasswordCharProperty;
 }

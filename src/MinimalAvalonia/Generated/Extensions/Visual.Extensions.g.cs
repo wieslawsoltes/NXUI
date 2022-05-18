@@ -226,25 +226,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-    // HasMirrorTransformProperty
-
-    public static Avalonia.Data.IBinding BindHasMirrorTransform(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
-    {
-        return obj[Avalonia.Visual.HasMirrorTransformProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Boolean> ObserveHasMirrorTransform(this Avalonia.Visual obj)
-    {
-        return obj.GetObservable(Avalonia.Visual.HasMirrorTransformProperty);
-    }
-
-    public static Avalonia.Visual OnHasMirrorTransform(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler)
-    {
-        var observable = obj.GetObservable(Avalonia.Visual.HasMirrorTransformProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // RenderTransformProperty
 
     public static T RenderTransform<T>(this T obj, Avalonia.Media.ITransform value) where T : Avalonia.Visual

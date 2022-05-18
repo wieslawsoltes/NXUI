@@ -347,41 +347,4 @@ public static partial class TrackExtensions
         handler(obj, observable);
         return obj;
     }
-
-    // IgnoreThumbDragProperty
-
-    public static T IgnoreThumbDrag<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.Track
-    {
-        obj[Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty] = value;
-        return obj;
-    }
-
-    public static T IgnoreThumbDrag<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Track
-    {
-        obj[Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T IgnoreThumbDrag<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Track
-    {
-        obj[Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindIgnoreThumbDrag(this Avalonia.Controls.Primitives.Track obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Boolean> ObserveIgnoreThumbDrag(this Avalonia.Controls.Primitives.Track obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
-    }
-
-    public static T OnIgnoreThumbDrag<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Track
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
-        handler(obj, observable);
-        return obj;
-    }
 }

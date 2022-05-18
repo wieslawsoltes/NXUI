@@ -25,4 +25,8 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.DirectProperty<Avalonia.Controls.DatePicker,System.Boolean> DatePickerYearVisible => Avalonia.Controls.DatePicker.YearVisibleProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.DatePicker,System.Nullable<System.DateTimeOffset>> DatePickerSelectedDate => Avalonia.Controls.DatePicker.SelectedDateProperty;
+
+    //public static Avalonia.StyledProperty<System.Object> DatePickerHeader => Avalonia.Controls.DatePicker.HeaderProperty;
+
+    //public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> DatePickerHeaderTemplate => Avalonia.Controls.DatePicker.HeaderTemplateProperty;
 }

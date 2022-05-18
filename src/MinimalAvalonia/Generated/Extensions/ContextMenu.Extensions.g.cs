@@ -435,43 +435,6 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
-    // PlacementRectProperty
-
-    public static T PlacementRect<T>(this T obj, System.Nullable<Avalonia.Rect> value) where T : Avalonia.Controls.ContextMenu
-    {
-        obj[Avalonia.Controls.ContextMenu.PlacementRectProperty] = value;
-        return obj;
-    }
-
-    public static T PlacementRect<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
-    {
-        obj[Avalonia.Controls.ContextMenu.PlacementRectProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T PlacementRect<T>(this T obj, IObservable<System.Nullable<Avalonia.Rect>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ContextMenu
-    {
-        obj[Avalonia.Controls.ContextMenu.PlacementRectProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindPlacementRect(this Avalonia.Controls.ContextMenu obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.ContextMenu.PlacementRectProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Nullable<Avalonia.Rect>> ObservePlacementRect(this Avalonia.Controls.ContextMenu obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementRectProperty);
-    }
-
-    public static T OnPlacementRect<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<System.Nullable<Avalonia.Rect>>> handler) where T : Avalonia.Controls.ContextMenu
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementRectProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // WindowManagerAddShadowHintProperty
 
     public static T WindowManagerAddShadowHint<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.ContextMenu

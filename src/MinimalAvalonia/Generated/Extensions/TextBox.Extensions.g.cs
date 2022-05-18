@@ -188,117 +188,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    // SelectionBrushProperty
-
-    public static T SelectionBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.SelectionBrushProperty] = value;
-        return obj;
-    }
-
-    public static T SelectionBrush<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.SelectionBrushProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T SelectionBrush<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.SelectionBrushProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindSelectionBrush(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.TextBox.SelectionBrushProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Media.IBrush> ObserveSelectionBrush(this Avalonia.Controls.TextBox obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.TextBox.SelectionBrushProperty);
-    }
-
-    public static T OnSelectionBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBox
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.TextBox.SelectionBrushProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // SelectionForegroundBrushProperty
-
-    public static T SelectionForegroundBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.SelectionForegroundBrushProperty] = value;
-        return obj;
-    }
-
-    public static T SelectionForegroundBrush<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.SelectionForegroundBrushProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T SelectionForegroundBrush<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.SelectionForegroundBrushProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindSelectionForegroundBrush(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.TextBox.SelectionForegroundBrushProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Media.IBrush> ObserveSelectionForegroundBrush(this Avalonia.Controls.TextBox obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty);
-    }
-
-    public static T OnSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBox
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // CaretBrushProperty
-
-    public static T CaretBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.CaretBrushProperty] = value;
-        return obj;
-    }
-
-    public static T CaretBrush<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.CaretBrushProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T CaretBrush<T>(this T obj, IObservable<Avalonia.Media.IBrush> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.CaretBrushProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindCaretBrush(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.TextBox.CaretBrushProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Media.IBrush> ObserveCaretBrush(this Avalonia.Controls.TextBox obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.TextBox.CaretBrushProperty);
-    }
-
-    public static T OnCaretBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBox
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CaretBrushProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // SelectionStartProperty
 
     public static T SelectionStart<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.TextBox
@@ -410,43 +299,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-    // MaxLinesProperty
-
-    public static T MaxLines<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.MaxLinesProperty] = value;
-        return obj;
-    }
-
-    public static T MaxLines<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.MaxLinesProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T MaxLines<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.MaxLinesProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindMaxLines(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.TextBox.MaxLinesProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Int32> ObserveMaxLines(this Avalonia.Controls.TextBox obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.TextBox.MaxLinesProperty);
-    }
-
-    public static T OnMaxLines<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.Int32>> handler) where T : Avalonia.Controls.TextBox
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.TextBox.MaxLinesProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // TextProperty
 
     public static T Text<T>(this T obj, System.String value) where T : Avalonia.Controls.TextBox
@@ -481,6 +333,61 @@ public static partial class TextBoxExtensions
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.TextProperty);
         handler(obj, observable);
+        return obj;
+    }
+
+    // TextAlignmentProperty
+
+    public static T TextAlignment<T>(this T obj, Avalonia.Media.TextAlignment value) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = value;
+        return obj;
+    }
+
+    public static T TextAlignment<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextAlignmentProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T TextAlignment<T>(this T obj, IObservable<Avalonia.Media.TextAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTextAlignment(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TextBox.TextAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextAlignment> ObserveTextAlignment(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.TextAlignmentProperty);
+    }
+
+    public static T OnTextAlignment<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.TextAlignment>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.TextAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static T TextAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
+        return obj;
+    }
+
+    public static T TextAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
+        return obj;
+    }
+
+    public static T TextAlignmentRight<T>(this T obj) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
         return obj;
     }
 
@@ -603,6 +510,61 @@ public static partial class TextBoxExtensions
     public static T VerticalContentAlignmentBottom<T>(this T obj) where T : Avalonia.Controls.TextBox
     {
         obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
+        return obj;
+    }
+
+    // TextWrappingProperty
+
+    public static T TextWrapping<T>(this T obj, Avalonia.Media.TextWrapping value) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextWrappingProperty] = value;
+        return obj;
+    }
+
+    public static T TextWrapping<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextWrappingProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T TextWrapping<T>(this T obj, IObservable<Avalonia.Media.TextWrapping> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextWrappingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTextWrapping(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TextBox.TextWrappingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextWrapping> ObserveTextWrapping(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.TextWrappingProperty);
+    }
+
+    public static T OnTextWrapping<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.TextWrapping>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.TextWrappingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static T TextWrappingNoWrap<T>(this T obj) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextWrappingProperty] = Avalonia.Media.TextWrapping.NoWrap;
+        return obj;
+    }
+
+    public static T TextWrappingWrap<T>(this T obj) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
+        return obj;
+    }
+
+    public static T TextWrappingWrapWithOverflow<T>(this T obj) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.TextWrappingProperty] = Avalonia.Media.TextWrapping.WrapWithOverflow;
         return obj;
     }
 
@@ -958,6 +920,43 @@ public static partial class TextBoxExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // PasswordCharProperty
+
+    // public static T PasswordChar<T>(this T obj, System.Char value) where T : Avalonia.Controls.TextBox
+    // {
+    //     obj[Avalonia.Controls.TextBox.PasswordCharProperty] = value;
+    //     return obj;
+    // }
+    //
+    // public static T PasswordChar<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    // {
+    //     obj[Avalonia.Controls.TextBox.PasswordCharProperty.Bind().WithMode(mode)] = binding;
+    //     return obj;
+    // }
+    //
+    // public static T PasswordChar<T>(this T obj, IObservable<System.Char> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    // {
+    //     obj[Avalonia.Controls.TextBox.PasswordCharProperty.Bind().WithMode(mode)] = observable.ToBinding();
+    //     return obj;
+    // }
+    //
+    // public static Avalonia.Data.IBinding BindPasswordChar(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    // {
+    //     return obj[Avalonia.Controls.TextBox.PasswordCharProperty.Bind().WithMode(mode)];
+    // }
+    //
+    // public static IObservable<System.Char> ObservePasswordChar(this Avalonia.Controls.TextBox obj)
+    // {
+    //     return obj.GetObservable(Avalonia.Controls.TextBox.PasswordCharProperty);
+    // }
+    //
+    // public static T OnPasswordChar<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.Char>> handler) where T : Avalonia.Controls.TextBox
+    // {
+    //     var observable = obj.GetObservable(Avalonia.Controls.TextBox.PasswordCharProperty);
+    //     handler(obj, observable);
+    //     return obj;
+    // }
 
     // CopyingToClipboardEvent
 

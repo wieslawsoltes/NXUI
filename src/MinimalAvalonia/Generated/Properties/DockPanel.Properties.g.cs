@@ -5,6 +5,4 @@ namespace MinimalAvalonia;
 public static partial class MinimalAvaloniaProperties
 {
     public static Avalonia.AttachedProperty<Avalonia.Controls.Dock> DockPanelDock => Avalonia.Controls.DockPanel.DockProperty;
-
-    public static Avalonia.StyledProperty<System.Boolean> DockPanelLastChildFill => Avalonia.Controls.DockPanel.LastChildFillProperty;
 }

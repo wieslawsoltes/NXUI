@@ -21,6 +21,4 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<Avalonia.Controls.Button> TrackDecreaseButton => Avalonia.Controls.Primitives.Track.DecreaseButtonProperty;
 
     public static Avalonia.StyledProperty<System.Boolean> TrackIsDirectionReversed => Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty;
-
-    public static Avalonia.StyledProperty<System.Boolean> TrackIgnoreThumbDrag => Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty;
 }

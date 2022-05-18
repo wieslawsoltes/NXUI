@@ -5,6 +5,4 @@ namespace MinimalAvalonia;
 public static partial class MinimalAvaloniaProperties
 {
     public static Avalonia.StyledProperty<Avalonia.Themes.Fluent.FluentThemeMode> FluentThemeMode => Avalonia.Themes.Fluent.FluentTheme.ModeProperty;
-
-    public static Avalonia.StyledProperty<Avalonia.Themes.Fluent.DensityStyle> FluentThemeDensityStyle => Avalonia.Themes.Fluent.FluentTheme.DensityStyleProperty;
 }

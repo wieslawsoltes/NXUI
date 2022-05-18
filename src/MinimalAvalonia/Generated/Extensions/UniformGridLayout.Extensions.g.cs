@@ -279,42 +279,42 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
-    // MaximumRowsOrColumnsProperty
+    // MinItemWidthProperty
 
-    public static T MaximumRowsOrColumns<T>(this T obj, System.Int32 value) where T : Avalonia.Layout.UniformGridLayout
+    public static T MinItemWidth<T>(this T obj, System.Int32 value) where T : Avalonia.Layout.UniformGridLayout
     {
-        obj[Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty] = value;
+        obj[Avalonia.Layout.UniformGridLayout.MinItemWidthProperty] = value;
         return obj;
     }
 
-    public static T MaximumRowsOrColumns<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.UniformGridLayout
+    // public static T MinItemWidth<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.UniformGridLayout
+    // {
+    //     obj[Avalonia.Layout.UniformGridLayout.MinItemWidthProperty.Bind().WithMode(mode)] = binding;
+    //     return obj;
+    // }
+
+    public static T MinItemWidth<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.UniformGridLayout
     {
-        obj[Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty.Bind().WithMode(mode)] = binding;
+        obj[Avalonia.Layout.UniformGridLayout.MinItemWidthProperty.Bind().WithMode(mode)] = observable.ToBinding();
         return obj;
     }
 
-    public static T MaximumRowsOrColumns<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.UniformGridLayout
-    {
-        obj[Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindMaximumRowsOrColumns(this Avalonia.Layout.UniformGridLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Int32> ObserveMaximumRowsOrColumns(this Avalonia.Layout.UniformGridLayout obj)
-    {
-        return obj.GetObservable(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty);
-    }
-
-    public static T OnMaximumRowsOrColumns<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<System.Int32>> handler) where T : Avalonia.Layout.UniformGridLayout
-    {
-        var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty);
-        handler(obj, observable);
-        return obj;
-    }
+    // public static Avalonia.Data.IBinding BindMinItemWidth(this Avalonia.Layout.UniformGridLayout obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    // {
+    //     return obj[Avalonia.Layout.UniformGridLayout.MinItemWidthProperty.Bind().WithMode(mode)];
+    // }
+    //
+    // public static IObservable<System.Int32> ObserveMinItemWidth(this Avalonia.Layout.UniformGridLayout obj)
+    // {
+    //     return obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty);
+    // }
+    //
+    // public static T OnMinItemWidth<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<System.Int32>> handler) where T : Avalonia.Layout.UniformGridLayout
+    // {
+    //     var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty);
+    //     handler(obj, observable);
+    //     return obj;
+    // }
 
     // OrientationProperty
 

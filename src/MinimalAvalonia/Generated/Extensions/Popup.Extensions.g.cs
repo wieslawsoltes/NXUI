@@ -3,43 +3,6 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class PopupExtensions
 {
-    // WindowManagerAddShadowHintProperty
-
-    public static T WindowManagerAddShadowHint<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.Popup
-    {
-        obj[Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty] = value;
-        return obj;
-    }
-
-    public static T WindowManagerAddShadowHint<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
-    {
-        obj[Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T WindowManagerAddShadowHint<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
-    {
-        obj[Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindWindowManagerAddShadowHint(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Boolean> ObserveWindowManagerAddShadowHint(this Avalonia.Controls.Primitives.Popup obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty);
-    }
-
-    public static T OnWindowManagerAddShadowHint<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // ChildProperty
 
     public static T Child<T>(this T obj, Avalonia.Controls.Control value) where T : Avalonia.Controls.Primitives.Popup
@@ -73,43 +36,6 @@ public static partial class PopupExtensions
     public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.ChildProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // InheritsTransformProperty
-
-    public static T InheritsTransform<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.Popup
-    {
-        obj[Avalonia.Controls.Primitives.Popup.InheritsTransformProperty] = value;
-        return obj;
-    }
-
-    public static T InheritsTransform<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
-    {
-        obj[Avalonia.Controls.Primitives.Popup.InheritsTransformProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T InheritsTransform<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
-    {
-        obj[Avalonia.Controls.Primitives.Popup.InheritsTransformProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindInheritsTransform(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.Primitives.Popup.InheritsTransformProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Boolean> ObserveInheritsTransform(this Avalonia.Controls.Primitives.Popup obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty);
-    }
-
-    public static T OnInheritsTransform<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Popup
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty);
         handler(obj, observable);
         return obj;
     }
@@ -841,4 +767,41 @@ public static partial class PopupExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // PlacementRectProperty
+
+    // public static T PlacementRect<T>(this T obj, System.Nullable<Avalonia.Rect> value) where T : Avalonia.Controls.Primitives.Popup
+    // {
+    //     obj[Avalonia.Controls.Primitives.Popup.PlacementRectProperty] = value;
+    //     return obj;
+    // }
+    //
+    // public static T PlacementRect<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    // {
+    //     obj[Avalonia.Controls.Primitives.Popup.PlacementRectProperty.Bind().WithMode(mode)] = binding;
+    //     return obj;
+    // }
+    //
+    // public static T PlacementRect<T>(this T obj, IObservable<System.Nullable<Avalonia.Rect>> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.Popup
+    // {
+    //     obj[Avalonia.Controls.Primitives.Popup.PlacementRectProperty.Bind().WithMode(mode)] = observable.ToBinding();
+    //     return obj;
+    // }
+    //
+    // public static Avalonia.Data.IBinding BindPlacementRect(this Avalonia.Controls.Primitives.Popup obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    // {
+    //     return obj[Avalonia.Controls.Primitives.Popup.PlacementRectProperty.Bind().WithMode(mode)];
+    // }
+    //
+    // public static IObservable<System.Nullable<Avalonia.Rect>> ObservePlacementRect(this Avalonia.Controls.Primitives.Popup obj)
+    // {
+    //     return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementRectProperty);
+    // }
+    //
+    // public static T OnPlacementRect<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<System.Nullable<Avalonia.Rect>>> handler) where T : Avalonia.Controls.Primitives.Popup
+    // {
+    //     var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementRectProperty);
+    //     handler(obj, observable);
+    //     return obj;
+    // }
 }

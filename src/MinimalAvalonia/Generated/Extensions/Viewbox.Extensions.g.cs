@@ -118,41 +118,4 @@ public static partial class ViewboxExtensions
         obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = Avalonia.Media.StretchDirection.Both;
         return obj;
     }
-
-    // ChildProperty
-
-    public static T Child<T>(this T obj, Avalonia.Controls.IControl value) where T : Avalonia.Controls.Viewbox
-    {
-        obj[Avalonia.Controls.Viewbox.ChildProperty] = value;
-        return obj;
-    }
-
-    public static T Child<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Viewbox
-    {
-        obj[Avalonia.Controls.Viewbox.ChildProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T Child<T>(this T obj, IObservable<Avalonia.Controls.IControl> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Viewbox
-    {
-        obj[Avalonia.Controls.Viewbox.ChildProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindChild(this Avalonia.Controls.Viewbox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.Viewbox.ChildProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Controls.IControl> ObserveChild(this Avalonia.Controls.Viewbox obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.Viewbox.ChildProperty);
-    }
-
-    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<Avalonia.Controls.IControl>> handler) where T : Avalonia.Controls.Viewbox
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Viewbox.ChildProperty);
-        handler(obj, observable);
-        return obj;
-    }
 }

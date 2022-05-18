@@ -63,41 +63,4 @@ public static partial class DockPanelExtensions
         obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Top;
         return obj;
     }
-
-    // LastChildFillProperty
-
-    public static T LastChildFill<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.DockPanel
-    {
-        obj[Avalonia.Controls.DockPanel.LastChildFillProperty] = value;
-        return obj;
-    }
-
-    public static T LastChildFill<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DockPanel
-    {
-        obj[Avalonia.Controls.DockPanel.LastChildFillProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T LastChildFill<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.DockPanel
-    {
-        obj[Avalonia.Controls.DockPanel.LastChildFillProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindLastChildFill(this Avalonia.Controls.DockPanel obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.DockPanel.LastChildFillProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Boolean> ObserveLastChildFill(this Avalonia.Controls.DockPanel obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.DockPanel.LastChildFillProperty);
-    }
-
-    public static T OnLastChildFill<T>(this T obj, Action<Avalonia.Controls.DockPanel, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.DockPanel
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.DockPanel.LastChildFillProperty);
-        handler(obj, observable);
-        return obj;
-    }
 }

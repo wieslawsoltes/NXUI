@@ -483,74 +483,37 @@ public static partial class ScrollViewerExtensions
 
     // AllowAutoHideProperty
 
-    public static T AllowAutoHide<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Control
+    public static T AllowAutoHide<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.ScrollViewer
     {
         obj[Avalonia.Controls.ScrollViewer.AllowAutoHideProperty] = value;
         return obj;
     }
 
-    public static T AllowAutoHide<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    public static T AllowAutoHide<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ScrollViewer
     {
         obj[Avalonia.Controls.ScrollViewer.AllowAutoHideProperty.Bind().WithMode(mode)] = binding;
         return obj;
     }
 
-    public static T AllowAutoHide<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
+    public static T AllowAutoHide<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.ScrollViewer
     {
         obj[Avalonia.Controls.ScrollViewer.AllowAutoHideProperty.Bind().WithMode(mode)] = observable.ToBinding();
         return obj;
     }
 
-    public static Avalonia.Data.IBinding BindAllowAutoHide(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    public static Avalonia.Data.IBinding BindAllowAutoHide(this Avalonia.Controls.ScrollViewer obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
     {
         return obj[Avalonia.Controls.ScrollViewer.AllowAutoHideProperty.Bind().WithMode(mode)];
     }
 
-    public static IObservable<System.Boolean> ObserveAllowAutoHide(this Avalonia.Controls.Control obj)
+    public static IObservable<System.Boolean> ObserveAllowAutoHide(this Avalonia.Controls.ScrollViewer obj)
     {
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty);
     }
 
-    public static T OnAllowAutoHide<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    public static T OnAllowAutoHide<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ScrollViewer
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // IsScrollChainingEnabledProperty
-
-    public static T IsScrollChainingEnabled<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty] = value;
-        return obj;
-    }
-
-    public static T IsScrollChainingEnabled<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T IsScrollChainingEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindIsScrollChainingEnabled(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Boolean> ObserveIsScrollChainingEnabled(this Avalonia.Controls.Control obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
-    }
-
-    public static T OnIsScrollChainingEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
         handler(obj, observable);
         return obj;
     }

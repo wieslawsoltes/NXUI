@@ -225,43 +225,6 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-    // StaysOpenOnClickProperty
-
-    public static T StaysOpenOnClick<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.MenuItem
-    {
-        obj[Avalonia.Controls.MenuItem.StaysOpenOnClickProperty] = value;
-        return obj;
-    }
-
-    public static T StaysOpenOnClick<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
-    {
-        obj[Avalonia.Controls.MenuItem.StaysOpenOnClickProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T StaysOpenOnClick<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MenuItem
-    {
-        obj[Avalonia.Controls.MenuItem.StaysOpenOnClickProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindStaysOpenOnClick(this Avalonia.Controls.MenuItem obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.MenuItem.StaysOpenOnClickProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Boolean> ObserveStaysOpenOnClick(this Avalonia.Controls.MenuItem obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
-    }
-
-    public static T OnStaysOpenOnClick<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // ClickEvent
 
     public static T OnClickHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem

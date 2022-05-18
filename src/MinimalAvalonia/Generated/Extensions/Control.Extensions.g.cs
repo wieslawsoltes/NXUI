@@ -151,55 +151,6 @@ public static partial class ControlExtensions
         return obj;
     }
 
-    // FlowDirectionProperty
-
-    public static T FlowDirection<T>(this T obj, Avalonia.Media.FlowDirection value) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty] = value;
-        return obj;
-    }
-
-    public static T FlowDirection<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T FlowDirection<T>(this T obj, IObservable<Avalonia.Media.FlowDirection> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindFlowDirection(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Media.FlowDirection> ObserveFlowDirection(this Avalonia.Controls.Control obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.Control.FlowDirectionProperty);
-    }
-
-    public static T OnFlowDirection<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FlowDirection>> handler) where T : Avalonia.Controls.Control
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Control.FlowDirectionProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    public static T FlowDirectionLeftToRight<T>(this T obj) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty] = Avalonia.Media.FlowDirection.LeftToRight;
-        return obj;
-    }
-
-    public static T FlowDirectionRightToLeft<T>(this T obj) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty] = Avalonia.Media.FlowDirection.RightToLeft;
-        return obj;
-    }
-
     // RequestBringIntoViewEvent
 
     public static T OnRequestBringIntoViewHandler<T>(this T obj, Action<T, Avalonia.Controls.RequestBringIntoViewEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control

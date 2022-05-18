@@ -298,43 +298,6 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-    // PaneTemplateProperty
-
-    public static T PaneTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.SplitView
-    {
-        obj[Avalonia.Controls.SplitView.PaneTemplateProperty] = value;
-        return obj;
-    }
-
-    public static T PaneTemplate<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
-    {
-        obj[Avalonia.Controls.SplitView.PaneTemplateProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T PaneTemplate<T>(this T obj, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.SplitView
-    {
-        obj[Avalonia.Controls.SplitView.PaneTemplateProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindPaneTemplate(this Avalonia.Controls.SplitView obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.SplitView.PaneTemplateProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObservePaneTemplate(this Avalonia.Controls.SplitView obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.SplitView.PaneTemplateProperty);
-    }
-
-    public static T OnPaneTemplate<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.SplitView
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneTemplateProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // UseLightDismissOverlayModeProperty
 
     public static T UseLightDismissOverlayMode<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.SplitView

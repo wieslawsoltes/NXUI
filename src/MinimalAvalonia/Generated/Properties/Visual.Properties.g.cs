@@ -18,8 +18,6 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> VisualOpacityMask => Avalonia.Visual.OpacityMaskProperty;
 
-    public static Avalonia.DirectProperty<Avalonia.Visual,System.Boolean> VisualHasMirrorTransform => Avalonia.Visual.HasMirrorTransformProperty;
-
     public static Avalonia.StyledProperty<Avalonia.Media.ITransform> VisualRenderTransform => Avalonia.Visual.RenderTransformProperty;
 
     public static Avalonia.StyledProperty<Avalonia.RelativePoint> VisualRenderTransformOrigin => Avalonia.Visual.RenderTransformOriginProperty;

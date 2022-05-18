@@ -94,10 +94,6 @@ public static partial class MinimalAvaloniaBuilders
 
     public static Avalonia.Controls.DockPanel DockPanel(out Avalonia.Controls.DockPanel @ref) => @ref = new();
 
-    public static Avalonia.Controls.DropDownButton DropDownButton() => new();
-
-    public static Avalonia.Controls.DropDownButton DropDownButton(out Avalonia.Controls.DropDownButton @ref) => @ref = new();
-
     public static Avalonia.Controls.Expander Expander() => new();
 
     public static Avalonia.Controls.Expander Expander(out Avalonia.Controls.Expander @ref) => @ref = new();
@@ -238,14 +234,6 @@ public static partial class MinimalAvaloniaBuilders
 
     public static Avalonia.Controls.Slider Slider(out Avalonia.Controls.Slider @ref) => @ref = new();
 
-    public static Avalonia.Controls.SplitButton SplitButton() => new();
-
-    public static Avalonia.Controls.SplitButton SplitButton(out Avalonia.Controls.SplitButton @ref) => @ref = new();
-
-    public static Avalonia.Controls.ToggleSplitButton ToggleSplitButton() => new();
-
-    public static Avalonia.Controls.ToggleSplitButton ToggleSplitButton(out Avalonia.Controls.ToggleSplitButton @ref) => @ref = new();
-
     public static Avalonia.Controls.SplitView SplitView() => new();
 
     public static Avalonia.Controls.SplitView SplitView(out Avalonia.Controls.SplitView @ref) => @ref = new();
@@ -281,10 +269,6 @@ public static partial class MinimalAvaloniaBuilders
     public static Avalonia.Controls.ToolTip ToolTip() => new();
 
     public static Avalonia.Controls.ToolTip ToolTip(out Avalonia.Controls.ToolTip @ref) => @ref = new();
-
-    public static Avalonia.Controls.TransitioningContentControl TransitioningContentControl() => new();
-
-    public static Avalonia.Controls.TransitioningContentControl TransitioningContentControl(out Avalonia.Controls.TransitioningContentControl @ref) => @ref = new();
 
     public static Avalonia.Controls.TrayIcon TrayIcon() => new();
 
@@ -373,34 +357,6 @@ public static partial class MinimalAvaloniaBuilders
     public static Avalonia.Controls.Embedding.EmbeddableControlRoot EmbeddableControlRoot() => new();
 
     public static Avalonia.Controls.Embedding.EmbeddableControlRoot EmbeddableControlRoot(out Avalonia.Controls.Embedding.EmbeddableControlRoot @ref) => @ref = new();
-
-    public static Avalonia.Controls.Documents.Bold Bold() => new();
-
-    public static Avalonia.Controls.Documents.Bold Bold(out Avalonia.Controls.Documents.Bold @ref) => @ref = new();
-
-    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer() => new();
-
-    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(out Avalonia.Controls.Documents.InlineUIContainer @ref) => @ref = new();
-
-    public static Avalonia.Controls.Documents.Italic Italic() => new();
-
-    public static Avalonia.Controls.Documents.Italic Italic(out Avalonia.Controls.Documents.Italic @ref) => @ref = new();
-
-    public static Avalonia.Controls.Documents.LineBreak LineBreak() => new();
-
-    public static Avalonia.Controls.Documents.LineBreak LineBreak(out Avalonia.Controls.Documents.LineBreak @ref) => @ref = new();
-
-    public static Avalonia.Controls.Documents.Run Run() => new();
-
-    public static Avalonia.Controls.Documents.Run Run(out Avalonia.Controls.Documents.Run @ref) => @ref = new();
-
-    public static Avalonia.Controls.Documents.Span Span() => new();
-
-    public static Avalonia.Controls.Documents.Span Span(out Avalonia.Controls.Documents.Span @ref) => @ref = new();
-
-    public static Avalonia.Controls.Documents.Underline Underline() => new();
-
-    public static Avalonia.Controls.Documents.Underline Underline(out Avalonia.Controls.Documents.Underline @ref) => @ref = new();
 
     public static Avalonia.Controls.Chrome.CaptionButtons CaptionButtons() => new();
 
@@ -506,10 +462,6 @@ public static partial class MinimalAvaloniaBuilders
 
     public static Avalonia.StyledElement StyledElement(out Avalonia.StyledElement @ref) => @ref = new();
 
-    public static Avalonia.Visual Visual() => new();
-
-    public static Avalonia.Visual Visual(out Avalonia.Visual @ref) => @ref = new();
-
     public static Avalonia.Styling.Style Style() => new();
 
     public static Avalonia.Styling.Style Style(out Avalonia.Styling.Style @ref) => @ref = new();
@@ -517,6 +469,22 @@ public static partial class MinimalAvaloniaBuilders
     public static Avalonia.Styling.Styles Styles() => new();
 
     public static Avalonia.Styling.Styles Styles(out Avalonia.Styling.Styles @ref) => @ref = new();
+
+    public static Avalonia.Input.InputElement InputElement() => new();
+
+    public static Avalonia.Input.InputElement InputElement(out Avalonia.Input.InputElement @ref) => @ref = new();
+
+    public static Avalonia.Input.KeyBinding KeyBinding() => new();
+
+    public static Avalonia.Input.KeyBinding KeyBinding(out Avalonia.Input.KeyBinding @ref) => @ref = new();
+
+    public static Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer ScrollGestureRecognizer() => new();
+
+    public static Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer ScrollGestureRecognizer(out Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer @ref) => @ref = new();
+
+    public static Avalonia.Interactivity.Interactive Interactive() => new();
+
+    public static Avalonia.Interactivity.Interactive Interactive(out Avalonia.Interactivity.Interactive @ref) => @ref = new();
 
     public static Avalonia.Layout.Layoutable Layoutable() => new();
 
@@ -542,33 +510,9 @@ public static partial class MinimalAvaloniaBuilders
 
     public static Avalonia.Layout.WrapLayout WrapLayout(out Avalonia.Layout.WrapLayout @ref) => @ref = new();
 
-    public static Avalonia.Interactivity.Interactive Interactive() => new();
+    public static Avalonia.Visual Visual() => new();
 
-    public static Avalonia.Interactivity.Interactive Interactive(out Avalonia.Interactivity.Interactive @ref) => @ref = new();
-
-    public static Avalonia.Input.InputElement InputElement() => new();
-
-    public static Avalonia.Input.InputElement InputElement(out Avalonia.Input.InputElement @ref) => @ref = new();
-
-    public static Avalonia.Input.KeyBinding KeyBinding() => new();
-
-    public static Avalonia.Input.KeyBinding KeyBinding(out Avalonia.Input.KeyBinding @ref) => @ref = new();
-
-    public static Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer ScrollGestureRecognizer() => new();
-
-    public static Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer ScrollGestureRecognizer(out Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer @ref) => @ref = new();
-
-    public static Avalonia.Media.CombinedGeometry CombinedGeometry() => new();
-
-    public static Avalonia.Media.CombinedGeometry CombinedGeometry(out Avalonia.Media.CombinedGeometry @ref) => @ref = new();
-
-    public static Avalonia.Media.GeometryCollection GeometryCollection() => new();
-
-    public static Avalonia.Media.GeometryCollection GeometryCollection(out Avalonia.Media.GeometryCollection @ref) => @ref = new();
-
-    public static Avalonia.Media.GeometryGroup GeometryGroup() => new();
-
-    public static Avalonia.Media.GeometryGroup GeometryGroup(out Avalonia.Media.GeometryGroup @ref) => @ref = new();
+    public static Avalonia.Visual Visual(out Avalonia.Visual @ref) => @ref = new();
 
     public static Avalonia.Media.ArcSegment ArcSegment() => new();
 
@@ -577,6 +521,10 @@ public static partial class MinimalAvaloniaBuilders
     public static Avalonia.Media.BezierSegment BezierSegment() => new();
 
     public static Avalonia.Media.BezierSegment BezierSegment(out Avalonia.Media.BezierSegment @ref) => @ref = new();
+
+    public static Avalonia.Media.CombinedGeometry CombinedGeometry() => new();
+
+    public static Avalonia.Media.CombinedGeometry CombinedGeometry(out Avalonia.Media.CombinedGeometry @ref) => @ref = new();
 
     public static Avalonia.Media.ConicGradientBrush ConicGradientBrush() => new();
 
@@ -602,9 +550,17 @@ public static partial class MinimalAvaloniaBuilders
 
     public static Avalonia.Media.ExperimentalAcrylicMaterial ExperimentalAcrylicMaterial(out Avalonia.Media.ExperimentalAcrylicMaterial @ref) => @ref = new();
 
+    public static Avalonia.Media.GeometryCollection GeometryCollection() => new();
+
+    public static Avalonia.Media.GeometryCollection GeometryCollection(out Avalonia.Media.GeometryCollection @ref) => @ref = new();
+
     public static Avalonia.Media.GeometryDrawing GeometryDrawing() => new();
 
     public static Avalonia.Media.GeometryDrawing GeometryDrawing(out Avalonia.Media.GeometryDrawing @ref) => @ref = new();
+
+    public static Avalonia.Media.GeometryGroup GeometryGroup() => new();
+
+    public static Avalonia.Media.GeometryGroup GeometryGroup(out Avalonia.Media.GeometryGroup @ref) => @ref = new();
 
     public static Avalonia.Media.GlyphRunDrawing GlyphRunDrawing() => new();
 
@@ -710,26 +666,6 @@ public static partial class MinimalAvaloniaBuilders
 
     public static Avalonia.Media.Imaging.CroppedBitmap CroppedBitmap(out Avalonia.Media.Imaging.CroppedBitmap @ref) => @ref = new();
 
-    public static Avalonia.Animation.Animatable Animatable() => new();
-
-    public static Avalonia.Animation.Animatable Animatable(out Avalonia.Animation.Animatable @ref) => @ref = new();
-
-    public static Avalonia.Animation.Animation Animation() => new();
-
-    public static Avalonia.Animation.Animation Animation(out Avalonia.Animation.Animation @ref) => @ref = new();
-
-    public static Avalonia.Animation.AnimatorKeyFrame AnimatorKeyFrame() => new();
-
-    public static Avalonia.Animation.AnimatorKeyFrame AnimatorKeyFrame(out Avalonia.Animation.AnimatorKeyFrame @ref) => @ref = new();
-
-    public static Avalonia.Animation.KeyFrame KeyFrame() => new();
-
-    public static Avalonia.Animation.KeyFrame KeyFrame(out Avalonia.Animation.KeyFrame @ref) => @ref = new();
-
-    public static Avalonia.Animation.KeySpline KeySpline() => new();
-
-    public static Avalonia.Animation.KeySpline KeySpline(out Avalonia.Animation.KeySpline @ref) => @ref = new();
-
     public static Avalonia.Animation.BoxShadowsTransition BoxShadowsTransition() => new();
 
     public static Avalonia.Animation.BoxShadowsTransition BoxShadowsTransition(out Avalonia.Animation.BoxShadowsTransition @ref) => @ref = new();
@@ -745,18 +681,6 @@ public static partial class MinimalAvaloniaBuilders
     public static Avalonia.Animation.CornerRadiusTransition CornerRadiusTransition() => new();
 
     public static Avalonia.Animation.CornerRadiusTransition CornerRadiusTransition(out Avalonia.Animation.CornerRadiusTransition @ref) => @ref = new();
-
-    public static Avalonia.Animation.DoubleTransition DoubleTransition() => new();
-
-    public static Avalonia.Animation.DoubleTransition DoubleTransition(out Avalonia.Animation.DoubleTransition @ref) => @ref = new();
-
-    public static Avalonia.Animation.FloatTransition FloatTransition() => new();
-
-    public static Avalonia.Animation.FloatTransition FloatTransition(out Avalonia.Animation.FloatTransition @ref) => @ref = new();
-
-    public static Avalonia.Animation.IntegerTransition IntegerTransition() => new();
-
-    public static Avalonia.Animation.IntegerTransition IntegerTransition(out Avalonia.Animation.IntegerTransition @ref) => @ref = new();
 
     public static Avalonia.Animation.PointTransition PointTransition() => new();
 
@@ -782,15 +706,39 @@ public static partial class MinimalAvaloniaBuilders
 
     public static Avalonia.Animation.VectorTransition VectorTransition(out Avalonia.Animation.VectorTransition @ref) => @ref = new();
 
+    public static Avalonia.Animation.Animatable Animatable() => new();
+
+    public static Avalonia.Animation.Animatable Animatable(out Avalonia.Animation.Animatable @ref) => @ref = new();
+
+    public static Avalonia.Animation.Animation Animation() => new();
+
+    public static Avalonia.Animation.Animation Animation(out Avalonia.Animation.Animation @ref) => @ref = new();
+
+    public static Avalonia.Animation.AnimatorKeyFrame AnimatorKeyFrame() => new();
+
+    public static Avalonia.Animation.AnimatorKeyFrame AnimatorKeyFrame(out Avalonia.Animation.AnimatorKeyFrame @ref) => @ref = new();
+
+    public static Avalonia.Animation.KeyFrame KeyFrame() => new();
+
+    public static Avalonia.Animation.KeyFrame KeyFrame(out Avalonia.Animation.KeyFrame @ref) => @ref = new();
+
+    public static Avalonia.Animation.KeySpline KeySpline() => new();
+
+    public static Avalonia.Animation.KeySpline KeySpline(out Avalonia.Animation.KeySpline @ref) => @ref = new();
+
+    public static Avalonia.Animation.DoubleTransition DoubleTransition() => new();
+
+    public static Avalonia.Animation.DoubleTransition DoubleTransition(out Avalonia.Animation.DoubleTransition @ref) => @ref = new();
+
+    public static Avalonia.Animation.FloatTransition FloatTransition() => new();
+
+    public static Avalonia.Animation.FloatTransition FloatTransition(out Avalonia.Animation.FloatTransition @ref) => @ref = new();
+
+    public static Avalonia.Animation.IntegerTransition IntegerTransition() => new();
+
+    public static Avalonia.Animation.IntegerTransition IntegerTransition(out Avalonia.Animation.IntegerTransition @ref) => @ref = new();
+
     public static Avalonia.Themes.Fluent.Controls.FluentControls FluentControls() => new();
 
     public static Avalonia.Themes.Fluent.Controls.FluentControls FluentControls(out Avalonia.Themes.Fluent.Controls.FluentControls @ref) => @ref = new();
-
-    public static Avalonia.Dialogs.ChildFitter ChildFitter() => new();
-
-    public static Avalonia.Dialogs.ChildFitter ChildFitter(out Avalonia.Dialogs.ChildFitter @ref) => @ref = new();
-
-    public static Avalonia.Dialogs.ManagedFileChooser ManagedFileChooser() => new();
-
-    public static Avalonia.Dialogs.ManagedFileChooser ManagedFileChooser(out Avalonia.Dialogs.ManagedFileChooser @ref) => @ref = new();
 }

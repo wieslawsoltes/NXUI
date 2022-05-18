@@ -18,8 +18,6 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<System.Object> SplitViewPane => Avalonia.Controls.SplitView.PaneProperty;
 
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> SplitViewPaneTemplate => Avalonia.Controls.SplitView.PaneTemplateProperty;
-
     public static Avalonia.StyledProperty<System.Boolean> SplitViewUseLightDismissOverlayMode => Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Controls.SplitViewTemplateSettings> SplitViewTemplateSettings => Avalonia.Controls.SplitView.TemplateSettingsProperty;

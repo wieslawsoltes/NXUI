@@ -39,41 +39,4 @@ public static partial class BrushExtensions
         handler(obj, observable);
         return obj;
     }
-
-    // TransformProperty
-
-    public static T Transform<T>(this T obj, Avalonia.Media.ITransform value) where T : Avalonia.Media.Brush
-    {
-        obj[Avalonia.Media.Brush.TransformProperty] = value;
-        return obj;
-    }
-
-    public static T Transform<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.Brush
-    {
-        obj[Avalonia.Media.Brush.TransformProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T Transform<T>(this T obj, IObservable<Avalonia.Media.ITransform> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.Brush
-    {
-        obj[Avalonia.Media.Brush.TransformProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindTransform(this Avalonia.Media.Brush obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Media.Brush.TransformProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Media.ITransform> ObserveTransform(this Avalonia.Media.Brush obj)
-    {
-        return obj.GetObservable(Avalonia.Media.Brush.TransformProperty);
-    }
-
-    public static T OnTransform<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<Avalonia.Media.ITransform>> handler) where T : Avalonia.Media.Brush
-    {
-        var observable = obj.GetObservable(Avalonia.Media.Brush.TransformProperty);
-        handler(obj, observable);
-        return obj;
-    }
 }

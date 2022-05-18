@@ -189,43 +189,6 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-    // PasswordCharProperty
-
-    public static T PasswordChar<T>(this T obj, System.Char value) where T : Avalonia.Controls.MaskedTextBox
-    {
-        obj[Avalonia.Controls.MaskedTextBox.PasswordCharProperty] = value;
-        return obj;
-    }
-
-    public static T PasswordChar<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MaskedTextBox
-    {
-        obj[Avalonia.Controls.MaskedTextBox.PasswordCharProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T PasswordChar<T>(this T obj, IObservable<System.Char> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.MaskedTextBox
-    {
-        obj[Avalonia.Controls.MaskedTextBox.PasswordCharProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindPasswordChar(this Avalonia.Controls.MaskedTextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.MaskedTextBox.PasswordCharProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Char> ObservePasswordChar(this Avalonia.Controls.MaskedTextBox obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.MaskedTextBox.PasswordCharProperty);
-    }
-
-    public static T OnPasswordChar<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Char>> handler) where T : Avalonia.Controls.MaskedTextBox
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.PasswordCharProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // PromptCharProperty
 
     public static T PromptChar<T>(this T obj, System.Char value) where T : Avalonia.Controls.MaskedTextBox
