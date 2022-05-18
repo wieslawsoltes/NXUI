@@ -72,25 +72,25 @@ internal static class Factory
             var fieldInfo = classType.GetField($"{propertyName}Property");
             if (fieldInfo is null)
             {
-                Log($"Could not find field for {classType.Name}{propertyName}Property.");
+                Log($"Could not find field for {classType.Name}.{propertyName}Property.");
                 continue;
             }
 
             if (!fieldInfo.IsPublic)
             {
-                Log($"The {classType.Name}{propertyName}Property field is not public.");
+                Log($"The {classType.Name}.{propertyName}Property field is not public.");
                 continue;
             }
 
             if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
             {
-                Log($"The {classType.Name}{propertyName}Property field is obsolete.");
+                Log($"The {classType.Name}.{propertyName}Property field is obsolete.");
                 continue;
             }
 
             if (!property.PropertyType.IsPublic)
             {
-                Log($"The {classType.Name}{propertyName}Property property type {property.PropertyType.Name} is not public.");
+                Log($"The {classType.Name}.{propertyName}Property property type {property.PropertyType.Name} is not public.");
                 continue;
             }
 
@@ -106,7 +106,7 @@ internal static class Factory
                     {
                         if (kvp2.Value == property)
                         {
-                            Log($"Attached property {classType.Name}{propertyName}Property registered owner type changed from {ownerType.Name} to {kvp1.Key.Name}.");
+                            Log($"Attached property {classType.Name}.{propertyName}Property registered owner type changed from {ownerType.Name} to {kvp1.Key.Name}.");
                             ownerType = kvp1.Key;
                         }
                     }
@@ -130,7 +130,7 @@ internal static class Factory
                     t = t.BaseType;
                 }
 
-                Log($"Attached property {classType.Name}{propertyName}Property registered owner type changed from {ownerType.Name} to {classType.Name}.");
+                Log($"Attached property {classType.Name}.{propertyName}Property registered owner type changed from {ownerType.Name} to {classType.Name}.");
                 ownerType = classType;
             }
 
@@ -183,25 +183,25 @@ internal static class Factory
             var fieldInfo = classType.GetField($"{eventName}Event");
             if (fieldInfo is null)
             {
-                Log($"Could not find field for {classType.Name}{eventName}Event.");
+                Log($"Could not find field for {classType.Name}.{eventName}Event.");
                 continue;
             }
 
             if (!fieldInfo.IsPublic)
             {
-                Log($"The {classType.Name}{eventName}Event field is not public.");
+                Log($"The {classType.Name}.{eventName}Event field is not public.");
                 continue;
             }
 
             if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
             {
-                Log($"The {classType.Name}{eventName}Event field is obsolete.");
+                Log($"The {classType.Name}.{eventName}Event field is obsolete.");
                 continue;
             }
 
             if (!routedEvent.EventArgsType.IsPublic)
             {
-                Log($"The {classType.Name}{eventName}Event args type {routedEvent.EventArgsType.Name} is not public.");
+                Log($"The {classType.Name}.{eventName}Event args type {routedEvent.EventArgsType.Name} is not public.");
                 continue;
             }
 
@@ -226,33 +226,33 @@ internal static class Factory
             var eventName = eventInfo.Name;
             if (eventInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
             {
-                Log($"The {classType.Name}{eventName} event is obsolete.");
+                Log($"The {classType.Name}.{eventName} event is obsolete.");
                 continue;
             }
 
             var eventHandlerType = eventInfo.EventHandlerType;
             if (eventHandlerType is null)
             {
-                Log($"Could not find {classType.Name}{eventName} event handler type.");
+                Log($"Could not find {classType.Name}.{eventName} event handler type.");
                 continue;
             }
 
             if (!eventHandlerType.IsPublic)
             {
-                Log($"The {classType.Name}{eventName} event handler type {eventHandlerType.Name} is not public.");
+                Log($"The {classType.Name}.{eventName} event handler type {eventHandlerType.Name} is not public.");
                 continue;
             }
 
             var argsType = eventHandlerType.GetGenericArguments().FirstOrDefault();
             if (argsType is null)
             {
-                Log($"Could not find {classType.Name}{eventName} event handler type {eventHandlerType.Name} generic arguments.");
+                Log($"Could not find {classType.Name}.{eventName} event handler type {eventHandlerType.Name} generic arguments.");
                 continue;
             }
 
             if (!argsType.IsPublic)
             {
-                Log($"The {classType.Name}{eventName} event handler type {eventHandlerType.Name} arguments {argsType.Name} are not public.");
+                Log($"The {classType.Name}.{eventName} event handler type {eventHandlerType.Name} arguments {argsType.Name} are not public.");
                 continue;
             }
 
