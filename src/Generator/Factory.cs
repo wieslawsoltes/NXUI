@@ -80,7 +80,7 @@ internal static class Factory
         foreach (var property in avaloniaProperties)
         {
             var propertyName = property.Name;
-            var fieldInfo = classType.GetField($"{propertyName}Property");
+            var fieldInfo = classType.GetField($"{propertyName}Property", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static);
             if (fieldInfo is null)
             {
                 LogError($"Could not find field for `{classType.Name}.{propertyName}Property`.");
@@ -192,7 +192,7 @@ internal static class Factory
         foreach (var routedEvent in avaloniaRoutedEvents)
         {
             var eventName = routedEvent.Name;
-            var fieldInfo = classType.GetField($"{eventName}Event");
+            var fieldInfo = classType.GetField($"{eventName}Event", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static);
             if (fieldInfo is null)
             {
                 LogError($"Could not find field for `{classType.Name}.{eventName}Event`.");
