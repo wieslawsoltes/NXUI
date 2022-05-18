@@ -13,6 +13,4 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ScrollContentPresenter,Avalonia.Vector> ScrollContentPresenterOffset => Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ScrollContentPresenter,Avalonia.Size> ScrollContentPresenterViewport => Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty;
-
-    public static Avalonia.StyledProperty<System.Boolean> ScrollContentPresenterIsScrollChainingEnabled => Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty;
 }

@@ -26,7 +26,5 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> TextPresenterTextWrapping => Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty;
 
-    public static Avalonia.StyledProperty<System.Double> TextPresenterLineHeight => Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty;
-
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenterBackground => Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty;
 }

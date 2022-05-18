@@ -4,11 +4,7 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
-    public static Avalonia.StyledProperty<System.Boolean> PopupWindowManagerAddShadowHint => Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty;
-
     public static Avalonia.StyledProperty<Avalonia.Controls.Control> PopupChild => Avalonia.Controls.Primitives.Popup.ChildProperty;
-
-    public static Avalonia.StyledProperty<System.Boolean> PopupInheritsTransform => Avalonia.Controls.Primitives.Popup.InheritsTransformProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.Popup,System.Boolean> PopupIsOpen => Avalonia.Controls.Primitives.Popup.IsOpenProperty;
 
@@ -37,4 +33,5 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<System.Double> PopupVerticalOffset => Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty;
 
     public static Avalonia.StyledProperty<System.Boolean> PopupTopmost => Avalonia.Controls.Primitives.Popup.TopmostProperty;
+
 }

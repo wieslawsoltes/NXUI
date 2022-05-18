@@ -163,67 +163,6 @@ public static partial class SliderExtensions
         return obj;
     }
 
-    // TickPlacementProperty
-
-    public static T TickPlacement<T>(this T obj, Avalonia.Controls.TickPlacement value) where T : Avalonia.Controls.Slider
-    {
-        obj[Avalonia.Controls.Slider.TickPlacementProperty] = value;
-        return obj;
-    }
-
-    public static T TickPlacement<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Slider
-    {
-        obj[Avalonia.Controls.Slider.TickPlacementProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T TickPlacement<T>(this T obj, IObservable<Avalonia.Controls.TickPlacement> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Slider
-    {
-        obj[Avalonia.Controls.Slider.TickPlacementProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindTickPlacement(this Avalonia.Controls.Slider obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.Slider.TickPlacementProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Controls.TickPlacement> ObserveTickPlacement(this Avalonia.Controls.Slider obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.Slider.TickPlacementProperty);
-    }
-
-    public static T OnTickPlacement<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<Avalonia.Controls.TickPlacement>> handler) where T : Avalonia.Controls.Slider
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Slider.TickPlacementProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    public static T TickPlacementNone<T>(this T obj) where T : Avalonia.Controls.Slider
-    {
-        obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.None;
-        return obj;
-    }
-
-    public static T TickPlacementTopLeft<T>(this T obj) where T : Avalonia.Controls.Slider
-    {
-        obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.TopLeft;
-        return obj;
-    }
-
-    public static T TickPlacementBottomRight<T>(this T obj) where T : Avalonia.Controls.Slider
-    {
-        obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.BottomRight;
-        return obj;
-    }
-
-    public static T TickPlacementOutside<T>(this T obj) where T : Avalonia.Controls.Slider
-    {
-        obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.Outside;
-        return obj;
-    }
-
     // TicksProperty
 
     public static T Ticks<T>(this T obj, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Controls.Slider

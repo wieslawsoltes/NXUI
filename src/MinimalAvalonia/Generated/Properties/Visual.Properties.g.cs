@@ -10,15 +10,11 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<System.Boolean> VisualClipToBounds => Avalonia.Visual.ClipToBoundsProperty;
 
-    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> VisualClip => Avalonia.Visual.ClipProperty;
-
     public static Avalonia.StyledProperty<System.Boolean> VisualIsVisible => Avalonia.Visual.IsVisibleProperty;
 
     public static Avalonia.StyledProperty<System.Double> VisualOpacity => Avalonia.Visual.OpacityProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> VisualOpacityMask => Avalonia.Visual.OpacityMaskProperty;
-
-    public static Avalonia.DirectProperty<Avalonia.Visual,System.Boolean> VisualHasMirrorTransform => Avalonia.Visual.HasMirrorTransformProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Media.ITransform> VisualRenderTransform => Avalonia.Visual.RenderTransformProperty;
 

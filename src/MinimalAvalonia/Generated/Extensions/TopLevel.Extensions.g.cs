@@ -139,12 +139,6 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
-    public static T TransparencyLevelHintForceAcrylicBlur<T>(this T obj) where T : Avalonia.Controls.TopLevel
-    {
-        obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.ForceAcrylicBlur;
-        return obj;
-    }
-
     public static T TransparencyLevelHintMica<T>(this T obj) where T : Avalonia.Controls.TopLevel
     {
         obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.Mica;

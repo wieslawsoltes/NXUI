@@ -151,93 +151,44 @@ public static partial class ControlExtensions
         return obj;
     }
 
-    // FlowDirectionProperty
-
-    public static T FlowDirection<T>(this T obj, Avalonia.Media.FlowDirection value) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty] = value;
-        return obj;
-    }
-
-    public static T FlowDirection<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T FlowDirection<T>(this T obj, IObservable<Avalonia.Media.FlowDirection> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindFlowDirection(this Avalonia.Controls.Control obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Media.FlowDirection> ObserveFlowDirection(this Avalonia.Controls.Control obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.Control.FlowDirectionProperty);
-    }
-
-    public static T OnFlowDirection<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FlowDirection>> handler) where T : Avalonia.Controls.Control
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Control.FlowDirectionProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    public static T FlowDirectionLeftToRight<T>(this T obj) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty] = Avalonia.Media.FlowDirection.LeftToRight;
-        return obj;
-    }
-
-    public static T FlowDirectionRightToLeft<T>(this T obj) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty] = Avalonia.Media.FlowDirection.RightToLeft;
-        return obj;
-    }
-
     // RequestBringIntoViewEvent
 
     public static T OnRequestBringIntoViewHandler<T>(this T obj, Action<T, Avalonia.Controls.RequestBringIntoViewEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
     {
-        obj.AddHandler(Avalonia.Controls.Control.RequestBringIntoViewEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.RequestBringIntoViewEventArgs>)Avalonia.Controls.Control.RequestBringIntoViewEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnRequestBringIntoView<T>(this T obj, Action<T, IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
     {
-        var observable = obj.GetObservable(Avalonia.Controls.Control.RequestBringIntoViewEvent, routes);
+        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.RequestBringIntoViewEventArgs>)Avalonia.Controls.Control.RequestBringIntoViewEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs> ObserveOnRequestBringIntoView(this Avalonia.Controls.Control obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable(Avalonia.Controls.Control.RequestBringIntoViewEvent, routes);
+        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.RequestBringIntoViewEventArgs>)Avalonia.Controls.Control.RequestBringIntoViewEvent, routes);
     }
 
     // ContextRequestedEvent
 
     public static T OnContextRequestedHandler<T>(this T obj, Action<T, Avalonia.Controls.ContextRequestedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
     {
-        obj.AddHandler(Avalonia.Controls.Control.ContextRequestedEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.ContextRequestedEventArgs>)Avalonia.Controls.Control.ContextRequestedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnContextRequested<T>(this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
     {
-        var observable = obj.GetObservable(Avalonia.Controls.Control.ContextRequestedEvent, routes);
+        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.ContextRequestedEventArgs>)Avalonia.Controls.Control.ContextRequestedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequested(this Avalonia.Controls.Control obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable(Avalonia.Controls.Control.ContextRequestedEvent, routes);
+        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.ContextRequestedEventArgs>)Avalonia.Controls.Control.ContextRequestedEvent, routes);
     }
 
     // ContextRequested

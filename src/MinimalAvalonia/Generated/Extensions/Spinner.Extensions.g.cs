@@ -62,20 +62,20 @@ public static partial class SpinnerExtensions
 
     public static T OnSpinHandler<T>(this T obj, Action<T, Avalonia.Controls.SpinEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Spinner
     {
-        obj.AddHandler(Avalonia.Controls.Spinner.SpinEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.SpinEventArgs>)Avalonia.Controls.Spinner.SpinEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnSpin<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Spinner
     {
-        var observable = obj.GetObservable(Avalonia.Controls.Spinner.SpinEvent, routes);
+        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.SpinEventArgs>)Avalonia.Controls.Spinner.SpinEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpin(this Avalonia.Controls.Spinner obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable(Avalonia.Controls.Spinner.SpinEvent, routes);
+        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.SpinEventArgs>)Avalonia.Controls.Spinner.SpinEvent, routes);
     }
 
     // Spin

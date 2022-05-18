@@ -77,43 +77,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    // AlignBottomWithProperty
-
-    public static T AlignBottomWith<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignBottomWithProperty] = value;
-        return obj;
-    }
-
-    public static T AlignBottomWith<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignBottomWithProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T AlignBottomWith<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignBottomWithProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindAlignBottomWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.RelativePanel.AlignBottomWithProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Object> ObserveAlignBottomWith(this Avalonia.Layout.Layoutable obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignBottomWithProperty);
-    }
-
-    public static T OnAlignBottomWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignBottomWithProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // AlignHorizontalCenterWithPanelProperty
 
     public static T AlignHorizontalCenterWithPanel<T>(this T obj, System.Boolean value) where T : Avalonia.Layout.Layoutable
@@ -188,43 +151,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    // AlignLeftWithProperty
-
-    public static T AlignLeftWith<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignLeftWithProperty] = value;
-        return obj;
-    }
-
-    public static T AlignLeftWith<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignLeftWithProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T AlignLeftWith<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignLeftWithProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindAlignLeftWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.RelativePanel.AlignLeftWithProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Object> ObserveAlignLeftWith(this Avalonia.Layout.Layoutable obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
-    }
-
-    public static T OnAlignLeftWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // AlignRightWithPanelProperty
 
     public static T AlignRightWithPanel<T>(this T obj, System.Boolean value) where T : Avalonia.Layout.Layoutable
@@ -258,43 +184,6 @@ public static partial class RelativePanelExtensions
     public static T OnAlignRightWithPanel<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // AlignRightWithProperty
-
-    public static T AlignRightWith<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignRightWithProperty] = value;
-        return obj;
-    }
-
-    public static T AlignRightWith<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignRightWithProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T AlignRightWith<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignRightWithProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindAlignRightWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.RelativePanel.AlignRightWithProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Object> ObserveAlignRightWith(this Avalonia.Layout.Layoutable obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
-    }
-
-    public static T OnAlignRightWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
         handler(obj, observable);
         return obj;
     }
@@ -336,43 +225,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-    // AlignTopWithProperty
-
-    public static T AlignTopWith<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignTopWithProperty] = value;
-        return obj;
-    }
-
-    public static T AlignTopWith<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignTopWithProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T AlignTopWith<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignTopWithProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindAlignTopWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.RelativePanel.AlignTopWithProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Object> ObserveAlignTopWith(this Avalonia.Layout.Layoutable obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
-    }
-
-    public static T OnAlignTopWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // AlignVerticalCenterWithPanelProperty
 
     public static T AlignVerticalCenterWithPanel<T>(this T obj, System.Boolean value) where T : Avalonia.Layout.Layoutable
@@ -406,43 +258,6 @@ public static partial class RelativePanelExtensions
     public static T OnAlignVerticalCenterWithPanel<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // AlignVerticalCenterWithProperty
-
-    public static T AlignVerticalCenterWith<T>(this T obj, System.Object value) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty] = value;
-        return obj;
-    }
-
-    public static T AlignVerticalCenterWith<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T AlignVerticalCenterWith<T>(this T obj, IObservable<System.Object> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Layout.Layoutable
-    {
-        obj[Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindAlignVerticalCenterWith(this Avalonia.Layout.Layoutable obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Object> ObserveAlignVerticalCenterWith(this Avalonia.Layout.Layoutable obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
-    }
-
-    public static T OnAlignVerticalCenterWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
         handler(obj, observable);
         return obj;
     }

@@ -36,7 +36,5 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.DirectProperty<Avalonia.Controls.ScrollViewer,System.Boolean> ScrollViewerIsExpanded => Avalonia.Controls.ScrollViewer.IsExpandedProperty;
 
-    public static Avalonia.AttachedProperty<System.Boolean> ScrollViewerAllowAutoHide => Avalonia.Controls.ScrollViewer.AllowAutoHideProperty;
-
-    public static Avalonia.AttachedProperty<System.Boolean> ScrollViewerIsScrollChainingEnabled => Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ScrollViewerAllowAutoHide => Avalonia.Controls.ScrollViewer.AllowAutoHideProperty;
 }

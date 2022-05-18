@@ -14,10 +14,6 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.DirectProperty<Avalonia.Controls.MaskedTextBox,System.Nullable<System.Boolean>> MaskedTextBoxMaskFull => Avalonia.Controls.MaskedTextBox.MaskFullProperty;
 
-    public static Avalonia.StyledProperty<System.String> MaskedTextBoxMask => Avalonia.Controls.MaskedTextBox.MaskProperty;
-
-    public static Avalonia.StyledProperty<System.Char> MaskedTextBoxPasswordChar => Avalonia.Controls.MaskedTextBox.PasswordCharProperty;
-
     public static Avalonia.StyledProperty<System.Char> MaskedTextBoxPromptChar => Avalonia.Controls.MaskedTextBox.PromptCharProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.MaskedTextBox,System.Boolean> MaskedTextBoxResetOnPrompt => Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty;

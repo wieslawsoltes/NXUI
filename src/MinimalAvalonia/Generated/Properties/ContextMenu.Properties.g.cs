@@ -16,8 +16,6 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<Avalonia.Controls.PlacementMode> ContextMenuPlacementMode => Avalonia.Controls.ContextMenu.PlacementModeProperty;
 
-    public static Avalonia.StyledProperty<System.Nullable<Avalonia.Rect>> ContextMenuPlacementRect => Avalonia.Controls.ContextMenu.PlacementRectProperty;
-
     public static Avalonia.StyledProperty<System.Boolean> ContextMenuWindowManagerAddShadowHint => Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Controls.Control> ContextMenuPlacementTarget => Avalonia.Controls.ContextMenu.PlacementTargetProperty;

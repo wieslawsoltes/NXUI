@@ -336,6 +336,116 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
+    // TextAlignmentProperty
+
+    public static T TextAlignment<T>(this T obj, Avalonia.Media.TextAlignment value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = value;
+        return obj;
+    }
+
+    public static T TextAlignment<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T TextAlignment<T>(this T obj, IObservable<Avalonia.Media.TextAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTextAlignment(this Avalonia.Controls.Presenters.TextPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextAlignment> ObserveTextAlignment(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty);
+    }
+
+    public static T OnTextAlignment<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.TextAlignment>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static T TextAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
+        return obj;
+    }
+
+    public static T TextAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
+        return obj;
+    }
+
+    public static T TextAlignmentRight<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
+        return obj;
+    }
+
+    // TextWrappingProperty
+
+    public static T TextWrapping<T>(this T obj, Avalonia.Media.TextWrapping value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty] = value;
+        return obj;
+    }
+
+    public static T TextWrapping<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T TextWrapping<T>(this T obj, IObservable<Avalonia.Media.TextWrapping> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindTextWrapping(this Avalonia.Controls.Presenters.TextPresenter obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.TextWrapping> ObserveTextWrapping(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty);
+    }
+
+    public static T OnTextWrapping<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.TextWrapping>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static T TextWrappingNoWrap<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty] = Avalonia.Media.TextWrapping.NoWrap;
+        return obj;
+    }
+
+    public static T TextWrappingWrap<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
+        return obj;
+    }
+
+    public static T TextWrappingWrapWithOverflow<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty] = Avalonia.Media.TextWrapping.WrapWithOverflow;
+        return obj;
+    }
+
     // BackgroundProperty
 
     public static T Background<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter

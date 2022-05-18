@@ -10,8 +10,6 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<Avalonia.Controls.NativeMenu> TrayIconMenu => Avalonia.Controls.TrayIcon.MenuProperty;
 
-    public static Avalonia.StyledProperty<Avalonia.Controls.WindowIcon> TrayIconIcon => Avalonia.Controls.TrayIcon.IconProperty;
-
     public static Avalonia.StyledProperty<System.String> TrayIconToolTipText => Avalonia.Controls.TrayIcon.ToolTipTextProperty;
 
     public static Avalonia.StyledProperty<System.Boolean> TrayIconIsVisible => Avalonia.Controls.TrayIcon.IsVisibleProperty;

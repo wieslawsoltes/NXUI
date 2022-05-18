@@ -230,43 +230,6 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-    // StrokeThicknessProperty
-
-    public static T StrokeThickness<T>(this T obj, System.Double value) where T : Avalonia.Media.TextDecoration
-    {
-        obj[Avalonia.Media.TextDecoration.StrokeThicknessProperty] = value;
-        return obj;
-    }
-
-    public static T StrokeThickness<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
-    {
-        obj[Avalonia.Media.TextDecoration.StrokeThicknessProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T StrokeThickness<T>(this T obj, IObservable<System.Double> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Media.TextDecoration
-    {
-        obj[Avalonia.Media.TextDecoration.StrokeThicknessProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindStrokeThickness(this Avalonia.Media.TextDecoration obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Media.TextDecoration.StrokeThicknessProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<System.Double> ObserveStrokeThickness(this Avalonia.Media.TextDecoration obj)
-    {
-        return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeThicknessProperty);
-    }
-
-    public static T OnStrokeThickness<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<System.Double>> handler) where T : Avalonia.Media.TextDecoration
-    {
-        var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeThicknessProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // StrokeLineCapProperty
 
     public static T StrokeLineCap<T>(this T obj, Avalonia.Media.PenLineCap value) where T : Avalonia.Media.TextDecoration
