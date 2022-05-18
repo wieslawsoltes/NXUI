@@ -258,11 +258,10 @@ internal static class Factory
             var argsType = eventHandlerType.GetGenericArguments().FirstOrDefault();
             if (argsType is null)
             {
-                LogError($"Could not find `{classType.Name}.{eventName}` event handler type `{eventHandlerType.Name}` generic arguments.");
-                continue;
+                LogInfo($"Using default event args `for `{classType.Name}.{eventName}` event.");
             }
 
-            if (!argsType.IsPublic)
+            if (argsType is { IsPublic: false })
             {
                 LogInfo($"The `{classType.Name}.{eventName}` event handler type `{eventHandlerType.Name}` arguments `{argsType.Name}` are not public.");
                 continue;
@@ -271,7 +270,7 @@ internal static class Factory
             var e = new Event(
                 eventName,
                 FixType(classType.ToString()),
-                FixType(argsType.ToString()),
+                argsType is { } ? FixType(argsType.ToString()) : null,
                 null,
                 null);
             events.Add(e);

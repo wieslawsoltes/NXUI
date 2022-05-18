@@ -160,7 +160,17 @@ internal static class ExtensionsGenerator
                 eventBuilder.Replace("%ClassType%", c.Type);
                 eventBuilder.Replace("%Name%", e.Name);
                 eventBuilder.Replace("%OwnerType%", e.OwnerType);
-                eventBuilder.Replace("%ArgsType%", e.ArgsType);
+
+                if (e.ArgsType is { })
+                {
+                    eventBuilder.Replace("%ArgsType%", e.ArgsType);
+                    eventBuilder.Replace("%EventHandler%", $"EventHandler<{e.ArgsType}>");
+                }
+                else
+                {
+                    eventBuilder.Replace("%ArgsType%", nameof(EventArgs));
+                    eventBuilder.Replace("%EventHandler%", $"EventHandler");
+                }
 
                 WriteLine(eventBuilder.ToString());
 
