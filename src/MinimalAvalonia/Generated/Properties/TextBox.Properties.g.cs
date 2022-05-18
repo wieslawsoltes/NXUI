@@ -38,6 +38,8 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> TextBoxTextWrapping => Avalonia.Controls.TextBox.TextWrappingProperty;
 
+    public static Avalonia.StyledProperty<System.Double> TextBoxLineHeight => Avalonia.Controls.TextBox.LineHeightProperty;
+
     public static Avalonia.StyledProperty<System.String> TextBoxWatermark => Avalonia.Controls.TextBox.WatermarkProperty;
 
     public static Avalonia.StyledProperty<System.Boolean> TextBoxUseFloatingWatermark => Avalonia.Controls.TextBox.UseFloatingWatermarkProperty;
