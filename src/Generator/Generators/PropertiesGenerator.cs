@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
 using Generator.Model;
 
 // ReSharper disable once CheckNamespace
@@ -23,9 +24,18 @@ internal static class PropertiesGenerator
             var fileHeaderBuilder = new StringBuilder(Templates.PropertiesHeaderTemplate);
             WriteLine(fileHeaderBuilder.ToString());
 
+            var addedProperties = new HashSet<string>();
+
             for (var i = 0; i < c.Properties.Length; i++)
             {
                 var p = c.Properties[i];
+
+                if (addedProperties.Contains(p.Name))
+                {
+                    Console.WriteLine($"Property {c.Name}.{p.Name} was already added.");
+                    continue;
+                }
+                addedProperties.Add(p.Name);
 
                 WriteLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
 
