@@ -59,7 +59,6 @@ internal static class Factory
         }
 
         var avaloniaProperties = registeredPropertiesDict.Values;
-
         foreach (var property in avaloniaProperties)
         {
             var fieldInfo = classType.GetField($"{property.Name}Property");
@@ -154,7 +153,6 @@ internal static class Factory
         }
 
         var avaloniaRoutedEvents = registeredRoutedEventsDict;
- 
         foreach (var routedEvent in avaloniaRoutedEvents)
         {
             var fieldInfo = classType.GetField($"{routedEvent.Name}Event");
