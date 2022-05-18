@@ -11,6 +11,11 @@ internal static class Factory
         "AboutAvaloniaDialog"
     };
 
+    private static void Log(string message)
+    {
+        Console.WriteLine(message);
+    }
+    
     private static string FixType(string t)
     {
         return t
@@ -49,12 +54,14 @@ internal static class Factory
 
         if (registry.RegisteredProperties is null)
         {
+            Log($"Could not find registered properties.");
             return properties;
         }
 
         registry.RegisteredProperties.TryGetValue(classType, out var registeredPropertiesDict);
         if (registeredPropertiesDict is null)
         {
+            Log($"Did not find any registered properties for {classType.Name}.");
             return properties;
         }
 
@@ -62,23 +69,31 @@ internal static class Factory
         foreach (var property in avaloniaProperties)
         {
             var propertyName = property.Name;
-            var fieldInfo = classType.GetFields().FirstOrDefault(x => x.Name.StartsWith(propertyName) && x.Name.EndsWith("Property"));
-            // TODO: var fieldInfo = classType.GetField($"{property.Name}Property");
+            var fieldInfo = classType.GetField($"{propertyName}Property");
             if (fieldInfo is null)
+            {
+                Log($"Could not find field for {classType.Name}{propertyName}Property.");
                 continue;
+            }
 
             if (!fieldInfo.IsPublic)
+            {
+                Log($"The {classType.Name}{propertyName}Property field is not public.");
                 continue;
+            }
 
             if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
+            {
+                Log($"The {classType.Name}{propertyName}Property field is obsolete.");
                 continue;
+            }
 
             if (!property.PropertyType.IsPublic)
+            {
+                Log($"The {classType.Name}{propertyName}Property property type {property.PropertyType.Name} is not public.");
                 continue;
+            }
 
-            // TODO: Do not set property name from field info.
-            propertyName = fieldInfo.Name.Remove(fieldInfo.Name.LastIndexOf("Property", StringComparison.Ordinal));
- 
             var propertyType = fieldInfo.FieldType;
             var valueType = property.PropertyType;
             var ownerType = property.OwnerType;
@@ -91,6 +106,7 @@ internal static class Factory
                     {
                         if (kvp2.Value == property)
                         {
+                            Log($"Attached property {classType.Name}{propertyName}Property registered owner type changed from {ownerType.Name} to {kvp1.Key.Name}.");
                             ownerType = kvp1.Key;
                         }
                     }
@@ -114,6 +130,7 @@ internal static class Factory
                     t = t.BaseType;
                 }
 
+                Log($"Attached property {classType.Name}{propertyName}Property registered owner type changed from {ownerType.Name} to {classType.Name}.");
                 ownerType = classType;
             }
 
@@ -148,12 +165,14 @@ internal static class Factory
 
         if (registry.RegisteredRoutedEvents is null)
         {
+            Log($"Could not find any registered routed events.");
             return events;
         }
 
         registry.RegisteredRoutedEvents.TryGetValue(classType, out var registeredRoutedEventsDict);
         if (registeredRoutedEventsDict is null)
         {
+            Log($"Did not find any registered routed events for {classType.Name}.");
             return events;
         }
 
@@ -161,22 +180,30 @@ internal static class Factory
         foreach (var routedEvent in avaloniaRoutedEvents)
         {
             var eventName = routedEvent.Name;
-            var fieldInfo = classType.GetFields().FirstOrDefault(x => x.Name.StartsWith(eventName) && x.Name.EndsWith("Event"));
-            // TODO: var fieldInfo = classType.GetField($"{name}Event");
+            var fieldInfo = classType.GetField($"{eventName}Event");
             if (fieldInfo is null)
+            {
+                Log($"Could not find field for {classType.Name}{eventName}Event.");
                 continue;
+            }
 
             if (!fieldInfo.IsPublic)
+            {
+                Log($"The {classType.Name}{eventName}Event field is not public.");
                 continue;
+            }
 
             if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
+            {
+                Log($"The {classType.Name}{eventName}Event field is obsolete.");
                 continue;
+            }
 
             if (!routedEvent.EventArgsType.IsPublic)
+            {
+                Log($"The {classType.Name}{eventName}Event args type {routedEvent.EventArgsType.Name} is not public.");
                 continue;
-
-            // TODO: Do not set event name from field info.
-            eventName = fieldInfo.Name.Remove(fieldInfo.Name.LastIndexOf("Event", StringComparison.Ordinal));
+            }
 
             var eventType = fieldInfo.FieldType; // property.GetType()
 
@@ -198,21 +225,36 @@ internal static class Factory
         {
             var eventName = eventInfo.Name;
             if (eventInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
+            {
+                Log($"The {classType.Name}{eventName} event is obsolete.");
                 continue;
+            }
 
             var eventHandlerType = eventInfo.EventHandlerType;
             if (eventHandlerType is null)
+            {
+                Log($"Could not find {classType.Name}{eventName} event handler type.");
                 continue;
+            }
 
             if (!eventHandlerType.IsPublic)
+            {
+                Log($"The {classType.Name}{eventName} event handler type {eventHandlerType.Name} is not public.");
                 continue;
+            }
 
             var argsType = eventHandlerType.GetGenericArguments().FirstOrDefault();
             if (argsType is null)
+            {
+                Log($"Could not find {classType.Name}{eventName} event handler type {eventHandlerType.Name} generic arguments.");
                 continue;
+            }
 
             if (!argsType.IsPublic)
+            {
+                Log($"The {classType.Name}{eventName} event handler type {eventHandlerType.Name} arguments {argsType.Name} are not public.");
                 continue;
+            }
 
             var e = new Event(
                 eventName,
@@ -243,6 +285,7 @@ internal static class Factory
         {
             if (s_excludedClasses.Contains(classType.Name))
             {
+                Log($"The {classType.Name} class was excluded.");
                 continue;
             }
 
