@@ -12,33 +12,33 @@ public static class AppBuilderExtensions
     public static int StartWithClassicDesktopLifetime<T>(this T builder, Action<IClassicDesktopStyleApplicationLifetime>? callback, string[] args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
         where T : AppBuilderBase<T>, new()
     {
-        var classicDesktopStyleApplicationLifetime = new ClassicDesktopStyleApplicationLifetime
+        var lifetime = new ClassicDesktopStyleApplicationLifetime
         {
             Args = args,
             ShutdownMode = shutdownMode
         };
 
-        builder.SetupWithLifetime(classicDesktopStyleApplicationLifetime);
+        builder.SetupWithLifetime(lifetime);
 
-        callback?.Invoke(classicDesktopStyleApplicationLifetime);
-
-        return classicDesktopStyleApplicationLifetime.Start(args);
+        callback?.Invoke(lifetime);
+        
+        return lifetime.Start(args);
     }
 
     public static int StartWithClassicDesktopLifetime<T>(this T builder, Func<Window>? callback, string[] args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
         where T : AppBuilderBase<T>, new()
     {
-        var classicDesktopStyleApplicationLifetime = new ClassicDesktopStyleApplicationLifetime
+        var lifetime = new ClassicDesktopStyleApplicationLifetime
         {
             Args = args,
             ShutdownMode = shutdownMode
         };
 
-        builder.SetupWithLifetime(classicDesktopStyleApplicationLifetime);
+        builder.SetupWithLifetime(lifetime);
 
-        classicDesktopStyleApplicationLifetime.MainWindow = callback?.Invoke();
+        lifetime.MainWindow = callback?.Invoke();
 
-        return classicDesktopStyleApplicationLifetime.Start(args);
+        return lifetime.Start(args);
     }
 
     public static TAppBuilder WithApplicationName<TAppBuilder>(this TAppBuilder builder, string name)
