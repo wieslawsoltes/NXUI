@@ -718,6 +718,28 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent, routes);
     }
 
+    // TextChanged
+
+    public static T OnTextChangedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.TextChanged += h, 
+                h => obj.TextChanged -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<EventArgs> ObserveOnTextChangedEvent(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.TextChanged += h, 
+                h => obj.TextChanged -= h)
+            .Select(x => x.EventArgs);
+    }
+
     // Populating
 
     public static T OnPopulatingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.PopulatingEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
@@ -784,6 +806,28 @@ public static partial class AutoCompleteBoxExtensions
             .Select(x => x.EventArgs);
     }
 
+    // DropDownOpened
+
+    public static T OnDropDownOpenedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.DropDownOpened += h, 
+                h => obj.DropDownOpened -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<EventArgs> ObserveOnDropDownOpenedEvent(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.DropDownOpened += h, 
+                h => obj.DropDownOpened -= h)
+            .Select(x => x.EventArgs);
+    }
+
     // DropDownClosing
 
     public static T OnDropDownClosingEvent<T>(this T obj, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
@@ -803,6 +847,28 @@ public static partial class AutoCompleteBoxExtensions
             .FromEventPattern<EventHandler<System.ComponentModel.CancelEventArgs>, System.ComponentModel.CancelEventArgs>(
                 h => obj.DropDownClosing += h, 
                 h => obj.DropDownClosing -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // DropDownClosed
+
+    public static T OnDropDownClosedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.DropDownClosed += h, 
+                h => obj.DropDownClosed -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<EventArgs> ObserveOnDropDownClosedEvent(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.DropDownClosed += h, 
+                h => obj.DropDownClosed -= h)
             .Select(x => x.EventArgs);
     }
 
