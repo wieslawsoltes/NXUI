@@ -24,9 +24,18 @@ internal static class EventsGenerator
             var fileHeaderBuilder = new StringBuilder(Templates.EventsHeaderTemplate);
             WriteLine(fileHeaderBuilder.ToString());
 
-            for (var i = 0; i <events.Length; i++)
+            var addedEvents = new HashSet<string>();
+
+            for (var i = 0; i < events.Length; i++)
             {
                 var e = events[i];
+
+                if (addedEvents.Contains(e.Name))
+                {
+                    Console.WriteLine($"Event {c.Name}.{e.Name} was already added.");
+                    continue;
+                }
+                addedEvents.Add(e.Name);
 
                 WriteLine($"    public static {e.EventType} {c.Name}{e.Name} => {c.Type}.{e.Name}Event;");
 
