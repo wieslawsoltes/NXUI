@@ -72,7 +72,7 @@ internal static class Factory
         registry.RegisteredProperties.TryGetValue(classType, out var registeredPropertiesDict);
         if (registeredPropertiesDict is null)
         {
-            LogInfo($"Did not find any registered properties for `{classType.Name}`.");
+            LogInfo($"No registered properties for `{classType.Name}`.");
             return properties;
         }
 
@@ -177,14 +177,14 @@ internal static class Factory
 
         if (registry.RegisteredRoutedEvents is null)
         {
-            LogError($"Could not find any registered routed events.");
+            LogError($"Could not find registered routed events.");
             return events;
         }
 
         registry.RegisteredRoutedEvents.TryGetValue(classType, out var registeredRoutedEventsDict);
         if (registeredRoutedEventsDict is null)
         {
-            LogInfo($"Did not find any registered routed events for `{classType.Name}`.");
+            LogInfo($"No registered routed events for `{classType.Name}`.");
             return events;
         }
 
