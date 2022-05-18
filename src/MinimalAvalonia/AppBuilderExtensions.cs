@@ -40,6 +40,7 @@ public static class AppBuilderExtensions
 
         return classicDesktopStyleApplicationLifetime.Start(args);
     }
+
     public static TAppBuilder WithApplicationName<TAppBuilder>(this TAppBuilder builder, string name)
         where TAppBuilder : AppBuilderBase<TAppBuilder>, new()
     {
