@@ -61,7 +61,9 @@ internal static class Factory
         var avaloniaProperties = registeredPropertiesDict.Values;
         foreach (var property in avaloniaProperties)
         {
-            var fieldInfo = classType.GetField($"{property.Name}Property");
+            var propertyName = property.Name;
+            var fieldInfo = classType.GetFields().FirstOrDefault(x => x.Name.StartsWith(propertyName) && x.Name.EndsWith("Property"));
+            // TODO: var fieldInfo = classType.GetField($"{property.Name}Property");
             if (fieldInfo is null)
                 continue;
 
@@ -74,6 +76,9 @@ internal static class Factory
             if (!property.PropertyType.IsPublic)
                 continue;
 
+            // TODO: Do not set property name from field info.
+            propertyName = fieldInfo.Name.Remove(fieldInfo.Name.LastIndexOf("Property", StringComparison.Ordinal));
+ 
             var propertyType = fieldInfo.FieldType;
             var valueType = property.PropertyType;
             var ownerType = property.OwnerType;
@@ -123,7 +128,7 @@ internal static class Factory
             }
 
             var p = new Property(
-                property.Name,
+                propertyName,
                 FixType(ownerType.ToString()),
                 FixType(valueType.ToString()),
                 FixType(propertyType.ToString()),
@@ -155,7 +160,9 @@ internal static class Factory
         var avaloniaRoutedEvents = registeredRoutedEventsDict;
         foreach (var routedEvent in avaloniaRoutedEvents)
         {
-            var fieldInfo = classType.GetField($"{routedEvent.Name}Event");
+            var eventName = routedEvent.Name;
+            var fieldInfo = classType.GetFields().FirstOrDefault(x => x.Name.StartsWith(eventName) && x.Name.EndsWith("Event"));
+            // TODO: var fieldInfo = classType.GetField($"{name}Event");
             if (fieldInfo is null)
                 continue;
 
@@ -168,13 +175,17 @@ internal static class Factory
             if (!routedEvent.EventArgsType.IsPublic)
                 continue;
 
+            // TODO: Do not set event name from field info.
+            eventName = fieldInfo.Name.Remove(fieldInfo.Name.LastIndexOf("Event", StringComparison.Ordinal));
+
             var eventType = fieldInfo.FieldType; // property.GetType()
+
             var argsType = routedEvent.EventArgsType;
             var ownerType = routedEvent.OwnerType;
             var routingStrategies = routedEvent.RoutingStrategies;
 
             var e = new Event(
-                routedEvent.Name,
+                eventName,
                 FixType(ownerType.ToString()),
                 FixType(argsType.ToString()),
                 FixType(eventType.ToString()),
@@ -185,6 +196,7 @@ internal static class Factory
         var eventInfos = classType.GetEvents(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
         foreach (var eventInfo in eventInfos)
         {
+            var eventName = eventInfo.Name;
             if (eventInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
                 continue;
 
@@ -203,7 +215,7 @@ internal static class Factory
                 continue;
 
             var e = new Event(
-                eventInfo.Name,
+                eventName,
                 FixType(classType.ToString()),
                 FixType(argsType.ToString()),
                 null,
