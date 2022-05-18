@@ -23,7 +23,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
-    <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
+    <!--<PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />-->
+    <PackageReference Include="Consolonia.Themes.TurboVision" Version="0.10.12-alpha-76" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="*.props">

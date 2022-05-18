@@ -17,7 +17,7 @@
     <Using Include="Avalonia.Collections" />
     <Using Include="Avalonia.Controls" />
     <Using Include="Avalonia.Controls.ApplicationLifetimes" />
-    <Using Include="Avalonia.Controls.Documents" />
+    <!--<Using Include="Avalonia.Controls.Documents" />-->
     <Using Include="Avalonia.Controls.Presenters" />
     <Using Include="Avalonia.Controls.Primitives" />
     <Using Include="Avalonia.Controls.Shapes" />

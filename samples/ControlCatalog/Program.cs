@@ -26,12 +26,12 @@
                 {
                     line = null;
                 });
-            c.ObserveOnPointerMoved()
-                .Select(x => x.GetPosition(c))
-                .Subscribe(x =>
-                {
-                    line?.EndPoint(x);
-                });
+            //c.ObserveOnPointerMoved()
+            //    .Select(x => x.GetPosition(c))
+            //    .Subscribe(x =>
+            //    {
+            //        line?.EndPoint(x);
+            //    });
         });
 
     ContentControl(out var contentControl)

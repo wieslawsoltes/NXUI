@@ -17,11 +17,11 @@ Control MainView()
             {
                 line = null;
             }))
-        .OnPointerMoved((canvas, o)
-            => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
-            {
-                line?.EndPoint(x);
-            }))
+        //.OnPointerMoved((canvas, o)
+        //    => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
+        //    {
+        //        line?.EndPoint(x);
+        //    }))
         .Styles(
             Style()
                 .Selector(x => x.OfType<Line>())
