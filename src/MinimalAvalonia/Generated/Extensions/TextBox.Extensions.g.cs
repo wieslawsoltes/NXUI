@@ -410,6 +410,43 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    // MaxLinesProperty
+
+    public static T MaxLines<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.MaxLinesProperty] = value;
+        return obj;
+    }
+
+    public static T MaxLines<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.MaxLinesProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T MaxLines<T>(this T obj, IObservable<System.Int32> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
+    {
+        obj[Avalonia.Controls.TextBox.MaxLinesProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindMaxLines(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.TextBox.MaxLinesProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Int32> ObserveMaxLines(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.MaxLinesProperty);
+    }
+
+    public static T OnMaxLines<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.Int32>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.MaxLinesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // TextProperty
 
     public static T Text<T>(this T obj, System.String value) where T : Avalonia.Controls.TextBox
@@ -444,61 +481,6 @@ public static partial class TextBoxExtensions
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.TextProperty);
         handler(obj, observable);
-        return obj;
-    }
-
-    // TextAlignmentProperty
-
-    public static T TextAlignment<T>(this T obj, Avalonia.Media.TextAlignment value) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = value;
-        return obj;
-    }
-
-    public static T TextAlignment<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextAlignmentProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T TextAlignment<T>(this T obj, IObservable<Avalonia.Media.TextAlignment> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextAlignmentProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindTextAlignment(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.TextBox.TextAlignmentProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Media.TextAlignment> ObserveTextAlignment(this Avalonia.Controls.TextBox obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.TextBox.TextAlignmentProperty);
-    }
-
-    public static T OnTextAlignment<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.TextAlignment>> handler) where T : Avalonia.Controls.TextBox
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.TextBox.TextAlignmentProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    public static T TextAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
-        return obj;
-    }
-
-    public static T TextAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
-        return obj;
-    }
-
-    public static T TextAlignmentRight<T>(this T obj) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
         return obj;
     }
 
@@ -621,61 +603,6 @@ public static partial class TextBoxExtensions
     public static T VerticalContentAlignmentBottom<T>(this T obj) where T : Avalonia.Controls.TextBox
     {
         obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
-        return obj;
-    }
-
-    // TextWrappingProperty
-
-    public static T TextWrapping<T>(this T obj, Avalonia.Media.TextWrapping value) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextWrappingProperty] = value;
-        return obj;
-    }
-
-    public static T TextWrapping<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextWrappingProperty.Bind().WithMode(mode)] = binding;
-        return obj;
-    }
-
-    public static T TextWrapping<T>(this T obj, IObservable<Avalonia.Media.TextWrapping> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextWrappingProperty.Bind().WithMode(mode)] = observable.ToBinding();
-        return obj;
-    }
-
-    public static Avalonia.Data.IBinding BindTextWrapping(this Avalonia.Controls.TextBox obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
-    {
-        return obj[Avalonia.Controls.TextBox.TextWrappingProperty.Bind().WithMode(mode)];
-    }
-
-    public static IObservable<Avalonia.Media.TextWrapping> ObserveTextWrapping(this Avalonia.Controls.TextBox obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.TextBox.TextWrappingProperty);
-    }
-
-    public static T OnTextWrapping<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.TextWrapping>> handler) where T : Avalonia.Controls.TextBox
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.TextBox.TextWrappingProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    public static T TextWrappingNoWrap<T>(this T obj) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextWrappingProperty] = Avalonia.Media.TextWrapping.NoWrap;
-        return obj;
-    }
-
-    public static T TextWrappingWrap<T>(this T obj) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
-        return obj;
-    }
-
-    public static T TextWrappingWrapWithOverflow<T>(this T obj) where T : Avalonia.Controls.TextBox
-    {
-        obj[Avalonia.Controls.TextBox.TextWrappingProperty] = Avalonia.Media.TextWrapping.WrapWithOverflow;
         return obj;
     }
 
@@ -1036,60 +963,60 @@ public static partial class TextBoxExtensions
 
     public static T OnCopyingToClipboardHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.TextBox.CopyingToClipboardEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Controls.TextBox.CopyingToClipboardEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnCopyingToClipboard<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.TextBox.CopyingToClipboardEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CopyingToClipboardEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboard(this Avalonia.Controls.TextBox obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.TextBox.CopyingToClipboardEvent, routes);
+        return obj.GetObservable(Avalonia.Controls.TextBox.CopyingToClipboardEvent, routes);
     }
 
     // CuttingToClipboardEvent
 
     public static T OnCuttingToClipboardHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.TextBox.CuttingToClipboardEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Controls.TextBox.CuttingToClipboardEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnCuttingToClipboard<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.TextBox.CuttingToClipboardEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CuttingToClipboardEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCuttingToClipboard(this Avalonia.Controls.TextBox obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.TextBox.CuttingToClipboardEvent, routes);
+        return obj.GetObservable(Avalonia.Controls.TextBox.CuttingToClipboardEvent, routes);
     }
 
     // PastingFromClipboardEvent
 
     public static T OnPastingFromClipboardHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.TextBox.PastingFromClipboardEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Controls.TextBox.PastingFromClipboardEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnPastingFromClipboard<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.TextBox.PastingFromClipboardEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.PastingFromClipboardEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPastingFromClipboard(this Avalonia.Controls.TextBox obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.TextBox.PastingFromClipboardEvent, routes);
+        return obj.GetObservable(Avalonia.Controls.TextBox.PastingFromClipboardEvent, routes);
     }
 
     // CopyingToClipboard

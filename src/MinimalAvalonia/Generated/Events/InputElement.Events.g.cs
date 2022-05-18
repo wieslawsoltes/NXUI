@@ -16,8 +16,6 @@ public static partial class MinimalAvaloniaEvents
 
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs> InputElementTextInputMethodClientRequested => Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent;
 
-    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs> InputElementTextInputOptionsQuery => Avalonia.Input.InputElement.TextInputOptionsQueryEvent;
-
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs> InputElementPointerEnter => Avalonia.Input.InputElement.PointerEnterEvent;
 
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs> InputElementPointerLeave => Avalonia.Input.InputElement.PointerLeaveEvent;

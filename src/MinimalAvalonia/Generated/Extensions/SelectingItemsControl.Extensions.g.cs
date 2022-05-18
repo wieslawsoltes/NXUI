@@ -114,44 +114,118 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
+    // IsTextSearchEnabledProperty
+
+    public static T IsTextSearchEnabled<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty] = value;
+        return obj;
+    }
+
+    public static T IsTextSearchEnabled<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T IsTextSearchEnabled<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindIsTextSearchEnabled(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveIsTextSearchEnabled(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
+    }
+
+    public static T OnIsTextSearchEnabled<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // WrapSelectionProperty
+
+    public static T WrapSelection<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty] = value;
+        return obj;
+    }
+
+    public static T WrapSelection<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T WrapSelection<T>(this T obj, IObservable<System.Boolean> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindWrapSelection(this Avalonia.Controls.Primitives.SelectingItemsControl obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveWrapSelection(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
+    }
+
+    public static T OnWrapSelection<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // IsSelectedChangedEvent
 
     public static T OnIsSelectedChangedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnIsSelectedChanged<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIsSelectedChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, routes);
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, routes);
     }
 
     // SelectionChangedEvent
 
     public static T OnSelectionChangedHandler<T>(this T obj, Action<T, Avalonia.Controls.SelectionChangedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.SelectionChangedEventArgs>)Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnSelectionChanged<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.SelectionChangedEventArgs>)Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.SelectionChangedEventArgs>)Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, routes);
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, routes);
     }
 
     // SelectionChanged

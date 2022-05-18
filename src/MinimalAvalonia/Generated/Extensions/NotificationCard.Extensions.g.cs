@@ -100,20 +100,20 @@ public static partial class NotificationCardExtensions
 
     public static T OnNotificationClosedHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Notifications.NotificationCard
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnNotificationClosed<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Notifications.NotificationCard
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnNotificationClosed(this Avalonia.Controls.Notifications.NotificationCard obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, routes);
+        return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, routes);
     }
 
     // NotificationClosed

@@ -14,6 +14,8 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<System.Double> TextDecorationStrokeDashOffset => Avalonia.Media.TextDecoration.StrokeDashOffsetProperty;
 
+    public static Avalonia.StyledProperty<System.Double> TextDecorationStrokeThickness => Avalonia.Media.TextDecoration.StrokeThicknessProperty;
+
     public static Avalonia.StyledProperty<Avalonia.Media.PenLineCap> TextDecorationStrokeLineCap => Avalonia.Media.TextDecoration.StrokeLineCapProperty;
 
     public static Avalonia.StyledProperty<System.Double> TextDecorationStrokeOffset => Avalonia.Media.TextDecoration.StrokeOffsetProperty;

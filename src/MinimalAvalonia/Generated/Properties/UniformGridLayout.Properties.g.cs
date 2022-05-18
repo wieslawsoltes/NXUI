@@ -16,5 +16,7 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<System.Double> UniformGridLayoutMinRowSpacing => Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty;
 
+    public static Avalonia.StyledProperty<System.Int32> UniformGridLayoutMaximumRowsOrColumns => Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty;
+
     public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> UniformGridLayoutOrientation => Avalonia.Layout.UniformGridLayout.OrientationProperty;
 }

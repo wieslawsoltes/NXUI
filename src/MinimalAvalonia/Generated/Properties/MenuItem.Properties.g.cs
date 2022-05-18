@@ -17,4 +17,6 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<System.Boolean> MenuItemIsSelected => Avalonia.Controls.MenuItem.IsSelectedProperty;
 
     public static Avalonia.StyledProperty<System.Boolean> MenuItemIsSubMenuOpen => Avalonia.Controls.MenuItem.IsSubMenuOpenProperty;
+
+    public static Avalonia.StyledProperty<System.Boolean> MenuItemStaysOpenOnClick => Avalonia.Controls.MenuItem.StaysOpenOnClickProperty;
 }

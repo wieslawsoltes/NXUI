@@ -78,6 +78,43 @@ public static partial class VisualExtensions
         return obj;
     }
 
+    // ClipProperty
+
+    public static T Clip<T>(this T obj, Avalonia.Media.Geometry value) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.ClipProperty] = value;
+        return obj;
+    }
+
+    public static T Clip<T>(this T obj, Avalonia.Data.IBinding binding, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.ClipProperty.Bind().WithMode(mode)] = binding;
+        return obj;
+    }
+
+    public static T Clip<T>(this T obj, IObservable<Avalonia.Media.Geometry> observable, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.ClipProperty.Bind().WithMode(mode)] = observable.ToBinding();
+        return obj;
+    }
+
+    public static Avalonia.Data.IBinding BindClip(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay)
+    {
+        return obj[Avalonia.Visual.ClipProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<Avalonia.Media.Geometry> ObserveClip(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.ClipProperty);
+    }
+
+    public static T OnClip<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetObservable(Avalonia.Visual.ClipProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // IsVisibleProperty
 
     public static T IsVisible<T>(this T obj, System.Boolean value) where T : Avalonia.Visual
@@ -185,6 +222,25 @@ public static partial class VisualExtensions
     public static T OnOpacityMask<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.OpacityMaskProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // HasMirrorTransformProperty
+
+    public static Avalonia.Data.IBinding BindHasMirrorTransform(this Avalonia.Visual obj, Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay)
+    {
+        return obj[Avalonia.Visual.HasMirrorTransformProperty.Bind().WithMode(mode)];
+    }
+
+    public static IObservable<System.Boolean> ObserveHasMirrorTransform(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.HasMirrorTransformProperty);
+    }
+
+    public static Avalonia.Visual OnHasMirrorTransform(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Visual.HasMirrorTransformProperty);
         handler(obj, observable);
         return obj;
     }

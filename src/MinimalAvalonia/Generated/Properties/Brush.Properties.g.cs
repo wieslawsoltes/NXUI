@@ -5,4 +5,6 @@ namespace MinimalAvalonia;
 public static partial class MinimalAvaloniaProperties
 {
     public static Avalonia.StyledProperty<System.Double> BrushOpacity => Avalonia.Media.Brush.OpacityProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Media.ITransform> BrushTransform => Avalonia.Media.Brush.TransformProperty;
 }

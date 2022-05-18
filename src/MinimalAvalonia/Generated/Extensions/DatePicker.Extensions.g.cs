@@ -409,5 +409,4 @@ public static partial class DatePickerExtensions
         handler(obj, observable);
         return obj;
     }
-
 }

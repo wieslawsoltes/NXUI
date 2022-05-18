@@ -11,4 +11,6 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<Avalonia.Controls.ContextMenu> ControlContextMenu => Avalonia.Controls.Control.ContextMenuProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.FlyoutBase> ControlContextFlyout => Avalonia.Controls.Control.ContextFlyoutProperty;
+
+    public static Avalonia.AttachedProperty<Avalonia.Media.FlowDirection> ControlFlowDirection => Avalonia.Controls.Control.FlowDirectionProperty;
 }

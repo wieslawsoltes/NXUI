@@ -231,280 +231,260 @@ public static partial class InputElementExtensions
 
     public static T OnGotFocusHandler<T>(this T obj, Action<T, Avalonia.Input.GotFocusEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.GotFocusEventArgs>)Avalonia.Input.InputElement.GotFocusEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.GotFocusEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnGotFocus<T>(this T obj, Action<T, IObservable<Avalonia.Input.GotFocusEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.GotFocusEventArgs>)Avalonia.Input.InputElement.GotFocusEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.GotFocusEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.GotFocusEventArgs> ObserveOnGotFocus(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.GotFocusEventArgs>)Avalonia.Input.InputElement.GotFocusEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.GotFocusEvent, routes);
     }
 
     // LostFocusEvent
 
     public static T OnLostFocusHandler<T>(this T obj, Action<T, Avalonia.Interactivity.RoutedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Input.InputElement.LostFocusEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.LostFocusEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnLostFocus<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Input.InputElement.LostFocusEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.LostFocusEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLostFocus(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs>)Avalonia.Input.InputElement.LostFocusEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.LostFocusEvent, routes);
     }
 
     // KeyDownEvent
 
     public static T OnKeyDownHandler<T>(this T obj, Action<T, Avalonia.Input.KeyEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.KeyEventArgs>)Avalonia.Input.InputElement.KeyDownEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.KeyDownEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnKeyDown<T>(this T obj, Action<T, IObservable<Avalonia.Input.KeyEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.KeyEventArgs>)Avalonia.Input.InputElement.KeyDownEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.KeyDownEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyDown(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.KeyEventArgs>)Avalonia.Input.InputElement.KeyDownEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.KeyDownEvent, routes);
     }
 
     // KeyUpEvent
 
     public static T OnKeyUpHandler<T>(this T obj, Action<T, Avalonia.Input.KeyEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.KeyEventArgs>)Avalonia.Input.InputElement.KeyUpEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.KeyUpEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnKeyUp<T>(this T obj, Action<T, IObservable<Avalonia.Input.KeyEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.KeyEventArgs>)Avalonia.Input.InputElement.KeyUpEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.KeyUpEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyUp(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.KeyEventArgs>)Avalonia.Input.InputElement.KeyUpEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.KeyUpEvent, routes);
     }
 
     // TextInputEvent
 
     public static T OnTextInputHandler<T>(this T obj, Action<T, Avalonia.Input.TextInputEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInputEventArgs>)Avalonia.Input.InputElement.TextInputEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.TextInputEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnTextInput<T>(this T obj, Action<T, IObservable<Avalonia.Input.TextInputEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInputEventArgs>)Avalonia.Input.InputElement.TextInputEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.TextInputEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.TextInputEventArgs> ObserveOnTextInput(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInputEventArgs>)Avalonia.Input.InputElement.TextInputEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.TextInputEvent, routes);
     }
 
     // TextInputMethodClientRequestedEvent
 
     public static T OnTextInputMethodClientRequestedHandler<T>(this T obj, Action<T, Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>)Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnTextInputMethodClientRequested<T>(this T obj, Action<T, IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>)Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs> ObserveOnTextInputMethodClientRequested(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>)Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, routes);
-    }
-
-    // TextInputOptionsQueryEvent
-
-    public static T OnTextInputOptionsQueryHandler<T>(this T obj, Action<T, Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
-    {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs>)Avalonia.Input.InputElement.TextInputOptionsQueryEvent, (_, args) => action(obj, args), routes);
-        return obj;
-    }
-
-    public static T OnTextInputOptionsQuery<T>(this T obj, Action<T, IObservable<Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
-    {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs>)Avalonia.Input.InputElement.TextInputOptionsQueryEvent, routes);
-        handler(obj, observable);
-        return obj;
-    }
-
-    public static IObservable<Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs> ObserveOnTextInputOptionsQuery(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
-    {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs>)Avalonia.Input.InputElement.TextInputOptionsQueryEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, routes);
     }
 
     // PointerEnterEvent
 
     public static T OnPointerEnterHandler<T>(this T obj, Action<T, Avalonia.Input.PointerEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs>)Avalonia.Input.InputElement.PointerEnterEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.PointerEnterEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnPointerEnter<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs>)Avalonia.Input.InputElement.PointerEnterEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerEnterEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnter(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs>)Avalonia.Input.InputElement.PointerEnterEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerEnterEvent, routes);
     }
 
     // PointerLeaveEvent
 
     public static T OnPointerLeaveHandler<T>(this T obj, Action<T, Avalonia.Input.PointerEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs>)Avalonia.Input.InputElement.PointerLeaveEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.PointerLeaveEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnPointerLeave<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs>)Avalonia.Input.InputElement.PointerLeaveEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerLeaveEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerLeave(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs>)Avalonia.Input.InputElement.PointerLeaveEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerLeaveEvent, routes);
     }
 
     // PointerMovedEvent
 
     public static T OnPointerMovedHandler<T>(this T obj, Action<T, Avalonia.Input.PointerEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs>)Avalonia.Input.InputElement.PointerMovedEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.PointerMovedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnPointerMoved<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs>)Avalonia.Input.InputElement.PointerMovedEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerMovedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerMoved(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs>)Avalonia.Input.InputElement.PointerMovedEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerMovedEvent, routes);
     }
 
     // PointerPressedEvent
 
     public static T OnPointerPressedHandler<T>(this T obj, Action<T, Avalonia.Input.PointerPressedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerPressedEventArgs>)Avalonia.Input.InputElement.PointerPressedEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.PointerPressedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnPointerPressed<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerPressedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerPressedEventArgs>)Avalonia.Input.InputElement.PointerPressedEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerPressedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.PointerPressedEventArgs> ObserveOnPointerPressed(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerPressedEventArgs>)Avalonia.Input.InputElement.PointerPressedEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerPressedEvent, routes);
     }
 
     // PointerReleasedEvent
 
     public static T OnPointerReleasedHandler<T>(this T obj, Action<T, Avalonia.Input.PointerReleasedEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerReleasedEventArgs>)Avalonia.Input.InputElement.PointerReleasedEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.PointerReleasedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnPointerReleased<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerReleasedEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerReleasedEventArgs>)Avalonia.Input.InputElement.PointerReleasedEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerReleasedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.PointerReleasedEventArgs> ObserveOnPointerReleased(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerReleasedEventArgs>)Avalonia.Input.InputElement.PointerReleasedEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerReleasedEvent, routes);
     }
 
     // PointerCaptureLostEvent
 
     public static T OnPointerCaptureLostHandler<T>(this T obj, Action<T, Avalonia.Input.PointerCaptureLostEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerCaptureLostEventArgs>)Avalonia.Input.InputElement.PointerCaptureLostEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.PointerCaptureLostEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnPointerCaptureLost<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerCaptureLostEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerCaptureLostEventArgs>)Avalonia.Input.InputElement.PointerCaptureLostEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerCaptureLostEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.PointerCaptureLostEventArgs> ObserveOnPointerCaptureLost(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerCaptureLostEventArgs>)Avalonia.Input.InputElement.PointerCaptureLostEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerCaptureLostEvent, routes);
     }
 
     // PointerWheelChangedEvent
 
     public static T OnPointerWheelChangedHandler<T>(this T obj, Action<T, Avalonia.Input.PointerWheelEventArgs> action, Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerWheelEventArgs>)Avalonia.Input.InputElement.PointerWheelChangedEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.PointerWheelChangedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     public static T OnPointerWheelChanged<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerWheelEventArgs>> handler,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerWheelEventArgs>)Avalonia.Input.InputElement.PointerWheelChangedEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerWheelChangedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     public static IObservable<Avalonia.Input.PointerWheelEventArgs> ObserveOnPointerWheelChanged(this Avalonia.Input.InputElement obj,  Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable((Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerWheelEventArgs>)Avalonia.Input.InputElement.PointerWheelChangedEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerWheelChangedEvent, routes);
     }
 
     // GotFocus
@@ -636,28 +616,6 @@ public static partial class InputElementExtensions
             .FromEventPattern<EventHandler<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>, Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>(
                 h => obj.TextInputMethodClientRequested += h, 
                 h => obj.TextInputMethodClientRequested -= h)
-            .Select(x => x.EventArgs);
-    }
-
-    // TextInputOptionsQuery
-
-    public static T OnTextInputOptionsQueryEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs>> handler) where T : Avalonia.Input.InputElement
-    {
-        var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs>, Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs>(
-                h => obj.TextInputOptionsQuery += h, 
-                h => obj.TextInputOptionsQuery -= h)
-            .Select(x => x.EventArgs);
-        handler(obj, observable);
-        return obj;
-    }
-
-    public static IObservable<Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs> ObserveOnTextInputOptionsQueryEvent(this Avalonia.Input.InputElement obj)
-    {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs>, Avalonia.Input.TextInput.TextInputOptionsQueryEventArgs>(
-                h => obj.TextInputOptionsQuery += h, 
-                h => obj.TextInputOptionsQuery -= h)
             .Select(x => x.EventArgs);
     }
 
@@ -817,10 +775,10 @@ public static partial class InputElementExtensions
 
     // Tapped
 
-    public static T OnTappedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    public static T OnTappedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
                 h => obj.Tapped += h, 
                 h => obj.Tapped -= h)
             .Select(x => x.EventArgs);
@@ -828,10 +786,10 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnTappedEvent(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnTappedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
                 h => obj.Tapped += h, 
                 h => obj.Tapped -= h)
             .Select(x => x.EventArgs);
@@ -839,10 +797,10 @@ public static partial class InputElementExtensions
 
     // DoubleTapped
 
-    public static T OnDoubleTappedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    public static T OnDoubleTappedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
                 h => obj.DoubleTapped += h, 
                 h => obj.DoubleTapped -= h)
             .Select(x => x.EventArgs);
@@ -850,10 +808,10 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnDoubleTappedEvent(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnDoubleTappedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Input.TappedEventArgs>, Avalonia.Input.TappedEventArgs>(
                 h => obj.DoubleTapped += h, 
                 h => obj.DoubleTapped -= h)
             .Select(x => x.EventArgs);

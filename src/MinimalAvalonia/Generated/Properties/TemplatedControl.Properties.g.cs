@@ -20,6 +20,8 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<Avalonia.Media.FontWeight> TemplatedControlFontWeight => Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty;
 
+    public static Avalonia.StyledProperty<Avalonia.Media.FontStretch> TemplatedControlFontStretch => Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty;
+
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TemplatedControlForeground => Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Thickness> TemplatedControlPadding => Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty;
