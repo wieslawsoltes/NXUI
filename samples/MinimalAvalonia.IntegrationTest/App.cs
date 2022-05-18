@@ -1,8 +1,6 @@
+Window Build() => Window().Content(Label().Content("Minimal Avalonia"));
+
 AppBuilder.Configure<Application>()
           .UsePlatformDetect()
           .UseFluentTheme()
-          .StartWithClassicDesktopLifetime(desktop => {
-              desktop.MainWindow = new Window {
-                  Content = new Label { Content = "Minimal Avalonia" }
-              };
-          }, args);
+          .StartWithClassicDesktopLifetime(Build, args);
