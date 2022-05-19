@@ -31,6 +31,7 @@
     <Using Include="Avalonia.Platform" />
     <Using Include="Avalonia.Styling" />
     <Using Include="Avalonia.Themes.Fluent" />
+    <Using Include="Avalonia.Threading" />
     <Using Include="Avalonia.VisualTree" />
     <Using Include="MinimalAvalonia" />
     <Using Include="MinimalAvalonia.Extensions" />
