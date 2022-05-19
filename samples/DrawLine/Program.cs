@@ -28,10 +28,13 @@ Control MainView()
                 line?.EndPoint(x);
             }))
         .Styles(
-            Style()
-                .Selector(x => x.OfType<Line>())
-                .SetShapeStroke(Brushes.Red)
-                .SetShapeStrokeThickness(strokeThicknessObservable));
+            LineStyle());
+
+Style LineStyle() 
+    => Style()
+        .Selector(x => x.OfType<Line>())
+        .SetShapeStroke(Brushes.Red)
+        .SetShapeStrokeThickness(strokeThicknessObservable);
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
