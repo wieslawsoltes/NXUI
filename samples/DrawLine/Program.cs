@@ -4,7 +4,7 @@
         .Content(MainView());
 
 var strokeThickness = 1d;
-var timer = Observable
+var strokeThicknessObservable = Observable
     .Timer(TimeSpan.Zero, TimeSpan.FromSeconds(1), AvaloniaScheduler.Instance)
     .Select(_ => strokeThickness += 0.1d);
 
@@ -31,7 +31,7 @@ Control MainView()
             Style()
                 .Selector(x => x.OfType<Line>())
                 .SetShapeStroke(Brushes.Red)
-                .SetShapeStrokeThickness(timer));
+                .SetShapeStrokeThickness(strokeThicknessObservable));
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
