@@ -9,6 +9,7 @@ internal static class MinimalGenerator
         var propertiesPath = Path.Combine(outputPath, "Properties");
         var eventsPath = Path.Combine(outputPath, "Events");
         var extensionsPath = Path.Combine(outputPath, "Extensions");
+        var settersPath = Path.Combine(outputPath, "Setters");
 
         var classes = Factory.CreateClasses();
 
@@ -41,5 +42,11 @@ internal static class MinimalGenerator
             Directory.CreateDirectory(extensionsPath);
         }
         ExtensionsGenerator.Generate(extensionsPath, classes);
+
+        if (!Directory.Exists(settersPath))
+        {
+            Directory.CreateDirectory(settersPath);
+        }
+        SettersGenerator.Generate(settersPath, classes);
     }
 }
