@@ -3,6 +3,11 @@
         .Title("DrawLine").Width(500).Height(400)
         .Content(MainView());
 
+var strokeThickness = 1d;
+var timer = Observable
+    .Timer(TimeSpan.Zero, TimeSpan.FromSeconds(1), AvaloniaScheduler.Instance)
+    .Select(_ => strokeThickness += 0.1d);
+
 Control MainView()
     => Canvas()
         .Background(Brushes.WhiteSmoke)
@@ -25,8 +30,8 @@ Control MainView()
         .Styles(
             Style()
                 .Selector(x => x.OfType<Line>())
-                .Setter(ShapeStroke, Brushes.Black)
-                .Setter(ShapeStrokeThickness, 2d));
+                .SetShapeStroke(Brushes.Red)
+                .SetShapeStrokeThickness(timer));
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
