@@ -15,6 +15,7 @@ Control MainView()
         .OnPointerReleased((canvas, o)
             => o.Select(x => x.GetPosition(canvas)).Subscribe(_ =>
             {
+                line?.Styles(RotateAnimation(TimeSpan.FromSeconds(5), 0d, 360d));
                 line = null;
             }))
         .OnPointerMoved((canvas, o)
@@ -33,6 +34,20 @@ Style LineStyle() {
         .SetShapeStroke(Brushes.Red)
         .SetShapeStrokeThickness(strokeThicknessObservable);
 }
+
+Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle) =>
+    Style()
+        .Selector(x => x.Is<Control>())
+        .SetVisualClipToBounds(false)
+        .SetVisualRenderTransformOrigin(RelativePoint.BottomRight)
+        .Animations(
+            Animation()
+                .Duration(duration)
+                .IterationCountInfinite()
+                .PlaybackDirectionNormal()
+                .KeyFrames(
+                    KeyFrame().Cue(0.0).SetRotateTransformAngle(startAngle),
+                    KeyFrame().Cue(1.0).SetRotateTransformAngle(endAngle)));
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
