@@ -30,9 +30,10 @@ internal static class BuildersGenerator
                 continue;
             }
 
-            WriteLine($"    public static {c.Type} {c.Name}() => new();");
-            WriteLine("");
-            WriteLine($"    public static {c.Type} {c.Name}(out {c.Type} @ref) => @ref = new();");
+            var buildersBuilder = new StringBuilder(Templates.BuildersTemplate);
+            buildersBuilder.Replace("%ClassName%", c.Name);
+            buildersBuilder.Replace("%ClassType%", c.Type);
+            WriteLine(buildersBuilder.ToString());
 
             if (i < classes.Count - 1)
             {
