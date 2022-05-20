@@ -134,7 +134,7 @@
 
     Style(out var style1)
         .Selector(x => x.OfType<Button>().Class(":pointerover").Template().OfType<ContentPresenter>().Name("PART_ContentPresenter"))
-        .Setter(TemplatedControlBackground, Brushes.Red);
+        .SetTemplatedControlBackground(Brushes.Red);
 
     Style(out var style2)
         .Selector(x => x.OfType<Label>().Class("animation"))
@@ -143,8 +143,8 @@
                 .Duration(TimeSpan.FromSeconds(5))
                 .IterationCountInfinite()
                 .KeyFrames(
-                    KeyFrame().Cue(0.0).Setter(RotateTransformAngle, 0d),
-                    KeyFrame().Cue(1.0).Setter(RotateTransformAngle, 360d)));
+                    KeyFrame().Cue(0.0).SetRotateTransformAngle(0d),
+                    KeyFrame().Cue(1.0).SetRotateTransformAngle(360d)));
 
     window.Styles(style1, style2);
 
@@ -157,15 +157,15 @@
 Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle) =>
     Style()
         .Selector(x => x.Is<Control>())
-        .Setter(VisualClipToBounds, false)
+        .SetVisualClipToBounds(false)
         .Animations(
             Animation()
                 .Duration(duration)
                 .IterationCountInfinite()
                 .PlaybackDirectionAlternateReverse()
                 .KeyFrames(
-                    KeyFrame().Cue(0.0).Setter(RotateTransformAngle, startAngle),
-                    KeyFrame().Cue(1.0).Setter(RotateTransformAngle, endAngle)));
+                    KeyFrame().Cue(0.0).SetRotateTransformAngle(startAngle),
+                    KeyFrame().Cue(1.0).SetRotateTransformAngle(endAngle)));
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
