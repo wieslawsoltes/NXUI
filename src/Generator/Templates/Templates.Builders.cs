@@ -8,6 +8,9 @@ internal static partial class Templates
 {
     public static string BuildersHeaderTemplate = @"namespace MinimalAvalonia;
 
+/// <summary>
+/// The minimal avalonia builders.
+/// </summary>
 public static partial class MinimalAvaloniaBuilders
 {";
 

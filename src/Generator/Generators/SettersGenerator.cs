@@ -24,6 +24,7 @@ internal static class SettersGenerator
 
             var classHeaderBuilder = new StringBuilder(Templates.PropertySettersHeaderTemplate);
             classHeaderBuilder.Replace("%ClassName%", c.Name);
+            classHeaderBuilder.Replace("%ClassType%", c.Type);
             WriteLine(classHeaderBuilder.ToString());
 
             var addedProperties = new HashSet<string>();

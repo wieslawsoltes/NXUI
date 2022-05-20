@@ -7,6 +7,9 @@ namespace Generator;
 internal static partial class Templates
 {
     public static string ClassExtensionsHeaderTemplate = @"
+/// <summary>
+/// The minimal avalonia <see cref=""%ClassType%""/> property extension methods.
+/// </summary>
 public static partial class %ClassName%Extensions
 {";
 
