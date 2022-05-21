@@ -11,22 +11,6 @@ internal static class Factory
         "AboutAvaloniaDialog"
     };
 
-    private static void LogInfo(string message)
-    {
-        var color = Console.ForegroundColor;
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("[INFO]\t" + message);
-        Console.ForegroundColor = color;
-    }
-
-    private static void LogError(string message)
-    {
-        var color = Console.ForegroundColor;
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("[ERROR]\t" + message);
-        Console.ForegroundColor = color;
-    }
-
     private static string FixType(string t)
     {
         return t
@@ -65,14 +49,14 @@ internal static class Factory
 
         if (registry.RegisteredProperties is null)
         {
-            LogError($"Could not find registered properties.");
+            Log.Error($"Could not find registered properties.");
             return properties;
         }
 
         registry.RegisteredProperties.TryGetValue(classType, out var registeredPropertiesDict);
         if (registeredPropertiesDict is null)
         {
-            LogInfo($"No registered properties for `{classType.Name}`.");
+            Log.Info($"No registered properties for `{classType.Name}`.");
             return properties;
         }
 
@@ -83,25 +67,25 @@ internal static class Factory
             var fieldInfo = classType.GetField($"{propertyName}Property", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static);
             if (fieldInfo is null)
             {
-                LogError($"Could not find field for `{classType.Name}.{propertyName}Property`.");
+                Log.Error($"Could not find field for `{classType.Name}.{propertyName}Property`.");
                 continue;
             }
 
             if (!fieldInfo.IsPublic)
             {
-                LogInfo($"The `{classType.Name}.{propertyName}Property` field is not public.");
+                Log.Info($"The `{classType.Name}.{propertyName}Property` field is not public.");
                 continue;
             }
 
             if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
             {
-                LogInfo($"The `{classType.Name}.{propertyName}Property` field is obsolete.");
+                Log.Info($"The `{classType.Name}.{propertyName}Property` field is obsolete.");
                 continue;
             }
 
             if (!property.PropertyType.IsPublic)
             {
-                LogInfo($"The `{classType.Name}.{propertyName}Property` property type `{property.PropertyType.Name}` is not public.");
+                Log.Info($"The `{classType.Name}.{propertyName}Property` property type `{property.PropertyType.Name}` is not public.");
                 continue;
             }
 
@@ -117,7 +101,7 @@ internal static class Factory
                     {
                         if (kvp2.Value == property)
                         {
-                            LogInfo($"Attached property `{classType.Name}.{propertyName}Property` registered owner type changed from `{ownerType.Name}` to `{kvp1.Key.Name}`.");
+                            Log.Info($"Attached property `{classType.Name}.{propertyName}Property` registered owner type changed from `{ownerType.Name}` to `{kvp1.Key.Name}`.");
                             ownerType = kvp1.Key;
                         }
                     }
@@ -141,7 +125,7 @@ internal static class Factory
                     t = t.BaseType;
                 }
 
-                LogInfo($"Attached property `{classType.Name}.{propertyName}Property` registered owner type changed from `{ownerType.Name}` to `{classType.Name}`.");
+                Log.Info($"Attached property `{classType.Name}.{propertyName}Property` registered owner type changed from `{ownerType.Name}` to `{classType.Name}`.");
                 ownerType = classType;
             }
 
@@ -165,7 +149,7 @@ internal static class Factory
                 isEnum,
                 isEnum ? enumNames.ToArray() : null);
             properties.Add(p);
-            LogInfo($"Added `{classType.Name}.{propertyName}Property` property.");
+            Log.Info($"Added `{classType.Name}.{propertyName}Property` property.");
         }
 
         return properties;
@@ -177,14 +161,14 @@ internal static class Factory
 
         if (registry.RegisteredRoutedEvents is null)
         {
-            LogError($"Could not find registered routed events.");
+            Log.Error($"Could not find registered routed events.");
             return events;
         }
 
         registry.RegisteredRoutedEvents.TryGetValue(classType, out var registeredRoutedEventsDict);
         if (registeredRoutedEventsDict is null)
         {
-            LogInfo($"No registered routed events for `{classType.Name}`.");
+            Log.Info($"No registered routed events for `{classType.Name}`.");
             return events;
         }
 
@@ -195,25 +179,25 @@ internal static class Factory
             var fieldInfo = classType.GetField($"{eventName}Event", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static);
             if (fieldInfo is null)
             {
-                LogError($"Could not find field for `{classType.Name}.{eventName}Event`.");
+                Log.Error($"Could not find field for `{classType.Name}.{eventName}Event`.");
                 continue;
             }
 
             if (!fieldInfo.IsPublic)
             {
-                LogInfo($"The `{classType.Name}.{eventName}Event` field is not public.");
+                Log.Info($"The `{classType.Name}.{eventName}Event` field is not public.");
                 continue;
             }
 
             if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
             {
-                LogInfo($"The `{classType.Name}.{eventName}Event` field is obsolete.");
+                Log.Info($"The `{classType.Name}.{eventName}Event` field is obsolete.");
                 continue;
             }
 
             if (!routedEvent.EventArgsType.IsPublic)
             {
-                LogInfo($"The` {classType.Name}.{eventName}Event` args type `{routedEvent.EventArgsType.Name}` is not public.");
+                Log.Info($"The` {classType.Name}.{eventName}Event` args type `{routedEvent.EventArgsType.Name}` is not public.");
                 continue;
             }
 
@@ -229,7 +213,8 @@ internal static class Factory
                 FixType(argsType.ToString()),
                 FixType(eventType.ToString()),
                 routingStrategies.ToString());
-            events.Add(e);LogInfo($"Added `{classType.Name}.{eventName}Event` routed event.");
+            events.Add(e);
+            Log.Info($"Added `{classType.Name}.{eventName}Event` routed event.");
         }
 
         var eventInfos = classType.GetEvents(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
@@ -238,32 +223,32 @@ internal static class Factory
             var eventName = eventInfo.Name;
             if (eventInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
             {
-                LogInfo($"The `{classType.Name}.{eventName}` event is obsolete.");
+                Log.Info($"The `{classType.Name}.{eventName}` event is obsolete.");
                 continue;
             }
 
             var eventHandlerType = eventInfo.EventHandlerType;
             if (eventHandlerType is null)
             {
-                LogError($"Could not find `{classType.Name}.{eventName}` event handler type.");
+                Log.Error($"Could not find `{classType.Name}.{eventName}` event handler type.");
                 continue;
             }
 
             if (!eventHandlerType.IsPublic)
             {
-                LogInfo($"The `{classType.Name}.{eventName}` event handler type `{eventHandlerType.Name}` is not public.");
+                Log.Info($"The `{classType.Name}.{eventName}` event handler type `{eventHandlerType.Name}` is not public.");
                 continue;
             }
 
             var argsType = eventHandlerType.GetGenericArguments().FirstOrDefault();
             if (argsType is null)
             {
-                LogInfo($"Using default event args `for `{classType.Name}.{eventName}` event.");
+                Log.Info($"Using default event args `for `{classType.Name}.{eventName}` event.");
             }
 
             if (argsType is { IsPublic: false })
             {
-                LogInfo($"The `{classType.Name}.{eventName}` event handler type `{eventHandlerType.Name}` arguments `{argsType.Name}` are not public.");
+                Log.Info($"The `{classType.Name}.{eventName}` event handler type `{eventHandlerType.Name}` arguments `{argsType.Name}` are not public.");
                 continue;
             }
 
@@ -274,7 +259,7 @@ internal static class Factory
                 null,
                 null);
             events.Add(e);
-            LogInfo($"Added `{classType.Name}.{eventName}` event.");
+            Log.Info($"Added `{classType.Name}.{eventName}` event.");
         }
 
         return events;
@@ -297,7 +282,7 @@ internal static class Factory
         {
             if (s_excludedClasses.Contains(classType.Name))
             {
-                LogInfo($"The `{classType.Name}` class was excluded.");
+                Log.Info($"The `{classType.Name}` class was excluded.");
                 continue;
             }
 
@@ -316,10 +301,10 @@ internal static class Factory
                 publicCtor,
                 classType.IsAbstract);
             classes.Add(c);
-            LogInfo($"The `{classType.Name}` class has {properties.Count} properties and {events.Count} events.");
+            Log.Info($"The `{classType.Name}` class has {properties.Count} properties and {events.Count} events.");
         }
 
-        LogInfo($"Found {classes.Count} classes with total of {classes.SelectMany(x => x.Properties).Count()} properties and {classes.SelectMany(x => x.Events).Count()} events.");
+        Log.Info($"Found {classes.Count} classes with total of {classes.SelectMany(x => x.Properties).Count()} properties and {classes.SelectMany(x => x.Events).Count()} events.");
 
         return classes;
     }
