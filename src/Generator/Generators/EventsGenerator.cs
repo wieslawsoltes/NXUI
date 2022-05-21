@@ -32,7 +32,7 @@ internal static class EventsGenerator
 
                 if (addedEvents.Contains(e.Name))
                 {
-                    Console.WriteLine($"Event {c.Name}.{e.Name} was already added.");
+                    Log.Error($"Event {c.Name}.{e.Name} was already added.");
                     continue;
                 }
                 addedEvents.Add(e.Name);
