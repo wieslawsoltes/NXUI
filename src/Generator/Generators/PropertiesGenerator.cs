@@ -32,7 +32,7 @@ internal static class PropertiesGenerator
 
                 if (addedProperties.Contains(p.Name))
                 {
-                    Console.WriteLine($"Property {c.Name}.{p.Name} was already added.");
+                    Log.Error($"Property {c.Name}.{p.Name} was already added.");
                     continue;
                 }
                 addedProperties.Add(p.Name);
