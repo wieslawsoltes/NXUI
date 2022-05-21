@@ -41,7 +41,7 @@ internal static class ExtensionsGenerator
 
                 if (addedProperties.Contains(p.Name))
                 {
-                    Console.WriteLine($"Property {c.Name}.{p.Name} extensions have been already added.");
+                    Log.Error($"Property {c.Name}.{p.Name} extensions have been already added.");
                     continue;
                 }
                 addedProperties.Add(p.Name);
@@ -96,7 +96,7 @@ internal static class ExtensionsGenerator
 
                 if (addedRoutedEvents.Contains(e.Name))
                 {
-                    Console.WriteLine($"Routed event {c.Name}.{e.Name} extensions have been already added.");
+                    Log.Error($"Routed event {c.Name}.{e.Name} extensions have been already added.");
                     continue;
                 }
                 addedRoutedEvents.Add(e.Name);
@@ -144,7 +144,7 @@ internal static class ExtensionsGenerator
 
                 if (addedClrEvents.Contains(e.Name))
                 {
-                    Console.WriteLine($"Clr event {c.Name}.{e.Name} extensions have been already added.");
+                    Log.Error($"Clr event {c.Name}.{e.Name} extensions have been already added.");
                     continue;
                 }
                 addedClrEvents.Add(e.Name);
