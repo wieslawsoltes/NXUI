@@ -44,7 +44,7 @@ internal static class SettersGenerator
 
                 if (addedProperties.Contains(p.Name))
                 {
-                    Console.WriteLine($"Property {c.Name}.{p.Name} setters have been already added.");
+                    Log.Error($"Property {c.Name}.{p.Name} setters have been already added.");
                     continue;
                 }
                 addedProperties.Add(p.Name);
