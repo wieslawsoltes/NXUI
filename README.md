@@ -38,13 +38,6 @@ AppBuilder.Configure<Application>()
 # Generate
 
 ```
-cd Generator
+cd src/Generator
 dotnet run -- ../MinimalAvalonia/Generated
-```
-
-# Issues
-
-```
-https://github.com/AvaloniaUI/Avalonia/pull/8114
-0.10.999-cibuild0020345-beta
 ```
