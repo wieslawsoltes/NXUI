@@ -1,5 +1,7 @@
 ﻿Window Build() 
     => Window()
+        //.Styles(
+        //    InteractionStyle())
         .Title("DrawLine").Width(500).Height(400)
         .Content(MainView());
 
@@ -10,7 +12,7 @@ Control MainView()
         .OnPointerPressed((canvas, o)
             => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
             {
-                canvas.Children(line = Line().Styles(LineStyle()).StartPoint(x).EndPoint(x));
+                canvas.Children(line = Line().Styles(LineStyle(), InteractionStyle()).StartPoint(x).EndPoint(x));
             }))
         .OnPointerReleased((canvas, o)
             => o.Select(x => x.GetPosition(canvas)).Subscribe(_ =>
@@ -23,6 +25,17 @@ Control MainView()
             {
                 line?.EndPoint(x);
             }));
+
+Style InteractionStyle() {
+    return Style()
+        .Selector(x => x.Is<IControl>())
+        .Setters().
+            Setter(Interaction.BehaviorProperty, 
+            new BehaviorTemplate
+            {
+                Content = new Func<IServiceProvider, object>(_ => new TemplateResult<Behavior>(new CustomBehavior(), null))
+            });
+}
 
 Style LineStyle() {
     var strokeThickness = 1d;
