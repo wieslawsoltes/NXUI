@@ -1,6 +1,6 @@
 ﻿Window Build() {
     var window = Window()
-        //.Styles(InteractionStyle())
+        .Styles(InteractionStyle())
         .Title("DrawLine").Width(500).Height(400)
         .Content(MainView());
     window.AttachDevTools();
@@ -12,32 +12,24 @@ Control MainView()
         .Background(Brushes.WhiteSmoke)
         .Var(default(Line), out var line)
         .OnPointerPressed((canvas, o)
-            => o.Select(x =>
+            => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
             {
-                Debug.WriteLine($"Source: { x.Source} OnPointerPressed()");
-                return x.GetPosition(canvas);
-            }).Subscribe(x =>
-            {
-                Debug.WriteLine($"OnPointerPressed: {line}");
                 if (line is null)
                 {
-                    line = Line().Styles(LineStyle(), InteractionStyle()).StartPoint(x).EndPoint(x);
+                    line = Line().Styles(LineStyle()).StartPoint(x).EndPoint(x);
                     canvas.Children(line);
                 }
             }))
         .OnPointerReleased((canvas, o)
             => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
             {
-                Debug.WriteLine($"OnPointerReleased: {line}");
                 if (line is not null)
                 {
                     line.EndPoint(x);
-
                     var origin = new RelativePoint(
-                        (line.StartPoint.X + line.EndPoint.X) / 2,
+                        (line.StartPoint.X + line.EndPoint.X) / 2, 
                         (line.StartPoint.Y + line.EndPoint.Y) / 2, 
                         RelativeUnit.Absolute);
-                    
                     line.Styles(RotateAnimation(TimeSpan.FromSeconds(5), 0d, 360d, origin));
                     line = null;
                 }
