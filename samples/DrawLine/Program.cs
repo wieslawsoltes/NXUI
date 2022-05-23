@@ -43,13 +43,8 @@ Control MainView()
 Style InteractionStyle() {
     return Style()
         .Selector(x => x.Is<IControl>())
-        .Setter(Interaction.BehaviorProperty, CreateBehavior<CustomBehavior>());
+        .SetInteractionBehavior<CustomBehavior>();
 }
-
-BehaviorTemplate CreateBehavior<T>() where T : Behavior, new()
-    => new BehaviorTemplate {
-        Content = new Func<IServiceProvider, object>(_ => new TemplateResult<Behavior>(new T(), null!))
-    };
 
 Style LineStyle() {
     var strokeThickness = 1d;

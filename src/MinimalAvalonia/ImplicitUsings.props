@@ -28,12 +28,14 @@
     <Using Include="Avalonia.Input.TextInput" />
     <Using Include="Avalonia.Layout" />
     <Using Include="Avalonia.Media" />
+    <Using Include="Avalonia.Metadata" />
     <Using Include="Avalonia.Platform" />
     <Using Include="Avalonia.Styling" />
     <Using Include="Avalonia.Themes.Fluent" />
     <Using Include="Avalonia.Threading" />
     <Using Include="Avalonia.VisualTree" />
     <Using Include="MinimalAvalonia" />
+    <Using Include="MinimalAvalonia.Interactivity" />
     <Using Include="MinimalAvalonia.Extensions" />
     <Using Include="MinimalAvalonia.MinimalAvaloniaBuilders" Static="true" />
     <Using Include="MinimalAvalonia.MinimalAvaloniaProperties" Static="true" />

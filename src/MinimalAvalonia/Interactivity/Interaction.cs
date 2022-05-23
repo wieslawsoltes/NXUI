@@ -1,88 +1,4 @@
-﻿using Avalonia.Markup.Xaml.Templates;
-using Avalonia.Metadata;
-
-namespace MinimalAvalonia;
-
-public class CustomBehavior : Behavior
-{
-    protected override void OnAttached()
-    {
-        Debug.WriteLine($"OnAttached() {AssociatedObject}");
-        base.OnAttached();
-    }
-
-    protected override void OnDetaching()
-    {
-        Debug.WriteLine($"OnDetaching() {AssociatedObject}");
-        base.OnDetaching();
-    }
-
-    protected override void OnAttachedToVisualTree()
-    {
-        Debug.WriteLine($"OnAttachedToVisualTree() {AssociatedObject}");
-        base.OnAttachedToVisualTree();
-    }
-
-    protected override void OnDetachedFromVisualTree()
-    {
-        Debug.WriteLine($"OnDetachedFromVisualTree() {AssociatedObject}");
-        base.OnDetachedFromVisualTree();
-    }
-}
-
-public class BehaviorTemplate : ITemplate
-{
-    [Content]
-    [TemplateContent(TemplateResultType = typeof(Behavior))]
-    public object? Content { get; set; }
-
-    object? ITemplate.Build() => TemplateContent.Load<Behavior>(Content).Result;
-}
-
-public abstract class Behavior : AvaloniaObject
-{
-    internal bool _isInitialized;
-
-    public IAvaloniaObject? AssociatedObject { get; private set; }
-
-    internal void Attach(IAvaloniaObject obj)
-    {
-        AssociatedObject = obj;
-        OnAttached();
-    }
-
-    internal void Detach()
-    {
-        OnDetaching();
-        AssociatedObject = null;
-    }
-
-    internal void AttachedToVisualTree()
-    {
-        OnAttachedToVisualTree();
-    }
-
-    internal void DetachedFromVisualTree()
-    {
-        OnDetachedFromVisualTree();
-    }
-
-    protected virtual void OnAttached()
-    {
-    }
-
-    protected virtual void OnDetaching()
-    {
-    }
-    
-    protected virtual void OnAttachedToVisualTree()
-    {
-    }
-
-    protected virtual void OnDetachedFromVisualTree()
-    {
-    }
-}
+﻿namespace MinimalAvalonia.Interactivity;
 
 public class Interaction
 {
@@ -128,16 +44,32 @@ public class Interaction
             return;
         }
 
-        if (oldBehavior is { AssociatedObject: { } })
+        if (oldBehavior is { })
         {
-            oldBehavior.Detach();
+            Detach(e.Sender, oldBehavior);
         }
 
-        if (newBehavior is { _isInitialized: false })
+        if (newBehavior is { })
         {
-            newBehavior._isInitialized = true;
-            newBehavior.Attach(e.Sender);
-            SetVisualTreeEventHandlersRuntime(e.Sender);
+            Attach(e.Sender, newBehavior);
+        }
+    }
+
+    internal static void Attach(IAvaloniaObject sender, Behavior behavior)
+    {
+        if (behavior is {_isInitialized: false})
+        {
+            behavior._isInitialized = true;
+            behavior.Attach(sender);
+            SetVisualTreeEventHandlersRuntime(sender);
+        }
+    }
+
+    internal static void Detach(IAvaloniaObject sender, Behavior behavior)
+    {
+        if (behavior is { AssociatedObject: { } })
+        {
+            behavior.Detach();
         }
     }
 
