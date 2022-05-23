@@ -44,6 +44,7 @@ Style InteractionStyle() {
     return Style()
         .Selector(x => x.Is<IControl>())
         .SetInteractionBehavior<CustomBehavior>();
+        //.SetInteractionBehavior(() => new CustomBehavior(), () => new CustomBehavior());
 }
 
 Style LineStyle() {
