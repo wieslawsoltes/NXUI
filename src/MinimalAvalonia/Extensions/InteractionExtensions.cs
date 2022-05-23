@@ -11,13 +11,27 @@ public static partial class InteractionExtensions
         return style;
     }
 
-    public static Style SetInteractionBehavior(this Style style, params Behavior[] behaviors)
+    public static Style SetInteractionBehavior(this Style style, params Func<Behavior>[] func)
     {
-        var behaviorTemplate = BehaviorTemplate.Create(
-            () => new CompositeBehavior 
+        var behaviorTemplate = BehaviorTemplate.Create(() => 
+        {
+            if (func.Length == 1)
             {
-                Behaviors = new AvaloniaList<Behavior>(behaviors)
-            });
+                return func[0]();
+            }
+
+            var compositeBehavior = new CompositeBehavior();
+            var behaviors = new AvaloniaList<Behavior>();
+
+            foreach (var f in func)
+            {
+                behaviors.Add(f());
+            }
+
+            compositeBehavior.Behaviors = behaviors;
+
+            return compositeBehavior;
+        });
         var setter = new Setter(Interaction.BehaviorProperty, behaviorTemplate);
         style.Setters.Add(setter);
         return style;
