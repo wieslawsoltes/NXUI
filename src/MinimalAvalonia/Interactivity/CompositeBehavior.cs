@@ -3,7 +3,10 @@ namespace MinimalAvalonia.Interactivity;
 public class CompositeBehavior : Behavior
 {
     public static readonly DirectProperty<CompositeBehavior, IEnumerable<Behavior>?> BehaviorsProperty =
-        AvaloniaProperty.RegisterDirect<CompositeBehavior, IEnumerable<Behavior>?>(nameof(Behaviors), o => o.Behaviors, (o, v) => o.Behaviors = v);
+        AvaloniaProperty.RegisterDirect<CompositeBehavior, IEnumerable<Behavior>?>(
+            nameof(Behaviors), 
+            o => o.Behaviors, 
+            (o, v) => o.Behaviors = v);
 
     private IEnumerable<Behavior>? _behaviors = new AvaloniaList<Behavior>();
 
