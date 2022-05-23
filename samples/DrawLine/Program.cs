@@ -1,7 +1,6 @@
 ﻿Window Build() 
     => Window()
-        //.Styles(
-        //    InteractionStyle())
+        //.Styles(InteractionStyle())
         .Title("DrawLine").Width(500).Height(400)
         .Content(MainView());
 
@@ -29,13 +28,13 @@ Control MainView()
 Style InteractionStyle() {
     return Style()
         .Selector(x => x.Is<IControl>())
-        .Setters().
-            Setter(Interaction.BehaviorProperty, 
-            new BehaviorTemplate
-            {
-                Content = new Func<IServiceProvider, object>(_ => new TemplateResult<Behavior>(new CustomBehavior(), null))
-            });
+        .Setter(Interaction.BehaviorProperty, CreateBehavior<CustomBehavior>());
 }
+
+BehaviorTemplate CreateBehavior<T>() where T : Behavior, new()
+    => new BehaviorTemplate {
+        Content = new Func<IServiceProvider, object>(_ => new TemplateResult<Behavior>(new T(), null!))
+    };
 
 Style LineStyle() {
     var strokeThickness = 1d;
@@ -48,8 +47,8 @@ Style LineStyle() {
         .SetShapeStrokeThickness(strokeThicknessObservable);
 }
 
-Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle) =>
-    Style()
+Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle)
+    => Style()
         .Selector(x => x.Is<Control>())
         .SetVisualClipToBounds(false)
         .SetVisualRenderTransformOrigin(RelativePoint.BottomRight)
