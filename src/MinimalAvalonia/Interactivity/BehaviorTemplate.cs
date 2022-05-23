@@ -18,4 +18,12 @@ public class BehaviorTemplate : ITemplate
             Content = new Func<IServiceProvider, object>(_ => new TemplateResult<Behavior>(new T(), null!))
         };
     }
+
+    public static BehaviorTemplate Create(Func<Behavior> func)
+    {
+        return new BehaviorTemplate
+        {
+            Content = new Func<IServiceProvider, object>(_ => new TemplateResult<Behavior>(func(), null!))
+        };
+    }
 }
