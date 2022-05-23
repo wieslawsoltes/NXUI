@@ -13,13 +13,12 @@ public static partial class InteractionExtensions
 
     public static Style SetInteractionBehavior(this Style style, params Behavior[] behaviors)
     {
-        var setter = new Setter(
-            Interaction.BehaviorProperty, 
-            BehaviorTemplate.Create(
-                () => new CompositeBehavior 
-                {
-                    Behaviors = new AvaloniaList<Behavior>(behaviors)
-                }));
+        var behaviorTemplate = BehaviorTemplate.Create(
+            () => new CompositeBehavior 
+            {
+                Behaviors = new AvaloniaList<Behavior>(behaviors)
+            });
+        var setter = new Setter(Interaction.BehaviorProperty, behaviorTemplate);
         style.Setters.Add(setter);
         return style;
     }
