@@ -30,16 +30,19 @@ public class CompositeBehavior : Behavior
             {
                 foreach (var oldBehavior in oldValue)
                 {
-                    Interaction.Detach(e.Sender, oldBehavior);
+                    Interaction.Detach(AssociatedObject, oldBehavior);
                 }
             }
         }
 
         if (e.NewValue is IEnumerable<Behavior> newValue)
         {
-            foreach (var newBehavior in newValue)
+            if (AssociatedObject is { })
             {
-                Interaction.Attach(e.Sender, newBehavior);
+                foreach (var newBehavior in newValue)
+                {
+                    Interaction.Attach(AssociatedObject, newBehavior);
+                }
             }
         }
     }
