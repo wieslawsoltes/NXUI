@@ -1,23 +1,46 @@
-﻿Window Build() 
-    => Window()
+﻿Window Build() {
+    var window = Window()
         //.Styles(InteractionStyle())
         .Title("DrawLine").Width(500).Height(400)
         .Content(MainView());
+    window.AttachDevTools();
+    return window;
+}
 
 Control MainView()
     => Canvas()
         .Background(Brushes.WhiteSmoke)
         .Var(default(Line), out var line)
         .OnPointerPressed((canvas, o)
-            => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
+            => o.Select(x =>
             {
-                canvas.Children(line = Line().Styles(LineStyle(), InteractionStyle()).StartPoint(x).EndPoint(x));
+                Debug.WriteLine($"Source: { x.Source} OnPointerPressed()");
+                return x.GetPosition(canvas);
+            }).Subscribe(x =>
+            {
+                Debug.WriteLine($"OnPointerPressed: {line}");
+                if (line is null)
+                {
+                    line = Line().Styles(LineStyle(), InteractionStyle()).StartPoint(x).EndPoint(x);
+                    canvas.Children(line);
+                }
             }))
         .OnPointerReleased((canvas, o)
-            => o.Select(x => x.GetPosition(canvas)).Subscribe(_ =>
+            => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
             {
-                line?.Styles(RotateAnimation(TimeSpan.FromSeconds(5), 0d, 360d));
-                line = null;
+                Debug.WriteLine($"OnPointerReleased: {line}");
+                if (line is not null)
+                {
+                    line.EndPoint(x);
+
+                    var origin = new RelativePoint(
+                        (line.StartPoint.X + line.EndPoint.X) / 2,
+                        (line.StartPoint.Y + line.EndPoint.Y) / 2, 
+                        RelativeUnit.Absolute);
+                    
+                    line.Styles(RotateAnimation(TimeSpan.FromSeconds(5), 0d, 360d, origin));
+                    line = null;
+                }
             }))
         .OnPointerMoved((canvas, o)
             => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
@@ -47,11 +70,11 @@ Style LineStyle() {
         .SetShapeStrokeThickness(strokeThicknessObservable);
 }
 
-Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle)
+Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle, RelativePoint origin)
     => Style()
         .Selector(x => x.Is<Control>())
         .SetVisualClipToBounds(false)
-        .SetVisualRenderTransformOrigin(RelativePoint.BottomRight)
+        .SetVisualRenderTransformOrigin(origin)
         .Animations(
             Animation()
                 .Duration(duration)
