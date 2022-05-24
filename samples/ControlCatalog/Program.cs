@@ -87,9 +87,30 @@
         .Foreground(Brushes.Black)
         .Text("TextBox");
 
+    IControl CreateTabControlTemplate(ITemplatedControl parent, INameScope scope)
+    {
+        return Border()
+            .Child(
+                DockPanel()
+                    .Children(
+                        ScrollViewer()
+                            .Content(
+                                ItemsPresenter()
+                                    .Name("PART_ItemsPresenter").RegisterInNameScope(scope)
+                                    .Items(parent.GetObservable(ItemsControlItems).ToBinding())),
+                        ContentPresenter()
+                            .Name("PART_SelectedContentHost").RegisterInNameScope(scope)
+                            .Content(parent.GetObservable(TabControlSelectedContent).ToBinding())));
+    }
+
+    Style(out var tabControlStyle)
+        .Selector(x => x.OfType<TabControl>().Class("tabControl"))
+        .SetTemplatedControlTemplate(new FuncControlTemplate(CreateTabControlTemplate));
+
     TabControl(out var controls)
         .ItemsPanel(new FuncTemplate<IPanel>(StackPanel))
         .TabStripPlacementLeft()
+        .Classes("tabControl")
         .Items(
             TabItem().Header("Border").Content(border),
             TabItem().Header("Button").Content(button),
@@ -127,7 +148,7 @@
                     KeyFrame().Cue(0.0).SetRotateTransformAngle(0d),
                     KeyFrame().Cue(1.0).SetRotateTransformAngle(360d)));
 
-    window.Styles(style1, style2, InteractionStyle());
+    window.Styles(tabControlStyle, style1, style2, InteractionStyle());
 
 #if DEBUG
     window.AttachDevTools();
