@@ -27,6 +27,7 @@ Window Build()
                         })),
                     Button()
                         .Content("Book")
+                        .HorizontalAlignmentStretch()
                         .OnClick((_, o) => o.Subscribe(_ => {
                             // TODO:
                         }))));
