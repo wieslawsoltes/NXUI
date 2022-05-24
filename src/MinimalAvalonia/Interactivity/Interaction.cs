@@ -38,7 +38,6 @@ public class Interaction
         var oldBehavior = e.OldValue.GetValueOrDefault();
         var newBehavior = e.NewValue.GetValueOrDefault();
 
-        Debug.WriteLine($"BehaviorChanged: {oldBehavior} -> {newBehavior} Sender: {e.Sender}");
         if (Equals(oldBehavior, newBehavior))
         {
             return;
