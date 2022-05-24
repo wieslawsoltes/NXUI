@@ -146,12 +146,19 @@
                     KeyFrame().Cue(0.0).SetRotateTransformAngle(0d),
                     KeyFrame().Cue(1.0).SetRotateTransformAngle(360d)));
 
-    window.Styles(style1, style2);
+    window.Styles(style1, style2, InteractionStyle());
 
 #if DEBUG
     window.AttachDevTools();
 #endif
     return window;
+}
+
+Style InteractionStyle() {
+    return Style()
+        .Selector(x => x.Is<IControl>())
+        .SetInteractionBehavior<CustomBehavior>();
+        //.SetInteractionBehavior(() => new CustomBehavior(), () => new CustomBehavior());
 }
 
 Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle) =>
