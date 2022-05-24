@@ -11,28 +11,9 @@
 
     Canvas(out var canvas)
         .Background(Brushes.WhiteSmoke)
-        .Self(c =>
-        {
-            var line = default(Line);
-            c.ObserveOnPointerPressed()
-                .Select(x => x.GetPosition(c))
-                .Subscribe(x =>
-                {
-                    c.Children(line = Line().StartPoint(x).EndPoint(x).Stroke(SolidColorBrush().Color(Colors.Black)).StrokeThickness(2));
-                });
-            c.ObserveOnPointerReleased()
-                .Select(x => x.GetPosition(c))
-                .Subscribe(_ =>
-                {
-                    line = null;
-                });
-            c.ObserveOnPointerMoved()
-                .Select(x => x.GetPosition(c))
-                .Subscribe(x =>
-                {
-                    line?.EndPoint(x);
-                });
-        });
+        .Children(
+            Rectangle().Fill(Brushes.Blue).Width(50).Height(50).Left(50).Top(50),
+            Ellipse().Fill(Brushes.Red).Width(50).Height(50).Left(150).Top(50));
 
     ContentControl(out var contentControl)
         .Content("Content");
