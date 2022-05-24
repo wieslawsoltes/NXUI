@@ -2,6 +2,15 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class StyledElementExtensions
 {
+    // Name
+
+    public static T Name<T>(this T obj, string value, INameScope scope) where T : Avalonia.StyledElement
+    {
+        obj[Avalonia.StyledElement.NameProperty] = value;
+        scope.Register(value, obj);
+        return obj;
+    }
+
     // Classes
 
     public static T Classes<T>(this T styledElement, params string[] items) where T : StyledElement
