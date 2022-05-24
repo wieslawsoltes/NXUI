@@ -3,6 +3,8 @@ using Avalonia.Metadata;
 
 namespace MinimalAvalonia.Interactivity;
 
+// TODO: Add FuncBehaviorTemplate based on FuncControlTemplate
+
 public class BehaviorTemplate : ITemplate
 {
     [Content]
