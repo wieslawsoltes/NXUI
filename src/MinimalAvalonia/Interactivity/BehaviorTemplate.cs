@@ -1,6 +1,3 @@
-using Avalonia.Markup.Xaml.Templates;
-using Avalonia.Metadata;
-
 namespace MinimalAvalonia.Interactivity;
 
 // TODO: Add FuncBehaviorTemplate based on FuncControlTemplate
