@@ -87,26 +87,32 @@
         .Foreground(Brushes.Black)
         .Text("TextBox");
 
-    IControl CreateTabControlTemplate(ITemplatedControl parent, INameScope scope)
-    {
-        var tabControl = parent as TabControl;
-        return Border()
-            .Child(
-                DockPanel()
-                    .Children(
-                        ScrollViewer()
-                            .Content(
-                                ItemsPresenter()
-                                    .Name("PART_ItemsPresenter", scope)
-                                    .Items(tabControl.BindItems())),
-                        ContentPresenter()
-                            .Name("PART_SelectedContentHost", scope)
-                            .Content(tabControl.BindSelectedContent())));
-    }
-
     Style(out var tabControlStyle)
         .Selector(x => x.OfType<TabControl>().Class("tabControl"))
-        .SetTemplatedControlTemplate(new FuncControlTemplate(CreateTabControlTemplate));
+        .SetTemplatedControlTemplate<TabControl>((parent, scope) 
+            => Border()
+                .BorderBrush(parent.BindBorderBrush())
+                .BorderThickness(parent.BindBorderThickness())
+                .CornerRadius(parent.BindCornerRadius())
+                .Background(parent.BindBackground())
+                .HorizontalAlignment(parent.BindHorizontalAlignment())
+                .VerticalAlignment(parent.BindVerticalAlignment())
+                .Child(
+                    DockPanel()
+                        .Children(
+                            ScrollViewer()
+                                .Content(
+                                    ItemsPresenter().Name("PART_ItemsPresenter", scope)
+                                        .Items(parent.BindItems())
+                                        .ItemsPanel(parent.BindItemsPanel())
+                                        .ItemTemplate(parent.BindItemTemplate())
+                                        .Dock(parent.BindTabStripPlacement())),
+                            ContentPresenter().Name("PART_SelectedContentHost", scope)
+                                .Margin(parent.BindPadding())
+                                .HorizontalContentAlignment(parent.BindHorizontalContentAlignment())
+                                .VerticalContentAlignment(parent.BindVerticalContentAlignment())
+                                .Content(parent.BindSelectedContent())
+                                .ContentTemplate(parent.BindSelectedContentTemplate()))));
 
     TabControl(out var controls)
         .ItemsPanel(new FuncTemplate<IPanel>(StackPanel))
