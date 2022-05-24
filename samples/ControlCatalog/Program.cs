@@ -110,8 +110,7 @@
                             .HorizontalContentAlignment(parent.BindHorizontalContentAlignment())
                             .VerticalContentAlignment(parent.BindVerticalContentAlignment())
                             .Content(parent.BindSelectedContent())
-                            .ContentTemplate(parent.BindSelectedContentTemplate())
-                        )));
+                            .ContentTemplate(parent.BindSelectedContentTemplate()))));
 
     TabControl(out var controls)
         .ItemsPanel(new FuncTemplate<IPanel>(StackPanel))
