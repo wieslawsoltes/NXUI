@@ -1,5 +1,6 @@
-﻿var start = new BehaviorSubject<string>(DateTime.Now.ToString("dd.MM.yyyy"));
-var end = new BehaviorSubject<string>(DateTime.Now.ToString("dd.MM.yyyy"));
+﻿const string format = "dd.MM.yyyy";
+var start = new BehaviorSubject<string>(DateTime.Now.ToString(format));
+var end = new BehaviorSubject<string>(DateTime.Now.ToString(format));
 var selected = new BehaviorSubject<int>(0);
 
 Window Build() 
