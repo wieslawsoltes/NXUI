@@ -11,28 +11,9 @@
 
     Canvas(out var canvas)
         .Background(Brushes.WhiteSmoke)
-        .Self(c =>
-        {
-            var line = default(Line);
-            c.ObserveOnPointerPressed()
-                .Select(x => x.GetPosition(c))
-                .Subscribe(x =>
-                {
-                    c.Children(line = Line().StartPoint(x).EndPoint(x).Stroke(SolidColorBrush().Color(Colors.Black)).StrokeThickness(2));
-                });
-            c.ObserveOnPointerReleased()
-                .Select(x => x.GetPosition(c))
-                .Subscribe(_ =>
-                {
-                    line = null;
-                });
-            c.ObserveOnPointerMoved()
-                .Select(x => x.GetPosition(c))
-                .Subscribe(x =>
-                {
-                    line?.EndPoint(x);
-                });
-        });
+        .Children(
+            Rectangle().Fill(Brushes.Blue).Width(50).Height(50).Left(50).Top(50),
+            Ellipse().Fill(Brushes.Red).Width(50).Height(50).Left(150).Top(50));
 
     ContentControl(out var contentControl)
         .Content("Content");
@@ -146,12 +127,22 @@
                     KeyFrame().Cue(0.0).SetRotateTransformAngle(0d),
                     KeyFrame().Cue(1.0).SetRotateTransformAngle(360d)));
 
-    window.Styles(style1, style2);
+    window.Styles(style1, style2, InteractionStyle());
 
 #if DEBUG
     window.AttachDevTools();
 #endif
     return window;
+}
+
+Style InteractionStyle() {
+    return Style()
+        .Selector(x => x.Is<IControl>())
+#if true
+        .SetInteractionBehavior<CustomBehavior>();
+#else
+        .SetInteractionBehavior(() => new CustomBehavior(), () => new CustomBehavior());
+#endif
 }
 
 Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle) =>
@@ -172,3 +163,11 @@ AppBuilder.Configure<Application>()
     .UseFluentTheme()
     .WithApplicationName("ControlCatalog")
     .StartWithClassicDesktopLifetime(Build, args);
+
+internal class CustomBehavior : Behavior
+{
+    protected override void OnAttached() => Debug.WriteLine($"OnAttached() {AssociatedObject}");
+    protected override void OnDetaching() => Debug.WriteLine($"OnDetaching() {AssociatedObject}");
+    protected override void OnAttachedToVisualTree() => Debug.WriteLine($"OnAttachedToVisualTree() {AssociatedObject}");
+    protected override void OnDetachedFromVisualTree() => Debug.WriteLine($"OnDetachedFromVisualTree() {AssociatedObject}");
+}
