@@ -87,31 +87,6 @@
         .Foreground(Brushes.Black)
         .Text("TextBox");
 
-    Style(out var tabControlStyle)
-        .Selector(x => x.OfType<TabControl>().Class("tabControl"))
-        .SetTemplatedControlTemplate<TabControl>((x, ns) => 
-            Border()
-                .BorderBrush(x.BindBorderBrush())
-                .BorderThickness(x.BindBorderThickness())
-                .CornerRadius(x.BindCornerRadius())
-                .Background(x.BindBackground())
-                .HorizontalAlignment(x.BindHorizontalAlignment())
-                .VerticalAlignment(x.BindVerticalAlignment())
-                .Child(
-                    DockPanel().Children(
-                        ScrollViewer().Content(
-                            ItemsPresenter().Name("PART_ItemsPresenter", ns)
-                                .Items(x.BindItems())
-                                .ItemsPanel(x.BindItemsPanel())
-                                .ItemTemplate(x.BindItemTemplate())
-                                .Dock(x.BindTabStripPlacement())),
-                        ContentPresenter().Name("PART_SelectedContentHost", ns)
-                            .Margin(x.BindPadding())
-                            .HorizontalContentAlignment(x.BindHorizontalContentAlignment())
-                            .VerticalContentAlignment(x.BindVerticalContentAlignment())
-                            .Content(x.BindSelectedContent())
-                            .ContentTemplate(x.BindSelectedContentTemplate()))));
-
     TabControl(out var controls)
         .ItemsPanel(new FuncTemplate<IPanel>(StackPanel))
         .TabStripPlacementLeft()
@@ -139,11 +114,11 @@
         .Width(800).Height(700)
         .Content(controls);
 
-    Style(out var style1)
+    Style(out var buttonStyle)
         .Selector(x => x.OfType<Button>().Class(":pointerover").Template().OfType<ContentPresenter>().Name("PART_ContentPresenter"))
         .SetTemplatedControlBackground(Brushes.Red);
 
-    Style(out var style2)
+    Style(out var labelStyle)
         .Selector(x => x.OfType<Label>().Class("animation"))
         .Animations(
             Animation()
@@ -153,7 +128,7 @@
                     KeyFrame().Cue(0.0).SetRotateTransformAngle(0d),
                     KeyFrame().Cue(1.0).SetRotateTransformAngle(360d)));
 
-    window.Styles(tabControlStyle, style1, style2, InteractionStyle());
+    window.Styles(TabControlStyle(), buttonStyle, labelStyle, InteractionStyle());
 
 #if DEBUG
     window.AttachDevTools();
@@ -171,8 +146,34 @@ Style InteractionStyle() {
 #endif
 }
 
-Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle) =>
-    Style()
+Style TabControlStyle()
+    => Style()
+        .Selector(x => x.OfType<TabControl>().Class("tabControl"))
+        .SetTemplatedControlTemplate<TabControl>((x, ns) => 
+            Border()
+                .BorderBrush(x.BindBorderBrush())
+                .BorderThickness(x.BindBorderThickness())
+                .CornerRadius(x.BindCornerRadius())
+                .Background(x.BindBackground())
+                .HorizontalAlignment(x.BindHorizontalAlignment())
+                .VerticalAlignment(x.BindVerticalAlignment())
+                .Child(
+                    DockPanel().Children(
+                        ScrollViewer().Content(
+                            ItemsPresenter().Name("PART_ItemsPresenter", ns)
+                                .Items(x.BindItems())
+                                .ItemsPanel(x.BindItemsPanel())
+                                .ItemTemplate(x.BindItemTemplate())
+                                .Dock(x.BindTabStripPlacement())),
+                        ContentPresenter().Name("PART_SelectedContentHost", ns)
+                            .Margin(x.BindPadding())
+                            .HorizontalContentAlignment(x.BindHorizontalContentAlignment())
+                            .VerticalContentAlignment(x.BindVerticalContentAlignment())
+                            .Content(x.BindSelectedContent())
+                            .ContentTemplate(x.BindSelectedContentTemplate()))));
+
+Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle) 
+    => Style()
         .Selector(x => x.Is<Control>())
         .SetVisualClipToBounds(false)
         .Animations(
