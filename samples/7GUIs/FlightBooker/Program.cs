@@ -11,7 +11,8 @@ Window Build()
                 .Children(
                     ComboBox()
                         .Items(new [] { "one-way flight", "return flight" })
-                        .SelectedIndex(selected),
+                        .SelectedIndex(selected.Value)
+                        .OnSelectedIndex((_, o) => o.Subscribe(x => selected.OnNext(x))),
                     TextBox()
                         .Text(start)
                         .OnText((t1, o) => o.Subscribe(x => {
