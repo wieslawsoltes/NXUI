@@ -38,6 +38,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{BF6B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawLine", "samples\DrawLine\DrawLine.csproj", "{C88174BC-2F27-452F-98E0-1CD8AF71937A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightBooker", "samples\7GUIs\FlightBooker\FlightBooker.csproj", "{20309AAC-49BC-4DB0-ACC2-AC144413380E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{C88174BC-2F27-452F-98E0-1CD8AF71937A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C88174BC-2F27-452F-98E0-1CD8AF71937A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C88174BC-2F27-452F-98E0-1CD8AF71937A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20309AAC-49BC-4DB0-ACC2-AC144413380E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20309AAC-49BC-4DB0-ACC2-AC144413380E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20309AAC-49BC-4DB0-ACC2-AC144413380E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20309AAC-49BC-4DB0-ACC2-AC144413380E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		{35EA80CF-B8BD-4DBA-9A2E-627A1A82A291} = {BF6B5E5A-6F57-4429-9C4A-C1C2E17E485E}
 		{88DA60A3-1A64-427D-B624-4F42BD852BB8} = {BA0A189D-8FD8-40A7-8860-FEC67470D55B}
 		{C88174BC-2F27-452F-98E0-1CD8AF71937A} = {BF6B5E5A-6F57-4429-9C4A-C1C2E17E485E}
+		{20309AAC-49BC-4DB0-ACC2-AC144413380E} = {6E47BA4B-2405-4281-8A1C-892A4D802A18}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {864061A4-BD98-405B-BB8C-4D29A18466DB}
