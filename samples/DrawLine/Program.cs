@@ -1,10 +1,7 @@
-﻿Window Build() {
-    var window = Window()
+﻿Window Build() 
+    => Window()
         .Title("DrawLine").Width(500).Height(400)
         .Content(MainView());
-    window.AttachDevTools();
-    return window;
-}
 
 Control MainView()
     => Canvas()
