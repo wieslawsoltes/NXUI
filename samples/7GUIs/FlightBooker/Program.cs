@@ -20,6 +20,7 @@ Window Build()
                         })),
                     TextBox()
                         .Text(end)
+                        .IsEnabled(selected.Select(x => x == 1))
                         .OnText((t2, o) => o.Subscribe(x => {
                             // TODO:
                         })),
