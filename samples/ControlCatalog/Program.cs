@@ -89,6 +89,7 @@
 
     IControl CreateTabControlTemplate(ITemplatedControl parent, INameScope scope)
     {
+        var tabControl = parent as TabControl;
         return Border()
             .Child(
                 DockPanel()
@@ -96,11 +97,11 @@
                         ScrollViewer()
                             .Content(
                                 ItemsPresenter()
-                                    .Name("PART_ItemsPresenter").RegisterInNameScope(scope)
-                                    .Items(parent.GetObservable(ItemsControlItems).ToBinding())),
+                                    .Name("PART_ItemsPresenter", scope)
+                                    .Items(tabControl.BindItems())),
                         ContentPresenter()
-                            .Name("PART_SelectedContentHost").RegisterInNameScope(scope)
-                            .Content(parent.GetObservable(TabControlSelectedContent).ToBinding())));
+                            .Name("PART_SelectedContentHost", scope)
+                            .Content(tabControl.BindSelectedContent())));
     }
 
     Style(out var tabControlStyle)
