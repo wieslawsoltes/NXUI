@@ -138,8 +138,11 @@
 Style InteractionStyle() {
     return Style()
         .Selector(x => x.Is<IControl>())
+#if true
         .SetInteractionBehavior<CustomBehavior>();
-        //.SetInteractionBehavior(() => new CustomBehavior(), () => new CustomBehavior());
+#else
+        .SetInteractionBehavior(() => new CustomBehavior(), () => new CustomBehavior());
+#endif
 }
 
 Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle) =>
@@ -160,3 +163,11 @@ AppBuilder.Configure<Application>()
     .UseFluentTheme()
     .WithApplicationName("ControlCatalog")
     .StartWithClassicDesktopLifetime(Build, args);
+
+internal class CustomBehavior : Behavior
+{
+    protected override void OnAttached() => Debug.WriteLine($"OnAttached() {AssociatedObject}");
+    protected override void OnDetaching() => Debug.WriteLine($"OnDetaching() {AssociatedObject}");
+    protected override void OnAttachedToVisualTree() => Debug.WriteLine($"OnAttachedToVisualTree() {AssociatedObject}");
+    protected override void OnDetachedFromVisualTree() => Debug.WriteLine($"OnDetachedFromVisualTree() {AssociatedObject}");
+}
