@@ -2,6 +2,24 @@ namespace MinimalAvalonia.Extensions;
 
 public static partial class TemplatedControlExtensions
 {
+    // ControlTemplate
+
+    public static Style SetTemplatedControlTemplate<T>(this Style style, Func<T, INameScope, IControl> build) 
+        where T : ITemplatedControl
+    {
+        var value = new FuncControlTemplate((parent, scope) =>
+        {
+            if (parent is T t)
+            {
+                return build(t, scope);
+            }
+
+            throw new InvalidCastException();
+        });
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
+        return style;
+    }
+    
     // BorderThicknessProperty
 
     public static T BorderThickness<T>(this T templatedControl, double uniformLength) where T : TemplatedControl
