@@ -104,17 +104,14 @@
                                 .Items(parent.BindItems())
                                 .ItemsPanel(parent.BindItemsPanel())
                                 .ItemTemplate(parent.BindItemTemplate())
-                                .Dock(parent.BindTabStripPlacement())
-                            ),
+                                .Dock(parent.BindTabStripPlacement())),
                         ContentPresenter().Name("PART_SelectedContentHost", scope)
                             .Margin(parent.BindPadding())
                             .HorizontalContentAlignment(parent.BindHorizontalContentAlignment())
                             .VerticalContentAlignment(parent.BindVerticalContentAlignment())
                             .Content(parent.BindSelectedContent())
                             .ContentTemplate(parent.BindSelectedContentTemplate())
-                        )
-                    )
-            );
+                        )));
 
     TabControl(out var controls)
         .ItemsPanel(new FuncTemplate<IPanel>(StackPanel))
