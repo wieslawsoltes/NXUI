@@ -1,6 +1,5 @@
 ﻿Window Build() {
     var window = Window()
-        .Styles(InteractionStyle())
         .Title("DrawLine").Width(500).Height(400)
         .Content(MainView());
     window.AttachDevTools();
@@ -39,13 +38,6 @@ Control MainView()
             {
                 line?.EndPoint(x);
             }));
-
-Style InteractionStyle() {
-    return Style()
-        .Selector(x => x.Is<IControl>())
-        .SetInteractionBehavior<CustomBehavior>();
-        //.SetInteractionBehavior(() => new CustomBehavior(), () => new CustomBehavior());
-}
 
 Style LineStyle() {
     var strokeThickness = 1d;
