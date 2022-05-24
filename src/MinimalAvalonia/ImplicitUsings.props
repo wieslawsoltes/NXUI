@@ -27,6 +27,13 @@
     <Using Include="Avalonia.Input" />
     <Using Include="Avalonia.Input.TextInput" />
     <Using Include="Avalonia.Layout" />
+    <Using Include="Avalonia.Markup.Xaml" />
+    <Using Include="Avalonia.Markup.Xaml.Parsers" />
+    <Using Include="Avalonia.Markup.Xaml.Converters" />
+    <Using Include="Avalonia.Markup.Xaml.MarkupExtensions" />
+    <Using Include="Avalonia.Markup.Xaml.MarkupExtensions.CompiledBindings" />
+    <Using Include="Avalonia.Markup.Xaml.Styling" />
+    <Using Include="Avalonia.Markup.Xaml.Templates" />
     <Using Include="Avalonia.Media" />
     <Using Include="Avalonia.Metadata" />
     <Using Include="Avalonia.Platform" />
