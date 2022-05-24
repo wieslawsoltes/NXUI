@@ -7,6 +7,7 @@
     <Using Include="System.Collections" />
     <Using Include="System.Diagnostics" />
     <Using Include="System.Diagnostics.CodeAnalysis" />
+    <Using Include="System.Globalization" />
     <Using Include="System.Reactive.Linq" />
     <Using Include="System.Reactive.Subjects" />
     <Using Include="System.Reactive.Disposables" />
