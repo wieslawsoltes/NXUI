@@ -49,7 +49,8 @@ Window Build()
                                     ? $"You have booked a one-way flight for {start.Value}"
                                     : $"You have booked a return flight from {start.Value} to {end.Value}");
                                 showMessageDialog.OnNext(true);
-                            }))),
+                            }))
+                        ),
                 Border()
                     .IsVisible(showMessageDialog)
                     .Background(Brushes.White)
@@ -66,7 +67,11 @@ Window Build()
                                 Button()
                                     .HorizontalAlignmentRight().VerticalAlignmentBottom()
                                     .Content("OK")
-                                    .OnClick((_, o) => o.Subscribe(_ => showMessageDialog.OnNext(false)))))));
+                                    .OnClick((_, o) => o.Subscribe(_ => showMessageDialog.OnNext(false)))
+                                )
+                        )
+                )
+            );
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
