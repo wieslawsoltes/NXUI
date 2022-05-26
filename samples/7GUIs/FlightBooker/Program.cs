@@ -21,7 +21,7 @@ var bookMessage = new BehaviorSubject<string>("");
 
 Window Build() 
     => Window()
-        .Title("Book Flight").Padding(12).Width(450).Height(200)
+        .Title("Book Flight").Padding(12).Width(500).Height(200)
         .Content(
             Panel().Children(
                 StackPanel()
@@ -50,18 +50,23 @@ Window Build()
                                     : $"You have booked a return flight from {start.Value} to {end.Value}");
                                 showMessageDialog.OnNext(true);
                             }))),
-                StackPanel()
+                Border()
                     .IsVisible(showMessageDialog)
                     .Background(Brushes.White)
-                    .OrientationVertical()
-                    .Children(
-                        TextBlock()
-                            .VerticalAlignmentCenter()
-                            .Text(bookMessage), 
-                        Button()
-                            .HorizontalAlignmentRight().VerticalAlignmentBottom()
-                            .Content("OK")
-                            .OnClick((_, o) => o.Subscribe(_ => showMessageDialog.OnNext(false))))));
+                    .BorderBrush(Brushes.Black)
+                    .BorderThickness(1)
+                    .HorizontalAlignmentCenter().VerticalAlignmentCenter()
+                    .Child(
+                        StackPanel()
+                            .OrientationVertical()
+                            .Margin(12)
+                            .Children(
+                                TextBlock()
+                                    .Text(bookMessage), 
+                                Button()
+                                    .HorizontalAlignmentRight().VerticalAlignmentBottom()
+                                    .Content("OK")
+                                    .OnClick((_, o) => o.Subscribe(_ => showMessageDialog.OnNext(false)))))));
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
