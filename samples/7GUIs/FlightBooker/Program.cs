@@ -1,16 +1,10 @@
 ﻿const string format = "dd.MM.yyyy";
 
 var startValue = new BehaviorSubject<string>(DateTime.Now.ToString(format));
-var startDate = startValue.Select(x => {
-    var valid = DateTime.TryParseExact(x, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out var date);
-    return (valid, date);
-});
+var startDate = startValue.Select(ParseDateTime);
 
 var endValue = new BehaviorSubject<string>(DateTime.Now.ToString(format));
-var endDate = endValue.Select(x => {
-    var valid = DateTime.TryParseExact(x, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out var date);
-    return (valid, date);
-});
+var endDate = endValue.Select(ParseDateTime);
 
 var isBookEnabled = Observable
     .CombineLatest(startDate, endDate)
@@ -75,6 +69,11 @@ Window Build()
                         )
                 )
             );
+
+(bool valid, DateTime date) ParseDateTime(string value) {
+    var valid = DateTime.TryParseExact(value, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out var date);
+    return (valid, date);
+} 
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
