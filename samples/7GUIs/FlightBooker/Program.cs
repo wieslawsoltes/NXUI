@@ -1,21 +1,27 @@
 ﻿const string format = "dd.MM.yyyy";
-var start = new BehaviorSubject<string>(DateTime.Now.ToString(format));
-var end = new BehaviorSubject<string>(DateTime.Now.ToString(format));
-var selected = new BehaviorSubject<int>(0);
-var startResult = start.Select(x => {
+
+var startValue = new BehaviorSubject<string>(DateTime.Now.ToString(format));
+var startDate = startValue.Select(x => {
     var valid = DateTime.TryParseExact(x, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out var date);
     return (valid, date);
 });
-var endResult = end.Select(x => {
+
+var endValue = new BehaviorSubject<string>(DateTime.Now.ToString(format));
+var endDate = endValue.Select(x => {
     var valid = DateTime.TryParseExact(x, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out var date);
     return (valid, date);
 });
+
 var isBookEnabled = Observable
-    .CombineLatest(startResult, endResult)
+    .CombineLatest(startDate, endDate)
     .Select(x => x.Count == 2 && x[0].valid && x[1].valid && x[0].date <= x[1].date);
-var startErrors = startResult.Select(x => x.valid ? Enumerable.Empty<string>() : new[] {"Invalid date."});
-var endErrors = endResult.Select(x => x.valid ? Enumerable.Empty<string>() : new[] {"Invalid date."});
+
+var startDateErrors = startDate.Select(x => x.valid ? Enumerable.Empty<string>() : new[] {"Invalid date."});
+var endDateErrors = endDate.Select(x => x.valid ? Enumerable.Empty<string>() : new[] {"Invalid date."});
+
+var selected = new BehaviorSubject<int>(0);
 var isEndEnabled = selected.Select(x => x == 1);
+
 var showMessageDialog = new BehaviorSubject<bool>(false);
 var bookMessage = new BehaviorSubject<string>("");
 
@@ -32,35 +38,32 @@ Window Build()
                             .SelectedIndex(selected.Value)
                             .OnSelectedIndex((_, o) => o.Subscribe(x => selected.OnNext(x))),
                         TextBox()
-                            .Text(start)
-                            .Errors(startErrors)
-                            .OnText((_, o) => o.Subscribe(x => start.OnNext(x))),
+                            .Text(startValue)
+                            .Errors(startDateErrors)
+                            .OnText((_, o) => o.Subscribe(x => startValue.OnNext(x))),
                         TextBox()
-                            .Text(end)
+                            .Text(endValue)
                             .IsEnabled(isEndEnabled)
-                            .Errors(endErrors)
-                            .OnText((_, o) => o.Subscribe(x => end.OnNext(x))),
+                            .Errors(endDateErrors)
+                            .OnText((_, o) => o.Subscribe(x => endValue.OnNext(x))),
                         Button()
                             .Content("Book")
                             .HorizontalAlignmentStretch()
                             .IsEnabled(isBookEnabled)
                             .OnClick((_, o) => o.Subscribe(_ => {
                                 bookMessage.OnNext(selected.Value == 0
-                                    ? $"You have booked a one-way flight for {start.Value}"
-                                    : $"You have booked a return flight from {start.Value} to {end.Value}");
+                                    ? $"You have booked a one-way flight for {startValue.Value}"
+                                    : $"You have booked a return flight from {startValue.Value} to {endValue.Value}");
                                 showMessageDialog.OnNext(true);
                             }))
                         ),
                 Border()
                     .IsVisible(showMessageDialog)
-                    .Background(Brushes.White)
-                    .BorderBrush(Brushes.Black)
-                    .BorderThickness(1)
+                    .Background(Brushes.White).BorderBrush(Brushes.Black).BorderThickness(1)
                     .HorizontalAlignmentCenter().VerticalAlignmentCenter()
                     .Child(
                         StackPanel()
-                            .OrientationVertical()
-                            .Margin(12)
+                            .OrientationVertical().Margin(12)
                             .Children(
                                 TextBlock()
                                     .Text(bookMessage), 
