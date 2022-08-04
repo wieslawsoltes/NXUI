@@ -35,6 +35,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BA0A189D-8FD8-40A7-8860-FEC67470D55B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{BF6B5E5A-6F57-4429-9C4A-C1C2E17E485E}"
+	ProjectSection(SolutionItems) = preProject
+		samples\.editorconfig = samples\.editorconfig
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawLine", "samples\DrawLine\DrawLine.csproj", "{C88174BC-2F27-452F-98E0-1CD8AF71937A}"
 EndProject
