@@ -6,6 +6,29 @@ namespace MinimalAvalonia.Extensions;
 /// </summary>
 public static partial class TextBoxExtensions
 {
+    // Avalonia.Controls.TextBox.CanCopyProperty
+
+    public static Avalonia.Data.IBinding BindCanCopy(
+        this Avalonia.Controls.TextBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.TextBox.CanCopyProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    public static IObservable<System.Boolean> ObserveCanCopy(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.CanCopyProperty);
+    }
+
+    public static Avalonia.Controls.TextBox OnCanCopy(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanCopyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBox.AcceptsReturnProperty
 
     /// <summary>
@@ -2131,29 +2154,6 @@ public static partial class TextBoxExtensions
     public static Avalonia.Controls.TextBox OnCanCut(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanCutProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // Avalonia.Controls.TextBox.CanCopyProperty
-
-    public static Avalonia.Data.IBinding BindCanCopy(
-        this Avalonia.Controls.TextBox obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.TextBox.CanCopyProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    public static IObservable<System.Boolean> ObserveCanCopy(this Avalonia.Controls.TextBox obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.TextBox.CanCopyProperty);
-    }
-
-    public static Avalonia.Controls.TextBox OnCanCopy(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<System.Boolean>> handler)
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanCopyProperty);
         handler(obj, observable);
         return obj;
     }

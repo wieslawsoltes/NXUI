@@ -15,5 +15,7 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.FlyoutBase,Avalonia.Controls.FlyoutShowMode> FlyoutBaseShowMode => Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty;
 
+    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.FlyoutBase,Avalonia.Input.IInputElement> FlyoutBaseOverlayInputPassThroughElement => Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty;
+
     public static Avalonia.AttachedProperty<Avalonia.Controls.Primitives.FlyoutBase> FlyoutBaseAttachedFlyout => Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty;
 }

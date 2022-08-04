@@ -14,4 +14,6 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<Avalonia.Media.Geometry> DrawingGroupClipGeometry => Avalonia.Media.DrawingGroup.ClipGeometryProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> DrawingGroupOpacityMask => Avalonia.Media.DrawingGroup.OpacityMaskProperty;
+
+    public static Avalonia.DirectProperty<Avalonia.Media.DrawingGroup,Avalonia.Media.DrawingCollection> DrawingGroupChildren => Avalonia.Media.DrawingGroup.ChildrenProperty;
 }

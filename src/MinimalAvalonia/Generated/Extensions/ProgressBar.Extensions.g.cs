@@ -202,6 +202,104 @@ public static partial class ProgressBarExtensions
         return obj;
     }
 
+    // Avalonia.Controls.ProgressBar.ProgressTextFormatProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ProgressTextFormat<T>(this T obj, System.String value) where T : Avalonia.Controls.ProgressBar
+    {
+        obj[Avalonia.Controls.ProgressBar.ProgressTextFormatProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ProgressTextFormat<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
+    {
+        var descriptor = Avalonia.Controls.ProgressBar.ProgressTextFormatProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ProgressTextFormat<T>(
+        this T obj,
+        IObservable<System.String> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
+    {
+        var descriptor = Avalonia.Controls.ProgressBar.ProgressTextFormatProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindProgressTextFormat(
+        this Avalonia.Controls.ProgressBar obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ProgressBar.ProgressTextFormatProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.String> ObserveProgressTextFormat(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnProgressTextFormat<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<System.String>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ProgressBar.OrientationProperty
 
     /// <summary>
@@ -309,6 +407,225 @@ public static partial class ProgressBarExtensions
     public static T OrientationVertical<T>(this T obj) where T : Avalonia.Controls.ProgressBar
     {
         obj[Avalonia.Controls.ProgressBar.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        return obj;
+    }
+
+    // Avalonia.Controls.ProgressBar.PercentageProperty
+
+    public static Avalonia.Data.IBinding BindPercentage(
+        this Avalonia.Controls.ProgressBar obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ProgressBar.PercentageProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    public static IObservable<System.Double> ObservePercentage(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ProgressBar.PercentageProperty);
+    }
+
+    public static Avalonia.Controls.ProgressBar OnPercentage(this Avalonia.Controls.ProgressBar obj, Action<Avalonia.Controls.ProgressBar, IObservable<System.Double>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ProgressBar.PercentageProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IndeterminateStartingOffset<T>(this T obj, System.Double value) where T : Avalonia.Controls.ProgressBar
+    {
+        obj[Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IndeterminateStartingOffset<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
+    {
+        var descriptor = Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IndeterminateStartingOffset<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
+    {
+        var descriptor = Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindIndeterminateStartingOffset(
+        this Avalonia.Controls.ProgressBar obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveIndeterminateStartingOffset(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIndeterminateStartingOffset<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<System.Double>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IndeterminateEndingOffset<T>(this T obj, System.Double value) where T : Avalonia.Controls.ProgressBar
+    {
+        obj[Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IndeterminateEndingOffset<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
+    {
+        var descriptor = Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IndeterminateEndingOffset<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ProgressBar
+    {
+        var descriptor = Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindIndeterminateEndingOffset(
+        this Avalonia.Controls.ProgressBar obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveIndeterminateEndingOffset(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIndeterminateEndingOffset<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<System.Double>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty);
+        handler(obj, observable);
         return obj;
     }
 }

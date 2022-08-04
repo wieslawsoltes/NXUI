@@ -1305,7 +1305,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Value<T>(this T obj, System.Decimal value) where T : Avalonia.Controls.NumericUpDown
+    public static T Value<T>(this T obj, System.Nullable<System.Decimal> value) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ValueProperty] = value;
         return obj;
@@ -1342,7 +1342,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T Value<T>(
         this T obj,
-        IObservable<System.Decimal> observable,
+        IObservable<System.Nullable<System.Decimal>> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1375,7 +1375,7 @@ public static partial class NumericUpDownExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Decimal> ObserveValue(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<System.Nullable<System.Decimal>> ObserveValue(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.ValueProperty);
     }
@@ -1387,7 +1387,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnValue<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Decimal>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnValue<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Nullable<System.Decimal>>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ValueProperty);
         handler(obj, observable);

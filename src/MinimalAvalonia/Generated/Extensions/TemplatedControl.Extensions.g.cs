@@ -398,6 +398,768 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
+    // Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontFamily<T>(this T obj, Avalonia.Media.FontFamily value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontFamily<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontFamily<T>(
+        this T obj,
+        IObservable<Avalonia.Media.FontFamily> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindFontFamily(
+        this Avalonia.Controls.Primitives.TemplatedControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.FontFamily> ObserveFontFamily(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontFamily<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.FontFamily>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontSize<T>(this T obj, System.Double value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontSize<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontSize<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindFontSize(
+        this Avalonia.Controls.Primitives.TemplatedControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveFontSize(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontSize<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontStyle<T>(this T obj, Avalonia.Media.FontStyle value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontStyle<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontStyle<T>(
+        this T obj,
+        IObservable<Avalonia.Media.FontStyle> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindFontStyle(
+        this Avalonia.Controls.Primitives.TemplatedControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.FontStyle> ObserveFontStyle(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStyle<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.FontStyle>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static T FontStyleNormal<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
+        return obj;
+    }
+
+    public static T FontStyleItalic<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
+        return obj;
+    }
+
+    public static T FontStyleOblique<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty] = Avalonia.Media.FontStyle.Oblique;
+        return obj;
+    }
+
+    // Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontWeight<T>(this T obj, Avalonia.Media.FontWeight value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontWeight<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontWeight<T>(
+        this T obj,
+        IObservable<Avalonia.Media.FontWeight> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindFontWeight(
+        this Avalonia.Controls.Primitives.TemplatedControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.FontWeight> ObserveFontWeight(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontWeight<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.FontWeight>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static T FontWeightThin<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
+        return obj;
+    }
+
+    public static T FontWeightExtraLight<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
+        return obj;
+    }
+
+    public static T FontWeightUltraLight<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
+        return obj;
+    }
+
+    public static T FontWeightLight<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
+        return obj;
+    }
+
+    public static T FontWeightSemiLight<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
+        return obj;
+    }
+
+    public static T FontWeightNormal<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
+        return obj;
+    }
+
+    public static T FontWeightRegular<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
+        return obj;
+    }
+
+    public static T FontWeightMedium<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
+        return obj;
+    }
+
+    public static T FontWeightDemiBold<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
+        return obj;
+    }
+
+    public static T FontWeightSemiBold<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
+        return obj;
+    }
+
+    public static T FontWeightBold<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
+        return obj;
+    }
+
+    public static T FontWeightExtraBold<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
+        return obj;
+    }
+
+    public static T FontWeightUltraBold<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
+        return obj;
+    }
+
+    public static T FontWeightBlack<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
+        return obj;
+    }
+
+    public static T FontWeightHeavy<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
+        return obj;
+    }
+
+    public static T FontWeightExtraBlack<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
+        return obj;
+    }
+
+    public static T FontWeightUltraBlack<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBlack;
+        return obj;
+    }
+
+    // Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontStretch<T>(this T obj, Avalonia.Media.FontStretch value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontStretch<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontStretch<T>(
+        this T obj,
+        IObservable<Avalonia.Media.FontStretch> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindFontStretch(
+        this Avalonia.Controls.Primitives.TemplatedControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.FontStretch> ObserveFontStretch(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStretch<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.FontStretch>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static T FontStretchUltraCondensed<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
+        return obj;
+    }
+
+    public static T FontStretchExtraCondensed<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
+        return obj;
+    }
+
+    public static T FontStretchCondensed<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
+        return obj;
+    }
+
+    public static T FontStretchSemiCondensed<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
+        return obj;
+    }
+
+    public static T FontStretchNormal<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
+        return obj;
+    }
+
+    public static T FontStretchSemiExpanded<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
+        return obj;
+    }
+
+    public static T FontStretchExpanded<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
+        return obj;
+    }
+
+    public static T FontStretchExtraExpanded<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
+        return obj;
+    }
+
+    public static T FontStretchUltraExpanded<T>(this T obj) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.UltraExpanded;
+        return obj;
+    }
+
+    // Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T Foreground<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        obj[Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T Foreground<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T Foreground<T>(
+        this T obj,
+        IObservable<Avalonia.Media.IBrush> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindForeground(
+        this Avalonia.Controls.Primitives.TemplatedControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.IBrush> ObserveForeground(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty
 
     /// <summary>

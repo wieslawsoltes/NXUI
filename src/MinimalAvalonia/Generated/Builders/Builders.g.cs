@@ -721,6 +721,19 @@ public static partial class MinimalAvaloniaBuilders
     public static Avalonia.Controls.ItemsRepeater ItemsRepeater(out Avalonia.Controls.ItemsRepeater @ref) => @ref = new();
 
     /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RichTextBlock"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RichTextBlock"/> class.</returns>
+    public static Avalonia.Controls.RichTextBlock RichTextBlock() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RichTextBlock"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RichTextBlock"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RichTextBlock"/> class.</returns>
+    public static Avalonia.Controls.RichTextBlock RichTextBlock(out Avalonia.Controls.RichTextBlock @ref) => @ref = new();
+
+    /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
@@ -1657,6 +1670,19 @@ public static partial class MinimalAvaloniaBuilders
     public static Avalonia.Visual Visual(out Avalonia.Visual @ref) => @ref = new();
 
     /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.</returns>
+    public static Avalonia.Styling.ControlTheme ControlTheme() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.ControlTheme"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.</returns>
+    public static Avalonia.Styling.ControlTheme ControlTheme(out Avalonia.Styling.ControlTheme @ref) => @ref = new();
+
+    /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.Style"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Styling.Style"/> class.</returns>
@@ -1826,32 +1852,6 @@ public static partial class MinimalAvaloniaBuilders
     public static Avalonia.Media.CombinedGeometry CombinedGeometry(out Avalonia.Media.CombinedGeometry @ref) => @ref = new();
 
     /// <summary>
-    /// Creates a new instance of the <see cref="Avalonia.Media.GeometryCollection"/> class.
-    /// </summary>
-    /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryCollection"/> class.</returns>
-    public static Avalonia.Media.GeometryCollection GeometryCollection() => new();
-
-    /// <summary>
-    /// Creates a new instance of the <see cref="Avalonia.Media.GeometryCollection"/> class.
-    /// </summary>
-    /// <param name="ref">The reference of the <see cref="Avalonia.Media.GeometryCollection"/> instantiated class.</param>
-    /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryCollection"/> class.</returns>
-    public static Avalonia.Media.GeometryCollection GeometryCollection(out Avalonia.Media.GeometryCollection @ref) => @ref = new();
-
-    /// <summary>
-    /// Creates a new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.
-    /// </summary>
-    /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.</returns>
-    public static Avalonia.Media.GeometryGroup GeometryGroup() => new();
-
-    /// <summary>
-    /// Creates a new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.
-    /// </summary>
-    /// <param name="ref">The reference of the <see cref="Avalonia.Media.GeometryGroup"/> instantiated class.</param>
-    /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.</returns>
-    public static Avalonia.Media.GeometryGroup GeometryGroup(out Avalonia.Media.GeometryGroup @ref) => @ref = new();
-
-    /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.</returns>
@@ -1967,6 +1967,19 @@ public static partial class MinimalAvaloniaBuilders
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.GeometryDrawing"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryDrawing"/> class.</returns>
     public static Avalonia.Media.GeometryDrawing GeometryDrawing(out Avalonia.Media.GeometryDrawing @ref) => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.</returns>
+    public static Avalonia.Media.GeometryGroup GeometryGroup() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.GeometryGroup"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.</returns>
+    public static Avalonia.Media.GeometryGroup GeometryGroup(out Avalonia.Media.GeometryGroup @ref) => @ref = new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.GlyphRunDrawing"/> class.

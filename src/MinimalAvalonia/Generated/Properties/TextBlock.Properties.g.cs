@@ -31,8 +31,6 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBlock,System.String> TextBlockText => Avalonia.Controls.TextBlock.TextProperty;
 
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBlock,Avalonia.Controls.Documents.InlineCollection> TextBlockInlines => Avalonia.Controls.TextBlock.InlinesProperty;
-
     public static Avalonia.AttachedProperty<Avalonia.Media.TextAlignment> TextBlockTextAlignment => Avalonia.Controls.TextBlock.TextAlignmentProperty;
 
     public static Avalonia.AttachedProperty<Avalonia.Media.TextWrapping> TextBlockTextWrapping => Avalonia.Controls.TextBlock.TextWrappingProperty;

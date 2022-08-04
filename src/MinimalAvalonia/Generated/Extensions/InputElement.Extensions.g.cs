@@ -652,58 +652,58 @@ public static partial class InputElementExtensions
         return obj.GetObservable(Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, routes);
     }
 
-    // Avalonia.Input.InputElement.PointerEnterEvent
+    // Avalonia.Input.InputElement.PointerEnteredEvent
 
-    public static T OnPointerEnterHandler<T>(
+    public static T OnPointerEnteredHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler(Avalonia.Input.InputElement.PointerEnterEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.PointerEnteredEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static T OnPointerEnter<T>(
+    public static T OnPointerEntered<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerEnterEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerEnteredEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnter(
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEntered(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
     {
-        return obj.GetObservable(Avalonia.Input.InputElement.PointerEnterEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerEnteredEvent, routes);
     }
 
-    // Avalonia.Input.InputElement.PointerLeaveEvent
+    // Avalonia.Input.InputElement.PointerExitedEvent
 
-    public static T OnPointerLeaveHandler<T>(
+    public static T OnPointerExitedHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
     {
-        obj.AddHandler(Avalonia.Input.InputElement.PointerLeaveEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Input.InputElement.PointerExitedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static T OnPointerLeave<T>(
+    public static T OnPointerExited<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
     {
-        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerLeaveEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.PointerExitedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerLeave(
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExited(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
     {
-        return obj.GetObservable(Avalonia.Input.InputElement.PointerLeaveEvent, routes);
+        return obj.GetObservable(Avalonia.Input.InputElement.PointerExitedEvent, routes);
     }
 
     // Avalonia.Input.InputElement.PointerMovedEvent
@@ -973,47 +973,47 @@ public static partial class InputElementExtensions
             .Select(x => x.EventArgs);
     }
 
-    // Avalonia.Input.InputElement.PointerEnter
+    // Avalonia.Input.InputElement.PointerEntered
 
-    public static T OnPointerEnterEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
+    public static T OnPointerEnteredEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
             .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerEnter += h, 
-                h => obj.PointerEnter -= h)
+                h => obj.PointerEntered += h, 
+                h => obj.PointerEntered -= h)
             .Select(x => x.EventArgs);
         handler(obj, observable);
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnterEvent(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnteredEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerEnter += h, 
-                h => obj.PointerEnter -= h)
+                h => obj.PointerEntered += h, 
+                h => obj.PointerEntered -= h)
             .Select(x => x.EventArgs);
     }
 
-    // Avalonia.Input.InputElement.PointerLeave
+    // Avalonia.Input.InputElement.PointerExited
 
-    public static T OnPointerLeaveEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
+    public static T OnPointerExitedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
             .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerLeave += h, 
-                h => obj.PointerLeave -= h)
+                h => obj.PointerExited += h, 
+                h => obj.PointerExited -= h)
             .Select(x => x.EventArgs);
         handler(obj, observable);
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerLeaveEvent(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExitedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerLeave += h, 
-                h => obj.PointerLeave -= h)
+                h => obj.PointerExited += h, 
+                h => obj.PointerExited -= h)
             .Select(x => x.EventArgs);
     }
 

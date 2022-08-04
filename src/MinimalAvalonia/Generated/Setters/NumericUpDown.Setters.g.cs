@@ -902,7 +902,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownValue(this Style style, System.Decimal value)
+    public static Style SetNumericUpDownValue(this Style style, System.Nullable<System.Decimal> value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ValueProperty, value));
         return style;
@@ -926,7 +926,7 @@ public static partial class NumericUpDownSetters
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNumericUpDownValue(this Style style, IObservable<System.Decimal> observable)
+    public static Style SetNumericUpDownValue(this Style style, IObservable<System.Nullable<System.Decimal>> observable)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ValueProperty, observable.ToBinding()));
         return style;
@@ -938,7 +938,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownValue(this KeyFrame keyFrame, System.Decimal value)
+    public static KeyFrame SetNumericUpDownValue(this KeyFrame keyFrame, System.Nullable<System.Decimal> value)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ValueProperty, value));
         return keyFrame;
@@ -962,7 +962,7 @@ public static partial class NumericUpDownSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNumericUpDownValue(this KeyFrame keyFrame, IObservable<System.Decimal> observable)
+    public static KeyFrame SetNumericUpDownValue(this KeyFrame keyFrame, IObservable<System.Nullable<System.Decimal>> observable)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.ValueProperty, observable.ToBinding()));
         return keyFrame;

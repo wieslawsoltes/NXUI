@@ -18,5 +18,5 @@ AppBuilder.Configure<App>()
             MinimalGenerator.Generate(args[0]);
         }
     })
-    .UseHeadless().SetupWithoutStarting();
+    .UseHeadless(new AvaloniaHeadlessPlatformOptions { UseCompositor = false, UseHeadlessDrawing = false }).SetupWithoutStarting();
     //.StartWithClassicDesktopLifetime(args);

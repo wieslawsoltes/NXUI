@@ -14,4 +14,6 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.DirectProperty<Avalonia.StyledElement,Avalonia.IStyledElement> StyledElementParent => Avalonia.StyledElement.ParentProperty;
 
     public static Avalonia.DirectProperty<Avalonia.StyledElement,Avalonia.Styling.ITemplatedControl> StyledElementTemplatedParent => Avalonia.StyledElement.TemplatedParentProperty;
+
+    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> StyledElementTheme => Avalonia.StyledElement.ThemeProperty;
 }

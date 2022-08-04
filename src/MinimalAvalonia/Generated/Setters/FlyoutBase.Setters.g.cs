@@ -154,6 +154,80 @@ public static partial class FlyoutBaseSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetFlyoutBaseOverlayInputPassThroughElement(this Style style, Avalonia.Input.IInputElement value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetFlyoutBaseOverlayInputPassThroughElement(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetFlyoutBaseOverlayInputPassThroughElement(this Style style, IObservable<Avalonia.Input.IInputElement> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetFlyoutBaseOverlayInputPassThroughElement(this KeyFrame keyFrame, Avalonia.Input.IInputElement value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetFlyoutBaseOverlayInputPassThroughElement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, binding));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetFlyoutBaseOverlayInputPassThroughElement(this KeyFrame keyFrame, IObservable<Avalonia.Input.IInputElement> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty
 
     /// <summary>

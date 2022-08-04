@@ -719,58 +719,58 @@ public static partial class MenuItemExtensions
         return obj.GetObservable(Avalonia.Controls.MenuItem.ClickEvent, routes);
     }
 
-    // Avalonia.Controls.MenuItem.PointerEnterItemEvent
+    // Avalonia.Controls.MenuItem.PointerEnteredItemEvent
 
-    public static T OnPointerEnterItemHandler<T>(
+    public static T OnPointerEnteredItemHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
     {
-        obj.AddHandler(Avalonia.Controls.MenuItem.PointerEnterItemEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Controls.MenuItem.PointerEnteredItemEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static T OnPointerEnterItem<T>(
+    public static T OnPointerEnteredItem<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
     {
-        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.PointerEnterItemEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.PointerEnteredItemEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnterItem(
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnteredItem(
         this Avalonia.Controls.MenuItem obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable(Avalonia.Controls.MenuItem.PointerEnterItemEvent, routes);
+        return obj.GetObservable(Avalonia.Controls.MenuItem.PointerEnteredItemEvent, routes);
     }
 
-    // Avalonia.Controls.MenuItem.PointerLeaveItemEvent
+    // Avalonia.Controls.MenuItem.PointerExitedItemEvent
 
-    public static T OnPointerLeaveItemHandler<T>(
+    public static T OnPointerExitedItemHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
     {
-        obj.AddHandler(Avalonia.Controls.MenuItem.PointerLeaveItemEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Controls.MenuItem.PointerExitedItemEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
-    public static T OnPointerLeaveItem<T>(
+    public static T OnPointerExitedItem<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
     {
-        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.PointerLeaveItemEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.PointerExitedItemEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerLeaveItem(
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExitedItem(
         this Avalonia.Controls.MenuItem obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable(Avalonia.Controls.MenuItem.PointerLeaveItemEvent, routes);
+        return obj.GetObservable(Avalonia.Controls.MenuItem.PointerExitedItemEvent, routes);
     }
 
     // Avalonia.Controls.MenuItem.SubmenuOpenedEvent
@@ -822,47 +822,47 @@ public static partial class MenuItemExtensions
             .Select(x => x.EventArgs);
     }
 
-    // Avalonia.Controls.MenuItem.PointerEnterItem
+    // Avalonia.Controls.MenuItem.PointerEnteredItem
 
-    public static T OnPointerEnterItemEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    public static T OnPointerEnteredItemEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = Observable
             .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerEnterItem += h, 
-                h => obj.PointerEnterItem -= h)
+                h => obj.PointerEnteredItem += h, 
+                h => obj.PointerEnteredItem -= h)
             .Select(x => x.EventArgs);
         handler(obj, observable);
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnterItemEvent(this Avalonia.Controls.MenuItem obj)
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnteredItemEvent(this Avalonia.Controls.MenuItem obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerEnterItem += h, 
-                h => obj.PointerEnterItem -= h)
+                h => obj.PointerEnteredItem += h, 
+                h => obj.PointerEnteredItem -= h)
             .Select(x => x.EventArgs);
     }
 
-    // Avalonia.Controls.MenuItem.PointerLeaveItem
+    // Avalonia.Controls.MenuItem.PointerExitedItem
 
-    public static T OnPointerLeaveItemEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    public static T OnPointerExitedItemEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = Observable
             .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerLeaveItem += h, 
-                h => obj.PointerLeaveItem -= h)
+                h => obj.PointerExitedItem += h, 
+                h => obj.PointerExitedItem -= h)
             .Select(x => x.EventArgs);
         handler(obj, observable);
         return obj;
     }
 
-    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerLeaveItemEvent(this Avalonia.Controls.MenuItem obj)
+    public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExitedItemEvent(this Avalonia.Controls.MenuItem obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Input.PointerEventArgs>, Avalonia.Input.PointerEventArgs>(
-                h => obj.PointerLeaveItem += h, 
-                h => obj.PointerLeaveItem -= h)
+                h => obj.PointerExitedItem += h, 
+                h => obj.PointerExitedItem -= h)
             .Select(x => x.EventArgs);
     }
 

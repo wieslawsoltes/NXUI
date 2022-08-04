@@ -562,6 +562,60 @@ public static partial class ControlExtensions
         return obj.GetObservable(Avalonia.Controls.Control.ContextRequestedEvent, routes);
     }
 
+    // Avalonia.Controls.Control.LoadedEvent
+
+    public static T OnLoadedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Control
+    {
+        obj.AddHandler(Avalonia.Controls.Control.LoadedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static T OnLoaded<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Control.LoadedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLoaded(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        return obj.GetObservable(Avalonia.Controls.Control.LoadedEvent, routes);
+    }
+
+    // Avalonia.Controls.Control.UnloadedEvent
+
+    public static T OnUnloadedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Control
+    {
+        obj.AddHandler(Avalonia.Controls.Control.UnloadedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    public static T OnUnloaded<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Control.UnloadedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUnloaded(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        return obj.GetObservable(Avalonia.Controls.Control.UnloadedEvent, routes);
+    }
+
     // Avalonia.Controls.Control.ContextRequested
 
     public static T OnContextRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler) where T : Avalonia.Controls.Control
@@ -581,6 +635,50 @@ public static partial class ControlExtensions
             .FromEventPattern<EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(
                 h => obj.ContextRequested += h, 
                 h => obj.ContextRequested -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.Control.Loaded
+
+    public static T OnLoadedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.Loaded += h, 
+                h => obj.Loaded -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLoadedEvent(this Avalonia.Controls.Control obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.Loaded += h, 
+                h => obj.Loaded -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.Control.Unloaded
+
+    public static T OnUnloadedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.Unloaded += h, 
+                h => obj.Unloaded -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUnloadedEvent(this Avalonia.Controls.Control obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.Unloaded += h, 
+                h => obj.Unloaded -= h)
             .Select(x => x.EventArgs);
     }
 }

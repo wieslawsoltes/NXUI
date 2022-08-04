@@ -113,7 +113,7 @@ public static partial class TextElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FontFamily<T>(this T obj, Avalonia.Media.FontFamily value) where T : Avalonia.Controls.Control
+    public static T FontFamily<T>(this T obj, Avalonia.Media.FontFamily value) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontFamilyProperty] = value;
         return obj;
@@ -132,7 +132,7 @@ public static partial class TextElementExtensions
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.FontFamilyProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -152,7 +152,7 @@ public static partial class TextElementExtensions
         this T obj,
         IObservable<Avalonia.Media.FontFamily> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.FontFamilyProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -167,7 +167,7 @@ public static partial class TextElementExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontFamilyProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindFontFamily(
-        this Avalonia.Controls.Control obj,
+        this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -183,7 +183,7 @@ public static partial class TextElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.FontFamily> ObserveFontFamily(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Media.FontFamily> ObserveFontFamily(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontFamilyProperty);
     }
@@ -195,7 +195,7 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFontFamily<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FontFamily>> handler) where T : Avalonia.Controls.Control
+    public static T OnFontFamily<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.FontFamily>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontFamilyProperty);
         handler(obj, observable);
@@ -211,7 +211,7 @@ public static partial class TextElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FontSize<T>(this T obj, System.Double value) where T : Avalonia.Controls.Control
+    public static T FontSize<T>(this T obj, System.Double value) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontSizeProperty] = value;
         return obj;
@@ -230,7 +230,7 @@ public static partial class TextElementExtensions
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.FontSizeProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -250,7 +250,7 @@ public static partial class TextElementExtensions
         this T obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.FontSizeProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -265,7 +265,7 @@ public static partial class TextElementExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontSizeProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindFontSize(
-        this Avalonia.Controls.Control obj,
+        this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -281,7 +281,7 @@ public static partial class TextElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Double> ObserveFontSize(this Avalonia.Controls.Control obj)
+    public static IObservable<System.Double> ObserveFontSize(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontSizeProperty);
     }
@@ -293,7 +293,7 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFontSize<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
+    public static T OnFontSize<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<System.Double>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontSizeProperty);
         handler(obj, observable);
@@ -309,7 +309,7 @@ public static partial class TextElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FontStyle<T>(this T obj, Avalonia.Media.FontStyle value) where T : Avalonia.Controls.Control
+    public static T FontStyle<T>(this T obj, Avalonia.Media.FontStyle value) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = value;
         return obj;
@@ -328,7 +328,7 @@ public static partial class TextElementExtensions
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.FontStyleProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -348,7 +348,7 @@ public static partial class TextElementExtensions
         this T obj,
         IObservable<Avalonia.Media.FontStyle> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.FontStyleProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -363,7 +363,7 @@ public static partial class TextElementExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindFontStyle(
-        this Avalonia.Controls.Control obj,
+        this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -379,7 +379,7 @@ public static partial class TextElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.FontStyle> ObserveFontStyle(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Media.FontStyle> ObserveFontStyle(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontStyleProperty);
     }
@@ -391,26 +391,26 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFontStyle<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FontStyle>> handler) where T : Avalonia.Controls.Control
+    public static T OnFontStyle<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.FontStyle>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontStyleProperty);
         handler(obj, observable);
         return obj;
     }
 
-    public static T FontStyleNormal<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStyleNormal<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
         return obj;
     }
 
-    public static T FontStyleItalic<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStyleItalic<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
         return obj;
     }
 
-    public static T FontStyleOblique<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStyleOblique<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = Avalonia.Media.FontStyle.Oblique;
         return obj;
@@ -425,7 +425,7 @@ public static partial class TextElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FontWeight<T>(this T obj, Avalonia.Media.FontWeight value) where T : Avalonia.Controls.Control
+    public static T FontWeight<T>(this T obj, Avalonia.Media.FontWeight value) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = value;
         return obj;
@@ -444,7 +444,7 @@ public static partial class TextElementExtensions
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.FontWeightProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -464,7 +464,7 @@ public static partial class TextElementExtensions
         this T obj,
         IObservable<Avalonia.Media.FontWeight> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.FontWeightProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -479,7 +479,7 @@ public static partial class TextElementExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindFontWeight(
-        this Avalonia.Controls.Control obj,
+        this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -495,7 +495,7 @@ public static partial class TextElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.FontWeight> ObserveFontWeight(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Media.FontWeight> ObserveFontWeight(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontWeightProperty);
     }
@@ -507,110 +507,110 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFontWeight<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FontWeight>> handler) where T : Avalonia.Controls.Control
+    public static T OnFontWeight<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.FontWeight>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontWeightProperty);
         handler(obj, observable);
         return obj;
     }
 
-    public static T FontWeightThin<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightThin<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
         return obj;
     }
 
-    public static T FontWeightExtraLight<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightExtraLight<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
         return obj;
     }
 
-    public static T FontWeightUltraLight<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightUltraLight<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
         return obj;
     }
 
-    public static T FontWeightLight<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightLight<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
         return obj;
     }
 
-    public static T FontWeightSemiLight<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightSemiLight<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
         return obj;
     }
 
-    public static T FontWeightNormal<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightNormal<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
         return obj;
     }
 
-    public static T FontWeightRegular<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightRegular<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
         return obj;
     }
 
-    public static T FontWeightMedium<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightMedium<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
         return obj;
     }
 
-    public static T FontWeightDemiBold<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightDemiBold<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
         return obj;
     }
 
-    public static T FontWeightSemiBold<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightSemiBold<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
         return obj;
     }
 
-    public static T FontWeightBold<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightBold<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
         return obj;
     }
 
-    public static T FontWeightExtraBold<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightExtraBold<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
         return obj;
     }
 
-    public static T FontWeightUltraBold<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightUltraBold<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
         return obj;
     }
 
-    public static T FontWeightBlack<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightBlack<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
         return obj;
     }
 
-    public static T FontWeightHeavy<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightHeavy<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
         return obj;
     }
 
-    public static T FontWeightExtraBlack<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightExtraBlack<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
         return obj;
     }
 
-    public static T FontWeightUltraBlack<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontWeightUltraBlack<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBlack;
         return obj;
@@ -625,7 +625,7 @@ public static partial class TextElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FontStretch<T>(this T obj, Avalonia.Media.FontStretch value) where T : Avalonia.Controls.Control
+    public static T FontStretch<T>(this T obj, Avalonia.Media.FontStretch value) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = value;
         return obj;
@@ -644,7 +644,7 @@ public static partial class TextElementExtensions
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.FontStretchProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -664,7 +664,7 @@ public static partial class TextElementExtensions
         this T obj,
         IObservable<Avalonia.Media.FontStretch> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.FontStretchProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -679,7 +679,7 @@ public static partial class TextElementExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindFontStretch(
-        this Avalonia.Controls.Control obj,
+        this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -695,7 +695,7 @@ public static partial class TextElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.FontStretch> ObserveFontStretch(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Media.FontStretch> ObserveFontStretch(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontStretchProperty);
     }
@@ -707,62 +707,62 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFontStretch<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FontStretch>> handler) where T : Avalonia.Controls.Control
+    public static T OnFontStretch<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.FontStretch>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontStretchProperty);
         handler(obj, observable);
         return obj;
     }
 
-    public static T FontStretchUltraCondensed<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStretchUltraCondensed<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
         return obj;
     }
 
-    public static T FontStretchExtraCondensed<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStretchExtraCondensed<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
         return obj;
     }
 
-    public static T FontStretchCondensed<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStretchCondensed<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
         return obj;
     }
 
-    public static T FontStretchSemiCondensed<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStretchSemiCondensed<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
         return obj;
     }
 
-    public static T FontStretchNormal<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStretchNormal<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
         return obj;
     }
 
-    public static T FontStretchSemiExpanded<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStretchSemiExpanded<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
         return obj;
     }
 
-    public static T FontStretchExpanded<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStretchExpanded<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
         return obj;
     }
 
-    public static T FontStretchExtraExpanded<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStretchExtraExpanded<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
         return obj;
     }
 
-    public static T FontStretchUltraExpanded<T>(this T obj) where T : Avalonia.Controls.Control
+    public static T FontStretchUltraExpanded<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.UltraExpanded;
         return obj;
@@ -777,7 +777,7 @@ public static partial class TextElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Foreground<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Control
+    public static T Foreground<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.ForegroundProperty] = value;
         return obj;
@@ -796,7 +796,7 @@ public static partial class TextElementExtensions
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.ForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -816,7 +816,7 @@ public static partial class TextElementExtensions
         this T obj,
         IObservable<Avalonia.Media.IBrush> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
         var descriptor = Avalonia.Controls.Documents.TextElement.ForegroundProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -831,7 +831,7 @@ public static partial class TextElementExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <returns>A <see cref="Avalonia.Controls.Documents.TextElement.ForegroundProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindForeground(
-        this Avalonia.Controls.Control obj,
+        this Avalonia.Controls.Documents.TextElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -847,7 +847,7 @@ public static partial class TextElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveForeground(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Media.IBrush> ObserveForeground(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
     }
@@ -859,7 +859,7 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Control
+    public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
         handler(obj, observable);
