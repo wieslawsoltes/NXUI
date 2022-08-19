@@ -27,8 +27,6 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.StyledProperty<Avalonia.Controls.Control> PopupPlacementTarget => Avalonia.Controls.Primitives.Popup.PlacementTargetProperty;
 
-    public static Avalonia.StyledProperty<System.Boolean> PopupObeyScreenEdges => Avalonia.Controls.Primitives.Popup.ObeyScreenEdgesProperty;
-
     public static Avalonia.StyledProperty<System.Boolean> PopupOverlayDismissEventPassThrough => Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.Popup,Avalonia.Input.IInputElement> PopupOverlayInputPassThroughElement => Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty;

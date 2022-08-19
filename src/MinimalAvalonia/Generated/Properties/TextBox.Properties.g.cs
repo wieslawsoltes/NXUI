@@ -64,4 +64,5 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<System.Boolean> TextBoxIsUndoEnabled => Avalonia.Controls.TextBox.IsUndoEnabledProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Int32> TextBoxUndoLimit => Avalonia.Controls.TextBox.UndoLimitProperty;
+
 }
