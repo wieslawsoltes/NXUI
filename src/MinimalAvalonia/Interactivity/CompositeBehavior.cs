@@ -1,7 +1,13 @@
 namespace MinimalAvalonia.Interactivity;
 
+/// <summary>
+/// 
+/// </summary>
 public class CompositeBehavior : Behavior
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly DirectProperty<CompositeBehavior, IEnumerable<Behavior>?> BehaviorsProperty =
         AvaloniaProperty.RegisterDirect<CompositeBehavior, IEnumerable<Behavior>?>(
             nameof(Behaviors), 
@@ -15,6 +21,9 @@ public class CompositeBehavior : Behavior
         BehaviorsProperty.Changed.AddClassHandler<CompositeBehavior>((x, e) => x.ItemsChanged(e));
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     [Content]
     public IEnumerable<Behavior>? Behaviors
     {
@@ -22,6 +31,10 @@ public class CompositeBehavior : Behavior
         set { SetAndRaise(BehaviorsProperty, ref _behaviors, value); }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="e"></param>
     protected virtual void ItemsChanged(AvaloniaPropertyChangedEventArgs e)
     {
         if (e.OldValue is IEnumerable<Behavior> oldValue)
@@ -47,6 +60,9 @@ public class CompositeBehavior : Behavior
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     protected override void OnAttached()
     {
         base.OnAttached();
@@ -60,6 +76,9 @@ public class CompositeBehavior : Behavior
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     protected override void OnDetaching()
     {
         base.OnDetaching();
@@ -73,6 +92,9 @@ public class CompositeBehavior : Behavior
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     protected override void OnAttachedToVisualTree()
     {
         base.OnAttachedToVisualTree();
@@ -86,6 +108,9 @@ public class CompositeBehavior : Behavior
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     protected override void OnDetachedFromVisualTree()
     {
         base.OnDetachedFromVisualTree();

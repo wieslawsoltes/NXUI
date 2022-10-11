@@ -1,12 +1,24 @@
 ﻿namespace MinimalAvalonia.Interactivity;
 
+/// <summary>
+/// 
+/// </summary>
 public class Interaction
 {
     static Interaction() => BehaviorProperty.Changed.Subscribe(BehaviorChanged);
 
+    /// <summary>
+    /// 
+    /// </summary>
     public static readonly AttachedProperty<Behavior?> BehaviorProperty =
         AvaloniaProperty.RegisterAttached<Interaction, AvaloniaObject, Behavior?>("Behavior");
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentNullException"></exception>
     public static Behavior? GetBehavior(AvaloniaObject obj)
     {
         if (obj is null)
@@ -24,6 +36,12 @@ public class Interaction
         return behavior;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <exception cref="ArgumentNullException"></exception>
     public static void SetBehavior(AvaloniaObject obj, Behavior? value)
     {
         if (obj is null)

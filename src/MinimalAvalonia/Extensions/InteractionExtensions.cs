@@ -1,9 +1,18 @@
 namespace MinimalAvalonia.Extensions;
 
+/// <summary>
+/// 
+/// </summary>
 public static partial class InteractionExtensions
 {
     // Interaction.BehaviorProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="style"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static Style SetInteractionBehavior<T>(this Style style) where T : Behavior, new()
     {
         var setter = new Setter(Interaction.BehaviorProperty, BehaviorTemplate.Create<T>());
@@ -11,6 +20,12 @@ public static partial class InteractionExtensions
         return style;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="style"></param>
+    /// <param name="func"></param>
+    /// <returns></returns>
     public static Style SetInteractionBehavior(this Style style, params Func<Behavior>[] func)
     {
         var behaviorTemplate = BehaviorTemplate.Create(() => 

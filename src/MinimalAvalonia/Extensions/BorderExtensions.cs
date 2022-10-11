@@ -1,5 +1,8 @@
 namespace MinimalAvalonia.Extensions;
 
+/// <summary>
+/// 
+/// </summary>
 public static partial class BorderExtensions
 {
     // BorderThicknessProperty

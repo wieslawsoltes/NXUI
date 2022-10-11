@@ -1,9 +1,18 @@
 namespace MinimalAvalonia.Extensions;
 
+/// <summary>
+/// 
+/// </summary>
 public static partial class VisualExtensions
 {
     // AttachedToVisualTree
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="visual"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Visual OnAttachedToVisualTree(this Visual visual, Action<IObservable<VisualTreeAttachmentEventArgs>> handler)
     {
         var observable = Observable
@@ -15,6 +24,11 @@ public static partial class VisualExtensions
         return visual;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="visual"></param>
+    /// <returns></returns>
     public static IObservable<VisualTreeAttachmentEventArgs> OnAttachedToVisualTree(this Visual visual)
     {
         return Observable
@@ -26,6 +40,12 @@ public static partial class VisualExtensions
 
     // DetachedFromVisualTree
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="visual"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Visual OnDetachedFromVisualTree(this Visual visual, Action<IObservable<VisualTreeAttachmentEventArgs>> handler)
     {
         var observable = Observable
@@ -37,6 +57,11 @@ public static partial class VisualExtensions
         return visual;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="visual"></param>
+    /// <returns></returns>
     public static IObservable<VisualTreeAttachmentEventArgs> OnDetachedFromVisualTree(this Visual visual)
     {
         return Observable

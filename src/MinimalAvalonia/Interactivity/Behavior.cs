@@ -1,9 +1,15 @@
 namespace MinimalAvalonia.Interactivity;
 
+/// <summary>
+/// 
+/// </summary>
 public abstract class Behavior : AvaloniaObject
 {
     internal bool _isInitialized;
 
+    /// <summary>
+    /// 
+    /// </summary>
     public IAvaloniaObject? AssociatedObject { get; private set; }
 
     internal void Attach(IAvaloniaObject obj)
@@ -28,18 +34,30 @@ public abstract class Behavior : AvaloniaObject
         OnDetachedFromVisualTree();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     protected virtual void OnAttached()
     {
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     protected virtual void OnDetaching()
     {
     }
-    
+
+    /// <summary>
+    /// 
+    /// </summary>
     protected virtual void OnAttachedToVisualTree()
     {
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     protected virtual void OnDetachedFromVisualTree()
     {
     }
