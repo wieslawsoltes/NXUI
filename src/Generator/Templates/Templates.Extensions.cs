@@ -7,6 +7,12 @@ namespace Generator;
 internal static partial class Templates
 {
     public static string PropertyMethodEnumTemplate = @"
+    /// <summary>
+    /// Sets a <see cref=""%ClassType%.%Name%Property""/> value to <see cref=""%ValueType%.%EnumValue%""/>.
+    /// </summary>
+    /// <param name=""obj"">The target object.</param>
+    /// <typeparam name=""T"">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T %Name%%EnumValue%<T>(this T obj) where T : %OwnerType%
     {
         obj[%ClassType%.%Name%Property] = %ValueType%.%EnumValue%;
@@ -14,6 +20,11 @@ internal static partial class Templates
     }";
 
     public static string PropertyMethodEnumSealedTemplate = @"
+    /// <summary>
+    /// Sets a <see cref=""%ClassType%.%Name%Property""/> value to <see cref=""%ValueType%.%EnumValue%""/>.
+    /// </summary>
+    /// <param name=""obj"">The target object.</param>
+    /// <returns>The target object reference.</returns>
     public static %OwnerType% %Name%%EnumValue%(this %OwnerType% obj)
     {
         obj[%ClassType%.%Name%Property] = %ValueType%.%EnumValue%;
