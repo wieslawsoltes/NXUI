@@ -37,7 +37,12 @@ internal static class PropertiesGenerator
                 }
                 addedProperties.Add(p.Name);
 
-                WriteLine($"    public static {p.PropertyType} {c.Name}{p.Name} => {c.Type}.{p.Name}Property;");
+                var propertyBuilder = new StringBuilder(Templates.PropertyTemplate);
+                propertyBuilder.Replace("%ClassName%", c.Name);
+                propertyBuilder.Replace("%ClassType%", c.Type);
+                propertyBuilder.Replace("%PropertyName%", p.Name);
+                propertyBuilder.Replace("%PropertyType%", p.PropertyType);
+                WriteLine(propertyBuilder.ToString());
 
                 if (i < c.Properties.Length - 1)
                 {
