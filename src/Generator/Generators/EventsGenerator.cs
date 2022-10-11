@@ -37,7 +37,12 @@ internal static class EventsGenerator
                 }
                 addedEvents.Add(e.Name);
 
-                WriteLine($"    public static {e.EventType} {c.Name}{e.Name} => {c.Type}.{e.Name}Event;");
+                var eventBuilder = new StringBuilder(Templates.EventTemplate);
+                eventBuilder.Replace("%ClassName%", c.Name);
+                eventBuilder.Replace("%ClassType%", c.Type);
+                eventBuilder.Replace("%EventName%", e.Name);
+                eventBuilder.Replace("%EventType%", e.EventType);
+                WriteLine(eventBuilder.ToString());
 
                 if (i  < events.Length - 1)
                 {
