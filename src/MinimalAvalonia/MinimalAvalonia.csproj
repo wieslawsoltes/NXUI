@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>true</IsPackable>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <RootNamespace>MinimalAvalonia</RootNamespace>
     <PackageId>MinimalAvalonia</PackageId>
   </PropertyGroup>
