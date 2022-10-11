@@ -8,6 +8,13 @@ public static partial class ListBoxExtensions
 {
     // Avalonia.Controls.ListBox.ScrollProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ListBox.ScrollProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ListBox.ScrollProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindScroll(
         this Avalonia.Controls.ListBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -17,11 +24,25 @@ public static partial class ListBoxExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ListBox.ScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.Controls.Primitives.IScrollable> ObserveScroll(this Avalonia.Controls.ListBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.ListBox.ScrollProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ListBox.ScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.ListBox OnScroll(this Avalonia.Controls.ListBox obj, Action<Avalonia.Controls.ListBox, IObservable<Avalonia.Controls.Primitives.IScrollable>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ListBox.ScrollProperty);

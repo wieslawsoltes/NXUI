@@ -302,6 +302,13 @@ public static partial class MaskedTextBoxExtensions
 
     // Avalonia.Controls.MaskedTextBox.MaskCompletedProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.MaskedTextBox.MaskCompletedProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.MaskCompletedProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindMaskCompleted(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -311,11 +318,25 @@ public static partial class MaskedTextBoxExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.MaskedTextBox.MaskCompletedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Nullable<System.Boolean>> ObserveMaskCompleted(this Avalonia.Controls.MaskedTextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskCompletedProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.MaskedTextBox.MaskCompletedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.MaskedTextBox OnMaskCompleted(this Avalonia.Controls.MaskedTextBox obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Nullable<System.Boolean>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskCompletedProperty);
@@ -325,6 +346,13 @@ public static partial class MaskedTextBoxExtensions
 
     // Avalonia.Controls.MaskedTextBox.MaskFullProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.MaskedTextBox.MaskFullProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.MaskedTextBox.MaskFullProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindMaskFull(
         this Avalonia.Controls.MaskedTextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -334,11 +362,25 @@ public static partial class MaskedTextBoxExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.MaskedTextBox.MaskFullProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Nullable<System.Boolean>> ObserveMaskFull(this Avalonia.Controls.MaskedTextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskFullProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.MaskedTextBox.MaskFullProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.MaskedTextBox OnMaskFull(this Avalonia.Controls.MaskedTextBox obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Nullable<System.Boolean>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskFullProperty);

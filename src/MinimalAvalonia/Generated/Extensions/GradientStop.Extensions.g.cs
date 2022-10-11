@@ -8,12 +8,26 @@ public static partial class GradientStopExtensions
 {
     // Avalonia.Media.GradientStop.OffsetProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.GradientStop Offset(this Avalonia.Media.GradientStop obj, System.Double value)
     {
         obj[Avalonia.Media.GradientStop.OffsetProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.GradientStop Offset(
         this Avalonia.Media.GradientStop obj,
         Avalonia.Data.IBinding binding,
@@ -25,6 +39,14 @@ public static partial class GradientStopExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.GradientStop Offset(
         this Avalonia.Media.GradientStop obj,
         IObservable<System.Double> observable,
@@ -36,6 +58,13 @@ public static partial class GradientStopExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindOffset(
         this Avalonia.Media.GradientStop obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -45,11 +74,22 @@ public static partial class GradientStopExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<System.Double> ObserveOffset(this Avalonia.Media.GradientStop obj)
     {
         return obj.GetObservable(Avalonia.Media.GradientStop.OffsetProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.GradientStop OnOffset(this Avalonia.Media.GradientStop obj, Action<Avalonia.Media.GradientStop, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GradientStop.OffsetProperty);
@@ -59,12 +99,26 @@ public static partial class GradientStopExtensions
 
     // Avalonia.Media.GradientStop.ColorProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.GradientStop Color(this Avalonia.Media.GradientStop obj, Avalonia.Media.Color value)
     {
         obj[Avalonia.Media.GradientStop.ColorProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.GradientStop Color(
         this Avalonia.Media.GradientStop obj,
         Avalonia.Data.IBinding binding,
@@ -76,6 +130,14 @@ public static partial class GradientStopExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.GradientStop Color(
         this Avalonia.Media.GradientStop obj,
         IObservable<Avalonia.Media.Color> observable,
@@ -87,6 +149,13 @@ public static partial class GradientStopExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindColor(
         this Avalonia.Media.GradientStop obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -96,11 +165,22 @@ public static partial class GradientStopExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Media.Color> ObserveColor(this Avalonia.Media.GradientStop obj)
     {
         return obj.GetObservable(Avalonia.Media.GradientStop.ColorProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.GradientStop OnColor(this Avalonia.Media.GradientStop obj, Action<Avalonia.Media.GradientStop, IObservable<Avalonia.Media.Color>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GradientStop.ColorProperty);

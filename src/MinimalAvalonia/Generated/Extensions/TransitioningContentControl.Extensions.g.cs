@@ -106,6 +106,13 @@ public static partial class TransitioningContentControlExtensions
 
     // Avalonia.Controls.TransitioningContentControl.CurrentContentProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TransitioningContentControl.CurrentContentProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TransitioningContentControl.CurrentContentProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindCurrentContent(
         this Avalonia.Controls.TransitioningContentControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -115,11 +122,25 @@ public static partial class TransitioningContentControlExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TransitioningContentControl.CurrentContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Object> ObserveCurrentContent(this Avalonia.Controls.TransitioningContentControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.TransitioningContentControl.CurrentContentProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TransitioningContentControl.CurrentContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.TransitioningContentControl OnCurrentContent(this Avalonia.Controls.TransitioningContentControl obj, Action<Avalonia.Controls.TransitioningContentControl, IObservable<System.Object>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TransitioningContentControl.CurrentContentProperty);

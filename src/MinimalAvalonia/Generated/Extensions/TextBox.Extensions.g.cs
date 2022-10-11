@@ -2162,6 +2162,13 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.CanCutProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TextBox.CanCutProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TextBox.CanCutProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindCanCut(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -2171,11 +2178,25 @@ public static partial class TextBoxExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.CanCutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveCanCut(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.CanCutProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.CanCutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.TextBox OnCanCut(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanCutProperty);
@@ -2185,6 +2206,13 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.CanCopyProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TextBox.CanCopyProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TextBox.CanCopyProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindCanCopy(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -2194,11 +2222,25 @@ public static partial class TextBoxExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.CanCopyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveCanCopy(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.CanCopyProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.CanCopyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.TextBox OnCanCopy(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanCopyProperty);
@@ -2208,6 +2250,13 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.CanPasteProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TextBox.CanPasteProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TextBox.CanPasteProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindCanPaste(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -2217,11 +2266,25 @@ public static partial class TextBoxExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.CanPasteProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveCanPaste(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.CanPasteProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.CanPasteProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.TextBox OnCanPaste(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanPasteProperty);
@@ -2427,6 +2490,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.CopyingToClipboardEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnCopyingToClipboardHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -2436,6 +2507,14 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnCopyingToClipboard<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
@@ -2445,6 +2524,12 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboard(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -2454,6 +2539,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.CuttingToClipboardEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnCuttingToClipboardHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -2463,6 +2556,14 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnCuttingToClipboard<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
@@ -2472,6 +2573,12 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCuttingToClipboard(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -2481,6 +2588,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.PastingFromClipboardEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPastingFromClipboardHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -2490,6 +2605,14 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPastingFromClipboard<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
@@ -2499,6 +2622,12 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPastingFromClipboard(
         this Avalonia.Controls.TextBox obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -2508,6 +2637,13 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.CopyingToClipboard
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnCopyingToClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = Observable
@@ -2519,6 +2655,11 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboardEvent(this Avalonia.Controls.TextBox obj)
     {
         return Observable
@@ -2530,6 +2671,13 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.CuttingToClipboard
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnCuttingToClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = Observable
@@ -2541,6 +2689,11 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCuttingToClipboardEvent(this Avalonia.Controls.TextBox obj)
     {
         return Observable
@@ -2552,6 +2705,13 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.PastingFromClipboard
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPastingFromClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = Observable
@@ -2563,6 +2723,11 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPastingFromClipboardEvent(this Avalonia.Controls.TextBox obj)
     {
         return Observable

@@ -302,6 +302,13 @@ public static partial class RichTextBlockExtensions
 
     // Avalonia.Controls.RichTextBlock.SelectedTextProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.RichTextBlock.SelectedTextProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.RichTextBlock.SelectedTextProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindSelectedText(
         this Avalonia.Controls.RichTextBlock obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -311,11 +318,25 @@ public static partial class RichTextBlockExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.RichTextBlock.SelectedTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.String> ObserveSelectedText(this Avalonia.Controls.RichTextBlock obj)
     {
         return obj.GetObservable(Avalonia.Controls.RichTextBlock.SelectedTextProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.RichTextBlock.SelectedTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.RichTextBlock OnSelectedText(this Avalonia.Controls.RichTextBlock obj, Action<Avalonia.Controls.RichTextBlock, IObservable<System.String>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.RichTextBlock.SelectedTextProperty);
@@ -521,6 +542,14 @@ public static partial class RichTextBlockExtensions
 
     // Avalonia.Controls.RichTextBlock.CopyingToClipboardEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnCopyingToClipboardHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -530,6 +559,14 @@ public static partial class RichTextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnCopyingToClipboard<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.RichTextBlock
@@ -539,6 +576,12 @@ public static partial class RichTextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboard(
         this Avalonia.Controls.RichTextBlock obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -548,6 +591,13 @@ public static partial class RichTextBlockExtensions
 
     // Avalonia.Controls.RichTextBlock.CopyingToClipboard
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnCopyingToClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.RichTextBlock
     {
         var observable = Observable
@@ -559,6 +609,11 @@ public static partial class RichTextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboardEvent(this Avalonia.Controls.RichTextBlock obj)
     {
         return Observable

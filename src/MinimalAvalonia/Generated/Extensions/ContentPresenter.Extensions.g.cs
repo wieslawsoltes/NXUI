@@ -1434,6 +1434,13 @@ public static partial class ContentPresenterExtensions
 
     // Avalonia.Controls.Presenters.ContentPresenter.ChildProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindChild(
         this Avalonia.Controls.Presenters.ContentPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -1443,11 +1450,25 @@ public static partial class ContentPresenterExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.Controls.IControl> ObserveChild(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Presenters.ContentPresenter OnChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Controls.IControl>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);

@@ -890,6 +890,13 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.SearchTextProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindSearchText(
         this Avalonia.Controls.AutoCompleteBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -899,11 +906,25 @@ public static partial class AutoCompleteBoxExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.String> ObserveSearchText(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.AutoCompleteBox OnSearchText(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
@@ -1767,6 +1788,14 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnSelectionChangedHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.SelectionChangedEventArgs> action,
@@ -1776,6 +1805,14 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnSelectionChanged<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.AutoCompleteBox
@@ -1785,6 +1822,12 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChanged(
         this Avalonia.Controls.AutoCompleteBox obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -1794,6 +1837,13 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.TextChanged
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnTextChangedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1805,6 +1855,11 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<EventArgs> ObserveOnTextChangedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -1816,6 +1871,13 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.Populating
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPopulatingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.PopulatingEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1827,6 +1889,11 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.PopulatingEventArgs> ObserveOnPopulatingEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -1838,6 +1905,13 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.Populated
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPopulatedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.PopulatedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1849,6 +1923,11 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.PopulatedEventArgs> ObserveOnPopulatedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -1860,6 +1939,13 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.DropDownOpening
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnDropDownOpeningEvent<T>(this T obj, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1871,6 +1957,11 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<System.ComponentModel.CancelEventArgs> ObserveOnDropDownOpeningEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -1882,6 +1973,13 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.DropDownOpened
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnDropDownOpenedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1893,6 +1991,11 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<EventArgs> ObserveOnDropDownOpenedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -1904,6 +2007,13 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.DropDownClosing
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnDropDownClosingEvent<T>(this T obj, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1915,6 +2025,11 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<System.ComponentModel.CancelEventArgs> ObserveOnDropDownClosingEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -1926,6 +2041,13 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.DropDownClosed
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnDropDownClosedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1937,6 +2059,11 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<EventArgs> ObserveOnDropDownClosedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -1948,6 +2075,13 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.SelectionChanged
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnSelectionChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1959,6 +2093,11 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChangedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable

@@ -374,6 +374,13 @@ public static partial class ScrollBarExtensions
 
     // Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindIsExpanded(
         this Avalonia.Controls.Primitives.ScrollBar obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -383,11 +390,25 @@ public static partial class ScrollBarExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveIsExpanded(this Avalonia.Controls.Primitives.ScrollBar obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.ScrollBar OnIsExpanded(this Avalonia.Controls.Primitives.ScrollBar obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);

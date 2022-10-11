@@ -8,6 +8,13 @@ public static partial class FlyoutBaseExtensions
 {
     // Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindIsOpen(
         this Avalonia.Controls.Primitives.FlyoutBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -17,11 +24,25 @@ public static partial class FlyoutBaseExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveIsOpen(this Avalonia.Controls.Primitives.FlyoutBase obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.FlyoutBase OnIsOpen(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
@@ -31,6 +52,13 @@ public static partial class FlyoutBaseExtensions
 
     // Avalonia.Controls.Primitives.FlyoutBase.TargetProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindTarget(
         this Avalonia.Controls.Primitives.FlyoutBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -40,11 +68,25 @@ public static partial class FlyoutBaseExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.Controls.Control> ObserveTarget(this Avalonia.Controls.Primitives.FlyoutBase obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.FlyoutBase OnTarget(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<Avalonia.Controls.Control>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);

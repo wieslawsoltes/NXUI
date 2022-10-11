@@ -8,12 +8,26 @@ public static partial class ArcSegmentExtensions
 {
     // Avalonia.Media.ArcSegment.IsLargeArcProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment IsLargeArc(this Avalonia.Media.ArcSegment obj, System.Boolean value)
     {
         obj[Avalonia.Media.ArcSegment.IsLargeArcProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment IsLargeArc(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.IBinding binding,
@@ -25,6 +39,14 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment IsLargeArc(
         this Avalonia.Media.ArcSegment obj,
         IObservable<System.Boolean> observable,
@@ -36,6 +58,13 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindIsLargeArc(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -45,11 +74,22 @@ public static partial class ArcSegmentExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<System.Boolean> ObserveIsLargeArc(this Avalonia.Media.ArcSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.ArcSegment.IsLargeArcProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment OnIsLargeArc(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.IsLargeArcProperty);
@@ -59,12 +99,26 @@ public static partial class ArcSegmentExtensions
 
     // Avalonia.Media.ArcSegment.PointProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment Point(this Avalonia.Media.ArcSegment obj, Avalonia.Point value)
     {
         obj[Avalonia.Media.ArcSegment.PointProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment Point(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.IBinding binding,
@@ -76,6 +130,14 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment Point(
         this Avalonia.Media.ArcSegment obj,
         IObservable<Avalonia.Point> observable,
@@ -87,6 +149,13 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindPoint(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -96,11 +165,22 @@ public static partial class ArcSegmentExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Point> ObservePoint(this Avalonia.Media.ArcSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.ArcSegment.PointProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment OnPoint(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.PointProperty);
@@ -110,12 +190,26 @@ public static partial class ArcSegmentExtensions
 
     // Avalonia.Media.ArcSegment.RotationAngleProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment RotationAngle(this Avalonia.Media.ArcSegment obj, System.Double value)
     {
         obj[Avalonia.Media.ArcSegment.RotationAngleProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment RotationAngle(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.IBinding binding,
@@ -127,6 +221,14 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment RotationAngle(
         this Avalonia.Media.ArcSegment obj,
         IObservable<System.Double> observable,
@@ -138,6 +240,13 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindRotationAngle(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -147,11 +256,22 @@ public static partial class ArcSegmentExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<System.Double> ObserveRotationAngle(this Avalonia.Media.ArcSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.ArcSegment.RotationAngleProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment OnRotationAngle(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.RotationAngleProperty);
@@ -161,12 +281,26 @@ public static partial class ArcSegmentExtensions
 
     // Avalonia.Media.ArcSegment.SizeProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment Size(this Avalonia.Media.ArcSegment obj, Avalonia.Size value)
     {
         obj[Avalonia.Media.ArcSegment.SizeProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment Size(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.IBinding binding,
@@ -178,6 +312,14 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment Size(
         this Avalonia.Media.ArcSegment obj,
         IObservable<Avalonia.Size> observable,
@@ -189,6 +331,13 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindSize(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -198,11 +347,22 @@ public static partial class ArcSegmentExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Size> ObserveSize(this Avalonia.Media.ArcSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.ArcSegment.SizeProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment OnSize(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.SizeProperty);
@@ -212,12 +372,26 @@ public static partial class ArcSegmentExtensions
 
     // Avalonia.Media.ArcSegment.SweepDirectionProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment SweepDirection(this Avalonia.Media.ArcSegment obj, Avalonia.Media.SweepDirection value)
     {
         obj[Avalonia.Media.ArcSegment.SweepDirectionProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment SweepDirection(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.IBinding binding,
@@ -229,6 +403,14 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment SweepDirection(
         this Avalonia.Media.ArcSegment obj,
         IObservable<Avalonia.Media.SweepDirection> observable,
@@ -240,6 +422,13 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindSweepDirection(
         this Avalonia.Media.ArcSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -249,11 +438,22 @@ public static partial class ArcSegmentExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Media.SweepDirection> ObserveSweepDirection(this Avalonia.Media.ArcSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.ArcSegment.SweepDirectionProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ArcSegment OnSweepDirection(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<Avalonia.Media.SweepDirection>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.SweepDirectionProperty);

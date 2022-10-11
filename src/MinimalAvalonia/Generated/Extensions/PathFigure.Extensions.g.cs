@@ -8,12 +8,26 @@ public static partial class PathFigureExtensions
 {
     // Avalonia.Media.PathFigure.IsClosedProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure IsClosed(this Avalonia.Media.PathFigure obj, System.Boolean value)
     {
         obj[Avalonia.Media.PathFigure.IsClosedProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure IsClosed(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.IBinding binding,
@@ -25,6 +39,14 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure IsClosed(
         this Avalonia.Media.PathFigure obj,
         IObservable<System.Boolean> observable,
@@ -36,6 +58,13 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindIsClosed(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -45,11 +74,22 @@ public static partial class PathFigureExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<System.Boolean> ObserveIsClosed(this Avalonia.Media.PathFigure obj)
     {
         return obj.GetObservable(Avalonia.Media.PathFigure.IsClosedProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure OnIsClosed(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.IsClosedProperty);
@@ -59,12 +99,26 @@ public static partial class PathFigureExtensions
 
     // Avalonia.Media.PathFigure.IsFilledProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure IsFilled(this Avalonia.Media.PathFigure obj, System.Boolean value)
     {
         obj[Avalonia.Media.PathFigure.IsFilledProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure IsFilled(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.IBinding binding,
@@ -76,6 +130,14 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure IsFilled(
         this Avalonia.Media.PathFigure obj,
         IObservable<System.Boolean> observable,
@@ -87,6 +149,13 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindIsFilled(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -96,11 +165,22 @@ public static partial class PathFigureExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<System.Boolean> ObserveIsFilled(this Avalonia.Media.PathFigure obj)
     {
         return obj.GetObservable(Avalonia.Media.PathFigure.IsFilledProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure OnIsFilled(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.IsFilledProperty);
@@ -110,12 +190,26 @@ public static partial class PathFigureExtensions
 
     // Avalonia.Media.PathFigure.SegmentsProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure Segments(this Avalonia.Media.PathFigure obj, Avalonia.Media.PathSegments value)
     {
         obj[Avalonia.Media.PathFigure.SegmentsProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure Segments(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.IBinding binding,
@@ -127,6 +221,14 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure Segments(
         this Avalonia.Media.PathFigure obj,
         IObservable<Avalonia.Media.PathSegments> observable,
@@ -138,6 +240,13 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindSegments(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -147,11 +256,22 @@ public static partial class PathFigureExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Media.PathSegments> ObserveSegments(this Avalonia.Media.PathFigure obj)
     {
         return obj.GetObservable(Avalonia.Media.PathFigure.SegmentsProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure OnSegments(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<Avalonia.Media.PathSegments>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.SegmentsProperty);
@@ -161,12 +281,26 @@ public static partial class PathFigureExtensions
 
     // Avalonia.Media.PathFigure.StartPointProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure StartPoint(this Avalonia.Media.PathFigure obj, Avalonia.Point value)
     {
         obj[Avalonia.Media.PathFigure.StartPointProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure StartPoint(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.IBinding binding,
@@ -178,6 +312,14 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure StartPoint(
         this Avalonia.Media.PathFigure obj,
         IObservable<Avalonia.Point> observable,
@@ -189,6 +331,13 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindStartPoint(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -198,11 +347,22 @@ public static partial class PathFigureExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Point> ObserveStartPoint(this Avalonia.Media.PathFigure obj)
     {
         return obj.GetObservable(Avalonia.Media.PathFigure.StartPointProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PathFigure OnStartPoint(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.StartPointProperty);

@@ -204,6 +204,13 @@ public static partial class ItemsControlExtensions
 
     // Avalonia.Controls.ItemsControl.ItemCountProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ItemsControl.ItemCountProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ItemsControl.ItemCountProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindItemCount(
         this Avalonia.Controls.ItemsControl obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -213,11 +220,25 @@ public static partial class ItemsControlExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ItemsControl.ItemCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Int32> ObserveItemCount(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemCountProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ItemsControl.ItemCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.ItemsControl OnItemCount(this Avalonia.Controls.ItemsControl obj, Action<Avalonia.Controls.ItemsControl, IObservable<System.Int32>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemCountProperty);

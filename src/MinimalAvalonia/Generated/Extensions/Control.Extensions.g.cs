@@ -522,6 +522,14 @@ public static partial class ControlExtensions
 
     // Avalonia.Controls.Control.RequestBringIntoViewEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnRequestBringIntoViewHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.RequestBringIntoViewEventArgs> action,
@@ -531,6 +539,14 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnRequestBringIntoView<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
@@ -540,6 +556,12 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs> ObserveOnRequestBringIntoView(
         this Avalonia.Controls.Control obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -549,6 +571,14 @@ public static partial class ControlExtensions
 
     // Avalonia.Controls.Control.ContextRequestedEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnContextRequestedHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.ContextRequestedEventArgs> action,
@@ -558,6 +588,14 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnContextRequested<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
@@ -567,6 +605,12 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequested(
         this Avalonia.Controls.Control obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -576,6 +620,14 @@ public static partial class ControlExtensions
 
     // Avalonia.Controls.Control.LoadedEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnLoadedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -585,6 +637,14 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnLoaded<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Control
@@ -594,6 +654,12 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLoaded(
         this Avalonia.Controls.Control obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -603,6 +669,14 @@ public static partial class ControlExtensions
 
     // Avalonia.Controls.Control.UnloadedEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnUnloadedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -612,6 +686,14 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnUnloaded<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Control
@@ -621,6 +703,12 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUnloaded(
         this Avalonia.Controls.Control obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -630,6 +718,13 @@ public static partial class ControlExtensions
 
     // Avalonia.Controls.Control.ContextRequested
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnContextRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler) where T : Avalonia.Controls.Control
     {
         var observable = Observable
@@ -641,6 +736,11 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequestedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable
@@ -652,6 +752,13 @@ public static partial class ControlExtensions
 
     // Avalonia.Controls.Control.Loaded
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnLoadedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Control
     {
         var observable = Observable
@@ -663,6 +770,11 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLoadedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable
@@ -674,6 +786,13 @@ public static partial class ControlExtensions
 
     // Avalonia.Controls.Control.Unloaded
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnUnloadedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Control
     {
         var observable = Observable
@@ -685,6 +804,11 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUnloadedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable

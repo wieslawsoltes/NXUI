@@ -8,12 +8,26 @@ public static partial class LineSegmentExtensions
 {
     // Avalonia.Media.LineSegment.PointProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.LineSegment Point(this Avalonia.Media.LineSegment obj, Avalonia.Point value)
     {
         obj[Avalonia.Media.LineSegment.PointProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.LineSegment Point(
         this Avalonia.Media.LineSegment obj,
         Avalonia.Data.IBinding binding,
@@ -25,6 +39,14 @@ public static partial class LineSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.LineSegment Point(
         this Avalonia.Media.LineSegment obj,
         IObservable<Avalonia.Point> observable,
@@ -36,6 +58,13 @@ public static partial class LineSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindPoint(
         this Avalonia.Media.LineSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -45,11 +74,22 @@ public static partial class LineSegmentExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Point> ObservePoint(this Avalonia.Media.LineSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.LineSegment.PointProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.LineSegment OnPoint(this Avalonia.Media.LineSegment obj, Action<Avalonia.Media.LineSegment, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.LineSegment.PointProperty);

@@ -8,12 +8,26 @@ public static partial class PopupRootExtensions
 {
     // Avalonia.Controls.Primitives.PopupRoot.TransformProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Controls.Primitives.PopupRoot Transform(this Avalonia.Controls.Primitives.PopupRoot obj, Avalonia.Media.Transform value)
     {
         obj[Avalonia.Controls.Primitives.PopupRoot.TransformProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Controls.Primitives.PopupRoot Transform(
         this Avalonia.Controls.Primitives.PopupRoot obj,
         Avalonia.Data.IBinding binding,
@@ -25,6 +39,14 @@ public static partial class PopupRootExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Controls.Primitives.PopupRoot Transform(
         this Avalonia.Controls.Primitives.PopupRoot obj,
         IObservable<Avalonia.Media.Transform> observable,
@@ -36,6 +58,13 @@ public static partial class PopupRootExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindTransform(
         this Avalonia.Controls.Primitives.PopupRoot obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -45,11 +74,22 @@ public static partial class PopupRootExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Media.Transform> ObserveTransform(this Avalonia.Controls.Primitives.PopupRoot obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Controls.Primitives.PopupRoot OnTransform(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<Avalonia.Media.Transform>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);

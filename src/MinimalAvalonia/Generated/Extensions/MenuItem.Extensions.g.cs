@@ -694,6 +694,14 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.ClickEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnClickHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -703,6 +711,14 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnClick<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
@@ -712,6 +728,12 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnClick(
         this Avalonia.Controls.MenuItem obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -721,6 +743,14 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.PointerEnteredItemEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPointerEnteredItemHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
@@ -730,6 +760,14 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPointerEnteredItem<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
@@ -739,6 +777,12 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnteredItem(
         this Avalonia.Controls.MenuItem obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -748,6 +792,14 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.PointerExitedItemEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPointerExitedItemHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
@@ -757,6 +809,14 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPointerExitedItem<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
@@ -766,6 +826,12 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExitedItem(
         this Avalonia.Controls.MenuItem obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -775,6 +841,14 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.SubmenuOpenedEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnSubmenuOpenedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -784,6 +858,14 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnSubmenuOpened<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
@@ -793,6 +875,12 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnSubmenuOpened(
         this Avalonia.Controls.MenuItem obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -802,6 +890,13 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.Click
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnClickEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = Observable
@@ -813,6 +908,11 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnClickEvent(this Avalonia.Controls.MenuItem obj)
     {
         return Observable
@@ -824,6 +924,13 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.PointerEnteredItem
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPointerEnteredItemEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = Observable
@@ -835,6 +942,11 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnteredItemEvent(this Avalonia.Controls.MenuItem obj)
     {
         return Observable
@@ -846,6 +958,13 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.PointerExitedItem
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnPointerExitedItemEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = Observable
@@ -857,6 +976,11 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExitedItemEvent(this Avalonia.Controls.MenuItem obj)
     {
         return Observable
@@ -868,6 +992,13 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.SubmenuOpened
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnSubmenuOpenedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = Observable
@@ -879,6 +1010,11 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnSubmenuOpenedEvent(this Avalonia.Controls.MenuItem obj)
     {
         return Observable

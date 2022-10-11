@@ -8,12 +8,26 @@ public static partial class PolyLineSegmentExtensions
 {
     // Avalonia.Media.PolyLineSegment.PointsProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PolyLineSegment Points(this Avalonia.Media.PolyLineSegment obj, Avalonia.Points value)
     {
         obj[Avalonia.Media.PolyLineSegment.PointsProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PolyLineSegment Points(
         this Avalonia.Media.PolyLineSegment obj,
         Avalonia.Data.IBinding binding,
@@ -25,6 +39,14 @@ public static partial class PolyLineSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PolyLineSegment Points(
         this Avalonia.Media.PolyLineSegment obj,
         IObservable<Avalonia.Points> observable,
@@ -36,6 +58,13 @@ public static partial class PolyLineSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindPoints(
         this Avalonia.Media.PolyLineSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -45,11 +74,22 @@ public static partial class PolyLineSegmentExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Points> ObservePoints(this Avalonia.Media.PolyLineSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.PolyLineSegment.PointsProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.PolyLineSegment OnPoints(this Avalonia.Media.PolyLineSegment obj, Action<Avalonia.Media.PolyLineSegment, IObservable<Avalonia.Points>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PolyLineSegment.PointsProperty);

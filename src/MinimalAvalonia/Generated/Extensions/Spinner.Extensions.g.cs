@@ -142,6 +142,14 @@ public static partial class SpinnerExtensions
 
     // Avalonia.Controls.Spinner.SpinEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnSpinHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.SpinEventArgs> action,
@@ -151,6 +159,14 @@ public static partial class SpinnerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnSpin<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Spinner
@@ -160,6 +176,12 @@ public static partial class SpinnerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpin(
         this Avalonia.Controls.Spinner obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -169,6 +191,13 @@ public static partial class SpinnerExtensions
 
     // Avalonia.Controls.Spinner.Spin
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnSpinEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler) where T : Avalonia.Controls.Spinner
     {
         var observable = Observable
@@ -180,6 +209,11 @@ public static partial class SpinnerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpinEvent(this Avalonia.Controls.Spinner obj)
     {
         return Observable

@@ -8,6 +8,13 @@ public static partial class LayoutableExtensions
 {
     // Avalonia.Layout.Layoutable.DesiredSizeProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindDesiredSize(
         this Avalonia.Layout.Layoutable obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -17,11 +24,25 @@ public static partial class LayoutableExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.Size> ObserveDesiredSize(this Avalonia.Layout.Layoutable obj)
     {
         return obj.GetObservable(Avalonia.Layout.Layoutable.DesiredSizeProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Layout.Layoutable OnDesiredSize(this Avalonia.Layout.Layoutable obj, Action<Avalonia.Layout.Layoutable, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.DesiredSizeProperty);

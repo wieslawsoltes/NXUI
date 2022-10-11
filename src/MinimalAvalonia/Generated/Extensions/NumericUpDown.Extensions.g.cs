@@ -1998,6 +1998,14 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.ValueChangedEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnValueChangedHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.NumericUpDownValueChangedEventArgs> action,
@@ -2007,6 +2015,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnValueChanged<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.NumericUpDown
@@ -2016,6 +2032,12 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs> ObserveOnValueChanged(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -2025,6 +2047,13 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.Spinned
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnSpinnedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = Observable
@@ -2036,6 +2065,11 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpinnedEvent(this Avalonia.Controls.NumericUpDown obj)
     {
         return Observable
@@ -2047,6 +2081,13 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.ValueChanged
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnValueChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = Observable
@@ -2058,6 +2099,11 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs> ObserveOnValueChangedEvent(this Avalonia.Controls.NumericUpDown obj)
     {
         return Observable

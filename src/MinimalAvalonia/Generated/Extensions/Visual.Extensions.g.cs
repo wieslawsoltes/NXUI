@@ -8,6 +8,13 @@ public static partial class VisualExtensions
 {
     // Avalonia.Visual.BoundsProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Visual.BoundsProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Visual.BoundsProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindBounds(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -17,11 +24,25 @@ public static partial class VisualExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Visual.BoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.Rect> ObserveBounds(this Avalonia.Visual obj)
     {
         return obj.GetObservable(Avalonia.Visual.BoundsProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Visual.BoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Visual OnBounds(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<Avalonia.Rect>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.BoundsProperty);
@@ -31,6 +52,13 @@ public static partial class VisualExtensions
 
     // Avalonia.Visual.TransformedBoundsProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Visual.TransformedBoundsProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Visual.TransformedBoundsProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindTransformedBounds(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -40,11 +68,25 @@ public static partial class VisualExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Visual.TransformedBoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Nullable<Avalonia.VisualTree.TransformedBounds>> ObserveTransformedBounds(this Avalonia.Visual obj)
     {
         return obj.GetObservable(Avalonia.Visual.TransformedBoundsProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Visual.TransformedBoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Visual OnTransformedBounds(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<System.Nullable<Avalonia.VisualTree.TransformedBounds>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.TransformedBoundsProperty);
@@ -544,6 +586,13 @@ public static partial class VisualExtensions
 
     // Avalonia.Visual.HasMirrorTransformProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Visual.HasMirrorTransformProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Visual.HasMirrorTransformProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindHasMirrorTransform(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -553,11 +602,25 @@ public static partial class VisualExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Visual.HasMirrorTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveHasMirrorTransform(this Avalonia.Visual obj)
     {
         return obj.GetObservable(Avalonia.Visual.HasMirrorTransformProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Visual.HasMirrorTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Visual OnHasMirrorTransform(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.HasMirrorTransformProperty);
@@ -763,6 +826,13 @@ public static partial class VisualExtensions
 
     // Avalonia.Visual.VisualParentProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Visual.VisualParentProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Visual.VisualParentProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindVisualParent(
         this Avalonia.Visual obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -772,11 +842,25 @@ public static partial class VisualExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Visual.VisualParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.VisualTree.IVisual> ObserveVisualParent(this Avalonia.Visual obj)
     {
         return obj.GetObservable(Avalonia.Visual.VisualParentProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Visual.VisualParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Visual OnVisualParent(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<Avalonia.VisualTree.IVisual>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.VisualParentProperty);

@@ -508,6 +508,13 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindIsExtendedIntoWindowDecorations(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -517,11 +524,25 @@ public static partial class WindowExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveIsExtendedIntoWindowDecorations(this Avalonia.Controls.Window obj)
     {
         return obj.GetObservable(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Window OnIsExtendedIntoWindowDecorations(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
@@ -531,6 +552,13 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.WindowDecorationMarginProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Window.WindowDecorationMarginProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Window.WindowDecorationMarginProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindWindowDecorationMargin(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -540,11 +568,25 @@ public static partial class WindowExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Window.WindowDecorationMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.Thickness> ObserveWindowDecorationMargin(this Avalonia.Controls.Window obj)
     {
         return obj.GetObservable(Avalonia.Controls.Window.WindowDecorationMarginProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Window.WindowDecorationMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Window OnWindowDecorationMargin(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Thickness>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.WindowDecorationMarginProperty);
@@ -554,6 +596,13 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.OffScreenMarginProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Window.OffScreenMarginProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Window.OffScreenMarginProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindOffScreenMargin(
         this Avalonia.Controls.Window obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -563,11 +612,25 @@ public static partial class WindowExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Window.OffScreenMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.Thickness> ObserveOffScreenMargin(this Avalonia.Controls.Window obj)
     {
         return obj.GetObservable(Avalonia.Controls.Window.OffScreenMarginProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Window.OffScreenMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Window OnOffScreenMargin(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Thickness>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.OffScreenMarginProperty);
@@ -1481,6 +1544,14 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.WindowClosedEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnWindowClosedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -1490,6 +1561,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnWindowClosed<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
@@ -1499,6 +1578,12 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnWindowClosed(
         this Avalonia.Controls.Window obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -1508,6 +1593,14 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.WindowOpenedEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnWindowOpenedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -1517,6 +1610,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnWindowOpened<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
@@ -1526,6 +1627,12 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnWindowOpened(
         this Avalonia.Controls.Window obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -1535,6 +1642,13 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.Closing
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnClosingEvent<T>(this T obj, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.Window
     {
         var observable = Observable
@@ -1546,6 +1660,11 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<System.ComponentModel.CancelEventArgs> ObserveOnClosingEvent(this Avalonia.Controls.Window obj)
     {
         return Observable

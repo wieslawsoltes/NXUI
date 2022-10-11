@@ -8,12 +8,26 @@ public static partial class ConicGradientBrushExtensions
 {
     // Avalonia.Media.ConicGradientBrush.CenterProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ConicGradientBrush Center(this Avalonia.Media.ConicGradientBrush obj, Avalonia.RelativePoint value)
     {
         obj[Avalonia.Media.ConicGradientBrush.CenterProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ConicGradientBrush Center(
         this Avalonia.Media.ConicGradientBrush obj,
         Avalonia.Data.IBinding binding,
@@ -25,6 +39,14 @@ public static partial class ConicGradientBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ConicGradientBrush Center(
         this Avalonia.Media.ConicGradientBrush obj,
         IObservable<Avalonia.RelativePoint> observable,
@@ -36,6 +58,13 @@ public static partial class ConicGradientBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindCenter(
         this Avalonia.Media.ConicGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -45,11 +74,22 @@ public static partial class ConicGradientBrushExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.RelativePoint> ObserveCenter(this Avalonia.Media.ConicGradientBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.ConicGradientBrush.CenterProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ConicGradientBrush OnCenter(this Avalonia.Media.ConicGradientBrush obj, Action<Avalonia.Media.ConicGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ConicGradientBrush.CenterProperty);
@@ -59,12 +99,26 @@ public static partial class ConicGradientBrushExtensions
 
     // Avalonia.Media.ConicGradientBrush.AngleProperty
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ConicGradientBrush Angle(this Avalonia.Media.ConicGradientBrush obj, System.Double value)
     {
         obj[Avalonia.Media.ConicGradientBrush.AngleProperty] = value;
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="binding"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ConicGradientBrush Angle(
         this Avalonia.Media.ConicGradientBrush obj,
         Avalonia.Data.IBinding binding,
@@ -76,6 +130,14 @@ public static partial class ConicGradientBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="observable"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ConicGradientBrush Angle(
         this Avalonia.Media.ConicGradientBrush obj,
         IObservable<System.Double> observable,
@@ -87,6 +149,13 @@ public static partial class ConicGradientBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="mode"></param>
+    /// <param name="priority"></param>
+    /// <returns></returns>
     public static Avalonia.Data.IBinding BindAngle(
         this Avalonia.Media.ConicGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -96,11 +165,22 @@ public static partial class ConicGradientBrushExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<System.Double> ObserveAngle(this Avalonia.Media.ConicGradientBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.ConicGradientBrush.AngleProperty);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <returns></returns>
     public static Avalonia.Media.ConicGradientBrush OnAngle(this Avalonia.Media.ConicGradientBrush obj, Action<Avalonia.Media.ConicGradientBrush, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ConicGradientBrush.AngleProperty);

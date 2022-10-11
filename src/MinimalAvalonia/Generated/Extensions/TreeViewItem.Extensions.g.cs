@@ -204,6 +204,13 @@ public static partial class TreeViewItemExtensions
 
     // Avalonia.Controls.TreeViewItem.LevelProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TreeViewItem.LevelProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TreeViewItem.LevelProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindLevel(
         this Avalonia.Controls.TreeViewItem obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -213,11 +220,25 @@ public static partial class TreeViewItemExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TreeViewItem.LevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Int32> ObserveLevel(this Avalonia.Controls.TreeViewItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TreeViewItem.LevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.TreeViewItem OnLevel(this Avalonia.Controls.TreeViewItem obj, Action<Avalonia.Controls.TreeViewItem, IObservable<System.Int32>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeViewItem.LevelProperty);

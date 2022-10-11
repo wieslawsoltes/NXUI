@@ -8,6 +8,13 @@ public static partial class TopLevelExtensions
 {
     // Avalonia.Controls.TopLevel.ClientSizeProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindClientSize(
         this Avalonia.Controls.TopLevel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -17,11 +24,25 @@ public static partial class TopLevelExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.Size> ObserveClientSize(this Avalonia.Controls.TopLevel obj)
     {
         return obj.GetObservable(Avalonia.Controls.TopLevel.ClientSizeProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.TopLevel OnClientSize(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.ClientSizeProperty);
@@ -31,6 +52,13 @@ public static partial class TopLevelExtensions
 
     // Avalonia.Controls.TopLevel.FrameSizeProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindFrameSize(
         this Avalonia.Controls.TopLevel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -40,11 +68,25 @@ public static partial class TopLevelExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Nullable<Avalonia.Size>> ObserveFrameSize(this Avalonia.Controls.TopLevel obj)
     {
         return obj.GetObservable(Avalonia.Controls.TopLevel.FrameSizeProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.TopLevel OnFrameSize(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<System.Nullable<Avalonia.Size>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.FrameSizeProperty);
@@ -322,6 +364,13 @@ public static partial class TopLevelExtensions
 
     // Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindActualTransparencyLevel(
         this Avalonia.Controls.TopLevel obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -331,11 +380,25 @@ public static partial class TopLevelExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.Controls.WindowTransparencyLevel> ObserveActualTransparencyLevel(this Avalonia.Controls.TopLevel obj)
     {
         return obj.GetObservable(Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.TopLevel OnActualTransparencyLevel(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Controls.WindowTransparencyLevel>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty);

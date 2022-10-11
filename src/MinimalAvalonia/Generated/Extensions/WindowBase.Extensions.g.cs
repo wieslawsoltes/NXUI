@@ -8,6 +8,13 @@ public static partial class WindowBaseExtensions
 {
     // Avalonia.Controls.WindowBase.IsActiveProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindIsActive(
         this Avalonia.Controls.WindowBase obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -17,11 +24,25 @@ public static partial class WindowBaseExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveIsActive(this Avalonia.Controls.WindowBase obj)
     {
         return obj.GetObservable(Avalonia.Controls.WindowBase.IsActiveProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.WindowBase OnIsActive(this Avalonia.Controls.WindowBase obj, Action<Avalonia.Controls.WindowBase, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.WindowBase.IsActiveProperty);

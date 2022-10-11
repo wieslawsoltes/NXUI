@@ -8,6 +8,13 @@ public static partial class NotificationCardExtensions
 {
     // Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindIsClosing(
         this Avalonia.Controls.Notifications.NotificationCard obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -17,11 +24,25 @@ public static partial class NotificationCardExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveIsClosing(this Avalonia.Controls.Notifications.NotificationCard obj)
     {
         return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Notifications.NotificationCard OnIsClosing(this Avalonia.Controls.Notifications.NotificationCard obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
@@ -227,6 +248,14 @@ public static partial class NotificationCardExtensions
 
     // Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnNotificationClosedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -236,6 +265,14 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnNotificationClosed<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Notifications.NotificationCard
@@ -245,6 +282,12 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnNotificationClosed(
         this Avalonia.Controls.Notifications.NotificationCard obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -254,6 +297,13 @@ public static partial class NotificationCardExtensions
 
     // Avalonia.Controls.Notifications.NotificationCard.NotificationClosed
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T OnNotificationClosedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
     {
         var observable = Observable
@@ -265,6 +315,11 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnNotificationClosedEvent(this Avalonia.Controls.Notifications.NotificationCard obj)
     {
         return Observable

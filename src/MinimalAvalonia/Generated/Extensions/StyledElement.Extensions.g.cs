@@ -204,6 +204,13 @@ public static partial class StyledElementExtensions
 
     // Avalonia.StyledElement.ParentProperty
 
+    /// <summary>
+    /// Makes a <see cref="Avalonia.StyledElement.ParentProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.StyledElement.ParentProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindParent(
         this Avalonia.StyledElement obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
@@ -213,11 +220,25 @@ public static partial class StyledElementExtensions
         return obj[descriptor];
     }
 
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.StyledElement.ParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
     public static IObservable<Avalonia.IStyledElement> ObserveParent(this Avalonia.StyledElement obj)
     {
         return obj.GetObservable(Avalonia.StyledElement.ParentProperty);
     }
 
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.StyledElement.ParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.StyledElement OnParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<Avalonia.IStyledElement>> handler)
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.ParentProperty);
