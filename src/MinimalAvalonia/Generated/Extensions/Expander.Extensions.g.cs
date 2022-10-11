@@ -202,24 +202,48 @@ public static partial class ExpanderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> property value to <see cref="Avalonia.Controls.ExpandDirection.Down"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ExpandDirectionDown<T>(this T obj) where T : Avalonia.Controls.Expander
     {
         obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Down;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> property value to <see cref="Avalonia.Controls.ExpandDirection.Up"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ExpandDirectionUp<T>(this T obj) where T : Avalonia.Controls.Expander
     {
         obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Up;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> property value to <see cref="Avalonia.Controls.ExpandDirection.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ExpandDirectionLeft<T>(this T obj) where T : Avalonia.Controls.Expander
     {
         obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> property value to <see cref="Avalonia.Controls.ExpandDirection.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ExpandDirectionRight<T>(this T obj) where T : Avalonia.Controls.Expander
     {
         obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Right;

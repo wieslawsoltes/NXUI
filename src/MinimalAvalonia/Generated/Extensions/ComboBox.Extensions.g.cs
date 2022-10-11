@@ -323,12 +323,24 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/> property value to <see cref="Avalonia.Controls.ItemVirtualizationMode.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VirtualizationModeNone<T>(this T obj) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/> property value to <see cref="Avalonia.Controls.ItemVirtualizationMode.Simple"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VirtualizationModeSimple<T>(this T obj) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.Simple;
@@ -629,24 +641,48 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentRight<T>(this T obj) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
@@ -751,24 +787,48 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentTop<T>(this T obj) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentBottom<T>(this T obj) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;

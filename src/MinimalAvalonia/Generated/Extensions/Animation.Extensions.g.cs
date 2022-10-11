@@ -300,24 +300,48 @@ public static partial class AnimationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Normal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlaybackDirectionNormal<T>(this T obj) where T : Avalonia.Animation.Animation
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Normal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Reverse"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlaybackDirectionReverse<T>(this T obj) where T : Avalonia.Animation.Animation
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Reverse;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Alternate"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlaybackDirectionAlternate<T>(this T obj) where T : Avalonia.Animation.Animation
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Alternate;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.AlternateReverse"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlaybackDirectionAlternateReverse<T>(this T obj) where T : Avalonia.Animation.Animation
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.AlternateReverse;
@@ -422,24 +446,48 @@ public static partial class AnimationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FillModeNone<T>(this T obj) where T : Avalonia.Animation.Animation
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.Forward"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FillModeForward<T>(this T obj) where T : Avalonia.Animation.Animation
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Forward;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.Backward"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FillModeBackward<T>(this T obj) where T : Avalonia.Animation.Animation
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Backward;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.Both"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FillModeBoth<T>(this T obj) where T : Avalonia.Animation.Animation
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Both;

@@ -104,36 +104,72 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.Start"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ItemsJustificationStart<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.Start;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ItemsJustificationCenter<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.End"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ItemsJustificationEnd<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.End;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceAround"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ItemsJustificationSpaceAround<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceAround;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceBetween"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ItemsJustificationSpaceBetween<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceBetween;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceEvenly"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ItemsJustificationSpaceEvenly<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceEvenly;
@@ -238,18 +274,36 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsStretch.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ItemsStretchNone<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsStretchProperty] = Avalonia.Layout.UniformGridLayoutItemsStretch.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsStretch.Fill"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ItemsStretchFill<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsStretchProperty] = Avalonia.Layout.UniformGridLayoutItemsStretch.Fill;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsStretch.Uniform"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ItemsStretchUniform<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsStretchProperty] = Avalonia.Layout.UniformGridLayoutItemsStretch.Uniform;
@@ -844,12 +898,24 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationVertical<T>(this T obj) where T : Avalonia.Layout.UniformGridLayout
     {
         obj[Avalonia.Layout.UniformGridLayout.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;

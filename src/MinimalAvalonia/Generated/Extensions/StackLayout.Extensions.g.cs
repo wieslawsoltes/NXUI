@@ -202,12 +202,24 @@ public static partial class StackLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Layout.StackLayout
     {
         obj[Avalonia.Layout.StackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationVertical<T>(this T obj) where T : Avalonia.Layout.StackLayout
     {
         obj[Avalonia.Layout.StackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;

@@ -496,72 +496,144 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorNone<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorTop<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorBottom<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorVerticalMask<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorLeft<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorTopLeft<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorBottomLeft<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorRight<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorTopRight<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorBottomRight<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorHorizontalMask<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.AllMask"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAnchorAllMask<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.AllMask;
@@ -666,48 +738,96 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementConstraintAdjustmentNone<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementConstraintAdjustmentSlideX<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementConstraintAdjustmentSlideY<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementConstraintAdjustmentFlipX<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementConstraintAdjustmentFlipY<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementConstraintAdjustmentResizeX<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementConstraintAdjustmentResizeY<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.All"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementConstraintAdjustmentAll<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.All;
@@ -812,54 +932,108 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementGravityNone<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementGravityTop<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementGravityBottom<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementGravityLeft<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementGravityTopLeft<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementGravityBottomLeft<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementGravityRight<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementGravityTopRight<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementGravityBottomRight<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomRight;
@@ -964,36 +1138,72 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Pointer"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementModePointer<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Pointer;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementModeBottom<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Bottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementModeRight<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Right;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementModeLeft<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementModeTop<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.AnchorAndGravity"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementModeAnchorAndGravity<T>(this T obj) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;

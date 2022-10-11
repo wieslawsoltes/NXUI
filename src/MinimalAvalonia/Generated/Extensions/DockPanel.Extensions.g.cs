@@ -104,24 +104,48 @@ public static partial class DockPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DockLeft<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DockBottom<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Bottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DockRight<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Right;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DockTop<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Top;

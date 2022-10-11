@@ -104,12 +104,24 @@ public static partial class FluentThemeExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Themes.Fluent.FluentTheme.ModeProperty"/> property value to <see cref="Avalonia.Themes.Fluent.FluentThemeMode.Light"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ModeLight<T>(this T obj) where T : Avalonia.Themes.Fluent.FluentTheme
     {
         obj[Avalonia.Themes.Fluent.FluentTheme.ModeProperty] = Avalonia.Themes.Fluent.FluentThemeMode.Light;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Themes.Fluent.FluentTheme.ModeProperty"/> property value to <see cref="Avalonia.Themes.Fluent.FluentThemeMode.Dark"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ModeDark<T>(this T obj) where T : Avalonia.Themes.Fluent.FluentTheme
     {
         obj[Avalonia.Themes.Fluent.FluentTheme.ModeProperty] = Avalonia.Themes.Fluent.FluentThemeMode.Dark;
@@ -214,12 +226,24 @@ public static partial class FluentThemeExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Themes.Fluent.FluentTheme.DensityStyleProperty"/> property value to <see cref="Avalonia.Themes.Fluent.DensityStyle.Normal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DensityStyleNormal<T>(this T obj) where T : Avalonia.Themes.Fluent.FluentTheme
     {
         obj[Avalonia.Themes.Fluent.FluentTheme.DensityStyleProperty] = Avalonia.Themes.Fluent.DensityStyle.Normal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Themes.Fluent.FluentTheme.DensityStyleProperty"/> property value to <see cref="Avalonia.Themes.Fluent.DensityStyle.Compact"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DensityStyleCompact<T>(this T obj) where T : Avalonia.Themes.Fluent.FluentTheme
     {
         obj[Avalonia.Themes.Fluent.FluentTheme.DensityStyleProperty] = Avalonia.Themes.Fluent.DensityStyle.Compact;

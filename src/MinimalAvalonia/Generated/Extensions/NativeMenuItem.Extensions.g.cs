@@ -594,18 +594,36 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ToggleTypeNone<T>(this T obj) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.CheckBox"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ToggleTypeCheckBox<T>(this T obj) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.CheckBox;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.Radio"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ToggleTypeRadio<T>(this T obj) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.Radio;

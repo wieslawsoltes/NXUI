@@ -496,12 +496,24 @@ public static partial class TickBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Controls.TickBar
     {
         obj[Avalonia.Controls.TickBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationVertical<T>(this T obj) where T : Avalonia.Controls.TickBar
     {
         obj[Avalonia.Controls.TickBar.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
@@ -802,24 +814,48 @@ public static partial class TickBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property value to <see cref="Avalonia.Controls.TickBarPlacement.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementLeft<T>(this T obj) where T : Avalonia.Controls.TickBar
     {
         obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property value to <see cref="Avalonia.Controls.TickBarPlacement.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementTop<T>(this T obj) where T : Avalonia.Controls.TickBar
     {
         obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property value to <see cref="Avalonia.Controls.TickBarPlacement.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementRight<T>(this T obj) where T : Avalonia.Controls.TickBar
     {
         obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Right;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property value to <see cref="Avalonia.Controls.TickBarPlacement.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementBottom<T>(this T obj) where T : Avalonia.Controls.TickBar
     {
         obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Bottom;

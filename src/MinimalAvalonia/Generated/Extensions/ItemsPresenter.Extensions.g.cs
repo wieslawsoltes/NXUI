@@ -104,12 +104,24 @@ public static partial class ItemsPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> property value to <see cref="Avalonia.Controls.ItemVirtualizationMode.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VirtualizationModeNone<T>(this T obj) where T : Avalonia.Controls.Presenters.ItemsPresenter
     {
         obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> property value to <see cref="Avalonia.Controls.ItemVirtualizationMode.Simple"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VirtualizationModeSimple<T>(this T obj) where T : Avalonia.Controls.Presenters.ItemsPresenter
     {
         obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.Simple;

@@ -104,18 +104,36 @@ public static partial class SpinnerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property value to <see cref="Avalonia.Controls.ValidSpinDirections.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ValidSpinDirectionNone<T>(this T obj) where T : Avalonia.Controls.Spinner
     {
         obj[Avalonia.Controls.Spinner.ValidSpinDirectionProperty] = Avalonia.Controls.ValidSpinDirections.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property value to <see cref="Avalonia.Controls.ValidSpinDirections.Increase"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ValidSpinDirectionIncrease<T>(this T obj) where T : Avalonia.Controls.Spinner
     {
         obj[Avalonia.Controls.Spinner.ValidSpinDirectionProperty] = Avalonia.Controls.ValidSpinDirections.Increase;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property value to <see cref="Avalonia.Controls.ValidSpinDirections.Decrease"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ValidSpinDirectionDecrease<T>(this T obj) where T : Avalonia.Controls.Spinner
     {
         obj[Avalonia.Controls.Spinner.ValidSpinDirectionProperty] = Avalonia.Controls.ValidSpinDirections.Decrease;

@@ -813,24 +813,48 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalAlignmentStretch<T>(this T obj) where T : Avalonia.Layout.Layoutable
     {
         obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalAlignmentLeft<T>(this T obj) where T : Avalonia.Layout.Layoutable
     {
         obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalAlignmentCenter<T>(this T obj) where T : Avalonia.Layout.Layoutable
     {
         obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalAlignmentRight<T>(this T obj) where T : Avalonia.Layout.Layoutable
     {
         obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
@@ -935,24 +959,48 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalAlignmentStretch<T>(this T obj) where T : Avalonia.Layout.Layoutable
     {
         obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalAlignmentTop<T>(this T obj) where T : Avalonia.Layout.Layoutable
     {
         obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalAlignmentCenter<T>(this T obj) where T : Avalonia.Layout.Layoutable
     {
         obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalAlignmentBottom<T>(this T obj) where T : Avalonia.Layout.Layoutable
     {
         obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;

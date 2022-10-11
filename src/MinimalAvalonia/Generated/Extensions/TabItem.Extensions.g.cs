@@ -104,24 +104,48 @@ public static partial class TabItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TabStripPlacementLeft<T>(this T obj) where T : Avalonia.Controls.TabItem
     {
         obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TabStripPlacementBottom<T>(this T obj) where T : Avalonia.Controls.TabItem
     {
         obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Bottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TabStripPlacementRight<T>(this T obj) where T : Avalonia.Controls.TabItem
     {
         obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Right;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TabStripPlacementTop<T>(this T obj) where T : Avalonia.Controls.TabItem
     {
         obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Top;

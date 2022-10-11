@@ -496,18 +496,36 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Normal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStyleNormal<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Italic"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStyleItalic<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Oblique"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStyleOblique<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStyleProperty] = Avalonia.Media.FontStyle.Oblique;
@@ -612,102 +630,204 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Thin"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightThin<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraLight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightExtraLight<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraLight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightUltraLight<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Light"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightLight<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiLight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightSemiLight<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Normal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightNormal<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Regular"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightRegular<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Medium"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightMedium<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.DemiBold"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightDemiBold<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiBold"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightSemiBold<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Bold"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightBold<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBold"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightExtraBold<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBold"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightUltraBold<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Black"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightBlack<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Heavy"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightHeavy<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBlack"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightExtraBlack<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBlack"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightUltraBlack<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBlack;
@@ -812,54 +932,108 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchUltraCondensed<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraCondensed"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchExtraCondensed<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Condensed"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchCondensed<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiCondensed"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchSemiCondensed<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Normal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchNormal<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiExpanded"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchSemiExpanded<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Expanded"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchExpanded<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraExpanded"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchExtraExpanded<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraExpanded"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchUltraExpanded<T>(this T obj) where T : Avalonia.Controls.TextBlock
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.UltraExpanded;
@@ -1454,42 +1628,84 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TextAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TextAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TextAlignmentRight<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Start"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TextAlignmentStart<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Start;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.End"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TextAlignmentEnd<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.End;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.DetectFromContent"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TextAlignmentDetectFromContent<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.DetectFromContent;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Justify"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TextAlignmentJustify<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Justify;
@@ -1594,18 +1810,36 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.NoWrap"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TextWrappingNoWrap<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TextBlock.TextWrappingProperty] = Avalonia.Media.TextWrapping.NoWrap;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.Wrap"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TextWrappingWrap<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TextBlock.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.WrapWithOverflow"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TextWrappingWrapWithOverflow<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TextBlock.TextWrappingProperty] = Avalonia.Media.TextWrapping.WrapWithOverflow;

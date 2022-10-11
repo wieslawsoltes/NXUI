@@ -1009,84 +1009,168 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeNone<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.StartsWith"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeStartsWith<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWith;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.StartsWithCaseSensitive"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeStartsWithCaseSensitive<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithCaseSensitive;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeStartsWithOrdinal<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinalCaseSensitive"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeStartsWithOrdinalCaseSensitive<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinalCaseSensitive;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.Contains"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeContains<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.Contains;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.ContainsCaseSensitive"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeContainsCaseSensitive<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsCaseSensitive;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeContainsOrdinal<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinalCaseSensitive"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeContainsOrdinalCaseSensitive<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinalCaseSensitive;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.Equals"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeEquals<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.Equals;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.EqualsCaseSensitive"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeEqualsCaseSensitive<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsCaseSensitive;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeEqualsOrdinal<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinalCaseSensitive"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeEqualsOrdinalCaseSensitive<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinalCaseSensitive;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.Custom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FilterModeCustom<T>(this T obj) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.Custom;

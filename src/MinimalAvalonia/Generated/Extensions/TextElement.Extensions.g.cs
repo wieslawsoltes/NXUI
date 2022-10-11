@@ -398,18 +398,36 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Normal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStyleNormal<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Italic"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStyleItalic<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Oblique"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStyleOblique<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = Avalonia.Media.FontStyle.Oblique;
@@ -514,102 +532,204 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Thin"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightThin<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraLight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightExtraLight<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraLight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightUltraLight<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Light"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightLight<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiLight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightSemiLight<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Normal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightNormal<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Regular"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightRegular<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Medium"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightMedium<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.DemiBold"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightDemiBold<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiBold"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightSemiBold<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Bold"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightBold<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBold"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightExtraBold<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBold"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightUltraBold<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Black"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightBlack<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Heavy"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightHeavy<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBlack"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightExtraBlack<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBlack"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontWeightUltraBlack<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBlack;
@@ -714,54 +834,108 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchUltraCondensed<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraCondensed"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchExtraCondensed<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Condensed"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchCondensed<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiCondensed"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchSemiCondensed<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Normal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchNormal<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiExpanded"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchSemiExpanded<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Expanded"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchExpanded<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraExpanded"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchExtraExpanded<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraExpanded"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FontStretchUltraExpanded<T>(this T obj) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.UltraExpanded;

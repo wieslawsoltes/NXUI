@@ -496,12 +496,24 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/> property value to <see cref="Avalonia.Media.FlowDirection.LeftToRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FlowDirectionLeftToRight<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.Control.FlowDirectionProperty] = Avalonia.Media.FlowDirection.LeftToRight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/> property value to <see cref="Avalonia.Media.FlowDirection.RightToLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FlowDirectionRightToLeft<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.Control.FlowDirectionProperty] = Avalonia.Media.FlowDirection.RightToLeft;

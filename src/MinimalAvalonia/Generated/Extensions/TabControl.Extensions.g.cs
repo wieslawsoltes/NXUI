@@ -104,24 +104,48 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TabStripPlacementLeft<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TabStripPlacementBottom<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Bottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TabStripPlacementRight<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Right;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TabStripPlacementTop<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Top;
@@ -226,24 +250,48 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentRight<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
@@ -348,24 +396,48 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentTop<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentBottom<T>(this T obj) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;

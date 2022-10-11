@@ -202,24 +202,48 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VisibilityDisabled<T>(this T obj) where T : Avalonia.Controls.Primitives.ScrollBar
     {
         obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Auto"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VisibilityAuto<T>(this T obj) where T : Avalonia.Controls.Primitives.ScrollBar
     {
         obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VisibilityHidden<T>(this T obj) where T : Avalonia.Controls.Primitives.ScrollBar
     {
         obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Visible"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VisibilityVisible<T>(this T obj) where T : Avalonia.Controls.Primitives.ScrollBar
     {
         obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Visible;
@@ -324,12 +348,24 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Controls.Primitives.ScrollBar
     {
         obj[Avalonia.Controls.Primitives.ScrollBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationVertical<T>(this T obj) where T : Avalonia.Controls.Primitives.ScrollBar
     {
         obj[Avalonia.Controls.Primitives.ScrollBar.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;

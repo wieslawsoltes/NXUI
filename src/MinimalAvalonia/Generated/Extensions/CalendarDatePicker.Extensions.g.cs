@@ -398,42 +398,84 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Sunday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekSunday<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Sunday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Monday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekMonday<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Monday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Tuesday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekTuesday<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Tuesday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Wednesday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekWednesday<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Wednesday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Thursday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekThursday<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Thursday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Friday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekFriday<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Friday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Saturday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekSaturday<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Saturday;
@@ -832,18 +874,36 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> property value to <see cref="Avalonia.Controls.CalendarDatePickerFormat.Long"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectedDateFormatLong<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty] = Avalonia.Controls.CalendarDatePickerFormat.Long;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> property value to <see cref="Avalonia.Controls.CalendarDatePickerFormat.Short"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectedDateFormatShort<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty] = Avalonia.Controls.CalendarDatePickerFormat.Short;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> property value to <see cref="Avalonia.Controls.CalendarDatePickerFormat.Custom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectedDateFormatCustom<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty] = Avalonia.Controls.CalendarDatePickerFormat.Custom;
@@ -1340,24 +1400,48 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentRight<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
@@ -1462,24 +1546,48 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentTop<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentBottom<T>(this T obj) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;

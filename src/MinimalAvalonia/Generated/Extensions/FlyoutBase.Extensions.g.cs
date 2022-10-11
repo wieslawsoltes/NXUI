@@ -150,78 +150,156 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementTop<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementBottom<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Bottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementLeft<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementRight<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Right;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.TopEdgeAlignedLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementTopEdgeAlignedLeft<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.TopEdgeAlignedLeft;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.TopEdgeAlignedRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementTopEdgeAlignedRight<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.TopEdgeAlignedRight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.BottomEdgeAlignedLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementBottomEdgeAlignedLeft<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.BottomEdgeAlignedLeft;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.BottomEdgeAlignedRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementBottomEdgeAlignedRight<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.BottomEdgeAlignedRight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.LeftEdgeAlignedTop"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementLeftEdgeAlignedTop<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.LeftEdgeAlignedTop;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.LeftEdgeAlignedBottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementLeftEdgeAlignedBottom<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.LeftEdgeAlignedBottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.RightEdgeAlignedTop"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementRightEdgeAlignedTop<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.RightEdgeAlignedTop;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.RightEdgeAlignedBottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementRightEdgeAlignedBottom<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.RightEdgeAlignedBottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.Auto"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PlacementAuto<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Auto;
@@ -326,18 +404,36 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/> property value to <see cref="Avalonia.Controls.FlyoutShowMode.Standard"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ShowModeStandard<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty] = Avalonia.Controls.FlyoutShowMode.Standard;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/> property value to <see cref="Avalonia.Controls.FlyoutShowMode.Transient"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ShowModeTransient<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty] = Avalonia.Controls.FlyoutShowMode.Transient;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/> property value to <see cref="Avalonia.Controls.FlyoutShowMode.TransientWithDismissOnPointerMoveAway"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ShowModeTransientWithDismissOnPointerMoveAway<T>(this T obj) where T : Avalonia.Controls.Primitives.FlyoutBase
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty] = Avalonia.Controls.FlyoutShowMode.TransientWithDismissOnPointerMoveAway;

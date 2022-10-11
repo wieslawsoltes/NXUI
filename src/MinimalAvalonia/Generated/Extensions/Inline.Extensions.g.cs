@@ -202,48 +202,96 @@ public static partial class InlineExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BaselineAlignmentTop<T>(this T obj) where T : Avalonia.Controls.Documents.Inline
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BaselineAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.Documents.Inline
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BaselineAlignmentBottom<T>(this T obj) where T : Avalonia.Controls.Documents.Inline
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Bottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Baseline"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BaselineAlignmentBaseline<T>(this T obj) where T : Avalonia.Controls.Documents.Inline
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Baseline;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.TextTop"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BaselineAlignmentTextTop<T>(this T obj) where T : Avalonia.Controls.Documents.Inline
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.TextTop;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.TextBottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BaselineAlignmentTextBottom<T>(this T obj) where T : Avalonia.Controls.Documents.Inline
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.TextBottom;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Subscript"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BaselineAlignmentSubscript<T>(this T obj) where T : Avalonia.Controls.Documents.Inline
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Subscript;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Superscript"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BaselineAlignmentSuperscript<T>(this T obj) where T : Avalonia.Controls.Documents.Inline
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Superscript;

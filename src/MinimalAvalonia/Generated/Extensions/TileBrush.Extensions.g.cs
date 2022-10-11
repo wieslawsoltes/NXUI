@@ -104,18 +104,36 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> property value to <see cref="Avalonia.Media.AlignmentX.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T AlignmentXLeft<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.AlignmentXProperty] = Avalonia.Media.AlignmentX.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> property value to <see cref="Avalonia.Media.AlignmentX.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T AlignmentXCenter<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.AlignmentXProperty] = Avalonia.Media.AlignmentX.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> property value to <see cref="Avalonia.Media.AlignmentX.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T AlignmentXRight<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.AlignmentXProperty] = Avalonia.Media.AlignmentX.Right;
@@ -220,18 +238,36 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> property value to <see cref="Avalonia.Media.AlignmentY.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T AlignmentYTop<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.AlignmentYProperty] = Avalonia.Media.AlignmentY.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> property value to <see cref="Avalonia.Media.AlignmentY.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T AlignmentYCenter<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.AlignmentYProperty] = Avalonia.Media.AlignmentY.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> property value to <see cref="Avalonia.Media.AlignmentY.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T AlignmentYBottom<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.AlignmentYProperty] = Avalonia.Media.AlignmentY.Bottom;
@@ -532,24 +568,48 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchNone<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Fill"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchFill<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.Fill;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchUniform<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.UniformToFill"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchUniformToFill<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.UniformToFill;
@@ -654,30 +714,60 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TileModeNone<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.FlipX"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TileModeFlipX<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.FlipX;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.FlipY"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TileModeFlipY<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.FlipY;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.FlipXY"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TileModeFlipXY<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.FlipXY;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.Tile"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TileModeTile<T>(this T obj) where T : Avalonia.Media.TileBrush
     {
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.Tile;

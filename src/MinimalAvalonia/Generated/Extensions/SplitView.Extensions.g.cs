@@ -202,24 +202,48 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.SplitViewDisplayMode.Inline"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DisplayModeInline<T>(this T obj) where T : Avalonia.Controls.SplitView
     {
         obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.Inline;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.SplitViewDisplayMode.CompactInline"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DisplayModeCompactInline<T>(this T obj) where T : Avalonia.Controls.SplitView
     {
         obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.CompactInline;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.SplitViewDisplayMode.Overlay"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DisplayModeOverlay<T>(this T obj) where T : Avalonia.Controls.SplitView
     {
         obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.Overlay;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.SplitViewDisplayMode.CompactOverlay"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DisplayModeCompactOverlay<T>(this T obj) where T : Avalonia.Controls.SplitView
     {
         obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.CompactOverlay;
@@ -618,12 +642,24 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> property value to <see cref="Avalonia.Controls.SplitViewPanePlacement.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PanePlacementLeft<T>(this T obj) where T : Avalonia.Controls.SplitView
     {
         obj[Avalonia.Controls.SplitView.PanePlacementProperty] = Avalonia.Controls.SplitViewPanePlacement.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> property value to <see cref="Avalonia.Controls.SplitViewPanePlacement.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PanePlacementRight<T>(this T obj) where T : Avalonia.Controls.SplitView
     {
         obj[Avalonia.Controls.SplitView.PanePlacementProperty] = Avalonia.Controls.SplitViewPanePlacement.Right;

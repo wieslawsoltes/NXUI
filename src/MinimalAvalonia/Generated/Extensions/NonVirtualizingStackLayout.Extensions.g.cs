@@ -104,12 +104,24 @@ public static partial class NonVirtualizingStackLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Layout.NonVirtualizingStackLayout
     {
         obj[Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationVertical<T>(this T obj) where T : Avalonia.Layout.NonVirtualizingStackLayout
     {
         obj[Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;

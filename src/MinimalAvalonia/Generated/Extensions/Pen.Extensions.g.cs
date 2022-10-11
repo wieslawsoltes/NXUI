@@ -210,18 +210,33 @@ public static partial class PenExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.Pen.LineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Flat"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineCapFlat(this Avalonia.Media.Pen obj)
     {
         obj[Avalonia.Media.Pen.LineCapProperty] = Avalonia.Media.PenLineCap.Flat;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.Pen.LineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Round"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineCapRound(this Avalonia.Media.Pen obj)
     {
         obj[Avalonia.Media.Pen.LineCapProperty] = Avalonia.Media.PenLineCap.Round;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.Pen.LineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Square"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineCapSquare(this Avalonia.Media.Pen obj)
     {
         obj[Avalonia.Media.Pen.LineCapProperty] = Avalonia.Media.PenLineCap.Square;
@@ -279,18 +294,33 @@ public static partial class PenExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Bevel"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineJoinBevel(this Avalonia.Media.Pen obj)
     {
         obj[Avalonia.Media.Pen.LineJoinProperty] = Avalonia.Media.PenLineJoin.Bevel;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Miter"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineJoinMiter(this Avalonia.Media.Pen obj)
     {
         obj[Avalonia.Media.Pen.LineJoinProperty] = Avalonia.Media.PenLineJoin.Miter;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Round"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineJoinRound(this Avalonia.Media.Pen obj)
     {
         obj[Avalonia.Media.Pen.LineJoinProperty] = Avalonia.Media.PenLineJoin.Round;

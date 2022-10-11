@@ -202,12 +202,24 @@ public static partial class GeometryGroupExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> property value to <see cref="Avalonia.Media.FillRule.EvenOdd"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FillRuleEvenOdd<T>(this T obj) where T : Avalonia.Media.GeometryGroup
     {
         obj[Avalonia.Media.GeometryGroup.FillRuleProperty] = Avalonia.Media.FillRule.EvenOdd;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> property value to <see cref="Avalonia.Media.FillRule.NonZero"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FillRuleNonZero<T>(this T obj) where T : Avalonia.Media.GeometryGroup
     {
         obj[Avalonia.Media.GeometryGroup.FillRuleProperty] = Avalonia.Media.FillRule.NonZero;

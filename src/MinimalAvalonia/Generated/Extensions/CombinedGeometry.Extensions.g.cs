@@ -300,24 +300,48 @@ public static partial class CombinedGeometryExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property value to <see cref="Avalonia.Media.GeometryCombineMode.Union"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T GeometryCombineModeUnion<T>(this T obj) where T : Avalonia.Media.CombinedGeometry
     {
         obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Union;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property value to <see cref="Avalonia.Media.GeometryCombineMode.Intersect"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T GeometryCombineModeIntersect<T>(this T obj) where T : Avalonia.Media.CombinedGeometry
     {
         obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Intersect;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property value to <see cref="Avalonia.Media.GeometryCombineMode.Xor"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T GeometryCombineModeXor<T>(this T obj) where T : Avalonia.Media.CombinedGeometry
     {
         obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Xor;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property value to <see cref="Avalonia.Media.GeometryCombineMode.Exclude"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T GeometryCombineModeExclude<T>(this T obj) where T : Avalonia.Media.CombinedGeometry
     {
         obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Exclude;

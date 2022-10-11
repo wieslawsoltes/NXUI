@@ -104,12 +104,24 @@ public static partial class ButtonExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> property value to <see cref="Avalonia.Controls.ClickMode.Release"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ClickModeRelease<T>(this T obj) where T : Avalonia.Controls.Button
     {
         obj[Avalonia.Controls.Button.ClickModeProperty] = Avalonia.Controls.ClickMode.Release;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> property value to <see cref="Avalonia.Controls.ClickMode.Press"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ClickModePress<T>(this T obj) where T : Avalonia.Controls.Button
     {
         obj[Avalonia.Controls.Button.ClickModeProperty] = Avalonia.Controls.ClickMode.Press;

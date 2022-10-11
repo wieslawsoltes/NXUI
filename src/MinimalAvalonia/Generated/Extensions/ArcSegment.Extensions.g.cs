@@ -261,12 +261,22 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> property value to <see cref="Avalonia.Media.SweepDirection.CounterClockwise"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ArcSegment SweepDirectionCounterClockwise(this Avalonia.Media.ArcSegment obj)
     {
         obj[Avalonia.Media.ArcSegment.SweepDirectionProperty] = Avalonia.Media.SweepDirection.CounterClockwise;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> property value to <see cref="Avalonia.Media.SweepDirection.Clockwise"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ArcSegment SweepDirectionClockwise(this Avalonia.Media.ArcSegment obj)
     {
         obj[Avalonia.Media.ArcSegment.SweepDirectionProperty] = Avalonia.Media.SweepDirection.Clockwise;

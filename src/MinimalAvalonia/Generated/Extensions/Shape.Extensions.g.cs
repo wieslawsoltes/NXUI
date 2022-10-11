@@ -202,24 +202,48 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchNone<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Fill"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchFill<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.Fill;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchUniform<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.UniformToFill"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchUniformToFill<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.UniformToFill;
@@ -716,18 +740,36 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Flat"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeLineCapFlat<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Flat;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Round"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeLineCapRound<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Round;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Square"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeLineCapSquare<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Square;
@@ -832,18 +874,36 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Bevel"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeJoinBevel<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = Avalonia.Media.PenLineJoin.Bevel;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Miter"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeJoinMiter<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = Avalonia.Media.PenLineJoin.Miter;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Round"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeJoinRound<T>(this T obj) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = Avalonia.Media.PenLineJoin.Round;

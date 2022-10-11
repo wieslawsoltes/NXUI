@@ -104,24 +104,48 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.Manual"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SizeToContentManual<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Manual;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.Width"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SizeToContentWidth<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Width;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.Height"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SizeToContentHeight<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Height;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.WidthAndHeight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SizeToContentWidthAndHeight<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.WidthAndHeight;
@@ -324,30 +348,60 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ExtendClientAreaChromeHintsNoChrome<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.SystemChrome"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ExtendClientAreaChromeHintsSystemChrome<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.SystemChrome;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.PreferSystemChrome"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ExtendClientAreaChromeHintsPreferSystemChrome<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.PreferSystemChrome;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.Default"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ExtendClientAreaChromeHintsDefault<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.Default;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.OSXThickTitleBar"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ExtendClientAreaChromeHintsOSXThickTitleBar<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.OSXThickTitleBar;
@@ -619,18 +673,36 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SystemDecorationsNone<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.BorderOnly"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SystemDecorationsBorderOnly<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.BorderOnly;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.Full"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SystemDecorationsFull<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.Full;
@@ -931,24 +1003,48 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property value to <see cref="Avalonia.Controls.WindowState.Normal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T WindowStateNormal<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Normal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property value to <see cref="Avalonia.Controls.WindowState.Minimized"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T WindowStateMinimized<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Minimized;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property value to <see cref="Avalonia.Controls.WindowState.Maximized"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T WindowStateMaximized<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Maximized;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property value to <see cref="Avalonia.Controls.WindowState.FullScreen"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T WindowStateFullScreen<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.FullScreen;
@@ -1249,18 +1345,36 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> property value to <see cref="Avalonia.Controls.WindowStartupLocation.Manual"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T WindowStartupLocationManual<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.WindowStartupLocationProperty] = Avalonia.Controls.WindowStartupLocation.Manual;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> property value to <see cref="Avalonia.Controls.WindowStartupLocation.CenterScreen"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T WindowStartupLocationCenterScreen<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.WindowStartupLocationProperty] = Avalonia.Controls.WindowStartupLocation.CenterScreen;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> property value to <see cref="Avalonia.Controls.WindowStartupLocation.CenterOwner"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T WindowStartupLocationCenterOwner<T>(this T obj) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.WindowStartupLocationProperty] = Avalonia.Controls.WindowStartupLocation.CenterOwner;

@@ -202,36 +202,72 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Year"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PanelTypeYear<T>(this T obj) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Year;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Month"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PanelTypeMonth<T>(this T obj) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Month;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Day"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PanelTypeDay<T>(this T obj) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Day;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Hour"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PanelTypeHour<T>(this T obj) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Hour;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Minute"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PanelTypeMinute<T>(this T obj) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Minute;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.TimePeriod"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PanelTypeTimePeriod<T>(this T obj) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.TimePeriod;

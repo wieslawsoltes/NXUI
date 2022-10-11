@@ -104,18 +104,36 @@ public static partial class GradientBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> property value to <see cref="Avalonia.Media.GradientSpreadMethod.Pad"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SpreadMethodPad<T>(this T obj) where T : Avalonia.Media.GradientBrush
     {
         obj[Avalonia.Media.GradientBrush.SpreadMethodProperty] = Avalonia.Media.GradientSpreadMethod.Pad;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> property value to <see cref="Avalonia.Media.GradientSpreadMethod.Reflect"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SpreadMethodReflect<T>(this T obj) where T : Avalonia.Media.GradientBrush
     {
         obj[Avalonia.Media.GradientBrush.SpreadMethodProperty] = Avalonia.Media.GradientSpreadMethod.Reflect;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> property value to <see cref="Avalonia.Media.GradientSpreadMethod.Repeat"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SpreadMethodRepeat<T>(this T obj) where T : Avalonia.Media.GradientBrush
     {
         obj[Avalonia.Media.GradientBrush.SpreadMethodProperty] = Avalonia.Media.GradientSpreadMethod.Repeat;

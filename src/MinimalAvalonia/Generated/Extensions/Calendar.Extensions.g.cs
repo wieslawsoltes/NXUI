@@ -104,42 +104,84 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Sunday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekSunday<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Sunday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Monday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekMonday<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Monday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Tuesday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekTuesday<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Tuesday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Wednesday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekWednesday<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Wednesday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Thursday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekThursday<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Thursday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Friday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekFriday<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Friday;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Saturday"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T FirstDayOfWeekSaturday<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Saturday;
@@ -440,18 +482,36 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarMode.Month"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DisplayModeMonth<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.DisplayModeProperty] = Avalonia.Controls.CalendarMode.Month;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarMode.Year"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DisplayModeYear<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.DisplayModeProperty] = Avalonia.Controls.CalendarMode.Year;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarMode.Decade"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T DisplayModeDecade<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.DisplayModeProperty] = Avalonia.Controls.CalendarMode.Decade;
@@ -556,24 +616,48 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarSelectionMode.SingleDate"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectionModeSingleDate<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.SingleDate;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarSelectionMode.SingleRange"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectionModeSingleRange<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.SingleRange;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarSelectionMode.MultipleRange"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectionModeMultipleRange<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.MultipleRange;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarSelectionMode.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectionModeNone<T>(this T obj) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.None;

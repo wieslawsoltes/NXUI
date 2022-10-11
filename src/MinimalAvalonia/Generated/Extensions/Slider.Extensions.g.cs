@@ -104,12 +104,24 @@ public static partial class SliderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationHorizontal<T>(this T obj) where T : Avalonia.Controls.Slider
     {
         obj[Avalonia.Controls.Slider.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OrientationVertical<T>(this T obj) where T : Avalonia.Controls.Slider
     {
         obj[Avalonia.Controls.Slider.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
@@ -508,24 +520,48 @@ public static partial class SliderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> property value to <see cref="Avalonia.Controls.TickPlacement.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TickPlacementNone<T>(this T obj) where T : Avalonia.Controls.Slider
     {
         obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> property value to <see cref="Avalonia.Controls.TickPlacement.TopLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TickPlacementTopLeft<T>(this T obj) where T : Avalonia.Controls.Slider
     {
         obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.TopLeft;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> property value to <see cref="Avalonia.Controls.TickPlacement.BottomRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TickPlacementBottomRight<T>(this T obj) where T : Avalonia.Controls.Slider
     {
         obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.BottomRight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> property value to <see cref="Avalonia.Controls.TickPlacement.Outside"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T TickPlacementOutside<T>(this T obj) where T : Avalonia.Controls.Slider
     {
         obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.Outside;

@@ -104,24 +104,48 @@ public static partial class ViewboxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchNone<T>(this T obj) where T : Avalonia.Controls.Viewbox
     {
         obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Fill"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchFill<T>(this T obj) where T : Avalonia.Controls.Viewbox
     {
         obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.Fill;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchUniform<T>(this T obj) where T : Avalonia.Controls.Viewbox
     {
         obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.UniformToFill"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchUniformToFill<T>(this T obj) where T : Avalonia.Controls.Viewbox
     {
         obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.UniformToFill;
@@ -226,18 +250,36 @@ public static partial class ViewboxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.UpOnly"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchDirectionUpOnly<T>(this T obj) where T : Avalonia.Controls.Viewbox
     {
         obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = Avalonia.Media.StretchDirection.UpOnly;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.DownOnly"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchDirectionDownOnly<T>(this T obj) where T : Avalonia.Controls.Viewbox
     {
         obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = Avalonia.Media.StretchDirection.DownOnly;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.Both"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StretchDirectionBoth<T>(this T obj) where T : Avalonia.Controls.Viewbox
     {
         obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = Avalonia.Media.StretchDirection.Both;

@@ -202,12 +202,24 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> property value to <see cref="Avalonia.Media.AcrylicBackgroundSource.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BackgroundSourceNone<T>(this T obj) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         obj[Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty] = Avalonia.Media.AcrylicBackgroundSource.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> property value to <see cref="Avalonia.Media.AcrylicBackgroundSource.Digger"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BackgroundSourceDigger<T>(this T obj) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         obj[Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty] = Avalonia.Media.AcrylicBackgroundSource.Digger;

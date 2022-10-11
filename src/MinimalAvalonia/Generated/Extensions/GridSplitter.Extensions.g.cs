@@ -104,18 +104,36 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> property value to <see cref="Avalonia.Controls.GridResizeDirection.Auto"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ResizeDirectionAuto<T>(this T obj) where T : Avalonia.Controls.GridSplitter
     {
         obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = Avalonia.Controls.GridResizeDirection.Auto;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> property value to <see cref="Avalonia.Controls.GridResizeDirection.Columns"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ResizeDirectionColumns<T>(this T obj) where T : Avalonia.Controls.GridSplitter
     {
         obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = Avalonia.Controls.GridResizeDirection.Columns;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> property value to <see cref="Avalonia.Controls.GridResizeDirection.Rows"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ResizeDirectionRows<T>(this T obj) where T : Avalonia.Controls.GridSplitter
     {
         obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = Avalonia.Controls.GridResizeDirection.Rows;
@@ -220,24 +238,48 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property value to <see cref="Avalonia.Controls.GridResizeBehavior.BasedOnAlignment"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ResizeBehaviorBasedOnAlignment<T>(this T obj) where T : Avalonia.Controls.GridSplitter
     {
         obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.BasedOnAlignment;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property value to <see cref="Avalonia.Controls.GridResizeBehavior.CurrentAndNext"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ResizeBehaviorCurrentAndNext<T>(this T obj) where T : Avalonia.Controls.GridSplitter
     {
         obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.CurrentAndNext;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property value to <see cref="Avalonia.Controls.GridResizeBehavior.PreviousAndCurrent"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ResizeBehaviorPreviousAndCurrent<T>(this T obj) where T : Avalonia.Controls.GridSplitter
     {
         obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.PreviousAndCurrent;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property value to <see cref="Avalonia.Controls.GridResizeBehavior.PreviousAndNext"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ResizeBehaviorPreviousAndNext<T>(this T obj) where T : Avalonia.Controls.GridSplitter
     {
         obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.PreviousAndNext;

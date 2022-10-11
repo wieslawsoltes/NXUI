@@ -202,12 +202,24 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> property value to <see cref="Avalonia.Controls.Location.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ButtonSpinnerLocationLeft<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> property value to <see cref="Avalonia.Controls.Location.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ButtonSpinnerLocationRight<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Right;
@@ -1096,102 +1108,204 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleNone<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.None;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowLeadingWhite"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAllowLeadingWhite<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowLeadingWhite;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowTrailingWhite"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAllowTrailingWhite<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowTrailingWhite;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowLeadingSign"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAllowLeadingSign<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowLeadingSign;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Integer"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleInteger<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Integer;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowTrailingSign"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAllowTrailingSign<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowTrailingSign;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowParentheses"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAllowParentheses<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowParentheses;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowDecimalPoint"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAllowDecimalPoint<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowDecimalPoint;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowThousands"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAllowThousands<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowThousands;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Number"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleNumber<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Number;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowExponent"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAllowExponent<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowExponent;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Float"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleFloat<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Float;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowCurrencySymbol"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAllowCurrencySymbol<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowCurrencySymbol;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Currency"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleCurrency<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Currency;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Any"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAny<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Any;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowHexSpecifier"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleAllowHexSpecifier<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowHexSpecifier;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.HexNumber"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ParsingNumberStyleHexNumber<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.HexNumber;
@@ -1688,24 +1802,48 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T HorizontalContentAlignmentRight<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
@@ -1810,24 +1948,48 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentStretch<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentTop<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T VerticalContentAlignmentBottom<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;

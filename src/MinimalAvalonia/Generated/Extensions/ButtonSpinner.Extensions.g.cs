@@ -300,12 +300,24 @@ public static partial class ButtonSpinnerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> property value to <see cref="Avalonia.Controls.Location.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ButtonSpinnerLocationLeft<T>(this T obj) where T : Avalonia.Controls.ButtonSpinner
     {
         obj[Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Left;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> property value to <see cref="Avalonia.Controls.Location.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T ButtonSpinnerLocationRight<T>(this T obj) where T : Avalonia.Controls.ButtonSpinner
     {
         obj[Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Right;

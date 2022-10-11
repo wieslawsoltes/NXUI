@@ -104,24 +104,48 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Underline"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T LocationUnderline<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Underline;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Overline"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T LocationOverline<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Overline;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Strikethrough"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T LocationStrikethrough<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Strikethrough;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Baseline"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T LocationBaseline<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Baseline;
@@ -324,18 +348,36 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRecommended"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeThicknessUnitFontRecommended<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRecommended;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRenderingEmSize"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeThicknessUnitFontRenderingEmSize<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRenderingEmSize;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.Pixel"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeThicknessUnitPixel<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty] = Avalonia.Media.TextDecorationUnit.Pixel;
@@ -734,18 +776,36 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Flat"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeLineCapFlat<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Flat;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Round"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeLineCapRound<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Round;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Square"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeLineCapSquare<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Square;
@@ -948,18 +1008,36 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRecommended"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeOffsetUnitFontRecommended<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRecommended;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRenderingEmSize"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeOffsetUnitFontRenderingEmSize<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRenderingEmSize;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.Pixel"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T StrokeOffsetUnitPixel<T>(this T obj) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty] = Avalonia.Media.TextDecorationUnit.Pixel;

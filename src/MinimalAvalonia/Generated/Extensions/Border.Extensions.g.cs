@@ -790,18 +790,36 @@ public static partial class BorderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Flat"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BorderLineCapFlat<T>(this T obj) where T : Avalonia.Controls.Border
     {
         obj[Avalonia.Controls.Border.BorderLineCapProperty] = Avalonia.Media.PenLineCap.Flat;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Round"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BorderLineCapRound<T>(this T obj) where T : Avalonia.Controls.Border
     {
         obj[Avalonia.Controls.Border.BorderLineCapProperty] = Avalonia.Media.PenLineCap.Round;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Square"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BorderLineCapSquare<T>(this T obj) where T : Avalonia.Controls.Border
     {
         obj[Avalonia.Controls.Border.BorderLineCapProperty] = Avalonia.Media.PenLineCap.Square;
@@ -906,18 +924,36 @@ public static partial class BorderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Bevel"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BorderLineJoinBevel<T>(this T obj) where T : Avalonia.Controls.Border
     {
         obj[Avalonia.Controls.Border.BorderLineJoinProperty] = Avalonia.Media.PenLineJoin.Bevel;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Miter"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BorderLineJoinMiter<T>(this T obj) where T : Avalonia.Controls.Border
     {
         obj[Avalonia.Controls.Border.BorderLineJoinProperty] = Avalonia.Media.PenLineJoin.Miter;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Round"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T BorderLineJoinRound<T>(this T obj) where T : Avalonia.Controls.Border
     {
         obj[Avalonia.Controls.Border.BorderLineJoinProperty] = Avalonia.Media.PenLineJoin.Round;

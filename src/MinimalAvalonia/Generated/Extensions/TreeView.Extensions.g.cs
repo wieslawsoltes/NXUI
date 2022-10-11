@@ -398,24 +398,48 @@ public static partial class TreeViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Single"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectionModeSingle<T>(this T obj) where T : Avalonia.Controls.TreeView
     {
         obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Single;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Multiple"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectionModeMultiple<T>(this T obj) where T : Avalonia.Controls.TreeView
     {
         obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Multiple;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Toggle"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectionModeToggle<T>(this T obj) where T : Avalonia.Controls.TreeView
     {
         obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Toggle;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.AlwaysSelected"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T SelectionModeAlwaysSelected<T>(this T obj) where T : Avalonia.Controls.TreeView
     {
         obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.AlwaysSelected;

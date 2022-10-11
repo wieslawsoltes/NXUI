@@ -104,24 +104,48 @@ public static partial class WindowNotificationManagerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.TopLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PositionTopLeft<T>(this T obj) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.TopLeft;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.TopRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PositionTopRight<T>(this T obj) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.TopRight;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.BottomLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PositionBottomLeft<T>(this T obj) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.BottomLeft;
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.BottomRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T PositionBottomRight<T>(this T obj) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.BottomRight;
