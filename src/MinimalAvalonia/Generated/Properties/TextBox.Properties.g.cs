@@ -7,8 +7,6 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanCopy => Avalonia.Controls.TextBox.CanCopyProperty;
-
     public static Avalonia.StyledProperty<System.Boolean> TextBoxAcceptsReturn => Avalonia.Controls.TextBox.AcceptsReturnProperty;
 
     public static Avalonia.StyledProperty<System.Boolean> TextBoxAcceptsTab => Avalonia.Controls.TextBox.AcceptsTabProperty;
@@ -58,6 +56,8 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.StyledProperty<System.Boolean> TextBoxRevealPassword => Avalonia.Controls.TextBox.RevealPasswordProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanCut => Avalonia.Controls.TextBox.CanCutProperty;
+
+    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanCopy => Avalonia.Controls.TextBox.CanCopyProperty;
 
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanPaste => Avalonia.Controls.TextBox.CanPasteProperty;
 

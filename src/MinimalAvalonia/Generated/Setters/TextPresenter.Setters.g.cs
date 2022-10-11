@@ -672,6 +672,80 @@ public static partial class TextPresenterSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterPreeditText(this Style style, System.String value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterPreeditText(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterPreeditText(this Style style, IObservable<System.String> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterPreeditText(this KeyFrame keyFrame, System.String value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterPreeditText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, binding));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterPreeditText(this KeyFrame keyFrame, IObservable<System.String> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty
 
     /// <summary>

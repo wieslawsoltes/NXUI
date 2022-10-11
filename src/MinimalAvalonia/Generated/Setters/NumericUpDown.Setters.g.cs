@@ -894,6 +894,80 @@ public static partial class NumericUpDownSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.NumericUpDown.TextConverterProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownTextConverter(this Style style, Avalonia.Data.Converters.IValueConverter value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextConverterProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownTextConverter(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextConverterProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownTextConverter(this Style style, IObservable<Avalonia.Data.Converters.IValueConverter> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextConverterProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownTextConverter(this KeyFrame keyFrame, Avalonia.Data.Converters.IValueConverter value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextConverterProperty, value));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownTextConverter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextConverterProperty, binding));
+        return keyFrame;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownTextConverter(this KeyFrame keyFrame, IObservable<Avalonia.Data.Converters.IValueConverter> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextConverterProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.NumericUpDown.ValueProperty
 
     /// <summary>

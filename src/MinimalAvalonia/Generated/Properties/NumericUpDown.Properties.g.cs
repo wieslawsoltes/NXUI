@@ -31,6 +31,8 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,System.String> NumericUpDownText => Avalonia.Controls.NumericUpDown.TextProperty;
 
+    public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,Avalonia.Data.Converters.IValueConverter> NumericUpDownTextConverter => Avalonia.Controls.NumericUpDown.TextConverterProperty;
+
     public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,System.Nullable<System.Decimal>> NumericUpDownValue => Avalonia.Controls.NumericUpDown.ValueProperty;
 
     public static Avalonia.StyledProperty<System.String> NumericUpDownWatermark => Avalonia.Controls.NumericUpDown.WatermarkProperty;

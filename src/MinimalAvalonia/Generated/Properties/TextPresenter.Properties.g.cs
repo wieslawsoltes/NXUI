@@ -25,6 +25,8 @@ public static partial class MinimalAvaloniaProperties
 
     public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.TextPresenter,System.String> TextPresenterText => Avalonia.Controls.Presenters.TextPresenter.TextProperty;
 
+    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.TextPresenter,System.String> TextPresenterPreeditText => Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty;
+
     public static Avalonia.StyledProperty<Avalonia.Media.TextAlignment> TextPresenterTextAlignment => Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty;
 
     public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> TextPresenterTextWrapping => Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty;
