@@ -16,5 +16,10 @@ internal static partial class Templates
 public static partial class MinimalAvaloniaEvents
 {";
 
+    public static string EventTemplate = @"    /// <summary>
+    /// The <see cref=""%ClassType%.%EventName%Event""/> event defined in <see cref=""%ClassType%""/> class.
+    /// </summary>
+    public static %EventType% %ClassName%%EventName% => %ClassType%.%EventName%Event;";
+
     public static string EventsFooterTemplate = @"}";
 }
