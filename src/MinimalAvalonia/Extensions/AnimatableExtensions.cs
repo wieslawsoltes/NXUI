@@ -4,6 +4,13 @@ public static partial class AnimatableExtensions
 {
     // Transitions
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="animatable"></param>
+    /// <param name="transitions"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T Transitions<T>(this T animatable, params ITransition[] transitions) where T : Animatable
     {
         if (animatable.Transitions is { })
