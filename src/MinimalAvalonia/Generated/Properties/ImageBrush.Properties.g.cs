@@ -7,5 +7,8 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
+    /// <summary>
+    /// The <see cref="Avalonia.Media.ImageBrush.SourceProperty"/> property defined in <see cref="Avalonia.Media.ImageBrush"/> class.
+    /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.Imaging.IBitmap> ImageBrushSource => Avalonia.Media.ImageBrush.SourceProperty;
 }

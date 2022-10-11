@@ -7,7 +7,13 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.CalendarItem"/> class.
+    /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> CalendarItemHeaderBackground => Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty;
 
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.CalendarItem"/> class.
+    /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.CalendarItem,Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> CalendarItemDayTitleTemplate => Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty;
 }

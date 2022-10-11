@@ -7,5 +7,8 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
+    /// <summary>
+    /// The <see cref="Avalonia.Animation.AnimatorKeyFrame.ValueProperty"/> property defined in <see cref="Avalonia.Animation.AnimatorKeyFrame"/> class.
+    /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Animation.AnimatorKeyFrame,System.Object> AnimatorKeyFrameValue => Avalonia.Animation.AnimatorKeyFrame.ValueProperty;
 }

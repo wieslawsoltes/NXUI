@@ -7,5 +7,8 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property defined in <see cref="Avalonia.Controls.Spinner"/> class.
+    /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.ValidSpinDirections> SpinnerValidSpinDirection => Avalonia.Controls.Spinner.ValidSpinDirectionProperty;
 }

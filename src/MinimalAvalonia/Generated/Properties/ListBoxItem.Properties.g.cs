@@ -7,5 +7,8 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ListBoxItem.IsSelectedProperty"/> property defined in <see cref="Avalonia.Controls.ListBoxItem"/> class.
+    /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> ListBoxItemIsSelected => Avalonia.Controls.ListBoxItem.IsSelectedProperty;
 }

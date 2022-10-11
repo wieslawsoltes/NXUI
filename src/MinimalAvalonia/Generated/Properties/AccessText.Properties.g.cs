@@ -7,5 +7,8 @@ namespace MinimalAvalonia;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]
 public static partial class MinimalAvaloniaProperties
 {
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.AccessText"/> class.
+    /// </summary>
     public static Avalonia.AttachedProperty<System.Boolean> AccessTextShowAccessKey => Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty;
 }
