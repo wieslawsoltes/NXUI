@@ -1,7 +1,20 @@
 ﻿namespace MinimalAvalonia;
 
+/// <summary>
+/// 
+/// </summary>
 public static class AvaloniaObjectExtensions
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="target"></param>
+    /// <param name="targetProperty"></param>
+    /// <param name="source"></param>
+    /// <param name="sourceProperty"></param>
+    /// <param name="compositeDisposable"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty targetProperty, 
@@ -14,6 +27,15 @@ public static class AvaloniaObjectExtensions
         return target;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="target"></param>
+    /// <param name="targetProperty"></param>
+    /// <param name="source"></param>
+    /// <param name="compositeDisposable"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty<T> targetProperty, 
@@ -25,6 +47,15 @@ public static class AvaloniaObjectExtensions
         return target;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="target"></param>
+    /// <param name="targetProperty"></param>
+    /// <param name="source"></param>
+    /// <param name="compositeDisposable"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty targetProperty, 
@@ -36,6 +67,15 @@ public static class AvaloniaObjectExtensions
         return target;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="target"></param>
+    /// <param name="targetProperty"></param>
+    /// <param name="source"></param>
+    /// <param name="compositeDisposable"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty<T> targetProperty, 
@@ -47,6 +87,7 @@ public static class AvaloniaObjectExtensions
         return target;
     }
 
+    //
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty targetProperty, 
@@ -58,6 +99,16 @@ public static class AvaloniaObjectExtensions
         return target;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="target"></param>
+    /// <param name="targetProperty"></param>
+    /// <param name="source"></param>
+    /// <param name="sourceProperty"></param>
+    /// <param name="compositeDisposable"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T BindTwoWay<T>(
         this T target,
         AvaloniaProperty targetProperty, 
