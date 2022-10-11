@@ -16,5 +16,10 @@ internal static partial class Templates
 public static partial class MinimalAvaloniaProperties
 {";
 
+    public static string PropertyTemplate = @"    /// <summary>
+    /// The <see cref=""%ClassType%.%PropertyName%Property""/> property defined in <see cref=""%ClassType%""/> class.
+    /// </summary>
+    public static %PropertyType% %ClassName%%PropertyName% => %ClassType%.%PropertyName%Property;";
+
     public static string PropertiesFooterTemplate = @"}";
 }
