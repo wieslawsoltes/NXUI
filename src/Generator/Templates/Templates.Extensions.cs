@@ -8,7 +8,7 @@ internal static partial class Templates
 {
     public static string PropertyMethodEnumTemplate = @"
     /// <summary>
-    /// Sets a <see cref=""%ClassType%.%Name%Property""/> value to <see cref=""%ValueType%.%EnumValue%""/>.
+    /// Sets a <see cref=""%ClassType%.%Name%Property""/> property value to <see cref=""%ValueType%.%EnumValue%""/>.
     /// </summary>
     /// <param name=""obj"">The target object.</param>
     /// <typeparam name=""T"">The type of the target object.</typeparam>
@@ -21,7 +21,7 @@ internal static partial class Templates
 
     public static string PropertyMethodEnumSealedTemplate = @"
     /// <summary>
-    /// Sets a <see cref=""%ClassType%.%Name%Property""/> value to <see cref=""%ValueType%.%EnumValue%""/>.
+    /// Sets a <see cref=""%ClassType%.%Name%Property""/> property value to <see cref=""%ValueType%.%EnumValue%""/>.
     /// </summary>
     /// <param name=""obj"">The target object.</param>
     /// <returns>The target object reference.</returns>
