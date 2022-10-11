@@ -87,7 +87,15 @@ public static class AvaloniaObjectExtensions
         return target;
     }
 
-    //
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="target"></param>
+    /// <param name="targetProperty"></param>
+    /// <param name="source"></param>
+    /// <param name="compositeDisposable"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty targetProperty, 
