@@ -315,7 +315,6 @@ internal static partial class Templates
 
     public static string RoutedEventMethodsTemplateSealed = @"    // %OwnerType%.%Name%Event
 
-// TODO:
     public static %OwnerType% On%Name%Handler(
         this %OwnerType% obj, Action<%OwnerType%, %ArgsType%> action,
         Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
@@ -324,7 +323,6 @@ internal static partial class Templates
         return obj;
     }
 
-// TODO:
     public static %OwnerType% On%Name%(
         this %OwnerType% obj,
         Action<%OwnerType%, IObservable<%ArgsType%>> handler,
@@ -335,7 +333,6 @@ internal static partial class Templates
         return obj;
     }
 
-// TODO:
     public static IObservable<%ArgsType%> ObserveOn%Name%(
         this %OwnerType% obj,
         Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
