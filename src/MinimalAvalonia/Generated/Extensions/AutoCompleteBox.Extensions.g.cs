@@ -1835,6 +1835,55 @@ public static partial class AutoCompleteBoxExtensions
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent, routes);
     }
 
+    // Avalonia.Controls.AutoCompleteBox.TextChangedEvent
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static T OnTextChangedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Controls.TextChangedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj.AddHandler(Avalonia.Controls.AutoCompleteBox.TextChangedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static T OnTextChanged<T>(
+        this T obj, Action<T, IObservable<Avalonia.Controls.TextChangedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextChangedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
+    public static IObservable<Avalonia.Controls.TextChangedEventArgs> ObserveOnTextChanged(
+        this Avalonia.Controls.AutoCompleteBox obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextChangedEvent, routes);
+    }
+
     // Avalonia.Controls.AutoCompleteBox.TextChanged
 
     /// <summary>
@@ -1844,10 +1893,10 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T OnTextChangedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnTextChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.TextChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
-            .FromEventPattern<EventHandler, EventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Controls.TextChangedEventArgs>, Avalonia.Controls.TextChangedEventArgs>(
                 h => obj.TextChanged += h, 
                 h => obj.TextChanged -= h)
             .Select(x => x.EventArgs);
@@ -1860,10 +1909,10 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj"></param>
     /// <returns></returns>
-    public static IObservable<EventArgs> ObserveOnTextChangedEvent(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<Avalonia.Controls.TextChangedEventArgs> ObserveOnTextChangedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
-            .FromEventPattern<EventHandler, EventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Controls.TextChangedEventArgs>, Avalonia.Controls.TextChangedEventArgs>(
                 h => obj.TextChanged += h, 
                 h => obj.TextChanged -= h)
             .Select(x => x.EventArgs);

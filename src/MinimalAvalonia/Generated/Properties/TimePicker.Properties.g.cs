@@ -14,16 +14,6 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.DirectProperty<Avalonia.Controls.TimePicker,System.Int32> TimePickerMinuteIncrement => Avalonia.Controls.TimePicker.MinuteIncrementProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.TimePicker.HeaderProperty"/> property defined in <see cref="Avalonia.Controls.TimePicker"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<System.Object> TimePickerHeader => Avalonia.Controls.TimePicker.HeaderProperty;
-
-    /// <summary>
-    /// The <see cref="Avalonia.Controls.TimePicker.HeaderTemplateProperty"/> property defined in <see cref="Avalonia.Controls.TimePicker"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> TimePickerHeaderTemplate => Avalonia.Controls.TimePicker.HeaderTemplateProperty;
-
-    /// <summary>
     /// The <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/> property defined in <see cref="Avalonia.Controls.TimePicker"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.TimePicker,System.String> TimePickerClockIdentifier => Avalonia.Controls.TimePicker.ClockIdentifierProperty;

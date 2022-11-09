@@ -22,4 +22,14 @@ public static partial class MinimalAvaloniaEvents
     /// The <see cref="Avalonia.Controls.TextBox.PastingFromClipboardEvent"/> event defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> TextBoxPastingFromClipboard => Avalonia.Controls.TextBox.PastingFromClipboardEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBox.TextChangedEvent"/> event defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.TextChangedEventArgs> TextBoxTextChanged => Avalonia.Controls.TextBox.TextChangedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBox.TextChangingEvent"/> event defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.TextChangingEventArgs> TextBoxTextChanging => Avalonia.Controls.TextBox.TextChangingEvent;
 }

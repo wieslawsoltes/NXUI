@@ -12,4 +12,9 @@ public static partial class MinimalAvaloniaEvents
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent"/> event defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.SelectionChangedEventArgs> AutoCompleteBoxSelectionChanged => Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.AutoCompleteBox.TextChangedEvent"/> event defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.TextChangedEventArgs> AutoCompleteBoxTextChanged => Avalonia.Controls.AutoCompleteBox.TextChangedEvent;
 }

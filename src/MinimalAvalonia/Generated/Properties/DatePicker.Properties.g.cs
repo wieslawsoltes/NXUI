@@ -19,16 +19,6 @@ public static partial class MinimalAvaloniaProperties
     public static Avalonia.DirectProperty<Avalonia.Controls.DatePicker,System.Boolean> DatePickerDayVisible => Avalonia.Controls.DatePicker.DayVisibleProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.DatePicker.HeaderProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<System.Object> DatePickerHeader => Avalonia.Controls.DatePicker.HeaderProperty;
-
-    /// <summary>
-    /// The <see cref="Avalonia.Controls.DatePicker.HeaderTemplateProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> DatePickerHeaderTemplate => Avalonia.Controls.DatePicker.HeaderTemplateProperty;
-
-    /// <summary>
     /// The <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.DatePicker,System.DateTimeOffset> DatePickerMaxYear => Avalonia.Controls.DatePicker.MaxYearProperty;

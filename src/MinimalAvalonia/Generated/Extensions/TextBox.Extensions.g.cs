@@ -2635,6 +2635,104 @@ public static partial class TextBoxExtensions
         return obj.GetObservable(Avalonia.Controls.TextBox.PastingFromClipboardEvent, routes);
     }
 
+    // Avalonia.Controls.TextBox.TextChangedEvent
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static T OnTextChangedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Controls.TextChangedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
+    {
+        obj.AddHandler(Avalonia.Controls.TextBox.TextChangedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static T OnTextChanged<T>(
+        this T obj, Action<T, IObservable<Avalonia.Controls.TextChangedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.TextChangedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
+    public static IObservable<Avalonia.Controls.TextChangedEventArgs> ObserveOnTextChanged(
+        this Avalonia.Controls.TextBox obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.TextChangedEvent, routes);
+    }
+
+    // Avalonia.Controls.TextBox.TextChangingEvent
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="action"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static T OnTextChangingHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Controls.TextChangingEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
+    {
+        obj.AddHandler(Avalonia.Controls.TextBox.TextChangingEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <param name="routes"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static T OnTextChanging<T>(
+        this T obj, Action<T, IObservable<Avalonia.Controls.TextChangingEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TextBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.TextChangingEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="routes"></param>
+    /// <returns></returns>
+    public static IObservable<Avalonia.Controls.TextChangingEventArgs> ObserveOnTextChanging(
+        this Avalonia.Controls.TextBox obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.TextChangingEvent, routes);
+    }
+
     // Avalonia.Controls.TextBox.CopyingToClipboard
 
     /// <summary>
@@ -2734,6 +2832,74 @@ public static partial class TextBoxExtensions
             .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.PastingFromClipboard += h, 
                 h => obj.PastingFromClipboard -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.TextBox.TextChanged
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static T OnTextChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.TextChangedEventArgs>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.TextChangedEventArgs>, Avalonia.Controls.TextChangedEventArgs>(
+                h => obj.TextChanged += h, 
+                h => obj.TextChanged -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public static IObservable<Avalonia.Controls.TextChangedEventArgs> ObserveOnTextChangedEvent(this Avalonia.Controls.TextBox obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.TextChangedEventArgs>, Avalonia.Controls.TextChangedEventArgs>(
+                h => obj.TextChanged += h, 
+                h => obj.TextChanged -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.TextBox.TextChanging
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="handler"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public static T OnTextChangingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.TextChangingEventArgs>> handler) where T : Avalonia.Controls.TextBox
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.TextChangingEventArgs>, Avalonia.Controls.TextChangingEventArgs>(
+                h => obj.TextChanging += h, 
+                h => obj.TextChanging -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public static IObservable<Avalonia.Controls.TextChangingEventArgs> ObserveOnTextChangingEvent(this Avalonia.Controls.TextBox obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.TextChangingEventArgs>, Avalonia.Controls.TextChangingEventArgs>(
+                h => obj.TextChanging += h, 
+                h => obj.TextChanging -= h)
             .Select(x => x.EventArgs);
     }
 }
