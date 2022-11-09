@@ -9,14 +9,39 @@ public static class AppBuilderExtensions
     /// 
     /// </summary>
     /// <param name="builder"></param>
+    /// <param name="name"></param>
+    /// <typeparam name="TAppBuilder"></typeparam>
+    /// <returns></returns>
+    public static TAppBuilder WithApplicationName<TAppBuilder>(
+        this TAppBuilder builder, 
+        string name) where TAppBuilder : AppBuilderBase<TAppBuilder>, new()
+    {
+        return builder.AfterSetup(_ =>
+        {
+            if (builder.Instance is { })
+            {
+                builder.Instance.Name = name;
+            }
+        });
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="builder"></param>
     /// <param name="mode"></param>
     /// <typeparam name="TAppBuilder"></typeparam>
     /// <returns></returns>
-    public static TAppBuilder UseFluentTheme<TAppBuilder>(this TAppBuilder builder, FluentThemeMode mode = Avalonia.Themes.Fluent.FluentThemeMode.Light)
-        where TAppBuilder : AppBuilderBase<TAppBuilder>, new() 
+    public static TAppBuilder UseFluentTheme<TAppBuilder>(
+        this TAppBuilder builder, 
+        FluentThemeMode mode = Avalonia.Themes.Fluent.FluentThemeMode.Light) where TAppBuilder : AppBuilderBase<TAppBuilder>, new() 
     {
         return builder.AfterSetup(_ =>
-            builder.Instance?.Styles.Add(new FluentTheme(new Uri($"avares://{System.Reflection.Assembly.GetExecutingAssembly().GetName()}")) { Mode = mode }));
+            builder.Instance?.Styles.Add(
+                new FluentTheme(new Uri($"avares://{System.Reflection.Assembly.GetExecutingAssembly().GetName()}"))
+                {
+                    Mode = mode
+                }));
     }
 
     /// <summary>
@@ -28,8 +53,11 @@ public static class AppBuilderExtensions
     /// <param name="shutdownMode"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static int StartWithClassicDesktopLifetime<T>(this T builder, Action<IClassicDesktopStyleApplicationLifetime>? callback, string[] args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
-        where T : AppBuilderBase<T>, new()
+    public static int StartWithClassicDesktopLifetime<T>(
+        this T builder, 
+        Action<IClassicDesktopStyleApplicationLifetime>? callback, 
+        string[] args, 
+        ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose) where T : AppBuilderBase<T>, new()
     {
         var lifetime = new ClassicDesktopStyleApplicationLifetime
         {
@@ -53,8 +81,11 @@ public static class AppBuilderExtensions
     /// <param name="shutdownMode"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static int StartWithClassicDesktopLifetime<T>(this T builder, Func<Window>? callback, string[] args, ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
-        where T : AppBuilderBase<T>, new()
+    public static int StartWithClassicDesktopLifetime<T>(
+        this T builder, 
+        Func<Window>? callback, 
+        string[] args, 
+        ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose) where T : AppBuilderBase<T>, new()
     {
         var lifetime = new ClassicDesktopStyleApplicationLifetime
         {
@@ -67,24 +98,5 @@ public static class AppBuilderExtensions
         lifetime.MainWindow = callback?.Invoke();
 
         return lifetime.Start(args);
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="builder"></param>
-    /// <param name="name"></param>
-    /// <typeparam name="TAppBuilder"></typeparam>
-    /// <returns></returns>
-    public static TAppBuilder WithApplicationName<TAppBuilder>(this TAppBuilder builder, string name)
-        where TAppBuilder : AppBuilderBase<TAppBuilder>, new()
-    {
-        return builder.AfterSetup(_ =>
-        {
-            if (builder.Instance is { })
-            {
-                builder.Instance.Name = name;
-            }
-        });
     }
 }
