@@ -7,7 +7,7 @@
     <IsPackable>true</IsPackable>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <RootNamespace>MinimalAvalonia</RootNamespace>
-    <PackageId>MinimalAvalonia</PackageId>
+    <PackageId>NXUI</PackageId>
   </PropertyGroup>
   <PropertyGroup>
     <VersionPrefix>11.0.0</VersionPrefix>

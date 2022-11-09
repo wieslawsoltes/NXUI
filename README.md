@@ -1,7 +1,7 @@
 # NXUI (next-gen UI)
 
-[![NuGet](https://img.shields.io/nuget/v/MinimalAvalonia.svg)](https://www.nuget.org/packages/MinimalAvalonia)
-[![NuGet](https://img.shields.io/nuget/dt/MinimalAvalonia.svg)](https://www.nuget.org/packages/MinimalAvalonia)
+[![NuGet](https://img.shields.io/nuget/v/NXUI.svg)](https://www.nuget.org/packages/NXUI)
+[![NuGet](https://img.shields.io/nuget/dt/NXUI.svg)](https://www.nuget.org/packages/NXUI)
 
 Creating minimal [Avalonia](https://avaloniaui.net/) next generation (NXUI, next-gen UI) application using C# 10 and .NET 6 and 7
 
@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9
 # Usage
 
 ```xml
-<PackageReference Include="MinimalAvalonia" Version="11.0.0-preview3" />
+<PackageReference Include="NXUI" Version="11.0.0-preview3" />
 ```
 
 ```C#
@@ -52,5 +52,5 @@ AppBuilder.Configure<Application>()
 
 ```
 cd src/Generator
-dotnet run -- ../MinimalAvalonia/Generated
+dotnet run -- ../NXUI/Generated
 ```

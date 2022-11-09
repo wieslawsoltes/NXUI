@@ -15,7 +15,7 @@
     <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\MinimalAvalonia\MinimalAvalonia.csproj" />
+    <ProjectReference Include="..\..\src\NXUI\NXUI.csproj" />
   </ItemGroup>
-  <Import Project="..\..\src\MinimalAvalonia\MinimalAvalonia.props" />
+  <Import Project="..\..\src\NXUI\MinimalAvalonia.props" />
 </Project>
