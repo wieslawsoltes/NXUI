@@ -21,7 +21,7 @@ public static class AppBuilderExtensions
   public static T SetupBrowserSingleViewLifetime<T>(
     this T builder, 
     Func<Control>? callback, 
-    string mainDivId) where T : AppBuilderBase<T>, new()
+    string mainDivId = "out") where T : AppBuilderBase<T>, new()
   {
     var lifetime = new BrowserSingleViewLifetime();
 
