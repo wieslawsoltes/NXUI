@@ -14,4 +14,4 @@ Control Build()
 
 AppBuilder.Configure<Application>()
   .UseFluentTheme()
-  .SetupBrowserSingleViewLifetime(Build, "out");
+  .SetupBrowserSingleViewLifetime(Build);
