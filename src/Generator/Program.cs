@@ -19,4 +19,4 @@ AppBuilder.Configure<App>()
         }
     })
     .UseHeadless(new AvaloniaHeadlessPlatformOptions { UseCompositor = false, UseHeadlessDrawing = false }).SetupWithoutStarting();
-    //.StartWithClassicDesktopLifetime(args);
+
