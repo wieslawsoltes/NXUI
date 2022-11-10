@@ -8,7 +8,7 @@
     <MSBuildEnableWorkloadResolver>true</MSBuildEnableWorkloadResolver>
     <Nullable>enable</Nullable>
     <IsPackable>False</IsPackable>
-    <RootNamespace>NXUI.Sampple.Web</RootNamespace>
+    <RootNamespace>NXUI.Sample.Web</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>
     <AnalysisLevel>latest</AnalysisLevel>
