@@ -1,14 +1,15 @@
 ﻿using Avalonia;
 using Generator;
 
+if (args.Length != 1)
+{
+    Console.WriteLine("Usage: Generator <OutputPath>");
+    return;
+}
+
+void Generate() => MinimalGenerator.Generate(args[0]);
+
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
-    .AfterSetup(x =>
-    {
-        if (args.Length == 1)
-        {
-            MinimalGenerator.Generate(args[0]);
-        }
-    })
+    .AfterSetup(_ => Generate())
     .SetupWithoutStarting();
-

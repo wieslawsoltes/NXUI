@@ -5,7 +5,7 @@ using Generator.Model;
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-internal static class PropertiesGenerator
+public static class PropertiesGenerator
 {
     public static void Generate(string outputPath, List<Class> classes)
     {

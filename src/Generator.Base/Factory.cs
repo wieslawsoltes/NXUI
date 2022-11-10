@@ -4,7 +4,7 @@ using Generator.Model;
 
 namespace Generator;
 
-internal static class Factory
+public static class Factory
 {
     private static readonly HashSet<string> s_excludedClasses = new()
     {

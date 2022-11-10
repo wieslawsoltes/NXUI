@@ -4,7 +4,7 @@ using Generator.Model;
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-internal static class BuildersGenerator
+public static class BuildersGenerator
 {
     public static void Generate(string outputPath, List<Class> classes)
     {

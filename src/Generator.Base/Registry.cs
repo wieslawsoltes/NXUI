@@ -4,7 +4,7 @@ using Avalonia.Interactivity;
 
 namespace Generator;
 
-internal class Registry
+public class Registry
 {
     private static readonly FieldInfo? s_registered = 
         typeof(AvaloniaPropertyRegistry).GetField("_registered", BindingFlags.NonPublic | BindingFlags.Instance);

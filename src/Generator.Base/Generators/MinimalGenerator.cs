@@ -1,7 +1,7 @@
 ﻿// ReSharper disable once CheckNamespace
 namespace Generator;
 
-internal static class MinimalGenerator
+public static class MinimalGenerator
 {
     public static void Generate(string outputPath)
     {

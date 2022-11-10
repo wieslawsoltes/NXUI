@@ -4,7 +4,7 @@ using Generator.Model;
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-internal static class ExtensionsGenerator
+public static class ExtensionsGenerator
 {
     public static void Generate(string outputPath, List<Class> classes)
     {
