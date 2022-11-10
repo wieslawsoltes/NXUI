@@ -3,7 +3,7 @@ namespace Generator;
 
 public static class MinimalGenerator
 {
-    public static void Generate(string outputPath)
+    public static void Generate(string outputPath, Predicate<string> assemblyFilter, Predicate<string> typeFilter)
     {
         var buildersPath = Path.Combine(outputPath, "Builders");
         var propertiesPath = Path.Combine(outputPath, "Properties");
@@ -11,7 +11,7 @@ public static class MinimalGenerator
         var extensionsPath = Path.Combine(outputPath, "Extensions");
         var settersPath = Path.Combine(outputPath, "Setters");
 
-        var classes = Factory.CreateClasses();
+        var classes = Factory.CreateClasses(assemblyFilter, typeFilter);
 
         if (classes is null)
         {

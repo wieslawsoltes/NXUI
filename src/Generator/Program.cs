@@ -7,7 +7,19 @@ if (args.Length != 1)
     return;
 }
 
-void Generate() => MinimalGenerator.Generate(args[0]);
+void Generate() 
+    => MinimalGenerator.Generate(
+        args[0], 
+        x =>
+        {
+            // Console.WriteLine($"[Assembly] {x}");
+            return x.StartsWith("Avalonia");
+        }, 
+        x =>
+        {
+            // Console.WriteLine($"[Type] {x}");
+            return true;
+        });
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
