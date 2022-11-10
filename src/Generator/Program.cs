@@ -3,7 +3,7 @@ using Avalonia.Headless;
 using Avalonia.Themes.Fluent;
 using Generator;
 
-AppBuilder.Configure<App>()
+AppBuilder.Configure<Application>()
     .UsePlatformDetect()
     .AfterSetup(x =>
     {
