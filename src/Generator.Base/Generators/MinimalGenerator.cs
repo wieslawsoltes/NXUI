@@ -1,9 +1,11 @@
-﻿// ReSharper disable once CheckNamespace
+﻿using System.Reflection;
+
+// ReSharper disable once CheckNamespace
 namespace Generator;
 
 public static class MinimalGenerator
 {
-    public static void Generate(string outputPath, Predicate<string> assemblyFilter, Predicate<string> typeFilter)
+    public static void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
         var buildersPath = Path.Combine(outputPath, "Builders");
         var propertiesPath = Path.Combine(outputPath, "Properties");

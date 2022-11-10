@@ -30,15 +30,15 @@ public static class Factory
             .Replace("+", "");
     }
 
-    private static Type[] GetClassTypes(Predicate<string> assemblyFilter, Predicate<string> typeFilter)
+    private static Type[] GetClassTypes(Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
        return(
            from assembly in AppDomain.CurrentDomain.GetAssemblies()
            where assembly?.FullName is not null 
-                 && assemblyFilter(assembly.GetName().Name)
+                 && assemblyFilter(assembly)
            from assemblyType in assembly.GetTypes()
            where assemblyType is not null 
-                 && typeFilter(assemblyType.Name)
+                 && typeFilter(assemblyType)
                  && assemblyType.IsSubclassOf(typeof(AvaloniaObject))
                  && assemblyType.GetCustomAttributes().All(x => x.GetType().Name != "ObsoleteAttribute")
                  && assemblyType.IsPublic
@@ -267,7 +267,7 @@ public static class Factory
         return events;
     }
 
-    public static List<Class>? CreateClasses(Predicate<string> assemblyFilter, Predicate<string> typeFilter)
+    public static List<Class>? CreateClasses(Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
         var classTypes = GetClassTypes(assemblyFilter, typeFilter);
         var classes = new List<Class>();

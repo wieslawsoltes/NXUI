@@ -13,7 +13,8 @@ void Generate()
         x =>
         {
             // Console.WriteLine($"[Assembly] {x}");
-            return x.StartsWith("Avalonia");
+            var name = x.GetName().Name;
+            return name is { } && name.StartsWith("Avalonia");
         }, 
         x =>
         {
