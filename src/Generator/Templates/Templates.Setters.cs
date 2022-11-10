@@ -6,22 +6,27 @@ namespace Generator;
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 internal static partial class Templates
 {
-    public static string PropertySettersHeaderTemplate = @"
+    public static string PropertySettersHeaderTemplate = """
+
 /// <summary>
-/// The minimal avalonia <see cref=""%ClassType%""/> class style setters extension methods.
+/// The minimal avalonia <see cref="%ClassType%"/> class style setters extension methods.
 /// </summary>
 public static partial class %ClassName%Setters
-{";
+{
+""";
 
-    public static string PropertySettersFooterTemplate = @"}";
+    public static string PropertySettersFooterTemplate = """
+}
+""";
 
-    public static string PropertySettersTemplate = @"    // %ClassType%.%Name%Property
+    public static string PropertySettersTemplate = """
+    // %ClassType%.%Name%Property
 
     /// <summary>
-    /// Adds a style setter for an <see cref=""%ClassType%.%Name%Property""/>.
+    /// Adds a style setter for an <see cref="%ClassType%.%Name%Property"/>.
     /// </summary>
-    /// <param name=""style"">The target style.</param>
-    /// <param name=""value"">The property value.</param>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
     public static Style Set%ClassName%%Name%(this Style style, %ValueType% value)
     {
@@ -30,10 +35,10 @@ public static partial class %ClassName%Setters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref=""%ClassType%.%Name%Property""/>.
+    /// Adds a style setter for an <see cref="%ClassType%.%Name%Property"/>.
     /// </summary>
-    /// <param name=""style"">The target style.</param>
-    /// <param name=""binding"">The property binding.</param>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
     public static Style Set%ClassName%%Name%(this Style style, Avalonia.Data.IBinding binding)
     {
@@ -42,10 +47,10 @@ public static partial class %ClassName%Setters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref=""%ClassType%.%Name%Property""/>.
+    /// Adds a style setter for an <see cref="%ClassType%.%Name%Property"/>.
     /// </summary>
-    /// <param name=""style"">The target style.</param>
-    /// <param name=""observable"">The property observable.</param>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
     public static Style Set%ClassName%%Name%(this Style style, IObservable<%ValueType%> observable)
     {
@@ -54,10 +59,10 @@ public static partial class %ClassName%Setters
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref=""%ClassType%.%Name%Property""/>.
+    /// Adds a keyframe setter for an <see cref="%ClassType%.%Name%Property"/>.
     /// </summary>
-    /// <param name=""keyFrame"">The target keyframe.</param>
-    /// <param name=""value"">The property value.</param>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
     public static KeyFrame Set%ClassName%%Name%(this KeyFrame keyFrame, %ValueType% value)
     {
@@ -66,10 +71,10 @@ public static partial class %ClassName%Setters
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref=""%ClassType%.%Name%Property""/>.
+    /// Adds a keyframe setter for an <see cref="%ClassType%.%Name%Property"/>.
     /// </summary>
-    /// <param name=""keyFrame"">The target keyframe.</param>
-    /// <param name=""binding"">The property binding.</param>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
     public static KeyFrame Set%ClassName%%Name%(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
@@ -78,14 +83,15 @@ public static partial class %ClassName%Setters
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref=""%ClassType%.%Name%Property""/>.
+    /// Adds a keyframe setter for an <see cref="%ClassType%.%Name%Property"/>.
     /// </summary>
-    /// <param name=""keyFrame"">The target keyframe.</param>
-    /// <param name=""observable"">The property binding.</param>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
     public static KeyFrame Set%ClassName%%Name%(this KeyFrame keyFrame, IObservable<%ValueType%> observable)
     {
         keyFrame.Setters.Add(new Setter(%ClassType%.%Name%Property, observable.ToBinding()));
         return keyFrame;
-    }";
+    }
+""";
 }

@@ -6,12 +6,16 @@ namespace Generator;
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 internal static partial class Templates
 {
-    public static string ClassExtensionsHeaderTemplate = @"
+    public static string ClassExtensionsHeaderTemplate = """
+
 /// <summary>
-/// The minimal avalonia <see cref=""%ClassType%""/> class property extension methods.
+/// The minimal avalonia <see cref="%ClassType%"/> class property extension methods.
 /// </summary>
 public static partial class %ClassName%Extensions
-{";
+{
+""";
 
-    public static string ClassExtensionsFooterTemplate = @"}";
+    public static string ClassExtensionsFooterTemplate = """
+}
+""";
 }
