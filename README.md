@@ -27,7 +27,7 @@ var count = 0;
 
 Window Build()
   => Window(out var window)
-    .Title("MinimalAvalonia").Width(400).Height(300)
+    .Title("NXUI").Width(400).Height(300)
     .Content(
       StackPanel()
         .Children(
@@ -44,7 +44,7 @@ Window Build()
 AppBuilder.Configure<Application>()
   .UsePlatformDetect()
   .UseFluentTheme()
-  .WithApplicationName("MinimalAvalonia")
+  .WithApplicationName("NXUI")
   .StartWithClassicDesktopLifetime(Build, args);
 ```
 

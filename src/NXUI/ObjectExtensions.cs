@@ -1,4 +1,4 @@
-namespace MinimalAvalonia;
+namespace NXUI;
 
 /// <summary>
 /// 

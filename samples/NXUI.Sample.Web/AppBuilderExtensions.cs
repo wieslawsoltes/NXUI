@@ -3,7 +3,7 @@ using Avalonia.Web;
 
 [assembly:SupportedOSPlatform("browser")]
 
-namespace MinimalAvalonia.Web;
+namespace NXUI.Sample.Web;
 
 /// <summary>
 /// 

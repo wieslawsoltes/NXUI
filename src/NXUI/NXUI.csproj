@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>true</IsPackable>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
-    <RootNamespace>MinimalAvalonia</RootNamespace>
+    <RootNamespace>NXUI</RootNamespace>
     <PackageId>NXUI</PackageId>
   </PropertyGroup>
   <PropertyGroup>
@@ -32,5 +32,5 @@
       <PackagePath>build\;buildTransitive\</PackagePath>
     </Content>
   </ItemGroup>
-  <Import Project="MinimalAvalonia.props" />
+  <Import Project="NXUI.props" />
 </Project>

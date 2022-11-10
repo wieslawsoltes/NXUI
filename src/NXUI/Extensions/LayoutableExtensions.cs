@@ -1,4 +1,4 @@
-namespace MinimalAvalonia.Extensions;
+namespace NXUI.Extensions;
 
 /// <summary>
 /// 

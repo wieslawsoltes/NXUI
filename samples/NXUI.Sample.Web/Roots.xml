@@ -3,7 +3,7 @@
   <!-- App -->
 
   <assembly fullname="NXUI" preserve="All" />
-  <assembly fullname="MinimalAvalonia.Web" preserve="All" />
+  <assembly fullname="NXUI.Sample.Web" preserve="All" />
 
   <!-- Avalonia Themes -->
 

@@ -42,11 +42,11 @@
     <Using Include="Avalonia.Themes.Fluent" />
     <Using Include="Avalonia.Threading" />
     <Using Include="Avalonia.VisualTree" />
-    <Using Include="MinimalAvalonia" />
-    <Using Include="MinimalAvalonia.Interactivity" />
-    <Using Include="MinimalAvalonia.Extensions" />
-    <Using Include="MinimalAvalonia.MinimalAvaloniaBuilders" Static="true" />
-    <Using Include="MinimalAvalonia.MinimalAvaloniaProperties" Static="true" />
-    <Using Include="MinimalAvalonia.MinimalAvaloniaEvents" Static="true" />
+    <Using Include="NXUI" />
+    <Using Include="NXUI.Interactivity" />
+    <Using Include="NXUI.Extensions" />
+    <Using Include="NXUI.Builders" Static="true" />
+    <Using Include="NXUI.Properties" Static="true" />
+    <Using Include="NXUI.Events" Static="true" />
   </ItemGroup>
 </Project>

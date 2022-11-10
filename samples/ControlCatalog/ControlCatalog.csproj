@@ -18,5 +18,5 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\NXUI\NXUI.csproj" />
   </ItemGroup>
-  <Import Project="..\..\src\NXUI\MinimalAvalonia.props" />
+  <Import Project="..\..\src\NXUI\NXUI.props" />
 </Project>

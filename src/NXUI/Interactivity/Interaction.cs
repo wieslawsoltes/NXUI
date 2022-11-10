@@ -1,4 +1,4 @@
-﻿namespace MinimalAvalonia.Interactivity;
+﻿namespace NXUI.Interactivity;
 
 /// <summary>
 /// 

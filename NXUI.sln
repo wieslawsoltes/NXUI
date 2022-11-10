@@ -43,7 +43,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawLine", "samples\DrawLin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightBooker", "samples\7GUIs\FlightBooker\FlightBooker.csproj", "{20309AAC-49BC-4DB0-ACC2-AC144413380E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAvalonia.Web", "samples\MinimalAvalonia.Web\MinimalAvalonia.Web.csproj", "{65C54C85-7D52-4DA6-8052-EBC8369F5713}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NXUI.Sample.Web", "samples\NXUI.Sample.Web\NXUI.Sample.Web.csproj", "{65C54C85-7D52-4DA6-8052-EBC8369F5713}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,6 +8,7 @@
     <MSBuildEnableWorkloadResolver>true</MSBuildEnableWorkloadResolver>
     <Nullable>enable</Nullable>
     <IsPackable>False</IsPackable>
+    <RootNamespace>NXUI.Sampple.Web</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>
     <AnalysisLevel>latest</AnalysisLevel>
@@ -30,8 +31,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\NXUI\NXUI.csproj" />
   </ItemGroup>
-  <Import Project="..\..\src\NXUI\MinimalAvalonia.props" />
+  <Import Project="..\..\src\NXUI\NXUI.props" />
   <ItemGroup>
-    <Using Include="MinimalAvalonia.Web" />
+    <Using Include="NXUI.Sample.Web" />
   </ItemGroup>
 </Project>
