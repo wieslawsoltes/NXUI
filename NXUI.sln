@@ -5,9 +5,9 @@ VisualStudioVersion = 17.3.32505.426
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NXUI", "src\NXUI\NXUI.csproj", "{F0A9DF50-BF2A-46A6-B587-758125BE8A29}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalAvalonia.Sample", "samples\MinimalAvalonia.Sample\MinimalAvalonia.Sample.csproj", "{33AFF341-32BA-4DE0-AEB1-221A90449BD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NXUI.Sample.Desktop", "samples\NXUI.Sample.Desktop\NXUI.Sample.Desktop.csproj", "{33AFF341-32BA-4DE0-AEB1-221A90449BD8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalAvalonia.IntegrationTest", "samples\MinimalAvalonia.IntegrationTest\MinimalAvalonia.IntegrationTest.csproj", "{9D162580-0C6C-49F2-B88E-275ECB6FD53F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NXUI.IntegrationTest", "samples\NXUI.IntegrationTest\NXUI.IntegrationTest.csproj", "{9D162580-0C6C-49F2-B88E-275ECB6FD53F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7GUIs", "7GUIs", "{6E47BA4B-2405-4281-8A1C-892A4D802A18}"
 EndProject

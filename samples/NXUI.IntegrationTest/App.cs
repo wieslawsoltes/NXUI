@@ -1,4 +1,4 @@
-Window Build() => Window().Content(Label().Content("Minimal Avalonia"));
+Window Build() => Window().Content(Label().Content("NXUI"));
 
 AppBuilder.Configure<Application>()
   .UsePlatformDetect()
