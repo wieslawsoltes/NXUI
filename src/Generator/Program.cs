@@ -7,18 +7,27 @@ if (args.Length != 1)
     return;
 }
 
+var excludedClasses = new HashSet<string>
+{
+    "AboutAvaloniaDialog"
+};
+
 void Generate() 
     => MinimalGenerator.Generate(
         args[0], 
-        x =>
+        a =>
         {
-            // Console.WriteLine($"[Assembly] {x}");
-            var name = x.GetName().Name;
+            // Console.WriteLine($"[Assembly] {a}");
+            var name = a.GetName().Name;
             return name is { } && name.StartsWith("Avalonia");
         }, 
-        x =>
+        t =>
         {
-            // Console.WriteLine($"[Type] {x}");
+            // Console.WriteLine($"[Type] {t}");
+            if (excludedClasses.Contains(t.Name))
+            {
+                return false;
+            }
             return true;
         });
 

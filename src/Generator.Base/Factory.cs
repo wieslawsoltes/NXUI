@@ -6,11 +6,6 @@ namespace Generator;
 
 public static class Factory
 {
-    private static readonly HashSet<string> s_excludedClasses = new()
-    {
-        "AboutAvaloniaDialog"
-    };
-
     private static string FixType(string t)
     {
         return t
@@ -282,12 +277,6 @@ public static class Factory
 
         foreach (var classType in classTypes)
         {
-            if (s_excludedClasses.Contains(classType.Name))
-            {
-                Log.Info($"The `{classType.Name}` class was excluded.");
-                continue;
-            }
-
             var publicCtor = classType.GetConstructors().Any(x => x.IsPublic && x.GetParameters().Length == 0);
 
             var properties = GetProperties(classType, registry);
