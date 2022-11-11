@@ -15,6 +15,6 @@
     <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview3" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="NXUI" Version="11.0.0-preview3" />
+    <PackageReference Include="MinimalAvalonia" Version="11.0.0-preview3" />
   </ItemGroup>
 </Project>
