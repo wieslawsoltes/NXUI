@@ -29,7 +29,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{09B5D07F
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
 		NuGet.Config = NuGet.Config
-		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BA0A189D-8FD8-40A7-8860-FEC67470D55B}"
@@ -46,6 +45,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NXUI.Sample.Web", "samples\NXUI.Sample.Web\NXUI.Sample.Web.csproj", "{65C54C85-7D52-4DA6-8052-EBC8369F5713}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Base", "src\Generator.Base\Generator.Base.csproj", "{D7A8917C-BAFE-4085-91CA-676BA222EC02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{45D812EA-6205-4167-809A-D7561D6C630A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
