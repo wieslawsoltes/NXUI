@@ -59,6 +59,7 @@ Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle, Rel
         .Duration(duration)
         .IterationCountInfinite()
         .PlaybackDirectionNormal()
+        .Easing(new SpringEasing(1, 200, 2))
         .KeyFrames(
           KeyFrame().Cue(0.0).SetRotateTransformAngle(startAngle),
           KeyFrame().Cue(1.0).SetRotateTransformAngle(endAngle)));
