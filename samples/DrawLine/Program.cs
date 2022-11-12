@@ -26,6 +26,7 @@ Control MainView()
             (line.StartPoint.X + line.EndPoint.X) / 2,
             (line.StartPoint.Y + line.EndPoint.Y) / 2,
             RelativeUnit.Absolute);
+          line.RenderTransform(RotateTransform());
           line.Styles(RotateAnimation(TimeSpan.FromSeconds(5), 0d, 360d, origin));
           line = null;
         }
