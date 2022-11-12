@@ -7,6 +7,13 @@ if (args.Length != 1)
     return;
 }
 
+var includedAssemblies = new HashSet<string>
+{
+    "Avalonia.Base",
+    "Avalonia.Controls",
+    "Avalonia.Desktop",
+};
+
 var excludedClasses = new HashSet<string>
 {
     "AboutAvaloniaDialog"
@@ -19,7 +26,8 @@ void Generate()
         {
             // Console.WriteLine($"[Assembly] {a}");
             var name = a.GetName().Name;
-            return name is { } && name.StartsWith("Avalonia");
+            var isAvalonia = name is { } && includedAssemblies.Contains(name);
+            return isAvalonia;
         }, 
         t =>
         {
