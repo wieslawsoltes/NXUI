@@ -139,11 +139,11 @@ public static partial class Templates
     // %ClassType%.%Name%Property
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="%ClassType%.%Name%Property"/> value on an object of type <see cref="%OwnerType%"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static %OwnerType% %Name%(this %OwnerType% obj, %ValueType% value)
     {
         obj[%ClassType%.%Name%Property] = value;
@@ -151,13 +151,13 @@ public static partial class Templates
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="%ClassType%.%Name%Property"/> on an object of type <see cref="%OwnerType%"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static %OwnerType% %Name%(
         this %OwnerType% obj,
         Avalonia.Data.IBinding binding,
@@ -170,13 +170,13 @@ public static partial class Templates
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="%ClassType%.%Name%Property"/> on an object of type <see cref="%OwnerType%"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static %OwnerType% %Name%(
         this %OwnerType% obj,
         IObservable<%ValueType%> observable,
@@ -189,12 +189,12 @@ public static partial class Templates
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="%ClassType%.%Name%Property"/> binding on an object of type <see cref="%OwnerType%"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="%ClassType%.%Name%Property"/> binding.</returns>
     public static Avalonia.Data.IBinding Bind%Name%(
         this %OwnerType% obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -205,21 +205,23 @@ public static partial class Templates
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="%ClassType%.%Name%Property"/> on an object of type <see cref="%OwnerType%"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<%ValueType%> Observe%Name%(this %OwnerType% obj)
     {
         return obj.GetObservable(%OwnerType%.%Name%Property);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="%ClassType%.%Name%Property"/> property on an object of type <see cref="%OwnerType%"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static %OwnerType% On%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ValueType%>> handler)
     {
         var observable = obj.GetObservable(%ClassType%.%Name%Property);
@@ -278,13 +280,13 @@ public static partial class Templates
     // %OwnerType%.%Name%Event
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T On%Name%Handler<T>(
         this T obj,
         Action<T, %ArgsType%> action,
@@ -295,13 +297,13 @@ public static partial class Templates
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T On%Name%<T>(
         this T obj, Action<T, IObservable<%ArgsType%>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%) where T : %OwnerType%
@@ -312,11 +314,11 @@ public static partial class Templates
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<%ArgsType%> ObserveOn%Name%(
         this %OwnerType% obj,
         Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
@@ -328,6 +330,13 @@ public static partial class Templates
     public static string RoutedEventMethodsTemplateSealed = """
     // %OwnerType%.%Name%Event
 
+    /// <summary>
+    /// Registers a handler for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The target object.</returns>
     public static %OwnerType% On%Name%Handler(
         this %OwnerType% obj, Action<%OwnerType%, %ArgsType%> action,
         Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
@@ -336,6 +345,13 @@ public static partial class Templates
         return obj;
     }
 
+    /// <summary>
+    /// Registers a handler for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The target object.</returns>
     public static %OwnerType% On%Name%(
         this %OwnerType% obj,
         Action<%OwnerType%, IObservable<%ArgsType%>> handler,
@@ -346,6 +362,12 @@ public static partial class Templates
         return obj;
     }
 
+    /// <summary>
+    /// Gets an observable for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<%ArgsType%> ObserveOn%Name%(
         this %OwnerType% obj,
         Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
@@ -358,12 +380,12 @@ public static partial class Templates
     // %OwnerType%.%Name%
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `%Name%` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T On%Name%Event<T>(this T obj, Action<T, IObservable<%ArgsType%>> handler) where T : %OwnerType%
     {
         var observable = Observable
@@ -376,10 +398,11 @@ public static partial class Templates
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `%Name%` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `%Name%` event on the specified object.</returns>
     public static IObservable<%ArgsType%> ObserveOn%Name%Event(this %OwnerType% obj)
     {
         return Observable
@@ -394,12 +417,12 @@ public static partial class Templates
     // %OwnerType%.%Name%
 
     /// <summary>
-    /// 
+    /// Attaches an action to be executed when the %Name% event is raised on the given object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The object on which the event is being registered.</param>
+    /// <param name="handler">The action to be executed when the event is raised.</param>
+    /// <typeparam name="T">The type of the object on which the event is being registered.</typeparam>
+    /// <returns>The object on which the event is being registered, for method chaining.</returns>
     public static %OwnerType% On%Name%Event(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ArgsType%>> handler)
     {
         var observable = Observable
@@ -412,10 +435,10 @@ public static partial class Templates
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable that produces the events raised by the %Name% event on the given object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The object for which the events are being observed.</param>
+    /// <returns>An observable that produces the events raised by the %Name% event on the given object.</returns>
     public static IObservable<%ArgsType%> ObserveOn%Name%Event(this %OwnerType% obj)
     {
         return Observable
