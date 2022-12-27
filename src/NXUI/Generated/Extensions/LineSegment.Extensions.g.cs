@@ -9,11 +9,11 @@ public static partial class LineSegmentExtensions
     // Avalonia.Media.LineSegment.PointProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.LineSegment.PointProperty"/> value on an object of type <see cref="Avalonia.Media.LineSegment"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.LineSegment Point(this Avalonia.Media.LineSegment obj, Avalonia.Point value)
     {
         obj[Avalonia.Media.LineSegment.PointProperty] = value;
@@ -21,13 +21,13 @@ public static partial class LineSegmentExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.LineSegment.PointProperty"/> on an object of type <see cref="Avalonia.Media.LineSegment"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.LineSegment Point(
         this Avalonia.Media.LineSegment obj,
         Avalonia.Data.IBinding binding,
@@ -40,13 +40,13 @@ public static partial class LineSegmentExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.LineSegment.PointProperty"/> on an object of type <see cref="Avalonia.Media.LineSegment"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.LineSegment Point(
         this Avalonia.Media.LineSegment obj,
         IObservable<Avalonia.Point> observable,
@@ -59,12 +59,12 @@ public static partial class LineSegmentExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.LineSegment.PointProperty"/> binding on an object of type <see cref="Avalonia.Media.LineSegment"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.LineSegment.PointProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindPoint(
         this Avalonia.Media.LineSegment obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -75,21 +75,23 @@ public static partial class LineSegmentExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.LineSegment.PointProperty"/> on an object of type <see cref="Avalonia.Media.LineSegment"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<Avalonia.Point> ObservePoint(this Avalonia.Media.LineSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.LineSegment.PointProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.LineSegment.PointProperty"/> property on an object of type <see cref="Avalonia.Media.LineSegment"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.LineSegment OnPoint(this Avalonia.Media.LineSegment obj, Action<Avalonia.Media.LineSegment, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.LineSegment.PointProperty);

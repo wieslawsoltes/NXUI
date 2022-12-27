@@ -1545,13 +1545,13 @@ public static partial class WindowExtensions
     // Avalonia.Controls.Window.WindowClosedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Window.WindowClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.Window"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnWindowClosedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -1562,13 +1562,13 @@ public static partial class WindowExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Window.WindowClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.Window"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnWindowClosed<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
@@ -1579,11 +1579,11 @@ public static partial class WindowExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Window.WindowClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.Window"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnWindowClosed(
         this Avalonia.Controls.Window obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -1594,13 +1594,13 @@ public static partial class WindowExtensions
     // Avalonia.Controls.Window.WindowOpenedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Window.WindowOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.Window"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnWindowOpenedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -1611,13 +1611,13 @@ public static partial class WindowExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Window.WindowOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.Window"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnWindowOpened<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Window
@@ -1628,11 +1628,11 @@ public static partial class WindowExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Window.WindowOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.Window"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnWindowOpened(
         this Avalonia.Controls.Window obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -1643,12 +1643,12 @@ public static partial class WindowExtensions
     // Avalonia.Controls.Window.Closing
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `Closing` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnClosingEvent<T>(this T obj, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.Window
     {
         var observable = Observable
@@ -1661,10 +1661,11 @@ public static partial class WindowExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `Closing` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `Closing` event on the specified object.</returns>
     public static IObservable<System.ComponentModel.CancelEventArgs> ObserveOnClosingEvent(this Avalonia.Controls.Window obj)
     {
         return Observable

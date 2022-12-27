@@ -303,13 +303,13 @@ public static partial class SplitButtonExtensions
     // Avalonia.Controls.SplitButton.ClickEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.SplitButton.ClickEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitButton"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnClickHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -320,13 +320,13 @@ public static partial class SplitButtonExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.SplitButton.ClickEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitButton"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnClick<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitButton
@@ -337,11 +337,11 @@ public static partial class SplitButtonExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.SplitButton.ClickEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitButton"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnClick(
         this Avalonia.Controls.SplitButton obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -352,12 +352,12 @@ public static partial class SplitButtonExtensions
     // Avalonia.Controls.SplitButton.Click
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `Click` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnClickEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = Observable
@@ -370,10 +370,11 @@ public static partial class SplitButtonExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `Click` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `Click` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnClickEvent(this Avalonia.Controls.SplitButton obj)
     {
         return Observable

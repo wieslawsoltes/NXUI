@@ -523,13 +523,13 @@ public static partial class ControlExtensions
     // Avalonia.Controls.Control.RequestBringIntoViewEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Control.RequestBringIntoViewEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnRequestBringIntoViewHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.RequestBringIntoViewEventArgs> action,
@@ -540,13 +540,13 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Control.RequestBringIntoViewEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnRequestBringIntoView<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
@@ -557,11 +557,11 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Control.RequestBringIntoViewEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Controls.RequestBringIntoViewEventArgs> ObserveOnRequestBringIntoView(
         this Avalonia.Controls.Control obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -572,13 +572,13 @@ public static partial class ControlExtensions
     // Avalonia.Controls.Control.ContextRequestedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Control.ContextRequestedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnContextRequestedHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.ContextRequestedEventArgs> action,
@@ -589,13 +589,13 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Control.ContextRequestedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnContextRequested<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Control
@@ -606,11 +606,11 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Control.ContextRequestedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequested(
         this Avalonia.Controls.Control obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -621,13 +621,13 @@ public static partial class ControlExtensions
     // Avalonia.Controls.Control.LoadedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Control.LoadedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnLoadedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -638,13 +638,13 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Control.LoadedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnLoaded<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Control
@@ -655,11 +655,11 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Control.LoadedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLoaded(
         this Avalonia.Controls.Control obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -670,13 +670,13 @@ public static partial class ControlExtensions
     // Avalonia.Controls.Control.UnloadedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Control.UnloadedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnUnloadedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -687,13 +687,13 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Control.UnloadedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnUnloaded<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Control
@@ -704,11 +704,11 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Control.UnloadedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUnloaded(
         this Avalonia.Controls.Control obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -719,12 +719,12 @@ public static partial class ControlExtensions
     // Avalonia.Controls.Control.ContextRequested
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `ContextRequested` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnContextRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler) where T : Avalonia.Controls.Control
     {
         var observable = Observable
@@ -737,10 +737,11 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `ContextRequested` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `ContextRequested` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequestedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable
@@ -753,12 +754,12 @@ public static partial class ControlExtensions
     // Avalonia.Controls.Control.Loaded
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `Loaded` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnLoadedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Control
     {
         var observable = Observable
@@ -771,10 +772,11 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `Loaded` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `Loaded` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLoadedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable
@@ -787,12 +789,12 @@ public static partial class ControlExtensions
     // Avalonia.Controls.Control.Unloaded
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `Unloaded` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnUnloadedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Control
     {
         var observable = Observable
@@ -805,10 +807,11 @@ public static partial class ControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `Unloaded` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `Unloaded` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUnloadedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable

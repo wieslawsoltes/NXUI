@@ -9,11 +9,11 @@ public static partial class RadialGradientBrushExtensions
     // Avalonia.Media.RadialGradientBrush.CenterProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> value on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush Center(this Avalonia.Media.RadialGradientBrush obj, Avalonia.RelativePoint value)
     {
         obj[Avalonia.Media.RadialGradientBrush.CenterProperty] = value;
@@ -21,13 +21,13 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush Center(
         this Avalonia.Media.RadialGradientBrush obj,
         Avalonia.Data.IBinding binding,
@@ -40,13 +40,13 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush Center(
         this Avalonia.Media.RadialGradientBrush obj,
         IObservable<Avalonia.RelativePoint> observable,
@@ -59,12 +59,12 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> binding on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindCenter(
         this Avalonia.Media.RadialGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -75,21 +75,23 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<Avalonia.RelativePoint> ObserveCenter(this Avalonia.Media.RadialGradientBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> property on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.RadialGradientBrush OnCenter(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
@@ -100,11 +102,11 @@ public static partial class RadialGradientBrushExtensions
     // Avalonia.Media.RadialGradientBrush.GradientOriginProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> value on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush GradientOrigin(this Avalonia.Media.RadialGradientBrush obj, Avalonia.RelativePoint value)
     {
         obj[Avalonia.Media.RadialGradientBrush.GradientOriginProperty] = value;
@@ -112,13 +114,13 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush GradientOrigin(
         this Avalonia.Media.RadialGradientBrush obj,
         Avalonia.Data.IBinding binding,
@@ -131,13 +133,13 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush GradientOrigin(
         this Avalonia.Media.RadialGradientBrush obj,
         IObservable<Avalonia.RelativePoint> observable,
@@ -150,12 +152,12 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> binding on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindGradientOrigin(
         this Avalonia.Media.RadialGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -166,21 +168,23 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<Avalonia.RelativePoint> ObserveGradientOrigin(this Avalonia.Media.RadialGradientBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> property on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.RadialGradientBrush OnGradientOrigin(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
@@ -191,11 +195,11 @@ public static partial class RadialGradientBrushExtensions
     // Avalonia.Media.RadialGradientBrush.RadiusProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/> value on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush Radius(this Avalonia.Media.RadialGradientBrush obj, System.Double value)
     {
         obj[Avalonia.Media.RadialGradientBrush.RadiusProperty] = value;
@@ -203,13 +207,13 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/> on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush Radius(
         this Avalonia.Media.RadialGradientBrush obj,
         Avalonia.Data.IBinding binding,
@@ -222,13 +226,13 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/> on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.RadialGradientBrush Radius(
         this Avalonia.Media.RadialGradientBrush obj,
         IObservable<System.Double> observable,
@@ -241,12 +245,12 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/> binding on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindRadius(
         this Avalonia.Media.RadialGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -257,21 +261,23 @@ public static partial class RadialGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/> on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<System.Double> ObserveRadius(this Avalonia.Media.RadialGradientBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.RadialGradientBrush.RadiusProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/> property on an object of type <see cref="Avalonia.Media.RadialGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.RadialGradientBrush OnRadius(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.RadiusProperty);

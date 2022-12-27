@@ -53,13 +53,13 @@ public static partial class MenuBaseExtensions
     // Avalonia.Controls.MenuBase.MenuOpenedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuBase.MenuOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuBase"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnMenuOpenedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -70,13 +70,13 @@ public static partial class MenuBaseExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuBase.MenuOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuBase"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnMenuOpened<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuBase
@@ -87,11 +87,11 @@ public static partial class MenuBaseExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.MenuBase.MenuOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuBase"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnMenuOpened(
         this Avalonia.Controls.MenuBase obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -102,13 +102,13 @@ public static partial class MenuBaseExtensions
     // Avalonia.Controls.MenuBase.MenuClosedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuBase.MenuClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuBase"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnMenuClosedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -119,13 +119,13 @@ public static partial class MenuBaseExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuBase.MenuClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuBase"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnMenuClosed<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuBase
@@ -136,11 +136,11 @@ public static partial class MenuBaseExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.MenuBase.MenuClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuBase"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnMenuClosed(
         this Avalonia.Controls.MenuBase obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -151,12 +151,12 @@ public static partial class MenuBaseExtensions
     // Avalonia.Controls.MenuBase.MenuOpened
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `MenuOpened` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnMenuOpenedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.MenuBase
     {
         var observable = Observable
@@ -169,10 +169,11 @@ public static partial class MenuBaseExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `MenuOpened` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `MenuOpened` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnMenuOpenedEvent(this Avalonia.Controls.MenuBase obj)
     {
         return Observable
@@ -185,12 +186,12 @@ public static partial class MenuBaseExtensions
     // Avalonia.Controls.MenuBase.MenuClosed
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `MenuClosed` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnMenuClosedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.MenuBase
     {
         var observable = Observable
@@ -203,10 +204,11 @@ public static partial class MenuBaseExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `MenuClosed` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `MenuClosed` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnMenuClosedEvent(this Avalonia.Controls.MenuBase obj)
     {
         return Observable

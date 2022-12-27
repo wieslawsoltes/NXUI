@@ -249,13 +249,13 @@ public static partial class NotificationCardExtensions
     // Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.Notifications.NotificationCard"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnNotificationClosedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -266,13 +266,13 @@ public static partial class NotificationCardExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.Notifications.NotificationCard"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnNotificationClosed<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Notifications.NotificationCard
@@ -283,11 +283,11 @@ public static partial class NotificationCardExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.Notifications.NotificationCard"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnNotificationClosed(
         this Avalonia.Controls.Notifications.NotificationCard obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -298,12 +298,12 @@ public static partial class NotificationCardExtensions
     // Avalonia.Controls.Notifications.NotificationCard.NotificationClosed
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `NotificationClosed` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnNotificationClosedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
     {
         var observable = Observable
@@ -316,10 +316,11 @@ public static partial class NotificationCardExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `NotificationClosed` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `NotificationClosed` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnNotificationClosedEvent(this Avalonia.Controls.Notifications.NotificationCard obj)
     {
         return Observable

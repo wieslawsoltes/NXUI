@@ -9,11 +9,11 @@ public static partial class PathFigureExtensions
     // Avalonia.Media.PathFigure.IsClosedProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> value on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure IsClosed(this Avalonia.Media.PathFigure obj, System.Boolean value)
     {
         obj[Avalonia.Media.PathFigure.IsClosedProperty] = value;
@@ -21,13 +21,13 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure IsClosed(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.IBinding binding,
@@ -40,13 +40,13 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure IsClosed(
         this Avalonia.Media.PathFigure obj,
         IObservable<System.Boolean> observable,
@@ -59,12 +59,12 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> binding on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindIsClosed(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -75,21 +75,23 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveIsClosed(this Avalonia.Media.PathFigure obj)
     {
         return obj.GetObservable(Avalonia.Media.PathFigure.IsClosedProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> property on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.PathFigure OnIsClosed(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.IsClosedProperty);
@@ -100,11 +102,11 @@ public static partial class PathFigureExtensions
     // Avalonia.Media.PathFigure.IsFilledProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> value on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure IsFilled(this Avalonia.Media.PathFigure obj, System.Boolean value)
     {
         obj[Avalonia.Media.PathFigure.IsFilledProperty] = value;
@@ -112,13 +114,13 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure IsFilled(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.IBinding binding,
@@ -131,13 +133,13 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure IsFilled(
         this Avalonia.Media.PathFigure obj,
         IObservable<System.Boolean> observable,
@@ -150,12 +152,12 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> binding on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindIsFilled(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -166,21 +168,23 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<System.Boolean> ObserveIsFilled(this Avalonia.Media.PathFigure obj)
     {
         return obj.GetObservable(Avalonia.Media.PathFigure.IsFilledProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> property on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.PathFigure OnIsFilled(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.IsFilledProperty);
@@ -191,11 +195,11 @@ public static partial class PathFigureExtensions
     // Avalonia.Media.PathFigure.SegmentsProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> value on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure Segments(this Avalonia.Media.PathFigure obj, Avalonia.Media.PathSegments value)
     {
         obj[Avalonia.Media.PathFigure.SegmentsProperty] = value;
@@ -203,13 +207,13 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure Segments(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.IBinding binding,
@@ -222,13 +226,13 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure Segments(
         this Avalonia.Media.PathFigure obj,
         IObservable<Avalonia.Media.PathSegments> observable,
@@ -241,12 +245,12 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> binding on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindSegments(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -257,21 +261,23 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<Avalonia.Media.PathSegments> ObserveSegments(this Avalonia.Media.PathFigure obj)
     {
         return obj.GetObservable(Avalonia.Media.PathFigure.SegmentsProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> property on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.PathFigure OnSegments(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<Avalonia.Media.PathSegments>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.SegmentsProperty);
@@ -282,11 +288,11 @@ public static partial class PathFigureExtensions
     // Avalonia.Media.PathFigure.StartPointProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> value on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure StartPoint(this Avalonia.Media.PathFigure obj, Avalonia.Point value)
     {
         obj[Avalonia.Media.PathFigure.StartPointProperty] = value;
@@ -294,13 +300,13 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure StartPoint(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.IBinding binding,
@@ -313,13 +319,13 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PathFigure StartPoint(
         this Avalonia.Media.PathFigure obj,
         IObservable<Avalonia.Point> observable,
@@ -332,12 +338,12 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> binding on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindStartPoint(
         this Avalonia.Media.PathFigure obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -348,21 +354,23 @@ public static partial class PathFigureExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<Avalonia.Point> ObserveStartPoint(this Avalonia.Media.PathFigure obj)
     {
         return obj.GetObservable(Avalonia.Media.PathFigure.StartPointProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> property on an object of type <see cref="Avalonia.Media.PathFigure"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.PathFigure OnStartPoint(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.StartPointProperty);

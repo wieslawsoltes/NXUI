@@ -143,13 +143,13 @@ public static partial class SpinnerExtensions
     // Avalonia.Controls.Spinner.SpinEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Spinner.SpinEvent"/> event on an object of type <see cref="Avalonia.Controls.Spinner"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnSpinHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.SpinEventArgs> action,
@@ -160,13 +160,13 @@ public static partial class SpinnerExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Spinner.SpinEvent"/> event on an object of type <see cref="Avalonia.Controls.Spinner"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnSpin<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Spinner
@@ -177,11 +177,11 @@ public static partial class SpinnerExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Spinner.SpinEvent"/> event on an object of type <see cref="Avalonia.Controls.Spinner"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpin(
         this Avalonia.Controls.Spinner obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -192,12 +192,12 @@ public static partial class SpinnerExtensions
     // Avalonia.Controls.Spinner.Spin
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `Spin` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnSpinEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler) where T : Avalonia.Controls.Spinner
     {
         var observable = Observable
@@ -210,10 +210,11 @@ public static partial class SpinnerExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `Spin` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `Spin` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpinEvent(this Avalonia.Controls.Spinner obj)
     {
         return Observable

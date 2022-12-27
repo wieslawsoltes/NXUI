@@ -1631,13 +1631,13 @@ public static partial class TemplatedControlExtensions
     // Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.TemplatedControl"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnTemplateAppliedHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.Primitives.TemplateAppliedEventArgs> action,
@@ -1648,13 +1648,13 @@ public static partial class TemplatedControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnTemplateApplied<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Primitives.TemplatedControl
@@ -1665,11 +1665,11 @@ public static partial class TemplatedControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.TemplatedControl"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs> ObserveOnTemplateApplied(
         this Avalonia.Controls.Primitives.TemplatedControl obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -1680,12 +1680,12 @@ public static partial class TemplatedControlExtensions
     // Avalonia.Controls.Primitives.TemplatedControl.TemplateApplied
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `TemplateApplied` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnTemplateAppliedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = Observable
@@ -1698,10 +1698,11 @@ public static partial class TemplatedControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `TemplateApplied` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `TemplateApplied` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs> ObserveOnTemplateAppliedEvent(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return Observable

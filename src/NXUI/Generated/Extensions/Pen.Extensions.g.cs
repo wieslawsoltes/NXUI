@@ -9,11 +9,11 @@ public static partial class PenExtensions
     // Avalonia.Media.Pen.BrushProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.Pen.BrushProperty"/> value on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen Brush(this Avalonia.Media.Pen obj, Avalonia.Media.IBrush value)
     {
         obj[Avalonia.Media.Pen.BrushProperty] = value;
@@ -21,13 +21,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.BrushProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen Brush(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.IBinding binding,
@@ -40,13 +40,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.BrushProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen Brush(
         this Avalonia.Media.Pen obj,
         IObservable<Avalonia.Media.IBrush> observable,
@@ -59,12 +59,12 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.Pen.BrushProperty"/> binding on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.Pen.BrushProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindBrush(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -75,21 +75,23 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.Pen.BrushProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<Avalonia.Media.IBrush> ObserveBrush(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.BrushProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.Pen.BrushProperty"/> property on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.Pen OnBrush(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.IBrush>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.BrushProperty);
@@ -100,11 +102,11 @@ public static partial class PenExtensions
     // Avalonia.Media.Pen.ThicknessProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.Pen.ThicknessProperty"/> value on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen Thickness(this Avalonia.Media.Pen obj, System.Double value)
     {
         obj[Avalonia.Media.Pen.ThicknessProperty] = value;
@@ -112,13 +114,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.ThicknessProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen Thickness(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.IBinding binding,
@@ -131,13 +133,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.ThicknessProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen Thickness(
         this Avalonia.Media.Pen obj,
         IObservable<System.Double> observable,
@@ -150,12 +152,12 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.Pen.ThicknessProperty"/> binding on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.Pen.ThicknessProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindThickness(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -166,21 +168,23 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<System.Double> ObserveThickness(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.ThicknessProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.Pen.ThicknessProperty"/> property on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.Pen OnThickness(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.ThicknessProperty);
@@ -191,11 +195,11 @@ public static partial class PenExtensions
     // Avalonia.Media.Pen.DashStyleProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.Pen.DashStyleProperty"/> value on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen DashStyle(this Avalonia.Media.Pen obj, Avalonia.Media.IDashStyle value)
     {
         obj[Avalonia.Media.Pen.DashStyleProperty] = value;
@@ -203,13 +207,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.DashStyleProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen DashStyle(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.IBinding binding,
@@ -222,13 +226,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.DashStyleProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen DashStyle(
         this Avalonia.Media.Pen obj,
         IObservable<Avalonia.Media.IDashStyle> observable,
@@ -241,12 +245,12 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.Pen.DashStyleProperty"/> binding on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.Pen.DashStyleProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindDashStyle(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -257,21 +261,23 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<Avalonia.Media.IDashStyle> ObserveDashStyle(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.DashStyleProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.Pen.DashStyleProperty"/> property on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.Pen OnDashStyle(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.IDashStyle>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.DashStyleProperty);
@@ -282,11 +288,11 @@ public static partial class PenExtensions
     // Avalonia.Media.Pen.LineCapProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.Pen.LineCapProperty"/> value on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineCap(this Avalonia.Media.Pen obj, Avalonia.Media.PenLineCap value)
     {
         obj[Avalonia.Media.Pen.LineCapProperty] = value;
@@ -294,13 +300,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.LineCapProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineCap(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.IBinding binding,
@@ -313,13 +319,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.LineCapProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineCap(
         this Avalonia.Media.Pen obj,
         IObservable<Avalonia.Media.PenLineCap> observable,
@@ -332,12 +338,12 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.Pen.LineCapProperty"/> binding on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.Pen.LineCapProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindLineCap(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -348,21 +354,23 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.Pen.LineCapProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<Avalonia.Media.PenLineCap> ObserveLineCap(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.LineCapProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.Pen.LineCapProperty"/> property on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.Pen OnLineCap(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.PenLineCap>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.LineCapProperty);
@@ -406,11 +414,11 @@ public static partial class PenExtensions
     // Avalonia.Media.Pen.LineJoinProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> value on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineJoin(this Avalonia.Media.Pen obj, Avalonia.Media.PenLineJoin value)
     {
         obj[Avalonia.Media.Pen.LineJoinProperty] = value;
@@ -418,13 +426,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.LineJoinProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineJoin(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.IBinding binding,
@@ -437,13 +445,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.LineJoinProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen LineJoin(
         this Avalonia.Media.Pen obj,
         IObservable<Avalonia.Media.PenLineJoin> observable,
@@ -456,12 +464,12 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> binding on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.Pen.LineJoinProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindLineJoin(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -472,21 +480,23 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<Avalonia.Media.PenLineJoin> ObserveLineJoin(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.LineJoinProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.Pen.LineJoinProperty"/> property on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.Pen OnLineJoin(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.PenLineJoin>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.LineJoinProperty);
@@ -530,11 +540,11 @@ public static partial class PenExtensions
     // Avalonia.Media.Pen.MiterLimitProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> value on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen MiterLimit(this Avalonia.Media.Pen obj, System.Double value)
     {
         obj[Avalonia.Media.Pen.MiterLimitProperty] = value;
@@ -542,13 +552,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen MiterLimit(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.IBinding binding,
@@ -561,13 +571,13 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen MiterLimit(
         this Avalonia.Media.Pen obj,
         IObservable<System.Double> observable,
@@ -580,12 +590,12 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> binding on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindMiterLimit(
         this Avalonia.Media.Pen obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -596,21 +606,23 @@ public static partial class PenExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<System.Double> ObserveMiterLimit(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.MiterLimitProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> property on an object of type <see cref="Avalonia.Media.Pen"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.Pen OnMiterLimit(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.MiterLimitProperty);

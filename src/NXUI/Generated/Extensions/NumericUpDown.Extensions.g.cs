@@ -1999,13 +1999,13 @@ public static partial class NumericUpDownExtensions
     // Avalonia.Controls.NumericUpDown.ValueChangedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.NumericUpDown.ValueChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.NumericUpDown"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnValueChangedHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.NumericUpDownValueChangedEventArgs> action,
@@ -2016,13 +2016,13 @@ public static partial class NumericUpDownExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.NumericUpDown.ValueChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.NumericUpDown"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnValueChanged<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.NumericUpDown
@@ -2033,11 +2033,11 @@ public static partial class NumericUpDownExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.NumericUpDown.ValueChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.NumericUpDown"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs> ObserveOnValueChanged(
         this Avalonia.Controls.NumericUpDown obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -2048,12 +2048,12 @@ public static partial class NumericUpDownExtensions
     // Avalonia.Controls.NumericUpDown.Spinned
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `Spinned` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnSpinnedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = Observable
@@ -2066,10 +2066,11 @@ public static partial class NumericUpDownExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `Spinned` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `Spinned` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpinnedEvent(this Avalonia.Controls.NumericUpDown obj)
     {
         return Observable
@@ -2082,12 +2083,12 @@ public static partial class NumericUpDownExtensions
     // Avalonia.Controls.NumericUpDown.ValueChanged
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `ValueChanged` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnValueChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = Observable
@@ -2100,10 +2101,11 @@ public static partial class NumericUpDownExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `ValueChanged` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `ValueChanged` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs> ObserveOnValueChangedEvent(this Avalonia.Controls.NumericUpDown obj)
     {
         return Observable

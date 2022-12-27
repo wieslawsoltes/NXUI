@@ -577,13 +577,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.GotFocusEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.GotFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnGotFocusHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.GotFocusEventArgs> action,
@@ -594,13 +594,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.GotFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnGotFocus<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.GotFocusEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
@@ -611,11 +611,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.GotFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.GotFocusEventArgs> ObserveOnGotFocus(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -626,13 +626,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.LostFocusEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.LostFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnLostFocusHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -643,13 +643,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.LostFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnLostFocus<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
@@ -660,11 +660,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.LostFocusEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLostFocus(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -675,13 +675,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.KeyDownEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.KeyDownEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnKeyDownHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.KeyEventArgs> action,
@@ -692,13 +692,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.KeyDownEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnKeyDown<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.KeyEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
@@ -709,11 +709,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.KeyDownEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyDown(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -724,13 +724,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.KeyUpEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.KeyUpEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnKeyUpHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.KeyEventArgs> action,
@@ -741,13 +741,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.KeyUpEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnKeyUp<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.KeyEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
@@ -758,11 +758,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.KeyUpEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyUp(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -773,13 +773,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.TextInputEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.TextInputEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnTextInputHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.TextInputEventArgs> action,
@@ -790,13 +790,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.TextInputEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnTextInput<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.TextInputEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
@@ -807,11 +807,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.TextInputEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.TextInputEventArgs> ObserveOnTextInput(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -822,13 +822,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnTextInputMethodClientRequestedHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs> action,
@@ -839,13 +839,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnTextInputMethodClientRequested<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
@@ -856,11 +856,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs> ObserveOnTextInputMethodClientRequested(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -871,13 +871,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerEnteredEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerEnteredEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerEnteredHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
@@ -888,13 +888,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerEnteredEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerEntered<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
@@ -905,11 +905,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PointerEnteredEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEntered(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -920,13 +920,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerExitedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerExitedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerExitedHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
@@ -937,13 +937,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerExitedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerExited<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
@@ -954,11 +954,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PointerExitedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExited(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -969,13 +969,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerMovedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerMovedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerMovedHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
@@ -986,13 +986,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerMovedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerMoved<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
@@ -1003,11 +1003,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PointerMovedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerMoved(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -1018,13 +1018,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerPressedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerPressedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerPressedHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerPressedEventArgs> action,
@@ -1035,13 +1035,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerPressedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerPressed<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerPressedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
@@ -1052,11 +1052,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PointerPressedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.PointerPressedEventArgs> ObserveOnPointerPressed(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -1067,13 +1067,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerReleasedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerReleasedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerReleasedHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerReleasedEventArgs> action,
@@ -1084,13 +1084,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerReleasedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerReleased<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerReleasedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
@@ -1101,11 +1101,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PointerReleasedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.PointerReleasedEventArgs> ObserveOnPointerReleased(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -1116,13 +1116,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerCaptureLostEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerCaptureLostEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerCaptureLostHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerCaptureLostEventArgs> action,
@@ -1133,13 +1133,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerCaptureLostEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerCaptureLost<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerCaptureLostEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Input.InputElement
@@ -1150,11 +1150,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PointerCaptureLostEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.PointerCaptureLostEventArgs> ObserveOnPointerCaptureLost(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
@@ -1165,13 +1165,13 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerWheelChangedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerWheelChangedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerWheelChangedHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerWheelEventArgs> action,
@@ -1182,13 +1182,13 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Input.InputElement.PointerWheelChangedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerWheelChanged<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerWheelEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Input.InputElement
@@ -1199,11 +1199,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Input.InputElement.PointerWheelChangedEvent"/> event on an object of type <see cref="Avalonia.Input.InputElement"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.PointerWheelEventArgs> ObserveOnPointerWheelChanged(
         this Avalonia.Input.InputElement obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Tunnel | Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -1214,12 +1214,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.GotFocus
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `GotFocus` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnGotFocusEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.GotFocusEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1232,10 +1232,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `GotFocus` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `GotFocus` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.GotFocusEventArgs> ObserveOnGotFocusEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1248,12 +1249,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.LostFocus
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `LostFocus` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnLostFocusEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1266,10 +1267,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `LostFocus` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `LostFocus` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLostFocusEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1282,12 +1284,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.KeyDown
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `KeyDown` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnKeyDownEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.KeyEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1300,10 +1302,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `KeyDown` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `KeyDown` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyDownEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1316,12 +1319,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.KeyUp
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `KeyUp` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnKeyUpEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.KeyEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1334,10 +1337,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `KeyUp` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `KeyUp` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyUpEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1350,12 +1354,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.TextInput
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `TextInput` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnTextInputEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TextInputEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1368,10 +1372,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `TextInput` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `TextInput` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.TextInputEventArgs> ObserveOnTextInputEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1384,12 +1389,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.TextInputMethodClientRequested
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `TextInputMethodClientRequested` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnTextInputMethodClientRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1402,10 +1407,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `TextInputMethodClientRequested` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `TextInputMethodClientRequested` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs> ObserveOnTextInputMethodClientRequestedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1418,12 +1424,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerEntered
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `PointerEntered` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPointerEnteredEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1436,10 +1442,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `PointerEntered` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `PointerEntered` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnteredEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1452,12 +1459,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerExited
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `PointerExited` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPointerExitedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1470,10 +1477,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `PointerExited` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `PointerExited` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExitedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1486,12 +1494,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerMoved
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `PointerMoved` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPointerMovedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1504,10 +1512,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `PointerMoved` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `PointerMoved` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerMovedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1520,12 +1529,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerPressed
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `PointerPressed` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPointerPressedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerPressedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1538,10 +1547,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `PointerPressed` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `PointerPressed` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerPressedEventArgs> ObserveOnPointerPressedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1554,12 +1564,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerReleased
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `PointerReleased` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPointerReleasedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerReleasedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1572,10 +1582,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `PointerReleased` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `PointerReleased` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerReleasedEventArgs> ObserveOnPointerReleasedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1588,12 +1599,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerCaptureLost
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `PointerCaptureLost` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPointerCaptureLostEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerCaptureLostEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1606,10 +1617,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `PointerCaptureLost` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `PointerCaptureLost` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerCaptureLostEventArgs> ObserveOnPointerCaptureLostEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1622,12 +1634,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.PointerWheelChanged
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `PointerWheelChanged` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPointerWheelChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerWheelEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1640,10 +1652,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `PointerWheelChanged` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `PointerWheelChanged` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerWheelEventArgs> ObserveOnPointerWheelChangedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1656,12 +1669,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.Tapped
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `Tapped` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnTappedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1674,10 +1687,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `Tapped` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `Tapped` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnTappedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable
@@ -1690,12 +1704,12 @@ public static partial class InputElementExtensions
     // Avalonia.Input.InputElement.DoubleTapped
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `DoubleTapped` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnDoubleTappedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = Observable
@@ -1708,10 +1722,11 @@ public static partial class InputElementExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `DoubleTapped` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `DoubleTapped` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnDoubleTappedEvent(this Avalonia.Input.InputElement obj)
     {
         return Observable

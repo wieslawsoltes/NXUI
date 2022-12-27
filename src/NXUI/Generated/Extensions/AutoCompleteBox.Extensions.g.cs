@@ -1789,13 +1789,13 @@ public static partial class AutoCompleteBoxExtensions
     // Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.AutoCompleteBox"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnSelectionChangedHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.SelectionChangedEventArgs> action,
@@ -1806,13 +1806,13 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.AutoCompleteBox"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnSelectionChanged<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.AutoCompleteBox
@@ -1823,11 +1823,11 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.AutoCompleteBox"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChanged(
         this Avalonia.Controls.AutoCompleteBox obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -1838,13 +1838,13 @@ public static partial class AutoCompleteBoxExtensions
     // Avalonia.Controls.AutoCompleteBox.TextChangedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.AutoCompleteBox.TextChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.AutoCompleteBox"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnTextChangedHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.TextChangedEventArgs> action,
@@ -1855,13 +1855,13 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.AutoCompleteBox.TextChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.AutoCompleteBox"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnTextChanged<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.TextChangedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.AutoCompleteBox
@@ -1872,11 +1872,11 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.AutoCompleteBox.TextChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.AutoCompleteBox"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Controls.TextChangedEventArgs> ObserveOnTextChanged(
         this Avalonia.Controls.AutoCompleteBox obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -1887,12 +1887,12 @@ public static partial class AutoCompleteBoxExtensions
     // Avalonia.Controls.AutoCompleteBox.TextChanged
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `TextChanged` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnTextChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.TextChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1905,10 +1905,11 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `TextChanged` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `TextChanged` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.TextChangedEventArgs> ObserveOnTextChangedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -1921,12 +1922,12 @@ public static partial class AutoCompleteBoxExtensions
     // Avalonia.Controls.AutoCompleteBox.Populating
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `Populating` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPopulatingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.PopulatingEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1939,10 +1940,11 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `Populating` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `Populating` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.PopulatingEventArgs> ObserveOnPopulatingEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -1955,12 +1957,12 @@ public static partial class AutoCompleteBoxExtensions
     // Avalonia.Controls.AutoCompleteBox.Populated
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `Populated` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPopulatedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.PopulatedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -1973,10 +1975,11 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `Populated` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `Populated` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.PopulatedEventArgs> ObserveOnPopulatedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -1989,12 +1992,12 @@ public static partial class AutoCompleteBoxExtensions
     // Avalonia.Controls.AutoCompleteBox.DropDownOpening
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `DropDownOpening` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnDropDownOpeningEvent<T>(this T obj, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -2007,10 +2010,11 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `DropDownOpening` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `DropDownOpening` event on the specified object.</returns>
     public static IObservable<System.ComponentModel.CancelEventArgs> ObserveOnDropDownOpeningEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -2023,12 +2027,12 @@ public static partial class AutoCompleteBoxExtensions
     // Avalonia.Controls.AutoCompleteBox.DropDownOpened
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `DropDownOpened` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnDropDownOpenedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -2041,10 +2045,11 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `DropDownOpened` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `DropDownOpened` event on the specified object.</returns>
     public static IObservable<EventArgs> ObserveOnDropDownOpenedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -2057,12 +2062,12 @@ public static partial class AutoCompleteBoxExtensions
     // Avalonia.Controls.AutoCompleteBox.DropDownClosing
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `DropDownClosing` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnDropDownClosingEvent<T>(this T obj, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -2075,10 +2080,11 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `DropDownClosing` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `DropDownClosing` event on the specified object.</returns>
     public static IObservable<System.ComponentModel.CancelEventArgs> ObserveOnDropDownClosingEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -2091,12 +2097,12 @@ public static partial class AutoCompleteBoxExtensions
     // Avalonia.Controls.AutoCompleteBox.DropDownClosed
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `DropDownClosed` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnDropDownClosedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -2109,10 +2115,11 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `DropDownClosed` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `DropDownClosed` event on the specified object.</returns>
     public static IObservable<EventArgs> ObserveOnDropDownClosedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable
@@ -2125,12 +2132,12 @@ public static partial class AutoCompleteBoxExtensions
     // Avalonia.Controls.AutoCompleteBox.SelectionChanged
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `SelectionChanged` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnSelectionChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = Observable
@@ -2143,10 +2150,11 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `SelectionChanged` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `SelectionChanged` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChangedEvent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return Observable

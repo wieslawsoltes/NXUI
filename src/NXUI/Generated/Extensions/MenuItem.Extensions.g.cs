@@ -695,13 +695,13 @@ public static partial class MenuItemExtensions
     // Avalonia.Controls.MenuItem.ClickEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuItem.ClickEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnClickHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -712,13 +712,13 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuItem.ClickEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnClick<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
@@ -729,11 +729,11 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.MenuItem.ClickEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnClick(
         this Avalonia.Controls.MenuItem obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -744,13 +744,13 @@ public static partial class MenuItemExtensions
     // Avalonia.Controls.MenuItem.PointerEnteredItemEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuItem.PointerEnteredItemEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerEnteredItemHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
@@ -761,13 +761,13 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuItem.PointerEnteredItemEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerEnteredItem<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
@@ -778,11 +778,11 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.MenuItem.PointerEnteredItemEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnteredItem(
         this Avalonia.Controls.MenuItem obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -793,13 +793,13 @@ public static partial class MenuItemExtensions
     // Avalonia.Controls.MenuItem.PointerExitedItemEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuItem.PointerExitedItemEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerExitedItemHandler<T>(
         this T obj,
         Action<T, Avalonia.Input.PointerEventArgs> action,
@@ -810,13 +810,13 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuItem.PointerExitedItemEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnPointerExitedItem<T>(
         this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
@@ -827,11 +827,11 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.MenuItem.PointerExitedItemEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExitedItem(
         this Avalonia.Controls.MenuItem obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -842,13 +842,13 @@ public static partial class MenuItemExtensions
     // Avalonia.Controls.MenuItem.SubmenuOpenedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuItem.SubmenuOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnSubmenuOpenedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -859,13 +859,13 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.MenuItem.SubmenuOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnSubmenuOpened<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.MenuItem
@@ -876,11 +876,11 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.MenuItem.SubmenuOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.MenuItem"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnSubmenuOpened(
         this Avalonia.Controls.MenuItem obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -891,12 +891,12 @@ public static partial class MenuItemExtensions
     // Avalonia.Controls.MenuItem.Click
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `Click` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnClickEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = Observable
@@ -909,10 +909,11 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `Click` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `Click` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnClickEvent(this Avalonia.Controls.MenuItem obj)
     {
         return Observable
@@ -925,12 +926,12 @@ public static partial class MenuItemExtensions
     // Avalonia.Controls.MenuItem.PointerEnteredItem
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `PointerEnteredItem` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPointerEnteredItemEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = Observable
@@ -943,10 +944,11 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `PointerEnteredItem` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `PointerEnteredItem` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnteredItemEvent(this Avalonia.Controls.MenuItem obj)
     {
         return Observable
@@ -959,12 +961,12 @@ public static partial class MenuItemExtensions
     // Avalonia.Controls.MenuItem.PointerExitedItem
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `PointerExitedItem` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnPointerExitedItemEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = Observable
@@ -977,10 +979,11 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `PointerExitedItem` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `PointerExitedItem` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExitedItemEvent(this Avalonia.Controls.MenuItem obj)
     {
         return Observable
@@ -993,12 +996,12 @@ public static partial class MenuItemExtensions
     // Avalonia.Controls.MenuItem.SubmenuOpened
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `SubmenuOpened` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnSubmenuOpenedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = Observable
@@ -1011,10 +1014,11 @@ public static partial class MenuItemExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `SubmenuOpened` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `SubmenuOpened` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnSubmenuOpenedEvent(this Avalonia.Controls.MenuItem obj)
     {
         return Observable

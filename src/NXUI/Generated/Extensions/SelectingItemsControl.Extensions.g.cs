@@ -499,13 +499,13 @@ public static partial class SelectingItemsControlExtensions
     // Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnIsSelectedChangedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
@@ -516,13 +516,13 @@ public static partial class SelectingItemsControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnIsSelectedChanged<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.SelectingItemsControl
@@ -533,11 +533,11 @@ public static partial class SelectingItemsControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIsSelectedChanged(
         this Avalonia.Controls.Primitives.SelectingItemsControl obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -548,13 +548,13 @@ public static partial class SelectingItemsControlExtensions
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="action"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnSelectionChangedHandler<T>(
         this T obj,
         Action<T, Avalonia.Controls.SelectionChangedEventArgs> action,
@@ -565,13 +565,13 @@ public static partial class SelectingItemsControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> and returns an observable for the event.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <param name="routes"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
     public static T OnSelectionChanged<T>(
         this T obj, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.SelectingItemsControl
@@ -582,11 +582,11 @@ public static partial class SelectingItemsControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="routes"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
     public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChanged(
         this Avalonia.Controls.Primitives.SelectingItemsControl obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
@@ -597,12 +597,12 @@ public static partial class SelectingItemsControlExtensions
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChanged
 
     /// <summary>
-    /// 
+    /// Adds a handler to the `SelectionChanged` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
     public static T OnSelectionChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = Observable
@@ -615,10 +615,11 @@ public static partial class SelectingItemsControlExtensions
     }
 
     /// <summary>
-    /// 
+    /// Returns an observable for the `SelectionChanged` event on the specified object.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategy for the event.</param>
+    /// <returns>An observable for the `SelectionChanged` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChangedEvent(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return Observable

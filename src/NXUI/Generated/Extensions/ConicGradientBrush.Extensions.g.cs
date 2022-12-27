@@ -9,11 +9,11 @@ public static partial class ConicGradientBrushExtensions
     // Avalonia.Media.ConicGradientBrush.CenterProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> value on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ConicGradientBrush Center(this Avalonia.Media.ConicGradientBrush obj, Avalonia.RelativePoint value)
     {
         obj[Avalonia.Media.ConicGradientBrush.CenterProperty] = value;
@@ -21,13 +21,13 @@ public static partial class ConicGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ConicGradientBrush Center(
         this Avalonia.Media.ConicGradientBrush obj,
         Avalonia.Data.IBinding binding,
@@ -40,13 +40,13 @@ public static partial class ConicGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ConicGradientBrush Center(
         this Avalonia.Media.ConicGradientBrush obj,
         IObservable<Avalonia.RelativePoint> observable,
@@ -59,12 +59,12 @@ public static partial class ConicGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> binding on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindCenter(
         this Avalonia.Media.ConicGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -75,21 +75,23 @@ public static partial class ConicGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<Avalonia.RelativePoint> ObserveCenter(this Avalonia.Media.ConicGradientBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.ConicGradientBrush.CenterProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> property on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.ConicGradientBrush OnCenter(this Avalonia.Media.ConicGradientBrush obj, Action<Avalonia.Media.ConicGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ConicGradientBrush.CenterProperty);
@@ -100,11 +102,11 @@ public static partial class ConicGradientBrushExtensions
     // Avalonia.Media.ConicGradientBrush.AngleProperty
 
     /// <summary>
-    /// 
+    /// Sets a <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> value on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ConicGradientBrush Angle(this Avalonia.Media.ConicGradientBrush obj, System.Double value)
     {
         obj[Avalonia.Media.ConicGradientBrush.AngleProperty] = value;
@@ -112,13 +114,13 @@ public static partial class ConicGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/> with a source binding specified as a parameter.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="binding"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ConicGradientBrush Angle(
         this Avalonia.Media.ConicGradientBrush obj,
         Avalonia.Data.IBinding binding,
@@ -131,13 +133,13 @@ public static partial class ConicGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Sets a binding to <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/> with a source binding specified as an observable.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="observable"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ConicGradientBrush Angle(
         this Avalonia.Media.ConicGradientBrush obj,
         IObservable<System.Double> observable,
@@ -150,12 +152,12 @@ public static partial class ConicGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Makes a <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> binding on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="mode"></param>
-    /// <param name="priority"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindAngle(
         this Avalonia.Media.ConicGradientBrush obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -166,21 +168,23 @@ public static partial class ConicGradientBrushExtensions
     }
 
     /// <summary>
-    /// 
+    /// Gets an observable for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
     public static IObservable<System.Double> ObserveAngle(this Avalonia.Media.ConicGradientBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.ConicGradientBrush.AngleProperty);
     }
 
     /// <summary>
-    /// 
+    /// Registers a handler for the <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> property on an object of type <see cref="Avalonia.Media.ConicGradientBrush"/>.
     /// </summary>
-    /// <param name="obj"></param>
-    /// <param name="handler"></param>
-    /// <returns></returns>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
     public static Avalonia.Media.ConicGradientBrush OnAngle(this Avalonia.Media.ConicGradientBrush obj, Action<Avalonia.Media.ConicGradientBrush, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ConicGradientBrush.AngleProperty);
