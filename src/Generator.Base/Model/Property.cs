@@ -2,9 +2,9 @@
 
 public record Property(
     string Name, 
-    string OwnerType, 
-    string ValueType, 
-    string PropertyType, 
+    Type OwnerType, 
+    Type ValueType, 
+    Type PropertyType, 
     bool AlreadyExists, 
     bool IsReadOnly = false, 
     bool IsEnum = false, 

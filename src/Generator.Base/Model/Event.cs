@@ -2,7 +2,7 @@
 
 public record Event(
     string Name, 
-    string OwnerType, 
-    string? ArgsType, 
-    string? EventType, 
+    Type OwnerType, 
+    Type? ArgsType, 
+    Type? EventType, 
     string? RoutingStrategies);

@@ -24,7 +24,7 @@ public static class SettersGenerator
 
             var classHeaderBuilder = new StringBuilder(Templates.PropertySettersHeaderTemplate);
             classHeaderBuilder.Replace("%ClassName%", c.Name);
-            classHeaderBuilder.Replace("%ClassType%", c.Type);
+            classHeaderBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
             WriteLine(classHeaderBuilder.ToString());
 
             var addedProperties = new HashSet<string>();
@@ -51,10 +51,10 @@ public static class SettersGenerator
 
                 var propertyBuilder = new StringBuilder(Templates.PropertySettersTemplate);
 
-                propertyBuilder.Replace("%ClassType%", c.Type);
+                propertyBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
                 propertyBuilder.Replace("%ClassName%", c.Name);
                 propertyBuilder.Replace("%Name%", p.Name);
-                propertyBuilder.Replace("%ValueType%", p.ValueType);
+                propertyBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
 
                 WriteLine(propertyBuilder.ToString());
 

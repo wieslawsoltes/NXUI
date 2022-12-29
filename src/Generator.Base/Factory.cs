@@ -6,6 +6,13 @@ namespace Generator;
 
 public static class Factory
 {
+    public static string ToString(Type? type)
+    {
+        return type is null 
+            ? string.Empty 
+            : FixType(type.ToString());
+    }
+
     private static string FixType(string t)
     {
         return t
@@ -138,9 +145,9 @@ public static class Factory
 
             var p = new Property(
                 propertyName,
-                FixType(ownerType.ToString()),
-                FixType(valueType.ToString()),
-                FixType(propertyType.ToString()),
+                ownerType,
+                valueType,
+                propertyType,
                 alreadyExists,
                 property.IsReadOnly,
                 isEnum,
@@ -206,9 +213,9 @@ public static class Factory
 
             var e = new Event(
                 eventName,
-                FixType(ownerType.ToString()),
-                FixType(argsType.ToString()),
-                FixType(eventType.ToString()),
+                ownerType,
+                argsType,
+                eventType,
                 routingStrategies.ToString());
             events.Add(e);
             Log.Info($"Added `{classType.Name}.{eventName}Event` routed event.");
@@ -251,8 +258,8 @@ public static class Factory
 
             var e = new Event(
                 eventName,
-                FixType(classType.ToString()),
-                argsType is { } ? FixType(argsType.ToString()) : null,
+                classType,
+                argsType,
                 null,
                 null);
             events.Add(e);
@@ -285,7 +292,7 @@ public static class Factory
 
             var c = new Class(
                 FixClassNameType(classType.Name),
-                FixType(classType.ToString()),
+                classType,
                 properties.ToArray(),
                 events.ToArray(),
                 classType.IsSealed,

@@ -2,7 +2,7 @@
 
 public record Class(
     string Name, 
-    string Type, 
+    Type Type, 
     Property[] Properties, 
     Event[] Events,
     bool IsSealed = false, 

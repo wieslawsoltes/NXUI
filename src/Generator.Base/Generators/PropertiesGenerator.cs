@@ -39,9 +39,9 @@ public static class PropertiesGenerator
 
                 var propertyBuilder = new StringBuilder(Templates.PropertyTemplate);
                 propertyBuilder.Replace("%ClassName%", c.Name);
-                propertyBuilder.Replace("%ClassType%", c.Type);
+                propertyBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
                 propertyBuilder.Replace("%PropertyName%", p.Name);
-                propertyBuilder.Replace("%PropertyType%", p.PropertyType);
+                propertyBuilder.Replace("%PropertyType%", Factory.ToString(p.PropertyType));
                 WriteLine(propertyBuilder.ToString());
 
                 if (i < c.Properties.Length - 1)

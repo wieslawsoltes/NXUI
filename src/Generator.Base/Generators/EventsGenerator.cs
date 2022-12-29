@@ -39,9 +39,9 @@ public static class EventsGenerator
 
                 var eventBuilder = new StringBuilder(Templates.EventTemplate);
                 eventBuilder.Replace("%ClassName%", c.Name);
-                eventBuilder.Replace("%ClassType%", c.Type);
+                eventBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
                 eventBuilder.Replace("%EventName%", e.Name);
-                eventBuilder.Replace("%EventType%", e.EventType);
+                eventBuilder.Replace("%EventType%", Factory.ToString(e.EventType));
                 WriteLine(eventBuilder.ToString());
 
                 if (i  < events.Length - 1)

@@ -24,7 +24,7 @@ public static class ExtensionsGenerator
 
             var classHeaderBuilder = new StringBuilder(Templates.ClassExtensionsHeaderTemplate);
             classHeaderBuilder.Replace("%ClassName%", c.Name);
-            classHeaderBuilder.Replace("%ClassType%", c.Type);
+            classHeaderBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
             WriteLine(classHeaderBuilder.ToString());
 
             var addedProperties = new HashSet<string>();
@@ -54,10 +54,10 @@ public static class ExtensionsGenerator
 
                 var propertyBuilder = new StringBuilder(template);
 
-                propertyBuilder.Replace("%ClassType%", c.Type);
+                propertyBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
                 propertyBuilder.Replace("%Name%", p.Name);
-                propertyBuilder.Replace("%OwnerType%", p.OwnerType);
-                propertyBuilder.Replace("%ValueType%", p.ValueType);
+                propertyBuilder.Replace("%OwnerType%", Factory.ToString(p.OwnerType));
+                propertyBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
 
                 WriteLine(propertyBuilder.ToString());
 
@@ -71,10 +71,10 @@ public static class ExtensionsGenerator
 
                         var propertyEnumBuilder = new StringBuilder(templateEnum);
 
-                        propertyEnumBuilder.Replace("%ClassType%", c.Type);
+                        propertyEnumBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
                         propertyEnumBuilder.Replace("%Name%", p.Name);
-                        propertyEnumBuilder.Replace("%OwnerType%", p.OwnerType);
-                        propertyEnumBuilder.Replace("%ValueType%", p.ValueType);
+                        propertyEnumBuilder.Replace("%OwnerType%", Factory.ToString(p.OwnerType));
+                        propertyEnumBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
                         propertyEnumBuilder.Replace("%EnumValue%", enumName);
 
                         WriteLine(propertyEnumBuilder.ToString());
@@ -110,10 +110,10 @@ public static class ExtensionsGenerator
 
                 var eventBuilder = new StringBuilder(template);
 
-                eventBuilder.Replace("%ClassType%", c.Type);
+                eventBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
                 eventBuilder.Replace("%Name%", e.Name);
-                eventBuilder.Replace("%OwnerType%", e.OwnerType);
-                eventBuilder.Replace("%ArgsType%", e.ArgsType);
+                eventBuilder.Replace("%OwnerType%", Factory.ToString(e.OwnerType));
+                eventBuilder.Replace("%ArgsType%", Factory.ToString(e.ArgsType));
 
                 var routes = e.RoutingStrategies.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 var routingStrategiesBuilder = new StringBuilder();
@@ -158,14 +158,14 @@ public static class ExtensionsGenerator
 
                 var eventBuilder = new StringBuilder(template);
 
-                eventBuilder.Replace("%ClassType%", c.Type);
+                eventBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
                 eventBuilder.Replace("%Name%", e.Name);
-                eventBuilder.Replace("%OwnerType%", e.OwnerType);
+                eventBuilder.Replace("%OwnerType%", Factory.ToString(e.OwnerType));
 
                 if (e.ArgsType is { })
                 {
-                    eventBuilder.Replace("%ArgsType%", e.ArgsType);
-                    eventBuilder.Replace("%EventHandler%", $"EventHandler<{e.ArgsType}>");
+                    eventBuilder.Replace("%ArgsType%", Factory.ToString(e.ArgsType));
+                    eventBuilder.Replace("%EventHandler%", $"EventHandler<{Factory.ToString(e.ArgsType)}>");
                 }
                 else
                 {
