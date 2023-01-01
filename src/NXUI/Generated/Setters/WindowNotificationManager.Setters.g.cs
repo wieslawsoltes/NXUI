@@ -2,7 +2,7 @@
 namespace NXUI.Extensions;
 
 /// <summary>
-/// The minimal avalonia <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class style setters extension methods.
+/// The avalonia <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class style setters extension methods.
 /// </summary>
 public static partial class WindowNotificationManagerSetters
 {

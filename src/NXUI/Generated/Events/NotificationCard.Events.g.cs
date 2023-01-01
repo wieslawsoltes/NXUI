@@ -2,7 +2,7 @@
 namespace NXUI;
 
 /// <summary>
-/// The minimal avalonia events.
+/// The avalonia events.
 /// </summary>
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "InconsistentNaming")]
 [System.Diagnostics.CodeAnalysis.SuppressMessage("ReSharper", "RedundantNameQualifier")]

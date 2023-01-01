@@ -2,7 +2,7 @@
 namespace NXUI.Extensions;
 
 /// <summary>
-/// The minimal avalonia <see cref="Avalonia.Controls.Grid"/> class style setters extension methods.
+/// The avalonia <see cref="Avalonia.Controls.Grid"/> class style setters extension methods.
 /// </summary>
 public static partial class GridSetters
 {

@@ -2,7 +2,7 @@
 namespace NXUI.Extensions;
 
 /// <summary>
-/// The minimal avalonia <see cref="Avalonia.Media.QuadraticBezierSegment"/> class property extension methods.
+/// The avalonia <see cref="Avalonia.Media.QuadraticBezierSegment"/> class property extension methods.
 /// </summary>
 public static partial class QuadraticBezierSegmentExtensions
 {

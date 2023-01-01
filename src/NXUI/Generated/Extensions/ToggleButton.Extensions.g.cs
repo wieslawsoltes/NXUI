@@ -2,7 +2,7 @@
 namespace NXUI.Extensions;
 
 /// <summary>
-/// The minimal avalonia <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class property extension methods.
+/// The avalonia <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class property extension methods.
 /// </summary>
 public static partial class ToggleButtonExtensions
 {

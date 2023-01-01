@@ -2,7 +2,7 @@
 namespace NXUI.Extensions;
 
 /// <summary>
-/// The minimal avalonia <see cref="Avalonia.Media.Rotate3DTransform"/> class style setters extension methods.
+/// The avalonia <see cref="Avalonia.Media.Rotate3DTransform"/> class style setters extension methods.
 /// </summary>
 public static partial class Rotate3DTransformSetters
 {

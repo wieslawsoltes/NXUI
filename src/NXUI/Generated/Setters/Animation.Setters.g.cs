@@ -2,7 +2,7 @@
 namespace NXUI.Extensions;
 
 /// <summary>
-/// The minimal avalonia <see cref="Avalonia.Animation.Animation"/> class style setters extension methods.
+/// The avalonia <see cref="Avalonia.Animation.Animation"/> class style setters extension methods.
 /// </summary>
 public static partial class AnimationSetters
 {
