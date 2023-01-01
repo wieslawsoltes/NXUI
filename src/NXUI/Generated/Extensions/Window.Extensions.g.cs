@@ -1664,7 +1664,6 @@ public static partial class WindowExtensions
     /// Returns an observable for the `Closing` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `Closing` event on the specified object.</returns>
     public static IObservable<System.ComponentModel.CancelEventArgs> ObserveOnClosingEvent(this Avalonia.Controls.Window obj)
     {

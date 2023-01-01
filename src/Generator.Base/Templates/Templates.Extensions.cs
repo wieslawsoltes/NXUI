@@ -366,7 +366,6 @@ public static partial class Templates
     /// Gets an observable for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
     /// <returns>An observable for the event.</returns>
     public static IObservable<%ArgsType%> ObserveOn%Name%(
         this %OwnerType% obj,
@@ -401,7 +400,6 @@ public static partial class Templates
     /// Returns an observable for the `%Name%` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `%Name%` event on the specified object.</returns>
     public static IObservable<%ArgsType%> ObserveOn%Name%Event(this %OwnerType% obj)
     {

@@ -740,7 +740,6 @@ public static partial class ControlExtensions
     /// Returns an observable for the `ContextRequested` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `ContextRequested` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequestedEvent(this Avalonia.Controls.Control obj)
     {
@@ -775,7 +774,6 @@ public static partial class ControlExtensions
     /// Returns an observable for the `Loaded` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `Loaded` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLoadedEvent(this Avalonia.Controls.Control obj)
     {
@@ -810,7 +808,6 @@ public static partial class ControlExtensions
     /// Returns an observable for the `Unloaded` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `Unloaded` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUnloadedEvent(this Avalonia.Controls.Control obj)
     {

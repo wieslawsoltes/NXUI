@@ -373,7 +373,6 @@ public static partial class ToggleButtonExtensions
     /// Returns an observable for the `Checked` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `Checked` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCheckedEvent(this Avalonia.Controls.Primitives.ToggleButton obj)
     {
@@ -408,7 +407,6 @@ public static partial class ToggleButtonExtensions
     /// Returns an observable for the `Unchecked` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `Unchecked` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUncheckedEvent(this Avalonia.Controls.Primitives.ToggleButton obj)
     {
@@ -443,7 +441,6 @@ public static partial class ToggleButtonExtensions
     /// Returns an observable for the `Indeterminate` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `Indeterminate` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIndeterminateEvent(this Avalonia.Controls.Primitives.ToggleButton obj)
     {

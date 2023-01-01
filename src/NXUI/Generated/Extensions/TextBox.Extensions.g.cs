@@ -2757,7 +2757,6 @@ public static partial class TextBoxExtensions
     /// Returns an observable for the `CopyingToClipboard` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `CopyingToClipboard` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboardEvent(this Avalonia.Controls.TextBox obj)
     {
@@ -2792,7 +2791,6 @@ public static partial class TextBoxExtensions
     /// Returns an observable for the `CuttingToClipboard` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `CuttingToClipboard` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCuttingToClipboardEvent(this Avalonia.Controls.TextBox obj)
     {
@@ -2827,7 +2825,6 @@ public static partial class TextBoxExtensions
     /// Returns an observable for the `PastingFromClipboard` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `PastingFromClipboard` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPastingFromClipboardEvent(this Avalonia.Controls.TextBox obj)
     {
@@ -2862,7 +2859,6 @@ public static partial class TextBoxExtensions
     /// Returns an observable for the `TextChanged` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `TextChanged` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.TextChangedEventArgs> ObserveOnTextChangedEvent(this Avalonia.Controls.TextBox obj)
     {
@@ -2897,7 +2893,6 @@ public static partial class TextBoxExtensions
     /// Returns an observable for the `TextChanging` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `TextChanging` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.TextChangingEventArgs> ObserveOnTextChangingEvent(this Avalonia.Controls.TextBox obj)
     {

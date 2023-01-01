@@ -618,7 +618,6 @@ public static partial class SelectingItemsControlExtensions
     /// Returns an observable for the `SelectionChanged` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `SelectionChanged` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChangedEvent(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {

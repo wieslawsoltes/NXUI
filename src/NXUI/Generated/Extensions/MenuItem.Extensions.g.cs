@@ -912,7 +912,6 @@ public static partial class MenuItemExtensions
     /// Returns an observable for the `Click` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `Click` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnClickEvent(this Avalonia.Controls.MenuItem obj)
     {
@@ -947,7 +946,6 @@ public static partial class MenuItemExtensions
     /// Returns an observable for the `PointerEnteredItem` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `PointerEnteredItem` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnteredItemEvent(this Avalonia.Controls.MenuItem obj)
     {
@@ -982,7 +980,6 @@ public static partial class MenuItemExtensions
     /// Returns an observable for the `PointerExitedItem` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `PointerExitedItem` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExitedItemEvent(this Avalonia.Controls.MenuItem obj)
     {
@@ -1017,7 +1014,6 @@ public static partial class MenuItemExtensions
     /// Returns an observable for the `SubmenuOpened` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `SubmenuOpened` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnSubmenuOpenedEvent(this Avalonia.Controls.MenuItem obj)
     {

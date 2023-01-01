@@ -1701,7 +1701,6 @@ public static partial class TemplatedControlExtensions
     /// Returns an observable for the `TemplateApplied` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `TemplateApplied` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.Primitives.TemplateAppliedEventArgs> ObserveOnTemplateAppliedEvent(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {

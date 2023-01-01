@@ -1453,7 +1453,6 @@ public static partial class ScrollViewerExtensions
     /// Returns an observable for the `ScrollChanged` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `ScrollChanged` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.ScrollChangedEventArgs> ObserveOnScrollChangedEvent(this Avalonia.Controls.ScrollViewer obj)
     {

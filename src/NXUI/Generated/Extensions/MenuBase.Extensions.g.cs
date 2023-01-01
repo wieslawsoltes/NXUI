@@ -172,7 +172,6 @@ public static partial class MenuBaseExtensions
     /// Returns an observable for the `MenuOpened` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `MenuOpened` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnMenuOpenedEvent(this Avalonia.Controls.MenuBase obj)
     {
@@ -207,7 +206,6 @@ public static partial class MenuBaseExtensions
     /// Returns an observable for the `MenuClosed` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `MenuClosed` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnMenuClosedEvent(this Avalonia.Controls.MenuBase obj)
     {

@@ -613,7 +613,6 @@ public static partial class RichTextBlockExtensions
     /// Returns an observable for the `CopyingToClipboard` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `CopyingToClipboard` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboardEvent(this Avalonia.Controls.RichTextBlock obj)
     {

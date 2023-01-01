@@ -177,7 +177,6 @@ public static partial class ThumbExtensions
     /// Returns an observable for the `DragStarted` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `DragStarted` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragStartedEvent(this Avalonia.Controls.Primitives.Thumb obj)
     {
@@ -212,7 +211,6 @@ public static partial class ThumbExtensions
     /// Returns an observable for the `DragDelta` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `DragDelta` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragDeltaEvent(this Avalonia.Controls.Primitives.Thumb obj)
     {
@@ -247,7 +245,6 @@ public static partial class ThumbExtensions
     /// Returns an observable for the `DragCompleted` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `DragCompleted` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragCompletedEvent(this Avalonia.Controls.Primitives.Thumb obj)
     {

@@ -1235,7 +1235,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `GotFocus` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `GotFocus` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.GotFocusEventArgs> ObserveOnGotFocusEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1270,7 +1269,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `LostFocus` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `LostFocus` event on the specified object.</returns>
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLostFocusEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1305,7 +1303,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `KeyDown` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `KeyDown` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyDownEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1340,7 +1337,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `KeyUp` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `KeyUp` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.KeyEventArgs> ObserveOnKeyUpEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1375,7 +1371,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `TextInput` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `TextInput` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.TextInputEventArgs> ObserveOnTextInputEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1410,7 +1405,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `TextInputMethodClientRequested` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `TextInputMethodClientRequested` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs> ObserveOnTextInputMethodClientRequestedEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1445,7 +1439,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `PointerEntered` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `PointerEntered` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerEnteredEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1480,7 +1473,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `PointerExited` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `PointerExited` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerExitedEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1515,7 +1507,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `PointerMoved` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `PointerMoved` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerEventArgs> ObserveOnPointerMovedEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1550,7 +1541,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `PointerPressed` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `PointerPressed` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerPressedEventArgs> ObserveOnPointerPressedEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1585,7 +1575,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `PointerReleased` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `PointerReleased` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerReleasedEventArgs> ObserveOnPointerReleasedEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1620,7 +1609,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `PointerCaptureLost` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `PointerCaptureLost` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerCaptureLostEventArgs> ObserveOnPointerCaptureLostEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1655,7 +1643,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `PointerWheelChanged` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `PointerWheelChanged` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.PointerWheelEventArgs> ObserveOnPointerWheelChangedEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1690,7 +1677,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `Tapped` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `Tapped` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnTappedEvent(this Avalonia.Input.InputElement obj)
     {
@@ -1725,7 +1711,6 @@ public static partial class InputElementExtensions
     /// Returns an observable for the `DoubleTapped` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `DoubleTapped` event on the specified object.</returns>
     public static IObservable<Avalonia.Input.TappedEventArgs> ObserveOnDoubleTappedEvent(this Avalonia.Input.InputElement obj)
     {

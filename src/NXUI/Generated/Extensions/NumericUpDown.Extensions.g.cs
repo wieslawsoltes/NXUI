@@ -2069,7 +2069,6 @@ public static partial class NumericUpDownExtensions
     /// Returns an observable for the `Spinned` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `Spinned` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpinnedEvent(this Avalonia.Controls.NumericUpDown obj)
     {
@@ -2104,7 +2103,6 @@ public static partial class NumericUpDownExtensions
     /// Returns an observable for the `ValueChanged` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategy for the event.</param>
     /// <returns>An observable for the `ValueChanged` event on the specified object.</returns>
     public static IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs> ObserveOnValueChangedEvent(this Avalonia.Controls.NumericUpDown obj)
     {
