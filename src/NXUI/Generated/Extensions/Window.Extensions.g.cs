@@ -6,6 +6,19 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class WindowExtensions
 {
+    public static Builder<T> Title1<T>(this Builder<T> builder, Builder<System.String> value) 
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) 
+            => obj[Avalonia.Controls.Window.TitleProperty] = value.Build();
+
+        builder.Setters.Add(Setter);
+
+        return builder;
+    }
+    
+    
+    
     // Avalonia.Controls.Window.SizeToContentProperty
 
     /// <summary>
