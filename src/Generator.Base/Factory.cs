@@ -1,5 +1,7 @@
 ﻿using System.Reflection;
+using System.Text;
 using Avalonia;
+using Avalonia.Animation;
 using Generator.Model;
 
 namespace Generator;
@@ -13,7 +15,7 @@ public static class Factory
             : FixType(type.ToString());
     }
 
-    private static string FixType(string t)
+    public static string FixType(string t)
     {
         return t
             .Replace("`1[", "<")
@@ -23,7 +25,7 @@ public static class Factory
             .Replace("+", ".");
     }
 
-    private static string FixClassNameType(string t)
+    public static string FixClassNameType(string t)
     {
         return t
             .Replace("`1", "")
@@ -158,7 +160,7 @@ public static class Factory
 
         return properties;
     }
-    
+
     private static List<Event> GetEvents(Type classType, Registry registry)
     {
         var events = new List<Event>();
