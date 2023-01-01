@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.ComboBoxItem"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ComboBoxItem"/> class.</returns>
-    public static Avalonia.Controls.ComboBoxItem ComboBoxItem() => new();
+    public static Avalonia.Controls.ComboBoxItem ComboBoxItem()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ComboBoxItem"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ComboBoxItem"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ComboBoxItem"/> class.</returns>
-    public static Avalonia.Controls.ComboBoxItem ComboBoxItem(out Avalonia.Controls.ComboBoxItem @ref) => @ref = new();
+    public static Avalonia.Controls.ComboBoxItem ComboBoxItem(out Avalonia.Controls.ComboBoxItem @ref)
+        => @ref = new();
 }

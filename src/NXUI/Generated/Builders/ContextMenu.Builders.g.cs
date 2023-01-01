@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.</returns>
-    public static Avalonia.Controls.ContextMenu ContextMenu() => new();
+    public static Avalonia.Controls.ContextMenu ContextMenu()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ContextMenu"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.</returns>
-    public static Avalonia.Controls.ContextMenu ContextMenu(out Avalonia.Controls.ContextMenu @ref) => @ref = new();
+    public static Avalonia.Controls.ContextMenu ContextMenu(out Avalonia.Controls.ContextMenu @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.
+    /// </summary>
+    /// <param name="interactionHandler">The interactionHandler value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.</returns>
+    public static Avalonia.Controls.ContextMenu ContextMenu(Avalonia.Controls.Platform.IMenuInteractionHandler interactionHandler)
+        => new(interactionHandler);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ContextMenu"/> instantiated class.</param>
+    /// <param name="interactionHandler">The interactionHandler value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.</returns>
+    public static Avalonia.Controls.ContextMenu ContextMenu(out Avalonia.Controls.ContextMenu @ref, Avalonia.Controls.Platform.IMenuInteractionHandler interactionHandler)
+        => @ref = new(interactionHandler);
 }

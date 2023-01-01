@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.</returns>
-    public static Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer ScrollGestureRecognizer() => new();
+    public static Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer ScrollGestureRecognizer()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.</returns>
-    public static Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer ScrollGestureRecognizer(out Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer @ref) => @ref = new();
+    public static Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer ScrollGestureRecognizer(out Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer @ref)
+        => @ref = new();
 }

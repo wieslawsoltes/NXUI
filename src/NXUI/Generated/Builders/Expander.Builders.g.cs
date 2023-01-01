@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Expander"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Expander"/> class.</returns>
-    public static Avalonia.Controls.Expander Expander() => new();
+    public static Avalonia.Controls.Expander Expander()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Expander"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Expander"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Expander"/> class.</returns>
-    public static Avalonia.Controls.Expander Expander(out Avalonia.Controls.Expander @ref) => @ref = new();
+    public static Avalonia.Controls.Expander Expander(out Avalonia.Controls.Expander @ref)
+        => @ref = new();
 }

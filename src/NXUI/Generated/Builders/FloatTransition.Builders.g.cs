@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Animation.FloatTransition"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Animation.FloatTransition"/> class.</returns>
-    public static Avalonia.Animation.FloatTransition FloatTransition() => new();
+    public static Avalonia.Animation.FloatTransition FloatTransition()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.FloatTransition"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Animation.FloatTransition"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Animation.FloatTransition"/> class.</returns>
-    public static Avalonia.Animation.FloatTransition FloatTransition(out Avalonia.Animation.FloatTransition @ref) => @ref = new();
+    public static Avalonia.Animation.FloatTransition FloatTransition(out Avalonia.Animation.FloatTransition @ref)
+        => @ref = new();
 }

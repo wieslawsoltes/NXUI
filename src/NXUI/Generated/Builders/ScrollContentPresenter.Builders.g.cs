@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.</returns>
-    public static Avalonia.Controls.Presenters.ScrollContentPresenter ScrollContentPresenter() => new();
+    public static Avalonia.Controls.Presenters.ScrollContentPresenter ScrollContentPresenter()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.</returns>
-    public static Avalonia.Controls.Presenters.ScrollContentPresenter ScrollContentPresenter(out Avalonia.Controls.Presenters.ScrollContentPresenter @ref) => @ref = new();
+    public static Avalonia.Controls.Presenters.ScrollContentPresenter ScrollContentPresenter(out Avalonia.Controls.Presenters.ScrollContentPresenter @ref)
+        => @ref = new();
 }

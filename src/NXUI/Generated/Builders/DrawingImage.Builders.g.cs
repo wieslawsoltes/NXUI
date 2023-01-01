@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.DrawingImage"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.DrawingImage"/> class.</returns>
-    public static Avalonia.Media.DrawingImage DrawingImage() => new();
+    public static Avalonia.Media.DrawingImage DrawingImage()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.DrawingImage"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.DrawingImage"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.DrawingImage"/> class.</returns>
-    public static Avalonia.Media.DrawingImage DrawingImage(out Avalonia.Media.DrawingImage @ref) => @ref = new();
+    public static Avalonia.Media.DrawingImage DrawingImage(out Avalonia.Media.DrawingImage @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DrawingImage"/> class.
+    /// </summary>
+    /// <param name="drawing">The drawing value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DrawingImage"/> class.</returns>
+    public static Avalonia.Media.DrawingImage DrawingImage(Avalonia.Media.Drawing drawing)
+        => new(drawing);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DrawingImage"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.DrawingImage"/> instantiated class.</param>
+    /// <param name="drawing">The drawing value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DrawingImage"/> class.</returns>
+    public static Avalonia.Media.DrawingImage DrawingImage(out Avalonia.Media.DrawingImage @ref, Avalonia.Media.Drawing drawing)
+        => @ref = new(drawing);
 }

@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RelativePanel"/> class.</returns>
-    public static Avalonia.Controls.RelativePanel RelativePanel() => new();
+    public static Avalonia.Controls.RelativePanel RelativePanel()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RelativePanel"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RelativePanel"/> class.</returns>
-    public static Avalonia.Controls.RelativePanel RelativePanel(out Avalonia.Controls.RelativePanel @ref) => @ref = new();
+    public static Avalonia.Controls.RelativePanel RelativePanel(out Avalonia.Controls.RelativePanel @ref)
+        => @ref = new();
 }

@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
-    public static Avalonia.Controls.NativeMenuItem NativeMenuItem() => new();
+    public static Avalonia.Controls.NativeMenuItem NativeMenuItem()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NativeMenuItem"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
-    public static Avalonia.Controls.NativeMenuItem NativeMenuItem(out Avalonia.Controls.NativeMenuItem @ref) => @ref = new();
+    public static Avalonia.Controls.NativeMenuItem NativeMenuItem(out Avalonia.Controls.NativeMenuItem @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.
+    /// </summary>
+    /// <param name="header">The header value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
+    public static Avalonia.Controls.NativeMenuItem NativeMenuItem(System.String header)
+        => new(header);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NativeMenuItem"/> instantiated class.</param>
+    /// <param name="header">The header value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
+    public static Avalonia.Controls.NativeMenuItem NativeMenuItem(out Avalonia.Controls.NativeMenuItem @ref, System.String header)
+        => @ref = new(header);
 }

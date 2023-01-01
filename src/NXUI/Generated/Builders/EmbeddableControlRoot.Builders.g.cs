@@ -9,13 +9,32 @@ public static partial class Builders
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.
     /// </summary>
+    /// <param name="impl">The impl value.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.</returns>
-    public static Avalonia.Controls.Embedding.EmbeddableControlRoot EmbeddableControlRoot() => new();
+    public static Avalonia.Controls.Embedding.EmbeddableControlRoot EmbeddableControlRoot(Avalonia.Platform.ITopLevelImpl impl)
+        => new(impl);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> instantiated class.</param>
+    /// <param name="impl">The impl value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.</returns>
+    public static Avalonia.Controls.Embedding.EmbeddableControlRoot EmbeddableControlRoot(out Avalonia.Controls.Embedding.EmbeddableControlRoot @ref, Avalonia.Platform.ITopLevelImpl impl)
+        => @ref = new(impl);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.</returns>
+    public static Avalonia.Controls.Embedding.EmbeddableControlRoot EmbeddableControlRoot()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.</returns>
-    public static Avalonia.Controls.Embedding.EmbeddableControlRoot EmbeddableControlRoot(out Avalonia.Controls.Embedding.EmbeddableControlRoot @ref) => @ref = new();
+    public static Avalonia.Controls.Embedding.EmbeddableControlRoot EmbeddableControlRoot(out Avalonia.Controls.Embedding.EmbeddableControlRoot @ref)
+        => @ref = new();
 }

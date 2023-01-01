@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
-    public static Avalonia.Media.RectangleGeometry RectangleGeometry() => new();
+    public static Avalonia.Media.RectangleGeometry RectangleGeometry()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.RectangleGeometry"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
-    public static Avalonia.Media.RectangleGeometry RectangleGeometry(out Avalonia.Media.RectangleGeometry @ref) => @ref = new();
+    public static Avalonia.Media.RectangleGeometry RectangleGeometry(out Avalonia.Media.RectangleGeometry @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
+    /// </summary>
+    /// <param name="rect">The rect value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
+    public static Avalonia.Media.RectangleGeometry RectangleGeometry(Avalonia.Rect rect)
+        => new(rect);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.RectangleGeometry"/> instantiated class.</param>
+    /// <param name="rect">The rect value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
+    public static Avalonia.Media.RectangleGeometry RectangleGeometry(out Avalonia.Media.RectangleGeometry @ref, Avalonia.Rect rect)
+        => @ref = new(rect);
 }

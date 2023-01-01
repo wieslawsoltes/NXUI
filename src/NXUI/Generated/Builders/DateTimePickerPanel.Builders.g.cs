@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.</returns>
-    public static Avalonia.Controls.Primitives.DateTimePickerPanel DateTimePickerPanel() => new();
+    public static Avalonia.Controls.Primitives.DateTimePickerPanel DateTimePickerPanel()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.</returns>
-    public static Avalonia.Controls.Primitives.DateTimePickerPanel DateTimePickerPanel(out Avalonia.Controls.Primitives.DateTimePickerPanel @ref) => @ref = new();
+    public static Avalonia.Controls.Primitives.DateTimePickerPanel DateTimePickerPanel(out Avalonia.Controls.Primitives.DateTimePickerPanel @ref)
+        => @ref = new();
 }

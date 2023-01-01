@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.</returns>
-    public static Avalonia.Styling.ControlTheme ControlTheme() => new();
+    public static Avalonia.Styling.ControlTheme ControlTheme()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Styling.ControlTheme"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.</returns>
-    public static Avalonia.Styling.ControlTheme ControlTheme(out Avalonia.Styling.ControlTheme @ref) => @ref = new();
+    public static Avalonia.Styling.ControlTheme ControlTheme(out Avalonia.Styling.ControlTheme @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.
+    /// </summary>
+    /// <param name="targetType">The targetType value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.</returns>
+    public static Avalonia.Styling.ControlTheme ControlTheme(System.Type targetType)
+        => new(targetType);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.ControlTheme"/> instantiated class.</param>
+    /// <param name="targetType">The targetType value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.</returns>
+    public static Avalonia.Styling.ControlTheme ControlTheme(out Avalonia.Styling.ControlTheme @ref, System.Type targetType)
+        => @ref = new(targetType);
 }

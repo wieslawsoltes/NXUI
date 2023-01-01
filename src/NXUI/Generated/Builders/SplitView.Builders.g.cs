@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.SplitView"/> class.</returns>
-    public static Avalonia.Controls.SplitView SplitView() => new();
+    public static Avalonia.Controls.SplitView SplitView()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.SplitView"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.SplitView"/> class.</returns>
-    public static Avalonia.Controls.SplitView SplitView(out Avalonia.Controls.SplitView @ref) => @ref = new();
+    public static Avalonia.Controls.SplitView SplitView(out Avalonia.Controls.SplitView @ref)
+        => @ref = new();
 }

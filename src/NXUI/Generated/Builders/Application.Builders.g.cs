@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Application"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Application"/> class.</returns>
-    public static Avalonia.Application Application() => new();
+    public static Avalonia.Application Application()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Application"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Application"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Application"/> class.</returns>
-    public static Avalonia.Application Application(out Avalonia.Application @ref) => @ref = new();
+    public static Avalonia.Application Application(out Avalonia.Application @ref)
+        => @ref = new();
 }

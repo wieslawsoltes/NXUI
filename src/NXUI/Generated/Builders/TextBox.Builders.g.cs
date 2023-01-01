@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TextBox"/> class.</returns>
-    public static Avalonia.Controls.TextBox TextBox() => new();
+    public static Avalonia.Controls.TextBox TextBox()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TextBox"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TextBox"/> class.</returns>
-    public static Avalonia.Controls.TextBox TextBox(out Avalonia.Controls.TextBox @ref) => @ref = new();
+    public static Avalonia.Controls.TextBox TextBox(out Avalonia.Controls.TextBox @ref)
+        => @ref = new();
 }

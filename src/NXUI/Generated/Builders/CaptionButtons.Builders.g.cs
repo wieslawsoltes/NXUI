@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Chrome.CaptionButtons"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Chrome.CaptionButtons"/> class.</returns>
-    public static Avalonia.Controls.Chrome.CaptionButtons CaptionButtons() => new();
+    public static Avalonia.Controls.Chrome.CaptionButtons CaptionButtons()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Chrome.CaptionButtons"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Chrome.CaptionButtons"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Chrome.CaptionButtons"/> class.</returns>
-    public static Avalonia.Controls.Chrome.CaptionButtons CaptionButtons(out Avalonia.Controls.Chrome.CaptionButtons @ref) => @ref = new();
+    public static Avalonia.Controls.Chrome.CaptionButtons CaptionButtons(out Avalonia.Controls.Chrome.CaptionButtons @ref)
+        => @ref = new();
 }

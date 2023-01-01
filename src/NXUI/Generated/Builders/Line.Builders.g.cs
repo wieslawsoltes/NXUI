@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Line"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Line"/> class.</returns>
-    public static Avalonia.Controls.Shapes.Line Line() => new();
+    public static Avalonia.Controls.Shapes.Line Line()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Line"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Shapes.Line"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Line"/> class.</returns>
-    public static Avalonia.Controls.Shapes.Line Line(out Avalonia.Controls.Shapes.Line @ref) => @ref = new();
+    public static Avalonia.Controls.Shapes.Line Line(out Avalonia.Controls.Shapes.Line @ref)
+        => @ref = new();
 }

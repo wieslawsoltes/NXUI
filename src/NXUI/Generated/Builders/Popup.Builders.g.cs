@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.Popup"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.Popup"/> class.</returns>
-    public static Avalonia.Controls.Primitives.Popup Popup() => new();
+    public static Avalonia.Controls.Primitives.Popup Popup()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.Popup"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.Popup"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.Popup"/> class.</returns>
-    public static Avalonia.Controls.Primitives.Popup Popup(out Avalonia.Controls.Primitives.Popup @ref) => @ref = new();
+    public static Avalonia.Controls.Primitives.Popup Popup(out Avalonia.Controls.Primitives.Popup @ref)
+        => @ref = new();
 }

@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
-    public static Avalonia.Media.ImageBrush ImageBrush() => new();
+    public static Avalonia.Media.ImageBrush ImageBrush()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.ImageBrush"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
-    public static Avalonia.Media.ImageBrush ImageBrush(out Avalonia.Media.ImageBrush @ref) => @ref = new();
+    public static Avalonia.Media.ImageBrush ImageBrush(out Avalonia.Media.ImageBrush @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.
+    /// </summary>
+    /// <param name="source">The source value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
+    public static Avalonia.Media.ImageBrush ImageBrush(Avalonia.Media.Imaging.IBitmap source)
+        => new(source);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ImageBrush"/> instantiated class.</param>
+    /// <param name="source">The source value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
+    public static Avalonia.Media.ImageBrush ImageBrush(out Avalonia.Media.ImageBrush @ref, Avalonia.Media.Imaging.IBitmap source)
+        => @ref = new(source);
 }

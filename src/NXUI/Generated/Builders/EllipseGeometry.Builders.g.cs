@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
-    public static Avalonia.Media.EllipseGeometry EllipseGeometry() => new();
+    public static Avalonia.Media.EllipseGeometry EllipseGeometry()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.EllipseGeometry"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
-    public static Avalonia.Media.EllipseGeometry EllipseGeometry(out Avalonia.Media.EllipseGeometry @ref) => @ref = new();
+    public static Avalonia.Media.EllipseGeometry EllipseGeometry(out Avalonia.Media.EllipseGeometry @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.
+    /// </summary>
+    /// <param name="rect">The rect value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
+    public static Avalonia.Media.EllipseGeometry EllipseGeometry(Avalonia.Rect rect)
+        => new(rect);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.EllipseGeometry"/> instantiated class.</param>
+    /// <param name="rect">The rect value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
+    public static Avalonia.Media.EllipseGeometry EllipseGeometry(out Avalonia.Media.EllipseGeometry @ref, Avalonia.Rect rect)
+        => @ref = new(rect);
 }

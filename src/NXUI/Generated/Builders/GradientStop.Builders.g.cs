@@ -10,12 +10,33 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.GradientStop"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.GradientStop"/> class.</returns>
-    public static Avalonia.Media.GradientStop GradientStop() => new();
+    public static Avalonia.Media.GradientStop GradientStop()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.GradientStop"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.GradientStop"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.GradientStop"/> class.</returns>
-    public static Avalonia.Media.GradientStop GradientStop(out Avalonia.Media.GradientStop @ref) => @ref = new();
+    public static Avalonia.Media.GradientStop GradientStop(out Avalonia.Media.GradientStop @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GradientStop"/> class.
+    /// </summary>
+    /// <param name="color">The color value.</param>
+    /// <param name="offset">The offset value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GradientStop"/> class.</returns>
+    public static Avalonia.Media.GradientStop GradientStop(Avalonia.Media.Color color, System.Double offset)
+        => new(color, offset);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GradientStop"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.GradientStop"/> instantiated class.</param>
+    /// <param name="color">The color value.</param>
+    /// <param name="offset">The offset value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GradientStop"/> class.</returns>
+    public static Avalonia.Media.GradientStop GradientStop(out Avalonia.Media.GradientStop @ref, Avalonia.Media.Color color, System.Double offset)
+        => @ref = new(color, offset);
 }

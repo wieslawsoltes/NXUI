@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TabControl"/> class.</returns>
-    public static Avalonia.Controls.TabControl TabControl() => new();
+    public static Avalonia.Controls.TabControl TabControl()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TabControl"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TabControl"/> class.</returns>
-    public static Avalonia.Controls.TabControl TabControl(out Avalonia.Controls.TabControl @ref) => @ref = new();
+    public static Avalonia.Controls.TabControl TabControl(out Avalonia.Controls.TabControl @ref)
+        => @ref = new();
 }

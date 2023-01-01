@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Styling.Styles"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
-    public static Avalonia.Styling.Styles Styles() => new();
+    public static Avalonia.Styling.Styles Styles()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.Styles"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Styling.Styles"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
-    public static Avalonia.Styling.Styles Styles(out Avalonia.Styling.Styles @ref) => @ref = new();
+    public static Avalonia.Styling.Styles Styles(out Avalonia.Styling.Styles @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.Styles"/> class.
+    /// </summary>
+    /// <param name="owner">The owner value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
+    public static Avalonia.Styling.Styles Styles(Avalonia.Controls.IResourceHost owner)
+        => new(owner);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.Styles"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.Styles"/> instantiated class.</param>
+    /// <param name="owner">The owner value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
+    public static Avalonia.Styling.Styles Styles(out Avalonia.Styling.Styles @ref, Avalonia.Controls.IResourceHost owner)
+        => @ref = new(owner);
 }

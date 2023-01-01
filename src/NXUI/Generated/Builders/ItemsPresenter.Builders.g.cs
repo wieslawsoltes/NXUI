@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> class.</returns>
-    public static Avalonia.Controls.Presenters.ItemsPresenter ItemsPresenter() => new();
+    public static Avalonia.Controls.Presenters.ItemsPresenter ItemsPresenter()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> class.</returns>
-    public static Avalonia.Controls.Presenters.ItemsPresenter ItemsPresenter(out Avalonia.Controls.Presenters.ItemsPresenter @ref) => @ref = new();
+    public static Avalonia.Controls.Presenters.ItemsPresenter ItemsPresenter(out Avalonia.Controls.Presenters.ItemsPresenter @ref)
+        => @ref = new();
 }

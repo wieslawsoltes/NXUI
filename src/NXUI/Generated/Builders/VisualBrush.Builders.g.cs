@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.</returns>
-    public static Avalonia.Media.VisualBrush VisualBrush() => new();
+    public static Avalonia.Media.VisualBrush VisualBrush()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.VisualBrush"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.</returns>
-    public static Avalonia.Media.VisualBrush VisualBrush(out Avalonia.Media.VisualBrush @ref) => @ref = new();
+    public static Avalonia.Media.VisualBrush VisualBrush(out Avalonia.Media.VisualBrush @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.
+    /// </summary>
+    /// <param name="visual">The visual value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.</returns>
+    public static Avalonia.Media.VisualBrush VisualBrush(Avalonia.VisualTree.IVisual visual)
+        => new(visual);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.VisualBrush"/> instantiated class.</param>
+    /// <param name="visual">The visual value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.</returns>
+    public static Avalonia.Media.VisualBrush VisualBrush(out Avalonia.Media.VisualBrush @ref, Avalonia.VisualTree.IVisual visual)
+        => @ref = new(visual);
 }

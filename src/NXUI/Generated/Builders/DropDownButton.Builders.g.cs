@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.DropDownButton"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DropDownButton"/> class.</returns>
-    public static Avalonia.Controls.DropDownButton DropDownButton() => new();
+    public static Avalonia.Controls.DropDownButton DropDownButton()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DropDownButton"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DropDownButton"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DropDownButton"/> class.</returns>
-    public static Avalonia.Controls.DropDownButton DropDownButton(out Avalonia.Controls.DropDownButton @ref) => @ref = new();
+    public static Avalonia.Controls.DropDownButton DropDownButton(out Avalonia.Controls.DropDownButton @ref)
+        => @ref = new();
 }

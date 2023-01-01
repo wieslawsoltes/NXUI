@@ -10,12 +10,50 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
-    public static Avalonia.Controls.RowDefinition RowDefinition() => new();
+    public static Avalonia.Controls.RowDefinition RowDefinition()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RowDefinition"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
-    public static Avalonia.Controls.RowDefinition RowDefinition(out Avalonia.Controls.RowDefinition @ref) => @ref = new();
+    public static Avalonia.Controls.RowDefinition RowDefinition(out Avalonia.Controls.RowDefinition @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
+    /// </summary>
+    /// <param name="value">The value value.</param>
+    /// <param name="type">The type value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
+    public static Avalonia.Controls.RowDefinition RowDefinition(System.Double value, Avalonia.Controls.GridUnitType type)
+        => new(value, type);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RowDefinition"/> instantiated class.</param>
+    /// <param name="value">The value value.</param>
+    /// <param name="type">The type value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
+    public static Avalonia.Controls.RowDefinition RowDefinition(out Avalonia.Controls.RowDefinition @ref, System.Double value, Avalonia.Controls.GridUnitType type)
+        => @ref = new(value, type);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
+    /// </summary>
+    /// <param name="height">The height value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
+    public static Avalonia.Controls.RowDefinition RowDefinition(Avalonia.Controls.GridLength height)
+        => new(height);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RowDefinition"/> instantiated class.</param>
+    /// <param name="height">The height value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
+    public static Avalonia.Controls.RowDefinition RowDefinition(out Avalonia.Controls.RowDefinition @ref, Avalonia.Controls.GridLength height)
+        => @ref = new(height);
 }

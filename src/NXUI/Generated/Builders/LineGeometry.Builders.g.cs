@@ -10,12 +10,33 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
-    public static Avalonia.Media.LineGeometry LineGeometry() => new();
+    public static Avalonia.Media.LineGeometry LineGeometry()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.LineGeometry"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
-    public static Avalonia.Media.LineGeometry LineGeometry(out Avalonia.Media.LineGeometry @ref) => @ref = new();
+    public static Avalonia.Media.LineGeometry LineGeometry(out Avalonia.Media.LineGeometry @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.
+    /// </summary>
+    /// <param name="startPoint">The startPoint value.</param>
+    /// <param name="endPoint">The endPoint value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
+    public static Avalonia.Media.LineGeometry LineGeometry(Avalonia.Point startPoint, Avalonia.Point endPoint)
+        => new(startPoint, endPoint);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.LineGeometry"/> instantiated class.</param>
+    /// <param name="startPoint">The startPoint value.</param>
+    /// <param name="endPoint">The endPoint value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
+    public static Avalonia.Media.LineGeometry LineGeometry(out Avalonia.Media.LineGeometry @ref, Avalonia.Point startPoint, Avalonia.Point endPoint)
+        => @ref = new(startPoint, endPoint);
 }

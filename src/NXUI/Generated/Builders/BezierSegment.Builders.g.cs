@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.BezierSegment"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.BezierSegment"/> class.</returns>
-    public static Avalonia.Media.BezierSegment BezierSegment() => new();
+    public static Avalonia.Media.BezierSegment BezierSegment()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.BezierSegment"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.BezierSegment"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.BezierSegment"/> class.</returns>
-    public static Avalonia.Media.BezierSegment BezierSegment(out Avalonia.Media.BezierSegment @ref) => @ref = new();
+    public static Avalonia.Media.BezierSegment BezierSegment(out Avalonia.Media.BezierSegment @ref)
+        => @ref = new();
 }

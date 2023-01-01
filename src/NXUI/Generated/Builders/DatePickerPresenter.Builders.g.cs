@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DatePickerPresenter"/> class.</returns>
-    public static Avalonia.Controls.DatePickerPresenter DatePickerPresenter() => new();
+    public static Avalonia.Controls.DatePickerPresenter DatePickerPresenter()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DatePickerPresenter"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DatePickerPresenter"/> class.</returns>
-    public static Avalonia.Controls.DatePickerPresenter DatePickerPresenter(out Avalonia.Controls.DatePickerPresenter @ref) => @ref = new();
+    public static Avalonia.Controls.DatePickerPresenter DatePickerPresenter(out Avalonia.Controls.DatePickerPresenter @ref)
+        => @ref = new();
 }

@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.DockPanel"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DockPanel"/> class.</returns>
-    public static Avalonia.Controls.DockPanel DockPanel() => new();
+    public static Avalonia.Controls.DockPanel DockPanel()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DockPanel"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DockPanel"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DockPanel"/> class.</returns>
-    public static Avalonia.Controls.DockPanel DockPanel(out Avalonia.Controls.DockPanel @ref) => @ref = new();
+    public static Avalonia.Controls.DockPanel DockPanel(out Avalonia.Controls.DockPanel @ref)
+        => @ref = new();
 }

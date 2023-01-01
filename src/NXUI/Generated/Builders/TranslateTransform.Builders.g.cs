@@ -10,12 +10,33 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
-    public static Avalonia.Media.TranslateTransform TranslateTransform() => new();
+    public static Avalonia.Media.TranslateTransform TranslateTransform()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.TranslateTransform"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
-    public static Avalonia.Media.TranslateTransform TranslateTransform(out Avalonia.Media.TranslateTransform @ref) => @ref = new();
+    public static Avalonia.Media.TranslateTransform TranslateTransform(out Avalonia.Media.TranslateTransform @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.
+    /// </summary>
+    /// <param name="x">The x value.</param>
+    /// <param name="y">The y value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
+    public static Avalonia.Media.TranslateTransform TranslateTransform(System.Double x, System.Double y)
+        => new(x, y);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.TranslateTransform"/> instantiated class.</param>
+    /// <param name="x">The x value.</param>
+    /// <param name="y">The y value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
+    public static Avalonia.Media.TranslateTransform TranslateTransform(out Avalonia.Media.TranslateTransform @ref, System.Double x, System.Double y)
+        => @ref = new(x, y);
 }

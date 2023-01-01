@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuItem"/> class.</returns>
-    public static Avalonia.Controls.MenuItem MenuItem() => new();
+    public static Avalonia.Controls.MenuItem MenuItem()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MenuItem"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuItem"/> class.</returns>
-    public static Avalonia.Controls.MenuItem MenuItem(out Avalonia.Controls.MenuItem @ref) => @ref = new();
+    public static Avalonia.Controls.MenuItem MenuItem(out Avalonia.Controls.MenuItem @ref)
+        => @ref = new();
 }

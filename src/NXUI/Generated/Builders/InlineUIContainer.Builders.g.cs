@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
-    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer() => new();
+    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
-    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(out Avalonia.Controls.Documents.InlineUIContainer @ref) => @ref = new();
+    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(out Avalonia.Controls.Documents.InlineUIContainer @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
+    /// </summary>
+    /// <param name="child">The child value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
+    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(Avalonia.Controls.IControl child)
+        => new(child);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> instantiated class.</param>
+    /// <param name="child">The child value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
+    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(out Avalonia.Controls.Documents.InlineUIContainer @ref, Avalonia.Controls.IControl child)
+        => @ref = new(child);
 }

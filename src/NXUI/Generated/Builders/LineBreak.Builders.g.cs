@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.LineBreak"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.LineBreak"/> class.</returns>
-    public static Avalonia.Controls.Documents.LineBreak LineBreak() => new();
+    public static Avalonia.Controls.Documents.LineBreak LineBreak()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.LineBreak"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.LineBreak"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.LineBreak"/> class.</returns>
-    public static Avalonia.Controls.Documents.LineBreak LineBreak(out Avalonia.Controls.Documents.LineBreak @ref) => @ref = new();
+    public static Avalonia.Controls.Documents.LineBreak LineBreak(out Avalonia.Controls.Documents.LineBreak @ref)
+        => @ref = new();
 }

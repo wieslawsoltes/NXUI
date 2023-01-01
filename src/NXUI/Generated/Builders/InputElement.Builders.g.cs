@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Input.InputElement"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Input.InputElement"/> class.</returns>
-    public static Avalonia.Input.InputElement InputElement() => new();
+    public static Avalonia.Input.InputElement InputElement()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Input.InputElement"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Input.InputElement"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Input.InputElement"/> class.</returns>
-    public static Avalonia.Input.InputElement InputElement(out Avalonia.Input.InputElement @ref) => @ref = new();
+    public static Avalonia.Input.InputElement InputElement(out Avalonia.Input.InputElement @ref)
+        => @ref = new();
 }

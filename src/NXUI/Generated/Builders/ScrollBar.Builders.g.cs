@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.</returns>
-    public static Avalonia.Controls.Primitives.ScrollBar ScrollBar() => new();
+    public static Avalonia.Controls.Primitives.ScrollBar ScrollBar()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.ScrollBar"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.</returns>
-    public static Avalonia.Controls.Primitives.ScrollBar ScrollBar(out Avalonia.Controls.Primitives.ScrollBar @ref) => @ref = new();
+    public static Avalonia.Controls.Primitives.ScrollBar ScrollBar(out Avalonia.Controls.Primitives.ScrollBar @ref)
+        => @ref = new();
 }

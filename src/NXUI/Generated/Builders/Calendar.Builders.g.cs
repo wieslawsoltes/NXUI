@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Calendar"/> class.</returns>
-    public static Avalonia.Controls.Calendar Calendar() => new();
+    public static Avalonia.Controls.Calendar Calendar()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Calendar"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Calendar"/> class.</returns>
-    public static Avalonia.Controls.Calendar Calendar(out Avalonia.Controls.Calendar @ref) => @ref = new();
+    public static Avalonia.Controls.Calendar Calendar(out Avalonia.Controls.Calendar @ref)
+        => @ref = new();
 }

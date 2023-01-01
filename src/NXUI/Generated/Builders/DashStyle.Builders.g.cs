@@ -10,12 +10,33 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.DashStyle"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
-    public static Avalonia.Media.DashStyle DashStyle() => new();
+    public static Avalonia.Media.DashStyle DashStyle()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.DashStyle"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.DashStyle"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
-    public static Avalonia.Media.DashStyle DashStyle(out Avalonia.Media.DashStyle @ref) => @ref = new();
+    public static Avalonia.Media.DashStyle DashStyle(out Avalonia.Media.DashStyle @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DashStyle"/> class.
+    /// </summary>
+    /// <param name="dashes">The dashes value.</param>
+    /// <param name="offset">The offset value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
+    public static Avalonia.Media.DashStyle DashStyle(System.Collections.Generic.IEnumerable<System.Double> dashes, System.Double offset)
+        => new(dashes, offset);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DashStyle"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.DashStyle"/> instantiated class.</param>
+    /// <param name="dashes">The dashes value.</param>
+    /// <param name="offset">The offset value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
+    public static Avalonia.Media.DashStyle DashStyle(out Avalonia.Media.DashStyle @ref, System.Collections.Generic.IEnumerable<System.Double> dashes, System.Double offset)
+        => @ref = new(dashes, offset);
 }

@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.</returns>
-    public static Avalonia.Controls.MenuFlyoutPresenter MenuFlyoutPresenter() => new();
+    public static Avalonia.Controls.MenuFlyoutPresenter MenuFlyoutPresenter()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.</returns>
-    public static Avalonia.Controls.MenuFlyoutPresenter MenuFlyoutPresenter(out Avalonia.Controls.MenuFlyoutPresenter @ref) => @ref = new();
+    public static Avalonia.Controls.MenuFlyoutPresenter MenuFlyoutPresenter(out Avalonia.Controls.MenuFlyoutPresenter @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.
+    /// </summary>
+    /// <param name="menuInteractionHandler">The menuInteractionHandler value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.</returns>
+    public static Avalonia.Controls.MenuFlyoutPresenter MenuFlyoutPresenter(Avalonia.Controls.Platform.IMenuInteractionHandler menuInteractionHandler)
+        => new(menuInteractionHandler);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> instantiated class.</param>
+    /// <param name="menuInteractionHandler">The menuInteractionHandler value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.</returns>
+    public static Avalonia.Controls.MenuFlyoutPresenter MenuFlyoutPresenter(out Avalonia.Controls.MenuFlyoutPresenter @ref, Avalonia.Controls.Platform.IMenuInteractionHandler menuInteractionHandler)
+        => @ref = new(menuInteractionHandler);
 }

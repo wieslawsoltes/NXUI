@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TabStripItem"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TabStripItem"/> class.</returns>
-    public static Avalonia.Controls.Primitives.TabStripItem TabStripItem() => new();
+    public static Avalonia.Controls.Primitives.TabStripItem TabStripItem()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TabStripItem"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.TabStripItem"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TabStripItem"/> class.</returns>
-    public static Avalonia.Controls.Primitives.TabStripItem TabStripItem(out Avalonia.Controls.Primitives.TabStripItem @ref) => @ref = new();
+    public static Avalonia.Controls.Primitives.TabStripItem TabStripItem(out Avalonia.Controls.Primitives.TabStripItem @ref)
+        => @ref = new();
 }

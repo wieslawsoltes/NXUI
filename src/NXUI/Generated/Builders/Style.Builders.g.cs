@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Styling.Style"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Styling.Style"/> class.</returns>
-    public static Avalonia.Styling.Style Style() => new();
+    public static Avalonia.Styling.Style Style()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.Style"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Styling.Style"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Styling.Style"/> class.</returns>
-    public static Avalonia.Styling.Style Style(out Avalonia.Styling.Style @ref) => @ref = new();
+    public static Avalonia.Styling.Style Style(out Avalonia.Styling.Style @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.Style"/> class.
+    /// </summary>
+    /// <param name="selector">The selector value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.Style"/> class.</returns>
+    public static Avalonia.Styling.Style Style(System.Func<Avalonia.Styling.Selector,Avalonia.Styling.Selector> selector)
+        => new(selector);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.Style"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.Style"/> instantiated class.</param>
+    /// <param name="selector">The selector value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.Style"/> class.</returns>
+    public static Avalonia.Styling.Style Style(out Avalonia.Styling.Style @ref, System.Func<Avalonia.Styling.Selector,Avalonia.Styling.Selector> selector)
+        => @ref = new(selector);
 }

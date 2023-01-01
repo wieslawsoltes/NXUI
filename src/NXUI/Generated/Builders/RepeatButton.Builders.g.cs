@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.RepeatButton"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RepeatButton"/> class.</returns>
-    public static Avalonia.Controls.RepeatButton RepeatButton() => new();
+    public static Avalonia.Controls.RepeatButton RepeatButton()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RepeatButton"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RepeatButton"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RepeatButton"/> class.</returns>
-    public static Avalonia.Controls.RepeatButton RepeatButton(out Avalonia.Controls.RepeatButton @ref) => @ref = new();
+    public static Avalonia.Controls.RepeatButton RepeatButton(out Avalonia.Controls.RepeatButton @ref)
+        => @ref = new();
 }

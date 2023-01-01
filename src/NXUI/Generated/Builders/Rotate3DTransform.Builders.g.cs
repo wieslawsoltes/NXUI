@@ -10,12 +10,43 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.</returns>
-    public static Avalonia.Media.Rotate3DTransform Rotate3DTransform() => new();
+    public static Avalonia.Media.Rotate3DTransform Rotate3DTransform()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.Rotate3DTransform"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.</returns>
-    public static Avalonia.Media.Rotate3DTransform Rotate3DTransform(out Avalonia.Media.Rotate3DTransform @ref) => @ref = new();
+    public static Avalonia.Media.Rotate3DTransform Rotate3DTransform(out Avalonia.Media.Rotate3DTransform @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.
+    /// </summary>
+    /// <param name="angleX">The angleX value.</param>
+    /// <param name="angleY">The angleY value.</param>
+    /// <param name="angleZ">The angleZ value.</param>
+    /// <param name="centerX">The centerX value.</param>
+    /// <param name="centerY">The centerY value.</param>
+    /// <param name="centerZ">The centerZ value.</param>
+    /// <param name="depth">The depth value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.</returns>
+    public static Avalonia.Media.Rotate3DTransform Rotate3DTransform(System.Double angleX, System.Double angleY, System.Double angleZ, System.Double centerX, System.Double centerY, System.Double centerZ, System.Double depth)
+        => new(angleX, angleY, angleZ, centerX, centerY, centerZ, depth);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Rotate3DTransform"/> instantiated class.</param>
+    /// <param name="angleX">The angleX value.</param>
+    /// <param name="angleY">The angleY value.</param>
+    /// <param name="angleZ">The angleZ value.</param>
+    /// <param name="centerX">The centerX value.</param>
+    /// <param name="centerY">The centerY value.</param>
+    /// <param name="centerZ">The centerZ value.</param>
+    /// <param name="depth">The depth value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.</returns>
+    public static Avalonia.Media.Rotate3DTransform Rotate3DTransform(out Avalonia.Media.Rotate3DTransform @ref, System.Double angleX, System.Double angleY, System.Double angleZ, System.Double centerX, System.Double centerY, System.Double centerZ, System.Double depth)
+        => @ref = new(angleX, angleY, angleZ, centerX, centerY, centerZ, depth);
 }

@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Viewbox"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Viewbox"/> class.</returns>
-    public static Avalonia.Controls.Viewbox Viewbox() => new();
+    public static Avalonia.Controls.Viewbox Viewbox()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Viewbox"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Viewbox"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Viewbox"/> class.</returns>
-    public static Avalonia.Controls.Viewbox Viewbox(out Avalonia.Controls.Viewbox @ref) => @ref = new();
+    public static Avalonia.Controls.Viewbox Viewbox(out Avalonia.Controls.Viewbox @ref)
+        => @ref = new();
 }

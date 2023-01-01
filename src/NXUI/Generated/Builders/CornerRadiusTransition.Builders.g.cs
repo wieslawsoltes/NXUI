@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.</returns>
-    public static Avalonia.Animation.CornerRadiusTransition CornerRadiusTransition() => new();
+    public static Avalonia.Animation.CornerRadiusTransition CornerRadiusTransition()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.</returns>
-    public static Avalonia.Animation.CornerRadiusTransition CornerRadiusTransition(out Avalonia.Animation.CornerRadiusTransition @ref) => @ref = new();
+    public static Avalonia.Animation.CornerRadiusTransition CornerRadiusTransition(out Avalonia.Animation.CornerRadiusTransition @ref)
+        => @ref = new();
 }

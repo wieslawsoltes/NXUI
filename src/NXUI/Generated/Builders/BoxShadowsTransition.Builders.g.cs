@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.</returns>
-    public static Avalonia.Animation.BoxShadowsTransition BoxShadowsTransition() => new();
+    public static Avalonia.Animation.BoxShadowsTransition BoxShadowsTransition()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.</returns>
-    public static Avalonia.Animation.BoxShadowsTransition BoxShadowsTransition(out Avalonia.Animation.BoxShadowsTransition @ref) => @ref = new();
+    public static Avalonia.Animation.BoxShadowsTransition BoxShadowsTransition(out Avalonia.Animation.BoxShadowsTransition @ref)
+        => @ref = new();
 }

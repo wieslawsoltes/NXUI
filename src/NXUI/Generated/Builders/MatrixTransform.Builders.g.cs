@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
-    public static Avalonia.Media.MatrixTransform MatrixTransform() => new();
+    public static Avalonia.Media.MatrixTransform MatrixTransform()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.MatrixTransform"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
-    public static Avalonia.Media.MatrixTransform MatrixTransform(out Avalonia.Media.MatrixTransform @ref) => @ref = new();
+    public static Avalonia.Media.MatrixTransform MatrixTransform(out Avalonia.Media.MatrixTransform @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.
+    /// </summary>
+    /// <param name="matrix">The matrix value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
+    public static Avalonia.Media.MatrixTransform MatrixTransform(Avalonia.Matrix matrix)
+        => new(matrix);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.MatrixTransform"/> instantiated class.</param>
+    /// <param name="matrix">The matrix value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
+    public static Avalonia.Media.MatrixTransform MatrixTransform(out Avalonia.Media.MatrixTransform @ref, Avalonia.Matrix matrix)
+        => @ref = new(matrix);
 }

@@ -10,12 +10,31 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
-    public static Avalonia.Controls.MaskedTextBox MaskedTextBox() => new();
+    public static Avalonia.Controls.MaskedTextBox MaskedTextBox()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MaskedTextBox"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
-    public static Avalonia.Controls.MaskedTextBox MaskedTextBox(out Avalonia.Controls.MaskedTextBox @ref) => @ref = new();
+    public static Avalonia.Controls.MaskedTextBox MaskedTextBox(out Avalonia.Controls.MaskedTextBox @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.
+    /// </summary>
+    /// <param name="maskedTextProvider">The maskedTextProvider value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
+    public static Avalonia.Controls.MaskedTextBox MaskedTextBox(System.ComponentModel.MaskedTextProvider maskedTextProvider)
+        => new(maskedTextProvider);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MaskedTextBox"/> instantiated class.</param>
+    /// <param name="maskedTextProvider">The maskedTextProvider value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
+    public static Avalonia.Controls.MaskedTextBox MaskedTextBox(out Avalonia.Controls.MaskedTextBox @ref, System.ComponentModel.MaskedTextProvider maskedTextProvider)
+        => @ref = new(maskedTextProvider);
 }

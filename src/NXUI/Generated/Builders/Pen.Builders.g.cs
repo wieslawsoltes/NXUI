@@ -10,12 +10,68 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
-    public static Avalonia.Media.Pen Pen() => new();
+    public static Avalonia.Media.Pen Pen()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.Pen"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
-    public static Avalonia.Media.Pen Pen(out Avalonia.Media.Pen @ref) => @ref = new();
+    public static Avalonia.Media.Pen Pen(out Avalonia.Media.Pen @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
+    /// </summary>
+    /// <param name="color">The color value.</param>
+    /// <param name="thickness">The thickness value.</param>
+    /// <param name="dashStyle">The dashStyle value.</param>
+    /// <param name="lineCap">The lineCap value.</param>
+    /// <param name="lineJoin">The lineJoin value.</param>
+    /// <param name="miterLimit">The miterLimit value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
+    public static Avalonia.Media.Pen Pen(System.UInt32 color, System.Double thickness = 1, Avalonia.Media.IDashStyle dashStyle = default, Avalonia.Media.PenLineCap lineCap = Avalonia.Media.PenLineCap.Flat, Avalonia.Media.PenLineJoin lineJoin = Avalonia.Media.PenLineJoin.Miter, System.Double miterLimit = 10)
+        => new(color, thickness, dashStyle, lineCap, lineJoin, miterLimit);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Pen"/> instantiated class.</param>
+    /// <param name="color">The color value.</param>
+    /// <param name="thickness">The thickness value.</param>
+    /// <param name="dashStyle">The dashStyle value.</param>
+    /// <param name="lineCap">The lineCap value.</param>
+    /// <param name="lineJoin">The lineJoin value.</param>
+    /// <param name="miterLimit">The miterLimit value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
+    public static Avalonia.Media.Pen Pen(out Avalonia.Media.Pen @ref, System.UInt32 color, System.Double thickness = 1, Avalonia.Media.IDashStyle dashStyle = default, Avalonia.Media.PenLineCap lineCap = Avalonia.Media.PenLineCap.Flat, Avalonia.Media.PenLineJoin lineJoin = Avalonia.Media.PenLineJoin.Miter, System.Double miterLimit = 10)
+        => @ref = new(color, thickness, dashStyle, lineCap, lineJoin, miterLimit);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
+    /// </summary>
+    /// <param name="brush">The brush value.</param>
+    /// <param name="thickness">The thickness value.</param>
+    /// <param name="dashStyle">The dashStyle value.</param>
+    /// <param name="lineCap">The lineCap value.</param>
+    /// <param name="lineJoin">The lineJoin value.</param>
+    /// <param name="miterLimit">The miterLimit value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
+    public static Avalonia.Media.Pen Pen(Avalonia.Media.IBrush brush, System.Double thickness = 1, Avalonia.Media.IDashStyle dashStyle = default, Avalonia.Media.PenLineCap lineCap = Avalonia.Media.PenLineCap.Flat, Avalonia.Media.PenLineJoin lineJoin = Avalonia.Media.PenLineJoin.Miter, System.Double miterLimit = 10)
+        => new(brush, thickness, dashStyle, lineCap, lineJoin, miterLimit);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Pen"/> instantiated class.</param>
+    /// <param name="brush">The brush value.</param>
+    /// <param name="thickness">The thickness value.</param>
+    /// <param name="dashStyle">The dashStyle value.</param>
+    /// <param name="lineCap">The lineCap value.</param>
+    /// <param name="lineJoin">The lineJoin value.</param>
+    /// <param name="miterLimit">The miterLimit value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
+    public static Avalonia.Media.Pen Pen(out Avalonia.Media.Pen @ref, Avalonia.Media.IBrush brush, System.Double thickness = 1, Avalonia.Media.IDashStyle dashStyle = default, Avalonia.Media.PenLineCap lineCap = Avalonia.Media.PenLineCap.Flat, Avalonia.Media.PenLineJoin lineJoin = Avalonia.Media.PenLineJoin.Miter, System.Double miterLimit = 10)
+        => @ref = new(brush, thickness, dashStyle, lineCap, lineJoin, miterLimit);
 }

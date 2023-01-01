@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.TextDecoration"/> class.</returns>
-    public static Avalonia.Media.TextDecoration TextDecoration() => new();
+    public static Avalonia.Media.TextDecoration TextDecoration()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.TextDecoration"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.TextDecoration"/> class.</returns>
-    public static Avalonia.Media.TextDecoration TextDecoration(out Avalonia.Media.TextDecoration @ref) => @ref = new();
+    public static Avalonia.Media.TextDecoration TextDecoration(out Avalonia.Media.TextDecoration @ref)
+        => @ref = new();
 }

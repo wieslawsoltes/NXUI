@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.</returns>
-    public static Avalonia.Controls.Primitives.VisualLayerManager VisualLayerManager() => new();
+    public static Avalonia.Controls.Primitives.VisualLayerManager VisualLayerManager()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.</returns>
-    public static Avalonia.Controls.Primitives.VisualLayerManager VisualLayerManager(out Avalonia.Controls.Primitives.VisualLayerManager @ref) => @ref = new();
+    public static Avalonia.Controls.Primitives.VisualLayerManager VisualLayerManager(out Avalonia.Controls.Primitives.VisualLayerManager @ref)
+        => @ref = new();
 }

@@ -10,12 +10,33 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
-    public static Avalonia.Media.SkewTransform SkewTransform() => new();
+    public static Avalonia.Media.SkewTransform SkewTransform()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.SkewTransform"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
-    public static Avalonia.Media.SkewTransform SkewTransform(out Avalonia.Media.SkewTransform @ref) => @ref = new();
+    public static Avalonia.Media.SkewTransform SkewTransform(out Avalonia.Media.SkewTransform @ref)
+        => @ref = new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.
+    /// </summary>
+    /// <param name="angleX">The angleX value.</param>
+    /// <param name="angleY">The angleY value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
+    public static Avalonia.Media.SkewTransform SkewTransform(System.Double angleX, System.Double angleY)
+        => new(angleX, angleY);
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.SkewTransform"/> instantiated class.</param>
+    /// <param name="angleX">The angleX value.</param>
+    /// <param name="angleY">The angleY value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
+    public static Avalonia.Media.SkewTransform SkewTransform(out Avalonia.Media.SkewTransform @ref, System.Double angleX, System.Double angleY)
+        => @ref = new(angleX, angleY);
 }

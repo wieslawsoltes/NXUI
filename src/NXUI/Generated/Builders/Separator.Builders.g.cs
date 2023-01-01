@@ -10,12 +10,14 @@ public static partial class Builders
     /// Creates a new instance of the <see cref="Avalonia.Controls.Separator"/> class.
     /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Separator"/> class.</returns>
-    public static Avalonia.Controls.Separator Separator() => new();
+    public static Avalonia.Controls.Separator Separator()
+        => new();
 
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Separator"/> class.
     /// </summary>
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Separator"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Separator"/> class.</returns>
-    public static Avalonia.Controls.Separator Separator(out Avalonia.Controls.Separator @ref) => @ref = new();
+    public static Avalonia.Controls.Separator Separator(out Avalonia.Controls.Separator @ref)
+        => @ref = new();
 }
