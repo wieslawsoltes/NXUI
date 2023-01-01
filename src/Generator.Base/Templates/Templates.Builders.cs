@@ -11,7 +11,7 @@ public static partial class Templates
 namespace NXUI;
 
 /// <summary>
-/// The minimal avalonia builders.
+/// The avalonia builders.
 /// </summary>
 public static partial class Builders
 {

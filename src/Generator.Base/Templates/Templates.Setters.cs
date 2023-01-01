@@ -9,7 +9,7 @@ public static partial class Templates
     public static string PropertySettersHeaderTemplate = """
 
 /// <summary>
-/// The minimal avalonia <see cref="%ClassType%"/> class style setters extension methods.
+/// The avalonia <see cref="%ClassType%"/> class style setters extension methods.
 /// </summary>
 public static partial class %ClassName%Setters
 {
