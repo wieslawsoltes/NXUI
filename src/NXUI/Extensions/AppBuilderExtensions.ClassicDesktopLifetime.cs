@@ -60,4 +60,23 @@ public static partial class AppBuilderExtensions
 
         return lifetime.Start(args);
     }
+    
+    public static int StartWithClassicDesktopLifetime<T>(
+        this T builder, 
+        Builder<Window>? callback, 
+        string[] args, 
+        ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose) where T : AppBuilderBase<T>, new()
+    {
+        var lifetime = new ClassicDesktopStyleApplicationLifetime
+        {
+            Args = args,
+            ShutdownMode = shutdownMode
+        };
+
+        builder.SetupWithLifetime(lifetime);
+
+        lifetime.MainWindow = callback?.Build() as Window;
+
+        return lifetime.Start(args);
+    }
 }

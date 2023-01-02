@@ -1,6 +1,6 @@
 ﻿var count = new BehaviorSubject<int>(0);
 
-object Build1()
+Builder<Window> Build1()
   => Window1()
     .Title1("Counter")
     .Content1(
@@ -32,4 +32,4 @@ AppBuilder.Configure<Application>()
   .UsePlatformDetect()
   .UseFluentTheme()
   .WithApplicationName("Counter")
-  .StartWithClassicDesktopLifetime(Build, args);
+  .StartWithClassicDesktopLifetime(Build1(), args);
