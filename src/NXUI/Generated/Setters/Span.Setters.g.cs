@@ -21,17 +21,16 @@ public static partial class SpanSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Span.InlinesProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.Span.InlinesProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSpanInlines(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSpanInlines(this KeyFrame keyFrame, Avalonia.Controls.Documents.InlineCollection value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Documents.Span.InlinesProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Span.InlinesProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Span.InlinesProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class SpanSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.Span.InlinesProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSpanInlines(this KeyFrame keyFrame, Avalonia.Controls.Documents.InlineCollection value)
+    public static KeyFrame SetSpanInlines(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Documents.InlineCollection> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Span.InlinesProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Span.InlinesProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Span.InlinesProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSpanInlines(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Documents.Span.InlinesProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class SpanSetters
     public static KeyFrame SetSpanInlines(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Span.InlinesProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.Span.InlinesProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSpanInlines(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Documents.InlineCollection> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Span.InlinesProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

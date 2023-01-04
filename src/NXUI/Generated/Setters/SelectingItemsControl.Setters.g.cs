@@ -21,17 +21,16 @@ public static partial class SelectingItemsControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlAutoScrollToSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class SelectingItemsControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSelectingItemsControlAutoScrollToSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class SelectingItemsControlSetters
     public static KeyFrame SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class SelectingItemsControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlSelectedIndex(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSelectingItemsControlSelectedIndex(this KeyFrame keyFrame, System.Int32 value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class SelectingItemsControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlSelectedIndex(this KeyFrame keyFrame, System.Int32 value)
+    public static KeyFrame SetSelectingItemsControlSelectedIndex(this KeyFrame keyFrame, IObservable<System.Int32> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSelectingItemsControlSelectedIndex(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class SelectingItemsControlSetters
     public static KeyFrame SetSelectingItemsControlSelectedIndex(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlSelectedIndex(this KeyFrame keyFrame, IObservable<System.Int32> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class SelectingItemsControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSelectingItemsControlSelectedItem(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class SelectingItemsControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlSelectedItem(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetSelectingItemsControlSelectedItem(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSelectingItemsControlSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class SelectingItemsControlSetters
     public static KeyFrame SetSelectingItemsControlSelectedItem(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlSelectedItem(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class SelectingItemsControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlIsTextSearchEnabled(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSelectingItemsControlIsTextSearchEnabled(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class SelectingItemsControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlIsTextSearchEnabled(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetSelectingItemsControlIsTextSearchEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSelectingItemsControlIsTextSearchEnabled(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class SelectingItemsControlSetters
     public static KeyFrame SetSelectingItemsControlIsTextSearchEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlIsTextSearchEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class SelectingItemsControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSelectingItemsControlWrapSelection(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSelectingItemsControlWrapSelection(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class SelectingItemsControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlWrapSelection(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetSelectingItemsControlWrapSelection(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSelectingItemsControlWrapSelection(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class SelectingItemsControlSetters
     public static KeyFrame SetSelectingItemsControlWrapSelection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSelectingItemsControlWrapSelection(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, observable.ToBinding()));
         return keyFrame;
     }
 

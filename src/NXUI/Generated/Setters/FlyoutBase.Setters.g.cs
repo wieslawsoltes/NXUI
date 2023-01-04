@@ -21,17 +21,16 @@ public static partial class FlyoutBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetFlyoutBasePlacement(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetFlyoutBasePlacement(this KeyFrame keyFrame, Avalonia.Controls.FlyoutPlacementMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class FlyoutBaseSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetFlyoutBasePlacement(this KeyFrame keyFrame, Avalonia.Controls.FlyoutPlacementMode value)
+    public static KeyFrame SetFlyoutBasePlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.FlyoutPlacementMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetFlyoutBasePlacement(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class FlyoutBaseSetters
     public static KeyFrame SetFlyoutBasePlacement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetFlyoutBasePlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.FlyoutPlacementMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class FlyoutBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetFlyoutBaseShowMode(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetFlyoutBaseShowMode(this KeyFrame keyFrame, Avalonia.Controls.FlyoutShowMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class FlyoutBaseSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetFlyoutBaseShowMode(this KeyFrame keyFrame, Avalonia.Controls.FlyoutShowMode value)
+    public static KeyFrame SetFlyoutBaseShowMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.FlyoutShowMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetFlyoutBaseShowMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class FlyoutBaseSetters
     public static KeyFrame SetFlyoutBaseShowMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetFlyoutBaseShowMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.FlyoutShowMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class FlyoutBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetFlyoutBaseOverlayInputPassThroughElement(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetFlyoutBaseOverlayInputPassThroughElement(this KeyFrame keyFrame, Avalonia.Input.IInputElement value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class FlyoutBaseSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetFlyoutBaseOverlayInputPassThroughElement(this KeyFrame keyFrame, Avalonia.Input.IInputElement value)
+    public static KeyFrame SetFlyoutBaseOverlayInputPassThroughElement(this KeyFrame keyFrame, IObservable<Avalonia.Input.IInputElement> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetFlyoutBaseOverlayInputPassThroughElement(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class FlyoutBaseSetters
     public static KeyFrame SetFlyoutBaseOverlayInputPassThroughElement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetFlyoutBaseOverlayInputPassThroughElement(this KeyFrame keyFrame, IObservable<Avalonia.Input.IInputElement> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class FlyoutBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetFlyoutBaseAttachedFlyout(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetFlyoutBaseAttachedFlyout(this KeyFrame keyFrame, Avalonia.Controls.Primitives.FlyoutBase value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class FlyoutBaseSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetFlyoutBaseAttachedFlyout(this KeyFrame keyFrame, Avalonia.Controls.Primitives.FlyoutBase value)
+    public static KeyFrame SetFlyoutBaseAttachedFlyout(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetFlyoutBaseAttachedFlyout(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class FlyoutBaseSetters
     public static KeyFrame SetFlyoutBaseAttachedFlyout(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetFlyoutBaseAttachedFlyout(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

@@ -15,7 +15,7 @@ public static partial class InlineUIContainerExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Child<T>(this T obj, Avalonia.Controls.IControl value) where T : Avalonia.Controls.Documents.InlineUIContainer
+    public static T Child<T>(this T obj, Avalonia.Controls.Control value) where T : Avalonia.Controls.Documents.InlineUIContainer
     {
         obj[Avalonia.Controls.Documents.InlineUIContainer.ChildProperty] = value;
         return obj;
@@ -52,7 +52,7 @@ public static partial class InlineUIContainerExtensions
     /// <returns>The target object reference.</returns>
     public static T Child<T>(
         this T obj,
-        IObservable<Avalonia.Controls.IControl> observable,
+        IObservable<Avalonia.Controls.Control> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.InlineUIContainer
     {
@@ -85,7 +85,7 @@ public static partial class InlineUIContainerExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.IControl> ObserveChild(this Avalonia.Controls.Documents.InlineUIContainer obj)
+    public static IObservable<Avalonia.Controls.Control> ObserveChild(this Avalonia.Controls.Documents.InlineUIContainer obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty);
     }
@@ -97,7 +97,7 @@ public static partial class InlineUIContainerExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Documents.InlineUIContainer, IObservable<Avalonia.Controls.IControl>> handler) where T : Avalonia.Controls.Documents.InlineUIContainer
+    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Documents.InlineUIContainer, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Documents.InlineUIContainer
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty);
         handler(obj, observable);

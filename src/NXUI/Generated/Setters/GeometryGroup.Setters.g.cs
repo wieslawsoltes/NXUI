@@ -21,17 +21,16 @@ public static partial class GeometryGroupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryGroupChildren(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGeometryGroupChildren(this KeyFrame keyFrame, Avalonia.Media.GeometryCollection value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.ChildrenProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.ChildrenProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class GeometryGroupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryGroupChildren(this KeyFrame keyFrame, Avalonia.Media.GeometryCollection value)
+    public static KeyFrame SetGeometryGroupChildren(this KeyFrame keyFrame, IObservable<Avalonia.Media.GeometryCollection> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.ChildrenProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.ChildrenProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGeometryGroupChildren(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.ChildrenProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class GeometryGroupSetters
     public static KeyFrame SetGeometryGroupChildren(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.ChildrenProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryGroupChildren(this KeyFrame keyFrame, IObservable<Avalonia.Media.GeometryCollection> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.ChildrenProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class GeometryGroupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryGroupFillRule(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGeometryGroupFillRule(this KeyFrame keyFrame, Avalonia.Media.FillRule value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.FillRuleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.FillRuleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class GeometryGroupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryGroupFillRule(this KeyFrame keyFrame, Avalonia.Media.FillRule value)
+    public static KeyFrame SetGeometryGroupFillRule(this KeyFrame keyFrame, IObservable<Avalonia.Media.FillRule> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.FillRuleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.FillRuleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGeometryGroupFillRule(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.FillRuleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class GeometryGroupSetters
     public static KeyFrame SetGeometryGroupFillRule(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.FillRuleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryGroupFillRule(this KeyFrame keyFrame, IObservable<Avalonia.Media.FillRule> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryGroup.FillRuleProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

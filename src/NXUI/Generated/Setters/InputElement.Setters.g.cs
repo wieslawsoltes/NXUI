@@ -21,17 +21,16 @@ public static partial class InputElementSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetInputElementFocusable(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetInputElementFocusable(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Input.InputElement.FocusableProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.FocusableProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class InputElementSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInputElementFocusable(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetInputElementFocusable(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.FocusableProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.FocusableProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetInputElementFocusable(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Input.InputElement.FocusableProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class InputElementSetters
     public static KeyFrame SetInputElementFocusable(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.FocusableProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInputElementFocusable(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.FocusableProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class InputElementSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetInputElementIsEnabled(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetInputElementIsEnabled(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Input.InputElement.IsEnabledProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsEnabledProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class InputElementSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInputElementIsEnabled(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetInputElementIsEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsEnabledProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsEnabledProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetInputElementIsEnabled(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Input.InputElement.IsEnabledProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class InputElementSetters
     public static KeyFrame SetInputElementIsEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsEnabledProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInputElementIsEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class InputElementSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetInputElementCursor(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetInputElementCursor(this KeyFrame keyFrame, Avalonia.Input.Cursor value)
     {
-        style.Setters.Add(new Setter(Avalonia.Input.InputElement.CursorProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.CursorProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class InputElementSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInputElementCursor(this KeyFrame keyFrame, Avalonia.Input.Cursor value)
+    public static KeyFrame SetInputElementCursor(this KeyFrame keyFrame, IObservable<Avalonia.Input.Cursor> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.CursorProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.CursorProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetInputElementCursor(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Input.InputElement.CursorProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class InputElementSetters
     public static KeyFrame SetInputElementCursor(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.CursorProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInputElementCursor(this KeyFrame keyFrame, IObservable<Avalonia.Input.Cursor> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.CursorProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class InputElementSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetInputElementIsHitTestVisible(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetInputElementIsHitTestVisible(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Input.InputElement.IsHitTestVisibleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsHitTestVisibleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class InputElementSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInputElementIsHitTestVisible(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetInputElementIsHitTestVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsHitTestVisibleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsHitTestVisibleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetInputElementIsHitTestVisible(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Input.InputElement.IsHitTestVisibleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class InputElementSetters
     public static KeyFrame SetInputElementIsHitTestVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsHitTestVisibleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInputElementIsHitTestVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsHitTestVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
 

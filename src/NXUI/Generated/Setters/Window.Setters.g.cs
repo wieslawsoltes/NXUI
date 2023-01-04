@@ -21,17 +21,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowSizeToContent(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowSizeToContent(this KeyFrame keyFrame, Avalonia.Controls.SizeToContent value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.SizeToContentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SizeToContentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowSizeToContent(this KeyFrame keyFrame, Avalonia.Controls.SizeToContent value)
+    public static KeyFrame SetWindowSizeToContent(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SizeToContent> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SizeToContentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SizeToContentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowSizeToContent(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.SizeToContentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowSizeToContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SizeToContentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowSizeToContent(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SizeToContent> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SizeToContentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowExtendClientAreaToDecorationsHint(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowExtendClientAreaToDecorationsHint(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowExtendClientAreaToDecorationsHint(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetWindowExtendClientAreaToDecorationsHint(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowExtendClientAreaToDecorationsHint(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowExtendClientAreaToDecorationsHint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowExtendClientAreaToDecorationsHint(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowExtendClientAreaChromeHints(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowExtendClientAreaChromeHints(this KeyFrame keyFrame, Avalonia.Platform.ExtendClientAreaChromeHints value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowExtendClientAreaChromeHints(this KeyFrame keyFrame, Avalonia.Platform.ExtendClientAreaChromeHints value)
+    public static KeyFrame SetWindowExtendClientAreaChromeHints(this KeyFrame keyFrame, IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowExtendClientAreaChromeHints(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowExtendClientAreaChromeHints(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowExtendClientAreaChromeHints(this KeyFrame keyFrame, IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowExtendClientAreaTitleBarHeightHint(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowExtendClientAreaTitleBarHeightHint(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowExtendClientAreaTitleBarHeightHint(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetWindowExtendClientAreaTitleBarHeightHint(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowExtendClientAreaTitleBarHeightHint(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowExtendClientAreaTitleBarHeightHint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowExtendClientAreaTitleBarHeightHint(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowSystemDecorations(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowSystemDecorations(this KeyFrame keyFrame, Avalonia.Controls.SystemDecorations value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.SystemDecorationsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SystemDecorationsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowSystemDecorations(this KeyFrame keyFrame, Avalonia.Controls.SystemDecorations value)
+    public static KeyFrame SetWindowSystemDecorations(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SystemDecorations> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SystemDecorationsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SystemDecorationsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowSystemDecorations(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.SystemDecorationsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowSystemDecorations(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SystemDecorationsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowSystemDecorations(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SystemDecorations> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SystemDecorationsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowShowActivated(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowShowActivated(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.ShowActivatedProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowActivatedProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowShowActivated(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetWindowShowActivated(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowActivatedProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowActivatedProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowShowActivated(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.ShowActivatedProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowShowActivated(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowActivatedProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowShowActivated(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowActivatedProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowShowInTaskbar(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowShowInTaskbar(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.ShowInTaskbarProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowInTaskbarProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowShowInTaskbar(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetWindowShowInTaskbar(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowInTaskbarProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowInTaskbarProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowShowInTaskbar(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.ShowInTaskbarProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowShowInTaskbar(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowInTaskbarProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowShowInTaskbar(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowInTaskbarProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowWindowState(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowWindowState(this KeyFrame keyFrame, Avalonia.Controls.WindowState value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStateProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStateProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowWindowState(this KeyFrame keyFrame, Avalonia.Controls.WindowState value)
+    public static KeyFrame SetWindowWindowState(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowState> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStateProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStateProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowWindowState(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStateProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowWindowState(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStateProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowWindowState(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowState> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStateProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowTitle(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowTitle(this KeyFrame keyFrame, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.TitleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.TitleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowTitle(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetWindowTitle(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.TitleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.TitleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowTitle(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.TitleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowTitle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.TitleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowTitle(this KeyFrame keyFrame, IObservable<System.String> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.TitleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -687,17 +669,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.IconProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.IconProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowIcon(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowIcon(this KeyFrame keyFrame, Avalonia.Controls.WindowIcon value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.IconProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.IconProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.IconProperty"/>.
     /// </summary>
@@ -714,12 +695,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.IconProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowIcon(this KeyFrame keyFrame, Avalonia.Controls.WindowIcon value)
+    public static KeyFrame SetWindowIcon(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowIcon> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.IconProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.IconProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.IconProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowIcon(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.IconProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -731,18 +723,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowIcon(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.IconProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.IconProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowIcon(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowIcon> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.IconProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -761,17 +741,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowWindowStartupLocation(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowWindowStartupLocation(this KeyFrame keyFrame, Avalonia.Controls.WindowStartupLocation value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStartupLocationProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStartupLocationProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
     /// </summary>
@@ -788,12 +767,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowWindowStartupLocation(this KeyFrame keyFrame, Avalonia.Controls.WindowStartupLocation value)
+    public static KeyFrame SetWindowWindowStartupLocation(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowStartupLocation> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStartupLocationProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStartupLocationProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowWindowStartupLocation(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStartupLocationProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -805,18 +795,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowWindowStartupLocation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStartupLocationProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowWindowStartupLocation(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowStartupLocation> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStartupLocationProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -835,17 +813,16 @@ public static partial class WindowSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowCanResize(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowCanResize(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Window.CanResizeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.CanResizeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
     /// </summary>
@@ -862,12 +839,23 @@ public static partial class WindowSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowCanResize(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetWindowCanResize(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.CanResizeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.CanResizeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowCanResize(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Window.CanResizeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -879,18 +867,6 @@ public static partial class WindowSetters
     public static KeyFrame SetWindowCanResize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.CanResizeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowCanResize(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.CanResizeProperty, observable.ToBinding()));
         return keyFrame;
     }
 

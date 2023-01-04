@@ -21,17 +21,16 @@ public static partial class GradientStopSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GradientStop.OffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientStop.OffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGradientStopOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGradientStopOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GradientStop.OffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientStop.OffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GradientStop.OffsetProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class GradientStopSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientStop.OffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGradientStopOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetGradientStopOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientStop.OffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientStop.OffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GradientStop.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGradientStopOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GradientStop.OffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class GradientStopSetters
     public static KeyFrame SetGradientStopOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientStop.OffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientStop.OffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGradientStopOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientStop.OffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class GradientStopSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GradientStop.ColorProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientStop.ColorProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGradientStopColor(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGradientStopColor(this KeyFrame keyFrame, Avalonia.Media.Color value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GradientStop.ColorProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientStop.ColorProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GradientStop.ColorProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class GradientStopSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientStop.ColorProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGradientStopColor(this KeyFrame keyFrame, Avalonia.Media.Color value)
+    public static KeyFrame SetGradientStopColor(this KeyFrame keyFrame, IObservable<Avalonia.Media.Color> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientStop.ColorProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientStop.ColorProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GradientStop.ColorProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGradientStopColor(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GradientStop.ColorProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class GradientStopSetters
     public static KeyFrame SetGradientStopColor(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientStop.ColorProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientStop.ColorProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGradientStopColor(this KeyFrame keyFrame, IObservable<Avalonia.Media.Color> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientStop.ColorProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

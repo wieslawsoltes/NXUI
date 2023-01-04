@@ -21,17 +21,16 @@ public static partial class PolylineSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Polyline.PointsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Polyline.PointsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPolylinePoints(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPolylinePoints(this KeyFrame keyFrame, System.Collections.Generic.IList<Avalonia.Point> value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.PointsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.PointsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Polyline.PointsProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class PolylineSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Polyline.PointsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPolylinePoints(this KeyFrame keyFrame, System.Collections.Generic.IList<Avalonia.Point> value)
+    public static KeyFrame SetPolylinePoints(this KeyFrame keyFrame, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.PointsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.PointsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Polyline.PointsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPolylinePoints(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.PointsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class PolylineSetters
     public static KeyFrame SetPolylinePoints(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.PointsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Polyline.PointsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPolylinePoints(this KeyFrame keyFrame, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polyline.PointsProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

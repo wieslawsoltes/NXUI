@@ -21,17 +21,16 @@ public static partial class CalendarItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarItemHeaderBackground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetCalendarItemHeaderBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class CalendarItemSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarItemHeaderBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetCalendarItemHeaderBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetCalendarItemHeaderBackground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -68,18 +78,6 @@ public static partial class CalendarItemSetters
         return keyFrame;
     }
 
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarItemHeaderBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty, observable.ToBinding()));
-        return keyFrame;
-    }
-
     // Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty
 
     /// <summary>
@@ -88,12 +86,46 @@ public static partial class CalendarItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarItemDayTitleTemplate(this Style style, Avalonia.Controls.ITemplate<Avalonia.Controls.IControl> value)
+    public static Style SetCalendarItemDayTitleTemplate(this Style style, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, value));
         return style;
     }
 
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetCalendarItemDayTitleTemplate(this KeyFrame keyFrame, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetCalendarItemDayTitleTemplate(this Style style, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetCalendarItemDayTitleTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, observable.ToBinding()));
+        return keyFrame;
+    }
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
     /// </summary>
@@ -107,30 +139,6 @@ public static partial class CalendarItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="observable">The property observable.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetCalendarItemDayTitleTemplate(this Style style, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> observable)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, observable.ToBinding()));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarItemDayTitleTemplate(this KeyFrame keyFrame, Avalonia.Controls.ITemplate<Avalonia.Controls.IControl> value)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, value));
-        return keyFrame;
-    }
-
-    /// <summary>
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
@@ -139,18 +147,6 @@ public static partial class CalendarItemSetters
     public static KeyFrame SetCalendarItemDayTitleTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCalendarItemDayTitleTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

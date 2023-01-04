@@ -21,17 +21,16 @@ public static partial class ConicGradientBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetConicGradientBrushCenter(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetConicGradientBrushCenter(this KeyFrame keyFrame, Avalonia.RelativePoint value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.CenterProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.CenterProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ConicGradientBrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetConicGradientBrushCenter(this KeyFrame keyFrame, Avalonia.RelativePoint value)
+    public static KeyFrame SetConicGradientBrushCenter(this KeyFrame keyFrame, IObservable<Avalonia.RelativePoint> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.CenterProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.CenterProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetConicGradientBrushCenter(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.CenterProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ConicGradientBrushSetters
     public static KeyFrame SetConicGradientBrushCenter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.CenterProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetConicGradientBrushCenter(this KeyFrame keyFrame, IObservable<Avalonia.RelativePoint> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.CenterProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ConicGradientBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetConicGradientBrushAngle(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetConicGradientBrushAngle(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.AngleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.AngleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ConicGradientBrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetConicGradientBrushAngle(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetConicGradientBrushAngle(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.AngleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.AngleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetConicGradientBrushAngle(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.AngleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ConicGradientBrushSetters
     public static KeyFrame SetConicGradientBrushAngle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.AngleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetConicGradientBrushAngle(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.AngleProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

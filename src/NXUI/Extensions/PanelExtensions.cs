@@ -27,7 +27,7 @@ public static partial class PanelExtensions
     /// <param name="children"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T Children<T>(this T panel, params IControl[] children) where T : Panel
+    public static T Children<T>(this T panel, params Control[] children) where T : Panel
     {
         panel.Children.AddRange(children);
         return panel;

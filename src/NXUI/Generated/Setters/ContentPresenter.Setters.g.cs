@@ -21,17 +21,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterBackground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetContentPresenterBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterBackground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterBackground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterBorderBrush(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterBorderBrush(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBorderBrush(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetContentPresenterBorderBrush(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterBorderBrush(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterBorderBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBorderBrush(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterBorderThickness(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterBorderThickness(this KeyFrame keyFrame, Avalonia.Thickness value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBorderThickness(this KeyFrame keyFrame, Avalonia.Thickness value)
+    public static KeyFrame SetContentPresenterBorderThickness(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterBorderThickness(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterBorderThickness(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBorderThickness(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterCornerRadius(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterCornerRadius(this KeyFrame keyFrame, Avalonia.CornerRadius value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterCornerRadius(this KeyFrame keyFrame, Avalonia.CornerRadius value)
+    public static KeyFrame SetContentPresenterCornerRadius(this KeyFrame keyFrame, IObservable<Avalonia.CornerRadius> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterCornerRadius(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterCornerRadius(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterCornerRadius(this KeyFrame keyFrame, IObservable<Avalonia.CornerRadius> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterBoxShadow(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterBoxShadow(this KeyFrame keyFrame, Avalonia.Media.BoxShadows value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBoxShadow(this KeyFrame keyFrame, Avalonia.Media.BoxShadows value)
+    public static KeyFrame SetContentPresenterBoxShadow(this KeyFrame keyFrame, IObservable<Avalonia.Media.BoxShadows> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterBoxShadow(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterBoxShadow(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterBoxShadow(this KeyFrame keyFrame, IObservable<Avalonia.Media.BoxShadows> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterForeground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetContentPresenterForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterForeground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterForeground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterFontFamily(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterFontFamily(this KeyFrame keyFrame, Avalonia.Media.FontFamily value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontFamily(this KeyFrame keyFrame, Avalonia.Media.FontFamily value)
+    public static KeyFrame SetContentPresenterFontFamily(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontFamily> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterFontFamily(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterFontFamily(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontFamily(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontFamily> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterFontSize(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterFontSize(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontSize(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetContentPresenterFontSize(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterFontSize(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterFontSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontSize(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterFontStyle(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterFontStyle(this KeyFrame keyFrame, Avalonia.Media.FontStyle value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontStyle(this KeyFrame keyFrame, Avalonia.Media.FontStyle value)
+    public static KeyFrame SetContentPresenterFontStyle(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStyle> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterFontStyle(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterFontStyle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontStyle(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStyle> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -687,17 +669,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterFontWeight(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterFontWeight(this KeyFrame keyFrame, Avalonia.Media.FontWeight value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
     /// </summary>
@@ -714,12 +695,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontWeight(this KeyFrame keyFrame, Avalonia.Media.FontWeight value)
+    public static KeyFrame SetContentPresenterFontWeight(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontWeight> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterFontWeight(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -731,18 +723,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterFontWeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontWeight(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontWeight> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -761,17 +741,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterFontStretch(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterFontStretch(this KeyFrame keyFrame, Avalonia.Media.FontStretch value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
     /// </summary>
@@ -788,12 +767,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontStretch(this KeyFrame keyFrame, Avalonia.Media.FontStretch value)
+    public static KeyFrame SetContentPresenterFontStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStretch> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterFontStretch(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -805,18 +795,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterFontStretch(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterFontStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStretch> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -835,17 +813,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterContent(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterContent(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
     /// </summary>
@@ -862,12 +839,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterContent(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetContentPresenterContent(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterContent(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -879,18 +867,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterContent(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -909,17 +885,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterContentTemplate(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterContentTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
     /// </summary>
@@ -936,12 +911,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterContentTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrame SetContentPresenterContentTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterContentTemplate(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -953,18 +939,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterContentTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterContentTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -983,17 +957,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.HorizontalAlignment value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
     /// </summary>
@@ -1010,12 +983,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.HorizontalAlignment value)
+    public static KeyFrame SetContentPresenterHorizontalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1027,18 +1011,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterHorizontalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -1057,17 +1029,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.VerticalAlignment value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
     /// </summary>
@@ -1084,12 +1055,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.VerticalAlignment value)
+    public static KeyFrame SetContentPresenterVerticalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1101,18 +1083,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterVerticalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.VerticalAlignment> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -1131,17 +1101,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterPadding(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterPadding(this KeyFrame keyFrame, Avalonia.Thickness value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
     /// </summary>
@@ -1158,12 +1127,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterPadding(this KeyFrame keyFrame, Avalonia.Thickness value)
+    public static KeyFrame SetContentPresenterPadding(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterPadding(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1175,18 +1155,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterPadding(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterPadding(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -1205,17 +1173,16 @@ public static partial class ContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetContentPresenterRecognizesAccessKey(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterRecognizesAccessKey(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
     /// </summary>
@@ -1232,12 +1199,23 @@ public static partial class ContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterRecognizesAccessKey(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetContentPresenterRecognizesAccessKey(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterRecognizesAccessKey(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1249,18 +1227,6 @@ public static partial class ContentPresenterSetters
     public static KeyFrame SetContentPresenterRecognizesAccessKey(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContentPresenterRecognizesAccessKey(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

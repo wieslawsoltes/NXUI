@@ -21,17 +21,16 @@ public static partial class TimePickerPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTimePickerPresenterMinuteIncrement(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTimePickerPresenterMinuteIncrement(this KeyFrame keyFrame, System.Int32 value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class TimePickerPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterMinuteIncrement(this KeyFrame keyFrame, System.Int32 value)
+    public static KeyFrame SetTimePickerPresenterMinuteIncrement(this KeyFrame keyFrame, IObservable<System.Int32> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTimePickerPresenterMinuteIncrement(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class TimePickerPresenterSetters
     public static KeyFrame SetTimePickerPresenterMinuteIncrement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterMinuteIncrement(this KeyFrame keyFrame, IObservable<System.Int32> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class TimePickerPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTimePickerPresenterClockIdentifier(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTimePickerPresenterClockIdentifier(this KeyFrame keyFrame, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class TimePickerPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterClockIdentifier(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetTimePickerPresenterClockIdentifier(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTimePickerPresenterClockIdentifier(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class TimePickerPresenterSetters
     public static KeyFrame SetTimePickerPresenterClockIdentifier(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterClockIdentifier(this KeyFrame keyFrame, IObservable<System.String> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class TimePickerPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TimePickerPresenter.TimeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TimePickerPresenter.TimeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTimePickerPresenterTime(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTimePickerPresenterTime(this KeyFrame keyFrame, System.TimeSpan value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.TimeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.TimeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePickerPresenter.TimeProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class TimePickerPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TimePickerPresenter.TimeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterTime(this KeyFrame keyFrame, System.TimeSpan value)
+    public static KeyFrame SetTimePickerPresenterTime(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.TimeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.TimeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TimePickerPresenter.TimeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTimePickerPresenterTime(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.TimeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class TimePickerPresenterSetters
     public static KeyFrame SetTimePickerPresenterTime(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.TimeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TimePickerPresenter.TimeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTimePickerPresenterTime(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePickerPresenter.TimeProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

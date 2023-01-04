@@ -21,17 +21,16 @@ public static partial class LayoutTransformControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetLayoutTransformControlLayoutTransform(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetLayoutTransformControlLayoutTransform(this KeyFrame keyFrame, Avalonia.Media.ITransform value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class LayoutTransformControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetLayoutTransformControlLayoutTransform(this KeyFrame keyFrame, Avalonia.Media.ITransform value)
+    public static KeyFrame SetLayoutTransformControlLayoutTransform(this KeyFrame keyFrame, IObservable<Avalonia.Media.ITransform> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetLayoutTransformControlLayoutTransform(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class LayoutTransformControlSetters
     public static KeyFrame SetLayoutTransformControlLayoutTransform(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetLayoutTransformControlLayoutTransform(this KeyFrame keyFrame, IObservable<Avalonia.Media.ITransform> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class LayoutTransformControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetLayoutTransformControlUseRenderTransform(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetLayoutTransformControlUseRenderTransform(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class LayoutTransformControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetLayoutTransformControlUseRenderTransform(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetLayoutTransformControlUseRenderTransform(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetLayoutTransformControlUseRenderTransform(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class LayoutTransformControlSetters
     public static KeyFrame SetLayoutTransformControlUseRenderTransform(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetLayoutTransformControlUseRenderTransform(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

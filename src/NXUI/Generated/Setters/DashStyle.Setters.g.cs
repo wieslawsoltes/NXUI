@@ -21,17 +21,16 @@ public static partial class DashStyleSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDashStyleDashes(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDashStyleDashes(this KeyFrame keyFrame, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.DashStyle.DashesProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.DashStyle.DashesProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class DashStyleSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDashStyleDashes(this KeyFrame keyFrame, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static KeyFrame SetDashStyleDashes(this KeyFrame keyFrame, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.DashStyle.DashesProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.DashStyle.DashesProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDashStyleDashes(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.DashStyle.DashesProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class DashStyleSetters
     public static KeyFrame SetDashStyleDashes(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DashStyle.DashesProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDashStyleDashes(this KeyFrame keyFrame, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.DashStyle.DashesProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class DashStyleSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDashStyleOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDashStyleOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.DashStyle.OffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.DashStyle.OffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class DashStyleSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDashStyleOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetDashStyleOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.DashStyle.OffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.DashStyle.OffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDashStyleOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.DashStyle.OffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class DashStyleSetters
     public static KeyFrame SetDashStyleOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DashStyle.OffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDashStyleOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.DashStyle.OffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

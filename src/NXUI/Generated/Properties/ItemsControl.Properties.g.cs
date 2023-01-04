@@ -26,10 +26,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ItemsControl.ItemsPanelProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>> ItemsControlItemsPanel => Avalonia.Controls.ItemsControl.ItemsPanelProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> ItemsControlItemsPanel => Avalonia.Controls.ItemsControl.ItemsPanelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ItemsControl.ItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ItemsControlItemTemplate => Avalonia.Controls.ItemsControl.ItemTemplateProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Data.IBinding> ItemsControlDisplayMemberBinding => Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty;
 }

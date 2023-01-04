@@ -14,12 +14,46 @@ public static partial class InlineUIContainerSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetInlineUIContainerChild(this Style style, Avalonia.Controls.IControl value)
+    public static Style SetInlineUIContainerChild(this Style style, Avalonia.Controls.Control value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, value));
         return style;
     }
 
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetInlineUIContainerChild(this KeyFrame keyFrame, Avalonia.Controls.Control value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetInlineUIContainerChild(this Style style, IObservable<Avalonia.Controls.Control> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetInlineUIContainerChild(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Control> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, observable.ToBinding()));
+        return keyFrame;
+    }
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
     /// </summary>
@@ -33,30 +67,6 @@ public static partial class InlineUIContainerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="observable">The property observable.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetInlineUIContainerChild(this Style style, IObservable<Avalonia.Controls.IControl> observable)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, observable.ToBinding()));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInlineUIContainerChild(this KeyFrame keyFrame, Avalonia.Controls.IControl value)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, value));
-        return keyFrame;
-    }
-
-    /// <summary>
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
@@ -65,18 +75,6 @@ public static partial class InlineUIContainerSetters
     public static KeyFrame SetInlineUIContainerChild(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInlineUIContainerChild(this KeyFrame keyFrame, IObservable<Avalonia.Controls.IControl> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

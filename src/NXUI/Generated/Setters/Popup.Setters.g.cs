@@ -21,17 +21,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupWindowManagerAddShadowHint(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupWindowManagerAddShadowHint(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupWindowManagerAddShadowHint(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetPopupWindowManagerAddShadowHint(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupWindowManagerAddShadowHint(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupWindowManagerAddShadowHint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupWindowManagerAddShadowHint(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupChild(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupChild(this KeyFrame keyFrame, Avalonia.Controls.Control value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ChildProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ChildProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupChild(this KeyFrame keyFrame, Avalonia.Controls.Control value)
+    public static KeyFrame SetPopupChild(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Control> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ChildProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ChildProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupChild(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ChildProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupChild(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ChildProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupChild(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Control> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ChildProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupInheritsTransform(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupInheritsTransform(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupInheritsTransform(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetPopupInheritsTransform(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupInheritsTransform(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupInheritsTransform(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupInheritsTransform(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupIsOpen(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupIsOpen(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsOpenProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsOpenProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupIsOpen(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetPopupIsOpen(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsOpenProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsOpenProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupIsOpen(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsOpenProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupIsOpen(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsOpenProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupIsOpen(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsOpenProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupPlacementAnchor(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupPlacementAnchor(this KeyFrame keyFrame, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementAnchor(this KeyFrame keyFrame, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value)
+    public static KeyFrame SetPopupPlacementAnchor(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupPlacementAnchor(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupPlacementAnchor(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementAnchor(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupPlacementConstraintAdjustment(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupPlacementConstraintAdjustment(this KeyFrame keyFrame, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementConstraintAdjustment(this KeyFrame keyFrame, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value)
+    public static KeyFrame SetPopupPlacementConstraintAdjustment(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupPlacementConstraintAdjustment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupPlacementConstraintAdjustment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementConstraintAdjustment(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupPlacementGravity(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupPlacementGravity(this KeyFrame keyFrame, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementGravity(this KeyFrame keyFrame, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value)
+    public static KeyFrame SetPopupPlacementGravity(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupPlacementGravity(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupPlacementGravity(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementGravity(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupPlacementMode(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupPlacementMode(this KeyFrame keyFrame, Avalonia.Controls.PlacementMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementMode(this KeyFrame keyFrame, Avalonia.Controls.PlacementMode value)
+    public static KeyFrame SetPopupPlacementMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.PlacementMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupPlacementMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupPlacementMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.PlacementMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupPlacementRect(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupPlacementRect(this KeyFrame keyFrame, System.Nullable<Avalonia.Rect> value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementRectProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementRectProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementRect(this KeyFrame keyFrame, System.Nullable<Avalonia.Rect> value)
+    public static KeyFrame SetPopupPlacementRect(this KeyFrame keyFrame, IObservable<System.Nullable<Avalonia.Rect>> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementRectProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementRectProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupPlacementRect(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementRectProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupPlacementRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementRectProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementRect(this KeyFrame keyFrame, IObservable<System.Nullable<Avalonia.Rect>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementRectProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -687,17 +669,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupPlacementTarget(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupPlacementTarget(this KeyFrame keyFrame, Avalonia.Controls.Control value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/>.
     /// </summary>
@@ -714,12 +695,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementTarget(this KeyFrame keyFrame, Avalonia.Controls.Control value)
+    public static KeyFrame SetPopupPlacementTarget(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Control> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupPlacementTarget(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -731,18 +723,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupPlacementTarget(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementTarget(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Control> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -761,17 +741,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupOverlayDismissEventPassThrough(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupOverlayDismissEventPassThrough(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/>.
     /// </summary>
@@ -788,12 +767,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupOverlayDismissEventPassThrough(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetPopupOverlayDismissEventPassThrough(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupOverlayDismissEventPassThrough(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -805,18 +795,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupOverlayDismissEventPassThrough(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupOverlayDismissEventPassThrough(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -835,17 +813,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupOverlayInputPassThroughElement(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupOverlayInputPassThroughElement(this KeyFrame keyFrame, Avalonia.Input.IInputElement value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/>.
     /// </summary>
@@ -862,12 +839,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupOverlayInputPassThroughElement(this KeyFrame keyFrame, Avalonia.Input.IInputElement value)
+    public static KeyFrame SetPopupOverlayInputPassThroughElement(this KeyFrame keyFrame, IObservable<Avalonia.Input.IInputElement> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupOverlayInputPassThroughElement(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -879,18 +867,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupOverlayInputPassThroughElement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupOverlayInputPassThroughElement(this KeyFrame keyFrame, IObservable<Avalonia.Input.IInputElement> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -909,17 +885,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupHorizontalOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupHorizontalOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/>.
     /// </summary>
@@ -936,12 +911,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupHorizontalOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetPopupHorizontalOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupHorizontalOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -953,18 +939,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupHorizontalOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupHorizontalOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -983,17 +957,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupIsLightDismissEnabled(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupIsLightDismissEnabled(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/>.
     /// </summary>
@@ -1010,12 +983,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupIsLightDismissEnabled(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetPopupIsLightDismissEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupIsLightDismissEnabled(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1027,18 +1011,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupIsLightDismissEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupIsLightDismissEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -1057,17 +1029,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupVerticalOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupVerticalOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/>.
     /// </summary>
@@ -1084,12 +1055,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupVerticalOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetPopupVerticalOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupVerticalOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1101,18 +1083,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupVerticalOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupVerticalOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -1131,17 +1101,16 @@ public static partial class PopupSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPopupTopmost(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupTopmost(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TopmostProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TopmostProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/>.
     /// </summary>
@@ -1158,12 +1127,23 @@ public static partial class PopupSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupTopmost(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetPopupTopmost(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TopmostProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TopmostProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupTopmost(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TopmostProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1175,18 +1155,6 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupTopmost(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TopmostProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupTopmost(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TopmostProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

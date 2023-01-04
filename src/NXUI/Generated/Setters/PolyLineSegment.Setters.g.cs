@@ -21,17 +21,16 @@ public static partial class PolyLineSegmentSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPolyLineSegmentPoints(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPolyLineSegmentPoints(this KeyFrame keyFrame, Avalonia.Points value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class PolyLineSegmentSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPolyLineSegmentPoints(this KeyFrame keyFrame, Avalonia.Points value)
+    public static KeyFrame SetPolyLineSegmentPoints(this KeyFrame keyFrame, IObservable<Avalonia.Points> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPolyLineSegmentPoints(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class PolyLineSegmentSetters
     public static KeyFrame SetPolyLineSegmentPoints(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPolyLineSegmentPoints(this KeyFrame keyFrame, IObservable<Avalonia.Points> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

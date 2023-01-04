@@ -21,17 +21,16 @@ public static partial class TabItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTabItemTabStripPlacement(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabItemTabStripPlacement(this KeyFrame keyFrame, Avalonia.Controls.Dock value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TabItem.TabStripPlacementProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.TabStripPlacementProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class TabItemSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabItemTabStripPlacement(this KeyFrame keyFrame, Avalonia.Controls.Dock value)
+    public static KeyFrame SetTabItemTabStripPlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Dock> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.TabStripPlacementProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.TabStripPlacementProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabItemTabStripPlacement(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabItem.TabStripPlacementProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class TabItemSetters
     public static KeyFrame SetTabItemTabStripPlacement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.TabStripPlacementProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabItemTabStripPlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Dock> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.TabStripPlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class TabItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTabItemIsSelected(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabItemIsSelected(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class TabItemSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabItemIsSelected(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetTabItemIsSelected(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabItemIsSelected(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class TabItemSetters
     public static KeyFrame SetTabItemIsSelected(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabItemIsSelected(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

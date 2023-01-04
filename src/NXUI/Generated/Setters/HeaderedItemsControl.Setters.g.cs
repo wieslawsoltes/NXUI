@@ -21,17 +21,16 @@ public static partial class HeaderedItemsControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetHeaderedItemsControlHeader(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetHeaderedItemsControlHeader(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class HeaderedItemsControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetHeaderedItemsControlHeader(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetHeaderedItemsControlHeader(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetHeaderedItemsControlHeader(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class HeaderedItemsControlSetters
     public static KeyFrame SetHeaderedItemsControlHeader(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetHeaderedItemsControlHeader(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

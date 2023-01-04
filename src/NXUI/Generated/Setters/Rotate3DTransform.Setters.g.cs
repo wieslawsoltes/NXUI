@@ -21,17 +21,16 @@ public static partial class Rotate3DTransformSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformAngleX(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRotate3DTransformAngleX(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class Rotate3DTransformSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformAngleX(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetRotate3DTransformAngleX(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRotate3DTransformAngleX(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class Rotate3DTransformSetters
     public static KeyFrame SetRotate3DTransformAngleX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformAngleX(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class Rotate3DTransformSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformAngleY(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRotate3DTransformAngleY(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class Rotate3DTransformSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformAngleY(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetRotate3DTransformAngleY(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRotate3DTransformAngleY(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class Rotate3DTransformSetters
     public static KeyFrame SetRotate3DTransformAngleY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformAngleY(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class Rotate3DTransformSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformAngleZ(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRotate3DTransformAngleZ(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class Rotate3DTransformSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformAngleZ(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetRotate3DTransformAngleZ(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRotate3DTransformAngleZ(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class Rotate3DTransformSetters
     public static KeyFrame SetRotate3DTransformAngleZ(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformAngleZ(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class Rotate3DTransformSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformCenterX(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRotate3DTransformCenterX(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class Rotate3DTransformSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformCenterX(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetRotate3DTransformCenterX(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRotate3DTransformCenterX(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class Rotate3DTransformSetters
     public static KeyFrame SetRotate3DTransformCenterX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformCenterX(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class Rotate3DTransformSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformCenterY(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRotate3DTransformCenterY(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class Rotate3DTransformSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformCenterY(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetRotate3DTransformCenterY(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRotate3DTransformCenterY(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class Rotate3DTransformSetters
     public static KeyFrame SetRotate3DTransformCenterY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformCenterY(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class Rotate3DTransformSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformCenterZ(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRotate3DTransformCenterZ(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class Rotate3DTransformSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformCenterZ(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetRotate3DTransformCenterZ(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRotate3DTransformCenterZ(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class Rotate3DTransformSetters
     public static KeyFrame SetRotate3DTransformCenterZ(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformCenterZ(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class Rotate3DTransformSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRotate3DTransformDepth(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRotate3DTransformDepth(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class Rotate3DTransformSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformDepth(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetRotate3DTransformDepth(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRotate3DTransformDepth(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class Rotate3DTransformSetters
     public static KeyFrame SetRotate3DTransformDepth(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRotate3DTransformDepth(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

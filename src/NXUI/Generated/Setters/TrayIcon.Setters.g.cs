@@ -21,17 +21,16 @@ public static partial class TrayIconSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconCommand(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrayIconCommand(this KeyFrame keyFrame, System.Windows.Input.ICommand value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class TrayIconSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconCommand(this KeyFrame keyFrame, System.Windows.Input.ICommand value)
+    public static KeyFrame SetTrayIconCommand(this KeyFrame keyFrame, IObservable<System.Windows.Input.ICommand> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrayIconCommand(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class TrayIconSetters
     public static KeyFrame SetTrayIconCommand(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconCommand(this KeyFrame keyFrame, IObservable<System.Windows.Input.ICommand> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class TrayIconSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconIcons(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrayIconIcons(this KeyFrame keyFrame, Avalonia.Controls.TrayIcons value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class TrayIconSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconIcons(this KeyFrame keyFrame, Avalonia.Controls.TrayIcons value)
+    public static KeyFrame SetTrayIconIcons(this KeyFrame keyFrame, IObservable<Avalonia.Controls.TrayIcons> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrayIconIcons(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class TrayIconSetters
     public static KeyFrame SetTrayIconIcons(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconIcons(this KeyFrame keyFrame, IObservable<Avalonia.Controls.TrayIcons> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class TrayIconSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconMenu(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrayIconMenu(this KeyFrame keyFrame, Avalonia.Controls.NativeMenu value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class TrayIconSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconMenu(this KeyFrame keyFrame, Avalonia.Controls.NativeMenu value)
+    public static KeyFrame SetTrayIconMenu(this KeyFrame keyFrame, IObservable<Avalonia.Controls.NativeMenu> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrayIconMenu(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class TrayIconSetters
     public static KeyFrame SetTrayIconMenu(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconMenu(this KeyFrame keyFrame, IObservable<Avalonia.Controls.NativeMenu> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class TrayIconSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconIcon(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrayIconIcon(this KeyFrame keyFrame, Avalonia.Controls.WindowIcon value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class TrayIconSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconIcon(this KeyFrame keyFrame, Avalonia.Controls.WindowIcon value)
+    public static KeyFrame SetTrayIconIcon(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowIcon> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrayIconIcon(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class TrayIconSetters
     public static KeyFrame SetTrayIconIcon(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconIcon(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowIcon> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class TrayIconSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconToolTipText(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrayIconToolTipText(this KeyFrame keyFrame, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class TrayIconSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconToolTipText(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetTrayIconToolTipText(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrayIconToolTipText(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class TrayIconSetters
     public static KeyFrame SetTrayIconToolTipText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconToolTipText(this KeyFrame keyFrame, IObservable<System.String> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class TrayIconSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrayIconIsVisible(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrayIconIsVisible(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class TrayIconSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconIsVisible(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetTrayIconIsVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrayIconIsVisible(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class TrayIconSetters
     public static KeyFrame SetTrayIconIsVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrayIconIsVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

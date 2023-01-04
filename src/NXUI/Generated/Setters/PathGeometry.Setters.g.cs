@@ -21,17 +21,16 @@ public static partial class PathGeometrySetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPathGeometryFigures(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPathGeometryFigures(this KeyFrame keyFrame, Avalonia.Media.PathFigures value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FiguresProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FiguresProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class PathGeometrySetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathGeometryFigures(this KeyFrame keyFrame, Avalonia.Media.PathFigures value)
+    public static KeyFrame SetPathGeometryFigures(this KeyFrame keyFrame, IObservable<Avalonia.Media.PathFigures> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FiguresProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FiguresProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPathGeometryFigures(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FiguresProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class PathGeometrySetters
     public static KeyFrame SetPathGeometryFigures(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FiguresProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathGeometryFigures(this KeyFrame keyFrame, IObservable<Avalonia.Media.PathFigures> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FiguresProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class PathGeometrySetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPathGeometryFillRule(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPathGeometryFillRule(this KeyFrame keyFrame, Avalonia.Media.FillRule value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FillRuleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FillRuleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class PathGeometrySetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathGeometryFillRule(this KeyFrame keyFrame, Avalonia.Media.FillRule value)
+    public static KeyFrame SetPathGeometryFillRule(this KeyFrame keyFrame, IObservable<Avalonia.Media.FillRule> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FillRuleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FillRuleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPathGeometryFillRule(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FillRuleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class PathGeometrySetters
     public static KeyFrame SetPathGeometryFillRule(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FillRuleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathGeometryFillRule(this KeyFrame keyFrame, IObservable<Avalonia.Media.FillRule> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FillRuleProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

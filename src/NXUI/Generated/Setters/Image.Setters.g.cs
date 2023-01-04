@@ -21,17 +21,16 @@ public static partial class ImageSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetImageSource(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetImageSource(this KeyFrame keyFrame, Avalonia.Media.IImage value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Image.SourceProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.SourceProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ImageSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageSource(this KeyFrame keyFrame, Avalonia.Media.IImage value)
+    public static KeyFrame SetImageSource(this KeyFrame keyFrame, IObservable<Avalonia.Media.IImage> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.SourceProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.SourceProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetImageSource(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Image.SourceProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ImageSetters
     public static KeyFrame SetImageSource(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.SourceProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageSource(this KeyFrame keyFrame, IObservable<Avalonia.Media.IImage> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.SourceProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ImageSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetImageStretch(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetImageStretch(this KeyFrame keyFrame, Avalonia.Media.Stretch value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Image.StretchProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ImageSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageStretch(this KeyFrame keyFrame, Avalonia.Media.Stretch value)
+    public static KeyFrame SetImageStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.Stretch> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetImageStretch(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Image.StretchProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ImageSetters
     public static KeyFrame SetImageStretch(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.Stretch> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ImageSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetImageStretchDirection(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetImageStretchDirection(this KeyFrame keyFrame, Avalonia.Media.StretchDirection value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Image.StretchDirectionProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchDirectionProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ImageSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageStretchDirection(this KeyFrame keyFrame, Avalonia.Media.StretchDirection value)
+    public static KeyFrame SetImageStretchDirection(this KeyFrame keyFrame, IObservable<Avalonia.Media.StretchDirection> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchDirectionProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchDirectionProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetImageStretchDirection(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Image.StretchDirectionProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ImageSetters
     public static KeyFrame SetImageStretchDirection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchDirectionProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageStretchDirection(this KeyFrame keyFrame, IObservable<Avalonia.Media.StretchDirection> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

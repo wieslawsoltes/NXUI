@@ -59,6 +59,11 @@ public static partial class Properties
     public static Avalonia.AttachedProperty<System.Double> TextBlockLineHeight => Avalonia.Controls.TextBlock.LineHeightProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Double> TextBlockLetterSpacing => Avalonia.Controls.TextBlock.LetterSpacingProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Int32> TextBlockMaxLines => Avalonia.Controls.TextBlock.MaxLinesProperty;
@@ -87,4 +92,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationCollection> TextBlockTextDecorations => Avalonia.Controls.TextBlock.TextDecorationsProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Documents.InlineCollection> TextBlockInlines => Avalonia.Controls.TextBlock.InlinesProperty;
 }

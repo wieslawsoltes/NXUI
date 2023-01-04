@@ -21,17 +21,16 @@ public static partial class ScrollViewerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerExtent(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerExtent(this KeyFrame keyFrame, Avalonia.Size value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ExtentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ExtentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ScrollViewerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerExtent(this KeyFrame keyFrame, Avalonia.Size value)
+    public static KeyFrame SetScrollViewerExtent(this KeyFrame keyFrame, IObservable<Avalonia.Size> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ExtentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ExtentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerExtent(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ExtentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ScrollViewerSetters
     public static KeyFrame SetScrollViewerExtent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ExtentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerExtent(this KeyFrame keyFrame, IObservable<Avalonia.Size> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ExtentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ScrollViewerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerOffset(this KeyFrame keyFrame, Avalonia.Vector value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ScrollViewerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerOffset(this KeyFrame keyFrame, Avalonia.Vector value)
+    public static KeyFrame SetScrollViewerOffset(this KeyFrame keyFrame, IObservable<Avalonia.Vector> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ScrollViewerSetters
     public static KeyFrame SetScrollViewerOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerOffset(this KeyFrame keyFrame, IObservable<Avalonia.Vector> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ScrollViewerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerViewport(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerViewport(this KeyFrame keyFrame, Avalonia.Size value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ViewportProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ViewportProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ScrollViewerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerViewport(this KeyFrame keyFrame, Avalonia.Size value)
+    public static KeyFrame SetScrollViewerViewport(this KeyFrame keyFrame, IObservable<Avalonia.Size> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ViewportProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ViewportProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerViewport(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ViewportProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ScrollViewerSetters
     public static KeyFrame SetScrollViewerViewport(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ViewportProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerViewport(this KeyFrame keyFrame, IObservable<Avalonia.Size> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.ViewportProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ScrollViewerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerHorizontalScrollBarValue(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerHorizontalScrollBarValue(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ScrollViewerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerHorizontalScrollBarValue(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetScrollViewerHorizontalScrollBarValue(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerHorizontalScrollBarValue(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class ScrollViewerSetters
     public static KeyFrame SetScrollViewerHorizontalScrollBarValue(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerHorizontalScrollBarValue(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class ScrollViewerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerHorizontalScrollBarVisibility(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerHorizontalScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Controls.Primitives.ScrollBarVisibility value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class ScrollViewerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerHorizontalScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Controls.Primitives.ScrollBarVisibility value)
+    public static KeyFrame SetScrollViewerHorizontalScrollBarVisibility(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerHorizontalScrollBarVisibility(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class ScrollViewerSetters
     public static KeyFrame SetScrollViewerHorizontalScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerHorizontalScrollBarVisibility(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class ScrollViewerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerVerticalScrollBarValue(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerVerticalScrollBarValue(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class ScrollViewerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerVerticalScrollBarValue(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetScrollViewerVerticalScrollBarValue(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerVerticalScrollBarValue(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class ScrollViewerSetters
     public static KeyFrame SetScrollViewerVerticalScrollBarValue(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerVerticalScrollBarValue(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class ScrollViewerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerVerticalScrollBarVisibility(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerVerticalScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Controls.Primitives.ScrollBarVisibility value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class ScrollViewerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerVerticalScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Controls.Primitives.ScrollBarVisibility value)
+    public static KeyFrame SetScrollViewerVerticalScrollBarVisibility(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerVerticalScrollBarVisibility(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class ScrollViewerSetters
     public static KeyFrame SetScrollViewerVerticalScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerVerticalScrollBarVisibility(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class ScrollViewerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerAllowAutoHide(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerAllowAutoHide(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class ScrollViewerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerAllowAutoHide(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetScrollViewerAllowAutoHide(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerAllowAutoHide(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class ScrollViewerSetters
     public static KeyFrame SetScrollViewerAllowAutoHide(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerAllowAutoHide(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class ScrollViewerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollViewerIsScrollChainingEnabled(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerIsScrollChainingEnabled(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class ScrollViewerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerIsScrollChainingEnabled(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetScrollViewerIsScrollChainingEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerIsScrollChainingEnabled(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class ScrollViewerSetters
     public static KeyFrame SetScrollViewerIsScrollChainingEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollViewerIsScrollChainingEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
 

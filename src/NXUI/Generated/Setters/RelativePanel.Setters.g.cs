@@ -21,17 +21,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAbove(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAbove(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AboveProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AboveProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAbove(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetRelativePanelAbove(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AboveProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AboveProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAbove(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AboveProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAbove(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AboveProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAbove(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AboveProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignBottomWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignBottomWithPanel(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignBottomWithPanel(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetRelativePanelAlignBottomWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignBottomWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignBottomWithPanel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignBottomWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignBottomWith(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignBottomWith(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignBottomWith(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetRelativePanelAlignBottomWith(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignBottomWith(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignBottomWith(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignBottomWith(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignHorizontalCenterWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignHorizontalCenterWithPanel(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignHorizontalCenterWithPanel(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetRelativePanelAlignHorizontalCenterWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignHorizontalCenterWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignHorizontalCenterWithPanel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignHorizontalCenterWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignLeftWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignLeftWithPanel(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignLeftWithPanel(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetRelativePanelAlignLeftWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignLeftWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignLeftWithPanel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignLeftWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignLeftWith(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignLeftWith(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignLeftWith(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetRelativePanelAlignLeftWith(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignLeftWith(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignLeftWith(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignLeftWith(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignRightWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignRightWithPanel(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignRightWithPanel(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetRelativePanelAlignRightWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignRightWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignRightWithPanel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignRightWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignRightWith(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignRightWith(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignRightWith(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetRelativePanelAlignRightWith(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignRightWith(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignRightWith(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignRightWith(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignTopWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignTopWithPanel(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignTopWithPanel(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetRelativePanelAlignTopWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignTopWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignTopWithPanel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignTopWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -687,17 +669,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignTopWith(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignTopWith(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
     /// </summary>
@@ -714,12 +695,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignTopWith(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetRelativePanelAlignTopWith(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignTopWith(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -731,18 +723,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignTopWith(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignTopWith(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -761,17 +741,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignVerticalCenterWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignVerticalCenterWithPanel(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
     /// </summary>
@@ -788,12 +767,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignVerticalCenterWithPanel(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetRelativePanelAlignVerticalCenterWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignVerticalCenterWithPanel(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -805,18 +795,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignVerticalCenterWithPanel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignVerticalCenterWithPanel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -835,17 +813,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelAlignVerticalCenterWith(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelAlignVerticalCenterWith(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
     /// </summary>
@@ -862,12 +839,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignVerticalCenterWith(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetRelativePanelAlignVerticalCenterWith(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelAlignVerticalCenterWith(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -879,18 +867,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelAlignVerticalCenterWith(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelAlignVerticalCenterWith(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -909,17 +885,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelBelow(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelBelow(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.BelowProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.BelowProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
     /// </summary>
@@ -936,12 +911,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelBelow(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetRelativePanelBelow(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.BelowProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.BelowProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelBelow(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.BelowProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -953,18 +939,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelBelow(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.BelowProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelBelow(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.BelowProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -983,17 +957,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelLeftOf(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelLeftOf(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.LeftOfProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.LeftOfProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
     /// </summary>
@@ -1010,12 +983,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelLeftOf(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetRelativePanelLeftOf(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.LeftOfProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.LeftOfProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelLeftOf(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.LeftOfProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1027,18 +1011,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelLeftOf(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.LeftOfProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelLeftOf(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.LeftOfProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -1057,17 +1029,16 @@ public static partial class RelativePanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRelativePanelRightOf(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRelativePanelRightOf(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.RightOfProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.RightOfProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
     /// </summary>
@@ -1084,12 +1055,23 @@ public static partial class RelativePanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelRightOf(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetRelativePanelRightOf(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.RightOfProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.RightOfProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRelativePanelRightOf(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.RightOfProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1101,18 +1083,6 @@ public static partial class RelativePanelSetters
     public static KeyFrame SetRelativePanelRightOf(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.RightOfProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRelativePanelRightOf(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.RightOfProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

@@ -824,6 +824,128 @@ public static partial class VisualExtensions
         return obj;
     }
 
+    // Avalonia.Visual.FlowDirectionProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Visual.FlowDirectionProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FlowDirection<T>(this T obj, Avalonia.Media.FlowDirection value) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.FlowDirectionProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Visual.FlowDirectionProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FlowDirection<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
+    {
+        var descriptor = Avalonia.Visual.FlowDirectionProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Visual.FlowDirectionProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FlowDirection<T>(
+        this T obj,
+        IObservable<Avalonia.Media.FlowDirection> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
+    {
+        var descriptor = Avalonia.Visual.FlowDirectionProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Visual.FlowDirectionProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Visual.FlowDirectionProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindFlowDirection(
+        this Avalonia.Visual obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Visual.FlowDirectionProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.FlowDirection> ObserveFlowDirection(this Avalonia.Visual obj)
+    {
+        return obj.GetObservable(Avalonia.Visual.FlowDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFlowDirection<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.FlowDirection>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetObservable(Avalonia.Visual.FlowDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Visual.FlowDirectionProperty"/> property value to <see cref="Avalonia.Media.FlowDirection.LeftToRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FlowDirectionLeftToRight<T>(this T obj) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.FlowDirectionProperty] = Avalonia.Media.FlowDirection.LeftToRight;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Visual.FlowDirectionProperty"/> property value to <see cref="Avalonia.Media.FlowDirection.RightToLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FlowDirectionRightToLeft<T>(this T obj) where T : Avalonia.Visual
+    {
+        obj[Avalonia.Visual.FlowDirectionProperty] = Avalonia.Media.FlowDirection.RightToLeft;
+        return obj;
+    }
+
     // Avalonia.Visual.VisualParentProperty
 
     /// <summary>
@@ -850,7 +972,7 @@ public static partial class VisualExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.VisualTree.IVisual> ObserveVisualParent(this Avalonia.Visual obj)
+    public static IObservable<Avalonia.Visual> ObserveVisualParent(this Avalonia.Visual obj)
     {
         return obj.GetObservable(Avalonia.Visual.VisualParentProperty);
     }
@@ -861,7 +983,7 @@ public static partial class VisualExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Visual OnVisualParent(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<Avalonia.VisualTree.IVisual>> handler)
+    public static Avalonia.Visual OnVisualParent(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<Avalonia.Visual>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.VisualParentProperty);
         handler(obj, observable);

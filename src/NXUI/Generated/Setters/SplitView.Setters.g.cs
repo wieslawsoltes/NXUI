@@ -21,17 +21,16 @@ public static partial class SplitViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSplitViewCompactPaneLength(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSplitViewCompactPaneLength(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.CompactPaneLengthProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.CompactPaneLengthProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class SplitViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewCompactPaneLength(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetSplitViewCompactPaneLength(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.CompactPaneLengthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.CompactPaneLengthProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSplitViewCompactPaneLength(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.CompactPaneLengthProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class SplitViewSetters
     public static KeyFrame SetSplitViewCompactPaneLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.CompactPaneLengthProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewCompactPaneLength(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.CompactPaneLengthProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class SplitViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSplitViewDisplayMode(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSplitViewDisplayMode(this KeyFrame keyFrame, Avalonia.Controls.SplitViewDisplayMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.DisplayModeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.DisplayModeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class SplitViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewDisplayMode(this KeyFrame keyFrame, Avalonia.Controls.SplitViewDisplayMode value)
+    public static KeyFrame SetSplitViewDisplayMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SplitViewDisplayMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.DisplayModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.DisplayModeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSplitViewDisplayMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.DisplayModeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class SplitViewSetters
     public static KeyFrame SetSplitViewDisplayMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.DisplayModeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewDisplayMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SplitViewDisplayMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.DisplayModeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class SplitViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSplitViewIsPaneOpen(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSplitViewIsPaneOpen(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.IsPaneOpenProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.IsPaneOpenProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class SplitViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewIsPaneOpen(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetSplitViewIsPaneOpen(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.IsPaneOpenProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.IsPaneOpenProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSplitViewIsPaneOpen(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.IsPaneOpenProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class SplitViewSetters
     public static KeyFrame SetSplitViewIsPaneOpen(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.IsPaneOpenProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewIsPaneOpen(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.IsPaneOpenProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class SplitViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSplitViewOpenPaneLength(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSplitViewOpenPaneLength(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.OpenPaneLengthProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.OpenPaneLengthProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class SplitViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewOpenPaneLength(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetSplitViewOpenPaneLength(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.OpenPaneLengthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.OpenPaneLengthProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSplitViewOpenPaneLength(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.OpenPaneLengthProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class SplitViewSetters
     public static KeyFrame SetSplitViewOpenPaneLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.OpenPaneLengthProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewOpenPaneLength(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.OpenPaneLengthProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class SplitViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSplitViewPaneBackground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSplitViewPaneBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneBackgroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneBackgroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class SplitViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewPaneBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetSplitViewPaneBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneBackgroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneBackgroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSplitViewPaneBackground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneBackgroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class SplitViewSetters
     public static KeyFrame SetSplitViewPaneBackground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneBackgroundProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewPaneBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneBackgroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class SplitViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSplitViewPanePlacement(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSplitViewPanePlacement(this KeyFrame keyFrame, Avalonia.Controls.SplitViewPanePlacement value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.PanePlacementProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PanePlacementProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class SplitViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewPanePlacement(this KeyFrame keyFrame, Avalonia.Controls.SplitViewPanePlacement value)
+    public static KeyFrame SetSplitViewPanePlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SplitViewPanePlacement> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PanePlacementProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PanePlacementProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSplitViewPanePlacement(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.PanePlacementProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class SplitViewSetters
     public static KeyFrame SetSplitViewPanePlacement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PanePlacementProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewPanePlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SplitViewPanePlacement> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PanePlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class SplitViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSplitViewPane(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSplitViewPane(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class SplitViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewPane(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetSplitViewPane(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSplitViewPane(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class SplitViewSetters
     public static KeyFrame SetSplitViewPane(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewPane(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class SplitViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSplitViewPaneTemplate(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSplitViewPaneTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneTemplateProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneTemplateProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class SplitViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewPaneTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrame SetSplitViewPaneTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneTemplateProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneTemplateProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSplitViewPaneTemplate(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneTemplateProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class SplitViewSetters
     public static KeyFrame SetSplitViewPaneTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneTemplateProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewPaneTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class SplitViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSplitViewUseLightDismissOverlayMode(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSplitViewUseLightDismissOverlayMode(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class SplitViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewUseLightDismissOverlayMode(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetSplitViewUseLightDismissOverlayMode(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSplitViewUseLightDismissOverlayMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class SplitViewSetters
     public static KeyFrame SetSplitViewUseLightDismissOverlayMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewUseLightDismissOverlayMode(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -687,17 +669,16 @@ public static partial class SplitViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSplitViewTemplateSettings(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSplitViewTemplateSettings(this KeyFrame keyFrame, Avalonia.Controls.SplitViewTemplateSettings value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.TemplateSettingsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.TemplateSettingsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/>.
     /// </summary>
@@ -714,12 +695,23 @@ public static partial class SplitViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewTemplateSettings(this KeyFrame keyFrame, Avalonia.Controls.SplitViewTemplateSettings value)
+    public static KeyFrame SetSplitViewTemplateSettings(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SplitViewTemplateSettings> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.TemplateSettingsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.TemplateSettingsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSplitViewTemplateSettings(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.SplitView.TemplateSettingsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -731,18 +723,6 @@ public static partial class SplitViewSetters
     public static KeyFrame SetSplitViewTemplateSettings(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.TemplateSettingsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSplitViewTemplateSettings(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SplitViewTemplateSettings> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.TemplateSettingsProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

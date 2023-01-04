@@ -26,7 +26,7 @@ public static partial class Builders
     /// </summary>
     /// <param name="visual">The visual value.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.</returns>
-    public static Avalonia.Media.VisualBrush VisualBrush(Avalonia.VisualTree.IVisual visual)
+    public static Avalonia.Media.VisualBrush VisualBrush(Avalonia.Visual visual)
         => new(visual);
 
     /// <summary>
@@ -35,6 +35,6 @@ public static partial class Builders
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.VisualBrush"/> instantiated class.</param>
     /// <param name="visual">The visual value.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.</returns>
-    public static Avalonia.Media.VisualBrush VisualBrush(out Avalonia.Media.VisualBrush @ref, Avalonia.VisualTree.IVisual visual)
+    public static Avalonia.Media.VisualBrush VisualBrush(out Avalonia.Media.VisualBrush @ref, Avalonia.Visual visual)
         => @ref = new(visual);
 }

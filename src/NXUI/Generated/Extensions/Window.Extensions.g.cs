@@ -1649,10 +1649,10 @@ public static partial class WindowExtensions
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnClosingEvent<T>(this T obj, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.Window
+    public static T OnClosingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.WindowClosingEventArgs>> handler) where T : Avalonia.Controls.Window
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<System.ComponentModel.CancelEventArgs>, System.ComponentModel.CancelEventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Controls.WindowClosingEventArgs>, Avalonia.Controls.WindowClosingEventArgs>(
                 h => obj.Closing += h, 
                 h => obj.Closing -= h)
             .Select(x => x.EventArgs);
@@ -1665,10 +1665,10 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable for the `Closing` event on the specified object.</returns>
-    public static IObservable<System.ComponentModel.CancelEventArgs> ObserveOnClosingEvent(this Avalonia.Controls.Window obj)
+    public static IObservable<Avalonia.Controls.WindowClosingEventArgs> ObserveOnClosingEvent(this Avalonia.Controls.Window obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<System.ComponentModel.CancelEventArgs>, System.ComponentModel.CancelEventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Controls.WindowClosingEventArgs>, Avalonia.Controls.WindowClosingEventArgs>(
                 h => obj.Closing += h, 
                 h => obj.Closing -= h)
             .Select(x => x.EventArgs);

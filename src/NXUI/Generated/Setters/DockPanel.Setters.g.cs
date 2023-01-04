@@ -21,17 +21,16 @@ public static partial class DockPanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDockPanelDock(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDockPanelDock(this KeyFrame keyFrame, Avalonia.Controls.Dock value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class DockPanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDockPanelDock(this KeyFrame keyFrame, Avalonia.Controls.Dock value)
+    public static KeyFrame SetDockPanelDock(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Dock> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDockPanelDock(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class DockPanelSetters
     public static KeyFrame SetDockPanelDock(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDockPanelDock(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Dock> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class DockPanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDockPanelLastChildFill(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDockPanelLastChildFill(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class DockPanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDockPanelLastChildFill(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetDockPanelLastChildFill(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDockPanelLastChildFill(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class DockPanelSetters
     public static KeyFrame SetDockPanelLastChildFill(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDockPanelLastChildFill(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

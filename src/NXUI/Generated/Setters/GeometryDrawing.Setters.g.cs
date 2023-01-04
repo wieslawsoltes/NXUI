@@ -21,17 +21,16 @@ public static partial class GeometryDrawingSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryDrawingGeometry(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGeometryDrawingGeometry(this KeyFrame keyFrame, Avalonia.Media.Geometry value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class GeometryDrawingSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingGeometry(this KeyFrame keyFrame, Avalonia.Media.Geometry value)
+    public static KeyFrame SetGeometryDrawingGeometry(this KeyFrame keyFrame, IObservable<Avalonia.Media.Geometry> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGeometryDrawingGeometry(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class GeometryDrawingSetters
     public static KeyFrame SetGeometryDrawingGeometry(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingGeometry(this KeyFrame keyFrame, IObservable<Avalonia.Media.Geometry> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class GeometryDrawingSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryDrawingBrush(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGeometryDrawingBrush(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class GeometryDrawingSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingBrush(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetGeometryDrawingBrush(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGeometryDrawingBrush(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class GeometryDrawingSetters
     public static KeyFrame SetGeometryDrawingBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingBrush(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class GeometryDrawingSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryDrawingPen(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, Avalonia.Media.Pen value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class GeometryDrawingSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, Avalonia.Media.Pen value)
+    public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, IObservable<Avalonia.Media.Pen> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGeometryDrawingPen(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class GeometryDrawingSetters
     public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, IObservable<Avalonia.Media.Pen> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

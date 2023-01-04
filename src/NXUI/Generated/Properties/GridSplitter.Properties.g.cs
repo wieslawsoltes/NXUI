@@ -36,5 +36,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> property defined in <see cref="Avalonia.Controls.GridSplitter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> GridSplitterPreviewContent => Avalonia.Controls.GridSplitter.PreviewContentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> GridSplitterPreviewContent => Avalonia.Controls.GridSplitter.PreviewContentProperty;
 }

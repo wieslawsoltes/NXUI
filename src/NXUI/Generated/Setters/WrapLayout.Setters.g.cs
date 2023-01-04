@@ -21,17 +21,16 @@ public static partial class WrapLayoutSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWrapLayoutHorizontalSpacing(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWrapLayoutHorizontalSpacing(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class WrapLayoutSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapLayoutHorizontalSpacing(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetWrapLayoutHorizontalSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWrapLayoutHorizontalSpacing(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class WrapLayoutSetters
     public static KeyFrame SetWrapLayoutHorizontalSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapLayoutHorizontalSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class WrapLayoutSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWrapLayoutVerticalSpacing(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWrapLayoutVerticalSpacing(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class WrapLayoutSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapLayoutVerticalSpacing(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetWrapLayoutVerticalSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWrapLayoutVerticalSpacing(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class WrapLayoutSetters
     public static KeyFrame SetWrapLayoutVerticalSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapLayoutVerticalSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class WrapLayoutSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWrapLayoutOrientation(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWrapLayoutOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
     {
-        style.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.OrientationProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.OrientationProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class WrapLayoutSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapLayoutOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
+    public static KeyFrame SetWrapLayoutOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.OrientationProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.OrientationProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWrapLayoutOrientation(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.OrientationProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class WrapLayoutSetters
     public static KeyFrame SetWrapLayoutOrientation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.OrientationProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapLayoutOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.WrapLayout.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

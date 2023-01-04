@@ -21,17 +21,16 @@ public static partial class ListBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ListBox.VirtualizationModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ListBox.VirtualizationModeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetListBoxVirtualizationMode(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetListBoxVirtualizationMode(this KeyFrame keyFrame, Avalonia.Controls.ItemVirtualizationMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ListBox.VirtualizationModeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.VirtualizationModeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ListBox.VirtualizationModeProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ListBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ListBox.VirtualizationModeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetListBoxVirtualizationMode(this KeyFrame keyFrame, Avalonia.Controls.ItemVirtualizationMode value)
+    public static KeyFrame SetListBoxVirtualizationMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ItemVirtualizationMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.VirtualizationModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.VirtualizationModeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ListBox.VirtualizationModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetListBoxVirtualizationMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ListBox.VirtualizationModeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ListBoxSetters
     public static KeyFrame SetListBoxVirtualizationMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.VirtualizationModeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ListBox.VirtualizationModeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetListBoxVirtualizationMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ItemVirtualizationMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.VirtualizationModeProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

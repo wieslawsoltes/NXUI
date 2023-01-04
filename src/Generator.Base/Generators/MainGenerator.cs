@@ -3,7 +3,7 @@
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-public static class MinimalGenerator
+public static class MainGenerator
 {
     public static void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
@@ -24,7 +24,6 @@ public static class MinimalGenerator
         {
             Directory.CreateDirectory(buildersPath);
         }
-        
         BuildersGenerator.Generate(buildersPath, classes);
 
         if (!Directory.Exists(propertiesPath))

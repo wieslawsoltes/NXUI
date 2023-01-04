@@ -21,17 +21,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockBackground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetTextBlockBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockBackground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockBackground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockPadding(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockPadding(this KeyFrame keyFrame, Avalonia.Thickness value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockPadding(this KeyFrame keyFrame, Avalonia.Thickness value)
+    public static KeyFrame SetTextBlockPadding(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockPadding(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockPadding(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockPadding(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontFamily(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockFontFamily(this KeyFrame keyFrame, Avalonia.Media.FontFamily value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontFamily(this KeyFrame keyFrame, Avalonia.Media.FontFamily value)
+    public static KeyFrame SetTextBlockFontFamily(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontFamily> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockFontFamily(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockFontFamily(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontFamily(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontFamily> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontSize(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockFontSize(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontSize(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTextBlockFontSize(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockFontSize(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockFontSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontSize(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontStyle(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockFontStyle(this KeyFrame keyFrame, Avalonia.Media.FontStyle value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontStyle(this KeyFrame keyFrame, Avalonia.Media.FontStyle value)
+    public static KeyFrame SetTextBlockFontStyle(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStyle> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockFontStyle(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockFontStyle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontStyle(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStyle> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontWeight(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockFontWeight(this KeyFrame keyFrame, Avalonia.Media.FontWeight value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontWeight(this KeyFrame keyFrame, Avalonia.Media.FontWeight value)
+    public static KeyFrame SetTextBlockFontWeight(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontWeight> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockFontWeight(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockFontWeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontWeight(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontWeight> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockFontStretch(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockFontStretch(this KeyFrame keyFrame, Avalonia.Media.FontStretch value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontStretch(this KeyFrame keyFrame, Avalonia.Media.FontStretch value)
+    public static KeyFrame SetTextBlockFontStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStretch> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockFontStretch(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockFontStretch(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockFontStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStretch> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockForeground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetTextBlockForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockForeground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockForeground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockBaselineOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockBaselineOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockBaselineOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTextBlockBaselineOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockBaselineOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockBaselineOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockBaselineOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -687,17 +669,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockLineHeight(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockLineHeight(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineHeightProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineHeightProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
     /// </summary>
@@ -714,12 +695,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockLineHeight(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTextBlockLineHeight(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineHeightProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineHeightProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockLineHeight(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineHeightProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -734,15 +726,75 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.TextBlock.LetterSpacingProperty
+
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockLetterSpacing(this Style style, System.Double value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LetterSpacingProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockLetterSpacing(this KeyFrame keyFrame, System.Double value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LetterSpacingProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockLetterSpacing(this Style style, IObservable<System.Double> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LetterSpacingProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockLineHeight(this KeyFrame keyFrame, IObservable<System.Double> observable)
+    public static KeyFrame SetTextBlockLetterSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineHeightProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LetterSpacingProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockLetterSpacing(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LetterSpacingProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockLetterSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LetterSpacingProperty, binding));
         return keyFrame;
     }
 
@@ -761,17 +813,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockMaxLines(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockMaxLines(this KeyFrame keyFrame, System.Int32 value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
     /// </summary>
@@ -788,12 +839,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockMaxLines(this KeyFrame keyFrame, System.Int32 value)
+    public static KeyFrame SetTextBlockMaxLines(this KeyFrame keyFrame, IObservable<System.Int32> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockMaxLines(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -805,18 +867,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockMaxLines(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockMaxLines(this KeyFrame keyFrame, IObservable<System.Int32> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -835,17 +885,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockText(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockText(this KeyFrame keyFrame, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
     /// </summary>
@@ -862,12 +911,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockText(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetTextBlockText(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockText(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -879,18 +939,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockText(this KeyFrame keyFrame, IObservable<System.String> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -909,17 +957,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockTextAlignment(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockTextAlignment(this KeyFrame keyFrame, Avalonia.Media.TextAlignment value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
     /// </summary>
@@ -936,12 +983,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextAlignment(this KeyFrame keyFrame, Avalonia.Media.TextAlignment value)
+    public static KeyFrame SetTextBlockTextAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextAlignment> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockTextAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -953,18 +1011,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockTextAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextAlignment> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -983,17 +1029,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockTextWrapping(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockTextWrapping(this KeyFrame keyFrame, Avalonia.Media.TextWrapping value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
     /// </summary>
@@ -1010,12 +1055,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextWrapping(this KeyFrame keyFrame, Avalonia.Media.TextWrapping value)
+    public static KeyFrame SetTextBlockTextWrapping(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextWrapping> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockTextWrapping(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1027,18 +1083,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockTextWrapping(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextWrapping(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextWrapping> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -1057,17 +1101,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockTextTrimming(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockTextTrimming(this KeyFrame keyFrame, Avalonia.Media.TextTrimming value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
     /// </summary>
@@ -1084,12 +1127,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextTrimming(this KeyFrame keyFrame, Avalonia.Media.TextTrimming value)
+    public static KeyFrame SetTextBlockTextTrimming(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextTrimming> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockTextTrimming(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1101,18 +1155,6 @@ public static partial class TextBlockSetters
     public static KeyFrame SetTextBlockTextTrimming(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextTrimming(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextTrimming> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -1131,17 +1173,16 @@ public static partial class TextBlockSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextBlockTextDecorations(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockTextDecorations(this KeyFrame keyFrame, Avalonia.Media.TextDecorationCollection value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextDecorationsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextDecorationsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
     /// </summary>
@@ -1158,12 +1199,23 @@ public static partial class TextBlockSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextDecorations(this KeyFrame keyFrame, Avalonia.Media.TextDecorationCollection value)
+    public static KeyFrame SetTextBlockTextDecorations(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextDecorationCollection> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextDecorationsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextDecorationsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockTextDecorations(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextDecorationsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -1178,15 +1230,75 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.TextBlock.InlinesProperty
+
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockInlines(this Style style, Avalonia.Controls.Documents.InlineCollection value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.InlinesProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockInlines(this KeyFrame keyFrame, Avalonia.Controls.Documents.InlineCollection value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.InlinesProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockInlines(this Style style, IObservable<Avalonia.Controls.Documents.InlineCollection> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.InlinesProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextBlockTextDecorations(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextDecorationCollection> observable)
+    public static KeyFrame SetTextBlockInlines(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Documents.InlineCollection> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextDecorationsProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.InlinesProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBlockInlines(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBlock.InlinesProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBlockInlines(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.InlinesProperty, binding));
         return keyFrame;
     }
 }

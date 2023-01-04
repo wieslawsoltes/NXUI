@@ -14,7 +14,7 @@ https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9
 ```
 
 ```C#
-Window Build() => Window().Content(Label().Content("Minimal Avalonia"));
+Window Build() => Window().Content(Label().Content("NXUI"));
 
 AppBuilder.Configure<Application>()
   .UsePlatformDetect()
@@ -34,7 +34,7 @@ Window Build()
           Button(out var button)
             .Content("Welcome to Avalonia, please click me!"),
           TextBox(out var tb1)
-            .Text("Minimal Avalonia"),
+            .Text("NXUI"),
           TextBox()
             .Text(window.BindTitle()),
           Label()

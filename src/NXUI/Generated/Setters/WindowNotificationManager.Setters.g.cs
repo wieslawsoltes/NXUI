@@ -21,17 +21,16 @@ public static partial class WindowNotificationManagerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowNotificationManagerPosition(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowNotificationManagerPosition(this KeyFrame keyFrame, Avalonia.Controls.Notifications.NotificationPosition value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class WindowNotificationManagerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowNotificationManagerPosition(this KeyFrame keyFrame, Avalonia.Controls.Notifications.NotificationPosition value)
+    public static KeyFrame SetWindowNotificationManagerPosition(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Notifications.NotificationPosition> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowNotificationManagerPosition(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class WindowNotificationManagerSetters
     public static KeyFrame SetWindowNotificationManagerPosition(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowNotificationManagerPosition(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Notifications.NotificationPosition> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class WindowNotificationManagerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowNotificationManagerMaxItems(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowNotificationManagerMaxItems(this KeyFrame keyFrame, System.Int32 value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class WindowNotificationManagerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowNotificationManagerMaxItems(this KeyFrame keyFrame, System.Int32 value)
+    public static KeyFrame SetWindowNotificationManagerMaxItems(this KeyFrame keyFrame, IObservable<System.Int32> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowNotificationManagerMaxItems(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class WindowNotificationManagerSetters
     public static KeyFrame SetWindowNotificationManagerMaxItems(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowNotificationManagerMaxItems(this KeyFrame keyFrame, IObservable<System.Int32> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

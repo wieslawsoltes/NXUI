@@ -21,17 +21,16 @@ public static partial class ItemsRepeaterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetItemsRepeaterHorizontalCacheLength(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsRepeaterHorizontalCacheLength(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ItemsRepeaterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterHorizontalCacheLength(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetItemsRepeaterHorizontalCacheLength(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsRepeaterHorizontalCacheLength(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ItemsRepeaterSetters
     public static KeyFrame SetItemsRepeaterHorizontalCacheLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterHorizontalCacheLength(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ItemsRepeaterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetItemsRepeaterItemTemplate(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsRepeaterItemTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ItemsRepeaterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterItemTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrame SetItemsRepeaterItemTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsRepeaterItemTemplate(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ItemsRepeaterSetters
     public static KeyFrame SetItemsRepeaterItemTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterItemTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ItemsRepeaterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetItemsRepeaterItems(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsRepeaterItems(this KeyFrame keyFrame, System.Collections.IEnumerable value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ItemsRepeaterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterItems(this KeyFrame keyFrame, System.Collections.IEnumerable value)
+    public static KeyFrame SetItemsRepeaterItems(this KeyFrame keyFrame, IObservable<System.Collections.IEnumerable> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsRepeaterItems(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ItemsRepeaterSetters
     public static KeyFrame SetItemsRepeaterItems(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterItems(this KeyFrame keyFrame, IObservable<System.Collections.IEnumerable> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ItemsRepeaterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetItemsRepeaterLayout(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsRepeaterLayout(this KeyFrame keyFrame, Avalonia.Layout.AttachedLayout value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ItemsRepeaterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterLayout(this KeyFrame keyFrame, Avalonia.Layout.AttachedLayout value)
+    public static KeyFrame SetItemsRepeaterLayout(this KeyFrame keyFrame, IObservable<Avalonia.Layout.AttachedLayout> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsRepeaterLayout(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class ItemsRepeaterSetters
     public static KeyFrame SetItemsRepeaterLayout(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterLayout(this KeyFrame keyFrame, IObservable<Avalonia.Layout.AttachedLayout> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class ItemsRepeaterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetItemsRepeaterVerticalCacheLength(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsRepeaterVerticalCacheLength(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class ItemsRepeaterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterVerticalCacheLength(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetItemsRepeaterVerticalCacheLength(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsRepeaterVerticalCacheLength(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class ItemsRepeaterSetters
     public static KeyFrame SetItemsRepeaterVerticalCacheLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsRepeaterVerticalCacheLength(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

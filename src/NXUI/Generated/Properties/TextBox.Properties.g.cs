@@ -99,6 +99,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Double> TextBoxLineHeight => Avalonia.Controls.TextBox.LineHeightProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> TextBoxLetterSpacing => Avalonia.Controls.TextBox.LetterSpacingProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.String> TextBoxWatermark => Avalonia.Controls.TextBox.WatermarkProperty;
@@ -153,4 +158,13 @@ public static partial class Properties
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Int32> TextBoxUndoLimit => Avalonia.Controls.TextBox.UndoLimitProperty;
 
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBox.CanUndoProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanUndo => Avalonia.Controls.TextBox.CanUndoProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBox.CanRedoProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanRedo => Avalonia.Controls.TextBox.CanRedoProperty;
 }

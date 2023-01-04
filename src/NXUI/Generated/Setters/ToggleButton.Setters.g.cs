@@ -21,17 +21,16 @@ public static partial class ToggleButtonSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetToggleButtonIsChecked(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToggleButtonIsChecked(this KeyFrame keyFrame, System.Nullable<System.Boolean> value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ToggleButtonSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToggleButtonIsChecked(this KeyFrame keyFrame, System.Nullable<System.Boolean> value)
+    public static KeyFrame SetToggleButtonIsChecked(this KeyFrame keyFrame, IObservable<System.Nullable<System.Boolean>> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToggleButtonIsChecked(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ToggleButtonSetters
     public static KeyFrame SetToggleButtonIsChecked(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToggleButtonIsChecked(this KeyFrame keyFrame, IObservable<System.Nullable<System.Boolean>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ToggleButtonSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetToggleButtonIsThreeState(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToggleButtonIsThreeState(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ToggleButtonSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToggleButtonIsThreeState(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetToggleButtonIsThreeState(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToggleButtonIsThreeState(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ToggleButtonSetters
     public static KeyFrame SetToggleButtonIsThreeState(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToggleButtonIsThreeState(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty, observable.ToBinding()));
         return keyFrame;
     }
 

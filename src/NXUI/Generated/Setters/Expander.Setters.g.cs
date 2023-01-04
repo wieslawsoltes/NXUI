@@ -21,17 +21,16 @@ public static partial class ExpanderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetExpanderContentTransition(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetExpanderContentTransition(this KeyFrame keyFrame, Avalonia.Animation.IPageTransition value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Expander.ContentTransitionProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ContentTransitionProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ExpanderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetExpanderContentTransition(this KeyFrame keyFrame, Avalonia.Animation.IPageTransition value)
+    public static KeyFrame SetExpanderContentTransition(this KeyFrame keyFrame, IObservable<Avalonia.Animation.IPageTransition> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ContentTransitionProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ContentTransitionProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetExpanderContentTransition(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Expander.ContentTransitionProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ExpanderSetters
     public static KeyFrame SetExpanderContentTransition(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ContentTransitionProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetExpanderContentTransition(this KeyFrame keyFrame, IObservable<Avalonia.Animation.IPageTransition> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ContentTransitionProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ExpanderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetExpanderExpandDirection(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetExpanderExpandDirection(this KeyFrame keyFrame, Avalonia.Controls.ExpandDirection value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Expander.ExpandDirectionProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ExpandDirectionProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ExpanderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetExpanderExpandDirection(this KeyFrame keyFrame, Avalonia.Controls.ExpandDirection value)
+    public static KeyFrame SetExpanderExpandDirection(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ExpandDirection> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ExpandDirectionProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ExpandDirectionProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetExpanderExpandDirection(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Expander.ExpandDirectionProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ExpanderSetters
     public static KeyFrame SetExpanderExpandDirection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ExpandDirectionProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetExpanderExpandDirection(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ExpandDirection> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ExpandDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ExpanderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetExpanderIsExpanded(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetExpanderIsExpanded(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Expander.IsExpandedProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.IsExpandedProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ExpanderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetExpanderIsExpanded(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetExpanderIsExpanded(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.IsExpandedProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.IsExpandedProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetExpanderIsExpanded(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Expander.IsExpandedProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -216,15 +222,4 @@ public static partial class ExpanderSetters
         return keyFrame;
     }
 
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetExpanderIsExpanded(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.IsExpandedProperty, observable.ToBinding()));
-        return keyFrame;
-    }
 }

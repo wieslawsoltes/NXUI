@@ -21,17 +21,16 @@ public static partial class LineGeometrySetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetLineGeometryStartPoint(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetLineGeometryStartPoint(this KeyFrame keyFrame, Avalonia.Point value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.LineGeometry.StartPointProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.StartPointProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class LineGeometrySetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetLineGeometryStartPoint(this KeyFrame keyFrame, Avalonia.Point value)
+    public static KeyFrame SetLineGeometryStartPoint(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.StartPointProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.StartPointProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetLineGeometryStartPoint(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.LineGeometry.StartPointProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class LineGeometrySetters
     public static KeyFrame SetLineGeometryStartPoint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.StartPointProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetLineGeometryStartPoint(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.StartPointProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class LineGeometrySetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetLineGeometryEndPoint(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetLineGeometryEndPoint(this KeyFrame keyFrame, Avalonia.Point value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.LineGeometry.EndPointProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.EndPointProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class LineGeometrySetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetLineGeometryEndPoint(this KeyFrame keyFrame, Avalonia.Point value)
+    public static KeyFrame SetLineGeometryEndPoint(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.EndPointProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.EndPointProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetLineGeometryEndPoint(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.LineGeometry.EndPointProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class LineGeometrySetters
     public static KeyFrame SetLineGeometryEndPoint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.EndPointProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetLineGeometryEndPoint(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.EndPointProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

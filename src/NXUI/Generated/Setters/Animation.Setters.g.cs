@@ -21,17 +21,16 @@ public static partial class AnimationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationDuration(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationDuration(this KeyFrame keyFrame, System.TimeSpan value)
     {
-        style.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class AnimationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationDuration(this KeyFrame keyFrame, System.TimeSpan value)
+    public static KeyFrame SetAnimationDuration(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationDuration(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class AnimationSetters
     public static KeyFrame SetAnimationDuration(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationDuration(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class AnimationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationIterationCount(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationIterationCount(this KeyFrame keyFrame, Avalonia.Animation.IterationCount value)
     {
-        style.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class AnimationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationIterationCount(this KeyFrame keyFrame, Avalonia.Animation.IterationCount value)
+    public static KeyFrame SetAnimationIterationCount(this KeyFrame keyFrame, IObservable<Avalonia.Animation.IterationCount> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationIterationCount(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class AnimationSetters
     public static KeyFrame SetAnimationIterationCount(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationIterationCount(this KeyFrame keyFrame, IObservable<Avalonia.Animation.IterationCount> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class AnimationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationPlaybackDirection(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationPlaybackDirection(this KeyFrame keyFrame, Avalonia.Animation.PlaybackDirection value)
     {
-        style.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class AnimationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationPlaybackDirection(this KeyFrame keyFrame, Avalonia.Animation.PlaybackDirection value)
+    public static KeyFrame SetAnimationPlaybackDirection(this KeyFrame keyFrame, IObservable<Avalonia.Animation.PlaybackDirection> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationPlaybackDirection(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class AnimationSetters
     public static KeyFrame SetAnimationPlaybackDirection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationPlaybackDirection(this KeyFrame keyFrame, IObservable<Avalonia.Animation.PlaybackDirection> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class AnimationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationFillMode(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationFillMode(this KeyFrame keyFrame, Avalonia.Animation.FillMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class AnimationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationFillMode(this KeyFrame keyFrame, Avalonia.Animation.FillMode value)
+    public static KeyFrame SetAnimationFillMode(this KeyFrame keyFrame, IObservable<Avalonia.Animation.FillMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationFillMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class AnimationSetters
     public static KeyFrame SetAnimationFillMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationFillMode(this KeyFrame keyFrame, IObservable<Avalonia.Animation.FillMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class AnimationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationEasing(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationEasing(this KeyFrame keyFrame, Avalonia.Animation.Easings.Easing value)
     {
-        style.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class AnimationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationEasing(this KeyFrame keyFrame, Avalonia.Animation.Easings.Easing value)
+    public static KeyFrame SetAnimationEasing(this KeyFrame keyFrame, IObservable<Avalonia.Animation.Easings.Easing> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationEasing(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class AnimationSetters
     public static KeyFrame SetAnimationEasing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationEasing(this KeyFrame keyFrame, IObservable<Avalonia.Animation.Easings.Easing> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class AnimationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationDelay(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationDelay(this KeyFrame keyFrame, System.TimeSpan value)
     {
-        style.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class AnimationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationDelay(this KeyFrame keyFrame, System.TimeSpan value)
+    public static KeyFrame SetAnimationDelay(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationDelay(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class AnimationSetters
     public static KeyFrame SetAnimationDelay(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationDelay(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class AnimationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationDelayBetweenIterations(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationDelayBetweenIterations(this KeyFrame keyFrame, System.TimeSpan value)
     {
-        style.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class AnimationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationDelayBetweenIterations(this KeyFrame keyFrame, System.TimeSpan value)
+    public static KeyFrame SetAnimationDelayBetweenIterations(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationDelayBetweenIterations(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class AnimationSetters
     public static KeyFrame SetAnimationDelayBetweenIterations(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationDelayBetweenIterations(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class AnimationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAnimationSpeedRatio(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAnimationSpeedRatio(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class AnimationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationSpeedRatio(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetAnimationSpeedRatio(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAnimationSpeedRatio(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class AnimationSetters
     public static KeyFrame SetAnimationSpeedRatio(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAnimationSpeedRatio(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

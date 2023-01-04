@@ -21,17 +21,16 @@ public static partial class ExperimentalAcrylicBorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetExperimentalAcrylicBorderCornerRadius(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetExperimentalAcrylicBorderCornerRadius(this KeyFrame keyFrame, Avalonia.CornerRadius value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetExperimentalAcrylicBorderCornerRadius(this KeyFrame keyFrame, Avalonia.CornerRadius value)
+    public static KeyFrame SetExperimentalAcrylicBorderCornerRadius(this KeyFrame keyFrame, IObservable<Avalonia.CornerRadius> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetExperimentalAcrylicBorderCornerRadius(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ExperimentalAcrylicBorderSetters
     public static KeyFrame SetExperimentalAcrylicBorderCornerRadius(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetExperimentalAcrylicBorderCornerRadius(this KeyFrame keyFrame, IObservable<Avalonia.CornerRadius> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ExperimentalAcrylicBorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetExperimentalAcrylicBorderMaterial(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetExperimentalAcrylicBorderMaterial(this KeyFrame keyFrame, Avalonia.Media.ExperimentalAcrylicMaterial value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetExperimentalAcrylicBorderMaterial(this KeyFrame keyFrame, Avalonia.Media.ExperimentalAcrylicMaterial value)
+    public static KeyFrame SetExperimentalAcrylicBorderMaterial(this KeyFrame keyFrame, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetExperimentalAcrylicBorderMaterial(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ExperimentalAcrylicBorderSetters
     public static KeyFrame SetExperimentalAcrylicBorderMaterial(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetExperimentalAcrylicBorderMaterial(this KeyFrame keyFrame, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

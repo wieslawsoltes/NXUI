@@ -21,17 +21,16 @@ public static partial class MenuItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.CommandProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.CommandProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemCommand(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuItemCommand(this KeyFrame keyFrame, System.Windows.Input.ICommand value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.CommandProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class MenuItemSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.CommandProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemCommand(this KeyFrame keyFrame, System.Windows.Input.ICommand value)
+    public static KeyFrame SetMenuItemCommand(this KeyFrame keyFrame, IObservable<System.Windows.Input.ICommand> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.CommandProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuItemCommand(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class MenuItemSetters
     public static KeyFrame SetMenuItemCommand(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.CommandProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemCommand(this KeyFrame keyFrame, IObservable<System.Windows.Input.ICommand> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class MenuItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemCommandParameter(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuItemCommandParameter(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandParameterProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandParameterProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class MenuItemSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemCommandParameter(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetMenuItemCommandParameter(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandParameterProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandParameterProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuItemCommandParameter(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandParameterProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class MenuItemSetters
     public static KeyFrame SetMenuItemCommandParameter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandParameterProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemCommandParameter(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.CommandParameterProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class MenuItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.IconProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.IconProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemIcon(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuItemIcon(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IconProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IconProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.IconProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class MenuItemSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.IconProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemIcon(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetMenuItemIcon(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IconProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IconProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.IconProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuItemIcon(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IconProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class MenuItemSetters
     public static KeyFrame SetMenuItemIcon(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IconProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.IconProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemIcon(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IconProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class MenuItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemInputGesture(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuItemInputGesture(this KeyFrame keyFrame, Avalonia.Input.KeyGesture value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.InputGestureProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.InputGestureProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class MenuItemSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemInputGesture(this KeyFrame keyFrame, Avalonia.Input.KeyGesture value)
+    public static KeyFrame SetMenuItemInputGesture(this KeyFrame keyFrame, IObservable<Avalonia.Input.KeyGesture> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.InputGestureProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.InputGestureProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuItemInputGesture(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.InputGestureProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class MenuItemSetters
     public static KeyFrame SetMenuItemInputGesture(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.InputGestureProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemInputGesture(this KeyFrame keyFrame, IObservable<Avalonia.Input.KeyGesture> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.InputGestureProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class MenuItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.IsSelectedProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.IsSelectedProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemIsSelected(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuItemIsSelected(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSelectedProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSelectedProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.IsSelectedProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class MenuItemSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.IsSelectedProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemIsSelected(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetMenuItemIsSelected(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSelectedProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSelectedProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuItemIsSelected(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSelectedProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class MenuItemSetters
     public static KeyFrame SetMenuItemIsSelected(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSelectedProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.IsSelectedProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemIsSelected(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSelectedProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class MenuItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemIsSubMenuOpen(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuItemIsSubMenuOpen(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class MenuItemSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemIsSubMenuOpen(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetMenuItemIsSubMenuOpen(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuItemIsSubMenuOpen(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class MenuItemSetters
     public static KeyFrame SetMenuItemIsSubMenuOpen(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemIsSubMenuOpen(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class MenuItemSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMenuItemStaysOpenOnClick(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuItemStaysOpenOnClick(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class MenuItemSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemStaysOpenOnClick(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetMenuItemStaysOpenOnClick(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuItemStaysOpenOnClick(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class MenuItemSetters
     public static KeyFrame SetMenuItemStaysOpenOnClick(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMenuItemStaysOpenOnClick(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, observable.ToBinding()));
         return keyFrame;
     }
 

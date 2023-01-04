@@ -21,17 +21,16 @@ public static partial class ItemsPresenterBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetItemsPresenterBaseItems(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsPresenterBaseItems(this KeyFrame keyFrame, System.Collections.IEnumerable value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ItemsPresenterBaseSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsPresenterBaseItems(this KeyFrame keyFrame, System.Collections.IEnumerable value)
+    public static KeyFrame SetItemsPresenterBaseItems(this KeyFrame keyFrame, IObservable<System.Collections.IEnumerable> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsPresenterBaseItems(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -68,18 +78,6 @@ public static partial class ItemsPresenterBaseSetters
         return keyFrame;
     }
 
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsPresenterBaseItems(this KeyFrame keyFrame, IObservable<System.Collections.IEnumerable> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty, observable.ToBinding()));
-        return keyFrame;
-    }
-
     // Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty
 
     /// <summary>
@@ -88,12 +86,46 @@ public static partial class ItemsPresenterBaseSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsPresenterBaseItemsPanel(this Style style, Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel> value)
+    public static Style SetItemsPresenterBaseItemsPanel(this Style style, Avalonia.Controls.ITemplate<Avalonia.Controls.Panel> value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty, value));
         return style;
     }
 
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsPresenterBaseItemsPanel(this KeyFrame keyFrame, Avalonia.Controls.ITemplate<Avalonia.Controls.Panel> value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsPresenterBaseItemsPanel(this Style style, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsPresenterBaseItemsPanel(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty, observable.ToBinding()));
+        return keyFrame;
+    }
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty"/>.
     /// </summary>
@@ -107,30 +139,6 @@ public static partial class ItemsPresenterBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="observable">The property observable.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetItemsPresenterBaseItemsPanel(this Style style, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>> observable)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty, observable.ToBinding()));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsPresenterBaseItemsPanel(this KeyFrame keyFrame, Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel> value)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty, value));
-        return keyFrame;
-    }
-
-    /// <summary>
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
@@ -139,18 +147,6 @@ public static partial class ItemsPresenterBaseSetters
     public static KeyFrame SetItemsPresenterBaseItemsPanel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsPresenterBaseItemsPanel(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ItemsPresenterBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetItemsPresenterBaseItemTemplate(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsPresenterBaseItemTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ItemsPresenterBaseSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsPresenterBaseItemTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrame SetItemsPresenterBaseItemTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsPresenterBaseItemTemplate(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -216,15 +222,52 @@ public static partial class ItemsPresenterBaseSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty
+
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsPresenterBaseDisplayMemberBinding(this Style style, Avalonia.Data.IBinding value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsPresenterBaseDisplayMemberBinding(this KeyFrame keyFrame, Avalonia.Data.IBinding value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsPresenterBaseDisplayMemberBinding(this Style style, IObservable<Avalonia.Data.IBinding> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsPresenterBaseItemTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static KeyFrame SetItemsPresenterBaseDisplayMemberBinding(this KeyFrame keyFrame, IObservable<Avalonia.Data.IBinding> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

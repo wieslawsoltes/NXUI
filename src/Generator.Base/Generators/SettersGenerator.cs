@@ -49,14 +49,41 @@ public static class SettersGenerator
                 }
                 addedProperties.Add(p.Name);
 
-                var propertyBuilder = new StringBuilder(Templates.PropertySettersTemplate);
+                // value
+                
+                var valueBuilder = new StringBuilder(Templates.PropertySettersValueTemplate);
 
-                propertyBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
-                propertyBuilder.Replace("%ClassName%", c.Name);
-                propertyBuilder.Replace("%Name%", p.Name);
-                propertyBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
+                valueBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                valueBuilder.Replace("%ClassName%", c.Name);
+                valueBuilder.Replace("%Name%", p.Name);
+                valueBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
 
-                WriteLine(propertyBuilder.ToString());
+                WriteLine(valueBuilder.ToString());
+
+                // observable
+
+                var observableBuilder = new StringBuilder(Templates.PropertySettersObservableTemplate);
+
+                observableBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                observableBuilder.Replace("%ClassName%", c.Name);
+                observableBuilder.Replace("%Name%", p.Name);
+                observableBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
+
+                WriteLine(observableBuilder.ToString());
+
+                // binding
+
+                if (p.ValueType != typeof(Avalonia.Data.IBinding))
+                {
+                    var bindingBuilder = new StringBuilder(Templates.PropertySettersBindingTemplate);
+
+                    bindingBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                    bindingBuilder.Replace("%ClassName%", c.Name);
+                    bindingBuilder.Replace("%Name%", p.Name);
+                    bindingBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
+
+                    WriteLine(bindingBuilder.ToString());
+                }
 
                 if (i < c.Properties.Length - 1 || c.Events.Length > 0)
                 {

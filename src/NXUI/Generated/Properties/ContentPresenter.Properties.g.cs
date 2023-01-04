@@ -91,7 +91,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ContentPresenter,Avalonia.Controls.IControl> ContentPresenterChild => Avalonia.Controls.Presenters.ContentPresenter.ChildProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ContentPresenter,Avalonia.Controls.Control> ContentPresenterChild => Avalonia.Controls.Presenters.ContentPresenter.ChildProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.

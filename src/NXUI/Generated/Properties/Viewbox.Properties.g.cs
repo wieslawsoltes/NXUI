@@ -21,5 +21,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> property defined in <see cref="Avalonia.Controls.Viewbox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.IControl> ViewboxChild => Avalonia.Controls.Viewbox.ChildProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Control> ViewboxChild => Avalonia.Controls.Viewbox.ChildProperty;
 }

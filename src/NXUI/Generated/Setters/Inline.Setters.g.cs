@@ -21,17 +21,16 @@ public static partial class InlineSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetInlineTextDecorations(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetInlineTextDecorations(this KeyFrame keyFrame, Avalonia.Media.TextDecorationCollection value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class InlineSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInlineTextDecorations(this KeyFrame keyFrame, Avalonia.Media.TextDecorationCollection value)
+    public static KeyFrame SetInlineTextDecorations(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextDecorationCollection> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetInlineTextDecorations(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class InlineSetters
     public static KeyFrame SetInlineTextDecorations(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInlineTextDecorations(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextDecorationCollection> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class InlineSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetInlineBaselineAlignment(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetInlineBaselineAlignment(this KeyFrame keyFrame, Avalonia.Media.BaselineAlignment value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class InlineSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInlineBaselineAlignment(this KeyFrame keyFrame, Avalonia.Media.BaselineAlignment value)
+    public static KeyFrame SetInlineBaselineAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Media.BaselineAlignment> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetInlineBaselineAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class InlineSetters
     public static KeyFrame SetInlineBaselineAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetInlineBaselineAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Media.BaselineAlignment> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

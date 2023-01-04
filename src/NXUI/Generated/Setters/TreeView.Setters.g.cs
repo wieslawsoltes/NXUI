@@ -21,17 +21,16 @@ public static partial class TreeViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTreeViewAutoScrollToSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTreeViewAutoScrollToSelectedItem(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class TreeViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTreeViewAutoScrollToSelectedItem(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetTreeViewAutoScrollToSelectedItem(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTreeViewAutoScrollToSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class TreeViewSetters
     public static KeyFrame SetTreeViewAutoScrollToSelectedItem(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTreeViewAutoScrollToSelectedItem(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class TreeViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTreeViewSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTreeViewSelectedItem(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class TreeViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTreeViewSelectedItem(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetTreeViewSelectedItem(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTreeViewSelectedItem(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class TreeViewSetters
     public static KeyFrame SetTreeViewSelectedItem(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTreeViewSelectedItem(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class TreeViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTreeViewSelectedItems(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTreeViewSelectedItems(this KeyFrame keyFrame, System.Collections.IList value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class TreeViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTreeViewSelectedItems(this KeyFrame keyFrame, System.Collections.IList value)
+    public static KeyFrame SetTreeViewSelectedItems(this KeyFrame keyFrame, IObservable<System.Collections.IList> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTreeViewSelectedItems(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class TreeViewSetters
     public static KeyFrame SetTreeViewSelectedItems(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTreeViewSelectedItems(this KeyFrame keyFrame, IObservable<System.Collections.IList> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class TreeViewSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTreeViewSelectionMode(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTreeViewSelectionMode(this KeyFrame keyFrame, Avalonia.Controls.SelectionMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectionModeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectionModeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class TreeViewSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTreeViewSelectionMode(this KeyFrame keyFrame, Avalonia.Controls.SelectionMode value)
+    public static KeyFrame SetTreeViewSelectionMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SelectionMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectionModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectionModeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTreeViewSelectionMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectionModeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class TreeViewSetters
     public static KeyFrame SetTreeViewSelectionMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectionModeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTreeViewSelectionMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.SelectionMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectionModeProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

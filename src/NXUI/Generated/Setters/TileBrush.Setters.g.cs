@@ -21,17 +21,16 @@ public static partial class TileBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushAlignmentX(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTileBrushAlignmentX(this KeyFrame keyFrame, Avalonia.Media.AlignmentX value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class TileBrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushAlignmentX(this KeyFrame keyFrame, Avalonia.Media.AlignmentX value)
+    public static KeyFrame SetTileBrushAlignmentX(this KeyFrame keyFrame, IObservable<Avalonia.Media.AlignmentX> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTileBrushAlignmentX(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class TileBrushSetters
     public static KeyFrame SetTileBrushAlignmentX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushAlignmentX(this KeyFrame keyFrame, IObservable<Avalonia.Media.AlignmentX> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class TileBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushAlignmentY(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTileBrushAlignmentY(this KeyFrame keyFrame, Avalonia.Media.AlignmentY value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class TileBrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushAlignmentY(this KeyFrame keyFrame, Avalonia.Media.AlignmentY value)
+    public static KeyFrame SetTileBrushAlignmentY(this KeyFrame keyFrame, IObservable<Avalonia.Media.AlignmentY> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTileBrushAlignmentY(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class TileBrushSetters
     public static KeyFrame SetTileBrushAlignmentY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushAlignmentY(this KeyFrame keyFrame, IObservable<Avalonia.Media.AlignmentY> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class TileBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushDestinationRect(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTileBrushDestinationRect(this KeyFrame keyFrame, Avalonia.RelativeRect value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class TileBrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushDestinationRect(this KeyFrame keyFrame, Avalonia.RelativeRect value)
+    public static KeyFrame SetTileBrushDestinationRect(this KeyFrame keyFrame, IObservable<Avalonia.RelativeRect> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTileBrushDestinationRect(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class TileBrushSetters
     public static KeyFrame SetTileBrushDestinationRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushDestinationRect(this KeyFrame keyFrame, IObservable<Avalonia.RelativeRect> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class TileBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushSourceRect(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTileBrushSourceRect(this KeyFrame keyFrame, Avalonia.RelativeRect value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class TileBrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushSourceRect(this KeyFrame keyFrame, Avalonia.RelativeRect value)
+    public static KeyFrame SetTileBrushSourceRect(this KeyFrame keyFrame, IObservable<Avalonia.RelativeRect> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTileBrushSourceRect(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class TileBrushSetters
     public static KeyFrame SetTileBrushSourceRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushSourceRect(this KeyFrame keyFrame, IObservable<Avalonia.RelativeRect> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class TileBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushStretch(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTileBrushStretch(this KeyFrame keyFrame, Avalonia.Media.Stretch value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class TileBrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushStretch(this KeyFrame keyFrame, Avalonia.Media.Stretch value)
+    public static KeyFrame SetTileBrushStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.Stretch> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTileBrushStretch(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class TileBrushSetters
     public static KeyFrame SetTileBrushStretch(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.Stretch> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class TileBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTileBrushTileMode(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTileBrushTileMode(this KeyFrame keyFrame, Avalonia.Media.TileMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class TileBrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushTileMode(this KeyFrame keyFrame, Avalonia.Media.TileMode value)
+    public static KeyFrame SetTileBrushTileMode(this KeyFrame keyFrame, IObservable<Avalonia.Media.TileMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTileBrushTileMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class TileBrushSetters
     public static KeyFrame SetTileBrushTileMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTileBrushTileMode(this KeyFrame keyFrame, IObservable<Avalonia.Media.TileMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

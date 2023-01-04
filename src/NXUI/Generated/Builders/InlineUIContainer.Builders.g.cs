@@ -26,7 +26,7 @@ public static partial class Builders
     /// </summary>
     /// <param name="child">The child value.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
-    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(Avalonia.Controls.IControl child)
+    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(Avalonia.Controls.Control child)
         => new(child);
 
     /// <summary>
@@ -35,6 +35,6 @@ public static partial class Builders
     /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> instantiated class.</param>
     /// <param name="child">The child value.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
-    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(out Avalonia.Controls.Documents.InlineUIContainer @ref, Avalonia.Controls.IControl child)
+    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(out Avalonia.Controls.Documents.InlineUIContainer @ref, Avalonia.Controls.Control child)
         => @ref = new(child);
 }
