@@ -8,6 +8,14 @@ public static partial class ScaleTransformExtensions
 {
     // Avalonia.Media.ScaleTransform.ScaleXProperty
 
+    public static Builder<T> ScaleX1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.ScaleTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ScaleTransform.ScaleXProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ScaleTransform.ScaleXProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ScaleTransformExtensions
     }
 
     // Avalonia.Media.ScaleTransform.ScaleYProperty
+
+    public static Builder<T> ScaleY1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.ScaleTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ScaleTransform.ScaleYProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ScaleTransform.ScaleYProperty"/> value.

@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ListBoxItem"/> class.</returns>
     public static Avalonia.Controls.ListBoxItem ListBoxItem(out Avalonia.Controls.ListBoxItem @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.ListBoxItem> ListBoxItem1()
+    {
+        return new Builder<Avalonia.Controls.ListBoxItem>() { Activator = () => new Avalonia.Controls.ListBoxItem() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ListBoxItem"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ListBoxItem"/> class.</returns>
+    public static Avalonia.Controls.ListBoxItem ListBoxItem() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ListBoxItem"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ListBoxItem"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ListBoxItem"/> class.</returns>
+    public static Avalonia.Controls.ListBoxItem ListBoxItem(out Avalonia.Controls.ListBoxItem @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class ColumnDefinitionExtensions
 {
     // Avalonia.Controls.ColumnDefinition.MaxWidthProperty
 
+    public static Builder<T> MaxWidth1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.ColumnDefinition
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ColumnDefinition.MaxWidthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class ColumnDefinitionExtensions
 
     // Avalonia.Controls.ColumnDefinition.MinWidthProperty
 
+    public static Builder<T> MinWidth1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.ColumnDefinition
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ColumnDefinition.MinWidthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class ColumnDefinitionExtensions
     }
 
     // Avalonia.Controls.ColumnDefinition.WidthProperty
+
+    public static Builder<T> Width1<T>(this Builder<T> builder, Builder<Avalonia.Controls.GridLength> value)
+        where T : Avalonia.Controls.ColumnDefinition
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ColumnDefinition.WidthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/> value.

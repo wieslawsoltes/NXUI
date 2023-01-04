@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> class.</returns>
     public static Avalonia.Controls.Primitives.OverlayLayer OverlayLayer(out Avalonia.Controls.Primitives.OverlayLayer @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Primitives.OverlayLayer> OverlayLayer1()
+    {
+        return new Builder<Avalonia.Controls.Primitives.OverlayLayer>() { Activator = () => new Avalonia.Controls.Primitives.OverlayLayer() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> class.</returns>
+    public static Avalonia.Controls.Primitives.OverlayLayer OverlayLayer() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> class.</returns>
+    public static Avalonia.Controls.Primitives.OverlayLayer OverlayLayer(out Avalonia.Controls.Primitives.OverlayLayer @ref) => @ref = new();*/
 }

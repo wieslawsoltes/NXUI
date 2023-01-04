@@ -96,6 +96,14 @@ public static partial class VisualExtensions
 
     // Avalonia.Visual.ClipToBoundsProperty
 
+    public static Builder<T> ClipToBounds1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.ClipToBoundsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.ClipToBoundsProperty"/> value.
     /// </summary>
@@ -193,6 +201,14 @@ public static partial class VisualExtensions
     }
 
     // Avalonia.Visual.ClipProperty
+
+    public static Builder<T> Clip1<T>(this Builder<T> builder, Builder<Avalonia.Media.Geometry> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.ClipProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.ClipProperty"/> value.
@@ -292,6 +308,14 @@ public static partial class VisualExtensions
 
     // Avalonia.Visual.IsVisibleProperty
 
+    public static Builder<T> IsVisible1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.IsVisibleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.IsVisibleProperty"/> value.
     /// </summary>
@@ -390,6 +414,14 @@ public static partial class VisualExtensions
 
     // Avalonia.Visual.OpacityProperty
 
+    public static Builder<T> Opacity1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.OpacityProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.OpacityProperty"/> value.
     /// </summary>
@@ -487,6 +519,14 @@ public static partial class VisualExtensions
     }
 
     // Avalonia.Visual.OpacityMaskProperty
+
+    public static Builder<T> OpacityMask1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.OpacityMaskProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.OpacityMaskProperty"/> value.
@@ -630,6 +670,14 @@ public static partial class VisualExtensions
 
     // Avalonia.Visual.RenderTransformProperty
 
+    public static Builder<T> RenderTransform1<T>(this Builder<T> builder, Builder<Avalonia.Media.ITransform> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.RenderTransformProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.RenderTransformProperty"/> value.
     /// </summary>
@@ -727,6 +775,14 @@ public static partial class VisualExtensions
     }
 
     // Avalonia.Visual.RenderTransformOriginProperty
+
+    public static Builder<T> RenderTransformOrigin1<T>(this Builder<T> builder, Builder<Avalonia.RelativePoint> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.RenderTransformOriginProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.RenderTransformOriginProperty"/> value.
@@ -826,6 +882,14 @@ public static partial class VisualExtensions
 
     // Avalonia.Visual.FlowDirectionProperty
 
+    public static Builder<T> FlowDirection1<T>(this Builder<T> builder, Builder<Avalonia.Media.FlowDirection> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.FlowDirectionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.FlowDirectionProperty"/> value.
     /// </summary>
@@ -922,6 +986,14 @@ public static partial class VisualExtensions
         return obj;
     }
 
+    public static Builder<T> FlowDirectionLeftToRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.FlowDirectionProperty] = Avalonia.Media.FlowDirection.LeftToRight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.FlowDirectionProperty"/> property value to <see cref="Avalonia.Media.FlowDirection.LeftToRight"/>.
     /// </summary>
@@ -932,6 +1004,14 @@ public static partial class VisualExtensions
     {
         obj[Avalonia.Visual.FlowDirectionProperty] = Avalonia.Media.FlowDirection.LeftToRight;
         return obj;
+    }
+
+    public static Builder<T> FlowDirectionRightToLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.FlowDirectionProperty] = Avalonia.Media.FlowDirection.RightToLeft;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -991,6 +1071,14 @@ public static partial class VisualExtensions
     }
 
     // Avalonia.Visual.ZIndexProperty
+
+    public static Builder<T> ZIndex1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Visual.ZIndexProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.ZIndexProperty"/> value.

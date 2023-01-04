@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.LineSegment"/> class.</returns>
     public static Avalonia.Media.LineSegment LineSegment(out Avalonia.Media.LineSegment @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Media.LineSegment> LineSegment1()
+    {
+        return new Builder<Avalonia.Media.LineSegment>() { Activator = () => new Avalonia.Media.LineSegment() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LineSegment"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LineSegment"/> class.</returns>
+    public static Avalonia.Media.LineSegment LineSegment() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LineSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.LineSegment"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LineSegment"/> class.</returns>
+    public static Avalonia.Media.LineSegment LineSegment(out Avalonia.Media.LineSegment @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class GeometryGroupExtensions
 {
     // Avalonia.Media.GeometryGroup.ChildrenProperty
 
+    public static Builder<T> Children1<T>(this Builder<T> builder, Builder<Avalonia.Media.GeometryCollection> value)
+        where T : Avalonia.Media.GeometryGroup
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GeometryGroup.ChildrenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class GeometryGroupExtensions
 
     // Avalonia.Media.GeometryGroup.FillRuleProperty
 
+    public static Builder<T> FillRule1<T>(this Builder<T> builder, Builder<Avalonia.Media.FillRule> value)
+        where T : Avalonia.Media.GeometryGroup
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GeometryGroup.FillRuleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class GeometryGroupExtensions
         return obj;
     }
 
+    public static Builder<T> FillRuleEvenOdd1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.GeometryGroup
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GeometryGroup.FillRuleProperty] = Avalonia.Media.FillRule.EvenOdd;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> property value to <see cref="Avalonia.Media.FillRule.EvenOdd"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class GeometryGroupExtensions
     {
         obj[Avalonia.Media.GeometryGroup.FillRuleProperty] = Avalonia.Media.FillRule.EvenOdd;
         return obj;
+    }
+
+    public static Builder<T> FillRuleNonZero1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.GeometryGroup
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GeometryGroup.FillRuleProperty] = Avalonia.Media.FillRule.NonZero;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

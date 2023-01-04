@@ -8,6 +8,14 @@ public static partial class ItemsControlExtensions
 {
     // Avalonia.Controls.ItemsControl.ItemsProperty
 
+    public static Builder<T> Items1<T>(this Builder<T> builder, Builder<System.Collections.IEnumerable> value)
+        where T : Avalonia.Controls.ItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ItemsControl.ItemsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsControl.ItemsProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ItemsControlExtensions
     }
 
     // Avalonia.Controls.ItemsControl.ItemContainerThemeProperty
+
+    public static Builder<T> ItemContainerTheme1<T>(this Builder<T> builder, Builder<Avalonia.Styling.ControlTheme> value)
+        where T : Avalonia.Controls.ItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ItemsControl.ItemContainerThemeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsControl.ItemContainerThemeProperty"/> value.
@@ -248,6 +264,14 @@ public static partial class ItemsControlExtensions
 
     // Avalonia.Controls.ItemsControl.ItemsPanelProperty
 
+    public static Builder<T> ItemsPanel1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> value)
+        where T : Avalonia.Controls.ItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ItemsControl.ItemsPanelProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsControl.ItemsPanelProperty"/> value.
     /// </summary>
@@ -346,6 +370,14 @@ public static partial class ItemsControlExtensions
 
     // Avalonia.Controls.ItemsControl.ItemTemplateProperty
 
+    public static Builder<T> ItemTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.ItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ItemsControl.ItemTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsControl.ItemTemplateProperty"/> value.
     /// </summary>
@@ -443,6 +475,14 @@ public static partial class ItemsControlExtensions
     }
 
     // Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty
+
+    public static Builder<T> DisplayMemberBinding1<T>(this Builder<T> builder, Builder<Avalonia.Data.IBinding> value)
+        where T : Avalonia.Controls.ItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty"/> value.

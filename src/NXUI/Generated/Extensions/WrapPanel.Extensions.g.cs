@@ -8,6 +8,14 @@ public static partial class WrapPanelExtensions
 {
     // Avalonia.Controls.WrapPanel.OrientationProperty
 
+    public static Builder<T> Orientation1<T>(this Builder<T> builder, Builder<Avalonia.Layout.Orientation> value)
+        where T : Avalonia.Controls.WrapPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.WrapPanel.OrientationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationHorizontal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.WrapPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.WrapPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class WrapPanelExtensions
     {
         obj[Avalonia.Controls.WrapPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
+    }
+
+    public static Builder<T> OrientationVertical1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.WrapPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.WrapPanel.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -129,6 +153,14 @@ public static partial class WrapPanelExtensions
     }
 
     // Avalonia.Controls.WrapPanel.ItemWidthProperty
+
+    public static Builder<T> ItemWidth1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.WrapPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.WrapPanel.ItemWidthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/> value.
@@ -227,6 +259,14 @@ public static partial class WrapPanelExtensions
     }
 
     // Avalonia.Controls.WrapPanel.ItemHeightProperty
+
+    public static Builder<T> ItemHeight1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.WrapPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.WrapPanel.ItemHeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/> value.

@@ -8,6 +8,14 @@ public static partial class DateTimePickerPanelExtensions
 {
     // Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty
 
+    public static Builder<T> ItemHeight1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class DateTimePickerPanelExtensions
 
     // Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty
 
+    public static Builder<T> PanelType1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.DateTimePickerPanelType> value)
+        where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
+    public static Builder<T> PanelTypeYear1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Year;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Year"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class DateTimePickerPanelExtensions
     {
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Year;
         return obj;
+    }
+
+    public static Builder<T> PanelTypeMonth1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Month;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -226,6 +258,14 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
+    public static Builder<T> PanelTypeDay1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Day;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Day"/>.
     /// </summary>
@@ -236,6 +276,14 @@ public static partial class DateTimePickerPanelExtensions
     {
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Day;
         return obj;
+    }
+
+    public static Builder<T> PanelTypeHour1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Hour;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -250,6 +298,14 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
+    public static Builder<T> PanelTypeMinute1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Minute;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Minute"/>.
     /// </summary>
@@ -260,6 +316,14 @@ public static partial class DateTimePickerPanelExtensions
     {
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Minute;
         return obj;
+    }
+
+    public static Builder<T> PanelTypeTimePeriod1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.TimePeriod;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -275,6 +339,14 @@ public static partial class DateTimePickerPanelExtensions
     }
 
     // Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty
+
+    public static Builder<T> ItemFormat1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/> value.
@@ -373,6 +445,14 @@ public static partial class DateTimePickerPanelExtensions
     }
 
     // Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty
+
+    public static Builder<T> ShouldLoop1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/> value.

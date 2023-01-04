@@ -8,6 +8,14 @@ public static partial class ButtonExtensions
 {
     // Avalonia.Controls.Button.ClickModeProperty
 
+    public static Builder<T> ClickMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ClickMode> value)
+        where T : Avalonia.Controls.Button
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Button.ClickModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class ButtonExtensions
         return obj;
     }
 
+    public static Builder<T> ClickModeRelease1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Button
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Button.ClickModeProperty] = Avalonia.Controls.ClickMode.Release;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> property value to <see cref="Avalonia.Controls.ClickMode.Release"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class ButtonExtensions
     {
         obj[Avalonia.Controls.Button.ClickModeProperty] = Avalonia.Controls.ClickMode.Release;
         return obj;
+    }
+
+    public static Builder<T> ClickModePress1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Button
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Button.ClickModeProperty] = Avalonia.Controls.ClickMode.Press;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -129,6 +153,14 @@ public static partial class ButtonExtensions
     }
 
     // Avalonia.Controls.Button.CommandProperty
+
+    public static Builder<T> Command1<T>(this Builder<T> builder, Builder<System.Windows.Input.ICommand> value)
+        where T : Avalonia.Controls.Button
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Button.CommandProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.CommandProperty"/> value.
@@ -228,6 +260,14 @@ public static partial class ButtonExtensions
 
     // Avalonia.Controls.Button.CommandParameterProperty
 
+    public static Builder<T> CommandParameter1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.Button
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Button.CommandParameterProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.CommandParameterProperty"/> value.
     /// </summary>
@@ -325,6 +365,14 @@ public static partial class ButtonExtensions
     }
 
     // Avalonia.Controls.Button.IsDefaultProperty
+
+    public static Builder<T> IsDefault1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Button
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Button.IsDefaultProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.IsDefaultProperty"/> value.
@@ -424,6 +472,14 @@ public static partial class ButtonExtensions
 
     // Avalonia.Controls.Button.IsCancelProperty
 
+    public static Builder<T> IsCancel1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Button
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Button.IsCancelProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.IsCancelProperty"/> value.
     /// </summary>
@@ -522,6 +578,14 @@ public static partial class ButtonExtensions
 
     // Avalonia.Controls.Button.IsPressedProperty
 
+    public static Builder<T> IsPressed1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Button
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Button.IsPressedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.IsPressedProperty"/> value.
     /// </summary>
@@ -619,6 +683,14 @@ public static partial class ButtonExtensions
     }
 
     // Avalonia.Controls.Button.FlyoutProperty
+
+    public static Builder<T> Flyout1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.FlyoutBase> value)
+        where T : Avalonia.Controls.Button
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Button.FlyoutProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.FlyoutProperty"/> value.

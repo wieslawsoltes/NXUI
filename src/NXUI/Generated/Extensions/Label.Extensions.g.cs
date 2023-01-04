@@ -8,6 +8,14 @@ public static partial class LabelExtensions
 {
     // Avalonia.Controls.Label.TargetProperty
 
+    public static Builder<T> Target1<T>(this Builder<T> builder, Builder<Avalonia.Input.IInputElement> value)
+        where T : Avalonia.Controls.Label
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Label.TargetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Label.TargetProperty"/> value.
     /// </summary>

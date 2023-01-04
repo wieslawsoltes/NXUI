@@ -8,6 +8,14 @@ public static partial class NumericUpDownExtensions
 {
     // Avalonia.Controls.NumericUpDown.AllowSpinProperty
 
+    public static Builder<T> AllowSpin1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.AllowSpinProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.AllowSpinProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty
 
+    public static Builder<T> ButtonSpinnerLocation1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Location> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> ButtonSpinnerLocationLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> property value to <see cref="Avalonia.Controls.Location.Left"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Left;
         return obj;
+    }
+
+    public static Builder<T> ButtonSpinnerLocationRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -227,6 +259,14 @@ public static partial class NumericUpDownExtensions
     }
 
     // Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty
+
+    public static Builder<T> ShowButtonSpinner1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty"/> value.
@@ -326,6 +366,14 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty
 
+    public static Builder<T> ClipValueToMinMax1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty"/> value.
     /// </summary>
@@ -423,6 +471,14 @@ public static partial class NumericUpDownExtensions
     }
 
     // Avalonia.Controls.NumericUpDown.NumberFormatProperty
+
+    public static Builder<T> NumberFormat1<T>(this Builder<T> builder, Builder<System.Globalization.NumberFormatInfo> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.NumberFormatProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.NumberFormatProperty"/> value.
@@ -522,6 +578,14 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.FormatStringProperty
 
+    public static Builder<T> FormatString1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.FormatStringProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.FormatStringProperty"/> value.
     /// </summary>
@@ -619,6 +683,14 @@ public static partial class NumericUpDownExtensions
     }
 
     // Avalonia.Controls.NumericUpDown.IncrementProperty
+
+    public static Builder<T> Increment1<T>(this Builder<T> builder, Builder<System.Decimal> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.IncrementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.IncrementProperty"/> value.
@@ -718,6 +790,14 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.IsReadOnlyProperty
 
+    public static Builder<T> IsReadOnly1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.IsReadOnlyProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.IsReadOnlyProperty"/> value.
     /// </summary>
@@ -815,6 +895,14 @@ public static partial class NumericUpDownExtensions
     }
 
     // Avalonia.Controls.NumericUpDown.MaximumProperty
+
+    public static Builder<T> Maximum1<T>(this Builder<T> builder, Builder<System.Decimal> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.MaximumProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.MaximumProperty"/> value.
@@ -914,6 +1002,14 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.MinimumProperty
 
+    public static Builder<T> Minimum1<T>(this Builder<T> builder, Builder<System.Decimal> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.MinimumProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.MinimumProperty"/> value.
     /// </summary>
@@ -1012,6 +1108,14 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty
 
+    public static Builder<T> ParsingNumberStyle1<T>(this Builder<T> builder, Builder<System.Globalization.NumberStyles> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> value.
     /// </summary>
@@ -1108,6 +1212,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> ParsingNumberStyleNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.None"/>.
     /// </summary>
@@ -1118,6 +1230,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.None;
         return obj;
+    }
+
+    public static Builder<T> ParsingNumberStyleAllowLeadingWhite1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowLeadingWhite;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1132,6 +1252,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> ParsingNumberStyleAllowTrailingWhite1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowTrailingWhite;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowTrailingWhite"/>.
     /// </summary>
@@ -1142,6 +1270,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowTrailingWhite;
         return obj;
+    }
+
+    public static Builder<T> ParsingNumberStyleAllowLeadingSign1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowLeadingSign;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1156,6 +1292,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> ParsingNumberStyleInteger1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Integer;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Integer"/>.
     /// </summary>
@@ -1166,6 +1310,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Integer;
         return obj;
+    }
+
+    public static Builder<T> ParsingNumberStyleAllowTrailingSign1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowTrailingSign;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1180,6 +1332,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> ParsingNumberStyleAllowParentheses1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowParentheses;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowParentheses"/>.
     /// </summary>
@@ -1190,6 +1350,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowParentheses;
         return obj;
+    }
+
+    public static Builder<T> ParsingNumberStyleAllowDecimalPoint1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowDecimalPoint;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1204,6 +1372,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> ParsingNumberStyleAllowThousands1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowThousands;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowThousands"/>.
     /// </summary>
@@ -1214,6 +1390,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowThousands;
         return obj;
+    }
+
+    public static Builder<T> ParsingNumberStyleNumber1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Number;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1228,6 +1412,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> ParsingNumberStyleAllowExponent1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowExponent;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowExponent"/>.
     /// </summary>
@@ -1238,6 +1430,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowExponent;
         return obj;
+    }
+
+    public static Builder<T> ParsingNumberStyleFloat1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Float;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1252,6 +1452,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> ParsingNumberStyleAllowCurrencySymbol1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowCurrencySymbol;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowCurrencySymbol"/>.
     /// </summary>
@@ -1262,6 +1470,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowCurrencySymbol;
         return obj;
+    }
+
+    public static Builder<T> ParsingNumberStyleCurrency1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Currency;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1276,6 +1492,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> ParsingNumberStyleAny1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Any;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Any"/>.
     /// </summary>
@@ -1288,6 +1512,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> ParsingNumberStyleAllowHexSpecifier1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowHexSpecifier;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowHexSpecifier"/>.
     /// </summary>
@@ -1298,6 +1530,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowHexSpecifier;
         return obj;
+    }
+
+    public static Builder<T> ParsingNumberStyleHexNumber1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.HexNumber;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1313,6 +1553,14 @@ public static partial class NumericUpDownExtensions
     }
 
     // Avalonia.Controls.NumericUpDown.TextProperty
+
+    public static Builder<T> Text1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.TextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextProperty"/> value.
@@ -1412,6 +1660,14 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.TextConverterProperty
 
+    public static Builder<T> TextConverter1<T>(this Builder<T> builder, Builder<Avalonia.Data.Converters.IValueConverter> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.TextConverterProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/> value.
     /// </summary>
@@ -1509,6 +1765,14 @@ public static partial class NumericUpDownExtensions
     }
 
     // Avalonia.Controls.NumericUpDown.ValueProperty
+
+    public static Builder<T> Value1<T>(this Builder<T> builder, Builder<System.Nullable<System.Decimal>> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.ValueProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ValueProperty"/> value.
@@ -1608,6 +1872,14 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.WatermarkProperty
 
+    public static Builder<T> Watermark1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.WatermarkProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> value.
     /// </summary>
@@ -1706,6 +1978,14 @@ public static partial class NumericUpDownExtensions
 
     // Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty
 
+    public static Builder<T> HorizontalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.HorizontalAlignment> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> value.
     /// </summary>
@@ -1802,6 +2082,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
     /// </summary>
@@ -1812,6 +2100,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1826,6 +2122,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
     /// </summary>
@@ -1836,6 +2140,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1851,6 +2163,14 @@ public static partial class NumericUpDownExtensions
     }
 
     // Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty
+
+    public static Builder<T> VerticalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.VerticalAlignment> value)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> value.
@@ -1948,6 +2268,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
@@ -1958,6 +2286,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1972,6 +2308,14 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
     /// </summary>
@@ -1982,6 +2326,14 @@ public static partial class NumericUpDownExtensions
     {
         obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NumericUpDown
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.KeyFrame"/> class.</returns>
     public static Avalonia.Animation.KeyFrame KeyFrame(out Avalonia.Animation.KeyFrame @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Animation.KeyFrame> KeyFrame1()
+    {
+        return new Builder<Avalonia.Animation.KeyFrame>() { Activator = () => new Avalonia.Animation.KeyFrame() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.KeyFrame"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.KeyFrame"/> class.</returns>
+    public static Avalonia.Animation.KeyFrame KeyFrame() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.KeyFrame"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.KeyFrame"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.KeyFrame"/> class.</returns>
+    public static Avalonia.Animation.KeyFrame KeyFrame(out Avalonia.Animation.KeyFrame @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class InputElementExtensions
 {
     // Avalonia.Input.InputElement.FocusableProperty
 
+    public static Builder<T> Focusable1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Input.InputElement
+    {
+        void Setter(T obj) => obj[Avalonia.Input.InputElement.FocusableProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.InputElement.FocusableProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class InputElementExtensions
     }
 
     // Avalonia.Input.InputElement.IsEnabledProperty
+
+    public static Builder<T> IsEnabled1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Input.InputElement
+    {
+        void Setter(T obj) => obj[Avalonia.Input.InputElement.IsEnabledProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/> value.
@@ -247,6 +263,14 @@ public static partial class InputElementExtensions
     }
 
     // Avalonia.Input.InputElement.CursorProperty
+
+    public static Builder<T> Cursor1<T>(this Builder<T> builder, Builder<Avalonia.Input.Cursor> value)
+        where T : Avalonia.Input.InputElement
+    {
+        void Setter(T obj) => obj[Avalonia.Input.InputElement.CursorProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.InputElement.CursorProperty"/> value.
@@ -433,6 +457,14 @@ public static partial class InputElementExtensions
     }
 
     // Avalonia.Input.InputElement.IsHitTestVisibleProperty
+
+    public static Builder<T> IsHitTestVisible1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Input.InputElement
+    {
+        void Setter(T obj) => obj[Avalonia.Input.InputElement.IsHitTestVisibleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/> value.

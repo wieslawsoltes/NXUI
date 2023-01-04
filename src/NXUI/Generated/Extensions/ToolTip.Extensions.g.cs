@@ -8,6 +8,14 @@ public static partial class ToolTipExtensions
 {
     // Avalonia.Controls.ToolTip.TipProperty
 
+    public static Builder<T> Tip1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.TipProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.TipProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ToolTipExtensions
     }
 
     // Avalonia.Controls.ToolTip.IsOpenProperty
+
+    public static Builder<T> IsOpen1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.IsOpenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class ToolTipExtensions
 
     // Avalonia.Controls.ToolTip.PlacementProperty
 
+    public static Builder<T> Placement1<T>(this Builder<T> builder, Builder<Avalonia.Controls.PlacementMode> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.PlacementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> value.
     /// </summary>
@@ -300,6 +324,14 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementPointer1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Pointer;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Pointer"/>.
     /// </summary>
@@ -310,6 +342,14 @@ public static partial class ToolTipExtensions
     {
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Pointer;
         return obj;
+    }
+
+    public static Builder<T> PlacementBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -324,6 +364,14 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Right;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Right"/>.
     /// </summary>
@@ -334,6 +382,14 @@ public static partial class ToolTipExtensions
     {
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Right;
         return obj;
+    }
+
+    public static Builder<T> PlacementLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -348,6 +404,14 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Top;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Top"/>.
     /// </summary>
@@ -358,6 +422,14 @@ public static partial class ToolTipExtensions
     {
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Top;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorAndGravity1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -373,6 +445,14 @@ public static partial class ToolTipExtensions
     }
 
     // Avalonia.Controls.ToolTip.HorizontalOffsetProperty
+
+    public static Builder<T> HorizontalOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.HorizontalOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/> value.
@@ -472,6 +552,14 @@ public static partial class ToolTipExtensions
 
     // Avalonia.Controls.ToolTip.VerticalOffsetProperty
 
+    public static Builder<T> VerticalOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.VerticalOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/> value.
     /// </summary>
@@ -569,6 +657,14 @@ public static partial class ToolTipExtensions
     }
 
     // Avalonia.Controls.ToolTip.ShowDelayProperty
+
+    public static Builder<T> ShowDelay1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToolTip.ShowDelayProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/> value.

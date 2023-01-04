@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.StyledElement"/> class.</returns>
     public static Avalonia.StyledElement StyledElement(out Avalonia.StyledElement @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.StyledElement> StyledElement1()
+    {
+        return new Builder<Avalonia.StyledElement>() { Activator = () => new Avalonia.StyledElement() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.StyledElement"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.StyledElement"/> class.</returns>
+    public static Avalonia.StyledElement StyledElement() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.StyledElement"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.StyledElement"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.StyledElement"/> class.</returns>
+    public static Avalonia.StyledElement StyledElement(out Avalonia.StyledElement @ref) => @ref = new();*/
 }

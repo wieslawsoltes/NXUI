@@ -52,6 +52,14 @@ public static partial class ListBoxExtensions
 
     // Avalonia.Controls.ListBox.VirtualizationModeProperty
 
+    public static Builder<T> VirtualizationMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ItemVirtualizationMode> value)
+        where T : Avalonia.Controls.ListBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ListBox.VirtualizationModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ListBox.VirtualizationModeProperty"/> value.
     /// </summary>
@@ -148,6 +156,14 @@ public static partial class ListBoxExtensions
         return obj;
     }
 
+    public static Builder<T> VirtualizationModeNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ListBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ListBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ListBox.VirtualizationModeProperty"/> property value to <see cref="Avalonia.Controls.ItemVirtualizationMode.None"/>.
     /// </summary>
@@ -158,6 +174,14 @@ public static partial class ListBoxExtensions
     {
         obj[Avalonia.Controls.ListBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
         return obj;
+    }
+
+    public static Builder<T> VirtualizationModeSimple1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ListBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ListBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.Simple;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

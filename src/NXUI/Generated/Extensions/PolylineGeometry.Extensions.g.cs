@@ -8,6 +8,14 @@ public static partial class PolylineGeometryExtensions
 {
     // Avalonia.Media.PolylineGeometry.PointsProperty
 
+    public static Builder<T> Points1<T>(this Builder<T> builder, Builder<Avalonia.Points> value)
+        where T : Avalonia.Media.PolylineGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.PolylineGeometry.PointsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class PolylineGeometryExtensions
     }
 
     // Avalonia.Media.PolylineGeometry.IsFilledProperty
+
+    public static Builder<T> IsFilled1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Media.PolylineGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.PolylineGeometry.IsFilledProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> value.

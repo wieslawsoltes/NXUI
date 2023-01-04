@@ -39,4 +39,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
     public static Avalonia.Media.SkewTransform SkewTransform(out Avalonia.Media.SkewTransform @ref, System.Double angleX, System.Double angleY)
         => @ref = new(angleX, angleY);
+
+    public static Builder<Avalonia.Media.SkewTransform> SkewTransform1()
+    {
+        return new Builder<Avalonia.Media.SkewTransform>() { Activator = () => new Avalonia.Media.SkewTransform() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
+    public static Avalonia.Media.SkewTransform SkewTransform() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.SkewTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
+    public static Avalonia.Media.SkewTransform SkewTransform(out Avalonia.Media.SkewTransform @ref) => @ref = new();*/
 }

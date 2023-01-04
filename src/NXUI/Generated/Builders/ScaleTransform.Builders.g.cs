@@ -39,4 +39,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.</returns>
     public static Avalonia.Media.ScaleTransform ScaleTransform(out Avalonia.Media.ScaleTransform @ref, System.Double scaleX, System.Double scaleY)
         => @ref = new(scaleX, scaleY);
+
+    public static Builder<Avalonia.Media.ScaleTransform> ScaleTransform1()
+    {
+        return new Builder<Avalonia.Media.ScaleTransform>() { Activator = () => new Avalonia.Media.ScaleTransform() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.</returns>
+    public static Avalonia.Media.ScaleTransform ScaleTransform() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ScaleTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.</returns>
+    public static Avalonia.Media.ScaleTransform ScaleTransform(out Avalonia.Media.ScaleTransform @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class CarouselPresenterExtensions
 {
     // Avalonia.Controls.Presenters.CarouselPresenter.IsVirtualizedProperty
 
+    public static Builder<T> IsVirtualized1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Presenters.CarouselPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.CarouselPresenter.IsVirtualizedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.CarouselPresenter.IsVirtualizedProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class CarouselPresenterExtensions
 
     // Avalonia.Controls.Presenters.CarouselPresenter.SelectedIndexProperty
 
+    public static Builder<T> SelectedIndex1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Presenters.CarouselPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.CarouselPresenter.SelectedIndexProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.CarouselPresenter.SelectedIndexProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class CarouselPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.CarouselPresenter.PageTransitionProperty
+
+    public static Builder<T> PageTransition1<T>(this Builder<T> builder, Builder<Avalonia.Animation.IPageTransition> value)
+        where T : Avalonia.Controls.Presenters.CarouselPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.CarouselPresenter.PageTransitionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.CarouselPresenter.PageTransitionProperty"/> value.

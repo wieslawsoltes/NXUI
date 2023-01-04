@@ -8,6 +8,14 @@ public static partial class NativeMenuItemBaseExtensions
 {
     // Avalonia.Controls.NativeMenuItemBase.ParentProperty
 
+    public static Builder<T> Parent1<T>(this Builder<T> builder, Builder<Avalonia.Controls.NativeMenu> value)
+        where T : Avalonia.Controls.NativeMenuItemBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItemBase.ParentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/> value.
     /// </summary>

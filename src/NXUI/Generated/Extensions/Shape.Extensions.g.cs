@@ -8,6 +8,14 @@ public static partial class ShapeExtensions
 {
     // Avalonia.Controls.Shapes.Shape.FillProperty
 
+    public static Builder<T> Fill1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.FillProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class ShapeExtensions
 
     // Avalonia.Controls.Shapes.Shape.StretchProperty
 
+    public static Builder<T> Stretch1<T>(this Builder<T> builder, Builder<Avalonia.Media.Stretch> value)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    public static Builder<T> StretchNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class ShapeExtensions
     {
         obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
+    }
+
+    public static Builder<T> StretchFill1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.Fill;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -226,6 +258,14 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    public static Builder<T> StretchUniform1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.Uniform;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
     /// </summary>
@@ -236,6 +276,14 @@ public static partial class ShapeExtensions
     {
         obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
+    }
+
+    public static Builder<T> StretchUniformToFill1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.UniformToFill;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -251,6 +299,14 @@ public static partial class ShapeExtensions
     }
 
     // Avalonia.Controls.Shapes.Shape.StrokeProperty
+
+    public static Builder<T> Stroke1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/> value.
@@ -350,6 +406,14 @@ public static partial class ShapeExtensions
 
     // Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty
 
+    public static Builder<T> StrokeDashArray1<T>(this Builder<T> builder, Builder<Avalonia.Collections.AvaloniaList<System.Double>> value)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/> value.
     /// </summary>
@@ -447,6 +511,14 @@ public static partial class ShapeExtensions
     }
 
     // Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty
+
+    public static Builder<T> StrokeDashOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/> value.
@@ -546,6 +618,14 @@ public static partial class ShapeExtensions
 
     // Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty
 
+    public static Builder<T> StrokeThickness1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/> value.
     /// </summary>
@@ -644,6 +724,14 @@ public static partial class ShapeExtensions
 
     // Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty
 
+    public static Builder<T> StrokeLineCap1<T>(this Builder<T> builder, Builder<Avalonia.Media.PenLineCap> value)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> value.
     /// </summary>
@@ -740,6 +828,14 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    public static Builder<T> StrokeLineCapFlat1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Flat;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Flat"/>.
     /// </summary>
@@ -752,6 +848,14 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    public static Builder<T> StrokeLineCapRound1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Round;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Round"/>.
     /// </summary>
@@ -762,6 +866,14 @@ public static partial class ShapeExtensions
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Round;
         return obj;
+    }
+
+    public static Builder<T> StrokeLineCapSquare1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Square;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -777,6 +889,14 @@ public static partial class ShapeExtensions
     }
 
     // Avalonia.Controls.Shapes.Shape.StrokeJoinProperty
+
+    public static Builder<T> StrokeJoin1<T>(this Builder<T> builder, Builder<Avalonia.Media.PenLineJoin> value)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> value.
@@ -874,6 +994,14 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    public static Builder<T> StrokeJoinBevel1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = Avalonia.Media.PenLineJoin.Bevel;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Bevel"/>.
     /// </summary>
@@ -886,6 +1014,14 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    public static Builder<T> StrokeJoinMiter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = Avalonia.Media.PenLineJoin.Miter;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Miter"/>.
     /// </summary>
@@ -896,6 +1032,14 @@ public static partial class ShapeExtensions
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = Avalonia.Media.PenLineJoin.Miter;
         return obj;
+    }
+
+    public static Builder<T> StrokeJoinRound1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Shapes.Shape
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = Avalonia.Media.PenLineJoin.Round;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

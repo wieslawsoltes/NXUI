@@ -1,4 +1,4 @@
-﻿
+﻿/*
 namespace NXUI
 {
     public static partial class Builders
@@ -14,7 +14,8 @@ namespace NXUI
         }
     }
 }
-
+*/
+/*
 namespace NXUI.Extensions
 {
     public static partial class ContentControlExtensions
@@ -39,3 +40,4 @@ namespace NXUI.Extensions
         }
     }
 }
+*/

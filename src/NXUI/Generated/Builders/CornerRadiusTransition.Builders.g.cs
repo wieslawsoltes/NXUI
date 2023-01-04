@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.</returns>
     public static Avalonia.Animation.CornerRadiusTransition CornerRadiusTransition(out Avalonia.Animation.CornerRadiusTransition @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Animation.CornerRadiusTransition> CornerRadiusTransition1()
+    {
+        return new Builder<Avalonia.Animation.CornerRadiusTransition>() { Activator = () => new Avalonia.Animation.CornerRadiusTransition() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.</returns>
+    public static Avalonia.Animation.CornerRadiusTransition CornerRadiusTransition() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.</returns>
+    public static Avalonia.Animation.CornerRadiusTransition CornerRadiusTransition(out Avalonia.Animation.CornerRadiusTransition @ref) => @ref = new();*/
 }

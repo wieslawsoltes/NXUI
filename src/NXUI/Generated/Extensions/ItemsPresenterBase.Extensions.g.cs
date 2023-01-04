@@ -8,6 +8,14 @@ public static partial class ItemsPresenterBaseExtensions
 {
     // Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty
 
+    public static Builder<T> Items1<T>(this Builder<T> builder, Builder<System.Collections.IEnumerable> value)
+        where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ItemsPresenterBaseExtensions
     }
 
     // Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty
+
+    public static Builder<T> ItemsPanel1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> value)
+        where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class ItemsPresenterBaseExtensions
 
     // Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty
 
+    public static Builder<T> ItemTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class ItemsPresenterBaseExtensions
     }
 
     // Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty
+
+    public static Builder<T> DisplayMemberBinding1<T>(this Builder<T> builder, Builder<Avalonia.Data.IBinding> value)
+        where T : Avalonia.Controls.Presenters.ItemsPresenterBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty"/> value.

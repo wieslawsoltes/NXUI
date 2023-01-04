@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TransitioningContentControl"/> class.</returns>
     public static Avalonia.Controls.TransitioningContentControl TransitioningContentControl(out Avalonia.Controls.TransitioningContentControl @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.TransitioningContentControl> TransitioningContentControl1()
+    {
+        return new Builder<Avalonia.Controls.TransitioningContentControl>() { Activator = () => new Avalonia.Controls.TransitioningContentControl() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TransitioningContentControl"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TransitioningContentControl"/> class.</returns>
+    public static Avalonia.Controls.TransitioningContentControl TransitioningContentControl() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TransitioningContentControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TransitioningContentControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TransitioningContentControl"/> class.</returns>
+    public static Avalonia.Controls.TransitioningContentControl TransitioningContentControl(out Avalonia.Controls.TransitioningContentControl @ref) => @ref = new();*/
 }

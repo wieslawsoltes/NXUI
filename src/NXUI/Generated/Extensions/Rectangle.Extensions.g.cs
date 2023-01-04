@@ -8,6 +8,14 @@ public static partial class RectangleExtensions
 {
     // Avalonia.Controls.Shapes.Rectangle.RadiusXProperty
 
+    public static Builder<T> RadiusX1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Shapes.Rectangle
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Rectangle.RadiusXProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusXProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class RectangleExtensions
     }
 
     // Avalonia.Controls.Shapes.Rectangle.RadiusYProperty
+
+    public static Builder<T> RadiusY1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Shapes.Rectangle
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Rectangle.RadiusYProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusYProperty"/> value.

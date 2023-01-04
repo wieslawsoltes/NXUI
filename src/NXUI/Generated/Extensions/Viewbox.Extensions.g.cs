@@ -8,6 +8,14 @@ public static partial class ViewboxExtensions
 {
     // Avalonia.Controls.Viewbox.StretchProperty
 
+    public static Builder<T> Stretch1<T>(this Builder<T> builder, Builder<Avalonia.Media.Stretch> value)
+        where T : Avalonia.Controls.Viewbox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Viewbox.StretchProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class ViewboxExtensions
         return obj;
     }
 
+    public static Builder<T> StretchNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Viewbox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class ViewboxExtensions
     {
         obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
+    }
+
+    public static Builder<T> StretchFill1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Viewbox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.Fill;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class ViewboxExtensions
         return obj;
     }
 
+    public static Builder<T> StretchUniform1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Viewbox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.Uniform;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class ViewboxExtensions
     {
         obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
+    }
+
+    public static Builder<T> StretchUniformToFill1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Viewbox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.UniformToFill;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -153,6 +193,14 @@ public static partial class ViewboxExtensions
     }
 
     // Avalonia.Controls.Viewbox.StretchDirectionProperty
+
+    public static Builder<T> StretchDirection1<T>(this Builder<T> builder, Builder<Avalonia.Media.StretchDirection> value)
+        where T : Avalonia.Controls.Viewbox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> value.
@@ -250,6 +298,14 @@ public static partial class ViewboxExtensions
         return obj;
     }
 
+    public static Builder<T> StretchDirectionUpOnly1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Viewbox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = Avalonia.Media.StretchDirection.UpOnly;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.UpOnly"/>.
     /// </summary>
@@ -262,6 +318,14 @@ public static partial class ViewboxExtensions
         return obj;
     }
 
+    public static Builder<T> StretchDirectionDownOnly1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Viewbox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = Avalonia.Media.StretchDirection.DownOnly;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.DownOnly"/>.
     /// </summary>
@@ -272,6 +336,14 @@ public static partial class ViewboxExtensions
     {
         obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = Avalonia.Media.StretchDirection.DownOnly;
         return obj;
+    }
+
+    public static Builder<T> StretchDirectionBoth1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Viewbox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = Avalonia.Media.StretchDirection.Both;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -287,6 +359,14 @@ public static partial class ViewboxExtensions
     }
 
     // Avalonia.Controls.Viewbox.ChildProperty
+
+    public static Builder<T> Child1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Control> value)
+        where T : Avalonia.Controls.Viewbox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Viewbox.ChildProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> value.

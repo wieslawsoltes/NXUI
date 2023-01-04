@@ -8,6 +8,14 @@ public static partial class HeaderedItemsControlExtensions
 {
     // Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty
 
+    public static Builder<T> Header1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.Primitives.HeaderedItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/> value.
     /// </summary>

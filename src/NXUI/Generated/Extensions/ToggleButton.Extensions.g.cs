@@ -8,6 +8,14 @@ public static partial class ToggleButtonExtensions
 {
     // Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty
 
+    public static Builder<T> IsChecked1<T>(this Builder<T> builder, Builder<System.Nullable<System.Boolean>> value)
+        where T : Avalonia.Controls.Primitives.ToggleButton
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ToggleButtonExtensions
     }
 
     // Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty
+
+    public static Builder<T> IsThreeState1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.ToggleButton
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/> value.

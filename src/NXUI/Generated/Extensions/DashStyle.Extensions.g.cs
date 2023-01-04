@@ -8,6 +8,14 @@ public static partial class DashStyleExtensions
 {
     // Avalonia.Media.DashStyle.DashesProperty
 
+    public static Builder<T> Dashes1<T>(this Builder<T> builder, Builder<Avalonia.Collections.AvaloniaList<System.Double>> value)
+        where T : Avalonia.Media.DashStyle
+    {
+        void Setter(T obj) => obj[Avalonia.Media.DashStyle.DashesProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DashStyle.DashesProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class DashStyleExtensions
     }
 
     // Avalonia.Media.DashStyle.OffsetProperty
+
+    public static Builder<T> Offset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.DashStyle
+    {
+        void Setter(T obj) => obj[Avalonia.Media.DashStyle.OffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> value.

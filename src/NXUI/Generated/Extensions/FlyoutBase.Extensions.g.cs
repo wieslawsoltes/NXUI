@@ -96,6 +96,14 @@ public static partial class FlyoutBaseExtensions
 
     // Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty
 
+    public static Builder<T> Placement1<T>(this Builder<T> builder, Builder<Avalonia.Controls.FlyoutPlacementMode> value)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> value.
     /// </summary>
@@ -192,6 +200,14 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Top;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.Top"/>.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class FlyoutBaseExtensions
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Top;
         return obj;
+    }
+
+    public static Builder<T> PlacementBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -216,6 +240,14 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.Left"/>.
     /// </summary>
@@ -226,6 +258,14 @@ public static partial class FlyoutBaseExtensions
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Left;
         return obj;
+    }
+
+    public static Builder<T> PlacementRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -240,6 +280,14 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementTopEdgeAlignedLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.TopEdgeAlignedLeft;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.TopEdgeAlignedLeft"/>.
     /// </summary>
@@ -250,6 +298,14 @@ public static partial class FlyoutBaseExtensions
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.TopEdgeAlignedLeft;
         return obj;
+    }
+
+    public static Builder<T> PlacementTopEdgeAlignedRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.TopEdgeAlignedRight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -264,6 +320,14 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementBottomEdgeAlignedLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.BottomEdgeAlignedLeft;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.BottomEdgeAlignedLeft"/>.
     /// </summary>
@@ -274,6 +338,14 @@ public static partial class FlyoutBaseExtensions
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.BottomEdgeAlignedLeft;
         return obj;
+    }
+
+    public static Builder<T> PlacementBottomEdgeAlignedRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.BottomEdgeAlignedRight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -288,6 +360,14 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementLeftEdgeAlignedTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.LeftEdgeAlignedTop;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.LeftEdgeAlignedTop"/>.
     /// </summary>
@@ -298,6 +378,14 @@ public static partial class FlyoutBaseExtensions
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.LeftEdgeAlignedTop;
         return obj;
+    }
+
+    public static Builder<T> PlacementLeftEdgeAlignedBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.LeftEdgeAlignedBottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -312,6 +400,14 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementRightEdgeAlignedTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.RightEdgeAlignedTop;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.RightEdgeAlignedTop"/>.
     /// </summary>
@@ -324,6 +420,14 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementRightEdgeAlignedBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.RightEdgeAlignedBottom;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.FlyoutPlacementMode.RightEdgeAlignedBottom"/>.
     /// </summary>
@@ -334,6 +438,14 @@ public static partial class FlyoutBaseExtensions
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.RightEdgeAlignedBottom;
         return obj;
+    }
+
+    public static Builder<T> PlacementAuto1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.PlacementProperty] = Avalonia.Controls.FlyoutPlacementMode.Auto;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -349,6 +461,14 @@ public static partial class FlyoutBaseExtensions
     }
 
     // Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty
+
+    public static Builder<T> ShowMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.FlyoutShowMode> value)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/> value.
@@ -446,6 +566,14 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    public static Builder<T> ShowModeStandard1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty] = Avalonia.Controls.FlyoutShowMode.Standard;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/> property value to <see cref="Avalonia.Controls.FlyoutShowMode.Standard"/>.
     /// </summary>
@@ -458,6 +586,14 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    public static Builder<T> ShowModeTransient1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty] = Avalonia.Controls.FlyoutShowMode.Transient;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty"/> property value to <see cref="Avalonia.Controls.FlyoutShowMode.Transient"/>.
     /// </summary>
@@ -468,6 +604,14 @@ public static partial class FlyoutBaseExtensions
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty] = Avalonia.Controls.FlyoutShowMode.Transient;
         return obj;
+    }
+
+    public static Builder<T> ShowModeTransientWithDismissOnPointerMoveAway1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.ShowModeProperty] = Avalonia.Controls.FlyoutShowMode.TransientWithDismissOnPointerMoveAway;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -483,6 +627,14 @@ public static partial class FlyoutBaseExtensions
     }
 
     // Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty
+
+    public static Builder<T> OverlayInputPassThroughElement1<T>(this Builder<T> builder, Builder<Avalonia.Input.IInputElement> value)
+        where T : Avalonia.Controls.Primitives.FlyoutBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty"/> value.
@@ -581,6 +733,14 @@ public static partial class FlyoutBaseExtensions
     }
 
     // Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty
+
+    public static Builder<T> AttachedFlyout1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.FlyoutBase> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/> value.

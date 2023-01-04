@@ -8,6 +8,14 @@ public static partial class TreeViewItemExtensions
 {
     // Avalonia.Controls.TreeViewItem.IsExpandedProperty
 
+    public static Builder<T> IsExpanded1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TreeViewItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TreeViewItem.IsExpandedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeViewItem.IsExpandedProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class TreeViewItemExtensions
     }
 
     // Avalonia.Controls.TreeViewItem.IsSelectedProperty
+
+    public static Builder<T> IsSelected1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TreeViewItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TreeViewItem.IsSelectedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeViewItem.IsSelectedProperty"/> value.

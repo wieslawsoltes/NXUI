@@ -8,6 +8,14 @@ public static partial class RowDefinitionExtensions
 {
     // Avalonia.Controls.RowDefinition.MaxHeightProperty
 
+    public static Builder<T> MaxHeight1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.RowDefinition
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RowDefinition.MaxHeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RowDefinition.MaxHeightProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class RowDefinitionExtensions
 
     // Avalonia.Controls.RowDefinition.MinHeightProperty
 
+    public static Builder<T> MinHeight1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.RowDefinition
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RowDefinition.MinHeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RowDefinition.MinHeightProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class RowDefinitionExtensions
     }
 
     // Avalonia.Controls.RowDefinition.HeightProperty
+
+    public static Builder<T> Height1<T>(this Builder<T> builder, Builder<Avalonia.Controls.GridLength> value)
+        where T : Avalonia.Controls.RowDefinition
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RowDefinition.HeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> value.

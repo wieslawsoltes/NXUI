@@ -58,4 +58,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.</returns>
     public static Avalonia.Media.RotateTransform RotateTransform(out Avalonia.Media.RotateTransform @ref, System.Double angle, System.Double centerX, System.Double centerY)
         => @ref = new(angle, centerX, centerY);
+
+    public static Builder<Avalonia.Media.RotateTransform> RotateTransform1()
+    {
+        return new Builder<Avalonia.Media.RotateTransform>() { Activator = () => new Avalonia.Media.RotateTransform() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.</returns>
+    public static Avalonia.Media.RotateTransform RotateTransform() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.RotateTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.</returns>
+    public static Avalonia.Media.RotateTransform RotateTransform(out Avalonia.Media.RotateTransform @ref) => @ref = new();*/
 }

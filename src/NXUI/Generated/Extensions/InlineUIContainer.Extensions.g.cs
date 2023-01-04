@@ -8,6 +8,14 @@ public static partial class InlineUIContainerExtensions
 {
     // Avalonia.Controls.Documents.InlineUIContainer.ChildProperty
 
+    public static Builder<T> Child1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Control> value)
+        where T : Avalonia.Controls.Documents.InlineUIContainer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.InlineUIContainer.ChildProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/> value.
     /// </summary>

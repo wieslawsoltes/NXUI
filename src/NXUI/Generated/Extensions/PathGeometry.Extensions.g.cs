@@ -8,6 +8,14 @@ public static partial class PathGeometryExtensions
 {
     // Avalonia.Media.PathGeometry.FiguresProperty
 
+    public static Builder<T> Figures1<T>(this Builder<T> builder, Builder<Avalonia.Media.PathFigures> value)
+        where T : Avalonia.Media.PathGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.PathGeometry.FiguresProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class PathGeometryExtensions
 
     // Avalonia.Media.PathGeometry.FillRuleProperty
 
+    public static Builder<T> FillRule1<T>(this Builder<T> builder, Builder<Avalonia.Media.FillRule> value)
+        where T : Avalonia.Media.PathGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.PathGeometry.FillRuleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class PathGeometryExtensions
         return obj;
     }
 
+    public static Builder<T> FillRuleEvenOdd1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.PathGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.PathGeometry.FillRuleProperty] = Avalonia.Media.FillRule.EvenOdd;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> property value to <see cref="Avalonia.Media.FillRule.EvenOdd"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class PathGeometryExtensions
     {
         obj[Avalonia.Media.PathGeometry.FillRuleProperty] = Avalonia.Media.FillRule.EvenOdd;
         return obj;
+    }
+
+    public static Builder<T> FillRuleNonZero1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.PathGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.PathGeometry.FillRuleProperty] = Avalonia.Media.FillRule.NonZero;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

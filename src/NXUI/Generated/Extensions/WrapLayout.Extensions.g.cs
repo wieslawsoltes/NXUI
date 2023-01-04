@@ -8,6 +8,14 @@ public static partial class WrapLayoutExtensions
 {
     // Avalonia.Layout.WrapLayout.HorizontalSpacingProperty
 
+    public static Builder<T> HorizontalSpacing1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.WrapLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.WrapLayout.HorizontalSpacingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class WrapLayoutExtensions
     }
 
     // Avalonia.Layout.WrapLayout.VerticalSpacingProperty
+
+    public static Builder<T> VerticalSpacing1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.WrapLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.WrapLayout.VerticalSpacingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class WrapLayoutExtensions
 
     // Avalonia.Layout.WrapLayout.OrientationProperty
 
+    public static Builder<T> Orientation1<T>(this Builder<T> builder, Builder<Avalonia.Layout.Orientation> value)
+        where T : Avalonia.Layout.WrapLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.WrapLayout.OrientationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> value.
     /// </summary>
@@ -300,6 +324,14 @@ public static partial class WrapLayoutExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationHorizontal1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.WrapLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.WrapLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
@@ -310,6 +342,14 @@ public static partial class WrapLayoutExtensions
     {
         obj[Avalonia.Layout.WrapLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
+    }
+
+    public static Builder<T> OrientationVertical1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.WrapLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.WrapLayout.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

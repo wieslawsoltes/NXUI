@@ -8,6 +8,14 @@ public static partial class TextBoxExtensions
 {
     // Avalonia.Controls.TextBox.AcceptsReturnProperty
 
+    public static Builder<T> AcceptsReturn1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.AcceptsReturnProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.AcceptsReturnProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.AcceptsTabProperty
+
+    public static Builder<T> AcceptsTab1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.AcceptsTabProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.AcceptsTabProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.CaretIndexProperty
 
+    public static Builder<T> CaretIndex1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.CaretIndexProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.CaretIndexProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.IsReadOnlyProperty
+
+    public static Builder<T> IsReadOnly1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.IsReadOnlyProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.IsReadOnlyProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.PasswordCharProperty
 
+    public static Builder<T> PasswordChar1<T>(this Builder<T> builder, Builder<System.Char> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.PasswordCharProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.PasswordCharProperty"/> value.
     /// </summary>
@@ -497,6 +537,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.SelectionBrushProperty
+
+    public static Builder<T> SelectionBrush1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.SelectionBrushProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.SelectionBrushProperty"/> value.
@@ -596,6 +644,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.SelectionForegroundBrushProperty
 
+    public static Builder<T> SelectionForegroundBrush1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.SelectionForegroundBrushProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.SelectionForegroundBrushProperty"/> value.
     /// </summary>
@@ -693,6 +749,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.CaretBrushProperty
+
+    public static Builder<T> CaretBrush1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.CaretBrushProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.CaretBrushProperty"/> value.
@@ -792,6 +856,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.SelectionStartProperty
 
+    public static Builder<T> SelectionStart1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.SelectionStartProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.SelectionStartProperty"/> value.
     /// </summary>
@@ -889,6 +961,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.SelectionEndProperty
+
+    public static Builder<T> SelectionEnd1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.SelectionEndProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.SelectionEndProperty"/> value.
@@ -988,6 +1068,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.MaxLengthProperty
 
+    public static Builder<T> MaxLength1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.MaxLengthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.MaxLengthProperty"/> value.
     /// </summary>
@@ -1085,6 +1173,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.MaxLinesProperty
+
+    public static Builder<T> MaxLines1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.MaxLinesProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.MaxLinesProperty"/> value.
@@ -1184,6 +1280,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.TextProperty
 
+    public static Builder<T> Text1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.TextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextProperty"/> value.
     /// </summary>
@@ -1282,6 +1386,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty
 
+    public static Builder<T> HorizontalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.HorizontalAlignment> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> value.
     /// </summary>
@@ -1378,6 +1490,14 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
     /// </summary>
@@ -1388,6 +1508,14 @@ public static partial class TextBoxExtensions
     {
         obj[Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1402,6 +1530,14 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
     /// </summary>
@@ -1412,6 +1548,14 @@ public static partial class TextBoxExtensions
     {
         obj[Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1427,6 +1571,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.VerticalContentAlignmentProperty
+
+    public static Builder<T> VerticalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.VerticalAlignment> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> value.
@@ -1524,6 +1676,14 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
@@ -1534,6 +1694,14 @@ public static partial class TextBoxExtensions
     {
         obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1548,6 +1716,14 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
     /// </summary>
@@ -1558,6 +1734,14 @@ public static partial class TextBoxExtensions
     {
         obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1573,6 +1757,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.WatermarkProperty
+
+    public static Builder<T> Watermark1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.WatermarkProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> value.
@@ -1672,6 +1864,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.UseFloatingWatermarkProperty
 
+    public static Builder<T> UseFloatingWatermark1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.UseFloatingWatermarkProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> value.
     /// </summary>
@@ -1769,6 +1969,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.NewLineProperty
+
+    public static Builder<T> NewLine1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.NewLineProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.NewLineProperty"/> value.
@@ -1868,6 +2076,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.InnerLeftContentProperty
 
+    public static Builder<T> InnerLeftContent1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.InnerLeftContentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.InnerLeftContentProperty"/> value.
     /// </summary>
@@ -1966,6 +2182,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.InnerRightContentProperty
 
+    public static Builder<T> InnerRightContent1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.InnerRightContentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.InnerRightContentProperty"/> value.
     /// </summary>
@@ -2063,6 +2287,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.RevealPasswordProperty
+
+    public static Builder<T> RevealPassword1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.RevealPasswordProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.RevealPasswordProperty"/> value.
@@ -2294,6 +2526,14 @@ public static partial class TextBoxExtensions
 
     // Avalonia.Controls.TextBox.IsUndoEnabledProperty
 
+    public static Builder<T> IsUndoEnabled1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.IsUndoEnabledProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.IsUndoEnabledProperty"/> value.
     /// </summary>
@@ -2391,6 +2631,14 @@ public static partial class TextBoxExtensions
     }
 
     // Avalonia.Controls.TextBox.UndoLimitProperty
+
+    public static Builder<T> UndoLimit1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.TextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBox.UndoLimitProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.UndoLimitProperty"/> value.

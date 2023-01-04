@@ -8,6 +8,14 @@ public static partial class ImageBrushExtensions
 {
     // Avalonia.Media.ImageBrush.SourceProperty
 
+    public static Builder<T> Source1<T>(this Builder<T> builder, Builder<Avalonia.Media.Imaging.IBitmap> value)
+        where T : Avalonia.Media.ImageBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ImageBrush.SourceProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ImageBrush.SourceProperty"/> value.
     /// </summary>

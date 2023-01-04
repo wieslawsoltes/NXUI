@@ -96,6 +96,14 @@ public static partial class TopLevelExtensions
 
     // Avalonia.Controls.TopLevel.PointerOverElementProperty
 
+    public static Builder<T> PointerOverElement1<T>(this Builder<T> builder, Builder<Avalonia.Input.IInputElement> value)
+        where T : Avalonia.Controls.TopLevel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TopLevel.PointerOverElementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> value.
     /// </summary>
@@ -194,6 +202,14 @@ public static partial class TopLevelExtensions
 
     // Avalonia.Controls.TopLevel.TransparencyLevelHintProperty
 
+    public static Builder<T> TransparencyLevelHint1<T>(this Builder<T> builder, Builder<Avalonia.Controls.WindowTransparencyLevel> value)
+        where T : Avalonia.Controls.TopLevel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> value.
     /// </summary>
@@ -290,6 +306,14 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
+    public static Builder<T> TransparencyLevelHintNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TopLevel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property value to <see cref="Avalonia.Controls.WindowTransparencyLevel.None"/>.
     /// </summary>
@@ -300,6 +324,14 @@ public static partial class TopLevelExtensions
     {
         obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.None;
         return obj;
+    }
+
+    public static Builder<T> TransparencyLevelHintTransparent1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TopLevel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.Transparent;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -314,6 +346,14 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
+    public static Builder<T> TransparencyLevelHintBlur1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TopLevel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.Blur;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property value to <see cref="Avalonia.Controls.WindowTransparencyLevel.Blur"/>.
     /// </summary>
@@ -324,6 +364,14 @@ public static partial class TopLevelExtensions
     {
         obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.Blur;
         return obj;
+    }
+
+    public static Builder<T> TransparencyLevelHintAcrylicBlur1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TopLevel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.AcrylicBlur;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -338,6 +386,14 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
+    public static Builder<T> TransparencyLevelHintForceAcrylicBlur1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TopLevel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.ForceAcrylicBlur;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property value to <see cref="Avalonia.Controls.WindowTransparencyLevel.ForceAcrylicBlur"/>.
     /// </summary>
@@ -348,6 +404,14 @@ public static partial class TopLevelExtensions
     {
         obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.ForceAcrylicBlur;
         return obj;
+    }
+
+    public static Builder<T> TransparencyLevelHintMica1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TopLevel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.Mica;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -407,6 +471,14 @@ public static partial class TopLevelExtensions
     }
 
     // Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty
+
+    public static Builder<T> TransparencyBackgroundFallback1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.TopLevel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> value.

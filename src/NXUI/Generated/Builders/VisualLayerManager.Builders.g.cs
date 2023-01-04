@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.</returns>
     public static Avalonia.Controls.Primitives.VisualLayerManager VisualLayerManager(out Avalonia.Controls.Primitives.VisualLayerManager @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Primitives.VisualLayerManager> VisualLayerManager1()
+    {
+        return new Builder<Avalonia.Controls.Primitives.VisualLayerManager>() { Activator = () => new Avalonia.Controls.Primitives.VisualLayerManager() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.</returns>
+    public static Avalonia.Controls.Primitives.VisualLayerManager VisualLayerManager() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.</returns>
+    public static Avalonia.Controls.Primitives.VisualLayerManager VisualLayerManager(out Avalonia.Controls.Primitives.VisualLayerManager @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class StackPanelExtensions
 {
     // Avalonia.Controls.StackPanel.SpacingProperty
 
+    public static Builder<T> Spacing1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.StackPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.StackPanel.SpacingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class StackPanelExtensions
 
     // Avalonia.Controls.StackPanel.OrientationProperty
 
+    public static Builder<T> Orientation1<T>(this Builder<T> builder, Builder<Avalonia.Layout.Orientation> value)
+        where T : Avalonia.Controls.StackPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.StackPanel.OrientationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class StackPanelExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationHorizontal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.StackPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.StackPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class StackPanelExtensions
     {
         obj[Avalonia.Controls.StackPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
+    }
+
+    public static Builder<T> OrientationVertical1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.StackPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.StackPanel.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

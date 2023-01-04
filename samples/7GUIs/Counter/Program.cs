@@ -5,14 +5,14 @@ Builder<Window> Build1()
     .Title1("Counter")
     .Content1(
       StackPanel1()
-        .OrientationHorizontal()
-        .Children(
-          Label()
-            .HorizontalAlignmentCenter().VerticalAlignmentCenter()
-            .Content(count.ToBinding()),
-          Button()
+        .OrientationHorizontal1()
+        .Children1(
+          Label1()
+            .HorizontalAlignmentCenter1().VerticalAlignmentCenter1()
+            .Content1(count.ToBinding()),
+          Button1()
             .OnClick((_, o) => o.Subscribe(_ => count.OnNext(count.Value + 1)))
-            .Content("Count")));
+            .Content1("Count")));
 
 Window Build()
   => Window()

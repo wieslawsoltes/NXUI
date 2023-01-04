@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ItemsControl"/> class.</returns>
     public static Avalonia.Controls.ItemsControl ItemsControl(out Avalonia.Controls.ItemsControl @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.ItemsControl> ItemsControl1()
+    {
+        return new Builder<Avalonia.Controls.ItemsControl>() { Activator = () => new Avalonia.Controls.ItemsControl() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ItemsControl"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ItemsControl"/> class.</returns>
+    public static Avalonia.Controls.ItemsControl ItemsControl() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ItemsControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ItemsControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ItemsControl"/> class.</returns>
+    public static Avalonia.Controls.ItemsControl ItemsControl(out Avalonia.Controls.ItemsControl @ref) => @ref = new();*/
 }

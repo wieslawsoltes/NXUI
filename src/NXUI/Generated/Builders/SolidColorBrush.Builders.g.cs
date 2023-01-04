@@ -56,4 +56,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.</returns>
     public static Avalonia.Media.SolidColorBrush SolidColorBrush(out Avalonia.Media.SolidColorBrush @ref, System.UInt32 color)
         => @ref = new(color);
+
+    public static Builder<Avalonia.Media.SolidColorBrush> SolidColorBrush1()
+    {
+        return new Builder<Avalonia.Media.SolidColorBrush>() { Activator = () => new Avalonia.Media.SolidColorBrush() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.</returns>
+    public static Avalonia.Media.SolidColorBrush SolidColorBrush() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.SolidColorBrush"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.</returns>
+    public static Avalonia.Media.SolidColorBrush SolidColorBrush(out Avalonia.Media.SolidColorBrush @ref) => @ref = new();*/
 }

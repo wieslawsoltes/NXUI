@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.DoubleTransition"/> class.</returns>
     public static Avalonia.Animation.DoubleTransition DoubleTransition(out Avalonia.Animation.DoubleTransition @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Animation.DoubleTransition> DoubleTransition1()
+    {
+        return new Builder<Avalonia.Animation.DoubleTransition>() { Activator = () => new Avalonia.Animation.DoubleTransition() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.DoubleTransition"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.DoubleTransition"/> class.</returns>
+    public static Avalonia.Animation.DoubleTransition DoubleTransition() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.DoubleTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.DoubleTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.DoubleTransition"/> class.</returns>
+    public static Avalonia.Animation.DoubleTransition DoubleTransition(out Avalonia.Animation.DoubleTransition @ref) => @ref = new();*/
 }

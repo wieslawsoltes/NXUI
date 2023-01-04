@@ -8,6 +8,14 @@ public static partial class TransformGroupExtensions
 {
     // Avalonia.Media.TransformGroup.ChildrenProperty
 
+    public static Builder<T> Children1<T>(this Builder<T> builder, Builder<Avalonia.Media.Transforms> value)
+        where T : Avalonia.Media.TransformGroup
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TransformGroup.ChildrenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TransformGroup.ChildrenProperty"/> value.
     /// </summary>

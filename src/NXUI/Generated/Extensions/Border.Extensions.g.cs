@@ -8,6 +8,14 @@ public static partial class BorderExtensions
 {
     // Avalonia.Controls.Border.BackgroundProperty
 
+    public static Builder<T> Background1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BackgroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BackgroundProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class BorderExtensions
     }
 
     // Avalonia.Controls.Border.BorderBrushProperty
+
+    public static Builder<T> BorderBrush1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderBrushProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderBrushProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class BorderExtensions
 
     // Avalonia.Controls.Border.BorderThicknessProperty
 
+    public static Builder<T> BorderThickness1<T>(this Builder<T> builder, Builder<Avalonia.Thickness> value)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderThicknessProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class BorderExtensions
     }
 
     // Avalonia.Controls.Border.CornerRadiusProperty
+
+    public static Builder<T> CornerRadius1<T>(this Builder<T> builder, Builder<Avalonia.CornerRadius> value)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.CornerRadiusProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class BorderExtensions
 
     // Avalonia.Controls.Border.BoxShadowProperty
 
+    public static Builder<T> BoxShadow1<T>(this Builder<T> builder, Builder<Avalonia.Media.BoxShadows> value)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BoxShadowProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BoxShadowProperty"/> value.
     /// </summary>
@@ -497,6 +537,14 @@ public static partial class BorderExtensions
     }
 
     // Avalonia.Controls.Border.BorderDashOffsetProperty
+
+    public static Builder<T> BorderDashOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderDashOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderDashOffsetProperty"/> value.
@@ -596,6 +644,14 @@ public static partial class BorderExtensions
 
     // Avalonia.Controls.Border.BorderDashArrayProperty
 
+    public static Builder<T> BorderDashArray1<T>(this Builder<T> builder, Builder<Avalonia.Collections.AvaloniaList<System.Double>> value)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderDashArrayProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderDashArrayProperty"/> value.
     /// </summary>
@@ -694,6 +750,14 @@ public static partial class BorderExtensions
 
     // Avalonia.Controls.Border.BorderLineCapProperty
 
+    public static Builder<T> BorderLineCap1<T>(this Builder<T> builder, Builder<Avalonia.Media.PenLineCap> value)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderLineCapProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/> value.
     /// </summary>
@@ -790,6 +854,14 @@ public static partial class BorderExtensions
         return obj;
     }
 
+    public static Builder<T> BorderLineCapFlat1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderLineCapProperty] = Avalonia.Media.PenLineCap.Flat;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Flat"/>.
     /// </summary>
@@ -802,6 +874,14 @@ public static partial class BorderExtensions
         return obj;
     }
 
+    public static Builder<T> BorderLineCapRound1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderLineCapProperty] = Avalonia.Media.PenLineCap.Round;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Round"/>.
     /// </summary>
@@ -812,6 +892,14 @@ public static partial class BorderExtensions
     {
         obj[Avalonia.Controls.Border.BorderLineCapProperty] = Avalonia.Media.PenLineCap.Round;
         return obj;
+    }
+
+    public static Builder<T> BorderLineCapSquare1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderLineCapProperty] = Avalonia.Media.PenLineCap.Square;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -827,6 +915,14 @@ public static partial class BorderExtensions
     }
 
     // Avalonia.Controls.Border.BorderLineJoinProperty
+
+    public static Builder<T> BorderLineJoin1<T>(this Builder<T> builder, Builder<Avalonia.Media.PenLineJoin> value)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderLineJoinProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/> value.
@@ -924,6 +1020,14 @@ public static partial class BorderExtensions
         return obj;
     }
 
+    public static Builder<T> BorderLineJoinBevel1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderLineJoinProperty] = Avalonia.Media.PenLineJoin.Bevel;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Bevel"/>.
     /// </summary>
@@ -936,6 +1040,14 @@ public static partial class BorderExtensions
         return obj;
     }
 
+    public static Builder<T> BorderLineJoinMiter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderLineJoinProperty] = Avalonia.Media.PenLineJoin.Miter;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Miter"/>.
     /// </summary>
@@ -946,6 +1058,14 @@ public static partial class BorderExtensions
     {
         obj[Avalonia.Controls.Border.BorderLineJoinProperty] = Avalonia.Media.PenLineJoin.Miter;
         return obj;
+    }
+
+    public static Builder<T> BorderLineJoinRound1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Border
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Border.BorderLineJoinProperty] = Avalonia.Media.PenLineJoin.Round;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

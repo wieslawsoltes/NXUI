@@ -8,6 +8,14 @@ public static partial class NativeMenuBarExtensions
 {
     // Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty
 
+    public static Builder<T> EnableMenuItemClickForwarding1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.MenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty"/> value.
     /// </summary>

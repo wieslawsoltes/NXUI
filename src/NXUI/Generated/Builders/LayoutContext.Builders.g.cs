@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Layout.LayoutContext"/> class.</returns>
     public static Avalonia.Layout.LayoutContext LayoutContext(out Avalonia.Layout.LayoutContext @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Layout.LayoutContext> LayoutContext1()
+    {
+        return new Builder<Avalonia.Layout.LayoutContext>() { Activator = () => new Avalonia.Layout.LayoutContext() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.LayoutContext"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.LayoutContext"/> class.</returns>
+    public static Avalonia.Layout.LayoutContext LayoutContext() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.LayoutContext"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Layout.LayoutContext"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.LayoutContext"/> class.</returns>
+    public static Avalonia.Layout.LayoutContext LayoutContext(out Avalonia.Layout.LayoutContext @ref) => @ref = new();*/
 }

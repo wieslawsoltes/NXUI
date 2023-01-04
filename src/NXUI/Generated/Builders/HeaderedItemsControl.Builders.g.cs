@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.</returns>
     public static Avalonia.Controls.Primitives.HeaderedItemsControl HeaderedItemsControl(out Avalonia.Controls.Primitives.HeaderedItemsControl @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Primitives.HeaderedItemsControl> HeaderedItemsControl1()
+    {
+        return new Builder<Avalonia.Controls.Primitives.HeaderedItemsControl>() { Activator = () => new Avalonia.Controls.Primitives.HeaderedItemsControl() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.</returns>
+    public static Avalonia.Controls.Primitives.HeaderedItemsControl HeaderedItemsControl() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.</returns>
+    public static Avalonia.Controls.Primitives.HeaderedItemsControl HeaderedItemsControl(out Avalonia.Controls.Primitives.HeaderedItemsControl @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class AccessTextExtensions
 {
     // Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty
 
+    public static Builder<T> ShowAccessKey1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty"/> value.
     /// </summary>

@@ -64,4 +64,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.AnimatorKeyFrame"/> class.</returns>
     public static Avalonia.Animation.AnimatorKeyFrame AnimatorKeyFrame(out Avalonia.Animation.AnimatorKeyFrame @ref, System.Type animatorType, System.Func<Avalonia.Animation.IAnimator> animatorFactory, Avalonia.Animation.Cue cue, Avalonia.Animation.KeySpline keySpline)
         => @ref = new(animatorType, animatorFactory, cue, keySpline);
+
+    public static Builder<Avalonia.Animation.AnimatorKeyFrame> AnimatorKeyFrame1()
+    {
+        return new Builder<Avalonia.Animation.AnimatorKeyFrame>() { Activator = () => new Avalonia.Animation.AnimatorKeyFrame() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.AnimatorKeyFrame"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.AnimatorKeyFrame"/> class.</returns>
+    public static Avalonia.Animation.AnimatorKeyFrame AnimatorKeyFrame() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.AnimatorKeyFrame"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.AnimatorKeyFrame"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.AnimatorKeyFrame"/> class.</returns>
+    public static Avalonia.Animation.AnimatorKeyFrame AnimatorKeyFrame(out Avalonia.Animation.AnimatorKeyFrame @ref) => @ref = new();*/
 }

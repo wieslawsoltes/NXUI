@@ -8,6 +8,14 @@ public static partial class PanelExtensions
 {
     // Avalonia.Controls.Panel.BackgroundProperty
 
+    public static Builder<T> Background1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Panel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Panel.BackgroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Panel.BackgroundProperty"/> value.
     /// </summary>

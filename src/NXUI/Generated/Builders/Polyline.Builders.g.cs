@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Polyline"/> class.</returns>
     public static Avalonia.Controls.Shapes.Polyline Polyline(out Avalonia.Controls.Shapes.Polyline @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Shapes.Polyline> Polyline1()
+    {
+        return new Builder<Avalonia.Controls.Shapes.Polyline>() { Activator = () => new Avalonia.Controls.Shapes.Polyline() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Polyline"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Polyline"/> class.</returns>
+    public static Avalonia.Controls.Shapes.Polyline Polyline() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Polyline"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Shapes.Polyline"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Polyline"/> class.</returns>
+    public static Avalonia.Controls.Shapes.Polyline Polyline(out Avalonia.Controls.Shapes.Polyline @ref) => @ref = new();*/
 }

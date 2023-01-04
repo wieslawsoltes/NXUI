@@ -8,6 +8,14 @@ public static partial class TabControlExtensions
 {
     // Avalonia.Controls.TabControl.TabStripPlacementProperty
 
+    public static Builder<T> TabStripPlacement1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Dock> value)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    public static Builder<T> TabStripPlacementLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Left"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class TabControlExtensions
     {
         obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Left;
         return obj;
+    }
+
+    public static Builder<T> TabStripPlacementBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    public static Builder<T> TabStripPlacementRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Right;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Right"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class TabControlExtensions
     {
         obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Right;
         return obj;
+    }
+
+    public static Builder<T> TabStripPlacementTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -153,6 +193,14 @@ public static partial class TabControlExtensions
     }
 
     // Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty
+
+    public static Builder<T> HorizontalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.HorizontalAlignment> value)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> value.
@@ -250,6 +298,14 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
     /// </summary>
@@ -260,6 +316,14 @@ public static partial class TabControlExtensions
     {
         obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -274,6 +338,14 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
     /// </summary>
@@ -284,6 +356,14 @@ public static partial class TabControlExtensions
     {
         obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -299,6 +379,14 @@ public static partial class TabControlExtensions
     }
 
     // Avalonia.Controls.TabControl.VerticalContentAlignmentProperty
+
+    public static Builder<T> VerticalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.VerticalAlignment> value)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> value.
@@ -396,6 +484,14 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
@@ -406,6 +502,14 @@ public static partial class TabControlExtensions
     {
         obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -420,6 +524,14 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
     /// </summary>
@@ -430,6 +542,14 @@ public static partial class TabControlExtensions
     {
         obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -445,6 +565,14 @@ public static partial class TabControlExtensions
     }
 
     // Avalonia.Controls.TabControl.ContentTemplateProperty
+
+    public static Builder<T> ContentTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.ContentTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> value.
@@ -544,6 +672,14 @@ public static partial class TabControlExtensions
 
     // Avalonia.Controls.TabControl.SelectedContentProperty
 
+    public static Builder<T> SelectedContent1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.SelectedContentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/> value.
     /// </summary>
@@ -641,6 +777,14 @@ public static partial class TabControlExtensions
     }
 
     // Avalonia.Controls.TabControl.SelectedContentTemplateProperty
+
+    public static Builder<T> SelectedContentTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.TabControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabControl.SelectedContentTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> value.

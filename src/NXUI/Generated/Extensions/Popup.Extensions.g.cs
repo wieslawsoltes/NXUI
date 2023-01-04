@@ -8,6 +8,14 @@ public static partial class PopupExtensions
 {
     // Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty
 
+    public static Builder<T> WindowManagerAddShadowHint1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class PopupExtensions
     }
 
     // Avalonia.Controls.Primitives.Popup.ChildProperty
+
+    public static Builder<T> Child1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Control> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.ChildProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class PopupExtensions
 
     // Avalonia.Controls.Primitives.Popup.InheritsTransformProperty
 
+    public static Builder<T> InheritsTransform1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.InheritsTransformProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class PopupExtensions
     }
 
     // Avalonia.Controls.Primitives.Popup.IsOpenProperty
+
+    public static Builder<T> IsOpen1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.IsOpenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class PopupExtensions
 
     // Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty
 
+    public static Builder<T> PlacementAnchor1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> value.
     /// </summary>
@@ -496,6 +536,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None"/>.
     /// </summary>
@@ -506,6 +554,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -520,6 +576,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom"/>.
     /// </summary>
@@ -530,6 +594,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorVerticalMask1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -544,6 +616,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left"/>.
     /// </summary>
@@ -554,6 +634,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorTopLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -568,6 +656,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorBottomLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft"/>.
     /// </summary>
@@ -578,6 +674,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -592,6 +696,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorTopRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight"/>.
     /// </summary>
@@ -602,6 +714,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorBottomRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -616,6 +736,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorHorizontalMask1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask"/>.
     /// </summary>
@@ -626,6 +754,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorAllMask1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.AllMask;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -641,6 +777,14 @@ public static partial class PopupExtensions
     }
 
     // Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty
+
+    public static Builder<T> PlacementConstraintAdjustment1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> value.
@@ -738,6 +882,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementConstraintAdjustmentNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None"/>.
     /// </summary>
@@ -748,6 +900,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None;
         return obj;
+    }
+
+    public static Builder<T> PlacementConstraintAdjustmentSlideX1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -762,6 +922,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementConstraintAdjustmentSlideY1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY"/>.
     /// </summary>
@@ -772,6 +940,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY;
         return obj;
+    }
+
+    public static Builder<T> PlacementConstraintAdjustmentFlipX1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -786,6 +962,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementConstraintAdjustmentFlipY1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY"/>.
     /// </summary>
@@ -796,6 +980,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY;
         return obj;
+    }
+
+    public static Builder<T> PlacementConstraintAdjustmentResizeX1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -810,6 +1002,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementConstraintAdjustmentResizeY1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY"/>.
     /// </summary>
@@ -820,6 +1020,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY;
         return obj;
+    }
+
+    public static Builder<T> PlacementConstraintAdjustmentAll1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.All;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -835,6 +1043,14 @@ public static partial class PopupExtensions
     }
 
     // Avalonia.Controls.Primitives.Popup.PlacementGravityProperty
+
+    public static Builder<T> PlacementGravity1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> value.
@@ -932,6 +1148,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementGravityNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None"/>.
     /// </summary>
@@ -942,6 +1166,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None;
         return obj;
+    }
+
+    public static Builder<T> PlacementGravityTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -956,6 +1188,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementGravityBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom"/>.
     /// </summary>
@@ -966,6 +1206,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom;
         return obj;
+    }
+
+    public static Builder<T> PlacementGravityLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -980,6 +1228,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementGravityTopLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft"/>.
     /// </summary>
@@ -990,6 +1246,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft;
         return obj;
+    }
+
+    public static Builder<T> PlacementGravityBottomLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1004,6 +1268,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementGravityRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right"/>.
     /// </summary>
@@ -1016,6 +1288,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementGravityTopRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight"/>.
     /// </summary>
@@ -1026,6 +1306,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight;
         return obj;
+    }
+
+    public static Builder<T> PlacementGravityBottomRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomRight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1041,6 +1329,14 @@ public static partial class PopupExtensions
     }
 
     // Avalonia.Controls.Primitives.Popup.PlacementModeProperty
+
+    public static Builder<T> PlacementMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.PlacementMode> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> value.
@@ -1138,6 +1434,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementModePointer1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Pointer;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Pointer"/>.
     /// </summary>
@@ -1148,6 +1452,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Pointer;
         return obj;
+    }
+
+    public static Builder<T> PlacementModeBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1162,6 +1474,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementModeRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Right;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Right"/>.
     /// </summary>
@@ -1172,6 +1492,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Right;
         return obj;
+    }
+
+    public static Builder<T> PlacementModeLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1186,6 +1514,14 @@ public static partial class PopupExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementModeTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Top;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Top"/>.
     /// </summary>
@@ -1196,6 +1532,14 @@ public static partial class PopupExtensions
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Top;
         return obj;
+    }
+
+    public static Builder<T> PlacementModeAnchorAndGravity1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementModeProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1211,6 +1555,14 @@ public static partial class PopupExtensions
     }
 
     // Avalonia.Controls.Primitives.Popup.PlacementRectProperty
+
+    public static Builder<T> PlacementRect1<T>(this Builder<T> builder, Builder<System.Nullable<Avalonia.Rect>> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementRectProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/> value.
@@ -1310,6 +1662,14 @@ public static partial class PopupExtensions
 
     // Avalonia.Controls.Primitives.Popup.PlacementTargetProperty
 
+    public static Builder<T> PlacementTarget1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Control> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.PlacementTargetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/> value.
     /// </summary>
@@ -1407,6 +1767,14 @@ public static partial class PopupExtensions
     }
 
     // Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty
+
+    public static Builder<T> OverlayDismissEventPassThrough1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/> value.
@@ -1506,6 +1874,14 @@ public static partial class PopupExtensions
 
     // Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty
 
+    public static Builder<T> OverlayInputPassThroughElement1<T>(this Builder<T> builder, Builder<Avalonia.Input.IInputElement> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/> value.
     /// </summary>
@@ -1603,6 +1979,14 @@ public static partial class PopupExtensions
     }
 
     // Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty
+
+    public static Builder<T> HorizontalOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/> value.
@@ -1702,6 +2086,14 @@ public static partial class PopupExtensions
 
     // Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty
 
+    public static Builder<T> IsLightDismissEnabled1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/> value.
     /// </summary>
@@ -1800,6 +2192,14 @@ public static partial class PopupExtensions
 
     // Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty
 
+    public static Builder<T> VerticalOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/> value.
     /// </summary>
@@ -1897,6 +2297,14 @@ public static partial class PopupExtensions
     }
 
     // Avalonia.Controls.Primitives.Popup.TopmostProperty
+
+    public static Builder<T> Topmost1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.Popup
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.Popup.TopmostProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/> value.

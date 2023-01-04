@@ -8,6 +8,14 @@ public static partial class LineGeometryExtensions
 {
     // Avalonia.Media.LineGeometry.StartPointProperty
 
+    public static Builder<T> StartPoint1<T>(this Builder<T> builder, Builder<Avalonia.Point> value)
+        where T : Avalonia.Media.LineGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.LineGeometry.StartPointProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class LineGeometryExtensions
     }
 
     // Avalonia.Media.LineGeometry.EndPointProperty
+
+    public static Builder<T> EndPoint1<T>(this Builder<T> builder, Builder<Avalonia.Point> value)
+        where T : Avalonia.Media.LineGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.LineGeometry.EndPointProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/> value.

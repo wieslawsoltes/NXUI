@@ -8,6 +8,14 @@ public static partial class DataValidationErrorsExtensions
 {
     // Avalonia.Controls.DataValidationErrors.ErrorsProperty
 
+    public static Builder<T> Errors1<T>(this Builder<T> builder, Builder<System.Collections.Generic.IEnumerable<System.Object>> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DataValidationErrors.ErrorsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class DataValidationErrorsExtensions
     }
 
     // Avalonia.Controls.DataValidationErrors.HasErrorsProperty
+
+    public static Builder<T> HasErrors1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DataValidationErrors.HasErrorsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class DataValidationErrorsExtensions
 
     // Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty
 
+    public static Builder<T> ErrorTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.DataValidationErrors
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class DataValidationErrorsExtensions
     }
 
     // Avalonia.Controls.DataValidationErrors.OwnerProperty
+
+    public static Builder<T> Owner1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Control> value)
+        where T : Avalonia.Controls.DataValidationErrors
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DataValidationErrors.OwnerProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/> value.

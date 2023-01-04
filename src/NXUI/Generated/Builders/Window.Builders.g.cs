@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Window"/> class.</returns>
     public static Avalonia.Controls.Window Window(out Avalonia.Controls.Window @ref, Avalonia.Platform.IWindowImpl impl)
         => @ref = new(impl);
+
+    public static Builder<Avalonia.Controls.Window> Window1()
+    {
+        return new Builder<Avalonia.Controls.Window>() { Activator = () => new Avalonia.Controls.Window() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Window"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Window"/> class.</returns>
+    public static Avalonia.Controls.Window Window() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Window"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Window"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Window"/> class.</returns>
+    public static Avalonia.Controls.Window Window(out Avalonia.Controls.Window @ref) => @ref = new();*/
 }

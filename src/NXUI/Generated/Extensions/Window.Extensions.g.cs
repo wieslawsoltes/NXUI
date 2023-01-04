@@ -8,6 +8,14 @@ public static partial class WindowExtensions
 {
     // Avalonia.Controls.Window.SizeToContentProperty
 
+    public static Builder<T> SizeToContent1<T>(this Builder<T> builder, Builder<Avalonia.Controls.SizeToContent> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.SizeToContentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> SizeToContentManual1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Manual;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.Manual"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class WindowExtensions
     {
         obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Manual;
         return obj;
+    }
+
+    public static Builder<T> SizeToContentWidth1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Width;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> SizeToContentHeight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Height;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.Height"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class WindowExtensions
     {
         obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Height;
         return obj;
+    }
+
+    public static Builder<T> SizeToContentWidthAndHeight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.WidthAndHeight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -153,6 +193,14 @@ public static partial class WindowExtensions
     }
 
     // Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty
+
+    public static Builder<T> ExtendClientAreaToDecorationsHint1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/> value.
@@ -252,6 +300,14 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty
 
+    public static Builder<T> ExtendClientAreaChromeHints1<T>(this Builder<T> builder, Builder<Avalonia.Platform.ExtendClientAreaChromeHints> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> value.
     /// </summary>
@@ -348,6 +404,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> ExtendClientAreaChromeHintsNoChrome1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome"/>.
     /// </summary>
@@ -358,6 +422,14 @@ public static partial class WindowExtensions
     {
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome;
         return obj;
+    }
+
+    public static Builder<T> ExtendClientAreaChromeHintsSystemChrome1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.SystemChrome;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -372,6 +444,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> ExtendClientAreaChromeHintsPreferSystemChrome1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.PreferSystemChrome;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.PreferSystemChrome"/>.
     /// </summary>
@@ -384,6 +464,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> ExtendClientAreaChromeHintsDefault1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.Default;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.Default"/>.
     /// </summary>
@@ -394,6 +482,14 @@ public static partial class WindowExtensions
     {
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.Default;
         return obj;
+    }
+
+    public static Builder<T> ExtendClientAreaChromeHintsOSXThickTitleBar1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.OSXThickTitleBar;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -409,6 +505,14 @@ public static partial class WindowExtensions
     }
 
     // Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty
+
+    public static Builder<T> ExtendClientAreaTitleBarHeightHint1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/> value.
@@ -640,6 +744,14 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.SystemDecorationsProperty
 
+    public static Builder<T> SystemDecorations1<T>(this Builder<T> builder, Builder<Avalonia.Controls.SystemDecorations> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.SystemDecorationsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> value.
     /// </summary>
@@ -736,6 +848,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> SystemDecorationsNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.None"/>.
     /// </summary>
@@ -748,6 +868,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> SystemDecorationsBorderOnly1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.BorderOnly;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.BorderOnly"/>.
     /// </summary>
@@ -758,6 +886,14 @@ public static partial class WindowExtensions
     {
         obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.BorderOnly;
         return obj;
+    }
+
+    public static Builder<T> SystemDecorationsFull1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.Full;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -773,6 +909,14 @@ public static partial class WindowExtensions
     }
 
     // Avalonia.Controls.Window.ShowActivatedProperty
+
+    public static Builder<T> ShowActivated1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.ShowActivatedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/> value.
@@ -872,6 +1016,14 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.ShowInTaskbarProperty
 
+    public static Builder<T> ShowInTaskbar1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.ShowInTaskbarProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/> value.
     /// </summary>
@@ -970,6 +1122,14 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.WindowStateProperty
 
+    public static Builder<T> WindowState1<T>(this Builder<T> builder, Builder<Avalonia.Controls.WindowState> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.WindowStateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> value.
     /// </summary>
@@ -1066,6 +1226,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> WindowStateNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property value to <see cref="Avalonia.Controls.WindowState.Normal"/>.
     /// </summary>
@@ -1076,6 +1244,14 @@ public static partial class WindowExtensions
     {
         obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Normal;
         return obj;
+    }
+
+    public static Builder<T> WindowStateMinimized1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Minimized;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1090,6 +1266,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> WindowStateMaximized1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Maximized;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property value to <see cref="Avalonia.Controls.WindowState.Maximized"/>.
     /// </summary>
@@ -1100,6 +1284,14 @@ public static partial class WindowExtensions
     {
         obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Maximized;
         return obj;
+    }
+
+    public static Builder<T> WindowStateFullScreen1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.FullScreen;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1115,6 +1307,14 @@ public static partial class WindowExtensions
     }
 
     // Avalonia.Controls.Window.TitleProperty
+
+    public static Builder<T> Title1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.TitleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.TitleProperty"/> value.
@@ -1214,6 +1414,14 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.IconProperty
 
+    public static Builder<T> Icon1<T>(this Builder<T> builder, Builder<Avalonia.Controls.WindowIcon> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.IconProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.IconProperty"/> value.
     /// </summary>
@@ -1312,6 +1520,14 @@ public static partial class WindowExtensions
 
     // Avalonia.Controls.Window.WindowStartupLocationProperty
 
+    public static Builder<T> WindowStartupLocation1<T>(this Builder<T> builder, Builder<Avalonia.Controls.WindowStartupLocation> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.WindowStartupLocationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> value.
     /// </summary>
@@ -1408,6 +1624,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> WindowStartupLocationManual1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.WindowStartupLocationProperty] = Avalonia.Controls.WindowStartupLocation.Manual;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> property value to <see cref="Avalonia.Controls.WindowStartupLocation.Manual"/>.
     /// </summary>
@@ -1420,6 +1644,14 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    public static Builder<T> WindowStartupLocationCenterScreen1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.WindowStartupLocationProperty] = Avalonia.Controls.WindowStartupLocation.CenterScreen;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> property value to <see cref="Avalonia.Controls.WindowStartupLocation.CenterScreen"/>.
     /// </summary>
@@ -1430,6 +1662,14 @@ public static partial class WindowExtensions
     {
         obj[Avalonia.Controls.Window.WindowStartupLocationProperty] = Avalonia.Controls.WindowStartupLocation.CenterScreen;
         return obj;
+    }
+
+    public static Builder<T> WindowStartupLocationCenterOwner1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.WindowStartupLocationProperty] = Avalonia.Controls.WindowStartupLocation.CenterOwner;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1445,6 +1685,14 @@ public static partial class WindowExtensions
     }
 
     // Avalonia.Controls.Window.CanResizeProperty
+
+    public static Builder<T> CanResize1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Window
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Window.CanResizeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.CanResizeProperty"/> value.

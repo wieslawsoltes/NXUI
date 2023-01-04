@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.</returns>
     public static Avalonia.Controls.Primitives.TemplatedControl TemplatedControl(out Avalonia.Controls.Primitives.TemplatedControl @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Primitives.TemplatedControl> TemplatedControl1()
+    {
+        return new Builder<Avalonia.Controls.Primitives.TemplatedControl>() { Activator = () => new Avalonia.Controls.Primitives.TemplatedControl() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.</returns>
+    public static Avalonia.Controls.Primitives.TemplatedControl TemplatedControl() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.</returns>
+    public static Avalonia.Controls.Primitives.TemplatedControl TemplatedControl(out Avalonia.Controls.Primitives.TemplatedControl @ref) => @ref = new();*/
 }

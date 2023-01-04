@@ -8,6 +8,14 @@ public static partial class BrushExtensions
 {
     // Avalonia.Media.Brush.OpacityProperty
 
+    public static Builder<T> Opacity1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.Brush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Brush.OpacityProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Brush.OpacityProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class BrushExtensions
 
     // Avalonia.Media.Brush.TransformProperty
 
+    public static Builder<T> Transform1<T>(this Builder<T> builder, Builder<Avalonia.Media.ITransform> value)
+        where T : Avalonia.Media.Brush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Brush.TransformProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Brush.TransformProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class BrushExtensions
     }
 
     // Avalonia.Media.Brush.TransformOriginProperty
+
+    public static Builder<T> TransformOrigin1<T>(this Builder<T> builder, Builder<Avalonia.RelativePoint> value)
+        where T : Avalonia.Media.Brush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Brush.TransformOriginProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Brush.TransformOriginProperty"/> value.

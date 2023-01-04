@@ -8,6 +8,14 @@ public static partial class ToggleSwitchExtensions
 {
     // Avalonia.Controls.ToggleSwitch.OffContentProperty
 
+    public static Builder<T> OffContent1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.ToggleSwitch
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToggleSwitch.OffContentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ToggleSwitchExtensions
     }
 
     // Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty
+
+    public static Builder<T> OffContentTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.ToggleSwitch
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class ToggleSwitchExtensions
 
     // Avalonia.Controls.ToggleSwitch.OnContentProperty
 
+    public static Builder<T> OnContent1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.ToggleSwitch
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToggleSwitch.OnContentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class ToggleSwitchExtensions
     }
 
     // Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty
+
+    public static Builder<T> OnContentTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.ToggleSwitch
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/> value.

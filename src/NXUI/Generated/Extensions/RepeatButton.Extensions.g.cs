@@ -8,6 +8,14 @@ public static partial class RepeatButtonExtensions
 {
     // Avalonia.Controls.RepeatButton.IntervalProperty
 
+    public static Builder<T> Interval1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.RepeatButton
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RepeatButton.IntervalProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class RepeatButtonExtensions
     }
 
     // Avalonia.Controls.RepeatButton.DelayProperty
+
+    public static Builder<T> Delay1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.RepeatButton
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RepeatButton.DelayProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/> value.

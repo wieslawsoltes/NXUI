@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RadioButton"/> class.</returns>
     public static Avalonia.Controls.RadioButton RadioButton(out Avalonia.Controls.RadioButton @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.RadioButton> RadioButton1()
+    {
+        return new Builder<Avalonia.Controls.RadioButton>() { Activator = () => new Avalonia.Controls.RadioButton() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RadioButton"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RadioButton"/> class.</returns>
+    public static Avalonia.Controls.RadioButton RadioButton() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RadioButton"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RadioButton"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RadioButton"/> class.</returns>
+    public static Avalonia.Controls.RadioButton RadioButton(out Avalonia.Controls.RadioButton @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class ExpanderExtensions
 {
     // Avalonia.Controls.Expander.ContentTransitionProperty
 
+    public static Builder<T> ContentTransition1<T>(this Builder<T> builder, Builder<Avalonia.Animation.IPageTransition> value)
+        where T : Avalonia.Controls.Expander
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Expander.ContentTransitionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class ExpanderExtensions
 
     // Avalonia.Controls.Expander.ExpandDirectionProperty
 
+    public static Builder<T> ExpandDirection1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ExpandDirection> value)
+        where T : Avalonia.Controls.Expander
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class ExpanderExtensions
         return obj;
     }
 
+    public static Builder<T> ExpandDirectionDown1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Expander
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Down;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> property value to <see cref="Avalonia.Controls.ExpandDirection.Down"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class ExpanderExtensions
     {
         obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Down;
         return obj;
+    }
+
+    public static Builder<T> ExpandDirectionUp1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Expander
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Up;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -226,6 +258,14 @@ public static partial class ExpanderExtensions
         return obj;
     }
 
+    public static Builder<T> ExpandDirectionLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Expander
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> property value to <see cref="Avalonia.Controls.ExpandDirection.Left"/>.
     /// </summary>
@@ -236,6 +276,14 @@ public static partial class ExpanderExtensions
     {
         obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Left;
         return obj;
+    }
+
+    public static Builder<T> ExpandDirectionRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Expander
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -251,6 +299,14 @@ public static partial class ExpanderExtensions
     }
 
     // Avalonia.Controls.Expander.IsExpandedProperty
+
+    public static Builder<T> IsExpanded1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Expander
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Expander.IsExpandedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/> value.

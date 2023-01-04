@@ -8,6 +8,14 @@ public static partial class RectangleGeometryExtensions
 {
     // Avalonia.Media.RectangleGeometry.RectProperty
 
+    public static Builder<T> Rect1<T>(this Builder<T> builder, Builder<Avalonia.Rect> value)
+        where T : Avalonia.Media.RectangleGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.RectangleGeometry.RectProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> value.
     /// </summary>

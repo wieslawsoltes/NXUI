@@ -8,6 +8,14 @@ public static partial class ContentPresenterExtensions
 {
     // Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty
 
+    public static Builder<T> Background1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty
+
+    public static Builder<T> BorderBrush1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class ContentPresenterExtensions
 
     // Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty
 
+    public static Builder<T> BorderThickness1<T>(this Builder<T> builder, Builder<Avalonia.Thickness> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class ContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty
+
+    public static Builder<T> CornerRadius1<T>(this Builder<T> builder, Builder<Avalonia.CornerRadius> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class ContentPresenterExtensions
 
     // Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty
 
+    public static Builder<T> BoxShadow1<T>(this Builder<T> builder, Builder<Avalonia.Media.BoxShadows> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/> value.
     /// </summary>
@@ -497,6 +537,14 @@ public static partial class ContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty
+
+    public static Builder<T> Foreground1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/> value.
@@ -596,6 +644,14 @@ public static partial class ContentPresenterExtensions
 
     // Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty
 
+    public static Builder<T> FontFamily1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontFamily> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/> value.
     /// </summary>
@@ -693,6 +749,14 @@ public static partial class ContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty
+
+    public static Builder<T> FontSize1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/> value.
@@ -792,6 +856,14 @@ public static partial class ContentPresenterExtensions
 
     // Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty
 
+    public static Builder<T> FontStyle1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontStyle> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> value.
     /// </summary>
@@ -888,6 +960,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontStyleNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Normal"/>.
     /// </summary>
@@ -900,6 +980,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontStyleItalic1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Italic"/>.
     /// </summary>
@@ -910,6 +998,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
         return obj;
+    }
+
+    public static Builder<T> FontStyleOblique1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty] = Avalonia.Media.FontStyle.Oblique;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -925,6 +1021,14 @@ public static partial class ContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty
+
+    public static Builder<T> FontWeight1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontWeight> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> value.
@@ -1022,6 +1126,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightThin1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Thin"/>.
     /// </summary>
@@ -1032,6 +1144,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
         return obj;
+    }
+
+    public static Builder<T> FontWeightExtraLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1046,6 +1166,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightUltraLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraLight"/>.
     /// </summary>
@@ -1056,6 +1184,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
         return obj;
+    }
+
+    public static Builder<T> FontWeightLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1070,6 +1206,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightSemiLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiLight"/>.
     /// </summary>
@@ -1080,6 +1224,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
         return obj;
+    }
+
+    public static Builder<T> FontWeightNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1094,6 +1246,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightRegular1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Regular"/>.
     /// </summary>
@@ -1104,6 +1264,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
         return obj;
+    }
+
+    public static Builder<T> FontWeightMedium1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1118,6 +1286,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightDemiBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.DemiBold"/>.
     /// </summary>
@@ -1128,6 +1304,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
         return obj;
+    }
+
+    public static Builder<T> FontWeightSemiBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1142,6 +1326,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Bold"/>.
     /// </summary>
@@ -1152,6 +1344,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
         return obj;
+    }
+
+    public static Builder<T> FontWeightExtraBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1166,6 +1366,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightUltraBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBold"/>.
     /// </summary>
@@ -1176,6 +1384,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
         return obj;
+    }
+
+    public static Builder<T> FontWeightBlack1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1190,6 +1406,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightHeavy1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Heavy"/>.
     /// </summary>
@@ -1202,6 +1426,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightExtraBlack1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBlack"/>.
     /// </summary>
@@ -1212,6 +1444,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
         return obj;
+    }
+
+    public static Builder<T> FontWeightUltraBlack1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBlack;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1227,6 +1467,14 @@ public static partial class ContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty
+
+    public static Builder<T> FontStretch1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontStretch> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> value.
@@ -1324,6 +1572,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchUltraCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
     /// </summary>
@@ -1334,6 +1590,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
         return obj;
+    }
+
+    public static Builder<T> FontStretchExtraCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1348,6 +1612,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Condensed"/>.
     /// </summary>
@@ -1358,6 +1630,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
         return obj;
+    }
+
+    public static Builder<T> FontStretchSemiCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1372,6 +1652,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Normal"/>.
     /// </summary>
@@ -1382,6 +1670,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
         return obj;
+    }
+
+    public static Builder<T> FontStretchSemiExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1396,6 +1692,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Expanded"/>.
     /// </summary>
@@ -1408,6 +1712,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchExtraExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraExpanded"/>.
     /// </summary>
@@ -1418,6 +1730,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
         return obj;
+    }
+
+    public static Builder<T> FontStretchUltraExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.UltraExpanded;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1477,6 +1797,14 @@ public static partial class ContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ContentPresenter.ContentProperty
+
+    public static Builder<T> Content1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.ContentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/> value.
@@ -1576,6 +1904,14 @@ public static partial class ContentPresenterExtensions
 
     // Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty
 
+    public static Builder<T> ContentTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/> value.
     /// </summary>
@@ -1674,6 +2010,14 @@ public static partial class ContentPresenterExtensions
 
     // Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty
 
+    public static Builder<T> HorizontalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.HorizontalAlignment> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> value.
     /// </summary>
@@ -1770,6 +2114,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
     /// </summary>
@@ -1780,6 +2132,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1794,6 +2154,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
     /// </summary>
@@ -1804,6 +2172,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1819,6 +2195,14 @@ public static partial class ContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty
+
+    public static Builder<T> VerticalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.VerticalAlignment> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> value.
@@ -1916,6 +2300,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
@@ -1926,6 +2318,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1940,6 +2340,14 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
     /// </summary>
@@ -1950,6 +2358,14 @@ public static partial class ContentPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1965,6 +2381,14 @@ public static partial class ContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty
+
+    public static Builder<T> Padding1<T>(this Builder<T> builder, Builder<Avalonia.Thickness> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/> value.
@@ -2063,6 +2487,14 @@ public static partial class ContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty
+
+    public static Builder<T> RecognizesAccessKey1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/> value.

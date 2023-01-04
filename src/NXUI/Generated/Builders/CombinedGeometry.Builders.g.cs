@@ -83,4 +83,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.CombinedGeometry"/> class.</returns>
     public static Avalonia.Media.CombinedGeometry CombinedGeometry(out Avalonia.Media.CombinedGeometry @ref, Avalonia.Media.GeometryCombineMode combineMode, Avalonia.Media.Geometry geometry1, Avalonia.Media.Geometry geometry2, Avalonia.Media.Transform transform)
         => @ref = new(combineMode, geometry1, geometry2, transform);
+
+    public static Builder<Avalonia.Media.CombinedGeometry> CombinedGeometry1()
+    {
+        return new Builder<Avalonia.Media.CombinedGeometry>() { Activator = () => new Avalonia.Media.CombinedGeometry() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.CombinedGeometry"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.CombinedGeometry"/> class.</returns>
+    public static Avalonia.Media.CombinedGeometry CombinedGeometry() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.CombinedGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.CombinedGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.CombinedGeometry"/> class.</returns>
+    public static Avalonia.Media.CombinedGeometry CombinedGeometry(out Avalonia.Media.CombinedGeometry @ref) => @ref = new();*/
 }

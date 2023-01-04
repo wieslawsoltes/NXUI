@@ -8,6 +8,14 @@ public static partial class SectorExtensions
 {
     // Avalonia.Controls.Shapes.Sector.StartAngleProperty
 
+    public static Builder<T> StartAngle1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Shapes.Sector
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Sector.StartAngleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class SectorExtensions
     }
 
     // Avalonia.Controls.Shapes.Sector.SweepAngleProperty
+
+    public static Builder<T> SweepAngle1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Shapes.Sector
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Sector.SweepAngleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/> value.

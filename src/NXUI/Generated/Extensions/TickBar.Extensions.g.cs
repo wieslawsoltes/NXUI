@@ -8,6 +8,14 @@ public static partial class TickBarExtensions
 {
     // Avalonia.Controls.TickBar.FillProperty
 
+    public static Builder<T> Fill1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.FillProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.FillProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class TickBarExtensions
     }
 
     // Avalonia.Controls.TickBar.MinimumProperty
+
+    public static Builder<T> Minimum1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.MinimumProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.MinimumProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class TickBarExtensions
 
     // Avalonia.Controls.TickBar.MaximumProperty
 
+    public static Builder<T> Maximum1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.MaximumProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.MaximumProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class TickBarExtensions
     }
 
     // Avalonia.Controls.TickBar.TickFrequencyProperty
+
+    public static Builder<T> TickFrequency1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.TickFrequencyProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class TickBarExtensions
 
     // Avalonia.Controls.TickBar.OrientationProperty
 
+    public static Builder<T> Orientation1<T>(this Builder<T> builder, Builder<Avalonia.Layout.Orientation> value)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.OrientationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> value.
     /// </summary>
@@ -496,6 +536,14 @@ public static partial class TickBarExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationHorizontal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
@@ -506,6 +554,14 @@ public static partial class TickBarExtensions
     {
         obj[Avalonia.Controls.TickBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
+    }
+
+    public static Builder<T> OrientationVertical1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -521,6 +577,14 @@ public static partial class TickBarExtensions
     }
 
     // Avalonia.Controls.TickBar.TicksProperty
+
+    public static Builder<T> Ticks1<T>(this Builder<T> builder, Builder<Avalonia.Collections.AvaloniaList<System.Double>> value)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.TicksProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.TicksProperty"/> value.
@@ -620,6 +684,14 @@ public static partial class TickBarExtensions
 
     // Avalonia.Controls.TickBar.IsDirectionReversedProperty
 
+    public static Builder<T> IsDirectionReversed1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.IsDirectionReversedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/> value.
     /// </summary>
@@ -718,6 +790,14 @@ public static partial class TickBarExtensions
 
     // Avalonia.Controls.TickBar.PlacementProperty
 
+    public static Builder<T> Placement1<T>(this Builder<T> builder, Builder<Avalonia.Controls.TickBarPlacement> value)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.PlacementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> value.
     /// </summary>
@@ -814,6 +894,14 @@ public static partial class TickBarExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property value to <see cref="Avalonia.Controls.TickBarPlacement.Left"/>.
     /// </summary>
@@ -824,6 +912,14 @@ public static partial class TickBarExtensions
     {
         obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Left;
         return obj;
+    }
+
+    public static Builder<T> PlacementTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -838,6 +934,14 @@ public static partial class TickBarExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Right;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property value to <see cref="Avalonia.Controls.TickBarPlacement.Right"/>.
     /// </summary>
@@ -848,6 +952,14 @@ public static partial class TickBarExtensions
     {
         obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Right;
         return obj;
+    }
+
+    public static Builder<T> PlacementBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -863,6 +975,14 @@ public static partial class TickBarExtensions
     }
 
     // Avalonia.Controls.TickBar.ReservedSpaceProperty
+
+    public static Builder<T> ReservedSpace1<T>(this Builder<T> builder, Builder<Avalonia.Rect> value)
+        where T : Avalonia.Controls.TickBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TickBar.ReservedSpaceProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/> value.

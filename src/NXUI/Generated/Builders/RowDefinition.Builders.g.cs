@@ -56,4 +56,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
     public static Avalonia.Controls.RowDefinition RowDefinition(out Avalonia.Controls.RowDefinition @ref, Avalonia.Controls.GridLength height)
         => @ref = new(height);
+
+    public static Builder<Avalonia.Controls.RowDefinition> RowDefinition1()
+    {
+        return new Builder<Avalonia.Controls.RowDefinition>() { Activator = () => new Avalonia.Controls.RowDefinition() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
+    public static Avalonia.Controls.RowDefinition RowDefinition() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RowDefinition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
+    public static Avalonia.Controls.RowDefinition RowDefinition(out Avalonia.Controls.RowDefinition @ref) => @ref = new();*/
 }

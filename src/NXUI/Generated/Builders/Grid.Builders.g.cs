@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Grid"/> class.</returns>
     public static Avalonia.Controls.Grid Grid(out Avalonia.Controls.Grid @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Grid> Grid1()
+    {
+        return new Builder<Avalonia.Controls.Grid>() { Activator = () => new Avalonia.Controls.Grid() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Grid"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Grid"/> class.</returns>
+    public static Avalonia.Controls.Grid Grid() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Grid"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Grid"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Grid"/> class.</returns>
+    public static Avalonia.Controls.Grid Grid(out Avalonia.Controls.Grid @ref) => @ref = new();*/
 }

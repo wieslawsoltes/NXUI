@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.CheckBox"/> class.</returns>
     public static Avalonia.Controls.CheckBox CheckBox(out Avalonia.Controls.CheckBox @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.CheckBox> CheckBox1()
+    {
+        return new Builder<Avalonia.Controls.CheckBox>() { Activator = () => new Avalonia.Controls.CheckBox() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.CheckBox"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.CheckBox"/> class.</returns>
+    public static Avalonia.Controls.CheckBox CheckBox() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.CheckBox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.CheckBox"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.CheckBox"/> class.</returns>
+    public static Avalonia.Controls.CheckBox CheckBox(out Avalonia.Controls.CheckBox @ref) => @ref = new();*/
 }

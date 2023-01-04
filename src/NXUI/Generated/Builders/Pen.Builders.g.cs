@@ -74,4 +74,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
     public static Avalonia.Media.Pen Pen(out Avalonia.Media.Pen @ref, Avalonia.Media.IBrush brush, System.Double thickness = 1, Avalonia.Media.IDashStyle dashStyle = default, Avalonia.Media.PenLineCap lineCap = Avalonia.Media.PenLineCap.Flat, Avalonia.Media.PenLineJoin lineJoin = Avalonia.Media.PenLineJoin.Miter, System.Double miterLimit = 10)
         => @ref = new(brush, thickness, dashStyle, lineCap, lineJoin, miterLimit);
+
+    public static Builder<Avalonia.Media.Pen> Pen1()
+    {
+        return new Builder<Avalonia.Media.Pen>() { Activator = () => new Avalonia.Media.Pen() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
+    public static Avalonia.Media.Pen Pen() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Pen"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
+    public static Avalonia.Media.Pen Pen(out Avalonia.Media.Pen @ref) => @ref = new();*/
 }

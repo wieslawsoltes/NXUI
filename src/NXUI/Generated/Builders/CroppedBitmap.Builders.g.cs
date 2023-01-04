@@ -39,4 +39,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.</returns>
     public static Avalonia.Media.Imaging.CroppedBitmap CroppedBitmap(out Avalonia.Media.Imaging.CroppedBitmap @ref, Avalonia.Media.IImage source, Avalonia.PixelRect sourceRect)
         => @ref = new(source, sourceRect);
+
+    public static Builder<Avalonia.Media.Imaging.CroppedBitmap> CroppedBitmap1()
+    {
+        return new Builder<Avalonia.Media.Imaging.CroppedBitmap>() { Activator = () => new Avalonia.Media.Imaging.CroppedBitmap() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.</returns>
+    public static Avalonia.Media.Imaging.CroppedBitmap CroppedBitmap() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.</returns>
+    public static Avalonia.Media.Imaging.CroppedBitmap CroppedBitmap(out Avalonia.Media.Imaging.CroppedBitmap @ref) => @ref = new();*/
 }

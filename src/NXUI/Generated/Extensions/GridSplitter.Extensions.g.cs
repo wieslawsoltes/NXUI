@@ -8,6 +8,14 @@ public static partial class GridSplitterExtensions
 {
     // Avalonia.Controls.GridSplitter.ResizeDirectionProperty
 
+    public static Builder<T> ResizeDirection1<T>(this Builder<T> builder, Builder<Avalonia.Controls.GridResizeDirection> value)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
+    public static Builder<T> ResizeDirectionAuto1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = Avalonia.Controls.GridResizeDirection.Auto;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> property value to <see cref="Avalonia.Controls.GridResizeDirection.Auto"/>.
     /// </summary>
@@ -116,6 +132,14 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
+    public static Builder<T> ResizeDirectionColumns1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = Avalonia.Controls.GridResizeDirection.Columns;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> property value to <see cref="Avalonia.Controls.GridResizeDirection.Columns"/>.
     /// </summary>
@@ -126,6 +150,14 @@ public static partial class GridSplitterExtensions
     {
         obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = Avalonia.Controls.GridResizeDirection.Columns;
         return obj;
+    }
+
+    public static Builder<T> ResizeDirectionRows1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = Avalonia.Controls.GridResizeDirection.Rows;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -141,6 +173,14 @@ public static partial class GridSplitterExtensions
     }
 
     // Avalonia.Controls.GridSplitter.ResizeBehaviorProperty
+
+    public static Builder<T> ResizeBehavior1<T>(this Builder<T> builder, Builder<Avalonia.Controls.GridResizeBehavior> value)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> value.
@@ -238,6 +278,14 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
+    public static Builder<T> ResizeBehaviorBasedOnAlignment1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.BasedOnAlignment;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property value to <see cref="Avalonia.Controls.GridResizeBehavior.BasedOnAlignment"/>.
     /// </summary>
@@ -248,6 +296,14 @@ public static partial class GridSplitterExtensions
     {
         obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.BasedOnAlignment;
         return obj;
+    }
+
+    public static Builder<T> ResizeBehaviorCurrentAndNext1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.CurrentAndNext;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -262,6 +318,14 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
+    public static Builder<T> ResizeBehaviorPreviousAndCurrent1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.PreviousAndCurrent;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property value to <see cref="Avalonia.Controls.GridResizeBehavior.PreviousAndCurrent"/>.
     /// </summary>
@@ -272,6 +336,14 @@ public static partial class GridSplitterExtensions
     {
         obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.PreviousAndCurrent;
         return obj;
+    }
+
+    public static Builder<T> ResizeBehaviorPreviousAndNext1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.PreviousAndNext;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -287,6 +359,14 @@ public static partial class GridSplitterExtensions
     }
 
     // Avalonia.Controls.GridSplitter.ShowsPreviewProperty
+
+    public static Builder<T> ShowsPreview1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.ShowsPreviewProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> value.
@@ -386,6 +466,14 @@ public static partial class GridSplitterExtensions
 
     // Avalonia.Controls.GridSplitter.KeyboardIncrementProperty
 
+    public static Builder<T> KeyboardIncrement1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.KeyboardIncrementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> value.
     /// </summary>
@@ -484,6 +572,14 @@ public static partial class GridSplitterExtensions
 
     // Avalonia.Controls.GridSplitter.DragIncrementProperty
 
+    public static Builder<T> DragIncrement1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.DragIncrementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> value.
     /// </summary>
@@ -581,6 +677,14 @@ public static partial class GridSplitterExtensions
     }
 
     // Avalonia.Controls.GridSplitter.PreviewContentProperty
+
+    public static Builder<T> PreviewContent1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> value)
+        where T : Avalonia.Controls.GridSplitter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.GridSplitter.PreviewContentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> value.

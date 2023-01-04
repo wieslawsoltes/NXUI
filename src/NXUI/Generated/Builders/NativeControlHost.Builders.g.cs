@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeControlHost"/> class.</returns>
     public static Avalonia.Controls.NativeControlHost NativeControlHost(out Avalonia.Controls.NativeControlHost @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.NativeControlHost> NativeControlHost1()
+    {
+        return new Builder<Avalonia.Controls.NativeControlHost>() { Activator = () => new Avalonia.Controls.NativeControlHost() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeControlHost"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeControlHost"/> class.</returns>
+    public static Avalonia.Controls.NativeControlHost NativeControlHost() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeControlHost"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NativeControlHost"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeControlHost"/> class.</returns>
+    public static Avalonia.Controls.NativeControlHost NativeControlHost(out Avalonia.Controls.NativeControlHost @ref) => @ref = new();*/
 }

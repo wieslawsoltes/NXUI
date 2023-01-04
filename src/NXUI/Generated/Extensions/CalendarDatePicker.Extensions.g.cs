@@ -8,6 +8,14 @@ public static partial class CalendarDatePickerExtensions
 {
     // Avalonia.Controls.CalendarDatePicker.DisplayDateProperty
 
+    public static Builder<T> DisplayDate1<T>(this Builder<T> builder, Builder<System.DateTime> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.DisplayDateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class CalendarDatePickerExtensions
     }
 
     // Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty
+
+    public static Builder<T> DisplayDateStart1<T>(this Builder<T> builder, Builder<System.Nullable<System.DateTime>> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class CalendarDatePickerExtensions
 
     // Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty
 
+    public static Builder<T> DisplayDateEnd1<T>(this Builder<T> builder, Builder<System.Nullable<System.DateTime>> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/> value.
     /// </summary>
@@ -302,6 +326,14 @@ public static partial class CalendarDatePickerExtensions
 
     // Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty
 
+    public static Builder<T> FirstDayOfWeek1<T>(this Builder<T> builder, Builder<System.DayOfWeek> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> value.
     /// </summary>
@@ -398,6 +430,14 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    public static Builder<T> FirstDayOfWeekSunday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Sunday;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Sunday"/>.
     /// </summary>
@@ -408,6 +448,14 @@ public static partial class CalendarDatePickerExtensions
     {
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Sunday;
         return obj;
+    }
+
+    public static Builder<T> FirstDayOfWeekMonday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Monday;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -422,6 +470,14 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    public static Builder<T> FirstDayOfWeekTuesday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Tuesday;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Tuesday"/>.
     /// </summary>
@@ -432,6 +488,14 @@ public static partial class CalendarDatePickerExtensions
     {
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Tuesday;
         return obj;
+    }
+
+    public static Builder<T> FirstDayOfWeekWednesday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Wednesday;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -446,6 +510,14 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    public static Builder<T> FirstDayOfWeekThursday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Thursday;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Thursday"/>.
     /// </summary>
@@ -458,6 +530,14 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    public static Builder<T> FirstDayOfWeekFriday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Friday;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Friday"/>.
     /// </summary>
@@ -468,6 +548,14 @@ public static partial class CalendarDatePickerExtensions
     {
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Friday;
         return obj;
+    }
+
+    public static Builder<T> FirstDayOfWeekSaturday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Saturday;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -483,6 +571,14 @@ public static partial class CalendarDatePickerExtensions
     }
 
     // Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty
+
+    public static Builder<T> IsDropDownOpen1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/> value.
@@ -582,6 +678,14 @@ public static partial class CalendarDatePickerExtensions
 
     // Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty
 
+    public static Builder<T> IsTodayHighlighted1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/> value.
     /// </summary>
@@ -679,6 +783,14 @@ public static partial class CalendarDatePickerExtensions
     }
 
     // Avalonia.Controls.CalendarDatePicker.SelectedDateProperty
+
+    public static Builder<T> SelectedDate1<T>(this Builder<T> builder, Builder<System.Nullable<System.DateTime>> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.SelectedDateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/> value.
@@ -778,6 +890,14 @@ public static partial class CalendarDatePickerExtensions
 
     // Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty
 
+    public static Builder<T> SelectedDateFormat1<T>(this Builder<T> builder, Builder<Avalonia.Controls.CalendarDatePickerFormat> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> value.
     /// </summary>
@@ -874,6 +994,14 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    public static Builder<T> SelectedDateFormatLong1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty] = Avalonia.Controls.CalendarDatePickerFormat.Long;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> property value to <see cref="Avalonia.Controls.CalendarDatePickerFormat.Long"/>.
     /// </summary>
@@ -886,6 +1014,14 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    public static Builder<T> SelectedDateFormatShort1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty] = Avalonia.Controls.CalendarDatePickerFormat.Short;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> property value to <see cref="Avalonia.Controls.CalendarDatePickerFormat.Short"/>.
     /// </summary>
@@ -896,6 +1032,14 @@ public static partial class CalendarDatePickerExtensions
     {
         obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty] = Avalonia.Controls.CalendarDatePickerFormat.Short;
         return obj;
+    }
+
+    public static Builder<T> SelectedDateFormatCustom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty] = Avalonia.Controls.CalendarDatePickerFormat.Custom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -911,6 +1055,14 @@ public static partial class CalendarDatePickerExtensions
     }
 
     // Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty
+
+    public static Builder<T> CustomDateFormatString1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/> value.
@@ -1010,6 +1162,14 @@ public static partial class CalendarDatePickerExtensions
 
     // Avalonia.Controls.CalendarDatePicker.TextProperty
 
+    public static Builder<T> Text1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.TextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/> value.
     /// </summary>
@@ -1107,6 +1267,14 @@ public static partial class CalendarDatePickerExtensions
     }
 
     // Avalonia.Controls.CalendarDatePicker.WatermarkProperty
+
+    public static Builder<T> Watermark1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.WatermarkProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> value.
@@ -1206,6 +1374,14 @@ public static partial class CalendarDatePickerExtensions
 
     // Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty
 
+    public static Builder<T> UseFloatingWatermark1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> value.
     /// </summary>
@@ -1304,6 +1480,14 @@ public static partial class CalendarDatePickerExtensions
 
     // Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty
 
+    public static Builder<T> HorizontalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.HorizontalAlignment> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> value.
     /// </summary>
@@ -1400,6 +1584,14 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
     /// </summary>
@@ -1410,6 +1602,14 @@ public static partial class CalendarDatePickerExtensions
     {
         obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1424,6 +1624,14 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
     /// </summary>
@@ -1434,6 +1642,14 @@ public static partial class CalendarDatePickerExtensions
     {
         obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1449,6 +1665,14 @@ public static partial class CalendarDatePickerExtensions
     }
 
     // Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty
+
+    public static Builder<T> VerticalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.VerticalAlignment> value)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> value.
@@ -1546,6 +1770,14 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
@@ -1556,6 +1788,14 @@ public static partial class CalendarDatePickerExtensions
     {
         obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1570,6 +1810,14 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
     /// </summary>
@@ -1580,6 +1828,14 @@ public static partial class CalendarDatePickerExtensions
     {
         obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.CalendarDatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

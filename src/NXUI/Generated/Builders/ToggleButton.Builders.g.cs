@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.</returns>
     public static Avalonia.Controls.Primitives.ToggleButton ToggleButton(out Avalonia.Controls.Primitives.ToggleButton @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Primitives.ToggleButton> ToggleButton1()
+    {
+        return new Builder<Avalonia.Controls.Primitives.ToggleButton>() { Activator = () => new Avalonia.Controls.Primitives.ToggleButton() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.</returns>
+    public static Avalonia.Controls.Primitives.ToggleButton ToggleButton() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.</returns>
+    public static Avalonia.Controls.Primitives.ToggleButton ToggleButton(out Avalonia.Controls.Primitives.ToggleButton @ref) => @ref = new();*/
 }

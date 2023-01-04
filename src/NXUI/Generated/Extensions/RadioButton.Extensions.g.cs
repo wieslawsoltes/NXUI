@@ -8,6 +8,14 @@ public static partial class RadioButtonExtensions
 {
     // Avalonia.Controls.RadioButton.GroupNameProperty
 
+    public static Builder<T> GroupName1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.RadioButton
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RadioButton.GroupNameProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RadioButton.GroupNameProperty"/> value.
     /// </summary>

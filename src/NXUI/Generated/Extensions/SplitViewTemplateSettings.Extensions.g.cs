@@ -8,6 +8,14 @@ public static partial class SplitViewTemplateSettingsExtensions
 {
     // Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty
 
+    public static Builder<T> ClosedPaneWidth1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.SplitViewTemplateSettings
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class SplitViewTemplateSettingsExtensions
     }
 
     // Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty
+
+    public static Builder<T> PaneColumnGridLength1<T>(this Builder<T> builder, Builder<Avalonia.Controls.GridLength> value)
+        where T : Avalonia.Controls.SplitViewTemplateSettings
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> value.

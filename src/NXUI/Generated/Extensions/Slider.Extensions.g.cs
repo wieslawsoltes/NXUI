@@ -8,6 +8,14 @@ public static partial class SliderExtensions
 {
     // Avalonia.Controls.Slider.OrientationProperty
 
+    public static Builder<T> Orientation1<T>(this Builder<T> builder, Builder<Avalonia.Layout.Orientation> value)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.OrientationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class SliderExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationHorizontal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class SliderExtensions
     {
         obj[Avalonia.Controls.Slider.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
+    }
+
+    public static Builder<T> OrientationVertical1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -129,6 +153,14 @@ public static partial class SliderExtensions
     }
 
     // Avalonia.Controls.Slider.IsDirectionReversedProperty
+
+    public static Builder<T> IsDirectionReversed1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.IsDirectionReversedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/> value.
@@ -228,6 +260,14 @@ public static partial class SliderExtensions
 
     // Avalonia.Controls.Slider.IsSnapToTickEnabledProperty
 
+    public static Builder<T> IsSnapToTickEnabled1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.IsSnapToTickEnabledProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/> value.
     /// </summary>
@@ -325,6 +365,14 @@ public static partial class SliderExtensions
     }
 
     // Avalonia.Controls.Slider.TickFrequencyProperty
+
+    public static Builder<T> TickFrequency1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.TickFrequencyProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/> value.
@@ -424,6 +472,14 @@ public static partial class SliderExtensions
 
     // Avalonia.Controls.Slider.TickPlacementProperty
 
+    public static Builder<T> TickPlacement1<T>(this Builder<T> builder, Builder<Avalonia.Controls.TickPlacement> value)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.TickPlacementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> value.
     /// </summary>
@@ -520,6 +576,14 @@ public static partial class SliderExtensions
         return obj;
     }
 
+    public static Builder<T> TickPlacementNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> property value to <see cref="Avalonia.Controls.TickPlacement.None"/>.
     /// </summary>
@@ -530,6 +594,14 @@ public static partial class SliderExtensions
     {
         obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.None;
         return obj;
+    }
+
+    public static Builder<T> TickPlacementTopLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.TopLeft;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -544,6 +616,14 @@ public static partial class SliderExtensions
         return obj;
     }
 
+    public static Builder<T> TickPlacementBottomRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.BottomRight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> property value to <see cref="Avalonia.Controls.TickPlacement.BottomRight"/>.
     /// </summary>
@@ -554,6 +634,14 @@ public static partial class SliderExtensions
     {
         obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.BottomRight;
         return obj;
+    }
+
+    public static Builder<T> TickPlacementOutside1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.Outside;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -569,6 +657,14 @@ public static partial class SliderExtensions
     }
 
     // Avalonia.Controls.Slider.TicksProperty
+
+    public static Builder<T> Ticks1<T>(this Builder<T> builder, Builder<Avalonia.Collections.AvaloniaList<System.Double>> value)
+        where T : Avalonia.Controls.Slider
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Slider.TicksProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TicksProperty"/> value.

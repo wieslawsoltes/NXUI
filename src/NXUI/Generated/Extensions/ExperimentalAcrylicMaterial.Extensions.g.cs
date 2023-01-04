@@ -8,6 +8,14 @@ public static partial class ExperimentalAcrylicMaterialExtensions
 {
     // Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty
 
+    public static Builder<T> TintColor1<T>(this Builder<T> builder, Builder<Avalonia.Media.Color> value)
+        where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class ExperimentalAcrylicMaterialExtensions
 
     // Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty
 
+    public static Builder<T> BackgroundSource1<T>(this Builder<T> builder, Builder<Avalonia.Media.AcrylicBackgroundSource> value)
+        where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
+    public static Builder<T> BackgroundSourceNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty] = Avalonia.Media.AcrylicBackgroundSource.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> property value to <see cref="Avalonia.Media.AcrylicBackgroundSource.None"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     {
         obj[Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty] = Avalonia.Media.AcrylicBackgroundSource.None;
         return obj;
+    }
+
+    public static Builder<T> BackgroundSourceDigger1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty] = Avalonia.Media.AcrylicBackgroundSource.Digger;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -227,6 +259,14 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     }
 
     // Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty
+
+    public static Builder<T> TintOpacity1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> value.
@@ -326,6 +366,14 @@ public static partial class ExperimentalAcrylicMaterialExtensions
 
     // Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty
 
+    public static Builder<T> MaterialOpacity1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> value.
     /// </summary>
@@ -424,6 +472,14 @@ public static partial class ExperimentalAcrylicMaterialExtensions
 
     // Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty
 
+    public static Builder<T> PlatformTransparencyCompensationLevel1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> value.
     /// </summary>
@@ -521,6 +577,14 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     }
 
     // Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty
+
+    public static Builder<T> FallbackColor1<T>(this Builder<T> builder, Builder<Avalonia.Media.Color> value)
+        where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> value.

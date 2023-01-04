@@ -8,6 +8,14 @@ public static partial class SplitButtonExtensions
 {
     // Avalonia.Controls.SplitButton.CommandProperty
 
+    public static Builder<T> Command1<T>(this Builder<T> builder, Builder<System.Windows.Input.ICommand> value)
+        where T : Avalonia.Controls.SplitButton
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitButton.CommandProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitButton.CommandProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class SplitButtonExtensions
 
     // Avalonia.Controls.SplitButton.CommandParameterProperty
 
+    public static Builder<T> CommandParameter1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.SplitButton
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitButton.CommandParameterProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class SplitButtonExtensions
     }
 
     // Avalonia.Controls.SplitButton.FlyoutProperty
+
+    public static Builder<T> Flyout1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.FlyoutBase> value)
+        where T : Avalonia.Controls.SplitButton
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitButton.FlyoutProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/> value.

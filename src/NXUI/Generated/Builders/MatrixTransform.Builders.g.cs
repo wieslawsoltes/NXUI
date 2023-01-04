@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
     public static Avalonia.Media.MatrixTransform MatrixTransform(out Avalonia.Media.MatrixTransform @ref, Avalonia.Matrix matrix)
         => @ref = new(matrix);
+
+    public static Builder<Avalonia.Media.MatrixTransform> MatrixTransform1()
+    {
+        return new Builder<Avalonia.Media.MatrixTransform>() { Activator = () => new Avalonia.Media.MatrixTransform() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
+    public static Avalonia.Media.MatrixTransform MatrixTransform() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.MatrixTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
+    public static Avalonia.Media.MatrixTransform MatrixTransform(out Avalonia.Media.MatrixTransform @ref) => @ref = new();*/
 }

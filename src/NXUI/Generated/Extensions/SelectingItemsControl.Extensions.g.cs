@@ -8,6 +8,14 @@ public static partial class SelectingItemsControlExtensions
 {
     // Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty
 
+    public static Builder<T> AutoScrollToSelectedItem1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class SelectingItemsControlExtensions
     }
 
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty
+
+    public static Builder<T> SelectedIndex1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class SelectingItemsControlExtensions
 
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty
 
+    public static Builder<T> SelectedItem1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/> value.
     /// </summary>
@@ -302,6 +326,14 @@ public static partial class SelectingItemsControlExtensions
 
     // Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty
 
+    public static Builder<T> IsTextSearchEnabled1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/> value.
     /// </summary>
@@ -399,6 +431,14 @@ public static partial class SelectingItemsControlExtensions
     }
 
     // Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty
+
+    public static Builder<T> WrapSelection1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/> value.

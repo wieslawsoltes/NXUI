@@ -39,4 +39,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.</returns>
     public static Avalonia.Media.PolylineGeometry PolylineGeometry(out Avalonia.Media.PolylineGeometry @ref, System.Collections.Generic.IEnumerable<Avalonia.Point> points, System.Boolean isFilled)
         => @ref = new(points, isFilled);
+
+    public static Builder<Avalonia.Media.PolylineGeometry> PolylineGeometry1()
+    {
+        return new Builder<Avalonia.Media.PolylineGeometry>() { Activator = () => new Avalonia.Media.PolylineGeometry() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.</returns>
+    public static Avalonia.Media.PolylineGeometry PolylineGeometry() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PolylineGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.</returns>
+    public static Avalonia.Media.PolylineGeometry PolylineGeometry(out Avalonia.Media.PolylineGeometry @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class TextElementExtensions
 {
     // Avalonia.Controls.Documents.TextElement.BackgroundProperty
 
+    public static Builder<T> Background1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.BackgroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.BackgroundProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class TextElementExtensions
     }
 
     // Avalonia.Controls.Documents.TextElement.FontFamilyProperty
+
+    public static Builder<T> FontFamily1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontFamily> value)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontFamilyProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontFamilyProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class TextElementExtensions
 
     // Avalonia.Controls.Documents.TextElement.FontSizeProperty
 
+    public static Builder<T> FontSize1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontSizeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontSizeProperty"/> value.
     /// </summary>
@@ -302,6 +326,14 @@ public static partial class TextElementExtensions
 
     // Avalonia.Controls.Documents.TextElement.FontStyleProperty
 
+    public static Builder<T> FontStyle1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontStyle> value)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/> value.
     /// </summary>
@@ -398,6 +430,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontStyleNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Normal"/>.
     /// </summary>
@@ -410,6 +450,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontStyleItalic1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Italic"/>.
     /// </summary>
@@ -420,6 +468,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
         return obj;
+    }
+
+    public static Builder<T> FontStyleOblique1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStyleProperty] = Avalonia.Media.FontStyle.Oblique;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -435,6 +491,14 @@ public static partial class TextElementExtensions
     }
 
     // Avalonia.Controls.Documents.TextElement.FontWeightProperty
+
+    public static Builder<T> FontWeight1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontWeight> value)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> value.
@@ -532,6 +596,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightThin1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Thin"/>.
     /// </summary>
@@ -542,6 +614,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
         return obj;
+    }
+
+    public static Builder<T> FontWeightExtraLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -556,6 +636,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightUltraLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraLight"/>.
     /// </summary>
@@ -566,6 +654,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
         return obj;
+    }
+
+    public static Builder<T> FontWeightLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -580,6 +676,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightSemiLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiLight"/>.
     /// </summary>
@@ -590,6 +694,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
         return obj;
+    }
+
+    public static Builder<T> FontWeightNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -604,6 +716,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightRegular1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Regular"/>.
     /// </summary>
@@ -614,6 +734,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
         return obj;
+    }
+
+    public static Builder<T> FontWeightMedium1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -628,6 +756,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightDemiBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.DemiBold"/>.
     /// </summary>
@@ -638,6 +774,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
         return obj;
+    }
+
+    public static Builder<T> FontWeightSemiBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -652,6 +796,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Bold"/>.
     /// </summary>
@@ -662,6 +814,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
         return obj;
+    }
+
+    public static Builder<T> FontWeightExtraBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -676,6 +836,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightUltraBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBold"/>.
     /// </summary>
@@ -686,6 +854,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
         return obj;
+    }
+
+    public static Builder<T> FontWeightBlack1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -700,6 +876,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightHeavy1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Heavy"/>.
     /// </summary>
@@ -712,6 +896,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightExtraBlack1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBlack"/>.
     /// </summary>
@@ -722,6 +914,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
         return obj;
+    }
+
+    public static Builder<T> FontWeightUltraBlack1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBlack;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -737,6 +937,14 @@ public static partial class TextElementExtensions
     }
 
     // Avalonia.Controls.Documents.TextElement.FontStretchProperty
+
+    public static Builder<T> FontStretch1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontStretch> value)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> value.
@@ -834,6 +1042,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchUltraCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
     /// </summary>
@@ -844,6 +1060,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
         return obj;
+    }
+
+    public static Builder<T> FontStretchExtraCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -858,6 +1082,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Condensed"/>.
     /// </summary>
@@ -868,6 +1100,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
         return obj;
+    }
+
+    public static Builder<T> FontStretchSemiCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -882,6 +1122,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Normal"/>.
     /// </summary>
@@ -892,6 +1140,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
         return obj;
+    }
+
+    public static Builder<T> FontStretchSemiExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -906,6 +1162,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Expanded"/>.
     /// </summary>
@@ -918,6 +1182,14 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchExtraExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraExpanded"/>.
     /// </summary>
@@ -928,6 +1200,14 @@ public static partial class TextElementExtensions
     {
         obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
         return obj;
+    }
+
+    public static Builder<T> FontStretchUltraExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.FontStretchProperty] = Avalonia.Media.FontStretch.UltraExpanded;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -943,6 +1223,14 @@ public static partial class TextElementExtensions
     }
 
     // Avalonia.Controls.Documents.TextElement.ForegroundProperty
+
+    public static Builder<T> Foreground1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Documents.TextElement
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.TextElement.ForegroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.ForegroundProperty"/> value.

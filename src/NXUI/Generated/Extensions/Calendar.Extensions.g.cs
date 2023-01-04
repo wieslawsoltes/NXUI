@@ -8,6 +8,14 @@ public static partial class CalendarExtensions
 {
     // Avalonia.Controls.Calendar.FirstDayOfWeekProperty
 
+    public static Builder<T> FirstDayOfWeek1<T>(this Builder<T> builder, Builder<System.DayOfWeek> value)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    public static Builder<T> FirstDayOfWeekSunday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Sunday;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Sunday"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class CalendarExtensions
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Sunday;
         return obj;
+    }
+
+    public static Builder<T> FirstDayOfWeekMonday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Monday;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    public static Builder<T> FirstDayOfWeekTuesday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Tuesday;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Tuesday"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class CalendarExtensions
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Tuesday;
         return obj;
+    }
+
+    public static Builder<T> FirstDayOfWeekWednesday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Wednesday;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -152,6 +192,14 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    public static Builder<T> FirstDayOfWeekThursday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Thursday;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Thursday"/>.
     /// </summary>
@@ -164,6 +212,14 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    public static Builder<T> FirstDayOfWeekFriday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Friday;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Friday"/>.
     /// </summary>
@@ -174,6 +230,14 @@ public static partial class CalendarExtensions
     {
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Friday;
         return obj;
+    }
+
+    public static Builder<T> FirstDayOfWeekSaturday1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Saturday;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -189,6 +253,14 @@ public static partial class CalendarExtensions
     }
 
     // Avalonia.Controls.Calendar.IsTodayHighlightedProperty
+
+    public static Builder<T> IsTodayHighlighted1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.IsTodayHighlightedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.IsTodayHighlightedProperty"/> value.
@@ -288,6 +360,14 @@ public static partial class CalendarExtensions
 
     // Avalonia.Controls.Calendar.HeaderBackgroundProperty
 
+    public static Builder<T> HeaderBackground1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.HeaderBackgroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.HeaderBackgroundProperty"/> value.
     /// </summary>
@@ -386,6 +466,14 @@ public static partial class CalendarExtensions
 
     // Avalonia.Controls.Calendar.DisplayModeProperty
 
+    public static Builder<T> DisplayMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.CalendarMode> value)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.DisplayModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> value.
     /// </summary>
@@ -482,6 +570,14 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    public static Builder<T> DisplayModeMonth1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.DisplayModeProperty] = Avalonia.Controls.CalendarMode.Month;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarMode.Month"/>.
     /// </summary>
@@ -494,6 +590,14 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    public static Builder<T> DisplayModeYear1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.DisplayModeProperty] = Avalonia.Controls.CalendarMode.Year;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarMode.Year"/>.
     /// </summary>
@@ -504,6 +608,14 @@ public static partial class CalendarExtensions
     {
         obj[Avalonia.Controls.Calendar.DisplayModeProperty] = Avalonia.Controls.CalendarMode.Year;
         return obj;
+    }
+
+    public static Builder<T> DisplayModeDecade1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.DisplayModeProperty] = Avalonia.Controls.CalendarMode.Decade;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -519,6 +631,14 @@ public static partial class CalendarExtensions
     }
 
     // Avalonia.Controls.Calendar.SelectionModeProperty
+
+    public static Builder<T> SelectionMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.CalendarSelectionMode> value)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.SelectionModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> value.
@@ -616,6 +736,14 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    public static Builder<T> SelectionModeSingleDate1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.SingleDate;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarSelectionMode.SingleDate"/>.
     /// </summary>
@@ -626,6 +754,14 @@ public static partial class CalendarExtensions
     {
         obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.SingleDate;
         return obj;
+    }
+
+    public static Builder<T> SelectionModeSingleRange1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.SingleRange;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -640,6 +776,14 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    public static Builder<T> SelectionModeMultipleRange1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.MultipleRange;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarSelectionMode.MultipleRange"/>.
     /// </summary>
@@ -650,6 +794,14 @@ public static partial class CalendarExtensions
     {
         obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.MultipleRange;
         return obj;
+    }
+
+    public static Builder<T> SelectionModeNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.None;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -665,6 +817,14 @@ public static partial class CalendarExtensions
     }
 
     // Avalonia.Controls.Calendar.SelectedDateProperty
+
+    public static Builder<T> SelectedDate1<T>(this Builder<T> builder, Builder<System.Nullable<System.DateTime>> value)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.SelectedDateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/> value.
@@ -764,6 +924,14 @@ public static partial class CalendarExtensions
 
     // Avalonia.Controls.Calendar.DisplayDateProperty
 
+    public static Builder<T> DisplayDate1<T>(this Builder<T> builder, Builder<System.DateTime> value)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.DisplayDateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/> value.
     /// </summary>
@@ -862,6 +1030,14 @@ public static partial class CalendarExtensions
 
     // Avalonia.Controls.Calendar.DisplayDateStartProperty
 
+    public static Builder<T> DisplayDateStart1<T>(this Builder<T> builder, Builder<System.Nullable<System.DateTime>> value)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.DisplayDateStartProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/> value.
     /// </summary>
@@ -959,6 +1135,14 @@ public static partial class CalendarExtensions
     }
 
     // Avalonia.Controls.Calendar.DisplayDateEndProperty
+
+    public static Builder<T> DisplayDateEnd1<T>(this Builder<T> builder, Builder<System.Nullable<System.DateTime>> value)
+        where T : Avalonia.Controls.Calendar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Calendar.DisplayDateEndProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/> value.

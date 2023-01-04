@@ -8,6 +8,14 @@ public static partial class SplitViewExtensions
 {
     // Avalonia.Controls.SplitView.CompactPaneLengthProperty
 
+    public static Builder<T> CompactPaneLength1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.CompactPaneLengthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class SplitViewExtensions
 
     // Avalonia.Controls.SplitView.DisplayModeProperty
 
+    public static Builder<T> DisplayMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.SplitViewDisplayMode> value)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.DisplayModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    public static Builder<T> DisplayModeInline1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.Inline;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.SplitViewDisplayMode.Inline"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class SplitViewExtensions
     {
         obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.Inline;
         return obj;
+    }
+
+    public static Builder<T> DisplayModeCompactInline1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.CompactInline;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -226,6 +258,14 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    public static Builder<T> DisplayModeOverlay1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.Overlay;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.SplitViewDisplayMode.Overlay"/>.
     /// </summary>
@@ -236,6 +276,14 @@ public static partial class SplitViewExtensions
     {
         obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.Overlay;
         return obj;
+    }
+
+    public static Builder<T> DisplayModeCompactOverlay1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.CompactOverlay;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -251,6 +299,14 @@ public static partial class SplitViewExtensions
     }
 
     // Avalonia.Controls.SplitView.IsPaneOpenProperty
+
+    public static Builder<T> IsPaneOpen1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.IsPaneOpenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> value.
@@ -350,6 +406,14 @@ public static partial class SplitViewExtensions
 
     // Avalonia.Controls.SplitView.OpenPaneLengthProperty
 
+    public static Builder<T> OpenPaneLength1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.OpenPaneLengthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> value.
     /// </summary>
@@ -447,6 +511,14 @@ public static partial class SplitViewExtensions
     }
 
     // Avalonia.Controls.SplitView.PaneBackgroundProperty
+
+    public static Builder<T> PaneBackground1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.PaneBackgroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> value.
@@ -546,6 +618,14 @@ public static partial class SplitViewExtensions
 
     // Avalonia.Controls.SplitView.PanePlacementProperty
 
+    public static Builder<T> PanePlacement1<T>(this Builder<T> builder, Builder<Avalonia.Controls.SplitViewPanePlacement> value)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.PanePlacementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> value.
     /// </summary>
@@ -642,6 +722,14 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    public static Builder<T> PanePlacementLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.PanePlacementProperty] = Avalonia.Controls.SplitViewPanePlacement.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> property value to <see cref="Avalonia.Controls.SplitViewPanePlacement.Left"/>.
     /// </summary>
@@ -652,6 +740,14 @@ public static partial class SplitViewExtensions
     {
         obj[Avalonia.Controls.SplitView.PanePlacementProperty] = Avalonia.Controls.SplitViewPanePlacement.Left;
         return obj;
+    }
+
+    public static Builder<T> PanePlacementRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.PanePlacementProperty] = Avalonia.Controls.SplitViewPanePlacement.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -667,6 +763,14 @@ public static partial class SplitViewExtensions
     }
 
     // Avalonia.Controls.SplitView.PaneProperty
+
+    public static Builder<T> Pane1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.PaneProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PaneProperty"/> value.
@@ -766,6 +870,14 @@ public static partial class SplitViewExtensions
 
     // Avalonia.Controls.SplitView.PaneTemplateProperty
 
+    public static Builder<T> PaneTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.PaneTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> value.
     /// </summary>
@@ -864,6 +976,14 @@ public static partial class SplitViewExtensions
 
     // Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty
 
+    public static Builder<T> UseLightDismissOverlayMode1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> value.
     /// </summary>
@@ -961,6 +1081,14 @@ public static partial class SplitViewExtensions
     }
 
     // Avalonia.Controls.SplitView.TemplateSettingsProperty
+
+    public static Builder<T> TemplateSettings1<T>(this Builder<T> builder, Builder<Avalonia.Controls.SplitViewTemplateSettings> value)
+        where T : Avalonia.Controls.SplitView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SplitView.TemplateSettingsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/> value.

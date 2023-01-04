@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.</returns>
     public static Avalonia.Controls.Primitives.AdornerLayer AdornerLayer(out Avalonia.Controls.Primitives.AdornerLayer @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Primitives.AdornerLayer> AdornerLayer1()
+    {
+        return new Builder<Avalonia.Controls.Primitives.AdornerLayer>() { Activator = () => new Avalonia.Controls.Primitives.AdornerLayer() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.</returns>
+    public static Avalonia.Controls.Primitives.AdornerLayer AdornerLayer() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.</returns>
+    public static Avalonia.Controls.Primitives.AdornerLayer AdornerLayer(out Avalonia.Controls.Primitives.AdornerLayer @ref) => @ref = new();*/
 }

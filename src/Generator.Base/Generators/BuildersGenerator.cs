@@ -34,12 +34,12 @@ public static class BuildersGenerator
             var builders = GetBuilders(c.Type);
             WriteLine(builders);
 
-            /*
+            //*
             var buildersBuilder = new StringBuilder(Templates.BuildersTemplate);
             buildersBuilder.Replace("%ClassName%", c.Name);
             buildersBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
             WriteLine(buildersBuilder.ToString());
-            */
+            //*/
 
             var classFooterBuilder = new StringBuilder(Templates.BuildersFooterTemplate);
             WriteLine(classFooterBuilder.ToString());

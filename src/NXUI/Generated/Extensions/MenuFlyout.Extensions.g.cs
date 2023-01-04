@@ -8,6 +8,14 @@ public static partial class MenuFlyoutExtensions
 {
     // Avalonia.Controls.MenuFlyout.ItemsProperty
 
+    public static Builder<T> Items1<T>(this Builder<T> builder, Builder<System.Collections.IEnumerable> value)
+        where T : Avalonia.Controls.MenuFlyout
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MenuFlyout.ItemsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuFlyout.ItemsProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class MenuFlyoutExtensions
     }
 
     // Avalonia.Controls.MenuFlyout.ItemTemplateProperty
+
+    public static Builder<T> ItemTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.MenuFlyout
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MenuFlyout.ItemTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/> value.

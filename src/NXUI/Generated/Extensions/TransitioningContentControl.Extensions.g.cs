@@ -8,6 +8,14 @@ public static partial class TransitioningContentControlExtensions
 {
     // Avalonia.Controls.TransitioningContentControl.PageTransitionProperty
 
+    public static Builder<T> PageTransition1<T>(this Builder<T> builder, Builder<Avalonia.Animation.IPageTransition> value)
+        where T : Avalonia.Controls.TransitioningContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TransitioningContentControl.PageTransitionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/> value.
     /// </summary>

@@ -8,6 +8,14 @@ public static partial class TimePickerPresenterExtensions
 {
     // Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty
 
+    public static Builder<T> MinuteIncrement1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.TimePickerPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class TimePickerPresenterExtensions
 
     // Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty
 
+    public static Builder<T> ClockIdentifier1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.TimePickerPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class TimePickerPresenterExtensions
     }
 
     // Avalonia.Controls.TimePickerPresenter.TimeProperty
+
+    public static Builder<T> Time1<T>(this Builder<T> builder, Builder<System.TimeSpan> value)
+        where T : Avalonia.Controls.TimePickerPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TimePickerPresenter.TimeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePickerPresenter.TimeProperty"/> value.

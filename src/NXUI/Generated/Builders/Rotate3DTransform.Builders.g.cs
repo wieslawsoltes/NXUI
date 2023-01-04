@@ -49,4 +49,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.</returns>
     public static Avalonia.Media.Rotate3DTransform Rotate3DTransform(out Avalonia.Media.Rotate3DTransform @ref, System.Double angleX, System.Double angleY, System.Double angleZ, System.Double centerX, System.Double centerY, System.Double centerZ, System.Double depth)
         => @ref = new(angleX, angleY, angleZ, centerX, centerY, centerZ, depth);
+
+    public static Builder<Avalonia.Media.Rotate3DTransform> Rotate3DTransform1()
+    {
+        return new Builder<Avalonia.Media.Rotate3DTransform>() { Activator = () => new Avalonia.Media.Rotate3DTransform() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.</returns>
+    public static Avalonia.Media.Rotate3DTransform Rotate3DTransform() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Rotate3DTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Rotate3DTransform"/> class.</returns>
+    public static Avalonia.Media.Rotate3DTransform Rotate3DTransform(out Avalonia.Media.Rotate3DTransform @ref) => @ref = new();*/
 }

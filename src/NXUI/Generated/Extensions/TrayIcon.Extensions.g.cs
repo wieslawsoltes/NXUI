@@ -8,6 +8,14 @@ public static partial class TrayIconExtensions
 {
     // Avalonia.Controls.TrayIcon.CommandProperty
 
+    public static Builder<T> Command1<T>(this Builder<T> builder, Builder<System.Windows.Input.ICommand> value)
+        where T : Avalonia.Controls.TrayIcon
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TrayIcon.CommandProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class TrayIconExtensions
     }
 
     // Avalonia.Controls.TrayIcon.IconsProperty
+
+    public static Builder<T> Icons1<T>(this Builder<T> builder, Builder<Avalonia.Controls.TrayIcons> value)
+        where T : Avalonia.Application
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TrayIcon.IconsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class TrayIconExtensions
 
     // Avalonia.Controls.TrayIcon.MenuProperty
 
+    public static Builder<T> Menu1<T>(this Builder<T> builder, Builder<Avalonia.Controls.NativeMenu> value)
+        where T : Avalonia.Controls.TrayIcon
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TrayIcon.MenuProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class TrayIconExtensions
     }
 
     // Avalonia.Controls.TrayIcon.IconProperty
+
+    public static Builder<T> Icon1<T>(this Builder<T> builder, Builder<Avalonia.Controls.WindowIcon> value)
+        where T : Avalonia.Controls.TrayIcon
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TrayIcon.IconProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.IconProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class TrayIconExtensions
 
     // Avalonia.Controls.TrayIcon.ToolTipTextProperty
 
+    public static Builder<T> ToolTipText1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.TrayIcon
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TrayIcon.ToolTipTextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/> value.
     /// </summary>
@@ -497,6 +537,14 @@ public static partial class TrayIconExtensions
     }
 
     // Avalonia.Controls.TrayIcon.IsVisibleProperty
+
+    public static Builder<T> IsVisible1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TrayIcon
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TrayIcon.IsVisibleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/> value.

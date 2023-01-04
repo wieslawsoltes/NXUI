@@ -8,6 +8,14 @@ public static partial class DecoratorExtensions
 {
     // Avalonia.Controls.Decorator.ChildProperty
 
+    public static Builder<T> Child1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Control> value)
+        where T : Avalonia.Controls.Decorator
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Decorator.ChildProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Decorator.ChildProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class DecoratorExtensions
     }
 
     // Avalonia.Controls.Decorator.PaddingProperty
+
+    public static Builder<T> Padding1<T>(this Builder<T> builder, Builder<Avalonia.Thickness> value)
+        where T : Avalonia.Controls.Decorator
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Decorator.PaddingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Decorator.PaddingProperty"/> value.

@@ -8,6 +8,14 @@ public static partial class UniformGridExtensions
 {
     // Avalonia.Controls.Primitives.UniformGrid.RowsProperty
 
+    public static Builder<T> Rows1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.UniformGrid.RowsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class UniformGridExtensions
 
     // Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty
 
+    public static Builder<T> Columns1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class UniformGridExtensions
     }
 
     // Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty
+
+    public static Builder<T> FirstColumn1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/> value.

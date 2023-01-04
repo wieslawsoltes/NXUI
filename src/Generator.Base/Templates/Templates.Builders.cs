@@ -18,6 +18,12 @@ public static partial class Builders
 """;
 
     public static string BuildersTemplate = """
+
+    public static Builder<%ClassType%> %ClassName%1()
+    {
+        return new Builder<%ClassType%>() { Activator = () => new %ClassType%() };
+    }
+/*
     /// <summary>
     /// Creates a new instance of the <see cref="%ClassType%"/> class.
     /// </summary>
@@ -29,7 +35,7 @@ public static partial class Builders
     /// </summary>
     /// <param name="ref">The reference of the <see cref="%ClassType%"/> instantiated class.</param>
     /// <returns>The new instance of the <see cref="%ClassType%"/> class.</returns>
-    public static %ClassType% %ClassName%(out %ClassType% @ref) => @ref = new();
+    public static %ClassType% %ClassName%(out %ClassType% @ref) => @ref = new();*/
 """;
 
     public static string BuildersFooterTemplate = """

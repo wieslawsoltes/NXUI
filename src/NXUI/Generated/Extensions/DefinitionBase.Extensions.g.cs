@@ -8,6 +8,14 @@ public static partial class DefinitionBaseExtensions
 {
     // Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty
 
+    public static Builder<T> SharedSizeGroup1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/> value.
     /// </summary>

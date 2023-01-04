@@ -8,6 +8,14 @@ public static partial class TreeViewExtensions
 {
     // Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty
 
+    public static Builder<T> AutoScrollToSelectedItem1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TreeView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class TreeViewExtensions
     }
 
     // Avalonia.Controls.TreeView.SelectedItemProperty
+
+    public static Builder<T> SelectedItem1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.TreeView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TreeView.SelectedItemProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class TreeViewExtensions
 
     // Avalonia.Controls.TreeView.SelectedItemsProperty
 
+    public static Builder<T> SelectedItems1<T>(this Builder<T> builder, Builder<System.Collections.IList> value)
+        where T : Avalonia.Controls.TreeView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TreeView.SelectedItemsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/> value.
     /// </summary>
@@ -302,6 +326,14 @@ public static partial class TreeViewExtensions
 
     // Avalonia.Controls.TreeView.SelectionModeProperty
 
+    public static Builder<T> SelectionMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.SelectionMode> value)
+        where T : Avalonia.Controls.TreeView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TreeView.SelectionModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> value.
     /// </summary>
@@ -398,6 +430,14 @@ public static partial class TreeViewExtensions
         return obj;
     }
 
+    public static Builder<T> SelectionModeSingle1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TreeView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Single;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Single"/>.
     /// </summary>
@@ -408,6 +448,14 @@ public static partial class TreeViewExtensions
     {
         obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Single;
         return obj;
+    }
+
+    public static Builder<T> SelectionModeMultiple1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TreeView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Multiple;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -422,6 +470,14 @@ public static partial class TreeViewExtensions
         return obj;
     }
 
+    public static Builder<T> SelectionModeToggle1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TreeView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Toggle;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Toggle"/>.
     /// </summary>
@@ -432,6 +488,14 @@ public static partial class TreeViewExtensions
     {
         obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Toggle;
         return obj;
+    }
+
+    public static Builder<T> SelectionModeAlwaysSelected1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TreeView
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.AlwaysSelected;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

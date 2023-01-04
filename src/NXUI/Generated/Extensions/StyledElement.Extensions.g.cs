@@ -8,6 +8,14 @@ public static partial class StyledElementExtensions
 {
     // Avalonia.StyledElement.DataContextProperty
 
+    public static Builder<T> DataContext1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.StyledElement
+    {
+        void Setter(T obj) => obj[Avalonia.StyledElement.DataContextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.StyledElement.DataContextProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class StyledElementExtensions
     }
 
     // Avalonia.StyledElement.NameProperty
+
+    public static Builder<T> Name1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.StyledElement
+    {
+        void Setter(T obj) => obj[Avalonia.StyledElement.NameProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.StyledElement.NameProperty"/> value.
@@ -248,6 +264,14 @@ public static partial class StyledElementExtensions
 
     // Avalonia.StyledElement.TemplatedParentProperty
 
+    public static Builder<T> TemplatedParent1<T>(this Builder<T> builder, Builder<Avalonia.AvaloniaObject> value)
+        where T : Avalonia.StyledElement
+    {
+        void Setter(T obj) => obj[Avalonia.StyledElement.TemplatedParentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.StyledElement.TemplatedParentProperty"/> value.
     /// </summary>
@@ -345,6 +369,14 @@ public static partial class StyledElementExtensions
     }
 
     // Avalonia.StyledElement.ThemeProperty
+
+    public static Builder<T> Theme1<T>(this Builder<T> builder, Builder<Avalonia.Styling.ControlTheme> value)
+        where T : Avalonia.StyledElement
+    {
+        void Setter(T obj) => obj[Avalonia.StyledElement.ThemeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.StyledElement.ThemeProperty"/> value.

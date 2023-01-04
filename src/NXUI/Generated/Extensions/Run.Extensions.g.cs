@@ -8,6 +8,14 @@ public static partial class RunExtensions
 {
     // Avalonia.Controls.Documents.Run.TextProperty
 
+    public static Builder<T> Text1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.Documents.Run
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Run.TextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Run.TextProperty"/> value.
     /// </summary>

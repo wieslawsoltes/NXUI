@@ -8,6 +8,14 @@ public static partial class GeometryDrawingExtensions
 {
     // Avalonia.Media.GeometryDrawing.GeometryProperty
 
+    public static Builder<T> Geometry1<T>(this Builder<T> builder, Builder<Avalonia.Media.Geometry> value)
+        where T : Avalonia.Media.GeometryDrawing
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GeometryDrawing.GeometryProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class GeometryDrawingExtensions
 
     // Avalonia.Media.GeometryDrawing.BrushProperty
 
+    public static Builder<T> Brush1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Media.GeometryDrawing
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GeometryDrawing.BrushProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class GeometryDrawingExtensions
     }
 
     // Avalonia.Media.GeometryDrawing.PenProperty
+
+    public static Builder<T> Pen1<T>(this Builder<T> builder, Builder<Avalonia.Media.Pen> value)
+        where T : Avalonia.Media.GeometryDrawing
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GeometryDrawing.PenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> value.

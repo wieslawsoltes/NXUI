@@ -39,4 +39,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
     public static Avalonia.Media.LineGeometry LineGeometry(out Avalonia.Media.LineGeometry @ref, Avalonia.Point startPoint, Avalonia.Point endPoint)
         => @ref = new(startPoint, endPoint);
+
+    public static Builder<Avalonia.Media.LineGeometry> LineGeometry1()
+    {
+        return new Builder<Avalonia.Media.LineGeometry>() { Activator = () => new Avalonia.Media.LineGeometry() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
+    public static Avalonia.Media.LineGeometry LineGeometry() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.LineGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
+    public static Avalonia.Media.LineGeometry LineGeometry(out Avalonia.Media.LineGeometry @ref) => @ref = new();*/
 }

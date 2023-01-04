@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class.</returns>
     public static Avalonia.Controls.VirtualizingStackPanel VirtualizingStackPanel(out Avalonia.Controls.VirtualizingStackPanel @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.VirtualizingStackPanel> VirtualizingStackPanel1()
+    {
+        return new Builder<Avalonia.Controls.VirtualizingStackPanel>() { Activator = () => new Avalonia.Controls.VirtualizingStackPanel() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class.</returns>
+    public static Avalonia.Controls.VirtualizingStackPanel VirtualizingStackPanel() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.VirtualizingStackPanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class.</returns>
+    public static Avalonia.Controls.VirtualizingStackPanel VirtualizingStackPanel(out Avalonia.Controls.VirtualizingStackPanel @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class TabItemExtensions
 {
     // Avalonia.Controls.TabItem.TabStripPlacementProperty
 
+    public static Builder<T> TabStripPlacement1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Dock> value)
+        where T : Avalonia.Controls.TabItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class TabItemExtensions
         return obj;
     }
 
+    public static Builder<T> TabStripPlacementLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Left"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class TabItemExtensions
     {
         obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Left;
         return obj;
+    }
+
+    public static Builder<T> TabStripPlacementBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class TabItemExtensions
         return obj;
     }
 
+    public static Builder<T> TabStripPlacementRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Right;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Right"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class TabItemExtensions
     {
         obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Right;
         return obj;
+    }
+
+    public static Builder<T> TabStripPlacementTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TabItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabItem.TabStripPlacementProperty] = Avalonia.Controls.Dock.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -153,6 +193,14 @@ public static partial class TabItemExtensions
     }
 
     // Avalonia.Controls.TabItem.IsSelectedProperty
+
+    public static Builder<T> IsSelected1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TabItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TabItem.IsSelectedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/> value.

@@ -8,6 +8,14 @@ public static partial class NativeMenuExtensions
 {
     // Avalonia.Controls.NativeMenu.ParentProperty
 
+    public static Builder<T> Parent1<T>(this Builder<T> builder, Builder<Avalonia.Controls.NativeMenuItem> value)
+        where T : Avalonia.Controls.NativeMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenu.ParentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenu.ParentProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class NativeMenuExtensions
 
     // Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty
 
+    public static Builder<T> IsNativeMenuExported1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.TopLevel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class NativeMenuExtensions
     }
 
     // Avalonia.Controls.NativeMenu.MenuProperty
+
+    public static Builder<T> Menu1<T>(this Builder<T> builder, Builder<Avalonia.Controls.NativeMenu> value)
+        where T : Avalonia.AvaloniaObject
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenu.MenuProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> value.

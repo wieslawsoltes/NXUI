@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RefreshVisualizer"/> class.</returns>
     public static Avalonia.Controls.RefreshVisualizer RefreshVisualizer(out Avalonia.Controls.RefreshVisualizer @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.RefreshVisualizer> RefreshVisualizer1()
+    {
+        return new Builder<Avalonia.Controls.RefreshVisualizer>() { Activator = () => new Avalonia.Controls.RefreshVisualizer() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RefreshVisualizer"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RefreshVisualizer"/> class.</returns>
+    public static Avalonia.Controls.RefreshVisualizer RefreshVisualizer() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RefreshVisualizer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RefreshVisualizer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RefreshVisualizer"/> class.</returns>
+    public static Avalonia.Controls.RefreshVisualizer RefreshVisualizer(out Avalonia.Controls.RefreshVisualizer @ref) => @ref = new();*/
 }

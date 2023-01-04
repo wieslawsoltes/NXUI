@@ -8,6 +8,14 @@ public static partial class ScrollBarExtensions
 {
     // Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty
 
+    public static Builder<T> ViewportSize1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class ScrollBarExtensions
 
     // Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty
 
+    public static Builder<T> Visibility1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.ScrollBarVisibility> value)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
+    public static Builder<T> VisibilityDisabled1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class ScrollBarExtensions
     {
         obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled;
         return obj;
+    }
+
+    public static Builder<T> VisibilityAuto1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -226,6 +258,14 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
+    public static Builder<T> VisibilityHidden1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden"/>.
     /// </summary>
@@ -236,6 +276,14 @@ public static partial class ScrollBarExtensions
     {
         obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden;
         return obj;
+    }
+
+    public static Builder<T> VisibilityVisible1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Visible;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -251,6 +299,14 @@ public static partial class ScrollBarExtensions
     }
 
     // Avalonia.Controls.Primitives.ScrollBar.OrientationProperty
+
+    public static Builder<T> Orientation1<T>(this Builder<T> builder, Builder<Avalonia.Layout.Orientation> value)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.OrientationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> value.
@@ -348,6 +404,14 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationHorizontal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
@@ -358,6 +422,14 @@ public static partial class ScrollBarExtensions
     {
         obj[Avalonia.Controls.Primitives.ScrollBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
+    }
+
+    public static Builder<T> OrientationVertical1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -417,6 +489,14 @@ public static partial class ScrollBarExtensions
     }
 
     // Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty
+
+    public static Builder<T> AllowAutoHide1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/> value.
@@ -516,6 +596,14 @@ public static partial class ScrollBarExtensions
 
     // Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty
 
+    public static Builder<T> HideDelay1<T>(this Builder<T> builder, Builder<System.TimeSpan> value)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/> value.
     /// </summary>
@@ -613,6 +701,14 @@ public static partial class ScrollBarExtensions
     }
 
     // Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty
+
+    public static Builder<T> ShowDelay1<T>(this Builder<T> builder, Builder<System.TimeSpan> value)
+        where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/> value.

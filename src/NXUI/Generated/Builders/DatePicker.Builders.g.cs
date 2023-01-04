@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DatePicker"/> class.</returns>
     public static Avalonia.Controls.DatePicker DatePicker(out Avalonia.Controls.DatePicker @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.DatePicker> DatePicker1()
+    {
+        return new Builder<Avalonia.Controls.DatePicker>() { Activator = () => new Avalonia.Controls.DatePicker() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.DatePicker"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.DatePicker"/> class.</returns>
+    public static Avalonia.Controls.DatePicker DatePicker() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.DatePicker"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DatePicker"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.DatePicker"/> class.</returns>
+    public static Avalonia.Controls.DatePicker DatePicker(out Avalonia.Controls.DatePicker @ref) => @ref = new();*/
 }

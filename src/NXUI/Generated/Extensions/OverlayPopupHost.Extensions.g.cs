@@ -8,6 +8,14 @@ public static partial class OverlayPopupHostExtensions
 {
     // Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty
 
+    public static Builder<T> Transform1<T>(this Builder<T> builder, Builder<Avalonia.Media.Transform> value)
+        where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/> value.
     /// </summary>

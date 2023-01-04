@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
     public static Avalonia.Controls.MaskedTextBox MaskedTextBox(out Avalonia.Controls.MaskedTextBox @ref, System.ComponentModel.MaskedTextProvider maskedTextProvider)
         => @ref = new(maskedTextProvider);
+
+    public static Builder<Avalonia.Controls.MaskedTextBox> MaskedTextBox1()
+    {
+        return new Builder<Avalonia.Controls.MaskedTextBox>() { Activator = () => new Avalonia.Controls.MaskedTextBox() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
+    public static Avalonia.Controls.MaskedTextBox MaskedTextBox() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MaskedTextBox"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
+    public static Avalonia.Controls.MaskedTextBox MaskedTextBox(out Avalonia.Controls.MaskedTextBox @ref) => @ref = new();*/
 }

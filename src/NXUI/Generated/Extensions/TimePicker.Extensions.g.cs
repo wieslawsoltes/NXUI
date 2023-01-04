@@ -8,6 +8,14 @@ public static partial class TimePickerExtensions
 {
     // Avalonia.Controls.TimePicker.MinuteIncrementProperty
 
+    public static Builder<T> MinuteIncrement1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.TimePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TimePicker.MinuteIncrementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class TimePickerExtensions
 
     // Avalonia.Controls.TimePicker.ClockIdentifierProperty
 
+    public static Builder<T> ClockIdentifier1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.TimePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TimePicker.ClockIdentifierProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class TimePickerExtensions
     }
 
     // Avalonia.Controls.TimePicker.SelectedTimeProperty
+
+    public static Builder<T> SelectedTime1<T>(this Builder<T> builder, Builder<System.Nullable<System.TimeSpan>> value)
+        where T : Avalonia.Controls.TimePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TimePicker.SelectedTimeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/> value.

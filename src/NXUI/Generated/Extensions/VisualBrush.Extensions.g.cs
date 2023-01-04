@@ -8,6 +8,14 @@ public static partial class VisualBrushExtensions
 {
     // Avalonia.Media.VisualBrush.VisualProperty
 
+    public static Builder<T> Visual1<T>(this Builder<T> builder, Builder<Avalonia.Visual> value)
+        where T : Avalonia.Media.VisualBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.VisualBrush.VisualProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.VisualBrush.VisualProperty"/> value.
     /// </summary>

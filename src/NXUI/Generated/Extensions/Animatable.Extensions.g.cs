@@ -8,6 +8,14 @@ public static partial class AnimatableExtensions
 {
     // Avalonia.Animation.Animatable.ClockProperty
 
+    public static Builder<T> Clock1<T>(this Builder<T> builder, Builder<Avalonia.Animation.IClock> value)
+        where T : Avalonia.Animation.Animatable
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animatable.ClockProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animatable.ClockProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class AnimatableExtensions
     }
 
     // Avalonia.Animation.Animatable.TransitionsProperty
+
+    public static Builder<T> Transitions1<T>(this Builder<T> builder, Builder<Avalonia.Animation.Transitions> value)
+        where T : Avalonia.Animation.Animatable
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animatable.TransitionsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/> value.

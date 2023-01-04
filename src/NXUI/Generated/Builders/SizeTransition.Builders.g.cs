@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.SizeTransition"/> class.</returns>
     public static Avalonia.Animation.SizeTransition SizeTransition(out Avalonia.Animation.SizeTransition @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Animation.SizeTransition> SizeTransition1()
+    {
+        return new Builder<Avalonia.Animation.SizeTransition>() { Activator = () => new Avalonia.Animation.SizeTransition() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.SizeTransition"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.SizeTransition"/> class.</returns>
+    public static Avalonia.Animation.SizeTransition SizeTransition() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.SizeTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.SizeTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.SizeTransition"/> class.</returns>
+    public static Avalonia.Animation.SizeTransition SizeTransition(out Avalonia.Animation.SizeTransition @ref) => @ref = new();*/
 }

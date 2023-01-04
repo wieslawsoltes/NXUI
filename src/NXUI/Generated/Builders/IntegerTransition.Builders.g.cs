@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.IntegerTransition"/> class.</returns>
     public static Avalonia.Animation.IntegerTransition IntegerTransition(out Avalonia.Animation.IntegerTransition @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Animation.IntegerTransition> IntegerTransition1()
+    {
+        return new Builder<Avalonia.Animation.IntegerTransition>() { Activator = () => new Avalonia.Animation.IntegerTransition() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.IntegerTransition"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.IntegerTransition"/> class.</returns>
+    public static Avalonia.Animation.IntegerTransition IntegerTransition() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.IntegerTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.IntegerTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.IntegerTransition"/> class.</returns>
+    public static Avalonia.Animation.IntegerTransition IntegerTransition(out Avalonia.Animation.IntegerTransition @ref) => @ref = new();*/
 }

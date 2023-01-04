@@ -8,6 +8,14 @@ public static partial class WindowNotificationManagerExtensions
 {
     // Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty
 
+    public static Builder<T> Position1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Notifications.NotificationPosition> value)
+        where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class WindowNotificationManagerExtensions
         return obj;
     }
 
+    public static Builder<T> PositionTopLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.TopLeft;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.TopLeft"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class WindowNotificationManagerExtensions
     {
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.TopLeft;
         return obj;
+    }
+
+    public static Builder<T> PositionTopRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.TopRight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class WindowNotificationManagerExtensions
         return obj;
     }
 
+    public static Builder<T> PositionBottomLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.BottomLeft;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.BottomLeft"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class WindowNotificationManagerExtensions
     {
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.BottomLeft;
         return obj;
+    }
+
+    public static Builder<T> PositionBottomRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.BottomRight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -153,6 +193,14 @@ public static partial class WindowNotificationManagerExtensions
     }
 
     // Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty
+
+    public static Builder<T> MaxItems1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/> value.

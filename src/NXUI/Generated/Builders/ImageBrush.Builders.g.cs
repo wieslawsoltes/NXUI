@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
     public static Avalonia.Media.ImageBrush ImageBrush(out Avalonia.Media.ImageBrush @ref, Avalonia.Media.Imaging.IBitmap source)
         => @ref = new(source);
+
+    public static Builder<Avalonia.Media.ImageBrush> ImageBrush1()
+    {
+        return new Builder<Avalonia.Media.ImageBrush>() { Activator = () => new Avalonia.Media.ImageBrush() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
+    public static Avalonia.Media.ImageBrush ImageBrush() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ImageBrush"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
+    public static Avalonia.Media.ImageBrush ImageBrush(out Avalonia.Media.ImageBrush @ref) => @ref = new();*/
 }

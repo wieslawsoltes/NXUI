@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.</returns>
     public static Avalonia.Input.PullGestureRecognizer PullGestureRecognizer(out Avalonia.Input.PullGestureRecognizer @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Input.PullGestureRecognizer> PullGestureRecognizer1()
+    {
+        return new Builder<Avalonia.Input.PullGestureRecognizer>() { Activator = () => new Avalonia.Input.PullGestureRecognizer() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.</returns>
+    public static Avalonia.Input.PullGestureRecognizer PullGestureRecognizer() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Input.PullGestureRecognizer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.</returns>
+    public static Avalonia.Input.PullGestureRecognizer PullGestureRecognizer(out Avalonia.Input.PullGestureRecognizer @ref) => @ref = new();*/
 }

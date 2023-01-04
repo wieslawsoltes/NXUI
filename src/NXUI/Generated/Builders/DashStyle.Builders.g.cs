@@ -39,4 +39,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
     public static Avalonia.Media.DashStyle DashStyle(out Avalonia.Media.DashStyle @ref, System.Collections.Generic.IEnumerable<System.Double> dashes, System.Double offset)
         => @ref = new(dashes, offset);
+
+    public static Builder<Avalonia.Media.DashStyle> DashStyle1()
+    {
+        return new Builder<Avalonia.Media.DashStyle>() { Activator = () => new Avalonia.Media.DashStyle() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DashStyle"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
+    public static Avalonia.Media.DashStyle DashStyle() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DashStyle"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.DashStyle"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
+    public static Avalonia.Media.DashStyle DashStyle(out Avalonia.Media.DashStyle @ref) => @ref = new();*/
 }

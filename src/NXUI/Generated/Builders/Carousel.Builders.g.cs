@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Carousel"/> class.</returns>
     public static Avalonia.Controls.Carousel Carousel(out Avalonia.Controls.Carousel @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Carousel> Carousel1()
+    {
+        return new Builder<Avalonia.Controls.Carousel>() { Activator = () => new Avalonia.Controls.Carousel() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Carousel"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Carousel"/> class.</returns>
+    public static Avalonia.Controls.Carousel Carousel() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Carousel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Carousel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Carousel"/> class.</returns>
+    public static Avalonia.Controls.Carousel Carousel(out Avalonia.Controls.Carousel @ref) => @ref = new();*/
 }

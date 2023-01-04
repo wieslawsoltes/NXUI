@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.AccessText"/> class.</returns>
     public static Avalonia.Controls.Primitives.AccessText AccessText(out Avalonia.Controls.Primitives.AccessText @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Primitives.AccessText> AccessText1()
+    {
+        return new Builder<Avalonia.Controls.Primitives.AccessText>() { Activator = () => new Avalonia.Controls.Primitives.AccessText() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.AccessText"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.AccessText"/> class.</returns>
+    public static Avalonia.Controls.Primitives.AccessText AccessText() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.AccessText"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.AccessText"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.AccessText"/> class.</returns>
+    public static Avalonia.Controls.Primitives.AccessText AccessText(out Avalonia.Controls.Primitives.AccessText @ref) => @ref = new();*/
 }

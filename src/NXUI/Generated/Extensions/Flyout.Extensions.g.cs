@@ -8,6 +8,14 @@ public static partial class FlyoutExtensions
 {
     // Avalonia.Controls.Flyout.ContentProperty
 
+    public static Builder<T> Content1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.Flyout
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Flyout.ContentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Flyout.ContentProperty"/> value.
     /// </summary>

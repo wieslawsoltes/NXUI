@@ -8,6 +8,14 @@ public static partial class PullGestureRecognizerExtensions
 {
     // Avalonia.Input.PullGestureRecognizer.PullDirectionProperty
 
+    public static Builder<T> PullDirection1<T>(this Builder<T> builder, Builder<Avalonia.Input.PullDirection> value)
+        where T : Avalonia.Input.PullGestureRecognizer
+    {
+        void Setter(T obj) => obj[Avalonia.Input.PullGestureRecognizer.PullDirectionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class PullGestureRecognizerExtensions
         return obj;
     }
 
+    public static Builder<T> PullDirectionTopToBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Input.PullGestureRecognizer
+    {
+        void Setter(T obj) => obj[Avalonia.Input.PullGestureRecognizer.PullDirectionProperty] = Avalonia.Input.PullDirection.TopToBottom;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.TopToBottom"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class PullGestureRecognizerExtensions
     {
         obj[Avalonia.Input.PullGestureRecognizer.PullDirectionProperty] = Avalonia.Input.PullDirection.TopToBottom;
         return obj;
+    }
+
+    public static Builder<T> PullDirectionBottomToTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Input.PullGestureRecognizer
+    {
+        void Setter(T obj) => obj[Avalonia.Input.PullGestureRecognizer.PullDirectionProperty] = Avalonia.Input.PullDirection.BottomToTop;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class PullGestureRecognizerExtensions
         return obj;
     }
 
+    public static Builder<T> PullDirectionLeftToRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Input.PullGestureRecognizer
+    {
+        void Setter(T obj) => obj[Avalonia.Input.PullGestureRecognizer.PullDirectionProperty] = Avalonia.Input.PullDirection.LeftToRight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.LeftToRight"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class PullGestureRecognizerExtensions
     {
         obj[Avalonia.Input.PullGestureRecognizer.PullDirectionProperty] = Avalonia.Input.PullDirection.LeftToRight;
         return obj;
+    }
+
+    public static Builder<T> PullDirectionRightToLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Input.PullGestureRecognizer
+    {
+        void Setter(T obj) => obj[Avalonia.Input.PullGestureRecognizer.PullDirectionProperty] = Avalonia.Input.PullDirection.RightToLeft;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

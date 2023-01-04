@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.</returns>
     public static Avalonia.Controls.Presenters.TextPresenter TextPresenter(out Avalonia.Controls.Presenters.TextPresenter @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Presenters.TextPresenter> TextPresenter1()
+    {
+        return new Builder<Avalonia.Controls.Presenters.TextPresenter>() { Activator = () => new Avalonia.Controls.Presenters.TextPresenter() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.</returns>
+    public static Avalonia.Controls.Presenters.TextPresenter TextPresenter() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Presenters.TextPresenter"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.</returns>
+    public static Avalonia.Controls.Presenters.TextPresenter TextPresenter(out Avalonia.Controls.Presenters.TextPresenter @ref) => @ref = new();*/
 }

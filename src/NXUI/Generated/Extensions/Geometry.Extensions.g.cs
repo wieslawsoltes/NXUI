@@ -8,6 +8,14 @@ public static partial class GeometryExtensions
 {
     // Avalonia.Media.Geometry.TransformProperty
 
+    public static Builder<T> Transform1<T>(this Builder<T> builder, Builder<Avalonia.Media.Transform> value)
+        where T : Avalonia.Media.Geometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Geometry.TransformProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Geometry.TransformProperty"/> value.
     /// </summary>

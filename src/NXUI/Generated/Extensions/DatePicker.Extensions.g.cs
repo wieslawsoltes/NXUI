@@ -8,6 +8,14 @@ public static partial class DatePickerExtensions
 {
     // Avalonia.Controls.DatePicker.DayFormatProperty
 
+    public static Builder<T> DayFormat1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.DatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DatePicker.DayFormatProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class DatePickerExtensions
     }
 
     // Avalonia.Controls.DatePicker.DayVisibleProperty
+
+    public static Builder<T> DayVisible1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.DatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DatePicker.DayVisibleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class DatePickerExtensions
 
     // Avalonia.Controls.DatePicker.MaxYearProperty
 
+    public static Builder<T> MaxYear1<T>(this Builder<T> builder, Builder<System.DateTimeOffset> value)
+        where T : Avalonia.Controls.DatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DatePicker.MaxYearProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class DatePickerExtensions
     }
 
     // Avalonia.Controls.DatePicker.MinYearProperty
+
+    public static Builder<T> MinYear1<T>(this Builder<T> builder, Builder<System.DateTimeOffset> value)
+        where T : Avalonia.Controls.DatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DatePicker.MinYearProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class DatePickerExtensions
 
     // Avalonia.Controls.DatePicker.MonthFormatProperty
 
+    public static Builder<T> MonthFormat1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.DatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DatePicker.MonthFormatProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/> value.
     /// </summary>
@@ -497,6 +537,14 @@ public static partial class DatePickerExtensions
     }
 
     // Avalonia.Controls.DatePicker.MonthVisibleProperty
+
+    public static Builder<T> MonthVisible1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.DatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DatePicker.MonthVisibleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/> value.
@@ -596,6 +644,14 @@ public static partial class DatePickerExtensions
 
     // Avalonia.Controls.DatePicker.YearFormatProperty
 
+    public static Builder<T> YearFormat1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.DatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DatePicker.YearFormatProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/> value.
     /// </summary>
@@ -694,6 +750,14 @@ public static partial class DatePickerExtensions
 
     // Avalonia.Controls.DatePicker.YearVisibleProperty
 
+    public static Builder<T> YearVisible1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.DatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DatePicker.YearVisibleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/> value.
     /// </summary>
@@ -791,6 +855,14 @@ public static partial class DatePickerExtensions
     }
 
     // Avalonia.Controls.DatePicker.SelectedDateProperty
+
+    public static Builder<T> SelectedDate1<T>(this Builder<T> builder, Builder<System.Nullable<System.DateTimeOffset>> value)
+        where T : Avalonia.Controls.DatePicker
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DatePicker.SelectedDateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/> value.

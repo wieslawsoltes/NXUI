@@ -8,6 +8,14 @@ public static partial class PathIconExtensions
 {
     // Avalonia.Controls.PathIcon.DataProperty
 
+    public static Builder<T> Data1<T>(this Builder<T> builder, Builder<Avalonia.Media.Geometry> value)
+        where T : Avalonia.Controls.PathIcon
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.PathIcon.DataProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.PathIcon.DataProperty"/> value.
     /// </summary>

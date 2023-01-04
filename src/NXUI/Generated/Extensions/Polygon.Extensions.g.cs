@@ -8,6 +8,14 @@ public static partial class PolygonExtensions
 {
     // Avalonia.Controls.Shapes.Polygon.PointsProperty
 
+    public static Builder<T> Points1<T>(this Builder<T> builder, Builder<System.Collections.Generic.IList<Avalonia.Point>> value)
+        where T : Avalonia.Controls.Shapes.Polygon
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Polygon.PointsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Polygon.PointsProperty"/> value.
     /// </summary>

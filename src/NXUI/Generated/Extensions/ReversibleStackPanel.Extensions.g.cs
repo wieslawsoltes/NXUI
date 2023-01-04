@@ -8,6 +8,14 @@ public static partial class ReversibleStackPanelExtensions
 {
     // Avalonia.Controls.ReversibleStackPanel.ReverseOrderProperty
 
+    public static Builder<T> ReverseOrder1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.ReversibleStackPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ReversibleStackPanel.ReverseOrderProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ReversibleStackPanel.ReverseOrderProperty"/> value.
     /// </summary>

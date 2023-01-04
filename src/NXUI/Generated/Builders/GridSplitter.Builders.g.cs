@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.GridSplitter"/> class.</returns>
     public static Avalonia.Controls.GridSplitter GridSplitter(out Avalonia.Controls.GridSplitter @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.GridSplitter> GridSplitter1()
+    {
+        return new Builder<Avalonia.Controls.GridSplitter>() { Activator = () => new Avalonia.Controls.GridSplitter() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.GridSplitter"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.GridSplitter"/> class.</returns>
+    public static Avalonia.Controls.GridSplitter GridSplitter() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.GridSplitter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.GridSplitter"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.GridSplitter"/> class.</returns>
+    public static Avalonia.Controls.GridSplitter GridSplitter(out Avalonia.Controls.GridSplitter @ref) => @ref = new();*/
 }

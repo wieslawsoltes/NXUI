@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.</returns>
     public static Avalonia.Media.PolyLineSegment PolyLineSegment(out Avalonia.Media.PolyLineSegment @ref, System.Collections.Generic.IEnumerable<Avalonia.Point> points)
         => @ref = new(points);
+
+    public static Builder<Avalonia.Media.PolyLineSegment> PolyLineSegment1()
+    {
+        return new Builder<Avalonia.Media.PolyLineSegment>() { Activator = () => new Avalonia.Media.PolyLineSegment() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.</returns>
+    public static Avalonia.Media.PolyLineSegment PolyLineSegment() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PolyLineSegment"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.</returns>
+    public static Avalonia.Media.PolyLineSegment PolyLineSegment(out Avalonia.Media.PolyLineSegment @ref) => @ref = new();*/
 }

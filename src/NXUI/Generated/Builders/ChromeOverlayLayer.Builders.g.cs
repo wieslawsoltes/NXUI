@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> class.</returns>
     public static Avalonia.Controls.Primitives.ChromeOverlayLayer ChromeOverlayLayer(out Avalonia.Controls.Primitives.ChromeOverlayLayer @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Primitives.ChromeOverlayLayer> ChromeOverlayLayer1()
+    {
+        return new Builder<Avalonia.Controls.Primitives.ChromeOverlayLayer>() { Activator = () => new Avalonia.Controls.Primitives.ChromeOverlayLayer() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> class.</returns>
+    public static Avalonia.Controls.Primitives.ChromeOverlayLayer ChromeOverlayLayer() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> class.</returns>
+    public static Avalonia.Controls.Primitives.ChromeOverlayLayer ChromeOverlayLayer(out Avalonia.Controls.Primitives.ChromeOverlayLayer @ref) => @ref = new();*/
 }

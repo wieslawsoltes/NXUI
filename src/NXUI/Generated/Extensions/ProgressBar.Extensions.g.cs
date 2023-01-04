@@ -8,6 +8,14 @@ public static partial class ProgressBarExtensions
 {
     // Avalonia.Controls.ProgressBar.IsIndeterminateProperty
 
+    public static Builder<T> IsIndeterminate1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.ProgressBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ProgressBar.IsIndeterminateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.IsIndeterminateProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ProgressBarExtensions
     }
 
     // Avalonia.Controls.ProgressBar.ShowProgressTextProperty
+
+    public static Builder<T> ShowProgressText1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.ProgressBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ProgressBar.ShowProgressTextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.ShowProgressTextProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class ProgressBarExtensions
 
     // Avalonia.Controls.ProgressBar.ProgressTextFormatProperty
 
+    public static Builder<T> ProgressTextFormat1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.ProgressBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ProgressBar.ProgressTextFormatProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> value.
     /// </summary>
@@ -302,6 +326,14 @@ public static partial class ProgressBarExtensions
 
     // Avalonia.Controls.ProgressBar.OrientationProperty
 
+    public static Builder<T> Orientation1<T>(this Builder<T> builder, Builder<Avalonia.Layout.Orientation> value)
+        where T : Avalonia.Controls.ProgressBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ProgressBar.OrientationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> value.
     /// </summary>
@@ -398,6 +430,14 @@ public static partial class ProgressBarExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationHorizontal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ProgressBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ProgressBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
@@ -408,6 +448,14 @@ public static partial class ProgressBarExtensions
     {
         obj[Avalonia.Controls.ProgressBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
+    }
+
+    public static Builder<T> OrientationVertical1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ProgressBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ProgressBar.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -467,6 +515,14 @@ public static partial class ProgressBarExtensions
     }
 
     // Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty
+
+    public static Builder<T> IndeterminateStartingOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.ProgressBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty"/> value.
@@ -565,6 +621,14 @@ public static partial class ProgressBarExtensions
     }
 
     // Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty
+
+    public static Builder<T> IndeterminateEndingOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.ProgressBar
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty"/> value.

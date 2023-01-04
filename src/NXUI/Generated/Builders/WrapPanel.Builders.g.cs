@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.WrapPanel"/> class.</returns>
     public static Avalonia.Controls.WrapPanel WrapPanel(out Avalonia.Controls.WrapPanel @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.WrapPanel> WrapPanel1()
+    {
+        return new Builder<Avalonia.Controls.WrapPanel>() { Activator = () => new Avalonia.Controls.WrapPanel() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.WrapPanel"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.WrapPanel"/> class.</returns>
+    public static Avalonia.Controls.WrapPanel WrapPanel() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.WrapPanel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.WrapPanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.WrapPanel"/> class.</returns>
+    public static Avalonia.Controls.WrapPanel WrapPanel(out Avalonia.Controls.WrapPanel @ref) => @ref = new();*/
 }

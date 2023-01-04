@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Italic"/> class.</returns>
     public static Avalonia.Controls.Documents.Italic Italic(out Avalonia.Controls.Documents.Italic @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Documents.Italic> Italic1()
+    {
+        return new Builder<Avalonia.Controls.Documents.Italic>() { Activator = () => new Avalonia.Controls.Documents.Italic() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Italic"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Italic"/> class.</returns>
+    public static Avalonia.Controls.Documents.Italic Italic() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Italic"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.Italic"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Italic"/> class.</returns>
+    public static Avalonia.Controls.Documents.Italic Italic(out Avalonia.Controls.Documents.Italic @ref) => @ref = new();*/
 }

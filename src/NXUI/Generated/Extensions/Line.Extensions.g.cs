@@ -8,6 +8,14 @@ public static partial class LineExtensions
 {
     // Avalonia.Controls.Shapes.Line.StartPointProperty
 
+    public static Builder<T> StartPoint1<T>(this Builder<T> builder, Builder<Avalonia.Point> value)
+        where T : Avalonia.Controls.Shapes.Line
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Line.StartPointProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Line.StartPointProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class LineExtensions
     }
 
     // Avalonia.Controls.Shapes.Line.EndPointProperty
+
+    public static Builder<T> EndPoint1<T>(this Builder<T> builder, Builder<Avalonia.Point> value)
+        where T : Avalonia.Controls.Shapes.Line
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Line.EndPointProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Line.EndPointProperty"/> value.

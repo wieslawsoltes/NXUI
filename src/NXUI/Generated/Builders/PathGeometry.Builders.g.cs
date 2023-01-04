@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PathGeometry"/> class.</returns>
     public static Avalonia.Media.PathGeometry PathGeometry(out Avalonia.Media.PathGeometry @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Media.PathGeometry> PathGeometry1()
+    {
+        return new Builder<Avalonia.Media.PathGeometry>() { Activator = () => new Avalonia.Media.PathGeometry() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PathGeometry"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PathGeometry"/> class.</returns>
+    public static Avalonia.Media.PathGeometry PathGeometry() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PathGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PathGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PathGeometry"/> class.</returns>
+    public static Avalonia.Media.PathGeometry PathGeometry(out Avalonia.Media.PathGeometry @ref) => @ref = new();*/
 }

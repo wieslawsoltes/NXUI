@@ -8,6 +8,14 @@ public static partial class CarouselExtensions
 {
     // Avalonia.Controls.Carousel.IsVirtualizedProperty
 
+    public static Builder<T> IsVirtualized1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Carousel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Carousel.IsVirtualizedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Carousel.IsVirtualizedProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class CarouselExtensions
     }
 
     // Avalonia.Controls.Carousel.PageTransitionProperty
+
+    public static Builder<T> PageTransition1<T>(this Builder<T> builder, Builder<Avalonia.Animation.IPageTransition> value)
+        where T : Avalonia.Controls.Carousel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Carousel.PageTransitionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/> value.

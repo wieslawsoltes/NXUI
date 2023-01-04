@@ -8,6 +8,14 @@ public static partial class CroppedBitmapExtensions
 {
     // Avalonia.Media.Imaging.CroppedBitmap.SourceProperty
 
+    public static Builder<T> Source1<T>(this Builder<T> builder, Builder<Avalonia.Media.IImage> value)
+        where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Imaging.CroppedBitmap.SourceProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class CroppedBitmapExtensions
     }
 
     // Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty
+
+    public static Builder<T> SourceRect1<T>(this Builder<T> builder, Builder<Avalonia.PixelRect> value)
+        where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> value.

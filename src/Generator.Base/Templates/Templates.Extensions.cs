@@ -8,6 +8,14 @@ public static partial class Templates
 {
     public static string PropertyMethodEnumTemplate = """
 
+    public static Builder<T> %Name%%EnumValue%1<T>(this Builder<T> builder)
+        where T : %OwnerType%
+    {
+        void Setter(T obj) => obj[%ClassType%.%Name%Property] = %ValueType%.%EnumValue%;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="%ClassType%.%Name%Property"/> property value to <see cref="%ValueType%.%EnumValue%"/>.
     /// </summary>
@@ -37,6 +45,14 @@ public static partial class Templates
 
     public static string PropertyMethodsTemplate = """  
     // %ClassType%.%Name%Property
+
+    public static Builder<T> %Name%1<T>(this Builder<T> builder, Builder<%ValueType%> value)
+        where T : %OwnerType%
+    {
+        void Setter(T obj) => obj[%ClassType%.%Name%Property] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="%ClassType%.%Name%Property"/> value.

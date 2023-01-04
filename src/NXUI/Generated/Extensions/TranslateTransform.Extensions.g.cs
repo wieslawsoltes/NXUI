@@ -8,6 +8,14 @@ public static partial class TranslateTransformExtensions
 {
     // Avalonia.Media.TranslateTransform.XProperty
 
+    public static Builder<T> X1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.TranslateTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TranslateTransform.XProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TranslateTransform.XProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class TranslateTransformExtensions
     }
 
     // Avalonia.Media.TranslateTransform.YProperty
+
+    public static Builder<T> Y1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.TranslateTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TranslateTransform.YProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TranslateTransform.YProperty"/> value.

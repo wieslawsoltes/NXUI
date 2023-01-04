@@ -8,6 +8,14 @@ public static partial class PolylineExtensions
 {
     // Avalonia.Controls.Shapes.Polyline.PointsProperty
 
+    public static Builder<T> Points1<T>(this Builder<T> builder, Builder<System.Collections.Generic.IList<Avalonia.Point>> value)
+        where T : Avalonia.Controls.Shapes.Polyline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Polyline.PointsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Polyline.PointsProperty"/> value.
     /// </summary>

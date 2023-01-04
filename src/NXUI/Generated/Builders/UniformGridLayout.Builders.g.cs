@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Layout.UniformGridLayout"/> class.</returns>
     public static Avalonia.Layout.UniformGridLayout UniformGridLayout(out Avalonia.Layout.UniformGridLayout @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Layout.UniformGridLayout> UniformGridLayout1()
+    {
+        return new Builder<Avalonia.Layout.UniformGridLayout>() { Activator = () => new Avalonia.Layout.UniformGridLayout() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.UniformGridLayout"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.UniformGridLayout"/> class.</returns>
+    public static Avalonia.Layout.UniformGridLayout UniformGridLayout() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.UniformGridLayout"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Layout.UniformGridLayout"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.UniformGridLayout"/> class.</returns>
+    public static Avalonia.Layout.UniformGridLayout UniformGridLayout(out Avalonia.Layout.UniformGridLayout @ref) => @ref = new();*/
 }

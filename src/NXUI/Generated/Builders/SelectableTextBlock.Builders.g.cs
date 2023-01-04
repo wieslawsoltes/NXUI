@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.SelectableTextBlock"/> class.</returns>
     public static Avalonia.Controls.SelectableTextBlock SelectableTextBlock(out Avalonia.Controls.SelectableTextBlock @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.SelectableTextBlock> SelectableTextBlock1()
+    {
+        return new Builder<Avalonia.Controls.SelectableTextBlock>() { Activator = () => new Avalonia.Controls.SelectableTextBlock() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.SelectableTextBlock"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.SelectableTextBlock"/> class.</returns>
+    public static Avalonia.Controls.SelectableTextBlock SelectableTextBlock() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.SelectableTextBlock"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.SelectableTextBlock"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.SelectableTextBlock"/> class.</returns>
+    public static Avalonia.Controls.SelectableTextBlock SelectableTextBlock(out Avalonia.Controls.SelectableTextBlock @ref) => @ref = new();*/
 }

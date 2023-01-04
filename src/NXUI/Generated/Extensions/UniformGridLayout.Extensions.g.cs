@@ -8,6 +8,14 @@ public static partial class UniformGridLayoutExtensions
 {
     // Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty
 
+    public static Builder<T> ItemsJustification1<T>(this Builder<T> builder, Builder<Avalonia.Layout.UniformGridLayoutItemsJustification> value)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    public static Builder<T> ItemsJustificationStart1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.Start;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.Start"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class UniformGridLayoutExtensions
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.Start;
         return obj;
+    }
+
+    public static Builder<T> ItemsJustificationCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.Center;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    public static Builder<T> ItemsJustificationEnd1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.End;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.End"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class UniformGridLayoutExtensions
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.End;
         return obj;
+    }
+
+    public static Builder<T> ItemsJustificationSpaceAround1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceAround;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -152,6 +192,14 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    public static Builder<T> ItemsJustificationSpaceBetween1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceBetween;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceBetween"/>.
     /// </summary>
@@ -162,6 +210,14 @@ public static partial class UniformGridLayoutExtensions
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceBetween;
         return obj;
+    }
+
+    public static Builder<T> ItemsJustificationSpaceEvenly1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceEvenly;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -177,6 +233,14 @@ public static partial class UniformGridLayoutExtensions
     }
 
     // Avalonia.Layout.UniformGridLayout.ItemsStretchProperty
+
+    public static Builder<T> ItemsStretch1<T>(this Builder<T> builder, Builder<Avalonia.Layout.UniformGridLayoutItemsStretch> value)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsStretchProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> value.
@@ -274,6 +338,14 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    public static Builder<T> ItemsStretchNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsStretchProperty] = Avalonia.Layout.UniformGridLayoutItemsStretch.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsStretch.None"/>.
     /// </summary>
@@ -286,6 +358,14 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    public static Builder<T> ItemsStretchFill1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsStretchProperty] = Avalonia.Layout.UniformGridLayoutItemsStretch.Fill;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsStretch.Fill"/>.
     /// </summary>
@@ -296,6 +376,14 @@ public static partial class UniformGridLayoutExtensions
     {
         obj[Avalonia.Layout.UniformGridLayout.ItemsStretchProperty] = Avalonia.Layout.UniformGridLayoutItemsStretch.Fill;
         return obj;
+    }
+
+    public static Builder<T> ItemsStretchUniform1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.ItemsStretchProperty] = Avalonia.Layout.UniformGridLayoutItemsStretch.Uniform;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -311,6 +399,14 @@ public static partial class UniformGridLayoutExtensions
     }
 
     // Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty
+
+    public static Builder<T> MinColumnSpacing1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> value.
@@ -410,6 +506,14 @@ public static partial class UniformGridLayoutExtensions
 
     // Avalonia.Layout.UniformGridLayout.MinItemHeightProperty
 
+    public static Builder<T> MinItemHeight1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.MinItemHeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> value.
     /// </summary>
@@ -507,6 +611,14 @@ public static partial class UniformGridLayoutExtensions
     }
 
     // Avalonia.Layout.UniformGridLayout.MinItemWidthProperty
+
+    public static Builder<T> MinItemWidth1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.MinItemWidthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> value.
@@ -606,6 +718,14 @@ public static partial class UniformGridLayoutExtensions
 
     // Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty
 
+    public static Builder<T> MinRowSpacing1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> value.
     /// </summary>
@@ -703,6 +823,14 @@ public static partial class UniformGridLayoutExtensions
     }
 
     // Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty
+
+    public static Builder<T> MaximumRowsOrColumns1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> value.
@@ -802,6 +930,14 @@ public static partial class UniformGridLayoutExtensions
 
     // Avalonia.Layout.UniformGridLayout.OrientationProperty
 
+    public static Builder<T> Orientation1<T>(this Builder<T> builder, Builder<Avalonia.Layout.Orientation> value)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.OrientationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> value.
     /// </summary>
@@ -898,6 +1034,14 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationHorizontal1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
@@ -908,6 +1052,14 @@ public static partial class UniformGridLayoutExtensions
     {
         obj[Avalonia.Layout.UniformGridLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
+    }
+
+    public static Builder<T> OrientationVertical1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.UniformGridLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.UniformGridLayout.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

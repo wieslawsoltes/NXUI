@@ -8,6 +8,14 @@ public static partial class DrawingGroupExtensions
 {
     // Avalonia.Media.DrawingGroup.OpacityProperty
 
+    public static Builder<T> Opacity1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.DrawingGroup
+    {
+        void Setter(T obj) => obj[Avalonia.Media.DrawingGroup.OpacityProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class DrawingGroupExtensions
     }
 
     // Avalonia.Media.DrawingGroup.TransformProperty
+
+    public static Builder<T> Transform1<T>(this Builder<T> builder, Builder<Avalonia.Media.Transform> value)
+        where T : Avalonia.Media.DrawingGroup
+    {
+        void Setter(T obj) => obj[Avalonia.Media.DrawingGroup.TransformProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class DrawingGroupExtensions
 
     // Avalonia.Media.DrawingGroup.ClipGeometryProperty
 
+    public static Builder<T> ClipGeometry1<T>(this Builder<T> builder, Builder<Avalonia.Media.Geometry> value)
+        where T : Avalonia.Media.DrawingGroup
+    {
+        void Setter(T obj) => obj[Avalonia.Media.DrawingGroup.ClipGeometryProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> value.
     /// </summary>
@@ -302,6 +326,14 @@ public static partial class DrawingGroupExtensions
 
     // Avalonia.Media.DrawingGroup.OpacityMaskProperty
 
+    public static Builder<T> OpacityMask1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Media.DrawingGroup
+    {
+        void Setter(T obj) => obj[Avalonia.Media.DrawingGroup.OpacityMaskProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> value.
     /// </summary>
@@ -399,6 +431,14 @@ public static partial class DrawingGroupExtensions
     }
 
     // Avalonia.Media.DrawingGroup.ChildrenProperty
+
+    public static Builder<T> Children1<T>(this Builder<T> builder, Builder<Avalonia.Media.DrawingCollection> value)
+        where T : Avalonia.Media.DrawingGroup
+    {
+        void Setter(T obj) => obj[Avalonia.Media.DrawingGroup.ChildrenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> value.

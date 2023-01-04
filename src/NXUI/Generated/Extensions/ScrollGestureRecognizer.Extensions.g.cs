@@ -8,6 +8,14 @@ public static partial class ScrollGestureRecognizerExtensions
 {
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty
 
+    public static Builder<T> CanHorizontallyScroll1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        void Setter(T obj) => obj[Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class ScrollGestureRecognizerExtensions
 
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty
 
+    public static Builder<T> CanVerticallyScroll1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        void Setter(T obj) => obj[Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class ScrollGestureRecognizerExtensions
     }
 
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty
+
+    public static Builder<T> ScrollStartDistance1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        void Setter(T obj) => obj[Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/> value.

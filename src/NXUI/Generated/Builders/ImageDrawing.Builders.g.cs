@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ImageDrawing"/> class.</returns>
     public static Avalonia.Media.ImageDrawing ImageDrawing(out Avalonia.Media.ImageDrawing @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Media.ImageDrawing> ImageDrawing1()
+    {
+        return new Builder<Avalonia.Media.ImageDrawing>() { Activator = () => new Avalonia.Media.ImageDrawing() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ImageDrawing"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ImageDrawing"/> class.</returns>
+    public static Avalonia.Media.ImageDrawing ImageDrawing() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ImageDrawing"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ImageDrawing"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ImageDrawing"/> class.</returns>
+    public static Avalonia.Media.ImageDrawing ImageDrawing(out Avalonia.Media.ImageDrawing @ref) => @ref = new();*/
 }

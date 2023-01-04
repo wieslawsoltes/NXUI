@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> class.</returns>
     public static Avalonia.Controls.ReversibleStackPanel ReversibleStackPanel(out Avalonia.Controls.ReversibleStackPanel @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.ReversibleStackPanel> ReversibleStackPanel1()
+    {
+        return new Builder<Avalonia.Controls.ReversibleStackPanel>() { Activator = () => new Avalonia.Controls.ReversibleStackPanel() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> class.</returns>
+    public static Avalonia.Controls.ReversibleStackPanel ReversibleStackPanel() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> class.</returns>
+    public static Avalonia.Controls.ReversibleStackPanel ReversibleStackPanel(out Avalonia.Controls.ReversibleStackPanel @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class ToggleSplitButtonExtensions
 {
     // Avalonia.Controls.ToggleSplitButton.IsCheckedProperty
 
+    public static Builder<T> IsChecked1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.ToggleSplitButton
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ToggleSplitButton.IsCheckedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/> value.
     /// </summary>

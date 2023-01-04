@@ -8,6 +8,14 @@ public static partial class TextDecorationExtensions
 {
     // Avalonia.Media.TextDecoration.LocationProperty
 
+    public static Builder<T> Location1<T>(this Builder<T> builder, Builder<Avalonia.Media.TextDecorationLocation> value)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.LocationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    public static Builder<T> LocationUnderline1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Underline;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Underline"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class TextDecorationExtensions
     {
         obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Underline;
         return obj;
+    }
+
+    public static Builder<T> LocationOverline1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Overline;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    public static Builder<T> LocationStrikethrough1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Strikethrough;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Strikethrough"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class TextDecorationExtensions
     {
         obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Strikethrough;
         return obj;
+    }
+
+    public static Builder<T> LocationBaseline1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Baseline;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -153,6 +193,14 @@ public static partial class TextDecorationExtensions
     }
 
     // Avalonia.Media.TextDecoration.StrokeProperty
+
+    public static Builder<T> Stroke1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> value.
@@ -252,6 +300,14 @@ public static partial class TextDecorationExtensions
 
     // Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty
 
+    public static Builder<T> StrokeThicknessUnit1<T>(this Builder<T> builder, Builder<Avalonia.Media.TextDecorationUnit> value)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> value.
     /// </summary>
@@ -348,6 +404,14 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    public static Builder<T> StrokeThicknessUnitFontRecommended1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRecommended;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRecommended"/>.
     /// </summary>
@@ -360,6 +424,14 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    public static Builder<T> StrokeThicknessUnitFontRenderingEmSize1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRenderingEmSize;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRenderingEmSize"/>.
     /// </summary>
@@ -370,6 +442,14 @@ public static partial class TextDecorationExtensions
     {
         obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRenderingEmSize;
         return obj;
+    }
+
+    public static Builder<T> StrokeThicknessUnitPixel1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty] = Avalonia.Media.TextDecorationUnit.Pixel;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -385,6 +465,14 @@ public static partial class TextDecorationExtensions
     }
 
     // Avalonia.Media.TextDecoration.StrokeDashArrayProperty
+
+    public static Builder<T> StrokeDashArray1<T>(this Builder<T> builder, Builder<Avalonia.Collections.AvaloniaList<System.Double>> value)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeDashArrayProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> value.
@@ -484,6 +572,14 @@ public static partial class TextDecorationExtensions
 
     // Avalonia.Media.TextDecoration.StrokeDashOffsetProperty
 
+    public static Builder<T> StrokeDashOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeDashOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> value.
     /// </summary>
@@ -581,6 +677,14 @@ public static partial class TextDecorationExtensions
     }
 
     // Avalonia.Media.TextDecoration.StrokeThicknessProperty
+
+    public static Builder<T> StrokeThickness1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeThicknessProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> value.
@@ -680,6 +784,14 @@ public static partial class TextDecorationExtensions
 
     // Avalonia.Media.TextDecoration.StrokeLineCapProperty
 
+    public static Builder<T> StrokeLineCap1<T>(this Builder<T> builder, Builder<Avalonia.Media.PenLineCap> value)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> value.
     /// </summary>
@@ -776,6 +888,14 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    public static Builder<T> StrokeLineCapFlat1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Flat;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Flat"/>.
     /// </summary>
@@ -788,6 +908,14 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    public static Builder<T> StrokeLineCapRound1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Round;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Round"/>.
     /// </summary>
@@ -798,6 +926,14 @@ public static partial class TextDecorationExtensions
     {
         obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Round;
         return obj;
+    }
+
+    public static Builder<T> StrokeLineCapSquare1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Square;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -813,6 +949,14 @@ public static partial class TextDecorationExtensions
     }
 
     // Avalonia.Media.TextDecoration.StrokeOffsetProperty
+
+    public static Builder<T> StrokeOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> value.
@@ -912,6 +1056,14 @@ public static partial class TextDecorationExtensions
 
     // Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty
 
+    public static Builder<T> StrokeOffsetUnit1<T>(this Builder<T> builder, Builder<Avalonia.Media.TextDecorationUnit> value)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> value.
     /// </summary>
@@ -1008,6 +1160,14 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    public static Builder<T> StrokeOffsetUnitFontRecommended1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRecommended;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRecommended"/>.
     /// </summary>
@@ -1020,6 +1180,14 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    public static Builder<T> StrokeOffsetUnitFontRenderingEmSize1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRenderingEmSize;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRenderingEmSize"/>.
     /// </summary>
@@ -1030,6 +1198,14 @@ public static partial class TextDecorationExtensions
     {
         obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRenderingEmSize;
         return obj;
+    }
+
+    public static Builder<T> StrokeOffsetUnitPixel1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TextDecoration
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty] = Avalonia.Media.TextDecorationUnit.Pixel;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

@@ -8,6 +8,14 @@ public static partial class AnimationExtensions
 {
     // Avalonia.Animation.Animation.DurationProperty
 
+    public static Builder<T> Duration1<T>(this Builder<T> builder, Builder<System.TimeSpan> value)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.DurationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.DurationProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class AnimationExtensions
     }
 
     // Avalonia.Animation.Animation.IterationCountProperty
+
+    public static Builder<T> IterationCount1<T>(this Builder<T> builder, Builder<Avalonia.Animation.IterationCount> value)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.IterationCountProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class AnimationExtensions
 
     // Avalonia.Animation.Animation.PlaybackDirectionProperty
 
+    public static Builder<T> PlaybackDirection1<T>(this Builder<T> builder, Builder<Avalonia.Animation.PlaybackDirection> value)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> value.
     /// </summary>
@@ -300,6 +324,14 @@ public static partial class AnimationExtensions
         return obj;
     }
 
+    public static Builder<T> PlaybackDirectionNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Normal"/>.
     /// </summary>
@@ -310,6 +342,14 @@ public static partial class AnimationExtensions
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Normal;
         return obj;
+    }
+
+    public static Builder<T> PlaybackDirectionReverse1<T>(this Builder<T> builder)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Reverse;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -324,6 +364,14 @@ public static partial class AnimationExtensions
         return obj;
     }
 
+    public static Builder<T> PlaybackDirectionAlternate1<T>(this Builder<T> builder)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Alternate;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Alternate"/>.
     /// </summary>
@@ -334,6 +382,14 @@ public static partial class AnimationExtensions
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Alternate;
         return obj;
+    }
+
+    public static Builder<T> PlaybackDirectionAlternateReverse1<T>(this Builder<T> builder)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.AlternateReverse;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -349,6 +405,14 @@ public static partial class AnimationExtensions
     }
 
     // Avalonia.Animation.Animation.FillModeProperty
+
+    public static Builder<T> FillMode1<T>(this Builder<T> builder, Builder<Avalonia.Animation.FillMode> value)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.FillModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> value.
@@ -446,6 +510,14 @@ public static partial class AnimationExtensions
         return obj;
     }
 
+    public static Builder<T> FillModeNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.None"/>.
     /// </summary>
@@ -456,6 +528,14 @@ public static partial class AnimationExtensions
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.None;
         return obj;
+    }
+
+    public static Builder<T> FillModeForward1<T>(this Builder<T> builder)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Forward;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -470,6 +550,14 @@ public static partial class AnimationExtensions
         return obj;
     }
 
+    public static Builder<T> FillModeBackward1<T>(this Builder<T> builder)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Backward;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.Backward"/>.
     /// </summary>
@@ -480,6 +568,14 @@ public static partial class AnimationExtensions
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Backward;
         return obj;
+    }
+
+    public static Builder<T> FillModeBoth1<T>(this Builder<T> builder)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Both;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -495,6 +591,14 @@ public static partial class AnimationExtensions
     }
 
     // Avalonia.Animation.Animation.EasingProperty
+
+    public static Builder<T> Easing1<T>(this Builder<T> builder, Builder<Avalonia.Animation.Easings.Easing> value)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.EasingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.EasingProperty"/> value.
@@ -594,6 +698,14 @@ public static partial class AnimationExtensions
 
     // Avalonia.Animation.Animation.DelayProperty
 
+    public static Builder<T> Delay1<T>(this Builder<T> builder, Builder<System.TimeSpan> value)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.DelayProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.DelayProperty"/> value.
     /// </summary>
@@ -692,6 +804,14 @@ public static partial class AnimationExtensions
 
     // Avalonia.Animation.Animation.DelayBetweenIterationsProperty
 
+    public static Builder<T> DelayBetweenIterations1<T>(this Builder<T> builder, Builder<System.TimeSpan> value)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.DelayBetweenIterationsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> value.
     /// </summary>
@@ -789,6 +909,14 @@ public static partial class AnimationExtensions
     }
 
     // Avalonia.Animation.Animation.SpeedRatioProperty
+
+    public static Builder<T> SpeedRatio1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Animation.Animation
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.Animation.SpeedRatioProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> value.

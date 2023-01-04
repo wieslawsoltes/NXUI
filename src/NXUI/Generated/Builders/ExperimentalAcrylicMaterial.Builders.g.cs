@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.</returns>
     public static Avalonia.Media.ExperimentalAcrylicMaterial ExperimentalAcrylicMaterial(out Avalonia.Media.ExperimentalAcrylicMaterial @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Media.ExperimentalAcrylicMaterial> ExperimentalAcrylicMaterial1()
+    {
+        return new Builder<Avalonia.Media.ExperimentalAcrylicMaterial>() { Activator = () => new Avalonia.Media.ExperimentalAcrylicMaterial() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.</returns>
+    public static Avalonia.Media.ExperimentalAcrylicMaterial ExperimentalAcrylicMaterial() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.</returns>
+    public static Avalonia.Media.ExperimentalAcrylicMaterial ExperimentalAcrylicMaterial(out Avalonia.Media.ExperimentalAcrylicMaterial @ref) => @ref = new();*/
 }

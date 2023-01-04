@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.CalendarDayButton"/> class.</returns>
     public static Avalonia.Controls.Primitives.CalendarDayButton CalendarDayButton(out Avalonia.Controls.Primitives.CalendarDayButton @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Primitives.CalendarDayButton> CalendarDayButton1()
+    {
+        return new Builder<Avalonia.Controls.Primitives.CalendarDayButton>() { Activator = () => new Avalonia.Controls.Primitives.CalendarDayButton() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.CalendarDayButton"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.CalendarDayButton"/> class.</returns>
+    public static Avalonia.Controls.Primitives.CalendarDayButton CalendarDayButton() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.CalendarDayButton"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.CalendarDayButton"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.CalendarDayButton"/> class.</returns>
+    public static Avalonia.Controls.Primitives.CalendarDayButton CalendarDayButton(out Avalonia.Controls.Primitives.CalendarDayButton @ref) => @ref = new();*/
 }

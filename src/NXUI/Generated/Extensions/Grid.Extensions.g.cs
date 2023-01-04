@@ -8,6 +8,14 @@ public static partial class GridExtensions
 {
     // Avalonia.Controls.Grid.ShowGridLinesProperty
 
+    public static Builder<T> ShowGridLines1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Grid
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Grid.ShowGridLinesProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.ShowGridLinesProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class GridExtensions
     }
 
     // Avalonia.Controls.Grid.ColumnProperty
+
+    public static Builder<T> Column1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Grid.ColumnProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.ColumnProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class GridExtensions
 
     // Avalonia.Controls.Grid.RowProperty
 
+    public static Builder<T> Row1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Grid.RowProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.RowProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class GridExtensions
     }
 
     // Avalonia.Controls.Grid.ColumnSpanProperty
+
+    public static Builder<T> ColumnSpan1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Grid.ColumnSpanProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.ColumnSpanProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class GridExtensions
 
     // Avalonia.Controls.Grid.RowSpanProperty
 
+    public static Builder<T> RowSpan1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Grid.RowSpanProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.RowSpanProperty"/> value.
     /// </summary>
@@ -497,6 +537,14 @@ public static partial class GridExtensions
     }
 
     // Avalonia.Controls.Grid.IsSharedSizeScopeProperty
+
+    public static Builder<T> IsSharedSizeScope1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Grid.IsSharedSizeScopeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.IsSharedSizeScopeProperty"/> value.

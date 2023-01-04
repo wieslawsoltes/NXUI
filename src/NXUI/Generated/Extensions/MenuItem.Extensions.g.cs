@@ -8,6 +8,14 @@ public static partial class MenuItemExtensions
 {
     // Avalonia.Controls.MenuItem.CommandProperty
 
+    public static Builder<T> Command1<T>(this Builder<T> builder, Builder<System.Windows.Input.ICommand> value)
+        where T : Avalonia.Controls.MenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MenuItem.CommandProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.CommandProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class MenuItemExtensions
     }
 
     // Avalonia.Controls.MenuItem.CommandParameterProperty
+
+    public static Builder<T> CommandParameter1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.MenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MenuItem.CommandParameterProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.IconProperty
 
+    public static Builder<T> Icon1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.MenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MenuItem.IconProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.IconProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class MenuItemExtensions
     }
 
     // Avalonia.Controls.MenuItem.InputGestureProperty
+
+    public static Builder<T> InputGesture1<T>(this Builder<T> builder, Builder<Avalonia.Input.KeyGesture> value)
+        where T : Avalonia.Controls.MenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MenuItem.InputGestureProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.IsSelectedProperty
 
+    public static Builder<T> IsSelected1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.MenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MenuItem.IsSelectedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.IsSelectedProperty"/> value.
     /// </summary>
@@ -498,6 +538,14 @@ public static partial class MenuItemExtensions
 
     // Avalonia.Controls.MenuItem.IsSubMenuOpenProperty
 
+    public static Builder<T> IsSubMenuOpen1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.MenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MenuItem.IsSubMenuOpenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/> value.
     /// </summary>
@@ -595,6 +643,14 @@ public static partial class MenuItemExtensions
     }
 
     // Avalonia.Controls.MenuItem.StaysOpenOnClickProperty
+
+    public static Builder<T> StaysOpenOnClick1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.MenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MenuItem.StaysOpenOnClickProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/> value.

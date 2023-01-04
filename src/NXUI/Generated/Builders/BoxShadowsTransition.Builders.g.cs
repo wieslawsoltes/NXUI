@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.</returns>
     public static Avalonia.Animation.BoxShadowsTransition BoxShadowsTransition(out Avalonia.Animation.BoxShadowsTransition @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Animation.BoxShadowsTransition> BoxShadowsTransition1()
+    {
+        return new Builder<Avalonia.Animation.BoxShadowsTransition>() { Activator = () => new Avalonia.Animation.BoxShadowsTransition() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.</returns>
+    public static Avalonia.Animation.BoxShadowsTransition BoxShadowsTransition() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.</returns>
+    public static Avalonia.Animation.BoxShadowsTransition BoxShadowsTransition(out Avalonia.Animation.BoxShadowsTransition @ref) => @ref = new();*/
 }

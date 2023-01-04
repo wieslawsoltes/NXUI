@@ -8,6 +8,14 @@ public static partial class MatrixTransformExtensions
 {
     // Avalonia.Media.MatrixTransform.MatrixProperty
 
+    public static Builder<T> Matrix1<T>(this Builder<T> builder, Builder<Avalonia.Matrix> value)
+        where T : Avalonia.Media.MatrixTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.MatrixTransform.MatrixProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/> value.
     /// </summary>

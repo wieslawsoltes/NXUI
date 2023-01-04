@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
     public static Avalonia.Controls.NativeMenuItem NativeMenuItem(out Avalonia.Controls.NativeMenuItem @ref, System.String header)
         => @ref = new(header);
+
+    public static Builder<Avalonia.Controls.NativeMenuItem> NativeMenuItem1()
+    {
+        return new Builder<Avalonia.Controls.NativeMenuItem>() { Activator = () => new Avalonia.Controls.NativeMenuItem() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
+    public static Avalonia.Controls.NativeMenuItem NativeMenuItem() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NativeMenuItem"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
+    public static Avalonia.Controls.NativeMenuItem NativeMenuItem(out Avalonia.Controls.NativeMenuItem @ref) => @ref = new();*/
 }

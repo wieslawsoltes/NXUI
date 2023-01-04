@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ConicGradientBrush"/> class.</returns>
     public static Avalonia.Media.ConicGradientBrush ConicGradientBrush(out Avalonia.Media.ConicGradientBrush @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Media.ConicGradientBrush> ConicGradientBrush1()
+    {
+        return new Builder<Avalonia.Media.ConicGradientBrush>() { Activator = () => new Avalonia.Media.ConicGradientBrush() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ConicGradientBrush"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ConicGradientBrush"/> class.</returns>
+    public static Avalonia.Media.ConicGradientBrush ConicGradientBrush() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ConicGradientBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ConicGradientBrush"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ConicGradientBrush"/> class.</returns>
+    public static Avalonia.Media.ConicGradientBrush ConicGradientBrush(out Avalonia.Media.ConicGradientBrush @ref) => @ref = new();*/
 }

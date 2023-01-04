@@ -8,6 +8,14 @@ public static partial class LayoutTransformControlExtensions
 {
     // Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty
 
+    public static Builder<T> LayoutTransform1<T>(this Builder<T> builder, Builder<Avalonia.Media.ITransform> value)
+        where T : Avalonia.Controls.LayoutTransformControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class LayoutTransformControlExtensions
     }
 
     // Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty
+
+    public static Builder<T> UseRenderTransform1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.LayoutTransformControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> value.

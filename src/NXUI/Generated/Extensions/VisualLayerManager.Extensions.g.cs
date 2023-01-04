@@ -8,6 +8,14 @@ public static partial class VisualLayerManagerExtensions
 {
     // Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty
 
+    public static Builder<T> ChromeOverlayLayer1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.ChromeOverlayLayer> value)
+        where T : Avalonia.Controls.Primitives.VisualLayerManager
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty"/> value.
     /// </summary>

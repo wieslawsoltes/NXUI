@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.ThicknessTransition"/> class.</returns>
     public static Avalonia.Animation.ThicknessTransition ThicknessTransition(out Avalonia.Animation.ThicknessTransition @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Animation.ThicknessTransition> ThicknessTransition1()
+    {
+        return new Builder<Avalonia.Animation.ThicknessTransition>() { Activator = () => new Avalonia.Animation.ThicknessTransition() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.ThicknessTransition"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.ThicknessTransition"/> class.</returns>
+    public static Avalonia.Animation.ThicknessTransition ThicknessTransition() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.ThicknessTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.ThicknessTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.ThicknessTransition"/> class.</returns>
+    public static Avalonia.Animation.ThicknessTransition ThicknessTransition(out Avalonia.Animation.ThicknessTransition @ref) => @ref = new();*/
 }

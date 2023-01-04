@@ -8,6 +8,14 @@ public static partial class DrawingImageExtensions
 {
     // Avalonia.Media.DrawingImage.DrawingProperty
 
+    public static Builder<T> Drawing1<T>(this Builder<T> builder, Builder<Avalonia.Media.Drawing> value)
+        where T : Avalonia.Media.DrawingImage
+    {
+        void Setter(T obj) => obj[Avalonia.Media.DrawingImage.DrawingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/> value.
     /// </summary>

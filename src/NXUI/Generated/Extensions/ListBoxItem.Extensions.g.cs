@@ -8,6 +8,14 @@ public static partial class ListBoxItemExtensions
 {
     // Avalonia.Controls.ListBoxItem.IsSelectedProperty
 
+    public static Builder<T> IsSelected1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.ListBoxItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ListBoxItem.IsSelectedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ListBoxItem.IsSelectedProperty"/> value.
     /// </summary>

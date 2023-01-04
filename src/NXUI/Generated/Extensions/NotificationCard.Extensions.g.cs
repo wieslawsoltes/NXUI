@@ -52,6 +52,14 @@ public static partial class NotificationCardExtensions
 
     // Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty
 
+    public static Builder<T> IsClosed1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty"/> value.
     /// </summary>
@@ -149,6 +157,14 @@ public static partial class NotificationCardExtensions
     }
 
     // Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty
+
+    public static Builder<T> CloseOnClick1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Button
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty"/> value.

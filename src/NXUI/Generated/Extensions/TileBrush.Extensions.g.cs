@@ -8,6 +8,14 @@ public static partial class TileBrushExtensions
 {
     // Avalonia.Media.TileBrush.AlignmentXProperty
 
+    public static Builder<T> AlignmentX1<T>(this Builder<T> builder, Builder<Avalonia.Media.AlignmentX> value)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.AlignmentXProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    public static Builder<T> AlignmentXLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.AlignmentXProperty] = Avalonia.Media.AlignmentX.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> property value to <see cref="Avalonia.Media.AlignmentX.Left"/>.
     /// </summary>
@@ -116,6 +132,14 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    public static Builder<T> AlignmentXCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.AlignmentXProperty] = Avalonia.Media.AlignmentX.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> property value to <see cref="Avalonia.Media.AlignmentX.Center"/>.
     /// </summary>
@@ -126,6 +150,14 @@ public static partial class TileBrushExtensions
     {
         obj[Avalonia.Media.TileBrush.AlignmentXProperty] = Avalonia.Media.AlignmentX.Center;
         return obj;
+    }
+
+    public static Builder<T> AlignmentXRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.AlignmentXProperty] = Avalonia.Media.AlignmentX.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -141,6 +173,14 @@ public static partial class TileBrushExtensions
     }
 
     // Avalonia.Media.TileBrush.AlignmentYProperty
+
+    public static Builder<T> AlignmentY1<T>(this Builder<T> builder, Builder<Avalonia.Media.AlignmentY> value)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.AlignmentYProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> value.
@@ -238,6 +278,14 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    public static Builder<T> AlignmentYTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.AlignmentYProperty] = Avalonia.Media.AlignmentY.Top;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> property value to <see cref="Avalonia.Media.AlignmentY.Top"/>.
     /// </summary>
@@ -250,6 +298,14 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    public static Builder<T> AlignmentYCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.AlignmentYProperty] = Avalonia.Media.AlignmentY.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> property value to <see cref="Avalonia.Media.AlignmentY.Center"/>.
     /// </summary>
@@ -260,6 +316,14 @@ public static partial class TileBrushExtensions
     {
         obj[Avalonia.Media.TileBrush.AlignmentYProperty] = Avalonia.Media.AlignmentY.Center;
         return obj;
+    }
+
+    public static Builder<T> AlignmentYBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.AlignmentYProperty] = Avalonia.Media.AlignmentY.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -275,6 +339,14 @@ public static partial class TileBrushExtensions
     }
 
     // Avalonia.Media.TileBrush.DestinationRectProperty
+
+    public static Builder<T> DestinationRect1<T>(this Builder<T> builder, Builder<Avalonia.RelativeRect> value)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.DestinationRectProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/> value.
@@ -374,6 +446,14 @@ public static partial class TileBrushExtensions
 
     // Avalonia.Media.TileBrush.SourceRectProperty
 
+    public static Builder<T> SourceRect1<T>(this Builder<T> builder, Builder<Avalonia.RelativeRect> value)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.SourceRectProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/> value.
     /// </summary>
@@ -472,6 +552,14 @@ public static partial class TileBrushExtensions
 
     // Avalonia.Media.TileBrush.StretchProperty
 
+    public static Builder<T> Stretch1<T>(this Builder<T> builder, Builder<Avalonia.Media.Stretch> value)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.StretchProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> value.
     /// </summary>
@@ -568,6 +656,14 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    public static Builder<T> StretchNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
     /// </summary>
@@ -578,6 +674,14 @@ public static partial class TileBrushExtensions
     {
         obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
+    }
+
+    public static Builder<T> StretchFill1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.Fill;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -592,6 +696,14 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    public static Builder<T> StretchUniform1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.Uniform;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
     /// </summary>
@@ -602,6 +714,14 @@ public static partial class TileBrushExtensions
     {
         obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
+    }
+
+    public static Builder<T> StretchUniformToFill1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.UniformToFill;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -617,6 +737,14 @@ public static partial class TileBrushExtensions
     }
 
     // Avalonia.Media.TileBrush.TileModeProperty
+
+    public static Builder<T> TileMode1<T>(this Builder<T> builder, Builder<Avalonia.Media.TileMode> value)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.TileModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> value.
@@ -714,6 +842,14 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    public static Builder<T> TileModeNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.None"/>.
     /// </summary>
@@ -724,6 +860,14 @@ public static partial class TileBrushExtensions
     {
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.None;
         return obj;
+    }
+
+    public static Builder<T> TileModeFlipX1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.FlipX;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -738,6 +882,14 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    public static Builder<T> TileModeFlipY1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.FlipY;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.FlipY"/>.
     /// </summary>
@@ -750,6 +902,14 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    public static Builder<T> TileModeFlipXY1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.FlipXY;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.FlipXY"/>.
     /// </summary>
@@ -760,6 +920,14 @@ public static partial class TileBrushExtensions
     {
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.FlipXY;
         return obj;
+    }
+
+    public static Builder<T> TileModeTile1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.TileBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.Tile;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
     public static Avalonia.Media.RectangleGeometry RectangleGeometry(out Avalonia.Media.RectangleGeometry @ref, Avalonia.Rect rect)
         => @ref = new(rect);
+
+    public static Builder<Avalonia.Media.RectangleGeometry> RectangleGeometry1()
+    {
+        return new Builder<Avalonia.Media.RectangleGeometry>() { Activator = () => new Avalonia.Media.RectangleGeometry() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
+    public static Avalonia.Media.RectangleGeometry RectangleGeometry() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.RectangleGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
+    public static Avalonia.Media.RectangleGeometry RectangleGeometry(out Avalonia.Media.RectangleGeometry @ref) => @ref = new();*/
 }

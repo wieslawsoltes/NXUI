@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
     public static Avalonia.Styling.Styles Styles(out Avalonia.Styling.Styles @ref, Avalonia.Controls.IResourceHost owner)
         => @ref = new(owner);
+
+    public static Builder<Avalonia.Styling.Styles> Styles1()
+    {
+        return new Builder<Avalonia.Styling.Styles>() { Activator = () => new Avalonia.Styling.Styles() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.Styles"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
+    public static Avalonia.Styling.Styles Styles() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.Styles"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.Styles"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
+    public static Avalonia.Styling.Styles Styles(out Avalonia.Styling.Styles @ref) => @ref = new();*/
 }

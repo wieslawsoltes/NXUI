@@ -8,6 +8,14 @@ public static partial class ItemsRepeaterExtensions
 {
     // Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty
 
+    public static Builder<T> HorizontalCacheLength1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.ItemsRepeater
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ItemsRepeaterExtensions
     }
 
     // Avalonia.Controls.ItemsRepeater.ItemTemplateProperty
+
+    public static Builder<T> ItemTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.ItemsRepeater
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ItemsRepeater.ItemTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class ItemsRepeaterExtensions
 
     // Avalonia.Controls.ItemsRepeater.ItemsProperty
 
+    public static Builder<T> Items1<T>(this Builder<T> builder, Builder<System.Collections.IEnumerable> value)
+        where T : Avalonia.Controls.ItemsRepeater
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ItemsRepeater.ItemsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsRepeater.ItemsProperty"/> value.
     /// </summary>
@@ -302,6 +326,14 @@ public static partial class ItemsRepeaterExtensions
 
     // Avalonia.Controls.ItemsRepeater.LayoutProperty
 
+    public static Builder<T> Layout1<T>(this Builder<T> builder, Builder<Avalonia.Layout.AttachedLayout> value)
+        where T : Avalonia.Controls.ItemsRepeater
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ItemsRepeater.LayoutProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/> value.
     /// </summary>
@@ -399,6 +431,14 @@ public static partial class ItemsRepeaterExtensions
     }
 
     // Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty
+
+    public static Builder<T> VerticalCacheLength1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.ItemsRepeater
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/> value.

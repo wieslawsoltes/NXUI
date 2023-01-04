@@ -8,6 +8,14 @@ public static partial class DockPanelExtensions
 {
     // Avalonia.Controls.DockPanel.DockProperty
 
+    public static Builder<T> Dock1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Dock> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DockPanel.DockProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class DockPanelExtensions
         return obj;
     }
 
+    public static Builder<T> DockLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Left"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class DockPanelExtensions
     {
         obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Left;
         return obj;
+    }
+
+    public static Builder<T> DockBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class DockPanelExtensions
         return obj;
     }
 
+    public static Builder<T> DockRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Right;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Right"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class DockPanelExtensions
     {
         obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Right;
         return obj;
+    }
+
+    public static Builder<T> DockTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -153,6 +193,14 @@ public static partial class DockPanelExtensions
     }
 
     // Avalonia.Controls.DockPanel.LastChildFillProperty
+
+    public static Builder<T> LastChildFill1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.DockPanel
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.DockPanel.LastChildFillProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/> value.

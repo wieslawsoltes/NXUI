@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.TransformGroup"/> class.</returns>
     public static Avalonia.Media.TransformGroup TransformGroup(out Avalonia.Media.TransformGroup @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Media.TransformGroup> TransformGroup1()
+    {
+        return new Builder<Avalonia.Media.TransformGroup>() { Activator = () => new Avalonia.Media.TransformGroup() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.TransformGroup"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.TransformGroup"/> class.</returns>
+    public static Avalonia.Media.TransformGroup TransformGroup() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.TransformGroup"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.TransformGroup"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.TransformGroup"/> class.</returns>
+    public static Avalonia.Media.TransformGroup TransformGroup(out Avalonia.Media.TransformGroup @ref) => @ref = new();*/
 }

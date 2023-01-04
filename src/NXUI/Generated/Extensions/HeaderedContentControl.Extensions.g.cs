@@ -8,6 +8,14 @@ public static partial class HeaderedContentControlExtensions
 {
     // Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty
 
+    public static Builder<T> Header1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.Primitives.HeaderedContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class HeaderedContentControlExtensions
     }
 
     // Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty
+
+    public static Builder<T> HeaderTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.Primitives.HeaderedContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty"/> value.

@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedContentControl"/> class.</returns>
     public static Avalonia.Controls.Primitives.HeaderedContentControl HeaderedContentControl(out Avalonia.Controls.Primitives.HeaderedContentControl @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Primitives.HeaderedContentControl> HeaderedContentControl1()
+    {
+        return new Builder<Avalonia.Controls.Primitives.HeaderedContentControl>() { Activator = () => new Avalonia.Controls.Primitives.HeaderedContentControl() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedContentControl"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedContentControl"/> class.</returns>
+    public static Avalonia.Controls.Primitives.HeaderedContentControl HeaderedContentControl() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedContentControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.HeaderedContentControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedContentControl"/> class.</returns>
+    public static Avalonia.Controls.Primitives.HeaderedContentControl HeaderedContentControl(out Avalonia.Controls.Primitives.HeaderedContentControl @ref) => @ref = new();*/
 }

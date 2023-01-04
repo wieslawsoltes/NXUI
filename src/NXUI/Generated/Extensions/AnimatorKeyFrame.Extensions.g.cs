@@ -8,6 +8,14 @@ public static partial class AnimatorKeyFrameExtensions
 {
     // Avalonia.Animation.AnimatorKeyFrame.ValueProperty
 
+    public static Builder<T> Value1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Animation.AnimatorKeyFrame
+    {
+        void Setter(T obj) => obj[Avalonia.Animation.AnimatorKeyFrame.ValueProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.AnimatorKeyFrame.ValueProperty"/> value.
     /// </summary>

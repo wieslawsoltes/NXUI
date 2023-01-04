@@ -8,6 +8,14 @@ public static partial class ControlExtensions
 {
     // Avalonia.Controls.Control.FocusAdornerProperty
 
+    public static Builder<T> FocusAdorner1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Control.FocusAdornerProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ControlExtensions
     }
 
     // Avalonia.Controls.Control.TagProperty
+
+    public static Builder<T> Tag1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Control.TagProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Control.TagProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class ControlExtensions
 
     // Avalonia.Controls.Control.ContextMenuProperty
 
+    public static Builder<T> ContextMenu1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ContextMenu> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Control.ContextMenuProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Control.ContextMenuProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class ControlExtensions
     }
 
     // Avalonia.Controls.Control.ContextFlyoutProperty
+
+    public static Builder<T> ContextFlyout1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.FlyoutBase> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Control.ContextFlyoutProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/> value.

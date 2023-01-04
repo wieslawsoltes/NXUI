@@ -8,6 +8,14 @@ public static partial class RelativePanelExtensions
 {
     // Avalonia.Controls.RelativePanel.AboveProperty
 
+    public static Builder<T> Above1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AboveProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class RelativePanelExtensions
     }
 
     // Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty
+
+    public static Builder<T> AlignBottomWithPanel1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class RelativePanelExtensions
 
     // Avalonia.Controls.RelativePanel.AlignBottomWithProperty
 
+    public static Builder<T> AlignBottomWith1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignBottomWithProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class RelativePanelExtensions
     }
 
     // Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty
+
+    public static Builder<T> AlignHorizontalCenterWithPanel1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class RelativePanelExtensions
 
     // Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty
 
+    public static Builder<T> AlignLeftWithPanel1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> value.
     /// </summary>
@@ -497,6 +537,14 @@ public static partial class RelativePanelExtensions
     }
 
     // Avalonia.Controls.RelativePanel.AlignLeftWithProperty
+
+    public static Builder<T> AlignLeftWith1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignLeftWithProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> value.
@@ -596,6 +644,14 @@ public static partial class RelativePanelExtensions
 
     // Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty
 
+    public static Builder<T> AlignRightWithPanel1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> value.
     /// </summary>
@@ -693,6 +749,14 @@ public static partial class RelativePanelExtensions
     }
 
     // Avalonia.Controls.RelativePanel.AlignRightWithProperty
+
+    public static Builder<T> AlignRightWith1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignRightWithProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> value.
@@ -792,6 +856,14 @@ public static partial class RelativePanelExtensions
 
     // Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty
 
+    public static Builder<T> AlignTopWithPanel1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> value.
     /// </summary>
@@ -889,6 +961,14 @@ public static partial class RelativePanelExtensions
     }
 
     // Avalonia.Controls.RelativePanel.AlignTopWithProperty
+
+    public static Builder<T> AlignTopWith1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignTopWithProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> value.
@@ -988,6 +1068,14 @@ public static partial class RelativePanelExtensions
 
     // Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty
 
+    public static Builder<T> AlignVerticalCenterWithPanel1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> value.
     /// </summary>
@@ -1085,6 +1173,14 @@ public static partial class RelativePanelExtensions
     }
 
     // Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty
+
+    public static Builder<T> AlignVerticalCenterWith1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> value.
@@ -1184,6 +1280,14 @@ public static partial class RelativePanelExtensions
 
     // Avalonia.Controls.RelativePanel.BelowProperty
 
+    public static Builder<T> Below1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.BelowProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> value.
     /// </summary>
@@ -1282,6 +1386,14 @@ public static partial class RelativePanelExtensions
 
     // Avalonia.Controls.RelativePanel.LeftOfProperty
 
+    public static Builder<T> LeftOf1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.LeftOfProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> value.
     /// </summary>
@@ -1379,6 +1491,14 @@ public static partial class RelativePanelExtensions
     }
 
     // Avalonia.Controls.RelativePanel.RightOfProperty
+
+    public static Builder<T> RightOf1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RelativePanel.RightOfProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> value.

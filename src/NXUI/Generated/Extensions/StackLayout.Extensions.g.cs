@@ -8,6 +8,14 @@ public static partial class StackLayoutExtensions
 {
     // Avalonia.Layout.StackLayout.DisableVirtualizationProperty
 
+    public static Builder<T> DisableVirtualization1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Layout.StackLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.StackLayout.DisableVirtualizationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class StackLayoutExtensions
 
     // Avalonia.Layout.StackLayout.OrientationProperty
 
+    public static Builder<T> Orientation1<T>(this Builder<T> builder, Builder<Avalonia.Layout.Orientation> value)
+        where T : Avalonia.Layout.StackLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.StackLayout.OrientationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class StackLayoutExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationHorizontal1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.StackLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.StackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class StackLayoutExtensions
     {
         obj[Avalonia.Layout.StackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
+    }
+
+    public static Builder<T> OrientationVertical1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.StackLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.StackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -227,6 +259,14 @@ public static partial class StackLayoutExtensions
     }
 
     // Avalonia.Layout.StackLayout.SpacingProperty
+
+    public static Builder<T> Spacing1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.StackLayout
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.StackLayout.SpacingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/> value.

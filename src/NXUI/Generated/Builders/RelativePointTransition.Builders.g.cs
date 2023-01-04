@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.RelativePointTransition"/> class.</returns>
     public static Avalonia.Animation.RelativePointTransition RelativePointTransition(out Avalonia.Animation.RelativePointTransition @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Animation.RelativePointTransition> RelativePointTransition1()
+    {
+        return new Builder<Avalonia.Animation.RelativePointTransition>() { Activator = () => new Avalonia.Animation.RelativePointTransition() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.RelativePointTransition"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.RelativePointTransition"/> class.</returns>
+    public static Avalonia.Animation.RelativePointTransition RelativePointTransition() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.RelativePointTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.RelativePointTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.RelativePointTransition"/> class.</returns>
+    public static Avalonia.Animation.RelativePointTransition RelativePointTransition(out Avalonia.Animation.RelativePointTransition @ref) => @ref = new();*/
 }

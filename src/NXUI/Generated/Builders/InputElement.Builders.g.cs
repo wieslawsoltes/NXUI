@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Input.InputElement"/> class.</returns>
     public static Avalonia.Input.InputElement InputElement(out Avalonia.Input.InputElement @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Input.InputElement> InputElement1()
+    {
+        return new Builder<Avalonia.Input.InputElement>() { Activator = () => new Avalonia.Input.InputElement() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Input.InputElement"/> class.</returns>
+    public static Avalonia.Input.InputElement InputElement() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Input.InputElement"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Input.InputElement"/> class.</returns>
+    public static Avalonia.Input.InputElement InputElement(out Avalonia.Input.InputElement @ref) => @ref = new();*/
 }

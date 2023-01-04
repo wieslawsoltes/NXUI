@@ -8,6 +8,14 @@ public static partial class GradientBrushExtensions
 {
     // Avalonia.Media.GradientBrush.SpreadMethodProperty
 
+    public static Builder<T> SpreadMethod1<T>(this Builder<T> builder, Builder<Avalonia.Media.GradientSpreadMethod> value)
+        where T : Avalonia.Media.GradientBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GradientBrush.SpreadMethodProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class GradientBrushExtensions
         return obj;
     }
 
+    public static Builder<T> SpreadMethodPad1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.GradientBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GradientBrush.SpreadMethodProperty] = Avalonia.Media.GradientSpreadMethod.Pad;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> property value to <see cref="Avalonia.Media.GradientSpreadMethod.Pad"/>.
     /// </summary>
@@ -116,6 +132,14 @@ public static partial class GradientBrushExtensions
         return obj;
     }
 
+    public static Builder<T> SpreadMethodReflect1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.GradientBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GradientBrush.SpreadMethodProperty] = Avalonia.Media.GradientSpreadMethod.Reflect;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> property value to <see cref="Avalonia.Media.GradientSpreadMethod.Reflect"/>.
     /// </summary>
@@ -126,6 +150,14 @@ public static partial class GradientBrushExtensions
     {
         obj[Avalonia.Media.GradientBrush.SpreadMethodProperty] = Avalonia.Media.GradientSpreadMethod.Reflect;
         return obj;
+    }
+
+    public static Builder<T> SpreadMethodRepeat1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.GradientBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GradientBrush.SpreadMethodProperty] = Avalonia.Media.GradientSpreadMethod.Repeat;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -141,6 +173,14 @@ public static partial class GradientBrushExtensions
     }
 
     // Avalonia.Media.GradientBrush.GradientStopsProperty
+
+    public static Builder<T> GradientStops1<T>(this Builder<T> builder, Builder<Avalonia.Media.GradientStops> value)
+        where T : Avalonia.Media.GradientBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GradientBrush.GradientStopsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/> value.

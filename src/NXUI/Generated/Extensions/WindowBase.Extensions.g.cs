@@ -52,6 +52,14 @@ public static partial class WindowBaseExtensions
 
     // Avalonia.Controls.WindowBase.OwnerProperty
 
+    public static Builder<T> Owner1<T>(this Builder<T> builder, Builder<Avalonia.Controls.WindowBase> value)
+        where T : Avalonia.Controls.WindowBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.WindowBase.OwnerProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/> value.
     /// </summary>
@@ -149,6 +157,14 @@ public static partial class WindowBaseExtensions
     }
 
     // Avalonia.Controls.WindowBase.TopmostProperty
+
+    public static Builder<T> Topmost1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.WindowBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.WindowBase.TopmostProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/> value.

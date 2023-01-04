@@ -8,6 +8,14 @@ public static partial class AdornerLayerExtensions
 {
     // Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty
 
+    public static Builder<T> AdornedElement1<T>(this Builder<T> builder, Builder<Avalonia.Visual> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class AdornerLayerExtensions
 
     // Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty
 
+    public static Builder<T> IsClipEnabled1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class AdornerLayerExtensions
     }
 
     // Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty
+
+    public static Builder<T> Adorner1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Control> value)
+        where T : Avalonia.Visual
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/> value.

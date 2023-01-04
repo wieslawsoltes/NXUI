@@ -8,6 +8,14 @@ public static partial class MaskedTextBoxExtensions
 {
     // Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty
 
+    public static Builder<T> AsciiOnly1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.MaskedTextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class MaskedTextBoxExtensions
 
     // Avalonia.Controls.MaskedTextBox.CultureProperty
 
+    public static Builder<T> Culture1<T>(this Builder<T> builder, Builder<System.Globalization.CultureInfo> value)
+        where T : Avalonia.Controls.MaskedTextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MaskedTextBox.CultureProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class MaskedTextBoxExtensions
     }
 
     // Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty
+
+    public static Builder<T> HidePromptOnLeave1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.MaskedTextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/> value.
@@ -390,6 +414,14 @@ public static partial class MaskedTextBoxExtensions
 
     // Avalonia.Controls.MaskedTextBox.MaskProperty
 
+    public static Builder<T> Mask1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.MaskedTextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MaskedTextBox.MaskProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/> value.
     /// </summary>
@@ -487,6 +519,14 @@ public static partial class MaskedTextBoxExtensions
     }
 
     // Avalonia.Controls.MaskedTextBox.PasswordCharProperty
+
+    public static Builder<T> PasswordChar1<T>(this Builder<T> builder, Builder<System.Char> value)
+        where T : Avalonia.Controls.MaskedTextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MaskedTextBox.PasswordCharProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.PasswordCharProperty"/> value.
@@ -586,6 +626,14 @@ public static partial class MaskedTextBoxExtensions
 
     // Avalonia.Controls.MaskedTextBox.PromptCharProperty
 
+    public static Builder<T> PromptChar1<T>(this Builder<T> builder, Builder<System.Char> value)
+        where T : Avalonia.Controls.MaskedTextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MaskedTextBox.PromptCharProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/> value.
     /// </summary>
@@ -684,6 +732,14 @@ public static partial class MaskedTextBoxExtensions
 
     // Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty
 
+    public static Builder<T> ResetOnPrompt1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.MaskedTextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/> value.
     /// </summary>
@@ -781,6 +837,14 @@ public static partial class MaskedTextBoxExtensions
     }
 
     // Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty
+
+    public static Builder<T> ResetOnSpace1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.MaskedTextBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/> value.

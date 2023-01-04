@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> class.</returns>
     public static Avalonia.Controls.NativeMenuItemSeparator NativeMenuItemSeparator(out Avalonia.Controls.NativeMenuItemSeparator @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.NativeMenuItemSeparator> NativeMenuItemSeparator1()
+    {
+        return new Builder<Avalonia.Controls.NativeMenuItemSeparator>() { Activator = () => new Avalonia.Controls.NativeMenuItemSeparator() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> class.</returns>
+    public static Avalonia.Controls.NativeMenuItemSeparator NativeMenuItemSeparator() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> class.</returns>
+    public static Avalonia.Controls.NativeMenuItemSeparator NativeMenuItemSeparator(out Avalonia.Controls.NativeMenuItemSeparator @ref) => @ref = new();*/
 }

@@ -52,6 +52,14 @@ public static partial class LayoutableExtensions
 
     // Avalonia.Layout.Layoutable.WidthProperty
 
+    public static Builder<T> Width1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.WidthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.WidthProperty"/> value.
     /// </summary>
@@ -149,6 +157,14 @@ public static partial class LayoutableExtensions
     }
 
     // Avalonia.Layout.Layoutable.HeightProperty
+
+    public static Builder<T> Height1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.HeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.HeightProperty"/> value.
@@ -248,6 +264,14 @@ public static partial class LayoutableExtensions
 
     // Avalonia.Layout.Layoutable.MinWidthProperty
 
+    public static Builder<T> MinWidth1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.MinWidthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/> value.
     /// </summary>
@@ -345,6 +369,14 @@ public static partial class LayoutableExtensions
     }
 
     // Avalonia.Layout.Layoutable.MaxWidthProperty
+
+    public static Builder<T> MaxWidth1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.MaxWidthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/> value.
@@ -444,6 +476,14 @@ public static partial class LayoutableExtensions
 
     // Avalonia.Layout.Layoutable.MinHeightProperty
 
+    public static Builder<T> MinHeight1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.MinHeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/> value.
     /// </summary>
@@ -541,6 +581,14 @@ public static partial class LayoutableExtensions
     }
 
     // Avalonia.Layout.Layoutable.MaxHeightProperty
+
+    public static Builder<T> MaxHeight1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.MaxHeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/> value.
@@ -640,6 +688,14 @@ public static partial class LayoutableExtensions
 
     // Avalonia.Layout.Layoutable.MarginProperty
 
+    public static Builder<T> Margin1<T>(this Builder<T> builder, Builder<Avalonia.Thickness> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.MarginProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.MarginProperty"/> value.
     /// </summary>
@@ -738,6 +794,14 @@ public static partial class LayoutableExtensions
 
     // Avalonia.Layout.Layoutable.HorizontalAlignmentProperty
 
+    public static Builder<T> HorizontalAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.HorizontalAlignment> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> value.
     /// </summary>
@@ -834,6 +898,14 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
     /// </summary>
@@ -844,6 +916,14 @@ public static partial class LayoutableExtensions
     {
         obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> HorizontalAlignmentLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -858,6 +938,14 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
     /// </summary>
@@ -868,6 +956,14 @@ public static partial class LayoutableExtensions
     {
         obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> HorizontalAlignmentRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -883,6 +979,14 @@ public static partial class LayoutableExtensions
     }
 
     // Avalonia.Layout.Layoutable.VerticalAlignmentProperty
+
+    public static Builder<T> VerticalAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.VerticalAlignment> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> value.
@@ -980,6 +1084,14 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
@@ -990,6 +1102,14 @@ public static partial class LayoutableExtensions
     {
         obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> VerticalAlignmentTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1004,6 +1124,14 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
     /// </summary>
@@ -1014,6 +1142,14 @@ public static partial class LayoutableExtensions
     {
         obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> VerticalAlignmentBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1029,6 +1165,14 @@ public static partial class LayoutableExtensions
     }
 
     // Avalonia.Layout.Layoutable.UseLayoutRoundingProperty
+
+    public static Builder<T> UseLayoutRounding1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Layout.Layoutable
+    {
+        void Setter(T obj) => obj[Avalonia.Layout.Layoutable.UseLayoutRoundingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/> value.

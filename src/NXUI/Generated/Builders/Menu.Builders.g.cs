@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Menu"/> class.</returns>
     public static Avalonia.Controls.Menu Menu(out Avalonia.Controls.Menu @ref, Avalonia.Controls.Platform.IMenuInteractionHandler interactionHandler)
         => @ref = new(interactionHandler);
+
+    public static Builder<Avalonia.Controls.Menu> Menu1()
+    {
+        return new Builder<Avalonia.Controls.Menu>() { Activator = () => new Avalonia.Controls.Menu() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Menu"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Menu"/> class.</returns>
+    public static Avalonia.Controls.Menu Menu() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Menu"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Menu"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Menu"/> class.</returns>
+    public static Avalonia.Controls.Menu Menu(out Avalonia.Controls.Menu @ref) => @ref = new();*/
 }

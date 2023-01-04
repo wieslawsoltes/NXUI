@@ -8,6 +8,14 @@ public static partial class EllipseGeometryExtensions
 {
     // Avalonia.Media.EllipseGeometry.RectProperty
 
+    public static Builder<T> Rect1<T>(this Builder<T> builder, Builder<Avalonia.Rect> value)
+        where T : Avalonia.Media.EllipseGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.EllipseGeometry.RectProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class EllipseGeometryExtensions
     }
 
     // Avalonia.Media.EllipseGeometry.RadiusXProperty
+
+    public static Builder<T> RadiusX1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.EllipseGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.EllipseGeometry.RadiusXProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class EllipseGeometryExtensions
 
     // Avalonia.Media.EllipseGeometry.RadiusYProperty
 
+    public static Builder<T> RadiusY1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.EllipseGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.EllipseGeometry.RadiusYProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class EllipseGeometryExtensions
     }
 
     // Avalonia.Media.EllipseGeometry.CenterProperty
+
+    public static Builder<T> Center1<T>(this Builder<T> builder, Builder<Avalonia.Point> value)
+        where T : Avalonia.Media.EllipseGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.EllipseGeometry.CenterProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/> value.

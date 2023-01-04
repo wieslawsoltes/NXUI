@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ItemsRepeater"/> class.</returns>
     public static Avalonia.Controls.ItemsRepeater ItemsRepeater(out Avalonia.Controls.ItemsRepeater @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.ItemsRepeater> ItemsRepeater1()
+    {
+        return new Builder<Avalonia.Controls.ItemsRepeater>() { Activator = () => new Avalonia.Controls.ItemsRepeater() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ItemsRepeater"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ItemsRepeater"/> class.</returns>
+    public static Avalonia.Controls.ItemsRepeater ItemsRepeater() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ItemsRepeater"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ItemsRepeater"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ItemsRepeater"/> class.</returns>
+    public static Avalonia.Controls.ItemsRepeater ItemsRepeater(out Avalonia.Controls.ItemsRepeater @ref) => @ref = new();*/
 }

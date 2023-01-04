@@ -39,4 +39,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
     public static Avalonia.Media.TranslateTransform TranslateTransform(out Avalonia.Media.TranslateTransform @ref, System.Double x, System.Double y)
         => @ref = new(x, y);
+
+    public static Builder<Avalonia.Media.TranslateTransform> TranslateTransform1()
+    {
+        return new Builder<Avalonia.Media.TranslateTransform>() { Activator = () => new Avalonia.Media.TranslateTransform() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
+    public static Avalonia.Media.TranslateTransform TranslateTransform() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.TranslateTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
+    public static Avalonia.Media.TranslateTransform TranslateTransform(out Avalonia.Media.TranslateTransform @ref) => @ref = new();*/
 }

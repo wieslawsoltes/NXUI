@@ -8,6 +8,14 @@ public static partial class RangeBaseExtensions
 {
     // Avalonia.Controls.Primitives.RangeBase.MinimumProperty
 
+    public static Builder<T> Minimum1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.RangeBase.MinimumProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class RangeBaseExtensions
     }
 
     // Avalonia.Controls.Primitives.RangeBase.MaximumProperty
+
+    public static Builder<T> Maximum1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.RangeBase.MaximumProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class RangeBaseExtensions
 
     // Avalonia.Controls.Primitives.RangeBase.ValueProperty
 
+    public static Builder<T> Value1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.RangeBase.ValueProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/> value.
     /// </summary>
@@ -302,6 +326,14 @@ public static partial class RangeBaseExtensions
 
     // Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty
 
+    public static Builder<T> SmallChange1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/> value.
     /// </summary>
@@ -399,6 +431,14 @@ public static partial class RangeBaseExtensions
     }
 
     // Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty
+
+    public static Builder<T> LargeChange1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/> value.

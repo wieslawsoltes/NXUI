@@ -8,6 +8,14 @@ public static partial class CombinedGeometryExtensions
 {
     // Avalonia.Media.CombinedGeometry.Geometry1Property
 
+    public static Builder<T> Geometry11<T>(this Builder<T> builder, Builder<Avalonia.Media.Geometry> value)
+        where T : Avalonia.Media.CombinedGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.CombinedGeometry.Geometry1Property] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class CombinedGeometryExtensions
     }
 
     // Avalonia.Media.CombinedGeometry.Geometry2Property
+
+    public static Builder<T> Geometry21<T>(this Builder<T> builder, Builder<Avalonia.Media.Geometry> value)
+        where T : Avalonia.Media.CombinedGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.CombinedGeometry.Geometry2Property] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> value.
@@ -204,6 +220,14 @@ public static partial class CombinedGeometryExtensions
 
     // Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty
 
+    public static Builder<T> GeometryCombineMode1<T>(this Builder<T> builder, Builder<Avalonia.Media.GeometryCombineMode> value)
+        where T : Avalonia.Media.CombinedGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> value.
     /// </summary>
@@ -300,6 +324,14 @@ public static partial class CombinedGeometryExtensions
         return obj;
     }
 
+    public static Builder<T> GeometryCombineModeUnion1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.CombinedGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Union;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property value to <see cref="Avalonia.Media.GeometryCombineMode.Union"/>.
     /// </summary>
@@ -310,6 +342,14 @@ public static partial class CombinedGeometryExtensions
     {
         obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Union;
         return obj;
+    }
+
+    public static Builder<T> GeometryCombineModeIntersect1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.CombinedGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Intersect;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -324,6 +364,14 @@ public static partial class CombinedGeometryExtensions
         return obj;
     }
 
+    public static Builder<T> GeometryCombineModeXor1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.CombinedGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Xor;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property value to <see cref="Avalonia.Media.GeometryCombineMode.Xor"/>.
     /// </summary>
@@ -334,6 +382,14 @@ public static partial class CombinedGeometryExtensions
     {
         obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Xor;
         return obj;
+    }
+
+    public static Builder<T> GeometryCombineModeExclude1<T>(this Builder<T> builder)
+        where T : Avalonia.Media.CombinedGeometry
+    {
+        void Setter(T obj) => obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Exclude;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

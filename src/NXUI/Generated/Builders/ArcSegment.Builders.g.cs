@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.</returns>
     public static Avalonia.Media.ArcSegment ArcSegment(out Avalonia.Media.ArcSegment @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Media.ArcSegment> ArcSegment1()
+    {
+        return new Builder<Avalonia.Media.ArcSegment>() { Activator = () => new Avalonia.Media.ArcSegment() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.</returns>
+    public static Avalonia.Media.ArcSegment ArcSegment() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ArcSegment"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.</returns>
+    public static Avalonia.Media.ArcSegment ArcSegment(out Avalonia.Media.ArcSegment @ref) => @ref = new();*/
 }

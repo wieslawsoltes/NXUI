@@ -8,6 +8,14 @@ public static partial class ImageDrawingExtensions
 {
     // Avalonia.Media.ImageDrawing.ImageSourceProperty
 
+    public static Builder<T> ImageSource1<T>(this Builder<T> builder, Builder<Avalonia.Media.IImage> value)
+        where T : Avalonia.Media.ImageDrawing
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ImageDrawing.ImageSourceProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ImageDrawingExtensions
     }
 
     // Avalonia.Media.ImageDrawing.RectProperty
+
+    public static Builder<T> Rect1<T>(this Builder<T> builder, Builder<Avalonia.Rect> value)
+        where T : Avalonia.Media.ImageDrawing
+    {
+        void Setter(T obj) => obj[Avalonia.Media.ImageDrawing.RectProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> value.

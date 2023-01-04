@@ -8,6 +8,14 @@ public static partial class ContentControlExtensions
 {
     // Avalonia.Controls.ContentControl.ContentProperty
 
+    public static Builder<T> Content1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.ContentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.ContentProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ContentControlExtensions
     }
 
     // Avalonia.Controls.ContentControl.ContentTemplateProperty
+
+    public static Builder<T> ContentTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.ContentTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.ContentTemplateProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class ContentControlExtensions
 
     // Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty
 
+    public static Builder<T> HorizontalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.HorizontalAlignment> value)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> value.
     /// </summary>
@@ -300,6 +324,14 @@ public static partial class ContentControlExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
     /// </summary>
@@ -310,6 +342,14 @@ public static partial class ContentControlExtensions
     {
         obj[Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -324,6 +364,14 @@ public static partial class ContentControlExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
     /// </summary>
@@ -334,6 +382,14 @@ public static partial class ContentControlExtensions
     {
         obj[Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -349,6 +405,14 @@ public static partial class ContentControlExtensions
     }
 
     // Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty
+
+    public static Builder<T> VerticalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.VerticalAlignment> value)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> value.
@@ -446,6 +510,14 @@ public static partial class ContentControlExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
@@ -456,6 +528,14 @@ public static partial class ContentControlExtensions
     {
         obj[Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -470,6 +550,14 @@ public static partial class ContentControlExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
     /// </summary>
@@ -480,6 +568,14 @@ public static partial class ContentControlExtensions
     {
         obj[Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContentControl
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

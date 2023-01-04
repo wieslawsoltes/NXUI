@@ -8,6 +8,14 @@ public static partial class SelectableTextBlockExtensions
 {
     // Avalonia.Controls.SelectableTextBlock.SelectionStartProperty
 
+    public static Builder<T> SelectionStart1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.SelectableTextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SelectableTextBlock.SelectionStartProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class SelectableTextBlockExtensions
     }
 
     // Avalonia.Controls.SelectableTextBlock.SelectionEndProperty
+
+    public static Builder<T> SelectionEnd1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.SelectableTextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SelectableTextBlock.SelectionEndProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> value.
@@ -247,6 +263,14 @@ public static partial class SelectableTextBlockExtensions
     }
 
     // Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty
+
+    public static Builder<T> SelectionBrush1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.SelectableTextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/> value.

@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Bold"/> class.</returns>
     public static Avalonia.Controls.Documents.Bold Bold(out Avalonia.Controls.Documents.Bold @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Documents.Bold> Bold1()
+    {
+        return new Builder<Avalonia.Controls.Documents.Bold>() { Activator = () => new Avalonia.Controls.Documents.Bold() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Bold"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Bold"/> class.</returns>
+    public static Avalonia.Controls.Documents.Bold Bold() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Bold"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.Bold"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Bold"/> class.</returns>
+    public static Avalonia.Controls.Documents.Bold Bold(out Avalonia.Controls.Documents.Bold @ref) => @ref = new();*/
 }

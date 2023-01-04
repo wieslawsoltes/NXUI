@@ -8,6 +8,14 @@ public static partial class AutoCompleteBoxExtensions
 {
     // Avalonia.Controls.AutoCompleteBox.WatermarkProperty
 
+    public static Builder<T> Watermark1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.WatermarkProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     // Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty
+
+    public static Builder<T> MinimumPrefixLength1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty
 
+    public static Builder<T> MinimumPopulateDelay1<T>(this Builder<T> builder, Builder<System.TimeSpan> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     // Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty
+
+    public static Builder<T> MaxDropDownHeight1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty
 
+    public static Builder<T> IsTextCompletionEnabled1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/> value.
     /// </summary>
@@ -497,6 +537,14 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     // Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty
+
+    public static Builder<T> ItemTemplate1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Templates.IDataTemplate> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/> value.
@@ -596,6 +644,14 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty
 
+    public static Builder<T> IsDropDownOpen1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/> value.
     /// </summary>
@@ -694,6 +750,14 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.SelectedItemProperty
 
+    public static Builder<T> SelectedItem1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.SelectedItemProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/> value.
     /// </summary>
@@ -791,6 +855,14 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     // Avalonia.Controls.AutoCompleteBox.TextProperty
+
+    public static Builder<T> Text1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.TextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/> value.
@@ -934,6 +1006,14 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.FilterModeProperty
 
+    public static Builder<T> FilterMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.AutoCompleteFilterMode> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> value.
     /// </summary>
@@ -1030,6 +1110,14 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    public static Builder<T> FilterModeNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.None"/>.
     /// </summary>
@@ -1040,6 +1128,14 @@ public static partial class AutoCompleteBoxExtensions
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.None;
         return obj;
+    }
+
+    public static Builder<T> FilterModeStartsWith1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWith;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1054,6 +1150,14 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    public static Builder<T> FilterModeStartsWithCaseSensitive1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithCaseSensitive;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.StartsWithCaseSensitive"/>.
     /// </summary>
@@ -1064,6 +1168,14 @@ public static partial class AutoCompleteBoxExtensions
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithCaseSensitive;
         return obj;
+    }
+
+    public static Builder<T> FilterModeStartsWithOrdinal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinal;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1078,6 +1190,14 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    public static Builder<T> FilterModeStartsWithOrdinalCaseSensitive1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinalCaseSensitive;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinalCaseSensitive"/>.
     /// </summary>
@@ -1088,6 +1208,14 @@ public static partial class AutoCompleteBoxExtensions
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinalCaseSensitive;
         return obj;
+    }
+
+    public static Builder<T> FilterModeContains1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.Contains;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1102,6 +1230,14 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    public static Builder<T> FilterModeContainsCaseSensitive1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsCaseSensitive;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.ContainsCaseSensitive"/>.
     /// </summary>
@@ -1112,6 +1248,14 @@ public static partial class AutoCompleteBoxExtensions
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsCaseSensitive;
         return obj;
+    }
+
+    public static Builder<T> FilterModeContainsOrdinal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinal;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1126,6 +1270,14 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    public static Builder<T> FilterModeContainsOrdinalCaseSensitive1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinalCaseSensitive;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinalCaseSensitive"/>.
     /// </summary>
@@ -1136,6 +1288,14 @@ public static partial class AutoCompleteBoxExtensions
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinalCaseSensitive;
         return obj;
+    }
+
+    public static Builder<T> FilterModeEquals1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.Equals;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1150,6 +1310,14 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    public static Builder<T> FilterModeEqualsCaseSensitive1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsCaseSensitive;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.EqualsCaseSensitive"/>.
     /// </summary>
@@ -1160,6 +1328,14 @@ public static partial class AutoCompleteBoxExtensions
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsCaseSensitive;
         return obj;
+    }
+
+    public static Builder<T> FilterModeEqualsOrdinal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinal;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1174,6 +1350,14 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    public static Builder<T> FilterModeEqualsOrdinalCaseSensitive1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinalCaseSensitive;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinalCaseSensitive"/>.
     /// </summary>
@@ -1184,6 +1368,14 @@ public static partial class AutoCompleteBoxExtensions
     {
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinalCaseSensitive;
         return obj;
+    }
+
+    public static Builder<T> FilterModeCustom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.Custom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1199,6 +1391,14 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     // Avalonia.Controls.AutoCompleteBox.ItemFilterProperty
+
+    public static Builder<T> ItemFilter1<T>(this Builder<T> builder, Builder<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.ItemFilterProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/> value.
@@ -1298,6 +1498,14 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.TextFilterProperty
 
+    public static Builder<T> TextFilter1<T>(this Builder<T> builder, Builder<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.TextFilterProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/> value.
     /// </summary>
@@ -1395,6 +1603,14 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     // Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty
+
+    public static Builder<T> ItemSelector1<T>(this Builder<T> builder, Builder<Avalonia.Controls.AutoCompleteSelector<System.Object>> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/> value.
@@ -1494,6 +1710,14 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.TextSelectorProperty
 
+    public static Builder<T> TextSelector1<T>(this Builder<T> builder, Builder<Avalonia.Controls.AutoCompleteSelector<System.String>> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.TextSelectorProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/> value.
     /// </summary>
@@ -1592,6 +1816,14 @@ public static partial class AutoCompleteBoxExtensions
 
     // Avalonia.Controls.AutoCompleteBox.ItemsProperty
 
+    public static Builder<T> Items1<T>(this Builder<T> builder, Builder<System.Collections.IEnumerable> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.ItemsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemsProperty"/> value.
     /// </summary>
@@ -1689,6 +1921,14 @@ public static partial class AutoCompleteBoxExtensions
     }
 
     // Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty
+
+    public static Builder<T> AsyncPopulator1<T>(this Builder<T> builder, Builder<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>> value)
+        where T : Avalonia.Controls.AutoCompleteBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/> value.

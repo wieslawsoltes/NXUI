@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TickBar"/> class.</returns>
     public static Avalonia.Controls.TickBar TickBar(out Avalonia.Controls.TickBar @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.TickBar> TickBar1()
+    {
+        return new Builder<Avalonia.Controls.TickBar>() { Activator = () => new Avalonia.Controls.TickBar() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TickBar"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TickBar"/> class.</returns>
+    public static Avalonia.Controls.TickBar TickBar() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TickBar"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TickBar"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TickBar"/> class.</returns>
+    public static Avalonia.Controls.TickBar TickBar(out Avalonia.Controls.TickBar @ref) => @ref = new();*/
 }

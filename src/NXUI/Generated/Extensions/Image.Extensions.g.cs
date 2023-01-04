@@ -8,6 +8,14 @@ public static partial class ImageExtensions
 {
     // Avalonia.Controls.Image.SourceProperty
 
+    public static Builder<T> Source1<T>(this Builder<T> builder, Builder<Avalonia.Media.IImage> value)
+        where T : Avalonia.Controls.Image
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Image.SourceProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.SourceProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class ImageExtensions
 
     // Avalonia.Controls.Image.StretchProperty
 
+    public static Builder<T> Stretch1<T>(this Builder<T> builder, Builder<Avalonia.Media.Stretch> value)
+        where T : Avalonia.Controls.Image
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Image.StretchProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class ImageExtensions
         return obj;
     }
 
+    public static Builder<T> StretchNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Image
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Image.StretchProperty] = Avalonia.Media.Stretch.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class ImageExtensions
     {
         obj[Avalonia.Controls.Image.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
+    }
+
+    public static Builder<T> StretchFill1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Image
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Image.StretchProperty] = Avalonia.Media.Stretch.Fill;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -226,6 +258,14 @@ public static partial class ImageExtensions
         return obj;
     }
 
+    public static Builder<T> StretchUniform1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Image
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Image.StretchProperty] = Avalonia.Media.Stretch.Uniform;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
     /// </summary>
@@ -236,6 +276,14 @@ public static partial class ImageExtensions
     {
         obj[Avalonia.Controls.Image.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
+    }
+
+    public static Builder<T> StretchUniformToFill1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Image
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Image.StretchProperty] = Avalonia.Media.Stretch.UniformToFill;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -251,6 +299,14 @@ public static partial class ImageExtensions
     }
 
     // Avalonia.Controls.Image.StretchDirectionProperty
+
+    public static Builder<T> StretchDirection1<T>(this Builder<T> builder, Builder<Avalonia.Media.StretchDirection> value)
+        where T : Avalonia.Controls.Image
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Image.StretchDirectionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> value.
@@ -348,6 +404,14 @@ public static partial class ImageExtensions
         return obj;
     }
 
+    public static Builder<T> StretchDirectionUpOnly1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Image
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Image.StretchDirectionProperty] = Avalonia.Media.StretchDirection.UpOnly;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.UpOnly"/>.
     /// </summary>
@@ -360,6 +424,14 @@ public static partial class ImageExtensions
         return obj;
     }
 
+    public static Builder<T> StretchDirectionDownOnly1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Image
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Image.StretchDirectionProperty] = Avalonia.Media.StretchDirection.DownOnly;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.DownOnly"/>.
     /// </summary>
@@ -370,6 +442,14 @@ public static partial class ImageExtensions
     {
         obj[Avalonia.Controls.Image.StretchDirectionProperty] = Avalonia.Media.StretchDirection.DownOnly;
         return obj;
+    }
+
+    public static Builder<T> StretchDirectionBoth1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Image
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Image.StretchDirectionProperty] = Avalonia.Media.StretchDirection.Both;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

@@ -8,6 +8,14 @@ public static partial class KeyBindingExtensions
 {
     // Avalonia.Input.KeyBinding.CommandProperty
 
+    public static Builder<T> Command1<T>(this Builder<T> builder, Builder<System.Windows.Input.ICommand> value)
+        where T : Avalonia.Input.KeyBinding
+    {
+        void Setter(T obj) => obj[Avalonia.Input.KeyBinding.CommandProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.KeyBinding.CommandProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class KeyBindingExtensions
 
     // Avalonia.Input.KeyBinding.CommandParameterProperty
 
+    public static Builder<T> CommandParameter1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Input.KeyBinding
+    {
+        void Setter(T obj) => obj[Avalonia.Input.KeyBinding.CommandParameterProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/> value.
     /// </summary>
@@ -203,6 +219,14 @@ public static partial class KeyBindingExtensions
     }
 
     // Avalonia.Input.KeyBinding.GestureProperty
+
+    public static Builder<T> Gesture1<T>(this Builder<T> builder, Builder<Avalonia.Input.KeyGesture> value)
+        where T : Avalonia.Input.KeyBinding
+    {
+        void Setter(T obj) => obj[Avalonia.Input.KeyBinding.GestureProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.KeyBinding.GestureProperty"/> value.

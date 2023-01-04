@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Application"/> class.</returns>
     public static Avalonia.Application Application(out Avalonia.Application @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Application> Application1()
+    {
+        return new Builder<Avalonia.Application>() { Activator = () => new Avalonia.Application() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Application"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Application"/> class.</returns>
+    public static Avalonia.Application Application() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Application"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Application"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Application"/> class.</returns>
+    public static Avalonia.Application Application(out Avalonia.Application @ref) => @ref = new();*/
 }

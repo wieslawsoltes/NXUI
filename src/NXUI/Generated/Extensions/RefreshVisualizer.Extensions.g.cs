@@ -8,6 +8,14 @@ public static partial class RefreshVisualizerExtensions
 {
     // Avalonia.Controls.RefreshVisualizer.PullDirectionProperty
 
+    public static Builder<T> PullDirection1<T>(this Builder<T> builder, Builder<Avalonia.Input.PullDirection> value)
+        where T : Avalonia.Controls.RefreshVisualizer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RefreshVisualizer.PullDirectionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.PullDirectionProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class RefreshVisualizerExtensions
         return obj;
     }
 
+    public static Builder<T> PullDirectionTopToBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.RefreshVisualizer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RefreshVisualizer.PullDirectionProperty] = Avalonia.Input.PullDirection.TopToBottom;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.TopToBottom"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class RefreshVisualizerExtensions
     {
         obj[Avalonia.Controls.RefreshVisualizer.PullDirectionProperty] = Avalonia.Input.PullDirection.TopToBottom;
         return obj;
+    }
+
+    public static Builder<T> PullDirectionBottomToTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.RefreshVisualizer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RefreshVisualizer.PullDirectionProperty] = Avalonia.Input.PullDirection.BottomToTop;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -128,6 +152,14 @@ public static partial class RefreshVisualizerExtensions
         return obj;
     }
 
+    public static Builder<T> PullDirectionLeftToRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.RefreshVisualizer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RefreshVisualizer.PullDirectionProperty] = Avalonia.Input.PullDirection.LeftToRight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.LeftToRight"/>.
     /// </summary>
@@ -138,6 +170,14 @@ public static partial class RefreshVisualizerExtensions
     {
         obj[Avalonia.Controls.RefreshVisualizer.PullDirectionProperty] = Avalonia.Input.PullDirection.LeftToRight;
         return obj;
+    }
+
+    public static Builder<T> PullDirectionRightToLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.RefreshVisualizer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RefreshVisualizer.PullDirectionProperty] = Avalonia.Input.PullDirection.RightToLeft;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -197,6 +237,14 @@ public static partial class RefreshVisualizerExtensions
     }
 
     // Avalonia.Controls.RefreshVisualizer.OrientationProperty
+
+    public static Builder<T> Orientation1<T>(this Builder<T> builder, Builder<Avalonia.Controls.RefreshVisualizerOrientation> value)
+        where T : Avalonia.Controls.RefreshVisualizer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RefreshVisualizer.OrientationProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> value.
@@ -294,6 +342,14 @@ public static partial class RefreshVisualizerExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationAuto1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.RefreshVisualizer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RefreshVisualizer.OrientationProperty] = Avalonia.Controls.RefreshVisualizerOrientation.Auto;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> property value to <see cref="Avalonia.Controls.RefreshVisualizerOrientation.Auto"/>.
     /// </summary>
@@ -304,6 +360,14 @@ public static partial class RefreshVisualizerExtensions
     {
         obj[Avalonia.Controls.RefreshVisualizer.OrientationProperty] = Avalonia.Controls.RefreshVisualizerOrientation.Auto;
         return obj;
+    }
+
+    public static Builder<T> OrientationNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.RefreshVisualizer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RefreshVisualizer.OrientationProperty] = Avalonia.Controls.RefreshVisualizerOrientation.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -318,6 +382,14 @@ public static partial class RefreshVisualizerExtensions
         return obj;
     }
 
+    public static Builder<T> OrientationRotate90DegreesCounterclockwise1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.RefreshVisualizer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RefreshVisualizer.OrientationProperty] = Avalonia.Controls.RefreshVisualizerOrientation.Rotate90DegreesCounterclockwise;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> property value to <see cref="Avalonia.Controls.RefreshVisualizerOrientation.Rotate90DegreesCounterclockwise"/>.
     /// </summary>
@@ -328,6 +400,14 @@ public static partial class RefreshVisualizerExtensions
     {
         obj[Avalonia.Controls.RefreshVisualizer.OrientationProperty] = Avalonia.Controls.RefreshVisualizerOrientation.Rotate90DegreesCounterclockwise;
         return obj;
+    }
+
+    public static Builder<T> OrientationRotate270DegreesCounterclockwise1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.RefreshVisualizer
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.RefreshVisualizer.OrientationProperty] = Avalonia.Controls.RefreshVisualizerOrientation.Rotate270DegreesCounterclockwise;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

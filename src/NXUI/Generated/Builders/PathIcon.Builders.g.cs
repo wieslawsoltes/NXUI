@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.PathIcon"/> class.</returns>
     public static Avalonia.Controls.PathIcon PathIcon(out Avalonia.Controls.PathIcon @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.PathIcon> PathIcon1()
+    {
+        return new Builder<Avalonia.Controls.PathIcon>() { Activator = () => new Avalonia.Controls.PathIcon() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.PathIcon"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.PathIcon"/> class.</returns>
+    public static Avalonia.Controls.PathIcon PathIcon() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.PathIcon"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.PathIcon"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.PathIcon"/> class.</returns>
+    public static Avalonia.Controls.PathIcon PathIcon(out Avalonia.Controls.PathIcon @ref) => @ref = new();*/
 }

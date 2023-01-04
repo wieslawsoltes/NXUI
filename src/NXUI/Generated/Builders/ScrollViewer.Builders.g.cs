@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ScrollViewer"/> class.</returns>
     public static Avalonia.Controls.ScrollViewer ScrollViewer(out Avalonia.Controls.ScrollViewer @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.ScrollViewer> ScrollViewer1()
+    {
+        return new Builder<Avalonia.Controls.ScrollViewer>() { Activator = () => new Avalonia.Controls.ScrollViewer() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ScrollViewer"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ScrollViewer"/> class.</returns>
+    public static Avalonia.Controls.ScrollViewer ScrollViewer() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ScrollViewer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ScrollViewer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ScrollViewer"/> class.</returns>
+    public static Avalonia.Controls.ScrollViewer ScrollViewer(out Avalonia.Controls.ScrollViewer @ref) => @ref = new();*/
 }

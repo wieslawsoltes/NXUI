@@ -8,6 +8,14 @@ public static partial class ApplicationExtensions
 {
     // Avalonia.Application.DataContextProperty
 
+    public static Builder<T> DataContext1<T>(this Builder<T> builder, Builder<System.Object> value)
+        where T : Avalonia.Application
+    {
+        void Setter(T obj) => obj[Avalonia.Application.DataContextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Application.DataContextProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ApplicationExtensions
     }
 
     // Avalonia.Application.NameProperty
+
+    public static Builder<T> Name1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Application
+    {
+        void Setter(T obj) => obj[Avalonia.Application.NameProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Application.NameProperty"/> value.

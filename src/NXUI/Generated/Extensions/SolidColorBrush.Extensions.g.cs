@@ -8,6 +8,14 @@ public static partial class SolidColorBrushExtensions
 {
     // Avalonia.Media.SolidColorBrush.ColorProperty
 
+    public static Builder<T> Color1<T>(this Builder<T> builder, Builder<Avalonia.Media.Color> value)
+        where T : Avalonia.Media.SolidColorBrush
+    {
+        void Setter(T obj) => obj[Avalonia.Media.SolidColorBrush.ColorProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.SolidColorBrush.ColorProperty"/> value.
     /// </summary>

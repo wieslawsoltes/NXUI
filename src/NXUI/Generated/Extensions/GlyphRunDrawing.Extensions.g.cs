@@ -8,6 +8,14 @@ public static partial class GlyphRunDrawingExtensions
 {
     // Avalonia.Media.GlyphRunDrawing.ForegroundProperty
 
+    public static Builder<T> Foreground1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Media.GlyphRunDrawing
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GlyphRunDrawing.ForegroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class GlyphRunDrawingExtensions
     }
 
     // Avalonia.Media.GlyphRunDrawing.GlyphRunProperty
+
+    public static Builder<T> GlyphRun1<T>(this Builder<T> builder, Builder<Avalonia.Media.GlyphRun> value)
+        where T : Avalonia.Media.GlyphRunDrawing
+    {
+        void Setter(T obj) => obj[Avalonia.Media.GlyphRunDrawing.GlyphRunProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/> value.

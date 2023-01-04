@@ -8,6 +8,14 @@ public static partial class NativeMenuItemExtensions
 {
     // Avalonia.Controls.NativeMenuItem.MenuProperty
 
+    public static Builder<T> Menu1<T>(this Builder<T> builder, Builder<Avalonia.Controls.NativeMenu> value)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.MenuProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.MenuProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class NativeMenuItemExtensions
     }
 
     // Avalonia.Controls.NativeMenuItem.IconProperty
+
+    public static Builder<T> Icon1<T>(this Builder<T> builder, Builder<Avalonia.Media.Imaging.IBitmap> value)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.IconProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.IconProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class NativeMenuItemExtensions
 
     // Avalonia.Controls.NativeMenuItem.HeaderProperty
 
+    public static Builder<T> Header1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.HeaderProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.HeaderProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class NativeMenuItemExtensions
     }
 
     // Avalonia.Controls.NativeMenuItem.GestureProperty
+
+    public static Builder<T> Gesture1<T>(this Builder<T> builder, Builder<Avalonia.Input.KeyGesture> value)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.GestureProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.GestureProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class NativeMenuItemExtensions
 
     // Avalonia.Controls.NativeMenuItem.IsCheckedProperty
 
+    public static Builder<T> IsChecked1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.IsCheckedProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.IsCheckedProperty"/> value.
     /// </summary>
@@ -498,6 +538,14 @@ public static partial class NativeMenuItemExtensions
 
     // Avalonia.Controls.NativeMenuItem.ToggleTypeProperty
 
+    public static Builder<T> ToggleType1<T>(this Builder<T> builder, Builder<Avalonia.Controls.NativeMenuItemToggleType> value)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> value.
     /// </summary>
@@ -594,6 +642,14 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
+    public static Builder<T> ToggleTypeNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.None"/>.
     /// </summary>
@@ -606,6 +662,14 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
+    public static Builder<T> ToggleTypeCheckBox1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.CheckBox;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.CheckBox"/>.
     /// </summary>
@@ -616,6 +680,14 @@ public static partial class NativeMenuItemExtensions
     {
         obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.CheckBox;
         return obj;
+    }
+
+    public static Builder<T> ToggleTypeRadio1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.Radio;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -631,6 +703,14 @@ public static partial class NativeMenuItemExtensions
     }
 
     // Avalonia.Controls.NativeMenuItem.CommandProperty
+
+    public static Builder<T> Command1<T>(this Builder<T> builder, Builder<System.Windows.Input.ICommand> value)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.CommandProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.CommandProperty"/> value.
@@ -729,6 +809,14 @@ public static partial class NativeMenuItemExtensions
     }
 
     // Avalonia.Controls.NativeMenuItem.IsEnabledProperty
+
+    public static Builder<T> IsEnabled1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.NativeMenuItem
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.NativeMenuItem.IsEnabledProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.IsEnabledProperty"/> value.

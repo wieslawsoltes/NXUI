@@ -8,6 +8,14 @@ public static partial class ItemsPresenterExtensions
 {
     // Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty
 
+    public static Builder<T> VirtualizationMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ItemVirtualizationMode> value)
+        where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class ItemsPresenterExtensions
         return obj;
     }
 
+    public static Builder<T> VirtualizationModeNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> property value to <see cref="Avalonia.Controls.ItemVirtualizationMode.None"/>.
     /// </summary>
@@ -114,6 +130,14 @@ public static partial class ItemsPresenterExtensions
     {
         obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
         return obj;
+    }
+
+    public static Builder<T> VirtualizationModeSimple1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.Simple;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

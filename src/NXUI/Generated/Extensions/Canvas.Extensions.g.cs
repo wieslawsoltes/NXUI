@@ -8,6 +8,14 @@ public static partial class CanvasExtensions
 {
     // Avalonia.Controls.Canvas.LeftProperty
 
+    public static Builder<T> Left1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Canvas.LeftProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Canvas.LeftProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class CanvasExtensions
     }
 
     // Avalonia.Controls.Canvas.TopProperty
+
+    public static Builder<T> Top1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Canvas.TopProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Canvas.TopProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class CanvasExtensions
 
     // Avalonia.Controls.Canvas.RightProperty
 
+    public static Builder<T> Right1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Canvas.RightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Canvas.RightProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class CanvasExtensions
     }
 
     // Avalonia.Controls.Canvas.BottomProperty
+
+    public static Builder<T> Bottom1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Canvas.BottomProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Canvas.BottomProperty"/> value.

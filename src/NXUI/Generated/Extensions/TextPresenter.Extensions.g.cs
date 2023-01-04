@@ -8,6 +8,14 @@ public static partial class TextPresenterExtensions
 {
     // Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty
 
+    public static Builder<T> CaretIndex1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class TextPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty
+
+    public static Builder<T> RevealPassword1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class TextPresenterExtensions
 
     // Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty
 
+    public static Builder<T> PasswordChar1<T>(this Builder<T> builder, Builder<System.Char> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class TextPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty
+
+    public static Builder<T> SelectionBrush1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class TextPresenterExtensions
 
     // Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty
 
+    public static Builder<T> SelectionForegroundBrush1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/> value.
     /// </summary>
@@ -497,6 +537,14 @@ public static partial class TextPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty
+
+    public static Builder<T> CaretBrush1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/> value.
@@ -596,6 +644,14 @@ public static partial class TextPresenterExtensions
 
     // Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty
 
+    public static Builder<T> SelectionStart1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/> value.
     /// </summary>
@@ -693,6 +749,14 @@ public static partial class TextPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty
+
+    public static Builder<T> SelectionEnd1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/> value.
@@ -792,6 +856,14 @@ public static partial class TextPresenterExtensions
 
     // Avalonia.Controls.Presenters.TextPresenter.TextProperty
 
+    public static Builder<T> Text1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.TextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/> value.
     /// </summary>
@@ -890,6 +962,14 @@ public static partial class TextPresenterExtensions
 
     // Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty
 
+    public static Builder<T> PreeditText1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/> value.
     /// </summary>
@@ -987,6 +1067,14 @@ public static partial class TextPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty
+
+    public static Builder<T> Background1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/> value.

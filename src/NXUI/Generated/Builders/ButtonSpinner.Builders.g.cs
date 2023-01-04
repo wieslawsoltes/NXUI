@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ButtonSpinner"/> class.</returns>
     public static Avalonia.Controls.ButtonSpinner ButtonSpinner(out Avalonia.Controls.ButtonSpinner @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.ButtonSpinner> ButtonSpinner1()
+    {
+        return new Builder<Avalonia.Controls.ButtonSpinner>() { Activator = () => new Avalonia.Controls.ButtonSpinner() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ButtonSpinner"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ButtonSpinner"/> class.</returns>
+    public static Avalonia.Controls.ButtonSpinner ButtonSpinner() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ButtonSpinner"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ButtonSpinner"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ButtonSpinner"/> class.</returns>
+    public static Avalonia.Controls.ButtonSpinner ButtonSpinner(out Avalonia.Controls.ButtonSpinner @ref) => @ref = new();*/
 }

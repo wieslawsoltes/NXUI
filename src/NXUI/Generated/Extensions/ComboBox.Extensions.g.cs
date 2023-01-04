@@ -8,6 +8,14 @@ public static partial class ComboBoxExtensions
 {
     // Avalonia.Controls.ComboBox.IsDropDownOpenProperty
 
+    public static Builder<T> IsDropDownOpen1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.IsDropDownOpenProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ComboBoxExtensions
     }
 
     // Avalonia.Controls.ComboBox.MaxDropDownHeightProperty
+
+    public static Builder<T> MaxDropDownHeight1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.MaxDropDownHeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/> value.
@@ -248,6 +264,14 @@ public static partial class ComboBoxExtensions
 
     // Avalonia.Controls.ComboBox.VirtualizationModeProperty
 
+    public static Builder<T> VirtualizationMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ItemVirtualizationMode> value)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/> value.
     /// </summary>
@@ -344,6 +368,14 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
+    public static Builder<T> VirtualizationModeNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/> property value to <see cref="Avalonia.Controls.ItemVirtualizationMode.None"/>.
     /// </summary>
@@ -354,6 +386,14 @@ public static partial class ComboBoxExtensions
     {
         obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
         return obj;
+    }
+
+    public static Builder<T> VirtualizationModeSimple1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.Simple;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -369,6 +409,14 @@ public static partial class ComboBoxExtensions
     }
 
     // Avalonia.Controls.ComboBox.PlaceholderTextProperty
+
+    public static Builder<T> PlaceholderText1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.PlaceholderTextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/> value.
@@ -468,6 +516,14 @@ public static partial class ComboBoxExtensions
 
     // Avalonia.Controls.ComboBox.PlaceholderForegroundProperty
 
+    public static Builder<T> PlaceholderForeground1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.PlaceholderForegroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/> value.
     /// </summary>
@@ -566,6 +622,14 @@ public static partial class ComboBoxExtensions
 
     // Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty
 
+    public static Builder<T> HorizontalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.HorizontalAlignment> value)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> value.
     /// </summary>
@@ -662,6 +726,14 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
     /// </summary>
@@ -672,6 +744,14 @@ public static partial class ComboBoxExtensions
     {
         obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -686,6 +766,14 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
+    public static Builder<T> HorizontalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
     /// </summary>
@@ -696,6 +784,14 @@ public static partial class ComboBoxExtensions
     {
         obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> HorizontalContentAlignmentRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -711,6 +807,14 @@ public static partial class ComboBoxExtensions
     }
 
     // Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty
+
+    public static Builder<T> VerticalContentAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Layout.VerticalAlignment> value)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> value.
@@ -808,6 +912,14 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentStretch1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
@@ -818,6 +930,14 @@ public static partial class ComboBoxExtensions
     {
         obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -832,6 +952,14 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
+    public static Builder<T> VerticalContentAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
     /// </summary>
@@ -842,6 +970,14 @@ public static partial class ComboBoxExtensions
     {
         obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
+    }
+
+    public static Builder<T> VerticalContentAlignmentBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ComboBox
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

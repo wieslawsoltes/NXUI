@@ -8,6 +8,14 @@ public static partial class Rotate3DTransformExtensions
 {
     // Avalonia.Media.Rotate3DTransform.AngleXProperty
 
+    public static Builder<T> AngleX1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.Rotate3DTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Rotate3DTransform.AngleXProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class Rotate3DTransformExtensions
     }
 
     // Avalonia.Media.Rotate3DTransform.AngleYProperty
+
+    public static Builder<T> AngleY1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.Rotate3DTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Rotate3DTransform.AngleYProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class Rotate3DTransformExtensions
 
     // Avalonia.Media.Rotate3DTransform.AngleZProperty
 
+    public static Builder<T> AngleZ1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.Rotate3DTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Rotate3DTransform.AngleZProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class Rotate3DTransformExtensions
     }
 
     // Avalonia.Media.Rotate3DTransform.CenterXProperty
+
+    public static Builder<T> CenterX1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.Rotate3DTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Rotate3DTransform.CenterXProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class Rotate3DTransformExtensions
 
     // Avalonia.Media.Rotate3DTransform.CenterYProperty
 
+    public static Builder<T> CenterY1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.Rotate3DTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Rotate3DTransform.CenterYProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> value.
     /// </summary>
@@ -498,6 +538,14 @@ public static partial class Rotate3DTransformExtensions
 
     // Avalonia.Media.Rotate3DTransform.CenterZProperty
 
+    public static Builder<T> CenterZ1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.Rotate3DTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Rotate3DTransform.CenterZProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> value.
     /// </summary>
@@ -595,6 +643,14 @@ public static partial class Rotate3DTransformExtensions
     }
 
     // Avalonia.Media.Rotate3DTransform.DepthProperty
+
+    public static Builder<T> Depth1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.Rotate3DTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.Rotate3DTransform.DepthProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> value.

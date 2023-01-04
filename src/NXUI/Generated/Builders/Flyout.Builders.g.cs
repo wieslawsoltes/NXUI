@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Flyout"/> class.</returns>
     public static Avalonia.Controls.Flyout Flyout(out Avalonia.Controls.Flyout @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Flyout> Flyout1()
+    {
+        return new Builder<Avalonia.Controls.Flyout>() { Activator = () => new Avalonia.Controls.Flyout() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Flyout"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Flyout"/> class.</returns>
+    public static Avalonia.Controls.Flyout Flyout() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Flyout"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Flyout"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Flyout"/> class.</returns>
+    public static Avalonia.Controls.Flyout Flyout(out Avalonia.Controls.Flyout @ref) => @ref = new();*/
 }

@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ComboBoxItem"/> class.</returns>
     public static Avalonia.Controls.ComboBoxItem ComboBoxItem(out Avalonia.Controls.ComboBoxItem @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.ComboBoxItem> ComboBoxItem1()
+    {
+        return new Builder<Avalonia.Controls.ComboBoxItem>() { Activator = () => new Avalonia.Controls.ComboBoxItem() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ComboBoxItem"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ComboBoxItem"/> class.</returns>
+    public static Avalonia.Controls.ComboBoxItem ComboBoxItem() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ComboBoxItem"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ComboBoxItem"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ComboBoxItem"/> class.</returns>
+    public static Avalonia.Controls.ComboBoxItem ComboBoxItem(out Avalonia.Controls.ComboBoxItem @ref) => @ref = new();*/
 }

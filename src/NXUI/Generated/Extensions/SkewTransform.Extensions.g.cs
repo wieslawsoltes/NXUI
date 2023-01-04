@@ -8,6 +8,14 @@ public static partial class SkewTransformExtensions
 {
     // Avalonia.Media.SkewTransform.AngleXProperty
 
+    public static Builder<T> AngleX1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.SkewTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.SkewTransform.AngleXProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class SkewTransformExtensions
     }
 
     // Avalonia.Media.SkewTransform.AngleYProperty
+
+    public static Builder<T> AngleY1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Media.SkewTransform
+    {
+        void Setter(T obj) => obj[Avalonia.Media.SkewTransform.AngleYProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/> value.

@@ -8,6 +8,14 @@ public static partial class ScrollContentPresenterExtensions
 {
     // Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty
 
+    public static Builder<T> CanHorizontallyScroll1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ScrollContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty
+
+    public static Builder<T> CanVerticallyScroll1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class ScrollContentPresenterExtensions
 
     // Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty
 
+    public static Builder<T> Extent1<T>(this Builder<T> builder, Builder<Avalonia.Size> value)
+        where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/> value.
     /// </summary>
@@ -302,6 +326,14 @@ public static partial class ScrollContentPresenterExtensions
 
     // Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty
 
+    public static Builder<T> Offset1<T>(this Builder<T> builder, Builder<Avalonia.Vector> value)
+        where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/> value.
     /// </summary>
@@ -399,6 +431,14 @@ public static partial class ScrollContentPresenterExtensions
     }
 
     // Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty
+
+    public static Builder<T> Viewport1<T>(this Builder<T> builder, Builder<Avalonia.Size> value)
+        where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/> value.

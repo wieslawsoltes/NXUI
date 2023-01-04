@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> class.</returns>
     public static Avalonia.Controls.Shapes.Ellipse Ellipse(out Avalonia.Controls.Shapes.Ellipse @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Shapes.Ellipse> Ellipse1()
+    {
+        return new Builder<Avalonia.Controls.Shapes.Ellipse>() { Activator = () => new Avalonia.Controls.Shapes.Ellipse() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> class.</returns>
+    public static Avalonia.Controls.Shapes.Ellipse Ellipse() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> class.</returns>
+    public static Avalonia.Controls.Shapes.Ellipse Ellipse(out Avalonia.Controls.Shapes.Ellipse @ref) => @ref = new();*/
 }

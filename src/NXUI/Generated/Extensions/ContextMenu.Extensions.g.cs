@@ -8,6 +8,14 @@ public static partial class ContextMenuExtensions
 {
     // Avalonia.Controls.ContextMenu.HorizontalOffsetProperty
 
+    public static Builder<T> HorizontalOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.HorizontalOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ContextMenuExtensions
     }
 
     // Avalonia.Controls.ContextMenu.VerticalOffsetProperty
+
+    public static Builder<T> VerticalOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.VerticalOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class ContextMenuExtensions
 
     // Avalonia.Controls.ContextMenu.PlacementAnchorProperty
 
+    public static Builder<T> PlacementAnchor1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> value)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> value.
     /// </summary>
@@ -300,6 +324,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None"/>.
     /// </summary>
@@ -310,6 +342,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -324,6 +364,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom"/>.
     /// </summary>
@@ -334,6 +382,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorVerticalMask1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -348,6 +404,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left"/>.
     /// </summary>
@@ -358,6 +422,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorTopLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -372,6 +444,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorBottomLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft"/>.
     /// </summary>
@@ -382,6 +462,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -396,6 +484,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorTopRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight"/>.
     /// </summary>
@@ -406,6 +502,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorBottomRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -420,6 +524,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementAnchorHorizontalMask1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask"/>.
     /// </summary>
@@ -430,6 +542,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask;
         return obj;
+    }
+
+    public static Builder<T> PlacementAnchorAllMask1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.AllMask;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -445,6 +565,14 @@ public static partial class ContextMenuExtensions
     }
 
     // Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty
+
+    public static Builder<T> PlacementConstraintAdjustment1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> value)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> value.
@@ -542,6 +670,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementConstraintAdjustmentNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None"/>.
     /// </summary>
@@ -552,6 +688,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None;
         return obj;
+    }
+
+    public static Builder<T> PlacementConstraintAdjustmentSlideX1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -566,6 +710,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementConstraintAdjustmentSlideY1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY"/>.
     /// </summary>
@@ -576,6 +728,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY;
         return obj;
+    }
+
+    public static Builder<T> PlacementConstraintAdjustmentFlipX1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -590,6 +750,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementConstraintAdjustmentFlipY1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY"/>.
     /// </summary>
@@ -600,6 +768,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY;
         return obj;
+    }
+
+    public static Builder<T> PlacementConstraintAdjustmentResizeX1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -614,6 +790,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementConstraintAdjustmentResizeY1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY"/>.
     /// </summary>
@@ -624,6 +808,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY;
         return obj;
+    }
+
+    public static Builder<T> PlacementConstraintAdjustmentAll1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.All;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -639,6 +831,14 @@ public static partial class ContextMenuExtensions
     }
 
     // Avalonia.Controls.ContextMenu.PlacementGravityProperty
+
+    public static Builder<T> PlacementGravity1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> value)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> value.
@@ -736,6 +936,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementGravityNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None"/>.
     /// </summary>
@@ -746,6 +954,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None;
         return obj;
+    }
+
+    public static Builder<T> PlacementGravityTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -760,6 +976,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementGravityBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom"/>.
     /// </summary>
@@ -770,6 +994,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom;
         return obj;
+    }
+
+    public static Builder<T> PlacementGravityLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -784,6 +1016,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementGravityTopLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft"/>.
     /// </summary>
@@ -794,6 +1034,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft;
         return obj;
+    }
+
+    public static Builder<T> PlacementGravityBottomLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -808,6 +1056,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementGravityRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right"/>.
     /// </summary>
@@ -820,6 +1076,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementGravityTopRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight"/>.
     /// </summary>
@@ -830,6 +1094,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight;
         return obj;
+    }
+
+    public static Builder<T> PlacementGravityBottomRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomRight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -845,6 +1117,14 @@ public static partial class ContextMenuExtensions
     }
 
     // Avalonia.Controls.ContextMenu.PlacementModeProperty
+
+    public static Builder<T> PlacementMode1<T>(this Builder<T> builder, Builder<Avalonia.Controls.PlacementMode> value)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> value.
@@ -942,6 +1222,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementModePointer1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Pointer;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Pointer"/>.
     /// </summary>
@@ -952,6 +1240,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Pointer;
         return obj;
+    }
+
+    public static Builder<T> PlacementModeBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -966,6 +1262,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementModeRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Right;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Right"/>.
     /// </summary>
@@ -976,6 +1280,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Right;
         return obj;
+    }
+
+    public static Builder<T> PlacementModeLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Left;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -990,6 +1302,14 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    public static Builder<T> PlacementModeTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Top;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Top"/>.
     /// </summary>
@@ -1000,6 +1320,14 @@ public static partial class ContextMenuExtensions
     {
         obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Top;
         return obj;
+    }
+
+    public static Builder<T> PlacementModeAnchorAndGravity1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1015,6 +1343,14 @@ public static partial class ContextMenuExtensions
     }
 
     // Avalonia.Controls.ContextMenu.PlacementRectProperty
+
+    public static Builder<T> PlacementRect1<T>(this Builder<T> builder, Builder<System.Nullable<Avalonia.Rect>> value)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementRectProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/> value.
@@ -1114,6 +1450,14 @@ public static partial class ContextMenuExtensions
 
     // Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty
 
+    public static Builder<T> WindowManagerAddShadowHint1<T>(this Builder<T> builder, Builder<System.Boolean> value)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/> value.
     /// </summary>
@@ -1211,6 +1555,14 @@ public static partial class ContextMenuExtensions
     }
 
     // Avalonia.Controls.ContextMenu.PlacementTargetProperty
+
+    public static Builder<T> PlacementTarget1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Control> value)
+        where T : Avalonia.Controls.ContextMenu
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ContextMenu.PlacementTargetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/> value.

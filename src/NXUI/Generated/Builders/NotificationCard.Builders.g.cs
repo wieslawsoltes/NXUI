@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.</returns>
     public static Avalonia.Controls.Notifications.NotificationCard NotificationCard(out Avalonia.Controls.Notifications.NotificationCard @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Notifications.NotificationCard> NotificationCard1()
+    {
+        return new Builder<Avalonia.Controls.Notifications.NotificationCard>() { Activator = () => new Avalonia.Controls.Notifications.NotificationCard() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.</returns>
+    public static Avalonia.Controls.Notifications.NotificationCard NotificationCard() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.</returns>
+    public static Avalonia.Controls.Notifications.NotificationCard NotificationCard(out Avalonia.Controls.Notifications.NotificationCard @ref) => @ref = new();*/
 }

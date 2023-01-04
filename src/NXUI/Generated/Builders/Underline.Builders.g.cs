@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Underline"/> class.</returns>
     public static Avalonia.Controls.Documents.Underline Underline(out Avalonia.Controls.Documents.Underline @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.Documents.Underline> Underline1()
+    {
+        return new Builder<Avalonia.Controls.Documents.Underline>() { Activator = () => new Avalonia.Controls.Documents.Underline() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Underline"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Underline"/> class.</returns>
+    public static Avalonia.Controls.Documents.Underline Underline() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Underline"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.Underline"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Underline"/> class.</returns>
+    public static Avalonia.Controls.Documents.Underline Underline(out Avalonia.Controls.Documents.Underline @ref) => @ref = new();*/
 }

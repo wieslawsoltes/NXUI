@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
     public static Avalonia.Media.EllipseGeometry EllipseGeometry(out Avalonia.Media.EllipseGeometry @ref, Avalonia.Rect rect)
         => @ref = new(rect);
+
+    public static Builder<Avalonia.Media.EllipseGeometry> EllipseGeometry1()
+    {
+        return new Builder<Avalonia.Media.EllipseGeometry>() { Activator = () => new Avalonia.Media.EllipseGeometry() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
+    public static Avalonia.Media.EllipseGeometry EllipseGeometry() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.EllipseGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
+    public static Avalonia.Media.EllipseGeometry EllipseGeometry(out Avalonia.Media.EllipseGeometry @ref) => @ref = new();*/
 }

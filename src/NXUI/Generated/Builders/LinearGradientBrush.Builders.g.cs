@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.LinearGradientBrush"/> class.</returns>
     public static Avalonia.Media.LinearGradientBrush LinearGradientBrush(out Avalonia.Media.LinearGradientBrush @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Media.LinearGradientBrush> LinearGradientBrush1()
+    {
+        return new Builder<Avalonia.Media.LinearGradientBrush>() { Activator = () => new Avalonia.Media.LinearGradientBrush() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LinearGradientBrush"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LinearGradientBrush"/> class.</returns>
+    public static Avalonia.Media.LinearGradientBrush LinearGradientBrush() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LinearGradientBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.LinearGradientBrush"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LinearGradientBrush"/> class.</returns>
+    public static Avalonia.Media.LinearGradientBrush LinearGradientBrush(out Avalonia.Media.LinearGradientBrush @ref) => @ref = new();*/
 }

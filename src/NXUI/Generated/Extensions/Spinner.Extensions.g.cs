@@ -8,6 +8,14 @@ public static partial class SpinnerExtensions
 {
     // Avalonia.Controls.Spinner.ValidSpinDirectionProperty
 
+    public static Builder<T> ValidSpinDirection1<T>(this Builder<T> builder, Builder<Avalonia.Controls.ValidSpinDirections> value)
+        where T : Avalonia.Controls.Spinner
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Spinner.ValidSpinDirectionProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> value.
     /// </summary>
@@ -104,6 +112,14 @@ public static partial class SpinnerExtensions
         return obj;
     }
 
+    public static Builder<T> ValidSpinDirectionNone1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Spinner
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Spinner.ValidSpinDirectionProperty] = Avalonia.Controls.ValidSpinDirections.None;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property value to <see cref="Avalonia.Controls.ValidSpinDirections.None"/>.
     /// </summary>
@@ -116,6 +132,14 @@ public static partial class SpinnerExtensions
         return obj;
     }
 
+    public static Builder<T> ValidSpinDirectionIncrease1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Spinner
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Spinner.ValidSpinDirectionProperty] = Avalonia.Controls.ValidSpinDirections.Increase;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property value to <see cref="Avalonia.Controls.ValidSpinDirections.Increase"/>.
     /// </summary>
@@ -126,6 +150,14 @@ public static partial class SpinnerExtensions
     {
         obj[Avalonia.Controls.Spinner.ValidSpinDirectionProperty] = Avalonia.Controls.ValidSpinDirections.Increase;
         return obj;
+    }
+
+    public static Builder<T> ValidSpinDirectionDecrease1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Spinner
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Spinner.ValidSpinDirectionProperty] = Avalonia.Controls.ValidSpinDirections.Decrease;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

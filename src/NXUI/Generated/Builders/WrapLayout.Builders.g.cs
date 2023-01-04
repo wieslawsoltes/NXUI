@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Layout.WrapLayout"/> class.</returns>
     public static Avalonia.Layout.WrapLayout WrapLayout(out Avalonia.Layout.WrapLayout @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Layout.WrapLayout> WrapLayout1()
+    {
+        return new Builder<Avalonia.Layout.WrapLayout>() { Activator = () => new Avalonia.Layout.WrapLayout() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.WrapLayout"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.WrapLayout"/> class.</returns>
+    public static Avalonia.Layout.WrapLayout WrapLayout() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.WrapLayout"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Layout.WrapLayout"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.WrapLayout"/> class.</returns>
+    public static Avalonia.Layout.WrapLayout WrapLayout(out Avalonia.Layout.WrapLayout @ref) => @ref = new();*/
 }

@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RefreshContainer"/> class.</returns>
     public static Avalonia.Controls.RefreshContainer RefreshContainer(out Avalonia.Controls.RefreshContainer @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Controls.RefreshContainer> RefreshContainer1()
+    {
+        return new Builder<Avalonia.Controls.RefreshContainer>() { Activator = () => new Avalonia.Controls.RefreshContainer() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RefreshContainer"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RefreshContainer"/> class.</returns>
+    public static Avalonia.Controls.RefreshContainer RefreshContainer() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RefreshContainer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RefreshContainer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RefreshContainer"/> class.</returns>
+    public static Avalonia.Controls.RefreshContainer RefreshContainer(out Avalonia.Controls.RefreshContainer @ref) => @ref = new();*/
 }

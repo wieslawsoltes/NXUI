@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.GlyphRunDrawing"/> class.</returns>
     public static Avalonia.Media.GlyphRunDrawing GlyphRunDrawing(out Avalonia.Media.GlyphRunDrawing @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Media.GlyphRunDrawing> GlyphRunDrawing1()
+    {
+        return new Builder<Avalonia.Media.GlyphRunDrawing>() { Activator = () => new Avalonia.Media.GlyphRunDrawing() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GlyphRunDrawing"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GlyphRunDrawing"/> class.</returns>
+    public static Avalonia.Media.GlyphRunDrawing GlyphRunDrawing() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GlyphRunDrawing"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.GlyphRunDrawing"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GlyphRunDrawing"/> class.</returns>
+    public static Avalonia.Media.GlyphRunDrawing GlyphRunDrawing(out Avalonia.Media.GlyphRunDrawing @ref) => @ref = new();*/
 }

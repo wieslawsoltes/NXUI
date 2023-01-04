@@ -8,6 +8,14 @@ public static partial class ExperimentalAcrylicBorderExtensions
 {
     // Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty
 
+    public static Builder<T> CornerRadius1<T>(this Builder<T> builder, Builder<Avalonia.CornerRadius> value)
+        where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ExperimentalAcrylicBorderExtensions
     }
 
     // Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty
+
+    public static Builder<T> Material1<T>(this Builder<T> builder, Builder<Avalonia.Media.ExperimentalAcrylicMaterial> value)
+        where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> value.

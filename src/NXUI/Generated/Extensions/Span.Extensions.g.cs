@@ -8,6 +8,14 @@ public static partial class SpanExtensions
 {
     // Avalonia.Controls.Documents.Span.InlinesProperty
 
+    public static Builder<T> Inlines1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Documents.InlineCollection> value)
+        where T : Avalonia.Controls.Documents.Span
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Span.InlinesProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Span.InlinesProperty"/> value.
     /// </summary>

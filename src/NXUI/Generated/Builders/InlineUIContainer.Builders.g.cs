@@ -37,4 +37,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
     public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(out Avalonia.Controls.Documents.InlineUIContainer @ref, Avalonia.Controls.Control child)
         => @ref = new(child);
+
+    public static Builder<Avalonia.Controls.Documents.InlineUIContainer> InlineUIContainer1()
+    {
+        return new Builder<Avalonia.Controls.Documents.InlineUIContainer>() { Activator = () => new Avalonia.Controls.Documents.InlineUIContainer() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
+    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
+    public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(out Avalonia.Controls.Documents.InlineUIContainer @ref) => @ref = new();*/
 }

@@ -8,6 +8,14 @@ public static partial class InlineExtensions
 {
     // Avalonia.Controls.Documents.Inline.TextDecorationsProperty
 
+    public static Builder<T> TextDecorations1<T>(this Builder<T> builder, Builder<Avalonia.Media.TextDecorationCollection> value)
+        where T : Avalonia.Controls.Documents.Inline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Inline.TextDecorationsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> value.
     /// </summary>
@@ -106,6 +114,14 @@ public static partial class InlineExtensions
 
     // Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty
 
+    public static Builder<T> BaselineAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Media.BaselineAlignment> value)
+        where T : Avalonia.Controls.Documents.Inline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> value.
     /// </summary>
@@ -202,6 +218,14 @@ public static partial class InlineExtensions
         return obj;
     }
 
+    public static Builder<T> BaselineAlignmentTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.Inline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Top;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Top"/>.
     /// </summary>
@@ -212,6 +236,14 @@ public static partial class InlineExtensions
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Top;
         return obj;
+    }
+
+    public static Builder<T> BaselineAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.Inline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -226,6 +258,14 @@ public static partial class InlineExtensions
         return obj;
     }
 
+    public static Builder<T> BaselineAlignmentBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.Inline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Bottom;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Bottom"/>.
     /// </summary>
@@ -236,6 +276,14 @@ public static partial class InlineExtensions
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Bottom;
         return obj;
+    }
+
+    public static Builder<T> BaselineAlignmentBaseline1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.Inline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Baseline;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -250,6 +298,14 @@ public static partial class InlineExtensions
         return obj;
     }
 
+    public static Builder<T> BaselineAlignmentTextTop1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.Inline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.TextTop;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.TextTop"/>.
     /// </summary>
@@ -260,6 +316,14 @@ public static partial class InlineExtensions
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.TextTop;
         return obj;
+    }
+
+    public static Builder<T> BaselineAlignmentTextBottom1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.Inline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.TextBottom;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -274,6 +338,14 @@ public static partial class InlineExtensions
         return obj;
     }
 
+    public static Builder<T> BaselineAlignmentSubscript1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.Inline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Subscript;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Subscript"/>.
     /// </summary>
@@ -284,6 +356,14 @@ public static partial class InlineExtensions
     {
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Subscript;
         return obj;
+    }
+
+    public static Builder<T> BaselineAlignmentSuperscript1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Documents.Inline
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Superscript;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>

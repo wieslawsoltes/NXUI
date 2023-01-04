@@ -8,6 +8,14 @@ public static partial class TextBlockExtensions
 {
     // Avalonia.Controls.TextBlock.BackgroundProperty
 
+    public static Builder<T> Background1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.BackgroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class TextBlockExtensions
     }
 
     // Avalonia.Controls.TextBlock.PaddingProperty
+
+    public static Builder<T> Padding1<T>(this Builder<T> builder, Builder<Avalonia.Thickness> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.PaddingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> value.
@@ -204,6 +220,14 @@ public static partial class TextBlockExtensions
 
     // Avalonia.Controls.TextBlock.FontFamilyProperty
 
+    public static Builder<T> FontFamily1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontFamily> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontFamilyProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/> value.
     /// </summary>
@@ -301,6 +325,14 @@ public static partial class TextBlockExtensions
     }
 
     // Avalonia.Controls.TextBlock.FontSizeProperty
+
+    public static Builder<T> FontSize1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontSizeProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/> value.
@@ -400,6 +432,14 @@ public static partial class TextBlockExtensions
 
     // Avalonia.Controls.TextBlock.FontStyleProperty
 
+    public static Builder<T> FontStyle1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontStyle> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStyleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> value.
     /// </summary>
@@ -496,6 +536,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontStyleNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Normal"/>.
     /// </summary>
@@ -508,6 +556,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontStyleItalic1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Italic"/>.
     /// </summary>
@@ -518,6 +574,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
         return obj;
+    }
+
+    public static Builder<T> FontStyleOblique1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStyleProperty] = Avalonia.Media.FontStyle.Oblique;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -533,6 +597,14 @@ public static partial class TextBlockExtensions
     }
 
     // Avalonia.Controls.TextBlock.FontWeightProperty
+
+    public static Builder<T> FontWeight1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontWeight> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> value.
@@ -630,6 +702,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightThin1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Thin"/>.
     /// </summary>
@@ -640,6 +720,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
         return obj;
+    }
+
+    public static Builder<T> FontWeightExtraLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -654,6 +742,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightUltraLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraLight"/>.
     /// </summary>
@@ -664,6 +760,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
         return obj;
+    }
+
+    public static Builder<T> FontWeightLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -678,6 +782,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightSemiLight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiLight"/>.
     /// </summary>
@@ -688,6 +800,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
         return obj;
+    }
+
+    public static Builder<T> FontWeightNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -702,6 +822,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightRegular1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Regular"/>.
     /// </summary>
@@ -712,6 +840,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
         return obj;
+    }
+
+    public static Builder<T> FontWeightMedium1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -726,6 +862,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightDemiBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.DemiBold"/>.
     /// </summary>
@@ -736,6 +880,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
         return obj;
+    }
+
+    public static Builder<T> FontWeightSemiBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -750,6 +902,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Bold"/>.
     /// </summary>
@@ -760,6 +920,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
         return obj;
+    }
+
+    public static Builder<T> FontWeightExtraBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -774,6 +942,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightUltraBold1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBold"/>.
     /// </summary>
@@ -784,6 +960,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
         return obj;
+    }
+
+    public static Builder<T> FontWeightBlack1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -798,6 +982,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightHeavy1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Heavy"/>.
     /// </summary>
@@ -810,6 +1002,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontWeightExtraBlack1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBlack"/>.
     /// </summary>
@@ -820,6 +1020,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
         return obj;
+    }
+
+    public static Builder<T> FontWeightUltraBlack1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBlack;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -835,6 +1043,14 @@ public static partial class TextBlockExtensions
     }
 
     // Avalonia.Controls.TextBlock.FontStretchProperty
+
+    public static Builder<T> FontStretch1<T>(this Builder<T> builder, Builder<Avalonia.Media.FontStretch> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStretchProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> value.
@@ -932,6 +1148,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchUltraCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
     /// </summary>
@@ -942,6 +1166,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
         return obj;
+    }
+
+    public static Builder<T> FontStretchExtraCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -956,6 +1188,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Condensed"/>.
     /// </summary>
@@ -966,6 +1206,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
         return obj;
+    }
+
+    public static Builder<T> FontStretchSemiCondensed1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -980,6 +1228,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchNormal1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Normal"/>.
     /// </summary>
@@ -990,6 +1246,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
         return obj;
+    }
+
+    public static Builder<T> FontStretchSemiExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1004,6 +1268,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Expanded"/>.
     /// </summary>
@@ -1016,6 +1288,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> FontStretchExtraExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraExpanded"/>.
     /// </summary>
@@ -1026,6 +1306,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
         return obj;
+    }
+
+    public static Builder<T> FontStretchUltraExpanded1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.UltraExpanded;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1041,6 +1329,14 @@ public static partial class TextBlockExtensions
     }
 
     // Avalonia.Controls.TextBlock.ForegroundProperty
+
+    public static Builder<T> Foreground1<T>(this Builder<T> builder, Builder<Avalonia.Media.IBrush> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.ForegroundProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/> value.
@@ -1140,6 +1436,14 @@ public static partial class TextBlockExtensions
 
     // Avalonia.Controls.TextBlock.BaselineOffsetProperty
 
+    public static Builder<T> BaselineOffset1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.BaselineOffsetProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/> value.
     /// </summary>
@@ -1237,6 +1541,14 @@ public static partial class TextBlockExtensions
     }
 
     // Avalonia.Controls.TextBlock.LineHeightProperty
+
+    public static Builder<T> LineHeight1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.LineHeightProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/> value.
@@ -1336,6 +1648,14 @@ public static partial class TextBlockExtensions
 
     // Avalonia.Controls.TextBlock.LetterSpacingProperty
 
+    public static Builder<T> LetterSpacing1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.LetterSpacingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> value.
     /// </summary>
@@ -1433,6 +1753,14 @@ public static partial class TextBlockExtensions
     }
 
     // Avalonia.Controls.TextBlock.MaxLinesProperty
+
+    public static Builder<T> MaxLines1<T>(this Builder<T> builder, Builder<System.Int32> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.MaxLinesProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/> value.
@@ -1532,6 +1860,14 @@ public static partial class TextBlockExtensions
 
     // Avalonia.Controls.TextBlock.TextProperty
 
+    public static Builder<T> Text1<T>(this Builder<T> builder, Builder<System.String> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextProperty"/> value.
     /// </summary>
@@ -1630,6 +1966,14 @@ public static partial class TextBlockExtensions
 
     // Avalonia.Controls.TextBlock.TextAlignmentProperty
 
+    public static Builder<T> TextAlignment1<T>(this Builder<T> builder, Builder<Avalonia.Media.TextAlignment> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> value.
     /// </summary>
@@ -1726,6 +2070,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> TextAlignmentLeft1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Left"/>.
     /// </summary>
@@ -1736,6 +2088,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
         return obj;
+    }
+
+    public static Builder<T> TextAlignmentCenter1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1750,6 +2110,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> TextAlignmentRight1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Right"/>.
     /// </summary>
@@ -1760,6 +2128,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
         return obj;
+    }
+
+    public static Builder<T> TextAlignmentStart1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Start;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1774,6 +2150,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> TextAlignmentEnd1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.End;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.End"/>.
     /// </summary>
@@ -1786,6 +2170,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> TextAlignmentDetectFromContent1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.DetectFromContent;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.DetectFromContent"/>.
     /// </summary>
@@ -1796,6 +2188,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.DetectFromContent;
         return obj;
+    }
+
+    public static Builder<T> TextAlignmentJustify1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Justify;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1811,6 +2211,14 @@ public static partial class TextBlockExtensions
     }
 
     // Avalonia.Controls.TextBlock.TextWrappingProperty
+
+    public static Builder<T> TextWrapping1<T>(this Builder<T> builder, Builder<Avalonia.Media.TextWrapping> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextWrappingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> value.
@@ -1908,6 +2316,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> TextWrappingNoWrap1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextWrappingProperty] = Avalonia.Media.TextWrapping.NoWrap;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.NoWrap"/>.
     /// </summary>
@@ -1920,6 +2336,14 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    public static Builder<T> TextWrappingWrap1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.Wrap"/>.
     /// </summary>
@@ -1930,6 +2354,14 @@ public static partial class TextBlockExtensions
     {
         obj[Avalonia.Controls.TextBlock.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
         return obj;
+    }
+
+    public static Builder<T> TextWrappingWrapWithOverflow1<T>(this Builder<T> builder)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextWrappingProperty] = Avalonia.Media.TextWrapping.WrapWithOverflow;
+        builder.Setters.Add(Setter);
+        return builder;
     }
 
     /// <summary>
@@ -1945,6 +2377,14 @@ public static partial class TextBlockExtensions
     }
 
     // Avalonia.Controls.TextBlock.TextTrimmingProperty
+
+    public static Builder<T> TextTrimming1<T>(this Builder<T> builder, Builder<Avalonia.Media.TextTrimming> value)
+        where T : Avalonia.Controls.Control
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextTrimmingProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/> value.
@@ -2044,6 +2484,14 @@ public static partial class TextBlockExtensions
 
     // Avalonia.Controls.TextBlock.TextDecorationsProperty
 
+    public static Builder<T> TextDecorations1<T>(this Builder<T> builder, Builder<Avalonia.Media.TextDecorationCollection> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.TextDecorationsProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/> value.
     /// </summary>
@@ -2141,6 +2589,14 @@ public static partial class TextBlockExtensions
     }
 
     // Avalonia.Controls.TextBlock.InlinesProperty
+
+    public static Builder<T> Inlines1<T>(this Builder<T> builder, Builder<Avalonia.Controls.Documents.InlineCollection> value)
+        where T : Avalonia.Controls.TextBlock
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.TextBlock.InlinesProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> value.

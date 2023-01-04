@@ -8,6 +8,14 @@ public static partial class ArcExtensions
 {
     // Avalonia.Controls.Shapes.Arc.StartAngleProperty
 
+    public static Builder<T> StartAngle1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Shapes.Arc
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Arc.StartAngleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
+
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/> value.
     /// </summary>
@@ -105,6 +113,14 @@ public static partial class ArcExtensions
     }
 
     // Avalonia.Controls.Shapes.Arc.SweepAngleProperty
+
+    public static Builder<T> SweepAngle1<T>(this Builder<T> builder, Builder<System.Double> value)
+        where T : Avalonia.Controls.Shapes.Arc
+    {
+        void Setter(T obj) => obj[Avalonia.Controls.Shapes.Arc.SweepAngleProperty] = value.Build();
+        builder.Setters.Add(Setter);
+        return builder;
+    }
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/> value.

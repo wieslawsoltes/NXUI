@@ -20,4 +20,22 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.Animation"/> class.</returns>
     public static Avalonia.Animation.Animation Animation(out Avalonia.Animation.Animation @ref)
         => @ref = new();
+
+    public static Builder<Avalonia.Animation.Animation> Animation1()
+    {
+        return new Builder<Avalonia.Animation.Animation>() { Activator = () => new Avalonia.Animation.Animation() };
+    }
+/*
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.Animation"/> class.
+    /// </summary>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.Animation"/> class.</returns>
+    public static Avalonia.Animation.Animation Animation() => new();
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.Animation"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.Animation"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.Animation"/> class.</returns>
+    public static Avalonia.Animation.Animation Animation(out Avalonia.Animation.Animation @ref) => @ref = new();*/
 }
