@@ -22,11 +22,8 @@ namespace NXUI.Extensions
         public static Builder<T> Content1<T>(this Builder<T> builder, Builder<System.Object> value)
             where T : Avalonia.Controls.ContentControl
         {
-            void Setter(T obj)
-                => obj[Avalonia.Controls.ContentControl.ContentProperty] = value.Build();
-
+            void Setter(T obj) => obj[Avalonia.Controls.ContentControl.ContentProperty] = value.Build();
             builder.Setters.Add(Setter);
-
             return builder;
         }
     }
@@ -36,11 +33,8 @@ namespace NXUI.Extensions
         public static Builder<T> Title1<T>(this Builder<T> builder, Builder<System.String> value)
             where T : Avalonia.Controls.Window
         {
-            void Setter(T obj)
-                => obj[Avalonia.Controls.Window.TitleProperty] = value.Build();
-
+            void Setter(T obj) => obj[Avalonia.Controls.Window.TitleProperty] = value.Build();
             builder.Setters.Add(Setter);
-
             return builder;
         }
     }
