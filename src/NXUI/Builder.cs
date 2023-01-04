@@ -1,6 +1,6 @@
 ﻿namespace NXUI;
 
-public class Builder<T> : IBuilder
+public sealed class Builder<T> : IBuilder
 {
     public static implicit operator Builder<T>(T value) => new ()
     {
