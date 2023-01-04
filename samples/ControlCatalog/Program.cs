@@ -89,7 +89,7 @@
     .Text("TextBox");
 
   TabControl(out var controls)
-    .ItemsPanel(new FuncTemplate<IPanel>(StackPanel))
+    .ItemsPanel(new FuncTemplate<Panel>(StackPanel))
     .TabStripPlacementLeft()
     .Classes("tabControl")
     .Items(
@@ -141,7 +141,7 @@
 Style InteractionStyle()
 {
   return Style()
-    .Selector(x => x.Is<IControl>())
+    .Selector(x => x.Is<Control>())
 #if true
     .SetInteractionBehavior<CustomBehavior>();
 #else
