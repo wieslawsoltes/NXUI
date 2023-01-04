@@ -7,6 +7,11 @@ namespace NXUI
         {
             return new Builder<Avalonia.Controls.Window>() { Activator = () => new Avalonia.Controls.Window() };
         }
+        
+        public static Builder<Avalonia.Controls.StackPanel> StackPanel1()
+        {
+            return new Builder<Avalonia.Controls.StackPanel>() { Activator = () => new Avalonia.Controls.StackPanel() };
+        }
     }
 }
 

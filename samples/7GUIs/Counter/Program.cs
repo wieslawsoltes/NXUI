@@ -4,7 +4,7 @@ Builder<Window> Build1()
   => Window1()
     .Title1("Counter")
     .Content1(
-      StackPanel()
+      StackPanel1()
         .OrientationHorizontal()
         .Children(
           Label()
