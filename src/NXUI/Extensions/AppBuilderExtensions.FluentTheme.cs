@@ -10,17 +10,11 @@ public static partial class AppBuilderExtensions
     /// </summary>
     /// <param name="builder"></param>
     /// <param name="mode"></param>
-    /// <typeparam name="TAppBuilder"></typeparam>
     /// <returns></returns>
-    public static TAppBuilder UseFluentTheme<TAppBuilder>(
-        this TAppBuilder builder, 
-        FluentThemeMode mode = Avalonia.Themes.Fluent.FluentThemeMode.Light) where TAppBuilder : AppBuilderBase<TAppBuilder>, new() 
+    public static AppBuilder UseFluentTheme(
+        this AppBuilder builder, 
+        FluentThemeMode mode = Avalonia.Themes.Fluent.FluentThemeMode.Light) 
     {
-        return builder.AfterSetup(_ =>
-            builder.Instance?.Styles.Add(
-                new FluentTheme(new Uri($"avares://{System.Reflection.Assembly.GetExecutingAssembly().GetName()}"))
-                {
-                    Mode = mode
-                }));
+        return builder.AfterSetup(_ => builder.Instance?.Styles.Add(new FluentTheme { Mode = mode }));
     }
 }

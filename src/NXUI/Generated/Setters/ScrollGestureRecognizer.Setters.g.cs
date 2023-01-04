@@ -21,17 +21,16 @@ public static partial class ScrollGestureRecognizerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollGestureRecognizerCanHorizontallyScroll(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollGestureRecognizerCanHorizontallyScroll(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ScrollGestureRecognizerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollGestureRecognizerCanHorizontallyScroll(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetScrollGestureRecognizerCanHorizontallyScroll(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollGestureRecognizerCanHorizontallyScroll(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ScrollGestureRecognizerSetters
     public static KeyFrame SetScrollGestureRecognizerCanHorizontallyScroll(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollGestureRecognizerCanHorizontallyScroll(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ScrollGestureRecognizerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollGestureRecognizerCanVerticallyScroll(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollGestureRecognizerCanVerticallyScroll(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ScrollGestureRecognizerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollGestureRecognizerCanVerticallyScroll(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetScrollGestureRecognizerCanVerticallyScroll(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollGestureRecognizerCanVerticallyScroll(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -142,15 +150,75 @@ public static partial class ScrollGestureRecognizerSetters
         return keyFrame;
     }
 
+    // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty
+
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollGestureRecognizerScrollStartDistance(this Style style, System.Int32 value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollGestureRecognizerScrollStartDistance(this KeyFrame keyFrame, System.Int32 value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollGestureRecognizerScrollStartDistance(this Style style, IObservable<System.Int32> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollGestureRecognizerCanVerticallyScroll(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    public static KeyFrame SetScrollGestureRecognizerScrollStartDistance(this KeyFrame keyFrame, IObservable<System.Int32> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollGestureRecognizerScrollStartDistance(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollGestureRecognizerScrollStartDistance(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty, binding));
         return keyFrame;
     }
 }

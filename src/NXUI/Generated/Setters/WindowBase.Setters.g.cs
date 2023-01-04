@@ -21,17 +21,16 @@ public static partial class WindowBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowBaseOwner(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowBaseOwner(this KeyFrame keyFrame, Avalonia.Controls.WindowBase value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.WindowBase.OwnerProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WindowBase.OwnerProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class WindowBaseSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowBaseOwner(this KeyFrame keyFrame, Avalonia.Controls.WindowBase value)
+    public static KeyFrame SetWindowBaseOwner(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowBase> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WindowBase.OwnerProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WindowBase.OwnerProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowBaseOwner(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.WindowBase.OwnerProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class WindowBaseSetters
     public static KeyFrame SetWindowBaseOwner(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WindowBase.OwnerProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowBaseOwner(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowBase> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WindowBase.OwnerProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class WindowBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWindowBaseTopmost(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWindowBaseTopmost(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.WindowBase.TopmostProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WindowBase.TopmostProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class WindowBaseSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowBaseTopmost(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetWindowBaseTopmost(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WindowBase.TopmostProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WindowBase.TopmostProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWindowBaseTopmost(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.WindowBase.TopmostProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class WindowBaseSetters
     public static KeyFrame SetWindowBaseTopmost(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WindowBase.TopmostProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWindowBaseTopmost(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WindowBase.TopmostProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

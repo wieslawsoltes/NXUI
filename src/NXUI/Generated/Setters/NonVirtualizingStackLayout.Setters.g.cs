@@ -21,17 +21,16 @@ public static partial class NonVirtualizingStackLayoutSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetNonVirtualizingStackLayoutOrientation(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNonVirtualizingStackLayoutOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
     {
-        style.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNonVirtualizingStackLayoutOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
+    public static KeyFrame SetNonVirtualizingStackLayoutOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNonVirtualizingStackLayoutOrientation(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class NonVirtualizingStackLayoutSetters
     public static KeyFrame SetNonVirtualizingStackLayoutOrientation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNonVirtualizingStackLayoutOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class NonVirtualizingStackLayoutSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetNonVirtualizingStackLayoutSpacing(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNonVirtualizingStackLayoutSpacing(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNonVirtualizingStackLayoutSpacing(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetNonVirtualizingStackLayoutSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNonVirtualizingStackLayoutSpacing(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class NonVirtualizingStackLayoutSetters
     public static KeyFrame SetNonVirtualizingStackLayoutSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNonVirtualizingStackLayoutSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

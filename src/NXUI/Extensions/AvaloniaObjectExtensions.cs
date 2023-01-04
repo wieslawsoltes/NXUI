@@ -18,9 +18,9 @@ public static class AvaloniaObjectExtensions
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty targetProperty, 
-        IAvaloniaObject source, 
+        AvaloniaObject source, 
         AvaloniaProperty sourceProperty, 
-        CompositeDisposable? compositeDisposable = null) where T : IAvaloniaObject
+        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
     {
         var targetDisposable = target.Bind(targetProperty, source.GetObservable(sourceProperty));
         compositeDisposable?.Add(targetDisposable);
@@ -40,7 +40,7 @@ public static class AvaloniaObjectExtensions
         this T target, 
         AvaloniaProperty<T> targetProperty, 
         IObservable<BindingValue<T>> source, 
-        CompositeDisposable? compositeDisposable = null) where T : IAvaloniaObject
+        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
     {
         var targetDisposable = target.Bind(targetProperty, source);
         compositeDisposable?.Add(targetDisposable);
@@ -60,7 +60,7 @@ public static class AvaloniaObjectExtensions
         this T target, 
         AvaloniaProperty targetProperty, 
         IObservable<BindingValue<T>> source, 
-        CompositeDisposable? compositeDisposable = null) where T : IAvaloniaObject
+        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
     {
         var targetDisposable = target.Bind(targetProperty, source.ToBinding());
         compositeDisposable?.Add(targetDisposable);
@@ -80,7 +80,7 @@ public static class AvaloniaObjectExtensions
         this T target, 
         AvaloniaProperty<T> targetProperty, 
         IObservable<object?> source, 
-        CompositeDisposable? compositeDisposable = null) where T : IAvaloniaObject
+        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
     {
         var targetDisposable = target.Bind(targetProperty, source);
         compositeDisposable?.Add(targetDisposable);
@@ -100,7 +100,7 @@ public static class AvaloniaObjectExtensions
         this T target, 
         AvaloniaProperty targetProperty, 
         IObservable<object?> source, 
-        CompositeDisposable? compositeDisposable = null) where T : IAvaloniaObject
+        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
     {
         var targetDisposable = target.Bind(targetProperty, source);
         compositeDisposable?.Add(targetDisposable);
@@ -120,9 +120,9 @@ public static class AvaloniaObjectExtensions
     public static T BindTwoWay<T>(
         this T target,
         AvaloniaProperty targetProperty, 
-        IAvaloniaObject source, 
+        AvaloniaObject source, 
         AvaloniaProperty sourceProperty, 
-        CompositeDisposable? compositeDisposable = null) where T : IAvaloniaObject
+        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
     {
         var targetDisposable = target.Bind(targetProperty, source.GetObservable(sourceProperty));
         var sourceDisposable = source.Bind(sourceProperty, target.GetObservable(targetProperty));

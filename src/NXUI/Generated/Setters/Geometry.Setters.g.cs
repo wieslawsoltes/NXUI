@@ -21,17 +21,16 @@ public static partial class GeometrySetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryTransform(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGeometryTransform(this KeyFrame keyFrame, Avalonia.Media.Transform value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Geometry.TransformProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Geometry.TransformProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class GeometrySetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryTransform(this KeyFrame keyFrame, Avalonia.Media.Transform value)
+    public static KeyFrame SetGeometryTransform(this KeyFrame keyFrame, IObservable<Avalonia.Media.Transform> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Geometry.TransformProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Geometry.TransformProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGeometryTransform(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Geometry.TransformProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class GeometrySetters
     public static KeyFrame SetGeometryTransform(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Geometry.TransformProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryTransform(this KeyFrame keyFrame, IObservable<Avalonia.Media.Transform> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Geometry.TransformProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

@@ -14,12 +14,46 @@ public static partial class ControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetControlFocusAdorner(this Style style, Avalonia.Controls.ITemplate<Avalonia.Controls.IControl> value)
+    public static Style SetControlFocusAdorner(this Style style, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, value));
         return style;
     }
 
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetControlFocusAdorner(this KeyFrame keyFrame, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetControlFocusAdorner(this Style style, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetControlFocusAdorner(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, observable.ToBinding()));
+        return keyFrame;
+    }
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
     /// </summary>
@@ -33,30 +67,6 @@ public static partial class ControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="observable">The property observable.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetControlFocusAdorner(this Style style, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> observable)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, observable.ToBinding()));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlFocusAdorner(this KeyFrame keyFrame, Avalonia.Controls.ITemplate<Avalonia.Controls.IControl> value)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, value));
-        return keyFrame;
-    }
-
-    /// <summary>
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
@@ -65,18 +75,6 @@ public static partial class ControlSetters
     public static KeyFrame SetControlFocusAdorner(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlFocusAdorner(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.TagProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.TagProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetControlTag(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetControlTag(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.TagProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.TagProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlTag(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetControlTag(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.TagProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetControlTag(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ControlSetters
     public static KeyFrame SetControlTag(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.TagProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlTag(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetControlContextMenu(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetControlContextMenu(this KeyFrame keyFrame, Avalonia.Controls.ContextMenu value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlContextMenu(this KeyFrame keyFrame, Avalonia.Controls.ContextMenu value)
+    public static KeyFrame SetControlContextMenu(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ContextMenu> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetControlContextMenu(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ControlSetters
     public static KeyFrame SetControlContextMenu(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlContextMenu(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ContextMenu> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetControlContextFlyout(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetControlContextFlyout(this KeyFrame keyFrame, Avalonia.Controls.Primitives.FlyoutBase value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlContextFlyout(this KeyFrame keyFrame, Avalonia.Controls.Primitives.FlyoutBase value)
+    public static KeyFrame SetControlContextFlyout(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetControlContextFlyout(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,92 +291,6 @@ public static partial class ControlSetters
     public static KeyFrame SetControlContextFlyout(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlContextFlyout(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, observable.ToBinding()));
-        return keyFrame;
-    }
-
-    // Avalonia.Controls.Control.FlowDirectionProperty
-
-    /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetControlFlowDirection(this Style style, Avalonia.Media.FlowDirection value)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.Control.FlowDirectionProperty, value));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetControlFlowDirection(this Style style, Avalonia.Data.IBinding binding)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.Control.FlowDirectionProperty, binding));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="observable">The property observable.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetControlFlowDirection(this Style style, IObservable<Avalonia.Media.FlowDirection> observable)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.Control.FlowDirectionProperty, observable.ToBinding()));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlFlowDirection(this KeyFrame keyFrame, Avalonia.Media.FlowDirection value)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FlowDirectionProperty, value));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlFlowDirection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FlowDirectionProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetControlFlowDirection(this KeyFrame keyFrame, IObservable<Avalonia.Media.FlowDirection> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FlowDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
 

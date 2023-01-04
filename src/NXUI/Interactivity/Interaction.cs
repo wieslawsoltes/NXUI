@@ -72,7 +72,7 @@ public class Interaction
         }
     }
 
-    internal static void Attach(IAvaloniaObject sender, Behavior behavior)
+    internal static void Attach(AvaloniaObject sender, Behavior behavior)
     {
         if (behavior is {_isInitialized: false})
         {
@@ -82,7 +82,7 @@ public class Interaction
         }
     }
 
-    internal static void Detach(IAvaloniaObject sender, Behavior behavior)
+    internal static void Detach(AvaloniaObject sender, Behavior behavior)
     {
         if (behavior is { AssociatedObject: { } })
         {
@@ -90,7 +90,7 @@ public class Interaction
         }
     }
 
-    private static void SetVisualTreeEventHandlersInitial(IAvaloniaObject obj)
+    private static void SetVisualTreeEventHandlersInitial(AvaloniaObject obj)
     {
         if (obj is not Control control)
         {
@@ -107,7 +107,7 @@ public class Interaction
         control.DetachedFromVisualTree += Control_DetachedFromVisualTreeInitial;
     }
 
-    private static void SetVisualTreeEventHandlersRuntime(IAvaloniaObject obj)
+    private static void SetVisualTreeEventHandlersRuntime(AvaloniaObject obj)
     {
         if (obj is not Control control)
         {

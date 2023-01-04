@@ -589,7 +589,7 @@ public static partial class GridSplitterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PreviewContent<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.IControl> value) where T : Avalonia.Controls.GridSplitter
+    public static T PreviewContent<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value) where T : Avalonia.Controls.GridSplitter
     {
         obj[Avalonia.Controls.GridSplitter.PreviewContentProperty] = value;
         return obj;
@@ -626,7 +626,7 @@ public static partial class GridSplitterExtensions
     /// <returns>The target object reference.</returns>
     public static T PreviewContent<T>(
         this T obj,
-        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> observable,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
@@ -659,7 +659,7 @@ public static partial class GridSplitterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> ObservePreviewContent(this Avalonia.Controls.GridSplitter obj)
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> ObservePreviewContent(this Avalonia.Controls.GridSplitter obj)
     {
         return obj.GetObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
     }
@@ -671,7 +671,7 @@ public static partial class GridSplitterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPreviewContent<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>>> handler) where T : Avalonia.Controls.GridSplitter
+    public static T OnPreviewContent<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.GridSplitter
     {
         var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
         handler(obj, observable);

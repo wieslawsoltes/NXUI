@@ -21,17 +21,16 @@ public static partial class PenSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPenBrush(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPenBrush(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Pen.BrushProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.BrushProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class PenSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenBrush(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetPenBrush(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.BrushProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.BrushProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPenBrush(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Pen.BrushProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class PenSetters
     public static KeyFrame SetPenBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.BrushProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenBrush(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.BrushProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class PenSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPenThickness(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPenThickness(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Pen.ThicknessProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.ThicknessProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class PenSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenThickness(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetPenThickness(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.ThicknessProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.ThicknessProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPenThickness(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Pen.ThicknessProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class PenSetters
     public static KeyFrame SetPenThickness(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.ThicknessProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenThickness(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.ThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class PenSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPenDashStyle(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPenDashStyle(this KeyFrame keyFrame, Avalonia.Media.IDashStyle value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Pen.DashStyleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.DashStyleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class PenSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenDashStyle(this KeyFrame keyFrame, Avalonia.Media.IDashStyle value)
+    public static KeyFrame SetPenDashStyle(this KeyFrame keyFrame, IObservable<Avalonia.Media.IDashStyle> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.DashStyleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.DashStyleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPenDashStyle(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Pen.DashStyleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class PenSetters
     public static KeyFrame SetPenDashStyle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.DashStyleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenDashStyle(this KeyFrame keyFrame, IObservable<Avalonia.Media.IDashStyle> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.DashStyleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class PenSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPenLineCap(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPenLineCap(this KeyFrame keyFrame, Avalonia.Media.PenLineCap value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Pen.LineCapProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineCapProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class PenSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenLineCap(this KeyFrame keyFrame, Avalonia.Media.PenLineCap value)
+    public static KeyFrame SetPenLineCap(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineCap> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineCapProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineCapProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPenLineCap(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Pen.LineCapProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class PenSetters
     public static KeyFrame SetPenLineCap(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineCapProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenLineCap(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineCap> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineCapProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class PenSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPenLineJoin(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPenLineJoin(this KeyFrame keyFrame, Avalonia.Media.PenLineJoin value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Pen.LineJoinProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineJoinProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class PenSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenLineJoin(this KeyFrame keyFrame, Avalonia.Media.PenLineJoin value)
+    public static KeyFrame SetPenLineJoin(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineJoin> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineJoinProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineJoinProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPenLineJoin(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Pen.LineJoinProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class PenSetters
     public static KeyFrame SetPenLineJoin(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineJoinProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenLineJoin(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineJoin> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineJoinProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class PenSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPenMiterLimit(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPenMiterLimit(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Pen.MiterLimitProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.MiterLimitProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class PenSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenMiterLimit(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetPenMiterLimit(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.MiterLimitProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.MiterLimitProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPenMiterLimit(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Pen.MiterLimitProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class PenSetters
     public static KeyFrame SetPenMiterLimit(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.MiterLimitProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPenMiterLimit(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.MiterLimitProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

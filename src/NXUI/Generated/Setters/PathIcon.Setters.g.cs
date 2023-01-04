@@ -21,17 +21,16 @@ public static partial class PathIconSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.PathIcon.DataProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.PathIcon.DataProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPathIconData(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPathIconData(this KeyFrame keyFrame, Avalonia.Media.Geometry value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.PathIcon.DataProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.PathIcon.DataProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.PathIcon.DataProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class PathIconSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.PathIcon.DataProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathIconData(this KeyFrame keyFrame, Avalonia.Media.Geometry value)
+    public static KeyFrame SetPathIconData(this KeyFrame keyFrame, IObservable<Avalonia.Media.Geometry> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.PathIcon.DataProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.PathIcon.DataProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.PathIcon.DataProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPathIconData(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.PathIcon.DataProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class PathIconSetters
     public static KeyFrame SetPathIconData(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.PathIcon.DataProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.PathIcon.DataProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathIconData(this KeyFrame keyFrame, IObservable<Avalonia.Media.Geometry> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.PathIcon.DataProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

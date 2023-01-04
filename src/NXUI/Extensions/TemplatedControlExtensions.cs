@@ -15,8 +15,8 @@ public static partial class TemplatedControlExtensions
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     /// <exception cref="InvalidCastException"></exception>
-    public static Style SetTemplatedControlTemplate<T>(this Style style, Func<T, INameScope, IControl> build) 
-        where T : ITemplatedControl
+    public static Style SetTemplatedControlTemplate<T>(this Style style, Func<T, INameScope, Control> build) 
+        where T : TemplatedControl
     {
         var value = new FuncControlTemplate((parent, scope) =>
         {

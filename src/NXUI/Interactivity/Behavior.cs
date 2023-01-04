@@ -10,9 +10,9 @@ public abstract class Behavior : AvaloniaObject
     /// <summary>
     /// 
     /// </summary>
-    public IAvaloniaObject? AssociatedObject { get; private set; }
+    public AvaloniaObject? AssociatedObject { get; private set; }
 
-    internal void Attach(IAvaloniaObject obj)
+    internal void Attach(AvaloniaObject obj)
     {
         AssociatedObject = obj;
         OnAttached();

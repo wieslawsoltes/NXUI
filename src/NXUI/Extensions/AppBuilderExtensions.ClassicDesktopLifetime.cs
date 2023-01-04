@@ -12,13 +12,12 @@ public static partial class AppBuilderExtensions
     /// <param name="callback"></param>
     /// <param name="args"></param>
     /// <param name="shutdownMode"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static int StartWithClassicDesktopLifetime<T>(
-        this T builder, 
+    public static int StartWithClassicDesktopLifetime(
+        this AppBuilder builder, 
         Action<IClassicDesktopStyleApplicationLifetime>? callback, 
         string[] args, 
-        ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose) where T : AppBuilderBase<T>, new()
+        ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
     {
         var lifetime = new ClassicDesktopStyleApplicationLifetime
         {
@@ -40,13 +39,12 @@ public static partial class AppBuilderExtensions
     /// <param name="callback"></param>
     /// <param name="args"></param>
     /// <param name="shutdownMode"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static int StartWithClassicDesktopLifetime<T>(
-        this T builder, 
+    public static int StartWithClassicDesktopLifetime(
+        this AppBuilder builder, 
         Func<Window>? callback, 
         string[] args, 
-        ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose) where T : AppBuilderBase<T>, new()
+        ShutdownMode shutdownMode = ShutdownMode.OnLastWindowClose)
     {
         var lifetime = new ClassicDesktopStyleApplicationLifetime
         {

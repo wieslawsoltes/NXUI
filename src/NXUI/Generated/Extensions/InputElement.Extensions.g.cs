@@ -1687,6 +1687,40 @@ public static partial class InputElementExtensions
             .Select(x => x.EventArgs);
     }
 
+    // Avalonia.Input.InputElement.Holding
+
+    /// <summary>
+    /// Adds a handler to the `Holding` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHoldingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.HoldingRoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.HoldingRoutedEventArgs>, Avalonia.Input.HoldingRoutedEventArgs>(
+                h => obj.Holding += h, 
+                h => obj.Holding -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `Holding` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `Holding` event on the specified object.</returns>
+    public static IObservable<Avalonia.Input.HoldingRoutedEventArgs> ObserveOnHoldingEvent(this Avalonia.Input.InputElement obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Input.HoldingRoutedEventArgs>, Avalonia.Input.HoldingRoutedEventArgs>(
+                h => obj.Holding += h, 
+                h => obj.Holding -= h)
+            .Select(x => x.EventArgs);
+    }
+
     // Avalonia.Input.InputElement.DoubleTapped
 
     /// <summary>

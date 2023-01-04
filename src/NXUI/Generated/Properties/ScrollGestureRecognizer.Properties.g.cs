@@ -17,4 +17,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/> property defined in <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer,System.Boolean> ScrollGestureRecognizerCanVerticallyScroll => Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/> property defined in <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer,System.Int32> ScrollGestureRecognizerScrollStartDistance => Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty;
 }

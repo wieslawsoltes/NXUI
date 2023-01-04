@@ -26,7 +26,7 @@
     <WasmExtraFilesToDeploy Include="AppBundle\staticwebapp.config.json" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia.Web" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Browser" Version="$(AvaloniaVersion)" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\NXUI\NXUI.csproj" />

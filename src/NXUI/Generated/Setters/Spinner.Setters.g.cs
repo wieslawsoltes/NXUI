@@ -21,17 +21,16 @@ public static partial class SpinnerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetSpinnerValidSpinDirection(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetSpinnerValidSpinDirection(this KeyFrame keyFrame, Avalonia.Controls.ValidSpinDirections value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Spinner.ValidSpinDirectionProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Spinner.ValidSpinDirectionProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class SpinnerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSpinnerValidSpinDirection(this KeyFrame keyFrame, Avalonia.Controls.ValidSpinDirections value)
+    public static KeyFrame SetSpinnerValidSpinDirection(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ValidSpinDirections> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Spinner.ValidSpinDirectionProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Spinner.ValidSpinDirectionProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetSpinnerValidSpinDirection(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Spinner.ValidSpinDirectionProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class SpinnerSetters
     public static KeyFrame SetSpinnerValidSpinDirection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Spinner.ValidSpinDirectionProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetSpinnerValidSpinDirection(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ValidSpinDirections> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Spinner.ValidSpinDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
 

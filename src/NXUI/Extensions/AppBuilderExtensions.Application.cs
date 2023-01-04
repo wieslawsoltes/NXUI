@@ -10,11 +10,10 @@ public static partial class AppBuilderExtensions
     /// </summary>
     /// <param name="builder"></param>
     /// <param name="name"></param>
-    /// <typeparam name="TAppBuilder"></typeparam>
     /// <returns></returns>
-    public static TAppBuilder WithApplicationName<TAppBuilder>(
-        this TAppBuilder builder, 
-        string name) where TAppBuilder : AppBuilderBase<TAppBuilder>, new()
+    public static AppBuilder WithApplicationName(
+        this AppBuilder builder, 
+        string name)
     {
         return builder.AfterSetup(_ =>
         {

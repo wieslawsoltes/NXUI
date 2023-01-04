@@ -21,17 +21,16 @@ public static partial class StackLayoutSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetStackLayoutDisableVirtualization(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetStackLayoutDisableVirtualization(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class StackLayoutSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetStackLayoutDisableVirtualization(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetStackLayoutDisableVirtualization(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetStackLayoutDisableVirtualization(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class StackLayoutSetters
     public static KeyFrame SetStackLayoutDisableVirtualization(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetStackLayoutDisableVirtualization(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class StackLayoutSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetStackLayoutOrientation(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetStackLayoutOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
     {
-        style.Setters.Add(new Setter(Avalonia.Layout.StackLayout.OrientationProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.OrientationProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class StackLayoutSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetStackLayoutOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
+    public static KeyFrame SetStackLayoutOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.OrientationProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.OrientationProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetStackLayoutOrientation(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Layout.StackLayout.OrientationProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class StackLayoutSetters
     public static KeyFrame SetStackLayoutOrientation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.OrientationProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetStackLayoutOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class StackLayoutSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetStackLayoutSpacing(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetStackLayoutSpacing(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Layout.StackLayout.SpacingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.SpacingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class StackLayoutSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetStackLayoutSpacing(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetStackLayoutSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.SpacingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.SpacingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetStackLayoutSpacing(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Layout.StackLayout.SpacingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class StackLayoutSetters
     public static KeyFrame SetStackLayoutSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.SpacingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetStackLayoutSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Layout.StackLayout.SpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

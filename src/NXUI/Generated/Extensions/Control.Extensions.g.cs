@@ -15,7 +15,7 @@ public static partial class ControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FocusAdorner<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.IControl> value) where T : Avalonia.Controls.Control
+    public static T FocusAdorner<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.Control.FocusAdornerProperty] = value;
         return obj;
@@ -52,7 +52,7 @@ public static partial class ControlExtensions
     /// <returns>The target object reference.</returns>
     public static T FocusAdorner<T>(
         this T obj,
-        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> observable,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -85,7 +85,7 @@ public static partial class ControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> ObserveFocusAdorner(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> ObserveFocusAdorner(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.Control.FocusAdornerProperty);
     }
@@ -97,7 +97,7 @@ public static partial class ControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFocusAdorner<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>>> handler) where T : Avalonia.Controls.Control
+    public static T OnFocusAdorner<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.FocusAdornerProperty);
         handler(obj, observable);
@@ -398,128 +398,6 @@ public static partial class ControlExtensions
         return obj;
     }
 
-    // Avalonia.Controls.Control.FlowDirectionProperty
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T FlowDirection<T>(this T obj, Avalonia.Media.FlowDirection value) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T FlowDirection<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
-    {
-        var descriptor = Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T FlowDirection<T>(
-        this T obj,
-        IObservable<Avalonia.Media.FlowDirection> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
-    {
-        var descriptor = Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindFlowDirection(
-        this Avalonia.Controls.Control obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.Control.FlowDirectionProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<Avalonia.Media.FlowDirection> ObserveFlowDirection(this Avalonia.Controls.Control obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.Control.FlowDirectionProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnFlowDirection<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.FlowDirection>> handler) where T : Avalonia.Controls.Control
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Control.FlowDirectionProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/> property value to <see cref="Avalonia.Media.FlowDirection.LeftToRight"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T FlowDirectionLeftToRight<T>(this T obj) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty] = Avalonia.Media.FlowDirection.LeftToRight;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/> property value to <see cref="Avalonia.Media.FlowDirection.RightToLeft"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T FlowDirectionRightToLeft<T>(this T obj) where T : Avalonia.Controls.Control
-    {
-        obj[Avalonia.Controls.Control.FlowDirectionProperty] = Avalonia.Media.FlowDirection.RightToLeft;
-        return obj;
-    }
-
     // Avalonia.Controls.Control.RequestBringIntoViewEvent
 
     /// <summary>
@@ -716,6 +594,55 @@ public static partial class ControlExtensions
         return obj.GetObservable(Avalonia.Controls.Control.UnloadedEvent, routes);
     }
 
+    // Avalonia.Controls.Control.SizeChangedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.Control.SizeChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnSizeChangedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Controls.SizeChangedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Control
+    {
+        obj.AddHandler(Avalonia.Controls.Control.SizeChangedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.Control.SizeChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnSizeChanged<T>(
+        this T obj, Action<T, IObservable<Avalonia.Controls.SizeChangedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Control.SizeChangedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.Control.SizeChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Control"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Controls.SizeChangedEventArgs> ObserveOnSizeChanged(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        return obj.GetObservable(Avalonia.Controls.Control.SizeChangedEvent, routes);
+    }
+
     // Avalonia.Controls.Control.ContextRequested
 
     /// <summary>
@@ -815,6 +742,40 @@ public static partial class ControlExtensions
             .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Unloaded += h, 
                 h => obj.Unloaded -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.Control.SizeChanged
+
+    /// <summary>
+    /// Adds a handler to the `SizeChanged` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSizeChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SizeChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.SizeChangedEventArgs>, Avalonia.Controls.SizeChangedEventArgs>(
+                h => obj.SizeChanged += h, 
+                h => obj.SizeChanged -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `SizeChanged` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `SizeChanged` event on the specified object.</returns>
+    public static IObservable<Avalonia.Controls.SizeChangedEventArgs> ObserveOnSizeChangedEvent(this Avalonia.Controls.Control obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.SizeChangedEventArgs>, Avalonia.Controls.SizeChangedEventArgs>(
+                h => obj.SizeChanged += h, 
+                h => obj.SizeChanged -= h)
             .Select(x => x.EventArgs);
     }
 }

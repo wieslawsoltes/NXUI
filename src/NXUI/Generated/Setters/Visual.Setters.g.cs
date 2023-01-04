@@ -21,17 +21,16 @@ public static partial class VisualSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetVisualClipToBounds(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualClipToBounds(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Visual.ClipToBoundsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipToBoundsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class VisualSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualClipToBounds(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetVisualClipToBounds(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipToBoundsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipToBoundsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualClipToBounds(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.ClipToBoundsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class VisualSetters
     public static KeyFrame SetVisualClipToBounds(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipToBoundsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualClipToBounds(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipToBoundsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class VisualSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Visual.ClipProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.ClipProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetVisualClip(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualClip(this KeyFrame keyFrame, Avalonia.Media.Geometry value)
     {
-        style.Setters.Add(new Setter(Avalonia.Visual.ClipProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.ClipProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class VisualSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Visual.ClipProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualClip(this KeyFrame keyFrame, Avalonia.Media.Geometry value)
+    public static KeyFrame SetVisualClip(this KeyFrame keyFrame, IObservable<Avalonia.Media.Geometry> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.ClipProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualClip(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.ClipProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class VisualSetters
     public static KeyFrame SetVisualClip(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.ClipProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualClip(this KeyFrame keyFrame, IObservable<Avalonia.Media.Geometry> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class VisualSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetVisualIsVisible(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualIsVisible(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Visual.IsVisibleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.IsVisibleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class VisualSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualIsVisible(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetVisualIsVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.IsVisibleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.IsVisibleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualIsVisible(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.IsVisibleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class VisualSetters
     public static KeyFrame SetVisualIsVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.IsVisibleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualIsVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.IsVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class VisualSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Visual.OpacityProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.OpacityProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetVisualOpacity(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualOpacity(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Visual.OpacityProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.OpacityProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class VisualSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Visual.OpacityProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualOpacity(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetVisualOpacity(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualOpacity(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.OpacityProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class VisualSetters
     public static KeyFrame SetVisualOpacity(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.OpacityProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualOpacity(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class VisualSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetVisualOpacityMask(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualOpacityMask(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Visual.OpacityMaskProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityMaskProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class VisualSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualOpacityMask(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetVisualOpacityMask(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityMaskProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityMaskProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualOpacityMask(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.OpacityMaskProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class VisualSetters
     public static KeyFrame SetVisualOpacityMask(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityMaskProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualOpacityMask(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityMaskProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class VisualSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetVisualRenderTransform(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualRenderTransform(this KeyFrame keyFrame, Avalonia.Media.ITransform value)
     {
-        style.Setters.Add(new Setter(Avalonia.Visual.RenderTransformProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class VisualSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualRenderTransform(this KeyFrame keyFrame, Avalonia.Media.ITransform value)
+    public static KeyFrame SetVisualRenderTransform(this KeyFrame keyFrame, IObservable<Avalonia.Media.ITransform> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualRenderTransform(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.RenderTransformProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class VisualSetters
     public static KeyFrame SetVisualRenderTransform(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualRenderTransform(this KeyFrame keyFrame, IObservable<Avalonia.Media.ITransform> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class VisualSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetVisualRenderTransformOrigin(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualRenderTransformOrigin(this KeyFrame keyFrame, Avalonia.RelativePoint value)
     {
-        style.Setters.Add(new Setter(Avalonia.Visual.RenderTransformOriginProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformOriginProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class VisualSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualRenderTransformOrigin(this KeyFrame keyFrame, Avalonia.RelativePoint value)
+    public static KeyFrame SetVisualRenderTransformOrigin(this KeyFrame keyFrame, IObservable<Avalonia.RelativePoint> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformOriginProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformOriginProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualRenderTransformOrigin(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.RenderTransformOriginProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -512,15 +510,75 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
+    // Avalonia.Visual.FlowDirectionProperty
+
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualFlowDirection(this Style style, Avalonia.Media.FlowDirection value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.FlowDirectionProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualFlowDirection(this KeyFrame keyFrame, Avalonia.Media.FlowDirection value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.FlowDirectionProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualFlowDirection(this Style style, IObservable<Avalonia.Media.FlowDirection> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.FlowDirectionProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualRenderTransformOrigin(this KeyFrame keyFrame, IObservable<Avalonia.RelativePoint> observable)
+    public static KeyFrame SetVisualFlowDirection(this KeyFrame keyFrame, IObservable<Avalonia.Media.FlowDirection> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformOriginProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.FlowDirectionProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualFlowDirection(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.FlowDirectionProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualFlowDirection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.FlowDirectionProperty, binding));
         return keyFrame;
     }
 
@@ -539,17 +597,16 @@ public static partial class VisualSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Visual.ZIndexProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.ZIndexProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetVisualZIndex(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualZIndex(this KeyFrame keyFrame, System.Int32 value)
     {
-        style.Setters.Add(new Setter(Avalonia.Visual.ZIndexProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ZIndexProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.ZIndexProperty"/>.
     /// </summary>
@@ -566,12 +623,23 @@ public static partial class VisualSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Visual.ZIndexProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualZIndex(this KeyFrame keyFrame, System.Int32 value)
+    public static KeyFrame SetVisualZIndex(this KeyFrame keyFrame, IObservable<System.Int32> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ZIndexProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ZIndexProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.ZIndexProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualZIndex(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.ZIndexProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +651,6 @@ public static partial class VisualSetters
     public static KeyFrame SetVisualZIndex(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.ZIndexProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.ZIndexProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualZIndex(this KeyFrame keyFrame, IObservable<System.Int32> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Visual.ZIndexProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

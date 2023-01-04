@@ -21,12 +21,12 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.StyledElement.ParentProperty"/> property defined in <see cref="Avalonia.StyledElement"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.StyledElement,Avalonia.IStyledElement> StyledElementParent => Avalonia.StyledElement.ParentProperty;
+    public static Avalonia.DirectProperty<Avalonia.StyledElement,Avalonia.StyledElement> StyledElementParent => Avalonia.StyledElement.ParentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.StyledElement.TemplatedParentProperty"/> property defined in <see cref="Avalonia.StyledElement"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.StyledElement,Avalonia.Styling.ITemplatedControl> StyledElementTemplatedParent => Avalonia.StyledElement.TemplatedParentProperty;
+    public static Avalonia.DirectProperty<Avalonia.StyledElement,Avalonia.AvaloniaObject> StyledElementTemplatedParent => Avalonia.StyledElement.TemplatedParentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.StyledElement.ThemeProperty"/> property defined in <see cref="Avalonia.StyledElement"/> class.

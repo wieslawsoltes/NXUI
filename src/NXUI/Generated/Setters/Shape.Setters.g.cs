@@ -21,17 +21,16 @@ public static partial class ShapeSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetShapeFill(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetShapeFill(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.FillProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.FillProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ShapeSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeFill(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetShapeFill(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.FillProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.FillProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetShapeFill(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.FillProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ShapeSetters
     public static KeyFrame SetShapeFill(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.FillProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeFill(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.FillProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ShapeSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetShapeStretch(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetShapeStretch(this KeyFrame keyFrame, Avalonia.Media.Stretch value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StretchProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StretchProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ShapeSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStretch(this KeyFrame keyFrame, Avalonia.Media.Stretch value)
+    public static KeyFrame SetShapeStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.Stretch> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StretchProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StretchProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetShapeStretch(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StretchProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ShapeSetters
     public static KeyFrame SetShapeStretch(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StretchProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.Stretch> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StretchProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ShapeSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetShapeStroke(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetShapeStroke(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ShapeSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStroke(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetShapeStroke(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetShapeStroke(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ShapeSetters
     public static KeyFrame SetShapeStroke(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStroke(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ShapeSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetShapeStrokeDashArray(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetShapeStrokeDashArray(this KeyFrame keyFrame, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ShapeSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStrokeDashArray(this KeyFrame keyFrame, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static KeyFrame SetShapeStrokeDashArray(this KeyFrame keyFrame, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetShapeStrokeDashArray(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class ShapeSetters
     public static KeyFrame SetShapeStrokeDashArray(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStrokeDashArray(this KeyFrame keyFrame, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class ShapeSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetShapeStrokeDashOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetShapeStrokeDashOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class ShapeSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStrokeDashOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetShapeStrokeDashOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetShapeStrokeDashOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class ShapeSetters
     public static KeyFrame SetShapeStrokeDashOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStrokeDashOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class ShapeSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetShapeStrokeThickness(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetShapeStrokeThickness(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class ShapeSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStrokeThickness(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetShapeStrokeThickness(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetShapeStrokeThickness(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class ShapeSetters
     public static KeyFrame SetShapeStrokeThickness(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStrokeThickness(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class ShapeSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetShapeStrokeLineCap(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetShapeStrokeLineCap(this KeyFrame keyFrame, Avalonia.Media.PenLineCap value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class ShapeSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStrokeLineCap(this KeyFrame keyFrame, Avalonia.Media.PenLineCap value)
+    public static KeyFrame SetShapeStrokeLineCap(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineCap> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetShapeStrokeLineCap(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class ShapeSetters
     public static KeyFrame SetShapeStrokeLineCap(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStrokeLineCap(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineCap> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class ShapeSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetShapeStrokeJoin(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetShapeStrokeJoin(this KeyFrame keyFrame, Avalonia.Media.PenLineJoin value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class ShapeSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStrokeJoin(this KeyFrame keyFrame, Avalonia.Media.PenLineJoin value)
+    public static KeyFrame SetShapeStrokeJoin(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineJoin> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetShapeStrokeJoin(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class ShapeSetters
     public static KeyFrame SetShapeStrokeJoin(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetShapeStrokeJoin(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineJoin> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

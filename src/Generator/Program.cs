@@ -20,7 +20,7 @@ var excludedClasses = new HashSet<string>
 };
 
 void Generate() 
-    => MinimalGenerator.Generate(
+    => MainGenerator.Generate(
         args[0], 
         a =>
         {

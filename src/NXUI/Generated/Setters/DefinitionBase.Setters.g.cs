@@ -21,17 +21,16 @@ public static partial class DefinitionBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDefinitionBaseSharedSizeGroup(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDefinitionBaseSharedSizeGroup(this KeyFrame keyFrame, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class DefinitionBaseSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDefinitionBaseSharedSizeGroup(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetDefinitionBaseSharedSizeGroup(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDefinitionBaseSharedSizeGroup(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class DefinitionBaseSetters
     public static KeyFrame SetDefinitionBaseSharedSizeGroup(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDefinitionBaseSharedSizeGroup(this KeyFrame keyFrame, IObservable<System.String> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

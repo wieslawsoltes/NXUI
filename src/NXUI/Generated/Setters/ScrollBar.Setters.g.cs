@@ -21,17 +21,16 @@ public static partial class ScrollBarSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarViewportSize(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollBarViewportSize(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ScrollBarSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarViewportSize(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetScrollBarViewportSize(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollBarViewportSize(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ScrollBarSetters
     public static KeyFrame SetScrollBarViewportSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarViewportSize(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ScrollBarSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarVisibility(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Controls.Primitives.ScrollBarVisibility value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ScrollBarSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Controls.Primitives.ScrollBarVisibility value)
+    public static KeyFrame SetScrollBarVisibility(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollBarVisibility(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ScrollBarSetters
     public static KeyFrame SetScrollBarVisibility(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarVisibility(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ScrollBarSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarOrientation(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollBarOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ScrollBarSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
+    public static KeyFrame SetScrollBarOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollBarOrientation(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ScrollBarSetters
     public static KeyFrame SetScrollBarOrientation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ScrollBarSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarAllowAutoHide(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollBarAllowAutoHide(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ScrollBarSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarAllowAutoHide(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetScrollBarAllowAutoHide(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollBarAllowAutoHide(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class ScrollBarSetters
     public static KeyFrame SetScrollBarAllowAutoHide(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarAllowAutoHide(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class ScrollBarSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarHideDelay(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollBarHideDelay(this KeyFrame keyFrame, System.TimeSpan value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class ScrollBarSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarHideDelay(this KeyFrame keyFrame, System.TimeSpan value)
+    public static KeyFrame SetScrollBarHideDelay(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollBarHideDelay(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class ScrollBarSetters
     public static KeyFrame SetScrollBarHideDelay(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarHideDelay(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class ScrollBarSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollBarShowDelay(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollBarShowDelay(this KeyFrame keyFrame, System.TimeSpan value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class ScrollBarSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarShowDelay(this KeyFrame keyFrame, System.TimeSpan value)
+    public static KeyFrame SetScrollBarShowDelay(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollBarShowDelay(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class ScrollBarSetters
     public static KeyFrame SetScrollBarShowDelay(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollBarShowDelay(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

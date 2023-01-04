@@ -6,7 +6,7 @@ Control Build()
       Button(out var button)
         .Content("Welcome to Avalonia, please click me!"),
       TextBox(out var tb1)
-        .Text("Minimal Avalonia"),
+        .Text("NXUI"),
       TextBox()
         .Text(tb1.ObserveText().Select(x => x?.ToUpper())),
       Label()

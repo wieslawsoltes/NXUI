@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/> property defined in <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.IControl> InlineUIContainerChild => Avalonia.Controls.Documents.InlineUIContainer.ChildProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Control> InlineUIContainerChild => Avalonia.Controls.Documents.InlineUIContainer.ChildProperty;
 }

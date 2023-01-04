@@ -21,17 +21,16 @@ public static partial class ArcSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetArcStartAngle(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetArcStartAngle(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.StartAngleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.StartAngleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ArcSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcStartAngle(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetArcStartAngle(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.StartAngleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.StartAngleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetArcStartAngle(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.StartAngleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ArcSetters
     public static KeyFrame SetArcStartAngle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.StartAngleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcStartAngle(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.StartAngleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ArcSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetArcSweepAngle(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetArcSweepAngle(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.SweepAngleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.SweepAngleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ArcSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSweepAngle(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetArcSweepAngle(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.SweepAngleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.SweepAngleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetArcSweepAngle(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.SweepAngleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ArcSetters
     public static KeyFrame SetArcSweepAngle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.SweepAngleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSweepAngle(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Arc.SweepAngleProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

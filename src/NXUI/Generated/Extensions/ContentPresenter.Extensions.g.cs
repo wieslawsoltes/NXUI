@@ -1458,7 +1458,7 @@ public static partial class ContentPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.IControl> ObserveChild(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<Avalonia.Controls.Control> ObserveChild(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
     }
@@ -1469,7 +1469,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Presenters.ContentPresenter OnChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Controls.IControl>> handler)
+    public static Avalonia.Controls.Presenters.ContentPresenter OnChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Controls.Control>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
         handler(obj, observable);

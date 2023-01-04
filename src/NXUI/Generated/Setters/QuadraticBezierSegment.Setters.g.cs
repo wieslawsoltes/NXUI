@@ -21,17 +21,16 @@ public static partial class QuadraticBezierSegmentSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetQuadraticBezierSegmentPoint1(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetQuadraticBezierSegmentPoint1(this KeyFrame keyFrame, Avalonia.Point value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point1Property, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point1Property, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class QuadraticBezierSegmentSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetQuadraticBezierSegmentPoint1(this KeyFrame keyFrame, Avalonia.Point value)
+    public static KeyFrame SetQuadraticBezierSegmentPoint1(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point1Property, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point1Property, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetQuadraticBezierSegmentPoint1(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point1Property, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class QuadraticBezierSegmentSetters
     public static KeyFrame SetQuadraticBezierSegmentPoint1(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point1Property, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetQuadraticBezierSegmentPoint1(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point1Property, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class QuadraticBezierSegmentSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetQuadraticBezierSegmentPoint2(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetQuadraticBezierSegmentPoint2(this KeyFrame keyFrame, Avalonia.Point value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point2Property, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point2Property, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class QuadraticBezierSegmentSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetQuadraticBezierSegmentPoint2(this KeyFrame keyFrame, Avalonia.Point value)
+    public static KeyFrame SetQuadraticBezierSegmentPoint2(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point2Property, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point2Property, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetQuadraticBezierSegmentPoint2(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point2Property, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class QuadraticBezierSegmentSetters
     public static KeyFrame SetQuadraticBezierSegmentPoint2(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point2Property, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetQuadraticBezierSegmentPoint2(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.QuadraticBezierSegment.Point2Property, observable.ToBinding()));
         return keyFrame;
     }
 }

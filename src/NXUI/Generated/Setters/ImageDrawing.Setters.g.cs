@@ -21,17 +21,16 @@ public static partial class ImageDrawingSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetImageDrawingImageSource(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetImageDrawingImageSource(this KeyFrame keyFrame, Avalonia.Media.IImage value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.ImageSourceProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.ImageSourceProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ImageDrawingSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageDrawingImageSource(this KeyFrame keyFrame, Avalonia.Media.IImage value)
+    public static KeyFrame SetImageDrawingImageSource(this KeyFrame keyFrame, IObservable<Avalonia.Media.IImage> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.ImageSourceProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.ImageSourceProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetImageDrawingImageSource(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.ImageSourceProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ImageDrawingSetters
     public static KeyFrame SetImageDrawingImageSource(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.ImageSourceProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageDrawingImageSource(this KeyFrame keyFrame, IObservable<Avalonia.Media.IImage> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.ImageSourceProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ImageDrawingSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetImageDrawingRect(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetImageDrawingRect(this KeyFrame keyFrame, Avalonia.Rect value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.RectProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.RectProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ImageDrawingSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageDrawingRect(this KeyFrame keyFrame, Avalonia.Rect value)
+    public static KeyFrame SetImageDrawingRect(this KeyFrame keyFrame, IObservable<Avalonia.Rect> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.RectProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.RectProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetImageDrawingRect(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.RectProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ImageDrawingSetters
     public static KeyFrame SetImageDrawingRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.RectProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageDrawingRect(this KeyFrame keyFrame, IObservable<Avalonia.Rect> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageDrawing.RectProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

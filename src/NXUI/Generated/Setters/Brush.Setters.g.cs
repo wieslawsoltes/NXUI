@@ -21,17 +21,16 @@ public static partial class BrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Brush.OpacityProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Brush.OpacityProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBrushOpacity(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBrushOpacity(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Brush.OpacityProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.OpacityProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Brush.OpacityProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class BrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Brush.OpacityProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBrushOpacity(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetBrushOpacity(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.OpacityProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.OpacityProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Brush.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBrushOpacity(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Brush.OpacityProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class BrushSetters
     public static KeyFrame SetBrushOpacity(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.OpacityProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Brush.OpacityProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBrushOpacity(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.OpacityProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class BrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Brush.TransformProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Brush.TransformProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBrushTransform(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBrushTransform(this KeyFrame keyFrame, Avalonia.Media.ITransform value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Brush.TransformProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Brush.TransformProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class BrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Brush.TransformProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBrushTransform(this KeyFrame keyFrame, Avalonia.Media.ITransform value)
+    public static KeyFrame SetBrushTransform(this KeyFrame keyFrame, IObservable<Avalonia.Media.ITransform> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Brush.TransformProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBrushTransform(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Brush.TransformProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class BrushSetters
     public static KeyFrame SetBrushTransform(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Brush.TransformProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBrushTransform(this KeyFrame keyFrame, IObservable<Avalonia.Media.ITransform> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class BrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.Brush.TransformOriginProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Brush.TransformOriginProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBrushTransformOrigin(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBrushTransformOrigin(this KeyFrame keyFrame, Avalonia.RelativePoint value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.Brush.TransformOriginProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformOriginProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Brush.TransformOriginProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class BrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.Brush.TransformOriginProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBrushTransformOrigin(this KeyFrame keyFrame, Avalonia.RelativePoint value)
+    public static KeyFrame SetBrushTransformOrigin(this KeyFrame keyFrame, IObservable<Avalonia.RelativePoint> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformOriginProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformOriginProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.Brush.TransformOriginProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBrushTransformOrigin(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.Brush.TransformOriginProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class BrushSetters
     public static KeyFrame SetBrushTransformOrigin(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformOriginProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.Brush.TransformOriginProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBrushTransformOrigin(this KeyFrame keyFrame, IObservable<Avalonia.RelativePoint> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.Brush.TransformOriginProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

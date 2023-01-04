@@ -11,7 +11,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/> property defined in <see cref="Avalonia.Controls.Control"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.IControl>> ControlFocusAdorner => Avalonia.Controls.Control.FocusAdornerProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> ControlFocusAdorner => Avalonia.Controls.Control.FocusAdornerProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Control.TagProperty"/> property defined in <see cref="Avalonia.Controls.Control"/> class.
@@ -27,9 +27,4 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/> property defined in <see cref="Avalonia.Controls.Control"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.FlyoutBase> ControlContextFlyout => Avalonia.Controls.Control.ContextFlyoutProperty;
-
-    /// <summary>
-    /// The <see cref="Avalonia.Controls.Control.FlowDirectionProperty"/> property defined in <see cref="Avalonia.Controls.Control"/> class.
-    /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.FlowDirection> ControlFlowDirection => Avalonia.Controls.Control.FlowDirectionProperty;
 }

@@ -21,17 +21,16 @@ public static partial class DatePickerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerDayFormat(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDatePickerDayFormat(this KeyFrame keyFrame, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayFormatProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayFormatProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class DatePickerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerDayFormat(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetDatePickerDayFormat(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayFormatProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayFormatProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDatePickerDayFormat(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayFormatProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class DatePickerSetters
     public static KeyFrame SetDatePickerDayFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayFormatProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerDayFormat(this KeyFrame keyFrame, IObservable<System.String> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayFormatProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class DatePickerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerDayVisible(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDatePickerDayVisible(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayVisibleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayVisibleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class DatePickerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerDayVisible(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetDatePickerDayVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayVisibleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayVisibleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDatePickerDayVisible(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayVisibleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class DatePickerSetters
     public static KeyFrame SetDatePickerDayVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayVisibleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerDayVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.DayVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class DatePickerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerMaxYear(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDatePickerMaxYear(this KeyFrame keyFrame, System.DateTimeOffset value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MaxYearProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MaxYearProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class DatePickerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerMaxYear(this KeyFrame keyFrame, System.DateTimeOffset value)
+    public static KeyFrame SetDatePickerMaxYear(this KeyFrame keyFrame, IObservable<System.DateTimeOffset> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MaxYearProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MaxYearProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDatePickerMaxYear(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MaxYearProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class DatePickerSetters
     public static KeyFrame SetDatePickerMaxYear(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MaxYearProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerMaxYear(this KeyFrame keyFrame, IObservable<System.DateTimeOffset> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MaxYearProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class DatePickerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerMinYear(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDatePickerMinYear(this KeyFrame keyFrame, System.DateTimeOffset value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MinYearProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MinYearProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class DatePickerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerMinYear(this KeyFrame keyFrame, System.DateTimeOffset value)
+    public static KeyFrame SetDatePickerMinYear(this KeyFrame keyFrame, IObservable<System.DateTimeOffset> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MinYearProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MinYearProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDatePickerMinYear(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MinYearProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class DatePickerSetters
     public static KeyFrame SetDatePickerMinYear(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MinYearProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerMinYear(this KeyFrame keyFrame, IObservable<System.DateTimeOffset> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MinYearProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class DatePickerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerMonthFormat(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDatePickerMonthFormat(this KeyFrame keyFrame, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthFormatProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthFormatProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class DatePickerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerMonthFormat(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetDatePickerMonthFormat(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthFormatProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthFormatProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDatePickerMonthFormat(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthFormatProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class DatePickerSetters
     public static KeyFrame SetDatePickerMonthFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthFormatProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerMonthFormat(this KeyFrame keyFrame, IObservable<System.String> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthFormatProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class DatePickerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerMonthVisible(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDatePickerMonthVisible(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthVisibleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthVisibleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class DatePickerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerMonthVisible(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetDatePickerMonthVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthVisibleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthVisibleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDatePickerMonthVisible(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthVisibleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class DatePickerSetters
     public static KeyFrame SetDatePickerMonthVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthVisibleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerMonthVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.MonthVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class DatePickerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerYearFormat(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDatePickerYearFormat(this KeyFrame keyFrame, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearFormatProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearFormatProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class DatePickerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerYearFormat(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetDatePickerYearFormat(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearFormatProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearFormatProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDatePickerYearFormat(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearFormatProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class DatePickerSetters
     public static KeyFrame SetDatePickerYearFormat(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearFormatProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerYearFormat(this KeyFrame keyFrame, IObservable<System.String> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearFormatProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class DatePickerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerYearVisible(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDatePickerYearVisible(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearVisibleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearVisibleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class DatePickerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerYearVisible(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetDatePickerYearVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearVisibleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearVisibleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDatePickerYearVisible(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearVisibleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class DatePickerSetters
     public static KeyFrame SetDatePickerYearVisible(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearVisibleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerYearVisible(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.YearVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class DatePickerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDatePickerSelectedDate(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDatePickerSelectedDate(this KeyFrame keyFrame, System.Nullable<System.DateTimeOffset> value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.SelectedDateProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.SelectedDateProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class DatePickerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerSelectedDate(this KeyFrame keyFrame, System.Nullable<System.DateTimeOffset> value)
+    public static KeyFrame SetDatePickerSelectedDate(this KeyFrame keyFrame, IObservable<System.Nullable<System.DateTimeOffset>> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.SelectedDateProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.SelectedDateProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDatePickerSelectedDate(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DatePicker.SelectedDateProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class DatePickerSetters
     public static KeyFrame SetDatePickerSelectedDate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.SelectedDateProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDatePickerSelectedDate(this KeyFrame keyFrame, IObservable<System.Nullable<System.DateTimeOffset>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePicker.SelectedDateProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

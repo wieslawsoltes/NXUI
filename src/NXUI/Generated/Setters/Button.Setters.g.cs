@@ -21,17 +21,16 @@ public static partial class ButtonSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetButtonClickMode(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetButtonClickMode(this KeyFrame keyFrame, Avalonia.Controls.ClickMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Button.ClickModeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.ClickModeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ButtonSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonClickMode(this KeyFrame keyFrame, Avalonia.Controls.ClickMode value)
+    public static KeyFrame SetButtonClickMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ClickMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.ClickModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.ClickModeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetButtonClickMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Button.ClickModeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ButtonSetters
     public static KeyFrame SetButtonClickMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.ClickModeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonClickMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ClickMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.ClickModeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ButtonSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetButtonCommand(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetButtonCommand(this KeyFrame keyFrame, System.Windows.Input.ICommand value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Button.CommandProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ButtonSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonCommand(this KeyFrame keyFrame, System.Windows.Input.ICommand value)
+    public static KeyFrame SetButtonCommand(this KeyFrame keyFrame, IObservable<System.Windows.Input.ICommand> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetButtonCommand(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Button.CommandProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ButtonSetters
     public static KeyFrame SetButtonCommand(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonCommand(this KeyFrame keyFrame, IObservable<System.Windows.Input.ICommand> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ButtonSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetButtonCommandParameter(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetButtonCommandParameter(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Button.CommandParameterProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandParameterProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ButtonSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonCommandParameter(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetButtonCommandParameter(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandParameterProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandParameterProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetButtonCommandParameter(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Button.CommandParameterProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ButtonSetters
     public static KeyFrame SetButtonCommandParameter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandParameterProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonCommandParameter(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandParameterProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ButtonSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetButtonIsDefault(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetButtonIsDefault(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Button.IsDefaultProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsDefaultProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ButtonSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonIsDefault(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetButtonIsDefault(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsDefaultProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsDefaultProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetButtonIsDefault(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Button.IsDefaultProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class ButtonSetters
     public static KeyFrame SetButtonIsDefault(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsDefaultProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonIsDefault(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsDefaultProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class ButtonSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetButtonIsCancel(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetButtonIsCancel(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Button.IsCancelProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsCancelProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class ButtonSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonIsCancel(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetButtonIsCancel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsCancelProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsCancelProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetButtonIsCancel(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Button.IsCancelProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class ButtonSetters
     public static KeyFrame SetButtonIsCancel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsCancelProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonIsCancel(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsCancelProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class ButtonSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsPressedProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.IsPressedProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetButtonIsPressed(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetButtonIsPressed(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Button.IsPressedProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsPressedProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsPressedProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class ButtonSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.IsPressedProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonIsPressed(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetButtonIsPressed(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsPressedProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsPressedProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsPressedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetButtonIsPressed(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Button.IsPressedProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class ButtonSetters
     public static KeyFrame SetButtonIsPressed(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsPressedProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.IsPressedProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonIsPressed(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsPressedProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class ButtonSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetButtonFlyout(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetButtonFlyout(this KeyFrame keyFrame, Avalonia.Controls.Primitives.FlyoutBase value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Button.FlyoutProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.FlyoutProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class ButtonSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonFlyout(this KeyFrame keyFrame, Avalonia.Controls.Primitives.FlyoutBase value)
+    public static KeyFrame SetButtonFlyout(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.FlyoutProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.FlyoutProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetButtonFlyout(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Button.FlyoutProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class ButtonSetters
     public static KeyFrame SetButtonFlyout(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.FlyoutProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetButtonFlyout(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.FlyoutProperty, observable.ToBinding()));
         return keyFrame;
     }
 

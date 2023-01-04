@@ -21,17 +21,16 @@ public static partial class MaskedTextBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMaskedTextBoxAsciiOnly(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMaskedTextBoxAsciiOnly(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class MaskedTextBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxAsciiOnly(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetMaskedTextBoxAsciiOnly(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMaskedTextBoxAsciiOnly(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class MaskedTextBoxSetters
     public static KeyFrame SetMaskedTextBoxAsciiOnly(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxAsciiOnly(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class MaskedTextBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMaskedTextBoxCulture(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMaskedTextBoxCulture(this KeyFrame keyFrame, System.Globalization.CultureInfo value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.CultureProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.CultureProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class MaskedTextBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxCulture(this KeyFrame keyFrame, System.Globalization.CultureInfo value)
+    public static KeyFrame SetMaskedTextBoxCulture(this KeyFrame keyFrame, IObservable<System.Globalization.CultureInfo> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.CultureProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.CultureProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMaskedTextBoxCulture(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.CultureProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class MaskedTextBoxSetters
     public static KeyFrame SetMaskedTextBoxCulture(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.CultureProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxCulture(this KeyFrame keyFrame, IObservable<System.Globalization.CultureInfo> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.CultureProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class MaskedTextBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMaskedTextBoxHidePromptOnLeave(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMaskedTextBoxHidePromptOnLeave(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class MaskedTextBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxHidePromptOnLeave(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetMaskedTextBoxHidePromptOnLeave(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMaskedTextBoxHidePromptOnLeave(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class MaskedTextBoxSetters
     public static KeyFrame SetMaskedTextBoxHidePromptOnLeave(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxHidePromptOnLeave(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class MaskedTextBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMaskedTextBoxMask(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMaskedTextBoxMask(this KeyFrame keyFrame, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.MaskProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.MaskProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class MaskedTextBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxMask(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetMaskedTextBoxMask(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.MaskProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.MaskProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMaskedTextBoxMask(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.MaskProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class MaskedTextBoxSetters
     public static KeyFrame SetMaskedTextBoxMask(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.MaskProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxMask(this KeyFrame keyFrame, IObservable<System.String> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.MaskProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class MaskedTextBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.PasswordCharProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.PasswordCharProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMaskedTextBoxPasswordChar(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMaskedTextBoxPasswordChar(this KeyFrame keyFrame, System.Char value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PasswordCharProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PasswordCharProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.PasswordCharProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class MaskedTextBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.PasswordCharProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxPasswordChar(this KeyFrame keyFrame, System.Char value)
+    public static KeyFrame SetMaskedTextBoxPasswordChar(this KeyFrame keyFrame, IObservable<System.Char> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PasswordCharProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PasswordCharProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.PasswordCharProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMaskedTextBoxPasswordChar(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PasswordCharProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class MaskedTextBoxSetters
     public static KeyFrame SetMaskedTextBoxPasswordChar(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PasswordCharProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.PasswordCharProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxPasswordChar(this KeyFrame keyFrame, IObservable<System.Char> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PasswordCharProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class MaskedTextBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMaskedTextBoxPromptChar(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMaskedTextBoxPromptChar(this KeyFrame keyFrame, System.Char value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PromptCharProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PromptCharProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class MaskedTextBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxPromptChar(this KeyFrame keyFrame, System.Char value)
+    public static KeyFrame SetMaskedTextBoxPromptChar(this KeyFrame keyFrame, IObservable<System.Char> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PromptCharProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PromptCharProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMaskedTextBoxPromptChar(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PromptCharProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class MaskedTextBoxSetters
     public static KeyFrame SetMaskedTextBoxPromptChar(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PromptCharProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxPromptChar(this KeyFrame keyFrame, IObservable<System.Char> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.PromptCharProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class MaskedTextBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMaskedTextBoxResetOnPrompt(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMaskedTextBoxResetOnPrompt(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class MaskedTextBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxResetOnPrompt(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetMaskedTextBoxResetOnPrompt(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMaskedTextBoxResetOnPrompt(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class MaskedTextBoxSetters
     public static KeyFrame SetMaskedTextBoxResetOnPrompt(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxResetOnPrompt(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class MaskedTextBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMaskedTextBoxResetOnSpace(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMaskedTextBoxResetOnSpace(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class MaskedTextBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxResetOnSpace(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetMaskedTextBoxResetOnSpace(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMaskedTextBoxResetOnSpace(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class MaskedTextBoxSetters
     public static KeyFrame SetMaskedTextBoxResetOnSpace(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMaskedTextBoxResetOnSpace(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

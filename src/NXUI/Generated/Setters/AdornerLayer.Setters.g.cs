@@ -21,17 +21,16 @@ public static partial class AdornerLayerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAdornerLayerAdornedElement(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAdornerLayerAdornedElement(this KeyFrame keyFrame, Avalonia.Visual value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class AdornerLayerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAdornerLayerAdornedElement(this KeyFrame keyFrame, Avalonia.Visual value)
+    public static KeyFrame SetAdornerLayerAdornedElement(this KeyFrame keyFrame, IObservable<Avalonia.Visual> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAdornerLayerAdornedElement(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class AdornerLayerSetters
     public static KeyFrame SetAdornerLayerAdornedElement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAdornerLayerAdornedElement(this KeyFrame keyFrame, IObservable<Avalonia.Visual> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class AdornerLayerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAdornerLayerIsClipEnabled(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAdornerLayerIsClipEnabled(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class AdornerLayerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAdornerLayerIsClipEnabled(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetAdornerLayerIsClipEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAdornerLayerIsClipEnabled(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class AdornerLayerSetters
     public static KeyFrame SetAdornerLayerIsClipEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAdornerLayerIsClipEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class AdornerLayerSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetAdornerLayerAdorner(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAdornerLayerAdorner(this KeyFrame keyFrame, Avalonia.Controls.Control value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class AdornerLayerSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAdornerLayerAdorner(this KeyFrame keyFrame, Avalonia.Controls.Control value)
+    public static KeyFrame SetAdornerLayerAdorner(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Control> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAdornerLayerAdorner(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class AdornerLayerSetters
     public static KeyFrame SetAdornerLayerAdorner(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetAdornerLayerAdorner(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Control> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

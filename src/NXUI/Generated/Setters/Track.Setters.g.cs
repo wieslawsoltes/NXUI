@@ -21,17 +21,16 @@ public static partial class TrackSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrackMinimum(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrackMinimum(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MinimumProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MinimumProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class TrackSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackMinimum(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTrackMinimum(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MinimumProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MinimumProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrackMinimum(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MinimumProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class TrackSetters
     public static KeyFrame SetTrackMinimum(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MinimumProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackMinimum(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MinimumProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class TrackSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrackMaximum(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrackMaximum(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MaximumProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MaximumProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class TrackSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackMaximum(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTrackMaximum(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MaximumProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MaximumProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrackMaximum(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MaximumProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class TrackSetters
     public static KeyFrame SetTrackMaximum(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MaximumProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackMaximum(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MaximumProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class TrackSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrackValue(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrackValue(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ValueProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ValueProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class TrackSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackValue(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTrackValue(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ValueProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ValueProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrackValue(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ValueProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class TrackSetters
     public static KeyFrame SetTrackValue(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ValueProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackValue(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ValueProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class TrackSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrackViewportSize(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrackViewportSize(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ViewportSizeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ViewportSizeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class TrackSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackViewportSize(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTrackViewportSize(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ViewportSizeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ViewportSizeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrackViewportSize(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ViewportSizeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class TrackSetters
     public static KeyFrame SetTrackViewportSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ViewportSizeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackViewportSize(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ViewportSizeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class TrackSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrackOrientation(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrackOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.OrientationProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.OrientationProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class TrackSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
+    public static KeyFrame SetTrackOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.OrientationProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.OrientationProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrackOrientation(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.OrientationProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class TrackSetters
     public static KeyFrame SetTrackOrientation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.OrientationProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class TrackSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrackThumb(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrackThumb(this KeyFrame keyFrame, Avalonia.Controls.Primitives.Thumb value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ThumbProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ThumbProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class TrackSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackThumb(this KeyFrame keyFrame, Avalonia.Controls.Primitives.Thumb value)
+    public static KeyFrame SetTrackThumb(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.Thumb> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ThumbProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ThumbProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrackThumb(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ThumbProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class TrackSetters
     public static KeyFrame SetTrackThumb(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ThumbProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackThumb(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.Thumb> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ThumbProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class TrackSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrackIncreaseButton(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrackIncreaseButton(this KeyFrame keyFrame, Avalonia.Controls.Button value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class TrackSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackIncreaseButton(this KeyFrame keyFrame, Avalonia.Controls.Button value)
+    public static KeyFrame SetTrackIncreaseButton(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Button> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrackIncreaseButton(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class TrackSetters
     public static KeyFrame SetTrackIncreaseButton(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackIncreaseButton(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Button> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class TrackSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrackDecreaseButton(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrackDecreaseButton(this KeyFrame keyFrame, Avalonia.Controls.Button value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class TrackSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackDecreaseButton(this KeyFrame keyFrame, Avalonia.Controls.Button value)
+    public static KeyFrame SetTrackDecreaseButton(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Button> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrackDecreaseButton(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class TrackSetters
     public static KeyFrame SetTrackDecreaseButton(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackDecreaseButton(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Button> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class TrackSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrackIsDirectionReversed(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrackIsDirectionReversed(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class TrackSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackIsDirectionReversed(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetTrackIsDirectionReversed(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrackIsDirectionReversed(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class TrackSetters
     public static KeyFrame SetTrackIsDirectionReversed(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackIsDirectionReversed(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -687,17 +669,16 @@ public static partial class TrackSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTrackIgnoreThumbDrag(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTrackIgnoreThumbDrag(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
     /// </summary>
@@ -714,12 +695,23 @@ public static partial class TrackSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackIgnoreThumbDrag(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetTrackIgnoreThumbDrag(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTrackIgnoreThumbDrag(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -731,18 +723,6 @@ public static partial class TrackSetters
     public static KeyFrame SetTrackIgnoreThumbDrag(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTrackIgnoreThumbDrag(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

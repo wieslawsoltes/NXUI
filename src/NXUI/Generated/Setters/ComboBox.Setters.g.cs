@@ -21,17 +21,16 @@ public static partial class ComboBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetComboBoxIsDropDownOpen(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetComboBoxIsDropDownOpen(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.IsDropDownOpenProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.IsDropDownOpenProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ComboBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxIsDropDownOpen(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetComboBoxIsDropDownOpen(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.IsDropDownOpenProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.IsDropDownOpenProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetComboBoxIsDropDownOpen(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.IsDropDownOpenProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ComboBoxSetters
     public static KeyFrame SetComboBoxIsDropDownOpen(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.IsDropDownOpenProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxIsDropDownOpen(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.IsDropDownOpenProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ComboBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetComboBoxMaxDropDownHeight(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetComboBoxMaxDropDownHeight(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ComboBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxMaxDropDownHeight(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetComboBoxMaxDropDownHeight(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetComboBoxMaxDropDownHeight(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ComboBoxSetters
     public static KeyFrame SetComboBoxMaxDropDownHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxMaxDropDownHeight(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ComboBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetComboBoxVirtualizationMode(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetComboBoxVirtualizationMode(this KeyFrame keyFrame, Avalonia.Controls.ItemVirtualizationMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VirtualizationModeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VirtualizationModeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ComboBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxVirtualizationMode(this KeyFrame keyFrame, Avalonia.Controls.ItemVirtualizationMode value)
+    public static KeyFrame SetComboBoxVirtualizationMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ItemVirtualizationMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VirtualizationModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VirtualizationModeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetComboBoxVirtualizationMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VirtualizationModeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ComboBoxSetters
     public static KeyFrame SetComboBoxVirtualizationMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VirtualizationModeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxVirtualizationMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ItemVirtualizationMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VirtualizationModeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ComboBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetComboBoxPlaceholderText(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetComboBoxPlaceholderText(this KeyFrame keyFrame, System.String value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderTextProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderTextProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ComboBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxPlaceholderText(this KeyFrame keyFrame, System.String value)
+    public static KeyFrame SetComboBoxPlaceholderText(this KeyFrame keyFrame, IObservable<System.String> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderTextProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderTextProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetComboBoxPlaceholderText(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderTextProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class ComboBoxSetters
     public static KeyFrame SetComboBoxPlaceholderText(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderTextProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxPlaceholderText(this KeyFrame keyFrame, IObservable<System.String> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderTextProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class ComboBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetComboBoxPlaceholderForeground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetComboBoxPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class ComboBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetComboBoxPlaceholderForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetComboBoxPlaceholderForeground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class ComboBoxSetters
     public static KeyFrame SetComboBoxPlaceholderForeground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxPlaceholderForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class ComboBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetComboBoxHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetComboBoxHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.HorizontalAlignment value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class ComboBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.HorizontalAlignment value)
+    public static KeyFrame SetComboBoxHorizontalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetComboBoxHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class ComboBoxSetters
     public static KeyFrame SetComboBoxHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxHorizontalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class ComboBoxSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetComboBoxVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetComboBoxVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.VerticalAlignment value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class ComboBoxSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.VerticalAlignment value)
+    public static KeyFrame SetComboBoxVerticalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetComboBoxVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class ComboBoxSetters
     public static KeyFrame SetComboBoxVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetComboBoxVerticalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.VerticalAlignment> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

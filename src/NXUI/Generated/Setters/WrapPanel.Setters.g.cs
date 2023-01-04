@@ -21,17 +21,16 @@ public static partial class WrapPanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWrapPanelOrientation(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWrapPanelOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.OrientationProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.OrientationProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class WrapPanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapPanelOrientation(this KeyFrame keyFrame, Avalonia.Layout.Orientation value)
+    public static KeyFrame SetWrapPanelOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.OrientationProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.OrientationProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWrapPanelOrientation(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.OrientationProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class WrapPanelSetters
     public static KeyFrame SetWrapPanelOrientation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.OrientationProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapPanelOrientation(this KeyFrame keyFrame, IObservable<Avalonia.Layout.Orientation> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class WrapPanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWrapPanelItemWidth(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWrapPanelItemWidth(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemWidthProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemWidthProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class WrapPanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapPanelItemWidth(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetWrapPanelItemWidth(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemWidthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemWidthProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWrapPanelItemWidth(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemWidthProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class WrapPanelSetters
     public static KeyFrame SetWrapPanelItemWidth(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemWidthProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapPanelItemWidth(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemWidthProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class WrapPanelSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetWrapPanelItemHeight(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetWrapPanelItemHeight(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemHeightProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemHeightProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class WrapPanelSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapPanelItemHeight(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetWrapPanelItemHeight(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemHeightProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemHeightProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetWrapPanelItemHeight(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemHeightProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class WrapPanelSetters
     public static KeyFrame SetWrapPanelItemHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemHeightProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetWrapPanelItemHeight(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemHeightProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

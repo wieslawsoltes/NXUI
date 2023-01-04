@@ -21,17 +21,16 @@ public static partial class ToolTipSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.TipProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.TipProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetToolTipTip(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipTip(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.TipProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.TipProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.TipProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ToolTipSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.TipProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipTip(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetToolTipTip(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.TipProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.TipProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.TipProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipTip(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.TipProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ToolTipSetters
     public static KeyFrame SetToolTipTip(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.TipProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.TipProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipTip(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.TipProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ToolTipSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetToolTipIsOpen(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipIsOpen(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.IsOpenProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.IsOpenProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ToolTipSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipIsOpen(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetToolTipIsOpen(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.IsOpenProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.IsOpenProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipIsOpen(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.IsOpenProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ToolTipSetters
     public static KeyFrame SetToolTipIsOpen(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.IsOpenProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipIsOpen(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.IsOpenProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ToolTipSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetToolTipPlacement(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipPlacement(this KeyFrame keyFrame, Avalonia.Controls.PlacementMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.PlacementProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.PlacementProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ToolTipSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipPlacement(this KeyFrame keyFrame, Avalonia.Controls.PlacementMode value)
+    public static KeyFrame SetToolTipPlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.PlacementMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.PlacementProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.PlacementProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipPlacement(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.PlacementProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ToolTipSetters
     public static KeyFrame SetToolTipPlacement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.PlacementProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipPlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.PlacementMode> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.PlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ToolTipSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetToolTipHorizontalOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipHorizontalOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.HorizontalOffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.HorizontalOffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ToolTipSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipHorizontalOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetToolTipHorizontalOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.HorizontalOffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.HorizontalOffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipHorizontalOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.HorizontalOffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class ToolTipSetters
     public static KeyFrame SetToolTipHorizontalOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.HorizontalOffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipHorizontalOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.HorizontalOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class ToolTipSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetToolTipVerticalOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipVerticalOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.VerticalOffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.VerticalOffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class ToolTipSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipVerticalOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetToolTipVerticalOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.VerticalOffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.VerticalOffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipVerticalOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.VerticalOffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class ToolTipSetters
     public static KeyFrame SetToolTipVerticalOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.VerticalOffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipVerticalOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.VerticalOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class ToolTipSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetToolTipShowDelay(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipShowDelay(this KeyFrame keyFrame, System.Int32 value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowDelayProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowDelayProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class ToolTipSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipShowDelay(this KeyFrame keyFrame, System.Int32 value)
+    public static KeyFrame SetToolTipShowDelay(this KeyFrame keyFrame, IObservable<System.Int32> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowDelayProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowDelayProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipShowDelay(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowDelayProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class ToolTipSetters
     public static KeyFrame SetToolTipShowDelay(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowDelayProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToolTipShowDelay(this KeyFrame keyFrame, IObservable<System.Int32> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowDelayProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

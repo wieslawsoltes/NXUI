@@ -21,17 +21,16 @@ public static partial class NativeMenuItemBaseSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetNativeMenuItemBaseParent(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNativeMenuItemBaseParent(this KeyFrame keyFrame, Avalonia.Controls.NativeMenu value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItemBase.ParentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItemBase.ParentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class NativeMenuItemBaseSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNativeMenuItemBaseParent(this KeyFrame keyFrame, Avalonia.Controls.NativeMenu value)
+    public static KeyFrame SetNativeMenuItemBaseParent(this KeyFrame keyFrame, IObservable<Avalonia.Controls.NativeMenu> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItemBase.ParentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItemBase.ParentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNativeMenuItemBaseParent(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItemBase.ParentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class NativeMenuItemBaseSetters
     public static KeyFrame SetNativeMenuItemBaseParent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItemBase.ParentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNativeMenuItemBaseParent(this KeyFrame keyFrame, IObservable<Avalonia.Controls.NativeMenu> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItemBase.ParentProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

@@ -14,12 +14,46 @@ public static partial class VisualBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetVisualBrushVisual(this Style style, Avalonia.VisualTree.IVisual value)
+    public static Style SetVisualBrushVisual(this Style style, Avalonia.Visual value)
     {
         style.Setters.Add(new Setter(Avalonia.Media.VisualBrush.VisualProperty, value));
         return style;
     }
 
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualBrushVisual(this KeyFrame keyFrame, Avalonia.Visual value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.VisualBrush.VisualProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualBrushVisual(this Style style, IObservable<Avalonia.Visual> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.VisualBrush.VisualProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualBrushVisual(this KeyFrame keyFrame, IObservable<Avalonia.Visual> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.VisualBrush.VisualProperty, observable.ToBinding()));
+        return keyFrame;
+    }
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
     /// </summary>
@@ -33,30 +67,6 @@ public static partial class VisualBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="observable">The property observable.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetVisualBrushVisual(this Style style, IObservable<Avalonia.VisualTree.IVisual> observable)
-    {
-        style.Setters.Add(new Setter(Avalonia.Media.VisualBrush.VisualProperty, observable.ToBinding()));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualBrushVisual(this KeyFrame keyFrame, Avalonia.VisualTree.IVisual value)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.VisualBrush.VisualProperty, value));
-        return keyFrame;
-    }
-
-    /// <summary>
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
@@ -65,18 +75,6 @@ public static partial class VisualBrushSetters
     public static KeyFrame SetVisualBrushVisual(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.VisualBrush.VisualProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetVisualBrushVisual(this KeyFrame keyFrame, IObservable<Avalonia.VisualTree.IVisual> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.VisualBrush.VisualProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

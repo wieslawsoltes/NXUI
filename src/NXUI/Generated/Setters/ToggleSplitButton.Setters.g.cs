@@ -21,17 +21,16 @@ public static partial class ToggleSplitButtonSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetToggleSplitButtonIsChecked(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToggleSplitButtonIsChecked(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ToggleSplitButtonSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToggleSplitButtonIsChecked(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetToggleSplitButtonIsChecked(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToggleSplitButtonIsChecked(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ToggleSplitButtonSetters
     public static KeyFrame SetToggleSplitButtonIsChecked(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetToggleSplitButtonIsChecked(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty, observable.ToBinding()));
         return keyFrame;
     }
 

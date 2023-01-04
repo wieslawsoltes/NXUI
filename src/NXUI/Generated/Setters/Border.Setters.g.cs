@@ -21,17 +21,16 @@ public static partial class BorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBorderBackground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBorderBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class BorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetBorderBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBorderBackground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class BorderSetters
     public static KeyFrame SetBorderBackground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class BorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBorderBorderBrush(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBorderBorderBrush(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderBrushProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderBrushProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class BorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderBrush(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetBorderBorderBrush(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderBrushProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderBrushProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBorderBorderBrush(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderBrushProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class BorderSetters
     public static KeyFrame SetBorderBorderBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderBrushProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderBrush(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderBrushProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class BorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBorderBorderThickness(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBorderBorderThickness(this KeyFrame keyFrame, Avalonia.Thickness value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderThicknessProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderThicknessProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class BorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderThickness(this KeyFrame keyFrame, Avalonia.Thickness value)
+    public static KeyFrame SetBorderBorderThickness(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderThicknessProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderThicknessProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBorderBorderThickness(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderThicknessProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class BorderSetters
     public static KeyFrame SetBorderBorderThickness(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderThicknessProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderThickness(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class BorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBorderCornerRadius(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBorderCornerRadius(this KeyFrame keyFrame, Avalonia.CornerRadius value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Border.CornerRadiusProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.CornerRadiusProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class BorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderCornerRadius(this KeyFrame keyFrame, Avalonia.CornerRadius value)
+    public static KeyFrame SetBorderCornerRadius(this KeyFrame keyFrame, IObservable<Avalonia.CornerRadius> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.CornerRadiusProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBorderCornerRadius(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Border.CornerRadiusProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class BorderSetters
     public static KeyFrame SetBorderCornerRadius(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.CornerRadiusProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderCornerRadius(this KeyFrame keyFrame, IObservable<Avalonia.CornerRadius> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class BorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBorderBoxShadow(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBorderBoxShadow(this KeyFrame keyFrame, Avalonia.Media.BoxShadows value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Border.BoxShadowProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BoxShadowProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class BorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBoxShadow(this KeyFrame keyFrame, Avalonia.Media.BoxShadows value)
+    public static KeyFrame SetBorderBoxShadow(this KeyFrame keyFrame, IObservable<Avalonia.Media.BoxShadows> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BoxShadowProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BoxShadowProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBorderBoxShadow(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Border.BoxShadowProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class BorderSetters
     public static KeyFrame SetBorderBoxShadow(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BoxShadowProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBoxShadow(this KeyFrame keyFrame, IObservable<Avalonia.Media.BoxShadows> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BoxShadowProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class BorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderDashOffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderDashOffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBorderBorderDashOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBorderBorderDashOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashOffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashOffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderDashOffsetProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class BorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderDashOffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderDashOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetBorderBorderDashOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashOffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashOffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBorderBorderDashOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashOffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class BorderSetters
     public static KeyFrame SetBorderBorderDashOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashOffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderDashOffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderDashOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class BorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderDashArrayProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderDashArrayProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBorderBorderDashArray(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBorderBorderDashArray(this KeyFrame keyFrame, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashArrayProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashArrayProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderDashArrayProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class BorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderDashArrayProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderDashArray(this KeyFrame keyFrame, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static KeyFrame SetBorderBorderDashArray(this KeyFrame keyFrame, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashArrayProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashArrayProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBorderBorderDashArray(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashArrayProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class BorderSetters
     public static KeyFrame SetBorderBorderDashArray(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashArrayProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderDashArrayProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderDashArray(this KeyFrame keyFrame, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderDashArrayProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class BorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBorderBorderLineCap(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBorderBorderLineCap(this KeyFrame keyFrame, Avalonia.Media.PenLineCap value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineCapProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineCapProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class BorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderLineCap(this KeyFrame keyFrame, Avalonia.Media.PenLineCap value)
+    public static KeyFrame SetBorderBorderLineCap(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineCap> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineCapProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineCapProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBorderBorderLineCap(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineCapProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class BorderSetters
     public static KeyFrame SetBorderBorderLineCap(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineCapProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderLineCapProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderLineCap(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineCap> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineCapProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class BorderSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetBorderBorderLineJoin(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetBorderBorderLineJoin(this KeyFrame keyFrame, Avalonia.Media.PenLineJoin value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineJoinProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineJoinProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class BorderSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderLineJoin(this KeyFrame keyFrame, Avalonia.Media.PenLineJoin value)
+    public static KeyFrame SetBorderBorderLineJoin(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineJoin> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineJoinProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineJoinProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetBorderBorderLineJoin(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineJoinProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class BorderSetters
     public static KeyFrame SetBorderBorderLineJoin(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineJoinProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Border.BorderLineJoinProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetBorderBorderLineJoin(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineJoin> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderLineJoinProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

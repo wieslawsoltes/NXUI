@@ -21,17 +21,16 @@ public static partial class TabControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTabControlTabStripPlacement(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabControlTabStripPlacement(this KeyFrame keyFrame, Avalonia.Controls.Dock value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.TabStripPlacementProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.TabStripPlacementProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class TabControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlTabStripPlacement(this KeyFrame keyFrame, Avalonia.Controls.Dock value)
+    public static KeyFrame SetTabControlTabStripPlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Dock> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.TabStripPlacementProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.TabStripPlacementProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabControlTabStripPlacement(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.TabStripPlacementProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class TabControlSetters
     public static KeyFrame SetTabControlTabStripPlacement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.TabStripPlacementProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlTabStripPlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Dock> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.TabStripPlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class TabControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTabControlHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabControlHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.HorizontalAlignment value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class TabControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.HorizontalAlignment value)
+    public static KeyFrame SetTabControlHorizontalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabControlHorizontalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class TabControlSetters
     public static KeyFrame SetTabControlHorizontalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlHorizontalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class TabControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTabControlVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabControlVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.VerticalAlignment value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class TabControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Layout.VerticalAlignment value)
+    public static KeyFrame SetTabControlVerticalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabControlVerticalContentAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class TabControlSetters
     public static KeyFrame SetTabControlVerticalContentAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlVerticalContentAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Layout.VerticalAlignment> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class TabControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTabControlContentTemplate(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabControlContentTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.ContentTemplateProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.ContentTemplateProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class TabControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlContentTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrame SetTabControlContentTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.ContentTemplateProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.ContentTemplateProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabControlContentTemplate(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.ContentTemplateProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class TabControlSetters
     public static KeyFrame SetTabControlContentTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.ContentTemplateProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlContentTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.ContentTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class TabControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTabControlSelectedContent(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabControlSelectedContent(this KeyFrame keyFrame, System.Object value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class TabControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlSelectedContent(this KeyFrame keyFrame, System.Object value)
+    public static KeyFrame SetTabControlSelectedContent(this KeyFrame keyFrame, IObservable<System.Object> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabControlSelectedContent(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class TabControlSetters
     public static KeyFrame SetTabControlSelectedContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlSelectedContent(this KeyFrame keyFrame, IObservable<System.Object> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class TabControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTabControlSelectedContentTemplate(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabControlSelectedContentTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentTemplateProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentTemplateProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class TabControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlSelectedContentTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrame SetTabControlSelectedContentTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentTemplateProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentTemplateProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabControlSelectedContentTemplate(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentTemplateProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class TabControlSetters
     public static KeyFrame SetTabControlSelectedContentTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentTemplateProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTabControlSelectedContentTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.SelectedContentTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

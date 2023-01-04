@@ -21,17 +21,16 @@ public static partial class EllipseGeometrySetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetEllipseGeometryRect(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetEllipseGeometryRect(this KeyFrame keyFrame, Avalonia.Rect value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class EllipseGeometrySetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryRect(this KeyFrame keyFrame, Avalonia.Rect value)
+    public static KeyFrame SetEllipseGeometryRect(this KeyFrame keyFrame, IObservable<Avalonia.Rect> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetEllipseGeometryRect(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class EllipseGeometrySetters
     public static KeyFrame SetEllipseGeometryRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryRect(this KeyFrame keyFrame, IObservable<Avalonia.Rect> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class EllipseGeometrySetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetEllipseGeometryRadiusX(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetEllipseGeometryRadiusX(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class EllipseGeometrySetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryRadiusX(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetEllipseGeometryRadiusX(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetEllipseGeometryRadiusX(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class EllipseGeometrySetters
     public static KeyFrame SetEllipseGeometryRadiusX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryRadiusX(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class EllipseGeometrySetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetEllipseGeometryRadiusY(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetEllipseGeometryRadiusY(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class EllipseGeometrySetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryRadiusY(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetEllipseGeometryRadiusY(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetEllipseGeometryRadiusY(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class EllipseGeometrySetters
     public static KeyFrame SetEllipseGeometryRadiusY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryRadiusY(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class EllipseGeometrySetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetEllipseGeometryCenter(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetEllipseGeometryCenter(this KeyFrame keyFrame, Avalonia.Point value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class EllipseGeometrySetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryCenter(this KeyFrame keyFrame, Avalonia.Point value)
+    public static KeyFrame SetEllipseGeometryCenter(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetEllipseGeometryCenter(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class EllipseGeometrySetters
     public static KeyFrame SetEllipseGeometryCenter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetEllipseGeometryCenter(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

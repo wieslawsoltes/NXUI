@@ -21,17 +21,16 @@ public static partial class ColumnDefinitionSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetColumnDefinitionMaxWidth(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetColumnDefinitionMaxWidth(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MaxWidthProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MaxWidthProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ColumnDefinitionSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColumnDefinitionMaxWidth(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetColumnDefinitionMaxWidth(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MaxWidthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MaxWidthProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetColumnDefinitionMaxWidth(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MaxWidthProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ColumnDefinitionSetters
     public static KeyFrame SetColumnDefinitionMaxWidth(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MaxWidthProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColumnDefinitionMaxWidth(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MaxWidthProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ColumnDefinitionSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetColumnDefinitionMinWidth(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetColumnDefinitionMinWidth(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MinWidthProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MinWidthProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ColumnDefinitionSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColumnDefinitionMinWidth(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetColumnDefinitionMinWidth(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MinWidthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MinWidthProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetColumnDefinitionMinWidth(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MinWidthProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ColumnDefinitionSetters
     public static KeyFrame SetColumnDefinitionMinWidth(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MinWidthProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColumnDefinitionMinWidth(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MinWidthProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ColumnDefinitionSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetColumnDefinitionWidth(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetColumnDefinitionWidth(this KeyFrame keyFrame, Avalonia.Controls.GridLength value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.WidthProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.WidthProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ColumnDefinitionSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColumnDefinitionWidth(this KeyFrame keyFrame, Avalonia.Controls.GridLength value)
+    public static KeyFrame SetColumnDefinitionWidth(this KeyFrame keyFrame, IObservable<Avalonia.Controls.GridLength> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.WidthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.WidthProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetColumnDefinitionWidth(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.WidthProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ColumnDefinitionSetters
     public static KeyFrame SetColumnDefinitionWidth(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.WidthProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetColumnDefinitionWidth(this KeyFrame keyFrame, IObservable<Avalonia.Controls.GridLength> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.WidthProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

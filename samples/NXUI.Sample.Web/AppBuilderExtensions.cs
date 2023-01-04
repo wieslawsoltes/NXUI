@@ -1,5 +1,5 @@
 ﻿using System.Runtime.Versioning;
-using Avalonia.Web;
+using Avalonia.Browser;
 
 [assembly:SupportedOSPlatform("browser")]
 
@@ -16,12 +16,11 @@ public static class AppBuilderExtensions
   /// <param name="builder"></param>
   /// <param name="callback"></param>
   /// <param name="mainDivId"></param>
-  /// <typeparam name="T"></typeparam>
   /// <returns></returns>
-  public static T SetupBrowserSingleViewLifetime<T>(
-    this T builder, 
+  public static AppBuilder SetupBrowserSingleViewLifetime(
+    this AppBuilder builder, 
     Func<Control>? callback, 
-    string mainDivId = "out") where T : AppBuilderBase<T>, new()
+    string mainDivId = "out")
   {
     var lifetime = new BrowserSingleViewLifetime();
 

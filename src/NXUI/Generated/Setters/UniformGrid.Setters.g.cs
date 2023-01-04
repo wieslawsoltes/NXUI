@@ -21,17 +21,16 @@ public static partial class UniformGridSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetUniformGridRows(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetUniformGridRows(this KeyFrame keyFrame, System.Int32 value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class UniformGridSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetUniformGridRows(this KeyFrame keyFrame, System.Int32 value)
+    public static KeyFrame SetUniformGridRows(this KeyFrame keyFrame, IObservable<System.Int32> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetUniformGridRows(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class UniformGridSetters
     public static KeyFrame SetUniformGridRows(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetUniformGridRows(this KeyFrame keyFrame, IObservable<System.Int32> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class UniformGridSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetUniformGridColumns(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetUniformGridColumns(this KeyFrame keyFrame, System.Int32 value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class UniformGridSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetUniformGridColumns(this KeyFrame keyFrame, System.Int32 value)
+    public static KeyFrame SetUniformGridColumns(this KeyFrame keyFrame, IObservable<System.Int32> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetUniformGridColumns(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class UniformGridSetters
     public static KeyFrame SetUniformGridColumns(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetUniformGridColumns(this KeyFrame keyFrame, IObservable<System.Int32> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class UniformGridSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetUniformGridFirstColumn(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetUniformGridFirstColumn(this KeyFrame keyFrame, System.Int32 value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class UniformGridSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetUniformGridFirstColumn(this KeyFrame keyFrame, System.Int32 value)
+    public static KeyFrame SetUniformGridFirstColumn(this KeyFrame keyFrame, IObservable<System.Int32> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetUniformGridFirstColumn(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class UniformGridSetters
     public static KeyFrame SetUniformGridFirstColumn(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetUniformGridFirstColumn(this KeyFrame keyFrame, IObservable<System.Int32> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

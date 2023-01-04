@@ -21,17 +21,16 @@ public static partial class GlyphRunDrawingSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGlyphRunDrawingForeground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGlyphRunDrawingForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class GlyphRunDrawingSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGlyphRunDrawingForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetGlyphRunDrawingForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGlyphRunDrawingForeground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class GlyphRunDrawingSetters
     public static KeyFrame SetGlyphRunDrawingForeground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGlyphRunDrawingForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class GlyphRunDrawingSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGlyphRunDrawingGlyphRun(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGlyphRunDrawingGlyphRun(this KeyFrame keyFrame, Avalonia.Media.GlyphRun value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class GlyphRunDrawingSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGlyphRunDrawingGlyphRun(this KeyFrame keyFrame, Avalonia.Media.GlyphRun value)
+    public static KeyFrame SetGlyphRunDrawingGlyphRun(this KeyFrame keyFrame, IObservable<Avalonia.Media.GlyphRun> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGlyphRunDrawingGlyphRun(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class GlyphRunDrawingSetters
     public static KeyFrame SetGlyphRunDrawingGlyphRun(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGlyphRunDrawingGlyphRun(this KeyFrame keyFrame, IObservable<Avalonia.Media.GlyphRun> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

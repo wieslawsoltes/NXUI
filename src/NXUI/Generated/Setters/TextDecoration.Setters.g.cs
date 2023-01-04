@@ -21,17 +21,16 @@ public static partial class TextDecorationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationLocation(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextDecorationLocation(this KeyFrame keyFrame, Avalonia.Media.TextDecorationLocation value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class TextDecorationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationLocation(this KeyFrame keyFrame, Avalonia.Media.TextDecorationLocation value)
+    public static KeyFrame SetTextDecorationLocation(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextDecorationLocation> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextDecorationLocation(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class TextDecorationSetters
     public static KeyFrame SetTextDecorationLocation(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationLocation(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextDecorationLocation> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class TextDecorationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStroke(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextDecorationStroke(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class TextDecorationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStroke(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetTextDecorationStroke(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextDecorationStroke(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class TextDecorationSetters
     public static KeyFrame SetTextDecorationStroke(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStroke(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class TextDecorationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeThicknessUnit(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextDecorationStrokeThicknessUnit(this KeyFrame keyFrame, Avalonia.Media.TextDecorationUnit value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class TextDecorationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeThicknessUnit(this KeyFrame keyFrame, Avalonia.Media.TextDecorationUnit value)
+    public static KeyFrame SetTextDecorationStrokeThicknessUnit(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextDecorationUnit> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextDecorationStrokeThicknessUnit(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class TextDecorationSetters
     public static KeyFrame SetTextDecorationStrokeThicknessUnit(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeThicknessUnit(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextDecorationUnit> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class TextDecorationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeDashArray(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextDecorationStrokeDashArray(this KeyFrame keyFrame, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class TextDecorationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeDashArray(this KeyFrame keyFrame, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static KeyFrame SetTextDecorationStrokeDashArray(this KeyFrame keyFrame, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextDecorationStrokeDashArray(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class TextDecorationSetters
     public static KeyFrame SetTextDecorationStrokeDashArray(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeDashArray(this KeyFrame keyFrame, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class TextDecorationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeDashOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextDecorationStrokeDashOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class TextDecorationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeDashOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTextDecorationStrokeDashOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextDecorationStrokeDashOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class TextDecorationSetters
     public static KeyFrame SetTextDecorationStrokeDashOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeDashOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class TextDecorationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeThickness(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextDecorationStrokeThickness(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class TextDecorationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeThickness(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTextDecorationStrokeThickness(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextDecorationStrokeThickness(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class TextDecorationSetters
     public static KeyFrame SetTextDecorationStrokeThickness(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeThickness(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class TextDecorationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeLineCap(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextDecorationStrokeLineCap(this KeyFrame keyFrame, Avalonia.Media.PenLineCap value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class TextDecorationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeLineCap(this KeyFrame keyFrame, Avalonia.Media.PenLineCap value)
+    public static KeyFrame SetTextDecorationStrokeLineCap(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineCap> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextDecorationStrokeLineCap(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class TextDecorationSetters
     public static KeyFrame SetTextDecorationStrokeLineCap(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeLineCap(this KeyFrame keyFrame, IObservable<Avalonia.Media.PenLineCap> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class TextDecorationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextDecorationStrokeOffset(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class TextDecorationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeOffset(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTextDecorationStrokeOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextDecorationStrokeOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class TextDecorationSetters
     public static KeyFrame SetTextDecorationStrokeOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeOffset(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class TextDecorationSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTextDecorationStrokeOffsetUnit(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextDecorationStrokeOffsetUnit(this KeyFrame keyFrame, Avalonia.Media.TextDecorationUnit value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class TextDecorationSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeOffsetUnit(this KeyFrame keyFrame, Avalonia.Media.TextDecorationUnit value)
+    public static KeyFrame SetTextDecorationStrokeOffsetUnit(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextDecorationUnit> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextDecorationStrokeOffsetUnit(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class TextDecorationSetters
     public static KeyFrame SetTextDecorationStrokeOffsetUnit(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTextDecorationStrokeOffsetUnit(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextDecorationUnit> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

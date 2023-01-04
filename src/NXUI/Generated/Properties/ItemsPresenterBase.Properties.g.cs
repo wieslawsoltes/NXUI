@@ -16,10 +16,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.IPanel>> ItemsPresenterBaseItemsPanel => Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> ItemsPresenterBaseItemsPanel => Avalonia.Controls.Presenters.ItemsPresenterBase.ItemsPanelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ItemsPresenterBaseItemTemplate => Avalonia.Controls.Presenters.ItemsPresenterBase.ItemTemplateProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ItemsPresenterBase"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Data.IBinding> ItemsPresenterBaseDisplayMemberBinding => Avalonia.Controls.Presenters.ItemsPresenterBase.DisplayMemberBindingProperty;
 }

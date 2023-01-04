@@ -14,12 +14,46 @@ public static partial class DecoratorSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetDecoratorChild(this Style style, Avalonia.Controls.IControl value)
+    public static Style SetDecoratorChild(this Style style, Avalonia.Controls.Control value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.Decorator.ChildProperty, value));
         return style;
     }
 
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDecoratorChild(this KeyFrame keyFrame, Avalonia.Controls.Control value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Decorator.ChildProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDecoratorChild(this Style style, IObservable<Avalonia.Controls.Control> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Decorator.ChildProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDecoratorChild(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Control> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Decorator.ChildProperty, observable.ToBinding()));
+        return keyFrame;
+    }
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
     /// </summary>
@@ -33,30 +67,6 @@ public static partial class DecoratorSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
-    /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="observable">The property observable.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDecoratorChild(this Style style, IObservable<Avalonia.Controls.IControl> observable)
-    {
-        style.Setters.Add(new Setter(Avalonia.Controls.Decorator.ChildProperty, observable.ToBinding()));
-        return style;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDecoratorChild(this KeyFrame keyFrame, Avalonia.Controls.IControl value)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Decorator.ChildProperty, value));
-        return keyFrame;
-    }
-
-    /// <summary>
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
@@ -65,18 +75,6 @@ public static partial class DecoratorSetters
     public static KeyFrame SetDecoratorChild(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Decorator.ChildProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDecoratorChild(this KeyFrame keyFrame, IObservable<Avalonia.Controls.IControl> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Decorator.ChildProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class DecoratorSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Decorator.PaddingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Decorator.PaddingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetDecoratorPadding(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDecoratorPadding(this KeyFrame keyFrame, Avalonia.Thickness value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Decorator.PaddingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Decorator.PaddingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Decorator.PaddingProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class DecoratorSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Decorator.PaddingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDecoratorPadding(this KeyFrame keyFrame, Avalonia.Thickness value)
+    public static KeyFrame SetDecoratorPadding(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Decorator.PaddingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Decorator.PaddingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Decorator.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDecoratorPadding(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Decorator.PaddingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class DecoratorSetters
     public static KeyFrame SetDecoratorPadding(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Decorator.PaddingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Decorator.PaddingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetDecoratorPadding(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Decorator.PaddingProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

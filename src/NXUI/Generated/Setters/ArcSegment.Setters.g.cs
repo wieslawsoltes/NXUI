@@ -21,17 +21,16 @@ public static partial class ArcSegmentSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetArcSegmentIsLargeArc(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetArcSegmentIsLargeArc(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ArcSegmentSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentIsLargeArc(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetArcSegmentIsLargeArc(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetArcSegmentIsLargeArc(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ArcSegmentSetters
     public static KeyFrame SetArcSegmentIsLargeArc(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentIsLargeArc(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ArcSegmentSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetArcSegmentPoint(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetArcSegmentPoint(this KeyFrame keyFrame, Avalonia.Point value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ArcSegmentSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentPoint(this KeyFrame keyFrame, Avalonia.Point value)
+    public static KeyFrame SetArcSegmentPoint(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetArcSegmentPoint(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ArcSegmentSetters
     public static KeyFrame SetArcSegmentPoint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentPoint(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ArcSegmentSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetArcSegmentRotationAngle(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetArcSegmentRotationAngle(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ArcSegmentSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentRotationAngle(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetArcSegmentRotationAngle(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetArcSegmentRotationAngle(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ArcSegmentSetters
     public static KeyFrame SetArcSegmentRotationAngle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentRotationAngle(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ArcSegmentSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetArcSegmentSize(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetArcSegmentSize(this KeyFrame keyFrame, Avalonia.Size value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ArcSegmentSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentSize(this KeyFrame keyFrame, Avalonia.Size value)
+    public static KeyFrame SetArcSegmentSize(this KeyFrame keyFrame, IObservable<Avalonia.Size> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetArcSegmentSize(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class ArcSegmentSetters
     public static KeyFrame SetArcSegmentSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentSize(this KeyFrame keyFrame, IObservable<Avalonia.Size> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class ArcSegmentSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetArcSegmentSweepDirection(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetArcSegmentSweepDirection(this KeyFrame keyFrame, Avalonia.Media.SweepDirection value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class ArcSegmentSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentSweepDirection(this KeyFrame keyFrame, Avalonia.Media.SweepDirection value)
+    public static KeyFrame SetArcSegmentSweepDirection(this KeyFrame keyFrame, IObservable<Avalonia.Media.SweepDirection> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetArcSegmentSweepDirection(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class ArcSegmentSetters
     public static KeyFrame SetArcSegmentSweepDirection(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetArcSegmentSweepDirection(this KeyFrame keyFrame, IObservable<Avalonia.Media.SweepDirection> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

@@ -228,7 +228,7 @@ public static partial class StyledElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.IStyledElement> ObserveParent(this Avalonia.StyledElement obj)
+    public static IObservable<Avalonia.StyledElement> ObserveParent(this Avalonia.StyledElement obj)
     {
         return obj.GetObservable(Avalonia.StyledElement.ParentProperty);
     }
@@ -239,7 +239,7 @@ public static partial class StyledElementExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.StyledElement OnParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<Avalonia.IStyledElement>> handler)
+    public static Avalonia.StyledElement OnParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<Avalonia.StyledElement>> handler)
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.ParentProperty);
         handler(obj, observable);
@@ -255,7 +255,7 @@ public static partial class StyledElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T TemplatedParent<T>(this T obj, Avalonia.Styling.ITemplatedControl value) where T : Avalonia.StyledElement
+    public static T TemplatedParent<T>(this T obj, Avalonia.AvaloniaObject value) where T : Avalonia.StyledElement
     {
         obj[Avalonia.StyledElement.TemplatedParentProperty] = value;
         return obj;
@@ -292,7 +292,7 @@ public static partial class StyledElementExtensions
     /// <returns>The target object reference.</returns>
     public static T TemplatedParent<T>(
         this T obj,
-        IObservable<Avalonia.Styling.ITemplatedControl> observable,
+        IObservable<Avalonia.AvaloniaObject> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -325,7 +325,7 @@ public static partial class StyledElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Styling.ITemplatedControl> ObserveTemplatedParent(this Avalonia.StyledElement obj)
+    public static IObservable<Avalonia.AvaloniaObject> ObserveTemplatedParent(this Avalonia.StyledElement obj)
     {
         return obj.GetObservable(Avalonia.StyledElement.TemplatedParentProperty);
     }
@@ -337,7 +337,7 @@ public static partial class StyledElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTemplatedParent<T>(this T obj, Action<Avalonia.StyledElement, IObservable<Avalonia.Styling.ITemplatedControl>> handler) where T : Avalonia.StyledElement
+    public static T OnTemplatedParent<T>(this T obj, Action<Avalonia.StyledElement, IObservable<Avalonia.AvaloniaObject>> handler) where T : Avalonia.StyledElement
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.TemplatedParentProperty);
         handler(obj, observable);

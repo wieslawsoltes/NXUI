@@ -15,7 +15,7 @@ public static partial class VisualBrushExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Visual<T>(this T obj, Avalonia.VisualTree.IVisual value) where T : Avalonia.Media.VisualBrush
+    public static T Visual<T>(this T obj, Avalonia.Visual value) where T : Avalonia.Media.VisualBrush
     {
         obj[Avalonia.Media.VisualBrush.VisualProperty] = value;
         return obj;
@@ -52,7 +52,7 @@ public static partial class VisualBrushExtensions
     /// <returns>The target object reference.</returns>
     public static T Visual<T>(
         this T obj,
-        IObservable<Avalonia.VisualTree.IVisual> observable,
+        IObservable<Avalonia.Visual> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.VisualBrush
     {
@@ -85,7 +85,7 @@ public static partial class VisualBrushExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.VisualTree.IVisual> ObserveVisual(this Avalonia.Media.VisualBrush obj)
+    public static IObservable<Avalonia.Visual> ObserveVisual(this Avalonia.Media.VisualBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.VisualBrush.VisualProperty);
     }
@@ -97,7 +97,7 @@ public static partial class VisualBrushExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnVisual<T>(this T obj, Action<Avalonia.Media.VisualBrush, IObservable<Avalonia.VisualTree.IVisual>> handler) where T : Avalonia.Media.VisualBrush
+    public static T OnVisual<T>(this T obj, Action<Avalonia.Media.VisualBrush, IObservable<Avalonia.Visual>> handler) where T : Avalonia.Media.VisualBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.VisualBrush.VisualProperty);
         handler(obj, observable);

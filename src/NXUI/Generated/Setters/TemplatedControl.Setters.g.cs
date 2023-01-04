@@ -21,17 +21,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlBackground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlBackground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetTemplatedControlBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlBackground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlBackground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlBackground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlBorderBrush(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlBorderBrush(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlBorderBrush(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetTemplatedControlBorderBrush(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlBorderBrush(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlBorderBrush(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlBorderBrush(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlBorderThickness(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlBorderThickness(this KeyFrame keyFrame, Avalonia.Thickness value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlBorderThickness(this KeyFrame keyFrame, Avalonia.Thickness value)
+    public static KeyFrame SetTemplatedControlBorderThickness(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlBorderThickness(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlBorderThickness(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlBorderThickness(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlCornerRadius(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlCornerRadius(this KeyFrame keyFrame, Avalonia.CornerRadius value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlCornerRadius(this KeyFrame keyFrame, Avalonia.CornerRadius value)
+    public static KeyFrame SetTemplatedControlCornerRadius(this KeyFrame keyFrame, IObservable<Avalonia.CornerRadius> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlCornerRadius(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlCornerRadius(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlCornerRadius(this KeyFrame keyFrame, IObservable<Avalonia.CornerRadius> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontFamily(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlFontFamily(this KeyFrame keyFrame, Avalonia.Media.FontFamily value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontFamily(this KeyFrame keyFrame, Avalonia.Media.FontFamily value)
+    public static KeyFrame SetTemplatedControlFontFamily(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontFamily> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlFontFamily(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlFontFamily(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontFamily(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontFamily> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -391,17 +381,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontSize(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlFontSize(this KeyFrame keyFrame, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
     /// </summary>
@@ -418,12 +407,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontSize(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetTemplatedControlFontSize(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlFontSize(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -435,18 +435,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlFontSize(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontSize(this KeyFrame keyFrame, IObservable<System.Double> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -465,17 +453,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontStyle(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlFontStyle(this KeyFrame keyFrame, Avalonia.Media.FontStyle value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
     /// </summary>
@@ -492,12 +479,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontStyle(this KeyFrame keyFrame, Avalonia.Media.FontStyle value)
+    public static KeyFrame SetTemplatedControlFontStyle(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStyle> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlFontStyle(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -509,18 +507,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlFontStyle(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontStyle(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStyle> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -539,17 +525,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontWeight(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlFontWeight(this KeyFrame keyFrame, Avalonia.Media.FontWeight value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
     /// </summary>
@@ -566,12 +551,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontWeight(this KeyFrame keyFrame, Avalonia.Media.FontWeight value)
+    public static KeyFrame SetTemplatedControlFontWeight(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontWeight> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlFontWeight(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -583,18 +579,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlFontWeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontWeight(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontWeight> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -613,17 +597,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlFontStretch(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlFontStretch(this KeyFrame keyFrame, Avalonia.Media.FontStretch value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
     /// </summary>
@@ -640,12 +623,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontStretch(this KeyFrame keyFrame, Avalonia.Media.FontStretch value)
+    public static KeyFrame SetTemplatedControlFontStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStretch> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlFontStretch(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -657,18 +651,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlFontStretch(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlFontStretch(this KeyFrame keyFrame, IObservable<Avalonia.Media.FontStretch> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -687,17 +669,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlForeground(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
     /// </summary>
@@ -714,12 +695,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlForeground(this KeyFrame keyFrame, Avalonia.Media.IBrush value)
+    public static KeyFrame SetTemplatedControlForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlForeground(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -731,18 +723,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlForeground(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlForeground(this KeyFrame keyFrame, IObservable<Avalonia.Media.IBrush> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -761,17 +741,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlPadding(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlPadding(this KeyFrame keyFrame, Avalonia.Thickness value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
     /// </summary>
@@ -788,12 +767,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlPadding(this KeyFrame keyFrame, Avalonia.Thickness value)
+    public static KeyFrame SetTemplatedControlPadding(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlPadding(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -805,18 +795,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlPadding(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlPadding(this KeyFrame keyFrame, IObservable<Avalonia.Thickness> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -835,17 +813,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlTemplate(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IControlTemplate value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
     /// </summary>
@@ -862,12 +839,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlTemplate(this KeyFrame keyFrame, Avalonia.Controls.Templates.IControlTemplate value)
+    public static KeyFrame SetTemplatedControlTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IControlTemplate> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlTemplate(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -879,18 +867,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlTemplate(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlTemplate(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Templates.IControlTemplate> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -909,17 +885,16 @@ public static partial class TemplatedControlSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetTemplatedControlIsTemplateFocusTarget(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTemplatedControlIsTemplateFocusTarget(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
     /// </summary>
@@ -936,12 +911,23 @@ public static partial class TemplatedControlSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlIsTemplateFocusTarget(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetTemplatedControlIsTemplateFocusTarget(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTemplatedControlIsTemplateFocusTarget(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -953,18 +939,6 @@ public static partial class TemplatedControlSetters
     public static KeyFrame SetTemplatedControlIsTemplateFocusTarget(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTemplatedControlIsTemplateFocusTarget(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, observable.ToBinding()));
         return keyFrame;
     }
 

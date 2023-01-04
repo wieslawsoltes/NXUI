@@ -21,17 +21,16 @@ public static partial class MatrixTransformSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetMatrixTransformMatrix(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMatrixTransformMatrix(this KeyFrame keyFrame, Avalonia.Matrix value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.MatrixTransform.MatrixProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.MatrixTransform.MatrixProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class MatrixTransformSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMatrixTransformMatrix(this KeyFrame keyFrame, Avalonia.Matrix value)
+    public static KeyFrame SetMatrixTransformMatrix(this KeyFrame keyFrame, IObservable<Avalonia.Matrix> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.MatrixTransform.MatrixProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.MatrixTransform.MatrixProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMatrixTransformMatrix(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.MatrixTransform.MatrixProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class MatrixTransformSetters
     public static KeyFrame SetMatrixTransformMatrix(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.MatrixTransform.MatrixProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetMatrixTransformMatrix(this KeyFrame keyFrame, IObservable<Avalonia.Matrix> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.MatrixTransform.MatrixProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

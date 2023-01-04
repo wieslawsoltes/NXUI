@@ -21,17 +21,16 @@ public static partial class RectangleGeometrySetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetRectangleGeometryRect(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRectangleGeometryRect(this KeyFrame keyFrame, Avalonia.Rect value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class RectangleGeometrySetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRectangleGeometryRect(this KeyFrame keyFrame, Avalonia.Rect value)
+    public static KeyFrame SetRectangleGeometryRect(this KeyFrame keyFrame, IObservable<Avalonia.Rect> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRectangleGeometryRect(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class RectangleGeometrySetters
     public static KeyFrame SetRectangleGeometryRect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRectangleGeometryRect(this KeyFrame keyFrame, IObservable<Avalonia.Rect> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

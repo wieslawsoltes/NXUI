@@ -2488,6 +2488,94 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
+    // Avalonia.Controls.TextBox.CanUndoProperty
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TextBox.CanUndoProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TextBox.CanUndoProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindCanUndo(
+        this Avalonia.Controls.TextBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.TextBox.CanUndoProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.CanUndoProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveCanUndo(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.CanUndoProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.CanUndoProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TextBox OnCanUndo(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanUndoProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.TextBox.CanRedoProperty
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TextBox.CanRedoProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TextBox.CanRedoProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindCanRedo(
+        this Avalonia.Controls.TextBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.TextBox.CanRedoProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TextBox.CanRedoProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveCanRedo(this Avalonia.Controls.TextBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBox.CanRedoProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBox.CanRedoProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TextBox OnCanRedo(this Avalonia.Controls.TextBox obj, Action<Avalonia.Controls.TextBox, IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBox.CanRedoProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBox.CopyingToClipboardEvent
 
     /// <summary>

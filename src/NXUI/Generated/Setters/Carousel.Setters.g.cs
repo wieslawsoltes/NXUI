@@ -21,17 +21,16 @@ public static partial class CarouselSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Carousel.IsVirtualizedProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Carousel.IsVirtualizedProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetCarouselIsVirtualized(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetCarouselIsVirtualized(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Carousel.IsVirtualizedProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Carousel.IsVirtualizedProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Carousel.IsVirtualizedProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class CarouselSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Carousel.IsVirtualizedProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCarouselIsVirtualized(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetCarouselIsVirtualized(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Carousel.IsVirtualizedProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Carousel.IsVirtualizedProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Carousel.IsVirtualizedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetCarouselIsVirtualized(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Carousel.IsVirtualizedProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class CarouselSetters
     public static KeyFrame SetCarouselIsVirtualized(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Carousel.IsVirtualizedProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Carousel.IsVirtualizedProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCarouselIsVirtualized(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Carousel.IsVirtualizedProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class CarouselSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetCarouselPageTransition(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetCarouselPageTransition(this KeyFrame keyFrame, Avalonia.Animation.IPageTransition value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Carousel.PageTransitionProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Carousel.PageTransitionProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class CarouselSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCarouselPageTransition(this KeyFrame keyFrame, Avalonia.Animation.IPageTransition value)
+    public static KeyFrame SetCarouselPageTransition(this KeyFrame keyFrame, IObservable<Avalonia.Animation.IPageTransition> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Carousel.PageTransitionProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Carousel.PageTransitionProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetCarouselPageTransition(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Carousel.PageTransitionProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class CarouselSetters
     public static KeyFrame SetCarouselPageTransition(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Carousel.PageTransitionProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetCarouselPageTransition(this KeyFrame keyFrame, IObservable<Avalonia.Animation.IPageTransition> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Carousel.PageTransitionProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

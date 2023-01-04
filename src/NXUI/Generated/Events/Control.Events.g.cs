@@ -27,4 +27,9 @@ public static partial class Events
     /// The <see cref="Avalonia.Controls.Control.UnloadedEvent"/> event defined in <see cref="Avalonia.Controls.Control"/> class.
     /// </summary>
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> ControlUnloaded => Avalonia.Controls.Control.UnloadedEvent;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Control.SizeChangedEvent"/> event defined in <see cref="Avalonia.Controls.Control"/> class.
+    /// </summary>
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Controls.SizeChangedEventArgs> ControlSizeChanged => Avalonia.Controls.Control.SizeChangedEvent;
 }

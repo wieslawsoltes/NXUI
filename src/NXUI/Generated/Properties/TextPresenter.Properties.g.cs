@@ -74,6 +74,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Double> TextPresenterLineHeight => Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> TextPresenterLetterSpacing => Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenterBackground => Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty;

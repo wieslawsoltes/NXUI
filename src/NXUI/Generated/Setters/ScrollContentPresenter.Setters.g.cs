@@ -21,17 +21,16 @@ public static partial class ScrollContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterCanHorizontallyScroll(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterCanHorizontallyScroll(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class ScrollContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterCanHorizontallyScroll(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetScrollContentPresenterCanHorizontallyScroll(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterCanHorizontallyScroll(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class ScrollContentPresenterSetters
     public static KeyFrame SetScrollContentPresenterCanHorizontallyScroll(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterCanHorizontallyScroll(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class ScrollContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterCanVerticallyScroll(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterCanVerticallyScroll(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class ScrollContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterCanVerticallyScroll(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetScrollContentPresenterCanVerticallyScroll(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterCanVerticallyScroll(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class ScrollContentPresenterSetters
     public static KeyFrame SetScrollContentPresenterCanVerticallyScroll(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterCanVerticallyScroll(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class ScrollContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterExtent(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterExtent(this KeyFrame keyFrame, Avalonia.Size value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class ScrollContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterExtent(this KeyFrame keyFrame, Avalonia.Size value)
+    public static KeyFrame SetScrollContentPresenterExtent(this KeyFrame keyFrame, IObservable<Avalonia.Size> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterExtent(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class ScrollContentPresenterSetters
     public static KeyFrame SetScrollContentPresenterExtent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterExtent(this KeyFrame keyFrame, IObservable<Avalonia.Size> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class ScrollContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterOffset(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterOffset(this KeyFrame keyFrame, Avalonia.Vector value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class ScrollContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterOffset(this KeyFrame keyFrame, Avalonia.Vector value)
+    public static KeyFrame SetScrollContentPresenterOffset(this KeyFrame keyFrame, IObservable<Avalonia.Vector> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterOffset(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class ScrollContentPresenterSetters
     public static KeyFrame SetScrollContentPresenterOffset(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterOffset(this KeyFrame keyFrame, IObservable<Avalonia.Vector> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -317,17 +309,16 @@ public static partial class ScrollContentPresenterSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetScrollContentPresenterViewport(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterViewport(this KeyFrame keyFrame, Avalonia.Size value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/>.
     /// </summary>
@@ -344,12 +335,23 @@ public static partial class ScrollContentPresenterSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterViewport(this KeyFrame keyFrame, Avalonia.Size value)
+    public static KeyFrame SetScrollContentPresenterViewport(this KeyFrame keyFrame, IObservable<Avalonia.Size> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterViewport(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -361,18 +363,6 @@ public static partial class ScrollContentPresenterSetters
     public static KeyFrame SetScrollContentPresenterViewport(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetScrollContentPresenterViewport(this KeyFrame keyFrame, IObservable<Avalonia.Size> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty, observable.ToBinding()));
         return keyFrame;
     }
 

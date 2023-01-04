@@ -21,17 +21,16 @@ public static partial class GradientBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGradientBrushSpreadMethod(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGradientBrushSpreadMethod(this KeyFrame keyFrame, Avalonia.Media.GradientSpreadMethod value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GradientBrush.SpreadMethodProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientBrush.SpreadMethodProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class GradientBrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGradientBrushSpreadMethod(this KeyFrame keyFrame, Avalonia.Media.GradientSpreadMethod value)
+    public static KeyFrame SetGradientBrushSpreadMethod(this KeyFrame keyFrame, IObservable<Avalonia.Media.GradientSpreadMethod> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientBrush.SpreadMethodProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientBrush.SpreadMethodProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGradientBrushSpreadMethod(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GradientBrush.SpreadMethodProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class GradientBrushSetters
     public static KeyFrame SetGradientBrushSpreadMethod(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientBrush.SpreadMethodProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGradientBrushSpreadMethod(this KeyFrame keyFrame, IObservable<Avalonia.Media.GradientSpreadMethod> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientBrush.SpreadMethodProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class GradientBrushSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetGradientBrushGradientStops(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetGradientBrushGradientStops(this KeyFrame keyFrame, Avalonia.Media.GradientStops value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.GradientBrush.GradientStopsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientBrush.GradientStopsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class GradientBrushSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGradientBrushGradientStops(this KeyFrame keyFrame, Avalonia.Media.GradientStops value)
+    public static KeyFrame SetGradientBrushGradientStops(this KeyFrame keyFrame, IObservable<Avalonia.Media.GradientStops> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientBrush.GradientStopsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientBrush.GradientStopsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetGradientBrushGradientStops(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.GradientBrush.GradientStopsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class GradientBrushSetters
     public static KeyFrame SetGradientBrushGradientStops(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientBrush.GradientStopsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGradientBrushGradientStops(this KeyFrame keyFrame, IObservable<Avalonia.Media.GradientStops> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.GradientBrush.GradientStopsProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

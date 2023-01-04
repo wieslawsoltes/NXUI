@@ -21,17 +21,16 @@ public static partial class PathFigureSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPathFigureIsClosed(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPathFigureIsClosed(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
     /// </summary>
@@ -48,12 +47,23 @@ public static partial class PathFigureSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureIsClosed(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetPathFigureIsClosed(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPathFigureIsClosed(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -65,18 +75,6 @@ public static partial class PathFigureSetters
     public static KeyFrame SetPathFigureIsClosed(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureIsClosed(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -95,17 +93,16 @@ public static partial class PathFigureSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPathFigureIsFilled(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPathFigureIsFilled(this KeyFrame keyFrame, System.Boolean value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
     /// </summary>
@@ -122,12 +119,23 @@ public static partial class PathFigureSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureIsFilled(this KeyFrame keyFrame, System.Boolean value)
+    public static KeyFrame SetPathFigureIsFilled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPathFigureIsFilled(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -139,18 +147,6 @@ public static partial class PathFigureSetters
     public static KeyFrame SetPathFigureIsFilled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureIsFilled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -169,17 +165,16 @@ public static partial class PathFigureSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPathFigureSegments(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPathFigureSegments(this KeyFrame keyFrame, Avalonia.Media.PathSegments value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
     /// </summary>
@@ -196,12 +191,23 @@ public static partial class PathFigureSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureSegments(this KeyFrame keyFrame, Avalonia.Media.PathSegments value)
+    public static KeyFrame SetPathFigureSegments(this KeyFrame keyFrame, IObservable<Avalonia.Media.PathSegments> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPathFigureSegments(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -213,18 +219,6 @@ public static partial class PathFigureSetters
     public static KeyFrame SetPathFigureSegments(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureSegments(this KeyFrame keyFrame, IObservable<Avalonia.Media.PathSegments> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, observable.ToBinding()));
         return keyFrame;
     }
 
@@ -243,17 +237,16 @@ public static partial class PathFigureSetters
     }
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
     /// </summary>
-    /// <param name="style">The target style.</param>
-    /// <param name="binding">The property binding.</param>
-    /// <returns>The target style object reference.</returns>
-    public static Style SetPathFigureStartPoint(this Style style, Avalonia.Data.IBinding binding)
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPathFigureStartPoint(this KeyFrame keyFrame, Avalonia.Point value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, binding));
-        return style;
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, value));
+        return keyFrame;
     }
-
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
     /// </summary>
@@ -270,12 +263,23 @@ public static partial class PathFigureSetters
     /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="value">The property value.</param>
+    /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureStartPoint(this KeyFrame keyFrame, Avalonia.Point value)
+    public static KeyFrame SetPathFigureStartPoint(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, observable.ToBinding()));
         return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPathFigureStartPoint(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, binding));
+        return style;
     }
 
     /// <summary>
@@ -287,18 +291,6 @@ public static partial class PathFigureSetters
     public static KeyFrame SetPathFigureStartPoint(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, binding));
-        return keyFrame;
-    }
-
-    /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
-    /// </summary>
-    /// <param name="keyFrame">The target keyframe.</param>
-    /// <param name="observable">The property binding.</param>
-    /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPathFigureStartPoint(this KeyFrame keyFrame, IObservable<Avalonia.Point> observable)
-    {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, observable.ToBinding()));
         return keyFrame;
     }
 }

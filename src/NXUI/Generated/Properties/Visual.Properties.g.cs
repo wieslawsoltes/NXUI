@@ -59,9 +59,14 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.RelativePoint> VisualRenderTransformOrigin => Avalonia.Visual.RenderTransformOriginProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Visual.FlowDirectionProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<Avalonia.Media.FlowDirection> VisualFlowDirection => Avalonia.Visual.FlowDirectionProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Visual.VisualParentProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Visual,Avalonia.VisualTree.IVisual> VisualVisualParent => Avalonia.Visual.VisualParentProperty;
+    public static Avalonia.DirectProperty<Avalonia.Visual,Avalonia.Visual> VisualVisualParent => Avalonia.Visual.VisualParentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.ZIndexProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
