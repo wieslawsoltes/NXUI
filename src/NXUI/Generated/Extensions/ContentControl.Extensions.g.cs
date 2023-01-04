@@ -6,20 +6,6 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class ContentControlExtensions
 {
-    public static Builder<T> Content1<T>(this Builder<T> builder, Builder<System.Object> value) 
-        where T : Avalonia.Controls.ContentControl
-    {
-        void Setter(T obj) 
-            => obj[Avalonia.Controls.ContentControl.ContentProperty] = value.Build();
-
-        builder.Setters.Add(Setter);
-
-        return builder;
-    }
-    
-    
-    
-    
     // Avalonia.Controls.ContentControl.ContentProperty
 
     /// <summary>
