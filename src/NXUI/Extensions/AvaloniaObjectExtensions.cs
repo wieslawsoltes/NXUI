@@ -5,6 +5,14 @@
 /// </summary>
 public static class AvaloniaObjectExtensions
 {
+    public static Builder<IBinding> ToBinding1<T>(this IObservable<T> source)
+    {
+        return new ()
+        {
+            Activator = () => Avalonia.AvaloniaObjectExtensions.ToBinding(source)
+        };
+    }
+
     /// <summary>
     /// 
     /// </summary>
