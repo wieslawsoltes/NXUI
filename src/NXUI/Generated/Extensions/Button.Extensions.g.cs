@@ -826,12 +826,17 @@ public static partial class ButtonExtensions
 
     // TODO:
     public static Builder<T> OnClick1<T>(
-        this Builder<T> obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        this Builder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Button
     {
-        //var observable = obj.GetObservable(Avalonia.Controls.Button.ClickEvent, routes);
-        //handler(obj, observable);
-        return obj;
+        void Setter(T obj)
+        {
+            // TODO: Builder for handler?
+            var observable = obj.GetObservable(Avalonia.Controls.Button.ClickEvent, routes);
+            handler(obj, observable);
+        }
+        builder.Setters.Add(Setter);
+        return builder;
     }
     
     /// <summary>
