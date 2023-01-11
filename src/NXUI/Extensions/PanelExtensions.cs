@@ -33,7 +33,9 @@ public static partial class PanelExtensions
         return panel;
     }
 
-    public static Builder<T> Children1<T>(this  Builder<T> builder, params Builder<Control>[] children) where T : Panel
+    // TODO: No type checking for children builders (should check for return type of Control).
+    // public static Builder<T> Children1<T>(this  Builder<T> builder, params Builder<Control>[] children) where T : Panel
+    public static Builder<T> Children1<T>(this  Builder<T> builder, params IBuilder[] children) where T : Panel
     {
         void Setter(T obj) => obj.Children.AddRange(children.Select(x => (Control)x.Build()));
         builder.Setters.Add(Setter);
