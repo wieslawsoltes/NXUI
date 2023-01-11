@@ -824,6 +824,15 @@ public static partial class ButtonExtensions
         return obj;
     }
 
+    public static Builder<T> OnClick1<T>(
+        this Builder<T> obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Button
+    {
+        //var observable = obj.GetObservable(Avalonia.Controls.Button.ClickEvent, routes);
+        //handler(obj, observable);
+        return obj;
+    }
+    
     /// <summary>
     /// Gets an observable for the <see cref="Avalonia.Controls.Button.ClickEvent"/> event on an object of type <see cref="Avalonia.Controls.Button"/>.
     /// </summary>
