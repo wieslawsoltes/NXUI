@@ -9,9 +9,9 @@ Builder<Window> Build1()
         .Children1(
           Label1()
             .HorizontalAlignmentCenter1().VerticalAlignmentCenter1()
-            .Content1(count.ToBinding()),
+            .Content1(count.ToBinding1()),
           Button1()
-            .OnClick((_, o) => o.Subscribe(_ => count.OnNext(count.Value + 1)))
+            .OnClick1((_, o) => o.Subscribe(_ => count.OnNext(count.Value + 1)))
             .Content1("Count")));
 
 Window Build()
