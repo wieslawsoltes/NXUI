@@ -2,10 +2,8 @@
 
 public sealed class Builder<T> : IBuilder
 {
-    public static implicit operator Builder<T>(T value) => new ()
-    {
-        Activator = () => value
-    };
+    public static implicit operator Builder<T>(T value) 
+        => new () { Activator = () => value };
 
     public Func<T> Activator { get; set; }
 
