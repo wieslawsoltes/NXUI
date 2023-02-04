@@ -12,9 +12,9 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview3" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview5" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MinimalAvalonia" Version="11.0.0-preview3" />
+    <PackageReference Include="NXUI" Version="11.0.0-preview5" />
   </ItemGroup>
 </Project>
