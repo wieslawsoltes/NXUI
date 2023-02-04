@@ -24,11 +24,6 @@ public static partial class Properties
     public static Avalonia.DirectProperty<Avalonia.Controls.ComboBox,System.Object> ComboBoxSelectionBoxItem => Avalonia.Controls.ComboBox.SelectionBoxItemProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.ComboBox.VirtualizationModeProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.ItemVirtualizationMode> ComboBoxVirtualizationMode => Avalonia.Controls.ComboBox.VirtualizationModeProperty;
-
-    /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.String> ComboBoxPlaceholderText => Avalonia.Controls.ComboBox.PlaceholderTextProperty;

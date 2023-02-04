@@ -202,252 +202,86 @@ public static partial class ToggleButtonExtensions
         return obj;
     }
 
-    // Avalonia.Controls.Primitives.ToggleButton.CheckedEvent
+    // Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent
 
     /// <summary>
-    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.ToggleButton.CheckedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/>.
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="action">The action to be performed when the event is raised.</param>
     /// <param name="routes">The routing strategies for the event.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object.</returns>
-    public static T OnCheckedHandler<T>(
+    public static T OnIsCheckedChangedHandler<T>(
         this T obj,
         Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.ToggleButton
     {
-        obj.AddHandler(Avalonia.Controls.Primitives.ToggleButton.CheckedEvent, (_, args) => action(obj, args), routes);
+        obj.AddHandler(Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent, (_, args) => action(obj, args), routes);
         return obj;
     }
 
     /// <summary>
-    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.ToggleButton.CheckedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/> and returns an observable for the event.
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/> and returns an observable for the event.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <param name="routes">The routing strategies for the event.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object.</returns>
-    public static T OnChecked<T>(
+    public static T OnIsCheckedChanged<T>(
         this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.ToggleButton
     {
-        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.CheckedEvent, routes);
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent, routes);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Gets an observable for the <see cref="Avalonia.Controls.Primitives.ToggleButton.CheckedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/>.
+    /// Gets an observable for the <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="routes">The routing strategies for the event.</param>
     /// <returns>An observable for the event.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnChecked(
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIsCheckedChanged(
         this Avalonia.Controls.Primitives.ToggleButton obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
-        return obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.CheckedEvent, routes);
+        return obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent, routes);
     }
 
-    // Avalonia.Controls.Primitives.ToggleButton.UncheckedEvent
+    // Avalonia.Controls.Primitives.ToggleButton.IsCheckedChanged
 
     /// <summary>
-    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.ToggleButton.UncheckedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="action">The action to be performed when the event is raised.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object.</returns>
-    public static T OnUncheckedHandler<T>(
-        this T obj,
-        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.ToggleButton
-    {
-        obj.AddHandler(Avalonia.Controls.Primitives.ToggleButton.UncheckedEvent, (_, args) => action(obj, args), routes);
-        return obj;
-    }
-
-    /// <summary>
-    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.ToggleButton.UncheckedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/> and returns an observable for the event.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler to be called when the event is raised.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object.</returns>
-    public static T OnUnchecked<T>(
-        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.ToggleButton
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.UncheckedEvent, routes);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Gets an observable for the <see cref="Avalonia.Controls.Primitives.ToggleButton.UncheckedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <returns>An observable for the event.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUnchecked(
-        this Avalonia.Controls.Primitives.ToggleButton obj,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
-    {
-        return obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.UncheckedEvent, routes);
-    }
-
-    // Avalonia.Controls.Primitives.ToggleButton.IndeterminateEvent
-
-    /// <summary>
-    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.ToggleButton.IndeterminateEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="action">The action to be performed when the event is raised.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object.</returns>
-    public static T OnIndeterminateHandler<T>(
-        this T obj,
-        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.ToggleButton
-    {
-        obj.AddHandler(Avalonia.Controls.Primitives.ToggleButton.IndeterminateEvent, (_, args) => action(obj, args), routes);
-        return obj;
-    }
-
-    /// <summary>
-    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.ToggleButton.IndeterminateEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/> and returns an observable for the event.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler to be called when the event is raised.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object.</returns>
-    public static T OnIndeterminate<T>(
-        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.ToggleButton
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IndeterminateEvent, routes);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Gets an observable for the <see cref="Avalonia.Controls.Primitives.ToggleButton.IndeterminateEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.ToggleButton"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="routes">The routing strategies for the event.</param>
-    /// <returns>An observable for the event.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIndeterminate(
-        this Avalonia.Controls.Primitives.ToggleButton obj,
-        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
-    {
-        return obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IndeterminateEvent, routes);
-    }
-
-    // Avalonia.Controls.Primitives.ToggleButton.Checked
-
-    /// <summary>
-    /// Adds a handler to the `Checked` event on the specified object.
+    /// Adds a handler to the `IsCheckedChanged` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCheckedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ToggleButton
+    public static T OnIsCheckedChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ToggleButton
     {
         var observable = Observable
             .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-                h => obj.Checked += h, 
-                h => obj.Checked -= h)
+                h => obj.IsCheckedChanged += h, 
+                h => obj.IsCheckedChanged -= h)
             .Select(x => x.EventArgs);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Returns an observable for the `Checked` event on the specified object.
+    /// Returns an observable for the `IsCheckedChanged` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <returns>An observable for the `Checked` event on the specified object.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCheckedEvent(this Avalonia.Controls.Primitives.ToggleButton obj)
+    /// <returns>An observable for the `IsCheckedChanged` event on the specified object.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIsCheckedChangedEvent(this Avalonia.Controls.Primitives.ToggleButton obj)
     {
         return Observable
             .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-                h => obj.Checked += h, 
-                h => obj.Checked -= h)
-            .Select(x => x.EventArgs);
-    }
-
-    // Avalonia.Controls.Primitives.ToggleButton.Unchecked
-
-    /// <summary>
-    /// Adds a handler to the `Unchecked` event on the specified object.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler to be called when the event is raised.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnUncheckedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ToggleButton
-    {
-        var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-                h => obj.Unchecked += h, 
-                h => obj.Unchecked -= h)
-            .Select(x => x.EventArgs);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Returns an observable for the `Unchecked` event on the specified object.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>An observable for the `Unchecked` event on the specified object.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUncheckedEvent(this Avalonia.Controls.Primitives.ToggleButton obj)
-    {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-                h => obj.Unchecked += h, 
-                h => obj.Unchecked -= h)
-            .Select(x => x.EventArgs);
-    }
-
-    // Avalonia.Controls.Primitives.ToggleButton.Indeterminate
-
-    /// <summary>
-    /// Adds a handler to the `Indeterminate` event on the specified object.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler to be called when the event is raised.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnIndeterminateEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ToggleButton
-    {
-        var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-                h => obj.Indeterminate += h, 
-                h => obj.Indeterminate -= h)
-            .Select(x => x.EventArgs);
-        handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Returns an observable for the `Indeterminate` event on the specified object.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>An observable for the `Indeterminate` event on the specified object.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIndeterminateEvent(this Avalonia.Controls.Primitives.ToggleButton obj)
-    {
-        return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
-                h => obj.Indeterminate += h, 
-                h => obj.Indeterminate -= h)
+                h => obj.IsCheckedChanged += h, 
+                h => obj.IsCheckedChanged -= h)
             .Select(x => x.EventArgs);
     }
 }

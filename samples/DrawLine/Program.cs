@@ -41,7 +41,7 @@ Style LineStyle()
 {
   var strokeThickness = 1d;
   var strokeThicknessObservable = Observable
-    .Timer(TimeSpan.Zero, TimeSpan.FromSeconds(1), AvaloniaScheduler.Instance)
+    .Timer(TimeSpan.Zero, TimeSpan.FromSeconds(1))
     .Select(_ => strokeThickness += 0.5d);
   return Style()
     .Selector(x => x.OfType<Line>())

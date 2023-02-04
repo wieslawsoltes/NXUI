@@ -74,6 +74,26 @@ public static partial class Properties
     public static Avalonia.DirectProperty<Avalonia.Controls.ScrollViewer,System.Double> ScrollViewerVerticalScrollBarValue => Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<Avalonia.Controls.Primitives.SnapPointsType> ScrollViewerHorizontalSnapPointsType => Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<Avalonia.Controls.Primitives.SnapPointsType> ScrollViewerVerticalSnapPointsType => Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<Avalonia.Controls.Primitives.SnapPointsAlignment> ScrollViewerHorizontalSnapPointsAlignment => Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<Avalonia.Controls.Primitives.SnapPointsAlignment> ScrollViewerVerticalSnapPointsAlignment => Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.ScrollViewer,System.Double> ScrollViewerVerticalScrollBarViewportSize => Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty;
@@ -97,4 +117,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Boolean> ScrollViewerIsScrollChainingEnabled => Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Boolean> ScrollViewerIsScrollInertiaEnabled => Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty;
 }

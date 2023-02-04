@@ -149,4 +149,76 @@ public static partial class MenuFlyoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemTemplateProperty, binding));
         return keyFrame;
     }
+
+    // Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuFlyoutItemContainerTheme(this Style style, Avalonia.Styling.ControlTheme value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuFlyoutItemContainerTheme(this KeyFrame keyFrame, Avalonia.Styling.ControlTheme value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuFlyoutItemContainerTheme(this Style style, IObservable<Avalonia.Styling.ControlTheme> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuFlyoutItemContainerTheme(this KeyFrame keyFrame, IObservable<Avalonia.Styling.ControlTheme> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuFlyoutItemContainerTheme(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuFlyoutItemContainerTheme(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, binding));
+        return keyFrame;
+    }
 }

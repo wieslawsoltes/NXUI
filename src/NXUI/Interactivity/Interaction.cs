@@ -1,11 +1,17 @@
-﻿namespace NXUI.Interactivity;
+﻿using Avalonia.Reactive;
+
+namespace NXUI.Interactivity;
 
 /// <summary>
 /// 
 /// </summary>
 public class Interaction
 {
-    static Interaction() => BehaviorProperty.Changed.Subscribe(BehaviorChanged);
+    static Interaction()
+    {
+        BehaviorProperty.Changed.Subscribe(
+            new AnonymousObserver<AvaloniaPropertyChangedEventArgs<Behavior?>>(BehaviorChanged));
+    }
 
     /// <summary>
     /// 

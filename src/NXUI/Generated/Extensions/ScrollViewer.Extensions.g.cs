@@ -950,6 +950,542 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
+    // Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsType<T>(this T obj, Avalonia.Controls.Primitives.SnapPointsType value) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsType<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsType<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindHorizontalSnapPointsType(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.Primitives.SnapPointsType> ObserveHorizontalSnapPointsType(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalSnapPointsType<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.SnapPointsType>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsTypeNone<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty] = Avalonia.Controls.Primitives.SnapPointsType.None;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.Mandatory"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsTypeMandatory<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty] = Avalonia.Controls.Primitives.SnapPointsType.Mandatory;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.MandatorySingle"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsTypeMandatorySingle<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty] = Avalonia.Controls.Primitives.SnapPointsType.MandatorySingle;
+        return obj;
+    }
+
+    // Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsType<T>(this T obj, Avalonia.Controls.Primitives.SnapPointsType value) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsType<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsType<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindVerticalSnapPointsType(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.Primitives.SnapPointsType> ObserveVerticalSnapPointsType(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalSnapPointsType<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.SnapPointsType>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsTypeNone<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty] = Avalonia.Controls.Primitives.SnapPointsType.None;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.Mandatory"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsTypeMandatory<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty] = Avalonia.Controls.Primitives.SnapPointsType.Mandatory;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.MandatorySingle"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsTypeMandatorySingle<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty] = Avalonia.Controls.Primitives.SnapPointsType.MandatorySingle;
+        return obj;
+    }
+
+    // Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsAlignment<T>(this T obj, Avalonia.Controls.Primitives.SnapPointsAlignment value) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsAlignment<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsAlignment<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindHorizontalSnapPointsAlignment(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> ObserveHorizontalSnapPointsAlignment(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalSnapPointsAlignment<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Near"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsAlignmentNear<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Near;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Center;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Far"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T HorizontalSnapPointsAlignmentFar<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Far;
+        return obj;
+    }
+
+    // Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsAlignment<T>(this T obj, Avalonia.Controls.Primitives.SnapPointsAlignment value) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsAlignment<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsAlignment<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindVerticalSnapPointsAlignment(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> ObserveVerticalSnapPointsAlignment(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalSnapPointsAlignment<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Near"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsAlignmentNear<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Near;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Center;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Far"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T VerticalSnapPointsAlignmentFar<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Far;
+        return obj;
+    }
+
     // Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty
 
     /// <summary>
@@ -1376,6 +1912,104 @@ public static partial class ScrollViewerExtensions
     public static T OnIsScrollChainingEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsScrollInertiaEnabled<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsScrollInertiaEnabled<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsScrollInertiaEnabled<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindIsScrollInertiaEnabled(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveIsScrollInertiaEnabled(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsScrollInertiaEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty);
         handler(obj, observable);
         return obj;
     }

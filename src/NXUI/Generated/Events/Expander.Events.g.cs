@@ -16,7 +16,7 @@ public static partial class Events
     /// <summary>
     /// The <see cref="Avalonia.Controls.Expander.CollapsingEvent"/> event defined in <see cref="Avalonia.Controls.Expander"/> class.
     /// </summary>
-    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> ExpanderCollapsing => Avalonia.Controls.Expander.CollapsingEvent;
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.CancelRoutedEventArgs> ExpanderCollapsing => Avalonia.Controls.Expander.CollapsingEvent;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Expander.ExpandedEvent"/> event defined in <see cref="Avalonia.Controls.Expander"/> class.
@@ -26,5 +26,5 @@ public static partial class Events
     /// <summary>
     /// The <see cref="Avalonia.Controls.Expander.ExpandingEvent"/> event defined in <see cref="Avalonia.Controls.Expander"/> class.
     /// </summary>
-    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> ExpanderExpanding => Avalonia.Controls.Expander.ExpandingEvent;
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.CancelRoutedEventArgs> ExpanderExpanding => Avalonia.Controls.Expander.ExpandingEvent;
 }

@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9
 # Usage
 
 ```xml
-<PackageReference Include="NXUI" Version="11.0.0-preview3" />
+<PackageReference Include="NXUI" Version="11.0.0-preview5" />
 ```
 
 ```C#

@@ -9,7 +9,7 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
-    /// The <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> class.
+    /// The <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.ItemVirtualizationMode> ItemsPresenterVirtualizationMode => Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> ItemsPresenterItemsPanel => Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty;
 }

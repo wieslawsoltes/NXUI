@@ -12,7 +12,7 @@ public static class AvaloniaObjectExtensions
     /// <param name="targetProperty"></param>
     /// <param name="source"></param>
     /// <param name="sourceProperty"></param>
-    /// <param name="compositeDisposable"></param>
+    /// <param name="targetDisposable"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static T BindOneWay<T>(
@@ -20,10 +20,9 @@ public static class AvaloniaObjectExtensions
         AvaloniaProperty targetProperty, 
         AvaloniaObject source, 
         AvaloniaProperty sourceProperty, 
-        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
+        out IDisposable? targetDisposable) where T : AvaloniaObject
     {
-        var targetDisposable = target.Bind(targetProperty, source.GetObservable(sourceProperty));
-        compositeDisposable?.Add(targetDisposable);
+        targetDisposable = target.Bind(targetProperty, source.GetObservable(sourceProperty));
         return target;
     }
 
@@ -33,17 +32,16 @@ public static class AvaloniaObjectExtensions
     /// <param name="target"></param>
     /// <param name="targetProperty"></param>
     /// <param name="source"></param>
-    /// <param name="compositeDisposable"></param>
+    /// <param name="targetDisposable"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty<T> targetProperty, 
         IObservable<BindingValue<T>> source, 
-        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
+        out IDisposable? targetDisposable) where T : AvaloniaObject
     {
-        var targetDisposable = target.Bind(targetProperty, source);
-        compositeDisposable?.Add(targetDisposable);
+        targetDisposable = target.Bind(targetProperty, source);
         return target;
     }
 
@@ -53,17 +51,16 @@ public static class AvaloniaObjectExtensions
     /// <param name="target"></param>
     /// <param name="targetProperty"></param>
     /// <param name="source"></param>
-    /// <param name="compositeDisposable"></param>
+    /// <param name="targetDisposable"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty targetProperty, 
         IObservable<BindingValue<T>> source, 
-        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
+        out IDisposable? targetDisposable) where T : AvaloniaObject
     {
-        var targetDisposable = target.Bind(targetProperty, source.ToBinding());
-        compositeDisposable?.Add(targetDisposable);
+        targetDisposable = target.Bind(targetProperty, source.ToBinding());
         return target;
     }
 
@@ -73,17 +70,16 @@ public static class AvaloniaObjectExtensions
     /// <param name="target"></param>
     /// <param name="targetProperty"></param>
     /// <param name="source"></param>
-    /// <param name="compositeDisposable"></param>
+    /// <param name="targetDisposable"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty<T> targetProperty, 
         IObservable<object?> source, 
-        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
+        out IDisposable? targetDisposable) where T : AvaloniaObject
     {
-        var targetDisposable = target.Bind(targetProperty, source);
-        compositeDisposable?.Add(targetDisposable);
+        targetDisposable = target.Bind(targetProperty, source);
         return target;
     }
 
@@ -93,17 +89,16 @@ public static class AvaloniaObjectExtensions
     /// <param name="target"></param>
     /// <param name="targetProperty"></param>
     /// <param name="source"></param>
-    /// <param name="compositeDisposable"></param>
+    /// <param name="targetDisposable"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static T BindOneWay<T>(
         this T target, 
         AvaloniaProperty targetProperty, 
         IObservable<object?> source, 
-        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
+        out IDisposable? targetDisposable) where T : AvaloniaObject
     {
-        var targetDisposable = target.Bind(targetProperty, source);
-        compositeDisposable?.Add(targetDisposable);
+        targetDisposable = target.Bind(targetProperty, source);
         return target;
     }
 
@@ -114,7 +109,8 @@ public static class AvaloniaObjectExtensions
     /// <param name="targetProperty"></param>
     /// <param name="source"></param>
     /// <param name="sourceProperty"></param>
-    /// <param name="compositeDisposable"></param>
+    /// <param name="targetDisposable"></param>
+    /// <param name="sourceDisposable"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static T BindTwoWay<T>(
@@ -122,12 +118,11 @@ public static class AvaloniaObjectExtensions
         AvaloniaProperty targetProperty, 
         AvaloniaObject source, 
         AvaloniaProperty sourceProperty, 
-        CompositeDisposable? compositeDisposable = null) where T : AvaloniaObject
+        out IDisposable? targetDisposable,
+        out IDisposable? sourceDisposable) where T : AvaloniaObject
     {
-        var targetDisposable = target.Bind(targetProperty, source.GetObservable(sourceProperty));
-        var sourceDisposable = source.Bind(sourceProperty, target.GetObservable(targetProperty));
-        compositeDisposable?.Add(targetDisposable);
-        compositeDisposable?.Add(sourceDisposable);
+        targetDisposable = target.Bind(targetProperty, source.GetObservable(sourceProperty));
+        sourceDisposable = source.Bind(sourceProperty, target.GetObservable(targetProperty));
         return target;
     }
 }

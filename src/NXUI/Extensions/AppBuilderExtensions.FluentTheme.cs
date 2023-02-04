@@ -9,12 +9,19 @@ public static partial class AppBuilderExtensions
     /// 
     /// </summary>
     /// <param name="builder"></param>
-    /// <param name="mode"></param>
+    /// <param name="themeVariant"></param>
     /// <returns></returns>
     public static AppBuilder UseFluentTheme(
         this AppBuilder builder, 
-        FluentThemeMode mode = Avalonia.Themes.Fluent.FluentThemeMode.Light) 
+        ThemeVariant? themeVariant = null) 
     {
-        return builder.AfterSetup(_ => builder.Instance?.Styles.Add(new FluentTheme { Mode = mode }));
+        return builder.AfterSetup(_ =>
+        {
+            builder.Instance?.Styles.Add(new FluentTheme());
+            if (themeVariant is { } && builder.Instance is { })
+            {
+                builder.Instance.RequestedThemeVariant = themeVariant;
+            }
+        });
     }
 }

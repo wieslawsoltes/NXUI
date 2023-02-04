@@ -149,4 +149,149 @@ public static partial class StackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.OrientationProperty, binding));
         return keyFrame;
     }
+
+    // Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetStackPanelAreHorizontalSnapPointsRegular(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetStackPanelAreHorizontalSnapPointsRegular(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetStackPanelAreHorizontalSnapPointsRegular(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetStackPanelAreHorizontalSnapPointsRegular(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetStackPanelAreHorizontalSnapPointsRegular(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetStackPanelAreHorizontalSnapPointsRegular(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetStackPanelAreVerticalSnapPointsRegular(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetStackPanelAreVerticalSnapPointsRegular(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetStackPanelAreVerticalSnapPointsRegular(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetStackPanelAreVerticalSnapPointsRegular(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetStackPanelAreVerticalSnapPointsRegular(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetStackPanelAreVerticalSnapPointsRegular(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty, binding));
+        return keyFrame;
+    }
+
 }

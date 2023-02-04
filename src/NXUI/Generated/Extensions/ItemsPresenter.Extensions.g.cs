@@ -6,23 +6,23 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class ItemsPresenterExtensions
 {
-    // Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty
+    // Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T VirtualizationMode<T>(this T obj, Avalonia.Controls.ItemVirtualizationMode value) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    public static T ItemsPanel<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.Panel> value) where T : Avalonia.Controls.Presenters.ItemsPresenter
     {
-        obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty] = value;
+        obj[Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -30,19 +30,19 @@ public static partial class ItemsPresenterExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T VirtualizationMode<T>(
+    public static T ItemsPanel<T>(
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
     {
-        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -50,81 +50,57 @@ public static partial class ItemsPresenterExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T VirtualizationMode<T>(
+    public static T ItemsPanel<T>(
         this T obj,
-        IObservable<Avalonia.Controls.ItemVirtualizationMode> observable,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
     {
-        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVirtualizationMode(
+    /// <returns>A <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindItemsPanel(
         this Avalonia.Controls.Presenters.ItemsPresenter obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.ItemVirtualizationMode> ObserveVirtualizationMode(this Avalonia.Controls.Presenters.ItemsPresenter obj)
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> ObserveItemsPanel(this Avalonia.Controls.Presenters.ItemsPresenter obj)
     {
-        return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty);
+        return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnVirtualizationMode<T>(this T obj, Action<Avalonia.Controls.Presenters.ItemsPresenter, IObservable<Avalonia.Controls.ItemVirtualizationMode>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    public static T OnItemsPanel<T>(this T obj, Action<Avalonia.Controls.Presenters.ItemsPresenter, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenter
     {
-        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty);
         handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> property value to <see cref="Avalonia.Controls.ItemVirtualizationMode.None"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T VirtualizationModeNone<T>(this T obj) where T : Avalonia.Controls.Presenters.ItemsPresenter
-    {
-        obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.None;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty"/> property value to <see cref="Avalonia.Controls.ItemVirtualizationMode.Simple"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T VirtualizationModeSimple<T>(this T obj) where T : Avalonia.Controls.Presenters.ItemsPresenter
-    {
-        obj[Avalonia.Controls.Presenters.ItemsPresenter.VirtualizationModeProperty] = Avalonia.Controls.ItemVirtualizationMode.Simple;
         return obj;
     }
 }

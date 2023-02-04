@@ -50,50 +50,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-    // Avalonia.Visual.TransformedBoundsProperty
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Visual.TransformedBoundsProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Visual.TransformedBoundsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindTransformedBounds(
-        this Avalonia.Visual obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Visual.TransformedBoundsProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Visual.TransformedBoundsProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<System.Nullable<Avalonia.VisualTree.TransformedBounds>> ObserveTransformedBounds(this Avalonia.Visual obj)
-    {
-        return obj.GetObservable(Avalonia.Visual.TransformedBoundsProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Visual.TransformedBoundsProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <returns>The target object reference.</returns>
-    public static Avalonia.Visual OnTransformedBounds(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<System.Nullable<Avalonia.VisualTree.TransformedBounds>>> handler)
-    {
-        var observable = obj.GetObservable(Avalonia.Visual.TransformedBoundsProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // Avalonia.Visual.ClipToBoundsProperty
 
     /// <summary>

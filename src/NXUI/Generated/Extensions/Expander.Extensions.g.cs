@@ -409,7 +409,7 @@ public static partial class ExpanderExtensions
     /// <returns>The target object.</returns>
     public static T OnCollapsingHandler<T>(
         this T obj,
-        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Action<T, Avalonia.Interactivity.CancelRoutedEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Expander
     {
         obj.AddHandler(Avalonia.Controls.Expander.CollapsingEvent, (_, args) => action(obj, args), routes);
@@ -425,7 +425,7 @@ public static partial class ExpanderExtensions
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object.</returns>
     public static T OnCollapsing<T>(
-        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Expander
     {
         var observable = obj.GetObservable(Avalonia.Controls.Expander.CollapsingEvent, routes);
@@ -439,7 +439,7 @@ public static partial class ExpanderExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="routes">The routing strategies for the event.</param>
     /// <returns>An observable for the event.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCollapsing(
+    public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnCollapsing(
         this Avalonia.Controls.Expander obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
@@ -507,7 +507,7 @@ public static partial class ExpanderExtensions
     /// <returns>The target object.</returns>
     public static T OnExpandingHandler<T>(
         this T obj,
-        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Action<T, Avalonia.Interactivity.CancelRoutedEventArgs> action,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Expander
     {
         obj.AddHandler(Avalonia.Controls.Expander.ExpandingEvent, (_, args) => action(obj, args), routes);
@@ -523,7 +523,7 @@ public static partial class ExpanderExtensions
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object.</returns>
     public static T OnExpanding<T>(
-        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Expander
     {
         var observable = obj.GetObservable(Avalonia.Controls.Expander.ExpandingEvent, routes);
@@ -537,7 +537,7 @@ public static partial class ExpanderExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="routes">The routing strategies for the event.</param>
     /// <returns>An observable for the event.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnExpanding(
+    public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnExpanding(
         this Avalonia.Controls.Expander obj,
         Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
     {
@@ -587,10 +587,10 @@ public static partial class ExpanderExtensions
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCollapsingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Expander
+    public static T OnCollapsingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler) where T : Avalonia.Controls.Expander
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
                 h => obj.Collapsing += h, 
                 h => obj.Collapsing -= h)
             .Select(x => x.EventArgs);
@@ -603,10 +603,10 @@ public static partial class ExpanderExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable for the `Collapsing` event on the specified object.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCollapsingEvent(this Avalonia.Controls.Expander obj)
+    public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnCollapsingEvent(this Avalonia.Controls.Expander obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
                 h => obj.Collapsing += h, 
                 h => obj.Collapsing -= h)
             .Select(x => x.EventArgs);
@@ -655,10 +655,10 @@ public static partial class ExpanderExtensions
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnExpandingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Expander
+    public static T OnExpandingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler) where T : Avalonia.Controls.Expander
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
                 h => obj.Expanding += h, 
                 h => obj.Expanding -= h)
             .Select(x => x.EventArgs);
@@ -671,10 +671,10 @@ public static partial class ExpanderExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable for the `Expanding` event on the specified object.</returns>
-    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnExpandingEvent(this Avalonia.Controls.Expander obj)
+    public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnExpandingEvent(this Avalonia.Controls.Expander obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
                 h => obj.Expanding += h, 
                 h => obj.Expanding -= h)
             .Select(x => x.EventArgs);

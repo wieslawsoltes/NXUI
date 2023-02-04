@@ -21,5 +21,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/> property defined in <see cref="Avalonia.Controls.Expander"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Expander,System.Boolean> ExpanderIsExpanded => Avalonia.Controls.Expander.IsExpandedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ExpanderIsExpanded => Avalonia.Controls.Expander.IsExpandedProperty;
 }

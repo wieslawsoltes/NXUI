@@ -442,6 +442,50 @@ public static partial class ItemsControlExtensions
         return obj;
     }
 
+    // Avalonia.Controls.ItemsControl.ItemsViewProperty
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ItemsControl.ItemsViewProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ItemsControl.ItemsViewProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindItemsView(
+        this Avalonia.Controls.ItemsControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ItemsControl.ItemsViewProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ItemsControl.ItemsViewProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.ItemsSourceView> ObserveItemsView(this Avalonia.Controls.ItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsViewProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ItemsControl.ItemsViewProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ItemsControl OnItemsView(this Avalonia.Controls.ItemsControl obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Controls.ItemsSourceView>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsViewProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty
 
     /// <summary>
@@ -539,4 +583,201 @@ public static partial class ItemsControlExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreHorizontalSnapPointsRegular<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.ItemsControl
+    {
+        obj[Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreHorizontalSnapPointsRegular<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
+    {
+        var descriptor = Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreHorizontalSnapPointsRegular<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
+    {
+        var descriptor = Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindAreHorizontalSnapPointsRegular(
+        this Avalonia.Controls.ItemsControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveAreHorizontalSnapPointsRegular(this Avalonia.Controls.ItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAreHorizontalSnapPointsRegular<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreVerticalSnapPointsRegular<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.ItemsControl
+    {
+        obj[Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreVerticalSnapPointsRegular<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
+    {
+        var descriptor = Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreVerticalSnapPointsRegular<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
+    {
+        var descriptor = Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindAreVerticalSnapPointsRegular(
+        this Avalonia.Controls.ItemsControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveAreVerticalSnapPointsRegular(this Avalonia.Controls.ItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAreVerticalSnapPointsRegular<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
 }

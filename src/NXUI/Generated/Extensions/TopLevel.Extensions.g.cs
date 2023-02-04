@@ -503,4 +503,155 @@ public static partial class TopLevelExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // Avalonia.Controls.TopLevel.BackRequestedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.TopLevel.BackRequestedEvent"/> event on an object of type <see cref="Avalonia.Controls.TopLevel"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnBackRequestedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TopLevel
+    {
+        obj.AddHandler(Avalonia.Controls.TopLevel.BackRequestedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.TopLevel.BackRequestedEvent"/> event on an object of type <see cref="Avalonia.Controls.TopLevel"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnBackRequested<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TopLevel.BackRequestedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.TopLevel.BackRequestedEvent"/> event on an object of type <see cref="Avalonia.Controls.TopLevel"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnBackRequested(
+        this Avalonia.Controls.TopLevel obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.TopLevel.BackRequestedEvent, routes);
+    }
+
+    // Avalonia.Controls.TopLevel.Opened
+
+    /// <summary>
+    /// Adds a handler to the `Opened` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOpenedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.Opened += h, 
+                h => obj.Opened -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `Opened` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `Opened` event on the specified object.</returns>
+    public static IObservable<EventArgs> ObserveOnOpenedEvent(this Avalonia.Controls.TopLevel obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.Opened += h, 
+                h => obj.Opened -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.TopLevel.Closed
+
+    /// <summary>
+    /// Adds a handler to the `Closed` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnClosedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.Closed += h, 
+                h => obj.Closed -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `Closed` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `Closed` event on the specified object.</returns>
+    public static IObservable<EventArgs> ObserveOnClosedEvent(this Avalonia.Controls.TopLevel obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.Closed += h, 
+                h => obj.Closed -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.TopLevel.BackRequested
+
+    /// <summary>
+    /// Adds a handler to the `BackRequested` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.BackRequested += h, 
+                h => obj.BackRequested -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `BackRequested` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `BackRequested` event on the specified object.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnBackRequestedEvent(this Avalonia.Controls.TopLevel obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.BackRequested += h, 
+                h => obj.BackRequested -= h)
+            .Select(x => x.EventArgs);
+    }
 }

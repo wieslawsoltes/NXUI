@@ -164,9 +164,7 @@ Style TabControlStyle()
           DockPanel().Children(
             ScrollViewer().Content(
               ItemsPresenter().Name("PART_ItemsPresenter", ns)
-                .Items(x.BindItems())
                 .ItemsPanel(x.BindItemsPanel())
-                .ItemTemplate(x.BindItemTemplate())
                 .Dock(x.BindTabStripPlacement())),
             ContentPresenter().Name("PART_SelectedContentHost", ns)
               .Margin(x.BindPadding())

@@ -438,6 +438,294 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerHorizontalSnapPointsType(this Style style, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerHorizontalSnapPointsType(this KeyFrame keyFrame, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerHorizontalSnapPointsType(this Style style, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerHorizontalSnapPointsType(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerHorizontalSnapPointsType(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerHorizontalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerVerticalSnapPointsType(this Style style, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerVerticalSnapPointsType(this KeyFrame keyFrame, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerVerticalSnapPointsType(this Style style, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerVerticalSnapPointsType(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerVerticalSnapPointsType(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerVerticalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerHorizontalSnapPointsAlignment(this Style style, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerHorizontalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerHorizontalSnapPointsAlignment(this Style style, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerHorizontalSnapPointsAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerHorizontalSnapPointsAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerHorizontalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerVerticalSnapPointsAlignment(this Style style, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerVerticalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerVerticalSnapPointsAlignment(this Style style, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerVerticalSnapPointsAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerVerticalSnapPointsAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerVerticalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty
 
     /// <summary>
@@ -651,6 +939,78 @@ public static partial class ScrollViewerSetters
     public static KeyFrame SetScrollViewerIsScrollChainingEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerIsScrollInertiaEnabled(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerIsScrollInertiaEnabled(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerIsScrollInertiaEnabled(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerIsScrollInertiaEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerIsScrollInertiaEnabled(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerIsScrollInertiaEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, binding));
         return keyFrame;
     }
 

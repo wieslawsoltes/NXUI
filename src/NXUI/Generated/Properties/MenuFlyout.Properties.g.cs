@@ -17,4 +17,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.MenuFlyout,Avalonia.Controls.Templates.IDataTemplate> MenuFlyoutItemTemplate => Avalonia.Controls.MenuFlyout.ItemTemplateProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> MenuFlyoutItemContainerTheme => Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty;
 }

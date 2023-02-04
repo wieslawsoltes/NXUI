@@ -12,4 +12,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Object> HeaderedItemsControlHeader => Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderTemplateProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> HeaderedItemsControlHeaderTemplate => Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderTemplateProperty;
 }

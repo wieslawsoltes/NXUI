@@ -342,4 +342,149 @@ public static partial class ItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty, observable.ToBinding()));
         return keyFrame;
     }
+
+    // Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsControlAreHorizontalSnapPointsRegular(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsControlAreHorizontalSnapPointsRegular(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsControlAreHorizontalSnapPointsRegular(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsControlAreHorizontalSnapPointsRegular(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsControlAreHorizontalSnapPointsRegular(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsControlAreHorizontalSnapPointsRegular(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsControlAreVerticalSnapPointsRegular(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsControlAreVerticalSnapPointsRegular(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsControlAreVerticalSnapPointsRegular(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsControlAreVerticalSnapPointsRegular(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsControlAreVerticalSnapPointsRegular(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsControlAreVerticalSnapPointsRegular(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty, binding));
+        return keyFrame;
+    }
+
 }

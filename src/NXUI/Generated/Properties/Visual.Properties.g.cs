@@ -14,11 +14,6 @@ public static partial class Properties
     public static Avalonia.DirectProperty<Avalonia.Visual,Avalonia.Rect> VisualBounds => Avalonia.Visual.BoundsProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Visual.TransformedBoundsProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
-    /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Visual,System.Nullable<Avalonia.VisualTree.TransformedBounds>> VisualTransformedBounds => Avalonia.Visual.TransformedBoundsProperty;
-
-    /// <summary>
     /// The <see cref="Avalonia.Visual.ClipToBoundsProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> VisualClipToBounds => Avalonia.Visual.ClipToBoundsProperty;

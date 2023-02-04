@@ -221,4 +221,5 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty, binding));
         return keyFrame;
     }
+
 }
