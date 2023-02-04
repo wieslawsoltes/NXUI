@@ -17,5 +17,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\NXUI\NXUI.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Using Include="NXUI.Sample.Desktop.NXUI" Static="true" />
+  </ItemGroup>
   <Import Project="..\..\src\NXUI\NXUI.props" />
 </Project>
