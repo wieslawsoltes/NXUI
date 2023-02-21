@@ -7,12 +7,26 @@ Creating minimal [Avalonia](https://avaloniaui.net/) next generation (NXUI, next
 
 https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9a9d-9de02f30835e.mp4
 
-# Usage
-
+# Requisites
+### NXUI
 ```xml
 <PackageReference Include="NXUI" Version="11.0.0-preview5" />
 ```
+Additionally, depending on the application type:
+### Desktop
+``` xml
+<PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview5" />
+```
 
+### Browser
+``` xml
+<PackageReference Include="Avalonia.Browser" Version="11.0.0-preview5" />
+```
+
+```
+dotnet workload install wasm-tools
+```
+# Usage
 ```C#
 Window Build() => Window().Content(Label().Content("NXUI"));
 
