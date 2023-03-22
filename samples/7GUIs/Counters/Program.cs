@@ -17,7 +17,7 @@ Window Build()
                   .OnClick((_, o) => o.Subscribe(_ => count.OnNext(count.Value + 1)))
                   .Content("Count"))
           , true))
-        .Items(counters));
+        .ItemsSource(counters));
 
 AppBuilder.Configure<Application>()
   .UsePlatformDetect()
