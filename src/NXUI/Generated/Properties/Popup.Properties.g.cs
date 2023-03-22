@@ -26,7 +26,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.Popup,System.Boolean> PopupIsOpen => Avalonia.Controls.Primitives.Popup.IsOpenProperty;
+    public static Avalonia.StyledProperty<System.Boolean> PopupIsOpen => Avalonia.Controls.Primitives.Popup.IsOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
@@ -44,9 +44,9 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> PopupPlacementGravity => Avalonia.Controls.Primitives.Popup.PlacementGravityProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
+    /// The <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.PlacementMode> PopupPlacementMode => Avalonia.Controls.Primitives.Popup.PlacementModeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.PlacementMode> PopupPlacement => Avalonia.Controls.Primitives.Popup.PlacementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
@@ -66,7 +66,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.Popup,Avalonia.Input.IInputElement> PopupOverlayInputPassThroughElement => Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.IInputElement> PopupOverlayInputPassThroughElement => Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.

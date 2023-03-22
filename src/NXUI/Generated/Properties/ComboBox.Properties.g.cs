@@ -11,7 +11,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.ComboBox,System.Boolean> ComboBoxIsDropDownOpen => Avalonia.Controls.ComboBox.IsDropDownOpenProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ComboBoxIsDropDownOpen => Avalonia.Controls.ComboBox.IsDropDownOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.

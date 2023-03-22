@@ -7,10 +7,6 @@
     <IsPackable>false</IsPackable>
     <RootNamespace>NXUI.IntegrationTest</RootNamespace>
   </PropertyGroup>
-  <PropertyGroup>
-    <AnalysisLevel>latest</AnalysisLevel>
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview5" />
   </ItemGroup>

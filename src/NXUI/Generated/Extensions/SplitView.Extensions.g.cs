@@ -963,59 +963,6 @@ public static partial class SplitViewExtensions
     // Avalonia.Controls.SplitView.TemplateSettingsProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TemplateSettings<T>(this T obj, Avalonia.Controls.SplitViewTemplateSettings value) where T : Avalonia.Controls.SplitView
-    {
-        obj[Avalonia.Controls.SplitView.TemplateSettingsProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TemplateSettings<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
-    {
-        var descriptor = Avalonia.Controls.SplitView.TemplateSettingsProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TemplateSettings<T>(
-        this T obj,
-        IObservable<Avalonia.Controls.SplitViewTemplateSettings> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
-    {
-        var descriptor = Avalonia.Controls.SplitView.TemplateSettingsProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
     /// Makes a <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1024,7 +971,7 @@ public static partial class SplitViewExtensions
     /// <returns>A <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindTemplateSettings(
         this Avalonia.Controls.SplitView obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Controls.SplitView.TemplateSettingsProperty.Bind().WithMode(mode).WithPriority(priority);
@@ -1039,7 +986,7 @@ public static partial class SplitViewExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.SplitViewTemplateSettings> ObserveTemplateSettings(this Avalonia.Controls.SplitView obj)
+    public static IObservable<Avalonia.Controls.Primitives.SplitViewTemplateSettings> ObserveTemplateSettings(this Avalonia.Controls.SplitView obj)
     {
         return obj.GetObservable(Avalonia.Controls.SplitView.TemplateSettingsProperty);
     }
@@ -1049,12 +996,343 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTemplateSettings<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.SplitViewTemplateSettings>> handler) where T : Avalonia.Controls.SplitView
+    public static Avalonia.Controls.SplitView OnTemplateSettings(this Avalonia.Controls.SplitView obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.Primitives.SplitViewTemplateSettings>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.TemplateSettingsProperty);
         handler(obj, observable);
         return obj;
+    }
+
+    // Avalonia.Controls.SplitView.PaneClosedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.SplitView.PaneClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPaneClosedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitView
+    {
+        obj.AddHandler(Avalonia.Controls.SplitView.PaneClosedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.SplitView.PaneClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPaneClosed<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneClosedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.SplitView.PaneClosedEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPaneClosed(
+        this Avalonia.Controls.SplitView obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.PaneClosedEvent, routes);
+    }
+
+    // Avalonia.Controls.SplitView.PaneClosingEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.SplitView.PaneClosingEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPaneClosingHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.CancelRoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitView
+    {
+        obj.AddHandler(Avalonia.Controls.SplitView.PaneClosingEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.SplitView.PaneClosingEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPaneClosing<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneClosingEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.SplitView.PaneClosingEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnPaneClosing(
+        this Avalonia.Controls.SplitView obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.PaneClosingEvent, routes);
+    }
+
+    // Avalonia.Controls.SplitView.PaneOpenedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.SplitView.PaneOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPaneOpenedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitView
+    {
+        obj.AddHandler(Avalonia.Controls.SplitView.PaneOpenedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.SplitView.PaneOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPaneOpened<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneOpenedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.SplitView.PaneOpenedEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPaneOpened(
+        this Avalonia.Controls.SplitView obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.PaneOpenedEvent, routes);
+    }
+
+    // Avalonia.Controls.SplitView.PaneOpeningEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.SplitView.PaneOpeningEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPaneOpeningHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.CancelRoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitView
+    {
+        obj.AddHandler(Avalonia.Controls.SplitView.PaneOpeningEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.SplitView.PaneOpeningEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnPaneOpening<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneOpeningEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.SplitView.PaneOpeningEvent"/> event on an object of type <see cref="Avalonia.Controls.SplitView"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnPaneOpening(
+        this Avalonia.Controls.SplitView obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.SplitView.PaneOpeningEvent, routes);
+    }
+
+    // Avalonia.Controls.SplitView.PaneClosed
+
+    /// <summary>
+    /// Adds a handler to the `PaneClosed` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaneClosedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.PaneClosed += h, 
+                h => obj.PaneClosed -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `PaneClosed` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `PaneClosed` event on the specified object.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPaneClosedEvent(this Avalonia.Controls.SplitView obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.PaneClosed += h, 
+                h => obj.PaneClosed -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.SplitView.PaneClosing
+
+    /// <summary>
+    /// Adds a handler to the `PaneClosing` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaneClosingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
+                h => obj.PaneClosing += h, 
+                h => obj.PaneClosing -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `PaneClosing` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `PaneClosing` event on the specified object.</returns>
+    public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnPaneClosingEvent(this Avalonia.Controls.SplitView obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
+                h => obj.PaneClosing += h, 
+                h => obj.PaneClosing -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.SplitView.PaneOpened
+
+    /// <summary>
+    /// Adds a handler to the `PaneOpened` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaneOpenedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.PaneOpened += h, 
+                h => obj.PaneOpened -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `PaneOpened` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `PaneOpened` event on the specified object.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPaneOpenedEvent(this Avalonia.Controls.SplitView obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.PaneOpened += h, 
+                h => obj.PaneOpened -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.SplitView.PaneOpening
+
+    /// <summary>
+    /// Adds a handler to the `PaneOpening` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaneOpeningEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
+                h => obj.PaneOpening += h, 
+                h => obj.PaneOpening -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `PaneOpening` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `PaneOpening` event on the specified object.</returns>
+    public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnPaneOpeningEvent(this Avalonia.Controls.SplitView obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
+                h => obj.PaneOpening += h, 
+                h => obj.PaneOpening -= h)
+            .Select(x => x.EventArgs);
     }
 }

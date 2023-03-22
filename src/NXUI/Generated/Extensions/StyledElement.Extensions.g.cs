@@ -249,59 +249,6 @@ public static partial class StyledElementExtensions
     // Avalonia.StyledElement.TemplatedParentProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.StyledElement.TemplatedParentProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TemplatedParent<T>(this T obj, Avalonia.AvaloniaObject value) where T : Avalonia.StyledElement
-    {
-        obj[Avalonia.StyledElement.TemplatedParentProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.StyledElement.TemplatedParentProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TemplatedParent<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
-    {
-        var descriptor = Avalonia.StyledElement.TemplatedParentProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.StyledElement.TemplatedParentProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TemplatedParent<T>(
-        this T obj,
-        IObservable<Avalonia.AvaloniaObject> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
-    {
-        var descriptor = Avalonia.StyledElement.TemplatedParentProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
     /// Makes a <see cref="Avalonia.StyledElement.TemplatedParentProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -310,7 +257,7 @@ public static partial class StyledElementExtensions
     /// <returns>A <see cref="Avalonia.StyledElement.TemplatedParentProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindTemplatedParent(
         this Avalonia.StyledElement obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.StyledElement.TemplatedParentProperty.Bind().WithMode(mode).WithPriority(priority);
@@ -335,9 +282,8 @@ public static partial class StyledElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTemplatedParent<T>(this T obj, Action<Avalonia.StyledElement, IObservable<Avalonia.AvaloniaObject>> handler) where T : Avalonia.StyledElement
+    public static Avalonia.StyledElement OnTemplatedParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<Avalonia.AvaloniaObject>> handler)
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.TemplatedParentProperty);
         handler(obj, observable);

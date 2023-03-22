@@ -211,7 +211,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Pen<T>(this T obj, Avalonia.Media.Pen value) where T : Avalonia.Media.GeometryDrawing
+    public static T Pen<T>(this T obj, Avalonia.Media.IPen value) where T : Avalonia.Media.GeometryDrawing
     {
         obj[Avalonia.Media.GeometryDrawing.PenProperty] = value;
         return obj;
@@ -248,7 +248,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static T Pen<T>(
         this T obj,
-        IObservable<Avalonia.Media.Pen> observable,
+        IObservable<Avalonia.Media.IPen> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryDrawing
     {
@@ -281,7 +281,7 @@ public static partial class GeometryDrawingExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Pen> ObservePen(this Avalonia.Media.GeometryDrawing obj)
+    public static IObservable<Avalonia.Media.IPen> ObservePen(this Avalonia.Media.GeometryDrawing obj)
     {
         return obj.GetObservable(Avalonia.Media.GeometryDrawing.PenProperty);
     }
@@ -293,7 +293,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPen<T>(this T obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.Pen>> handler) where T : Avalonia.Media.GeometryDrawing
+    public static T OnPen<T>(this T obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IPen>> handler) where T : Avalonia.Media.GeometryDrawing
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.PenProperty);
         handler(obj, observable);

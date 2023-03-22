@@ -22,4 +22,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<Avalonia.Controls.Control> AdornerLayerAdorner => Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> AdornerLayerDefaultFocusAdorner => Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty;
 }

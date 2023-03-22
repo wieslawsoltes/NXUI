@@ -22,4 +22,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> MenuFlyoutItemContainerTheme => Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> MenuFlyoutFlyoutPresenterTheme => Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty;
 }

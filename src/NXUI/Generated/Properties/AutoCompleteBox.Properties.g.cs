@@ -51,7 +51,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.AutoCompleteBox,System.String> AutoCompleteBoxText => Avalonia.Controls.AutoCompleteBox.TextProperty;
+    public static Avalonia.StyledProperty<System.String> AutoCompleteBoxText => Avalonia.Controls.AutoCompleteBox.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.

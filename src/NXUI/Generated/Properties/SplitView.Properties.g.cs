@@ -21,7 +21,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.SplitView,System.Boolean> SplitViewIsPaneOpen => Avalonia.Controls.SplitView.IsPaneOpenProperty;
+    public static Avalonia.StyledProperty<System.Boolean> SplitViewIsPaneOpen => Avalonia.Controls.SplitView.IsPaneOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
@@ -56,5 +56,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.SplitViewTemplateSettings> SplitViewTemplateSettings => Avalonia.Controls.SplitView.TemplateSettingsProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.SplitView,Avalonia.Controls.Primitives.SplitViewTemplateSettings> SplitViewTemplateSettings => Avalonia.Controls.SplitView.TemplateSettingsProperty;
 }

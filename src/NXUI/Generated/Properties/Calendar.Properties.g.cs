@@ -36,20 +36,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Calendar,System.Nullable<System.DateTime>> CalendarSelectedDate => Avalonia.Controls.Calendar.SelectedDateProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarSelectedDate => Avalonia.Controls.Calendar.SelectedDateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Calendar,System.DateTime> CalendarDisplayDate => Avalonia.Controls.Calendar.DisplayDateProperty;
+    public static Avalonia.StyledProperty<System.DateTime> CalendarDisplayDate => Avalonia.Controls.Calendar.DisplayDateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Calendar,System.Nullable<System.DateTime>> CalendarDisplayDateStart => Avalonia.Controls.Calendar.DisplayDateStartProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarDisplayDateStart => Avalonia.Controls.Calendar.DisplayDateStartProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Calendar,System.Nullable<System.DateTime>> CalendarDisplayDateEnd => Avalonia.Controls.Calendar.DisplayDateEndProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarDisplayDateEnd => Avalonia.Controls.Calendar.DisplayDateEndProperty;
 }

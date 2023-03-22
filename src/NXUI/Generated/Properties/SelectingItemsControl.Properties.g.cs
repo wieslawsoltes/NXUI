@@ -24,6 +24,16 @@ public static partial class Properties
     public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.SelectingItemsControl,System.Object> SelectingItemsControlSelectedItem => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Object> SelectingItemsControlSelectedValue => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Data.IBinding> SelectingItemsControlSelectedValueBinding => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControlIsTextSearchEnabled => Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty;

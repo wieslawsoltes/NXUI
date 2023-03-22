@@ -71,7 +71,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.TextProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBlock,System.String> TextBlockText => Avalonia.Controls.TextBlock.TextProperty;
+    public static Avalonia.StyledProperty<System.String> TextBlockText => Avalonia.Controls.TextBlock.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
@@ -96,5 +96,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Documents.InlineCollection> TextBlockInlines => Avalonia.Controls.TextBlock.InlinesProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TextBlock,Avalonia.Controls.Documents.InlineCollection> TextBlockInlines => Avalonia.Controls.TextBlock.InlinesProperty;
 }

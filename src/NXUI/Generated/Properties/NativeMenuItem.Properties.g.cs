@@ -11,40 +11,45 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.MenuProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenuItem,Avalonia.Controls.NativeMenu> NativeMenuItemMenu => Avalonia.Controls.NativeMenuItem.MenuProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.NativeMenu> NativeMenuItemMenu => Avalonia.Controls.NativeMenuItem.MenuProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.IconProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenuItem,Avalonia.Media.Imaging.IBitmap> NativeMenuItemIcon => Avalonia.Controls.NativeMenuItem.IconProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Imaging.IBitmap> NativeMenuItemIcon => Avalonia.Controls.NativeMenuItem.IconProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.HeaderProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenuItem,System.String> NativeMenuItemHeader => Avalonia.Controls.NativeMenuItem.HeaderProperty;
+    public static Avalonia.StyledProperty<System.String> NativeMenuItemHeader => Avalonia.Controls.NativeMenuItem.HeaderProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.GestureProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenuItem,Avalonia.Input.KeyGesture> NativeMenuItemGesture => Avalonia.Controls.NativeMenuItem.GestureProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> NativeMenuItemGesture => Avalonia.Controls.NativeMenuItem.GestureProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.IsCheckedProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenuItem,System.Boolean> NativeMenuItemIsChecked => Avalonia.Controls.NativeMenuItem.IsCheckedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> NativeMenuItemIsChecked => Avalonia.Controls.NativeMenuItem.IsCheckedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenuItem,Avalonia.Controls.NativeMenuItemToggleType> NativeMenuItemToggleType => Avalonia.Controls.NativeMenuItem.ToggleTypeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.NativeMenuItemToggleType> NativeMenuItemToggleType => Avalonia.Controls.NativeMenuItem.ToggleTypeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.CommandProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenuItem,System.Windows.Input.ICommand> NativeMenuItemCommand => Avalonia.Controls.NativeMenuItem.CommandProperty;
+    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> NativeMenuItemCommand => Avalonia.Controls.NativeMenuItem.CommandProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.NativeMenuItem.CommandParameterProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Object> NativeMenuItemCommandParameter => Avalonia.Controls.NativeMenuItem.CommandParameterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.IsEnabledProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenuItem,System.Boolean> NativeMenuItemIsEnabled => Avalonia.Controls.NativeMenuItem.IsEnabledProperty;
+    public static Avalonia.StyledProperty<System.Boolean> NativeMenuItemIsEnabled => Avalonia.Controls.NativeMenuItem.IsEnabledProperty;
 }

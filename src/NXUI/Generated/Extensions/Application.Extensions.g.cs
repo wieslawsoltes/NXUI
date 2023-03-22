@@ -104,6 +104,202 @@ public static partial class ApplicationExtensions
         return obj;
     }
 
+    // Avalonia.Application.ActualThemeVariantProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Application.ActualThemeVariantProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ActualThemeVariant<T>(this T obj, Avalonia.Styling.ThemeVariant value) where T : Avalonia.Application
+    {
+        obj[Avalonia.Application.ActualThemeVariantProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Application.ActualThemeVariantProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ActualThemeVariant<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
+    {
+        var descriptor = Avalonia.Application.ActualThemeVariantProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Application.ActualThemeVariantProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ActualThemeVariant<T>(
+        this T obj,
+        IObservable<Avalonia.Styling.ThemeVariant> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
+    {
+        var descriptor = Avalonia.Application.ActualThemeVariantProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Application.ActualThemeVariantProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Application.ActualThemeVariantProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindActualThemeVariant(
+        this Avalonia.Application obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Application.ActualThemeVariantProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Styling.ThemeVariant> ObserveActualThemeVariant(this Avalonia.Application obj)
+    {
+        return obj.GetObservable(Avalonia.Application.ActualThemeVariantProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnActualThemeVariant<T>(this T obj, Action<Avalonia.Application, IObservable<Avalonia.Styling.ThemeVariant>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetObservable(Avalonia.Application.ActualThemeVariantProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Application.RequestedThemeVariantProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T RequestedThemeVariant<T>(this T obj, Avalonia.Styling.ThemeVariant value) where T : Avalonia.Application
+    {
+        obj[Avalonia.Application.RequestedThemeVariantProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T RequestedThemeVariant<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
+    {
+        var descriptor = Avalonia.Application.RequestedThemeVariantProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T RequestedThemeVariant<T>(
+        this T obj,
+        IObservable<Avalonia.Styling.ThemeVariant> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
+    {
+        var descriptor = Avalonia.Application.RequestedThemeVariantProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindRequestedThemeVariant(
+        this Avalonia.Application obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Application.RequestedThemeVariantProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Styling.ThemeVariant> ObserveRequestedThemeVariant(this Avalonia.Application obj)
+    {
+        return obj.GetObservable(Avalonia.Application.RequestedThemeVariantProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRequestedThemeVariant<T>(this T obj, Action<Avalonia.Application, IObservable<Avalonia.Styling.ThemeVariant>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetObservable(Avalonia.Application.RequestedThemeVariantProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Application.NameProperty
 
     /// <summary>

@@ -17,5 +17,4 @@ public static partial class Events
     /// The <see cref="Avalonia.Controls.StackPanel.VerticalSnapPointsChangedEvent"/> event defined in <see cref="Avalonia.Controls.StackPanel"/> class.
     /// </summary>
     public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> StackPanelVerticalSnapPointsChanged => Avalonia.Controls.StackPanel.VerticalSnapPointsChangedEvent;
-
 }

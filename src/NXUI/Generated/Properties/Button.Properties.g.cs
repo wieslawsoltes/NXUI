@@ -16,7 +16,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.CommandProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Button,System.Windows.Input.ICommand> ButtonCommand => Avalonia.Controls.Button.CommandProperty;
+    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> ButtonCommand => Avalonia.Controls.Button.CommandProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.HotKeyProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
@@ -41,7 +41,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.IsPressedProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ButtonIsPressed => Avalonia.Controls.Button.IsPressedProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Button,System.Boolean> ButtonIsPressed => Avalonia.Controls.Button.IsPressedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.FlyoutProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.

@@ -34,9 +34,9 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> ContextMenuPlacementGravity => Avalonia.Controls.ContextMenu.PlacementGravityProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
+    /// The <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.PlacementMode> ContextMenuPlacementMode => Avalonia.Controls.ContextMenu.PlacementModeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.PlacementMode> ContextMenuPlacement => Avalonia.Controls.ContextMenu.PlacementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.

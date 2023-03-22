@@ -361,6 +361,18 @@ public static partial class ToolTipExtensions
     }
 
     /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementCenter<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Center;
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.AnchorAndGravity"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -369,6 +381,102 @@ public static partial class ToolTipExtensions
     public static T PlacementAnchorAndGravity<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementTopEdgeAlignedLeft<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.TopEdgeAlignedRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementTopEdgeAlignedRight<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.TopEdgeAlignedRight;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementBottomEdgeAlignedLeft<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementBottomEdgeAlignedRight<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementLeftEdgeAlignedTop<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementLeftEdgeAlignedBottom<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.RightEdgeAlignedTop"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementRightEdgeAlignedTop<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.RightEdgeAlignedTop;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementRightEdgeAlignedBottom<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom;
         return obj;
     }
 

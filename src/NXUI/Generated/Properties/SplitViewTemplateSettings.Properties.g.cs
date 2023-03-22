@@ -9,12 +9,12 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
-    /// The <see cref="Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty"/> property defined in <see cref="Avalonia.Controls.SplitViewTemplateSettings"/> class.
+    /// The <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> SplitViewTemplateSettingsClosedPaneWidth => Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty;
+    public static Avalonia.StyledProperty<System.Double> SplitViewTemplateSettingsClosedPaneWidth => Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> property defined in <see cref="Avalonia.Controls.SplitViewTemplateSettings"/> class.
+    /// The <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.GridLength> SplitViewTemplateSettingsPaneColumnGridLength => Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.GridLength> SplitViewTemplateSettingsPaneColumnGridLength => Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty;
 }

@@ -221,4 +221,76 @@ public static partial class AdornerLayerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, binding));
         return keyFrame;
     }
+
+    // Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAdornerLayerDefaultFocusAdorner(this Style style, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAdornerLayerDefaultFocusAdorner(this KeyFrame keyFrame, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAdornerLayerDefaultFocusAdorner(this Style style, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAdornerLayerDefaultFocusAdorner(this KeyFrame keyFrame, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAdornerLayerDefaultFocusAdorner(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAdornerLayerDefaultFocusAdorner(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty, binding));
+        return keyFrame;
+    }
 }

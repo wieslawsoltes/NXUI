@@ -158,7 +158,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryDrawingPen(this Style style, Avalonia.Media.Pen value)
+    public static Style SetGeometryDrawingPen(this Style style, Avalonia.Media.IPen value)
     {
         style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, value));
         return style;
@@ -170,7 +170,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, Avalonia.Media.Pen value)
+    public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, Avalonia.Media.IPen value)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, value));
         return keyFrame;
@@ -181,7 +181,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetGeometryDrawingPen(this Style style, IObservable<Avalonia.Media.Pen> observable)
+    public static Style SetGeometryDrawingPen(this Style style, IObservable<Avalonia.Media.IPen> observable)
     {
         style.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, observable.ToBinding()));
         return style;
@@ -193,7 +193,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, IObservable<Avalonia.Media.Pen> observable)
+    public static KeyFrame SetGeometryDrawingPen(this KeyFrame keyFrame, IObservable<Avalonia.Media.IPen> observable)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, observable.ToBinding()));
         return keyFrame;

@@ -11,7 +11,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.CommandProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.MenuItem,System.Windows.Input.ICommand> MenuItemCommand => Avalonia.Controls.MenuItem.CommandProperty;
+    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> MenuItemCommand => Avalonia.Controls.MenuItem.CommandProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.

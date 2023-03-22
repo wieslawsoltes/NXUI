@@ -11,7 +11,12 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/> property defined in <see cref="Avalonia.Controls.TrayIcon"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TrayIcon,System.Windows.Input.ICommand> TrayIconCommand => Avalonia.Controls.TrayIcon.CommandProperty;
+    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> TrayIconCommand => Avalonia.Controls.TrayIcon.CommandProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/> property defined in <see cref="Avalonia.Controls.TrayIcon"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Object> TrayIconCommandParameter => Avalonia.Controls.TrayIcon.CommandParameterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/> property defined in <see cref="Avalonia.Controls.TrayIcon"/> class.

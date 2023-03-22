@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Label.TargetProperty"/> property defined in <see cref="Avalonia.Controls.Label"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Label,Avalonia.Input.IInputElement> LabelTarget => Avalonia.Controls.Label.TargetProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.IInputElement> LabelTarget => Avalonia.Controls.Label.TargetProperty;
 }

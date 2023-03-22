@@ -366,75 +366,75 @@ public static partial class ContextMenuSetters
         return keyFrame;
     }
 
-    // Avalonia.Controls.ContextMenu.PlacementModeProperty
+    // Avalonia.Controls.ContextMenu.PlacementProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuPlacementMode(this Style style, Avalonia.Controls.PlacementMode value)
+    public static Style SetContextMenuPlacement(this Style style, Avalonia.Controls.PlacementMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementModeProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuPlacementMode(this KeyFrame keyFrame, Avalonia.Controls.PlacementMode value)
+    public static KeyFrame SetContextMenuPlacement(this KeyFrame keyFrame, Avalonia.Controls.PlacementMode value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementProperty, value));
         return keyFrame;
     }
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuPlacementMode(this Style style, IObservable<Avalonia.Controls.PlacementMode> observable)
+    public static Style SetContextMenuPlacement(this Style style, IObservable<Avalonia.Controls.PlacementMode> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementModeProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuPlacementMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.PlacementMode> observable)
+    public static KeyFrame SetContextMenuPlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.PlacementMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementModeProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetContextMenuPlacementMode(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetContextMenuPlacement(this Style style, Avalonia.Data.IBinding binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementModeProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetContextMenuPlacementMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetContextMenuPlacement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementModeProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementProperty, binding));
         return keyFrame;
     }
 
