@@ -36,6 +36,7 @@
     <Using Include="Avalonia.Markup.Xaml.Styling" />
     <Using Include="Avalonia.Markup.Xaml.Templates" />
     <Using Include="Avalonia.Media" />
+    <Using Include="Avalonia.Media.Imaging" />
     <Using Include="Avalonia.Metadata" />
     <Using Include="Avalonia.Platform" />
     <Using Include="Avalonia.Styling" />
