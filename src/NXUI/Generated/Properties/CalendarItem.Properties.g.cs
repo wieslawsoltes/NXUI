@@ -16,5 +16,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.CalendarItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.CalendarItem,Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> CalendarItemDayTitleTemplate => Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> CalendarItemDayTitleTemplate => Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty;
 }

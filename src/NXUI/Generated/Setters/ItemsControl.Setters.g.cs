@@ -14,7 +14,7 @@ public static partial class ItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsControlItems(this Style style, System.Collections.IEnumerable value)
+    public static Style SetItemsControlItems(this Style style, System.Collections.IList value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsProperty, value));
         return style;
@@ -26,7 +26,7 @@ public static partial class ItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsControlItems(this KeyFrame keyFrame, System.Collections.IEnumerable value)
+    public static KeyFrame SetItemsControlItems(this KeyFrame keyFrame, System.Collections.IList value)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsProperty, value));
         return keyFrame;
@@ -37,7 +37,7 @@ public static partial class ItemsControlSetters
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetItemsControlItems(this Style style, IObservable<System.Collections.IEnumerable> observable)
+    public static Style SetItemsControlItems(this Style style, IObservable<System.Collections.IList> observable)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsProperty, observable.ToBinding()));
         return style;
@@ -49,7 +49,7 @@ public static partial class ItemsControlSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetItemsControlItems(this KeyFrame keyFrame, IObservable<System.Collections.IEnumerable> observable)
+    public static KeyFrame SetItemsControlItems(this KeyFrame keyFrame, IObservable<System.Collections.IList> observable)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsProperty, observable.ToBinding()));
         return keyFrame;
@@ -219,6 +219,78 @@ public static partial class ItemsControlSetters
     public static KeyFrame SetItemsControlItemsPanel(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsPanelProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.ItemsControl.ItemsSourceProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsControlItemsSource(this Style style, System.Collections.IEnumerable value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsSourceProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsControlItemsSource(this KeyFrame keyFrame, System.Collections.IEnumerable value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsSourceProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsControlItemsSource(this Style style, IObservable<System.Collections.IEnumerable> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsSourceProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsControlItemsSource(this KeyFrame keyFrame, IObservable<System.Collections.IEnumerable> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsSourceProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetItemsControlItemsSource(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsSourceProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetItemsControlItemsSource(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.ItemsSourceProperty, binding));
         return keyFrame;
     }
 
@@ -486,5 +558,4 @@ public static partial class ItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty, binding));
         return keyFrame;
     }
-
 }

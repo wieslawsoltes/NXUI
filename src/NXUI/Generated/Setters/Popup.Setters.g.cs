@@ -510,75 +510,75 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-    // Avalonia.Controls.Primitives.Popup.PlacementModeProperty
+    // Avalonia.Controls.Primitives.Popup.PlacementProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupPlacementMode(this Style style, Avalonia.Controls.PlacementMode value)
+    public static Style SetPopupPlacement(this Style style, Avalonia.Controls.PlacementMode value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementMode(this KeyFrame keyFrame, Avalonia.Controls.PlacementMode value)
+    public static KeyFrame SetPopupPlacement(this KeyFrame keyFrame, Avalonia.Controls.PlacementMode value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementProperty, value));
         return keyFrame;
     }
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupPlacementMode(this Style style, IObservable<Avalonia.Controls.PlacementMode> observable)
+    public static Style SetPopupPlacement(this Style style, IObservable<Avalonia.Controls.PlacementMode> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementMode(this KeyFrame keyFrame, IObservable<Avalonia.Controls.PlacementMode> observable)
+    public static KeyFrame SetPopupPlacement(this KeyFrame keyFrame, IObservable<Avalonia.Controls.PlacementMode> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPopupPlacementMode(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetPopupPlacement(this Style style, Avalonia.Data.IBinding binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementModeProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPopupPlacementMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetPopupPlacement(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementModeProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementProperty, binding));
         return keyFrame;
     }
 

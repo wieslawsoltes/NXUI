@@ -26,12 +26,12 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,System.Boolean> NumericUpDownClipValueToMinMax => Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty;
+    public static Avalonia.StyledProperty<System.Boolean> NumericUpDownClipValueToMinMax => Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NumericUpDown.NumberFormatProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,System.Globalization.NumberFormatInfo> NumericUpDownNumberFormat => Avalonia.Controls.NumericUpDown.NumberFormatProperty;
+    public static Avalonia.StyledProperty<System.Globalization.NumberFormatInfo> NumericUpDownNumberFormat => Avalonia.Controls.NumericUpDown.NumberFormatProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NumericUpDown.FormatStringProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
@@ -61,22 +61,22 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,System.Globalization.NumberStyles> NumericUpDownParsingNumberStyle => Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty;
+    public static Avalonia.StyledProperty<System.Globalization.NumberStyles> NumericUpDownParsingNumberStyle => Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NumericUpDown.TextProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,System.String> NumericUpDownText => Avalonia.Controls.NumericUpDown.TextProperty;
+    public static Avalonia.StyledProperty<System.String> NumericUpDownText => Avalonia.Controls.NumericUpDown.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,Avalonia.Data.Converters.IValueConverter> NumericUpDownTextConverter => Avalonia.Controls.NumericUpDown.TextConverterProperty;
+    public static Avalonia.StyledProperty<Avalonia.Data.Converters.IValueConverter> NumericUpDownTextConverter => Avalonia.Controls.NumericUpDown.TextConverterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NumericUpDown.ValueProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NumericUpDown,System.Nullable<System.Decimal>> NumericUpDownValue => Avalonia.Controls.NumericUpDown.ValueProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.Decimal>> NumericUpDownValue => Avalonia.Controls.NumericUpDown.ValueProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.

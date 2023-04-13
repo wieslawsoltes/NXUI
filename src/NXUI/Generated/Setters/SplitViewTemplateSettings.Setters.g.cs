@@ -2,151 +2,151 @@
 namespace NXUI.Extensions;
 
 /// <summary>
-/// The avalonia <see cref="Avalonia.Controls.SplitViewTemplateSettings"/> class style setters extension methods.
+/// The avalonia <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings"/> class style setters extension methods.
 /// </summary>
 public static partial class SplitViewTemplateSettingsSetters
 {
-    // Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty
+    // Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
     public static Style SetSplitViewTemplateSettingsClosedPaneWidth(this Style style, System.Double value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
     public static KeyFrame SetSplitViewTemplateSettingsClosedPaneWidth(this KeyFrame keyFrame, System.Double value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, value));
         return keyFrame;
     }
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
     public static Style SetSplitViewTemplateSettingsClosedPaneWidth(this Style style, IObservable<System.Double> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
     public static KeyFrame SetSplitViewTemplateSettingsClosedPaneWidth(this KeyFrame keyFrame, IObservable<System.Double> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, observable.ToBinding()));
         return keyFrame;
     }
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
     public static Style SetSplitViewTemplateSettingsClosedPaneWidth(this Style style, Avalonia.Data.IBinding binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
     public static KeyFrame SetSplitViewTemplateSettingsClosedPaneWidth(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.ClosedPaneWidthProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, binding));
         return keyFrame;
     }
 
-    // Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty
+    // Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
     public static Style SetSplitViewTemplateSettingsPaneColumnGridLength(this Style style, Avalonia.Controls.GridLength value)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
     public static KeyFrame SetSplitViewTemplateSettingsPaneColumnGridLength(this KeyFrame keyFrame, Avalonia.Controls.GridLength value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, value));
         return keyFrame;
     }
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
     public static Style SetSplitViewTemplateSettingsPaneColumnGridLength(this Style style, IObservable<Avalonia.Controls.GridLength> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
     public static KeyFrame SetSplitViewTemplateSettingsPaneColumnGridLength(this KeyFrame keyFrame, IObservable<Avalonia.Controls.GridLength> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, observable.ToBinding()));
         return keyFrame;
     }
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
     public static Style SetSplitViewTemplateSettingsPaneColumnGridLength(this Style style, Avalonia.Data.IBinding binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
     public static KeyFrame SetSplitViewTemplateSettingsPaneColumnGridLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitViewTemplateSettings.PaneColumnGridLengthProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, binding));
         return keyFrame;
     }
 }

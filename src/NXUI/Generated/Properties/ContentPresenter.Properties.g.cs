@@ -121,5 +121,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ContentPresenter,System.Boolean> ContentPresenterRecognizesAccessKey => Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ContentPresenterRecognizesAccessKey => Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty;
 }

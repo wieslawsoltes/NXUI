@@ -14,6 +14,16 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Object> ApplicationDataContext => Avalonia.Application.DataContextProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Application.ActualThemeVariantProperty"/> property defined in <see cref="Avalonia.Application"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> ApplicationActualThemeVariant => Avalonia.Application.ActualThemeVariantProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> property defined in <see cref="Avalonia.Application"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> ApplicationRequestedThemeVariant => Avalonia.Application.RequestedThemeVariantProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Application.NameProperty"/> property defined in <see cref="Avalonia.Application"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Application,System.String> ApplicationName => Avalonia.Application.NameProperty;

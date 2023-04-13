@@ -10,13 +10,6 @@
     <IsPackable>False</IsPackable>
     <RootNamespace>NXUI.Sample.Web</RootNamespace>
   </PropertyGroup>
-  <PropertyGroup>
-    <AnalysisLevel>latest</AnalysisLevel>
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <TrimmerRootDescriptor Include="Roots.xml" />
-  </ItemGroup>
   <ItemGroup>
     <WasmExtraFilesToDeploy Include="AppBundle\app.css" />
     <WasmExtraFilesToDeploy Include="AppBundle\favicon.ico" />

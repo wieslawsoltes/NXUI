@@ -16,7 +16,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/> property defined in <see cref="Avalonia.Controls.MaskedTextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.MaskedTextBox,System.Globalization.CultureInfo> MaskedTextBoxCulture => Avalonia.Controls.MaskedTextBox.CultureProperty;
+    public static Avalonia.StyledProperty<System.Globalization.CultureInfo> MaskedTextBoxCulture => Avalonia.Controls.MaskedTextBox.CultureProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/> property defined in <see cref="Avalonia.Controls.MaskedTextBox"/> class.
@@ -39,11 +39,6 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.String> MaskedTextBoxMask => Avalonia.Controls.MaskedTextBox.MaskProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.MaskedTextBox.PasswordCharProperty"/> property defined in <see cref="Avalonia.Controls.MaskedTextBox"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<System.Char> MaskedTextBoxPasswordChar => Avalonia.Controls.MaskedTextBox.PasswordCharProperty;
-
-    /// <summary>
     /// The <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/> property defined in <see cref="Avalonia.Controls.MaskedTextBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Char> MaskedTextBoxPromptChar => Avalonia.Controls.MaskedTextBox.PromptCharProperty;
@@ -51,10 +46,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/> property defined in <see cref="Avalonia.Controls.MaskedTextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.MaskedTextBox,System.Boolean> MaskedTextBoxResetOnPrompt => Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty;
+    public static Avalonia.StyledProperty<System.Boolean> MaskedTextBoxResetOnPrompt => Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/> property defined in <see cref="Avalonia.Controls.MaskedTextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.MaskedTextBox,System.Boolean> MaskedTextBoxResetOnSpace => Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty;
+    public static Avalonia.StyledProperty<System.Boolean> MaskedTextBoxResetOnSpace => Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty;
 }

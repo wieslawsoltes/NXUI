@@ -12,4 +12,14 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> ItemsPresenterItemsPanel => Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> ItemsPresenterAreHorizontalSnapPointsRegular => Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> ItemsPresenterAreVerticalSnapPointsRegular => Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty;
 }

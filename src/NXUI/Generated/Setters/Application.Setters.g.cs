@@ -78,6 +78,150 @@ public static partial class ApplicationSetters
         return keyFrame;
     }
 
+    // Avalonia.Application.ActualThemeVariantProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetApplicationActualThemeVariant(this Style style, Avalonia.Styling.ThemeVariant value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Application.ActualThemeVariantProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetApplicationActualThemeVariant(this KeyFrame keyFrame, Avalonia.Styling.ThemeVariant value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Application.ActualThemeVariantProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetApplicationActualThemeVariant(this Style style, IObservable<Avalonia.Styling.ThemeVariant> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Application.ActualThemeVariantProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetApplicationActualThemeVariant(this KeyFrame keyFrame, IObservable<Avalonia.Styling.ThemeVariant> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Application.ActualThemeVariantProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetApplicationActualThemeVariant(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Application.ActualThemeVariantProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetApplicationActualThemeVariant(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Application.ActualThemeVariantProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Application.RequestedThemeVariantProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetApplicationRequestedThemeVariant(this Style style, Avalonia.Styling.ThemeVariant value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Application.RequestedThemeVariantProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetApplicationRequestedThemeVariant(this KeyFrame keyFrame, Avalonia.Styling.ThemeVariant value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Application.RequestedThemeVariantProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetApplicationRequestedThemeVariant(this Style style, IObservable<Avalonia.Styling.ThemeVariant> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Application.RequestedThemeVariantProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetApplicationRequestedThemeVariant(this KeyFrame keyFrame, IObservable<Avalonia.Styling.ThemeVariant> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Application.RequestedThemeVariantProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetApplicationRequestedThemeVariant(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Application.RequestedThemeVariantProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetApplicationRequestedThemeVariant(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Application.RequestedThemeVariantProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Application.NameProperty
 
     /// <summary>

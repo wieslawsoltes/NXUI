@@ -11,12 +11,12 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> property defined in <see cref="Avalonia.Controls.SelectableTextBlock"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.SelectableTextBlock,System.Int32> SelectableTextBlockSelectionStart => Avalonia.Controls.SelectableTextBlock.SelectionStartProperty;
+    public static Avalonia.StyledProperty<System.Int32> SelectableTextBlockSelectionStart => Avalonia.Controls.SelectableTextBlock.SelectionStartProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> property defined in <see cref="Avalonia.Controls.SelectableTextBlock"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.SelectableTextBlock,System.Int32> SelectableTextBlockSelectionEnd => Avalonia.Controls.SelectableTextBlock.SelectionEndProperty;
+    public static Avalonia.StyledProperty<System.Int32> SelectableTextBlockSelectionEnd => Avalonia.Controls.SelectableTextBlock.SelectionEndProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SelectableTextBlock.SelectedTextProperty"/> property defined in <see cref="Avalonia.Controls.SelectableTextBlock"/> class.

@@ -300,6 +300,202 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
+    // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectedValue<T>(this T obj, System.Object value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectedValue<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectedValue<T>(
+        this T obj,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindSelectedValue(
+        this Avalonia.Controls.Primitives.SelectingItemsControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Object> ObserveSelectedValue(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedValue<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectedValueBinding<T>(this T obj, Avalonia.Data.IBinding value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectedValueBinding<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectedValueBinding<T>(
+        this T obj,
+        IObservable<Avalonia.Data.IBinding> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var descriptor = Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindSelectedValueBinding(
+        this Avalonia.Controls.Primitives.SelectingItemsControl obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Data.IBinding> ObserveSelectedValueBinding(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedValueBinding<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<Avalonia.Data.IBinding>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty
 
     /// <summary>

@@ -76,7 +76,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Window,Avalonia.Controls.WindowStartupLocation> WindowWindowStartupLocation => Avalonia.Controls.Window.WindowStartupLocationProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.WindowStartupLocation> WindowWindowStartupLocation => Avalonia.Controls.Window.WindowStartupLocationProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Window.CanResizeProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.

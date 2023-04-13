@@ -21,7 +21,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.CaretIndexProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Int32> TextBoxCaretIndex => Avalonia.Controls.TextBox.CaretIndexProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBoxCaretIndex => Avalonia.Controls.TextBox.CaretIndexProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.IsReadOnlyProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
@@ -51,12 +51,12 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.SelectionStartProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Int32> TextBoxSelectionStart => Avalonia.Controls.TextBox.SelectionStartProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBoxSelectionStart => Avalonia.Controls.TextBox.SelectionStartProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.SelectionEndProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Int32> TextBoxSelectionEnd => Avalonia.Controls.TextBox.SelectionEndProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBoxSelectionEnd => Avalonia.Controls.TextBox.SelectionEndProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.MaxLengthProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
@@ -71,7 +71,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.TextProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.String> TextBoxText => Avalonia.Controls.TextBox.TextProperty;
+    public static Avalonia.StyledProperty<System.String> TextBoxText => Avalonia.Controls.TextBox.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
@@ -116,7 +116,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.NewLineProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.String> TextBoxNewLine => Avalonia.Controls.TextBox.NewLineProperty;
+    public static Avalonia.StyledProperty<System.String> TextBoxNewLine => Avalonia.Controls.TextBox.NewLineProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.InnerLeftContentProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
@@ -156,7 +156,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.UndoLimitProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Int32> TextBoxUndoLimit => Avalonia.Controls.TextBox.UndoLimitProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBoxUndoLimit => Avalonia.Controls.TextBox.UndoLimitProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.CanUndoProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.

@@ -523,59 +523,6 @@ public static partial class ButtonExtensions
     // Avalonia.Controls.Button.IsPressedProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Button.IsPressedProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T IsPressed<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Button
-    {
-        obj[Avalonia.Controls.Button.IsPressedProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Button.IsPressedProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T IsPressed<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
-    {
-        var descriptor = Avalonia.Controls.Button.IsPressedProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Button.IsPressedProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T IsPressed<T>(
-        this T obj,
-        IObservable<System.Boolean> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
-    {
-        var descriptor = Avalonia.Controls.Button.IsPressedProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
     /// Makes a <see cref="Avalonia.Controls.Button.IsPressedProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -584,7 +531,7 @@ public static partial class ButtonExtensions
     /// <returns>A <see cref="Avalonia.Controls.Button.IsPressedProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindIsPressed(
         this Avalonia.Controls.Button obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Controls.Button.IsPressedProperty.Bind().WithMode(mode).WithPriority(priority);
@@ -609,9 +556,8 @@ public static partial class ButtonExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnIsPressed<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
+    public static Avalonia.Controls.Button OnIsPressed(this Avalonia.Controls.Button obj, Action<Avalonia.Controls.Button, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.IsPressedProperty);
         handler(obj, observable);

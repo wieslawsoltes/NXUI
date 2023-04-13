@@ -844,23 +844,23 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
-    // Avalonia.Controls.ContextMenu.PlacementModeProperty
+    // Avalonia.Controls.ContextMenu.PlacementProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementMode<T>(this T obj, Avalonia.Controls.PlacementMode value) where T : Avalonia.Controls.ContextMenu
+    public static T Placement<T>(this T obj, Avalonia.Controls.PlacementMode value) where T : Avalonia.Controls.ContextMenu
     {
-        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = value;
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -868,19 +868,19 @@ public static partial class ContextMenuExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementMode<T>(
+    public static T Placement<T>(
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContextMenu
     {
-        var descriptor = Avalonia.Controls.ContextMenu.PlacementModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.ContextMenu.PlacementProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -888,129 +888,237 @@ public static partial class ContextMenuExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementMode<T>(
+    public static T Placement<T>(
         this T obj,
         IObservable<Avalonia.Controls.PlacementMode> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContextMenu
     {
-        var descriptor = Avalonia.Controls.ContextMenu.PlacementModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.ContextMenu.PlacementProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPlacementMode(
+    /// <returns>A <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindPlacement(
         this Avalonia.Controls.ContextMenu obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.ContextMenu.PlacementModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.ContextMenu.PlacementProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.PlacementMode> ObservePlacementMode(this Avalonia.Controls.ContextMenu obj)
+    public static IObservable<Avalonia.Controls.PlacementMode> ObservePlacement(this Avalonia.Controls.ContextMenu obj)
     {
-        return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementModeProperty);
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPlacementMode<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.PlacementMode>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnPlacement<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.PlacementMode>> handler) where T : Avalonia.Controls.ContextMenu
     {
-        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementModeProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementProperty);
         handler(obj, observable);
         return obj;
     }
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Pointer"/>.
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Pointer"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementModePointer<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    public static T PlacementPointer<T>(this T obj) where T : Avalonia.Controls.ContextMenu
     {
-        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Pointer;
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.Pointer;
         return obj;
     }
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Bottom"/>.
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Bottom"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementModeBottom<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    public static T PlacementBottom<T>(this T obj) where T : Avalonia.Controls.ContextMenu
     {
-        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Bottom;
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.Bottom;
         return obj;
     }
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Right"/>.
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Right"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementModeRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    public static T PlacementRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
     {
-        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Right;
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.Right;
         return obj;
     }
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Left"/>.
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Left"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementModeLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    public static T PlacementLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
     {
-        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Left;
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.Left;
         return obj;
     }
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Top"/>.
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Top"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementModeTop<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    public static T PlacementTop<T>(this T obj) where T : Avalonia.Controls.ContextMenu
     {
-        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.Top;
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.Top;
         return obj;
     }
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementModeProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.AnchorAndGravity"/>.
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Center"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementModeAnchorAndGravity<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    public static T PlacementCenter<T>(this T obj) where T : Avalonia.Controls.ContextMenu
     {
-        obj[Avalonia.Controls.ContextMenu.PlacementModeProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.Center;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.AnchorAndGravity"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementAnchorAndGravity<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementTopEdgeAlignedLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.TopEdgeAlignedRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementTopEdgeAlignedRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.TopEdgeAlignedRight;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementBottomEdgeAlignedLeft<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementBottomEdgeAlignedRight<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementLeftEdgeAlignedTop<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementLeftEdgeAlignedBottom<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.RightEdgeAlignedTop"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementRightEdgeAlignedTop<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.RightEdgeAlignedTop;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementRightEdgeAlignedBottom<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom;
         return obj;
     }
 

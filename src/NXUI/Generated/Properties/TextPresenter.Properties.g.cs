@@ -11,7 +11,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.TextPresenter,System.Int32> TextPresenterCaretIndex => Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextPresenterCaretIndex => Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
@@ -41,22 +41,27 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.TextPresenter,System.Int32> TextPresenterSelectionStart => Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextPresenterSelectionStart => Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.TextPresenter,System.Int32> TextPresenterSelectionEnd => Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextPresenterSelectionEnd => Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.TextPresenter,System.String> TextPresenterText => Avalonia.Controls.Presenters.TextPresenter.TextProperty;
+    public static Avalonia.StyledProperty<System.String> TextPresenterText => Avalonia.Controls.Presenters.TextPresenter.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.TextPresenter,System.String> TextPresenterPreeditText => Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty;
+    public static Avalonia.StyledProperty<System.String> TextPresenterPreeditText => Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.CompositionRegionProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.TextPresenter,System.Nullable<Avalonia.Media.TextFormatting.TextRange>> TextPresenterCompositionRegion => Avalonia.Controls.Presenters.TextPresenter.CompositionRegionProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.

@@ -103,4 +103,366 @@ public static partial class ItemsPresenterExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreHorizontalSnapPointsRegular<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        obj[Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreHorizontalSnapPointsRegular<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreHorizontalSnapPointsRegular<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindAreHorizontalSnapPointsRegular(
+        this Avalonia.Controls.Presenters.ItemsPresenter obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveAreHorizontalSnapPointsRegular(this Avalonia.Controls.Presenters.ItemsPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAreHorizontalSnapPointsRegular<T>(this T obj, Action<Avalonia.Controls.Presenters.ItemsPresenter, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.AreHorizontalSnapPointsRegularProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreVerticalSnapPointsRegular<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        obj[Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreVerticalSnapPointsRegular<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T AreVerticalSnapPointsRegular<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindAreVerticalSnapPointsRegular(
+        this Avalonia.Controls.Presenters.ItemsPresenter obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveAreVerticalSnapPointsRegular(this Avalonia.Controls.Presenters.ItemsPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAreVerticalSnapPointsRegular<T>(this T obj, Action<Avalonia.Controls.Presenters.ItemsPresenter, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.AreVerticalSnapPointsRegularProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.Presenters.ItemsPresenter.HorizontalSnapPointsChangedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.Presenters.ItemsPresenter.HorizontalSnapPointsChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnHorizontalSnapPointsChangedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        obj.AddHandler(Avalonia.Controls.Presenters.ItemsPresenter.HorizontalSnapPointsChangedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.Presenters.ItemsPresenter.HorizontalSnapPointsChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnHorizontalSnapPointsChanged<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.HorizontalSnapPointsChangedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.Presenters.ItemsPresenter.HorizontalSnapPointsChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnHorizontalSnapPointsChanged(
+        this Avalonia.Controls.Presenters.ItemsPresenter obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.HorizontalSnapPointsChangedEvent, routes);
+    }
+
+    // Avalonia.Controls.Presenters.ItemsPresenter.VerticalSnapPointsChangedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VerticalSnapPointsChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnVerticalSnapPointsChangedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        obj.AddHandler(Avalonia.Controls.Presenters.ItemsPresenter.VerticalSnapPointsChangedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VerticalSnapPointsChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnVerticalSnapPointsChanged<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.VerticalSnapPointsChangedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.Presenters.ItemsPresenter.VerticalSnapPointsChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnVerticalSnapPointsChanged(
+        this Avalonia.Controls.Presenters.ItemsPresenter obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.ItemsPresenter.VerticalSnapPointsChangedEvent, routes);
+    }
+
+    // Avalonia.Controls.Presenters.ItemsPresenter.HorizontalSnapPointsChanged
+
+    /// <summary>
+    /// Adds a handler to the `HorizontalSnapPointsChanged` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalSnapPointsChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.HorizontalSnapPointsChanged += h, 
+                h => obj.HorizontalSnapPointsChanged -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `HorizontalSnapPointsChanged` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `HorizontalSnapPointsChanged` event on the specified object.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnHorizontalSnapPointsChangedEvent(this Avalonia.Controls.Presenters.ItemsPresenter obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.HorizontalSnapPointsChanged += h, 
+                h => obj.HorizontalSnapPointsChanged -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.Presenters.ItemsPresenter.VerticalSnapPointsChanged
+
+    /// <summary>
+    /// Adds a handler to the `VerticalSnapPointsChanged` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalSnapPointsChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.VerticalSnapPointsChanged += h, 
+                h => obj.VerticalSnapPointsChanged -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `VerticalSnapPointsChanged` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `VerticalSnapPointsChanged` event on the specified object.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnVerticalSnapPointsChangedEvent(this Avalonia.Controls.Presenters.ItemsPresenter obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+                h => obj.VerticalSnapPointsChanged += h, 
+                h => obj.VerticalSnapPointsChanged -= h)
+            .Select(x => x.EventArgs);
+    }
 }

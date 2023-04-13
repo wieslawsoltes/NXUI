@@ -21,5 +21,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> property defined in <see cref="Avalonia.Media.GeometryDrawing"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Pen> GeometryDrawingPen => Avalonia.Media.GeometryDrawing.PenProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IPen> GeometryDrawingPen => Avalonia.Media.GeometryDrawing.PenProperty;
 }

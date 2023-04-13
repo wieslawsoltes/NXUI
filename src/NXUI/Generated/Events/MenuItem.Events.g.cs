@@ -16,12 +16,12 @@ public static partial class Events
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.PointerEnteredItemEvent"/> event defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs> MenuItemPointerEnteredItem => Avalonia.Controls.MenuItem.PointerEnteredItemEvent;
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> MenuItemPointerEnteredItem => Avalonia.Controls.MenuItem.PointerEnteredItemEvent;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.PointerExitedItemEvent"/> event defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Input.PointerEventArgs> MenuItemPointerExitedItem => Avalonia.Controls.MenuItem.PointerExitedItemEvent;
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> MenuItemPointerExitedItem => Avalonia.Controls.MenuItem.PointerExitedItemEvent;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.SubmenuOpenedEvent"/> event defined in <see cref="Avalonia.Controls.MenuItem"/> class.
