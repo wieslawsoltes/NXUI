@@ -1,4 +1,4 @@
-﻿namespace NXUI.Sample.Desktop;
+﻿namespace NXUI;
 
 /// <summary>
 /// 
