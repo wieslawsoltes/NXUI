@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
-    <RootNamespace>NXUI.Sample.Desktop</RootNamespace>
+    <RootNamespace>NXUI.Sample.Desktop.Minimalistic</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\NXUI.Desktop\NXUI.Desktop.csproj" />

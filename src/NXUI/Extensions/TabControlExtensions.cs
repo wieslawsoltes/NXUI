@@ -14,15 +14,15 @@ public static partial class TabControlExtensions
     /// <param name="item"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T Items<T>(this T tabControl, object item) where T : TabControl
+    public static T ItemsSource<T>(this T tabControl, object item) where T : TabControl
     {
-        switch (tabControl.Items)
+        switch (tabControl.ItemsSource)
         {
             case AvaloniaList<object> list:
                 list.Add(item);
                 break;
             default:
-                tabControl.Items = new AvaloniaList<object>(item);
+                tabControl.ItemsSource = new AvaloniaList<object>(item);
                 break;
         }
         return tabControl;
@@ -35,15 +35,15 @@ public static partial class TabControlExtensions
     /// <param name="items"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T Items<T>(this T tabControl, params object[] items) where T : TabControl
+    public static T ItemsSource<T>(this T tabControl, params object[] items) where T : TabControl
     {
-        switch (tabControl.Items)
+        switch (tabControl.ItemsSource)
         {
             case AvaloniaList<object> list:
                 list.AddRange(items);
                 break;
             default:
-                tabControl.Items = new AvaloniaList<object>(items);
+                tabControl.ItemsSource = new AvaloniaList<object>(items);
                 break;
         }
         return tabControl;

@@ -28,7 +28,7 @@ Window Build()
           .OrientationVertical().Spacing(12).HorizontalAlignmentCenter().VerticalAlignmentCenter()
           .Children(
             ComboBox()
-              .Items(new[] { "one-way flight", "return flight" })
+              .ItemsSource(new[] { "one-way flight", "return flight" })
               .SelectedIndex(selected.Value)
               .OnSelectedIndex((_, o) => o.Subscribe(x => selected.OnNext(x))),
             TextBox()

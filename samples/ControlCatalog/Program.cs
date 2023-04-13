@@ -52,7 +52,7 @@
       TextBlock().Text("Child 3"));
 
   TabControl(out var tabControl)
-    .Items(
+    .ItemsSource(
       TabItem().Header("TabItem1").Content("TabItem1"),
       TabItem().Header("TabItem2").Content("TabItem2"),
       TabItem().Header("TabItem3").Content("TabItem3"));
@@ -92,7 +92,7 @@
     .ItemsPanel(new FuncTemplate<Panel>(StackPanel))
     .TabStripPlacementLeft()
     .Classes("tabControl")
-    .Items(
+    .ItemsSource(
       TabItem().Header("Border").Content(border),
       TabItem().Header("Button").Content(button),
       TabItem().Header("Canvas").Content(canvas),
