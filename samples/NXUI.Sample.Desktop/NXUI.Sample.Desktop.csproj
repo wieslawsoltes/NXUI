@@ -8,13 +8,8 @@
     <RootNamespace>NXUI.Sample.Desktop</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\NXUI\NXUI.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Using Include="NXUI.Sample.Desktop.NXUI" Static="true" />
+    <ProjectReference Include="..\..\src\NXUI.Desktop\NXUI.Desktop.csproj" />
   </ItemGroup>
   <Import Project="..\..\src\NXUI\NXUI.props" />
+  <Import Project="..\..\src\NXUI.Desktop\NXUI.props" />
 </Project>

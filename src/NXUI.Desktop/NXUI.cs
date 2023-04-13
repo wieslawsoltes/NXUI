@@ -1,9 +1,15 @@
-﻿namespace NXUI.Sample.Desktop;
+﻿using Avalonia;
+using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Styling;
+using NXUI.Extensions;
+
+namespace NXUI.Desktop;
 
 /// <summary>
 /// 
 /// </summary>
-public static partial class NXUI
+public static class NXUI
 {
     /// <summary>
     /// 
