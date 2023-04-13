@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32505.426
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NXUI.Desktop", "src\NXUI.Desktop\NXUI.Desktop.csproj", "{F0A9DF50-BF2A-46A6-B587-758125BE8A29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NXUI", "src\NXUI\NXUI.csproj", "{F0A9DF50-BF2A-46A6-B587-758125BE8A29}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NXUI.Sample.Desktop", "samples\NXUI.Sample.Desktop\NXUI.Sample.Desktop.csproj", "{33AFF341-32BA-4DE0-AEB1-221A90449BD8}"
 EndProject

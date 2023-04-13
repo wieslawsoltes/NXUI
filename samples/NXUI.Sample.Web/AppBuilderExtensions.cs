@@ -1,10 +1,5 @@
-﻿using System;
-using System.Diagnostics.CodeAnalysis;
-using System.Runtime.Versioning;
-using Avalonia;
+﻿using System.Runtime.Versioning;
 using Avalonia.Browser;
-using Avalonia.Controls;
-using Avalonia.Controls.ApplicationLifetimes;
 
 [assembly:SupportedOSPlatform("browser")]
 

@@ -12,7 +12,7 @@
     <PackageReference Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\NXUI.Desktop\NXUI.Desktop.csproj" />
+    <ProjectReference Include="..\..\src\NXUI\NXUI.csproj" />
   </ItemGroup>
   <Import Project="..\..\src\NXUI\NXUI.props" />
 </Project>
