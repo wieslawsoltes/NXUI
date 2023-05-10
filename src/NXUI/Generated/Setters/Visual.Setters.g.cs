@@ -366,6 +366,78 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
+    // Avalonia.Visual.EffectProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.EffectProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualEffect(this Style style, Avalonia.Media.IEffect value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.EffectProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.EffectProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualEffect(this KeyFrame keyFrame, Avalonia.Media.IEffect value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.EffectProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.EffectProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualEffect(this Style style, IObservable<Avalonia.Media.IEffect> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.EffectProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.EffectProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualEffect(this KeyFrame keyFrame, IObservable<Avalonia.Media.IEffect> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.EffectProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Visual.EffectProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetVisualEffect(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Visual.EffectProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Visual.EffectProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetVisualEffect(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Visual.EffectProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Visual.RenderTransformProperty
 
     /// <summary>

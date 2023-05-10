@@ -14,7 +14,7 @@ public static partial class PolyLineSegmentSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPolyLineSegmentPoints(this Style style, Avalonia.Points value)
+    public static Style SetPolyLineSegmentPoints(this Style style, System.Collections.Generic.IList<Avalonia.Point> value)
     {
         style.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, value));
         return style;
@@ -26,7 +26,7 @@ public static partial class PolyLineSegmentSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPolyLineSegmentPoints(this KeyFrame keyFrame, Avalonia.Points value)
+    public static KeyFrame SetPolyLineSegmentPoints(this KeyFrame keyFrame, System.Collections.Generic.IList<Avalonia.Point> value)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, value));
         return keyFrame;
@@ -37,7 +37,7 @@ public static partial class PolyLineSegmentSetters
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetPolyLineSegmentPoints(this Style style, IObservable<Avalonia.Points> observable)
+    public static Style SetPolyLineSegmentPoints(this Style style, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
     {
         style.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, observable.ToBinding()));
         return style;
@@ -49,7 +49,7 @@ public static partial class PolyLineSegmentSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetPolyLineSegmentPoints(this KeyFrame keyFrame, IObservable<Avalonia.Points> observable)
+    public static KeyFrame SetPolyLineSegmentPoints(this KeyFrame keyFrame, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, observable.ToBinding()));
         return keyFrame;

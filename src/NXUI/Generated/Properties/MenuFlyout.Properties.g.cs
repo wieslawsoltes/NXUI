@@ -9,14 +9,14 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
-    /// The <see cref="Avalonia.Controls.MenuFlyout.ItemsProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
+    /// The <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.MenuFlyout,System.Collections.IEnumerable> MenuFlyoutItems => Avalonia.Controls.MenuFlyout.ItemsProperty;
+    public static Avalonia.StyledProperty<System.Collections.IEnumerable> MenuFlyoutItemsSource => Avalonia.Controls.MenuFlyout.ItemsSourceProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.MenuFlyout,Avalonia.Controls.Templates.IDataTemplate> MenuFlyoutItemTemplate => Avalonia.Controls.MenuFlyout.ItemTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> MenuFlyoutItemTemplate => Avalonia.Controls.MenuFlyout.ItemTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.

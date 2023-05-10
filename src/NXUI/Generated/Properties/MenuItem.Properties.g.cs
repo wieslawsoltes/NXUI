@@ -34,11 +34,6 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> MenuItemInputGesture => Avalonia.Controls.MenuItem.InputGestureProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.MenuItem.IsSelectedProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> MenuItemIsSelected => Avalonia.Controls.MenuItem.IsSelectedProperty;
-
-    /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> MenuItemIsSubMenuOpen => Avalonia.Controls.MenuItem.IsSubMenuOpenProperty;

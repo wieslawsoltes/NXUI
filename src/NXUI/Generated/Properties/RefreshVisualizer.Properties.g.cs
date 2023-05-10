@@ -9,11 +9,6 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
-    /// The <see cref="Avalonia.Controls.RefreshVisualizer.PullDirectionProperty"/> property defined in <see cref="Avalonia.Controls.RefreshVisualizer"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.PullDirection> RefreshVisualizerPullDirection => Avalonia.Controls.RefreshVisualizer.PullDirectionProperty;
-
-    /// <summary>
     /// The <see cref="Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty"/> property defined in <see cref="Avalonia.Controls.RefreshVisualizer"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.RefreshVisualizer,Avalonia.Controls.RefreshVisualizerState> RefreshVisualizerRefreshVisualizerState => Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty;

@@ -14,7 +14,7 @@ public static partial class PolyLineSegmentExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.PolyLineSegment Points(this Avalonia.Media.PolyLineSegment obj, Avalonia.Points value)
+    public static Avalonia.Media.PolyLineSegment Points(this Avalonia.Media.PolyLineSegment obj, System.Collections.Generic.IList<Avalonia.Point> value)
     {
         obj[Avalonia.Media.PolyLineSegment.PointsProperty] = value;
         return obj;
@@ -49,7 +49,7 @@ public static partial class PolyLineSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PolyLineSegment Points(
         this Avalonia.Media.PolyLineSegment obj,
-        IObservable<Avalonia.Points> observable,
+        IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -81,7 +81,7 @@ public static partial class PolyLineSegmentExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Points> ObservePoints(this Avalonia.Media.PolyLineSegment obj)
+    public static IObservable<System.Collections.Generic.IList<Avalonia.Point>> ObservePoints(this Avalonia.Media.PolyLineSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.PolyLineSegment.PointsProperty);
     }
@@ -92,7 +92,7 @@ public static partial class PolyLineSegmentExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.PolyLineSegment OnPoints(this Avalonia.Media.PolyLineSegment obj, Action<Avalonia.Media.PolyLineSegment, IObservable<Avalonia.Points>> handler)
+    public static Avalonia.Media.PolyLineSegment OnPoints(this Avalonia.Media.PolyLineSegment obj, Action<Avalonia.Media.PolyLineSegment, IObservable<System.Collections.Generic.IList<Avalonia.Point>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PolyLineSegment.PointsProperty);
         handler(obj, observable);

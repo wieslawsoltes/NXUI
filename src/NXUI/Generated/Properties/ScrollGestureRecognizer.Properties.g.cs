@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/> property defined in <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ScrollGestureRecognizerCanHorizontallyScroll => Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty;
+    public static Avalonia.DirectProperty<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer,System.Boolean> ScrollGestureRecognizerCanHorizontallyScroll => Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/> property defined in <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ScrollGestureRecognizerCanVerticallyScroll => Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty;
+    public static Avalonia.DirectProperty<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer,System.Boolean> ScrollGestureRecognizerCanVerticallyScroll => Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/> property defined in <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ScrollGestureRecognizerIsScrollInertiaEnabled => Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty;
+    public static Avalonia.DirectProperty<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer,System.Boolean> ScrollGestureRecognizerIsScrollInertiaEnabled => Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/> property defined in <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> ScrollGestureRecognizerScrollStartDistance => Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty;
+    public static Avalonia.DirectProperty<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer,System.Int32> ScrollGestureRecognizerScrollStartDistance => Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty;
 }

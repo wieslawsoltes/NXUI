@@ -6,23 +6,23 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class MenuFlyoutExtensions
 {
-    // Avalonia.Controls.MenuFlyout.ItemsProperty
+    // Avalonia.Controls.MenuFlyout.ItemsSourceProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.MenuFlyout.ItemsProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Items<T>(this T obj, System.Collections.IEnumerable value) where T : Avalonia.Controls.MenuFlyout
+    public static T ItemsSource<T>(this T obj, System.Collections.IEnumerable value) where T : Avalonia.Controls.MenuFlyout
     {
-        obj[Avalonia.Controls.MenuFlyout.ItemsProperty] = value;
+        obj[Avalonia.Controls.MenuFlyout.ItemsSourceProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.MenuFlyout.ItemsProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -30,19 +30,19 @@ public static partial class MenuFlyoutExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Items<T>(
+    public static T ItemsSource<T>(
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
-        var descriptor = Avalonia.Controls.MenuFlyout.ItemsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.MenuFlyout.ItemsSourceProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.MenuFlyout.ItemsProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -50,56 +50,56 @@ public static partial class MenuFlyoutExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Items<T>(
+    public static T ItemsSource<T>(
         this T obj,
         IObservable<System.Collections.IEnumerable> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
-        var descriptor = Avalonia.Controls.MenuFlyout.ItemsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.MenuFlyout.ItemsSourceProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.MenuFlyout.ItemsProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.MenuFlyout.ItemsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItems(
+    /// <returns>A <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindItemsSource(
         this Avalonia.Controls.MenuFlyout obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.MenuFlyout.ItemsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.MenuFlyout.ItemsSourceProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.MenuFlyout.ItemsProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Collections.IEnumerable> ObserveItems(this Avalonia.Controls.MenuFlyout obj)
+    public static IObservable<System.Collections.IEnumerable> ObserveItemsSource(this Avalonia.Controls.MenuFlyout obj)
     {
-        return obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemsProperty);
+        return obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.MenuFlyout.ItemsProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItems<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.MenuFlyout
+    public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.MenuFlyout
     {
-        var observable = obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemsProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
         handler(obj, observable);
         return obj;
     }

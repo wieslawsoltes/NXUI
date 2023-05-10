@@ -11,17 +11,17 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Track"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.Track,System.Double> TrackMinimum => Avalonia.Controls.Primitives.Track.MinimumProperty;
+    public static Avalonia.StyledProperty<System.Double> TrackMinimum => Avalonia.Controls.Primitives.Track.MinimumProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Track"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.Track,System.Double> TrackMaximum => Avalonia.Controls.Primitives.Track.MaximumProperty;
+    public static Avalonia.StyledProperty<System.Double> TrackMaximum => Avalonia.Controls.Primitives.Track.MaximumProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Track"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.Track,System.Double> TrackValue => Avalonia.Controls.Primitives.Track.ValueProperty;
+    public static Avalonia.StyledProperty<System.Double> TrackValue => Avalonia.Controls.Primitives.Track.ValueProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Track"/> class.

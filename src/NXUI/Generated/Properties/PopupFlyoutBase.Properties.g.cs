@@ -37,4 +37,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.FlyoutShowMode> PopupFlyoutBaseShowMode => Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Input.IInputElement> PopupFlyoutBaseOverlayInputPassThroughElement => Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty;
 }

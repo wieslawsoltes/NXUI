@@ -9,7 +9,7 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
-    /// The <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/> property defined in <see cref="Avalonia.Media.PolyLineSegment"/> class.
+    /// The <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> property defined in <see cref="Avalonia.Media.BlurEffect"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Collections.Generic.IList<Avalonia.Point>> PolyLineSegmentPoints => Avalonia.Media.PolyLineSegment.PointsProperty;
+    public static Avalonia.StyledProperty<System.Double> BlurEffectRadius => Avalonia.Media.BlurEffect.RadiusProperty;
 }

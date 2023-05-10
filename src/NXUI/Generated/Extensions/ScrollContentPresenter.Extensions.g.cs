@@ -205,59 +205,6 @@ public static partial class ScrollContentPresenterExtensions
     // Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Extent<T>(this T obj, Avalonia.Size value) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
-    {
-        obj[Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Extent<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
-    {
-        var descriptor = Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Extent<T>(
-        this T obj,
-        IObservable<Avalonia.Size> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
-    {
-        var descriptor = Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
     /// Makes a <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -266,7 +213,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindExtent(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty.Bind().WithMode(mode).WithPriority(priority);
@@ -291,9 +238,8 @@ public static partial class ScrollContentPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnExtent<T>(this T obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<Avalonia.Size>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    public static Avalonia.Controls.Presenters.ScrollContentPresenter OnExtent(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty);
         handler(obj, observable);
@@ -401,59 +347,6 @@ public static partial class ScrollContentPresenterExtensions
     // Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Viewport<T>(this T obj, Avalonia.Size value) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
-    {
-        obj[Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Viewport<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
-    {
-        var descriptor = Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Viewport<T>(
-        this T obj,
-        IObservable<Avalonia.Size> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
-    {
-        var descriptor = Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
     /// Makes a <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -462,7 +355,7 @@ public static partial class ScrollContentPresenterExtensions
     /// <returns>A <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindViewport(
         this Avalonia.Controls.Presenters.ScrollContentPresenter obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty.Bind().WithMode(mode).WithPriority(priority);
@@ -487,9 +380,8 @@ public static partial class ScrollContentPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnViewport<T>(this T obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<Avalonia.Size>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    public static Avalonia.Controls.Presenters.ScrollContentPresenter OnViewport(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty);
         handler(obj, observable);

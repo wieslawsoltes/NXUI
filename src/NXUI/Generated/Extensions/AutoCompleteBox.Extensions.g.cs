@@ -1590,23 +1590,23 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-    // Avalonia.Controls.AutoCompleteBox.ItemsProperty
+    // Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemsProperty"/> value.
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Items<T>(this T obj, System.Collections.IEnumerable value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T ItemsSource<T>(this T obj, System.Collections.IEnumerable value) where T : Avalonia.Controls.AutoCompleteBox
     {
-        obj[Avalonia.Controls.AutoCompleteBox.ItemsProperty] = value;
+        obj[Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemsProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -1614,19 +1614,19 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Items<T>(
+    public static T ItemsSource<T>(
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
-        var descriptor = Avalonia.Controls.AutoCompleteBox.ItemsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemsProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -1634,56 +1634,56 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Items<T>(
+    public static T ItemsSource<T>(
         this T obj,
         IObservable<System.Collections.IEnumerable> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
-        var descriptor = Avalonia.Controls.AutoCompleteBox.ItemsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.AutoCompleteBox.ItemsProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.AutoCompleteBox.ItemsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindItems(
+    /// <returns>A <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindItemsSource(
         this Avalonia.Controls.AutoCompleteBox obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.AutoCompleteBox.ItemsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.ItemsProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Collections.IEnumerable> ObserveItems(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<System.Collections.IEnumerable> ObserveItemsSource(this Avalonia.Controls.AutoCompleteBox obj)
     {
-        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemsProperty);
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.ItemsProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItems<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
-        var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemsProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
         handler(obj, observable);
         return obj;
     }

@@ -37,4 +37,19 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TopLevelTransparencyBackgroundFallback => Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TopLevel.ActualThemeVariantProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> TopLevelActualThemeVariant => Avalonia.Controls.TopLevel.ActualThemeVariantProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TopLevel.RequestedThemeVariantProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> TopLevelRequestedThemeVariant => Avalonia.Controls.TopLevel.RequestedThemeVariantProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<Avalonia.Media.SolidColorBrush> TopLevelSystemBarColor => Avalonia.Controls.TopLevel.SystemBarColorProperty;
 }

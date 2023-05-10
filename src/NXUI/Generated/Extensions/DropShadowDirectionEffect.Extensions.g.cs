@@ -2,27 +2,27 @@
 namespace NXUI.Extensions;
 
 /// <summary>
-/// The avalonia <see cref="Avalonia.Media.PolylineGeometry"/> class property extension methods.
+/// The avalonia <see cref="Avalonia.Media.DropShadowDirectionEffect"/> class property extension methods.
 /// </summary>
-public static partial class PolylineGeometryExtensions
+public static partial class DropShadowDirectionEffectExtensions
 {
-    // Avalonia.Media.PolylineGeometry.PointsProperty
+    // Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Points<T>(this T obj, System.Collections.Generic.IList<Avalonia.Point> value) where T : Avalonia.Media.PolylineGeometry
+    public static T ShadowDepth<T>(this T obj, System.Double value) where T : Avalonia.Media.DropShadowDirectionEffect
     {
-        obj[Avalonia.Media.PolylineGeometry.PointsProperty] = value;
+        obj[Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -30,19 +30,19 @@ public static partial class PolylineGeometryExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Points<T>(
+    public static T ShadowDepth<T>(
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PolylineGeometry
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowDirectionEffect
     {
-        var descriptor = Avalonia.Media.PolylineGeometry.PointsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -50,77 +50,77 @@ public static partial class PolylineGeometryExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Points<T>(
+    public static T ShadowDepth<T>(
         this T obj,
-        IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable,
+        IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PolylineGeometry
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowDirectionEffect
     {
-        var descriptor = Avalonia.Media.PolylineGeometry.PointsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindPoints(
-        this Avalonia.Media.PolylineGeometry obj,
+    /// <returns>A <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindShadowDepth(
+        this Avalonia.Media.DropShadowDirectionEffect obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Media.PolylineGeometry.PointsProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Collections.Generic.IList<Avalonia.Point>> ObservePoints(this Avalonia.Media.PolylineGeometry obj)
+    public static IObservable<System.Double> ObserveShadowDepth(this Avalonia.Media.DropShadowDirectionEffect obj)
     {
-        return obj.GetObservable(Avalonia.Media.PolylineGeometry.PointsProperty);
+        return obj.GetObservable(Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPoints<T>(this T obj, Action<Avalonia.Media.PolylineGeometry, IObservable<System.Collections.Generic.IList<Avalonia.Point>>> handler) where T : Avalonia.Media.PolylineGeometry
+    public static T OnShadowDepth<T>(this T obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<System.Double>> handler) where T : Avalonia.Media.DropShadowDirectionEffect
     {
-        var observable = obj.GetObservable(Avalonia.Media.PolylineGeometry.PointsProperty);
+        var observable = obj.GetObservable(Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty);
         handler(obj, observable);
         return obj;
     }
 
-    // Avalonia.Media.PolylineGeometry.IsFilledProperty
+    // Avalonia.Media.DropShadowDirectionEffect.DirectionProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T IsFilled<T>(this T obj, System.Boolean value) where T : Avalonia.Media.PolylineGeometry
+    public static T Direction<T>(this T obj, System.Double value) where T : Avalonia.Media.DropShadowDirectionEffect
     {
-        obj[Avalonia.Media.PolylineGeometry.IsFilledProperty] = value;
+        obj[Avalonia.Media.DropShadowDirectionEffect.DirectionProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> with binding source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
@@ -128,19 +128,19 @@ public static partial class PolylineGeometryExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T IsFilled<T>(
+    public static T Direction<T>(
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PolylineGeometry
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowDirectionEffect
     {
-        var descriptor = Avalonia.Media.PolylineGeometry.IsFilledProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Media.DropShadowDirectionEffect.DirectionProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> with observable source value.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
@@ -148,56 +148,56 @@ public static partial class PolylineGeometryExtensions
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T IsFilled<T>(
+    public static T Direction<T>(
         this T obj,
-        IObservable<System.Boolean> observable,
+        IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PolylineGeometry
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowDirectionEffect
     {
-        var descriptor = Avalonia.Media.PolylineGeometry.IsFilledProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Media.DropShadowDirectionEffect.DirectionProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
         return obj;
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindIsFilled(
-        this Avalonia.Media.PolylineGeometry obj,
+    /// <returns>A <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindDirection(
+        this Avalonia.Media.DropShadowDirectionEffect obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Media.PolylineGeometry.IsFilledProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Media.DropShadowDirectionEffect.DirectionProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Boolean> ObserveIsFilled(this Avalonia.Media.PolylineGeometry obj)
+    public static IObservable<System.Double> ObserveDirection(this Avalonia.Media.DropShadowDirectionEffect obj)
     {
-        return obj.GetObservable(Avalonia.Media.PolylineGeometry.IsFilledProperty);
+        return obj.GetObservable(Avalonia.Media.DropShadowDirectionEffect.DirectionProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnIsFilled<T>(this T obj, Action<Avalonia.Media.PolylineGeometry, IObservable<System.Boolean>> handler) where T : Avalonia.Media.PolylineGeometry
+    public static T OnDirection<T>(this T obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<System.Double>> handler) where T : Avalonia.Media.DropShadowDirectionEffect
     {
-        var observable = obj.GetObservable(Avalonia.Media.PolylineGeometry.IsFilledProperty);
+        var observable = obj.GetObservable(Avalonia.Media.DropShadowDirectionEffect.DirectionProperty);
         handler(obj, observable);
         return obj;
     }

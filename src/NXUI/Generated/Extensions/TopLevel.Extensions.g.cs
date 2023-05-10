@@ -504,6 +504,104 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
+    // Avalonia.Controls.TopLevel.SystemBarColorProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SystemBarColor<T>(this T obj, Avalonia.Media.SolidColorBrush value) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.TopLevel.SystemBarColorProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SystemBarColor<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.TopLevel.SystemBarColorProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SystemBarColor<T>(
+        this T obj,
+        IObservable<Avalonia.Media.SolidColorBrush> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.TopLevel.SystemBarColorProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindSystemBarColor(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.TopLevel.SystemBarColorProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.SolidColorBrush> ObserveSystemBarColor(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TopLevel.SystemBarColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSystemBarColor<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.SolidColorBrush>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TopLevel.SystemBarColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TopLevel.BackRequestedEvent
 
     /// <summary>
@@ -618,6 +716,40 @@ public static partial class TopLevelExtensions
             .FromEventPattern<EventHandler, EventArgs>(
                 h => obj.Closed += h, 
                 h => obj.Closed -= h)
+            .Select(x => x.EventArgs);
+    }
+
+    // Avalonia.Controls.TopLevel.ScalingChanged
+
+    /// <summary>
+    /// Adds a handler to the `ScalingChanged` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnScalingChangedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.ScalingChanged += h, 
+                h => obj.ScalingChanged -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `ScalingChanged` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `ScalingChanged` event on the specified object.</returns>
+    public static IObservable<EventArgs> ObserveOnScalingChangedEvent(this Avalonia.Controls.TopLevel obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.ScalingChanged += h, 
+                h => obj.ScalingChanged -= h)
             .Select(x => x.EventArgs);
     }
 

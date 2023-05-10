@@ -9,11 +9,6 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
-    /// The <see cref="Avalonia.Controls.ItemsControl.ItemsProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
-    /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.ItemsControl,System.Collections.IList> ItemsControlItems => Avalonia.Controls.ItemsControl.ItemsProperty;
-
-    /// <summary>
     /// The <see cref="Avalonia.Controls.ItemsControl.ItemContainerThemeProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> ItemsControlItemContainerTheme => Avalonia.Controls.ItemsControl.ItemContainerThemeProperty;

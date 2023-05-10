@@ -36,10 +36,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty"/> property defined in <see cref="Avalonia.Controls.ProgressBar"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.ProgressBar,System.Double> ProgressBarIndeterminateStartingOffset => Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty;
+    public static Avalonia.StyledProperty<System.Double> ProgressBarIndeterminateStartingOffset => Avalonia.Controls.ProgressBar.IndeterminateStartingOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty"/> property defined in <see cref="Avalonia.Controls.ProgressBar"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.ProgressBar,System.Double> ProgressBarIndeterminateEndingOffset => Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty;
+    public static Avalonia.StyledProperty<System.Double> ProgressBarIndeterminateEndingOffset => Avalonia.Controls.ProgressBar.IndeterminateEndingOffsetProperty;
 }

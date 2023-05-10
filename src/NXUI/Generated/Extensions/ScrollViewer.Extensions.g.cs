@@ -6,148 +6,7 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class ScrollViewerExtensions
 {
-    // Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanHorizontallyScroll(
-        this Avalonia.Controls.ScrollViewer obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<System.Boolean> ObserveCanHorizontallyScroll(this Avalonia.Controls.ScrollViewer obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.ScrollViewer OnCanHorizontallyScroll(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Boolean>> handler)
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.CanHorizontallyScrollProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindCanVerticallyScroll(
-        this Avalonia.Controls.ScrollViewer obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<System.Boolean> ObserveCanVerticallyScroll(this Avalonia.Controls.ScrollViewer obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.ScrollViewer OnCanVerticallyScroll(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Boolean>> handler)
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.CanVerticallyScrollProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
     // Avalonia.Controls.ScrollViewer.ExtentProperty
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Extent<T>(this T obj, Avalonia.Size value) where T : Avalonia.Controls.ScrollViewer
-    {
-        obj[Avalonia.Controls.ScrollViewer.ExtentProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Extent<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.ExtentProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Extent<T>(
-        this T obj,
-        IObservable<Avalonia.Size> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.ExtentProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
 
     /// <summary>
     /// Makes a <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/> binding.
@@ -158,7 +17,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindExtent(
         this Avalonia.Controls.ScrollViewer obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Controls.ScrollViewer.ExtentProperty.Bind().WithMode(mode).WithPriority(priority);
@@ -183,9 +42,8 @@ public static partial class ScrollViewerExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnExtent<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Size>> handler) where T : Avalonia.Controls.ScrollViewer
+    public static Avalonia.Controls.ScrollViewer OnExtent(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.ExtentProperty);
         handler(obj, observable);
@@ -293,59 +151,6 @@ public static partial class ScrollViewerExtensions
     // Avalonia.Controls.ScrollViewer.ViewportProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Viewport<T>(this T obj, Avalonia.Size value) where T : Avalonia.Controls.ScrollViewer
-    {
-        obj[Avalonia.Controls.ScrollViewer.ViewportProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Viewport<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.ViewportProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T Viewport<T>(
-        this T obj,
-        IObservable<Avalonia.Size> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.ViewportProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
     /// Makes a <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -354,7 +159,7 @@ public static partial class ScrollViewerExtensions
     /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindViewport(
         this Avalonia.Controls.ScrollViewer obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Controls.ScrollViewer.ViewportProperty.Bind().WithMode(mode).WithPriority(priority);
@@ -379,9 +184,8 @@ public static partial class ScrollViewerExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnViewport<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Size>> handler) where T : Avalonia.Controls.ScrollViewer
+    public static Avalonia.Controls.ScrollViewer OnViewport(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.ViewportProperty);
         handler(obj, observable);
@@ -476,188 +280,46 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-    // Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty
+    // Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalScrollBarMaximum(
+    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindScrollBarMaximum(
         this Avalonia.Controls.ScrollViewer obj,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
-        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty.Bind().WithMode(mode).WithPriority(priority);
+        var descriptor = Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty.Bind().WithMode(mode).WithPriority(priority);
         return obj[descriptor];
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Double> ObserveHorizontalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj)
+    public static IObservable<Avalonia.Vector> ObserveScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj)
     {
-        return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty);
+        return obj.GetObservable(Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty);
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty"/>.
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.ScrollViewer OnHorizontalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler)
+    public static Avalonia.Controls.ScrollViewer OnScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Vector>> handler)
     {
-        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarMaximumProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T HorizontalScrollBarValue<T>(this T obj, System.Double value) where T : Avalonia.Controls.ScrollViewer
-    {
-        obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T HorizontalScrollBarValue<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T HorizontalScrollBarValue<T>(
-        this T obj,
-        IObservable<System.Double> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalScrollBarValue(
-        this Avalonia.Controls.ScrollViewer obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<System.Double> ObserveHorizontalScrollBarValue(this Avalonia.Controls.ScrollViewer obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnHorizontalScrollBarValue<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler) where T : Avalonia.Controls.ScrollViewer
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarValueProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindHorizontalScrollBarViewportSize(
-        this Avalonia.Controls.ScrollViewer obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<System.Double> ObserveHorizontalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.ScrollViewer OnHorizontalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler)
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarViewportSizeProperty);
+        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty);
         handler(obj, observable);
         return obj;
     }
@@ -805,148 +467,6 @@ public static partial class ScrollViewerExtensions
     public static T HorizontalScrollBarVisibilityVisible<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Visible;
-        return obj;
-    }
-
-    // Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalScrollBarMaximum(
-        this Avalonia.Controls.ScrollViewer obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<System.Double> ObserveVerticalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.ScrollViewer OnVerticalScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler)
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarMaximumProperty);
-        handler(obj, observable);
-        return obj;
-    }
-
-    // Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T VerticalScrollBarValue<T>(this T obj, System.Double value) where T : Avalonia.Controls.ScrollViewer
-    {
-        obj[Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T VerticalScrollBarValue<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T VerticalScrollBarValue<T>(
-        this T obj,
-        IObservable<System.Double> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ScrollViewer
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalScrollBarValue(
-        this Avalonia.Controls.ScrollViewer obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<System.Double> ObserveVerticalScrollBarValue(this Avalonia.Controls.ScrollViewer obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnVerticalScrollBarValue<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler) where T : Avalonia.Controls.ScrollViewer
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarValueProperty);
-        handler(obj, observable);
         return obj;
     }
 
@@ -1483,50 +1003,6 @@ public static partial class ScrollViewerExtensions
     public static T VerticalSnapPointsAlignmentFar<T>(this T obj) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Far;
-        return obj;
-    }
-
-    // Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty
-
-    /// <summary>
-    /// Makes a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty"/> binding.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <returns>A <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty"/> binding.</returns>
-    public static Avalonia.Data.IBinding BindVerticalScrollBarViewportSize(
-        this Avalonia.Controls.ScrollViewer obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
-    {
-        var descriptor = Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty.Bind().WithMode(mode).WithPriority(priority);
-        return obj[descriptor];
-    }
-
-    /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
-    /// </returns>
-    public static IObservable<System.Double> ObserveVerticalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj)
-    {
-        return obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty);
-    }
-
-    /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.ScrollViewer OnVerticalScrollBarViewportSize(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Double>> handler)
-    {
-        var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarViewportSizeProperty);
-        handler(obj, observable);
         return obj;
     }
 

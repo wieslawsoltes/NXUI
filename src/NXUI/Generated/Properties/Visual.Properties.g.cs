@@ -39,6 +39,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> VisualOpacityMask => Avalonia.Visual.OpacityMaskProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Visual.EffectProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.IEffect> VisualEffect => Avalonia.Visual.EffectProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Visual.HasMirrorTransformProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Visual,System.Boolean> VisualHasMirrorTransform => Avalonia.Visual.HasMirrorTransformProperty;

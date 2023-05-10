@@ -11,7 +11,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> property defined in <see cref="Avalonia.Media.PolylineGeometry"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Media.PolylineGeometry,Avalonia.Points> PolylineGeometryPoints => Avalonia.Media.PolylineGeometry.PointsProperty;
+    public static Avalonia.DirectProperty<Avalonia.Media.PolylineGeometry,System.Collections.Generic.IList<Avalonia.Point>> PolylineGeometryPoints => Avalonia.Media.PolylineGeometry.PointsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> property defined in <see cref="Avalonia.Media.PolylineGeometry"/> class.

@@ -12,7 +12,7 @@ public class BehaviorTemplate : ITemplate
     [TemplateContent(TemplateResultType = typeof(Behavior))]
     public object? Content { get; set; }
 
-    object ITemplate.Build() => TemplateContent.Load<Behavior>(Content).Result;
+    object? ITemplate.Build() => TemplateContent.Load<Behavior>(Content)?.Result;
 
     /// <summary>
     /// 
