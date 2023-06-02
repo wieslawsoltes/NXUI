@@ -6,7 +6,7 @@ namespace Generator;
 
 public static class ExtensionsGenerator
 {
-    public static void Generate(string outputPath, List<Class> classes)
+    public static void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
     {
         foreach (var c in classes)
         {
@@ -20,6 +20,16 @@ public static class ExtensionsGenerator
             void WriteLine(string x) => file.WriteLine(x);
 
             var fileHeaderBuilder = new StringBuilder(Templates.FileHeaderTemplate);
+
+            if (genFSharp)
+            {
+                fileHeaderBuilder.Replace("%FSharpNs%", ".FSharp");
+            }
+            else
+            {
+                fileHeaderBuilder.Replace("%FSharpNs%", "");
+            } 
+
             WriteLine(fileHeaderBuilder.ToString());
 
             var classHeaderBuilder = new StringBuilder(Templates.ClassExtensionsHeaderTemplate);
@@ -55,6 +65,17 @@ public static class ExtensionsGenerator
                 var propertyBuilder = new StringBuilder(template);
 
                 propertyBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                if (genFSharp)
+                {
+                    // fsharp can't consume extension methods with the same name as properties
+                    // https://github.com/fsharp/fslang-suggestions/issues/1039
+                    var name = $"{Char.ToLower(p.Name[0])}{p.Name[1..]}";
+                    propertyBuilder.Replace("%MethodName%", name);
+                }
+                else
+                {
+                    propertyBuilder.Replace("%MethodName%", p.Name);
+                }
                 propertyBuilder.Replace("%Name%", p.Name);
                 propertyBuilder.Replace("%OwnerType%", Factory.ToString(p.OwnerType));
                 propertyBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));

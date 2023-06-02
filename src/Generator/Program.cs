@@ -1,9 +1,9 @@
 ﻿using Avalonia;
 using Generator;
 
-if (args.Length != 1)
+if (args.Length > 2)
 {
-    Console.WriteLine("Usage: Generator <OutputPath>");
+    Console.WriteLine("Usage: Generator <OutputPath> [-fsharp]");
     return;
 }
 
@@ -19,6 +19,7 @@ var excludedClasses = new HashSet<string>
     "AboutAvaloniaDialog"
 };
 
+var genFSharp = args.Length == 2 && args[1] == "-fsharp";
 void Generate() 
     => MainGenerator.Generate(
         args[0], 
@@ -37,7 +38,9 @@ void Generate()
                 return false;
             }
             return true;
-        });
+        },
+        genFSharp: genFSharp
+        );
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
