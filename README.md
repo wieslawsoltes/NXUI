@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9
 ### NXUI
 
 ```xml
-<PackageReference Include="NXUI" Version="11.0.0-preview8" />
+<PackageReference Include="NXUI" Version="11.0.0-rc1.1" />
 ```
 
 Additionally, depending on the application type:
@@ -20,17 +20,17 @@ Additionally, depending on the application type:
 ### Desktop
 
 ```xml
-<PackageReference Include="NXUI.Desktop" Version="11.0.0-preview8" />
+<PackageReference Include="NXUI.Desktop" Version="11.0.0-rc1.1" />
 ```
 or
-``` xml
-<PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview8" />
+```xml
+<PackageReference Include="Avalonia.Desktop" Version="11.0.0-rc1.1" />
 ```
 
 ### Browser
 
-``` xml
-<PackageReference Include="Avalonia.Browser" Version="11.0.0-preview8" />
+```xml
+<PackageReference Include="Avalonia.Browser" Version="11.0.0-rc1.1" />
 ```
 
 ```
@@ -39,7 +39,7 @@ dotnet workload install wasm-tools
 
 # Usage
 
-```C#
+```csharp
 Window Build() => Window().Content(Label().Content("NXUI"));
 
 AppBuilder.Configure<Application>()
@@ -48,7 +48,7 @@ AppBuilder.Configure<Application>()
   .StartWithClassicDesktopLifetime(Build, args);
 ```
 
-```C#
+```csharp
 var count = 0;
 
 Window Build()
@@ -77,13 +77,13 @@ AppBuilder.Configure<Application>()
 # Generate
 
 C#
-```
+```bash
 cd src/Generator
 dotnet run -- ../NXUI/Generated
 ```
 
 F#
-```
+```bash
 cd src/Generator
 dotnet run -- ../NXUI.FSharp/Generated -fsharp
 ```
