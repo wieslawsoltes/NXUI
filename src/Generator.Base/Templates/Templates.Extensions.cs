@@ -45,7 +45,7 @@ public static partial class Templates
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T %Name%<T>(this T obj, %ValueType% value) where T : %OwnerType%
+    public static T %MethodName%<T>(this T obj, %ValueType% value) where T : %OwnerType%
     {
         obj[%ClassType%.%Name%Property] = value;
         return obj;
@@ -60,7 +60,7 @@ public static partial class Templates
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T %Name%<T>(
+    public static T %MethodName%<T>(
         this T obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -80,7 +80,7 @@ public static partial class Templates
     /// <param name="priority">The target binding priority.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T %Name%<T>(
+    public static T %MethodName%<T>(
         this T obj,
         IObservable<%ValueType%> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -144,7 +144,7 @@ public static partial class Templates
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static %OwnerType% %Name%(this %OwnerType% obj, %ValueType% value)
+    public static %OwnerType% %MethodName%(this %OwnerType% obj, %ValueType% value)
     {
         obj[%ClassType%.%Name%Property] = value;
         return obj;
@@ -158,7 +158,7 @@ public static partial class Templates
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The target object reference.</returns>
-    public static %OwnerType% %Name%(
+    public static %OwnerType% %MethodName%(
         this %OwnerType% obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
@@ -177,7 +177,7 @@ public static partial class Templates
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The target object reference.</returns>
-    public static %OwnerType% %Name%(
+    public static %OwnerType% %MethodName%(
         this %OwnerType% obj,
         IObservable<%ValueType%> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,

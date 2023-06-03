@@ -1,11 +1,22 @@
 ﻿using System.Reflection;
+using Generator.Model;
 
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
 public static class MainGenerator
 {
-    public static void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
+    
+    public static void GenerateFSharpExtensions(string outputPath, List<Class> classes)
+    {
+        if (!Directory.Exists(outputPath))
+        {
+            Directory.CreateDirectory(outputPath);
+        }
+        ExtensionsGenerator.Generate(outputPath, classes, genFSharp:true);
+    }
+    
+    public static void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter, bool genFSharp = false)
     {
         var buildersPath = Path.Combine(outputPath, "Builders");
         var propertiesPath = Path.Combine(outputPath, "Properties");
@@ -14,12 +25,19 @@ public static class MainGenerator
         var settersPath = Path.Combine(outputPath, "Setters");
 
         var classes = Factory.CreateClasses(assemblyFilter, typeFilter);
-
+        
         if (classes is null)
         {
             return;
         }
 
+        if (genFSharp)
+        {
+            var fsharpExtensionsPath = Path.Combine(outputPath, "FSharp", "Extensions");
+            GenerateFSharpExtensions(fsharpExtensionsPath, classes);
+            return;
+        }
+        
         if (!Directory.Exists(buildersPath))
         {
             Directory.CreateDirectory(buildersPath);
