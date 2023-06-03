@@ -14,9 +14,8 @@ public static partial class AnimationExtensions
     /// <param name="animation"></param>
     /// <param name="value"></param>
     /// <param name="type"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T iterationCount<T>(this T animation, ulong value, IterationType type) where T : Animation
+    public static Avalonia.Animation.Animation iterationCount(this Avalonia.Animation.Animation animation, ulong value, IterationType type)
     {
         animation[Avalonia.Animation.Animation.IterationCountProperty] = new IterationCount(value, type);
         return animation;
@@ -27,9 +26,8 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="animation"></param>
     /// <param name="value"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T iterationCountMany<T>(this T animation, ulong value) where T : Animation
+    public static Avalonia.Animation.Animation iterationCountMany(this Avalonia.Animation.Animation animation, ulong value)
     {
         animation[Avalonia.Animation.Animation.IterationCountProperty] = new IterationCount(value);
         return animation;
@@ -39,9 +37,8 @@ public static partial class AnimationExtensions
     /// 
     /// </summary>
     /// <param name="animation"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T iterationCountInfinite<T>(this T animation) where T : Animation
+    public static Avalonia.Animation.Animation iterationCountInfinite(this Avalonia.Animation.Animation animation)
     {
         animation[Avalonia.Animation.Animation.IterationCountProperty] = Avalonia.Animation.IterationCount.Infinite;
         return animation;
@@ -54,9 +51,8 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="animation"></param>
     /// <param name="keyFrame"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T keyFrames<T>(this T animation, KeyFrame keyFrame) where T : Animation
+    public static Avalonia.Animation.Animation keyFrames(this Avalonia.Animation.Animation animation, KeyFrame keyFrame)
     {
         animation.Children.Add(keyFrame);
         return animation;
@@ -67,9 +63,8 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="animation"></param>
     /// <param name="keyFrames"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T keyFrames<T>(this T animation, params KeyFrame[] keyFrames) where T : Animation
+    public static Avalonia.Animation.Animation keyFrames(this Avalonia.Animation.Animation animation, params KeyFrame[] keyFrames)
     {
         animation.Children.AddRange(keyFrames);
         return animation;
@@ -84,7 +79,7 @@ public static partial class AnimationExtensions
     /// <param name="value"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T animator<T>(this T animationSetter, Type value) where T : IAnimationSetter
+    public static T animator<T>(this T animationSetter, CustomAnimatorBase value) where T : IAnimationSetter
     {
         Avalonia.Animation.Animation.SetAnimator(animationSetter, value);
         return animationSetter;

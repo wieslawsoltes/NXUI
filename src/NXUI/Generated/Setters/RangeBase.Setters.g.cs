@@ -365,4 +365,5 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty, binding));
         return keyFrame;
     }
+
 }

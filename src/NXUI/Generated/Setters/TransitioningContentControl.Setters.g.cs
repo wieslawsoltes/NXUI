@@ -77,5 +77,4 @@ public static partial class TransitioningContentControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty, binding));
         return keyFrame;
     }
-
 }

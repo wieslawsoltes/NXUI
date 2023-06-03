@@ -16,7 +16,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.IconProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Imaging.IBitmap> NativeMenuItemIcon => Avalonia.Controls.NativeMenuItem.IconProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Imaging.Bitmap> NativeMenuItemIcon => Avalonia.Controls.NativeMenuItem.IconProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.HeaderProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.

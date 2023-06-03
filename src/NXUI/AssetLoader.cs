@@ -8,15 +8,6 @@ namespace NXUI;
 public static class AssetLoader
 {
     /// <summary>
-    /// Gets the IAssetLoader implementation instance.
-    /// </summary>
-    /// <returns>The IAssetLoader implementation instance.</returns>
-    public static IAssetLoader Instance()
-    {
-        return AvaloniaLocator.Current.GetService<IAssetLoader>()!;
-    }
-
-    /// <summary>
     /// We need a way to override the default assembly selected by the host platform
     /// because right now it is selecting the wrong one for PCL based Apps. The 
     /// AssetLoader needs a refactor cause right now it lives in 3+ platforms which 
@@ -25,7 +16,7 @@ public static class AssetLoader
     /// <param name="assembly"></param>
     public static void SetDefaultAssembly(Assembly assembly)
     {
-        Instance().SetDefaultAssembly(assembly);
+        Avalonia.Platform.AssetLoader.SetDefaultAssembly(assembly);
     }
 
     /// <summary>
@@ -38,7 +29,7 @@ public static class AssetLoader
     /// <returns>True if the asset could be found; otherwise false.</returns>
     public static bool Exists(Uri uri, Uri? baseUri = null)
     {
-        return Instance().Exists(uri, baseUri);
+        return Avalonia.Platform.AssetLoader.Exists(uri, baseUri);
     }
 
     /// <summary>
@@ -48,7 +39,7 @@ public static class AssetLoader
     /// <returns>True if the asset could be found; otherwise false.</returns>
     public static bool Exists(string uriString)
     {
-        return Instance().Exists(new Uri(uriString));
+        return Avalonia.Platform.AssetLoader.Exists(new Uri(uriString));
     }
 
     /// <summary>
@@ -64,7 +55,7 @@ public static class AssetLoader
     /// </exception>
     public static Stream Open(Uri uri, Uri? baseUri = null)
     {
-        return Instance().Open(uri, baseUri);
+        return Avalonia.Platform.AssetLoader.Open(uri, baseUri);
     }
 
     /// <summary>
@@ -77,7 +68,7 @@ public static class AssetLoader
     /// </exception>
     public static Stream Open(string uriString)
     {
-        return Instance().Open(new Uri(uriString));
+        return Avalonia.Platform.AssetLoader.Open(new Uri(uriString));
     }
 
     /// <summary>
@@ -96,7 +87,7 @@ public static class AssetLoader
     /// </exception>
     public static (Stream stream, Assembly assembly) OpenAndGetAssembly(Uri uri, Uri? baseUri = null)
     {
-        return Instance().OpenAndGetAssembly(uri, baseUri);
+        return Avalonia.Platform.AssetLoader.OpenAndGetAssembly(uri, baseUri);
     }
 
     /// <summary>
@@ -112,7 +103,7 @@ public static class AssetLoader
     /// </exception>
     public static (Stream stream, Assembly assembly) OpenAndGetAssembly(string uriString)
     {
-        return Instance().OpenAndGetAssembly(new Uri(uriString));
+        return Avalonia.Platform.AssetLoader.OpenAndGetAssembly(new Uri(uriString));
     }
 
     /// <summary>
@@ -125,7 +116,7 @@ public static class AssetLoader
     /// <returns>Assembly associated with the Uri</returns>
     public static Assembly? GetAssembly(Uri uri, Uri? baseUri = null)
     {
-        return Instance().GetAssembly(uri, baseUri);
+        return Avalonia.Platform.AssetLoader.GetAssembly(uri, baseUri);
     }
 
     /// <summary>
@@ -135,7 +126,7 @@ public static class AssetLoader
     /// <returns>Assembly associated with the Uri</returns>
     public static Assembly? GetAssembly(string uriString)
     {
-        return Instance().GetAssembly(new Uri(uriString));
+        return Avalonia.Platform.AssetLoader.GetAssembly(new Uri(uriString));
     }
 
     /// <summary>
@@ -146,7 +137,7 @@ public static class AssetLoader
     /// <returns>All matching assets as a tuple of the absolute path to the asset and the assembly containing the asset</returns>
     public static IEnumerable<Uri> GetAssets(Uri uri, Uri? baseUri = null)
     {
-        return Instance().GetAssets(uri, baseUri);
+        return Avalonia.Platform.AssetLoader.GetAssets(uri, baseUri);
     }
 
     /// <summary>
@@ -156,6 +147,6 @@ public static class AssetLoader
     /// <returns>All matching assets as a tuple of the absolute path to the asset and the assembly containing the asset</returns>
     public static IEnumerable<Uri> GetAssets(string uriString)
     {
-        return Instance().GetAssets(new Uri(uriString), null);
+        return Avalonia.Platform.AssetLoader.GetAssets(new Uri(uriString), null);
     }
 }

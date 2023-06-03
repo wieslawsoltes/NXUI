@@ -545,59 +545,6 @@ public static partial class TabControlExtensions
     // Avalonia.Controls.TabControl.SelectedContentProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T selectedContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.TabControl
-    {
-        obj[Avalonia.Controls.TabControl.SelectedContentProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T selectedContent<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
-    {
-        var descriptor = Avalonia.Controls.TabControl.SelectedContentProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T selectedContent<T>(
-        this T obj,
-        IObservable<System.Object> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
-    {
-        var descriptor = Avalonia.Controls.TabControl.SelectedContentProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
-
-    /// <summary>
     /// Makes a <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/> binding.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -606,7 +553,7 @@ public static partial class TabControlExtensions
     /// <returns>A <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindSelectedContent(
         this Avalonia.Controls.TabControl obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Controls.TabControl.SelectedContentProperty.Bind().WithMode(mode).WithPriority(priority);
@@ -631,9 +578,8 @@ public static partial class TabControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectedContent<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.TabControl
+    public static Avalonia.Controls.TabControl OnSelectedContent(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<System.Object>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
         handler(obj, observable);
@@ -641,59 +587,6 @@ public static partial class TabControlExtensions
     }
 
     // Avalonia.Controls.TabControl.SelectedContentTemplateProperty
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T selectedContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.TabControl
-    {
-        obj[Avalonia.Controls.TabControl.SelectedContentTemplateProperty] = value;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> with binding source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="binding">The source binding.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T selectedContentTemplate<T>(
-        this T obj,
-        Avalonia.Data.IBinding binding,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
-    {
-        var descriptor = Avalonia.Controls.TabControl.SelectedContentTemplateProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = binding;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> with observable source value.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <param name="observable">The source observable.</param>
-    /// <param name="mode">The target binding mode.</param>
-    /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T selectedContentTemplate<T>(
-        this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
-    {
-        var descriptor = Avalonia.Controls.TabControl.SelectedContentTemplateProperty.Bind().WithMode(mode).WithPriority(priority);
-        obj[descriptor] = observable.ToBinding();
-        return obj;
-    }
 
     /// <summary>
     /// Makes a <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> binding.
@@ -704,7 +597,7 @@ public static partial class TabControlExtensions
     /// <returns>A <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> binding.</returns>
     public static Avalonia.Data.IBinding BindSelectedContentTemplate(
         this Avalonia.Controls.TabControl obj,
-        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.OneWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Controls.TabControl.SelectedContentTemplateProperty.Bind().WithMode(mode).WithPriority(priority);
@@ -729,9 +622,8 @@ public static partial class TabControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectedContentTemplate<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.TabControl
+    public static Avalonia.Controls.TabControl OnSelectedContentTemplate(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
         handler(obj, observable);

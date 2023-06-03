@@ -14,7 +14,7 @@ public static partial class ImageBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetImageBrushSource(this Style style, Avalonia.Media.Imaging.IBitmap value)
+    public static Style SetImageBrushSource(this Style style, Avalonia.Media.IImageBrushSource value)
     {
         style.Setters.Add(new Setter(Avalonia.Media.ImageBrush.SourceProperty, value));
         return style;
@@ -26,7 +26,7 @@ public static partial class ImageBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageBrushSource(this KeyFrame keyFrame, Avalonia.Media.Imaging.IBitmap value)
+    public static KeyFrame SetImageBrushSource(this KeyFrame keyFrame, Avalonia.Media.IImageBrushSource value)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageBrush.SourceProperty, value));
         return keyFrame;
@@ -37,7 +37,7 @@ public static partial class ImageBrushSetters
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetImageBrushSource(this Style style, IObservable<Avalonia.Media.Imaging.IBitmap> observable)
+    public static Style SetImageBrushSource(this Style style, IObservable<Avalonia.Media.IImageBrushSource> observable)
     {
         style.Setters.Add(new Setter(Avalonia.Media.ImageBrush.SourceProperty, observable.ToBinding()));
         return style;
@@ -49,7 +49,7 @@ public static partial class ImageBrushSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetImageBrushSource(this KeyFrame keyFrame, IObservable<Avalonia.Media.Imaging.IBitmap> observable)
+    public static KeyFrame SetImageBrushSource(this KeyFrame keyFrame, IObservable<Avalonia.Media.IImageBrushSource> observable)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageBrush.SourceProperty, observable.ToBinding()));
         return keyFrame;

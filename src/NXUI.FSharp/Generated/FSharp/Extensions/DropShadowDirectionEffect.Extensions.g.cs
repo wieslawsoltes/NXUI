@@ -9,32 +9,30 @@ public static partial class DropShadowDirectionEffectExtensions
     // Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> value on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T shadowDepth<T>(this T obj, System.Double value) where T : Avalonia.Media.DropShadowDirectionEffect
+    public static Avalonia.Media.DropShadowDirectionEffect shadowDepth(this Avalonia.Media.DropShadowDirectionEffect obj, System.Double value)
     {
         obj[Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T shadowDepth<T>(
-        this T obj,
+    public static Avalonia.Media.DropShadowDirectionEffect shadowDepth(
+        this Avalonia.Media.DropShadowDirectionEffect obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowDirectionEffect
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -42,19 +40,18 @@ public static partial class DropShadowDirectionEffectExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T shadowDepth<T>(
-        this T obj,
+    public static Avalonia.Media.DropShadowDirectionEffect shadowDepth(
+        this Avalonia.Media.DropShadowDirectionEffect obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowDirectionEffect
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -62,7 +59,7 @@ public static partial class DropShadowDirectionEffectExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> binding on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -78,12 +75,11 @@ public static partial class DropShadowDirectionEffectExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveShadowDepth(this Avalonia.Media.DropShadowDirectionEffect obj)
     {
@@ -91,13 +87,12 @@ public static partial class DropShadowDirectionEffectExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> property on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnShadowDepth<T>(this T obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<System.Double>> handler) where T : Avalonia.Media.DropShadowDirectionEffect
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowDirectionEffect OnShadowDepth(this Avalonia.Media.DropShadowDirectionEffect obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty);
         handler(obj, observable);
@@ -107,32 +102,30 @@ public static partial class DropShadowDirectionEffectExtensions
     // Avalonia.Media.DropShadowDirectionEffect.DirectionProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> value on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T direction<T>(this T obj, System.Double value) where T : Avalonia.Media.DropShadowDirectionEffect
+    public static Avalonia.Media.DropShadowDirectionEffect direction(this Avalonia.Media.DropShadowDirectionEffect obj, System.Double value)
     {
         obj[Avalonia.Media.DropShadowDirectionEffect.DirectionProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T direction<T>(
-        this T obj,
+    public static Avalonia.Media.DropShadowDirectionEffect direction(
+        this Avalonia.Media.DropShadowDirectionEffect obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowDirectionEffect
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DropShadowDirectionEffect.DirectionProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -140,19 +133,18 @@ public static partial class DropShadowDirectionEffectExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T direction<T>(
-        this T obj,
+    public static Avalonia.Media.DropShadowDirectionEffect direction(
+        this Avalonia.Media.DropShadowDirectionEffect obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowDirectionEffect
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DropShadowDirectionEffect.DirectionProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -160,7 +152,7 @@ public static partial class DropShadowDirectionEffectExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> binding on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -176,12 +168,11 @@ public static partial class DropShadowDirectionEffectExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveDirection(this Avalonia.Media.DropShadowDirectionEffect obj)
     {
@@ -189,13 +180,12 @@ public static partial class DropShadowDirectionEffectExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> property on an object of type <see cref="Avalonia.Media.DropShadowDirectionEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnDirection<T>(this T obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<System.Double>> handler) where T : Avalonia.Media.DropShadowDirectionEffect
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowDirectionEffect OnDirection(this Avalonia.Media.DropShadowDirectionEffect obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DropShadowDirectionEffect.DirectionProperty);
         handler(obj, observable);

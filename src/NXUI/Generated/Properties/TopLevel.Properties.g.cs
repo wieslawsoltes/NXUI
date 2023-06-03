@@ -26,7 +26,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.WindowTransparencyLevel> TopLevelTransparencyLevelHint => Avalonia.Controls.TopLevel.TransparencyLevelHintProperty;
+    public static Avalonia.StyledProperty<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> TopLevelTransparencyLevelHint => Avalonia.Controls.TopLevel.TransparencyLevelHintProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.

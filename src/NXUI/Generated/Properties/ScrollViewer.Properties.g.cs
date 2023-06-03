@@ -9,6 +9,11 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
+    /// The <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Boolean> ScrollViewerBringIntoViewOnFocusChange => Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.ScrollViewer,Avalonia.Size> ScrollViewerExtent => Avalonia.Controls.ScrollViewer.ExtentProperty;

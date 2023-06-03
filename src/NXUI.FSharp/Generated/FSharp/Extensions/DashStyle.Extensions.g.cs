@@ -9,32 +9,30 @@ public static partial class DashStyleExtensions
     // Avalonia.Media.DashStyle.DashesProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DashStyle.DashesProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DashStyle.DashesProperty"/> value on an object of type <see cref="Avalonia.Media.DashStyle"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T dashes<T>(this T obj, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Media.DashStyle
+    public static Avalonia.Media.DashStyle dashes(this Avalonia.Media.DashStyle obj, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
         obj[Avalonia.Media.DashStyle.DashesProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DashStyle.DashesProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DashStyle.DashesProperty"/> on an object of type <see cref="Avalonia.Media.DashStyle"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T dashes<T>(
-        this T obj,
+    public static Avalonia.Media.DashStyle dashes(
+        this Avalonia.Media.DashStyle obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DashStyle
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DashStyle.DashesProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -42,19 +40,18 @@ public static partial class DashStyleExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DashStyle.DashesProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DashStyle.DashesProperty"/> on an object of type <see cref="Avalonia.Media.DashStyle"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T dashes<T>(
-        this T obj,
+    public static Avalonia.Media.DashStyle dashes(
+        this Avalonia.Media.DashStyle obj,
         IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DashStyle
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DashStyle.DashesProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -62,7 +59,7 @@ public static partial class DashStyleExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DashStyle.DashesProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DashStyle.DashesProperty"/> binding on an object of type <see cref="Avalonia.Media.DashStyle"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -78,12 +75,11 @@ public static partial class DashStyleExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DashStyle.DashesProperty"/> on an object of type <see cref="Avalonia.Media.DashStyle"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>> ObserveDashes(this Avalonia.Media.DashStyle obj)
     {
@@ -91,13 +87,12 @@ public static partial class DashStyleExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DashStyle.DashesProperty"/> property on an object of type <see cref="Avalonia.Media.DashStyle"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnDashes<T>(this T obj, Action<Avalonia.Media.DashStyle, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Media.DashStyle
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DashStyle OnDashes(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DashStyle.DashesProperty);
         handler(obj, observable);
@@ -107,32 +102,30 @@ public static partial class DashStyleExtensions
     // Avalonia.Media.DashStyle.OffsetProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> value on an object of type <see cref="Avalonia.Media.DashStyle"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T offset<T>(this T obj, System.Double value) where T : Avalonia.Media.DashStyle
+    public static Avalonia.Media.DashStyle offset(this Avalonia.Media.DashStyle obj, System.Double value)
     {
         obj[Avalonia.Media.DashStyle.OffsetProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> on an object of type <see cref="Avalonia.Media.DashStyle"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T offset<T>(
-        this T obj,
+    public static Avalonia.Media.DashStyle offset(
+        this Avalonia.Media.DashStyle obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DashStyle
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DashStyle.OffsetProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -140,19 +133,18 @@ public static partial class DashStyleExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> on an object of type <see cref="Avalonia.Media.DashStyle"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T offset<T>(
-        this T obj,
+    public static Avalonia.Media.DashStyle offset(
+        this Avalonia.Media.DashStyle obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DashStyle
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DashStyle.OffsetProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -160,7 +152,7 @@ public static partial class DashStyleExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> binding on an object of type <see cref="Avalonia.Media.DashStyle"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -176,12 +168,11 @@ public static partial class DashStyleExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> on an object of type <see cref="Avalonia.Media.DashStyle"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveOffset(this Avalonia.Media.DashStyle obj)
     {
@@ -189,13 +180,12 @@ public static partial class DashStyleExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> property on an object of type <see cref="Avalonia.Media.DashStyle"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnOffset<T>(this T obj, Action<Avalonia.Media.DashStyle, IObservable<System.Double>> handler) where T : Avalonia.Media.DashStyle
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DashStyle OnOffset(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DashStyle.OffsetProperty);
         handler(obj, observable);

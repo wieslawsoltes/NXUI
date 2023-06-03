@@ -9,32 +9,30 @@ public static partial class DropShadowEffectExtensions
     // Avalonia.Media.DropShadowEffect.OffsetXProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> value on an object of type <see cref="Avalonia.Media.DropShadowEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T OffsetX<T>(this T obj, System.Double value) where T : Avalonia.Media.DropShadowEffect
+    public static Avalonia.Media.DropShadowEffect OffsetX(this Avalonia.Media.DropShadowEffect obj, System.Double value)
     {
         obj[Avalonia.Media.DropShadowEffect.OffsetXProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowEffect"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OffsetX<T>(
-        this T obj,
+    public static Avalonia.Media.DropShadowEffect OffsetX(
+        this Avalonia.Media.DropShadowEffect obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffect
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DropShadowEffect.OffsetXProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -42,19 +40,18 @@ public static partial class DropShadowEffectExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowEffect"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OffsetX<T>(
-        this T obj,
+    public static Avalonia.Media.DropShadowEffect OffsetX(
+        this Avalonia.Media.DropShadowEffect obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffect
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DropShadowEffect.OffsetXProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -62,7 +59,7 @@ public static partial class DropShadowEffectExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> binding on an object of type <see cref="Avalonia.Media.DropShadowEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -78,12 +75,11 @@ public static partial class DropShadowEffectExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveOffsetX(this Avalonia.Media.DropShadowEffect obj)
     {
@@ -91,13 +87,12 @@ public static partial class DropShadowEffectExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> property on an object of type <see cref="Avalonia.Media.DropShadowEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnOffsetX<T>(this T obj, Action<Avalonia.Media.DropShadowEffect, IObservable<System.Double>> handler) where T : Avalonia.Media.DropShadowEffect
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowEffect OnOffsetX(this Avalonia.Media.DropShadowEffect obj, Action<Avalonia.Media.DropShadowEffect, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DropShadowEffect.OffsetXProperty);
         handler(obj, observable);
@@ -107,32 +102,30 @@ public static partial class DropShadowEffectExtensions
     // Avalonia.Media.DropShadowEffect.OffsetYProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> value on an object of type <see cref="Avalonia.Media.DropShadowEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T OffsetY<T>(this T obj, System.Double value) where T : Avalonia.Media.DropShadowEffect
+    public static Avalonia.Media.DropShadowEffect OffsetY(this Avalonia.Media.DropShadowEffect obj, System.Double value)
     {
         obj[Avalonia.Media.DropShadowEffect.OffsetYProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowEffect"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OffsetY<T>(
-        this T obj,
+    public static Avalonia.Media.DropShadowEffect OffsetY(
+        this Avalonia.Media.DropShadowEffect obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffect
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DropShadowEffect.OffsetYProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -140,19 +133,18 @@ public static partial class DropShadowEffectExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowEffect"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OffsetY<T>(
-        this T obj,
+    public static Avalonia.Media.DropShadowEffect OffsetY(
+        this Avalonia.Media.DropShadowEffect obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffect
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DropShadowEffect.OffsetYProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -160,7 +152,7 @@ public static partial class DropShadowEffectExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> binding on an object of type <see cref="Avalonia.Media.DropShadowEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -176,12 +168,11 @@ public static partial class DropShadowEffectExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> on an object of type <see cref="Avalonia.Media.DropShadowEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveOffsetY(this Avalonia.Media.DropShadowEffect obj)
     {
@@ -189,13 +180,12 @@ public static partial class DropShadowEffectExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> property on an object of type <see cref="Avalonia.Media.DropShadowEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnOffsetY<T>(this T obj, Action<Avalonia.Media.DropShadowEffect, IObservable<System.Double>> handler) where T : Avalonia.Media.DropShadowEffect
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowEffect OnOffsetY(this Avalonia.Media.DropShadowEffect obj, Action<Avalonia.Media.DropShadowEffect, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DropShadowEffect.OffsetYProperty);
         handler(obj, observable);

@@ -26,7 +26,7 @@ public static partial class Builders
     /// </summary>
     /// <param name="source">The source value.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
-    public static Avalonia.Media.ImageBrush ImageBrush(Avalonia.Media.Imaging.IBitmap source)
+    public static Avalonia.Media.ImageBrush ImageBrush(Avalonia.Media.IImageBrushSource source)
         => new(source);
 
     /// <summary>
@@ -35,6 +35,6 @@ public static partial class Builders
     /// <param name="ref">The reference of the <see cref="Avalonia.Media.ImageBrush"/> instantiated class.</param>
     /// <param name="source">The source value.</param>
     /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
-    public static Avalonia.Media.ImageBrush ImageBrush(out Avalonia.Media.ImageBrush @ref, Avalonia.Media.Imaging.IBitmap source)
+    public static Avalonia.Media.ImageBrush ImageBrush(out Avalonia.Media.ImageBrush @ref, Avalonia.Media.IImageBrushSource source)
         => @ref = new(source);
 }

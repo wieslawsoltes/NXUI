@@ -9,32 +9,30 @@ public static partial class GeometryDrawingExtensions
     // Avalonia.Media.GeometryDrawing.GeometryProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> value on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T geometry<T>(this T obj, Avalonia.Media.Geometry value) where T : Avalonia.Media.GeometryDrawing
+    public static Avalonia.Media.GeometryDrawing geometry(this Avalonia.Media.GeometryDrawing obj, Avalonia.Media.Geometry value)
     {
         obj[Avalonia.Media.GeometryDrawing.GeometryProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> on an object of type <see cref="Avalonia.Media.GeometryDrawing"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T geometry<T>(
-        this T obj,
+    public static Avalonia.Media.GeometryDrawing geometry(
+        this Avalonia.Media.GeometryDrawing obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryDrawing
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.GeometryDrawing.GeometryProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -42,19 +40,18 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> on an object of type <see cref="Avalonia.Media.GeometryDrawing"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T geometry<T>(
-        this T obj,
+    public static Avalonia.Media.GeometryDrawing geometry(
+        this Avalonia.Media.GeometryDrawing obj,
         IObservable<Avalonia.Media.Geometry> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryDrawing
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.GeometryDrawing.GeometryProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -62,7 +59,7 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> binding on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -78,12 +75,11 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Media.Geometry> ObserveGeometry(this Avalonia.Media.GeometryDrawing obj)
     {
@@ -91,13 +87,12 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> property on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnGeometry<T>(this T obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.GeometryDrawing
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GeometryDrawing OnGeometry(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.Geometry>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
         handler(obj, observable);
@@ -107,32 +102,30 @@ public static partial class GeometryDrawingExtensions
     // Avalonia.Media.GeometryDrawing.BrushProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> value on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T brush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Media.GeometryDrawing
+    public static Avalonia.Media.GeometryDrawing brush(this Avalonia.Media.GeometryDrawing obj, Avalonia.Media.IBrush value)
     {
         obj[Avalonia.Media.GeometryDrawing.BrushProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> on an object of type <see cref="Avalonia.Media.GeometryDrawing"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T brush<T>(
-        this T obj,
+    public static Avalonia.Media.GeometryDrawing brush(
+        this Avalonia.Media.GeometryDrawing obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryDrawing
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.GeometryDrawing.BrushProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -140,19 +133,18 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> on an object of type <see cref="Avalonia.Media.GeometryDrawing"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T brush<T>(
-        this T obj,
+    public static Avalonia.Media.GeometryDrawing brush(
+        this Avalonia.Media.GeometryDrawing obj,
         IObservable<Avalonia.Media.IBrush> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryDrawing
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.GeometryDrawing.BrushProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -160,7 +152,7 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> binding on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -176,12 +168,11 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Media.IBrush> ObserveBrush(this Avalonia.Media.GeometryDrawing obj)
     {
@@ -189,13 +180,12 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> property on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnBrush<T>(this T obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Media.GeometryDrawing
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GeometryDrawing OnBrush(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IBrush>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
         handler(obj, observable);
@@ -205,32 +195,30 @@ public static partial class GeometryDrawingExtensions
     // Avalonia.Media.GeometryDrawing.PenProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> value on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T pen<T>(this T obj, Avalonia.Media.IPen value) where T : Avalonia.Media.GeometryDrawing
+    public static Avalonia.Media.GeometryDrawing pen(this Avalonia.Media.GeometryDrawing obj, Avalonia.Media.IPen value)
     {
         obj[Avalonia.Media.GeometryDrawing.PenProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> on an object of type <see cref="Avalonia.Media.GeometryDrawing"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T pen<T>(
-        this T obj,
+    public static Avalonia.Media.GeometryDrawing pen(
+        this Avalonia.Media.GeometryDrawing obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryDrawing
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.GeometryDrawing.PenProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -238,19 +226,18 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> on an object of type <see cref="Avalonia.Media.GeometryDrawing"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T pen<T>(
-        this T obj,
+    public static Avalonia.Media.GeometryDrawing pen(
+        this Avalonia.Media.GeometryDrawing obj,
         IObservable<Avalonia.Media.IPen> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GeometryDrawing
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.GeometryDrawing.PenProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -258,7 +245,7 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> binding on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -274,12 +261,11 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Media.IPen> ObservePen(this Avalonia.Media.GeometryDrawing obj)
     {
@@ -287,13 +273,12 @@ public static partial class GeometryDrawingExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> property on an object of type <see cref="Avalonia.Media.GeometryDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnPen<T>(this T obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IPen>> handler) where T : Avalonia.Media.GeometryDrawing
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GeometryDrawing OnPen(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IPen>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.PenProperty);
         handler(obj, observable);

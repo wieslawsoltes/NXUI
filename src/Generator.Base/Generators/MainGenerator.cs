@@ -13,7 +13,7 @@ public static class MainGenerator
         {
             Directory.CreateDirectory(outputPath);
         }
-        ExtensionsGenerator.Generate(outputPath, classes, genFSharp:true);
+        ExtensionsGenerator.Generate(outputPath, classes, genFSharp: true);
     }
     
     public static void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter, bool genFSharp = false)

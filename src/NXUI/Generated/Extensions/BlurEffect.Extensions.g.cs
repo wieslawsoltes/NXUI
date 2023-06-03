@@ -9,32 +9,30 @@ public static partial class BlurEffectExtensions
     // Avalonia.Media.BlurEffect.RadiusProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> value on an object of type <see cref="Avalonia.Media.BlurEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T Radius<T>(this T obj, System.Double value) where T : Avalonia.Media.BlurEffect
+    public static Avalonia.Media.BlurEffect Radius(this Avalonia.Media.BlurEffect obj, System.Double value)
     {
         obj[Avalonia.Media.BlurEffect.RadiusProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> on an object of type <see cref="Avalonia.Media.BlurEffect"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Radius<T>(
-        this T obj,
+    public static Avalonia.Media.BlurEffect Radius(
+        this Avalonia.Media.BlurEffect obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.BlurEffect
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.BlurEffect.RadiusProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -42,19 +40,18 @@ public static partial class BlurEffectExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> on an object of type <see cref="Avalonia.Media.BlurEffect"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Radius<T>(
-        this T obj,
+    public static Avalonia.Media.BlurEffect Radius(
+        this Avalonia.Media.BlurEffect obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.BlurEffect
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.BlurEffect.RadiusProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -62,7 +59,7 @@ public static partial class BlurEffectExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> binding on an object of type <see cref="Avalonia.Media.BlurEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -78,12 +75,11 @@ public static partial class BlurEffectExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> on an object of type <see cref="Avalonia.Media.BlurEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveRadius(this Avalonia.Media.BlurEffect obj)
     {
@@ -91,13 +87,12 @@ public static partial class BlurEffectExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> property on an object of type <see cref="Avalonia.Media.BlurEffect"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnRadius<T>(this T obj, Action<Avalonia.Media.BlurEffect, IObservable<System.Double>> handler) where T : Avalonia.Media.BlurEffect
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.BlurEffect OnRadius(this Avalonia.Media.BlurEffect obj, Action<Avalonia.Media.BlurEffect, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.BlurEffect.RadiusProperty);
         handler(obj, observable);

@@ -86,7 +86,7 @@ public static partial class TopLevelSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTopLevelTransparencyLevelHint(this Style style, Avalonia.Controls.WindowTransparencyLevel value)
+    public static Style SetTopLevelTransparencyLevelHint(this Style style, System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel> value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, value));
         return style;
@@ -98,7 +98,7 @@ public static partial class TopLevelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTopLevelTransparencyLevelHint(this KeyFrame keyFrame, Avalonia.Controls.WindowTransparencyLevel value)
+    public static KeyFrame SetTopLevelTransparencyLevelHint(this KeyFrame keyFrame, System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel> value)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, value));
         return keyFrame;
@@ -109,7 +109,7 @@ public static partial class TopLevelSetters
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetTopLevelTransparencyLevelHint(this Style style, IObservable<Avalonia.Controls.WindowTransparencyLevel> observable)
+    public static Style SetTopLevelTransparencyLevelHint(this Style style, IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> observable)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, observable.ToBinding()));
         return style;
@@ -121,7 +121,7 @@ public static partial class TopLevelSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetTopLevelTransparencyLevelHint(this KeyFrame keyFrame, IObservable<Avalonia.Controls.WindowTransparencyLevel> observable)
+    public static KeyFrame SetTopLevelTransparencyLevelHint(this KeyFrame keyFrame, IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> observable)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, observable.ToBinding()));
         return keyFrame;

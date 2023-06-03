@@ -9,32 +9,30 @@ public static partial class DrawingGroupExtensions
     // Avalonia.Media.DrawingGroup.OpacityProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> value on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T Opacity<T>(this T obj, System.Double value) where T : Avalonia.Media.DrawingGroup
+    public static Avalonia.Media.DrawingGroup Opacity(this Avalonia.Media.DrawingGroup obj, System.Double value)
     {
         obj[Avalonia.Media.DrawingGroup.OpacityProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Opacity<T>(
-        this T obj,
+    public static Avalonia.Media.DrawingGroup Opacity(
+        this Avalonia.Media.DrawingGroup obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingGroup
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DrawingGroup.OpacityProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -42,19 +40,18 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Opacity<T>(
-        this T obj,
+    public static Avalonia.Media.DrawingGroup Opacity(
+        this Avalonia.Media.DrawingGroup obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingGroup
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DrawingGroup.OpacityProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -62,7 +59,7 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> binding on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -78,12 +75,11 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveOpacity(this Avalonia.Media.DrawingGroup obj)
     {
@@ -91,13 +87,12 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> property on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnOpacity<T>(this T obj, Action<Avalonia.Media.DrawingGroup, IObservable<System.Double>> handler) where T : Avalonia.Media.DrawingGroup
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnOpacity(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.OpacityProperty);
         handler(obj, observable);
@@ -107,32 +102,30 @@ public static partial class DrawingGroupExtensions
     // Avalonia.Media.DrawingGroup.TransformProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> value on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T Transform<T>(this T obj, Avalonia.Media.Transform value) where T : Avalonia.Media.DrawingGroup
+    public static Avalonia.Media.DrawingGroup Transform(this Avalonia.Media.DrawingGroup obj, Avalonia.Media.Transform value)
     {
         obj[Avalonia.Media.DrawingGroup.TransformProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Transform<T>(
-        this T obj,
+    public static Avalonia.Media.DrawingGroup Transform(
+        this Avalonia.Media.DrawingGroup obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingGroup
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DrawingGroup.TransformProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -140,19 +133,18 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Transform<T>(
-        this T obj,
+    public static Avalonia.Media.DrawingGroup Transform(
+        this Avalonia.Media.DrawingGroup obj,
         IObservable<Avalonia.Media.Transform> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingGroup
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DrawingGroup.TransformProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -160,7 +152,7 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> binding on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -176,12 +168,11 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Media.Transform> ObserveTransform(this Avalonia.Media.DrawingGroup obj)
     {
@@ -189,13 +180,12 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> property on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnTransform<T>(this T obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Transform>> handler) where T : Avalonia.Media.DrawingGroup
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnTransform(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Transform>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.TransformProperty);
         handler(obj, observable);
@@ -205,32 +195,30 @@ public static partial class DrawingGroupExtensions
     // Avalonia.Media.DrawingGroup.ClipGeometryProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> value on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T ClipGeometry<T>(this T obj, Avalonia.Media.Geometry value) where T : Avalonia.Media.DrawingGroup
+    public static Avalonia.Media.DrawingGroup ClipGeometry(this Avalonia.Media.DrawingGroup obj, Avalonia.Media.Geometry value)
     {
         obj[Avalonia.Media.DrawingGroup.ClipGeometryProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ClipGeometry<T>(
-        this T obj,
+    public static Avalonia.Media.DrawingGroup ClipGeometry(
+        this Avalonia.Media.DrawingGroup obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingGroup
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DrawingGroup.ClipGeometryProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -238,19 +226,18 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ClipGeometry<T>(
-        this T obj,
+    public static Avalonia.Media.DrawingGroup ClipGeometry(
+        this Avalonia.Media.DrawingGroup obj,
         IObservable<Avalonia.Media.Geometry> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingGroup
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DrawingGroup.ClipGeometryProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -258,7 +245,7 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> binding on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -274,12 +261,11 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Media.Geometry> ObserveClipGeometry(this Avalonia.Media.DrawingGroup obj)
     {
@@ -287,13 +273,12 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> property on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnClipGeometry<T>(this T obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.DrawingGroup
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnClipGeometry(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Geometry>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
         handler(obj, observable);
@@ -303,32 +288,30 @@ public static partial class DrawingGroupExtensions
     // Avalonia.Media.DrawingGroup.OpacityMaskProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> value on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T OpacityMask<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Media.DrawingGroup
+    public static Avalonia.Media.DrawingGroup OpacityMask(this Avalonia.Media.DrawingGroup obj, Avalonia.Media.IBrush value)
     {
         obj[Avalonia.Media.DrawingGroup.OpacityMaskProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OpacityMask<T>(
-        this T obj,
+    public static Avalonia.Media.DrawingGroup OpacityMask(
+        this Avalonia.Media.DrawingGroup obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingGroup
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DrawingGroup.OpacityMaskProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -336,19 +319,18 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OpacityMask<T>(
-        this T obj,
+    public static Avalonia.Media.DrawingGroup OpacityMask(
+        this Avalonia.Media.DrawingGroup obj,
         IObservable<Avalonia.Media.IBrush> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingGroup
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DrawingGroup.OpacityMaskProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -356,7 +338,7 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> binding on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -372,12 +354,11 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Media.IBrush> ObserveOpacityMask(this Avalonia.Media.DrawingGroup obj)
     {
@@ -385,13 +366,12 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> property on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnOpacityMask<T>(this T obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Media.DrawingGroup
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnOpacityMask(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.IBrush>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
         handler(obj, observable);
@@ -401,32 +381,30 @@ public static partial class DrawingGroupExtensions
     // Avalonia.Media.DrawingGroup.ChildrenProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> value on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T Children<T>(this T obj, Avalonia.Media.DrawingCollection value) where T : Avalonia.Media.DrawingGroup
+    public static Avalonia.Media.DrawingGroup Children(this Avalonia.Media.DrawingGroup obj, Avalonia.Media.DrawingCollection value)
     {
         obj[Avalonia.Media.DrawingGroup.ChildrenProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Children<T>(
-        this T obj,
+    public static Avalonia.Media.DrawingGroup Children(
+        this Avalonia.Media.DrawingGroup obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingGroup
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DrawingGroup.ChildrenProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -434,19 +412,18 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Children<T>(
-        this T obj,
+    public static Avalonia.Media.DrawingGroup Children(
+        this Avalonia.Media.DrawingGroup obj,
         IObservable<Avalonia.Media.DrawingCollection> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingGroup
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.DrawingGroup.ChildrenProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -454,7 +431,7 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> binding on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -470,12 +447,11 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Media.DrawingCollection> ObserveChildren(this Avalonia.Media.DrawingGroup obj)
     {
@@ -483,13 +459,12 @@ public static partial class DrawingGroupExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> property on an object of type <see cref="Avalonia.Media.DrawingGroup"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnChildren<T>(this T obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.DrawingCollection>> handler) where T : Avalonia.Media.DrawingGroup
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnChildren(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.DrawingCollection>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.ChildrenProperty);
         handler(obj, observable);

@@ -9,12 +9,12 @@ namespace NXUI;
 public static partial class Events
 {
     /// <summary>
-    /// The <see cref="Avalonia.Controls.MenuBase.MenuOpenedEvent"/> event defined in <see cref="Avalonia.Controls.MenuBase"/> class.
+    /// The <see cref="Avalonia.Controls.MenuBase.OpenedEvent"/> event defined in <see cref="Avalonia.Controls.MenuBase"/> class.
     /// </summary>
-    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> MenuBaseMenuOpened => Avalonia.Controls.MenuBase.MenuOpenedEvent;
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> MenuBaseOpened => Avalonia.Controls.MenuBase.OpenedEvent;
 
     /// <summary>
-    /// The <see cref="Avalonia.Controls.MenuBase.MenuClosedEvent"/> event defined in <see cref="Avalonia.Controls.MenuBase"/> class.
+    /// The <see cref="Avalonia.Controls.MenuBase.ClosedEvent"/> event defined in <see cref="Avalonia.Controls.MenuBase"/> class.
     /// </summary>
-    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> MenuBaseMenuClosed => Avalonia.Controls.MenuBase.MenuClosedEvent;
+    public static Avalonia.Interactivity.RoutedEvent<Avalonia.Interactivity.RoutedEventArgs> MenuBaseClosed => Avalonia.Controls.MenuBase.ClosedEvent;
 }

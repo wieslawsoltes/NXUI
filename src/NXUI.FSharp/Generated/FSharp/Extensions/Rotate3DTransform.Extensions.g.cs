@@ -9,32 +9,30 @@ public static partial class Rotate3DTransformExtensions
     // Avalonia.Media.Rotate3DTransform.AngleXProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> value on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T angleX<T>(this T obj, System.Double value) where T : Avalonia.Media.Rotate3DTransform
+    public static Avalonia.Media.Rotate3DTransform angleX(this Avalonia.Media.Rotate3DTransform obj, System.Double value)
     {
         obj[Avalonia.Media.Rotate3DTransform.AngleXProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T angleX<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform angleX(
+        this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.AngleXProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -42,19 +40,18 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T angleX<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform angleX(
+        this Avalonia.Media.Rotate3DTransform obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.AngleXProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -62,7 +59,7 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> binding on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -78,12 +75,11 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveAngleX(this Avalonia.Media.Rotate3DTransform obj)
     {
@@ -91,13 +87,12 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> property on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnAngleX<T>(this T obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.Rotate3DTransform
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnAngleX(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Rotate3DTransform.AngleXProperty);
         handler(obj, observable);
@@ -107,32 +102,30 @@ public static partial class Rotate3DTransformExtensions
     // Avalonia.Media.Rotate3DTransform.AngleYProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> value on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T angleY<T>(this T obj, System.Double value) where T : Avalonia.Media.Rotate3DTransform
+    public static Avalonia.Media.Rotate3DTransform angleY(this Avalonia.Media.Rotate3DTransform obj, System.Double value)
     {
         obj[Avalonia.Media.Rotate3DTransform.AngleYProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T angleY<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform angleY(
+        this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.AngleYProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -140,19 +133,18 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T angleY<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform angleY(
+        this Avalonia.Media.Rotate3DTransform obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.AngleYProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -160,7 +152,7 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> binding on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -176,12 +168,11 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveAngleY(this Avalonia.Media.Rotate3DTransform obj)
     {
@@ -189,13 +180,12 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> property on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnAngleY<T>(this T obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.Rotate3DTransform
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnAngleY(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Rotate3DTransform.AngleYProperty);
         handler(obj, observable);
@@ -205,32 +195,30 @@ public static partial class Rotate3DTransformExtensions
     // Avalonia.Media.Rotate3DTransform.AngleZProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> value on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T angleZ<T>(this T obj, System.Double value) where T : Avalonia.Media.Rotate3DTransform
+    public static Avalonia.Media.Rotate3DTransform angleZ(this Avalonia.Media.Rotate3DTransform obj, System.Double value)
     {
         obj[Avalonia.Media.Rotate3DTransform.AngleZProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T angleZ<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform angleZ(
+        this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.AngleZProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -238,19 +226,18 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T angleZ<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform angleZ(
+        this Avalonia.Media.Rotate3DTransform obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.AngleZProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -258,7 +245,7 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> binding on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -274,12 +261,11 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveAngleZ(this Avalonia.Media.Rotate3DTransform obj)
     {
@@ -287,13 +273,12 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> property on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnAngleZ<T>(this T obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.Rotate3DTransform
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnAngleZ(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Rotate3DTransform.AngleZProperty);
         handler(obj, observable);
@@ -303,32 +288,30 @@ public static partial class Rotate3DTransformExtensions
     // Avalonia.Media.Rotate3DTransform.CenterXProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> value on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T centerX<T>(this T obj, System.Double value) where T : Avalonia.Media.Rotate3DTransform
+    public static Avalonia.Media.Rotate3DTransform centerX(this Avalonia.Media.Rotate3DTransform obj, System.Double value)
     {
         obj[Avalonia.Media.Rotate3DTransform.CenterXProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T centerX<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform centerX(
+        this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.CenterXProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -336,19 +319,18 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T centerX<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform centerX(
+        this Avalonia.Media.Rotate3DTransform obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.CenterXProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -356,7 +338,7 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> binding on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -372,12 +354,11 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveCenterX(this Avalonia.Media.Rotate3DTransform obj)
     {
@@ -385,13 +366,12 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> property on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnCenterX<T>(this T obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.Rotate3DTransform
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnCenterX(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Rotate3DTransform.CenterXProperty);
         handler(obj, observable);
@@ -401,32 +381,30 @@ public static partial class Rotate3DTransformExtensions
     // Avalonia.Media.Rotate3DTransform.CenterYProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> value on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T centerY<T>(this T obj, System.Double value) where T : Avalonia.Media.Rotate3DTransform
+    public static Avalonia.Media.Rotate3DTransform centerY(this Avalonia.Media.Rotate3DTransform obj, System.Double value)
     {
         obj[Avalonia.Media.Rotate3DTransform.CenterYProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T centerY<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform centerY(
+        this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.CenterYProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -434,19 +412,18 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T centerY<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform centerY(
+        this Avalonia.Media.Rotate3DTransform obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.CenterYProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -454,7 +431,7 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> binding on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -470,12 +447,11 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveCenterY(this Avalonia.Media.Rotate3DTransform obj)
     {
@@ -483,13 +459,12 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> property on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnCenterY<T>(this T obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.Rotate3DTransform
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnCenterY(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Rotate3DTransform.CenterYProperty);
         handler(obj, observable);
@@ -499,32 +474,30 @@ public static partial class Rotate3DTransformExtensions
     // Avalonia.Media.Rotate3DTransform.CenterZProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> value on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T centerZ<T>(this T obj, System.Double value) where T : Avalonia.Media.Rotate3DTransform
+    public static Avalonia.Media.Rotate3DTransform centerZ(this Avalonia.Media.Rotate3DTransform obj, System.Double value)
     {
         obj[Avalonia.Media.Rotate3DTransform.CenterZProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T centerZ<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform centerZ(
+        this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.CenterZProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -532,19 +505,18 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T centerZ<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform centerZ(
+        this Avalonia.Media.Rotate3DTransform obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.CenterZProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -552,7 +524,7 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> binding on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -568,12 +540,11 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveCenterZ(this Avalonia.Media.Rotate3DTransform obj)
     {
@@ -581,13 +552,12 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> property on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnCenterZ<T>(this T obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.Rotate3DTransform
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnCenterZ(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Rotate3DTransform.CenterZProperty);
         handler(obj, observable);
@@ -597,32 +567,30 @@ public static partial class Rotate3DTransformExtensions
     // Avalonia.Media.Rotate3DTransform.DepthProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> value on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T depth<T>(this T obj, System.Double value) where T : Avalonia.Media.Rotate3DTransform
+    public static Avalonia.Media.Rotate3DTransform depth(this Avalonia.Media.Rotate3DTransform obj, System.Double value)
     {
         obj[Avalonia.Media.Rotate3DTransform.DepthProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T depth<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform depth(
+        this Avalonia.Media.Rotate3DTransform obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.DepthProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -630,19 +598,18 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T depth<T>(
-        this T obj,
+    public static Avalonia.Media.Rotate3DTransform depth(
+        this Avalonia.Media.Rotate3DTransform obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Rotate3DTransform
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.Rotate3DTransform.DepthProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -650,7 +617,7 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> binding on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -666,12 +633,11 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveDepth(this Avalonia.Media.Rotate3DTransform obj)
     {
@@ -679,13 +645,12 @@ public static partial class Rotate3DTransformExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> property on an object of type <see cref="Avalonia.Media.Rotate3DTransform"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnDepth<T>(this T obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler) where T : Avalonia.Media.Rotate3DTransform
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnDepth(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Rotate3DTransform.DepthProperty);
         handler(obj, observable);

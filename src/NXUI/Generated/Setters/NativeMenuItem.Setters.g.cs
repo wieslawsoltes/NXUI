@@ -86,7 +86,7 @@ public static partial class NativeMenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNativeMenuItemIcon(this Style style, Avalonia.Media.Imaging.IBitmap value)
+    public static Style SetNativeMenuItemIcon(this Style style, Avalonia.Media.Imaging.Bitmap value)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItem.IconProperty, value));
         return style;
@@ -98,7 +98,7 @@ public static partial class NativeMenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNativeMenuItemIcon(this KeyFrame keyFrame, Avalonia.Media.Imaging.IBitmap value)
+    public static KeyFrame SetNativeMenuItemIcon(this KeyFrame keyFrame, Avalonia.Media.Imaging.Bitmap value)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItem.IconProperty, value));
         return keyFrame;
@@ -109,7 +109,7 @@ public static partial class NativeMenuItemSetters
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetNativeMenuItemIcon(this Style style, IObservable<Avalonia.Media.Imaging.IBitmap> observable)
+    public static Style SetNativeMenuItemIcon(this Style style, IObservable<Avalonia.Media.Imaging.Bitmap> observable)
     {
         style.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItem.IconProperty, observable.ToBinding()));
         return style;
@@ -121,7 +121,7 @@ public static partial class NativeMenuItemSetters
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetNativeMenuItemIcon(this KeyFrame keyFrame, IObservable<Avalonia.Media.Imaging.IBitmap> observable)
+    public static KeyFrame SetNativeMenuItemIcon(this KeyFrame keyFrame, IObservable<Avalonia.Media.Imaging.Bitmap> observable)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenuItem.IconProperty, observable.ToBinding()));
         return keyFrame;

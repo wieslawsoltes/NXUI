@@ -31,10 +31,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> TabControlSelectedContent => Avalonia.Controls.TabControl.SelectedContentProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TabControl,System.Object> TabControlSelectedContent => Avalonia.Controls.TabControl.SelectedContentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> TabControlSelectedContentTemplate => Avalonia.Controls.TabControl.SelectedContentTemplateProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TabControl,Avalonia.Controls.Templates.IDataTemplate> TabControlSelectedContentTemplate => Avalonia.Controls.TabControl.SelectedContentTemplateProperty;
 }

@@ -9,32 +9,30 @@ public static partial class AnimationExtensions
     // Avalonia.Animation.Animation.DurationProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Animation.Animation.DurationProperty"/> value.
+    /// Sets a <see cref="Avalonia.Animation.Animation.DurationProperty"/> value on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T Duration<T>(this T obj, System.TimeSpan value) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation Duration(this Avalonia.Animation.Animation obj, System.TimeSpan value)
     {
         obj[Avalonia.Animation.Animation.DurationProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DurationProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DurationProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Duration<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation Duration(
+        this Avalonia.Animation.Animation obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.DurationProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -42,19 +40,18 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DurationProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DurationProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Duration<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation Duration(
+        this Avalonia.Animation.Animation obj,
         IObservable<System.TimeSpan> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.DurationProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -62,7 +59,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Animation.Animation.DurationProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Animation.Animation.DurationProperty"/> binding on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -78,12 +75,11 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.DurationProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.TimeSpan> ObserveDuration(this Avalonia.Animation.Animation obj)
     {
@@ -91,13 +87,12 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Animation.Animation.DurationProperty"/> property on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnDuration<T>(this T obj, Action<Avalonia.Animation.Animation, IObservable<System.TimeSpan>> handler) where T : Avalonia.Animation.Animation
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnDuration(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<System.TimeSpan>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.DurationProperty);
         handler(obj, observable);
@@ -107,32 +102,30 @@ public static partial class AnimationExtensions
     // Avalonia.Animation.Animation.IterationCountProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> value.
+    /// Sets a <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> value on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T IterationCount<T>(this T obj, Avalonia.Animation.IterationCount value) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation IterationCount(this Avalonia.Animation.Animation obj, Avalonia.Animation.IterationCount value)
     {
         obj[Avalonia.Animation.Animation.IterationCountProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T IterationCount<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation IterationCount(
+        this Avalonia.Animation.Animation obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.IterationCountProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -140,19 +133,18 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T IterationCount<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation IterationCount(
+        this Avalonia.Animation.Animation obj,
         IObservable<Avalonia.Animation.IterationCount> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.IterationCountProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -160,7 +152,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> binding on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -176,12 +168,11 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Animation.IterationCount> ObserveIterationCount(this Avalonia.Animation.Animation obj)
     {
@@ -189,13 +180,12 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> property on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnIterationCount<T>(this T obj, Action<Avalonia.Animation.Animation, IObservable<Avalonia.Animation.IterationCount>> handler) where T : Avalonia.Animation.Animation
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnIterationCount(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<Avalonia.Animation.IterationCount>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.IterationCountProperty);
         handler(obj, observable);
@@ -205,32 +195,30 @@ public static partial class AnimationExtensions
     // Avalonia.Animation.Animation.PlaybackDirectionProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> value.
+    /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> value on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T PlaybackDirection<T>(this T obj, Avalonia.Animation.PlaybackDirection value) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation PlaybackDirection(this Avalonia.Animation.Animation obj, Avalonia.Animation.PlaybackDirection value)
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlaybackDirection<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation PlaybackDirection(
+        this Avalonia.Animation.Animation obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.PlaybackDirectionProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -238,19 +226,18 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlaybackDirection<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation PlaybackDirection(
+        this Avalonia.Animation.Animation obj,
         IObservable<Avalonia.Animation.PlaybackDirection> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.PlaybackDirectionProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -258,7 +245,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> binding on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -274,12 +261,11 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Animation.PlaybackDirection> ObservePlaybackDirection(this Avalonia.Animation.Animation obj)
     {
@@ -287,13 +273,12 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnPlaybackDirection<T>(this T obj, Action<Avalonia.Animation.Animation, IObservable<Avalonia.Animation.PlaybackDirection>> handler) where T : Avalonia.Animation.Animation
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnPlaybackDirection(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<Avalonia.Animation.PlaybackDirection>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.PlaybackDirectionProperty);
         handler(obj, observable);
@@ -304,9 +289,8 @@ public static partial class AnimationExtensions
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Normal"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlaybackDirectionNormal<T>(this T obj) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation PlaybackDirectionNormal(this Avalonia.Animation.Animation obj)
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Normal;
         return obj;
@@ -316,9 +300,8 @@ public static partial class AnimationExtensions
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Reverse"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlaybackDirectionReverse<T>(this T obj) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation PlaybackDirectionReverse(this Avalonia.Animation.Animation obj)
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Reverse;
         return obj;
@@ -328,9 +311,8 @@ public static partial class AnimationExtensions
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Alternate"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlaybackDirectionAlternate<T>(this T obj) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation PlaybackDirectionAlternate(this Avalonia.Animation.Animation obj)
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Alternate;
         return obj;
@@ -340,9 +322,8 @@ public static partial class AnimationExtensions
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.AlternateReverse"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlaybackDirectionAlternateReverse<T>(this T obj) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation PlaybackDirectionAlternateReverse(this Avalonia.Animation.Animation obj)
     {
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.AlternateReverse;
         return obj;
@@ -351,32 +332,30 @@ public static partial class AnimationExtensions
     // Avalonia.Animation.Animation.FillModeProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> value.
+    /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> value on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T FillMode<T>(this T obj, Avalonia.Animation.FillMode value) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation FillMode(this Avalonia.Animation.Animation obj, Avalonia.Animation.FillMode value)
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.FillModeProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.FillModeProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FillMode<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation FillMode(
+        this Avalonia.Animation.Animation obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.FillModeProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -384,19 +363,18 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.FillModeProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.FillModeProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FillMode<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation FillMode(
+        this Avalonia.Animation.Animation obj,
         IObservable<Avalonia.Animation.FillMode> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.FillModeProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -404,7 +382,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> binding on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -420,12 +398,11 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Animation.FillMode> ObserveFillMode(this Avalonia.Animation.Animation obj)
     {
@@ -433,13 +410,12 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnFillMode<T>(this T obj, Action<Avalonia.Animation.Animation, IObservable<Avalonia.Animation.FillMode>> handler) where T : Avalonia.Animation.Animation
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnFillMode(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<Avalonia.Animation.FillMode>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.FillModeProperty);
         handler(obj, observable);
@@ -450,9 +426,8 @@ public static partial class AnimationExtensions
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FillModeNone<T>(this T obj) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation FillModeNone(this Avalonia.Animation.Animation obj)
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.None;
         return obj;
@@ -462,9 +437,8 @@ public static partial class AnimationExtensions
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.Forward"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FillModeForward<T>(this T obj) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation FillModeForward(this Avalonia.Animation.Animation obj)
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Forward;
         return obj;
@@ -474,9 +448,8 @@ public static partial class AnimationExtensions
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.Backward"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FillModeBackward<T>(this T obj) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation FillModeBackward(this Avalonia.Animation.Animation obj)
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Backward;
         return obj;
@@ -486,9 +459,8 @@ public static partial class AnimationExtensions
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.Both"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FillModeBoth<T>(this T obj) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation FillModeBoth(this Avalonia.Animation.Animation obj)
     {
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Both;
         return obj;
@@ -497,32 +469,30 @@ public static partial class AnimationExtensions
     // Avalonia.Animation.Animation.EasingProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Animation.Animation.EasingProperty"/> value.
+    /// Sets a <see cref="Avalonia.Animation.Animation.EasingProperty"/> value on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T Easing<T>(this T obj, Avalonia.Animation.Easings.Easing value) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation Easing(this Avalonia.Animation.Animation obj, Avalonia.Animation.Easings.Easing value)
     {
         obj[Avalonia.Animation.Animation.EasingProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.EasingProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.EasingProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Easing<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation Easing(
+        this Avalonia.Animation.Animation obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.EasingProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -530,19 +500,18 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.EasingProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.EasingProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Easing<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation Easing(
+        this Avalonia.Animation.Animation obj,
         IObservable<Avalonia.Animation.Easings.Easing> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.EasingProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -550,7 +519,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Animation.Animation.EasingProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Animation.Animation.EasingProperty"/> binding on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -566,12 +535,11 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.EasingProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Animation.Easings.Easing> ObserveEasing(this Avalonia.Animation.Animation obj)
     {
@@ -579,13 +547,12 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Animation.Animation.EasingProperty"/> property on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnEasing<T>(this T obj, Action<Avalonia.Animation.Animation, IObservable<Avalonia.Animation.Easings.Easing>> handler) where T : Avalonia.Animation.Animation
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnEasing(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<Avalonia.Animation.Easings.Easing>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.EasingProperty);
         handler(obj, observable);
@@ -595,32 +562,30 @@ public static partial class AnimationExtensions
     // Avalonia.Animation.Animation.DelayProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Animation.Animation.DelayProperty"/> value.
+    /// Sets a <see cref="Avalonia.Animation.Animation.DelayProperty"/> value on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T Delay<T>(this T obj, System.TimeSpan value) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation Delay(this Avalonia.Animation.Animation obj, System.TimeSpan value)
     {
         obj[Avalonia.Animation.Animation.DelayProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DelayProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DelayProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Delay<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation Delay(
+        this Avalonia.Animation.Animation obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.DelayProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -628,19 +593,18 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DelayProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DelayProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Delay<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation Delay(
+        this Avalonia.Animation.Animation obj,
         IObservable<System.TimeSpan> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.DelayProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -648,7 +612,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Animation.Animation.DelayProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Animation.Animation.DelayProperty"/> binding on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -664,12 +628,11 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.DelayProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.TimeSpan> ObserveDelay(this Avalonia.Animation.Animation obj)
     {
@@ -677,13 +640,12 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Animation.Animation.DelayProperty"/> property on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnDelay<T>(this T obj, Action<Avalonia.Animation.Animation, IObservable<System.TimeSpan>> handler) where T : Avalonia.Animation.Animation
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnDelay(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<System.TimeSpan>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.DelayProperty);
         handler(obj, observable);
@@ -693,32 +655,30 @@ public static partial class AnimationExtensions
     // Avalonia.Animation.Animation.DelayBetweenIterationsProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> value.
+    /// Sets a <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> value on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T DelayBetweenIterations<T>(this T obj, System.TimeSpan value) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation DelayBetweenIterations(this Avalonia.Animation.Animation obj, System.TimeSpan value)
     {
         obj[Avalonia.Animation.Animation.DelayBetweenIterationsProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T DelayBetweenIterations<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation DelayBetweenIterations(
+        this Avalonia.Animation.Animation obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.DelayBetweenIterationsProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -726,19 +686,18 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T DelayBetweenIterations<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation DelayBetweenIterations(
+        this Avalonia.Animation.Animation obj,
         IObservable<System.TimeSpan> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.DelayBetweenIterationsProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -746,7 +705,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> binding on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -762,12 +721,11 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.TimeSpan> ObserveDelayBetweenIterations(this Avalonia.Animation.Animation obj)
     {
@@ -775,13 +733,12 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> property on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnDelayBetweenIterations<T>(this T obj, Action<Avalonia.Animation.Animation, IObservable<System.TimeSpan>> handler) where T : Avalonia.Animation.Animation
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnDelayBetweenIterations(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<System.TimeSpan>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.DelayBetweenIterationsProperty);
         handler(obj, observable);
@@ -791,32 +748,30 @@ public static partial class AnimationExtensions
     // Avalonia.Animation.Animation.SpeedRatioProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> value.
+    /// Sets a <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> value on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T SpeedRatio<T>(this T obj, System.Double value) where T : Avalonia.Animation.Animation
+    public static Avalonia.Animation.Animation SpeedRatio(this Avalonia.Animation.Animation obj, System.Double value)
     {
         obj[Avalonia.Animation.Animation.SpeedRatioProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SpeedRatio<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation SpeedRatio(
+        this Avalonia.Animation.Animation obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.SpeedRatioProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -824,19 +779,18 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SpeedRatio<T>(
-        this T obj,
+    public static Avalonia.Animation.Animation SpeedRatio(
+        this Avalonia.Animation.Animation obj,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animation
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Animation.Animation.SpeedRatioProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -844,7 +798,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> binding on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -860,12 +814,11 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<System.Double> ObserveSpeedRatio(this Avalonia.Animation.Animation obj)
     {
@@ -873,13 +826,12 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> property on an object of type <see cref="Avalonia.Animation.Animation"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnSpeedRatio<T>(this T obj, Action<Avalonia.Animation.Animation, IObservable<System.Double>> handler) where T : Avalonia.Animation.Animation
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnSpeedRatio(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.SpeedRatioProperty);
         handler(obj, observable);

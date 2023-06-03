@@ -113,7 +113,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T icon<T>(this T obj, Avalonia.Media.Imaging.IBitmap value) where T : Avalonia.Controls.NativeMenuItem
+    public static T icon<T>(this T obj, Avalonia.Media.Imaging.Bitmap value) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.IconProperty] = value;
         return obj;
@@ -150,7 +150,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T icon<T>(
         this T obj,
-        IObservable<Avalonia.Media.Imaging.IBitmap> observable,
+        IObservable<Avalonia.Media.Imaging.Bitmap> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -183,7 +183,7 @@ public static partial class NativeMenuItemExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Imaging.IBitmap> ObserveIcon(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<Avalonia.Media.Imaging.Bitmap> ObserveIcon(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.IconProperty);
     }
@@ -195,7 +195,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<Avalonia.Media.Imaging.IBitmap>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<Avalonia.Media.Imaging.Bitmap>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.IconProperty);
         handler(obj, observable);

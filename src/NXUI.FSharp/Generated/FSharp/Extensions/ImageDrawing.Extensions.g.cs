@@ -9,32 +9,30 @@ public static partial class ImageDrawingExtensions
     // Avalonia.Media.ImageDrawing.ImageSourceProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> value on an object of type <see cref="Avalonia.Media.ImageDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T imageSource<T>(this T obj, Avalonia.Media.IImage value) where T : Avalonia.Media.ImageDrawing
+    public static Avalonia.Media.ImageDrawing imageSource(this Avalonia.Media.ImageDrawing obj, Avalonia.Media.IImage value)
     {
         obj[Avalonia.Media.ImageDrawing.ImageSourceProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> on an object of type <see cref="Avalonia.Media.ImageDrawing"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T imageSource<T>(
-        this T obj,
+    public static Avalonia.Media.ImageDrawing imageSource(
+        this Avalonia.Media.ImageDrawing obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ImageDrawing
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.ImageDrawing.ImageSourceProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -42,19 +40,18 @@ public static partial class ImageDrawingExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> on an object of type <see cref="Avalonia.Media.ImageDrawing"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T imageSource<T>(
-        this T obj,
+    public static Avalonia.Media.ImageDrawing imageSource(
+        this Avalonia.Media.ImageDrawing obj,
         IObservable<Avalonia.Media.IImage> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ImageDrawing
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.ImageDrawing.ImageSourceProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -62,7 +59,7 @@ public static partial class ImageDrawingExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> binding on an object of type <see cref="Avalonia.Media.ImageDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -78,12 +75,11 @@ public static partial class ImageDrawingExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> on an object of type <see cref="Avalonia.Media.ImageDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Media.IImage> ObserveImageSource(this Avalonia.Media.ImageDrawing obj)
     {
@@ -91,13 +87,12 @@ public static partial class ImageDrawingExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> property on an object of type <see cref="Avalonia.Media.ImageDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnImageSource<T>(this T obj, Action<Avalonia.Media.ImageDrawing, IObservable<Avalonia.Media.IImage>> handler) where T : Avalonia.Media.ImageDrawing
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ImageDrawing OnImageSource(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<Avalonia.Media.IImage>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
         handler(obj, observable);
@@ -107,32 +102,30 @@ public static partial class ImageDrawingExtensions
     // Avalonia.Media.ImageDrawing.RectProperty
 
     /// <summary>
-    /// Sets a <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> value.
+    /// Sets a <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> value on an object of type <see cref="Avalonia.Media.ImageDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="value">The value.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static T rect<T>(this T obj, Avalonia.Rect value) where T : Avalonia.Media.ImageDrawing
+    public static Avalonia.Media.ImageDrawing rect(this Avalonia.Media.ImageDrawing obj, Avalonia.Rect value)
     {
         obj[Avalonia.Media.ImageDrawing.RectProperty] = value;
         return obj;
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> with binding source value.
+    /// Sets a binding to <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> on an object of type <see cref="Avalonia.Media.ImageDrawing"/> with a source binding specified as a parameter.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T rect<T>(
-        this T obj,
+    public static Avalonia.Media.ImageDrawing rect(
+        this Avalonia.Media.ImageDrawing obj,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ImageDrawing
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.ImageDrawing.RectProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = binding;
@@ -140,19 +133,18 @@ public static partial class ImageDrawingExtensions
     }
 
     /// <summary>
-    /// Sets a binding to <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> with observable source value.
+    /// Sets a binding to <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> on an object of type <see cref="Avalonia.Media.ImageDrawing"/> with a source binding specified as an observable.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T rect<T>(
-        this T obj,
+    public static Avalonia.Media.ImageDrawing rect(
+        this Avalonia.Media.ImageDrawing obj,
         IObservable<Avalonia.Rect> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
-        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ImageDrawing
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         var descriptor = Avalonia.Media.ImageDrawing.RectProperty.Bind().WithMode(mode).WithPriority(priority);
         obj[descriptor] = observable.ToBinding();
@@ -160,7 +152,7 @@ public static partial class ImageDrawingExtensions
     }
 
     /// <summary>
-    /// Makes a <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> binding.
+    /// Makes a <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> binding on an object of type <see cref="Avalonia.Media.ImageDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <param name="mode">The target binding mode.</param>
@@ -176,12 +168,11 @@ public static partial class ImageDrawingExtensions
     }
 
     /// <summary>
-    /// Gets an observable for an <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
+    /// Gets an observable for an <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> on an object of type <see cref="Avalonia.Media.ImageDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>
-    /// An observable which fires immediately with the current value of the property on the
-    /// object and subsequently each time the property value changes.
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
     public static IObservable<Avalonia.Rect> ObserveRect(this Avalonia.Media.ImageDrawing obj)
     {
@@ -189,13 +180,12 @@ public static partial class ImageDrawingExtensions
     }
 
     /// <summary>
-    /// Sets a handler with an observable for an <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
+    /// Registers a handler for the <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> property on an object of type <see cref="Avalonia.Media.ImageDrawing"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
-    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T OnRect<T>(this T obj, Action<Avalonia.Media.ImageDrawing, IObservable<Avalonia.Rect>> handler) where T : Avalonia.Media.ImageDrawing
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ImageDrawing OnRect(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<Avalonia.Rect>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ImageDrawing.RectProperty);
         handler(obj, observable);

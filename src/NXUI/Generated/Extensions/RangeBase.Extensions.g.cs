@@ -495,4 +495,87 @@ public static partial class RangeBaseExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.RangeBase"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnValueChangedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        obj.AddHandler(Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.RangeBase"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnValueChanged<T>(
+        this T obj, Action<T, IObservable<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent"/> event on an object of type <see cref="Avalonia.Controls.Primitives.RangeBase"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs> ObserveOnValueChanged(
+        this Avalonia.Controls.Primitives.RangeBase obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Bubble)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent, routes);
+    }
+
+    // Avalonia.Controls.Primitives.RangeBase.ValueChanged
+
+    /// <summary>
+    /// Adds a handler to the `ValueChanged` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnValueChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>, Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>(
+                h => obj.ValueChanged += h, 
+                h => obj.ValueChanged -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `ValueChanged` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `ValueChanged` event on the specified object.</returns>
+    public static IObservable<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs> ObserveOnValueChangedEvent(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>, Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>(
+                h => obj.ValueChanged += h, 
+                h => obj.ValueChanged -= h)
+            .Select(x => x.EventArgs);
+    }
 }

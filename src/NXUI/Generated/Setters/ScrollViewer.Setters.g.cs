@@ -6,6 +6,78 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class ScrollViewerSetters
 {
+    // Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerBringIntoViewOnFocusChange(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerBringIntoViewOnFocusChange(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerBringIntoViewOnFocusChange(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerBringIntoViewOnFocusChange(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollViewerBringIntoViewOnFocusChange(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollViewerBringIntoViewOnFocusChange(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.ScrollViewer.OffsetProperty
 
     /// <summary>

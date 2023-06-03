@@ -6,7 +6,7 @@ namespace Generator;
 
 public static class SettersGenerator
 {
-    public static void Generate(string outputPath, List<Class> classes)
+    public static void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
     {
         foreach (var c in classes)
         {
@@ -20,6 +20,16 @@ public static class SettersGenerator
             void WriteLine(string x) => file.WriteLine(x);
 
             var fileHeaderBuilder = new StringBuilder(Templates.FileHeaderTemplate);
+
+            if (genFSharp)
+            {
+                fileHeaderBuilder.Replace("%Namespace%", ".FSharp");
+            }
+            else
+            {
+                fileHeaderBuilder.Replace("%Namespace%", "");
+            }
+
             WriteLine(fileHeaderBuilder.ToString());
 
             var classHeaderBuilder = new StringBuilder(Templates.PropertySettersHeaderTemplate);

@@ -30,7 +30,7 @@ public static partial class StyleExtensions
     /// <param name="setters"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T setters<T>(this T style, params ISetter[] setters) where T : Style
+    public static T setters<T>(this T style, params Setter[] setters) where T : Style
     {
         foreach (var setter in setters)
         {

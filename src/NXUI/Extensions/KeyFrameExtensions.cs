@@ -12,9 +12,8 @@ public static partial class KeyFrameExtensions
     /// </summary>
     /// <param name="keyFrame"></param>
     /// <param name="keyTime"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T KeyTime<T>(this T keyFrame, TimeSpan keyTime) where T : KeyFrame
+    public static KeyFrame KeyTime(this KeyFrame keyFrame, TimeSpan keyTime) 
     {
         keyFrame.KeyTime = keyTime;
         return keyFrame;
@@ -27,9 +26,8 @@ public static partial class KeyFrameExtensions
     /// </summary>
     /// <param name="keyFrame"></param>
     /// <param name="cue"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T Cue<T>(this T keyFrame, Cue cue) where T : KeyFrame
+    public static KeyFrame Cue(this KeyFrame keyFrame, Cue cue)
     {
         keyFrame.Cue = cue;
         return keyFrame;
@@ -40,9 +38,8 @@ public static partial class KeyFrameExtensions
     /// </summary>
     /// <param name="keyFrame"></param>
     /// <param name="cue"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T Cue<T>(this T keyFrame, double cue) where T : KeyFrame
+    public static KeyFrame Cue(this KeyFrame keyFrame, double cue)
     {
         keyFrame.Cue = new Cue(cue);
         return keyFrame;
@@ -52,10 +49,9 @@ public static partial class KeyFrameExtensions
     /// 
     /// </summary>
     /// <param name="keyFrame"></param>
-    /// <param name="cue"></param>
-    /// <typeparam name="T"></typeparam>
+    /// <param name="cue"></param
     /// <returns></returns>
-    public static T Cue<T>(this T keyFrame, string cue) where T : KeyFrame
+    public static KeyFrame Cue(this KeyFrame keyFrame, string cue)
     {
         keyFrame.Cue = Avalonia.Animation.Cue.Parse(cue, System.Globalization.CultureInfo.InvariantCulture);
         return keyFrame;
@@ -68,9 +64,8 @@ public static partial class KeyFrameExtensions
     /// </summary>
     /// <param name="keyFrame"></param>
     /// <param name="keySpline"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T KeySpline<T>(this T keyFrame, KeySpline keySpline) where T : KeyFrame
+    public static KeyFrame KeySpline(this KeyFrame keyFrame, KeySpline keySpline)
     {
         keyFrame.KeySpline = keySpline;
         return keyFrame;
@@ -84,9 +79,8 @@ public static partial class KeyFrameExtensions
     /// <param name="y1"></param>
     /// <param name="x2"></param>
     /// <param name="y2"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T KeySpline<T>(this T keyFrame, double x1, double y1, double x2, double y2) where T : KeyFrame
+    public static KeyFrame KeySpline(this KeyFrame keyFrame, double x1, double y1, double x2, double y2)
     {
         keyFrame.KeySpline = new KeySpline(x1, y1, x2, y2);
         return keyFrame;
@@ -97,9 +91,8 @@ public static partial class KeyFrameExtensions
     /// </summary>
     /// <param name="keyFrame"></param>
     /// <param name="keySpline"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T KeySpline<T>(this T keyFrame, string keySpline) where T : KeyFrame
+    public static KeyFrame KeySpline(this KeyFrame keyFrame, string keySpline)
     {
         keyFrame.KeySpline = Avalonia.Animation.KeySpline.Parse(keySpline, System.Globalization.CultureInfo.InvariantCulture);;
         return keyFrame;
@@ -112,9 +105,8 @@ public static partial class KeyFrameExtensions
     /// </summary>
     /// <param name="keyFrame"></param>
     /// <param name="setters"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T Setters<T>(this T keyFrame, params IAnimationSetter[] setters) where T : KeyFrame
+    public static KeyFrame Setters(this KeyFrame keyFrame, params IAnimationSetter[] setters)
     {
         foreach (var setter in setters)
         {
@@ -131,9 +123,8 @@ public static partial class KeyFrameExtensions
     /// <param name="keyFrame"></param>
     /// <param name="property"></param>
     /// <param name="value"></param>
-    /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T Setter<T>(this T keyFrame, AvaloniaProperty property, object value) where T : KeyFrame
+    public static KeyFrame Setter(this KeyFrame keyFrame, AvaloniaProperty property, object value)
     {
         keyFrame.Setters.Add(new Setter(property, value));
         return keyFrame;

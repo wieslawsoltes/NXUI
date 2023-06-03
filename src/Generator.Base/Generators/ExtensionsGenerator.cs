@@ -23,12 +23,12 @@ public static class ExtensionsGenerator
 
             if (genFSharp)
             {
-                fileHeaderBuilder.Replace("%FSharpNs%", ".FSharp");
+                fileHeaderBuilder.Replace("%Namespace%", ".FSharp");
             }
             else
             {
-                fileHeaderBuilder.Replace("%FSharpNs%", "");
-            } 
+                fileHeaderBuilder.Replace("%Namespace%", "");
+            }
 
             WriteLine(fileHeaderBuilder.ToString());
 

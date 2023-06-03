@@ -6,7 +6,7 @@ namespace Generator;
 
 public static class EventsGenerator
 {
-    public static void Generate(string outputPath, List<Class> classes)
+    public static void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
     {
         foreach (var c in classes)
         {
@@ -22,6 +22,16 @@ public static class EventsGenerator
             void WriteLine(string x) => file.WriteLine(x);
 
             var fileHeaderBuilder = new StringBuilder(Templates.EventsHeaderTemplate);
+
+            if (genFSharp)
+            {
+                fileHeaderBuilder.Replace("%Namespace%", ".FSharp");
+            }
+            else
+            {
+                fileHeaderBuilder.Replace("%Namespace%", "");
+            }
+
             WriteLine(fileHeaderBuilder.ToString());
 
             var addedEvents = new HashSet<string>();

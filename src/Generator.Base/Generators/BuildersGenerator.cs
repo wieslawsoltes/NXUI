@@ -7,7 +7,7 @@ namespace Generator;
 
 public static class BuildersGenerator
 {
-    public static void Generate(string outputPath, List<Class> classes)
+    public static void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
     {
         for (var i = 0; i < classes.Count; i++)
         {
@@ -29,6 +29,16 @@ public static class BuildersGenerator
             void WriteLine(string x) => file.WriteLine(x);
 
             var fileHeaderBuilder = new StringBuilder(Templates.BuildersHeaderTemplate);
+
+            if (genFSharp)
+            {
+                fileHeaderBuilder.Replace("%Namespace%", ".FSharp");
+            }
+            else
+            {
+                fileHeaderBuilder.Replace("%Namespace%", "");
+            }
+
             WriteLine(fileHeaderBuilder.ToString());
 
             var builders = GetBuilders(c.Type);

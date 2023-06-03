@@ -10,7 +10,6 @@ let buttons(counter: BehaviorSubject<int>) =
     
     let increment =
         Button()
-            .width(75.)
             .content("Increment")
             .HorizontalAlignmentCenter()
             .OnClick(fun _ observable ->
@@ -19,7 +18,6 @@ let buttons(counter: BehaviorSubject<int>) =
 
     let reset =
         Button()
-            .width(75.)
             .content("Reset")
             .HorizontalAlignmentCenter()
             .OnClick(fun _ observable ->

@@ -201,7 +201,7 @@ public static partial class TopLevelExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T transparencyLevelHint<T>(this T obj, Avalonia.Controls.WindowTransparencyLevel value) where T : Avalonia.Controls.TopLevel
+    public static T transparencyLevelHint<T>(this T obj, System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel> value) where T : Avalonia.Controls.TopLevel
     {
         obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = value;
         return obj;
@@ -238,7 +238,7 @@ public static partial class TopLevelExtensions
     /// <returns>The target object reference.</returns>
     public static T transparencyLevelHint<T>(
         this T obj,
-        IObservable<Avalonia.Controls.WindowTransparencyLevel> observable,
+        IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -271,7 +271,7 @@ public static partial class TopLevelExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.WindowTransparencyLevel> ObserveTransparencyLevelHint(this Avalonia.Controls.TopLevel obj)
+    public static IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> ObserveTransparencyLevelHint(this Avalonia.Controls.TopLevel obj)
     {
         return obj.GetObservable(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty);
     }
@@ -283,82 +283,10 @@ public static partial class TopLevelExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTransparencyLevelHint<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Controls.WindowTransparencyLevel>> handler) where T : Avalonia.Controls.TopLevel
+    public static T OnTransparencyLevelHint<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty);
         handler(obj, observable);
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property value to <see cref="Avalonia.Controls.WindowTransparencyLevel.None"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TransparencyLevelHintNone<T>(this T obj) where T : Avalonia.Controls.TopLevel
-    {
-        obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.None;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property value to <see cref="Avalonia.Controls.WindowTransparencyLevel.Transparent"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TransparencyLevelHintTransparent<T>(this T obj) where T : Avalonia.Controls.TopLevel
-    {
-        obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.Transparent;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property value to <see cref="Avalonia.Controls.WindowTransparencyLevel.Blur"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TransparencyLevelHintBlur<T>(this T obj) where T : Avalonia.Controls.TopLevel
-    {
-        obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.Blur;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property value to <see cref="Avalonia.Controls.WindowTransparencyLevel.AcrylicBlur"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TransparencyLevelHintAcrylicBlur<T>(this T obj) where T : Avalonia.Controls.TopLevel
-    {
-        obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.AcrylicBlur;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property value to <see cref="Avalonia.Controls.WindowTransparencyLevel.ForceAcrylicBlur"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TransparencyLevelHintForceAcrylicBlur<T>(this T obj) where T : Avalonia.Controls.TopLevel
-    {
-        obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.ForceAcrylicBlur;
-        return obj;
-    }
-
-    /// <summary>
-    /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property value to <see cref="Avalonia.Controls.WindowTransparencyLevel.Mica"/>.
-    /// </summary>
-    /// <param name="obj">The target object.</param>
-    /// <typeparam name="T">The type of the target object.</typeparam>
-    /// <returns>The target object reference.</returns>
-    public static T TransparencyLevelHintMica<T>(this T obj) where T : Avalonia.Controls.TopLevel
-    {
-        obj[Avalonia.Controls.TopLevel.TransparencyLevelHintProperty] = Avalonia.Controls.WindowTransparencyLevel.Mica;
         return obj;
     }
 
