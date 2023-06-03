@@ -1,12 +1,8 @@
 ﻿open System.Reactive.Subjects
-
 open Avalonia
 open Avalonia.Controls
-open Avalonia.Controls.Presenters
 open Avalonia.Data
-open Avalonia.Media
 open Avalonia.Styling
-
 open NXUI.Extensions
 open NXUI.FSharp.Extensions
 
