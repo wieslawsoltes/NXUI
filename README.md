@@ -85,5 +85,5 @@ dotnet run -- ../NXUI/Generated
 F#
 ```
 cd src/Generator
-dotnet run -- ../NXUI/Generated -fsharp
+dotnet run -- ../NXUI.FSharp/Generated -fsharp
 ```
