@@ -1,18 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net7.0</TargetFramework>
     </PropertyGroup>
-
     <ItemGroup>
-        <Compile Include="Program.fs" />
+        <Compile Include="Program.fs"/>
     </ItemGroup>
-
     <ItemGroup>
-      <ProjectReference Include="..\..\src\NXUI.Desktop\NXUI.Desktop.csproj" />
-      <ProjectReference Include="..\..\src\NXUI.FSharp\NXUI.FSharp.csproj" />
-      <ProjectReference Include="..\..\src\NXUI\NXUI.csproj" />
+        <ProjectReference Include="..\..\src\NXUI.Desktop\NXUI.Desktop.csproj"/>
+        <ProjectReference Include="..\..\src\NXUI.FSharp\NXUI.FSharp.csproj"/>
+        <ProjectReference Include="..\..\src\NXUI\NXUI.csproj"/>
     </ItemGroup>
-
 </Project>
