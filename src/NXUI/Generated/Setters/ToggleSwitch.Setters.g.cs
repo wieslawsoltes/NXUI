@@ -293,4 +293,76 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty, binding));
         return keyFrame;
     }
+
+    // Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToggleSwitchKnobTransitions(this Style style, Avalonia.Animation.Transitions value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToggleSwitchKnobTransitions(this KeyFrame keyFrame, Avalonia.Animation.Transitions value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToggleSwitchKnobTransitions(this Style style, IObservable<Avalonia.Animation.Transitions> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToggleSwitchKnobTransitions(this KeyFrame keyFrame, IObservable<Avalonia.Animation.Transitions> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToggleSwitchKnobTransitions(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToggleSwitchKnobTransitions(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty, binding));
+        return keyFrame;
+    }
 }

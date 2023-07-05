@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9
 ### NXUI
 
 ```xml
-<PackageReference Include="NXUI" Version="11.0.0-rc1.1" />
+<PackageReference Include="NXUI" Version="11.0.0" />
 ```
 
 Additionally, depending on the application type:
@@ -20,17 +20,17 @@ Additionally, depending on the application type:
 ### Desktop
 
 ```xml
-<PackageReference Include="NXUI.Desktop" Version="11.0.0-rc1.1" />
+<PackageReference Include="NXUI.Desktop" Version="11.0.0" />
 ```
 or
 ```xml
-<PackageReference Include="Avalonia.Desktop" Version="11.0.0-rc1.1" />
+<PackageReference Include="Avalonia.Desktop" Version="11.0.0" />
 ```
 
 ### Browser
 
 ```xml
-<PackageReference Include="Avalonia.Browser" Version="11.0.0-rc1.1" />
+<PackageReference Include="Avalonia.Browser" Version="11.0.0" />
 ```
 
 ```

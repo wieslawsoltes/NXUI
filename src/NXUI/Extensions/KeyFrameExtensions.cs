@@ -49,7 +49,7 @@ public static partial class KeyFrameExtensions
     /// 
     /// </summary>
     /// <param name="keyFrame"></param>
-    /// <param name="cue"></param
+    /// <param name="cue"></param>
     /// <returns></returns>
     public static KeyFrame Cue(this KeyFrame keyFrame, string cue)
     {

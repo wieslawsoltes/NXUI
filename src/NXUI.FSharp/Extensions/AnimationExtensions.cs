@@ -79,7 +79,7 @@ public static partial class AnimationExtensions
     /// <param name="value"></param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
-    public static T animator<T>(this T animationSetter, CustomAnimatorBase value) where T : IAnimationSetter
+    public static T animator<T>(this T animationSetter, ICustomAnimator value) where T : IAnimationSetter
     {
         Avalonia.Animation.Animation.SetAnimator(animationSetter, value);
         return animationSetter;

@@ -1,7 +1,7 @@
 ﻿<Project>
   <PropertyGroup>
     <VersionPrefix>11.0.0</VersionPrefix>
-    <VersionSuffix>rc1.1</VersionSuffix>
+    <VersionSuffix></VersionSuffix>
     <Authors>Wiesław Šoltés</Authors>
     <Company>Wiesław Šoltés</Company>
     <Copyright>Copyright © Wiesław Šoltés 2023</Copyright>
@@ -13,7 +13,7 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <AvaloniaVersion>11.0.0-rc1.1</AvaloniaVersion>
+    <AvaloniaVersion>11.0.0</AvaloniaVersion>
     <SystemReactiveVersion>5.0.0</SystemReactiveVersion>
   </PropertyGroup>
 </Project>

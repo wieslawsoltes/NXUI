@@ -37,14 +37,4 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Data.IBinding> ItemsControlDisplayMemberBinding => Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty;
-
-    /// <summary>
-    /// The <see cref="Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ItemsControlAreHorizontalSnapPointsRegular => Avalonia.Controls.ItemsControl.AreHorizontalSnapPointsRegularProperty;
-
-    /// <summary>
-    /// The <see cref="Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
-    /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ItemsControlAreVerticalSnapPointsRegular => Avalonia.Controls.ItemsControl.AreVerticalSnapPointsRegularProperty;
 }

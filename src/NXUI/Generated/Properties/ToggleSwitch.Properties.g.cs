@@ -27,4 +27,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/> property defined in <see cref="Avalonia.Controls.ToggleSwitch"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ToggleSwitchOnContentTemplate => Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/> property defined in <see cref="Avalonia.Controls.ToggleSwitch"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Animation.Transitions> ToggleSwitchKnobTransitions => Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty;
 }
