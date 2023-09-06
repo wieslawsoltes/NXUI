@@ -9,6 +9,37 @@ public static partial class Builders
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.StackPanel"/> class.
     /// </summary>
+    /// <param name="children"></param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.StackPanel"/> class.</returns>
+    public static Avalonia.Controls.StackPanel StackPanel(AvaloniaList<Control> children)
+    {
+        var stackPanel = new StackPanel();
+        stackPanel.Children.AddRange(children);
+        return stackPanel;
+    }
+
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.StackPanel"/> class.
+    /// </summary>
+    /// <param name="children"></param>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.StackPanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.StackPanel"/> class.</returns>
+    public static Avalonia.Controls.StackPanel StackPanel(AvaloniaList<Control> children, out Avalonia.Controls.StackPanel @ref)
+    {
+        @ref = new StackPanel();
+        @ref.Children.AddRange(children);
+        return @ref;
+    }
+}
+
+/// <summary>
+/// The avalonia builders.
+/// </summary>
+public static partial class Builders
+{
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.StackPanel"/> class.
+    /// </summary>
     /// <returns>The new instance of the <see cref="Avalonia.Controls.StackPanel"/> class.</returns>
     public static Avalonia.Controls.StackPanel StackPanel()
         => new();
