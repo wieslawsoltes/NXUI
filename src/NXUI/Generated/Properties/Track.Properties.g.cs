@@ -57,4 +57,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Track"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> TrackIgnoreThumbDrag => Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Track"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> TrackDeferThumbDrag => Avalonia.Controls.Primitives.Track.DeferThumbDragProperty;
 }

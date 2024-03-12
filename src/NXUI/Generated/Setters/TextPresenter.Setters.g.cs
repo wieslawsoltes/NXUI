@@ -726,6 +726,78 @@ public static partial class TextPresenterSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterPreeditTextCursorPosition(this Style style, System.Nullable<System.Int32> value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterPreeditTextCursorPosition(this KeyFrame keyFrame, System.Nullable<System.Int32> value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterPreeditTextCursorPosition(this Style style, IObservable<System.Nullable<System.Int32>> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterPreeditTextCursorPosition(this KeyFrame keyFrame, IObservable<System.Nullable<System.Int32>> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterPreeditTextCursorPosition(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterPreeditTextCursorPosition(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty
 
     /// <summary>

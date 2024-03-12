@@ -59,6 +59,11 @@ public static partial class Properties
     public static Avalonia.AttachedProperty<System.Double> TextBlockLineHeight => Avalonia.Controls.TextBlock.LineHeightProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Double> TextBlockLineSpacing => Avalonia.Controls.TextBlock.LineSpacingProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Double> TextBlockLetterSpacing => Avalonia.Controls.TextBlock.LetterSpacingProperty;
