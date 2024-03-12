@@ -92,4 +92,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Boolean> ScrollViewerIsScrollInertiaEnabled => Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/> property defined in <see cref="Avalonia.Controls.ScrollViewer"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Boolean> ScrollViewerIsDeferredScrollingEnabled => Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty;
 }

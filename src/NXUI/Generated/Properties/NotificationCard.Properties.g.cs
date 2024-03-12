@@ -19,6 +19,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Boolean> NotificationCardIsClosed => Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> property defined in <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Notifications.NotificationType> NotificationCardNotificationType => Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty"/> property defined in <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Boolean> NotificationCardCloseOnClick => Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty;

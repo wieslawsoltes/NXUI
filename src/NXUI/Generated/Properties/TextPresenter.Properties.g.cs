@@ -59,6 +59,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.String> TextPresenterPreeditText => Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Nullable<System.Int32>> TextPresenterPreeditTextCursorPosition => Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.TextAlignment> TextPresenterTextAlignment => Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty;

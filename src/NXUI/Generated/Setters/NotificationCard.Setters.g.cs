@@ -78,6 +78,78 @@ public static partial class NotificationCardSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNotificationCardNotificationType(this Style style, Avalonia.Controls.Notifications.NotificationType value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNotificationCardNotificationType(this KeyFrame keyFrame, Avalonia.Controls.Notifications.NotificationType value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNotificationCardNotificationType(this Style style, IObservable<Avalonia.Controls.Notifications.NotificationType> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNotificationCardNotificationType(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Notifications.NotificationType> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNotificationCardNotificationType(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNotificationCardNotificationType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty
 
     /// <summary>

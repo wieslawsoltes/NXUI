@@ -24,6 +24,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.String> NativeMenuItemHeader => Avalonia.Controls.NativeMenuItem.HeaderProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.NativeMenuItem.ToolTipProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.String> NativeMenuItemToolTip => Avalonia.Controls.NativeMenuItem.ToolTipProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItem.GestureProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> NativeMenuItemGesture => Avalonia.Controls.NativeMenuItem.GestureProperty;

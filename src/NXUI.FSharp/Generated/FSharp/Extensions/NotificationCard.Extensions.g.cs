@@ -148,6 +148,152 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
+    // Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T notificationType<T>(this T obj, Avalonia.Controls.Notifications.NotificationType value) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        obj[Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T notificationType<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        var descriptor = Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T notificationType<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.Notifications.NotificationType> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        var descriptor = Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindNotificationType(
+        this Avalonia.Controls.Notifications.NotificationCard obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.Notifications.NotificationType> ObserveNotificationType(this Avalonia.Controls.Notifications.NotificationCard obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnNotificationType<T>(this T obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<Avalonia.Controls.Notifications.NotificationType>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationType.Information"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T NotificationTypeInformation<T>(this T obj) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        obj[Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty] = Avalonia.Controls.Notifications.NotificationType.Information;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationType.Success"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T NotificationTypeSuccess<T>(this T obj) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        obj[Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty] = Avalonia.Controls.Notifications.NotificationType.Success;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationType.Warning"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T NotificationTypeWarning<T>(this T obj) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        obj[Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty] = Avalonia.Controls.Notifications.NotificationType.Warning;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationType.Error"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T NotificationTypeError<T>(this T obj) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        obj[Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty] = Avalonia.Controls.Notifications.NotificationType.Error;
+        return obj;
+    }
+
     // Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty
 
     /// <summary>
