@@ -98,4 +98,97 @@ public static partial class PopupRootExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> value on an object of type <see cref="Avalonia.Controls.Primitives.PopupRoot"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value to set for the property.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.PopupRoot windowManagerAddShadowHint(this Avalonia.Controls.Primitives.PopupRoot obj, System.Boolean value)
+    {
+        obj[Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> on an object of type <see cref="Avalonia.Controls.Primitives.PopupRoot"/> with a source binding specified as a parameter.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.PopupRoot windowManagerAddShadowHint(
+        this Avalonia.Controls.Primitives.PopupRoot obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> on an object of type <see cref="Avalonia.Controls.Primitives.PopupRoot"/> with a source binding specified as an observable.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.PopupRoot windowManagerAddShadowHint(
+        this Avalonia.Controls.Primitives.PopupRoot obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> binding on an object of type <see cref="Avalonia.Controls.Primitives.PopupRoot"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindWindowManagerAddShadowHint(
+        this Avalonia.Controls.Primitives.PopupRoot obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> on an object of type <see cref="Avalonia.Controls.Primitives.PopupRoot"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveWindowManagerAddShadowHint(this Avalonia.Controls.Primitives.PopupRoot obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty);
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> property on an object of type <see cref="Avalonia.Controls.Primitives.PopupRoot"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the property changes.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.PopupRoot OnWindowManagerAddShadowHint(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<System.Boolean>> handler)
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

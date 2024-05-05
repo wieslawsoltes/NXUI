@@ -19,6 +19,11 @@ public static partial class Properties
     public static Avalonia.AttachedProperty<Avalonia.Media.FontFamily> TextElementFontFamily => Avalonia.Controls.Documents.TextElement.FontFamilyProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Documents.TextElement.FontFeaturesProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<Avalonia.Media.FontFeatureCollection> TextElementFontFeatures => Avalonia.Controls.Documents.TextElement.FontFeaturesProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.TextElement.FontSizeProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Double> TextElementFontSize => Avalonia.Controls.Documents.TextElement.FontSizeProperty;

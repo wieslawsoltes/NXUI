@@ -150,6 +150,78 @@ public static partial class DataValidationErrorsSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.DataValidationErrors.ErrorConverterProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDataValidationErrorsErrorConverter(this Style style, System.Func<System.Object,System.Object> value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDataValidationErrorsErrorConverter(this KeyFrame keyFrame, System.Func<System.Object,System.Object> value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDataValidationErrorsErrorConverter(this Style style, IObservable<System.Func<System.Object,System.Object>> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDataValidationErrorsErrorConverter(this KeyFrame keyFrame, IObservable<System.Func<System.Object,System.Object>> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetDataValidationErrorsErrorConverter(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetDataValidationErrorsErrorConverter(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty
 
     /// <summary>

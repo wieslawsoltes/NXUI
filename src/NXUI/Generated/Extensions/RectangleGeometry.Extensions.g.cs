@@ -6,6 +6,202 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class RectangleGeometryExtensions
 {
+    // Avalonia.Media.RectangleGeometry.RadiusXProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T RadiusX<T>(this T obj, System.Double value) where T : Avalonia.Media.RectangleGeometry
+    {
+        obj[Avalonia.Media.RectangleGeometry.RadiusXProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T RadiusX<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
+    {
+        var descriptor = Avalonia.Media.RectangleGeometry.RadiusXProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T RadiusX<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
+    {
+        var descriptor = Avalonia.Media.RectangleGeometry.RadiusXProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindRadiusX(
+        this Avalonia.Media.RectangleGeometry obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Media.RectangleGeometry.RadiusXProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveRadiusX(this Avalonia.Media.RectangleGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.RectangleGeometry.RadiusXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRadiusX<T>(this T obj, Action<Avalonia.Media.RectangleGeometry, IObservable<System.Double>> handler) where T : Avalonia.Media.RectangleGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.RectangleGeometry.RadiusXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Media.RectangleGeometry.RadiusYProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T RadiusY<T>(this T obj, System.Double value) where T : Avalonia.Media.RectangleGeometry
+    {
+        obj[Avalonia.Media.RectangleGeometry.RadiusYProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T RadiusY<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
+    {
+        var descriptor = Avalonia.Media.RectangleGeometry.RadiusYProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T RadiusY<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
+    {
+        var descriptor = Avalonia.Media.RectangleGeometry.RadiusYProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindRadiusY(
+        this Avalonia.Media.RectangleGeometry obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Media.RectangleGeometry.RadiusYProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveRadiusY(this Avalonia.Media.RectangleGeometry obj)
+    {
+        return obj.GetObservable(Avalonia.Media.RectangleGeometry.RadiusYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRadiusY<T>(this T obj, Action<Avalonia.Media.RectangleGeometry, IObservable<System.Double>> handler) where T : Avalonia.Media.RectangleGeometry
+    {
+        var observable = obj.GetObservable(Avalonia.Media.RectangleGeometry.RadiusYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.RectangleGeometry.RectProperty
 
     /// <summary>

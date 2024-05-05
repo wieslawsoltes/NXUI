@@ -2238,6 +2238,104 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    // Avalonia.Controls.TextBlock.FontFeaturesProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontFeatures<T>(this T obj, Avalonia.Media.FontFeatureCollection value) where T : Avalonia.Controls.TextBlock
+    {
+        obj[Avalonia.Controls.TextBlock.FontFeaturesProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontFeatures<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
+    {
+        var descriptor = Avalonia.Controls.TextBlock.FontFeaturesProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontFeatures<T>(
+        this T obj,
+        IObservable<Avalonia.Media.FontFeatureCollection> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBlock
+    {
+        var descriptor = Avalonia.Controls.TextBlock.FontFeaturesProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindFontFeatures(
+        this Avalonia.Controls.TextBlock obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.TextBlock.FontFeaturesProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.FontFeatureCollection> ObserveFontFeatures(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.TextBlock.FontFeaturesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontFeatures<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<Avalonia.Media.FontFeatureCollection>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TextBlock.FontFeaturesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBlock.InlinesProperty
 
     /// <summary>

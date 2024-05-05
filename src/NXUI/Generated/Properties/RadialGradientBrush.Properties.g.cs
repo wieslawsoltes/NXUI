@@ -19,7 +19,12 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.RelativePoint> RadialGradientBrushGradientOrigin => Avalonia.Media.RadialGradientBrush.GradientOriginProperty;
 
     /// <summary>
-    /// The <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/> property defined in <see cref="Avalonia.Media.RadialGradientBrush"/> class.
+    /// The <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/> property defined in <see cref="Avalonia.Media.RadialGradientBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> RadialGradientBrushRadius => Avalonia.Media.RadialGradientBrush.RadiusProperty;
+    public static Avalonia.StyledProperty<Avalonia.RelativeScalar> RadialGradientBrushRadiusX => Avalonia.Media.RadialGradientBrush.RadiusXProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/> property defined in <see cref="Avalonia.Media.RadialGradientBrush"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.RelativeScalar> RadialGradientBrushRadiusY => Avalonia.Media.RadialGradientBrush.RadiusYProperty;
 }

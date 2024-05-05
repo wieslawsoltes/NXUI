@@ -97,4 +97,14 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.TextAlignment> NumericUpDownTextAlignment => Avalonia.Controls.NumericUpDown.TextAlignmentProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Object> NumericUpDownInnerLeftContent => Avalonia.Controls.NumericUpDown.InnerLeftContentProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/> property defined in <see cref="Avalonia.Controls.NumericUpDown"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Object> NumericUpDownInnerRightContent => Avalonia.Controls.NumericUpDown.InnerRightContentProperty;
 }

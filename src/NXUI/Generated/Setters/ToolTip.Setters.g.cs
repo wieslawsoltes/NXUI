@@ -437,4 +437,220 @@ public static partial class ToolTipSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowDelayProperty, binding));
         return keyFrame;
     }
+
+    // Avalonia.Controls.ToolTip.BetweenShowDelayProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipBetweenShowDelay(this Style style, System.Int32 value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.BetweenShowDelayProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipBetweenShowDelay(this KeyFrame keyFrame, System.Int32 value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.BetweenShowDelayProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipBetweenShowDelay(this Style style, IObservable<System.Int32> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.BetweenShowDelayProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipBetweenShowDelay(this KeyFrame keyFrame, IObservable<System.Int32> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.BetweenShowDelayProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipBetweenShowDelay(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.BetweenShowDelayProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipBetweenShowDelay(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.BetweenShowDelayProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.ToolTip.ShowOnDisabledProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipShowOnDisabled(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowOnDisabledProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipShowOnDisabled(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowOnDisabledProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipShowOnDisabled(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowOnDisabledProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipShowOnDisabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowOnDisabledProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipShowOnDisabled(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowOnDisabledProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipShowOnDisabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ShowOnDisabledProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.ToolTip.ServiceEnabledProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipServiceEnabled(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ServiceEnabledProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipServiceEnabled(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ServiceEnabledProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipServiceEnabled(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ServiceEnabledProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipServiceEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ServiceEnabledProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipServiceEnabled(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ServiceEnabledProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipServiceEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ServiceEnabledProperty, binding));
+        return keyFrame;
+    }
 }

@@ -99,6 +99,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationCollection> TextBlockTextDecorations => Avalonia.Controls.TextBlock.TextDecorationsProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.FontFeatureCollection> TextBlockFontFeatures => Avalonia.Controls.TextBlock.FontFeaturesProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.TextBlock,Avalonia.Controls.Documents.InlineCollection> TextBlockInlines => Avalonia.Controls.TextBlock.InlinesProperty;

@@ -6,6 +6,150 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class RectangleGeometrySetters
 {
+    // Avalonia.Media.RectangleGeometry.RadiusXProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRectangleGeometryRadiusX(this Style style, System.Double value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusXProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRectangleGeometryRadiusX(this KeyFrame keyFrame, System.Double value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusXProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRectangleGeometryRadiusX(this Style style, IObservable<System.Double> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusXProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRectangleGeometryRadiusX(this KeyFrame keyFrame, IObservable<System.Double> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusXProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRectangleGeometryRadiusX(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusXProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRectangleGeometryRadiusX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusXProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Media.RectangleGeometry.RadiusYProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRectangleGeometryRadiusY(this Style style, System.Double value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusYProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRectangleGeometryRadiusY(this KeyFrame keyFrame, System.Double value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusYProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRectangleGeometryRadiusY(this Style style, IObservable<System.Double> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusYProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRectangleGeometryRadiusY(this KeyFrame keyFrame, IObservable<System.Double> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusYProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRectangleGeometryRadiusY(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusYProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRectangleGeometryRadiusY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusYProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Media.RectangleGeometry.RectProperty
 
     /// <summary>

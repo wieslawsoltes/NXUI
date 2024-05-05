@@ -149,4 +149,5 @@ public static partial class TransitioningContentControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty, binding));
         return keyFrame;
     }
+
 }

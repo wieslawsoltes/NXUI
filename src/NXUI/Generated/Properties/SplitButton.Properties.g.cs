@@ -22,4 +22,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/> property defined in <see cref="Avalonia.Controls.SplitButton"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.FlyoutBase> SplitButtonFlyout => Avalonia.Controls.SplitButton.FlyoutProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/> property defined in <see cref="Avalonia.Controls.SplitButton"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> SplitButtonHotKey => Avalonia.Controls.SplitButton.HotKeyProperty;
 }
