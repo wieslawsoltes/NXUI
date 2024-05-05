@@ -78,6 +78,78 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterBackgroundSizing(this Style style, Avalonia.Media.BackgroundSizing value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterBackgroundSizing(this KeyFrame keyFrame, Avalonia.Media.BackgroundSizing value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterBackgroundSizing(this Style style, IObservable<Avalonia.Media.BackgroundSizing> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterBackgroundSizing(this KeyFrame keyFrame, IObservable<Avalonia.Media.BackgroundSizing> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetContentPresenterBackgroundSizing(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetContentPresenterBackgroundSizing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty
 
     /// <summary>

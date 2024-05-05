@@ -14,6 +14,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TemplatedControlBackground => Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.BackgroundSizing> TemplatedControlBackgroundSizing => Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TemplatedControlBorderBrush => Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty;
@@ -32,6 +37,11 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.FontFamily> TemplatedControlFontFamily => Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.FontFeatureCollection> TemplatedControlFontFeatures => Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.

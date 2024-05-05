@@ -152,6 +152,30 @@ public static partial class WindowNotificationManagerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.TopCenter"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PositionTopCenter<T>(this T obj) where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.TopCenter;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.BottomCenter"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PositionBottomCenter<T>(this T obj) where T : Avalonia.Controls.Notifications.WindowNotificationManager
+    {
+        obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.BottomCenter;
+        return obj;
+    }
+
     // Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty
 
     /// <summary>

@@ -9,6 +9,16 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
+    /// The <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> property defined in <see cref="Avalonia.Media.RectangleGeometry"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> RectangleGeometryRadiusX => Avalonia.Media.RectangleGeometry.RadiusXProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> property defined in <see cref="Avalonia.Media.RectangleGeometry"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> RectangleGeometryRadiusY => Avalonia.Media.RectangleGeometry.RadiusYProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> property defined in <see cref="Avalonia.Media.RectangleGeometry"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Rect> RectangleGeometryRect => Avalonia.Media.RectangleGeometry.RectProperty;

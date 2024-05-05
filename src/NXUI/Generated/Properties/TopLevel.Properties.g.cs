@@ -52,4 +52,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<Avalonia.Media.SolidColorBrush> TopLevelSystemBarColor => Avalonia.Controls.TopLevel.SystemBarColorProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Boolean> TopLevelAutoSafeAreaPadding => Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty;
 }

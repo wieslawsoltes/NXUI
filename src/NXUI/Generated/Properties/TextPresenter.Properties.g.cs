@@ -39,6 +39,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenterCaretBrush => Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.TimeSpan> TextPresenterCaretBlinkInterval => Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Int32> TextPresenterSelectionStart => Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty;

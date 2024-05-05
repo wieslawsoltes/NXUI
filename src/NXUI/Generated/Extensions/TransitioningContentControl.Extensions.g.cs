@@ -201,4 +201,87 @@ public static partial class TransitioningContentControlExtensions
         handler(obj, observable);
         return obj;
     }
+
+    // Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent"/> event on an object of type <see cref="Avalonia.Controls.TransitioningContentControl"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnTransitionCompletedHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Controls.TransitionCompletedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.TransitioningContentControl
+    {
+        obj.AddHandler(Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent"/> event on an object of type <see cref="Avalonia.Controls.TransitioningContentControl"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnTransitionCompleted<T>(
+        this T obj, Action<T, IObservable<Avalonia.Controls.TransitionCompletedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.TransitioningContentControl
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent"/> event on an object of type <see cref="Avalonia.Controls.TransitioningContentControl"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Controls.TransitionCompletedEventArgs> ObserveOnTransitionCompleted(
+        this Avalonia.Controls.TransitioningContentControl obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        return obj.GetObservable(Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent, routes);
+    }
+
+    // Avalonia.Controls.TransitioningContentControl.TransitionCompleted
+
+    /// <summary>
+    /// Adds a handler to the `TransitionCompleted` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTransitionCompletedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.TransitionCompletedEventArgs>> handler) where T : Avalonia.Controls.TransitioningContentControl
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.TransitionCompletedEventArgs>, Avalonia.Controls.TransitionCompletedEventArgs>(
+                h => obj.TransitionCompleted += h, 
+                h => obj.TransitionCompleted -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Returns an observable for the `TransitionCompleted` event on the specified object.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the `TransitionCompleted` event on the specified object.</returns>
+    public static IObservable<Avalonia.Controls.TransitionCompletedEventArgs> ObserveOnTransitionCompletedEvent(this Avalonia.Controls.TransitioningContentControl obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler<Avalonia.Controls.TransitionCompletedEventArgs>, Avalonia.Controls.TransitionCompletedEventArgs>(
+                h => obj.TransitionCompleted += h, 
+                h => obj.TransitionCompleted -= h)
+            .Select(x => x.EventArgs);
+    }
 }

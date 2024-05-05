@@ -6,6 +6,78 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class AutoCompleteBoxSetters
 {
+    // Avalonia.Controls.AutoCompleteBox.CaretIndexProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxCaretIndex(this Style style, System.Int32 value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxCaretIndex(this KeyFrame keyFrame, System.Int32 value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxCaretIndex(this Style style, IObservable<System.Int32> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxCaretIndex(this KeyFrame keyFrame, IObservable<System.Int32> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxCaretIndex(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxCaretIndex(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.WatermarkProperty
 
     /// <summary>
@@ -1155,6 +1227,222 @@ public static partial class AutoCompleteBoxSetters
     public static KeyFrame SetAutoCompleteBoxAsyncPopulator(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.AutoCompleteBox.MaxLengthProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxMaxLength(this Style style, System.Int32 value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxMaxLength(this KeyFrame keyFrame, System.Int32 value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxMaxLength(this Style style, IObservable<System.Int32> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxMaxLength(this KeyFrame keyFrame, IObservable<System.Int32> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxMaxLength(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxMaxLength(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxInnerLeftContent(this Style style, System.Object value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxInnerLeftContent(this KeyFrame keyFrame, System.Object value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxInnerLeftContent(this Style style, IObservable<System.Object> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxInnerLeftContent(this KeyFrame keyFrame, IObservable<System.Object> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxInnerLeftContent(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxInnerLeftContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxInnerRightContent(this Style style, System.Object value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxInnerRightContent(this KeyFrame keyFrame, System.Object value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxInnerRightContent(this Style style, IObservable<System.Object> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxInnerRightContent(this KeyFrame keyFrame, IObservable<System.Object> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetAutoCompleteBoxInnerRightContent(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetAutoCompleteBoxInnerRightContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, binding));
         return keyFrame;
     }
 

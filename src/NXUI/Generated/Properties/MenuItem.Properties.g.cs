@@ -42,4 +42,19 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> MenuItemStaysOpenOnClick => Avalonia.Controls.MenuItem.StaysOpenOnClickProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.MenuItemToggleType> MenuItemToggleType => Avalonia.Controls.MenuItem.ToggleTypeProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> MenuItemIsChecked => Avalonia.Controls.MenuItem.IsCheckedProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.String> MenuItemGroupName => Avalonia.Controls.MenuItem.GroupNameProperty;
 }

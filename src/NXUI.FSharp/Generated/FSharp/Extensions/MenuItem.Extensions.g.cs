@@ -594,6 +594,336 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    // Avalonia.Controls.MenuItem.ToggleTypeProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T toggleType<T>(this T obj, Avalonia.Controls.MenuItemToggleType value) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.ToggleTypeProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T toggleType<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuItem
+    {
+        var descriptor = Avalonia.Controls.MenuItem.ToggleTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T toggleType<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.MenuItemToggleType> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuItem
+    {
+        var descriptor = Avalonia.Controls.MenuItem.ToggleTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindToggleType(
+        this Avalonia.Controls.MenuItem obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.MenuItem.ToggleTypeProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.MenuItemToggleType> ObserveToggleType(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuItem.ToggleTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnToggleType<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<Avalonia.Controls.MenuItemToggleType>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.ToggleTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.MenuItemToggleType.None"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ToggleTypeNone<T>(this T obj) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.ToggleTypeProperty] = Avalonia.Controls.MenuItemToggleType.None;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.MenuItemToggleType.CheckBox"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ToggleTypeCheckBox<T>(this T obj) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.ToggleTypeProperty] = Avalonia.Controls.MenuItemToggleType.CheckBox;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.MenuItemToggleType.Radio"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ToggleTypeRadio<T>(this T obj) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.ToggleTypeProperty] = Avalonia.Controls.MenuItemToggleType.Radio;
+        return obj;
+    }
+
+    // Avalonia.Controls.MenuItem.IsCheckedProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T isChecked<T>(this T obj, System.Boolean value) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.IsCheckedProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T isChecked<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuItem
+    {
+        var descriptor = Avalonia.Controls.MenuItem.IsCheckedProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T isChecked<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuItem
+    {
+        var descriptor = Avalonia.Controls.MenuItem.IsCheckedProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindIsChecked(
+        this Avalonia.Controls.MenuItem obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.MenuItem.IsCheckedProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveIsChecked(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuItem.IsCheckedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsChecked<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.IsCheckedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.MenuItem.GroupNameProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T groupName<T>(this T obj, System.String value) where T : Avalonia.Controls.MenuItem
+    {
+        obj[Avalonia.Controls.MenuItem.GroupNameProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T groupName<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuItem
+    {
+        var descriptor = Avalonia.Controls.MenuItem.GroupNameProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T groupName<T>(
+        this T obj,
+        IObservable<System.String> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuItem
+    {
+        var descriptor = Avalonia.Controls.MenuItem.GroupNameProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindGroupName(
+        this Avalonia.Controls.MenuItem obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.MenuItem.GroupNameProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.String> ObserveGroupName(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.MenuItem.GroupNameProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnGroupName<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.String>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.MenuItem.GroupNameProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MenuItem.ClickEvent
 
     /// <summary>

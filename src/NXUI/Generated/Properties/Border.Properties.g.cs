@@ -14,6 +14,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> BorderBackground => Avalonia.Controls.Border.BackgroundProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> property defined in <see cref="Avalonia.Controls.Border"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.BackgroundSizing> BorderBackgroundSizing => Avalonia.Controls.Border.BackgroundSizingProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Border.BorderBrushProperty"/> property defined in <see cref="Avalonia.Controls.Border"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> BorderBorderBrush => Avalonia.Controls.Border.BorderBrushProperty;

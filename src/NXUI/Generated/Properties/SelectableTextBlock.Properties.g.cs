@@ -29,6 +29,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> SelectableTextBlockSelectionBrush => Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/> property defined in <see cref="Avalonia.Controls.SelectableTextBlock"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> SelectableTextBlockSelectionForegroundBrush => Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.SelectableTextBlock.CanCopyProperty"/> property defined in <see cref="Avalonia.Controls.SelectableTextBlock"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.SelectableTextBlock,System.Boolean> SelectableTextBlockCanCopy => Avalonia.Controls.SelectableTextBlock.CanCopyProperty;

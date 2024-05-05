@@ -42,4 +42,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> ComboBoxVerticalContentAlignment => Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ComboBoxSelectionBoxItemTemplate => Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty;
 }

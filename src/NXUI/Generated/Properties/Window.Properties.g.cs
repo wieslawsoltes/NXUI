@@ -59,6 +59,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Boolean> WindowShowInTaskbar => Avalonia.Controls.Window.ShowInTaskbarProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.WindowClosingBehavior> WindowClosingBehavior => Avalonia.Controls.Window.ClosingBehaviorProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property defined in <see cref="Avalonia.Controls.Window"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.WindowState> WindowWindowState => Avalonia.Controls.Window.WindowStateProperty;

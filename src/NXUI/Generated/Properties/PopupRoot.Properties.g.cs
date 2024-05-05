@@ -12,4 +12,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Primitives.PopupRoot.TransformProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupRoot"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.Transform> PopupRootTransform => Avalonia.Controls.Primitives.PopupRoot.TransformProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupRoot"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> PopupRootWindowManagerAddShadowHint => Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty;
 }

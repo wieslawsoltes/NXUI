@@ -49,6 +49,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBoxCaretBrush => Avalonia.Controls.TextBox.CaretBrushProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.TimeSpan> TextBoxCaretBlinkInterval => Avalonia.Controls.TextBox.CaretBlinkIntervalProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.SelectionStartProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Int32> TextBoxSelectionStart => Avalonia.Controls.TextBox.SelectionStartProperty;
@@ -67,6 +72,11 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.TextBox.MaxLinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Int32> TextBoxMaxLines => Avalonia.Controls.TextBox.MaxLinesProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Int32> TextBoxMinLines => Avalonia.Controls.TextBox.MinLinesProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.TextProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.

@@ -1230,4 +1230,148 @@ public static partial class NumericUpDownSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.NumericUpDown.InnerLeftContentProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownInnerLeftContent(this Style style, System.Object value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownInnerLeftContent(this KeyFrame keyFrame, System.Object value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownInnerLeftContent(this Style style, IObservable<System.Object> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownInnerLeftContent(this KeyFrame keyFrame, IObservable<System.Object> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownInnerLeftContent(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownInnerLeftContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.NumericUpDown.InnerRightContentProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownInnerRightContent(this Style style, System.Object value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerRightContentProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownInnerRightContent(this KeyFrame keyFrame, System.Object value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerRightContentProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownInnerRightContent(this Style style, IObservable<System.Object> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerRightContentProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownInnerRightContent(this KeyFrame keyFrame, IObservable<System.Object> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerRightContentProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownInnerRightContent(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerRightContentProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownInnerRightContent(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.InnerRightContentProperty, binding));
+        return keyFrame;
+    }
+
 }
