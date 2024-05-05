@@ -3,7 +3,7 @@
 [![NuGet](https://img.shields.io/nuget/v/NXUI.svg)](https://www.nuget.org/packages/NXUI)
 [![NuGet](https://img.shields.io/nuget/dt/NXUI.svg)](https://www.nuget.org/packages/NXUI)
 
-Creating minimal [Avalonia](https://avaloniaui.net/) next generation (NXUI, next-gen UI) application using C# 10 and .NET 6 and 7
+Creating minimal [Avalonia](https://avaloniaui.net/) next generation (NXUI, next-gen UI) application using C# 10 and .NET 6, 7 or 8
 
 https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9a9d-9de02f30835e.mp4
 
@@ -15,14 +15,21 @@ https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9
 <PackageReference Include="NXUI" Version="11.0.10" />
 ```
 
+or for F# support:
+
+```xml
+<PackageReference Include="NXUI.FSharp" Version="11.0.10" />
+```
+
 Additionally, depending on the application type:
 
 ### Desktop
 
+For Desktop extensions:
 ```xml
 <PackageReference Include="NXUI.Desktop" Version="11.0.10" />
 ```
-or
+or using plain Avalonia:
 ```xml
 <PackageReference Include="Avalonia.Desktop" Version="11.0.10" />
 ```
@@ -72,6 +79,15 @@ AppBuilder.Configure<Application>()
   .UseFluentTheme()
   .WithApplicationName("NXUI")
   .StartWithClassicDesktopLifetime(Build, args);
+```
+
+Minimalistic Desktop app:
+```csharp
+Run(
+  () => Window().Content(Label().Content("NXUI")), 
+  "NXUI", 
+  args, 
+  ThemeVariant.Dark);
 ```
 
 # Generate
