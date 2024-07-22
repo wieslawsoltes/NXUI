@@ -6,6 +6,104 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class AutoCompleteBoxExtensions
 {
+    // Avalonia.Controls.AutoCompleteBox.CaretIndexProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CaretIndex<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.CaretIndexProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CaretIndex<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.CaretIndexProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CaretIndex<T>(
+        this T obj,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.CaretIndexProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindCaretIndex(
+        this Avalonia.Controls.AutoCompleteBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.CaretIndexProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Int32> ObserveCaretIndex(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCaretIndex<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Int32>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.WatermarkProperty
 
     /// <summary>
@@ -1782,6 +1880,300 @@ public static partial class AutoCompleteBoxExtensions
     public static T OnAsyncPopulator<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.AutoCompleteBox.MaxLengthProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T MaxLength<T>(this T obj, System.Int32 value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.MaxLengthProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T MaxLength<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.MaxLengthProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T MaxLength<T>(
+        this T obj,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.MaxLengthProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindMaxLength(
+        this Avalonia.Controls.AutoCompleteBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.MaxLengthProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Int32> ObserveMaxLength(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxLength<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Int32>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T InnerLeftContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T InnerLeftContent<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T InnerLeftContent<T>(
+        this T obj,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindInnerLeftContent(
+        this Avalonia.Controls.AutoCompleteBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Object> ObserveInnerLeftContent(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Object>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T InnerRightContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        obj[Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T InnerRightContent<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T InnerRightContent<T>(
+        this T obj,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindInnerRightContent(
+        this Avalonia.Controls.AutoCompleteBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Object> ObserveInnerRightContent(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnInnerRightContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Object>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
         handler(obj, observable);
         return obj;
     }

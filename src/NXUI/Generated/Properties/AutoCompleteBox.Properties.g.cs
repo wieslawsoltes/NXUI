@@ -9,6 +9,11 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
+    /// The <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Int32> AutoCompleteBoxCaretIndex => Avalonia.Controls.AutoCompleteBox.CaretIndexProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.String> AutoCompleteBoxWatermark => Avalonia.Controls.AutoCompleteBox.WatermarkProperty;
@@ -92,4 +97,19 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>> AutoCompleteBoxAsyncPopulator => Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Int32> AutoCompleteBoxMaxLength => Avalonia.Controls.AutoCompleteBox.MaxLengthProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Object> AutoCompleteBoxInnerLeftContent => Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Object> AutoCompleteBoxInnerRightContent => Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty;
 }

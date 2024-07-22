@@ -12,13 +12,13 @@ https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9
 ### NXUI
 
 ```xml
-<PackageReference Include="NXUI" Version="11.0.10" />
+<PackageReference Include="NXUI" Version="11.1.0" />
 ```
 
 or for F# support:
 
 ```xml
-<PackageReference Include="NXUI.FSharp" Version="11.0.10" />
+<PackageReference Include="NXUI.FSharp" Version="11.1.0" />
 ```
 
 Additionally, depending on the application type:
@@ -27,11 +27,11 @@ Additionally, depending on the application type:
 
 For Desktop extensions:
 ```xml
-<PackageReference Include="NXUI.Desktop" Version="11.0.10" />
+<PackageReference Include="NXUI.Desktop" Version="11.1.0" />
 ```
 or using plain Avalonia:
 ```xml
-<PackageReference Include="Avalonia.Desktop" Version="11.0.10" />
+<PackageReference Include="Avalonia.Desktop" Version="11.1.0" />
 ```
 
 ### Browser

@@ -57,4 +57,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.NativeMenuItem.IsEnabledProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> NativeMenuItemIsEnabled => Avalonia.Controls.NativeMenuItem.IsEnabledProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.NativeMenuItem.IsVisibleProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItem"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> NativeMenuItemIsVisible => Avalonia.Controls.NativeMenuItem.IsVisibleProperty;
 }

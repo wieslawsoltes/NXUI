@@ -104,6 +104,140 @@ public static partial class BorderExtensions
         return obj;
     }
 
+    // Avalonia.Controls.Border.BackgroundSizingProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T backgroundSizing<T>(this T obj, Avalonia.Media.BackgroundSizing value) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BackgroundSizingProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T backgroundSizing<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
+    {
+        var descriptor = Avalonia.Controls.Border.BackgroundSizingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T backgroundSizing<T>(
+        this T obj,
+        IObservable<Avalonia.Media.BackgroundSizing> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
+    {
+        var descriptor = Avalonia.Controls.Border.BackgroundSizingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindBackgroundSizing(
+        this Avalonia.Controls.Border obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Border.BackgroundSizingProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.BackgroundSizing> ObserveBackgroundSizing(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Border.BackgroundSizingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundSizing<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.BackgroundSizing>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Border.BackgroundSizingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.InnerBorderEdge"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BackgroundSizingInnerBorderEdge<T>(this T obj) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BackgroundSizingProperty] = Avalonia.Media.BackgroundSizing.InnerBorderEdge;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.OuterBorderEdge"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BackgroundSizingOuterBorderEdge<T>(this T obj) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BackgroundSizingProperty] = Avalonia.Media.BackgroundSizing.OuterBorderEdge;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.CenterBorder"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BackgroundSizingCenterBorder<T>(this T obj) where T : Avalonia.Controls.Border
+    {
+        obj[Avalonia.Controls.Border.BackgroundSizingProperty] = Avalonia.Media.BackgroundSizing.CenterBorder;
+        return obj;
+    }
+
     // Avalonia.Controls.Border.BorderBrushProperty
 
     /// <summary>

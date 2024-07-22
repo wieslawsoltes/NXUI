@@ -37,4 +37,19 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Int32> ToolTipShowDelay => Avalonia.Controls.ToolTip.ShowDelayProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Int32> ToolTipBetweenShowDelay => Avalonia.Controls.ToolTip.BetweenShowDelayProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Boolean> ToolTipShowOnDisabled => Avalonia.Controls.ToolTip.ShowOnDisabledProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Boolean> ToolTipServiceEnabled => Avalonia.Controls.ToolTip.ServiceEnabledProperty;
 }

@@ -582,6 +582,78 @@ public static partial class TextBoxSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.TextBox.CaretBlinkIntervalProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBoxCaretBlinkInterval(this Style style, System.TimeSpan value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretBlinkIntervalProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBoxCaretBlinkInterval(this KeyFrame keyFrame, System.TimeSpan value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretBlinkIntervalProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBoxCaretBlinkInterval(this Style style, IObservable<System.TimeSpan> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretBlinkIntervalProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBoxCaretBlinkInterval(this KeyFrame keyFrame, IObservable<System.TimeSpan> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretBlinkIntervalProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBoxCaretBlinkInterval(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretBlinkIntervalProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBoxCaretBlinkInterval(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.CaretBlinkIntervalProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.TextBox.SelectionStartProperty
 
     /// <summary>
@@ -867,6 +939,78 @@ public static partial class TextBoxSetters
     public static KeyFrame SetTextBoxMaxLines(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.MaxLinesProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.TextBox.MinLinesProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBoxMinLines(this Style style, System.Int32 value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.MinLinesProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBoxMinLines(this KeyFrame keyFrame, System.Int32 value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.MinLinesProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBoxMinLines(this Style style, IObservable<System.Int32> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.MinLinesProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBoxMinLines(this KeyFrame keyFrame, IObservable<System.Int32> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.MinLinesProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextBoxMinLines(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TextBox.MinLinesProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextBoxMinLines(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBox.MinLinesProperty, binding));
         return keyFrame;
     }
 

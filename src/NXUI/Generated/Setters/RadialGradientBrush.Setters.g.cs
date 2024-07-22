@@ -150,75 +150,147 @@ public static partial class RadialGradientBrushSetters
         return keyFrame;
     }
 
-    // Avalonia.Media.RadialGradientBrush.RadiusProperty
+    // Avalonia.Media.RadialGradientBrush.RadiusXProperty
 
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRadialGradientBrushRadius(this Style style, System.Double value)
+    public static Style SetRadialGradientBrushRadiusX(this Style style, Avalonia.RelativeScalar value)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusProperty, value));
+        style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, value));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRadialGradientBrushRadius(this KeyFrame keyFrame, System.Double value)
+    public static KeyFrame SetRadialGradientBrushRadiusX(this KeyFrame keyFrame, Avalonia.RelativeScalar value)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusProperty, value));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, value));
         return keyFrame;
     }
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRadialGradientBrushRadius(this Style style, IObservable<System.Double> observable)
+    public static Style SetRadialGradientBrushRadiusX(this Style style, IObservable<Avalonia.RelativeScalar> observable)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusProperty, observable.ToBinding()));
+        style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, observable.ToBinding()));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="observable">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRadialGradientBrushRadius(this KeyFrame keyFrame, IObservable<System.Double> observable)
+    public static KeyFrame SetRadialGradientBrushRadiusX(this KeyFrame keyFrame, IObservable<Avalonia.RelativeScalar> observable)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusProperty, observable.ToBinding()));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, observable.ToBinding()));
         return keyFrame;
     }
     /// <summary>
-    /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/>.
+    /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
     /// </summary>
     /// <param name="style">The target style.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target style object reference.</returns>
-    public static Style SetRadialGradientBrushRadius(this Style style, Avalonia.Data.IBinding binding)
+    public static Style SetRadialGradientBrushRadiusX(this Style style, Avalonia.Data.IBinding binding)
     {
-        style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusProperty, binding));
+        style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, binding));
         return style;
     }
 
     /// <summary>
-    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusProperty"/>.
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
     /// </summary>
     /// <param name="keyFrame">The target keyframe.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The target keyframe object reference.</returns>
-    public static KeyFrame SetRadialGradientBrushRadius(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    public static KeyFrame SetRadialGradientBrushRadiusX(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
-        keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusProperty, binding));
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Media.RadialGradientBrush.RadiusYProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRadialGradientBrushRadiusY(this Style style, Avalonia.RelativeScalar value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRadialGradientBrushRadiusY(this KeyFrame keyFrame, Avalonia.RelativeScalar value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRadialGradientBrushRadiusY(this Style style, IObservable<Avalonia.RelativeScalar> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRadialGradientBrushRadiusY(this KeyFrame keyFrame, IObservable<Avalonia.RelativeScalar> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetRadialGradientBrushRadiusY(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetRadialGradientBrushRadiusY(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, binding));
         return keyFrame;
     }
 }

@@ -19,6 +19,11 @@ public static partial class Properties
     public static Avalonia.AttachedProperty<System.Boolean> DataValidationErrorsHasErrors => Avalonia.Controls.DataValidationErrors.HasErrorsProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/> property defined in <see cref="Avalonia.Controls.DataValidationErrors"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Func<System.Object,System.Object>> DataValidationErrorsErrorConverter => Avalonia.Controls.DataValidationErrors.ErrorConverterProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/> property defined in <see cref="Avalonia.Controls.DataValidationErrors"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> DataValidationErrorsErrorTemplate => Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty;
