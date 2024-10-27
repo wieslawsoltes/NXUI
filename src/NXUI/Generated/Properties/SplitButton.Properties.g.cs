@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitButton.CommandProperty"/> property defined in <see cref="Avalonia.Controls.SplitButton"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> SplitButtonCommand => Avalonia.Controls.SplitButton.CommandProperty;
+    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> SplitButton_Command => Avalonia.Controls.SplitButton.CommandProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/> property defined in <see cref="Avalonia.Controls.SplitButton"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> SplitButtonCommandParameter => Avalonia.Controls.SplitButton.CommandParameterProperty;
+    public static Avalonia.StyledProperty<System.Object> SplitButton_CommandParameter => Avalonia.Controls.SplitButton.CommandParameterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/> property defined in <see cref="Avalonia.Controls.SplitButton"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.FlyoutBase> SplitButtonFlyout => Avalonia.Controls.SplitButton.FlyoutProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.FlyoutBase> SplitButton_Flyout => Avalonia.Controls.SplitButton.FlyoutProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/> property defined in <see cref="Avalonia.Controls.SplitButton"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> SplitButtonHotKey => Avalonia.Controls.SplitButton.HotKeyProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> SplitButton_HotKey => Avalonia.Controls.SplitButton.HotKeyProperty;
 }

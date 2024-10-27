@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/> property defined in <see cref="Avalonia.Media.EllipseGeometry"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Rect> EllipseGeometryRect => Avalonia.Media.EllipseGeometry.RectProperty;
+    public static Avalonia.StyledProperty<Avalonia.Rect> EllipseGeometry_Rect => Avalonia.Media.EllipseGeometry.RectProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/> property defined in <see cref="Avalonia.Media.EllipseGeometry"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> EllipseGeometryRadiusX => Avalonia.Media.EllipseGeometry.RadiusXProperty;
+    public static Avalonia.StyledProperty<System.Double> EllipseGeometry_RadiusX => Avalonia.Media.EllipseGeometry.RadiusXProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/> property defined in <see cref="Avalonia.Media.EllipseGeometry"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> EllipseGeometryRadiusY => Avalonia.Media.EllipseGeometry.RadiusYProperty;
+    public static Avalonia.StyledProperty<System.Double> EllipseGeometry_RadiusY => Avalonia.Media.EllipseGeometry.RadiusYProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/> property defined in <see cref="Avalonia.Media.EllipseGeometry"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Point> EllipseGeometryCenter => Avalonia.Media.EllipseGeometry.CenterProperty;
+    public static Avalonia.StyledProperty<Avalonia.Point> EllipseGeometry_Center => Avalonia.Media.EllipseGeometry.CenterProperty;
 }

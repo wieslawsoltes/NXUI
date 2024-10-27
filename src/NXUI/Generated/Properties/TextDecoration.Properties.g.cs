@@ -11,45 +11,45 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property defined in <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationLocation> TextDecorationLocation => Avalonia.Media.TextDecoration.LocationProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationLocation> TextDecoration_Location => Avalonia.Media.TextDecoration.LocationProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> property defined in <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextDecorationStroke => Avalonia.Media.TextDecoration.StrokeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextDecoration_Stroke => Avalonia.Media.TextDecoration.StrokeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> property defined in <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationUnit> TextDecorationStrokeThicknessUnit => Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationUnit> TextDecoration_StrokeThicknessUnit => Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> property defined in <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Collections.AvaloniaList<System.Double>> TextDecorationStrokeDashArray => Avalonia.Media.TextDecoration.StrokeDashArrayProperty;
+    public static Avalonia.StyledProperty<Avalonia.Collections.AvaloniaList<System.Double>> TextDecoration_StrokeDashArray => Avalonia.Media.TextDecoration.StrokeDashArrayProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> property defined in <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TextDecorationStrokeDashOffset => Avalonia.Media.TextDecoration.StrokeDashOffsetProperty;
+    public static Avalonia.StyledProperty<System.Double> TextDecoration_StrokeDashOffset => Avalonia.Media.TextDecoration.StrokeDashOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> property defined in <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TextDecorationStrokeThickness => Avalonia.Media.TextDecoration.StrokeThicknessProperty;
+    public static Avalonia.StyledProperty<System.Double> TextDecoration_StrokeThickness => Avalonia.Media.TextDecoration.StrokeThicknessProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> property defined in <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.PenLineCap> TextDecorationStrokeLineCap => Avalonia.Media.TextDecoration.StrokeLineCapProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.PenLineCap> TextDecoration_StrokeLineCap => Avalonia.Media.TextDecoration.StrokeLineCapProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> property defined in <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TextDecorationStrokeOffset => Avalonia.Media.TextDecoration.StrokeOffsetProperty;
+    public static Avalonia.StyledProperty<System.Double> TextDecoration_StrokeOffset => Avalonia.Media.TextDecoration.StrokeOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> property defined in <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationUnit> TextDecorationStrokeOffsetUnit => Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationUnit> TextDecoration_StrokeOffsetUnit => Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty;
 }

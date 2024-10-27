@@ -11,40 +11,40 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ComboBoxIsDropDownOpen => Avalonia.Controls.ComboBox.IsDropDownOpenProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ComboBox_IsDropDownOpen => Avalonia.Controls.ComboBox.IsDropDownOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ComboBoxMaxDropDownHeight => Avalonia.Controls.ComboBox.MaxDropDownHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> ComboBox_MaxDropDownHeight => Avalonia.Controls.ComboBox.MaxDropDownHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.ComboBox,System.Object> ComboBoxSelectionBoxItem => Avalonia.Controls.ComboBox.SelectionBoxItemProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.ComboBox,System.Object> ComboBox_SelectionBoxItem => Avalonia.Controls.ComboBox.SelectionBoxItemProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> ComboBoxPlaceholderText => Avalonia.Controls.ComboBox.PlaceholderTextProperty;
+    public static Avalonia.StyledProperty<System.String> ComboBox_PlaceholderText => Avalonia.Controls.ComboBox.PlaceholderTextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> ComboBoxPlaceholderForeground => Avalonia.Controls.ComboBox.PlaceholderForegroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> ComboBox_PlaceholderForeground => Avalonia.Controls.ComboBox.PlaceholderForegroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> ComboBoxHorizontalContentAlignment => Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> ComboBox_HorizontalContentAlignment => Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> ComboBoxVerticalContentAlignment => Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> ComboBox_VerticalContentAlignment => Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ComboBoxSelectionBoxItemTemplate => Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ComboBox_SelectionBoxItemTemplate => Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty;
 }

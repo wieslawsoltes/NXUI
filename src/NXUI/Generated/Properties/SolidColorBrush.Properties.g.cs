@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.SolidColorBrush.ColorProperty"/> property defined in <see cref="Avalonia.Media.SolidColorBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Color> SolidColorBrushColor => Avalonia.Media.SolidColorBrush.ColorProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Color> SolidColorBrush_Color => Avalonia.Media.SolidColorBrush.ColorProperty;
 }

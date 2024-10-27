@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.VisualBrush.VisualProperty"/> property defined in <see cref="Avalonia.Media.VisualBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Visual> VisualBrushVisual => Avalonia.Media.VisualBrush.VisualProperty;
+    public static Avalonia.StyledProperty<Avalonia.Visual> VisualBrush_Visual => Avalonia.Media.VisualBrush.VisualProperty;
 }

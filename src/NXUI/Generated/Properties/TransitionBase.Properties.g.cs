@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/> property defined in <see cref="Avalonia.Animation.TransitionBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.TransitionBase,System.TimeSpan> TransitionBaseDuration => Avalonia.Animation.TransitionBase.DurationProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.TransitionBase,System.TimeSpan> TransitionBase_Duration => Avalonia.Animation.TransitionBase.DurationProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/> property defined in <see cref="Avalonia.Animation.TransitionBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.TransitionBase,System.TimeSpan> TransitionBaseDelay => Avalonia.Animation.TransitionBase.DelayProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.TransitionBase,System.TimeSpan> TransitionBase_Delay => Avalonia.Animation.TransitionBase.DelayProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/> property defined in <see cref="Avalonia.Animation.TransitionBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.TransitionBase,Avalonia.Animation.Easings.Easing> TransitionBaseEasing => Avalonia.Animation.TransitionBase.EasingProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.TransitionBase,Avalonia.Animation.Easings.Easing> TransitionBase_Easing => Avalonia.Animation.TransitionBase.EasingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/> property defined in <see cref="Avalonia.Animation.TransitionBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.TransitionBase,Avalonia.AvaloniaProperty> TransitionBaseProperty => Avalonia.Animation.TransitionBase.PropertyProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.TransitionBase,Avalonia.AvaloniaProperty> TransitionBase_Property => Avalonia.Animation.TransitionBase.PropertyProperty;
 }

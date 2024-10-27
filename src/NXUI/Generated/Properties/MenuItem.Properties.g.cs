@@ -11,50 +11,50 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.CommandProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> MenuItemCommand => Avalonia.Controls.MenuItem.CommandProperty;
+    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> MenuItem_Command => Avalonia.Controls.MenuItem.CommandProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> MenuItemHotKey => Avalonia.Controls.MenuItem.HotKeyProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> MenuItem_HotKey => Avalonia.Controls.MenuItem.HotKeyProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> MenuItemCommandParameter => Avalonia.Controls.MenuItem.CommandParameterProperty;
+    public static Avalonia.StyledProperty<System.Object> MenuItem_CommandParameter => Avalonia.Controls.MenuItem.CommandParameterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.IconProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> MenuItemIcon => Avalonia.Controls.MenuItem.IconProperty;
+    public static Avalonia.StyledProperty<System.Object> MenuItem_Icon => Avalonia.Controls.MenuItem.IconProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> MenuItemInputGesture => Avalonia.Controls.MenuItem.InputGestureProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> MenuItem_InputGesture => Avalonia.Controls.MenuItem.InputGestureProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> MenuItemIsSubMenuOpen => Avalonia.Controls.MenuItem.IsSubMenuOpenProperty;
+    public static Avalonia.StyledProperty<System.Boolean> MenuItem_IsSubMenuOpen => Avalonia.Controls.MenuItem.IsSubMenuOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> MenuItemStaysOpenOnClick => Avalonia.Controls.MenuItem.StaysOpenOnClickProperty;
+    public static Avalonia.StyledProperty<System.Boolean> MenuItem_StaysOpenOnClick => Avalonia.Controls.MenuItem.StaysOpenOnClickProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.MenuItemToggleType> MenuItemToggleType => Avalonia.Controls.MenuItem.ToggleTypeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.MenuItemToggleType> MenuItem_ToggleType => Avalonia.Controls.MenuItem.ToggleTypeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> MenuItemIsChecked => Avalonia.Controls.MenuItem.IsCheckedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> MenuItem_IsChecked => Avalonia.Controls.MenuItem.IsCheckedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/> property defined in <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> MenuItemGroupName => Avalonia.Controls.MenuItem.GroupNameProperty;
+    public static Avalonia.StyledProperty<System.String> MenuItem_GroupName => Avalonia.Controls.MenuItem.GroupNameProperty;
 }

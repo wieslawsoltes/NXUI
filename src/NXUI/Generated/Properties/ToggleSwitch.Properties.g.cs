@@ -11,25 +11,25 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/> property defined in <see cref="Avalonia.Controls.ToggleSwitch"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> ToggleSwitchOffContent => Avalonia.Controls.ToggleSwitch.OffContentProperty;
+    public static Avalonia.StyledProperty<System.Object> ToggleSwitch_OffContent => Avalonia.Controls.ToggleSwitch.OffContentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/> property defined in <see cref="Avalonia.Controls.ToggleSwitch"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ToggleSwitchOffContentTemplate => Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ToggleSwitch_OffContentTemplate => Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/> property defined in <see cref="Avalonia.Controls.ToggleSwitch"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> ToggleSwitchOnContent => Avalonia.Controls.ToggleSwitch.OnContentProperty;
+    public static Avalonia.StyledProperty<System.Object> ToggleSwitch_OnContent => Avalonia.Controls.ToggleSwitch.OnContentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/> property defined in <see cref="Avalonia.Controls.ToggleSwitch"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ToggleSwitchOnContentTemplate => Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ToggleSwitch_OnContentTemplate => Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/> property defined in <see cref="Avalonia.Controls.ToggleSwitch"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Animation.Transitions> ToggleSwitchKnobTransitions => Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty;
+    public static Avalonia.StyledProperty<Avalonia.Animation.Transitions> ToggleSwitch_KnobTransitions => Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty;
 }

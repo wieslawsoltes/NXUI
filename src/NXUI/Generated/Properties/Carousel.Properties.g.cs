@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/> property defined in <see cref="Avalonia.Controls.Carousel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Animation.IPageTransition> CarouselPageTransition => Avalonia.Controls.Carousel.PageTransitionProperty;
+    public static Avalonia.StyledProperty<Avalonia.Animation.IPageTransition> Carousel_PageTransition => Avalonia.Controls.Carousel.PageTransitionProperty;
 }

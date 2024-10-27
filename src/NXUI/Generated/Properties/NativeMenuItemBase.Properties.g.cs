@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuItemBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenuItemBase,Avalonia.Controls.NativeMenu> NativeMenuItemBaseParent => Avalonia.Controls.NativeMenuItemBase.ParentProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenuItemBase,Avalonia.Controls.NativeMenu> NativeMenuItemBase_Parent => Avalonia.Controls.NativeMenuItemBase.ParentProperty;
 }

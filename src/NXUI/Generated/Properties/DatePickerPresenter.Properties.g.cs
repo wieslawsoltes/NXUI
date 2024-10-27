@@ -11,45 +11,45 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/> property defined in <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.DateTimeOffset> DatePickerPresenterDate => Avalonia.Controls.DatePickerPresenter.DateProperty;
+    public static Avalonia.StyledProperty<System.DateTimeOffset> DatePickerPresenter_Date => Avalonia.Controls.DatePickerPresenter.DateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/> property defined in <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> DatePickerPresenterDayFormat => Avalonia.Controls.DatePickerPresenter.DayFormatProperty;
+    public static Avalonia.StyledProperty<System.String> DatePickerPresenter_DayFormat => Avalonia.Controls.DatePickerPresenter.DayFormatProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/> property defined in <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> DatePickerPresenterDayVisible => Avalonia.Controls.DatePickerPresenter.DayVisibleProperty;
+    public static Avalonia.StyledProperty<System.Boolean> DatePickerPresenter_DayVisible => Avalonia.Controls.DatePickerPresenter.DayVisibleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/> property defined in <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.DateTimeOffset> DatePickerPresenterMaxYear => Avalonia.Controls.DatePickerPresenter.MaxYearProperty;
+    public static Avalonia.StyledProperty<System.DateTimeOffset> DatePickerPresenter_MaxYear => Avalonia.Controls.DatePickerPresenter.MaxYearProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/> property defined in <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.DateTimeOffset> DatePickerPresenterMinYear => Avalonia.Controls.DatePickerPresenter.MinYearProperty;
+    public static Avalonia.StyledProperty<System.DateTimeOffset> DatePickerPresenter_MinYear => Avalonia.Controls.DatePickerPresenter.MinYearProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/> property defined in <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> DatePickerPresenterMonthFormat => Avalonia.Controls.DatePickerPresenter.MonthFormatProperty;
+    public static Avalonia.StyledProperty<System.String> DatePickerPresenter_MonthFormat => Avalonia.Controls.DatePickerPresenter.MonthFormatProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/> property defined in <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> DatePickerPresenterMonthVisible => Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty;
+    public static Avalonia.StyledProperty<System.Boolean> DatePickerPresenter_MonthVisible => Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/> property defined in <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> DatePickerPresenterYearFormat => Avalonia.Controls.DatePickerPresenter.YearFormatProperty;
+    public static Avalonia.StyledProperty<System.String> DatePickerPresenter_YearFormat => Avalonia.Controls.DatePickerPresenter.YearFormatProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/> property defined in <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> DatePickerPresenterYearVisible => Avalonia.Controls.DatePickerPresenter.YearVisibleProperty;
+    public static Avalonia.StyledProperty<System.Boolean> DatePickerPresenter_YearVisible => Avalonia.Controls.DatePickerPresenter.YearVisibleProperty;
 }

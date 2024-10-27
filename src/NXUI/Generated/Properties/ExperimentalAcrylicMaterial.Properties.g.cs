@@ -11,30 +11,30 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> property defined in <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Color> ExperimentalAcrylicMaterialTintColor => Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Color> ExperimentalAcrylicMaterial_TintColor => Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> property defined in <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.AcrylicBackgroundSource> ExperimentalAcrylicMaterialBackgroundSource => Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.AcrylicBackgroundSource> ExperimentalAcrylicMaterial_BackgroundSource => Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> property defined in <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ExperimentalAcrylicMaterialTintOpacity => Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty;
+    public static Avalonia.StyledProperty<System.Double> ExperimentalAcrylicMaterial_TintOpacity => Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> property defined in <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ExperimentalAcrylicMaterialMaterialOpacity => Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty;
+    public static Avalonia.StyledProperty<System.Double> ExperimentalAcrylicMaterial_MaterialOpacity => Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> property defined in <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ExperimentalAcrylicMaterialPlatformTransparencyCompensationLevel => Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty;
+    public static Avalonia.StyledProperty<System.Double> ExperimentalAcrylicMaterial_PlatformTransparencyCompensationLevel => Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> property defined in <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Color> ExperimentalAcrylicMaterialFallbackColor => Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Color> ExperimentalAcrylicMaterial_FallbackColor => Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty;
 }

@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.TransformGroup.ChildrenProperty"/> property defined in <see cref="Avalonia.Media.TransformGroup"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Transforms> TransformGroupChildren => Avalonia.Media.TransformGroup.ChildrenProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Transforms> TransformGroup_Children => Avalonia.Media.TransformGroup.ChildrenProperty;
 }

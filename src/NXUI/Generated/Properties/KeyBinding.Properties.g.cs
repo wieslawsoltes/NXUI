@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Input.KeyBinding.CommandProperty"/> property defined in <see cref="Avalonia.Input.KeyBinding"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> KeyBindingCommand => Avalonia.Input.KeyBinding.CommandProperty;
+    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> KeyBinding_Command => Avalonia.Input.KeyBinding.CommandProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/> property defined in <see cref="Avalonia.Input.KeyBinding"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> KeyBindingCommandParameter => Avalonia.Input.KeyBinding.CommandParameterProperty;
+    public static Avalonia.StyledProperty<System.Object> KeyBinding_CommandParameter => Avalonia.Input.KeyBinding.CommandParameterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Input.KeyBinding.GestureProperty"/> property defined in <see cref="Avalonia.Input.KeyBinding"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> KeyBindingGesture => Avalonia.Input.KeyBinding.GestureProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> KeyBinding_Gesture => Avalonia.Input.KeyBinding.GestureProperty;
 }

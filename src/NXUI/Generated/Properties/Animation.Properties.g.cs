@@ -11,40 +11,40 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Animation.Animation.DurationProperty"/> property defined in <see cref="Avalonia.Animation.Animation"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,System.TimeSpan> AnimationDuration => Avalonia.Animation.Animation.DurationProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,System.TimeSpan> Animation_Duration => Avalonia.Animation.Animation.DurationProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> property defined in <see cref="Avalonia.Animation.Animation"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.IterationCount> AnimationIterationCount => Avalonia.Animation.Animation.IterationCountProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.IterationCount> Animation_IterationCount => Avalonia.Animation.Animation.IterationCountProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property defined in <see cref="Avalonia.Animation.Animation"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.PlaybackDirection> AnimationPlaybackDirection => Avalonia.Animation.Animation.PlaybackDirectionProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.PlaybackDirection> Animation_PlaybackDirection => Avalonia.Animation.Animation.PlaybackDirectionProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property defined in <see cref="Avalonia.Animation.Animation"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.FillMode> AnimationFillMode => Avalonia.Animation.Animation.FillModeProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.FillMode> Animation_FillMode => Avalonia.Animation.Animation.FillModeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Animation.Animation.EasingProperty"/> property defined in <see cref="Avalonia.Animation.Animation"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.Easings.Easing> AnimationEasing => Avalonia.Animation.Animation.EasingProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,Avalonia.Animation.Easings.Easing> Animation_Easing => Avalonia.Animation.Animation.EasingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Animation.Animation.DelayProperty"/> property defined in <see cref="Avalonia.Animation.Animation"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,System.TimeSpan> AnimationDelay => Avalonia.Animation.Animation.DelayProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,System.TimeSpan> Animation_Delay => Avalonia.Animation.Animation.DelayProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> property defined in <see cref="Avalonia.Animation.Animation"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,System.TimeSpan> AnimationDelayBetweenIterations => Avalonia.Animation.Animation.DelayBetweenIterationsProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,System.TimeSpan> Animation_DelayBetweenIterations => Avalonia.Animation.Animation.DelayBetweenIterationsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> property defined in <see cref="Avalonia.Animation.Animation"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,System.Double> AnimationSpeedRatio => Avalonia.Animation.Animation.SpeedRatioProperty;
+    public static Avalonia.DirectProperty<Avalonia.Animation.Animation,System.Double> Animation_SpeedRatio => Avalonia.Animation.Animation.SpeedRatioProperty;
 }

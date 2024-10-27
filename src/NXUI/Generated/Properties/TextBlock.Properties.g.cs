@@ -11,100 +11,100 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBlockBackground => Avalonia.Controls.TextBlock.BackgroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBlock_Background => Avalonia.Controls.TextBlock.BackgroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Thickness> TextBlockPadding => Avalonia.Controls.TextBlock.PaddingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Thickness> TextBlock_Padding => Avalonia.Controls.TextBlock.PaddingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontFamily> TextBlockFontFamily => Avalonia.Controls.TextBlock.FontFamilyProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontFamily> TextBlock_FontFamily => Avalonia.Controls.TextBlock.FontFamilyProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TextBlockFontSize => Avalonia.Controls.TextBlock.FontSizeProperty;
+    public static Avalonia.StyledProperty<System.Double> TextBlock_FontSize => Avalonia.Controls.TextBlock.FontSizeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontStyle> TextBlockFontStyle => Avalonia.Controls.TextBlock.FontStyleProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontStyle> TextBlock_FontStyle => Avalonia.Controls.TextBlock.FontStyleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontWeight> TextBlockFontWeight => Avalonia.Controls.TextBlock.FontWeightProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontWeight> TextBlock_FontWeight => Avalonia.Controls.TextBlock.FontWeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontStretch> TextBlockFontStretch => Avalonia.Controls.TextBlock.FontStretchProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontStretch> TextBlock_FontStretch => Avalonia.Controls.TextBlock.FontStretchProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBlockForeground => Avalonia.Controls.TextBlock.ForegroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBlock_Foreground => Avalonia.Controls.TextBlock.ForegroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> TextBlockBaselineOffset => Avalonia.Controls.TextBlock.BaselineOffsetProperty;
+    public static Avalonia.AttachedProperty<System.Double> TextBlock_BaselineOffset => Avalonia.Controls.TextBlock.BaselineOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> TextBlockLineHeight => Avalonia.Controls.TextBlock.LineHeightProperty;
+    public static Avalonia.AttachedProperty<System.Double> TextBlock_LineHeight => Avalonia.Controls.TextBlock.LineHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> TextBlockLineSpacing => Avalonia.Controls.TextBlock.LineSpacingProperty;
+    public static Avalonia.AttachedProperty<System.Double> TextBlock_LineSpacing => Avalonia.Controls.TextBlock.LineSpacingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> TextBlockLetterSpacing => Avalonia.Controls.TextBlock.LetterSpacingProperty;
+    public static Avalonia.AttachedProperty<System.Double> TextBlock_LetterSpacing => Avalonia.Controls.TextBlock.LetterSpacingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Int32> TextBlockMaxLines => Avalonia.Controls.TextBlock.MaxLinesProperty;
+    public static Avalonia.AttachedProperty<System.Int32> TextBlock_MaxLines => Avalonia.Controls.TextBlock.MaxLinesProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.TextProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> TextBlockText => Avalonia.Controls.TextBlock.TextProperty;
+    public static Avalonia.StyledProperty<System.String> TextBlock_Text => Avalonia.Controls.TextBlock.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.TextAlignment> TextBlockTextAlignment => Avalonia.Controls.TextBlock.TextAlignmentProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.TextAlignment> TextBlock_TextAlignment => Avalonia.Controls.TextBlock.TextAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.TextWrapping> TextBlockTextWrapping => Avalonia.Controls.TextBlock.TextWrappingProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.TextWrapping> TextBlock_TextWrapping => Avalonia.Controls.TextBlock.TextWrappingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.TextTrimming> TextBlockTextTrimming => Avalonia.Controls.TextBlock.TextTrimmingProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.TextTrimming> TextBlock_TextTrimming => Avalonia.Controls.TextBlock.TextTrimmingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationCollection> TextBlockTextDecorations => Avalonia.Controls.TextBlock.TextDecorationsProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextDecorationCollection> TextBlock_TextDecorations => Avalonia.Controls.TextBlock.TextDecorationsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontFeatureCollection> TextBlockFontFeatures => Avalonia.Controls.TextBlock.FontFeaturesProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontFeatureCollection> TextBlock_FontFeatures => Avalonia.Controls.TextBlock.FontFeaturesProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBlock,Avalonia.Controls.Documents.InlineCollection> TextBlockInlines => Avalonia.Controls.TextBlock.InlinesProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TextBlock,Avalonia.Controls.Documents.InlineCollection> TextBlock_Inlines => Avalonia.Controls.TextBlock.InlinesProperty;
 }

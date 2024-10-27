@@ -11,55 +11,55 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Layout.Layoutable,Avalonia.Size> LayoutableDesiredSize => Avalonia.Layout.Layoutable.DesiredSizeProperty;
+    public static Avalonia.DirectProperty<Avalonia.Layout.Layoutable,Avalonia.Size> Layoutable_DesiredSize => Avalonia.Layout.Layoutable.DesiredSizeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.WidthProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> LayoutableWidth => Avalonia.Layout.Layoutable.WidthProperty;
+    public static Avalonia.StyledProperty<System.Double> Layoutable_Width => Avalonia.Layout.Layoutable.WidthProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.HeightProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> LayoutableHeight => Avalonia.Layout.Layoutable.HeightProperty;
+    public static Avalonia.StyledProperty<System.Double> Layoutable_Height => Avalonia.Layout.Layoutable.HeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> LayoutableMinWidth => Avalonia.Layout.Layoutable.MinWidthProperty;
+    public static Avalonia.StyledProperty<System.Double> Layoutable_MinWidth => Avalonia.Layout.Layoutable.MinWidthProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> LayoutableMaxWidth => Avalonia.Layout.Layoutable.MaxWidthProperty;
+    public static Avalonia.StyledProperty<System.Double> Layoutable_MaxWidth => Avalonia.Layout.Layoutable.MaxWidthProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> LayoutableMinHeight => Avalonia.Layout.Layoutable.MinHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> Layoutable_MinHeight => Avalonia.Layout.Layoutable.MinHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> LayoutableMaxHeight => Avalonia.Layout.Layoutable.MaxHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> Layoutable_MaxHeight => Avalonia.Layout.Layoutable.MaxHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.MarginProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Thickness> LayoutableMargin => Avalonia.Layout.Layoutable.MarginProperty;
+    public static Avalonia.StyledProperty<Avalonia.Thickness> Layoutable_Margin => Avalonia.Layout.Layoutable.MarginProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> LayoutableHorizontalAlignment => Avalonia.Layout.Layoutable.HorizontalAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> Layoutable_HorizontalAlignment => Avalonia.Layout.Layoutable.HorizontalAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> LayoutableVerticalAlignment => Avalonia.Layout.Layoutable.VerticalAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> Layoutable_VerticalAlignment => Avalonia.Layout.Layoutable.VerticalAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/> property defined in <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> LayoutableUseLayoutRounding => Avalonia.Layout.Layoutable.UseLayoutRoundingProperty;
+    public static Avalonia.StyledProperty<System.Boolean> Layoutable_UseLayoutRounding => Avalonia.Layout.Layoutable.UseLayoutRoundingProperty;
 }

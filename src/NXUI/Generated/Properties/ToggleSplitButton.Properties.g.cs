@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/> property defined in <see cref="Avalonia.Controls.ToggleSplitButton"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ToggleSplitButtonIsChecked => Avalonia.Controls.ToggleSplitButton.IsCheckedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ToggleSplitButton_IsChecked => Avalonia.Controls.ToggleSplitButton.IsCheckedProperty;
 }

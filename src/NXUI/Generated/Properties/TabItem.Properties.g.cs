@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/> property defined in <see cref="Avalonia.Controls.TabItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TabItem,System.Nullable<Avalonia.Controls.Dock>> TabItemTabStripPlacement => Avalonia.Controls.TabItem.TabStripPlacementProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TabItem,System.Nullable<Avalonia.Controls.Dock>> TabItem_TabStripPlacement => Avalonia.Controls.TabItem.TabStripPlacementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/> property defined in <see cref="Avalonia.Controls.TabItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TabItemIsSelected => Avalonia.Controls.TabItem.IsSelectedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TabItem_IsSelected => Avalonia.Controls.TabItem.IsSelectedProperty;
 }

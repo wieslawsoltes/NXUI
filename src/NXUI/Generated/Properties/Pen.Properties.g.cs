@@ -11,30 +11,30 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.Pen.BrushProperty"/> property defined in <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> PenBrush => Avalonia.Media.Pen.BrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> Pen_Brush => Avalonia.Media.Pen.BrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.Pen.ThicknessProperty"/> property defined in <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> PenThickness => Avalonia.Media.Pen.ThicknessProperty;
+    public static Avalonia.StyledProperty<System.Double> Pen_Thickness => Avalonia.Media.Pen.ThicknessProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.Pen.DashStyleProperty"/> property defined in <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IDashStyle> PenDashStyle => Avalonia.Media.Pen.DashStyleProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IDashStyle> Pen_DashStyle => Avalonia.Media.Pen.DashStyleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.Pen.LineCapProperty"/> property defined in <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.PenLineCap> PenLineCap => Avalonia.Media.Pen.LineCapProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.PenLineCap> Pen_LineCap => Avalonia.Media.Pen.LineCapProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.Pen.LineJoinProperty"/> property defined in <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.PenLineJoin> PenLineJoin => Avalonia.Media.Pen.LineJoinProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.PenLineJoin> Pen_LineJoin => Avalonia.Media.Pen.LineJoinProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> property defined in <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> PenMiterLimit => Avalonia.Media.Pen.MiterLimitProperty;
+    public static Avalonia.StyledProperty<System.Double> Pen_MiterLimit => Avalonia.Media.Pen.MiterLimitProperty;
 }

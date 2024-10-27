@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TreeViewItem.IsExpandedProperty"/> property defined in <see cref="Avalonia.Controls.TreeViewItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TreeViewItemIsExpanded => Avalonia.Controls.TreeViewItem.IsExpandedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TreeViewItem_IsExpanded => Avalonia.Controls.TreeViewItem.IsExpandedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TreeViewItem.IsSelectedProperty"/> property defined in <see cref="Avalonia.Controls.TreeViewItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TreeViewItemIsSelected => Avalonia.Controls.TreeViewItem.IsSelectedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TreeViewItem_IsSelected => Avalonia.Controls.TreeViewItem.IsSelectedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TreeViewItem.LevelProperty"/> property defined in <see cref="Avalonia.Controls.TreeViewItem"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TreeViewItem,System.Int32> TreeViewItemLevel => Avalonia.Controls.TreeViewItem.LevelProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TreeViewItem,System.Int32> TreeViewItem_Level => Avalonia.Controls.TreeViewItem.LevelProperty;
 }

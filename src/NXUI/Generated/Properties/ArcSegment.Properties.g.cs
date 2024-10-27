@@ -11,25 +11,25 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/> property defined in <see cref="Avalonia.Media.ArcSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ArcSegmentIsLargeArc => Avalonia.Media.ArcSegment.IsLargeArcProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ArcSegment_IsLargeArc => Avalonia.Media.ArcSegment.IsLargeArcProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ArcSegment.PointProperty"/> property defined in <see cref="Avalonia.Media.ArcSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Point> ArcSegmentPoint => Avalonia.Media.ArcSegment.PointProperty;
+    public static Avalonia.StyledProperty<Avalonia.Point> ArcSegment_Point => Avalonia.Media.ArcSegment.PointProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/> property defined in <see cref="Avalonia.Media.ArcSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ArcSegmentRotationAngle => Avalonia.Media.ArcSegment.RotationAngleProperty;
+    public static Avalonia.StyledProperty<System.Double> ArcSegment_RotationAngle => Avalonia.Media.ArcSegment.RotationAngleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ArcSegment.SizeProperty"/> property defined in <see cref="Avalonia.Media.ArcSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Size> ArcSegmentSize => Avalonia.Media.ArcSegment.SizeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Size> ArcSegment_Size => Avalonia.Media.ArcSegment.SizeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> property defined in <see cref="Avalonia.Media.ArcSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.SweepDirection> ArcSegmentSweepDirection => Avalonia.Media.ArcSegment.SweepDirectionProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.SweepDirection> ArcSegment_SweepDirection => Avalonia.Media.ArcSegment.SweepDirectionProperty;
 }

@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> property defined in <see cref="Avalonia.Media.GradientBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.GradientSpreadMethod> GradientBrushSpreadMethod => Avalonia.Media.GradientBrush.SpreadMethodProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.GradientSpreadMethod> GradientBrush_SpreadMethod => Avalonia.Media.GradientBrush.SpreadMethodProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/> property defined in <see cref="Avalonia.Media.GradientBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.GradientStops> GradientBrushGradientStops => Avalonia.Media.GradientBrush.GradientStopsProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.GradientStops> GradientBrush_GradientStops => Avalonia.Media.GradientBrush.GradientStopsProperty;
 }

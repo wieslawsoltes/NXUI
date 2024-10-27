@@ -11,25 +11,25 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ProgressBar.IsIndeterminateProperty"/> property defined in <see cref="Avalonia.Controls.ProgressBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ProgressBarIsIndeterminate => Avalonia.Controls.ProgressBar.IsIndeterminateProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ProgressBar_IsIndeterminate => Avalonia.Controls.ProgressBar.IsIndeterminateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ProgressBar.ShowProgressTextProperty"/> property defined in <see cref="Avalonia.Controls.ProgressBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ProgressBarShowProgressText => Avalonia.Controls.ProgressBar.ShowProgressTextProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ProgressBar_ShowProgressText => Avalonia.Controls.ProgressBar.ShowProgressTextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> property defined in <see cref="Avalonia.Controls.ProgressBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> ProgressBarProgressTextFormat => Avalonia.Controls.ProgressBar.ProgressTextFormatProperty;
+    public static Avalonia.StyledProperty<System.String> ProgressBar_ProgressTextFormat => Avalonia.Controls.ProgressBar.ProgressTextFormatProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> property defined in <see cref="Avalonia.Controls.ProgressBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> ProgressBarOrientation => Avalonia.Controls.ProgressBar.OrientationProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> ProgressBar_Orientation => Avalonia.Controls.ProgressBar.OrientationProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ProgressBar.PercentageProperty"/> property defined in <see cref="Avalonia.Controls.ProgressBar"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.ProgressBar,System.Double> ProgressBarPercentage => Avalonia.Controls.ProgressBar.PercentageProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.ProgressBar,System.Double> ProgressBar_Percentage => Avalonia.Controls.ProgressBar.PercentageProperty;
 }

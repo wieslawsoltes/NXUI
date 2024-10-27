@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.Run.TextProperty"/> property defined in <see cref="Avalonia.Controls.Documents.Run"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> RunText => Avalonia.Controls.Documents.Run.TextProperty;
+    public static Avalonia.StyledProperty<System.String> Run_Text => Avalonia.Controls.Documents.Run.TextProperty;
 }

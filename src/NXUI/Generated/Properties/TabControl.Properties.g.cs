@@ -11,30 +11,30 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Dock> TabControlTabStripPlacement => Avalonia.Controls.TabControl.TabStripPlacementProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Dock> TabControl_TabStripPlacement => Avalonia.Controls.TabControl.TabStripPlacementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> TabControlHorizontalContentAlignment => Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> TabControl_HorizontalContentAlignment => Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> TabControlVerticalContentAlignment => Avalonia.Controls.TabControl.VerticalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> TabControl_VerticalContentAlignment => Avalonia.Controls.TabControl.VerticalContentAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> TabControlContentTemplate => Avalonia.Controls.TabControl.ContentTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> TabControl_ContentTemplate => Avalonia.Controls.TabControl.ContentTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TabControl,System.Object> TabControlSelectedContent => Avalonia.Controls.TabControl.SelectedContentProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TabControl,System.Object> TabControl_SelectedContent => Avalonia.Controls.TabControl.SelectedContentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> property defined in <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TabControl,Avalonia.Controls.Templates.IDataTemplate> TabControlSelectedContentTemplate => Avalonia.Controls.TabControl.SelectedContentTemplateProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TabControl,Avalonia.Controls.Templates.IDataTemplate> TabControl_SelectedContentTemplate => Avalonia.Controls.TabControl.SelectedContentTemplateProperty;
 }

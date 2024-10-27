@@ -1312,6 +1312,30 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowBinarySpecifier"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ParsingNumberStyleAllowBinarySpecifier<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowBinarySpecifier;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.BinaryNumber"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ParsingNumberStyleBinaryNumber<T>(this T obj) where T : Avalonia.Controls.NumericUpDown
+    {
+        obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.BinaryNumber;
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.TextProperty
 
     /// <summary>

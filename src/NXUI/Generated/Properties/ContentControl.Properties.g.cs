@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContentControl.ContentProperty"/> property defined in <see cref="Avalonia.Controls.ContentControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> ContentControlContent => Avalonia.Controls.ContentControl.ContentProperty;
+    public static Avalonia.StyledProperty<System.Object> ContentControl_Content => Avalonia.Controls.ContentControl.ContentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContentControl.ContentTemplateProperty"/> property defined in <see cref="Avalonia.Controls.ContentControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ContentControlContentTemplate => Avalonia.Controls.ContentControl.ContentTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ContentControl_ContentTemplate => Avalonia.Controls.ContentControl.ContentTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.ContentControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> ContentControlHorizontalContentAlignment => Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> ContentControl_HorizontalContentAlignment => Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.ContentControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> ContentControlVerticalContentAlignment => Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> ContentControl_VerticalContentAlignment => Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty;
 }

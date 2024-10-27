@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Canvas.LeftProperty"/> property defined in <see cref="Avalonia.Controls.Canvas"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> CanvasLeft => Avalonia.Controls.Canvas.LeftProperty;
+    public static Avalonia.AttachedProperty<System.Double> Canvas_Left => Avalonia.Controls.Canvas.LeftProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Canvas.TopProperty"/> property defined in <see cref="Avalonia.Controls.Canvas"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> CanvasTop => Avalonia.Controls.Canvas.TopProperty;
+    public static Avalonia.AttachedProperty<System.Double> Canvas_Top => Avalonia.Controls.Canvas.TopProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Canvas.RightProperty"/> property defined in <see cref="Avalonia.Controls.Canvas"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> CanvasRight => Avalonia.Controls.Canvas.RightProperty;
+    public static Avalonia.AttachedProperty<System.Double> Canvas_Right => Avalonia.Controls.Canvas.RightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Canvas.BottomProperty"/> property defined in <see cref="Avalonia.Controls.Canvas"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> CanvasBottom => Avalonia.Controls.Canvas.BottomProperty;
+    public static Avalonia.AttachedProperty<System.Double> Canvas_Bottom => Avalonia.Controls.Canvas.BottomProperty;
 }

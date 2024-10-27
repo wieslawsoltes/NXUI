@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> property defined in <see cref="Avalonia.Media.GeometryDrawing"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> GeometryDrawingGeometry => Avalonia.Media.GeometryDrawing.GeometryProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> GeometryDrawing_Geometry => Avalonia.Media.GeometryDrawing.GeometryProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> property defined in <see cref="Avalonia.Media.GeometryDrawing"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> GeometryDrawingBrush => Avalonia.Media.GeometryDrawing.BrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> GeometryDrawing_Brush => Avalonia.Media.GeometryDrawing.BrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> property defined in <see cref="Avalonia.Media.GeometryDrawing"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IPen> GeometryDrawingPen => Avalonia.Media.GeometryDrawing.PenProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IPen> GeometryDrawing_Pen => Avalonia.Media.GeometryDrawing.PenProperty;
 }

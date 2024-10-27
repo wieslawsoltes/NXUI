@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> property defined in <see cref="Avalonia.Media.CombinedGeometry"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> CombinedGeometryGeometry1 => Avalonia.Media.CombinedGeometry.Geometry1Property;
+    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> CombinedGeometry_Geometry1 => Avalonia.Media.CombinedGeometry.Geometry1Property;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> property defined in <see cref="Avalonia.Media.CombinedGeometry"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> CombinedGeometryGeometry2 => Avalonia.Media.CombinedGeometry.Geometry2Property;
+    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> CombinedGeometry_Geometry2 => Avalonia.Media.CombinedGeometry.Geometry2Property;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property defined in <see cref="Avalonia.Media.CombinedGeometry"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.GeometryCombineMode> CombinedGeometryGeometryCombineMode => Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.GeometryCombineMode> CombinedGeometry_GeometryCombineMode => Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty;
 }

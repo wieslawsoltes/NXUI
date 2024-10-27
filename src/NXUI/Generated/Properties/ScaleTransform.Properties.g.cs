@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.ScaleTransform.ScaleXProperty"/> property defined in <see cref="Avalonia.Media.ScaleTransform"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ScaleTransformScaleX => Avalonia.Media.ScaleTransform.ScaleXProperty;
+    public static Avalonia.StyledProperty<System.Double> ScaleTransform_ScaleX => Avalonia.Media.ScaleTransform.ScaleXProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ScaleTransform.ScaleYProperty"/> property defined in <see cref="Avalonia.Media.ScaleTransform"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ScaleTransformScaleY => Avalonia.Media.ScaleTransform.ScaleYProperty;
+    public static Avalonia.StyledProperty<System.Double> ScaleTransform_ScaleY => Avalonia.Media.ScaleTransform.ScaleYProperty;
 }

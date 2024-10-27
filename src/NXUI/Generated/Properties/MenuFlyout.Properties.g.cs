@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Collections.IEnumerable> MenuFlyoutItemsSource => Avalonia.Controls.MenuFlyout.ItemsSourceProperty;
+    public static Avalonia.StyledProperty<System.Collections.IEnumerable> MenuFlyout_ItemsSource => Avalonia.Controls.MenuFlyout.ItemsSourceProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> MenuFlyoutItemTemplate => Avalonia.Controls.MenuFlyout.ItemTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> MenuFlyout_ItemTemplate => Avalonia.Controls.MenuFlyout.ItemTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> MenuFlyoutItemContainerTheme => Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> MenuFlyout_ItemContainerTheme => Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/> property defined in <see cref="Avalonia.Controls.MenuFlyout"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> MenuFlyoutFlyoutPresenterTheme => Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> MenuFlyout_FlyoutPresenterTheme => Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty;
 }

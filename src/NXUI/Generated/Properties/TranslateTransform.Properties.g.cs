@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.TranslateTransform.XProperty"/> property defined in <see cref="Avalonia.Media.TranslateTransform"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TranslateTransformX => Avalonia.Media.TranslateTransform.XProperty;
+    public static Avalonia.StyledProperty<System.Double> TranslateTransform_X => Avalonia.Media.TranslateTransform.XProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.TranslateTransform.YProperty"/> property defined in <see cref="Avalonia.Media.TranslateTransform"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TranslateTransformY => Avalonia.Media.TranslateTransform.YProperty;
+    public static Avalonia.StyledProperty<System.Double> TranslateTransform_Y => Avalonia.Media.TranslateTransform.YProperty;
 }

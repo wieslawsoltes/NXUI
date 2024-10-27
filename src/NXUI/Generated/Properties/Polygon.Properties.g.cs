@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Polygon.PointsProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Polygon"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Collections.Generic.IList<Avalonia.Point>> PolygonPoints => Avalonia.Controls.Shapes.Polygon.PointsProperty;
+    public static Avalonia.StyledProperty<System.Collections.Generic.IList<Avalonia.Point>> Polygon_Points => Avalonia.Controls.Shapes.Polygon.PointsProperty;
 }

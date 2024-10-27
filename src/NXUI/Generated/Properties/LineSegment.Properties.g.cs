@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.LineSegment.PointProperty"/> property defined in <see cref="Avalonia.Media.LineSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Point> LineSegmentPoint => Avalonia.Media.LineSegment.PointProperty;
+    public static Avalonia.StyledProperty<Avalonia.Point> LineSegment_Point => Avalonia.Media.LineSegment.PointProperty;
 }

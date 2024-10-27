@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Application.DataContextProperty"/> property defined in <see cref="Avalonia.Application"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> ApplicationDataContext => Avalonia.Application.DataContextProperty;
+    public static Avalonia.StyledProperty<System.Object> Application_DataContext => Avalonia.Application.DataContextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Application.ActualThemeVariantProperty"/> property defined in <see cref="Avalonia.Application"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> ApplicationActualThemeVariant => Avalonia.Application.ActualThemeVariantProperty;
+    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> Application_ActualThemeVariant => Avalonia.Application.ActualThemeVariantProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> property defined in <see cref="Avalonia.Application"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> ApplicationRequestedThemeVariant => Avalonia.Application.RequestedThemeVariantProperty;
+    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> Application_RequestedThemeVariant => Avalonia.Application.RequestedThemeVariantProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Application.NameProperty"/> property defined in <see cref="Avalonia.Application"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Application,System.String> ApplicationName => Avalonia.Application.NameProperty;
+    public static Avalonia.DirectProperty<Avalonia.Application,System.String> Application_Name => Avalonia.Application.NameProperty;
 }

@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.RadioButton.GroupNameProperty"/> property defined in <see cref="Avalonia.Controls.RadioButton"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> RadioButtonGroupName => Avalonia.Controls.RadioButton.GroupNameProperty;
+    public static Avalonia.StyledProperty<System.String> RadioButton_GroupName => Avalonia.Controls.RadioButton.GroupNameProperty;
 }

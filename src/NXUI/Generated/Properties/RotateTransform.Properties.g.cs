@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.RotateTransform.AngleProperty"/> property defined in <see cref="Avalonia.Media.RotateTransform"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> RotateTransformAngle => Avalonia.Media.RotateTransform.AngleProperty;
+    public static Avalonia.StyledProperty<System.Double> RotateTransform_Angle => Avalonia.Media.RotateTransform.AngleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/> property defined in <see cref="Avalonia.Media.RotateTransform"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> RotateTransformCenterX => Avalonia.Media.RotateTransform.CenterXProperty;
+    public static Avalonia.StyledProperty<System.Double> RotateTransform_CenterX => Avalonia.Media.RotateTransform.CenterXProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/> property defined in <see cref="Avalonia.Media.RotateTransform"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> RotateTransformCenterY => Avalonia.Media.RotateTransform.CenterYProperty;
+    public static Avalonia.StyledProperty<System.Double> RotateTransform_CenterY => Avalonia.Media.RotateTransform.CenterYProperty;
 }

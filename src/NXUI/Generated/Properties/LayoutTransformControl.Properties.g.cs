@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> property defined in <see cref="Avalonia.Controls.LayoutTransformControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.ITransform> LayoutTransformControlLayoutTransform => Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.ITransform> LayoutTransformControl_LayoutTransform => Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> property defined in <see cref="Avalonia.Controls.LayoutTransformControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> LayoutTransformControlUseRenderTransform => Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty;
+    public static Avalonia.StyledProperty<System.Boolean> LayoutTransformControl_UseRenderTransform => Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty;
 }

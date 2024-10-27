@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ListBox.ScrollProperty"/> property defined in <see cref="Avalonia.Controls.ListBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.ListBox,Avalonia.Controls.Primitives.IScrollable> ListBoxScroll => Avalonia.Controls.ListBox.ScrollProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.ListBox,Avalonia.Controls.Primitives.IScrollable> ListBox_Scroll => Avalonia.Controls.ListBox.ScrollProperty;
 }

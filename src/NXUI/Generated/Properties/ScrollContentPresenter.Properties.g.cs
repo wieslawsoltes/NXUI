@@ -11,50 +11,50 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ScrollContentPresenterCanHorizontallyScroll => Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ScrollContentPresenter_CanHorizontallyScroll => Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ScrollContentPresenterCanVerticallyScroll => Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ScrollContentPresenter_CanVerticallyScroll => Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ScrollContentPresenter,Avalonia.Size> ScrollContentPresenterExtent => Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ScrollContentPresenter,Avalonia.Size> ScrollContentPresenter_Extent => Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Vector> ScrollContentPresenterOffset => Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty;
+    public static Avalonia.StyledProperty<Avalonia.Vector> ScrollContentPresenter_Offset => Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ScrollContentPresenter,Avalonia.Size> ScrollContentPresenterViewport => Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ScrollContentPresenter,Avalonia.Size> ScrollContentPresenter_Viewport => Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.SnapPointsType> ScrollContentPresenterHorizontalSnapPointsType => Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.SnapPointsType> ScrollContentPresenter_HorizontalSnapPointsType => Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.SnapPointsType> ScrollContentPresenterVerticalSnapPointsType => Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.SnapPointsType> ScrollContentPresenter_VerticalSnapPointsType => Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.SnapPointsAlignment> ScrollContentPresenterHorizontalSnapPointsAlignment => Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.SnapPointsAlignment> ScrollContentPresenter_HorizontalSnapPointsAlignment => Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.SnapPointsAlignment> ScrollContentPresenterVerticalSnapPointsAlignment => Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.SnapPointsAlignment> ScrollContentPresenter_VerticalSnapPointsAlignment => Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ScrollContentPresenterIsScrollChainingEnabled => Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ScrollContentPresenter_IsScrollChainingEnabled => Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty;
 }

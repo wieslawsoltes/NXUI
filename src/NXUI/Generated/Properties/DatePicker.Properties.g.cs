@@ -11,45 +11,45 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> DatePickerDayFormat => Avalonia.Controls.DatePicker.DayFormatProperty;
+    public static Avalonia.StyledProperty<System.String> DatePicker_DayFormat => Avalonia.Controls.DatePicker.DayFormatProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> DatePickerDayVisible => Avalonia.Controls.DatePicker.DayVisibleProperty;
+    public static Avalonia.StyledProperty<System.Boolean> DatePicker_DayVisible => Avalonia.Controls.DatePicker.DayVisibleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.DateTimeOffset> DatePickerMaxYear => Avalonia.Controls.DatePicker.MaxYearProperty;
+    public static Avalonia.StyledProperty<System.DateTimeOffset> DatePicker_MaxYear => Avalonia.Controls.DatePicker.MaxYearProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.DateTimeOffset> DatePickerMinYear => Avalonia.Controls.DatePicker.MinYearProperty;
+    public static Avalonia.StyledProperty<System.DateTimeOffset> DatePicker_MinYear => Avalonia.Controls.DatePicker.MinYearProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> DatePickerMonthFormat => Avalonia.Controls.DatePicker.MonthFormatProperty;
+    public static Avalonia.StyledProperty<System.String> DatePicker_MonthFormat => Avalonia.Controls.DatePicker.MonthFormatProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> DatePickerMonthVisible => Avalonia.Controls.DatePicker.MonthVisibleProperty;
+    public static Avalonia.StyledProperty<System.Boolean> DatePicker_MonthVisible => Avalonia.Controls.DatePicker.MonthVisibleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> DatePickerYearFormat => Avalonia.Controls.DatePicker.YearFormatProperty;
+    public static Avalonia.StyledProperty<System.String> DatePicker_YearFormat => Avalonia.Controls.DatePicker.YearFormatProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> DatePickerYearVisible => Avalonia.Controls.DatePicker.YearVisibleProperty;
+    public static Avalonia.StyledProperty<System.Boolean> DatePicker_YearVisible => Avalonia.Controls.DatePicker.YearVisibleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/> property defined in <see cref="Avalonia.Controls.DatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Nullable<System.DateTimeOffset>> DatePickerSelectedDate => Avalonia.Controls.DatePicker.SelectedDateProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.DateTimeOffset>> DatePicker_SelectedDate => Avalonia.Controls.DatePicker.SelectedDateProperty;
 }

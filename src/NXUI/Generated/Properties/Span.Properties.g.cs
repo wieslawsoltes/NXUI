@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.Span.InlinesProperty"/> property defined in <see cref="Avalonia.Controls.Documents.Span"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Documents.InlineCollection> SpanInlines => Avalonia.Controls.Documents.Span.InlinesProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Documents.InlineCollection> Span_Inlines => Avalonia.Controls.Documents.Span.InlinesProperty;
 }

@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/> property defined in <see cref="Avalonia.Media.GeometryGroup"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Media.GeometryGroup,Avalonia.Media.GeometryCollection> GeometryGroupChildren => Avalonia.Media.GeometryGroup.ChildrenProperty;
+    public static Avalonia.DirectProperty<Avalonia.Media.GeometryGroup,Avalonia.Media.GeometryCollection> GeometryGroup_Children => Avalonia.Media.GeometryGroup.ChildrenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> property defined in <see cref="Avalonia.Media.GeometryGroup"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FillRule> GeometryGroupFillRule => Avalonia.Media.GeometryGroup.FillRuleProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FillRule> GeometryGroup_FillRule => Avalonia.Media.GeometryGroup.FillRuleProperty;
 }

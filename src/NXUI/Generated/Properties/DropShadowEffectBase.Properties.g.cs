@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/> property defined in <see cref="Avalonia.Media.DropShadowEffectBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> DropShadowEffectBaseBlurRadius => Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty;
+    public static Avalonia.StyledProperty<System.Double> DropShadowEffectBase_BlurRadius => Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/> property defined in <see cref="Avalonia.Media.DropShadowEffectBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Color> DropShadowEffectBaseColor => Avalonia.Media.DropShadowEffectBase.ColorProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Color> DropShadowEffectBase_Color => Avalonia.Media.DropShadowEffectBase.ColorProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/> property defined in <see cref="Avalonia.Media.DropShadowEffectBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> DropShadowEffectBaseOpacity => Avalonia.Media.DropShadowEffectBase.OpacityProperty;
+    public static Avalonia.StyledProperty<System.Double> DropShadowEffectBase_Opacity => Avalonia.Media.DropShadowEffectBase.OpacityProperty;
 }

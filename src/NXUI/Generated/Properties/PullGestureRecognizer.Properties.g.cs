@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> property defined in <see cref="Avalonia.Input.PullGestureRecognizer"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.PullDirection> PullGestureRecognizerPullDirection => Avalonia.Input.PullGestureRecognizer.PullDirectionProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.PullDirection> PullGestureRecognizer_PullDirection => Avalonia.Input.PullGestureRecognizer.PullDirectionProperty;
 }

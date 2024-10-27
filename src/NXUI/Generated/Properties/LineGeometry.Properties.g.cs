@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/> property defined in <see cref="Avalonia.Media.LineGeometry"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Point> LineGeometryStartPoint => Avalonia.Media.LineGeometry.StartPointProperty;
+    public static Avalonia.StyledProperty<Avalonia.Point> LineGeometry_StartPoint => Avalonia.Media.LineGeometry.StartPointProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/> property defined in <see cref="Avalonia.Media.LineGeometry"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Point> LineGeometryEndPoint => Avalonia.Media.LineGeometry.EndPointProperty;
+    public static Avalonia.StyledProperty<Avalonia.Point> LineGeometry_EndPoint => Avalonia.Media.LineGeometry.EndPointProperty;
 }

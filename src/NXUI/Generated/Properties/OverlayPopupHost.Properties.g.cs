@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.OverlayPopupHost"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Transform> OverlayPopupHostTransform => Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Transform> OverlayPopupHost_Transform => Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty;
 }

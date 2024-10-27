@@ -11,25 +11,25 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.StyledElement.DataContextProperty"/> property defined in <see cref="Avalonia.StyledElement"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> StyledElementDataContext => Avalonia.StyledElement.DataContextProperty;
+    public static Avalonia.StyledProperty<System.Object> StyledElement_DataContext => Avalonia.StyledElement.DataContextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.StyledElement.NameProperty"/> property defined in <see cref="Avalonia.StyledElement"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.StyledElement,System.String> StyledElementName => Avalonia.StyledElement.NameProperty;
+    public static Avalonia.DirectProperty<Avalonia.StyledElement,System.String> StyledElement_Name => Avalonia.StyledElement.NameProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.StyledElement.ParentProperty"/> property defined in <see cref="Avalonia.StyledElement"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.StyledElement,Avalonia.StyledElement> StyledElementParent => Avalonia.StyledElement.ParentProperty;
+    public static Avalonia.DirectProperty<Avalonia.StyledElement,Avalonia.StyledElement> StyledElement_Parent => Avalonia.StyledElement.ParentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.StyledElement.TemplatedParentProperty"/> property defined in <see cref="Avalonia.StyledElement"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.StyledElement,Avalonia.AvaloniaObject> StyledElementTemplatedParent => Avalonia.StyledElement.TemplatedParentProperty;
+    public static Avalonia.DirectProperty<Avalonia.StyledElement,Avalonia.AvaloniaObject> StyledElement_TemplatedParent => Avalonia.StyledElement.TemplatedParentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.StyledElement.ThemeProperty"/> property defined in <see cref="Avalonia.StyledElement"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> StyledElementTheme => Avalonia.StyledElement.ThemeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> StyledElement_Theme => Avalonia.StyledElement.ThemeProperty;
 }

@@ -11,50 +11,50 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> SplitViewCompactPaneLength => Avalonia.Controls.SplitView.CompactPaneLengthProperty;
+    public static Avalonia.StyledProperty<System.Double> SplitView_CompactPaneLength => Avalonia.Controls.SplitView.CompactPaneLengthProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.SplitViewDisplayMode> SplitViewDisplayMode => Avalonia.Controls.SplitView.DisplayModeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.SplitViewDisplayMode> SplitView_DisplayMode => Avalonia.Controls.SplitView.DisplayModeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> SplitViewIsPaneOpen => Avalonia.Controls.SplitView.IsPaneOpenProperty;
+    public static Avalonia.StyledProperty<System.Boolean> SplitView_IsPaneOpen => Avalonia.Controls.SplitView.IsPaneOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> SplitViewOpenPaneLength => Avalonia.Controls.SplitView.OpenPaneLengthProperty;
+    public static Avalonia.StyledProperty<System.Double> SplitView_OpenPaneLength => Avalonia.Controls.SplitView.OpenPaneLengthProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> SplitViewPaneBackground => Avalonia.Controls.SplitView.PaneBackgroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> SplitView_PaneBackground => Avalonia.Controls.SplitView.PaneBackgroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.SplitViewPanePlacement> SplitViewPanePlacement => Avalonia.Controls.SplitView.PanePlacementProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.SplitViewPanePlacement> SplitView_PanePlacement => Avalonia.Controls.SplitView.PanePlacementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.PaneProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> SplitViewPane => Avalonia.Controls.SplitView.PaneProperty;
+    public static Avalonia.StyledProperty<System.Object> SplitView_Pane => Avalonia.Controls.SplitView.PaneProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> SplitViewPaneTemplate => Avalonia.Controls.SplitView.PaneTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> SplitView_PaneTemplate => Avalonia.Controls.SplitView.PaneTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> SplitViewUseLightDismissOverlayMode => Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty;
+    public static Avalonia.StyledProperty<System.Boolean> SplitView_UseLightDismissOverlayMode => Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/> property defined in <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.SplitView,Avalonia.Controls.Primitives.SplitViewTemplateSettings> SplitViewTemplateSettings => Avalonia.Controls.SplitView.TemplateSettingsProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.SplitView,Avalonia.Controls.Primitives.SplitViewTemplateSettings> SplitView_TemplateSettings => Avalonia.Controls.SplitView.TemplateSettingsProperty;
 }

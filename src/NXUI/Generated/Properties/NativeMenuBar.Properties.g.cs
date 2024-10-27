@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenuBar"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> NativeMenuBarEnableMenuItemClickForwarding => Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> NativeMenuBar_EnableMenuItemClickForwarding => Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty;
 }

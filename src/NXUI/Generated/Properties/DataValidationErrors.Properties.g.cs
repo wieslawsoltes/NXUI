@@ -11,25 +11,25 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/> property defined in <see cref="Avalonia.Controls.DataValidationErrors"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Collections.Generic.IEnumerable<System.Object>> DataValidationErrorsErrors => Avalonia.Controls.DataValidationErrors.ErrorsProperty;
+    public static Avalonia.AttachedProperty<System.Collections.Generic.IEnumerable<System.Object>> DataValidationErrors_Errors => Avalonia.Controls.DataValidationErrors.ErrorsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/> property defined in <see cref="Avalonia.Controls.DataValidationErrors"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> DataValidationErrorsHasErrors => Avalonia.Controls.DataValidationErrors.HasErrorsProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> DataValidationErrors_HasErrors => Avalonia.Controls.DataValidationErrors.HasErrorsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/> property defined in <see cref="Avalonia.Controls.DataValidationErrors"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Func<System.Object,System.Object>> DataValidationErrorsErrorConverter => Avalonia.Controls.DataValidationErrors.ErrorConverterProperty;
+    public static Avalonia.AttachedProperty<System.Func<System.Object,System.Object>> DataValidationErrors_ErrorConverter => Avalonia.Controls.DataValidationErrors.ErrorConverterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/> property defined in <see cref="Avalonia.Controls.DataValidationErrors"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> DataValidationErrorsErrorTemplate => Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> DataValidationErrors_ErrorTemplate => Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/> property defined in <see cref="Avalonia.Controls.DataValidationErrors"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.DataValidationErrors,Avalonia.Controls.Control> DataValidationErrorsOwner => Avalonia.Controls.DataValidationErrors.OwnerProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.DataValidationErrors,Avalonia.Controls.Control> DataValidationErrors_Owner => Avalonia.Controls.DataValidationErrors.OwnerProperty;
 }

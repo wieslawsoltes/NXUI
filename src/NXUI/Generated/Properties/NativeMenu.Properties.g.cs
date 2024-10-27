@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenu.ParentProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenu"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenu,Avalonia.Controls.NativeMenuItem> NativeMenuParent => Avalonia.Controls.NativeMenu.ParentProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.NativeMenu,Avalonia.Controls.NativeMenuItem> NativeMenu_Parent => Avalonia.Controls.NativeMenu.ParentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenu"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> NativeMenuIsNativeMenuExported => Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> NativeMenu_IsNativeMenuExported => Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> property defined in <see cref="Avalonia.Controls.NativeMenu"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Controls.NativeMenu> NativeMenuMenu => Avalonia.Controls.NativeMenu.MenuProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Controls.NativeMenu> NativeMenu_Menu => Avalonia.Controls.NativeMenu.MenuProperty;
 }

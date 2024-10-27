@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/> property defined in <see cref="Avalonia.Controls.RefreshContainer"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.RefreshContainer,Avalonia.Controls.RefreshVisualizer> RefreshContainerVisualizer => Avalonia.Controls.RefreshContainer.VisualizerProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.RefreshContainer,Avalonia.Controls.RefreshVisualizer> RefreshContainer_Visualizer => Avalonia.Controls.RefreshContainer.VisualizerProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> property defined in <see cref="Avalonia.Controls.RefreshContainer"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.PullDirection> RefreshContainerPullDirection => Avalonia.Controls.RefreshContainer.PullDirectionProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.PullDirection> RefreshContainer_PullDirection => Avalonia.Controls.RefreshContainer.PullDirectionProperty;
 }

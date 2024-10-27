@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.FlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.FlyoutBase,System.Boolean> FlyoutBaseIsOpen => Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.FlyoutBase,System.Boolean> FlyoutBase_IsOpen => Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.FlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.FlyoutBase,Avalonia.Controls.Control> FlyoutBaseTarget => Avalonia.Controls.Primitives.FlyoutBase.TargetProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.FlyoutBase,Avalonia.Controls.Control> FlyoutBase_Target => Avalonia.Controls.Primitives.FlyoutBase.TargetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.FlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Controls.Primitives.FlyoutBase> FlyoutBaseAttachedFlyout => Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Controls.Primitives.FlyoutBase> FlyoutBase_AttachedFlyout => Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty;
 }

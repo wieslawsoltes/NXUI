@@ -11,40 +11,40 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Shape"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> ShapeFill => Avalonia.Controls.Shapes.Shape.FillProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> Shape_Fill => Avalonia.Controls.Shapes.Shape.FillProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Shape"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Stretch> ShapeStretch => Avalonia.Controls.Shapes.Shape.StretchProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Stretch> Shape_Stretch => Avalonia.Controls.Shapes.Shape.StretchProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Shape"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> ShapeStroke => Avalonia.Controls.Shapes.Shape.StrokeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> Shape_Stroke => Avalonia.Controls.Shapes.Shape.StrokeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Shape"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Collections.AvaloniaList<System.Double>> ShapeStrokeDashArray => Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty;
+    public static Avalonia.StyledProperty<Avalonia.Collections.AvaloniaList<System.Double>> Shape_StrokeDashArray => Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Shape"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ShapeStrokeDashOffset => Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty;
+    public static Avalonia.StyledProperty<System.Double> Shape_StrokeDashOffset => Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Shape"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ShapeStrokeThickness => Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty;
+    public static Avalonia.StyledProperty<System.Double> Shape_StrokeThickness => Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Shape"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.PenLineCap> ShapeStrokeLineCap => Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.PenLineCap> Shape_StrokeLineCap => Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Shape"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.PenLineJoin> ShapeStrokeJoin => Avalonia.Controls.Shapes.Shape.StrokeJoinProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.PenLineJoin> Shape_StrokeJoin => Avalonia.Controls.Shapes.Shape.StrokeJoinProperty;
 }

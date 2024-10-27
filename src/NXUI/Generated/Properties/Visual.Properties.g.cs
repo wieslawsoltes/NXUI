@@ -11,65 +11,65 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Visual.BoundsProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Visual,Avalonia.Rect> VisualBounds => Avalonia.Visual.BoundsProperty;
+    public static Avalonia.DirectProperty<Avalonia.Visual,Avalonia.Rect> Visual_Bounds => Avalonia.Visual.BoundsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.ClipToBoundsProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> VisualClipToBounds => Avalonia.Visual.ClipToBoundsProperty;
+    public static Avalonia.StyledProperty<System.Boolean> Visual_ClipToBounds => Avalonia.Visual.ClipToBoundsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.ClipProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> VisualClip => Avalonia.Visual.ClipProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> Visual_Clip => Avalonia.Visual.ClipProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.IsVisibleProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> VisualIsVisible => Avalonia.Visual.IsVisibleProperty;
+    public static Avalonia.StyledProperty<System.Boolean> Visual_IsVisible => Avalonia.Visual.IsVisibleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.OpacityProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> VisualOpacity => Avalonia.Visual.OpacityProperty;
+    public static Avalonia.StyledProperty<System.Double> Visual_Opacity => Avalonia.Visual.OpacityProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.OpacityMaskProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> VisualOpacityMask => Avalonia.Visual.OpacityMaskProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> Visual_OpacityMask => Avalonia.Visual.OpacityMaskProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.EffectProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IEffect> VisualEffect => Avalonia.Visual.EffectProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IEffect> Visual_Effect => Avalonia.Visual.EffectProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.HasMirrorTransformProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Visual,System.Boolean> VisualHasMirrorTransform => Avalonia.Visual.HasMirrorTransformProperty;
+    public static Avalonia.DirectProperty<Avalonia.Visual,System.Boolean> Visual_HasMirrorTransform => Avalonia.Visual.HasMirrorTransformProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.RenderTransformProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.ITransform> VisualRenderTransform => Avalonia.Visual.RenderTransformProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.ITransform> Visual_RenderTransform => Avalonia.Visual.RenderTransformProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.RenderTransformOriginProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.RelativePoint> VisualRenderTransformOrigin => Avalonia.Visual.RenderTransformOriginProperty;
+    public static Avalonia.StyledProperty<Avalonia.RelativePoint> Visual_RenderTransformOrigin => Avalonia.Visual.RenderTransformOriginProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.FlowDirectionProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.FlowDirection> VisualFlowDirection => Avalonia.Visual.FlowDirectionProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.FlowDirection> Visual_FlowDirection => Avalonia.Visual.FlowDirectionProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.VisualParentProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Visual,Avalonia.Visual> VisualVisualParent => Avalonia.Visual.VisualParentProperty;
+    public static Avalonia.DirectProperty<Avalonia.Visual,Avalonia.Visual> Visual_VisualParent => Avalonia.Visual.VisualParentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Visual.ZIndexProperty"/> property defined in <see cref="Avalonia.Visual"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> VisualZIndex => Avalonia.Visual.ZIndexProperty;
+    public static Avalonia.StyledProperty<System.Int32> Visual_ZIndex => Avalonia.Visual.ZIndexProperty;
 }

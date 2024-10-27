@@ -11,25 +11,25 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> property defined in <see cref="Avalonia.Media.DrawingGroup"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> DrawingGroupOpacity => Avalonia.Media.DrawingGroup.OpacityProperty;
+    public static Avalonia.StyledProperty<System.Double> DrawingGroup_Opacity => Avalonia.Media.DrawingGroup.OpacityProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> property defined in <see cref="Avalonia.Media.DrawingGroup"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Transform> DrawingGroupTransform => Avalonia.Media.DrawingGroup.TransformProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Transform> DrawingGroup_Transform => Avalonia.Media.DrawingGroup.TransformProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> property defined in <see cref="Avalonia.Media.DrawingGroup"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> DrawingGroupClipGeometry => Avalonia.Media.DrawingGroup.ClipGeometryProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> DrawingGroup_ClipGeometry => Avalonia.Media.DrawingGroup.ClipGeometryProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> property defined in <see cref="Avalonia.Media.DrawingGroup"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> DrawingGroupOpacityMask => Avalonia.Media.DrawingGroup.OpacityMaskProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> DrawingGroup_OpacityMask => Avalonia.Media.DrawingGroup.OpacityMaskProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> property defined in <see cref="Avalonia.Media.DrawingGroup"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Media.DrawingGroup,Avalonia.Media.DrawingCollection> DrawingGroupChildren => Avalonia.Media.DrawingGroup.ChildrenProperty;
+    public static Avalonia.DirectProperty<Avalonia.Media.DrawingGroup,Avalonia.Media.DrawingCollection> DrawingGroup_Children => Avalonia.Media.DrawingGroup.ChildrenProperty;
 }

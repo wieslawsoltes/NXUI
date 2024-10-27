@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.PathIcon.DataProperty"/> property defined in <see cref="Avalonia.Controls.PathIcon"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> PathIconData => Avalonia.Controls.PathIcon.DataProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Geometry> PathIcon_Data => Avalonia.Controls.PathIcon.DataProperty;
 }

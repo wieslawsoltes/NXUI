@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ListBoxItem.IsSelectedProperty"/> property defined in <see cref="Avalonia.Controls.ListBoxItem"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ListBoxItemIsSelected => Avalonia.Controls.ListBoxItem.IsSelectedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ListBoxItem_IsSelected => Avalonia.Controls.ListBoxItem.IsSelectedProperty;
 }

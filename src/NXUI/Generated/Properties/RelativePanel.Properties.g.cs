@@ -11,75 +11,75 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Object> RelativePanelAbove => Avalonia.Controls.RelativePanel.AboveProperty;
+    public static Avalonia.AttachedProperty<System.Object> RelativePanel_Above => Avalonia.Controls.RelativePanel.AboveProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> RelativePanelAlignBottomWithPanel => Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> RelativePanel_AlignBottomWithPanel => Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Object> RelativePanelAlignBottomWith => Avalonia.Controls.RelativePanel.AlignBottomWithProperty;
+    public static Avalonia.AttachedProperty<System.Object> RelativePanel_AlignBottomWith => Avalonia.Controls.RelativePanel.AlignBottomWithProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> RelativePanelAlignHorizontalCenterWithPanel => Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> RelativePanel_AlignHorizontalCenterWithPanel => Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> RelativePanelAlignLeftWithPanel => Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> RelativePanel_AlignLeftWithPanel => Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Object> RelativePanelAlignLeftWith => Avalonia.Controls.RelativePanel.AlignLeftWithProperty;
+    public static Avalonia.AttachedProperty<System.Object> RelativePanel_AlignLeftWith => Avalonia.Controls.RelativePanel.AlignLeftWithProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> RelativePanelAlignRightWithPanel => Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> RelativePanel_AlignRightWithPanel => Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Object> RelativePanelAlignRightWith => Avalonia.Controls.RelativePanel.AlignRightWithProperty;
+    public static Avalonia.AttachedProperty<System.Object> RelativePanel_AlignRightWith => Avalonia.Controls.RelativePanel.AlignRightWithProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> RelativePanelAlignTopWithPanel => Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> RelativePanel_AlignTopWithPanel => Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Object> RelativePanelAlignTopWith => Avalonia.Controls.RelativePanel.AlignTopWithProperty;
+    public static Avalonia.AttachedProperty<System.Object> RelativePanel_AlignTopWith => Avalonia.Controls.RelativePanel.AlignTopWithProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> RelativePanelAlignVerticalCenterWithPanel => Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> RelativePanel_AlignVerticalCenterWithPanel => Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Object> RelativePanelAlignVerticalCenterWith => Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty;
+    public static Avalonia.AttachedProperty<System.Object> RelativePanel_AlignVerticalCenterWith => Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Object> RelativePanelBelow => Avalonia.Controls.RelativePanel.BelowProperty;
+    public static Avalonia.AttachedProperty<System.Object> RelativePanel_Below => Avalonia.Controls.RelativePanel.BelowProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Object> RelativePanelLeftOf => Avalonia.Controls.RelativePanel.LeftOfProperty;
+    public static Avalonia.AttachedProperty<System.Object> RelativePanel_LeftOf => Avalonia.Controls.RelativePanel.LeftOfProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Object> RelativePanelRightOf => Avalonia.Controls.RelativePanel.RightOfProperty;
+    public static Avalonia.AttachedProperty<System.Object> RelativePanel_RightOf => Avalonia.Controls.RelativePanel.RightOfProperty;
 }

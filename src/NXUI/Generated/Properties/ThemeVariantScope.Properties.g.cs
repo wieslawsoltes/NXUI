@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ThemeVariantScope.ActualThemeVariantProperty"/> property defined in <see cref="Avalonia.Controls.ThemeVariantScope"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> ThemeVariantScopeActualThemeVariant => Avalonia.Controls.ThemeVariantScope.ActualThemeVariantProperty;
+    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> ThemeVariantScope_ActualThemeVariant => Avalonia.Controls.ThemeVariantScope.ActualThemeVariantProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ThemeVariantScope.RequestedThemeVariantProperty"/> property defined in <see cref="Avalonia.Controls.ThemeVariantScope"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> ThemeVariantScopeRequestedThemeVariant => Avalonia.Controls.ThemeVariantScope.RequestedThemeVariantProperty;
+    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> ThemeVariantScope_RequestedThemeVariant => Avalonia.Controls.ThemeVariantScope.RequestedThemeVariantProperty;
 }

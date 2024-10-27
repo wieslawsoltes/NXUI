@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> property defined in <see cref="Avalonia.Media.ImageDrawing"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IImage> ImageDrawingImageSource => Avalonia.Media.ImageDrawing.ImageSourceProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IImage> ImageDrawing_ImageSource => Avalonia.Media.ImageDrawing.ImageSourceProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> property defined in <see cref="Avalonia.Media.ImageDrawing"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Rect> ImageDrawingRect => Avalonia.Media.ImageDrawing.RectProperty;
+    public static Avalonia.StyledProperty<Avalonia.Rect> ImageDrawing_Rect => Avalonia.Media.ImageDrawing.RectProperty;
 }

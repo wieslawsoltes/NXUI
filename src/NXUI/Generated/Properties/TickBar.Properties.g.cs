@@ -11,45 +11,45 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TickBar.FillProperty"/> property defined in <see cref="Avalonia.Controls.TickBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TickBarFill => Avalonia.Controls.TickBar.FillProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TickBar_Fill => Avalonia.Controls.TickBar.FillProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TickBar.MinimumProperty"/> property defined in <see cref="Avalonia.Controls.TickBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TickBarMinimum => Avalonia.Controls.TickBar.MinimumProperty;
+    public static Avalonia.StyledProperty<System.Double> TickBar_Minimum => Avalonia.Controls.TickBar.MinimumProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TickBar.MaximumProperty"/> property defined in <see cref="Avalonia.Controls.TickBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TickBarMaximum => Avalonia.Controls.TickBar.MaximumProperty;
+    public static Avalonia.StyledProperty<System.Double> TickBar_Maximum => Avalonia.Controls.TickBar.MaximumProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/> property defined in <see cref="Avalonia.Controls.TickBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TickBarTickFrequency => Avalonia.Controls.TickBar.TickFrequencyProperty;
+    public static Avalonia.StyledProperty<System.Double> TickBar_TickFrequency => Avalonia.Controls.TickBar.TickFrequencyProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> property defined in <see cref="Avalonia.Controls.TickBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> TickBarOrientation => Avalonia.Controls.TickBar.OrientationProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> TickBar_Orientation => Avalonia.Controls.TickBar.OrientationProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TickBar.TicksProperty"/> property defined in <see cref="Avalonia.Controls.TickBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Collections.AvaloniaList<System.Double>> TickBarTicks => Avalonia.Controls.TickBar.TicksProperty;
+    public static Avalonia.StyledProperty<Avalonia.Collections.AvaloniaList<System.Double>> TickBar_Ticks => Avalonia.Controls.TickBar.TicksProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/> property defined in <see cref="Avalonia.Controls.TickBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TickBarIsDirectionReversed => Avalonia.Controls.TickBar.IsDirectionReversedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TickBar_IsDirectionReversed => Avalonia.Controls.TickBar.IsDirectionReversedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property defined in <see cref="Avalonia.Controls.TickBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.TickBarPlacement> TickBarPlacement => Avalonia.Controls.TickBar.PlacementProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.TickBarPlacement> TickBar_Placement => Avalonia.Controls.TickBar.PlacementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/> property defined in <see cref="Avalonia.Controls.TickBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Rect> TickBarReservedSpace => Avalonia.Controls.TickBar.ReservedSpaceProperty;
+    public static Avalonia.StyledProperty<Avalonia.Rect> TickBar_ReservedSpace => Avalonia.Controls.TickBar.ReservedSpaceProperty;
 }

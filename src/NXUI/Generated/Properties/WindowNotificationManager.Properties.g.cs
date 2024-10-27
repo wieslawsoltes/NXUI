@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property defined in <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Notifications.NotificationPosition> WindowNotificationManagerPosition => Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Notifications.NotificationPosition> WindowNotificationManager_Position => Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/> property defined in <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> WindowNotificationManagerMaxItems => Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty;
+    public static Avalonia.StyledProperty<System.Int32> WindowNotificationManager_MaxItems => Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty;
 }

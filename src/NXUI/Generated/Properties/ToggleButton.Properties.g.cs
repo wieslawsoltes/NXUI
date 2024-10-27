@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Nullable<System.Boolean>> ToggleButtonIsChecked => Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.Boolean>> ToggleButton_IsChecked => Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ToggleButtonIsThreeState => Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ToggleButton_IsThreeState => Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty;
 }

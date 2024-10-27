@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> property defined in <see cref="Avalonia.Controls.WrapPanel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> WrapPanelOrientation => Avalonia.Controls.WrapPanel.OrientationProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> WrapPanel_Orientation => Avalonia.Controls.WrapPanel.OrientationProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/> property defined in <see cref="Avalonia.Controls.WrapPanel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> WrapPanelItemWidth => Avalonia.Controls.WrapPanel.ItemWidthProperty;
+    public static Avalonia.StyledProperty<System.Double> WrapPanel_ItemWidth => Avalonia.Controls.WrapPanel.ItemWidthProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/> property defined in <see cref="Avalonia.Controls.WrapPanel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> WrapPanelItemHeight => Avalonia.Controls.WrapPanel.ItemHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> WrapPanel_ItemHeight => Avalonia.Controls.WrapPanel.ItemHeightProperty;
 }

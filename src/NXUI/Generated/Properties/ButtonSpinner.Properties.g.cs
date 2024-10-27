@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/> property defined in <see cref="Avalonia.Controls.ButtonSpinner"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ButtonSpinnerAllowSpin => Avalonia.Controls.ButtonSpinner.AllowSpinProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ButtonSpinner_AllowSpin => Avalonia.Controls.ButtonSpinner.AllowSpinProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/> property defined in <see cref="Avalonia.Controls.ButtonSpinner"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ButtonSpinnerShowButtonSpinner => Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ButtonSpinner_ShowButtonSpinner => Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> property defined in <see cref="Avalonia.Controls.ButtonSpinner"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Location> ButtonSpinnerButtonSpinnerLocation => Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Location> ButtonSpinner_ButtonSpinnerLocation => Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty;
 }

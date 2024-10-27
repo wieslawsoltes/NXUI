@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.BezierSegment.Point1Property"/> property defined in <see cref="Avalonia.Media.BezierSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Point> BezierSegmentPoint1 => Avalonia.Media.BezierSegment.Point1Property;
+    public static Avalonia.StyledProperty<Avalonia.Point> BezierSegment_Point1 => Avalonia.Media.BezierSegment.Point1Property;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.BezierSegment.Point2Property"/> property defined in <see cref="Avalonia.Media.BezierSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Point> BezierSegmentPoint2 => Avalonia.Media.BezierSegment.Point2Property;
+    public static Avalonia.StyledProperty<Avalonia.Point> BezierSegment_Point2 => Avalonia.Media.BezierSegment.Point2Property;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.BezierSegment.Point3Property"/> property defined in <see cref="Avalonia.Media.BezierSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Point> BezierSegmentPoint3 => Avalonia.Media.BezierSegment.Point3Property;
+    public static Avalonia.StyledProperty<Avalonia.Point> BezierSegment_Point3 => Avalonia.Media.BezierSegment.Point3Property;
 }

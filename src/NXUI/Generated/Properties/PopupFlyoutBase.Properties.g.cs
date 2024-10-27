@@ -11,40 +11,40 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.PlacementMode> PopupFlyoutBasePlacement => Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.PlacementMode> PopupFlyoutBase_Placement => Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> PopupFlyoutBaseHorizontalOffset => Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty;
+    public static Avalonia.StyledProperty<System.Double> PopupFlyoutBase_HorizontalOffset => Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> PopupFlyoutBaseVerticalOffset => Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty;
+    public static Avalonia.StyledProperty<System.Double> PopupFlyoutBase_VerticalOffset => Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> PopupFlyoutBasePlacementAnchor => Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> PopupFlyoutBase_PlacementAnchor => Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> PopupFlyoutBasePlacementGravity => Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> PopupFlyoutBase_PlacementGravity => Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.FlyoutShowMode> PopupFlyoutBaseShowMode => Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.FlyoutShowMode> PopupFlyoutBase_ShowMode => Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.IInputElement> PopupFlyoutBaseOverlayInputPassThroughElement => Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.IInputElement> PopupFlyoutBase_OverlayInputPassThroughElement => Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> PopupFlyoutBasePlacementConstraintAdjustment => Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> PopupFlyoutBase_PlacementConstraintAdjustment => Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty;
 }

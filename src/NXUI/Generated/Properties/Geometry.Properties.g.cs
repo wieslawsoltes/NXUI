@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.Geometry.TransformProperty"/> property defined in <see cref="Avalonia.Media.Geometry"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Transform> GeometryTransform => Avalonia.Media.Geometry.TransformProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Transform> Geometry_Transform => Avalonia.Media.Geometry.TransformProperty;
 }

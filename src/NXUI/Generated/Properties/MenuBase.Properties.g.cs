@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.MenuBase.IsOpenProperty"/> property defined in <see cref="Avalonia.Controls.MenuBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.MenuBase,System.Boolean> MenuBaseIsOpen => Avalonia.Controls.MenuBase.IsOpenProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.MenuBase,System.Boolean> MenuBase_IsOpen => Avalonia.Controls.MenuBase.IsOpenProperty;
 }

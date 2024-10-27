@@ -11,70 +11,70 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.DateTime> CalendarDatePickerDisplayDate => Avalonia.Controls.CalendarDatePicker.DisplayDateProperty;
+    public static Avalonia.StyledProperty<System.DateTime> CalendarDatePicker_DisplayDate => Avalonia.Controls.CalendarDatePicker.DisplayDateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarDatePickerDisplayDateStart => Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarDatePicker_DisplayDateStart => Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarDatePickerDisplayDateEnd => Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarDatePicker_DisplayDateEnd => Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.DayOfWeek> CalendarDatePickerFirstDayOfWeek => Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty;
+    public static Avalonia.StyledProperty<System.DayOfWeek> CalendarDatePicker_FirstDayOfWeek => Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> CalendarDatePickerIsDropDownOpen => Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty;
+    public static Avalonia.StyledProperty<System.Boolean> CalendarDatePicker_IsDropDownOpen => Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> CalendarDatePickerIsTodayHighlighted => Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> CalendarDatePicker_IsTodayHighlighted => Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarDatePickerSelectedDate => Avalonia.Controls.CalendarDatePicker.SelectedDateProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarDatePicker_SelectedDate => Avalonia.Controls.CalendarDatePicker.SelectedDateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.CalendarDatePickerFormat> CalendarDatePickerSelectedDateFormat => Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.CalendarDatePickerFormat> CalendarDatePicker_SelectedDateFormat => Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> CalendarDatePickerCustomDateFormatString => Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty;
+    public static Avalonia.StyledProperty<System.String> CalendarDatePicker_CustomDateFormatString => Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> CalendarDatePickerText => Avalonia.Controls.CalendarDatePicker.TextProperty;
+    public static Avalonia.StyledProperty<System.String> CalendarDatePicker_Text => Avalonia.Controls.CalendarDatePicker.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> CalendarDatePickerWatermark => Avalonia.Controls.CalendarDatePicker.WatermarkProperty;
+    public static Avalonia.StyledProperty<System.String> CalendarDatePicker_Watermark => Avalonia.Controls.CalendarDatePicker.WatermarkProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> CalendarDatePickerUseFloatingWatermark => Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty;
+    public static Avalonia.StyledProperty<System.Boolean> CalendarDatePicker_UseFloatingWatermark => Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> CalendarDatePickerHorizontalContentAlignment => Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> CalendarDatePicker_HorizontalContentAlignment => Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.CalendarDatePicker"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> CalendarDatePickerVerticalContentAlignment => Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> CalendarDatePicker_VerticalContentAlignment => Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty;
 }

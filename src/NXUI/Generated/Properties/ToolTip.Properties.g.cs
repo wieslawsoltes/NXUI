@@ -11,45 +11,45 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToolTip.TipProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Object> ToolTipTip => Avalonia.Controls.ToolTip.TipProperty;
+    public static Avalonia.AttachedProperty<System.Object> ToolTip_Tip => Avalonia.Controls.ToolTip.TipProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> ToolTipIsOpen => Avalonia.Controls.ToolTip.IsOpenProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> ToolTip_IsOpen => Avalonia.Controls.ToolTip.IsOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Controls.PlacementMode> ToolTipPlacement => Avalonia.Controls.ToolTip.PlacementProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Controls.PlacementMode> ToolTip_Placement => Avalonia.Controls.ToolTip.PlacementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> ToolTipHorizontalOffset => Avalonia.Controls.ToolTip.HorizontalOffsetProperty;
+    public static Avalonia.AttachedProperty<System.Double> ToolTip_HorizontalOffset => Avalonia.Controls.ToolTip.HorizontalOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> ToolTipVerticalOffset => Avalonia.Controls.ToolTip.VerticalOffsetProperty;
+    public static Avalonia.AttachedProperty<System.Double> ToolTip_VerticalOffset => Avalonia.Controls.ToolTip.VerticalOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Int32> ToolTipShowDelay => Avalonia.Controls.ToolTip.ShowDelayProperty;
+    public static Avalonia.AttachedProperty<System.Int32> ToolTip_ShowDelay => Avalonia.Controls.ToolTip.ShowDelayProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Int32> ToolTipBetweenShowDelay => Avalonia.Controls.ToolTip.BetweenShowDelayProperty;
+    public static Avalonia.AttachedProperty<System.Int32> ToolTip_BetweenShowDelay => Avalonia.Controls.ToolTip.BetweenShowDelayProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> ToolTipShowOnDisabled => Avalonia.Controls.ToolTip.ShowOnDisabledProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> ToolTip_ShowOnDisabled => Avalonia.Controls.ToolTip.ShowOnDisabledProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> ToolTipServiceEnabled => Avalonia.Controls.ToolTip.ServiceEnabledProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> ToolTip_ServiceEnabled => Avalonia.Controls.ToolTip.ServiceEnabledProperty;
 }

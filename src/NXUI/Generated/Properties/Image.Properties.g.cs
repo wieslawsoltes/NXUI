@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Image.SourceProperty"/> property defined in <see cref="Avalonia.Controls.Image"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IImage> ImageSource => Avalonia.Controls.Image.SourceProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IImage> Image_Source => Avalonia.Controls.Image.SourceProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Image.StretchProperty"/> property defined in <see cref="Avalonia.Controls.Image"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Stretch> ImageStretch => Avalonia.Controls.Image.StretchProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Stretch> Image_Stretch => Avalonia.Controls.Image.StretchProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> property defined in <see cref="Avalonia.Controls.Image"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.StretchDirection> ImageStretchDirection => Avalonia.Controls.Image.StretchDirectionProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.StretchDirection> Image_StretchDirection => Avalonia.Controls.Image.StretchDirectionProperty;
 }

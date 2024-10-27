@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.HeaderedContentControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> HeaderedContentControlHeader => Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty;
+    public static Avalonia.StyledProperty<System.Object> HeaderedContentControl_Header => Avalonia.Controls.Primitives.HeaderedContentControl.HeaderProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.HeaderedContentControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> HeaderedContentControlHeaderTemplate => Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> HeaderedContentControl_HeaderTemplate => Avalonia.Controls.Primitives.HeaderedContentControl.HeaderTemplateProperty;
 }

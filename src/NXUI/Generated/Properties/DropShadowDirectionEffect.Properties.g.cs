@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> property defined in <see cref="Avalonia.Media.DropShadowDirectionEffect"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> DropShadowDirectionEffectShadowDepth => Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty;
+    public static Avalonia.StyledProperty<System.Double> DropShadowDirectionEffect_ShadowDepth => Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> property defined in <see cref="Avalonia.Media.DropShadowDirectionEffect"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> DropShadowDirectionEffectDirection => Avalonia.Media.DropShadowDirectionEffect.DirectionProperty;
+    public static Avalonia.StyledProperty<System.Double> DropShadowDirectionEffect_Direction => Avalonia.Media.DropShadowDirectionEffect.DirectionProperty;
 }

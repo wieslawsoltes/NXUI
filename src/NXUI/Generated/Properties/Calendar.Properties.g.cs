@@ -11,45 +11,45 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.DayOfWeek> CalendarFirstDayOfWeek => Avalonia.Controls.Calendar.FirstDayOfWeekProperty;
+    public static Avalonia.StyledProperty<System.DayOfWeek> Calendar_FirstDayOfWeek => Avalonia.Controls.Calendar.FirstDayOfWeekProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.IsTodayHighlightedProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> CalendarIsTodayHighlighted => Avalonia.Controls.Calendar.IsTodayHighlightedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> Calendar_IsTodayHighlighted => Avalonia.Controls.Calendar.IsTodayHighlightedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.HeaderBackgroundProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> CalendarHeaderBackground => Avalonia.Controls.Calendar.HeaderBackgroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> Calendar_HeaderBackground => Avalonia.Controls.Calendar.HeaderBackgroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.CalendarMode> CalendarDisplayMode => Avalonia.Controls.Calendar.DisplayModeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.CalendarMode> Calendar_DisplayMode => Avalonia.Controls.Calendar.DisplayModeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.CalendarSelectionMode> CalendarSelectionMode => Avalonia.Controls.Calendar.SelectionModeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.CalendarSelectionMode> Calendar_SelectionMode => Avalonia.Controls.Calendar.SelectionModeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarSelectedDate => Avalonia.Controls.Calendar.SelectedDateProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> Calendar_SelectedDate => Avalonia.Controls.Calendar.SelectedDateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.DateTime> CalendarDisplayDate => Avalonia.Controls.Calendar.DisplayDateProperty;
+    public static Avalonia.StyledProperty<System.DateTime> Calendar_DisplayDate => Avalonia.Controls.Calendar.DisplayDateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarDisplayDateStart => Avalonia.Controls.Calendar.DisplayDateStartProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> Calendar_DisplayDateStart => Avalonia.Controls.Calendar.DisplayDateStartProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/> property defined in <see cref="Avalonia.Controls.Calendar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> CalendarDisplayDateEnd => Avalonia.Controls.Calendar.DisplayDateEndProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.DateTime>> Calendar_DisplayDateEnd => Avalonia.Controls.Calendar.DisplayDateEndProperty;
 }

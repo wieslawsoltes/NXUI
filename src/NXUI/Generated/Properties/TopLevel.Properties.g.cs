@@ -11,50 +11,50 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TopLevel,Avalonia.Size> TopLevelClientSize => Avalonia.Controls.TopLevel.ClientSizeProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TopLevel,Avalonia.Size> TopLevel_ClientSize => Avalonia.Controls.TopLevel.ClientSizeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TopLevel,System.Nullable<Avalonia.Size>> TopLevelFrameSize => Avalonia.Controls.TopLevel.FrameSizeProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TopLevel,System.Nullable<Avalonia.Size>> TopLevel_FrameSize => Avalonia.Controls.TopLevel.FrameSizeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.IInputElement> TopLevelPointerOverElement => Avalonia.Controls.TopLevel.PointerOverElementProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.IInputElement> TopLevel_PointerOverElement => Avalonia.Controls.TopLevel.PointerOverElementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> TopLevelTransparencyLevelHint => Avalonia.Controls.TopLevel.TransparencyLevelHintProperty;
+    public static Avalonia.StyledProperty<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> TopLevel_TransparencyLevelHint => Avalonia.Controls.TopLevel.TransparencyLevelHintProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TopLevel,Avalonia.Controls.WindowTransparencyLevel> TopLevelActualTransparencyLevel => Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TopLevel,Avalonia.Controls.WindowTransparencyLevel> TopLevel_ActualTransparencyLevel => Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TopLevelTransparencyBackgroundFallback => Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TopLevel_TransparencyBackgroundFallback => Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.ActualThemeVariantProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> TopLevelActualThemeVariant => Avalonia.Controls.TopLevel.ActualThemeVariantProperty;
+    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> TopLevel_ActualThemeVariant => Avalonia.Controls.TopLevel.ActualThemeVariantProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.RequestedThemeVariantProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> TopLevelRequestedThemeVariant => Avalonia.Controls.TopLevel.RequestedThemeVariantProperty;
+    public static Avalonia.StyledProperty<Avalonia.Styling.ThemeVariant> TopLevel_RequestedThemeVariant => Avalonia.Controls.TopLevel.RequestedThemeVariantProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.SolidColorBrush> TopLevelSystemBarColor => Avalonia.Controls.TopLevel.SystemBarColorProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.SolidColorBrush> TopLevel_SystemBarColor => Avalonia.Controls.TopLevel.SystemBarColorProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> property defined in <see cref="Avalonia.Controls.TopLevel"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> TopLevelAutoSafeAreaPadding => Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> TopLevel_AutoSafeAreaPadding => Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty;
 }

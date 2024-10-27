@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.AccessText"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> AccessTextShowAccessKey => Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> AccessText_ShowAccessKey => Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty;
 }

@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/> property defined in <see cref="Avalonia.Media.PolyLineSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Collections.Generic.IList<Avalonia.Point>> PolyLineSegmentPoints => Avalonia.Media.PolyLineSegment.PointsProperty;
+    public static Avalonia.StyledProperty<System.Collections.Generic.IList<Avalonia.Point>> PolyLineSegment_Points => Avalonia.Media.PolyLineSegment.PointsProperty;
 }

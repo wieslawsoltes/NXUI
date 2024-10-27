@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/> property defined in <see cref="Avalonia.Controls.WindowBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.WindowBase,System.Boolean> WindowBaseIsActive => Avalonia.Controls.WindowBase.IsActiveProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.WindowBase,System.Boolean> WindowBase_IsActive => Avalonia.Controls.WindowBase.IsActiveProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/> property defined in <see cref="Avalonia.Controls.WindowBase"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.WindowBase,Avalonia.Controls.WindowBase> WindowBaseOwner => Avalonia.Controls.WindowBase.OwnerProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.WindowBase,Avalonia.Controls.WindowBase> WindowBase_Owner => Avalonia.Controls.WindowBase.OwnerProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/> property defined in <see cref="Avalonia.Controls.WindowBase"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> WindowBaseTopmost => Avalonia.Controls.WindowBase.TopmostProperty;
+    public static Avalonia.StyledProperty<System.Boolean> WindowBase_Topmost => Avalonia.Controls.WindowBase.TopmostProperty;
 }

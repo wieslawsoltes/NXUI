@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> property defined in <see cref="Avalonia.Media.RadialGradientBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.RelativePoint> RadialGradientBrushCenter => Avalonia.Media.RadialGradientBrush.CenterProperty;
+    public static Avalonia.StyledProperty<Avalonia.RelativePoint> RadialGradientBrush_Center => Avalonia.Media.RadialGradientBrush.CenterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> property defined in <see cref="Avalonia.Media.RadialGradientBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.RelativePoint> RadialGradientBrushGradientOrigin => Avalonia.Media.RadialGradientBrush.GradientOriginProperty;
+    public static Avalonia.StyledProperty<Avalonia.RelativePoint> RadialGradientBrush_GradientOrigin => Avalonia.Media.RadialGradientBrush.GradientOriginProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/> property defined in <see cref="Avalonia.Media.RadialGradientBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.RelativeScalar> RadialGradientBrushRadiusX => Avalonia.Media.RadialGradientBrush.RadiusXProperty;
+    public static Avalonia.StyledProperty<Avalonia.RelativeScalar> RadialGradientBrush_RadiusX => Avalonia.Media.RadialGradientBrush.RadiusXProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/> property defined in <see cref="Avalonia.Media.RadialGradientBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.RelativeScalar> RadialGradientBrushRadiusY => Avalonia.Media.RadialGradientBrush.RadiusYProperty;
+    public static Avalonia.StyledProperty<Avalonia.RelativeScalar> RadialGradientBrush_RadiusY => Avalonia.Media.RadialGradientBrush.RadiusYProperty;
 }

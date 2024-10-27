@@ -11,35 +11,35 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/> property defined in <see cref="Avalonia.Controls.TrayIcon"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> TrayIconCommand => Avalonia.Controls.TrayIcon.CommandProperty;
+    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> TrayIcon_Command => Avalonia.Controls.TrayIcon.CommandProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/> property defined in <see cref="Avalonia.Controls.TrayIcon"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> TrayIconCommandParameter => Avalonia.Controls.TrayIcon.CommandParameterProperty;
+    public static Avalonia.StyledProperty<System.Object> TrayIcon_CommandParameter => Avalonia.Controls.TrayIcon.CommandParameterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/> property defined in <see cref="Avalonia.Controls.TrayIcon"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Controls.TrayIcons> TrayIconIcons => Avalonia.Controls.TrayIcon.IconsProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Controls.TrayIcons> TrayIcon_Icons => Avalonia.Controls.TrayIcon.IconsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/> property defined in <see cref="Avalonia.Controls.TrayIcon"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.NativeMenu> TrayIconMenu => Avalonia.Controls.TrayIcon.MenuProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.NativeMenu> TrayIcon_Menu => Avalonia.Controls.TrayIcon.MenuProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TrayIcon.IconProperty"/> property defined in <see cref="Avalonia.Controls.TrayIcon"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.WindowIcon> TrayIconIcon => Avalonia.Controls.TrayIcon.IconProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.WindowIcon> TrayIcon_Icon => Avalonia.Controls.TrayIcon.IconProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/> property defined in <see cref="Avalonia.Controls.TrayIcon"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> TrayIconToolTipText => Avalonia.Controls.TrayIcon.ToolTipTextProperty;
+    public static Avalonia.StyledProperty<System.String> TrayIcon_ToolTipText => Avalonia.Controls.TrayIcon.ToolTipTextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/> property defined in <see cref="Avalonia.Controls.TrayIcon"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TrayIconIsVisible => Avalonia.Controls.TrayIcon.IsVisibleProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TrayIcon_IsVisible => Avalonia.Controls.TrayIcon.IsVisibleProperty;
 }

@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> property defined in <see cref="Avalonia.Controls.ExperimentalAcrylicBorder"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.CornerRadius> ExperimentalAcrylicBorderCornerRadius => Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty;
+    public static Avalonia.StyledProperty<Avalonia.CornerRadius> ExperimentalAcrylicBorder_CornerRadius => Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> property defined in <see cref="Avalonia.Controls.ExperimentalAcrylicBorder"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.ExperimentalAcrylicMaterial> ExperimentalAcrylicBorderMaterial => Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.ExperimentalAcrylicMaterial> ExperimentalAcrylicBorder_Material => Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty;
 }

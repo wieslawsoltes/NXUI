@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> property defined in <see cref="Avalonia.Media.DropShadowEffect"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> DropShadowEffectOffsetX => Avalonia.Media.DropShadowEffect.OffsetXProperty;
+    public static Avalonia.StyledProperty<System.Double> DropShadowEffect_OffsetX => Avalonia.Media.DropShadowEffect.OffsetXProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> property defined in <see cref="Avalonia.Media.DropShadowEffect"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> DropShadowEffectOffsetY => Avalonia.Media.DropShadowEffect.OffsetYProperty;
+    public static Avalonia.StyledProperty<System.Double> DropShadowEffect_OffsetY => Avalonia.Media.DropShadowEffect.OffsetYProperty;
 }

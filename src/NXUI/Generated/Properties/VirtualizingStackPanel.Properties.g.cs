@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> property defined in <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> VirtualizingStackPanelOrientation => Avalonia.Controls.VirtualizingStackPanel.OrientationProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> VirtualizingStackPanel_Orientation => Avalonia.Controls.VirtualizingStackPanel.OrientationProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty"/> property defined in <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> VirtualizingStackPanelAreHorizontalSnapPointsRegular => Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty;
+    public static Avalonia.StyledProperty<System.Boolean> VirtualizingStackPanel_AreHorizontalSnapPointsRegular => Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/> property defined in <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> VirtualizingStackPanelAreVerticalSnapPointsRegular => Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty;
+    public static Avalonia.StyledProperty<System.Boolean> VirtualizingStackPanel_AreVerticalSnapPointsRegular => Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty;
 }

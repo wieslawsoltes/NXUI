@@ -11,35 +11,35 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ScrollBarViewportSize => Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty;
+    public static Avalonia.StyledProperty<System.Double> ScrollBar_ViewportSize => Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.ScrollBarVisibility> ScrollBarVisibility => Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.ScrollBarVisibility> ScrollBar_Visibility => Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> ScrollBarOrientation => Avalonia.Controls.Primitives.ScrollBar.OrientationProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> ScrollBar_Orientation => Avalonia.Controls.Primitives.ScrollBar.OrientationProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.ScrollBar,System.Boolean> ScrollBarIsExpanded => Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.ScrollBar,System.Boolean> ScrollBar_IsExpanded => Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ScrollBarAllowAutoHide => Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ScrollBar_AllowAutoHide => Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.TimeSpan> ScrollBarHideDelay => Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty;
+    public static Avalonia.StyledProperty<System.TimeSpan> ScrollBar_HideDelay => Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.TimeSpan> ScrollBarShowDelay => Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty;
+    public static Avalonia.StyledProperty<System.TimeSpan> ScrollBar_ShowDelay => Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty;
 }

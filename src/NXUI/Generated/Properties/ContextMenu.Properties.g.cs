@@ -11,45 +11,45 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ContextMenuHorizontalOffset => Avalonia.Controls.ContextMenu.HorizontalOffsetProperty;
+    public static Avalonia.StyledProperty<System.Double> ContextMenu_HorizontalOffset => Avalonia.Controls.ContextMenu.HorizontalOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ContextMenuVerticalOffset => Avalonia.Controls.ContextMenu.VerticalOffsetProperty;
+    public static Avalonia.StyledProperty<System.Double> ContextMenu_VerticalOffset => Avalonia.Controls.ContextMenu.VerticalOffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> ContextMenuPlacementAnchor => Avalonia.Controls.ContextMenu.PlacementAnchorProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> ContextMenu_PlacementAnchor => Avalonia.Controls.ContextMenu.PlacementAnchorProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> ContextMenuPlacementConstraintAdjustment => Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> ContextMenu_PlacementConstraintAdjustment => Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> ContextMenuPlacementGravity => Avalonia.Controls.ContextMenu.PlacementGravityProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> ContextMenu_PlacementGravity => Avalonia.Controls.ContextMenu.PlacementGravityProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.PlacementMode> ContextMenuPlacement => Avalonia.Controls.ContextMenu.PlacementProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.PlacementMode> ContextMenu_Placement => Avalonia.Controls.ContextMenu.PlacementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Nullable<Avalonia.Rect>> ContextMenuPlacementRect => Avalonia.Controls.ContextMenu.PlacementRectProperty;
+    public static Avalonia.StyledProperty<System.Nullable<Avalonia.Rect>> ContextMenu_PlacementRect => Avalonia.Controls.ContextMenu.PlacementRectProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ContextMenuWindowManagerAddShadowHint => Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ContextMenu_WindowManagerAddShadowHint => Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Control> ContextMenuPlacementTarget => Avalonia.Controls.ContextMenu.PlacementTargetProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Control> ContextMenu_PlacementTarget => Avalonia.Controls.ContextMenu.PlacementTargetProperty;
 }

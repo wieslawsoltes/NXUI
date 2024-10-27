@@ -11,30 +11,30 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Border.BackgroundProperty"/> property defined in <see cref="Avalonia.Controls.Border"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> BorderBackground => Avalonia.Controls.Border.BackgroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> Border_Background => Avalonia.Controls.Border.BackgroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> property defined in <see cref="Avalonia.Controls.Border"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.BackgroundSizing> BorderBackgroundSizing => Avalonia.Controls.Border.BackgroundSizingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.BackgroundSizing> Border_BackgroundSizing => Avalonia.Controls.Border.BackgroundSizingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Border.BorderBrushProperty"/> property defined in <see cref="Avalonia.Controls.Border"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> BorderBorderBrush => Avalonia.Controls.Border.BorderBrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> Border_BorderBrush => Avalonia.Controls.Border.BorderBrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/> property defined in <see cref="Avalonia.Controls.Border"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Thickness> BorderBorderThickness => Avalonia.Controls.Border.BorderThicknessProperty;
+    public static Avalonia.StyledProperty<Avalonia.Thickness> Border_BorderThickness => Avalonia.Controls.Border.BorderThicknessProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/> property defined in <see cref="Avalonia.Controls.Border"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.CornerRadius> BorderCornerRadius => Avalonia.Controls.Border.CornerRadiusProperty;
+    public static Avalonia.StyledProperty<Avalonia.CornerRadius> Border_CornerRadius => Avalonia.Controls.Border.CornerRadiusProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Border.BoxShadowProperty"/> property defined in <see cref="Avalonia.Controls.Border"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.BoxShadows> BorderBoxShadow => Avalonia.Controls.Border.BoxShadowProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.BoxShadows> Border_BoxShadow => Avalonia.Controls.Border.BoxShadowProperty;
 }

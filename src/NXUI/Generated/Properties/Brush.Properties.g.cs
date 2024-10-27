@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.Brush.OpacityProperty"/> property defined in <see cref="Avalonia.Media.Brush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> BrushOpacity => Avalonia.Media.Brush.OpacityProperty;
+    public static Avalonia.StyledProperty<System.Double> Brush_Opacity => Avalonia.Media.Brush.OpacityProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.Brush.TransformProperty"/> property defined in <see cref="Avalonia.Media.Brush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.ITransform> BrushTransform => Avalonia.Media.Brush.TransformProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.ITransform> Brush_Transform => Avalonia.Media.Brush.TransformProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.Brush.TransformOriginProperty"/> property defined in <see cref="Avalonia.Media.Brush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.RelativePoint> BrushTransformOrigin => Avalonia.Media.Brush.TransformOriginProperty;
+    public static Avalonia.StyledProperty<Avalonia.RelativePoint> Brush_TransformOrigin => Avalonia.Media.Brush.TransformOriginProperty;
 }

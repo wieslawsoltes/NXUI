@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.RowDefinition.MaxHeightProperty"/> property defined in <see cref="Avalonia.Controls.RowDefinition"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> RowDefinitionMaxHeight => Avalonia.Controls.RowDefinition.MaxHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> RowDefinition_MaxHeight => Avalonia.Controls.RowDefinition.MaxHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RowDefinition.MinHeightProperty"/> property defined in <see cref="Avalonia.Controls.RowDefinition"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> RowDefinitionMinHeight => Avalonia.Controls.RowDefinition.MinHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> RowDefinition_MinHeight => Avalonia.Controls.RowDefinition.MinHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> property defined in <see cref="Avalonia.Controls.RowDefinition"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.GridLength> RowDefinitionHeight => Avalonia.Controls.RowDefinition.HeightProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.GridLength> RowDefinition_Height => Avalonia.Controls.RowDefinition.HeightProperty;
 }

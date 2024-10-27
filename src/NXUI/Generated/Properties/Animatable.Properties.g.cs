@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/> property defined in <see cref="Avalonia.Animation.Animatable"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Animation.Transitions> AnimatableTransitions => Avalonia.Animation.Animatable.TransitionsProperty;
+    public static Avalonia.StyledProperty<Avalonia.Animation.Transitions> Animatable_Transitions => Avalonia.Animation.Animatable.TransitionsProperty;
 }

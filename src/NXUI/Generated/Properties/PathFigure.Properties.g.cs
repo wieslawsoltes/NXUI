@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> property defined in <see cref="Avalonia.Media.PathFigure"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> PathFigureIsClosed => Avalonia.Media.PathFigure.IsClosedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> PathFigure_IsClosed => Avalonia.Media.PathFigure.IsClosedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> property defined in <see cref="Avalonia.Media.PathFigure"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> PathFigureIsFilled => Avalonia.Media.PathFigure.IsFilledProperty;
+    public static Avalonia.StyledProperty<System.Boolean> PathFigure_IsFilled => Avalonia.Media.PathFigure.IsFilledProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> property defined in <see cref="Avalonia.Media.PathFigure"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Media.PathFigure,Avalonia.Media.PathSegments> PathFigureSegments => Avalonia.Media.PathFigure.SegmentsProperty;
+    public static Avalonia.DirectProperty<Avalonia.Media.PathFigure,Avalonia.Media.PathSegments> PathFigure_Segments => Avalonia.Media.PathFigure.SegmentsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> property defined in <see cref="Avalonia.Media.PathFigure"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Point> PathFigureStartPoint => Avalonia.Media.PathFigure.StartPointProperty;
+    public static Avalonia.StyledProperty<Avalonia.Point> PathFigure_StartPoint => Avalonia.Media.PathFigure.StartPointProperty;
 }

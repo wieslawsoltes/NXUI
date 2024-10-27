@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/> property defined in <see cref="Avalonia.Controls.DefinitionBase"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.String> DefinitionBaseSharedSizeGroup => Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty;
+    public static Avalonia.AttachedProperty<System.String> DefinitionBase_SharedSizeGroup => Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty;
 }

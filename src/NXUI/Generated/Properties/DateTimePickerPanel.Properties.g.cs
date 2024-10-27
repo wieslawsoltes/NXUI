@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> DateTimePickerPanelItemHeight => Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> DateTimePickerPanel_ItemHeight => Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.DateTimePickerPanelType> DateTimePickerPanelPanelType => Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.DateTimePickerPanelType> DateTimePickerPanel_PanelType => Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> DateTimePickerPanelItemFormat => Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty;
+    public static Avalonia.StyledProperty<System.String> DateTimePickerPanel_ItemFormat => Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> DateTimePickerPanelShouldLoop => Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty;
+    public static Avalonia.StyledProperty<System.Boolean> DateTimePickerPanel_ShouldLoop => Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty;
 }

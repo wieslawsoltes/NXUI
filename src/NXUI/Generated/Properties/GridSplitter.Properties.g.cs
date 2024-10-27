@@ -11,30 +11,30 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> property defined in <see cref="Avalonia.Controls.GridSplitter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.GridResizeDirection> GridSplitterResizeDirection => Avalonia.Controls.GridSplitter.ResizeDirectionProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.GridResizeDirection> GridSplitter_ResizeDirection => Avalonia.Controls.GridSplitter.ResizeDirectionProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property defined in <see cref="Avalonia.Controls.GridSplitter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.GridResizeBehavior> GridSplitterResizeBehavior => Avalonia.Controls.GridSplitter.ResizeBehaviorProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.GridResizeBehavior> GridSplitter_ResizeBehavior => Avalonia.Controls.GridSplitter.ResizeBehaviorProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> property defined in <see cref="Avalonia.Controls.GridSplitter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> GridSplitterShowsPreview => Avalonia.Controls.GridSplitter.ShowsPreviewProperty;
+    public static Avalonia.StyledProperty<System.Boolean> GridSplitter_ShowsPreview => Avalonia.Controls.GridSplitter.ShowsPreviewProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> property defined in <see cref="Avalonia.Controls.GridSplitter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> GridSplitterKeyboardIncrement => Avalonia.Controls.GridSplitter.KeyboardIncrementProperty;
+    public static Avalonia.StyledProperty<System.Double> GridSplitter_KeyboardIncrement => Avalonia.Controls.GridSplitter.KeyboardIncrementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> property defined in <see cref="Avalonia.Controls.GridSplitter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> GridSplitterDragIncrement => Avalonia.Controls.GridSplitter.DragIncrementProperty;
+    public static Avalonia.StyledProperty<System.Double> GridSplitter_DragIncrement => Avalonia.Controls.GridSplitter.DragIncrementProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> property defined in <see cref="Avalonia.Controls.GridSplitter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> GridSplitterPreviewContent => Avalonia.Controls.GridSplitter.PreviewContentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> GridSplitter_PreviewContent => Avalonia.Controls.GridSplitter.PreviewContentProperty;
 }

@@ -11,105 +11,105 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> AutoCompleteBoxCaretIndex => Avalonia.Controls.AutoCompleteBox.CaretIndexProperty;
+    public static Avalonia.StyledProperty<System.Int32> AutoCompleteBox_CaretIndex => Avalonia.Controls.AutoCompleteBox.CaretIndexProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> AutoCompleteBoxWatermark => Avalonia.Controls.AutoCompleteBox.WatermarkProperty;
+    public static Avalonia.StyledProperty<System.String> AutoCompleteBox_Watermark => Avalonia.Controls.AutoCompleteBox.WatermarkProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> AutoCompleteBoxMinimumPrefixLength => Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty;
+    public static Avalonia.StyledProperty<System.Int32> AutoCompleteBox_MinimumPrefixLength => Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.TimeSpan> AutoCompleteBoxMinimumPopulateDelay => Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty;
+    public static Avalonia.StyledProperty<System.TimeSpan> AutoCompleteBox_MinimumPopulateDelay => Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> AutoCompleteBoxMaxDropDownHeight => Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> AutoCompleteBox_MaxDropDownHeight => Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> AutoCompleteBoxIsTextCompletionEnabled => Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty;
+    public static Avalonia.StyledProperty<System.Boolean> AutoCompleteBox_IsTextCompletionEnabled => Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> AutoCompleteBoxItemTemplate => Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> AutoCompleteBox_ItemTemplate => Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> AutoCompleteBoxIsDropDownOpen => Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty;
+    public static Avalonia.StyledProperty<System.Boolean> AutoCompleteBox_IsDropDownOpen => Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> AutoCompleteBoxSelectedItem => Avalonia.Controls.AutoCompleteBox.SelectedItemProperty;
+    public static Avalonia.StyledProperty<System.Object> AutoCompleteBox_SelectedItem => Avalonia.Controls.AutoCompleteBox.SelectedItemProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> AutoCompleteBoxText => Avalonia.Controls.AutoCompleteBox.TextProperty;
+    public static Avalonia.StyledProperty<System.String> AutoCompleteBox_Text => Avalonia.Controls.AutoCompleteBox.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.AutoCompleteBox,System.String> AutoCompleteBoxSearchText => Avalonia.Controls.AutoCompleteBox.SearchTextProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.AutoCompleteBox,System.String> AutoCompleteBox_SearchText => Avalonia.Controls.AutoCompleteBox.SearchTextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.AutoCompleteFilterMode> AutoCompleteBoxFilterMode => Avalonia.Controls.AutoCompleteBox.FilterModeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.AutoCompleteFilterMode> AutoCompleteBox_FilterMode => Avalonia.Controls.AutoCompleteBox.FilterModeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>> AutoCompleteBoxItemFilter => Avalonia.Controls.AutoCompleteBox.ItemFilterProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>> AutoCompleteBox_ItemFilter => Avalonia.Controls.AutoCompleteBox.ItemFilterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>> AutoCompleteBoxTextFilter => Avalonia.Controls.AutoCompleteBox.TextFilterProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>> AutoCompleteBox_TextFilter => Avalonia.Controls.AutoCompleteBox.TextFilterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.AutoCompleteSelector<System.Object>> AutoCompleteBoxItemSelector => Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.AutoCompleteSelector<System.Object>> AutoCompleteBox_ItemSelector => Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.AutoCompleteSelector<System.String>> AutoCompleteBoxTextSelector => Avalonia.Controls.AutoCompleteBox.TextSelectorProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.AutoCompleteSelector<System.String>> AutoCompleteBox_TextSelector => Avalonia.Controls.AutoCompleteBox.TextSelectorProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Collections.IEnumerable> AutoCompleteBoxItemsSource => Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty;
+    public static Avalonia.StyledProperty<System.Collections.IEnumerable> AutoCompleteBox_ItemsSource => Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>> AutoCompleteBoxAsyncPopulator => Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty;
+    public static Avalonia.StyledProperty<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>> AutoCompleteBox_AsyncPopulator => Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> AutoCompleteBoxMaxLength => Avalonia.Controls.AutoCompleteBox.MaxLengthProperty;
+    public static Avalonia.StyledProperty<System.Int32> AutoCompleteBox_MaxLength => Avalonia.Controls.AutoCompleteBox.MaxLengthProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> AutoCompleteBoxInnerLeftContent => Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty;
+    public static Avalonia.StyledProperty<System.Object> AutoCompleteBox_InnerLeftContent => Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> property defined in <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> AutoCompleteBoxInnerRightContent => Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty;
+    public static Avalonia.StyledProperty<System.Object> AutoCompleteBox_InnerRightContent => Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty;
 }

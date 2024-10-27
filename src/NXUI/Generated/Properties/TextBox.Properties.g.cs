@@ -11,170 +11,170 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.AcceptsReturnProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TextBoxAcceptsReturn => Avalonia.Controls.TextBox.AcceptsReturnProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TextBox_AcceptsReturn => Avalonia.Controls.TextBox.AcceptsReturnProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.AcceptsTabProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TextBoxAcceptsTab => Avalonia.Controls.TextBox.AcceptsTabProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TextBox_AcceptsTab => Avalonia.Controls.TextBox.AcceptsTabProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.CaretIndexProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> TextBoxCaretIndex => Avalonia.Controls.TextBox.CaretIndexProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBox_CaretIndex => Avalonia.Controls.TextBox.CaretIndexProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.IsReadOnlyProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TextBoxIsReadOnly => Avalonia.Controls.TextBox.IsReadOnlyProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TextBox_IsReadOnly => Avalonia.Controls.TextBox.IsReadOnlyProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.PasswordCharProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Char> TextBoxPasswordChar => Avalonia.Controls.TextBox.PasswordCharProperty;
+    public static Avalonia.StyledProperty<System.Char> TextBox_PasswordChar => Avalonia.Controls.TextBox.PasswordCharProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.SelectionBrushProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBoxSelectionBrush => Avalonia.Controls.TextBox.SelectionBrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBox_SelectionBrush => Avalonia.Controls.TextBox.SelectionBrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.SelectionForegroundBrushProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBoxSelectionForegroundBrush => Avalonia.Controls.TextBox.SelectionForegroundBrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBox_SelectionForegroundBrush => Avalonia.Controls.TextBox.SelectionForegroundBrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.CaretBrushProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBoxCaretBrush => Avalonia.Controls.TextBox.CaretBrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextBox_CaretBrush => Avalonia.Controls.TextBox.CaretBrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.TimeSpan> TextBoxCaretBlinkInterval => Avalonia.Controls.TextBox.CaretBlinkIntervalProperty;
+    public static Avalonia.StyledProperty<System.TimeSpan> TextBox_CaretBlinkInterval => Avalonia.Controls.TextBox.CaretBlinkIntervalProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.SelectionStartProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> TextBoxSelectionStart => Avalonia.Controls.TextBox.SelectionStartProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBox_SelectionStart => Avalonia.Controls.TextBox.SelectionStartProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.SelectionEndProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> TextBoxSelectionEnd => Avalonia.Controls.TextBox.SelectionEndProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBox_SelectionEnd => Avalonia.Controls.TextBox.SelectionEndProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.MaxLengthProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> TextBoxMaxLength => Avalonia.Controls.TextBox.MaxLengthProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBox_MaxLength => Avalonia.Controls.TextBox.MaxLengthProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.MaxLinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> TextBoxMaxLines => Avalonia.Controls.TextBox.MaxLinesProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBox_MaxLines => Avalonia.Controls.TextBox.MaxLinesProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> TextBoxMinLines => Avalonia.Controls.TextBox.MinLinesProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBox_MinLines => Avalonia.Controls.TextBox.MinLinesProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.TextProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> TextBoxText => Avalonia.Controls.TextBox.TextProperty;
+    public static Avalonia.StyledProperty<System.String> TextBox_Text => Avalonia.Controls.TextBox.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextAlignment> TextBoxTextAlignment => Avalonia.Controls.TextBox.TextAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextAlignment> TextBox_TextAlignment => Avalonia.Controls.TextBox.TextAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> TextBoxHorizontalContentAlignment => Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> TextBox_HorizontalContentAlignment => Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> TextBoxVerticalContentAlignment => Avalonia.Controls.TextBox.VerticalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> TextBox_VerticalContentAlignment => Avalonia.Controls.TextBox.VerticalContentAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> TextBoxTextWrapping => Avalonia.Controls.TextBox.TextWrappingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> TextBox_TextWrapping => Avalonia.Controls.TextBox.TextWrappingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.LineHeightProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TextBoxLineHeight => Avalonia.Controls.TextBox.LineHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> TextBox_LineHeight => Avalonia.Controls.TextBox.LineHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TextBoxLetterSpacing => Avalonia.Controls.TextBox.LetterSpacingProperty;
+    public static Avalonia.StyledProperty<System.Double> TextBox_LetterSpacing => Avalonia.Controls.TextBox.LetterSpacingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> TextBoxWatermark => Avalonia.Controls.TextBox.WatermarkProperty;
+    public static Avalonia.StyledProperty<System.String> TextBox_Watermark => Avalonia.Controls.TextBox.WatermarkProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TextBoxUseFloatingWatermark => Avalonia.Controls.TextBox.UseFloatingWatermarkProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TextBox_UseFloatingWatermark => Avalonia.Controls.TextBox.UseFloatingWatermarkProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.NewLineProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> TextBoxNewLine => Avalonia.Controls.TextBox.NewLineProperty;
+    public static Avalonia.StyledProperty<System.String> TextBox_NewLine => Avalonia.Controls.TextBox.NewLineProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.InnerLeftContentProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> TextBoxInnerLeftContent => Avalonia.Controls.TextBox.InnerLeftContentProperty;
+    public static Avalonia.StyledProperty<System.Object> TextBox_InnerLeftContent => Avalonia.Controls.TextBox.InnerLeftContentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.InnerRightContentProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> TextBoxInnerRightContent => Avalonia.Controls.TextBox.InnerRightContentProperty;
+    public static Avalonia.StyledProperty<System.Object> TextBox_InnerRightContent => Avalonia.Controls.TextBox.InnerRightContentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.RevealPasswordProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TextBoxRevealPassword => Avalonia.Controls.TextBox.RevealPasswordProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TextBox_RevealPassword => Avalonia.Controls.TextBox.RevealPasswordProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.CanCutProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanCut => Avalonia.Controls.TextBox.CanCutProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBox_CanCut => Avalonia.Controls.TextBox.CanCutProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.CanCopyProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanCopy => Avalonia.Controls.TextBox.CanCopyProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBox_CanCopy => Avalonia.Controls.TextBox.CanCopyProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.CanPasteProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanPaste => Avalonia.Controls.TextBox.CanPasteProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBox_CanPaste => Avalonia.Controls.TextBox.CanPasteProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.IsUndoEnabledProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TextBoxIsUndoEnabled => Avalonia.Controls.TextBox.IsUndoEnabledProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TextBox_IsUndoEnabled => Avalonia.Controls.TextBox.IsUndoEnabledProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.UndoLimitProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> TextBoxUndoLimit => Avalonia.Controls.TextBox.UndoLimitProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextBox_UndoLimit => Avalonia.Controls.TextBox.UndoLimitProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.CanUndoProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanUndo => Avalonia.Controls.TextBox.CanUndoProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBox_CanUndo => Avalonia.Controls.TextBox.CanUndoProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.CanRedoProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBoxCanRedo => Avalonia.Controls.TextBox.CanRedoProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.TextBox,System.Boolean> TextBox_CanRedo => Avalonia.Controls.TextBox.CanRedoProperty;
 }

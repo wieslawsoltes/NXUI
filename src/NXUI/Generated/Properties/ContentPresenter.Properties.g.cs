@@ -11,120 +11,120 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> ContentPresenterBackground => Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> ContentPresenter_Background => Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.BackgroundSizing> ContentPresenterBackgroundSizing => Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.BackgroundSizing> ContentPresenter_BackgroundSizing => Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> ContentPresenterBorderBrush => Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> ContentPresenter_BorderBrush => Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Thickness> ContentPresenterBorderThickness => Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty;
+    public static Avalonia.StyledProperty<Avalonia.Thickness> ContentPresenter_BorderThickness => Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.CornerRadius> ContentPresenterCornerRadius => Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty;
+    public static Avalonia.StyledProperty<Avalonia.CornerRadius> ContentPresenter_CornerRadius => Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.BoxShadows> ContentPresenterBoxShadow => Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.BoxShadows> ContentPresenter_BoxShadow => Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> ContentPresenterForeground => Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> ContentPresenter_Foreground => Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontFamily> ContentPresenterFontFamily => Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontFamily> ContentPresenter_FontFamily => Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ContentPresenterFontSize => Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty;
+    public static Avalonia.StyledProperty<System.Double> ContentPresenter_FontSize => Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontStyle> ContentPresenterFontStyle => Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontStyle> ContentPresenter_FontStyle => Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontWeight> ContentPresenterFontWeight => Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontWeight> ContentPresenter_FontWeight => Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontStretch> ContentPresenterFontStretch => Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontStretch> ContentPresenter_FontStretch => Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextAlignment> ContentPresenterTextAlignment => Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextAlignment> ContentPresenter_TextAlignment => Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> ContentPresenterTextWrapping => Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> ContentPresenter_TextWrapping => Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextTrimming> ContentPresenterTextTrimming => Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextTrimming> ContentPresenter_TextTrimming => Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> ContentPresenterLineHeight => Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> ContentPresenter_LineHeight => Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> ContentPresenterMaxLines => Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty;
+    public static Avalonia.StyledProperty<System.Int32> ContentPresenter_MaxLines => Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ContentPresenter,Avalonia.Controls.Control> ContentPresenterChild => Avalonia.Controls.Presenters.ContentPresenter.ChildProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Presenters.ContentPresenter,Avalonia.Controls.Control> ContentPresenter_Child => Avalonia.Controls.Presenters.ContentPresenter.ChildProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> ContentPresenterContent => Avalonia.Controls.Presenters.ContentPresenter.ContentProperty;
+    public static Avalonia.StyledProperty<System.Object> ContentPresenter_Content => Avalonia.Controls.Presenters.ContentPresenter.ContentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ContentPresenterContentTemplate => Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ContentPresenter_ContentTemplate => Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> ContentPresenterHorizontalContentAlignment => Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.HorizontalAlignment> ContentPresenter_HorizontalContentAlignment => Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> ContentPresenterVerticalContentAlignment => Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Layout.VerticalAlignment> ContentPresenter_VerticalContentAlignment => Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Thickness> ContentPresenterPadding => Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Thickness> ContentPresenter_Padding => Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ContentPresenterRecognizesAccessKey => Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty;
+    public static Avalonia.StyledProperty<System.Boolean> ContentPresenter_RecognizesAccessKey => Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty;
 }

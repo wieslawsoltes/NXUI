@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Panel.BackgroundProperty"/> property defined in <see cref="Avalonia.Controls.Panel"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> PanelBackground => Avalonia.Controls.Panel.BackgroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> Panel_Background => Avalonia.Controls.Panel.BackgroundProperty;
 }

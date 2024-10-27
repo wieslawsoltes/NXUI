@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.GradientStop.OffsetProperty"/> property defined in <see cref="Avalonia.Media.GradientStop"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> GradientStopOffset => Avalonia.Media.GradientStop.OffsetProperty;
+    public static Avalonia.StyledProperty<System.Double> GradientStop_Offset => Avalonia.Media.GradientStop.OffsetProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.GradientStop.ColorProperty"/> property defined in <see cref="Avalonia.Media.GradientStop"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Color> GradientStopColor => Avalonia.Media.GradientStop.ColorProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Color> GradientStop_Color => Avalonia.Media.GradientStop.ColorProperty;
 }

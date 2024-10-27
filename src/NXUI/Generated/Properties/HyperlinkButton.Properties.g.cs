@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/> property defined in <see cref="Avalonia.Controls.HyperlinkButton"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> HyperlinkButtonIsVisited => Avalonia.Controls.HyperlinkButton.IsVisitedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> HyperlinkButton_IsVisited => Avalonia.Controls.HyperlinkButton.IsVisitedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/> property defined in <see cref="Avalonia.Controls.HyperlinkButton"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Uri> HyperlinkButtonNavigateUri => Avalonia.Controls.HyperlinkButton.NavigateUriProperty;
+    public static Avalonia.StyledProperty<System.Uri> HyperlinkButton_NavigateUri => Avalonia.Controls.HyperlinkButton.NavigateUriProperty;
 }

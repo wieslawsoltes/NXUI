@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/> property defined in <see cref="Avalonia.Media.LinearGradientBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.RelativePoint> LinearGradientBrushStartPoint => Avalonia.Media.LinearGradientBrush.StartPointProperty;
+    public static Avalonia.StyledProperty<Avalonia.RelativePoint> LinearGradientBrush_StartPoint => Avalonia.Media.LinearGradientBrush.StartPointProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/> property defined in <see cref="Avalonia.Media.LinearGradientBrush"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.RelativePoint> LinearGradientBrushEndPoint => Avalonia.Media.LinearGradientBrush.EndPointProperty;
+    public static Avalonia.StyledProperty<Avalonia.RelativePoint> LinearGradientBrush_EndPoint => Avalonia.Media.LinearGradientBrush.EndPointProperty;
 }

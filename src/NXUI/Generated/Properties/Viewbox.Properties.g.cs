@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property defined in <see cref="Avalonia.Controls.Viewbox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.Stretch> ViewboxStretch => Avalonia.Controls.Viewbox.StretchProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.Stretch> Viewbox_Stretch => Avalonia.Controls.Viewbox.StretchProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> property defined in <see cref="Avalonia.Controls.Viewbox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.StretchDirection> ViewboxStretchDirection => Avalonia.Controls.Viewbox.StretchDirectionProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.StretchDirection> Viewbox_StretchDirection => Avalonia.Controls.Viewbox.StretchDirectionProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> property defined in <see cref="Avalonia.Controls.Viewbox"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Control> ViewboxChild => Avalonia.Controls.Viewbox.ChildProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Control> Viewbox_Child => Avalonia.Controls.Viewbox.ChildProperty;
 }

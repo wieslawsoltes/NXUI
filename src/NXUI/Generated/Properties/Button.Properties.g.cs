@@ -11,40 +11,40 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.ClickModeProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.ClickMode> ButtonClickMode => Avalonia.Controls.Button.ClickModeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.ClickMode> Button_ClickMode => Avalonia.Controls.Button.ClickModeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.CommandProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> ButtonCommand => Avalonia.Controls.Button.CommandProperty;
+    public static Avalonia.StyledProperty<System.Windows.Input.ICommand> Button_Command => Avalonia.Controls.Button.CommandProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.HotKeyProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> ButtonHotKey => Avalonia.Controls.Button.HotKeyProperty;
+    public static Avalonia.StyledProperty<Avalonia.Input.KeyGesture> Button_HotKey => Avalonia.Controls.Button.HotKeyProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.CommandParameterProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> ButtonCommandParameter => Avalonia.Controls.Button.CommandParameterProperty;
+    public static Avalonia.StyledProperty<System.Object> Button_CommandParameter => Avalonia.Controls.Button.CommandParameterProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.IsDefaultProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ButtonIsDefault => Avalonia.Controls.Button.IsDefaultProperty;
+    public static Avalonia.StyledProperty<System.Boolean> Button_IsDefault => Avalonia.Controls.Button.IsDefaultProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.IsCancelProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> ButtonIsCancel => Avalonia.Controls.Button.IsCancelProperty;
+    public static Avalonia.StyledProperty<System.Boolean> Button_IsCancel => Avalonia.Controls.Button.IsCancelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.IsPressedProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Button,System.Boolean> ButtonIsPressed => Avalonia.Controls.Button.IsPressedProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Button,System.Boolean> Button_IsPressed => Avalonia.Controls.Button.IsPressedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Button.FlyoutProperty"/> property defined in <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.FlyoutBase> ButtonFlyout => Avalonia.Controls.Button.FlyoutProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.FlyoutBase> Button_Flyout => Avalonia.Controls.Button.FlyoutProperty;
 }

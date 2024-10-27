@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Decorator.ChildProperty"/> property defined in <see cref="Avalonia.Controls.Decorator"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Control> DecoratorChild => Avalonia.Controls.Decorator.ChildProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Control> Decorator_Child => Avalonia.Controls.Decorator.ChildProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Decorator.PaddingProperty"/> property defined in <see cref="Avalonia.Controls.Decorator"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Thickness> DecoratorPadding => Avalonia.Controls.Decorator.PaddingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Thickness> Decorator_Padding => Avalonia.Controls.Decorator.PaddingProperty;
 }

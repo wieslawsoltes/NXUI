@@ -11,30 +11,30 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.ItemsControl.ItemContainerThemeProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> ItemsControlItemContainerTheme => Avalonia.Controls.ItemsControl.ItemContainerThemeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> ItemsControl_ItemContainerTheme => Avalonia.Controls.ItemsControl.ItemContainerThemeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ItemsControl.ItemCountProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.ItemsControl,System.Int32> ItemsControlItemCount => Avalonia.Controls.ItemsControl.ItemCountProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.ItemsControl,System.Int32> ItemsControl_ItemCount => Avalonia.Controls.ItemsControl.ItemCountProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ItemsControl.ItemsPanelProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> ItemsControlItemsPanel => Avalonia.Controls.ItemsControl.ItemsPanelProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> ItemsControl_ItemsPanel => Avalonia.Controls.ItemsControl.ItemsPanelProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Collections.IEnumerable> ItemsControlItemsSource => Avalonia.Controls.ItemsControl.ItemsSourceProperty;
+    public static Avalonia.StyledProperty<System.Collections.IEnumerable> ItemsControl_ItemsSource => Avalonia.Controls.ItemsControl.ItemsSourceProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ItemsControl.ItemTemplateProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ItemsControlItemTemplate => Avalonia.Controls.ItemsControl.ItemTemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> ItemsControl_ItemTemplate => Avalonia.Controls.ItemsControl.ItemTemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty"/> property defined in <see cref="Avalonia.Controls.ItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Data.IBinding> ItemsControlDisplayMemberBinding => Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Data.IBinding> ItemsControl_DisplayMemberBinding => Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty;
 }

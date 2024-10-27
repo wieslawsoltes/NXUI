@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Sector"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> SectorStartAngle => Avalonia.Controls.Shapes.Sector.StartAngleProperty;
+    public static Avalonia.StyledProperty<System.Double> Sector_StartAngle => Avalonia.Controls.Shapes.Sector.StartAngleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/> property defined in <see cref="Avalonia.Controls.Shapes.Sector"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> SectorSweepAngle => Avalonia.Controls.Shapes.Sector.SweepAngleProperty;
+    public static Avalonia.StyledProperty<System.Double> Sector_SweepAngle => Avalonia.Controls.Shapes.Sector.SweepAngleProperty;
 }

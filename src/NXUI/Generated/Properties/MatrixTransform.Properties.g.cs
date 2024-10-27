@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/> property defined in <see cref="Avalonia.Media.MatrixTransform"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Matrix> MatrixTransformMatrix => Avalonia.Media.MatrixTransform.MatrixProperty;
+    public static Avalonia.StyledProperty<Avalonia.Matrix> MatrixTransform_Matrix => Avalonia.Media.MatrixTransform.MatrixProperty;
 }

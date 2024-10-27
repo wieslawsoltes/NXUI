@@ -11,40 +11,40 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControlAutoScrollToSelectedItem => Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty;
+    public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControl_AutoScrollToSelectedItem => Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.SelectingItemsControl,System.Int32> SelectingItemsControlSelectedIndex => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.SelectingItemsControl,System.Int32> SelectingItemsControl_SelectedIndex => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.SelectingItemsControl,System.Object> SelectingItemsControlSelectedItem => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.SelectingItemsControl,System.Object> SelectingItemsControl_SelectedItem => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Object> SelectingItemsControlSelectedValue => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty;
+    public static Avalonia.StyledProperty<System.Object> SelectingItemsControl_SelectedValue => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Data.IBinding> SelectingItemsControlSelectedValueBinding => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Data.IBinding> SelectingItemsControl_SelectedValueBinding => Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControlIsSelected => Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControl_IsSelected => Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControlIsTextSearchEnabled => Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty;
+    public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControl_IsTextSearchEnabled => Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControlWrapSelection => Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty;
+    public static Avalonia.StyledProperty<System.Boolean> SelectingItemsControl_WrapSelection => Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty;
 }

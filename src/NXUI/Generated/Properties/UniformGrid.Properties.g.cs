@@ -11,15 +11,15 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> UniformGridRows => Avalonia.Controls.Primitives.UniformGrid.RowsProperty;
+    public static Avalonia.StyledProperty<System.Int32> UniformGrid_Rows => Avalonia.Controls.Primitives.UniformGrid.RowsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> UniformGridColumns => Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty;
+    public static Avalonia.StyledProperty<System.Int32> UniformGrid_Columns => Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> UniformGridFirstColumn => Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty;
+    public static Avalonia.StyledProperty<System.Int32> UniformGrid_FirstColumn => Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty;
 }

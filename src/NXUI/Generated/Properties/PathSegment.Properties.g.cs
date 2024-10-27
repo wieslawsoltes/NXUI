@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.PathSegment.IsStrokedProperty"/> property defined in <see cref="Avalonia.Media.PathSegment"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> PathSegmentIsStroked => Avalonia.Media.PathSegment.IsStrokedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> PathSegment_IsStroked => Avalonia.Media.PathSegment.IsStrokedProperty;
 }

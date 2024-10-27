@@ -11,85 +11,85 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> TextPresenterCaretIndex => Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextPresenter_CaretIndex => Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> TextPresenterRevealPassword => Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty;
+    public static Avalonia.StyledProperty<System.Boolean> TextPresenter_RevealPassword => Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Char> TextPresenterPasswordChar => Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty;
+    public static Avalonia.StyledProperty<System.Char> TextPresenter_PasswordChar => Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenterSelectionBrush => Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenter_SelectionBrush => Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenterSelectionForegroundBrush => Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenter_SelectionForegroundBrush => Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenterCaretBrush => Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenter_CaretBrush => Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.TimeSpan> TextPresenterCaretBlinkInterval => Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty;
+    public static Avalonia.StyledProperty<System.TimeSpan> TextPresenter_CaretBlinkInterval => Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> TextPresenterSelectionStart => Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextPresenter_SelectionStart => Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Int32> TextPresenterSelectionEnd => Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty;
+    public static Avalonia.StyledProperty<System.Int32> TextPresenter_SelectionEnd => Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> TextPresenterText => Avalonia.Controls.Presenters.TextPresenter.TextProperty;
+    public static Avalonia.StyledProperty<System.String> TextPresenter_Text => Avalonia.Controls.Presenters.TextPresenter.TextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.String> TextPresenterPreeditText => Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty;
+    public static Avalonia.StyledProperty<System.String> TextPresenter_PreeditText => Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Nullable<System.Int32>> TextPresenterPreeditTextCursorPosition => Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty;
+    public static Avalonia.StyledProperty<System.Nullable<System.Int32>> TextPresenter_PreeditTextCursorPosition => Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextAlignment> TextPresenterTextAlignment => Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextAlignment> TextPresenter_TextAlignment => Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> TextPresenterTextWrapping => Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.TextWrapping> TextPresenter_TextWrapping => Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TextPresenterLineHeight => Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty;
+    public static Avalonia.StyledProperty<System.Double> TextPresenter_LineHeight => Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TextPresenterLetterSpacing => Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty;
+    public static Avalonia.StyledProperty<System.Double> TextPresenter_LetterSpacing => Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenterBackground => Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextPresenter_Background => Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty;
 }

@@ -11,20 +11,20 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty"/> property defined in <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.
     /// </summary>
-    public static Avalonia.DirectProperty<Avalonia.Controls.Notifications.NotificationCard,System.Boolean> NotificationCardIsClosing => Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty;
+    public static Avalonia.DirectProperty<Avalonia.Controls.Notifications.NotificationCard,System.Boolean> NotificationCard_IsClosing => Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty"/> property defined in <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Boolean> NotificationCardIsClosed => Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty;
+    public static Avalonia.StyledProperty<System.Boolean> NotificationCard_IsClosed => Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> property defined in <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Notifications.NotificationType> NotificationCardNotificationType => Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Notifications.NotificationType> NotificationCard_NotificationType => Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty"/> property defined in <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> NotificationCardCloseOnClick => Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> NotificationCard_CloseOnClick => Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty;
 }

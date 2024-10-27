@@ -11,40 +11,40 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.TextElement.BackgroundProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextElementBackground => Avalonia.Controls.Documents.TextElement.BackgroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TextElement_Background => Avalonia.Controls.Documents.TextElement.BackgroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.TextElement.FontFamilyProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.FontFamily> TextElementFontFamily => Avalonia.Controls.Documents.TextElement.FontFamilyProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.FontFamily> TextElement_FontFamily => Avalonia.Controls.Documents.TextElement.FontFamilyProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.TextElement.FontFeaturesProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.FontFeatureCollection> TextElementFontFeatures => Avalonia.Controls.Documents.TextElement.FontFeaturesProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.FontFeatureCollection> TextElement_FontFeatures => Avalonia.Controls.Documents.TextElement.FontFeaturesProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.TextElement.FontSizeProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Double> TextElementFontSize => Avalonia.Controls.Documents.TextElement.FontSizeProperty;
+    public static Avalonia.AttachedProperty<System.Double> TextElement_FontSize => Avalonia.Controls.Documents.TextElement.FontSizeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.FontStyle> TextElementFontStyle => Avalonia.Controls.Documents.TextElement.FontStyleProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.FontStyle> TextElement_FontStyle => Avalonia.Controls.Documents.TextElement.FontStyleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.FontWeight> TextElementFontWeight => Avalonia.Controls.Documents.TextElement.FontWeightProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.FontWeight> TextElement_FontWeight => Avalonia.Controls.Documents.TextElement.FontWeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.FontStretch> TextElementFontStretch => Avalonia.Controls.Documents.TextElement.FontStretchProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.FontStretch> TextElement_FontStretch => Avalonia.Controls.Documents.TextElement.FontStretchProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Documents.TextElement.ForegroundProperty"/> property defined in <see cref="Avalonia.Controls.Documents.TextElement"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<Avalonia.Media.IBrush> TextElementForeground => Avalonia.Controls.Documents.TextElement.ForegroundProperty;
+    public static Avalonia.AttachedProperty<Avalonia.Media.IBrush> TextElement_Foreground => Avalonia.Controls.Documents.TextElement.ForegroundProperty;
 }

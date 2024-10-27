@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property defined in <see cref="Avalonia.Controls.Spinner"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.ValidSpinDirections> SpinnerValidSpinDirection => Avalonia.Controls.Spinner.ValidSpinDirectionProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.ValidSpinDirections> Spinner_ValidSpinDirection => Avalonia.Controls.Spinner.ValidSpinDirectionProperty;
 }

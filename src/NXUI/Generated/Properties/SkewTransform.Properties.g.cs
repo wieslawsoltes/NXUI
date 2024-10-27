@@ -11,10 +11,10 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/> property defined in <see cref="Avalonia.Media.SkewTransform"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> SkewTransformAngleX => Avalonia.Media.SkewTransform.AngleXProperty;
+    public static Avalonia.StyledProperty<System.Double> SkewTransform_AngleX => Avalonia.Media.SkewTransform.AngleXProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/> property defined in <see cref="Avalonia.Media.SkewTransform"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> SkewTransformAngleY => Avalonia.Media.SkewTransform.AngleYProperty;
+    public static Avalonia.StyledProperty<System.Double> SkewTransform_AngleY => Avalonia.Media.SkewTransform.AngleYProperty;
 }

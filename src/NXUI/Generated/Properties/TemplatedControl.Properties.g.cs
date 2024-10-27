@@ -11,75 +11,75 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TemplatedControlBackground => Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TemplatedControl_Background => Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.BackgroundSizing> TemplatedControlBackgroundSizing => Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.BackgroundSizing> TemplatedControl_BackgroundSizing => Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TemplatedControlBorderBrush => Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TemplatedControl_BorderBrush => Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Thickness> TemplatedControlBorderThickness => Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty;
+    public static Avalonia.StyledProperty<Avalonia.Thickness> TemplatedControl_BorderThickness => Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.CornerRadius> TemplatedControlCornerRadius => Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty;
+    public static Avalonia.StyledProperty<Avalonia.CornerRadius> TemplatedControl_CornerRadius => Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontFamily> TemplatedControlFontFamily => Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontFamily> TemplatedControl_FontFamily => Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontFeatureCollection> TemplatedControlFontFeatures => Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontFeatureCollection> TemplatedControl_FontFeatures => Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> TemplatedControlFontSize => Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty;
+    public static Avalonia.StyledProperty<System.Double> TemplatedControl_FontSize => Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontStyle> TemplatedControlFontStyle => Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontStyle> TemplatedControl_FontStyle => Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontWeight> TemplatedControlFontWeight => Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontWeight> TemplatedControl_FontWeight => Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.FontStretch> TemplatedControlFontStretch => Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.FontStretch> TemplatedControl_FontStretch => Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TemplatedControlForeground => Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty;
+    public static Avalonia.StyledProperty<Avalonia.Media.IBrush> TemplatedControl_Foreground => Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Thickness> TemplatedControlPadding => Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty;
+    public static Avalonia.StyledProperty<Avalonia.Thickness> TemplatedControl_Padding => Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IControlTemplate> TemplatedControlTemplate => Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty;
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IControlTemplate> TemplatedControl_Template => Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
-    public static Avalonia.AttachedProperty<System.Boolean> TemplatedControlIsTemplateFocusTarget => Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty;
+    public static Avalonia.AttachedProperty<System.Boolean> TemplatedControl_IsTemplateFocusTarget => Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty;
 }

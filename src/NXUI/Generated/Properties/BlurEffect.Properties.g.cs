@@ -11,5 +11,5 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> property defined in <see cref="Avalonia.Media.BlurEffect"/> class.
     /// </summary>
-    public static Avalonia.StyledProperty<System.Double> BlurEffectRadius => Avalonia.Media.BlurEffect.RadiusProperty;
+    public static Avalonia.StyledProperty<System.Double> BlurEffect_Radius => Avalonia.Media.BlurEffect.RadiusProperty;
 }
