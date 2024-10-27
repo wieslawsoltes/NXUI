@@ -1,13 +1,24 @@
 ﻿using System.Reflection;
 using System.Text;
-using Generator.Model;
+using Reflectonia;
+using Reflectonia.Model;
 
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-public static class BuildersGenerator
+public class BuildersGenerator
 {
-    public static void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
+    public BuildersGenerator(ReflectoniaFactory reflectoniaFactory, IReflectoniaLog log)
+    {
+        ReflectoniaFactory = reflectoniaFactory;
+        Log = log;
+    }
+    
+    private ReflectoniaFactory ReflectoniaFactory { get; }
+
+    private IReflectoniaLog Log { get; }
+
+    public void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
     {
         for (var i = 0; i < classes.Count; i++)
         {
@@ -56,7 +67,7 @@ public static class BuildersGenerator
         }
     }
 
-    private static string GetBuilders(Type type)
+    private string GetBuilders(Type type)
     {
         var sb = new StringBuilder();
         var constructors = type.GetConstructors();
@@ -82,17 +93,17 @@ public static class BuildersGenerator
         return sb.ToString();
     }
 
-    private static void AddBuilder(Type type, ConstructorInfo constructor, bool includeRefParam, StringBuilder sb)
+    private void AddBuilder(Type type, ConstructorInfo constructor, bool includeRefParam, StringBuilder sb)
     {
         var parameters = constructor.GetParameters();
 
         sb.AppendLine("    /// <summary>");
-        sb.AppendLine($"    /// Creates a new instance of the <see cref=\"{Factory.FixType(type.ToString())}\"/> class.");
+        sb.AppendLine($"    /// Creates a new instance of the <see cref=\"{ReflectoniaFactory.FixType(type.ToString())}\"/> class.");
         sb.AppendLine("    /// </summary>");
 
         if (includeRefParam)
         {
-            sb.AppendLine($"    /// <param name=\"ref\">The reference of the <see cref=\"{Factory.FixType(type.ToString())}\"/> instantiated class.</param>");
+            sb.AppendLine($"    /// <param name=\"ref\">The reference of the <see cref=\"{ReflectoniaFactory.FixType(type.ToString())}\"/> instantiated class.</param>");
         }
 
         for (var j = 0; j < parameters.Length; j++)
@@ -100,12 +111,12 @@ public static class BuildersGenerator
             sb.AppendLine($"    /// <param name=\"{parameters[j].Name}\">The {parameters[j].Name} value.</param>");
         }
 
-        sb.AppendLine($"    /// <returns>The new instance of the <see cref=\"{Factory.FixType(type.ToString())}\"/> class.</returns>");
-        sb.Append($"    public static {Factory.FixType(type.ToString())} {Factory.FixClassNameType(type.Name)}(");
+        sb.AppendLine($"    /// <returns>The new instance of the <see cref=\"{ReflectoniaFactory.FixType(type.ToString())}\"/> class.</returns>");
+        sb.Append($"    public static {ReflectoniaFactory.FixType(type.ToString())} {ReflectoniaFactory.FixClassNameType(type.Name)}(");
 
         if (includeRefParam)
         {
-            sb.Append($"out {Factory.FixType(type.ToString())} @ref");
+            sb.Append($"out {ReflectoniaFactory.FixType(type.ToString())} @ref");
 
             if (parameters.Length > 0)
             {
@@ -116,7 +127,7 @@ public static class BuildersGenerator
         for (var j = 0; j < parameters.Length; j++)
         {
             // TODO: Nullable annotations?
-            sb.Append($"{Factory.FixType(parameters[j].ParameterType.ToString())} {parameters[j].Name}");
+            sb.Append($"{ReflectoniaFactory.FixType(parameters[j].ParameterType.ToString())} {parameters[j].Name}");
 
             if (parameters[j].HasDefaultValue)
             {
@@ -124,7 +135,7 @@ public static class BuildersGenerator
                 {
                     if (parameters[j].ParameterType.IsEnum)
                     {
-                        sb.Append($" = {Factory.FixType(parameters[j].ParameterType.ToString())}.{parameters[j].DefaultValue}");
+                        sb.Append($" = {ReflectoniaFactory.FixType(parameters[j].ParameterType.ToString())}.{parameters[j].DefaultValue}");
                     }
                     else
                     {

@@ -1,4 +1,4 @@
-﻿namespace Generator.Model;
+﻿namespace Reflectonia.Model;
 
 public record Property(
     string Name, 

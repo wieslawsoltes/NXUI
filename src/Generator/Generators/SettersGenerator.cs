@@ -1,12 +1,23 @@
 ﻿using System.Text;
-using Generator.Model;
+using Reflectonia;
+using Reflectonia.Model;
 
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-public static class SettersGenerator
+public class SettersGenerator
 {
-    public static void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
+    public SettersGenerator(ReflectoniaFactory reflectoniaFactory, IReflectoniaLog log)
+    {
+        ReflectoniaFactory = reflectoniaFactory;
+        Log = log;
+    }
+    
+    private ReflectoniaFactory ReflectoniaFactory { get; }
+
+    private IReflectoniaLog Log { get; }
+
+    public void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
     {
         foreach (var c in classes)
         {
@@ -34,7 +45,7 @@ public static class SettersGenerator
 
             var classHeaderBuilder = new StringBuilder(Templates.PropertySettersHeaderTemplate);
             classHeaderBuilder.Replace("%ClassName%", c.Name);
-            classHeaderBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+            classHeaderBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
             WriteLine(classHeaderBuilder.ToString());
 
             var addedProperties = new HashSet<string>();
@@ -63,10 +74,10 @@ public static class SettersGenerator
                 
                 var valueBuilder = new StringBuilder(Templates.PropertySettersValueTemplate);
 
-                valueBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                valueBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                 valueBuilder.Replace("%ClassName%", c.Name);
                 valueBuilder.Replace("%Name%", p.Name);
-                valueBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
+                valueBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
 
                 WriteLine(valueBuilder.ToString());
 
@@ -74,10 +85,10 @@ public static class SettersGenerator
 
                 var observableBuilder = new StringBuilder(Templates.PropertySettersObservableTemplate);
 
-                observableBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                observableBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                 observableBuilder.Replace("%ClassName%", c.Name);
                 observableBuilder.Replace("%Name%", p.Name);
-                observableBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
+                observableBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
 
                 WriteLine(observableBuilder.ToString());
 
@@ -87,10 +98,10 @@ public static class SettersGenerator
                 {
                     var bindingBuilder = new StringBuilder(Templates.PropertySettersBindingTemplate);
 
-                    bindingBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                    bindingBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                     bindingBuilder.Replace("%ClassName%", c.Name);
                     bindingBuilder.Replace("%Name%", p.Name);
-                    bindingBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
+                    bindingBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
 
                     WriteLine(bindingBuilder.ToString());
                 }

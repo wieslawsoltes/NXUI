@@ -1,21 +1,26 @@
 ﻿using System.Reflection;
-using System.Text;
 using Avalonia;
-using Avalonia.Animation;
-using Generator.Model;
+using Reflectonia.Model;
 
-namespace Generator;
+namespace Reflectonia;
 
-public static class Factory
+public class ReflectoniaFactory
 {
-    public static string ToString(Type? type)
+    public ReflectoniaFactory(IReflectoniaLog log)
+    {
+        Log = log;
+    }
+
+    private IReflectoniaLog Log { get; }
+
+    public string ToString(Type? type)
     {
         return type is null 
             ? string.Empty 
             : FixType(type.ToString());
     }
 
-    public static string FixType(string t)
+    public string FixType(string t)
     {
         return t
             .Replace("`1[", "<")
@@ -25,7 +30,7 @@ public static class Factory
             .Replace("+", ".");
     }
 
-    public static string FixClassNameType(string t)
+    public string FixClassNameType(string t)
     {
         return t
             .Replace("`1", "")
@@ -34,7 +39,7 @@ public static class Factory
             .Replace("+", "");
     }
 
-    private static Type[] GetClassTypes(Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
+    private Type[] GetClassTypes(Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
        return(
            from assembly in AppDomain.CurrentDomain.GetAssemblies()
@@ -49,7 +54,7 @@ public static class Factory
            select assemblyType).ToArray();
     }
 
-    private static List<Property> GetProperties(Type classType, Registry registry)
+    private List<Property> GetProperties(Type classType, ReflectoniaRegistry registry)
     {
         var properties = new List<Property>();
 
@@ -161,7 +166,7 @@ public static class Factory
         return properties;
     }
 
-    private static List<Event> GetEvents(Type classType, Registry registry)
+    private List<Event> GetEvents(Type classType, ReflectoniaRegistry registry)
     {
         var events = new List<Event>();
 
@@ -271,12 +276,12 @@ public static class Factory
         return events;
     }
 
-    public static List<Class>? CreateClasses(Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
+    public List<Class>? CreateClasses(Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
         var classTypes = GetClassTypes(assemblyFilter, typeFilter);
         var classes = new List<Class>();
 
-        var registry = new Registry(classTypes);
+        var registry = new ReflectoniaRegistry(classTypes);
         if (registry.RegisteredProperties is null 
             || registry.RegisteredAttachedProperties is null 
             || registry.RegisteredRoutedEvents is null)

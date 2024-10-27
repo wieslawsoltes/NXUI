@@ -1,12 +1,23 @@
 ﻿using System.Text;
-using Generator.Model;
+using Reflectonia;
+using Reflectonia.Model;
 
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-public static class ExtensionsGenerator
+public class ExtensionsGenerator
 {
-    public static void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
+    public ExtensionsGenerator(ReflectoniaFactory reflectoniaFactory, IReflectoniaLog log)
+    {
+        ReflectoniaFactory = reflectoniaFactory;
+        Log = log;
+    }
+    
+    private ReflectoniaFactory ReflectoniaFactory { get; }
+
+    private IReflectoniaLog Log { get; }
+
+    public void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
     {
         foreach (var c in classes)
         {
@@ -34,7 +45,7 @@ public static class ExtensionsGenerator
 
             var classHeaderBuilder = new StringBuilder(Templates.ClassExtensionsHeaderTemplate);
             classHeaderBuilder.Replace("%ClassName%", c.Name);
-            classHeaderBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+            classHeaderBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
             WriteLine(classHeaderBuilder.ToString());
 
             var addedProperties = new HashSet<string>();
@@ -64,7 +75,7 @@ public static class ExtensionsGenerator
 
                 var propertyBuilder = new StringBuilder(template);
 
-                propertyBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                propertyBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                 if (genFSharp)
                 {
                     // fsharp can't consume extension methods with the same name as properties
@@ -77,8 +88,8 @@ public static class ExtensionsGenerator
                     propertyBuilder.Replace("%MethodName%", p.Name);
                 }
                 propertyBuilder.Replace("%Name%", p.Name);
-                propertyBuilder.Replace("%OwnerType%", Factory.ToString(p.OwnerType));
-                propertyBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
+                propertyBuilder.Replace("%OwnerType%", ReflectoniaFactory.ToString(p.OwnerType));
+                propertyBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
 
                 WriteLine(propertyBuilder.ToString());
 
@@ -92,10 +103,10 @@ public static class ExtensionsGenerator
 
                         var propertyEnumBuilder = new StringBuilder(templateEnum);
 
-                        propertyEnumBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                        propertyEnumBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                         propertyEnumBuilder.Replace("%Name%", p.Name);
-                        propertyEnumBuilder.Replace("%OwnerType%", Factory.ToString(p.OwnerType));
-                        propertyEnumBuilder.Replace("%ValueType%", Factory.ToString(p.ValueType));
+                        propertyEnumBuilder.Replace("%OwnerType%", ReflectoniaFactory.ToString(p.OwnerType));
+                        propertyEnumBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
                         propertyEnumBuilder.Replace("%EnumValue%", enumName);
 
                         WriteLine(propertyEnumBuilder.ToString());
@@ -131,10 +142,10 @@ public static class ExtensionsGenerator
 
                 var eventBuilder = new StringBuilder(template);
 
-                eventBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                eventBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                 eventBuilder.Replace("%Name%", e.Name);
-                eventBuilder.Replace("%OwnerType%", Factory.ToString(e.OwnerType));
-                eventBuilder.Replace("%ArgsType%", Factory.ToString(e.ArgsType));
+                eventBuilder.Replace("%OwnerType%", ReflectoniaFactory.ToString(e.OwnerType));
+                eventBuilder.Replace("%ArgsType%", ReflectoniaFactory.ToString(e.ArgsType));
 
                 var routes = e.RoutingStrategies.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 var routingStrategiesBuilder = new StringBuilder();
@@ -179,14 +190,14 @@ public static class ExtensionsGenerator
 
                 var eventBuilder = new StringBuilder(template);
 
-                eventBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                eventBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                 eventBuilder.Replace("%Name%", e.Name);
-                eventBuilder.Replace("%OwnerType%", Factory.ToString(e.OwnerType));
+                eventBuilder.Replace("%OwnerType%", ReflectoniaFactory.ToString(e.OwnerType));
 
                 if (e.ArgsType is { })
                 {
-                    eventBuilder.Replace("%ArgsType%", Factory.ToString(e.ArgsType));
-                    eventBuilder.Replace("%EventHandler%", $"EventHandler<{Factory.ToString(e.ArgsType)}>");
+                    eventBuilder.Replace("%ArgsType%", ReflectoniaFactory.ToString(e.ArgsType));
+                    eventBuilder.Replace("%EventHandler%", $"EventHandler<{ReflectoniaFactory.ToString(e.ArgsType)}>");
                 }
                 else
                 {

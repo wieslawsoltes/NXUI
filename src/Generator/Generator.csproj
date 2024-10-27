@@ -11,6 +11,6 @@
     <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Generator.Base\Generator.Base.csproj" />
+    <ProjectReference Include="..\Reflectonia\Reflectonia.csproj" />
   </ItemGroup>
 </Project>

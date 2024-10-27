@@ -1,13 +1,36 @@
 ﻿using System.Reflection;
-using Generator.Model;
+using Reflectonia;
+using Reflectonia.Model;
 
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-public static class MainGenerator
+public class MainGenerator
 {
-    
-    public static void GenerateFSharpExtensions(string outputPath, List<Class> classes)
+    public MainGenerator(ReflectoniaFactory reflectoniaFactory, IReflectoniaLog log)
+    {
+        ReflectoniaFactory = reflectoniaFactory;
+
+        BuildersGenerator = new BuildersGenerator(reflectoniaFactory, log);
+        PropertiesGenerator = new PropertiesGenerator(reflectoniaFactory, log);
+        EventsGenerator = new EventsGenerator(reflectoniaFactory, log);
+        ExtensionsGenerator = new ExtensionsGenerator(reflectoniaFactory, log);
+        SettersGenerator = new SettersGenerator(reflectoniaFactory, log);
+    }
+
+    private ReflectoniaFactory ReflectoniaFactory { get; }
+
+    public BuildersGenerator BuildersGenerator { get;  }
+
+    public PropertiesGenerator PropertiesGenerator { get;  }
+
+    public EventsGenerator EventsGenerator { get;  }
+
+    public ExtensionsGenerator ExtensionsGenerator { get;  }
+
+    public SettersGenerator SettersGenerator { get;  }
+
+    public void GenerateFSharpExtensions(string outputPath, List<Class> classes)
     {
         if (!Directory.Exists(outputPath))
         {
@@ -16,7 +39,7 @@ public static class MainGenerator
         ExtensionsGenerator.Generate(outputPath, classes, genFSharp: true);
     }
     
-    public static void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter, bool genFSharp = false)
+    public void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter, bool genFSharp = false)
     {
         var buildersPath = Path.Combine(outputPath, "Builders");
         var propertiesPath = Path.Combine(outputPath, "Properties");
@@ -24,7 +47,7 @@ public static class MainGenerator
         var extensionsPath = Path.Combine(outputPath, "Extensions");
         var settersPath = Path.Combine(outputPath, "Setters");
 
-        var classes = Factory.CreateClasses(assemblyFilter, typeFilter);
+        var classes = ReflectoniaFactory.CreateClasses(assemblyFilter, typeFilter);
         
         if (classes is null)
         {

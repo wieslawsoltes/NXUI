@@ -1,5 +1,6 @@
 ﻿using Avalonia;
 using Generator;
+using Reflectonia;
 
 if (args.Length > 2)
 {
@@ -19,17 +20,20 @@ var excludedClasses = new HashSet<string>
     "AboutAvaloniaDialog"
 };
 
+var log = new ReflectoniaLog();
+var factory = new ReflectoniaFactory(log);
+
 var genFSharp = args.Length == 2 && args[1] == "-fsharp";
-void Generate() 
-    => MainGenerator.Generate(
-        args[0], 
+void Generate()
+    => new MainGenerator(factory, log).Generate(
+        args[0],
         a =>
         {
             // Console.WriteLine($"[Assembly] {a}");
             var name = a.GetName().Name;
             var isAvalonia = name is { } && includedAssemblies.Contains(name);
             return isAvalonia;
-        }, 
+        },
         t =>
         {
             // Console.WriteLine($"[Type] {t}");
@@ -37,10 +41,11 @@ void Generate()
             {
                 return false;
             }
+
             return true;
         },
         genFSharp: genFSharp
-        );
+    );
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()

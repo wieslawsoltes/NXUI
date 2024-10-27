@@ -1,13 +1,24 @@
 ﻿using System.Diagnostics;
 using System.Text;
-using Generator.Model;
+using Reflectonia;
+using Reflectonia.Model;
 
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-public static class PropertiesGenerator
+public class PropertiesGenerator
 {
-    public static void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
+    public PropertiesGenerator(ReflectoniaFactory reflectoniaFactory, IReflectoniaLog log)
+    {
+        ReflectoniaFactory = reflectoniaFactory;
+        Log = log;
+    }
+    
+    private ReflectoniaFactory ReflectoniaFactory { get; }
+
+    private IReflectoniaLog Log { get; }
+
+    public void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
     {
         foreach (var c in classes)
         {
@@ -49,9 +60,9 @@ public static class PropertiesGenerator
 
                 var propertyBuilder = new StringBuilder(Templates.PropertyTemplate);
                 propertyBuilder.Replace("%ClassName%", c.Name);
-                propertyBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                propertyBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                 propertyBuilder.Replace("%PropertyName%", p.Name);
-                propertyBuilder.Replace("%PropertyType%", Factory.ToString(p.PropertyType));
+                propertyBuilder.Replace("%PropertyType%", ReflectoniaFactory.ToString(p.PropertyType));
                 WriteLine(propertyBuilder.ToString());
 
                 if (i < c.Properties.Length - 1)

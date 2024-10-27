@@ -1,8 +1,8 @@
-namespace Generator;
+namespace Reflectonia;
 
-public static class Log
+public class ReflectoniaLog : IReflectoniaLog
 {
-    public static void Info(string message)
+    public void Info(string message)
     {
         var color = Console.ForegroundColor;
         Console.ForegroundColor = ConsoleColor.Blue;
@@ -10,7 +10,7 @@ public static class Log
         Console.ForegroundColor = color;
     }
 
-    public static void Error(string message)
+    public void Error(string message)
     {
         var color = Console.ForegroundColor;
         Console.ForegroundColor = ConsoleColor.Red;

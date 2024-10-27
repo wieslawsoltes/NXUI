@@ -2,9 +2,9 @@
 using Avalonia;
 using Avalonia.Interactivity;
 
-namespace Generator;
+namespace Reflectonia;
 
-public class Registry
+public class ReflectoniaRegistry
 {
     private static readonly FieldInfo? s_registered = 
         typeof(AvaloniaPropertyRegistry).GetField("_registered", BindingFlags.NonPublic | BindingFlags.Instance);
@@ -21,7 +21,7 @@ public class Registry
 
     public Dictionary<Type, List<RoutedEvent>>? RegisteredRoutedEvents { get; }
 
-    public Registry(Type[] classTypes)
+    public ReflectoniaRegistry(Type[] classTypes)
     {
         foreach (var classType in classTypes)
         {

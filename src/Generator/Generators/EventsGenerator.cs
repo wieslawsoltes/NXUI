@@ -1,12 +1,23 @@
 ﻿using System.Text;
-using Generator.Model;
+using Reflectonia;
+using Reflectonia.Model;
 
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-public static class EventsGenerator
+public class EventsGenerator
 {
-    public static void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
+    public EventsGenerator(ReflectoniaFactory reflectoniaFactory, IReflectoniaLog log)
+    {
+        ReflectoniaFactory = reflectoniaFactory;
+        Log = log;
+    }
+    
+    private ReflectoniaFactory ReflectoniaFactory { get; }
+
+    private IReflectoniaLog Log { get; }
+
+    public void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
     {
         foreach (var c in classes)
         {
@@ -49,9 +60,9 @@ public static class EventsGenerator
 
                 var eventBuilder = new StringBuilder(Templates.EventTemplate);
                 eventBuilder.Replace("%ClassName%", c.Name);
-                eventBuilder.Replace("%ClassType%", Factory.ToString(c.Type));
+                eventBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                 eventBuilder.Replace("%EventName%", e.Name);
-                eventBuilder.Replace("%EventType%", Factory.ToString(e.EventType));
+                eventBuilder.Replace("%EventType%", ReflectoniaFactory.ToString(e.EventType));
                 WriteLine(eventBuilder.ToString());
 
                 if (i  < events.Length - 1)
