@@ -14,6 +14,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <AvaloniaVersion>11.1.0</AvaloniaVersion>
+    <AvaloniaTreeDataGridVersion>11.0.10</AvaloniaTreeDataGridVersion>
     <SystemReactiveVersion>6.0.0</SystemReactiveVersion>
   </PropertyGroup>
 </Project>
