@@ -22,8 +22,8 @@ var excludedClasses = new HashSet<string>
 
 var log = new ReflectoniaLog();
 var factory = new ReflectoniaFactory(log);
+var genFSharp = args is [_, "-fsharp"];
 
-var genFSharp = args.Length == 2 && args[1] == "-fsharp";
 void Generate()
     => new MainGenerator(factory, log).Generate(
         args[0],
