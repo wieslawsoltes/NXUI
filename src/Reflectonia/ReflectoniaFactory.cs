@@ -39,19 +39,59 @@ public class ReflectoniaFactory
             .Replace("+", "");
     }
 
+    public List<Class>? CreateClasses(Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
+    {
+        var classTypes = GetClassTypes(assemblyFilter, typeFilter);
+
+        var registry = new ReflectoniaRegistry(classTypes);
+
+        if (registry.RegisteredProperties is null 
+            || registry.RegisteredAttachedProperties is null 
+            || registry.RegisteredRoutedEvents is null)
+        {
+            return null;
+        }
+
+        var classes = new List<Class>();
+
+        foreach (var classType in classTypes)
+        {
+            var publicCtor = classType.GetConstructors().Any(x => x.IsPublic && x.GetParameters().Length == 0);
+
+            var properties = GetProperties(classType, registry);
+
+            var events = GetEvents(classType, registry);
+
+            var c = new Class(
+                FixClassNameType(classType.Name),
+                classType,
+                properties.ToArray(),
+                events.ToArray(),
+                classType.IsSealed,
+                publicCtor,
+                classType.IsAbstract);
+            classes.Add(c);
+            Log.Info($"The `{classType.Name}` class has {properties.Count} properties and {events.Count} events.");
+        }
+
+        Log.Info($"Found {classes.Count} classes with total of {classes.SelectMany(x => x.Properties).Count()} properties and {classes.SelectMany(x => x.Events).Count()} events.");
+
+        return classes;
+    }
+
     private Type[] GetClassTypes(Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
-       return(
-           from assembly in AppDomain.CurrentDomain.GetAssemblies()
-           where assembly?.FullName is not null 
-                 && assemblyFilter(assembly)
-           from assemblyType in assembly.GetTypes()
-           where assemblyType is not null 
-                 && typeFilter(assemblyType)
-                 && assemblyType.IsSubclassOf(typeof(AvaloniaObject))
-                 && assemblyType.GetCustomAttributes().All(x => x.GetType().Name != "ObsoleteAttribute")
-                 && assemblyType.IsPublic
-           select assemblyType).ToArray();
+        return(
+            from assembly in AppDomain.CurrentDomain.GetAssemblies()
+            where assembly?.FullName is not null 
+                  && assemblyFilter(assembly)
+            from assemblyType in assembly.GetTypes()
+            where assemblyType is not null 
+                  && typeFilter(assemblyType)
+                  && assemblyType.IsSubclassOf(typeof(AvaloniaObject))
+                  && assemblyType.GetCustomAttributes().All(x => x.GetType().Name != "ObsoleteAttribute")
+                  && assemblyType.IsPublic
+            select assemblyType).ToArray();
     }
 
     private List<Property> GetProperties(Type classType, ReflectoniaRegistry registry)
@@ -274,43 +314,5 @@ public class ReflectoniaFactory
         }
 
         return events;
-    }
-
-    public List<Class>? CreateClasses(Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
-    {
-        var classTypes = GetClassTypes(assemblyFilter, typeFilter);
-        var classes = new List<Class>();
-
-        var registry = new ReflectoniaRegistry(classTypes);
-        if (registry.RegisteredProperties is null 
-            || registry.RegisteredAttachedProperties is null 
-            || registry.RegisteredRoutedEvents is null)
-        {
-            return null;
-        }
-
-        foreach (var classType in classTypes)
-        {
-            var publicCtor = classType.GetConstructors().Any(x => x.IsPublic && x.GetParameters().Length == 0);
-
-            var properties = GetProperties(classType, registry);
-
-            var events = GetEvents(classType, registry);
-
-            var c = new Class(
-                FixClassNameType(classType.Name),
-                classType,
-                properties.ToArray(),
-                events.ToArray(),
-                classType.IsSealed,
-                publicCtor,
-                classType.IsAbstract);
-            classes.Add(c);
-            Log.Info($"The `{classType.Name}` class has {properties.Count} properties and {events.Count} events.");
-        }
-
-        Log.Info($"Found {classes.Count} classes with total of {classes.SelectMany(x => x.Properties).Count()} properties and {classes.SelectMany(x => x.Events).Count()} events.");
-
-        return classes;
     }
 }
