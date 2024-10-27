@@ -1,4 +1,5 @@
 ﻿using Avalonia;
+using Avalonia.Controls;
 using Generator;
 using Reflectonia;
 
@@ -13,6 +14,10 @@ var includedAssemblies = new HashSet<string>
     "Avalonia.Base",
     "Avalonia.Controls",
     "Avalonia.Desktop",
+    "Avalonia.Controls.ColorPicker",
+    "Avalonia.Controls.ItemsRepeater",
+    "Avalonia.Controls.DataGrid",
+    "Avalonia.Controls.TreeDataGrid",
 };
 
 var excludedClasses = new HashSet<string>
@@ -49,5 +54,12 @@ void Generate()
 
 AppBuilder.Configure<Application>()
     .UsePlatformDetect()
-    .AfterSetup(_ => Generate())
+    .AfterSetup(_ =>
+    {
+        var __ = new ColorPicker();
+        var ___ = new ItemsRepeater();
+        var ____ = new DataGrid();
+        var _____ = new TreeDataGrid();
+        Generate();
+    })
     .SetupWithoutStarting();
