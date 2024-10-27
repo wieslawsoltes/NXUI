@@ -23,7 +23,7 @@ public static partial class Properties
     /// <summary>
     /// The <see cref="%ClassType%.%PropertyName%Property"/> property defined in <see cref="%ClassType%"/> class.
     /// </summary>
-    public static %PropertyType% %ClassName%%PropertyName% => %ClassType%.%PropertyName%Property;
+    public static %PropertyType% %ClassName%_%PropertyName% => %ClassType%.%PropertyName%Property;
 """;
 
     public static string PropertiesFooterTemplate = @"}";
