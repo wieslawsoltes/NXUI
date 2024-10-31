@@ -59,6 +59,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Controls.Control> Popup_PlacementTarget => Avalonia.Controls.Primitives.Popup.PlacementTargetProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> Popup_CustomPopupPlacementCallback => Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> Popup_OverlayDismissEventPassThrough => Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty;
@@ -87,4 +92,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> Popup_Topmost => Avalonia.Controls.Primitives.Popup.TopmostProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Boolean> Popup_TakesFocusFromNativeControl => Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty;
 }

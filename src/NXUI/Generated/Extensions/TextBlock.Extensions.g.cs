@@ -811,6 +811,18 @@ public static partial class TextBlockExtensions
     }
 
     /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Solid"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T FontWeightSolid<T>(this T obj) where T : Avalonia.Controls.TextBlock
+    {
+        obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Solid;
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBlack"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>

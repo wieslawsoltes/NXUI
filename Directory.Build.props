@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <VersionPrefix>11.1.0.1</VersionPrefix>
+    <VersionPrefix>11.2.0</VersionPrefix>
     <VersionSuffix></VersionSuffix>
     <Authors>Wiesław Šoltés</Authors>
     <Company>Wiesław Šoltés</Company>
@@ -13,8 +13,9 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <AvaloniaVersion>11.1.0</AvaloniaVersion>
+    <AvaloniaVersion>11.2.0</AvaloniaVersion>
     <AvaloniaTreeDataGridVersion>11.0.10</AvaloniaTreeDataGridVersion>
+    <AvaloniaControlsItemsRepeaterVersion>11.1.4</AvaloniaControlsItemsRepeaterVersion>
     <SystemReactiveVersion>6.0.0</SystemReactiveVersion>
   </PropertyGroup>
 </Project>

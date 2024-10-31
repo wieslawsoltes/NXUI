@@ -14,9 +14,19 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Int32> TimePickerPresenter_MinuteIncrement => Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.TimePickerPresenter.SecondIncrementProperty"/> property defined in <see cref="Avalonia.Controls.TimePickerPresenter"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Int32> TimePickerPresenter_SecondIncrement => Avalonia.Controls.TimePickerPresenter.SecondIncrementProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty"/> property defined in <see cref="Avalonia.Controls.TimePickerPresenter"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.String> TimePickerPresenter_ClockIdentifier => Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TimePickerPresenter.UseSecondsProperty"/> property defined in <see cref="Avalonia.Controls.TimePickerPresenter"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> TimePickerPresenter_UseSeconds => Avalonia.Controls.TimePickerPresenter.UseSecondsProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.TimePickerPresenter.TimeProperty"/> property defined in <see cref="Avalonia.Controls.TimePickerPresenter"/> class.

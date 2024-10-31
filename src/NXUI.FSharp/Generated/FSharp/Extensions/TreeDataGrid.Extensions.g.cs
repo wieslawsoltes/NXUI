@@ -1174,28 +1174,28 @@ public static partial class TreeDataGridExtensions
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    //public static T OnSelectionChangingEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
-    //{
-    //    var observable = Observable
-    //        .FromEventPattern<EventHandler, EventArgs>(
-    //            h => obj.SelectionChanging += h, 
-    //            h => obj.SelectionChanging -= h)
-    //        .Select(x => x.EventArgs);
-    //    handler(obj, observable);
-    //    return obj;
-    //}
+    public static T OnSelectionChangingEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
+    {
+        var observable = Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.SelectionChanging += h, 
+                h => obj.SelectionChanging -= h)
+            .Select(x => x.EventArgs);
+        handler(obj, observable);
+        return obj;
+    }
 
     /// <summary>
     /// Returns an observable for the `SelectionChanging` event on the specified object.
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable for the `SelectionChanging` event on the specified object.</returns>
-    //public static IObservable<EventArgs> ObserveOnSelectionChangingEvent(this Avalonia.Controls.TreeDataGrid obj)
-    //{
-    //    return Observable
-    //        .FromEventPattern<EventHandler, EventArgs>(
-    //            h => obj.SelectionChanging += h, 
-    //            h => obj.SelectionChanging -= h)
-    //        .Select(x => x.EventArgs);
-    //}
+    public static IObservable<EventArgs> ObserveOnSelectionChangingEvent(this Avalonia.Controls.TreeDataGrid obj)
+    {
+        return Observable
+            .FromEventPattern<EventHandler, EventArgs>(
+                h => obj.SelectionChanging += h, 
+                h => obj.SelectionChanging -= h)
+            .Select(x => x.EventArgs);
+    }
 }

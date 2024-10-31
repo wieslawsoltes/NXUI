@@ -52,4 +52,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.Control> ContextMenu_PlacementTarget => Avalonia.Controls.ContextMenu.PlacementTargetProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/> property defined in <see cref="Avalonia.Controls.ContextMenu"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> ContextMenu_CustomPopupPlacementCallback => Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty;
 }

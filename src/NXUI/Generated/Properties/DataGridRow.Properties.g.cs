@@ -14,6 +14,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Object> DataGridRow_Header => Avalonia.Controls.DataGridRow.HeaderProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.DataGridRow.IsSelectedProperty"/> property defined in <see cref="Avalonia.Controls.DataGridRow"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Controls.DataGridRow,System.Boolean> DataGridRow_IsSelected => Avalonia.Controls.DataGridRow.IsSelectedProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.DataGridRow.IsValidProperty"/> property defined in <see cref="Avalonia.Controls.DataGridRow"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.DataGridRow,System.Boolean> DataGridRow_IsValid => Avalonia.Controls.DataGridRow.IsValidProperty;
@@ -27,4 +32,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty"/> property defined in <see cref="Avalonia.Controls.DataGridRow"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> DataGridRow_AreDetailsVisible => Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.DataGridRow.IndexProperty"/> property defined in <see cref="Avalonia.Controls.DataGridRow"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Controls.DataGridRow,System.Int32> DataGridRow_Index => Avalonia.Controls.DataGridRow.IndexProperty;
 }

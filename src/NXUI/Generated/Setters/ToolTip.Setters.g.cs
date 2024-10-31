@@ -366,6 +366,78 @@ public static partial class ToolTipSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipCustomPopupPlacementCallback(this Style style, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipCustomPopupPlacementCallback(this KeyFrame keyFrame, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipCustomPopupPlacementCallback(this Style style, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipCustomPopupPlacementCallback(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetToolTipCustomPopupPlacementCallback(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetToolTipCustomPopupPlacementCallback(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.ToolTip.ShowDelayProperty
 
     /// <summary>
@@ -653,4 +725,5 @@ public static partial class ToolTipSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToolTip.ServiceEnabledProperty, binding));
         return keyFrame;
     }
+
 }

@@ -9,6 +9,16 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> TextBox_IsInactiveSelectionHighlightEnabled => Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> TextBox_ClearSelectionOnLostFocus => Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.TextBox.AcceptsReturnProperty"/> property defined in <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> TextBox_AcceptsReturn => Avalonia.Controls.TextBox.AcceptsReturnProperty;

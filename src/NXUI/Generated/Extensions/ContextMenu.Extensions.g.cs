@@ -1122,6 +1122,18 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Custom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementCustom<T>(this T obj) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.PlacementProperty] = Avalonia.Controls.PlacementMode.Custom;
+        return obj;
+    }
+
     // Avalonia.Controls.ContextMenu.PlacementRectProperty
 
     /// <summary>
@@ -1412,6 +1424,104 @@ public static partial class ContextMenuExtensions
     public static T OnPlacementTarget<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CustomPopupPlacementCallback<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value) where T : Avalonia.Controls.ContextMenu
+    {
+        obj[Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CustomPopupPlacementCallback<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContextMenu
+    {
+        var descriptor = Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CustomPopupPlacementCallback<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContextMenu
+    {
+        var descriptor = Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindCustomPopupPlacementCallback(
+        this Avalonia.Controls.ContextMenu obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> ObserveCustomPopupPlacementCallback(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
         handler(obj, observable);
         return obj;
     }

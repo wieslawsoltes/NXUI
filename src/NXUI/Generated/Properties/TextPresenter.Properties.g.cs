@@ -9,6 +9,11 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> TextPresenter_ShowSelectionHighlight => Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/> property defined in <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Int32> TextPresenter_CaretIndex => Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty;

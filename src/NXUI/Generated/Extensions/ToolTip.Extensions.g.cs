@@ -480,6 +480,18 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Custom"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T PlacementCustom<T>(this T obj) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Custom;
+        return obj;
+    }
+
     // Avalonia.Controls.ToolTip.HorizontalOffsetProperty
 
     /// <summary>
@@ -672,6 +684,104 @@ public static partial class ToolTipExtensions
     public static T OnVerticalOffset<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToolTip.VerticalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CustomPopupPlacementCallback<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value) where T : Avalonia.Controls.Control
+    {
+        obj[Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CustomPopupPlacementCallback<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T CustomPopupPlacementCallback<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        var descriptor = Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindCustomPopupPlacementCallback(
+        this Avalonia.Controls.Control obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> ObserveCustomPopupPlacementCallback(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1066,5 +1176,103 @@ public static partial class ToolTipExtensions
         var observable = obj.GetObservable(Avalonia.Controls.ToolTip.ServiceEnabledProperty);
         handler(obj, observable);
         return obj;
+    }
+
+    // Avalonia.Controls.ToolTip.ToolTipOpeningEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.ToolTip.ToolTipOpeningEvent"/> event on an object of type <see cref="Avalonia.Controls.ToolTip"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnToolTipOpeningHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.CancelRoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.ToolTip
+    {
+        obj.AddHandler(Avalonia.Controls.ToolTip.ToolTipOpeningEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.ToolTip.ToolTipOpeningEvent"/> event on an object of type <see cref="Avalonia.Controls.ToolTip"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnToolTipOpening<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.ToolTip
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToolTip.ToolTipOpeningEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.ToolTip.ToolTipOpeningEvent"/> event on an object of type <see cref="Avalonia.Controls.ToolTip"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnToolTipOpening(
+        this Avalonia.Controls.ToolTip obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToolTip.ToolTipOpeningEvent, routes);
+    }
+
+    // Avalonia.Controls.ToolTip.ToolTipClosingEvent
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.ToolTip.ToolTipClosingEvent"/> event on an object of type <see cref="Avalonia.Controls.ToolTip"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnToolTipClosingHandler<T>(
+        this T obj,
+        Action<T, Avalonia.Interactivity.RoutedEventArgs> action,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.ToolTip
+    {
+        obj.AddHandler(Avalonia.Controls.ToolTip.ToolTipClosingEvent, (_, args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="Avalonia.Controls.ToolTip.ToolTipClosingEvent"/> event on an object of type <see cref="Avalonia.Controls.ToolTip"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T OnToolTipClosing<T>(
+        this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct) where T : Avalonia.Controls.ToolTip
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ToolTip.ToolTipClosingEvent, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="Avalonia.Controls.ToolTip.ToolTipClosingEvent"/> event on an object of type <see cref="Avalonia.Controls.ToolTip"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnToolTipClosing(
+        this Avalonia.Controls.ToolTip obj,
+        Avalonia.Interactivity.RoutingStrategies routes = Avalonia.Interactivity.RoutingStrategies.Direct)
+    {
+        return obj.GetObservable(Avalonia.Controls.ToolTip.ToolTipClosingEvent, routes);
     }
 }

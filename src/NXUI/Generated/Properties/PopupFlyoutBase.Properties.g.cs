@@ -34,9 +34,19 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> PopupFlyoutBase_PlacementGravity => Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> PopupFlyoutBase_CustomPopupPlacementCallback => Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Controls.FlyoutShowMode> PopupFlyoutBase_ShowMode => Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> PopupFlyoutBase_OverlayDismissEventPassThrough => Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class.

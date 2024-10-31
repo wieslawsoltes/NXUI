@@ -726,6 +726,78 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupCustomPopupPlacementCallback(this Style style, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupCustomPopupPlacementCallback(this KeyFrame keyFrame, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupCustomPopupPlacementCallback(this Style style, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupCustomPopupPlacementCallback(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupCustomPopupPlacementCallback(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupCustomPopupPlacementCallback(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty
 
     /// <summary>
@@ -1155,6 +1227,78 @@ public static partial class PopupSetters
     public static KeyFrame SetPopupTopmost(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
     {
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TopmostProperty, binding));
+        return keyFrame;
+    }
+
+    // Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupTakesFocusFromNativeControl(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupTakesFocusFromNativeControl(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupTakesFocusFromNativeControl(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupTakesFocusFromNativeControl(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetPopupTakesFocusFromNativeControl(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetPopupTakesFocusFromNativeControl(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty, binding));
         return keyFrame;
     }
 }

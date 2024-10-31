@@ -34,6 +34,11 @@ public static partial class Properties
     public static Avalonia.AttachedProperty<System.Double> ToolTip_VerticalOffset => Avalonia.Controls.ToolTip.VerticalOffsetProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> ToolTip_CustomPopupPlacementCallback => Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/> property defined in <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Int32> ToolTip_ShowDelay => Avalonia.Controls.ToolTip.ShowDelayProperty;
