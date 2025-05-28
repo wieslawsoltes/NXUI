@@ -103,3 +103,26 @@ F#
 cd src/Generator
 dotnet run -- ../NXUI.FSharp/Generated -fsharp
 ```
+
+# dotnet run app.cs
+
+Using .NET 10 you can run GUI apps using scripts: https://devblogs.microsoft.com/dotnet/announcing-dotnet-run-app/#using-shebang-lines-for-shell-scripts
+
+App.cs
+```csharp
+#!/usr/local/share/dotnet/dotnet run
+#:package NXUI.Desktop@11.1.0.1
+NXUI.Desktop.NXUI.Run(
+    () => Window().Content(Label().Content("NXUI")), 
+    "NXUI", 
+    args, 
+    ThemeVariant.Dark,
+    ShutdownMode.OnLastWindowClose);
+```
+
+```bash
+chmod +x App.cs
+./App.cs
+```
+
+![image](https://github.com/user-attachments/assets/33f7f915-13a2-4c45-b9e3-ecd5dfdfd353)
