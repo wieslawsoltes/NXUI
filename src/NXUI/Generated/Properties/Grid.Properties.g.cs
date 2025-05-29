@@ -14,6 +14,16 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Boolean> Grid_ShowGridLines => Avalonia.Controls.Grid.ShowGridLinesProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Grid.RowSpacingProperty"/> property defined in <see cref="Avalonia.Controls.Grid"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> Grid_RowSpacing => Avalonia.Controls.Grid.RowSpacingProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Grid.ColumnSpacingProperty"/> property defined in <see cref="Avalonia.Controls.Grid"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> Grid_ColumnSpacing => Avalonia.Controls.Grid.ColumnSpacingProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Grid.ColumnProperty"/> property defined in <see cref="Avalonia.Controls.Grid"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Int32> Grid_Column => Avalonia.Controls.Grid.ColumnProperty;

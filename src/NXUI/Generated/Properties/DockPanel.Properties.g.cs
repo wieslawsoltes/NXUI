@@ -17,4 +17,14 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/> property defined in <see cref="Avalonia.Controls.DockPanel"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Boolean> DockPanel_LastChildFill => Avalonia.Controls.DockPanel.LastChildFillProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/> property defined in <see cref="Avalonia.Controls.DockPanel"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> DockPanel_HorizontalSpacing => Avalonia.Controls.DockPanel.HorizontalSpacingProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/> property defined in <see cref="Avalonia.Controls.DockPanel"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> DockPanel_VerticalSpacing => Avalonia.Controls.DockPanel.VerticalSpacingProperty;
 }

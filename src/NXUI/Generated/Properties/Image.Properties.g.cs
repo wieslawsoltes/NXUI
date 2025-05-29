@@ -14,6 +14,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<Avalonia.Media.IImage> Image_Source => Avalonia.Controls.Image.SourceProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property defined in <see cref="Avalonia.Controls.Image"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Media.Imaging.BitmapBlendingMode> Image_BlendMode => Avalonia.Controls.Image.BlendModeProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Image.StretchProperty"/> property defined in <see cref="Avalonia.Controls.Image"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Media.Stretch> Image_Stretch => Avalonia.Controls.Image.StretchProperty;

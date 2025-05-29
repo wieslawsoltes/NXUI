@@ -12,4 +12,7 @@
         <ProjectReference Include="..\..\src\NXUI.FSharp\NXUI.FSharp.csproj"/>
         <ProjectReference Include="..\..\src\NXUI\NXUI.csproj"/>
     </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="FSharp.Core" Version="9.0.300" />
+    </ItemGroup>
 </Project>

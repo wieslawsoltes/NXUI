@@ -1,10 +1,10 @@
 ﻿<Project>
   <PropertyGroup>
-    <VersionPrefix>11.2.0</VersionPrefix>
+    <VersionPrefix>11.3.0</VersionPrefix>
     <VersionSuffix></VersionSuffix>
     <Authors>Wiesław Šoltés</Authors>
     <Company>Wiesław Šoltés</Company>
-    <Copyright>Copyright © Wiesław Šoltés 2024</Copyright>
+    <Copyright>Copyright © Wiesław Šoltés 2025</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/wieslawsoltes/NXUI</PackageProjectUrl>
   </PropertyGroup>
@@ -13,9 +13,9 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <AvaloniaVersion>11.2.0</AvaloniaVersion>
-    <AvaloniaTreeDataGridVersion>11.0.10</AvaloniaTreeDataGridVersion>
-    <AvaloniaControlsItemsRepeaterVersion>11.1.4</AvaloniaControlsItemsRepeaterVersion>
-    <SystemReactiveVersion>6.0.0</SystemReactiveVersion>
+    <AvaloniaVersion>11.3.0</AvaloniaVersion>
+    <AvaloniaTreeDataGridVersion>11.1.1</AvaloniaTreeDataGridVersion>
+    <AvaloniaControlsItemsRepeaterVersion>11.1.5</AvaloniaControlsItemsRepeaterVersion>
+    <SystemReactiveVersion>6.0.1</SystemReactiveVersion>
   </PropertyGroup>
 </Project>

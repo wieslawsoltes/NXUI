@@ -22,4 +22,14 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<System.Int32> UniformGrid_FirstColumn => Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> UniformGrid_RowSpacing => Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> UniformGrid_ColumnSpacing => Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty;
 }

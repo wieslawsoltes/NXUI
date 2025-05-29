@@ -9,9 +9,24 @@ namespace NXUI;
 public static partial class Properties
 {
     /// <summary>
+    /// The <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> property defined in <see cref="Avalonia.Controls.WrapPanel"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> WrapPanel_ItemSpacing => Avalonia.Controls.WrapPanel.ItemSpacingProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> property defined in <see cref="Avalonia.Controls.WrapPanel"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Double> WrapPanel_LineSpacing => Avalonia.Controls.WrapPanel.LineSpacingProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> property defined in <see cref="Avalonia.Controls.WrapPanel"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Layout.Orientation> WrapPanel_Orientation => Avalonia.Controls.WrapPanel.OrientationProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> property defined in <see cref="Avalonia.Controls.WrapPanel"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.WrapPanelItemsAlignment> WrapPanel_ItemsAlignment => Avalonia.Controls.WrapPanel.ItemsAlignmentProperty;
 
     /// <summary>
     /// The <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/> property defined in <see cref="Avalonia.Controls.WrapPanel"/> class.

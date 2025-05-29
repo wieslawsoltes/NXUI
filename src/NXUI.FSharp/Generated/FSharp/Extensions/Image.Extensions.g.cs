@@ -104,6 +104,440 @@ public static partial class ImageExtensions
         return obj;
     }
 
+    // Avalonia.Controls.Image.BlendModeProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T blendMode<T>(this T obj, Avalonia.Media.Imaging.BitmapBlendingMode value) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Image.BlendModeProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T blendMode<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Image
+    {
+        var descriptor = Avalonia.Controls.Image.BlendModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Image.BlendModeProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T blendMode<T>(
+        this T obj,
+        IObservable<Avalonia.Media.Imaging.BitmapBlendingMode> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Image
+    {
+        var descriptor = Avalonia.Controls.Image.BlendModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Image.BlendModeProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindBlendMode(
+        this Avalonia.Controls.Image obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Image.BlendModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.Imaging.BitmapBlendingMode> ObserveBlendMode(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Image.BlendModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBlendMode<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<Avalonia.Media.Imaging.BitmapBlendingMode>> handler) where T : Avalonia.Controls.Image
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Image.BlendModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Unspecified"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeUnspecified<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Unspecified;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.SourceOver"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeSourceOver<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.SourceOver;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Source"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeSource<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Source;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Destination"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeDestination<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Destination;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.DestinationOver"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeDestinationOver<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.DestinationOver;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.SourceIn"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeSourceIn<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.SourceIn;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.DestinationIn"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeDestinationIn<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.DestinationIn;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.SourceOut"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeSourceOut<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.SourceOut;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.DestinationOut"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeDestinationOut<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.DestinationOut;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.SourceAtop"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeSourceAtop<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.SourceAtop;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.DestinationAtop"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeDestinationAtop<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.DestinationAtop;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Xor"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeXor<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Xor;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Plus"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModePlus<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Plus;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Screen"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeScreen<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Screen;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Overlay"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeOverlay<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Overlay;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Darken"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeDarken<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Darken;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Lighten"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeLighten<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Lighten;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.ColorDodge"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeColorDodge<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.ColorDodge;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.ColorBurn"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeColorBurn<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.ColorBurn;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.HardLight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeHardLight<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.HardLight;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.SoftLight"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeSoftLight<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.SoftLight;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Difference"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeDifference<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Difference;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Exclusion"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeExclusion<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Exclusion;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Multiply"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeMultiply<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Multiply;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Hue"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeHue<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Hue;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Saturation"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeSaturation<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Saturation;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Color"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeColor<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Color;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Luminosity"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T BlendModeLuminosity<T>(this T obj) where T : Avalonia.Controls.Image
+    {
+        obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Luminosity;
+        return obj;
+    }
+
     // Avalonia.Controls.Image.StretchProperty
 
     /// <summary>

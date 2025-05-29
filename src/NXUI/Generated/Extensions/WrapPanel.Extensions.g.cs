@@ -6,6 +6,202 @@ namespace NXUI.Extensions;
 /// </summary>
 public static partial class WrapPanelExtensions
 {
+    // Avalonia.Controls.WrapPanel.ItemSpacingProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ItemSpacing<T>(this T obj, System.Double value) where T : Avalonia.Controls.WrapPanel
+    {
+        obj[Avalonia.Controls.WrapPanel.ItemSpacingProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ItemSpacing<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
+    {
+        var descriptor = Avalonia.Controls.WrapPanel.ItemSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ItemSpacing<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
+    {
+        var descriptor = Avalonia.Controls.WrapPanel.ItemSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindItemSpacing(
+        this Avalonia.Controls.WrapPanel obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.WrapPanel.ItemSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveItemSpacing(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.WrapPanel.ItemSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemSpacing<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<System.Double>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.WrapPanel.ItemSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    // Avalonia.Controls.WrapPanel.LineSpacingProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LineSpacing<T>(this T obj, System.Double value) where T : Avalonia.Controls.WrapPanel
+    {
+        obj[Avalonia.Controls.WrapPanel.LineSpacingProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LineSpacing<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
+    {
+        var descriptor = Avalonia.Controls.WrapPanel.LineSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LineSpacing<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
+    {
+        var descriptor = Avalonia.Controls.WrapPanel.LineSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindLineSpacing(
+        this Avalonia.Controls.WrapPanel obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.WrapPanel.LineSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveLineSpacing(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.WrapPanel.LineSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLineSpacing<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<System.Double>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.WrapPanel.LineSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.WrapPanel.OrientationProperty
 
     /// <summary>
@@ -125,6 +321,140 @@ public static partial class WrapPanelExtensions
     public static T OrientationVertical<T>(this T obj) where T : Avalonia.Controls.WrapPanel
     {
         obj[Avalonia.Controls.WrapPanel.OrientationProperty] = Avalonia.Layout.Orientation.Vertical;
+        return obj;
+    }
+
+    // Avalonia.Controls.WrapPanel.ItemsAlignmentProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ItemsAlignment<T>(this T obj, Avalonia.Controls.WrapPanelItemsAlignment value) where T : Avalonia.Controls.WrapPanel
+    {
+        obj[Avalonia.Controls.WrapPanel.ItemsAlignmentProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ItemsAlignment<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
+    {
+        var descriptor = Avalonia.Controls.WrapPanel.ItemsAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ItemsAlignment<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.WrapPanelItemsAlignment> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.WrapPanel
+    {
+        var descriptor = Avalonia.Controls.WrapPanel.ItemsAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindItemsAlignment(
+        this Avalonia.Controls.WrapPanel obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.WrapPanel.ItemsAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.WrapPanelItemsAlignment> ObserveItemsAlignment(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemsAlignment<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<Avalonia.Controls.WrapPanelItemsAlignment>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.WrapPanelItemsAlignment.Start"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ItemsAlignmentStart<T>(this T obj) where T : Avalonia.Controls.WrapPanel
+    {
+        obj[Avalonia.Controls.WrapPanel.ItemsAlignmentProperty] = Avalonia.Controls.WrapPanelItemsAlignment.Start;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.WrapPanelItemsAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ItemsAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.WrapPanel
+    {
+        obj[Avalonia.Controls.WrapPanel.ItemsAlignmentProperty] = Avalonia.Controls.WrapPanelItemsAlignment.Center;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.WrapPanelItemsAlignment.End"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T ItemsAlignmentEnd<T>(this T obj) where T : Avalonia.Controls.WrapPanel
+    {
+        obj[Avalonia.Controls.WrapPanel.ItemsAlignmentProperty] = Avalonia.Controls.WrapPanelItemsAlignment.End;
         return obj;
     }
 

@@ -14,6 +14,11 @@ public static partial class Properties
     public static Avalonia.StyledProperty<System.Object> Flyout_Content => Avalonia.Controls.Flyout.ContentProperty;
 
     /// <summary>
+    /// The <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/> property defined in <see cref="Avalonia.Controls.Flyout"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.Templates.IDataTemplate> Flyout_ContentTemplate => Avalonia.Controls.Flyout.ContentTemplateProperty;
+
+    /// <summary>
     /// The <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/> property defined in <see cref="Avalonia.Controls.Flyout"/> class.
     /// </summary>
     public static Avalonia.StyledProperty<Avalonia.Styling.ControlTheme> Flyout_FlyoutPresenterTheme => Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty;

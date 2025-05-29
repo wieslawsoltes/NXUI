@@ -97,4 +97,14 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Boolean> Popup_TakesFocusFromNativeControl => Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<System.Boolean> Popup_ShouldUseOverlayLayer => Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.Primitives.Popup.IsUsingOverlayLayerProperty"/> property defined in <see cref="Avalonia.Controls.Primitives.Popup"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.Popup,System.Boolean> Popup_IsUsingOverlayLayer => Avalonia.Controls.Primitives.Popup.IsUsingOverlayLayerProperty;
 }

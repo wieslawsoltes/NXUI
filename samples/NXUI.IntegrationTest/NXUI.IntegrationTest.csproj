@@ -1,16 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
     <RootNamespace>NXUI.IntegrationTest</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview5" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="NXUI" Version="11.0.0-preview5" />
+    <PackageReference Include="NXUI.Desktop" Version="11.1.0.1" />
   </ItemGroup>
 </Project>

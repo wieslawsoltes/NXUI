@@ -78,6 +78,78 @@ public static partial class ImageSetters
         return keyFrame;
     }
 
+    // Avalonia.Controls.Image.BlendModeProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetImageBlendMode(this Style style, Avalonia.Media.Imaging.BitmapBlendingMode value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Image.BlendModeProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetImageBlendMode(this KeyFrame keyFrame, Avalonia.Media.Imaging.BitmapBlendingMode value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.BlendModeProperty, value));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetImageBlendMode(this Style style, IObservable<Avalonia.Media.Imaging.BitmapBlendingMode> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Image.BlendModeProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetImageBlendMode(this KeyFrame keyFrame, IObservable<Avalonia.Media.Imaging.BitmapBlendingMode> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.BlendModeProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetImageBlendMode(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Image.BlendModeProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetImageBlendMode(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.BlendModeProperty, binding));
+        return keyFrame;
+    }
+
     // Avalonia.Controls.Image.StretchProperty
 
     /// <summary>
