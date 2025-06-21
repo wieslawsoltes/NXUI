@@ -4,13 +4,12 @@ open Avalonia.Controls
 open Avalonia.Data
 open Avalonia.Styling
 open NXUI.Extensions
-open NXUI.FSharp.Extensions
 
 let buttons(counter: BehaviorSubject<int>) =
     
     let increment =
         Button()
-            .content("Increment")
+            .Content("Increment")
             .HorizontalAlignmentCenter()
             .OnClick(fun _ observable ->
                 observable |> Observable.add(fun _ -> counter.OnNext(counter.Value + 1))
@@ -18,7 +17,7 @@ let buttons(counter: BehaviorSubject<int>) =
 
     let reset =
         Button()
-            .content("Reset")
+            .Content("Reset")
             .HorizontalAlignmentCenter()
             .OnClick(fun _ observable ->
                 observable |> Observable.add(fun _ -> counter.OnNext 0)
@@ -26,7 +25,7 @@ let buttons(counter: BehaviorSubject<int>) =
     
     let decrement =
         Button()
-            .content("Decrement")
+            .Content("Decrement")
             .HorizontalAlignmentCenter()
             .OnClick(fun _ observable ->
                 observable |> Observable.add(fun _ -> counter.OnNext(counter.Value - 1))
@@ -44,9 +43,9 @@ let counter() =
     DockPanel()
         .HorizontalAlignmentCenter()
         .VerticalAlignmentCenter()
-        .children(
+        .Children(
             TextBlock()
-                .text(counterText, BindingMode.OneWay)
+                .Text(counterText |> _.ToBinding())
                 .DockTop(),
             decrement.DockBottom(),
             reset.DockBottom(),
@@ -55,11 +54,11 @@ let counter() =
 
 let Build () =
     Window()
-        .title("Hello NXUI From F#")
-        .height(400)
-        .width(400)
-        .fontFamily("Fira Code,Cascadia Code,Consolas,Monospace")
-        .content(counter())
+        .Title("Hello NXUI From F#")
+        .Height(400)
+        .Width(400)
+        .FontFamily("Fira Code,Cascadia Code,Consolas,Monospace")
+        .Content(counter())
 
 [<EntryPoint>]
 let main argv = 

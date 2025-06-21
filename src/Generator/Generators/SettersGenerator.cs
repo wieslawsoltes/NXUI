@@ -12,16 +12,16 @@ public class SettersGenerator
         ReflectoniaFactory = reflectoniaFactory;
         Log = log;
     }
-    
+
     private ReflectoniaFactory ReflectoniaFactory { get; }
 
     private IReflectoniaLog Log { get; }
 
-    public void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
+    public void Generate(string outputPath, List<Class> classes)
     {
         foreach (var c in classes)
         {
-            if (c.Properties.Length <= 0 )
+            if (c.Properties.Length <= 0)
             {
                 continue;
             }
@@ -32,14 +32,7 @@ public class SettersGenerator
 
             var fileHeaderBuilder = new StringBuilder(Templates.FileHeaderTemplate);
 
-            if (genFSharp)
-            {
-                fileHeaderBuilder.Replace("%Namespace%", ".FSharp");
-            }
-            else
-            {
-                fileHeaderBuilder.Replace("%Namespace%", "");
-            }
+            fileHeaderBuilder.Replace("%Namespace%", "");
 
             WriteLine(fileHeaderBuilder.ToString());
 
@@ -71,7 +64,7 @@ public class SettersGenerator
                 addedProperties.Add(p.Name);
 
                 // value
-                
+
                 var valueBuilder = new StringBuilder(Templates.PropertySettersValueTemplate);
 
                 valueBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));

@@ -20,26 +20,17 @@ public class MainGenerator
 
     private ReflectoniaFactory ReflectoniaFactory { get; }
 
-    public BuildersGenerator BuildersGenerator { get;  }
+    public BuildersGenerator BuildersGenerator { get; }
 
-    public PropertiesGenerator PropertiesGenerator { get;  }
+    public PropertiesGenerator PropertiesGenerator { get; }
 
-    public EventsGenerator EventsGenerator { get;  }
+    public EventsGenerator EventsGenerator { get; }
 
-    public ExtensionsGenerator ExtensionsGenerator { get;  }
+    public ExtensionsGenerator ExtensionsGenerator { get; }
 
-    public SettersGenerator SettersGenerator { get;  }
+    public SettersGenerator SettersGenerator { get; }
 
-    public void GenerateFSharpExtensions(string outputPath, List<Class> classes)
-    {
-        if (!Directory.Exists(outputPath))
-        {
-            Directory.CreateDirectory(outputPath);
-        }
-        ExtensionsGenerator.Generate(outputPath, classes, genFSharp: true);
-    }
-    
-    public void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter, bool genFSharp = false)
+    public void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
         var buildersPath = Path.Combine(outputPath, "Builders");
         var propertiesPath = Path.Combine(outputPath, "Properties");
@@ -48,19 +39,12 @@ public class MainGenerator
         var settersPath = Path.Combine(outputPath, "Setters");
 
         var classes = ReflectoniaFactory.CreateClasses(assemblyFilter, typeFilter);
-        
+
         if (classes is null)
         {
             return;
         }
 
-        if (genFSharp)
-        {
-            var fsharpExtensionsPath = Path.Combine(outputPath, "FSharp", "Extensions");
-            GenerateFSharpExtensions(fsharpExtensionsPath, classes);
-            return;
-        }
-        
         if (!Directory.Exists(buildersPath))
         {
             Directory.CreateDirectory(buildersPath);
