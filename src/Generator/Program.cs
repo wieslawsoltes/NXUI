@@ -5,7 +5,7 @@ using Reflectonia;
 
 if (args.Length > 2)
 {
-    Console.WriteLine("Usage: Generator <OutputPath> [-fsharp]");
+    Console.WriteLine("Usage: Generator <OutputPath>");
     return;
 }
 
@@ -27,7 +27,6 @@ var excludedClasses = new HashSet<string>
 
 var log = new ReflectoniaLog();
 var factory = new ReflectoniaFactory(log);
-var genFSharp = args is [_, "-fsharp"];
 
 void Generate()
     => new MainGenerator(factory, log).Generate(
@@ -48,8 +47,7 @@ void Generate()
             }
 
             return true;
-        },
-        genFSharp: genFSharp
+        }
     );
 
 AppBuilder.Configure<Application>()

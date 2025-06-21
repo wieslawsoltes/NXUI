@@ -12,12 +12,12 @@ public class ExtensionsGenerator
         ReflectoniaFactory = reflectoniaFactory;
         Log = log;
     }
-    
+
     private ReflectoniaFactory ReflectoniaFactory { get; }
 
     private IReflectoniaLog Log { get; }
 
-    public void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
+    public void Generate(string outputPath, List<Class> classes)
     {
         foreach (var c in classes)
         {
@@ -32,14 +32,7 @@ public class ExtensionsGenerator
 
             var fileHeaderBuilder = new StringBuilder(Templates.FileHeaderTemplate);
 
-            if (genFSharp)
-            {
-                fileHeaderBuilder.Replace("%Namespace%", ".FSharp");
-            }
-            else
-            {
-                fileHeaderBuilder.Replace("%Namespace%", "");
-            }
+            fileHeaderBuilder.Replace("%Namespace%", "");
 
             WriteLine(fileHeaderBuilder.ToString());
 
@@ -76,17 +69,7 @@ public class ExtensionsGenerator
                 var propertyBuilder = new StringBuilder(template);
 
                 propertyBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
-                if (genFSharp)
-                {
-                    // fsharp can't consume extension methods with the same name as properties
-                    // https://github.com/fsharp/fslang-suggestions/issues/1039
-                    var name = $"{Char.ToLower(p.Name[0])}{p.Name[1..]}";
-                    propertyBuilder.Replace("%MethodName%", name);
-                }
-                else
-                {
-                    propertyBuilder.Replace("%MethodName%", p.Name);
-                }
+                propertyBuilder.Replace("%MethodName%", p.Name);
                 propertyBuilder.Replace("%Name%", p.Name);
                 propertyBuilder.Replace("%OwnerType%", ReflectoniaFactory.ToString(p.OwnerType));
                 propertyBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));

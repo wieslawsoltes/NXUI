@@ -13,12 +13,12 @@ public class BuildersGenerator
         ReflectoniaFactory = reflectoniaFactory;
         Log = log;
     }
-    
+
     private ReflectoniaFactory ReflectoniaFactory { get; }
 
     private IReflectoniaLog Log { get; }
 
-    public void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
+    public void Generate(string outputPath, List<Class> classes)
     {
         for (var i = 0; i < classes.Count; i++)
         {
@@ -41,14 +41,7 @@ public class BuildersGenerator
 
             var fileHeaderBuilder = new StringBuilder(Templates.BuildersHeaderTemplate);
 
-            if (genFSharp)
-            {
-                fileHeaderBuilder.Replace("%Namespace%", ".FSharp");
-            }
-            else
-            {
-                fileHeaderBuilder.Replace("%Namespace%", "");
-            }
+            fileHeaderBuilder.Replace("%Namespace%", "");
 
             WriteLine(fileHeaderBuilder.ToString());
 
@@ -123,7 +116,7 @@ public class BuildersGenerator
                 sb.Append(", ");
             }
         }
-        
+
         for (var j = 0; j < parameters.Length; j++)
         {
             // TODO: Nullable annotations?

@@ -12,12 +12,12 @@ public class EventsGenerator
         ReflectoniaFactory = reflectoniaFactory;
         Log = log;
     }
-    
+
     private ReflectoniaFactory ReflectoniaFactory { get; }
 
     private IReflectoniaLog Log { get; }
 
-    public void Generate(string outputPath, List<Class> classes, bool genFSharp = false)
+    public void Generate(string outputPath, List<Class> classes)
     {
         foreach (var c in classes)
         {
@@ -34,14 +34,7 @@ public class EventsGenerator
 
             var fileHeaderBuilder = new StringBuilder(Templates.EventsHeaderTemplate);
 
-            if (genFSharp)
-            {
-                fileHeaderBuilder.Replace("%Namespace%", ".FSharp");
-            }
-            else
-            {
-                fileHeaderBuilder.Replace("%Namespace%", "");
-            }
+            fileHeaderBuilder.Replace("%Namespace%", "");
 
             WriteLine(fileHeaderBuilder.ToString());
 
@@ -65,7 +58,7 @@ public class EventsGenerator
                 eventBuilder.Replace("%EventType%", ReflectoniaFactory.ToString(e.EventType));
                 WriteLine(eventBuilder.ToString());
 
-                if (i  < events.Length - 1)
+                if (i < events.Length - 1)
                 {
                     WriteLine("");
                 }
