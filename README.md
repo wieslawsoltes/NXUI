@@ -162,3 +162,63 @@ AppBuilder.Configure<Application>()
 
 ![image](https://github.com/user-attachments/assets/6dfea182-9725-4904-a201-b9c48aea2915)
 
+## F# Support
+
+From F# 9.0 and above the compiler resolves [extension methods instead of instrinsic properties](https://github.com/dotnet/fsharp/pull/16032) so, there's no need for a separate F# package or any additional changes to your project files.
+
+Extension methods provided by the main package `NXUI`
+
+```fsharp
+open Avalonia
+open Avalonia.Controls
+
+open NXUI.Extensions
+open NXUI.Desktop
+open type NXUI.Builders
+
+let Build () =
+    let mutable count = 0
+    let mutable window = Unchecked.defaultof<Window>
+    let mutable button = Unchecked.defaultof<Button>
+    let mutable tb1 = Unchecked.defaultof<TextBox>
+
+    Window(window)
+        .Title("NXUI")
+        .Width(400)
+        .Height(300)
+        .Content(
+            StackPanel()
+                .Children(
+                    Button(button).Content("Welcome to Avalonia, please click me!"),
+                    TextBox(tb1).Text("NXUI"),
+                    TextBox().Text(window.BindTitle()),
+                    Label()
+                        .Content(
+                            button.ObserveOnClick()
+                            |> Observable.map (fun _ ->
+                                count <- count + 1
+                                count)
+                            |> Observable.map (fun x -> $"You clicked {x} times.")
+                            |> _.ToBinding()
+                        )
+                )
+        )
+        .Title(tb1.ObserveText())
+
+[<EntryPoint>]
+let Main argv = NXUI.Run(Build, "NXUI", argv)
+```
+
+> ### F# 8.0 Support
+>
+> The compiler feature is available in the .NET9 SDK and above so even if you target a lower dotnet version you don't need to change your project files.
+>
+> However, if you must to use the .NET8 SDK you only need to set the language version to preview
+> In your \*.fsproj project and you'll get the same benefits.
+>
+> ```xml
+> <PropertyGroup>
+>     <TargetFramework>net8.0</TargetFramework>
+>     <LangVersion>preview</LangVersion>
+> </PropertyGroup>
+> ```
