@@ -15,12 +15,6 @@ https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9
 <PackageReference Include="NXUI" Version="11.3.0" />
 ```
 
-or for F# support:
-
-```xml
-<PackageReference Include="NXUI.FSharp" Version="11.3.0" />
-```
-
 Additionally, depending on the application type:
 
 ### Desktop
