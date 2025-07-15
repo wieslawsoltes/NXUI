@@ -50,4 +50,50 @@ public static partial class TabItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<Avalonia.Controls.Dock>>> ObserveBindingTabStripPlacement(this Avalonia.Controls.TabItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TabItem.TabStripPlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TabItem OnBindingTabStripPlacement(this Avalonia.Controls.TabItem obj, Action<Avalonia.Controls.TabItem, IObservable<BindingValue<System.Nullable<Avalonia.Controls.Dock>>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TabItem.TabStripPlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTabStripPlacementChanged(this Avalonia.Controls.TabItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TabItem.TabStripPlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TabItem OnTabStripPlacementChanged(this Avalonia.Controls.TabItem obj, Action<Avalonia.Controls.TabItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TabItem.TabStripPlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
 }

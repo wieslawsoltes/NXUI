@@ -103,4 +103,52 @@ public static partial class PathExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Path.DataProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingData(this Avalonia.Controls.Shapes.Path obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Path.DataProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Path.DataProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingData<T>(this T obj, Action<Avalonia.Controls.Shapes.Path, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler) where T : Avalonia.Controls.Shapes.Path
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Path.DataProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Path.DataProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDataChanged(this Avalonia.Controls.Shapes.Path obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Path.DataProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Path.DataProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDataChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Path, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Path
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Path.DataProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

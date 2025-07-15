@@ -99,6 +99,52 @@ public static partial class GradientStopExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.GradientStop.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingOffset(this Avalonia.Media.GradientStop obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.GradientStop.OffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.GradientStop.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GradientStop OnBindingOffset(this Avalonia.Media.GradientStop obj, Action<Avalonia.Media.GradientStop, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.GradientStop.OffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.GradientStop.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOffsetChanged(this Avalonia.Media.GradientStop obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.GradientStop.OffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.GradientStop.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GradientStop OnOffsetChanged(this Avalonia.Media.GradientStop obj, Action<Avalonia.Media.GradientStop, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.GradientStop.OffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.GradientStop.ColorProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class GradientStopExtensions
     public static Avalonia.Media.GradientStop OnColor(this Avalonia.Media.GradientStop obj, Action<Avalonia.Media.GradientStop, IObservable<Avalonia.Media.Color>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GradientStop.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.GradientStop.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Color>> ObserveBindingColor(this Avalonia.Media.GradientStop obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.GradientStop.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.GradientStop.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GradientStop OnBindingColor(this Avalonia.Media.GradientStop obj, Action<Avalonia.Media.GradientStop, IObservable<BindingValue<Avalonia.Media.Color>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.GradientStop.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.GradientStop.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorChanged(this Avalonia.Media.GradientStop obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.GradientStop.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.GradientStop.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GradientStop OnColorChanged(this Avalonia.Media.GradientStop obj, Action<Avalonia.Media.GradientStop, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.GradientStop.ColorProperty);
         handler(obj, observable);
         return obj;
     }

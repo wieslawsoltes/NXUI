@@ -99,6 +99,52 @@ public static partial class Rotate3DTransformExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingAngleX(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.AngleXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnBindingAngleX(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.AngleXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAngleXChanged(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.AngleXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnAngleXChanged(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.AngleXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.Rotate3DTransform.AngleYProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class Rotate3DTransformExtensions
     public static Avalonia.Media.Rotate3DTransform OnAngleY(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Rotate3DTransform.AngleYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingAngleY(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.AngleYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnBindingAngleY(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.AngleYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAngleYChanged(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.AngleYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnAngleYChanged(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.AngleYProperty);
         handler(obj, observable);
         return obj;
     }
@@ -285,6 +377,52 @@ public static partial class Rotate3DTransformExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingAngleZ(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.AngleZProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnBindingAngleZ(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.AngleZProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAngleZChanged(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.AngleZProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnAngleZChanged(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.AngleZProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.Rotate3DTransform.CenterXProperty
 
     /// <summary>
@@ -374,6 +512,52 @@ public static partial class Rotate3DTransformExtensions
     public static Avalonia.Media.Rotate3DTransform OnCenterX(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Rotate3DTransform.CenterXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingCenterX(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.CenterXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnBindingCenterX(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.CenterXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCenterXChanged(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.CenterXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnCenterXChanged(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.CenterXProperty);
         handler(obj, observable);
         return obj;
     }
@@ -471,6 +655,52 @@ public static partial class Rotate3DTransformExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingCenterY(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.CenterYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnBindingCenterY(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.CenterYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCenterYChanged(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.CenterYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnCenterYChanged(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.CenterYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.Rotate3DTransform.CenterZProperty
 
     /// <summary>
@@ -564,6 +794,52 @@ public static partial class Rotate3DTransformExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingCenterZ(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.CenterZProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnBindingCenterZ(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.CenterZProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCenterZChanged(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.CenterZProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnCenterZChanged(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.CenterZProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.Rotate3DTransform.DepthProperty
 
     /// <summary>
@@ -653,6 +929,52 @@ public static partial class Rotate3DTransformExtensions
     public static Avalonia.Media.Rotate3DTransform OnDepth(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Rotate3DTransform.DepthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingDepth(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.DepthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnBindingDepth(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Rotate3DTransform.DepthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDepthChanged(this Avalonia.Media.Rotate3DTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.DepthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Rotate3DTransform OnDepthChanged(this Avalonia.Media.Rotate3DTransform obj, Action<Avalonia.Media.Rotate3DTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Rotate3DTransform.DepthProperty);
         handler(obj, observable);
         return obj;
     }

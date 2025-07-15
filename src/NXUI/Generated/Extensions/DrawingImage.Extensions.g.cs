@@ -103,4 +103,52 @@ public static partial class DrawingImageExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Drawing>> ObserveBindingDrawing(this Avalonia.Media.DrawingImage obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DrawingImage.DrawingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDrawing<T>(this T obj, Action<Avalonia.Media.DrawingImage, IObservable<BindingValue<Avalonia.Media.Drawing>>> handler) where T : Avalonia.Media.DrawingImage
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DrawingImage.DrawingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDrawingChanged(this Avalonia.Media.DrawingImage obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DrawingImage.DrawingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDrawingChanged<T>(this T obj, Action<Avalonia.Media.DrawingImage, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.DrawingImage
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DrawingImage.DrawingProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

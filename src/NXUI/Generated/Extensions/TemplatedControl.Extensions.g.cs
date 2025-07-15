@@ -104,6 +104,54 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TemplatedControlExtensions
     public static T OnBackgroundSizing<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.BackgroundSizing>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.BackgroundSizing>> ObserveBindingBackgroundSizing(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackgroundSizing<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.BackgroundSizing>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundSizingChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundSizingChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty);
         handler(obj, observable);
         return obj;
     }
@@ -336,6 +432,54 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBorderBrush(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBorderBrush<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBorderBrushChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBorderBrushChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty
 
     /// <summary>
@@ -430,6 +574,54 @@ public static partial class TemplatedControlExtensions
     public static T OnBorderThickness<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Thickness>> ObserveBindingBorderThickness(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBorderThickness<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Thickness>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBorderThicknessChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBorderThicknessChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty);
         handler(obj, observable);
         return obj;
     }
@@ -532,6 +724,54 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.CornerRadius>> ObserveBindingCornerRadius(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCornerRadius<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.CornerRadius>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCornerRadiusChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCornerRadiusChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty
 
     /// <summary>
@@ -626,6 +866,54 @@ public static partial class TemplatedControlExtensions
     public static T OnFontFamily<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.FontFamily>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontFamily>> ObserveBindingFontFamily(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontFamily<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.FontFamily>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontFamilyChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontFamilyChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty);
         handler(obj, observable);
         return obj;
     }
@@ -728,6 +1016,54 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontFeatureCollection>> ObserveBindingFontFeatures(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontFeatures<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.FontFeatureCollection>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontFeaturesChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontFeaturesChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty
 
     /// <summary>
@@ -826,6 +1162,54 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingFontSize(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontSize<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontSizeChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontSizeChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty
 
     /// <summary>
@@ -920,6 +1304,54 @@ public static partial class TemplatedControlExtensions
     public static T OnFontStyle<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.FontStyle>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontStyle>> ObserveBindingFontStyle(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontStyle<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.FontStyle>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontStyleChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStyleChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1054,6 +1486,54 @@ public static partial class TemplatedControlExtensions
     public static T OnFontWeight<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.FontWeight>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontWeight>> ObserveBindingFontWeight(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontWeight<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.FontWeight>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontWeightChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontWeightChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1373,6 +1853,54 @@ public static partial class TemplatedControlExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontStretch>> ObserveBindingFontStretch(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontStretch<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.FontStretch>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontStretchChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStretchChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1578,6 +2106,54 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingForeground(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveForegroundChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnForegroundChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty
 
     /// <summary>
@@ -1672,6 +2248,54 @@ public static partial class TemplatedControlExtensions
     public static T OnPadding<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Thickness>> ObserveBindingPadding(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPadding<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Thickness>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaddingChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaddingChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1774,6 +2398,54 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IControlTemplate>> ObserveBindingTemplate(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTemplate<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Controls.Templates.IControlTemplate>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTemplateChanged(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTemplateChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty
 
     /// <summary>
@@ -1868,6 +2540,54 @@ public static partial class TemplatedControlExtensions
     public static T OnIsTemplateFocusTarget<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsTemplateFocusTarget(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsTemplateFocusTarget<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsTemplateFocusTargetChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsTemplateFocusTargetChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
         handler(obj, observable);
         return obj;
     }

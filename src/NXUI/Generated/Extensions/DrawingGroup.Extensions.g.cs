@@ -99,6 +99,52 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingOpacity(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DrawingGroup.OpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnBindingOpacity(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DrawingGroup.OpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOpacityChanged(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DrawingGroup.OpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnOpacityChanged(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DrawingGroup.OpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.DrawingGroup.TransformProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class DrawingGroupExtensions
     public static Avalonia.Media.DrawingGroup OnTransform(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Transform>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.TransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Transform>> ObserveBindingTransform(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DrawingGroup.TransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnBindingTransform(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<Avalonia.Media.Transform>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DrawingGroup.TransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTransformChanged(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DrawingGroup.TransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnTransformChanged(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DrawingGroup.TransformProperty);
         handler(obj, observable);
         return obj;
     }
@@ -285,6 +377,52 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingClipGeometry(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnBindingClipGeometry(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveClipGeometryChanged(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnClipGeometryChanged(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.DrawingGroup.OpacityMaskProperty
 
     /// <summary>
@@ -378,6 +516,52 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingOpacityMask(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnBindingOpacityMask(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOpacityMaskChanged(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnOpacityMaskChanged(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.DrawingGroup.ChildrenProperty
 
     /// <summary>
@@ -467,6 +651,52 @@ public static partial class DrawingGroupExtensions
     public static Avalonia.Media.DrawingGroup OnChildren(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.DrawingCollection>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.ChildrenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.DrawingCollection>> ObserveBindingChildren(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DrawingGroup.ChildrenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnBindingChildren(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<Avalonia.Media.DrawingCollection>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DrawingGroup.ChildrenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveChildrenChanged(this Avalonia.Media.DrawingGroup obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DrawingGroup.ChildrenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingGroup OnChildrenChanged(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DrawingGroup.ChildrenProperty);
         handler(obj, observable);
         return obj;
     }

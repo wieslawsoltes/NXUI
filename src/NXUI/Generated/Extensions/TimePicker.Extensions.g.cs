@@ -104,6 +104,54 @@ public static partial class TimePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMinuteIncrement(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TimePicker.MinuteIncrementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinuteIncrement<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TimePicker.MinuteIncrementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinuteIncrementChanged(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TimePicker.MinuteIncrementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinuteIncrementChanged<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TimePicker.MinuteIncrementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TimePicker.SecondIncrementProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TimePickerExtensions
     public static T OnSecondIncrement<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<System.Int32>> handler) where T : Avalonia.Controls.TimePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.TimePicker.SecondIncrementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingSecondIncrement(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TimePicker.SecondIncrementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSecondIncrement<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TimePicker.SecondIncrementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSecondIncrementChanged(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TimePicker.SecondIncrementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSecondIncrementChanged<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TimePicker.SecondIncrementProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class TimePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingClockIdentifier(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TimePicker.ClockIdentifierProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingClockIdentifier<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TimePicker.ClockIdentifierProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveClockIdentifierChanged(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TimePicker.ClockIdentifierProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnClockIdentifierChanged<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TimePicker.ClockIdentifierProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TimePicker.UseSecondsProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class TimePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingUseSeconds(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TimePicker.UseSecondsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingUseSeconds<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TimePicker.UseSecondsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveUseSecondsChanged(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TimePicker.UseSecondsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnUseSecondsChanged<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TimePicker.UseSecondsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TimePicker.SelectedTimeProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class TimePickerExtensions
     public static T OnSelectedTime<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<System.Nullable<System.TimeSpan>>> handler) where T : Avalonia.Controls.TimePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.TimePicker.SelectedTimeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<System.TimeSpan>>> ObserveBindingSelectedTime(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TimePicker.SelectedTimeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedTime<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<BindingValue<System.Nullable<System.TimeSpan>>>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TimePicker.SelectedTimeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedTimeChanged(this Avalonia.Controls.TimePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TimePicker.SelectedTimeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedTimeChanged<T>(this T obj, Action<Avalonia.Controls.TimePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TimePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TimePicker.SelectedTimeProperty);
         handler(obj, observable);
         return obj;
     }

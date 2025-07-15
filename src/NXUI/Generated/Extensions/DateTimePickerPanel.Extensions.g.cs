@@ -104,6 +104,54 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingItemHeight(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemHeight<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemHeightChanged(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemHeightChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class DateTimePickerPanelExtensions
     public static T OnPanelType<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<Avalonia.Controls.Primitives.DateTimePickerPanelType>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.DateTimePickerPanelType>> ObserveBindingPanelType(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPanelType<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<BindingValue<Avalonia.Controls.Primitives.DateTimePickerPanelType>>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePanelTypeChanged(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPanelTypeChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -384,6 +480,54 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingItemFormat(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemFormat<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemFormatChanged(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemFormatChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty
 
     /// <summary>
@@ -478,6 +622,54 @@ public static partial class DateTimePickerPanelExtensions
     public static T OnShouldLoop<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShouldLoop(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShouldLoop<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShouldLoopChanged(this Avalonia.Controls.Primitives.DateTimePickerPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShouldLoopChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.DateTimePickerPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty);
         handler(obj, observable);
         return obj;
     }

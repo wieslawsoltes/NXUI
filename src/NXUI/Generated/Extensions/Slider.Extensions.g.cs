@@ -105,6 +105,54 @@ public static partial class SliderExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Slider.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.Orientation>> ObserveBindingOrientation(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Slider.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Slider.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<BindingValue<Avalonia.Layout.Orientation>>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Slider.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Slider.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Slider.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -226,6 +274,54 @@ public static partial class SliderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsDirectionReversed(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Slider.IsDirectionReversedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsDirectionReversed<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Slider.IsDirectionReversedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsDirectionReversedChanged(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.IsDirectionReversedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsDirectionReversedChanged<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.IsDirectionReversedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Slider.IsSnapToTickEnabledProperty
 
     /// <summary>
@@ -320,6 +416,54 @@ public static partial class SliderExtensions
     public static T OnIsSnapToTickEnabled<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsSnapToTickEnabled(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsSnapToTickEnabled<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsSnapToTickEnabledChanged(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsSnapToTickEnabledChanged<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
         handler(obj, observable);
         return obj;
     }
@@ -422,6 +566,54 @@ public static partial class SliderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingTickFrequency(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Slider.TickFrequencyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTickFrequency<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Slider.TickFrequencyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTickFrequencyChanged(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.TickFrequencyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTickFrequencyChanged<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.TickFrequencyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Slider.TickPlacementProperty
 
     /// <summary>
@@ -516,6 +708,54 @@ public static partial class SliderExtensions
     public static T OnTickPlacement<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<Avalonia.Controls.TickPlacement>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Slider.TickPlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.TickPlacement>> ObserveBindingTickPlacement(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Slider.TickPlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTickPlacement<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<BindingValue<Avalonia.Controls.TickPlacement>>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Slider.TickPlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTickPlacementChanged(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.TickPlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTickPlacementChanged<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.TickPlacementProperty);
         handler(obj, observable);
         return obj;
     }
@@ -662,6 +902,54 @@ public static partial class SliderExtensions
     public static T OnTicks<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Slider.TicksProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Slider.TicksProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>> ObserveBindingTicks(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Slider.TicksProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Slider.TicksProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTicks<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Slider.TicksProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Slider.TicksProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTicksChanged(this Avalonia.Controls.Slider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.TicksProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Slider.TicksProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTicksChanged<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Slider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Slider.TicksProperty);
         handler(obj, observable);
         return obj;
     }

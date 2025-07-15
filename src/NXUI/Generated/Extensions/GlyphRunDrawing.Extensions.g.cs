@@ -99,6 +99,52 @@ public static partial class GlyphRunDrawingExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingForeground(this Avalonia.Media.GlyphRunDrawing obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GlyphRunDrawing OnBindingForeground(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveForegroundChanged(this Avalonia.Media.GlyphRunDrawing obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GlyphRunDrawing OnForegroundChanged(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.GlyphRunDrawing.GlyphRunProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class GlyphRunDrawingExtensions
     public static Avalonia.Media.GlyphRunDrawing OnGlyphRun(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<Avalonia.Media.GlyphRun>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.GlyphRun>> ObserveBindingGlyphRun(this Avalonia.Media.GlyphRunDrawing obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GlyphRunDrawing OnBindingGlyphRun(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<BindingValue<Avalonia.Media.GlyphRun>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveGlyphRunChanged(this Avalonia.Media.GlyphRunDrawing obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GlyphRunDrawing OnGlyphRunChanged(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
         handler(obj, observable);
         return obj;
     }

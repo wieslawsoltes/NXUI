@@ -105,6 +105,54 @@ public static partial class WindowExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.SizeToContent>> ObserveBindingSizeToContent(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.SizeToContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSizeToContent<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Controls.SizeToContent>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.SizeToContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSizeToContentChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.SizeToContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSizeToContentChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.SizeToContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.Manual"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -250,6 +298,54 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingExtendClientAreaToDecorationsHint(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingExtendClientAreaToDecorationsHint<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveExtendClientAreaToDecorationsHintChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnExtendClientAreaToDecorationsHintChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty
 
     /// <summary>
@@ -344,6 +440,54 @@ public static partial class WindowExtensions
     public static T OnExtendClientAreaChromeHints<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Platform.ExtendClientAreaChromeHints>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Platform.ExtendClientAreaChromeHints>> ObserveBindingExtendClientAreaChromeHints(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingExtendClientAreaChromeHints<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Platform.ExtendClientAreaChromeHints>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveExtendClientAreaChromeHintsChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnExtendClientAreaChromeHintsChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -506,6 +650,54 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingExtendClientAreaTitleBarHeightHint(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingExtendClientAreaTitleBarHeightHint<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveExtendClientAreaTitleBarHeightHintChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnExtendClientAreaTitleBarHeightHintChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty
 
     /// <summary>
@@ -546,6 +738,52 @@ public static partial class WindowExtensions
     public static Avalonia.Controls.Window OnIsExtendedIntoWindowDecorations(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsExtendedIntoWindowDecorations(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Window OnBindingIsExtendedIntoWindowDecorations(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsExtendedIntoWindowDecorationsChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Window OnIsExtendedIntoWindowDecorationsChanged(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -594,6 +832,52 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.WindowDecorationMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Thickness>> ObserveBindingWindowDecorationMargin(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.WindowDecorationMarginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.WindowDecorationMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Window OnBindingWindowDecorationMargin(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Thickness>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.WindowDecorationMarginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.WindowDecorationMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWindowDecorationMarginChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.WindowDecorationMarginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.WindowDecorationMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Window OnWindowDecorationMarginChanged(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.WindowDecorationMarginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Window.OffScreenMarginProperty
 
     /// <summary>
@@ -634,6 +918,52 @@ public static partial class WindowExtensions
     public static Avalonia.Controls.Window OnOffScreenMargin(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Thickness>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.OffScreenMarginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.OffScreenMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Thickness>> ObserveBindingOffScreenMargin(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.OffScreenMarginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.OffScreenMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Window OnBindingOffScreenMargin(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Thickness>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.OffScreenMarginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.OffScreenMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOffScreenMarginChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.OffScreenMarginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.OffScreenMarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Window OnOffScreenMarginChanged(this Avalonia.Controls.Window obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.OffScreenMarginProperty);
         handler(obj, observable);
         return obj;
     }
@@ -732,6 +1062,54 @@ public static partial class WindowExtensions
     public static T OnSystemDecorations<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.SystemDecorations>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.SystemDecorations>> ObserveBindingSystemDecorations(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSystemDecorations<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Controls.SystemDecorations>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSystemDecorationsChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSystemDecorationsChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.SystemDecorationsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -870,6 +1248,54 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowActivated(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.ShowActivatedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowActivated<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.ShowActivatedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowActivatedChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ShowActivatedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowActivatedChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ShowActivatedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Window.ShowInTaskbarProperty
 
     /// <summary>
@@ -968,6 +1394,54 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowInTaskbar(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.ShowInTaskbarProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowInTaskbar<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.ShowInTaskbarProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowInTaskbarChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ShowInTaskbarProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowInTaskbarChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ShowInTaskbarProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Window.ClosingBehaviorProperty
 
     /// <summary>
@@ -1062,6 +1536,54 @@ public static partial class WindowExtensions
     public static T OnClosingBehavior<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.WindowClosingBehavior>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.ClosingBehaviorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.WindowClosingBehavior>> ObserveBindingClosingBehavior(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.ClosingBehaviorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingClosingBehavior<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Controls.WindowClosingBehavior>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.ClosingBehaviorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveClosingBehaviorChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ClosingBehaviorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnClosingBehaviorChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.ClosingBehaviorProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1184,6 +1706,54 @@ public static partial class WindowExtensions
     public static T OnWindowState<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.WindowState>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.WindowStateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.WindowState>> ObserveBindingWindowState(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.WindowStateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingWindowState<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Controls.WindowState>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.WindowStateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWindowStateChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.WindowStateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnWindowStateChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.WindowStateProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1334,6 +1904,54 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.TitleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingTitle(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.TitleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.TitleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTitle<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.TitleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.TitleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTitleChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.TitleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.TitleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTitleChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.TitleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Window.IconProperty
 
     /// <summary>
@@ -1432,6 +2050,54 @@ public static partial class WindowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.WindowIcon>> ObserveBindingIcon(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.IconProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIcon<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Controls.WindowIcon>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.IconProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIconChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.IconProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIconChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.IconProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Window.WindowStartupLocationProperty
 
     /// <summary>
@@ -1526,6 +2192,54 @@ public static partial class WindowExtensions
     public static T OnWindowStartupLocation<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.WindowStartupLocation>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.WindowStartupLocationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.WindowStartupLocation>> ObserveBindingWindowStartupLocation(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.WindowStartupLocationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingWindowStartupLocation<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Controls.WindowStartupLocation>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.WindowStartupLocationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWindowStartupLocationChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.WindowStartupLocationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnWindowStartupLocationChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.WindowStartupLocationProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1660,6 +2374,54 @@ public static partial class WindowExtensions
     public static T OnCanResize<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.CanResizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanResize(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Window.CanResizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCanResize<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Window.CanResizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanResizeChanged(this Avalonia.Controls.Window obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Window.CanResizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanResizeChanged<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Window
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Window.CanResizeProperty);
         handler(obj, observable);
         return obj;
     }

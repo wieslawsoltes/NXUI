@@ -104,6 +104,54 @@ public static partial class StackLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingDisableVirtualization(this Avalonia.Layout.StackLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.StackLayout.DisableVirtualizationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDisableVirtualization<T>(this T obj, Action<Avalonia.Layout.StackLayout, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Layout.StackLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.StackLayout.DisableVirtualizationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDisableVirtualizationChanged(this Avalonia.Layout.StackLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.StackLayout.DisableVirtualizationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDisableVirtualizationChanged<T>(this T obj, Action<Avalonia.Layout.StackLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.StackLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.StackLayout.DisableVirtualizationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.StackLayout.OrientationProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class StackLayoutExtensions
     public static T OnOrientation<T>(this T obj, Action<Avalonia.Layout.StackLayout, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.StackLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.StackLayout.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.Orientation>> ObserveBindingOrientation(this Avalonia.Layout.StackLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.StackLayout.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Layout.StackLayout, IObservable<BindingValue<Avalonia.Layout.Orientation>>> handler) where T : Avalonia.Layout.StackLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.StackLayout.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Layout.StackLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.StackLayout.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Layout.StackLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.StackLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.StackLayout.OrientationProperty);
         handler(obj, observable);
         return obj;
     }
@@ -320,6 +416,54 @@ public static partial class StackLayoutExtensions
     public static T OnSpacing<T>(this T obj, Action<Avalonia.Layout.StackLayout, IObservable<System.Double>> handler) where T : Avalonia.Layout.StackLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.StackLayout.SpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingSpacing(this Avalonia.Layout.StackLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.StackLayout.SpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSpacing<T>(this T obj, Action<Avalonia.Layout.StackLayout, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.StackLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.StackLayout.SpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSpacingChanged(this Avalonia.Layout.StackLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.StackLayout.SpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSpacingChanged<T>(this T obj, Action<Avalonia.Layout.StackLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.StackLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.StackLayout.SpacingProperty);
         handler(obj, observable);
         return obj;
     }

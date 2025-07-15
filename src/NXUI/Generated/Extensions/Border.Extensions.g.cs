@@ -104,6 +104,54 @@ public static partial class BorderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Border.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Border.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundChanged(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Border.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundChanged<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Border.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Border.BackgroundSizingProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class BorderExtensions
     public static T OnBackgroundSizing<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.BackgroundSizing>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BackgroundSizingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.BackgroundSizing>> ObserveBindingBackgroundSizing(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Border.BackgroundSizingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackgroundSizing<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<BindingValue<Avalonia.Media.BackgroundSizing>>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Border.BackgroundSizingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundSizingChanged(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Border.BackgroundSizingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundSizingChanged<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Border.BackgroundSizingProperty);
         handler(obj, observable);
         return obj;
     }
@@ -336,6 +432,54 @@ public static partial class BorderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBorderBrush(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Border.BorderBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBorderBrush<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Border.BorderBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBorderBrushChanged(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Border.BorderBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBorderBrushChanged<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Border.BorderBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Border.BorderThicknessProperty
 
     /// <summary>
@@ -430,6 +574,54 @@ public static partial class BorderExtensions
     public static T OnBorderThickness<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BorderThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Thickness>> ObserveBindingBorderThickness(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Border.BorderThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBorderThickness<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<BindingValue<Avalonia.Thickness>>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Border.BorderThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBorderThicknessChanged(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Border.BorderThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBorderThicknessChanged<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Border.BorderThicknessProperty);
         handler(obj, observable);
         return obj;
     }
@@ -532,6 +724,54 @@ public static partial class BorderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.CornerRadius>> ObserveBindingCornerRadius(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Border.CornerRadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCornerRadius<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<BindingValue<Avalonia.CornerRadius>>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Border.CornerRadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCornerRadiusChanged(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Border.CornerRadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCornerRadiusChanged<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Border.CornerRadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Border.BoxShadowProperty
 
     /// <summary>
@@ -626,6 +866,54 @@ public static partial class BorderExtensions
     public static T OnBoxShadow<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.BoxShadows>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BoxShadowProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.BoxShadows>> ObserveBindingBoxShadow(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Border.BoxShadowProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBoxShadow<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<BindingValue<Avalonia.Media.BoxShadows>>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Border.BoxShadowProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBoxShadowChanged(this Avalonia.Controls.Border obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Border.BoxShadowProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBoxShadowChanged<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Border
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Border.BoxShadowProperty);
         handler(obj, observable);
         return obj;
     }

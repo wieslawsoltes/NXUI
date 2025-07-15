@@ -99,6 +99,52 @@ public static partial class ImageDrawingExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IImage>> ObserveBindingImageSource(this Avalonia.Media.ImageDrawing obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ImageDrawing OnBindingImageSource(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<BindingValue<Avalonia.Media.IImage>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveImageSourceChanged(this Avalonia.Media.ImageDrawing obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ImageDrawing OnImageSourceChanged(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.ImageDrawing.RectProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class ImageDrawingExtensions
     public static Avalonia.Media.ImageDrawing OnRect(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<Avalonia.Rect>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ImageDrawing.RectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Rect>> ObserveBindingRect(this Avalonia.Media.ImageDrawing obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ImageDrawing.RectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ImageDrawing OnBindingRect(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<BindingValue<Avalonia.Rect>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ImageDrawing.RectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRectChanged(this Avalonia.Media.ImageDrawing obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ImageDrawing.RectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ImageDrawing.RectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ImageDrawing OnRectChanged(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ImageDrawing.RectProperty);
         handler(obj, observable);
         return obj;
     }

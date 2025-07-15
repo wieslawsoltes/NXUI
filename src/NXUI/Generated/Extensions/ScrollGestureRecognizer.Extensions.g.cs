@@ -104,6 +104,54 @@ public static partial class ScrollGestureRecognizerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanHorizontallyScroll(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCanHorizontallyScroll<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanHorizontallyScrollChanged(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanHorizontallyScrollChanged<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ScrollGestureRecognizerExtensions
     public static T OnCanVerticallyScroll<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<System.Boolean>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
         var observable = obj.GetObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanVerticallyScroll(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCanVerticallyScroll<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanVerticallyScrollChanged(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanVerticallyScrollChanged<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class ScrollGestureRecognizerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsScrollInertiaEnabled(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsScrollInertiaEnabled<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsScrollInertiaEnabledChanged(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsScrollInertiaEnabledChanged<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class ScrollGestureRecognizerExtensions
     public static T OnScrollStartDistance<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<System.Int32>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
     {
         var observable = obj.GetObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingScrollStartDistance(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingScrollStartDistance<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveScrollStartDistanceChanged(this Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnScrollStartDistanceChanged<T>(this T obj, Action<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty);
         handler(obj, observable);
         return obj;
     }

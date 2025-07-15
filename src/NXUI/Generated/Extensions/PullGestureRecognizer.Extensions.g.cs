@@ -105,6 +105,54 @@ public static partial class PullGestureRecognizerExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Input.PullDirection>> ObserveBindingPullDirection(this Avalonia.Input.PullGestureRecognizer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPullDirection<T>(this T obj, Action<Avalonia.Input.PullGestureRecognizer, IObservable<BindingValue<Avalonia.Input.PullDirection>>> handler) where T : Avalonia.Input.PullGestureRecognizer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePullDirectionChanged(this Avalonia.Input.PullGestureRecognizer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPullDirectionChanged<T>(this T obj, Action<Avalonia.Input.PullGestureRecognizer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.PullGestureRecognizer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.TopToBottom"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>

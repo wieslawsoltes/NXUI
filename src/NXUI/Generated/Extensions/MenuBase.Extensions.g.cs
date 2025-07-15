@@ -50,6 +50,52 @@ public static partial class MenuBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuBase.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsOpen(this Avalonia.Controls.MenuBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuBase.IsOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuBase.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.MenuBase OnBindingIsOpen(this Avalonia.Controls.MenuBase obj, Action<Avalonia.Controls.MenuBase, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuBase.IsOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuBase.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsOpenChanged(this Avalonia.Controls.MenuBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuBase.IsOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuBase.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.MenuBase OnIsOpenChanged(this Avalonia.Controls.MenuBase obj, Action<Avalonia.Controls.MenuBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuBase.IsOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MenuBase.OpenedEvent
 
     /// <summary>

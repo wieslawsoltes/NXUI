@@ -105,6 +105,54 @@ public static partial class TabControlExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Dock>> ObserveBindingTabStripPlacement(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TabControl.TabStripPlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTabStripPlacement<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Controls.Dock>>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.TabStripPlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTabStripPlacementChanged(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.TabStripPlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTabStripPlacementChanged<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.TabStripPlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Left"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -246,6 +294,54 @@ public static partial class TabControlExtensions
     public static T OnHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.TabControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>> ObserveBindingHorizontalContentAlignment(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalContentAlignmentChanged(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalContentAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -397,6 +493,54 @@ public static partial class TabControlExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>> ObserveBindingVerticalContentAlignment(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalContentAlignmentChanged(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalContentAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -542,6 +686,54 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TabControl.ContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.ContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentTemplateChanged(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.ContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContentTemplateChanged<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TabControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.ContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TabControl.SelectedContentProperty
 
     /// <summary>
@@ -586,6 +778,52 @@ public static partial class TabControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedContent(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TabControl OnBindingSelectedContent(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<System.Object>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedContentChanged(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TabControl OnSelectedContentChanged(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TabControl.SelectedContentTemplateProperty
 
     /// <summary>
@@ -626,6 +864,52 @@ public static partial class TabControlExtensions
     public static Avalonia.Controls.TabControl OnSelectedContentTemplate(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingSelectedContentTemplate(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TabControl OnBindingSelectedContentTemplate(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedContentTemplateChanged(this Avalonia.Controls.TabControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TabControl OnSelectedContentTemplateChanged(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
         handler(obj, observable);
         return obj;
     }

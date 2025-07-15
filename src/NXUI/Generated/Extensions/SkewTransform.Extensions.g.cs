@@ -99,6 +99,52 @@ public static partial class SkewTransformExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingAngleX(this Avalonia.Media.SkewTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.SkewTransform.AngleXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.SkewTransform OnBindingAngleX(this Avalonia.Media.SkewTransform obj, Action<Avalonia.Media.SkewTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.SkewTransform.AngleXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAngleXChanged(this Avalonia.Media.SkewTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.SkewTransform.AngleXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.SkewTransform OnAngleXChanged(this Avalonia.Media.SkewTransform obj, Action<Avalonia.Media.SkewTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.SkewTransform.AngleXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.SkewTransform.AngleYProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class SkewTransformExtensions
     public static Avalonia.Media.SkewTransform OnAngleY(this Avalonia.Media.SkewTransform obj, Action<Avalonia.Media.SkewTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.SkewTransform.AngleYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingAngleY(this Avalonia.Media.SkewTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.SkewTransform.AngleYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.SkewTransform OnBindingAngleY(this Avalonia.Media.SkewTransform obj, Action<Avalonia.Media.SkewTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.SkewTransform.AngleYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAngleYChanged(this Avalonia.Media.SkewTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.SkewTransform.AngleYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.SkewTransform OnAngleYChanged(this Avalonia.Media.SkewTransform obj, Action<Avalonia.Media.SkewTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.SkewTransform.AngleYProperty);
         handler(obj, observable);
         return obj;
     }

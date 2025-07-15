@@ -104,6 +104,54 @@ public static partial class ButtonSpinnerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAllowSpin(this Avalonia.Controls.ButtonSpinner obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ButtonSpinner.AllowSpinProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAllowSpin<T>(this T obj, Action<Avalonia.Controls.ButtonSpinner, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ButtonSpinner
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ButtonSpinner.AllowSpinProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAllowSpinChanged(this Avalonia.Controls.ButtonSpinner obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ButtonSpinner.AllowSpinProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAllowSpinChanged<T>(this T obj, Action<Avalonia.Controls.ButtonSpinner, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ButtonSpinner
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ButtonSpinner.AllowSpinProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class ButtonSpinnerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowButtonSpinner(this Avalonia.Controls.ButtonSpinner obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowButtonSpinner<T>(this T obj, Action<Avalonia.Controls.ButtonSpinner, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ButtonSpinner
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowButtonSpinnerChanged(this Avalonia.Controls.ButtonSpinner obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowButtonSpinnerChanged<T>(this T obj, Action<Avalonia.Controls.ButtonSpinner, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ButtonSpinner
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class ButtonSpinnerExtensions
     public static T OnButtonSpinnerLocation<T>(this T obj, Action<Avalonia.Controls.ButtonSpinner, IObservable<Avalonia.Controls.Location>> handler) where T : Avalonia.Controls.ButtonSpinner
     {
         var observable = obj.GetObservable(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Location>> ObserveBindingButtonSpinnerLocation(this Avalonia.Controls.ButtonSpinner obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingButtonSpinnerLocation<T>(this T obj, Action<Avalonia.Controls.ButtonSpinner, IObservable<BindingValue<Avalonia.Controls.Location>>> handler) where T : Avalonia.Controls.ButtonSpinner
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveButtonSpinnerLocationChanged(this Avalonia.Controls.ButtonSpinner obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnButtonSpinnerLocationChanged<T>(this T obj, Action<Avalonia.Controls.ButtonSpinner, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ButtonSpinner
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty);
         handler(obj, observable);
         return obj;
     }

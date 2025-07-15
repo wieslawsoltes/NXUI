@@ -99,6 +99,52 @@ public static partial class LinearGradientBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.RelativePoint>> ObserveBindingStartPoint(this Avalonia.Media.LinearGradientBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.LinearGradientBrush.StartPointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.LinearGradientBrush OnBindingStartPoint(this Avalonia.Media.LinearGradientBrush obj, Action<Avalonia.Media.LinearGradientBrush, IObservable<BindingValue<Avalonia.RelativePoint>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.LinearGradientBrush.StartPointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStartPointChanged(this Avalonia.Media.LinearGradientBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.LinearGradientBrush.StartPointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.LinearGradientBrush OnStartPointChanged(this Avalonia.Media.LinearGradientBrush obj, Action<Avalonia.Media.LinearGradientBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.LinearGradientBrush.StartPointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.LinearGradientBrush.EndPointProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class LinearGradientBrushExtensions
     public static Avalonia.Media.LinearGradientBrush OnEndPoint(this Avalonia.Media.LinearGradientBrush obj, Action<Avalonia.Media.LinearGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.LinearGradientBrush.EndPointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.RelativePoint>> ObserveBindingEndPoint(this Avalonia.Media.LinearGradientBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.LinearGradientBrush.EndPointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.LinearGradientBrush OnBindingEndPoint(this Avalonia.Media.LinearGradientBrush obj, Action<Avalonia.Media.LinearGradientBrush, IObservable<BindingValue<Avalonia.RelativePoint>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.LinearGradientBrush.EndPointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveEndPointChanged(this Avalonia.Media.LinearGradientBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.LinearGradientBrush.EndPointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.LinearGradientBrush OnEndPointChanged(this Avalonia.Media.LinearGradientBrush obj, Action<Avalonia.Media.LinearGradientBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.LinearGradientBrush.EndPointProperty);
         handler(obj, observable);
         return obj;
     }

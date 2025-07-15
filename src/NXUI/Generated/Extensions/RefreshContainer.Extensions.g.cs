@@ -104,6 +104,54 @@ public static partial class RefreshContainerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.RefreshVisualizer>> ObserveBindingVisualizer(this Avalonia.Controls.RefreshContainer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RefreshContainer.VisualizerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVisualizer<T>(this T obj, Action<Avalonia.Controls.RefreshContainer, IObservable<BindingValue<Avalonia.Controls.RefreshVisualizer>>> handler) where T : Avalonia.Controls.RefreshContainer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RefreshContainer.VisualizerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVisualizerChanged(this Avalonia.Controls.RefreshContainer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RefreshContainer.VisualizerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVisualizerChanged<T>(this T obj, Action<Avalonia.Controls.RefreshContainer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.RefreshContainer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RefreshContainer.VisualizerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RefreshContainer.PullDirectionProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class RefreshContainerExtensions
     public static T OnPullDirection<T>(this T obj, Action<Avalonia.Controls.RefreshContainer, IObservable<Avalonia.Input.PullDirection>> handler) where T : Avalonia.Controls.RefreshContainer
     {
         var observable = obj.GetObservable(Avalonia.Controls.RefreshContainer.PullDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Input.PullDirection>> ObserveBindingPullDirection(this Avalonia.Controls.RefreshContainer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RefreshContainer.PullDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPullDirection<T>(this T obj, Action<Avalonia.Controls.RefreshContainer, IObservable<BindingValue<Avalonia.Input.PullDirection>>> handler) where T : Avalonia.Controls.RefreshContainer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RefreshContainer.PullDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePullDirectionChanged(this Avalonia.Controls.RefreshContainer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RefreshContainer.PullDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPullDirectionChanged<T>(this T obj, Action<Avalonia.Controls.RefreshContainer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.RefreshContainer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RefreshContainer.PullDirectionProperty);
         handler(obj, observable);
         return obj;
     }

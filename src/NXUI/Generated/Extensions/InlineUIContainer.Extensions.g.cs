@@ -103,4 +103,52 @@ public static partial class InlineUIContainerExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingChild(this Avalonia.Controls.Documents.InlineUIContainer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingChild<T>(this T obj, Action<Avalonia.Controls.Documents.InlineUIContainer, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.Documents.InlineUIContainer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveChildChanged(this Avalonia.Controls.Documents.InlineUIContainer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnChildChanged<T>(this T obj, Action<Avalonia.Controls.Documents.InlineUIContainer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.InlineUIContainer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

@@ -104,6 +104,54 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAutoScrollToSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAutoScrollToSelectedItem<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAutoScrollToSelectedItemChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAutoScrollToSelectedItemChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class SelectingItemsControlExtensions
     public static T OnSelectedIndex<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingSelectedIndex(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedIndex<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedIndexChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedIndexChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedItem<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedItemChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedItemChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class SelectingItemsControlExtensions
     public static T OnSelectedValue<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedValue(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedValue<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedValueChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedValueChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
         handler(obj, observable);
         return obj;
     }
@@ -496,6 +688,54 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Data.IBinding>> ObserveBindingSelectedValueBinding(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedValueBinding<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<Avalonia.Data.IBinding>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedValueBindingChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedValueBindingChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty
 
     /// <summary>
@@ -590,6 +830,54 @@ public static partial class SelectingItemsControlExtensions
     public static T OnIsSelected<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsSelected(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsSelected<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsSelectedChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsSelectedChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty);
         handler(obj, observable);
         return obj;
     }
@@ -692,6 +980,54 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsTextSearchEnabled(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsTextSearchEnabled<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsTextSearchEnabledChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsTextSearchEnabledChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty
 
     /// <summary>
@@ -786,6 +1122,54 @@ public static partial class SelectingItemsControlExtensions
     public static T OnWrapSelection<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingWrapSelection(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingWrapSelection<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWrapSelectionChanged(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnWrapSelectionChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
         handler(obj, observable);
         return obj;
     }

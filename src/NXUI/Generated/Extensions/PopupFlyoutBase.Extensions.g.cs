@@ -105,6 +105,54 @@ public static partial class PopupFlyoutBaseExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.PlacementMode>> ObserveBindingPlacement(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacement<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<BindingValue<Avalonia.Controls.PlacementMode>>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementChanged(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Pointer"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -394,6 +442,54 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingHorizontalOffset(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalOffset<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalOffsetChanged(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalOffsetChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty
 
     /// <summary>
@@ -492,6 +588,54 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingVerticalOffset(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalOffset<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalOffsetChanged(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalOffsetChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty
 
     /// <summary>
@@ -586,6 +730,54 @@ public static partial class PopupFlyoutBaseExtensions
     public static T OnPlacementAnchor<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>> ObserveBindingPlacementAnchor(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacementAnchor<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementAnchorChanged(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementAnchorChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty);
         handler(obj, observable);
         return obj;
     }
@@ -833,6 +1025,54 @@ public static partial class PopupFlyoutBaseExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity>> ObserveBindingPlacementGravity(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacementGravity<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity>>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementGravityChanged(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementGravityChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1038,6 +1278,54 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> ObserveBindingCustomPopupPlacementCallback(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCustomPopupPlacementCallbackChanged(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCustomPopupPlacementCallbackChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty
 
     /// <summary>
@@ -1132,6 +1420,54 @@ public static partial class PopupFlyoutBaseExtensions
     public static T OnShowMode<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<Avalonia.Controls.FlyoutShowMode>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.FlyoutShowMode>> ObserveBindingShowMode(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowMode<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<BindingValue<Avalonia.Controls.FlyoutShowMode>>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowModeChanged(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowModeChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1270,6 +1606,54 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingOverlayDismissEventPassThrough(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOverlayDismissEventPassThrough<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOverlayDismissEventPassThroughChanged(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOverlayDismissEventPassThroughChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty
 
     /// <summary>
@@ -1368,6 +1752,54 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Input.IInputElement>> ObserveBindingOverlayInputPassThroughElement(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOverlayInputPassThroughElement<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<BindingValue<Avalonia.Input.IInputElement>>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOverlayInputPassThroughElementChanged(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOverlayInputPassThroughElementChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty
 
     /// <summary>
@@ -1462,6 +1894,54 @@ public static partial class PopupFlyoutBaseExtensions
     public static T OnPlacementConstraintAdjustment<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment>> ObserveBindingPlacementConstraintAdjustment(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacementConstraintAdjustment<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment>>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementConstraintAdjustmentChanged(this Avalonia.Controls.Primitives.PopupFlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementConstraintAdjustmentChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.PopupFlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.PopupFlyoutBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty);
         handler(obj, observable);
         return obj;
     }

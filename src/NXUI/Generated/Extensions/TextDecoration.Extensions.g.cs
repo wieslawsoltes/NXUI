@@ -105,6 +105,54 @@ public static partial class TextDecorationExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextDecorationLocation>> ObserveBindingLocation(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TextDecoration.LocationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLocation<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<Avalonia.Media.TextDecorationLocation>>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.LocationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLocationChanged(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.LocationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLocationChanged<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.LocationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Underline"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -250,6 +298,54 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingStroke(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStroke<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeChanged(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeChanged<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty
 
     /// <summary>
@@ -344,6 +440,54 @@ public static partial class TextDecorationExtensions
     public static T OnStrokeThicknessUnit<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<Avalonia.Media.TextDecorationUnit>> handler) where T : Avalonia.Media.TextDecoration
     {
         var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextDecorationUnit>> ObserveBindingStrokeThicknessUnit(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeThicknessUnit<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<Avalonia.Media.TextDecorationUnit>>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeThicknessUnitChanged(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeThicknessUnitChanged<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty);
         handler(obj, observable);
         return obj;
     }
@@ -482,6 +626,54 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>> ObserveBindingStrokeDashArray(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeDashArray<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeDashArrayChanged(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeDashArrayChanged<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.TextDecoration.StrokeDashOffsetProperty
 
     /// <summary>
@@ -576,6 +768,54 @@ public static partial class TextDecorationExtensions
     public static T OnStrokeDashOffset<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<System.Double>> handler) where T : Avalonia.Media.TextDecoration
     {
         var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingStrokeDashOffset(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeDashOffset<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeDashOffsetChanged(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeDashOffsetChanged<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty);
         handler(obj, observable);
         return obj;
     }
@@ -678,6 +918,54 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingStrokeThickness(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeThickness<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeThicknessChanged(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeThicknessChanged<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.TextDecoration.StrokeLineCapProperty
 
     /// <summary>
@@ -772,6 +1060,54 @@ public static partial class TextDecorationExtensions
     public static T OnStrokeLineCap<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<Avalonia.Media.PenLineCap>> handler) where T : Avalonia.Media.TextDecoration
     {
         var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeLineCapProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.PenLineCap>> ObserveBindingStrokeLineCap(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeLineCapProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeLineCap<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<Avalonia.Media.PenLineCap>>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeLineCapProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeLineCapChanged(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeLineCapProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeLineCapChanged<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeLineCapProperty);
         handler(obj, observable);
         return obj;
     }
@@ -910,6 +1246,54 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingStrokeOffset(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeOffset<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeOffsetChanged(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeOffsetChanged<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty
 
     /// <summary>
@@ -1004,6 +1388,54 @@ public static partial class TextDecorationExtensions
     public static T OnStrokeOffsetUnit<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<Avalonia.Media.TextDecorationUnit>> handler) where T : Avalonia.Media.TextDecoration
     {
         var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextDecorationUnit>> ObserveBindingStrokeOffsetUnit(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeOffsetUnit<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<Avalonia.Media.TextDecorationUnit>>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeOffsetUnitChanged(this Avalonia.Media.TextDecoration obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeOffsetUnitChanged<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TextDecoration
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty);
         handler(obj, observable);
         return obj;
     }

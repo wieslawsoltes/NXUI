@@ -104,6 +104,54 @@ public static partial class RowDefinitionExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RowDefinition.MaxHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMaxHeight(this Avalonia.Controls.RowDefinition obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RowDefinition.MaxHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RowDefinition.MaxHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxHeight<T>(this T obj, Action<Avalonia.Controls.RowDefinition, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.RowDefinition
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RowDefinition.MaxHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RowDefinition.MaxHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxHeightChanged(this Avalonia.Controls.RowDefinition obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RowDefinition.MaxHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RowDefinition.MaxHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxHeightChanged<T>(this T obj, Action<Avalonia.Controls.RowDefinition, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.RowDefinition
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RowDefinition.MaxHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RowDefinition.MinHeightProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class RowDefinitionExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RowDefinition.MinHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinHeight(this Avalonia.Controls.RowDefinition obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RowDefinition.MinHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RowDefinition.MinHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinHeight<T>(this T obj, Action<Avalonia.Controls.RowDefinition, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.RowDefinition
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RowDefinition.MinHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RowDefinition.MinHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinHeightChanged(this Avalonia.Controls.RowDefinition obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RowDefinition.MinHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RowDefinition.MinHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinHeightChanged<T>(this T obj, Action<Avalonia.Controls.RowDefinition, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.RowDefinition
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RowDefinition.MinHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RowDefinition.HeightProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class RowDefinitionExtensions
     public static T OnHeight<T>(this T obj, Action<Avalonia.Controls.RowDefinition, IObservable<Avalonia.Controls.GridLength>> handler) where T : Avalonia.Controls.RowDefinition
     {
         var observable = obj.GetObservable(Avalonia.Controls.RowDefinition.HeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.GridLength>> ObserveBindingHeight(this Avalonia.Controls.RowDefinition obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RowDefinition.HeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHeight<T>(this T obj, Action<Avalonia.Controls.RowDefinition, IObservable<BindingValue<Avalonia.Controls.GridLength>>> handler) where T : Avalonia.Controls.RowDefinition
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RowDefinition.HeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHeightChanged(this Avalonia.Controls.RowDefinition obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RowDefinition.HeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHeightChanged<T>(this T obj, Action<Avalonia.Controls.RowDefinition, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.RowDefinition
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RowDefinition.HeightProperty);
         handler(obj, observable);
         return obj;
     }

@@ -104,6 +104,54 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> ObserveBindingFocusAdorner(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Control.FocusAdornerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFocusAdorner<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Control.FocusAdornerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFocusAdornerChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Control.FocusAdornerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFocusAdornerChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Control.FocusAdornerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Control.TagProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ControlExtensions
     public static T OnTag<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Object>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.TagProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Control.TagProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingTag(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Control.TagProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Control.TagProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTag<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Control.TagProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Control.TagProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTagChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Control.TagProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Control.TagProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTagChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Control.TagProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class ControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ContextMenu>> ObserveBindingContextMenu(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Control.ContextMenuProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContextMenu<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.ContextMenu>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Control.ContextMenuProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContextMenuChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Control.ContextMenuProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContextMenuChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Control.ContextMenuProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Control.ContextFlyoutProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class ControlExtensions
     public static T OnContextFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>> ObserveBindingContextFlyout(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContextFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContextFlyoutChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContextFlyoutChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
         handler(obj, observable);
         return obj;
     }

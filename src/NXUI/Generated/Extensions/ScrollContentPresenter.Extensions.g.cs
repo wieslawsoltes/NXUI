@@ -104,6 +104,54 @@ public static partial class ScrollContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanHorizontallyScroll(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCanHorizontallyScroll<T>(this T obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanHorizontallyScrollChanged(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanHorizontallyScrollChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class ScrollContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanVerticallyScroll(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCanVerticallyScroll<T>(this T obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanVerticallyScrollChanged(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanVerticallyScrollChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty
 
     /// <summary>
@@ -242,6 +338,52 @@ public static partial class ScrollContentPresenterExtensions
     public static Avalonia.Controls.Presenters.ScrollContentPresenter OnExtent(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Size>> ObserveBindingExtent(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Presenters.ScrollContentPresenter OnBindingExtent(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<BindingValue<Avalonia.Size>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveExtentChanged(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Presenters.ScrollContentPresenter OnExtentChanged(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -344,6 +486,54 @@ public static partial class ScrollContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Vector>> ObserveBindingOffset(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOffset<T>(this T obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<BindingValue<Avalonia.Vector>>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOffsetChanged(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOffsetChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty
 
     /// <summary>
@@ -384,6 +574,52 @@ public static partial class ScrollContentPresenterExtensions
     public static Avalonia.Controls.Presenters.ScrollContentPresenter OnViewport(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Size>> ObserveBindingViewport(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Presenters.ScrollContentPresenter OnBindingViewport(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<BindingValue<Avalonia.Size>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveViewportChanged(this Avalonia.Controls.Presenters.ScrollContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Presenters.ScrollContentPresenter OnViewportChanged(this Avalonia.Controls.Presenters.ScrollContentPresenter obj, Action<Avalonia.Controls.Presenters.ScrollContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty);
         handler(obj, observable);
         return obj;
     }

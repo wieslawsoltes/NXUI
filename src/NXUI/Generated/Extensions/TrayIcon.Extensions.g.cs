@@ -104,6 +104,54 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Windows.Input.ICommand>> ObserveBindingCommand(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.CommandProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<System.Windows.Input.ICommand>>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.CommandProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCommandChanged(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.CommandProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCommandChanged<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.CommandProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TrayIcon.CommandParameterProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TrayIconExtensions
     public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.Object>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.CommandParameterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingCommandParameter(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.CommandParameterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.CommandParameterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCommandParameterChanged(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.CommandParameterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCommandParameterChanged<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.CommandParameterProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.TrayIcons>> ObserveBindingIcons(this Avalonia.Application obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.IconsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIcons<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<Avalonia.Controls.TrayIcons>>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.IconsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIconsChanged(this Avalonia.Application obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.IconsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIconsChanged<T>(this T obj, Action<Avalonia.Application, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.IconsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TrayIcon.MenuProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class TrayIconExtensions
     public static T OnMenu<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<Avalonia.Controls.NativeMenu>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.MenuProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.NativeMenu>> ObserveBindingMenu(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.MenuProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMenu<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<Avalonia.Controls.NativeMenu>>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.MenuProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMenuChanged(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.MenuProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMenuChanged<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.MenuProperty);
         handler(obj, observable);
         return obj;
     }
@@ -496,6 +688,54 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.WindowIcon>> ObserveBindingIcon(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.IconProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIcon<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<Avalonia.Controls.WindowIcon>>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.IconProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIconChanged(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.IconProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIconChanged<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.IconProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TrayIcon.ToolTipTextProperty
 
     /// <summary>
@@ -594,6 +834,54 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingToolTipText(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingToolTipText<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveToolTipTextChanged(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnToolTipTextChanged<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TrayIcon.IsVisibleProperty
 
     /// <summary>
@@ -688,6 +976,54 @@ public static partial class TrayIconExtensions
     public static T OnIsVisible<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.IsVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsVisible(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.IsVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsVisible<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.IsVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsVisibleChanged(this Avalonia.Controls.TrayIcon obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.IsVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsVisibleChanged<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TrayIcon
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TrayIcon.IsVisibleProperty);
         handler(obj, observable);
         return obj;
     }

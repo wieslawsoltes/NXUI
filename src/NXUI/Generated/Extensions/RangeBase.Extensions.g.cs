@@ -104,6 +104,54 @@ public static partial class RangeBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinimum(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.RangeBase.MinimumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinimum<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.RangeBase.MinimumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinimumChanged(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.RangeBase.MinimumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinimumChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.RangeBase.MinimumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.RangeBase.MaximumProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class RangeBaseExtensions
     public static T OnMaximum<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.MaximumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMaximum(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.RangeBase.MaximumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaximum<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.RangeBase.MaximumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaximumChanged(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.RangeBase.MaximumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaximumChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.RangeBase.MaximumProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class RangeBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingValue(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.RangeBase.ValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingValue<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.RangeBase.ValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveValueChanged(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.RangeBase.ValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnValueChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.RangeBase.ValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class RangeBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingSmallChange(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSmallChange<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSmallChangeChanged(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSmallChangeChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class RangeBaseExtensions
     public static T OnLargeChange<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.RangeBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLargeChange(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLargeChange<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLargeChangeChanged(this Avalonia.Controls.Primitives.RangeBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLargeChangeChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.RangeBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.RangeBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty);
         handler(obj, observable);
         return obj;
     }

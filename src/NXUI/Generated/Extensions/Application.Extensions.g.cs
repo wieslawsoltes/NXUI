@@ -104,6 +104,54 @@ public static partial class ApplicationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Application.DataContextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingDataContext(this Avalonia.Application obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Application.DataContextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Application.DataContextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDataContext<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Application.DataContextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Application.DataContextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDataContextChanged(this Avalonia.Application obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Application.DataContextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Application.DataContextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDataContextChanged<T>(this T obj, Action<Avalonia.Application, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Application.DataContextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Application.ActualThemeVariantProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ApplicationExtensions
     public static T OnActualThemeVariant<T>(this T obj, Action<Avalonia.Application, IObservable<Avalonia.Styling.ThemeVariant>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetObservable(Avalonia.Application.ActualThemeVariantProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Styling.ThemeVariant>> ObserveBindingActualThemeVariant(this Avalonia.Application obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Application.ActualThemeVariantProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingActualThemeVariant<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<Avalonia.Styling.ThemeVariant>>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Application.ActualThemeVariantProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveActualThemeVariantChanged(this Avalonia.Application obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Application.ActualThemeVariantProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Application.ActualThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnActualThemeVariantChanged<T>(this T obj, Action<Avalonia.Application, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Application.ActualThemeVariantProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class ApplicationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Styling.ThemeVariant>> ObserveBindingRequestedThemeVariant(this Avalonia.Application obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Application.RequestedThemeVariantProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRequestedThemeVariant<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<Avalonia.Styling.ThemeVariant>>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Application.RequestedThemeVariantProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRequestedThemeVariantChanged(this Avalonia.Application obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Application.RequestedThemeVariantProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Application.RequestedThemeVariantProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRequestedThemeVariantChanged<T>(this T obj, Action<Avalonia.Application, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Application.RequestedThemeVariantProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Application.NameProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class ApplicationExtensions
     public static T OnName<T>(this T obj, Action<Avalonia.Application, IObservable<System.String>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetObservable(Avalonia.Application.NameProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Application.NameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingName(this Avalonia.Application obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Application.NameProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Application.NameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingName<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Application.NameProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Application.NameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveNameChanged(this Avalonia.Application obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Application.NameProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Application.NameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnNameChanged<T>(this T obj, Action<Avalonia.Application, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Application
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Application.NameProperty);
         handler(obj, observable);
         return obj;
     }

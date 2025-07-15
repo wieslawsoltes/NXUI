@@ -98,4 +98,50 @@ public static partial class BlurEffectExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingRadius(this Avalonia.Media.BlurEffect obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.BlurEffect.RadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.BlurEffect OnBindingRadius(this Avalonia.Media.BlurEffect obj, Action<Avalonia.Media.BlurEffect, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.BlurEffect.RadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRadiusChanged(this Avalonia.Media.BlurEffect obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.BlurEffect.RadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.BlurEffect OnRadiusChanged(this Avalonia.Media.BlurEffect obj, Action<Avalonia.Media.BlurEffect, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.BlurEffect.RadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

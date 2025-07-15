@@ -98,4 +98,50 @@ public static partial class DataGridDetailsPresenterExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingContentHeight(this Avalonia.Controls.Primitives.DataGridDetailsPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.DataGridDetailsPresenter OnBindingContentHeight(this Avalonia.Controls.Primitives.DataGridDetailsPresenter obj, Action<Avalonia.Controls.Primitives.DataGridDetailsPresenter, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentHeightChanged(this Avalonia.Controls.Primitives.DataGridDetailsPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.DataGridDetailsPresenter OnContentHeightChanged(this Avalonia.Controls.Primitives.DataGridDetailsPresenter obj, Action<Avalonia.Controls.Primitives.DataGridDetailsPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

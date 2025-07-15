@@ -104,6 +104,54 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingFill(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.FillProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFill<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.FillProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFillChanged(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.FillProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFillChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.FillProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Shapes.Shape.StretchProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ShapeExtensions
     public static T OnStretch<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Stretch>> ObserveBindingStretch(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStretch<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Media.Stretch>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStretchChanged(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStretchChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StretchProperty);
         handler(obj, observable);
         return obj;
     }
@@ -348,6 +444,54 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingStroke(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStroke<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeChanged(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty
 
     /// <summary>
@@ -442,6 +586,54 @@ public static partial class ShapeExtensions
     public static T OnStrokeDashArray<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>> ObserveBindingStrokeDashArray(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeDashArray<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeDashArrayChanged(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeDashArrayChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
         handler(obj, observable);
         return obj;
     }
@@ -544,6 +736,54 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingStrokeDashOffset(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeDashOffset<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeDashOffsetChanged(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeDashOffsetChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty
 
     /// <summary>
@@ -642,6 +882,54 @@ public static partial class ShapeExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingStrokeThickness(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeThickness<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeThicknessChanged(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeThicknessChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty
 
     /// <summary>
@@ -736,6 +1024,54 @@ public static partial class ShapeExtensions
     public static T OnStrokeLineCap<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.PenLineCap>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.PenLineCap>> ObserveBindingStrokeLineCap(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeLineCap<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Media.PenLineCap>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeLineCapChanged(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeLineCapChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty);
         handler(obj, observable);
         return obj;
     }
@@ -870,6 +1206,54 @@ public static partial class ShapeExtensions
     public static T OnStrokeJoin<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.PenLineJoin>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.PenLineJoin>> ObserveBindingStrokeJoin(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStrokeJoin<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Media.PenLineJoin>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStrokeJoinChanged(this Avalonia.Controls.Shapes.Shape obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStrokeJoinChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Shape
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty);
         handler(obj, observable);
         return obj;
     }

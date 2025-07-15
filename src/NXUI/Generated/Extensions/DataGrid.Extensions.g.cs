@@ -104,6 +104,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanUserReorderColumns(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCanUserReorderColumns<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanUserReorderColumnsChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanUserReorderColumnsChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class DataGridExtensions
     public static T OnCanUserResizeColumns<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanUserResizeColumns(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCanUserResizeColumns<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanUserResizeColumnsChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanUserResizeColumnsChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.CanUserSortColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanUserSortColumns(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.CanUserSortColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.CanUserSortColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCanUserSortColumns<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.CanUserSortColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.CanUserSortColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanUserSortColumnsChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.CanUserSortColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.CanUserSortColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCanUserSortColumnsChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.CanUserSortColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class DataGridExtensions
     public static T OnColumnHeaderHeight<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<System.Double>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingColumnHeaderHeight(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColumnHeaderHeight<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColumnHeaderHeightChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColumnHeaderHeightChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty);
         handler(obj, observable);
         return obj;
     }
@@ -496,6 +688,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.ColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.DataGridLength>> ObserveBindingColumnWidth(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.ColumnWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.ColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColumnWidth<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Controls.DataGridLength>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.ColumnWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.ColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColumnWidthChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.ColumnWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.ColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColumnWidthChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.ColumnWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.RowThemeProperty
 
     /// <summary>
@@ -590,6 +830,54 @@ public static partial class DataGridExtensions
     public static T OnRowTheme<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<Avalonia.Styling.ControlTheme>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.RowThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.RowThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingRowTheme(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.RowThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRowTheme<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.RowThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRowThemeChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.RowThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRowThemeChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowThemeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -692,6 +980,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.CellThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingCellTheme(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.CellThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.CellThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCellTheme<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.CellThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.CellThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCellThemeChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.CellThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.CellThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCellThemeChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.CellThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty
 
     /// <summary>
@@ -786,6 +1122,54 @@ public static partial class DataGridExtensions
     public static T OnColumnHeaderTheme<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<Avalonia.Styling.ControlTheme>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingColumnHeaderTheme(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColumnHeaderTheme<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColumnHeaderThemeChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColumnHeaderThemeChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -888,6 +1272,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.RowGroupThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingRowGroupTheme(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowGroupThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.RowGroupThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRowGroupTheme<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowGroupThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.RowGroupThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRowGroupThemeChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowGroupThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.RowGroupThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRowGroupThemeChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowGroupThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.FrozenColumnCountProperty
 
     /// <summary>
@@ -986,6 +1418,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.FrozenColumnCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingFrozenColumnCount(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.FrozenColumnCountProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.FrozenColumnCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFrozenColumnCount<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.FrozenColumnCountProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.FrozenColumnCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFrozenColumnCountChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.FrozenColumnCountProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.FrozenColumnCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFrozenColumnCountChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.FrozenColumnCountProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.GridLinesVisibilityProperty
 
     /// <summary>
@@ -1080,6 +1560,54 @@ public static partial class DataGridExtensions
     public static T OnGridLinesVisibility<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<Avalonia.Controls.DataGridGridLinesVisibility>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.GridLinesVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.DataGridGridLinesVisibility>> ObserveBindingGridLinesVisibility(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.GridLinesVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingGridLinesVisibility<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Controls.DataGridGridLinesVisibility>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.GridLinesVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveGridLinesVisibilityChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.GridLinesVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnGridLinesVisibilityChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.GridLinesVisibilityProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1231,6 +1759,54 @@ public static partial class DataGridExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.DataGridHeadersVisibility>> ObserveBindingHeadersVisibility(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.HeadersVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHeadersVisibility<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Controls.DataGridHeadersVisibility>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.HeadersVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHeadersVisibilityChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.HeadersVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHeadersVisibilityChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.HeadersVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> property value to <see cref="Avalonia.Controls.DataGridHeadersVisibility.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1376,6 +1952,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingHorizontalGridLinesBrush(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalGridLinesBrush<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalGridLinesBrushChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalGridLinesBrushChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty
 
     /// <summary>
@@ -1470,6 +2094,54 @@ public static partial class DataGridExtensions
     public static T OnHorizontalScrollBarVisibility<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.ScrollBarVisibility>> ObserveBindingHorizontalScrollBarVisibility(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalScrollBarVisibility<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Controls.Primitives.ScrollBarVisibility>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalScrollBarVisibilityChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalScrollBarVisibilityChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1620,6 +2292,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.IsReadOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsReadOnly(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.IsReadOnlyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.IsReadOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsReadOnly<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.IsReadOnlyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.IsReadOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsReadOnlyChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.IsReadOnlyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.IsReadOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsReadOnlyChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.IsReadOnlyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty
 
     /// <summary>
@@ -1718,6 +2438,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAreRowGroupHeadersFrozen(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAreRowGroupHeadersFrozen<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAreRowGroupHeadersFrozenChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAreRowGroupHeadersFrozenChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.IsValidProperty
 
     /// <summary>
@@ -1758,6 +2526,52 @@ public static partial class DataGridExtensions
     public static Avalonia.Controls.DataGrid OnIsValid(this Avalonia.Controls.DataGrid obj, Action<Avalonia.Controls.DataGrid, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.IsValidProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.IsValidProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsValid(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.IsValidProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.IsValidProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.DataGrid OnBindingIsValid(this Avalonia.Controls.DataGrid obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.IsValidProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.IsValidProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsValidChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.IsValidProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.IsValidProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.DataGrid OnIsValidChanged(this Avalonia.Controls.DataGrid obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.IsValidProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1860,6 +2674,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.MaxColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMaxColumnWidth(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.MaxColumnWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.MaxColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxColumnWidth<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.MaxColumnWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.MaxColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxColumnWidthChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.MaxColumnWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.MaxColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxColumnWidthChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.MaxColumnWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.MinColumnWidthProperty
 
     /// <summary>
@@ -1954,6 +2816,54 @@ public static partial class DataGridExtensions
     public static T OnMinColumnWidth<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<System.Double>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.MinColumnWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.MinColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinColumnWidth(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.MinColumnWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.MinColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinColumnWidth<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.MinColumnWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.MinColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinColumnWidthChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.MinColumnWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.MinColumnWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinColumnWidthChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.MinColumnWidthProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2056,6 +2966,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.RowBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingRowBackground(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowBackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.RowBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRowBackground<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowBackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.RowBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRowBackgroundChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowBackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.RowBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRowBackgroundChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowBackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.RowHeightProperty
 
     /// <summary>
@@ -2150,6 +3108,54 @@ public static partial class DataGridExtensions
     public static T OnRowHeight<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<System.Double>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.RowHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.RowHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingRowHeight(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.RowHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRowHeight<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.RowHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRowHeightChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.RowHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRowHeightChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowHeightProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2252,6 +3258,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.RowHeaderWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingRowHeaderWidth(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowHeaderWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.RowHeaderWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRowHeaderWidth<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowHeaderWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.RowHeaderWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRowHeaderWidthChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowHeaderWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.RowHeaderWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRowHeaderWidthChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowHeaderWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.SelectionModeProperty
 
     /// <summary>
@@ -2346,6 +3400,54 @@ public static partial class DataGridExtensions
     public static T OnSelectionMode<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<Avalonia.Controls.DataGridSelectionMode>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.SelectionModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.DataGridSelectionMode>> ObserveBindingSelectionMode(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.SelectionModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionMode<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Controls.DataGridSelectionMode>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.SelectionModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionModeChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.SelectionModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionModeChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.SelectionModeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2472,6 +3574,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingVerticalGridLinesBrush(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalGridLinesBrush<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalGridLinesBrushChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalGridLinesBrushChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty
 
     /// <summary>
@@ -2566,6 +3716,54 @@ public static partial class DataGridExtensions
     public static T OnVerticalScrollBarVisibility<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.ScrollBarVisibility>> ObserveBindingVerticalScrollBarVisibility(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalScrollBarVisibility<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Controls.Primitives.ScrollBarVisibility>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalScrollBarVisibilityChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalScrollBarVisibilityChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2716,6 +3914,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> ObserveBindingDropLocationIndicatorTemplate(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDropLocationIndicatorTemplate<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDropLocationIndicatorTemplateChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDropLocationIndicatorTemplateChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.SelectedIndexProperty
 
     /// <summary>
@@ -2810,6 +4056,54 @@ public static partial class DataGridExtensions
     public static T OnSelectedIndex<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<System.Int32>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.SelectedIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingSelectedIndex(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.SelectedIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedIndex<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.SelectedIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedIndexChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.SelectedIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedIndexChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.SelectedIndexProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2912,6 +4206,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedItem(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.SelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedItem<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.SelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedItemChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.SelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedItemChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.SelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.ClipboardCopyModeProperty
 
     /// <summary>
@@ -3006,6 +4348,54 @@ public static partial class DataGridExtensions
     public static T OnClipboardCopyMode<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<Avalonia.Controls.DataGridClipboardCopyMode>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.ClipboardCopyModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.DataGridClipboardCopyMode>> ObserveBindingClipboardCopyMode(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.ClipboardCopyModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingClipboardCopyMode<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Controls.DataGridClipboardCopyMode>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.ClipboardCopyModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveClipboardCopyModeChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.ClipboardCopyModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnClipboardCopyModeChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.ClipboardCopyModeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -3144,6 +4534,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAutoGenerateColumns(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAutoGenerateColumns<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAutoGenerateColumnsChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAutoGenerateColumnsChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.ItemsSourceProperty
 
     /// <summary>
@@ -3238,6 +4676,54 @@ public static partial class DataGridExtensions
     public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.ItemsSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.IEnumerable>> ObserveBindingItemsSource(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.ItemsSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Collections.IEnumerable>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.ItemsSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemsSourceChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.ItemsSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemsSourceChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.ItemsSourceProperty);
         handler(obj, observable);
         return obj;
     }
@@ -3340,6 +4826,54 @@ public static partial class DataGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAreRowDetailsFrozen(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAreRowDetailsFrozen<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAreRowDetailsFrozenChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAreRowDetailsFrozenChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGrid.RowDetailsTemplateProperty
 
     /// <summary>
@@ -3434,6 +4968,54 @@ public static partial class DataGridExtensions
     public static T OnRowDetailsTemplate<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.RowDetailsTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.RowDetailsTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingRowDetailsTemplate(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowDetailsTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.RowDetailsTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRowDetailsTemplate<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowDetailsTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.RowDetailsTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRowDetailsTemplateChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowDetailsTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.RowDetailsTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRowDetailsTemplateChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowDetailsTemplateProperty);
         handler(obj, observable);
         return obj;
     }
@@ -3537,6 +5119,54 @@ public static partial class DataGridExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.DataGridRowDetailsVisibilityMode>> ObserveBindingRowDetailsVisibilityMode(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRowDetailsVisibilityMode<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Controls.DataGridRowDetailsVisibilityMode>>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRowDetailsVisibilityModeChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRowDetailsVisibilityModeChanged<T>(this T obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> property value to <see cref="Avalonia.Controls.DataGridRowDetailsVisibilityMode.VisibleWhenSelected"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -3612,6 +5242,52 @@ public static partial class DataGridExtensions
     public static Avalonia.Controls.DataGrid OnCollectionView(this Avalonia.Controls.DataGrid obj, Action<Avalonia.Controls.DataGrid, IObservable<Avalonia.Collections.IDataGridCollectionView>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGrid.CollectionViewProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGrid.CollectionViewProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Collections.IDataGridCollectionView>> ObserveBindingCollectionView(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGrid.CollectionViewProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGrid.CollectionViewProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.DataGrid OnBindingCollectionView(this Avalonia.Controls.DataGrid obj, Action<Avalonia.Controls.DataGrid, IObservable<BindingValue<Avalonia.Collections.IDataGridCollectionView>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGrid.CollectionViewProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGrid.CollectionViewProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCollectionViewChanged(this Avalonia.Controls.DataGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.CollectionViewProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGrid.CollectionViewProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.DataGrid OnCollectionViewChanged(this Avalonia.Controls.DataGrid obj, Action<Avalonia.Controls.DataGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGrid.CollectionViewProperty);
         handler(obj, observable);
         return obj;
     }

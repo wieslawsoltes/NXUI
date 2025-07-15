@@ -104,6 +104,54 @@ public static partial class FlyoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Flyout.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingContent(this Avalonia.Controls.Flyout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Flyout.ContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Flyout.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Flyout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Flyout.ContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Flyout.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentChanged(this Avalonia.Controls.Flyout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Flyout.ContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Flyout.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContentChanged<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Flyout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Flyout.ContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Flyout.ContentTemplateProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class FlyoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.Flyout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Flyout.ContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.Flyout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Flyout.ContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentTemplateChanged(this Avalonia.Controls.Flyout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Flyout.ContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContentTemplateChanged<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Flyout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Flyout.ContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class FlyoutExtensions
     public static T OnFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<Avalonia.Styling.ControlTheme>> handler) where T : Avalonia.Controls.Flyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingFlyoutPresenterTheme(this Avalonia.Controls.Flyout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.Flyout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFlyoutPresenterThemeChanged(this Avalonia.Controls.Flyout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFlyoutPresenterThemeChanged<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Flyout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty);
         handler(obj, observable);
         return obj;
     }

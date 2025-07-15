@@ -105,6 +105,54 @@ public static partial class GradientBrushExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.GradientSpreadMethod>> ObserveBindingSpreadMethod(this Avalonia.Media.GradientBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.GradientBrush.SpreadMethodProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSpreadMethod<T>(this T obj, Action<Avalonia.Media.GradientBrush, IObservable<BindingValue<Avalonia.Media.GradientSpreadMethod>>> handler) where T : Avalonia.Media.GradientBrush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.GradientBrush.SpreadMethodProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSpreadMethodChanged(this Avalonia.Media.GradientBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.GradientBrush.SpreadMethodProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSpreadMethodChanged<T>(this T obj, Action<Avalonia.Media.GradientBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.GradientBrush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.GradientBrush.SpreadMethodProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> property value to <see cref="Avalonia.Media.GradientSpreadMethod.Pad"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -234,6 +282,54 @@ public static partial class GradientBrushExtensions
     public static T OnGradientStops<T>(this T obj, Action<Avalonia.Media.GradientBrush, IObservable<Avalonia.Media.GradientStops>> handler) where T : Avalonia.Media.GradientBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.GradientBrush.GradientStopsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.GradientStops>> ObserveBindingGradientStops(this Avalonia.Media.GradientBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.GradientBrush.GradientStopsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingGradientStops<T>(this T obj, Action<Avalonia.Media.GradientBrush, IObservable<BindingValue<Avalonia.Media.GradientStops>>> handler) where T : Avalonia.Media.GradientBrush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.GradientBrush.GradientStopsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveGradientStopsChanged(this Avalonia.Media.GradientBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.GradientBrush.GradientStopsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnGradientStopsChanged<T>(this T obj, Action<Avalonia.Media.GradientBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.GradientBrush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.GradientBrush.GradientStopsProperty);
         handler(obj, observable);
         return obj;
     }

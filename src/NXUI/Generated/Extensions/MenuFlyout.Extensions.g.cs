@@ -104,6 +104,54 @@ public static partial class MenuFlyoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.IEnumerable>> ObserveBindingItemsSource(this Avalonia.Controls.MenuFlyout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<System.Collections.IEnumerable>>> handler) where T : Avalonia.Controls.MenuFlyout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemsSourceChanged(this Avalonia.Controls.MenuFlyout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemsSourceChanged<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuFlyout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MenuFlyout.ItemTemplateProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class MenuFlyoutExtensions
     public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.MenuFlyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingItemTemplate(this Avalonia.Controls.MenuFlyout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemTemplate<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.MenuFlyout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemTemplateChanged(this Avalonia.Controls.MenuFlyout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemTemplateChanged<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuFlyout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class MenuFlyoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingItemContainerTheme(this Avalonia.Controls.MenuFlyout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemContainerTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.MenuFlyout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemContainerThemeChanged(this Avalonia.Controls.MenuFlyout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemContainerThemeChanged<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuFlyout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class MenuFlyoutExtensions
     public static T OnFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<Avalonia.Styling.ControlTheme>> handler) where T : Avalonia.Controls.MenuFlyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingFlyoutPresenterTheme(this Avalonia.Controls.MenuFlyout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.MenuFlyout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFlyoutPresenterThemeChanged(this Avalonia.Controls.MenuFlyout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFlyoutPresenterThemeChanged<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuFlyout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty);
         handler(obj, observable);
         return obj;
     }

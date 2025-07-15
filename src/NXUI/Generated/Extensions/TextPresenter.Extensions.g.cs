@@ -104,6 +104,54 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowSelectionHighlight(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowSelectionHighlight<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowSelectionHighlightChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowSelectionHighlightChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TextPresenterExtensions
     public static T OnCaretIndex<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingCaretIndex(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCaretIndex<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCaretIndexChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCaretIndexChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingRevealPassword(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRevealPassword<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRevealPasswordChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRevealPasswordChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class TextPresenterExtensions
     public static T OnPasswordChar<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.Char>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Char>> ObserveBindingPasswordChar(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPasswordChar<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.Char>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePasswordCharChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPasswordCharChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty);
         handler(obj, observable);
         return obj;
     }
@@ -496,6 +688,54 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSelectionBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionBrushChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionBrushChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty
 
     /// <summary>
@@ -590,6 +830,54 @@ public static partial class TextPresenterExtensions
     public static T OnSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSelectionForegroundBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionForegroundBrushChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionForegroundBrushChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
         handler(obj, observable);
         return obj;
     }
@@ -692,6 +980,54 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingCaretBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCaretBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCaretBrushChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCaretBrushChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty
 
     /// <summary>
@@ -786,6 +1122,54 @@ public static partial class TextPresenterExtensions
     public static T OnCaretBlinkInterval<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.TimeSpan>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.TimeSpan>> ObserveBindingCaretBlinkInterval(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCaretBlinkInterval<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.TimeSpan>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCaretBlinkIntervalChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCaretBlinkIntervalChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty);
         handler(obj, observable);
         return obj;
     }
@@ -888,6 +1272,54 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingSelectionStart(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionStart<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionStartChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionStartChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty
 
     /// <summary>
@@ -982,6 +1414,54 @@ public static partial class TextPresenterExtensions
     public static T OnSelectionEnd<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingSelectionEnd(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionEnd<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionEndChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionEndChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1084,6 +1564,54 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingText(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty
 
     /// <summary>
@@ -1178,6 +1706,54 @@ public static partial class TextPresenterExtensions
     public static T OnPreeditText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.String>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingPreeditText(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPreeditText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePreeditTextChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPreeditTextChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1280,6 +1856,54 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<System.Int32>>> ObserveBindingPreeditTextCursorPosition(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPreeditTextCursorPosition<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.Nullable<System.Int32>>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePreeditTextCursorPositionChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPreeditTextCursorPositionChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty
 
     /// <summary>
@@ -1374,6 +1998,54 @@ public static partial class TextPresenterExtensions
     public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
         handler(obj, observable);
         return obj;
     }

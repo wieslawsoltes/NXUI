@@ -104,6 +104,54 @@ public static partial class ExperimentalAcrylicBorderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.CornerRadius>> ObserveBindingCornerRadius(this Avalonia.Controls.ExperimentalAcrylicBorder obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCornerRadius<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<BindingValue<Avalonia.CornerRadius>>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCornerRadiusChanged(this Avalonia.Controls.ExperimentalAcrylicBorder obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCornerRadiusChanged<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ExperimentalAcrylicBorderExtensions
     public static T OnMaterial<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
         var observable = obj.GetObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.ExperimentalAcrylicMaterial>> ObserveBindingMaterial(this Avalonia.Controls.ExperimentalAcrylicBorder obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaterial<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<BindingValue<Avalonia.Media.ExperimentalAcrylicMaterial>>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaterialChanged(this Avalonia.Controls.ExperimentalAcrylicBorder obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaterialChanged<T>(this T obj, Action<Avalonia.Controls.ExperimentalAcrylicBorder, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
         handler(obj, observable);
         return obj;
     }

@@ -104,6 +104,54 @@ public static partial class ArcExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingStartAngle(this Avalonia.Controls.Shapes.Arc obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Arc.StartAngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStartAngle<T>(this T obj, Action<Avalonia.Controls.Shapes.Arc, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Arc
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Arc.StartAngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStartAngleChanged(this Avalonia.Controls.Shapes.Arc obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Arc.StartAngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStartAngleChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Arc, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Arc
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Arc.StartAngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Shapes.Arc.SweepAngleProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ArcExtensions
     public static T OnSweepAngle<T>(this T obj, Action<Avalonia.Controls.Shapes.Arc, IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Arc
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Arc.SweepAngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingSweepAngle(this Avalonia.Controls.Shapes.Arc obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Arc.SweepAngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSweepAngle<T>(this T obj, Action<Avalonia.Controls.Shapes.Arc, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Arc
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Arc.SweepAngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSweepAngleChanged(this Avalonia.Controls.Shapes.Arc obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Arc.SweepAngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSweepAngleChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Arc, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Arc
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Arc.SweepAngleProperty);
         handler(obj, observable);
         return obj;
     }

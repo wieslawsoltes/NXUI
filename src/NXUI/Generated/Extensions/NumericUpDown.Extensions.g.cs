@@ -104,6 +104,54 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.AllowSpinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAllowSpin(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.AllowSpinProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.AllowSpinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAllowSpin<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.AllowSpinProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.AllowSpinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAllowSpinChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.AllowSpinProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.AllowSpinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAllowSpinChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.AllowSpinProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class NumericUpDownExtensions
     public static T OnButtonSpinnerLocation<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<Avalonia.Controls.Location>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Location>> ObserveBindingButtonSpinnerLocation(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingButtonSpinnerLocation<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<Avalonia.Controls.Location>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveButtonSpinnerLocationChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnButtonSpinnerLocationChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty);
         handler(obj, observable);
         return obj;
     }
@@ -324,6 +420,54 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowButtonSpinner(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowButtonSpinner<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowButtonSpinnerChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowButtonSpinnerChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty
 
     /// <summary>
@@ -418,6 +562,54 @@ public static partial class NumericUpDownExtensions
     public static T OnClipValueToMinMax<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingClipValueToMinMax(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingClipValueToMinMax<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveClipValueToMinMaxChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnClipValueToMinMaxChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty);
         handler(obj, observable);
         return obj;
     }
@@ -520,6 +712,54 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.NumberFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Globalization.NumberFormatInfo>> ObserveBindingNumberFormat(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.NumberFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingNumberFormat<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Globalization.NumberFormatInfo>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.NumberFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveNumberFormatChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.NumberFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnNumberFormatChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.FormatStringProperty
 
     /// <summary>
@@ -614,6 +854,54 @@ public static partial class NumericUpDownExtensions
     public static T OnFormatString<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.String>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.FormatStringProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.FormatStringProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingFormatString(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.FormatStringProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.FormatStringProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFormatString<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.FormatStringProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.FormatStringProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFormatStringChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.FormatStringProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.FormatStringProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFormatStringChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.FormatStringProperty);
         handler(obj, observable);
         return obj;
     }
@@ -716,6 +1004,54 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.IncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Decimal>> ObserveBindingIncrement(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.IncrementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.IncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIncrement<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Decimal>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.IncrementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.IncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIncrementChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.IncrementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.IncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIncrementChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.IncrementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.IsReadOnlyProperty
 
     /// <summary>
@@ -810,6 +1146,54 @@ public static partial class NumericUpDownExtensions
     public static T OnIsReadOnly<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.IsReadOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsReadOnly(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.IsReadOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsReadOnly<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.IsReadOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsReadOnlyChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.IsReadOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsReadOnlyChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty);
         handler(obj, observable);
         return obj;
     }
@@ -912,6 +1296,54 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Decimal>> ObserveBindingMaximum(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.MaximumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaximum<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Decimal>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.MaximumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaximumChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.MaximumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaximumChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.MaximumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.MinimumProperty
 
     /// <summary>
@@ -1010,6 +1442,54 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Decimal>> ObserveBindingMinimum(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.MinimumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinimum<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Decimal>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.MinimumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinimumChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.MinimumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinimumChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.MinimumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty
 
     /// <summary>
@@ -1104,6 +1584,54 @@ public static partial class NumericUpDownExtensions
     public static T OnParsingNumberStyle<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Globalization.NumberStyles>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Globalization.NumberStyles>> ObserveBindingParsingNumberStyle(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingParsingNumberStyle<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Globalization.NumberStyles>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveParsingNumberStyleChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnParsingNumberStyleChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1434,6 +1962,54 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingText(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.TextConverterProperty
 
     /// <summary>
@@ -1528,6 +2104,54 @@ public static partial class NumericUpDownExtensions
     public static T OnTextConverter<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<Avalonia.Data.Converters.IValueConverter>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.TextConverterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Data.Converters.IValueConverter>> ObserveBindingTextConverter(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.TextConverterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextConverter<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<Avalonia.Data.Converters.IValueConverter>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.TextConverterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextConverterChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.TextConverterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextConverterChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.TextConverterProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1630,6 +2254,54 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<System.Decimal>>> ObserveBindingValue(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.ValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingValue<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Nullable<System.Decimal>>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.ValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveValueChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.ValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnValueChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.ValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.WatermarkProperty
 
     /// <summary>
@@ -1728,6 +2400,54 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingWatermark(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWatermarkChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnWatermarkChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -1822,6 +2542,54 @@ public static partial class NumericUpDownExtensions
     public static T OnHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>> ObserveBindingHorizontalContentAlignment(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalContentAlignmentChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalContentAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1973,6 +2741,54 @@ public static partial class NumericUpDownExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>> ObserveBindingVerticalContentAlignment(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalContentAlignmentChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalContentAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -2118,6 +2934,54 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingInnerLeftContent(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveInnerLeftContentChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnInnerLeftContentChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.NumericUpDown.InnerRightContentProperty
 
     /// <summary>
@@ -2212,6 +3076,54 @@ public static partial class NumericUpDownExtensions
     public static T OnInnerRightContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Object>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.InnerRightContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingInnerRightContent(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.InnerRightContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingInnerRightContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.InnerRightContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveInnerRightContentChanged(this Avalonia.Controls.NumericUpDown obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.InnerRightContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnInnerRightContentChanged<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NumericUpDown.InnerRightContentProperty);
         handler(obj, observable);
         return obj;
     }

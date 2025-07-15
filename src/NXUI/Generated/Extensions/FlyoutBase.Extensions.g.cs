@@ -50,6 +50,52 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsOpen(this Avalonia.Controls.Primitives.FlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.FlyoutBase OnBindingIsOpen(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsOpenChanged(this Avalonia.Controls.Primitives.FlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.FlyoutBase OnIsOpenChanged(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.FlyoutBase.TargetProperty
 
     /// <summary>
@@ -90,6 +136,52 @@ public static partial class FlyoutBaseExtensions
     public static Avalonia.Controls.Primitives.FlyoutBase OnTarget(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<Avalonia.Controls.Control>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingTarget(this Avalonia.Controls.Primitives.FlyoutBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.FlyoutBase OnBindingTarget(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<BindingValue<Avalonia.Controls.Control>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTargetChanged(this Avalonia.Controls.Primitives.FlyoutBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.FlyoutBase OnTargetChanged(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
         handler(obj, observable);
         return obj;
     }
@@ -188,6 +280,54 @@ public static partial class FlyoutBaseExtensions
     public static T OnAttachedFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>> ObserveBindingAttachedFlyout(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAttachedFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAttachedFlyoutChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAttachedFlyoutChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
         handler(obj, observable);
         return obj;
     }

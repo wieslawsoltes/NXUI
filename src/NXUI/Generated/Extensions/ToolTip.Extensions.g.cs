@@ -104,6 +104,54 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToolTip.TipProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingTip(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToolTip.TipProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToolTip.TipProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTip<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.TipProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToolTip.TipProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTipChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.TipProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToolTip.TipProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTipChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.TipProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ToolTip.IsOpenProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsOpen(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToolTip.IsOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsOpen<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.IsOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsOpenChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.IsOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsOpenChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.IsOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ToolTip.PlacementProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class ToolTipExtensions
     public static T OnPlacement<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.PlacementMode>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToolTip.PlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.PlacementMode>> ObserveBindingPlacement(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToolTip.PlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacement<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.PlacementMode>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.PlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.PlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.PlacementProperty);
         handler(obj, observable);
         return obj;
     }
@@ -590,6 +734,54 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingHorizontalOffset(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToolTip.HorizontalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalOffset<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.HorizontalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalOffsetChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.HorizontalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalOffsetChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.HorizontalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ToolTip.VerticalOffsetProperty
 
     /// <summary>
@@ -684,6 +876,54 @@ public static partial class ToolTipExtensions
     public static T OnVerticalOffset<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToolTip.VerticalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingVerticalOffset(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToolTip.VerticalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalOffset<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.VerticalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalOffsetChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.VerticalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalOffsetChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.VerticalOffsetProperty);
         handler(obj, observable);
         return obj;
     }
@@ -786,6 +1026,54 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> ObserveBindingCustomPopupPlacementCallback(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCustomPopupPlacementCallbackChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCustomPopupPlacementCallbackChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ToolTip.ShowDelayProperty
 
     /// <summary>
@@ -880,6 +1168,54 @@ public static partial class ToolTipExtensions
     public static T OnShowDelay<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToolTip.ShowDelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingShowDelay(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToolTip.ShowDelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowDelay<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.ShowDelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowDelayChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.ShowDelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowDelayChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.ShowDelayProperty);
         handler(obj, observable);
         return obj;
     }
@@ -982,6 +1318,54 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingBetweenShowDelay(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToolTip.BetweenShowDelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBetweenShowDelay<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.BetweenShowDelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBetweenShowDelayChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.BetweenShowDelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBetweenShowDelayChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.BetweenShowDelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ToolTip.ShowOnDisabledProperty
 
     /// <summary>
@@ -1080,6 +1464,54 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowOnDisabled(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToolTip.ShowOnDisabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowOnDisabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.ShowOnDisabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowOnDisabledChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.ShowOnDisabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowOnDisabledChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.ShowOnDisabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ToolTip.ServiceEnabledProperty
 
     /// <summary>
@@ -1174,6 +1606,54 @@ public static partial class ToolTipExtensions
     public static T OnServiceEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToolTip.ServiceEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingServiceEnabled(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToolTip.ServiceEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingServiceEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.ServiceEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveServiceEnabledChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.ServiceEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnServiceEnabledChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToolTip.ServiceEnabledProperty);
         handler(obj, observable);
         return obj;
     }

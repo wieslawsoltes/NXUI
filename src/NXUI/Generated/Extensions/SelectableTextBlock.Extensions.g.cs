@@ -104,6 +104,54 @@ public static partial class SelectableTextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingSelectionStart(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionStart<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionStartChanged(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionStartChanged<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SelectableTextBlock.SelectionEndProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class SelectableTextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingSelectionEnd(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionEnd<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionEndChanged(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionEndChanged<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SelectableTextBlock.SelectedTextProperty
 
     /// <summary>
@@ -242,6 +338,52 @@ public static partial class SelectableTextBlockExtensions
     public static Avalonia.Controls.SelectableTextBlock OnSelectedText(this Avalonia.Controls.SelectableTextBlock obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<System.String>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.SelectableTextBlock.SelectedTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectedTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingSelectedText(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectedTextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectedTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.SelectableTextBlock OnBindingSelectedText(this Avalonia.Controls.SelectableTextBlock obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<BindingValue<System.String>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectedTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectedTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedTextChanged(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.SelectedTextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectedTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.SelectableTextBlock OnSelectedTextChanged(this Avalonia.Controls.SelectableTextBlock obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.SelectedTextProperty);
         handler(obj, observable);
         return obj;
     }
@@ -344,6 +486,54 @@ public static partial class SelectableTextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSelectionBrush(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionBrush<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionBrushChanged(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionBrushChanged<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty
 
     /// <summary>
@@ -442,6 +632,54 @@ public static partial class SelectableTextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSelectionForegroundBrush(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionForegroundBrushChanged(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionForegroundBrushChanged<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SelectableTextBlock.CanCopyProperty
 
     /// <summary>
@@ -482,6 +720,52 @@ public static partial class SelectableTextBlockExtensions
     public static Avalonia.Controls.SelectableTextBlock OnCanCopy(this Avalonia.Controls.SelectableTextBlock obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.SelectableTextBlock.CanCopyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.CanCopyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanCopy(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.CanCopyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SelectableTextBlock.CanCopyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.SelectableTextBlock OnBindingCanCopy(this Avalonia.Controls.SelectableTextBlock obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.CanCopyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.CanCopyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanCopyChanged(this Avalonia.Controls.SelectableTextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.CanCopyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SelectableTextBlock.CanCopyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.SelectableTextBlock OnCanCopyChanged(this Avalonia.Controls.SelectableTextBlock obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SelectableTextBlock.CanCopyProperty);
         handler(obj, observable);
         return obj;
     }

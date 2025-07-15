@@ -103,4 +103,52 @@ public static partial class DataGridCheckBoxColumnExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsThreeState(this Avalonia.Controls.DataGridCheckBoxColumn obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsThreeState<T>(this T obj, Action<Avalonia.Controls.DataGridCheckBoxColumn, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DataGridCheckBoxColumn
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsThreeStateChanged(this Avalonia.Controls.DataGridCheckBoxColumn obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsThreeStateChanged<T>(this T obj, Action<Avalonia.Controls.DataGridCheckBoxColumn, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridCheckBoxColumn
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

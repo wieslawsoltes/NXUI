@@ -50,6 +50,52 @@ public static partial class TreeDataGridRowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IColumns>> ObserveBindingColumns(this Avalonia.Controls.Primitives.TreeDataGridRow obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridRow OnBindingColumns(this Avalonia.Controls.Primitives.TreeDataGridRow obj, Action<Avalonia.Controls.Primitives.TreeDataGridRow, IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IColumns>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColumnsChanged(this Avalonia.Controls.Primitives.TreeDataGridRow obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridRow OnColumnsChanged(this Avalonia.Controls.Primitives.TreeDataGridRow obj, Action<Avalonia.Controls.Primitives.TreeDataGridRow, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty
 
     /// <summary>
@@ -148,6 +194,54 @@ public static partial class TreeDataGridRowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.TreeDataGridElementFactory>> ObserveBindingElementFactory(this Avalonia.Controls.Primitives.TreeDataGridRow obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingElementFactory<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridRow, IObservable<BindingValue<Avalonia.Controls.Primitives.TreeDataGridElementFactory>>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridRow
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveElementFactoryChanged(this Avalonia.Controls.Primitives.TreeDataGridRow obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnElementFactoryChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridRow, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridRow
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty
 
     /// <summary>
@@ -192,6 +286,52 @@ public static partial class TreeDataGridRowExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsSelected(this Avalonia.Controls.Primitives.TreeDataGridRow obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridRow OnBindingIsSelected(this Avalonia.Controls.Primitives.TreeDataGridRow obj, Action<Avalonia.Controls.Primitives.TreeDataGridRow, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsSelectedChanged(this Avalonia.Controls.Primitives.TreeDataGridRow obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridRow OnIsSelectedChanged(this Avalonia.Controls.Primitives.TreeDataGridRow obj, Action<Avalonia.Controls.Primitives.TreeDataGridRow, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty
 
     /// <summary>
@@ -232,6 +372,52 @@ public static partial class TreeDataGridRowExtensions
     public static Avalonia.Controls.Primitives.TreeDataGridRow OnRows(this Avalonia.Controls.Primitives.TreeDataGridRow obj, Action<Avalonia.Controls.Primitives.TreeDataGridRow, IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IRows>> ObserveBindingRows(this Avalonia.Controls.Primitives.TreeDataGridRow obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridRow OnBindingRows(this Avalonia.Controls.Primitives.TreeDataGridRow obj, Action<Avalonia.Controls.Primitives.TreeDataGridRow, IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IRows>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRowsChanged(this Avalonia.Controls.Primitives.TreeDataGridRow obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridRow OnRowsChanged(this Avalonia.Controls.Primitives.TreeDataGridRow obj, Action<Avalonia.Controls.Primitives.TreeDataGridRow, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty);
         handler(obj, observable);
         return obj;
     }

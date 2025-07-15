@@ -104,6 +104,54 @@ public static partial class RectangleExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingRadiusX(this Avalonia.Controls.Shapes.Rectangle obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Rectangle.RadiusXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRadiusX<T>(this T obj, Action<Avalonia.Controls.Shapes.Rectangle, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Rectangle
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Rectangle.RadiusXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRadiusXChanged(this Avalonia.Controls.Shapes.Rectangle obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Rectangle.RadiusXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRadiusXChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Rectangle, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Rectangle
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Rectangle.RadiusXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Shapes.Rectangle.RadiusYProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class RectangleExtensions
     public static T OnRadiusY<T>(this T obj, Action<Avalonia.Controls.Shapes.Rectangle, IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Rectangle
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Rectangle.RadiusYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingRadiusY(this Avalonia.Controls.Shapes.Rectangle obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Rectangle.RadiusYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRadiusY<T>(this T obj, Action<Avalonia.Controls.Shapes.Rectangle, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Rectangle
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Rectangle.RadiusYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRadiusYChanged(this Avalonia.Controls.Shapes.Rectangle obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Rectangle.RadiusYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRadiusYChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Rectangle, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Rectangle
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Rectangle.RadiusYProperty);
         handler(obj, observable);
         return obj;
     }

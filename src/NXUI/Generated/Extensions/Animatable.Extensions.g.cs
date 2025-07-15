@@ -103,4 +103,52 @@ public static partial class AnimatableExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.Transitions>> ObserveBindingTransitions(this Avalonia.Animation.Animatable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.Animatable.TransitionsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTransitions<T>(this T obj, Action<Avalonia.Animation.Animatable, IObservable<BindingValue<Avalonia.Animation.Transitions>>> handler) where T : Avalonia.Animation.Animatable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.Animatable.TransitionsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTransitionsChanged(this Avalonia.Animation.Animatable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.Animatable.TransitionsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTransitionsChanged<T>(this T obj, Action<Avalonia.Animation.Animatable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Animation.Animatable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.Animatable.TransitionsProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

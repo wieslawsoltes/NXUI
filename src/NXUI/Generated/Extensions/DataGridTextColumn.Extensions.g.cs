@@ -104,6 +104,54 @@ public static partial class DataGridTextColumnExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontFamily>> ObserveBindingFontFamily(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontFamily<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<BindingValue<Avalonia.Media.FontFamily>>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontFamilyChanged(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontFamilyChanged<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGridTextColumn.FontSizeProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class DataGridTextColumnExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingFontSize(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontSize<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontSizeChanged(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontSizeChanged<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGridTextColumn.FontStyleProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class DataGridTextColumnExtensions
     public static T OnFontStyle<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<Avalonia.Media.FontStyle>> handler) where T : Avalonia.Controls.DataGridTextColumn
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGridTextColumn.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontStyle>> ObserveBindingFontStyle(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontStyle<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<BindingValue<Avalonia.Media.FontStyle>>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontStyleChanged(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStyleChanged<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.FontStyleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -430,6 +574,54 @@ public static partial class DataGridTextColumnExtensions
     public static T OnFontWeight<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<Avalonia.Media.FontWeight>> handler) where T : Avalonia.Controls.DataGridTextColumn
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGridTextColumn.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontWeight>> ObserveBindingFontWeight(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontWeight<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<BindingValue<Avalonia.Media.FontWeight>>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontWeightChanged(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontWeightChanged<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.FontWeightProperty);
         handler(obj, observable);
         return obj;
     }
@@ -749,6 +941,54 @@ public static partial class DataGridTextColumnExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontStretch>> ObserveBindingFontStretch(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontStretch<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<BindingValue<Avalonia.Media.FontStretch>>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontStretchChanged(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStretchChanged<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -950,6 +1190,54 @@ public static partial class DataGridTextColumnExtensions
     public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.DataGridTextColumn
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGridTextColumn.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingForeground(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridTextColumn.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveForegroundChanged(this Avalonia.Controls.DataGridTextColumn obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnForegroundChanged<T>(this T obj, Action<Avalonia.Controls.DataGridTextColumn, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTextColumn.ForegroundProperty);
         handler(obj, observable);
         return obj;
     }

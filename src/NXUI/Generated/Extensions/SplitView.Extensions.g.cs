@@ -104,6 +104,54 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingCompactPaneLength(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitView.CompactPaneLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCompactPaneLength<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.CompactPaneLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCompactPaneLengthChanged(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.CompactPaneLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCompactPaneLengthChanged<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.CompactPaneLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SplitView.DisplayModeProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class SplitViewExtensions
     public static T OnDisplayMode<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.SplitViewDisplayMode>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.DisplayModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.SplitViewDisplayMode>> ObserveBindingDisplayMode(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitView.DisplayModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDisplayMode<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<Avalonia.Controls.SplitViewDisplayMode>>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.DisplayModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDisplayModeChanged(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.DisplayModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDisplayModeChanged<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.DisplayModeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -348,6 +444,54 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsPaneOpen(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitView.IsPaneOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsPaneOpen<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.IsPaneOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsPaneOpenChanged(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.IsPaneOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsPaneOpenChanged<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.IsPaneOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SplitView.OpenPaneLengthProperty
 
     /// <summary>
@@ -442,6 +586,54 @@ public static partial class SplitViewExtensions
     public static T OnOpenPaneLength<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<System.Double>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.OpenPaneLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingOpenPaneLength(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitView.OpenPaneLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOpenPaneLength<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.OpenPaneLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOpenPaneLengthChanged(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.OpenPaneLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOpenPaneLengthChanged<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.OpenPaneLengthProperty);
         handler(obj, observable);
         return obj;
     }
@@ -544,6 +736,54 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingPaneBackground(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPaneBackground<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaneBackgroundChanged(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaneBackgroundChanged<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SplitView.PanePlacementProperty
 
     /// <summary>
@@ -638,6 +878,54 @@ public static partial class SplitViewExtensions
     public static T OnPanePlacement<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.SplitViewPanePlacement>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.PanePlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.SplitViewPanePlacement>> ObserveBindingPanePlacement(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitView.PanePlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPanePlacement<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<Avalonia.Controls.SplitViewPanePlacement>>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.PanePlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePanePlacementChanged(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.PanePlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPanePlacementChanged<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.PanePlacementProperty);
         handler(obj, observable);
         return obj;
     }
@@ -764,6 +1052,54 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingPane(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitView.PaneProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPane<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.PaneProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaneChanged(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.PaneProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaneChanged<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.PaneProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SplitView.PaneTemplateProperty
 
     /// <summary>
@@ -858,6 +1194,54 @@ public static partial class SplitViewExtensions
     public static T OnPaneTemplate<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingPaneTemplate(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitView.PaneTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPaneTemplate<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.PaneTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaneTemplateChanged(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.PaneTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaneTemplateChanged<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.PaneTemplateProperty);
         handler(obj, observable);
         return obj;
     }
@@ -960,6 +1344,54 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingUseLightDismissOverlayMode(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingUseLightDismissOverlayMode<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveUseLightDismissOverlayModeChanged(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnUseLightDismissOverlayModeChanged<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SplitView.TemplateSettingsProperty
 
     /// <summary>
@@ -1000,6 +1432,52 @@ public static partial class SplitViewExtensions
     public static Avalonia.Controls.SplitView OnTemplateSettings(this Avalonia.Controls.SplitView obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Controls.Primitives.SplitViewTemplateSettings>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.TemplateSettingsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.SplitViewTemplateSettings>> ObserveBindingTemplateSettings(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitView.TemplateSettingsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.SplitView OnBindingTemplateSettings(this Avalonia.Controls.SplitView obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<Avalonia.Controls.Primitives.SplitViewTemplateSettings>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.TemplateSettingsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTemplateSettingsChanged(this Avalonia.Controls.SplitView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.TemplateSettingsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.SplitView OnTemplateSettingsChanged(this Avalonia.Controls.SplitView obj, Action<Avalonia.Controls.SplitView, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitView.TemplateSettingsProperty);
         handler(obj, observable);
         return obj;
     }

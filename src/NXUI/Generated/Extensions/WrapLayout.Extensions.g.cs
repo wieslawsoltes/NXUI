@@ -104,6 +104,54 @@ public static partial class WrapLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingHorizontalSpacing(this Avalonia.Layout.WrapLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalSpacing<T>(this T obj, Action<Avalonia.Layout.WrapLayout, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.WrapLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalSpacingChanged(this Avalonia.Layout.WrapLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalSpacingChanged<T>(this T obj, Action<Avalonia.Layout.WrapLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.WrapLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.WrapLayout.VerticalSpacingProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class WrapLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingVerticalSpacing(this Avalonia.Layout.WrapLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.WrapLayout.VerticalSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalSpacing<T>(this T obj, Action<Avalonia.Layout.WrapLayout, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.WrapLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.WrapLayout.VerticalSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalSpacingChanged(this Avalonia.Layout.WrapLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.WrapLayout.VerticalSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalSpacingChanged<T>(this T obj, Action<Avalonia.Layout.WrapLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.WrapLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.WrapLayout.VerticalSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.WrapLayout.OrientationProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class WrapLayoutExtensions
     public static T OnOrientation<T>(this T obj, Action<Avalonia.Layout.WrapLayout, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.WrapLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.WrapLayout.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.Orientation>> ObserveBindingOrientation(this Avalonia.Layout.WrapLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.WrapLayout.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Layout.WrapLayout, IObservable<BindingValue<Avalonia.Layout.Orientation>>> handler) where T : Avalonia.Layout.WrapLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.WrapLayout.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Layout.WrapLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.WrapLayout.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Layout.WrapLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.WrapLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.WrapLayout.OrientationProperty);
         handler(obj, observable);
         return obj;
     }

@@ -50,6 +50,52 @@ public static partial class TreeDataGridExpanderCellExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IndentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingIndent(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IndentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IndentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridExpanderCell OnBindingIndent(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridExpanderCell, IObservable<BindingValue<System.Int32>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IndentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IndentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIndentChanged(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IndentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IndentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridExpanderCell OnIndentChanged(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridExpanderCell, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IndentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty
 
     /// <summary>
@@ -148,6 +194,54 @@ public static partial class TreeDataGridExpanderCellExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsExpanded(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsExpanded<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridExpanderCell, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridExpanderCell
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsExpandedChanged(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsExpandedChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridExpanderCell, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridExpanderCell
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty
 
     /// <summary>
@@ -188,6 +282,52 @@ public static partial class TreeDataGridExpanderCellExtensions
     public static Avalonia.Controls.Primitives.TreeDataGridExpanderCell OnShowExpander(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridExpanderCell, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowExpander(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridExpanderCell OnBindingShowExpander(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridExpanderCell, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowExpanderChanged(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridExpanderCell OnShowExpanderChanged(this Avalonia.Controls.Primitives.TreeDataGridExpanderCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridExpanderCell, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.ShowExpanderProperty);
         handler(obj, observable);
         return obj;
     }

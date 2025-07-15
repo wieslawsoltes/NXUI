@@ -104,6 +104,54 @@ public static partial class AdornerLayerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Visual>> ObserveBindingAdornedElement(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAdornedElement<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Visual>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAdornedElementChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAdornedElementChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class AdornerLayerExtensions
     public static T OnIsClipEnabled<T>(this T obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsClipEnabled(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsClipEnabled<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsClipEnabledChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsClipEnabledChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class AdornerLayerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingAdorner(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAdorner<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAdornerChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAdornerChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class AdornerLayerExtensions
     public static T OnDefaultFocusAdorner<T>(this T obj, Action<Avalonia.Controls.Primitives.AdornerLayer, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.Primitives.AdornerLayer
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> ObserveBindingDefaultFocusAdorner(this Avalonia.Controls.Primitives.AdornerLayer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDefaultFocusAdorner<T>(this T obj, Action<Avalonia.Controls.Primitives.AdornerLayer, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>>> handler) where T : Avalonia.Controls.Primitives.AdornerLayer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDefaultFocusAdornerChanged(this Avalonia.Controls.Primitives.AdornerLayer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDefaultFocusAdornerChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.AdornerLayer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.AdornerLayer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty);
         handler(obj, observable);
         return obj;
     }

@@ -104,6 +104,54 @@ public static partial class StackPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingSpacing(this Avalonia.Controls.StackPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.StackPanel.SpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSpacing<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.StackPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.StackPanel.SpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSpacingChanged(this Avalonia.Controls.StackPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.StackPanel.SpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSpacingChanged<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.StackPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.StackPanel.SpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.StackPanel.OrientationProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class StackPanelExtensions
     public static T OnOrientation<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.StackPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.StackPanel.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.Orientation>> ObserveBindingOrientation(this Avalonia.Controls.StackPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.StackPanel.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<BindingValue<Avalonia.Layout.Orientation>>> handler) where T : Avalonia.Controls.StackPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.StackPanel.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Controls.StackPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.StackPanel.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.StackPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.StackPanel.OrientationProperty);
         handler(obj, observable);
         return obj;
     }
@@ -324,6 +420,54 @@ public static partial class StackPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAreHorizontalSnapPointsRegular(this Avalonia.Controls.StackPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAreHorizontalSnapPointsRegular<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.StackPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAreHorizontalSnapPointsRegularChanged(this Avalonia.Controls.StackPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAreHorizontalSnapPointsRegularChanged<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.StackPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty
 
     /// <summary>
@@ -418,6 +562,54 @@ public static partial class StackPanelExtensions
     public static T OnAreVerticalSnapPointsRegular<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.StackPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAreVerticalSnapPointsRegular(this Avalonia.Controls.StackPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAreVerticalSnapPointsRegular<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.StackPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAreVerticalSnapPointsRegularChanged(this Avalonia.Controls.StackPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAreVerticalSnapPointsRegularChanged<T>(this T obj, Action<Avalonia.Controls.StackPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.StackPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty);
         handler(obj, observable);
         return obj;
     }

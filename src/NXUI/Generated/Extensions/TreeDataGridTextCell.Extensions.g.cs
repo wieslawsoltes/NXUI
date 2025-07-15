@@ -50,6 +50,52 @@ public static partial class TreeDataGridTextCellExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextTrimmingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextTrimming>> ObserveBindingTextTrimming(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextTrimmingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextTrimmingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridTextCell OnBindingTextTrimming(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<BindingValue<Avalonia.Media.TextTrimming>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextTrimmingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextTrimmingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextTrimmingChanged(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextTrimmingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextTrimmingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridTextCell OnTextTrimmingChanged(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextTrimmingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty
 
     /// <summary>
@@ -90,6 +136,52 @@ public static partial class TreeDataGridTextCellExtensions
     public static Avalonia.Controls.Primitives.TreeDataGridTextCell OnTextWrapping(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<Avalonia.Media.TextWrapping>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextWrapping>> ObserveBindingTextWrapping(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridTextCell OnBindingTextWrapping(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<BindingValue<Avalonia.Media.TextWrapping>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextWrappingChanged(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridTextCell OnTextWrappingChanged(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextWrappingProperty);
         handler(obj, observable);
         return obj;
     }
@@ -192,6 +284,54 @@ public static partial class TreeDataGridTextCellExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingValue(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingValue<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveValueChanged(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnValueChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty
 
     /// <summary>
@@ -286,6 +426,54 @@ public static partial class TreeDataGridTextCellExtensions
     public static T OnTextAlignment<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<Avalonia.Media.TextAlignment>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextAlignment>> ObserveBindingTextAlignment(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextAlignment<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<BindingValue<Avalonia.Media.TextAlignment>>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextAlignmentChanged(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty);
         handler(obj, observable);
         return obj;
     }

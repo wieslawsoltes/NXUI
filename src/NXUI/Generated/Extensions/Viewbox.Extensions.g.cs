@@ -105,6 +105,54 @@ public static partial class ViewboxExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Viewbox.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Stretch>> ObserveBindingStretch(this Avalonia.Controls.Viewbox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Viewbox.StretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Viewbox.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStretch<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<BindingValue<Avalonia.Media.Stretch>>> handler) where T : Avalonia.Controls.Viewbox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Viewbox.StretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Viewbox.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStretchChanged(this Avalonia.Controls.Viewbox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Viewbox.StretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Viewbox.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStretchChanged<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Viewbox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Viewbox.StretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -251,6 +299,54 @@ public static partial class ViewboxExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.StretchDirection>> ObserveBindingStretchDirection(this Avalonia.Controls.Viewbox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Viewbox.StretchDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStretchDirection<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<BindingValue<Avalonia.Media.StretchDirection>>> handler) where T : Avalonia.Controls.Viewbox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Viewbox.StretchDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStretchDirectionChanged(this Avalonia.Controls.Viewbox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Viewbox.StretchDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStretchDirectionChanged<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Viewbox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Viewbox.StretchDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.UpOnly"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -380,6 +476,54 @@ public static partial class ViewboxExtensions
     public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Viewbox
     {
         var observable = obj.GetObservable(Avalonia.Controls.Viewbox.ChildProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Viewbox.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingChild(this Avalonia.Controls.Viewbox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Viewbox.ChildProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Viewbox.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingChild<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.Viewbox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Viewbox.ChildProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Viewbox.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveChildChanged(this Avalonia.Controls.Viewbox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Viewbox.ChildProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Viewbox.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnChildChanged<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Viewbox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Viewbox.ChildProperty);
         handler(obj, observable);
         return obj;
     }

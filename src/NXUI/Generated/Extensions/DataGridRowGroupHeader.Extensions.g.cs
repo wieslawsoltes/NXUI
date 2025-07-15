@@ -104,6 +104,54 @@ public static partial class DataGridRowGroupHeaderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsItemCountVisible(this Avalonia.Controls.DataGridRowGroupHeader obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsItemCountVisible<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsItemCountVisibleChanged(this Avalonia.Controls.DataGridRowGroupHeader obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsItemCountVisibleChanged<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class DataGridRowGroupHeaderExtensions
     public static T OnItemCountFormat<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<System.String>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingItemCountFormat(this Avalonia.Controls.DataGridRowGroupHeader obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemCountFormat<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemCountFormatChanged(this Avalonia.Controls.DataGridRowGroupHeader obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemCountFormatChanged<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class DataGridRowGroupHeaderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingPropertyName(this Avalonia.Controls.DataGridRowGroupHeader obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPropertyName<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePropertyNameChanged(this Avalonia.Controls.DataGridRowGroupHeader obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPropertyNameChanged<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class DataGridRowGroupHeaderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsPropertyNameVisible(this Avalonia.Controls.DataGridRowGroupHeader obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsPropertyNameVisible<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsPropertyNameVisibleChanged(this Avalonia.Controls.DataGridRowGroupHeader obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsPropertyNameVisibleChanged<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class DataGridRowGroupHeaderExtensions
     public static T OnSublevelIndent<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<System.Double>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingSublevelIndent(this Avalonia.Controls.DataGridRowGroupHeader obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSublevelIndent<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSublevelIndentChanged(this Avalonia.Controls.DataGridRowGroupHeader obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSublevelIndentChanged<T>(this T obj, Action<Avalonia.Controls.DataGridRowGroupHeader, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty);
         handler(obj, observable);
         return obj;
     }

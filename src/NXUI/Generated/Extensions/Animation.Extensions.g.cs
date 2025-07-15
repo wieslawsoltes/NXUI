@@ -99,6 +99,52 @@ public static partial class AnimationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.TimeSpan>> ObserveBindingDuration(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.Animation.DurationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnBindingDuration(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<BindingValue<System.TimeSpan>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.Animation.DurationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDurationChanged(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.DurationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnDurationChanged(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.DurationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Animation.Animation.IterationCountProperty
 
     /// <summary>
@@ -192,6 +238,52 @@ public static partial class AnimationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.IterationCount>> ObserveBindingIterationCount(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.Animation.IterationCountProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnBindingIterationCount(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<BindingValue<Avalonia.Animation.IterationCount>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.Animation.IterationCountProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIterationCountChanged(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.IterationCountProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnIterationCountChanged(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.IterationCountProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Animation.Animation.PlaybackDirectionProperty
 
     /// <summary>
@@ -281,6 +373,52 @@ public static partial class AnimationExtensions
     public static Avalonia.Animation.Animation OnPlaybackDirection(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<Avalonia.Animation.PlaybackDirection>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.PlaybackDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.PlaybackDirection>> ObserveBindingPlaybackDirection(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.Animation.PlaybackDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnBindingPlaybackDirection(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<BindingValue<Avalonia.Animation.PlaybackDirection>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.Animation.PlaybackDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlaybackDirectionChanged(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.PlaybackDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnPlaybackDirectionChanged(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.PlaybackDirectionProperty);
         handler(obj, observable);
         return obj;
     }
@@ -423,6 +561,52 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.FillMode>> ObserveBindingFillMode(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.Animation.FillModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnBindingFillMode(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<BindingValue<Avalonia.Animation.FillMode>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.Animation.FillModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFillModeChanged(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.FillModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnFillModeChanged(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.FillModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -559,6 +743,52 @@ public static partial class AnimationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.Easings.Easing>> ObserveBindingEasing(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.Animation.EasingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnBindingEasing(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<BindingValue<Avalonia.Animation.Easings.Easing>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.Animation.EasingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveEasingChanged(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.EasingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnEasingChanged(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.EasingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Animation.Animation.DelayProperty
 
     /// <summary>
@@ -648,6 +878,52 @@ public static partial class AnimationExtensions
     public static Avalonia.Animation.Animation OnDelay(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<System.TimeSpan>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.DelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.TimeSpan>> ObserveBindingDelay(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.Animation.DelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnBindingDelay(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<BindingValue<System.TimeSpan>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.Animation.DelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDelayChanged(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.DelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnDelayChanged(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.DelayProperty);
         handler(obj, observable);
         return obj;
     }
@@ -745,6 +1021,52 @@ public static partial class AnimationExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.TimeSpan>> ObserveBindingDelayBetweenIterations(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.Animation.DelayBetweenIterationsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnBindingDelayBetweenIterations(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<BindingValue<System.TimeSpan>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.Animation.DelayBetweenIterationsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDelayBetweenIterationsChanged(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.DelayBetweenIterationsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnDelayBetweenIterationsChanged(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.DelayBetweenIterationsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Animation.Animation.SpeedRatioProperty
 
     /// <summary>
@@ -834,6 +1156,52 @@ public static partial class AnimationExtensions
     public static Avalonia.Animation.Animation OnSpeedRatio(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animation.SpeedRatioProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingSpeedRatio(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.Animation.SpeedRatioProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnBindingSpeedRatio(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.Animation.SpeedRatioProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSpeedRatioChanged(this Avalonia.Animation.Animation obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.SpeedRatioProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Animation.Animation OnSpeedRatioChanged(this Avalonia.Animation.Animation obj, Action<Avalonia.Animation.Animation, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.Animation.SpeedRatioProperty);
         handler(obj, observable);
         return obj;
     }

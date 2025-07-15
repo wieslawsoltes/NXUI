@@ -104,6 +104,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Color>> ObserveBindingColor(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColor<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<Avalonia.Media.Color>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColorChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.ColorModelProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ColorViewExtensions
     public static T OnColorModel<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<Avalonia.Controls.ColorModel>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.ColorModelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ColorModel>> ObserveBindingColorModel(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.ColorModelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColorModel<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<Avalonia.Controls.ColorModel>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.ColorModelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorModelChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.ColorModelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColorModelChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.ColorModelProperty);
         handler(obj, observable);
         return obj;
     }
@@ -320,6 +416,54 @@ public static partial class ColorViewExtensions
     public static T OnColorSpectrumComponents<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<Avalonia.Controls.ColorSpectrumComponents>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ColorSpectrumComponents>> ObserveBindingColorSpectrumComponents(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColorSpectrumComponents<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<Avalonia.Controls.ColorSpectrumComponents>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorSpectrumComponentsChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColorSpectrumComponentsChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -495,6 +639,54 @@ public static partial class ColorViewExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ColorSpectrumShape>> ObserveBindingColorSpectrumShape(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.ColorSpectrumShapeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColorSpectrumShape<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<Avalonia.Controls.ColorSpectrumShape>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.ColorSpectrumShapeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorSpectrumShapeChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.ColorSpectrumShapeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColorSpectrumShapeChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.ColorSpectrumShapeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumShape.Box"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -612,6 +804,54 @@ public static partial class ColorViewExtensions
     public static T OnHexInputAlphaPosition<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<Avalonia.Controls.AlphaComponentPosition>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.AlphaComponentPosition>> ObserveBindingHexInputAlphaPosition(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHexInputAlphaPosition<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<Avalonia.Controls.AlphaComponentPosition>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHexInputAlphaPositionChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHexInputAlphaPositionChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty);
         handler(obj, observable);
         return obj;
     }
@@ -738,6 +978,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.HsvColor>> ObserveBindingHsvColor(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.HsvColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHsvColor<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<Avalonia.Media.HsvColor>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.HsvColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHsvColorChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.HsvColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHsvColorChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.HsvColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty
 
     /// <summary>
@@ -832,6 +1120,54 @@ public static partial class ColorViewExtensions
     public static T OnIsAccentColorsVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsAccentColorsVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsAccentColorsVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsAccentColorsVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsAccentColorsVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -934,6 +1270,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsAlphaEnabled(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsAlphaEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsAlphaEnabled<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsAlphaEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsAlphaEnabledChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsAlphaEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsAlphaEnabledChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsAlphaEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.IsAlphaVisibleProperty
 
     /// <summary>
@@ -1028,6 +1412,54 @@ public static partial class ColorViewExtensions
     public static T OnIsAlphaVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.IsAlphaVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsAlphaVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsAlphaVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsAlphaVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsAlphaVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsAlphaVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsAlphaVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsAlphaVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsAlphaVisibleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1130,6 +1562,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsColorComponentsVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsColorComponentsVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsColorComponentsVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsColorComponentsVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.IsColorModelVisibleProperty
 
     /// <summary>
@@ -1224,6 +1704,54 @@ public static partial class ColorViewExtensions
     public static T OnIsColorModelVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.IsColorModelVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsColorModelVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorModelVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsColorModelVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorModelVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsColorModelVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorModelVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsColorModelVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorModelVisibleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1326,6 +1854,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsColorPaletteVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsColorPaletteVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsColorPaletteVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsColorPaletteVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty
 
     /// <summary>
@@ -1420,6 +1996,54 @@ public static partial class ColorViewExtensions
     public static T OnIsColorPreviewVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsColorPreviewVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsColorPreviewVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsColorPreviewVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsColorPreviewVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1522,6 +2146,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsColorSpectrumVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsColorSpectrumVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsColorSpectrumVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsColorSpectrumVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty
 
     /// <summary>
@@ -1616,6 +2288,54 @@ public static partial class ColorViewExtensions
     public static T OnIsColorSpectrumSliderVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsColorSpectrumSliderVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsColorSpectrumSliderVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsColorSpectrumSliderVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsColorSpectrumSliderVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1718,6 +2438,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsComponentSliderVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsComponentSliderVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsComponentSliderVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsComponentSliderVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty
 
     /// <summary>
@@ -1812,6 +2580,54 @@ public static partial class ColorViewExtensions
     public static T OnIsComponentTextInputVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsComponentTextInputVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsComponentTextInputVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsComponentTextInputVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsComponentTextInputVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1914,6 +2730,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsHexInputVisible(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.IsHexInputVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsHexInputVisible<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.IsHexInputVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsHexInputVisibleChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsHexInputVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsHexInputVisibleChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.IsHexInputVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.MaxHueProperty
 
     /// <summary>
@@ -2008,6 +2872,54 @@ public static partial class ColorViewExtensions
     public static T OnMaxHue<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Int32>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.MaxHueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMaxHue(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.MaxHueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxHue<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.MaxHueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxHueChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MaxHueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxHueChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MaxHueProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2110,6 +3022,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMaxSaturation(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.MaxSaturationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxSaturation<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.MaxSaturationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxSaturationChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MaxSaturationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxSaturationChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MaxSaturationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.MaxValueProperty
 
     /// <summary>
@@ -2204,6 +3164,54 @@ public static partial class ColorViewExtensions
     public static T OnMaxValue<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Int32>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.MaxValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMaxValue(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.MaxValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxValue<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.MaxValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxValueChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MaxValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxValueChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MaxValueProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2306,6 +3314,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.MinHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMinHue(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.MinHueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.MinHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinHue<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.MinHueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.MinHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinHueChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MinHueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.MinHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinHueChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MinHueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.MinSaturationProperty
 
     /// <summary>
@@ -2400,6 +3456,54 @@ public static partial class ColorViewExtensions
     public static T OnMinSaturation<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Int32>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.MinSaturationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMinSaturation(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.MinSaturationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinSaturation<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.MinSaturationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinSaturationChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MinSaturationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinSaturationChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MinSaturationProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2502,6 +3606,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.MinValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMinValue(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.MinValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.MinValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinValue<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.MinValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.MinValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinValueChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MinValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.MinValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinValueChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.MinValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.PaletteColorsProperty
 
     /// <summary>
@@ -2596,6 +3748,54 @@ public static partial class ColorViewExtensions
     public static T OnPaletteColors<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.PaletteColorsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>>> ObserveBindingPaletteColors(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.PaletteColorsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPaletteColors<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.PaletteColorsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaletteColorsChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.PaletteColorsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaletteColorsChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.PaletteColorsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2698,6 +3898,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingPaletteColumnCount(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.PaletteColumnCountProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPaletteColumnCount<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.PaletteColumnCountProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaletteColumnCountChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.PaletteColumnCountProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaletteColumnCountChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.PaletteColumnCountProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.PaletteProperty
 
     /// <summary>
@@ -2796,6 +4044,54 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.PaletteProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.IColorPalette>> ObserveBindingPalette(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.PaletteProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.PaletteProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPalette<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<Avalonia.Controls.IColorPalette>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.PaletteProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.PaletteProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaletteChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.PaletteProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.PaletteProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaletteChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.PaletteProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorView.SelectedIndexProperty
 
     /// <summary>
@@ -2890,6 +4186,54 @@ public static partial class ColorViewExtensions
     public static T OnSelectedIndex<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Int32>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.SelectedIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingSelectedIndex(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorView.SelectedIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedIndex<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.SelectedIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedIndexChanged(this Avalonia.Controls.ColorView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.SelectedIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedIndexChanged<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorView.SelectedIndexProperty);
         handler(obj, observable);
         return obj;
     }

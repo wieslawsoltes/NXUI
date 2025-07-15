@@ -104,6 +104,54 @@ public static partial class InlineExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextDecorationCollection>> ObserveBindingTextDecorations(this Avalonia.Controls.Documents.Inline obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextDecorations<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<BindingValue<Avalonia.Media.TextDecorationCollection>>> handler) where T : Avalonia.Controls.Documents.Inline
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextDecorationsChanged(this Avalonia.Controls.Documents.Inline obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextDecorationsChanged<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.Inline
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class InlineExtensions
     public static T OnBaselineAlignment<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<Avalonia.Media.BaselineAlignment>> handler) where T : Avalonia.Controls.Documents.Inline
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.BaselineAlignment>> ObserveBindingBaselineAlignment(this Avalonia.Controls.Documents.Inline obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBaselineAlignment<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<BindingValue<Avalonia.Media.BaselineAlignment>>> handler) where T : Avalonia.Controls.Documents.Inline
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBaselineAlignmentChanged(this Avalonia.Controls.Documents.Inline obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBaselineAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.Inline
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty);
         handler(obj, observable);
         return obj;
     }

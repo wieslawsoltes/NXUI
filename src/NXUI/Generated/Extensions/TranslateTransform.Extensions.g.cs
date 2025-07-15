@@ -99,6 +99,52 @@ public static partial class TranslateTransformExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TranslateTransform.XProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingX(this Avalonia.Media.TranslateTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TranslateTransform.XProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TranslateTransform.XProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.TranslateTransform OnBindingX(this Avalonia.Media.TranslateTransform obj, Action<Avalonia.Media.TranslateTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TranslateTransform.XProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TranslateTransform.XProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveXChanged(this Avalonia.Media.TranslateTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TranslateTransform.XProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TranslateTransform.XProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.TranslateTransform OnXChanged(this Avalonia.Media.TranslateTransform obj, Action<Avalonia.Media.TranslateTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TranslateTransform.XProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.TranslateTransform.YProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class TranslateTransformExtensions
     public static Avalonia.Media.TranslateTransform OnY(this Avalonia.Media.TranslateTransform obj, Action<Avalonia.Media.TranslateTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.TranslateTransform.YProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TranslateTransform.YProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingY(this Avalonia.Media.TranslateTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TranslateTransform.YProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TranslateTransform.YProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.TranslateTransform OnBindingY(this Avalonia.Media.TranslateTransform obj, Action<Avalonia.Media.TranslateTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TranslateTransform.YProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TranslateTransform.YProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveYChanged(this Avalonia.Media.TranslateTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TranslateTransform.YProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TranslateTransform.YProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.TranslateTransform OnYChanged(this Avalonia.Media.TranslateTransform obj, Action<Avalonia.Media.TranslateTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TranslateTransform.YProperty);
         handler(obj, observable);
         return obj;
     }

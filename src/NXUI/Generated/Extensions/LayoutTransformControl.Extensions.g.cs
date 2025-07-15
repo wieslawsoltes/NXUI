@@ -104,6 +104,54 @@ public static partial class LayoutTransformControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.ITransform>> ObserveBindingLayoutTransform(this Avalonia.Controls.LayoutTransformControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLayoutTransform<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<BindingValue<Avalonia.Media.ITransform>>> handler) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLayoutTransformChanged(this Avalonia.Controls.LayoutTransformControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLayoutTransformChanged<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class LayoutTransformControlExtensions
     public static T OnUseRenderTransform<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.LayoutTransformControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingUseRenderTransform(this Avalonia.Controls.LayoutTransformControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingUseRenderTransform<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveUseRenderTransformChanged(this Avalonia.Controls.LayoutTransformControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnUseRenderTransformChanged<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty);
         handler(obj, observable);
         return obj;
     }

@@ -104,6 +104,54 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAsciiOnly(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAsciiOnly<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAsciiOnlyChanged(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAsciiOnlyChanged<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MaskedTextBox.CultureProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class MaskedTextBoxExtensions
     public static T OnCulture<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Globalization.CultureInfo>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Globalization.CultureInfo>> ObserveBindingCulture(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCulture<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.Globalization.CultureInfo>>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCultureChanged(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCultureChanged<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingHidePromptOnLeave(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHidePromptOnLeave<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHidePromptOnLeaveChanged(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHidePromptOnLeaveChanged<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MaskedTextBox.MaskCompletedProperty
 
     /// <summary>
@@ -344,6 +488,52 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskCompletedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<System.Boolean>>> ObserveBindingMaskCompleted(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.MaskCompletedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskCompletedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.MaskedTextBox OnBindingMaskCompleted(this Avalonia.Controls.MaskedTextBox obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.Nullable<System.Boolean>>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.MaskCompletedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskCompletedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaskCompletedChanged(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.MaskCompletedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskCompletedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.MaskedTextBox OnMaskCompletedChanged(this Avalonia.Controls.MaskedTextBox obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.MaskCompletedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MaskedTextBox.MaskFullProperty
 
     /// <summary>
@@ -384,6 +574,52 @@ public static partial class MaskedTextBoxExtensions
     public static Avalonia.Controls.MaskedTextBox OnMaskFull(this Avalonia.Controls.MaskedTextBox obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Nullable<System.Boolean>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskFullProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskFullProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<System.Boolean>>> ObserveBindingMaskFull(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.MaskFullProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskFullProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.MaskedTextBox OnBindingMaskFull(this Avalonia.Controls.MaskedTextBox obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.Nullable<System.Boolean>>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.MaskFullProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskFullProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaskFullChanged(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.MaskFullProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskFullProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.MaskedTextBox OnMaskFullChanged(this Avalonia.Controls.MaskedTextBox obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.MaskFullProperty);
         handler(obj, observable);
         return obj;
     }
@@ -486,6 +722,54 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingMask(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMask<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaskChanged(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaskChanged<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MaskedTextBox.PromptCharProperty
 
     /// <summary>
@@ -580,6 +864,54 @@ public static partial class MaskedTextBoxExtensions
     public static T OnPromptChar<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Char>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.PromptCharProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Char>> ObserveBindingPromptChar(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.PromptCharProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPromptChar<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.Char>>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.PromptCharProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePromptCharChanged(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.PromptCharProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPromptCharChanged<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.PromptCharProperty);
         handler(obj, observable);
         return obj;
     }
@@ -682,6 +1014,54 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingResetOnPrompt(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingResetOnPrompt<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveResetOnPromptChanged(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnResetOnPromptChanged<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty
 
     /// <summary>
@@ -776,6 +1156,54 @@ public static partial class MaskedTextBoxExtensions
     public static T OnResetOnSpace<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingResetOnSpace(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingResetOnSpace<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveResetOnSpaceChanged(this Avalonia.Controls.MaskedTextBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnResetOnSpaceChanged<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MaskedTextBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty);
         handler(obj, observable);
         return obj;
     }

@@ -104,6 +104,54 @@ public static partial class DatePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingDayFormat(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DatePicker.DayFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDayFormat<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DatePicker.DayFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDayFormatChanged(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.DayFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDayFormatChanged<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.DayFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DatePicker.DayVisibleProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class DatePickerExtensions
     public static T OnDayVisible<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.DatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.DatePicker.DayVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingDayVisible(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DatePicker.DayVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDayVisible<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DatePicker.DayVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDayVisibleChanged(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.DayVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDayVisibleChanged<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.DayVisibleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class DatePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.DateTimeOffset>> ObserveBindingMaxYear(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DatePicker.MaxYearProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxYear<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<BindingValue<System.DateTimeOffset>>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DatePicker.MaxYearProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxYearChanged(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.MaxYearProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxYearChanged<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.MaxYearProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DatePicker.MinYearProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class DatePickerExtensions
     public static T OnMinYear<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<System.DateTimeOffset>> handler) where T : Avalonia.Controls.DatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.DatePicker.MinYearProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.DateTimeOffset>> ObserveBindingMinYear(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DatePicker.MinYearProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinYear<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<BindingValue<System.DateTimeOffset>>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DatePicker.MinYearProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinYearChanged(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.MinYearProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinYearChanged<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.MinYearProperty);
         handler(obj, observable);
         return obj;
     }
@@ -496,6 +688,54 @@ public static partial class DatePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingMonthFormat(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DatePicker.MonthFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMonthFormat<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DatePicker.MonthFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMonthFormatChanged(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.MonthFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMonthFormatChanged<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.MonthFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DatePicker.MonthVisibleProperty
 
     /// <summary>
@@ -590,6 +830,54 @@ public static partial class DatePickerExtensions
     public static T OnMonthVisible<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.DatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.DatePicker.MonthVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingMonthVisible(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DatePicker.MonthVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMonthVisible<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DatePicker.MonthVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMonthVisibleChanged(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.MonthVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMonthVisibleChanged<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.MonthVisibleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -692,6 +980,54 @@ public static partial class DatePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingYearFormat(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DatePicker.YearFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingYearFormat<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DatePicker.YearFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveYearFormatChanged(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.YearFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnYearFormatChanged<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.YearFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DatePicker.YearVisibleProperty
 
     /// <summary>
@@ -790,6 +1126,54 @@ public static partial class DatePickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingYearVisible(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DatePicker.YearVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingYearVisible<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DatePicker.YearVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveYearVisibleChanged(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.YearVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnYearVisibleChanged<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.YearVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DatePicker.SelectedDateProperty
 
     /// <summary>
@@ -884,6 +1268,54 @@ public static partial class DatePickerExtensions
     public static T OnSelectedDate<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<System.Nullable<System.DateTimeOffset>>> handler) where T : Avalonia.Controls.DatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.DatePicker.SelectedDateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<System.DateTimeOffset>>> ObserveBindingSelectedDate(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DatePicker.SelectedDateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedDate<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<BindingValue<System.Nullable<System.DateTimeOffset>>>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DatePicker.SelectedDateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedDateChanged(this Avalonia.Controls.DatePicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.SelectedDateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedDateChanged<T>(this T obj, Action<Avalonia.Controls.DatePicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DatePicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DatePicker.SelectedDateProperty);
         handler(obj, observable);
         return obj;
     }

@@ -49,4 +49,50 @@ public static partial class DataGridCellExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridCell.IsValidProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsValid(this Avalonia.Controls.DataGridCell obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridCell.IsValidProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridCell.IsValidProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.DataGridCell OnBindingIsValid(this Avalonia.Controls.DataGridCell obj, Action<Avalonia.Controls.DataGridCell, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridCell.IsValidProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridCell.IsValidProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsValidChanged(this Avalonia.Controls.DataGridCell obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridCell.IsValidProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridCell.IsValidProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.DataGridCell OnIsValidChanged(this Avalonia.Controls.DataGridCell obj, Action<Avalonia.Controls.DataGridCell, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridCell.IsValidProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

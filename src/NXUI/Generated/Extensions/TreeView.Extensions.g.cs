@@ -104,6 +104,54 @@ public static partial class TreeViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAutoScrollToSelectedItem(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAutoScrollToSelectedItem<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAutoScrollToSelectedItemChanged(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAutoScrollToSelectedItemChanged<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TreeView.SelectedItemProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TreeViewExtensions
     public static T OnSelectedItem<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<System.Object>> handler) where T : Avalonia.Controls.TreeView
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedItem(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedItem<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedItemChanged(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedItemChanged<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class TreeViewExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.IList>> ObserveBindingSelectedItems(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TreeView.SelectedItemsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedItems<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<BindingValue<System.Collections.IList>>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TreeView.SelectedItemsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedItemsChanged(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TreeView.SelectedItemsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedItemsChanged<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TreeView.SelectedItemsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TreeView.SelectionModeProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class TreeViewExtensions
     public static T OnSelectionMode<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<Avalonia.Controls.SelectionMode>> handler) where T : Avalonia.Controls.TreeView
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeView.SelectionModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.SelectionMode>> ObserveBindingSelectionMode(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TreeView.SelectionModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionMode<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<BindingValue<Avalonia.Controls.SelectionMode>>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TreeView.SelectionModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionModeChanged(this Avalonia.Controls.TreeView obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TreeView.SelectionModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionModeChanged<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TreeView
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TreeView.SelectionModeProperty);
         handler(obj, observable);
         return obj;
     }

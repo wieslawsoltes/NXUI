@@ -104,6 +104,54 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuItem.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Windows.Input.ICommand>> ObserveBindingCommand(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuItem.CommandProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuItem.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<BindingValue<System.Windows.Input.ICommand>>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuItem.CommandProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuItem.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCommandChanged(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.CommandProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuItem.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCommandChanged<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.CommandProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MenuItem.CommandParameterProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class MenuItemExtensions
     public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.Object>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.CommandParameterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingCommandParameter(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuItem.CommandParameterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuItem.CommandParameterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCommandParameterChanged(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.CommandParameterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCommandParameterChanged<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.CommandParameterProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuItem.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingIcon(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuItem.IconProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuItem.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIcon<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuItem.IconProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuItem.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIconChanged(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.IconProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuItem.IconProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIconChanged<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.IconProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MenuItem.InputGestureProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class MenuItemExtensions
     public static T OnInputGesture<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<Avalonia.Input.KeyGesture>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Input.KeyGesture>> ObserveBindingInputGesture(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingInputGesture<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<BindingValue<Avalonia.Input.KeyGesture>>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveInputGestureChanged(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnInputGestureChanged<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.InputGestureProperty);
         handler(obj, observable);
         return obj;
     }
@@ -496,6 +688,54 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsSubMenuOpen(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsSubMenuOpen<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsSubMenuOpenChanged(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsSubMenuOpenChanged<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MenuItem.StaysOpenOnClickProperty
 
     /// <summary>
@@ -594,6 +834,54 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingStaysOpenOnClick(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStaysOpenOnClick<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStaysOpenOnClickChanged(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStaysOpenOnClickChanged<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MenuItem.ToggleTypeProperty
 
     /// <summary>
@@ -688,6 +976,54 @@ public static partial class MenuItemExtensions
     public static T OnToggleType<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<Avalonia.Controls.MenuItemToggleType>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.ToggleTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.MenuItemToggleType>> ObserveBindingToggleType(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuItem.ToggleTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingToggleType<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<BindingValue<Avalonia.Controls.MenuItemToggleType>>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuItem.ToggleTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveToggleTypeChanged(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.ToggleTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnToggleTypeChanged<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.ToggleTypeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -826,6 +1162,54 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsChecked(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuItem.IsCheckedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsChecked<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuItem.IsCheckedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsCheckedChanged(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.IsCheckedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsCheckedChanged<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.IsCheckedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.MenuItem.GroupNameProperty
 
     /// <summary>
@@ -920,6 +1304,54 @@ public static partial class MenuItemExtensions
     public static T OnGroupName<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<System.String>> handler) where T : Avalonia.Controls.MenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuItem.GroupNameProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingGroupName(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.MenuItem.GroupNameProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingGroupName<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.MenuItem.GroupNameProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveGroupNameChanged(this Avalonia.Controls.MenuItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.GroupNameProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnGroupNameChanged<T>(this T obj, Action<Avalonia.Controls.MenuItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.MenuItem
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.MenuItem.GroupNameProperty);
         handler(obj, observable);
         return obj;
     }

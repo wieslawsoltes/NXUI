@@ -104,6 +104,54 @@ public static partial class DecoratorExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingChild(this Avalonia.Controls.Decorator obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Decorator.ChildProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingChild<T>(this T obj, Action<Avalonia.Controls.Decorator, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.Decorator
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Decorator.ChildProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveChildChanged(this Avalonia.Controls.Decorator obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Decorator.ChildProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Decorator.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnChildChanged<T>(this T obj, Action<Avalonia.Controls.Decorator, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Decorator
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Decorator.ChildProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Decorator.PaddingProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class DecoratorExtensions
     public static T OnPadding<T>(this T obj, Action<Avalonia.Controls.Decorator, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Decorator
     {
         var observable = obj.GetObservable(Avalonia.Controls.Decorator.PaddingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Decorator.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Thickness>> ObserveBindingPadding(this Avalonia.Controls.Decorator obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Decorator.PaddingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Decorator.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPadding<T>(this T obj, Action<Avalonia.Controls.Decorator, IObservable<BindingValue<Avalonia.Thickness>>> handler) where T : Avalonia.Controls.Decorator
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Decorator.PaddingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Decorator.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaddingChanged(this Avalonia.Controls.Decorator obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Decorator.PaddingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Decorator.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaddingChanged<T>(this T obj, Action<Avalonia.Controls.Decorator, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Decorator
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Decorator.PaddingProperty);
         handler(obj, observable);
         return obj;
     }

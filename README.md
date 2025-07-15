@@ -216,3 +216,63 @@ let Main argv = NXUI.Run(Build, "NXUI", argv)
 >     <LangVersion>preview</LangVersion>
 > </PropertyGroup>
 > ```
+
+## Extensions
+
+NXUI ships with a rich set of extension methods and builder helpers so that all
+UI composition can be expressed in C#.  The code generator produces most of
+these members for every Avalonia control and property.
+
+### Builders
+
+`NXUI.Builders` exposes factory methods for every control type.  Each method
+creates the control instance and overloads let you capture it via `out var` for
+later use.
+
+### Property helpers
+
+For each Avalonia property the following methods are generated:
+
+* **`<Name>(value)`** – set the property value.
+* **`<Name>(IBinding, mode, priority)`** – bind with an Avalonia binding.
+* **`<Name>(IObservable<T>, mode, priority)`** – bind from an observable.
+* **`Bind<Name>(mode, priority)`** – create a binding descriptor.
+* **`Observe<Name>()`** – observable of property values.
+* **`On<Name>(handler)`** – pass the observable to a handler.
+* **`ObserveBinding<Name>()`** – observe binding values including errors.
+* **`OnBinding<Name>(handler)`** – receive the binding observable.
+* **`Observe<Name>Changed()`** – observe full change events.
+* **`On<Name>Changed(handler)`** – handler for change observable.
+
+Enum properties get convenience methods for each enum value, e.g.
+`HorizontalAlignmentCenter()`.
+
+### Event helpers
+
+For routed and CLR events:
+
+* **`ObserveOn<EventName>(routes)`** – returns an `IObservable` sequence.
+* **`On<EventName>(handler, routes)`** – handler receiving the observable.
+* **`On<EventName>Handler(action, routes)`** – attach a simple callback.
+
+### Style setters
+
+`Set<ClassName><PropertyName>` methods on `Style` and `KeyFrame` let you define
+style values using constants, bindings or observables.
+
+### Core runtime helpers
+
+`NXUI.Extensions.AvaloniaObjectExtensions` provides `BindOneWay` and
+`BindTwoWay` to link properties or observables without verbose binding code.
+
+`NXUI.Extensions.ReactiveObservableExtensions` adds utilities for reactive
+workflows:
+
+- `ObserveOnUiThread` / `SubscribeOnUiThread`
+- `TakeUntilDetachedFromVisualTree` / `SubscribeUntilDetached`
+- `DisposeWith`
+- `DataTemplate<T>`
+- `WhenAnyValue` (single or multiple expressions)
+
+Together these extensions enable complex, reactive UIs built entirely in code
+while managing resources with minimal overhead.

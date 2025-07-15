@@ -104,6 +104,54 @@ public static partial class SectorExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingStartAngle(this Avalonia.Controls.Shapes.Sector obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Sector.StartAngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStartAngle<T>(this T obj, Action<Avalonia.Controls.Shapes.Sector, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Sector
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Sector.StartAngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStartAngleChanged(this Avalonia.Controls.Shapes.Sector obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Sector.StartAngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStartAngleChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Sector, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Sector
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Sector.StartAngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Shapes.Sector.SweepAngleProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class SectorExtensions
     public static T OnSweepAngle<T>(this T obj, Action<Avalonia.Controls.Shapes.Sector, IObservable<System.Double>> handler) where T : Avalonia.Controls.Shapes.Sector
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Sector.SweepAngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingSweepAngle(this Avalonia.Controls.Shapes.Sector obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Sector.SweepAngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSweepAngle<T>(this T obj, Action<Avalonia.Controls.Shapes.Sector, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Sector
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Sector.SweepAngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSweepAngleChanged(this Avalonia.Controls.Shapes.Sector obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Sector.SweepAngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSweepAngleChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Sector, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Sector
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Sector.SweepAngleProperty);
         handler(obj, observable);
         return obj;
     }

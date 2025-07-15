@@ -104,6 +104,54 @@ public static partial class ProgressBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ProgressBar.IsIndeterminateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsIndeterminate(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ProgressBar.IsIndeterminateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ProgressBar.IsIndeterminateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsIndeterminate<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ProgressBar.IsIndeterminateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ProgressBar.IsIndeterminateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsIndeterminateChanged(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ProgressBar.IsIndeterminateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ProgressBar.IsIndeterminateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsIndeterminateChanged<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ProgressBar.IsIndeterminateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ProgressBar.ShowProgressTextProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class ProgressBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ProgressBar.ShowProgressTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowProgressText(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ProgressBar.ShowProgressTextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ProgressBar.ShowProgressTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowProgressText<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ProgressBar.ShowProgressTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ProgressBar.ShowProgressTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowProgressTextChanged(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ProgressBar.ShowProgressTextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ProgressBar.ShowProgressTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowProgressTextChanged<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ProgressBar.ShowProgressTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ProgressBar.ProgressTextFormatProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class ProgressBarExtensions
     public static T OnProgressTextFormat<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<System.String>> handler) where T : Avalonia.Controls.ProgressBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingProgressTextFormat(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingProgressTextFormat<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveProgressTextFormatChanged(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnProgressTextFormatChanged<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty);
         handler(obj, observable);
         return obj;
     }
@@ -399,6 +543,54 @@ public static partial class ProgressBarExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.Orientation>> ObserveBindingOrientation(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ProgressBar.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<BindingValue<Avalonia.Layout.Orientation>>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ProgressBar.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ProgressBar.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Controls.ProgressBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ProgressBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ProgressBar.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -462,6 +654,52 @@ public static partial class ProgressBarExtensions
     public static Avalonia.Controls.ProgressBar OnPercentage(this Avalonia.Controls.ProgressBar obj, Action<Avalonia.Controls.ProgressBar, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ProgressBar.PercentageProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ProgressBar.PercentageProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingPercentage(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ProgressBar.PercentageProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ProgressBar.PercentageProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ProgressBar OnBindingPercentage(this Avalonia.Controls.ProgressBar obj, Action<Avalonia.Controls.ProgressBar, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ProgressBar.PercentageProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ProgressBar.PercentageProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePercentageChanged(this Avalonia.Controls.ProgressBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ProgressBar.PercentageProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ProgressBar.PercentageProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ProgressBar OnPercentageChanged(this Avalonia.Controls.ProgressBar obj, Action<Avalonia.Controls.ProgressBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ProgressBar.PercentageProperty);
         handler(obj, observable);
         return obj;
     }

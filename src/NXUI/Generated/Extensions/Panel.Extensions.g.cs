@@ -103,4 +103,52 @@ public static partial class PanelExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Panel.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Panel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Panel.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Panel.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Panel, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Panel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Panel.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Panel.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundChanged(this Avalonia.Controls.Panel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Panel.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Panel.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundChanged<T>(this T obj, Action<Avalonia.Controls.Panel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Panel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Panel.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

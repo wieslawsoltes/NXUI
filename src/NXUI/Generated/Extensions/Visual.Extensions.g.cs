@@ -50,6 +50,52 @@ public static partial class VisualExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.BoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Rect>> ObserveBindingBounds(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.BoundsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.BoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Visual OnBindingBounds(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Rect>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.BoundsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.BoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBoundsChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.BoundsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.BoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Visual OnBoundsChanged(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.BoundsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Visual.ClipToBoundsProperty
 
     /// <summary>
@@ -144,6 +190,54 @@ public static partial class VisualExtensions
     public static T OnClipToBounds<T>(this T obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.ClipToBoundsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingClipToBounds(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.ClipToBoundsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingClipToBounds<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.ClipToBoundsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveClipToBoundsChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.ClipToBoundsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnClipToBoundsChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.ClipToBoundsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -246,6 +340,54 @@ public static partial class VisualExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.ClipProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingClip(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.ClipProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.ClipProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingClip<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.ClipProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.ClipProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveClipChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.ClipProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.ClipProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnClipChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.ClipProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Visual.IsVisibleProperty
 
     /// <summary>
@@ -340,6 +482,54 @@ public static partial class VisualExtensions
     public static T OnIsVisible<T>(this T obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.IsVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.IsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsVisible(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.IsVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.IsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsVisible<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.IsVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.IsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsVisibleChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.IsVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.IsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsVisibleChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.IsVisibleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -442,6 +632,54 @@ public static partial class VisualExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingOpacity(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.OpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOpacity<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.OpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOpacityChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.OpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOpacityChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.OpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Visual.OpacityMaskProperty
 
     /// <summary>
@@ -536,6 +774,54 @@ public static partial class VisualExtensions
     public static T OnOpacityMask<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.OpacityMaskProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingOpacityMask(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.OpacityMaskProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOpacityMask<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.OpacityMaskProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOpacityMaskChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.OpacityMaskProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOpacityMaskChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.OpacityMaskProperty);
         handler(obj, observable);
         return obj;
     }
@@ -638,6 +924,54 @@ public static partial class VisualExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.EffectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IEffect>> ObserveBindingEffect(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.EffectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.EffectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingEffect<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.IEffect>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.EffectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.EffectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveEffectChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.EffectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.EffectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnEffectChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.EffectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Visual.HasMirrorTransformProperty
 
     /// <summary>
@@ -678,6 +1012,52 @@ public static partial class VisualExtensions
     public static Avalonia.Visual OnHasMirrorTransform(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.HasMirrorTransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.HasMirrorTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingHasMirrorTransform(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.HasMirrorTransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.HasMirrorTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Visual OnBindingHasMirrorTransform(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.HasMirrorTransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.HasMirrorTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHasMirrorTransformChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.HasMirrorTransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.HasMirrorTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Visual OnHasMirrorTransformChanged(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.HasMirrorTransformProperty);
         handler(obj, observable);
         return obj;
     }
@@ -780,6 +1160,54 @@ public static partial class VisualExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.RenderTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.ITransform>> ObserveBindingRenderTransform(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.RenderTransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.RenderTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRenderTransform<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.ITransform>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.RenderTransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.RenderTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRenderTransformChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.RenderTransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.RenderTransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRenderTransformChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.RenderTransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Visual.RenderTransformOriginProperty
 
     /// <summary>
@@ -874,6 +1302,54 @@ public static partial class VisualExtensions
     public static T OnRenderTransformOrigin<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.RelativePoint>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.RenderTransformOriginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.RelativePoint>> ObserveBindingRenderTransformOrigin(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.RenderTransformOriginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRenderTransformOrigin<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.RelativePoint>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.RenderTransformOriginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRenderTransformOriginChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.RenderTransformOriginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRenderTransformOriginChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.RenderTransformOriginProperty);
         handler(obj, observable);
         return obj;
     }
@@ -977,6 +1453,54 @@ public static partial class VisualExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FlowDirection>> ObserveBindingFlowDirection(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.FlowDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFlowDirection<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.FlowDirection>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.FlowDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFlowDirectionChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.FlowDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFlowDirectionChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.FlowDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Visual.FlowDirectionProperty"/> property value to <see cref="Avalonia.Media.FlowDirection.LeftToRight"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1040,6 +1564,52 @@ public static partial class VisualExtensions
     public static Avalonia.Visual OnVisualParent(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<Avalonia.Visual>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.VisualParentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.VisualParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Visual>> ObserveBindingVisualParent(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.VisualParentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.VisualParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Visual OnBindingVisualParent(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Visual>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.VisualParentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.VisualParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVisualParentChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.VisualParentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.VisualParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Visual OnVisualParentChanged(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.VisualParentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1138,6 +1708,54 @@ public static partial class VisualExtensions
     public static T OnZIndex<T>(this T obj, Action<Avalonia.Visual, IObservable<System.Int32>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.ZIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Visual.ZIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingZIndex(this Avalonia.Visual obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Visual.ZIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Visual.ZIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingZIndex<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Visual.ZIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Visual.ZIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveZIndexChanged(this Avalonia.Visual obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Visual.ZIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Visual.ZIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnZIndexChanged<T>(this T obj, Action<Avalonia.Visual, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Visual
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Visual.ZIndexProperty);
         handler(obj, observable);
         return obj;
     }

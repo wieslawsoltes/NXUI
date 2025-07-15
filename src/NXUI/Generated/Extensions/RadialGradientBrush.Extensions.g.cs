@@ -99,6 +99,52 @@ public static partial class RadialGradientBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.RelativePoint>> ObserveBindingCenter(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RadialGradientBrush OnBindingCenter(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<BindingValue<Avalonia.RelativePoint>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCenterChanged(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RadialGradientBrush OnCenterChanged(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.RadialGradientBrush.CenterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.RadialGradientBrush.GradientOriginProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class RadialGradientBrushExtensions
     public static Avalonia.Media.RadialGradientBrush OnGradientOrigin(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<Avalonia.RelativePoint>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.RelativePoint>> ObserveBindingGradientOrigin(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RadialGradientBrush OnBindingGradientOrigin(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<BindingValue<Avalonia.RelativePoint>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveGradientOriginChanged(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RadialGradientBrush OnGradientOriginChanged(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
         handler(obj, observable);
         return obj;
     }
@@ -285,6 +377,52 @@ public static partial class RadialGradientBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.RelativeScalar>> ObserveBindingRadiusX(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.RadialGradientBrush.RadiusXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RadialGradientBrush OnBindingRadiusX(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<BindingValue<Avalonia.RelativeScalar>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.RadialGradientBrush.RadiusXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRadiusXChanged(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.RadialGradientBrush.RadiusXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RadialGradientBrush OnRadiusXChanged(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.RadialGradientBrush.RadiusXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.RadialGradientBrush.RadiusYProperty
 
     /// <summary>
@@ -374,6 +512,52 @@ public static partial class RadialGradientBrushExtensions
     public static Avalonia.Media.RadialGradientBrush OnRadiusY(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<Avalonia.RelativeScalar>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.RadialGradientBrush.RadiusYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.RelativeScalar>> ObserveBindingRadiusY(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.RadialGradientBrush.RadiusYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RadialGradientBrush OnBindingRadiusY(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<BindingValue<Avalonia.RelativeScalar>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.RadialGradientBrush.RadiusYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRadiusYChanged(this Avalonia.Media.RadialGradientBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.RadialGradientBrush.RadiusYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RadialGradientBrush OnRadiusYChanged(this Avalonia.Media.RadialGradientBrush obj, Action<Avalonia.Media.RadialGradientBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.RadialGradientBrush.RadiusYProperty);
         handler(obj, observable);
         return obj;
     }

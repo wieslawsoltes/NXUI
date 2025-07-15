@@ -104,6 +104,54 @@ public static partial class EllipseGeometryExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Rect>> ObserveBindingRect(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.EllipseGeometry.RectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRect<T>(this T obj, Action<Avalonia.Media.EllipseGeometry, IObservable<BindingValue<Avalonia.Rect>>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.EllipseGeometry.RectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRectChanged(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.EllipseGeometry.RectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRectChanged<T>(this T obj, Action<Avalonia.Media.EllipseGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.EllipseGeometry.RectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.EllipseGeometry.RadiusXProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class EllipseGeometryExtensions
     public static T OnRadiusX<T>(this T obj, Action<Avalonia.Media.EllipseGeometry, IObservable<System.Double>> handler) where T : Avalonia.Media.EllipseGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.EllipseGeometry.RadiusXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingRadiusX(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.EllipseGeometry.RadiusXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRadiusX<T>(this T obj, Action<Avalonia.Media.EllipseGeometry, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.EllipseGeometry.RadiusXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRadiusXChanged(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.EllipseGeometry.RadiusXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRadiusXChanged<T>(this T obj, Action<Avalonia.Media.EllipseGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.EllipseGeometry.RadiusXProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class EllipseGeometryExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingRadiusY(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.EllipseGeometry.RadiusYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRadiusY<T>(this T obj, Action<Avalonia.Media.EllipseGeometry, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.EllipseGeometry.RadiusYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRadiusYChanged(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.EllipseGeometry.RadiusYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRadiusYChanged<T>(this T obj, Action<Avalonia.Media.EllipseGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.EllipseGeometry.RadiusYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.EllipseGeometry.CenterProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class EllipseGeometryExtensions
     public static T OnCenter<T>(this T obj, Action<Avalonia.Media.EllipseGeometry, IObservable<Avalonia.Point>> handler) where T : Avalonia.Media.EllipseGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.EllipseGeometry.CenterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Point>> ObserveBindingCenter(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.EllipseGeometry.CenterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCenter<T>(this T obj, Action<Avalonia.Media.EllipseGeometry, IObservable<BindingValue<Avalonia.Point>>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.EllipseGeometry.CenterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCenterChanged(this Avalonia.Media.EllipseGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.EllipseGeometry.CenterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCenterChanged<T>(this T obj, Action<Avalonia.Media.EllipseGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.EllipseGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.EllipseGeometry.CenterProperty);
         handler(obj, observable);
         return obj;
     }

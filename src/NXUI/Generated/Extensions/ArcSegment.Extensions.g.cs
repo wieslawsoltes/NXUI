@@ -99,6 +99,52 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsLargeArc(this Avalonia.Media.ArcSegment obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ArcSegment.IsLargeArcProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ArcSegment OnBindingIsLargeArc(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ArcSegment.IsLargeArcProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsLargeArcChanged(this Avalonia.Media.ArcSegment obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ArcSegment.IsLargeArcProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ArcSegment OnIsLargeArcChanged(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ArcSegment.IsLargeArcProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.ArcSegment.PointProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class ArcSegmentExtensions
     public static Avalonia.Media.ArcSegment OnPoint(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.PointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Point>> ObserveBindingPoint(this Avalonia.Media.ArcSegment obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ArcSegment.PointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ArcSegment OnBindingPoint(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<BindingValue<Avalonia.Point>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ArcSegment.PointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePointChanged(this Avalonia.Media.ArcSegment obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ArcSegment.PointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ArcSegment OnPointChanged(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ArcSegment.PointProperty);
         handler(obj, observable);
         return obj;
     }
@@ -285,6 +377,52 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingRotationAngle(this Avalonia.Media.ArcSegment obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ArcSegment.RotationAngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ArcSegment OnBindingRotationAngle(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ArcSegment.RotationAngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRotationAngleChanged(this Avalonia.Media.ArcSegment obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ArcSegment.RotationAngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ArcSegment OnRotationAngleChanged(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ArcSegment.RotationAngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.ArcSegment.SizeProperty
 
     /// <summary>
@@ -378,6 +516,52 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Size>> ObserveBindingSize(this Avalonia.Media.ArcSegment obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ArcSegment.SizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ArcSegment OnBindingSize(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<BindingValue<Avalonia.Size>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ArcSegment.SizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSizeChanged(this Avalonia.Media.ArcSegment obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ArcSegment.SizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ArcSegment OnSizeChanged(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ArcSegment.SizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.ArcSegment.SweepDirectionProperty
 
     /// <summary>
@@ -467,6 +651,52 @@ public static partial class ArcSegmentExtensions
     public static Avalonia.Media.ArcSegment OnSweepDirection(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<Avalonia.Media.SweepDirection>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ArcSegment.SweepDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.SweepDirection>> ObserveBindingSweepDirection(this Avalonia.Media.ArcSegment obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ArcSegment.SweepDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ArcSegment OnBindingSweepDirection(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<BindingValue<Avalonia.Media.SweepDirection>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ArcSegment.SweepDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSweepDirectionChanged(this Avalonia.Media.ArcSegment obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ArcSegment.SweepDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ArcSegment OnSweepDirectionChanged(this Avalonia.Media.ArcSegment obj, Action<Avalonia.Media.ArcSegment, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ArcSegment.SweepDirectionProperty);
         handler(obj, observable);
         return obj;
     }

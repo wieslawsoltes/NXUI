@@ -104,6 +104,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingCaretIndex(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCaretIndex<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCaretIndexChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCaretIndexChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.WatermarkProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class AutoCompleteBoxExtensions
     public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingWatermark(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWatermarkChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnWatermarkChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMinimumPrefixLength(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinimumPrefixLength<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinimumPrefixLengthChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinimumPrefixLengthChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class AutoCompleteBoxExtensions
     public static T OnMinimumPopulateDelay<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.TimeSpan>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.TimeSpan>> ObserveBindingMinimumPopulateDelay(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinimumPopulateDelay<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.TimeSpan>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinimumPopulateDelayChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinimumPopulateDelayChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty);
         handler(obj, observable);
         return obj;
     }
@@ -496,6 +688,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMaxDropDownHeight(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxDropDownHeight<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxDropDownHeightChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxDropDownHeightChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty
 
     /// <summary>
@@ -590,6 +830,54 @@ public static partial class AutoCompleteBoxExtensions
     public static T OnIsTextCompletionEnabled<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsTextCompletionEnabled(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsTextCompletionEnabled<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsTextCompletionEnabledChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsTextCompletionEnabledChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty);
         handler(obj, observable);
         return obj;
     }
@@ -692,6 +980,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingItemTemplate(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemTemplate<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemTemplateChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemTemplateChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty
 
     /// <summary>
@@ -786,6 +1122,54 @@ public static partial class AutoCompleteBoxExtensions
     public static T OnIsDropDownOpen<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsDropDownOpen(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsDropDownOpen<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsDropDownOpenChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsDropDownOpenChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty);
         handler(obj, observable);
         return obj;
     }
@@ -888,6 +1272,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedItem(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedItem<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedItemChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedItemChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.TextProperty
 
     /// <summary>
@@ -986,6 +1418,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingText(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.SearchTextProperty
 
     /// <summary>
@@ -1026,6 +1506,52 @@ public static partial class AutoCompleteBoxExtensions
     public static Avalonia.Controls.AutoCompleteBox OnSearchText(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingSearchText(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.AutoCompleteBox OnBindingSearchText(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.String>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSearchTextChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.AutoCompleteBox OnSearchTextChanged(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1124,6 +1650,54 @@ public static partial class AutoCompleteBoxExtensions
     public static T OnFilterMode<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteFilterMode>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.FilterModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterMode>> ObserveBindingFilterMode(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.FilterModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFilterMode<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterMode>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.FilterModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFilterModeChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.FilterModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFilterModeChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.FilterModeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1394,6 +1968,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>>> ObserveBindingItemFilter(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemFilterChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemFilterChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.TextFilterProperty
 
     /// <summary>
@@ -1488,6 +2110,54 @@ public static partial class AutoCompleteBoxExtensions
     public static T OnTextFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>>> ObserveBindingTextFilter(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextFilterChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextFilterChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1590,6 +2260,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.Object>>> ObserveBindingItemSelector(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.Object>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemSelectorChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemSelectorChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.TextSelectorProperty
 
     /// <summary>
@@ -1684,6 +2402,54 @@ public static partial class AutoCompleteBoxExtensions
     public static T OnTextSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteSelector<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.String>>> ObserveBindingTextSelector(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.String>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextSelectorChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextSelectorChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1786,6 +2552,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.IEnumerable>> ObserveBindingItemsSource(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Collections.IEnumerable>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemsSourceChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemsSourceChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty
 
     /// <summary>
@@ -1880,6 +2694,54 @@ public static partial class AutoCompleteBoxExtensions
     public static T OnAsyncPopulator<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>>> ObserveBindingAsyncPopulator(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAsyncPopulator<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAsyncPopulatorChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAsyncPopulatorChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1982,6 +2844,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMaxLength(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxLength<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxLengthChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxLengthChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty
 
     /// <summary>
@@ -2080,6 +2990,54 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingInnerLeftContent(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveInnerLeftContentChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnInnerLeftContentChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty
 
     /// <summary>
@@ -2174,6 +3132,54 @@ public static partial class AutoCompleteBoxExtensions
     public static T OnInnerRightContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Object>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingInnerRightContent(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingInnerRightContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveInnerRightContentChanged(this Avalonia.Controls.AutoCompleteBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnInnerRightContentChanged<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
         handler(obj, observable);
         return obj;
     }

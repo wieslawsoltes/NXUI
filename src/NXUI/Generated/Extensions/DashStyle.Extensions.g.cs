@@ -99,6 +99,52 @@ public static partial class DashStyleExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>> ObserveBindingDashes(this Avalonia.Media.DashStyle obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DashStyle.DashesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DashStyle OnBindingDashes(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DashStyle.DashesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDashesChanged(this Avalonia.Media.DashStyle obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DashStyle.DashesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DashStyle.DashesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DashStyle OnDashesChanged(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DashStyle.DashesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.DashStyle.OffsetProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class DashStyleExtensions
     public static Avalonia.Media.DashStyle OnOffset(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DashStyle.OffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingOffset(this Avalonia.Media.DashStyle obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DashStyle.OffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DashStyle OnBindingOffset(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DashStyle.OffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOffsetChanged(this Avalonia.Media.DashStyle obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DashStyle.OffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DashStyle.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DashStyle OnOffsetChanged(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DashStyle.OffsetProperty);
         handler(obj, observable);
         return obj;
     }

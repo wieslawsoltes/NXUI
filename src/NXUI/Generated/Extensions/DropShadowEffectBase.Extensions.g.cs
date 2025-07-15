@@ -104,6 +104,54 @@ public static partial class DropShadowEffectBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingBlurRadius(this Avalonia.Media.DropShadowEffectBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBlurRadius<T>(this T obj, Action<Avalonia.Media.DropShadowEffectBase, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBlurRadiusChanged(this Avalonia.Media.DropShadowEffectBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBlurRadiusChanged<T>(this T obj, Action<Avalonia.Media.DropShadowEffectBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.DropShadowEffectBase.ColorProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class DropShadowEffectBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Color>> ObserveBindingColor(this Avalonia.Media.DropShadowEffectBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DropShadowEffectBase.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColor<T>(this T obj, Action<Avalonia.Media.DropShadowEffectBase, IObservable<BindingValue<Avalonia.Media.Color>>> handler) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DropShadowEffectBase.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorChanged(this Avalonia.Media.DropShadowEffectBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowEffectBase.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColorChanged<T>(this T obj, Action<Avalonia.Media.DropShadowEffectBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowEffectBase.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.DropShadowEffectBase.OpacityProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class DropShadowEffectBaseExtensions
     public static T OnOpacity<T>(this T obj, Action<Avalonia.Media.DropShadowEffectBase, IObservable<System.Double>> handler) where T : Avalonia.Media.DropShadowEffectBase
     {
         var observable = obj.GetObservable(Avalonia.Media.DropShadowEffectBase.OpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingOpacity(this Avalonia.Media.DropShadowEffectBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DropShadowEffectBase.OpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOpacity<T>(this T obj, Action<Avalonia.Media.DropShadowEffectBase, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DropShadowEffectBase.OpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOpacityChanged(this Avalonia.Media.DropShadowEffectBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowEffectBase.OpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOpacityChanged<T>(this T obj, Action<Avalonia.Media.DropShadowEffectBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowEffectBase.OpacityProperty);
         handler(obj, observable);
         return obj;
     }
