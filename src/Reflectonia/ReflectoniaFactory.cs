@@ -291,13 +291,25 @@ public class ReflectoniaFactory
                 continue;
             }
 
-            var argsType = eventHandlerType.GetGenericArguments().FirstOrDefault();
-            if (argsType is null)
+            Type? argsType;
+            if (eventHandlerType.IsGenericType)
             {
-                Log.Info($"Using default event args `for `{classType.Name}.{eventName}` event.");
+                argsType = eventHandlerType.GetGenericArguments().FirstOrDefault();
+            }
+            else
+            {
+                argsType = eventHandlerType.GetMethod("Invoke")?
+                    .GetParameters()
+                    .Skip(1)
+                    .FirstOrDefault()?
+                    .ParameterType;
             }
 
-            if (argsType is { IsPublic: false })
+            if (argsType is null)
+            {
+                Log.Info($"Using default event args for `{classType.Name}.{eventName}` event.");
+            }
+            else if (!argsType.IsPublic)
             {
                 Log.Info($"The `{classType.Name}.{eventName}` event handler type `{eventHandlerType.Name}` arguments `{argsType.Name}` are not public.");
                 continue;
@@ -307,7 +319,7 @@ public class ReflectoniaFactory
                 eventName,
                 classType,
                 argsType,
-                null,
+                eventHandlerType,
                 null);
             events.Add(e);
             Log.Info($"Added `{classType.Name}.{eventName}` event.");

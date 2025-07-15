@@ -523,8 +523,8 @@ public static partial class Templates
     public static %OwnerType% On%Name%Event(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ArgsType%>> handler)
     {
         var observable = Observable
-            .FromEventPattern<E%EventHandler%, %ArgsType%>(
-                h => obj.%Name% += h, 
+            .FromEventPattern<%EventHandler%, %ArgsType%>(
+                h => obj.%Name% += h,
                 h => obj.%Name% -= h)
             .Select(x => x.EventArgs);
         handler(obj, observable);
