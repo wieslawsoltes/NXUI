@@ -120,8 +120,12 @@ public class ExtensionsGenerator
                     continue;
 
                 var template = c.IsSealed
-                    ? Templates.RoutedEventMethodsTemplateSealed
-                    : Templates.RoutedEventMethodsTemplate;
+                    ? (e.EventType.IsGenericType
+                        ? Templates.RoutedEventMethodsTemplateSealed
+                        : Templates.RoutedEventMethodsTemplateSealedNonGeneric)
+                    : (e.EventType.IsGenericType
+                        ? Templates.RoutedEventMethodsTemplate
+                        : Templates.RoutedEventMethodsTemplateNonGeneric);
 
                 var eventBuilder = new StringBuilder(template);
 
@@ -177,16 +181,15 @@ public class ExtensionsGenerator
                 eventBuilder.Replace("%Name%", e.Name);
                 eventBuilder.Replace("%OwnerType%", ReflectoniaFactory.ToString(e.OwnerType));
 
-                if (e.ArgsType is { })
-                {
-                    eventBuilder.Replace("%ArgsType%", ReflectoniaFactory.ToString(e.ArgsType));
-                    eventBuilder.Replace("%EventHandler%", $"EventHandler<{ReflectoniaFactory.ToString(e.ArgsType)}>");
-                }
-                else
-                {
-                    eventBuilder.Replace("%ArgsType%", nameof(EventArgs));
-                    eventBuilder.Replace("%EventHandler%", $"EventHandler");
-                }
+                var argsType = e.ArgsType ?? typeof(EventArgs);
+                eventBuilder.Replace("%ArgsType%", ReflectoniaFactory.ToString(argsType));
+
+                var eventHandler = e.EventType is { }
+                    ? ReflectoniaFactory.ToString(e.EventType)
+                    : (e.ArgsType is { }
+                        ? $"EventHandler<{ReflectoniaFactory.ToString(argsType)}>"
+                        : "EventHandler");
+                eventBuilder.Replace("%EventHandler%", eventHandler);
 
                 WriteLine(eventBuilder.ToString());
 

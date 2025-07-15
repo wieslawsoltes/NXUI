@@ -327,6 +327,57 @@ public static partial class Templates
     }
 """;
 
+    public static string RoutedEventMethodsTemplateNonGeneric = """
+    // %OwnerType%.%Name%Event
+
+    /// <summary>
+    /// Registers a handler for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="action">The action to be performed when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T On%Name%Handler<T>(
+        this T obj,
+        Action<T, %ArgsType%> action,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%) where T : %OwnerType%
+    {
+        obj.AddHandler(%OwnerType%.%Name%Event, (object _, %ArgsType% args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object.</returns>
+    public static T On%Name%<T>(
+        this T obj, Action<T, IObservable<%ArgsType%>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%) where T : %OwnerType%
+    {
+        var observable = obj.GetObservable<%ArgsType%>(%OwnerType%.%Name%Event, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<%ArgsType%> ObserveOn%Name%(
+        this %OwnerType% obj,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
+    {
+        return obj.GetObservable<%ArgsType%>(%OwnerType%.%Name%Event, routes);
+    }
+""";
+
     public static string RoutedEventMethodsTemplateSealed = """
     // %OwnerType%.%Name%Event
 
@@ -372,6 +423,54 @@ public static partial class Templates
         Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
     {
         return obj.GetObservable(%OwnerType%.%Name%Event, routes);
+    }
+""";
+
+    public static string RoutedEventMethodsTemplateSealedNonGeneric = """
+    // %OwnerType%.%Name%Event
+
+    /// <summary>
+    /// Registers a handler for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The target object.</returns>
+    public static %OwnerType% On%Name%Handler(
+        this %OwnerType% obj, Action<%OwnerType%, %ArgsType%> action,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
+    {
+        obj.AddHandler(%OwnerType%.%Name%Event, (object _, %ArgsType% args) => action(obj, args), routes);
+        return obj;
+    }
+
+    /// <summary>
+    /// Registers a handler for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/> and returns an observable for the event.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler to be called when the event is raised.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The target object.</returns>
+    public static %OwnerType% On%Name%(
+        this %OwnerType% obj,
+        Action<%OwnerType%, IObservable<%ArgsType%>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
+    {
+        var observable = obj.GetObservable<%ArgsType%>(%OwnerType%.%Name%Event, routes);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets an observable for the <see cref="%ClassType%.%Name%Event"/> event on an object of type <see cref="%OwnerType%"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable for the event.</returns>
+    public static IObservable<%ArgsType%> ObserveOn%Name%(
+        this %OwnerType% obj,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)
+    {
+        return obj.GetObservable<%ArgsType%>(%OwnerType%.%Name%Event, routes);
     }
 """;
 
@@ -424,8 +523,8 @@ public static partial class Templates
     public static %OwnerType% On%Name%Event(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ArgsType%>> handler)
     {
         var observable = Observable
-            .FromEventPattern<E%EventHandler%, %ArgsType%>(
-                h => obj.%Name% += h, 
+            .FromEventPattern<%EventHandler%, %ArgsType%>(
+                h => obj.%Name% += h,
                 h => obj.%Name% -= h)
             .Select(x => x.EventArgs);
         handler(obj, observable);
