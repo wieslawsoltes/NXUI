@@ -104,6 +104,54 @@ public static partial class ContentControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContentControl.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingContent(this Avalonia.Controls.ContentControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContentControl.ContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContentControl.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContentControl.ContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContentControl.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentChanged(this Avalonia.Controls.ContentControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContentControl.ContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContentControl.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContentChanged<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContentControl.ContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ContentControl.ContentTemplateProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class ContentControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContentControl.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.ContentControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContentControl.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContentControl.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentTemplateChanged(this Avalonia.Controls.ContentControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContentControl.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContentTemplateChanged<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class ContentControlExtensions
     public static T OnHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.ContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>> ObserveBindingHorizontalContentAlignment(this Avalonia.Controls.ContentControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalContentAlignmentChanged(this Avalonia.Controls.ContentControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalContentAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -442,6 +586,54 @@ public static partial class ContentControlExtensions
     public static T OnVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.ContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>> ObserveBindingVerticalContentAlignment(this Avalonia.Controls.ContentControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalContentAlignmentChanged(this Avalonia.Controls.ContentControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalContentAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContentControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty);
         handler(obj, observable);
         return obj;
     }

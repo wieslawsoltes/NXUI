@@ -105,6 +105,54 @@ public static partial class CalendarExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.DayOfWeek>> ObserveBindingFirstDayOfWeek(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Calendar.FirstDayOfWeekProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFirstDayOfWeek<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<System.DayOfWeek>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.FirstDayOfWeekProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFirstDayOfWeekChanged(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.FirstDayOfWeekProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFirstDayOfWeekChanged<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.FirstDayOfWeekProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Sunday"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -286,6 +334,54 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Calendar.IsTodayHighlightedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsTodayHighlighted(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Calendar.IsTodayHighlightedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Calendar.IsTodayHighlightedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsTodayHighlighted<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.IsTodayHighlightedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Calendar.IsTodayHighlightedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsTodayHighlightedChanged(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.IsTodayHighlightedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Calendar.IsTodayHighlightedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsTodayHighlightedChanged<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.IsTodayHighlightedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Calendar.HeaderBackgroundProperty
 
     /// <summary>
@@ -384,6 +480,54 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Calendar.HeaderBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingHeaderBackground(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Calendar.HeaderBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHeaderBackground<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Calendar.HeaderBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHeaderBackgroundChanged(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Calendar.HeaderBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHeaderBackgroundChanged<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Calendar.DisplayModeProperty
 
     /// <summary>
@@ -478,6 +622,54 @@ public static partial class CalendarExtensions
     public static T OnDisplayMode<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<Avalonia.Controls.CalendarMode>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.CalendarMode>> ObserveBindingDisplayMode(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Calendar.DisplayModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDisplayMode<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<Avalonia.Controls.CalendarMode>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.DisplayModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDisplayModeChanged(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.DisplayModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDisplayModeChanged<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.DisplayModeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -612,6 +804,54 @@ public static partial class CalendarExtensions
     public static T OnSelectionMode<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<Avalonia.Controls.CalendarSelectionMode>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.SelectionModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.CalendarSelectionMode>> ObserveBindingSelectionMode(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Calendar.SelectionModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionMode<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<Avalonia.Controls.CalendarSelectionMode>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.SelectionModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionModeChanged(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.SelectionModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionModeChanged<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.SelectionModeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -762,6 +1002,54 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<System.DateTime>>> ObserveBindingSelectedDate(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Calendar.SelectedDateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedDate<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<System.Nullable<System.DateTime>>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.SelectedDateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedDateChanged(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.SelectedDateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedDateChanged<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.SelectedDateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Calendar.DisplayDateProperty
 
     /// <summary>
@@ -856,6 +1144,54 @@ public static partial class CalendarExtensions
     public static T OnDisplayDate<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<System.DateTime>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.DateTime>> ObserveBindingDisplayDate(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Calendar.DisplayDateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDisplayDate<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.DisplayDateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDisplayDateChanged(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.DisplayDateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDisplayDateChanged<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.DisplayDateProperty);
         handler(obj, observable);
         return obj;
     }
@@ -958,6 +1294,54 @@ public static partial class CalendarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<System.DateTime>>> ObserveBindingDisplayDateStart(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Calendar.DisplayDateStartProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDisplayDateStart<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<System.Nullable<System.DateTime>>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.DisplayDateStartProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDisplayDateStartChanged(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.DisplayDateStartProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDisplayDateStartChanged<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.DisplayDateStartProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Calendar.DisplayDateEndProperty
 
     /// <summary>
@@ -1052,6 +1436,54 @@ public static partial class CalendarExtensions
     public static T OnDisplayDateEnd<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<System.Nullable<System.DateTime>>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.DisplayDateEndProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<System.DateTime>>> ObserveBindingDisplayDateEnd(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Calendar.DisplayDateEndProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDisplayDateEnd<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<System.Nullable<System.DateTime>>>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.DisplayDateEndProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDisplayDateEndChanged(this Avalonia.Controls.Calendar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.DisplayDateEndProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDisplayDateEndChanged<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Calendar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Calendar.DisplayDateEndProperty);
         handler(obj, observable);
         return obj;
     }

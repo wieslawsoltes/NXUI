@@ -50,6 +50,52 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Size>> ObserveBindingClientSize(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TopLevel.ClientSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TopLevel OnBindingClientSize(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<BindingValue<Avalonia.Size>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.ClientSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveClientSizeChanged(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.ClientSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TopLevel OnClientSizeChanged(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.ClientSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TopLevel.FrameSizeProperty
 
     /// <summary>
@@ -90,6 +136,52 @@ public static partial class TopLevelExtensions
     public static Avalonia.Controls.TopLevel OnFrameSize(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<System.Nullable<Avalonia.Size>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.FrameSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<Avalonia.Size>>> ObserveBindingFrameSize(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TopLevel.FrameSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TopLevel OnBindingFrameSize(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<BindingValue<System.Nullable<Avalonia.Size>>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.FrameSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFrameSizeChanged(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.FrameSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TopLevel OnFrameSizeChanged(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.FrameSizeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -192,6 +284,54 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Input.IInputElement>> ObserveBindingPointerOverElement(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPointerOverElement<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<BindingValue<Avalonia.Input.IInputElement>>> handler) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePointerOverElementChanged(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPointerOverElementChanged<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TopLevel.TransparencyLevelHintProperty
 
     /// <summary>
@@ -290,6 +430,54 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>>> ObserveBindingTransparencyLevelHint(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTransparencyLevelHint<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<BindingValue<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>>>> handler) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTransparencyLevelHintChanged(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTransparencyLevelHintChanged<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty
 
     /// <summary>
@@ -330,6 +518,52 @@ public static partial class TopLevelExtensions
     public static Avalonia.Controls.TopLevel OnActualTransparencyLevel(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Controls.WindowTransparencyLevel>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.WindowTransparencyLevel>> ObserveBindingActualTransparencyLevel(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TopLevel OnBindingActualTransparencyLevel(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<BindingValue<Avalonia.Controls.WindowTransparencyLevel>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveActualTransparencyLevelChanged(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TopLevel OnActualTransparencyLevelChanged(this Avalonia.Controls.TopLevel obj, Action<Avalonia.Controls.TopLevel, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty);
         handler(obj, observable);
         return obj;
     }
@@ -432,6 +666,54 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingTransparencyBackgroundFallback(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTransparencyBackgroundFallback<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTransparencyBackgroundFallbackChanged(this Avalonia.Controls.TopLevel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTransparencyBackgroundFallbackChanged<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TopLevel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TopLevel.SystemBarColorProperty
 
     /// <summary>
@@ -530,6 +812,54 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.SolidColorBrush>> ObserveBindingSystemBarColor(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TopLevel.SystemBarColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSystemBarColor<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Media.SolidColorBrush>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.SystemBarColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSystemBarColorChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.SystemBarColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSystemBarColorChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.SystemBarColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty
 
     /// <summary>
@@ -624,6 +954,54 @@ public static partial class TopLevelExtensions
     public static T OnAutoSafeAreaPadding<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAutoSafeAreaPadding(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAutoSafeAreaPadding<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAutoSafeAreaPaddingChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAutoSafeAreaPaddingChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty);
         handler(obj, observable);
         return obj;
     }

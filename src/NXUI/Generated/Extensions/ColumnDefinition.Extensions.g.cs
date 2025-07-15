@@ -104,6 +104,54 @@ public static partial class ColumnDefinitionExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMaxWidth(this Avalonia.Controls.ColumnDefinition obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColumnDefinition.MaxWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxWidth<T>(this T obj, Action<Avalonia.Controls.ColumnDefinition, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.ColumnDefinition
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColumnDefinition.MaxWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxWidthChanged(this Avalonia.Controls.ColumnDefinition obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColumnDefinition.MaxWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxWidthChanged<T>(this T obj, Action<Avalonia.Controls.ColumnDefinition, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColumnDefinition
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColumnDefinition.MaxWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColumnDefinition.MinWidthProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class ColumnDefinitionExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinWidth(this Avalonia.Controls.ColumnDefinition obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColumnDefinition.MinWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinWidth<T>(this T obj, Action<Avalonia.Controls.ColumnDefinition, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.ColumnDefinition
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColumnDefinition.MinWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinWidthChanged(this Avalonia.Controls.ColumnDefinition obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColumnDefinition.MinWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinWidthChanged<T>(this T obj, Action<Avalonia.Controls.ColumnDefinition, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColumnDefinition
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColumnDefinition.MinWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColumnDefinition.WidthProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class ColumnDefinitionExtensions
     public static T OnWidth<T>(this T obj, Action<Avalonia.Controls.ColumnDefinition, IObservable<Avalonia.Controls.GridLength>> handler) where T : Avalonia.Controls.ColumnDefinition
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColumnDefinition.WidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.GridLength>> ObserveBindingWidth(this Avalonia.Controls.ColumnDefinition obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColumnDefinition.WidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingWidth<T>(this T obj, Action<Avalonia.Controls.ColumnDefinition, IObservable<BindingValue<Avalonia.Controls.GridLength>>> handler) where T : Avalonia.Controls.ColumnDefinition
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColumnDefinition.WidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWidthChanged(this Avalonia.Controls.ColumnDefinition obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColumnDefinition.WidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnWidthChanged<T>(this T obj, Action<Avalonia.Controls.ColumnDefinition, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColumnDefinition
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColumnDefinition.WidthProperty);
         handler(obj, observable);
         return obj;
     }

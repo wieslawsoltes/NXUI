@@ -104,6 +104,54 @@ public static partial class KeyBindingExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.KeyBinding.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Windows.Input.ICommand>> ObserveBindingCommand(this Avalonia.Input.KeyBinding obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.KeyBinding.CommandProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.KeyBinding.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Input.KeyBinding, IObservable<BindingValue<System.Windows.Input.ICommand>>> handler) where T : Avalonia.Input.KeyBinding
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.KeyBinding.CommandProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.KeyBinding.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCommandChanged(this Avalonia.Input.KeyBinding obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.KeyBinding.CommandProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.KeyBinding.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCommandChanged<T>(this T obj, Action<Avalonia.Input.KeyBinding, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.KeyBinding
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.KeyBinding.CommandProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.KeyBinding.CommandParameterProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class KeyBindingExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingCommandParameter(this Avalonia.Input.KeyBinding obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.KeyBinding.CommandParameterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Input.KeyBinding, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Input.KeyBinding
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.KeyBinding.CommandParameterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCommandParameterChanged(this Avalonia.Input.KeyBinding obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.KeyBinding.CommandParameterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCommandParameterChanged<T>(this T obj, Action<Avalonia.Input.KeyBinding, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.KeyBinding
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.KeyBinding.CommandParameterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.KeyBinding.GestureProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class KeyBindingExtensions
     public static T OnGesture<T>(this T obj, Action<Avalonia.Input.KeyBinding, IObservable<Avalonia.Input.KeyGesture>> handler) where T : Avalonia.Input.KeyBinding
     {
         var observable = obj.GetObservable(Avalonia.Input.KeyBinding.GestureProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.KeyBinding.GestureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Input.KeyGesture>> ObserveBindingGesture(this Avalonia.Input.KeyBinding obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.KeyBinding.GestureProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.KeyBinding.GestureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingGesture<T>(this T obj, Action<Avalonia.Input.KeyBinding, IObservable<BindingValue<Avalonia.Input.KeyGesture>>> handler) where T : Avalonia.Input.KeyBinding
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.KeyBinding.GestureProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.KeyBinding.GestureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveGestureChanged(this Avalonia.Input.KeyBinding obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.KeyBinding.GestureProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.KeyBinding.GestureProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnGestureChanged<T>(this T obj, Action<Avalonia.Input.KeyBinding, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.KeyBinding
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.KeyBinding.GestureProperty);
         handler(obj, observable);
         return obj;
     }

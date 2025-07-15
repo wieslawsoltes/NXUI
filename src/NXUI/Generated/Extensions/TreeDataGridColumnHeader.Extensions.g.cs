@@ -50,6 +50,52 @@ public static partial class TreeDataGridColumnHeaderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCanUserResize(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnBindingCanUserResize(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCanUserResizeChanged(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnCanUserResizeChanged(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty
 
     /// <summary>
@@ -94,6 +140,52 @@ public static partial class TreeDataGridColumnHeaderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingHeader(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnBindingHeader(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<BindingValue<System.Object>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHeaderChanged(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnHeaderChanged(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty
 
     /// <summary>
@@ -134,6 +226,52 @@ public static partial class TreeDataGridColumnHeaderExtensions
     public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnSortDirection(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<System.Nullable<System.ComponentModel.ListSortDirection>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<System.ComponentModel.ListSortDirection>>> ObserveBindingSortDirection(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnBindingSortDirection(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<BindingValue<System.Nullable<System.ComponentModel.ListSortDirection>>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSortDirectionChanged(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnSortDirectionChanged(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty);
         handler(obj, observable);
         return obj;
     }

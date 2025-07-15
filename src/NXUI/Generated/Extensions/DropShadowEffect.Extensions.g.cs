@@ -99,6 +99,52 @@ public static partial class DropShadowEffectExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingOffsetX(this Avalonia.Media.DropShadowEffect obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DropShadowEffect.OffsetXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowEffect OnBindingOffsetX(this Avalonia.Media.DropShadowEffect obj, Action<Avalonia.Media.DropShadowEffect, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DropShadowEffect.OffsetXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOffsetXChanged(this Avalonia.Media.DropShadowEffect obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowEffect.OffsetXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowEffect OnOffsetXChanged(this Avalonia.Media.DropShadowEffect obj, Action<Avalonia.Media.DropShadowEffect, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowEffect.OffsetXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.DropShadowEffect.OffsetYProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class DropShadowEffectExtensions
     public static Avalonia.Media.DropShadowEffect OnOffsetY(this Avalonia.Media.DropShadowEffect obj, Action<Avalonia.Media.DropShadowEffect, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DropShadowEffect.OffsetYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingOffsetY(this Avalonia.Media.DropShadowEffect obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DropShadowEffect.OffsetYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowEffect OnBindingOffsetY(this Avalonia.Media.DropShadowEffect obj, Action<Avalonia.Media.DropShadowEffect, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DropShadowEffect.OffsetYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOffsetYChanged(this Avalonia.Media.DropShadowEffect obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowEffect.OffsetYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowEffect OnOffsetYChanged(this Avalonia.Media.DropShadowEffect obj, Action<Avalonia.Media.DropShadowEffect, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowEffect.OffsetYProperty);
         handler(obj, observable);
         return obj;
     }

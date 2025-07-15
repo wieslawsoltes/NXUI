@@ -104,6 +104,54 @@ public static partial class HeaderedSelectingItemsControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingHeader(this Avalonia.Controls.Primitives.HeaderedSelectingItemsControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHeader<T>(this T obj, Action<Avalonia.Controls.Primitives.HeaderedSelectingItemsControl, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHeaderChanged(this Avalonia.Controls.Primitives.HeaderedSelectingItemsControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHeaderChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.HeaderedSelectingItemsControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class HeaderedSelectingItemsControlExtensions
     public static T OnHeaderTemplate<T>(this T obj, Action<Avalonia.Controls.Primitives.HeaderedSelectingItemsControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingHeaderTemplate(this Avalonia.Controls.Primitives.HeaderedSelectingItemsControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHeaderTemplate<T>(this T obj, Action<Avalonia.Controls.Primitives.HeaderedSelectingItemsControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHeaderTemplateChanged(this Avalonia.Controls.Primitives.HeaderedSelectingItemsControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHeaderTemplateChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.HeaderedSelectingItemsControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.HeaderedSelectingItemsControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty);
         handler(obj, observable);
         return obj;
     }

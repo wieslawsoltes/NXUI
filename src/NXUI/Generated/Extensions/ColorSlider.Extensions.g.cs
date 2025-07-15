@@ -104,6 +104,54 @@ public static partial class ColorSliderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Color>> ObserveBindingColor(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColor<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<BindingValue<Avalonia.Media.Color>>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorChanged(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColorChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ColorSliderExtensions
     public static T OnColorComponent<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<Avalonia.Controls.ColorComponent>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ColorComponent>> ObserveBindingColorComponent(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColorComponent<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<BindingValue<Avalonia.Controls.ColorComponent>>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorComponentChanged(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColorComponentChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -349,6 +445,54 @@ public static partial class ColorSliderExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ColorModel>> ObserveBindingColorModel(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColorModel<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<BindingValue<Avalonia.Controls.ColorModel>>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorModelChanged(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColorModelChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> property value to <see cref="Avalonia.Controls.ColorModel.Hsva"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -470,6 +614,54 @@ public static partial class ColorSliderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.HsvColor>> ObserveBindingHsvColor(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHsvColor<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<BindingValue<Avalonia.Media.HsvColor>>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHsvColorChanged(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHsvColorChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty
 
     /// <summary>
@@ -564,6 +756,54 @@ public static partial class ColorSliderExtensions
     public static T OnIsAlphaVisible<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsAlphaVisible(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsAlphaVisible<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsAlphaVisibleChanged(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsAlphaVisibleChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -666,6 +906,54 @@ public static partial class ColorSliderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsPerceptive(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsPerceptive<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsPerceptiveChanged(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsPerceptiveChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty
 
     /// <summary>
@@ -760,6 +1048,54 @@ public static partial class ColorSliderExtensions
     public static T OnIsRoundingEnabled<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsRoundingEnabled(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsRoundingEnabled<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsRoundingEnabledChanged(this Avalonia.Controls.Primitives.ColorSlider obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsRoundingEnabledChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSlider, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSlider
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty);
         handler(obj, observable);
         return obj;
     }

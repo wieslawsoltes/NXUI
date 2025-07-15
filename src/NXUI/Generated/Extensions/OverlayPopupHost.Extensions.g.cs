@@ -103,4 +103,52 @@ public static partial class OverlayPopupHostExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Transform>> ObserveBindingTransform(this Avalonia.Controls.Primitives.OverlayPopupHost obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTransform<T>(this T obj, Action<Avalonia.Controls.Primitives.OverlayPopupHost, IObservable<BindingValue<Avalonia.Media.Transform>>> handler) where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTransformChanged(this Avalonia.Controls.Primitives.OverlayPopupHost obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTransformChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.OverlayPopupHost, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

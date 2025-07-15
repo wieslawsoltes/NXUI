@@ -98,4 +98,50 @@ public static partial class SolidColorBrushExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.SolidColorBrush.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Color>> ObserveBindingColor(this Avalonia.Media.SolidColorBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.SolidColorBrush.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.SolidColorBrush.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.SolidColorBrush OnBindingColor(this Avalonia.Media.SolidColorBrush obj, Action<Avalonia.Media.SolidColorBrush, IObservable<BindingValue<Avalonia.Media.Color>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.SolidColorBrush.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.SolidColorBrush.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorChanged(this Avalonia.Media.SolidColorBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.SolidColorBrush.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.SolidColorBrush.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.SolidColorBrush OnColorChanged(this Avalonia.Media.SolidColorBrush obj, Action<Avalonia.Media.SolidColorBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.SolidColorBrush.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

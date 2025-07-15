@@ -104,6 +104,54 @@ public static partial class ColorPickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorPicker.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingContent(this Avalonia.Controls.ColorPicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorPicker.ContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorPicker.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.ColorPicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorPicker.ContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorPicker.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentChanged(this Avalonia.Controls.ColorPicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorPicker.ContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorPicker.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContentChanged<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorPicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorPicker.ContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorPicker.ContentTemplateProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class ColorPickerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorPicker.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.ColorPicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorPicker.ContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorPicker.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ColorPicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorPicker.ContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorPicker.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentTemplateChanged(this Avalonia.Controls.ColorPicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorPicker.ContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorPicker.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContentTemplateChanged<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorPicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorPicker.ContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class ColorPickerExtensions
     public static T OnHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.ColorPicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>> ObserveBindingHorizontalContentAlignment(this Avalonia.Controls.ColorPicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>>> handler) where T : Avalonia.Controls.ColorPicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalContentAlignmentChanged(this Avalonia.Controls.ColorPicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalContentAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorPicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -442,6 +586,54 @@ public static partial class ColorPickerExtensions
     public static T OnVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<Avalonia.Layout.VerticalAlignment>> handler) where T : Avalonia.Controls.ColorPicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>> ObserveBindingVerticalContentAlignment(this Avalonia.Controls.ColorPicker obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>>> handler) where T : Avalonia.Controls.ColorPicker
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalContentAlignmentChanged(this Avalonia.Controls.ColorPicker obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalContentAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ColorPicker
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty);
         handler(obj, observable);
         return obj;
     }

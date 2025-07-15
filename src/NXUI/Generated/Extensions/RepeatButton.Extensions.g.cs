@@ -104,6 +104,54 @@ public static partial class RepeatButtonExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingInterval(this Avalonia.Controls.RepeatButton obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RepeatButton.IntervalProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingInterval<T>(this T obj, Action<Avalonia.Controls.RepeatButton, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.RepeatButton
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RepeatButton.IntervalProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIntervalChanged(this Avalonia.Controls.RepeatButton obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RepeatButton.IntervalProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIntervalChanged<T>(this T obj, Action<Avalonia.Controls.RepeatButton, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.RepeatButton
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RepeatButton.IntervalProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RepeatButton.DelayProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class RepeatButtonExtensions
     public static T OnDelay<T>(this T obj, Action<Avalonia.Controls.RepeatButton, IObservable<System.Int32>> handler) where T : Avalonia.Controls.RepeatButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.RepeatButton.DelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingDelay(this Avalonia.Controls.RepeatButton obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RepeatButton.DelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDelay<T>(this T obj, Action<Avalonia.Controls.RepeatButton, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.RepeatButton
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RepeatButton.DelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDelayChanged(this Avalonia.Controls.RepeatButton obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RepeatButton.DelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDelayChanged<T>(this T obj, Action<Avalonia.Controls.RepeatButton, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.RepeatButton
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RepeatButton.DelayProperty);
         handler(obj, observable);
         return obj;
     }

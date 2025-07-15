@@ -98,4 +98,50 @@ public static partial class PolyLineSegmentExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.Generic.IList<Avalonia.Point>>> ObserveBindingPoints(this Avalonia.Media.PolyLineSegment obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PolyLineSegment.PointsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PolyLineSegment OnBindingPoints(this Avalonia.Media.PolyLineSegment obj, Action<Avalonia.Media.PolyLineSegment, IObservable<BindingValue<System.Collections.Generic.IList<Avalonia.Point>>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PolyLineSegment.PointsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePointsChanged(this Avalonia.Media.PolyLineSegment obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PolyLineSegment.PointsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PolyLineSegment OnPointsChanged(this Avalonia.Media.PolyLineSegment obj, Action<Avalonia.Media.PolyLineSegment, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PolyLineSegment.PointsProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

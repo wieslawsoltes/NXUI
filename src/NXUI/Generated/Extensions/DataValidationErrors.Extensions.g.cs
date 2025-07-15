@@ -104,6 +104,54 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.Generic.IEnumerable<System.Object>>> ObserveBindingErrors(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingErrors<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Collections.Generic.IEnumerable<System.Object>>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveErrorsChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnErrorsChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataValidationErrors.HasErrorsProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class DataValidationErrorsExtensions
     public static T OnHasErrors<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingHasErrors(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHasErrors<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHasErrorsChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHasErrorsChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Func<System.Object,System.Object>>> ObserveBindingErrorConverter(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingErrorConverter<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Func<System.Object,System.Object>>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveErrorConverterChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnErrorConverterChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingErrorTemplate(this Avalonia.Controls.DataValidationErrors obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingErrorTemplate<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.DataValidationErrors
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveErrorTemplateChanged(this Avalonia.Controls.DataValidationErrors obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnErrorTemplateChanged<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataValidationErrors
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataValidationErrors.OwnerProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class DataValidationErrorsExtensions
     public static T OnOwner<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.DataValidationErrors
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingOwner(this Avalonia.Controls.DataValidationErrors obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOwner<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.DataValidationErrors
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOwnerChanged(this Avalonia.Controls.DataValidationErrors obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOwnerChanged<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataValidationErrors
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
         handler(obj, observable);
         return obj;
     }

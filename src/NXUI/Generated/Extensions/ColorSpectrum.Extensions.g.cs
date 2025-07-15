@@ -104,6 +104,54 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Color>> ObserveBindingColor(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColor<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<Avalonia.Media.Color>>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColorChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColorChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ColorSpectrumExtensions
     public static T OnComponents<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<Avalonia.Controls.ColorSpectrumComponents>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ColorSpectrumComponents>> ObserveBindingComponents(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingComponents<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<Avalonia.Controls.ColorSpectrumComponents>>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveComponentsChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnComponentsChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -372,6 +468,54 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.HsvColor>> ObserveBindingHsvColor(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHsvColor<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<Avalonia.Media.HsvColor>>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHsvColorChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHsvColorChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty
 
     /// <summary>
@@ -466,6 +610,54 @@ public static partial class ColorSpectrumExtensions
     public static T OnMaxHue<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMaxHue(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxHue<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxHueChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxHueChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty);
         handler(obj, observable);
         return obj;
     }
@@ -568,6 +760,54 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMaxSaturation(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxSaturation<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxSaturationChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxSaturationChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty
 
     /// <summary>
@@ -662,6 +902,54 @@ public static partial class ColorSpectrumExtensions
     public static T OnMaxValue<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMaxValue(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxValue<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxValueChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxValueChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty);
         handler(obj, observable);
         return obj;
     }
@@ -764,6 +1052,54 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMinHue(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinHue<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinHueChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinHueChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty
 
     /// <summary>
@@ -862,6 +1198,54 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMinSaturation(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinSaturation<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinSaturationChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinSaturationChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty
 
     /// <summary>
@@ -956,6 +1340,54 @@ public static partial class ColorSpectrumExtensions
     public static T OnMinValue<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMinValue(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinValue<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinValueChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinValueChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1059,6 +1491,54 @@ public static partial class ColorSpectrumExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ColorSpectrumShape>> ObserveBindingShape(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShape<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<Avalonia.Controls.ColorSpectrumShape>>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShapeChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShapeChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ColorSpectrum
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumShape.Box"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1122,6 +1602,52 @@ public static partial class ColorSpectrumExtensions
     public static Avalonia.Controls.Primitives.ColorSpectrum OnThirdComponent(this Avalonia.Controls.Primitives.ColorSpectrum obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<Avalonia.Controls.ColorComponent>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ColorComponent>> ObserveBindingThirdComponent(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.ColorSpectrum OnBindingThirdComponent(this Avalonia.Controls.Primitives.ColorSpectrum obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<BindingValue<Avalonia.Controls.ColorComponent>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveThirdComponentChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.ColorSpectrum OnThirdComponentChanged(this Avalonia.Controls.Primitives.ColorSpectrum obj, Action<Avalonia.Controls.Primitives.ColorSpectrum, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty);
         handler(obj, observable);
         return obj;
     }

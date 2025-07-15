@@ -104,6 +104,54 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingItemSpacing(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.WrapPanel.ItemSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemSpacing<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.WrapPanel.ItemSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemSpacingChanged(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.ItemSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemSpacingChanged<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.ItemSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.WrapPanel.LineSpacingProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLineSpacing(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.WrapPanel.LineSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLineSpacing<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.WrapPanel.LineSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLineSpacingChanged(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.LineSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLineSpacingChanged<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.LineSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.WrapPanel.OrientationProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class WrapPanelExtensions
     public static T OnOrientation<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.WrapPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.WrapPanel.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.Orientation>> ObserveBindingOrientation(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.WrapPanel.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<BindingValue<Avalonia.Layout.Orientation>>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.WrapPanel.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.OrientationProperty);
         handler(obj, observable);
         return obj;
     }
@@ -418,6 +562,54 @@ public static partial class WrapPanelExtensions
     public static T OnItemsAlignment<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<Avalonia.Controls.WrapPanelItemsAlignment>> handler) where T : Avalonia.Controls.WrapPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.WrapPanelItemsAlignment>> ObserveBindingItemsAlignment(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemsAlignment<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<BindingValue<Avalonia.Controls.WrapPanelItemsAlignment>>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemsAlignmentChanged(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemsAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -556,6 +748,54 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingItemWidth(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.WrapPanel.ItemWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemWidth<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.WrapPanel.ItemWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemWidthChanged(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.ItemWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemWidthChanged<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.ItemWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.WrapPanel.ItemHeightProperty
 
     /// <summary>
@@ -650,6 +890,54 @@ public static partial class WrapPanelExtensions
     public static T OnItemHeight<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<System.Double>> handler) where T : Avalonia.Controls.WrapPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.WrapPanel.ItemHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingItemHeight(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.WrapPanel.ItemHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemHeight<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.WrapPanel.ItemHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemHeightChanged(this Avalonia.Controls.WrapPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.ItemHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemHeightChanged<T>(this T obj, Action<Avalonia.Controls.WrapPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.WrapPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.WrapPanel.ItemHeightProperty);
         handler(obj, observable);
         return obj;
     }

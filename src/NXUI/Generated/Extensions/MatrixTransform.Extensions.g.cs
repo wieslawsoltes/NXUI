@@ -98,4 +98,50 @@ public static partial class MatrixTransformExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Matrix>> ObserveBindingMatrix(this Avalonia.Media.MatrixTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.MatrixTransform.MatrixProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.MatrixTransform OnBindingMatrix(this Avalonia.Media.MatrixTransform obj, Action<Avalonia.Media.MatrixTransform, IObservable<BindingValue<Avalonia.Matrix>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.MatrixTransform.MatrixProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMatrixChanged(this Avalonia.Media.MatrixTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.MatrixTransform.MatrixProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.MatrixTransform OnMatrixChanged(this Avalonia.Media.MatrixTransform obj, Action<Avalonia.Media.MatrixTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.MatrixTransform.MatrixProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

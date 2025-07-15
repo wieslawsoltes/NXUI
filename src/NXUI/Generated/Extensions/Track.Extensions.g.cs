@@ -104,6 +104,54 @@ public static partial class TrackExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinimum(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.MinimumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinimum<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.MinimumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinimumChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.MinimumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinimumChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.MinimumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.Track.MaximumProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TrackExtensions
     public static T OnMaximum<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.MaximumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMaximum(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.MaximumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaximum<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.MaximumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaximumChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.MaximumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaximumChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.MaximumProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class TrackExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingValue(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.ValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingValue<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.ValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveValueChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.ValueProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnValueChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.ValueProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.Track.ViewportSizeProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class TrackExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingViewportSize(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.ViewportSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingViewportSize<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.ViewportSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveViewportSizeChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.ViewportSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnViewportSizeChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.ViewportSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.Track.OrientationProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class TrackExtensions
     public static T OnOrientation<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.Orientation>> ObserveBindingOrientation(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<Avalonia.Layout.Orientation>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.OrientationProperty);
         handler(obj, observable);
         return obj;
     }
@@ -618,6 +858,54 @@ public static partial class TrackExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.Thumb>> ObserveBindingThumb(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingThumb<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<Avalonia.Controls.Primitives.Thumb>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveThumbChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnThumbChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.Track.IncreaseButtonProperty
 
     /// <summary>
@@ -712,6 +1000,54 @@ public static partial class TrackExtensions
     public static T OnIncreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Controls.Button>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Button>> ObserveBindingIncreaseButton(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIncreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<Avalonia.Controls.Button>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIncreaseButtonChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIncreaseButtonChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
         handler(obj, observable);
         return obj;
     }
@@ -814,6 +1150,54 @@ public static partial class TrackExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Button>> ObserveBindingDecreaseButton(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDecreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<Avalonia.Controls.Button>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDecreaseButtonChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDecreaseButtonChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty
 
     /// <summary>
@@ -908,6 +1292,54 @@ public static partial class TrackExtensions
     public static T OnIsDirectionReversed<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsDirectionReversed(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsDirectionReversed<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsDirectionReversedChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsDirectionReversedChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1010,6 +1442,54 @@ public static partial class TrackExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIgnoreThumbDrag(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIgnoreThumbDrag<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIgnoreThumbDragChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIgnoreThumbDragChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.Track.DeferThumbDragProperty
 
     /// <summary>
@@ -1104,6 +1584,54 @@ public static partial class TrackExtensions
     public static T OnDeferThumbDrag<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.DeferThumbDragProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingDeferThumbDrag(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.DeferThumbDragProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDeferThumbDrag<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.DeferThumbDragProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDeferThumbDragChanged(this Avalonia.Controls.Primitives.Track obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.DeferThumbDragProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDeferThumbDragChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.Track
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.Track.DeferThumbDragProperty);
         handler(obj, observable);
         return obj;
     }

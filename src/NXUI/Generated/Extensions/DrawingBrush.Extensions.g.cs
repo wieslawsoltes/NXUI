@@ -98,4 +98,50 @@ public static partial class DrawingBrushExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DrawingBrush.DrawingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Drawing>> ObserveBindingDrawing(this Avalonia.Media.DrawingBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DrawingBrush.DrawingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DrawingBrush.DrawingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingBrush OnBindingDrawing(this Avalonia.Media.DrawingBrush obj, Action<Avalonia.Media.DrawingBrush, IObservable<BindingValue<Avalonia.Media.Drawing>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DrawingBrush.DrawingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DrawingBrush.DrawingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDrawingChanged(this Avalonia.Media.DrawingBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DrawingBrush.DrawingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DrawingBrush.DrawingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DrawingBrush OnDrawingChanged(this Avalonia.Media.DrawingBrush obj, Action<Avalonia.Media.DrawingBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DrawingBrush.DrawingProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

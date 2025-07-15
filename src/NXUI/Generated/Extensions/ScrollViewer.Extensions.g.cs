@@ -104,6 +104,54 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingBringIntoViewOnFocusChange(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBringIntoViewOnFocusChange<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBringIntoViewOnFocusChangeChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBringIntoViewOnFocusChangeChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ScrollViewer.ExtentProperty
 
     /// <summary>
@@ -144,6 +192,52 @@ public static partial class ScrollViewerExtensions
     public static Avalonia.Controls.ScrollViewer OnExtent(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.ExtentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Size>> ObserveBindingExtent(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.ExtentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnBindingExtent(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<BindingValue<Avalonia.Size>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.ExtentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveExtentChanged(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.ExtentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnExtentChanged(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.ExtentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -246,6 +340,54 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Vector>> ObserveBindingOffset(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.OffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOffset<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<BindingValue<Avalonia.Vector>>> handler) where T : Avalonia.Controls.ScrollViewer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.OffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOffsetChanged(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.OffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOffsetChanged<T>(this T obj, Action<Avalonia.Controls.ScrollViewer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ScrollViewer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.OffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ScrollViewer.ViewportProperty
 
     /// <summary>
@@ -286,6 +428,52 @@ public static partial class ScrollViewerExtensions
     public static Avalonia.Controls.ScrollViewer OnViewport(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Size>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.ViewportProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Size>> ObserveBindingViewport(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.ViewportProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnBindingViewport(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<BindingValue<Avalonia.Size>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.ViewportProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveViewportChanged(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.ViewportProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnViewportChanged(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.ViewportProperty);
         handler(obj, observable);
         return obj;
     }
@@ -334,6 +522,52 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.LargeChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Size>> ObserveBindingLargeChange(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.LargeChangeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.LargeChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnBindingLargeChange(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<BindingValue<Avalonia.Size>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.LargeChangeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.LargeChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLargeChangeChanged(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.LargeChangeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.LargeChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnLargeChangeChanged(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.LargeChangeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ScrollViewer.SmallChangeProperty
 
     /// <summary>
@@ -378,6 +612,52 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.SmallChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Size>> ObserveBindingSmallChange(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.SmallChangeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.SmallChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnBindingSmallChange(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<BindingValue<Avalonia.Size>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.SmallChangeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.SmallChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSmallChangeChanged(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.SmallChangeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.SmallChangeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnSmallChangeChanged(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.SmallChangeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty
 
     /// <summary>
@@ -418,6 +698,52 @@ public static partial class ScrollViewerExtensions
     public static Avalonia.Controls.ScrollViewer OnScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<Avalonia.Vector>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Vector>> ObserveBindingScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnBindingScrollBarMaximum(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<BindingValue<Avalonia.Vector>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveScrollBarMaximumChanged(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnScrollBarMaximumChanged(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty);
         handler(obj, observable);
         return obj;
     }
@@ -516,6 +842,54 @@ public static partial class ScrollViewerExtensions
     public static T OnHorizontalScrollBarVisibility<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.ScrollBarVisibility>> ObserveBindingHorizontalScrollBarVisibility(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalScrollBarVisibility<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.ScrollBarVisibility>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalScrollBarVisibilityChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalScrollBarVisibilityChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty);
         handler(obj, observable);
         return obj;
     }
@@ -667,6 +1041,54 @@ public static partial class ScrollViewerExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.SnapPointsType>> ObserveBindingHorizontalSnapPointsType(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalSnapPointsType<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.SnapPointsType>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalSnapPointsTypeChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalSnapPointsTypeChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -796,6 +1218,54 @@ public static partial class ScrollViewerExtensions
     public static T OnVerticalSnapPointsType<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.SnapPointsType>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.SnapPointsType>> ObserveBindingVerticalSnapPointsType(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalSnapPointsType<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.SnapPointsType>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalSnapPointsTypeChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalSnapPointsTypeChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -935,6 +1405,54 @@ public static partial class ScrollViewerExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.SnapPointsAlignment>> ObserveBindingHorizontalSnapPointsAlignment(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalSnapPointsAlignment<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.SnapPointsAlignment>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalSnapPointsAlignmentChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalSnapPointsAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Near"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1064,6 +1582,54 @@ public static partial class ScrollViewerExtensions
     public static T OnVerticalSnapPointsAlignment<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.SnapPointsAlignment>> ObserveBindingVerticalSnapPointsAlignment(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalSnapPointsAlignment<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.SnapPointsAlignment>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalSnapPointsAlignmentChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalSnapPointsAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1203,6 +1769,54 @@ public static partial class ScrollViewerExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.ScrollBarVisibility>> ObserveBindingVerticalScrollBarVisibility(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalScrollBarVisibility<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.ScrollBarVisibility>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalScrollBarVisibilityChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalScrollBarVisibilityChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1290,6 +1904,52 @@ public static partial class ScrollViewerExtensions
     public static Avalonia.Controls.ScrollViewer OnIsExpanded(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.IsExpandedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsExpanded(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.IsExpandedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnBindingIsExpanded(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.IsExpandedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsExpandedChanged(this Avalonia.Controls.ScrollViewer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.IsExpandedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ScrollViewer OnIsExpandedChanged(this Avalonia.Controls.ScrollViewer obj, Action<Avalonia.Controls.ScrollViewer, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.IsExpandedProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1392,6 +2052,54 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAllowAutoHide(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAllowAutoHide<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAllowAutoHideChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAllowAutoHideChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty
 
     /// <summary>
@@ -1486,6 +2194,54 @@ public static partial class ScrollViewerExtensions
     public static T OnIsScrollChainingEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsScrollChainingEnabled(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsScrollChainingEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsScrollChainingEnabledChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsScrollChainingEnabledChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1588,6 +2344,54 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsScrollInertiaEnabled(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsScrollInertiaEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsScrollInertiaEnabledChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsScrollInertiaEnabledChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty
 
     /// <summary>
@@ -1682,6 +2486,54 @@ public static partial class ScrollViewerExtensions
     public static T OnIsDeferredScrollingEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsDeferredScrollingEnabled(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsDeferredScrollingEnabled<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsDeferredScrollingEnabledChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsDeferredScrollingEnabledChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty);
         handler(obj, observable);
         return obj;
     }

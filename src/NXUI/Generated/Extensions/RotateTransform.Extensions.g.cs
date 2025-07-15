@@ -99,6 +99,52 @@ public static partial class RotateTransformExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.RotateTransform.AngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingAngle(this Avalonia.Media.RotateTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.RotateTransform.AngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.RotateTransform.AngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RotateTransform OnBindingAngle(this Avalonia.Media.RotateTransform obj, Action<Avalonia.Media.RotateTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.RotateTransform.AngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.RotateTransform.AngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAngleChanged(this Avalonia.Media.RotateTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.RotateTransform.AngleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.RotateTransform.AngleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RotateTransform OnAngleChanged(this Avalonia.Media.RotateTransform obj, Action<Avalonia.Media.RotateTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.RotateTransform.AngleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.RotateTransform.CenterXProperty
 
     /// <summary>
@@ -192,6 +238,52 @@ public static partial class RotateTransformExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingCenterX(this Avalonia.Media.RotateTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.RotateTransform.CenterXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RotateTransform OnBindingCenterX(this Avalonia.Media.RotateTransform obj, Action<Avalonia.Media.RotateTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.RotateTransform.CenterXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCenterXChanged(this Avalonia.Media.RotateTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.RotateTransform.CenterXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RotateTransform OnCenterXChanged(this Avalonia.Media.RotateTransform obj, Action<Avalonia.Media.RotateTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.RotateTransform.CenterXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.RotateTransform.CenterYProperty
 
     /// <summary>
@@ -281,6 +373,52 @@ public static partial class RotateTransformExtensions
     public static Avalonia.Media.RotateTransform OnCenterY(this Avalonia.Media.RotateTransform obj, Action<Avalonia.Media.RotateTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.RotateTransform.CenterYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingCenterY(this Avalonia.Media.RotateTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.RotateTransform.CenterYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RotateTransform OnBindingCenterY(this Avalonia.Media.RotateTransform obj, Action<Avalonia.Media.RotateTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.RotateTransform.CenterYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCenterYChanged(this Avalonia.Media.RotateTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.RotateTransform.CenterYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.RotateTransform OnCenterYChanged(this Avalonia.Media.RotateTransform obj, Action<Avalonia.Media.RotateTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.RotateTransform.CenterYProperty);
         handler(obj, observable);
         return obj;
     }

@@ -99,6 +99,52 @@ public static partial class PenExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Pen.BrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBrush(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Pen.BrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Pen.BrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnBindingBrush(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Pen.BrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Pen.BrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBrushChanged(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Pen.BrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Pen.BrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnBrushChanged(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Pen.BrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.Pen.ThicknessProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class PenExtensions
     public static Avalonia.Media.Pen OnThickness(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.ThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingThickness(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Pen.ThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnBindingThickness(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Pen.ThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveThicknessChanged(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Pen.ThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnThicknessChanged(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Pen.ThicknessProperty);
         handler(obj, observable);
         return obj;
     }
@@ -285,6 +377,52 @@ public static partial class PenExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IDashStyle>> ObserveBindingDashStyle(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Pen.DashStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnBindingDashStyle(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<BindingValue<Avalonia.Media.IDashStyle>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Pen.DashStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDashStyleChanged(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Pen.DashStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnDashStyleChanged(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Pen.DashStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.Pen.LineCapProperty
 
     /// <summary>
@@ -374,6 +512,52 @@ public static partial class PenExtensions
     public static Avalonia.Media.Pen OnLineCap(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.PenLineCap>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.LineCapProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.PenLineCap>> ObserveBindingLineCap(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Pen.LineCapProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnBindingLineCap(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<BindingValue<Avalonia.Media.PenLineCap>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Pen.LineCapProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLineCapChanged(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Pen.LineCapProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnLineCapChanged(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Pen.LineCapProperty);
         handler(obj, observable);
         return obj;
     }
@@ -505,6 +689,52 @@ public static partial class PenExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.PenLineJoin>> ObserveBindingLineJoin(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Pen.LineJoinProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnBindingLineJoin(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<BindingValue<Avalonia.Media.PenLineJoin>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Pen.LineJoinProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLineJoinChanged(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Pen.LineJoinProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnLineJoinChanged(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Pen.LineJoinProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Bevel"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -626,6 +856,52 @@ public static partial class PenExtensions
     public static Avalonia.Media.Pen OnMiterLimit(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.MiterLimitProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMiterLimit(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Pen.MiterLimitProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnBindingMiterLimit(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Pen.MiterLimitProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMiterLimitChanged(this Avalonia.Media.Pen obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Pen.MiterLimitProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.Pen OnMiterLimitChanged(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Pen.MiterLimitProperty);
         handler(obj, observable);
         return obj;
     }

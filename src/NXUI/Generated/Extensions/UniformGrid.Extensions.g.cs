@@ -104,6 +104,54 @@ public static partial class UniformGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingRows(this Avalonia.Controls.Primitives.UniformGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.UniformGrid.RowsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRows<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.UniformGrid.RowsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRowsChanged(this Avalonia.Controls.Primitives.UniformGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.UniformGrid.RowsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRowsChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.UniformGrid.RowsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class UniformGridExtensions
     public static T OnColumns<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingColumns(this Avalonia.Controls.Primitives.UniformGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColumns<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColumnsChanged(this Avalonia.Controls.Primitives.UniformGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColumnsChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class UniformGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingFirstColumn(this Avalonia.Controls.Primitives.UniformGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFirstColumn<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFirstColumnChanged(this Avalonia.Controls.Primitives.UniformGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFirstColumnChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class UniformGridExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingRowSpacing(this Avalonia.Controls.Primitives.UniformGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRowSpacing<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRowSpacingChanged(this Avalonia.Controls.Primitives.UniformGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRowSpacingChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class UniformGridExtensions
     public static T OnColumnSpacing<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<System.Double>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingColumnSpacing(this Avalonia.Controls.Primitives.UniformGrid obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingColumnSpacing<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveColumnSpacingChanged(this Avalonia.Controls.Primitives.UniformGrid obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnColumnSpacingChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.UniformGrid, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.UniformGrid
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty);
         handler(obj, observable);
         return obj;
     }

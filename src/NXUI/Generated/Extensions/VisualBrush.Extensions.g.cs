@@ -98,4 +98,50 @@ public static partial class VisualBrushExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Visual>> ObserveBindingVisual(this Avalonia.Media.VisualBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.VisualBrush.VisualProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.VisualBrush OnBindingVisual(this Avalonia.Media.VisualBrush obj, Action<Avalonia.Media.VisualBrush, IObservable<BindingValue<Avalonia.Visual>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.VisualBrush.VisualProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVisualChanged(this Avalonia.Media.VisualBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.VisualBrush.VisualProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.VisualBrush.VisualProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.VisualBrush OnVisualChanged(this Avalonia.Media.VisualBrush obj, Action<Avalonia.Media.VisualBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.VisualBrush.VisualProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

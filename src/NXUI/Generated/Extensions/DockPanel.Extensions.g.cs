@@ -105,6 +105,54 @@ public static partial class DockPanelExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Dock>> ObserveBindingDock(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DockPanel.DockProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDock<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Dock>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DockPanel.DockProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDockChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DockPanel.DockProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDockChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DockPanel.DockProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Left"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -250,6 +298,54 @@ public static partial class DockPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingLastChildFill(this Avalonia.Controls.DockPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DockPanel.LastChildFillProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLastChildFill<T>(this T obj, Action<Avalonia.Controls.DockPanel, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.DockPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DockPanel.LastChildFillProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLastChildFillChanged(this Avalonia.Controls.DockPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DockPanel.LastChildFillProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLastChildFillChanged<T>(this T obj, Action<Avalonia.Controls.DockPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DockPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DockPanel.LastChildFillProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DockPanel.HorizontalSpacingProperty
 
     /// <summary>
@@ -348,6 +444,54 @@ public static partial class DockPanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingHorizontalSpacing(this Avalonia.Controls.DockPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DockPanel.HorizontalSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalSpacing<T>(this T obj, Action<Avalonia.Controls.DockPanel, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.DockPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DockPanel.HorizontalSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalSpacingChanged(this Avalonia.Controls.DockPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DockPanel.HorizontalSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalSpacingChanged<T>(this T obj, Action<Avalonia.Controls.DockPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DockPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DockPanel.HorizontalSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DockPanel.VerticalSpacingProperty
 
     /// <summary>
@@ -442,6 +586,54 @@ public static partial class DockPanelExtensions
     public static T OnVerticalSpacing<T>(this T obj, Action<Avalonia.Controls.DockPanel, IObservable<System.Double>> handler) where T : Avalonia.Controls.DockPanel
     {
         var observable = obj.GetObservable(Avalonia.Controls.DockPanel.VerticalSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingVerticalSpacing(this Avalonia.Controls.DockPanel obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DockPanel.VerticalSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalSpacing<T>(this T obj, Action<Avalonia.Controls.DockPanel, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.DockPanel
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DockPanel.VerticalSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalSpacingChanged(this Avalonia.Controls.DockPanel obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DockPanel.VerticalSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalSpacingChanged<T>(this T obj, Action<Avalonia.Controls.DockPanel, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DockPanel
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DockPanel.VerticalSpacingProperty);
         handler(obj, observable);
         return obj;
     }

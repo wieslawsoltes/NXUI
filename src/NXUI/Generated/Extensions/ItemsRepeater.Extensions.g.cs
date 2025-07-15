@@ -104,6 +104,54 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingHorizontalCacheLength(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalCacheLength<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalCacheLengthChanged(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalCacheLengthChanged<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ItemsRepeater.ItemTemplateProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ItemsRepeaterExtensions
     public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingItemTemplate(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemTemplateChanged(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemTemplateChanged<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.IEnumerable>> ObserveBindingItemsSource(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<System.Collections.IEnumerable>>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemsSourceChanged(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemsSourceChanged<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ItemsRepeater.LayoutProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.AttachedLayout>> ObserveBindingLayout(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLayout<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<Avalonia.Layout.AttachedLayout>>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLayoutChanged(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLayoutChanged<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class ItemsRepeaterExtensions
     public static T OnVerticalCacheLength<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<System.Double>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingVerticalCacheLength(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalCacheLength<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalCacheLengthChanged(this Avalonia.Controls.ItemsRepeater obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalCacheLengthChanged<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ItemsRepeater
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty);
         handler(obj, observable);
         return obj;
     }

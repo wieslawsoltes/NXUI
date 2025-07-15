@@ -105,6 +105,54 @@ public static partial class TileBrushExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.AlignmentX>> ObserveBindingAlignmentX(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TileBrush.AlignmentXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignmentX<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<BindingValue<Avalonia.Media.AlignmentX>>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TileBrush.AlignmentXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignmentXChanged(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.AlignmentXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignmentXChanged<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.AlignmentXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> property value to <see cref="Avalonia.Media.AlignmentX.Left"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -234,6 +282,54 @@ public static partial class TileBrushExtensions
     public static T OnAlignmentY<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<Avalonia.Media.AlignmentY>> handler) where T : Avalonia.Media.TileBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.TileBrush.AlignmentYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.AlignmentY>> ObserveBindingAlignmentY(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TileBrush.AlignmentYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignmentY<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<BindingValue<Avalonia.Media.AlignmentY>>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TileBrush.AlignmentYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignmentYChanged(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.AlignmentYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignmentYChanged<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.AlignmentYProperty);
         handler(obj, observable);
         return obj;
     }
@@ -372,6 +468,54 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.RelativeRect>> ObserveBindingDestinationRect(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TileBrush.DestinationRectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDestinationRect<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<BindingValue<Avalonia.RelativeRect>>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TileBrush.DestinationRectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDestinationRectChanged(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.DestinationRectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDestinationRectChanged<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.DestinationRectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.TileBrush.SourceRectProperty
 
     /// <summary>
@@ -470,6 +614,54 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.RelativeRect>> ObserveBindingSourceRect(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TileBrush.SourceRectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSourceRect<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<BindingValue<Avalonia.RelativeRect>>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TileBrush.SourceRectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSourceRectChanged(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.SourceRectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSourceRectChanged<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.SourceRectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.TileBrush.StretchProperty
 
     /// <summary>
@@ -564,6 +756,54 @@ public static partial class TileBrushExtensions
     public static T OnStretch<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<Avalonia.Media.Stretch>> handler) where T : Avalonia.Media.TileBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.TileBrush.StretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Stretch>> ObserveBindingStretch(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TileBrush.StretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStretch<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<BindingValue<Avalonia.Media.Stretch>>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TileBrush.StretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStretchChanged(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.StretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStretchChanged<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.StretchProperty);
         handler(obj, observable);
         return obj;
     }
@@ -710,6 +950,54 @@ public static partial class TileBrushExtensions
     public static T OnTileMode<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<Avalonia.Media.TileMode>> handler) where T : Avalonia.Media.TileBrush
     {
         var observable = obj.GetObservable(Avalonia.Media.TileBrush.TileModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TileMode>> ObserveBindingTileMode(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.TileBrush.TileModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTileMode<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<BindingValue<Avalonia.Media.TileMode>>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.TileBrush.TileModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTileModeChanged(this Avalonia.Media.TileBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.TileModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTileModeChanged<T>(this T obj, Action<Avalonia.Media.TileBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.TileBrush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.TileBrush.TileModeProperty);
         handler(obj, observable);
         return obj;
     }

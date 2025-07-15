@@ -103,4 +103,52 @@ public static partial class GeometryExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Transform>> ObserveBindingTransform(this Avalonia.Media.Geometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Geometry.TransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTransform<T>(this T obj, Action<Avalonia.Media.Geometry, IObservable<BindingValue<Avalonia.Media.Transform>>> handler) where T : Avalonia.Media.Geometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Geometry.TransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTransformChanged(this Avalonia.Media.Geometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Geometry.TransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTransformChanged<T>(this T obj, Action<Avalonia.Media.Geometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.Geometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Geometry.TransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

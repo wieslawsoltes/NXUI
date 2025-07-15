@@ -103,4 +103,52 @@ public static partial class PathSegmentExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PathSegment.IsStrokedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsStroked(this Avalonia.Media.PathSegment obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PathSegment.IsStrokedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PathSegment.IsStrokedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsStroked<T>(this T obj, Action<Avalonia.Media.PathSegment, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Media.PathSegment
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PathSegment.IsStrokedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PathSegment.IsStrokedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsStrokedChanged(this Avalonia.Media.PathSegment obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PathSegment.IsStrokedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PathSegment.IsStrokedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsStrokedChanged<T>(this T obj, Action<Avalonia.Media.PathSegment, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.PathSegment
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PathSegment.IsStrokedProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

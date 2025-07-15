@@ -104,6 +104,54 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ContentPresenterExtensions
     public static T OnBackgroundSizing<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.BackgroundSizing>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.BackgroundSizing>> ObserveBindingBackgroundSizing(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackgroundSizing<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.BackgroundSizing>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundSizingChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundSizingChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty);
         handler(obj, observable);
         return obj;
     }
@@ -336,6 +432,54 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBorderBrush(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBorderBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBorderBrushChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBorderBrushChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty
 
     /// <summary>
@@ -430,6 +574,54 @@ public static partial class ContentPresenterExtensions
     public static T OnBorderThickness<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Thickness>> ObserveBindingBorderThickness(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBorderThickness<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Thickness>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBorderThicknessChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBorderThicknessChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty);
         handler(obj, observable);
         return obj;
     }
@@ -532,6 +724,54 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.CornerRadius>> ObserveBindingCornerRadius(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCornerRadius<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.CornerRadius>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCornerRadiusChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCornerRadiusChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty
 
     /// <summary>
@@ -626,6 +866,54 @@ public static partial class ContentPresenterExtensions
     public static T OnBoxShadow<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.BoxShadows>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.BoxShadows>> ObserveBindingBoxShadow(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBoxShadow<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.BoxShadows>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBoxShadowChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBoxShadowChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty);
         handler(obj, observable);
         return obj;
     }
@@ -728,6 +1016,54 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingForeground(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveForegroundChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnForegroundChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty
 
     /// <summary>
@@ -822,6 +1158,54 @@ public static partial class ContentPresenterExtensions
     public static T OnFontFamily<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.FontFamily>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontFamily>> ObserveBindingFontFamily(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontFamily<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.FontFamily>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontFamilyChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontFamilyChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty);
         handler(obj, observable);
         return obj;
     }
@@ -924,6 +1308,54 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingFontSize(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontSize<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontSizeChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontSizeChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty
 
     /// <summary>
@@ -1018,6 +1450,54 @@ public static partial class ContentPresenterExtensions
     public static T OnFontStyle<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.FontStyle>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontStyle>> ObserveBindingFontStyle(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontStyle<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.FontStyle>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontStyleChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStyleChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1152,6 +1632,54 @@ public static partial class ContentPresenterExtensions
     public static T OnFontWeight<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.FontWeight>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontWeight>> ObserveBindingFontWeight(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontWeight<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.FontWeight>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontWeightChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontWeightChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1471,6 +1999,54 @@ public static partial class ContentPresenterExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontStretch>> ObserveBindingFontStretch(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontStretch<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.FontStretch>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontStretchChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStretchChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1622,6 +2198,52 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingChild(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Presenters.ContentPresenter OnBindingChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Controls.Control>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveChildChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Presenters.ContentPresenter OnChildChanged(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ContentPresenter.ContentProperty
 
     /// <summary>
@@ -1716,6 +2338,54 @@ public static partial class ContentPresenterExtensions
     public static T OnContent<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<System.Object>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingContent(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContentChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1818,6 +2488,54 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentTemplateChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContentTemplateChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -1912,6 +2630,54 @@ public static partial class ContentPresenterExtensions
     public static T OnHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>> ObserveBindingHorizontalContentAlignment(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalContentAlignment<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalContentAlignmentChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalContentAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2063,6 +2829,54 @@ public static partial class ContentPresenterExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>> ObserveBindingVerticalContentAlignment(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalContentAlignment<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalContentAlignmentChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalContentAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -2208,6 +3022,54 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Thickness>> ObserveBindingPadding(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPadding<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Thickness>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaddingChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaddingChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty
 
     /// <summary>
@@ -2302,6 +3164,54 @@ public static partial class ContentPresenterExtensions
     public static T OnRecognizesAccessKey<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingRecognizesAccessKey(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRecognizesAccessKey<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRecognizesAccessKeyChanged(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRecognizesAccessKeyChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
         handler(obj, observable);
         return obj;
     }

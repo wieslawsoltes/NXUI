@@ -99,6 +99,52 @@ public static partial class CalendarItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.CalendarItem OnBindingHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHeaderBackgroundChanged(this Avalonia.Controls.Primitives.CalendarItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.CalendarItem OnHeaderBackgroundChanged(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class CalendarItemExtensions
     public static Avalonia.Controls.Primitives.CalendarItem OnDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> ObserveBindingDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.CalendarItem OnBindingDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDayTitleTemplateChanged(this Avalonia.Controls.Primitives.CalendarItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.CalendarItem OnDayTitleTemplateChanged(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
         handler(obj, observable);
         return obj;
     }

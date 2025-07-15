@@ -104,6 +104,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Color>> ObserveBindingTintColor(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTintColor<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<BindingValue<Avalonia.Media.Color>>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTintColorChanged(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTintColorChanged<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     public static T OnBackgroundSource<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<Avalonia.Media.AcrylicBackgroundSource>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         var observable = obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.AcrylicBackgroundSource>> ObserveBindingBackgroundSource(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackgroundSource<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<BindingValue<Avalonia.Media.AcrylicBackgroundSource>>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundSourceChanged(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundSourceChanged<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty);
         handler(obj, observable);
         return obj;
     }
@@ -324,6 +420,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingTintOpacity(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTintOpacity<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTintOpacityChanged(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTintOpacityChanged<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty
 
     /// <summary>
@@ -418,6 +562,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     public static T OnMaterialOpacity<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<System.Double>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         var observable = obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMaterialOpacity(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaterialOpacity<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaterialOpacityChanged(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaterialOpacityChanged<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty);
         handler(obj, observable);
         return obj;
     }
@@ -520,6 +712,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingPlatformTransparencyCompensationLevel(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlatformTransparencyCompensationLevel<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlatformTransparencyCompensationLevelChanged(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlatformTransparencyCompensationLevelChanged<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty
 
     /// <summary>
@@ -614,6 +854,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     public static T OnFallbackColor<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<Avalonia.Media.Color>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         var observable = obj.GetObservable(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Color>> ObserveBindingFallbackColor(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFallbackColor<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<BindingValue<Avalonia.Media.Color>>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFallbackColorChanged(this Avalonia.Media.ExperimentalAcrylicMaterial obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFallbackColorChanged<T>(this T obj, Action<Avalonia.Media.ExperimentalAcrylicMaterial, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty);
         handler(obj, observable);
         return obj;
     }

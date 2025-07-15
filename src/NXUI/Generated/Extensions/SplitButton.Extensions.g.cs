@@ -104,6 +104,54 @@ public static partial class SplitButtonExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitButton.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Windows.Input.ICommand>> ObserveBindingCommand(this Avalonia.Controls.SplitButton obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitButton.CommandProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitButton.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<BindingValue<System.Windows.Input.ICommand>>> handler) where T : Avalonia.Controls.SplitButton
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitButton.CommandProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitButton.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCommandChanged(this Avalonia.Controls.SplitButton obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitButton.CommandProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitButton.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCommandChanged<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitButton
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitButton.CommandProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SplitButton.CommandParameterProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class SplitButtonExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingCommandParameter(this Avalonia.Controls.SplitButton obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.SplitButton
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCommandParameterChanged(this Avalonia.Controls.SplitButton obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCommandParameterChanged<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitButton
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.SplitButton.FlyoutProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class SplitButtonExtensions
     public static T OnFlyout<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>> ObserveBindingFlyout(this Avalonia.Controls.SplitButton obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFlyout<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>>> handler) where T : Avalonia.Controls.SplitButton
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFlyoutChanged(this Avalonia.Controls.SplitButton obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFlyoutChanged<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.SplitButton
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
         handler(obj, observable);
         return obj;
     }

@@ -104,6 +104,54 @@ public static partial class DataGridRowHeaderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSeparatorBrush(this Avalonia.Controls.Primitives.DataGridRowHeader obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSeparatorBrush<T>(this T obj, Action<Avalonia.Controls.Primitives.DataGridRowHeader, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Primitives.DataGridRowHeader
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSeparatorBrushChanged(this Avalonia.Controls.Primitives.DataGridRowHeader obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSeparatorBrushChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.DataGridRowHeader, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.DataGridRowHeader
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class DataGridRowHeaderExtensions
     public static T OnAreSeparatorsVisible<T>(this T obj, Action<Avalonia.Controls.Primitives.DataGridRowHeader, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Primitives.DataGridRowHeader
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAreSeparatorsVisible(this Avalonia.Controls.Primitives.DataGridRowHeader obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAreSeparatorsVisible<T>(this T obj, Action<Avalonia.Controls.Primitives.DataGridRowHeader, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.DataGridRowHeader
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAreSeparatorsVisibleChanged(this Avalonia.Controls.Primitives.DataGridRowHeader obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAreSeparatorsVisibleChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.DataGridRowHeader, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.DataGridRowHeader
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty);
         handler(obj, observable);
         return obj;
     }

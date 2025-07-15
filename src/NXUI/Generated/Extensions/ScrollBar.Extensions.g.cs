@@ -104,6 +104,54 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingViewportSize(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingViewportSize<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveViewportSizeChanged(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnViewportSizeChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ScrollBarExtensions
     public static T OnVisibility<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.ScrollBarVisibility>> ObserveBindingVisibility(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVisibility<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<BindingValue<Avalonia.Controls.Primitives.ScrollBarVisibility>>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVisibilityChanged(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVisibilityChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty);
         handler(obj, observable);
         return obj;
     }
@@ -349,6 +445,54 @@ public static partial class ScrollBarExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.Orientation>> ObserveBindingOrientation(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<BindingValue<Avalonia.Layout.Orientation>>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -412,6 +556,52 @@ public static partial class ScrollBarExtensions
     public static Avalonia.Controls.Primitives.ScrollBar OnIsExpanded(this Avalonia.Controls.Primitives.ScrollBar obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsExpanded(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.ScrollBar OnBindingIsExpanded(this Avalonia.Controls.Primitives.ScrollBar obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsExpandedChanged(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Primitives.ScrollBar OnIsExpandedChanged(this Avalonia.Controls.Primitives.ScrollBar obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);
         handler(obj, observable);
         return obj;
     }
@@ -514,6 +704,54 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAllowAutoHide(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAllowAutoHide<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAllowAutoHideChanged(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAllowAutoHideChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty
 
     /// <summary>
@@ -612,6 +850,54 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.TimeSpan>> ObserveBindingHideDelay(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHideDelay<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<BindingValue<System.TimeSpan>>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHideDelayChanged(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHideDelayChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty
 
     /// <summary>
@@ -706,6 +992,54 @@ public static partial class ScrollBarExtensions
     public static T OnShowDelay<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<System.TimeSpan>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.TimeSpan>> ObserveBindingShowDelay(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowDelay<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<BindingValue<System.TimeSpan>>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowDelayChanged(this Avalonia.Controls.Primitives.ScrollBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowDelayChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.ScrollBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ScrollBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty);
         handler(obj, observable);
         return obj;
     }

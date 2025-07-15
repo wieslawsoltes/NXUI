@@ -104,6 +104,54 @@ public static partial class ImageExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Image.SourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IImage>> ObserveBindingSource(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Image.SourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Image.SourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSource<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<BindingValue<Avalonia.Media.IImage>>> handler) where T : Avalonia.Controls.Image
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Image.SourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Image.SourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSourceChanged(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Image.SourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Image.SourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSourceChanged<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Image
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Image.SourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Image.BlendModeProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ImageExtensions
     public static T OnBlendMode<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<Avalonia.Media.Imaging.BitmapBlendingMode>> handler) where T : Avalonia.Controls.Image
     {
         var observable = obj.GetObservable(Avalonia.Controls.Image.BlendModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Imaging.BitmapBlendingMode>> ObserveBindingBlendMode(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Image.BlendModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBlendMode<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<BindingValue<Avalonia.Media.Imaging.BitmapBlendingMode>>> handler) where T : Avalonia.Controls.Image
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Image.BlendModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBlendModeChanged(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Image.BlendModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBlendModeChanged<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Image
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Image.BlendModeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -637,6 +733,54 @@ public static partial class ImageExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Image.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Stretch>> ObserveBindingStretch(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Image.StretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Image.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStretch<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<BindingValue<Avalonia.Media.Stretch>>> handler) where T : Avalonia.Controls.Image
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Image.StretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Image.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStretchChanged(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Image.StretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Image.StretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStretchChanged<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Image
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Image.StretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -778,6 +922,54 @@ public static partial class ImageExtensions
     public static T OnStretchDirection<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<Avalonia.Media.StretchDirection>> handler) where T : Avalonia.Controls.Image
     {
         var observable = obj.GetObservable(Avalonia.Controls.Image.StretchDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.StretchDirection>> ObserveBindingStretchDirection(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Image.StretchDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStretchDirection<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<BindingValue<Avalonia.Media.StretchDirection>>> handler) where T : Avalonia.Controls.Image
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Image.StretchDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStretchDirectionChanged(this Avalonia.Controls.Image obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Image.StretchDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStretchDirectionChanged<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Image
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Image.StretchDirectionProperty);
         handler(obj, observable);
         return obj;
     }

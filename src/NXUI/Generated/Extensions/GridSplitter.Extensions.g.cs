@@ -105,6 +105,54 @@ public static partial class GridSplitterExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.GridResizeDirection>> ObserveBindingResizeDirection(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.GridSplitter.ResizeDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingResizeDirection<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<BindingValue<Avalonia.Controls.GridResizeDirection>>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.GridSplitter.ResizeDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveResizeDirectionChanged(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.ResizeDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnResizeDirectionChanged<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.ResizeDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> property value to <see cref="Avalonia.Controls.GridResizeDirection.Auto"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -234,6 +282,54 @@ public static partial class GridSplitterExtensions
     public static T OnResizeBehavior<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<Avalonia.Controls.GridResizeBehavior>> handler) where T : Avalonia.Controls.GridSplitter
     {
         var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.GridResizeBehavior>> ObserveBindingResizeBehavior(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingResizeBehavior<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<BindingValue<Avalonia.Controls.GridResizeBehavior>>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveResizeBehaviorChanged(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnResizeBehaviorChanged<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
         handler(obj, observable);
         return obj;
     }
@@ -384,6 +480,54 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingShowsPreview(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.GridSplitter.ShowsPreviewProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingShowsPreview<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.GridSplitter.ShowsPreviewProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShowsPreviewChanged(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.ShowsPreviewProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnShowsPreviewChanged<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.ShowsPreviewProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.GridSplitter.KeyboardIncrementProperty
 
     /// <summary>
@@ -478,6 +622,54 @@ public static partial class GridSplitterExtensions
     public static T OnKeyboardIncrement<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<System.Double>> handler) where T : Avalonia.Controls.GridSplitter
     {
         var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingKeyboardIncrement(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingKeyboardIncrement<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveKeyboardIncrementChanged(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnKeyboardIncrementChanged<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
         handler(obj, observable);
         return obj;
     }
@@ -580,6 +772,54 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingDragIncrement(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.GridSplitter.DragIncrementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDragIncrement<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.GridSplitter.DragIncrementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDragIncrementChanged(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.DragIncrementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDragIncrementChanged<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.DragIncrementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.GridSplitter.PreviewContentProperty
 
     /// <summary>
@@ -674,6 +914,54 @@ public static partial class GridSplitterExtensions
     public static T OnPreviewContent<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.GridSplitter
     {
         var observable = obj.GetObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> ObserveBindingPreviewContent(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPreviewContent<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePreviewContentChanged(this Avalonia.Controls.GridSplitter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPreviewContentChanged<T>(this T obj, Action<Avalonia.Controls.GridSplitter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.GridSplitter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.GridSplitter.PreviewContentProperty);
         handler(obj, observable);
         return obj;
     }

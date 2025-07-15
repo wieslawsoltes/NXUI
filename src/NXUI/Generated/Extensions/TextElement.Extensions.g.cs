@@ -104,6 +104,54 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.TextElement.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundChanged(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.TextElement.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundChanged<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Documents.TextElement.FontFamilyProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TextElementExtensions
     public static T OnFontFamily<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.FontFamily>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontFamily>> ObserveBindingFontFamily(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontFamily<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.FontFamily>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontFamilyChanged(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontFamilyChanged<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontFamilyProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontFeatureCollection>> ObserveBindingFontFeatures(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontFeaturesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontFeatures<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.FontFeatureCollection>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontFeaturesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontFeaturesChanged(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontFeaturesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontFeaturesChanged<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontFeaturesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Documents.TextElement.FontSizeProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class TextElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingFontSize(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontSize<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontSizeChanged(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontSizeChanged<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Documents.TextElement.FontStyleProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class TextElementExtensions
     public static T OnFontStyle<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.FontStyle>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontStyle>> ObserveBindingFontStyle(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontStyle<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.FontStyle>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontStyleChanged(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStyleChanged<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontStyleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -626,6 +866,54 @@ public static partial class TextElementExtensions
     public static T OnFontWeight<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.FontWeight>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontWeight>> ObserveBindingFontWeight(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontWeight<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.FontWeight>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontWeightChanged(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontWeightChanged<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontWeightProperty);
         handler(obj, observable);
         return obj;
     }
@@ -945,6 +1233,54 @@ public static partial class TextElementExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontStretch>> ObserveBindingFontStretch(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontStretch<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.FontStretch>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontStretchChanged(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStretchChanged<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1146,6 +1482,54 @@ public static partial class TextElementExtensions
     public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingForeground(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Documents.TextElement.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Documents.TextElement.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveForegroundChanged(this Avalonia.Controls.Documents.TextElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Documents.TextElement.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnForegroundChanged<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Documents.TextElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
         handler(obj, observable);
         return obj;
     }

@@ -99,6 +99,52 @@ public static partial class DropShadowDirectionEffectExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingShadowDepth(this Avalonia.Media.DropShadowDirectionEffect obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowDirectionEffect OnBindingShadowDepth(this Avalonia.Media.DropShadowDirectionEffect obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveShadowDepthChanged(this Avalonia.Media.DropShadowDirectionEffect obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowDirectionEffect OnShadowDepthChanged(this Avalonia.Media.DropShadowDirectionEffect obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.DropShadowDirectionEffect.DirectionProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class DropShadowDirectionEffectExtensions
     public static Avalonia.Media.DropShadowDirectionEffect OnDirection(this Avalonia.Media.DropShadowDirectionEffect obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DropShadowDirectionEffect.DirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingDirection(this Avalonia.Media.DropShadowDirectionEffect obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.DropShadowDirectionEffect.DirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowDirectionEffect OnBindingDirection(this Avalonia.Media.DropShadowDirectionEffect obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.DropShadowDirectionEffect.DirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDirectionChanged(this Avalonia.Media.DropShadowDirectionEffect obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowDirectionEffect.DirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.DropShadowDirectionEffect OnDirectionChanged(this Avalonia.Media.DropShadowDirectionEffect obj, Action<Avalonia.Media.DropShadowDirectionEffect, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.DropShadowDirectionEffect.DirectionProperty);
         handler(obj, observable);
         return obj;
     }

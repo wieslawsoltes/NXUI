@@ -50,6 +50,52 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Size>> ObserveBindingDesiredSize(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.DesiredSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Layout.Layoutable OnBindingDesiredSize(this Avalonia.Layout.Layoutable obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<Avalonia.Size>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.DesiredSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDesiredSizeChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.DesiredSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Layout.Layoutable OnDesiredSizeChanged(this Avalonia.Layout.Layoutable obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.DesiredSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.Layoutable.WidthProperty
 
     /// <summary>
@@ -144,6 +190,54 @@ public static partial class LayoutableExtensions
     public static T OnWidth<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.WidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.WidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingWidth(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.WidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.WidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingWidth<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.WidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.WidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWidthChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.WidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.WidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnWidthChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.WidthProperty);
         handler(obj, observable);
         return obj;
     }
@@ -246,6 +340,54 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.HeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingHeight(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.HeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.HeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHeight<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.HeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.HeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHeightChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.HeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.HeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHeightChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.HeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.Layoutable.MinWidthProperty
 
     /// <summary>
@@ -340,6 +482,54 @@ public static partial class LayoutableExtensions
     public static T OnMinWidth<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.MinWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinWidth(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.MinWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinWidth<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.MinWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinWidthChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.MinWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinWidthChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.MinWidthProperty);
         handler(obj, observable);
         return obj;
     }
@@ -442,6 +632,54 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMaxWidth(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.MaxWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxWidth<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.MaxWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxWidthChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.MaxWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxWidthChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.MaxWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.Layoutable.MinHeightProperty
 
     /// <summary>
@@ -536,6 +774,54 @@ public static partial class LayoutableExtensions
     public static T OnMinHeight<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Double>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.MinHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinHeight(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.MinHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinHeight<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.MinHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinHeightChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.MinHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinHeightChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.MinHeightProperty);
         handler(obj, observable);
         return obj;
     }
@@ -638,6 +924,54 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMaxHeight(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.MaxHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxHeight<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.MaxHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxHeightChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.MaxHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxHeightChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.MaxHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.Layoutable.MarginProperty
 
     /// <summary>
@@ -736,6 +1070,54 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.MarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Thickness>> ObserveBindingMargin(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.MarginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.MarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMargin<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<Avalonia.Thickness>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.MarginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.MarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMarginChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.MarginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.MarginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMarginChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.MarginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.Layoutable.HorizontalAlignmentProperty
 
     /// <summary>
@@ -830,6 +1212,54 @@ public static partial class LayoutableExtensions
     public static T OnHorizontalAlignment<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<Avalonia.Layout.HorizontalAlignment>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>> ObserveBindingHorizontalAlignment(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalAlignment<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<Avalonia.Layout.HorizontalAlignment>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalAlignmentChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalAlignmentChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -981,6 +1411,54 @@ public static partial class LayoutableExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>> ObserveBindingVerticalAlignment(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.VerticalAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalAlignment<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<Avalonia.Layout.VerticalAlignment>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.VerticalAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalAlignmentChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.VerticalAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalAlignmentChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.VerticalAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1122,6 +1600,54 @@ public static partial class LayoutableExtensions
     public static T OnUseLayoutRounding<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingUseLayoutRounding(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingUseLayoutRounding<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveUseLayoutRoundingChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnUseLayoutRoundingChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty);
         handler(obj, observable);
         return obj;
     }

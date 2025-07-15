@@ -103,4 +103,52 @@ public static partial class ItemsPresenterExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>>> ObserveBindingItemsPanel(this Avalonia.Controls.Presenters.ItemsPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemsPanel<T>(this T obj, Action<Avalonia.Controls.Presenters.ItemsPresenter, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>>>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemsPanelChanged(this Avalonia.Controls.Presenters.ItemsPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemsPanelChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.ItemsPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

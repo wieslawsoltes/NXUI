@@ -104,6 +104,54 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingHorizontalOffset(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingHorizontalOffset<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveHorizontalOffsetChanged(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnHorizontalOffsetChanged<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ContextMenu.VerticalOffsetProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingVerticalOffset(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.VerticalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingVerticalOffset<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.VerticalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveVerticalOffsetChanged(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.VerticalOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnVerticalOffsetChanged<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.VerticalOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ContextMenu.PlacementAnchorProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class ContextMenuExtensions
     public static T OnPlacementAnchor<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementAnchorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>> ObserveBindingPlacementAnchor(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementAnchorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacementAnchor<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementAnchorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementAnchorChanged(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementAnchorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementAnchorChanged<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementAnchorProperty);
         handler(obj, observable);
         return obj;
     }
@@ -543,6 +687,54 @@ public static partial class ContextMenuExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment>> ObserveBindingPlacementConstraintAdjustment(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacementConstraintAdjustment<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementConstraintAdjustmentChanged(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementConstraintAdjustmentChanged<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -732,6 +924,54 @@ public static partial class ContextMenuExtensions
     public static T OnPlacementGravity<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementGravityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity>> ObserveBindingPlacementGravity(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementGravityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacementGravity<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementGravityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementGravityChanged(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementGravityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementGravityChanged<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementGravityProperty);
         handler(obj, observable);
         return obj;
     }
@@ -938,6 +1178,54 @@ public static partial class ContextMenuExtensions
     public static T OnPlacement<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.PlacementMode>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.PlacementMode>> ObserveBindingPlacement(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacement<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<Avalonia.Controls.PlacementMode>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementChanged(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementChanged<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1232,6 +1520,54 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Nullable<Avalonia.Rect>>> ObserveBindingPlacementRect(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementRectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacementRect<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<System.Nullable<Avalonia.Rect>>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementRectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementRectChanged(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementRectProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementRectChanged<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementRectProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty
 
     /// <summary>
@@ -1326,6 +1662,54 @@ public static partial class ContextMenuExtensions
     public static T OnWindowManagerAddShadowHint<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingWindowManagerAddShadowHint(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingWindowManagerAddShadowHint<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWindowManagerAddShadowHintChanged(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnWindowManagerAddShadowHintChanged<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1428,6 +1812,54 @@ public static partial class ContextMenuExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingPlacementTarget(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacementTarget<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementTargetChanged(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementTargetChanged<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty
 
     /// <summary>
@@ -1522,6 +1954,54 @@ public static partial class ContextMenuExtensions
     public static T OnCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> ObserveBindingCustomPopupPlacementCallback(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCustomPopupPlacementCallbackChanged(this Avalonia.Controls.ContextMenu obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCustomPopupPlacementCallbackChanged<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ContextMenu
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
         handler(obj, observable);
         return obj;
     }

@@ -104,6 +104,54 @@ public static partial class TickBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TickBar.FillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingFill(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TickBar.FillProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TickBar.FillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFill<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.FillProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TickBar.FillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFillChanged(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.FillProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TickBar.FillProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFillChanged<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.FillProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TickBar.MinimumProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TickBarExtensions
     public static T OnMinimum<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<System.Double>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.MinimumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TickBar.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinimum(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TickBar.MinimumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TickBar.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinimum<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.MinimumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TickBar.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinimumChanged(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.MinimumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TickBar.MinimumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinimumChanged<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.MinimumProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class TickBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TickBar.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMaximum(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TickBar.MaximumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TickBar.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaximum<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.MaximumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TickBar.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaximumChanged(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.MaximumProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TickBar.MaximumProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaximumChanged<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.MaximumProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TickBar.TickFrequencyProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class TickBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingTickFrequency(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TickBar.TickFrequencyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTickFrequency<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.TickFrequencyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTickFrequencyChanged(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.TickFrequencyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTickFrequencyChanged<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.TickFrequencyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TickBar.OrientationProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class TickBarExtensions
     public static T OnOrientation<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TickBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.Orientation>> ObserveBindingOrientation(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TickBar.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TickBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<Avalonia.Layout.Orientation>>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TickBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TickBar.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.OrientationProperty);
         handler(obj, observable);
         return obj;
     }
@@ -618,6 +858,54 @@ public static partial class TickBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TickBar.TicksProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>> ObserveBindingTicks(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TickBar.TicksProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TickBar.TicksProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTicks<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.TicksProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TickBar.TicksProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTicksChanged(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.TicksProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TickBar.TicksProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTicksChanged<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.TicksProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TickBar.IsDirectionReversedProperty
 
     /// <summary>
@@ -716,6 +1004,54 @@ public static partial class TickBarExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsDirectionReversed(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TickBar.IsDirectionReversedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsDirectionReversed<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.IsDirectionReversedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsDirectionReversedChanged(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.IsDirectionReversedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsDirectionReversedChanged<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.IsDirectionReversedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TickBar.PlacementProperty
 
     /// <summary>
@@ -810,6 +1146,54 @@ public static partial class TickBarExtensions
     public static T OnPlacement<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Controls.TickBarPlacement>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.PlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TickBar.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.TickBarPlacement>> ObserveBindingPlacement(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TickBar.PlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TickBar.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPlacement<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<Avalonia.Controls.TickBarPlacement>>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.PlacementProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TickBar.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePlacementChanged(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.PlacementProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TickBar.PlacementProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPlacementChanged<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.PlacementProperty);
         handler(obj, observable);
         return obj;
     }
@@ -956,6 +1340,54 @@ public static partial class TickBarExtensions
     public static T OnReservedSpace<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Rect>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.ReservedSpaceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Rect>> ObserveBindingReservedSpace(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TickBar.ReservedSpaceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingReservedSpace<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<Avalonia.Rect>>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.ReservedSpaceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveReservedSpaceChanged(this Avalonia.Controls.TickBar obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.ReservedSpaceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnReservedSpaceChanged<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TickBar
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TickBar.ReservedSpaceProperty);
         handler(obj, observable);
         return obj;
     }

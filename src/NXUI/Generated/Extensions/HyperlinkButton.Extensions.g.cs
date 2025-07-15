@@ -104,6 +104,54 @@ public static partial class HyperlinkButtonExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsVisited(this Avalonia.Controls.HyperlinkButton obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.HyperlinkButton.IsVisitedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsVisited<T>(this T obj, Action<Avalonia.Controls.HyperlinkButton, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.HyperlinkButton
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.HyperlinkButton.IsVisitedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsVisitedChanged(this Avalonia.Controls.HyperlinkButton obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.HyperlinkButton.IsVisitedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsVisitedChanged<T>(this T obj, Action<Avalonia.Controls.HyperlinkButton, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.HyperlinkButton
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.HyperlinkButton.IsVisitedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.HyperlinkButton.NavigateUriProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class HyperlinkButtonExtensions
     public static T OnNavigateUri<T>(this T obj, Action<Avalonia.Controls.HyperlinkButton, IObservable<System.Uri>> handler) where T : Avalonia.Controls.HyperlinkButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.HyperlinkButton.NavigateUriProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Uri>> ObserveBindingNavigateUri(this Avalonia.Controls.HyperlinkButton obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.HyperlinkButton.NavigateUriProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingNavigateUri<T>(this T obj, Action<Avalonia.Controls.HyperlinkButton, IObservable<BindingValue<System.Uri>>> handler) where T : Avalonia.Controls.HyperlinkButton
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.HyperlinkButton.NavigateUriProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveNavigateUriChanged(this Avalonia.Controls.HyperlinkButton obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.HyperlinkButton.NavigateUriProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnNavigateUriChanged<T>(this T obj, Action<Avalonia.Controls.HyperlinkButton, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.HyperlinkButton
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.HyperlinkButton.NavigateUriProperty);
         handler(obj, observable);
         return obj;
     }

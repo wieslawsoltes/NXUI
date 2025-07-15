@@ -104,6 +104,54 @@ public static partial class PathGeometryExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.PathFigures>> ObserveBindingFigures(this Avalonia.Media.PathGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PathGeometry.FiguresProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFigures<T>(this T obj, Action<Avalonia.Media.PathGeometry, IObservable<BindingValue<Avalonia.Media.PathFigures>>> handler) where T : Avalonia.Media.PathGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PathGeometry.FiguresProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFiguresChanged(this Avalonia.Media.PathGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PathGeometry.FiguresProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFiguresChanged<T>(this T obj, Action<Avalonia.Media.PathGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.PathGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PathGeometry.FiguresProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.PathGeometry.FillRuleProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class PathGeometryExtensions
     public static T OnFillRule<T>(this T obj, Action<Avalonia.Media.PathGeometry, IObservable<Avalonia.Media.FillRule>> handler) where T : Avalonia.Media.PathGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.PathGeometry.FillRuleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FillRule>> ObserveBindingFillRule(this Avalonia.Media.PathGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PathGeometry.FillRuleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFillRule<T>(this T obj, Action<Avalonia.Media.PathGeometry, IObservable<BindingValue<Avalonia.Media.FillRule>>> handler) where T : Avalonia.Media.PathGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PathGeometry.FillRuleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFillRuleChanged(this Avalonia.Media.PathGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PathGeometry.FillRuleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFillRuleChanged<T>(this T obj, Action<Avalonia.Media.PathGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.PathGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PathGeometry.FillRuleProperty);
         handler(obj, observable);
         return obj;
     }

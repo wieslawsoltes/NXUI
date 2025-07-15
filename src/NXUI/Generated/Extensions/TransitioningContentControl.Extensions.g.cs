@@ -104,6 +104,54 @@ public static partial class TransitioningContentControlExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.IPageTransition>> ObserveBindingPageTransition(this Avalonia.Controls.TransitioningContentControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPageTransition<T>(this T obj, Action<Avalonia.Controls.TransitioningContentControl, IObservable<BindingValue<Avalonia.Animation.IPageTransition>>> handler) where T : Avalonia.Controls.TransitioningContentControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePageTransitionChanged(this Avalonia.Controls.TransitioningContentControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPageTransitionChanged<T>(this T obj, Action<Avalonia.Controls.TransitioningContentControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TransitioningContentControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TransitioningContentControlExtensions
     public static T OnIsTransitionReversed<T>(this T obj, Action<Avalonia.Controls.TransitioningContentControl, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.TransitioningContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsTransitionReversed(this Avalonia.Controls.TransitioningContentControl obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsTransitionReversed<T>(this T obj, Action<Avalonia.Controls.TransitioningContentControl, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.TransitioningContentControl
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsTransitionReversedChanged(this Avalonia.Controls.TransitioningContentControl obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsTransitionReversedChanged<T>(this T obj, Action<Avalonia.Controls.TransitioningContentControl, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TransitioningContentControl
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty);
         handler(obj, observable);
         return obj;
     }

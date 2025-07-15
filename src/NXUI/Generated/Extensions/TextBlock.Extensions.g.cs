@@ -104,6 +104,54 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBackgroundChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.BackgroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBackgroundChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.BackgroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBlock.PaddingProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TextBlockExtensions
     public static T OnPadding<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<Avalonia.Thickness>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.PaddingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Thickness>> ObserveBindingPadding(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.PaddingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPadding<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<Avalonia.Thickness>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.PaddingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaddingChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.PaddingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaddingChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.PaddingProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontFamily>> ObserveBindingFontFamily(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontFamily<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<Avalonia.Media.FontFamily>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontFamilyChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontFamilyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontFamilyChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontFamilyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBlock.FontSizeProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingFontSize(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontSize<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontSizeChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontSizeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontSizeChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontSizeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBlock.FontStyleProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class TextBlockExtensions
     public static T OnFontStyle<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<Avalonia.Media.FontStyle>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontStyle>> ObserveBindingFontStyle(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontStyle<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<Avalonia.Media.FontStyle>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontStyleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontStyleChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontStyleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStyleChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontStyleProperty);
         handler(obj, observable);
         return obj;
     }
@@ -626,6 +866,54 @@ public static partial class TextBlockExtensions
     public static T OnFontWeight<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<Avalonia.Media.FontWeight>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontWeight>> ObserveBindingFontWeight(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontWeight<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<Avalonia.Media.FontWeight>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontWeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontWeightChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontWeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontWeightChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontWeightProperty);
         handler(obj, observable);
         return obj;
     }
@@ -945,6 +1233,54 @@ public static partial class TextBlockExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontStretch>> ObserveBindingFontStretch(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontStretch<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<Avalonia.Media.FontStretch>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontStretchChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontStretchChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -1150,6 +1486,54 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingForeground(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveForegroundChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.ForegroundProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnForegroundChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.ForegroundProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBlock.BaselineOffsetProperty
 
     /// <summary>
@@ -1244,6 +1628,54 @@ public static partial class TextBlockExtensions
     public static T OnBaselineOffset<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.BaselineOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingBaselineOffset(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.BaselineOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBaselineOffset<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.BaselineOffsetProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBaselineOffsetChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.BaselineOffsetProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBaselineOffsetChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.BaselineOffsetProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1346,6 +1778,54 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLineHeight(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.LineHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLineHeight<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.LineHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLineHeightChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.LineHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLineHeightChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.LineHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBlock.LineSpacingProperty
 
     /// <summary>
@@ -1440,6 +1920,54 @@ public static partial class TextBlockExtensions
     public static T OnLineSpacing<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Double>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.LineSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLineSpacing(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.LineSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLineSpacing<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.LineSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLineSpacingChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.LineSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLineSpacingChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.LineSpacingProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1542,6 +2070,54 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLetterSpacing(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLetterSpacingChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLetterSpacingChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBlock.MaxLinesProperty
 
     /// <summary>
@@ -1636,6 +2212,54 @@ public static partial class TextBlockExtensions
     public static T OnMaxLines<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Int32>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.MaxLinesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMaxLines(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.MaxLinesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaxLines<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.MaxLinesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaxLinesChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.MaxLinesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaxLinesChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.MaxLinesProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1738,6 +2362,54 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.String>> ObserveBindingText(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.TextProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.TextProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBlock.TextAlignmentProperty
 
     /// <summary>
@@ -1832,6 +2504,54 @@ public static partial class TextBlockExtensions
     public static T OnTextAlignment<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.TextAlignment>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.TextAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextAlignment>> ObserveBindingTextAlignment(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.TextAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextAlignment<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Media.TextAlignment>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.TextAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextAlignmentChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.TextAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.TextAlignmentProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2019,6 +2739,54 @@ public static partial class TextBlockExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextWrapping>> ObserveBindingTextWrapping(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.TextWrappingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextWrapping<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Media.TextWrapping>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.TextWrappingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextWrappingChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.TextWrappingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextWrappingChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.TextWrappingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.NoWrap"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -2152,6 +2920,54 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextTrimming>> ObserveBindingTextTrimming(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.TextTrimmingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextTrimming<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Media.TextTrimming>>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.TextTrimmingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextTrimmingChanged(this Avalonia.Controls.Control obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.TextTrimmingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextTrimmingChanged<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Control
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.TextTrimmingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBlock.TextDecorationsProperty
 
     /// <summary>
@@ -2246,6 +3062,54 @@ public static partial class TextBlockExtensions
     public static T OnTextDecorations<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<Avalonia.Media.TextDecorationCollection>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.TextDecorationsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextDecorationCollection>> ObserveBindingTextDecorations(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.TextDecorationsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextDecorations<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<Avalonia.Media.TextDecorationCollection>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.TextDecorationsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextDecorationsChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.TextDecorationsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextDecorationsChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.TextDecorationsProperty);
         handler(obj, observable);
         return obj;
     }
@@ -2348,6 +3212,54 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.FontFeatureCollection>> ObserveBindingFontFeatures(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontFeaturesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFontFeatures<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<Avalonia.Media.FontFeatureCollection>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.FontFeaturesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFontFeaturesChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontFeaturesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFontFeaturesChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.FontFeaturesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TextBlock.InlinesProperty
 
     /// <summary>
@@ -2442,6 +3354,54 @@ public static partial class TextBlockExtensions
     public static T OnInlines<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<Avalonia.Controls.Documents.InlineCollection>> handler) where T : Avalonia.Controls.TextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBlock.InlinesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Documents.InlineCollection>> ObserveBindingInlines(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TextBlock.InlinesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingInlines<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<BindingValue<Avalonia.Controls.Documents.InlineCollection>>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TextBlock.InlinesProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveInlinesChanged(this Avalonia.Controls.TextBlock obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.InlinesProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnInlinesChanged<T>(this T obj, Action<Avalonia.Controls.TextBlock, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TextBlock
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TextBlock.InlinesProperty);
         handler(obj, observable);
         return obj;
     }

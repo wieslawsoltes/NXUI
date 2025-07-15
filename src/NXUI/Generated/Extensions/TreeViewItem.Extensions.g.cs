@@ -104,6 +104,54 @@ public static partial class TreeViewItemExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TreeViewItem.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsExpanded(this Avalonia.Controls.TreeViewItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TreeViewItem.IsExpandedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TreeViewItem.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsExpanded<T>(this T obj, Action<Avalonia.Controls.TreeViewItem, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.TreeViewItem
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TreeViewItem.IsExpandedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TreeViewItem.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsExpandedChanged(this Avalonia.Controls.TreeViewItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TreeViewItem.IsExpandedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TreeViewItem.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsExpandedChanged<T>(this T obj, Action<Avalonia.Controls.TreeViewItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.TreeViewItem
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TreeViewItem.IsExpandedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.TreeViewItem.LevelProperty
 
     /// <summary>
@@ -144,6 +192,52 @@ public static partial class TreeViewItemExtensions
     public static Avalonia.Controls.TreeViewItem OnLevel(this Avalonia.Controls.TreeViewItem obj, Action<Avalonia.Controls.TreeViewItem, IObservable<System.Int32>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.TreeViewItem.LevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingLevel(this Avalonia.Controls.TreeViewItem obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.TreeViewItem.LevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TreeViewItem OnBindingLevel(this Avalonia.Controls.TreeViewItem obj, Action<Avalonia.Controls.TreeViewItem, IObservable<BindingValue<System.Int32>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.TreeViewItem.LevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLevelChanged(this Avalonia.Controls.TreeViewItem obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.TreeViewItem.LevelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.TreeViewItem OnLevelChanged(this Avalonia.Controls.TreeViewItem obj, Action<Avalonia.Controls.TreeViewItem, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.TreeViewItem.LevelProperty);
         handler(obj, observable);
         return obj;
     }

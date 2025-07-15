@@ -49,4 +49,50 @@ public static partial class NativeMenuItemBaseExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.NativeMenu>> ObserveBindingParent(this Avalonia.Controls.NativeMenuItemBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.NativeMenuItemBase.ParentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.NativeMenuItemBase OnBindingParent(this Avalonia.Controls.NativeMenuItemBase obj, Action<Avalonia.Controls.NativeMenuItemBase, IObservable<BindingValue<Avalonia.Controls.NativeMenu>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.NativeMenuItemBase.ParentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveParentChanged(this Avalonia.Controls.NativeMenuItemBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.NativeMenuItemBase.ParentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.NativeMenuItemBase.ParentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.NativeMenuItemBase OnParentChanged(this Avalonia.Controls.NativeMenuItemBase obj, Action<Avalonia.Controls.NativeMenuItemBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.NativeMenuItemBase.ParentProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

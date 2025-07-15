@@ -104,6 +104,54 @@ public static partial class ToggleSplitButtonExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsChecked(this Avalonia.Controls.ToggleSplitButton obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsChecked<T>(this T obj, Action<Avalonia.Controls.ToggleSplitButton, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.ToggleSplitButton
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsCheckedChanged(this Avalonia.Controls.ToggleSplitButton obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsCheckedChanged<T>(this T obj, Action<Avalonia.Controls.ToggleSplitButton, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ToggleSplitButton
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ToggleSplitButton.IsCheckedChangedEvent
 
     /// <summary>

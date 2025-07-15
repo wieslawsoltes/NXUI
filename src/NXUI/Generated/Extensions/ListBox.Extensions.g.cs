@@ -49,4 +49,50 @@ public static partial class ListBoxExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ListBox.ScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.IScrollable>> ObserveBindingScroll(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ListBox.ScrollProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ListBox.ScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ListBox OnBindingScroll(this Avalonia.Controls.ListBox obj, Action<Avalonia.Controls.ListBox, IObservable<BindingValue<Avalonia.Controls.Primitives.IScrollable>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ListBox.ScrollProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ListBox.ScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveScrollChanged(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ListBox.ScrollProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ListBox.ScrollProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.ListBox OnScrollChanged(this Avalonia.Controls.ListBox obj, Action<Avalonia.Controls.ListBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ListBox.ScrollProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

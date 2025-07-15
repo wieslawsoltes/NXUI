@@ -104,6 +104,54 @@ public static partial class LineExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Line.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Point>> ObserveBindingStartPoint(this Avalonia.Controls.Shapes.Line obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Line.StartPointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Line.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingStartPoint<T>(this T obj, Action<Avalonia.Controls.Shapes.Line, IObservable<BindingValue<Avalonia.Point>>> handler) where T : Avalonia.Controls.Shapes.Line
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Line.StartPointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Line.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStartPointChanged(this Avalonia.Controls.Shapes.Line obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Line.StartPointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Line.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnStartPointChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Line, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Line
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Line.StartPointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Shapes.Line.EndPointProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class LineExtensions
     public static T OnEndPoint<T>(this T obj, Action<Avalonia.Controls.Shapes.Line, IObservable<Avalonia.Point>> handler) where T : Avalonia.Controls.Shapes.Line
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Line.EndPointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Shapes.Line.EndPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Point>> ObserveBindingEndPoint(this Avalonia.Controls.Shapes.Line obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Shapes.Line.EndPointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Shapes.Line.EndPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingEndPoint<T>(this T obj, Action<Avalonia.Controls.Shapes.Line, IObservable<BindingValue<Avalonia.Point>>> handler) where T : Avalonia.Controls.Shapes.Line
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Line.EndPointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Shapes.Line.EndPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveEndPointChanged(this Avalonia.Controls.Shapes.Line obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Line.EndPointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Shapes.Line.EndPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnEndPointChanged<T>(this T obj, Action<Avalonia.Controls.Shapes.Line, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Shapes.Line
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Shapes.Line.EndPointProperty);
         handler(obj, observable);
         return obj;
     }

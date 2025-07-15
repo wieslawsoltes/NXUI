@@ -104,6 +104,54 @@ public static partial class ExpanderExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.IPageTransition>> ObserveBindingContentTransition(this Avalonia.Controls.Expander obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingContentTransition<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<BindingValue<Avalonia.Animation.IPageTransition>>> handler) where T : Avalonia.Controls.Expander
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveContentTransitionChanged(this Avalonia.Controls.Expander obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnContentTransitionChanged<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Expander
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Expander.ExpandDirectionProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ExpanderExtensions
     public static T OnExpandDirection<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<Avalonia.Controls.ExpandDirection>> handler) where T : Avalonia.Controls.Expander
     {
         var observable = obj.GetObservable(Avalonia.Controls.Expander.ExpandDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ExpandDirection>> ObserveBindingExpandDirection(this Avalonia.Controls.Expander obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Expander.ExpandDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingExpandDirection<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<BindingValue<Avalonia.Controls.ExpandDirection>>> handler) where T : Avalonia.Controls.Expander
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Expander.ExpandDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveExpandDirectionChanged(this Avalonia.Controls.Expander obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Expander.ExpandDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnExpandDirectionChanged<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Expander
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Expander.ExpandDirectionProperty);
         handler(obj, observable);
         return obj;
     }
@@ -344,6 +440,54 @@ public static partial class ExpanderExtensions
     public static T OnIsExpanded<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Expander
     {
         var observable = obj.GetObservable(Avalonia.Controls.Expander.IsExpandedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsExpanded(this Avalonia.Controls.Expander obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Expander.IsExpandedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsExpanded<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Expander
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Expander.IsExpandedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsExpandedChanged(this Avalonia.Controls.Expander obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Expander.IsExpandedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsExpandedChanged<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Expander
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Expander.IsExpandedProperty);
         handler(obj, observable);
         return obj;
     }

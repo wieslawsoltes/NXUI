@@ -50,6 +50,52 @@ public static partial class WindowBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsActive(this Avalonia.Controls.WindowBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.WindowBase.IsActiveProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.WindowBase OnBindingIsActive(this Avalonia.Controls.WindowBase obj, Action<Avalonia.Controls.WindowBase, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.WindowBase.IsActiveProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsActiveChanged(this Avalonia.Controls.WindowBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.WindowBase.IsActiveProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.WindowBase OnIsActiveChanged(this Avalonia.Controls.WindowBase obj, Action<Avalonia.Controls.WindowBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.WindowBase.IsActiveProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.WindowBase.OwnerProperty
 
     /// <summary>
@@ -90,6 +136,52 @@ public static partial class WindowBaseExtensions
     public static Avalonia.Controls.WindowBase OnOwner(this Avalonia.Controls.WindowBase obj, Action<Avalonia.Controls.WindowBase, IObservable<Avalonia.Controls.WindowBase>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.WindowBase.OwnerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.WindowBase>> ObserveBindingOwner(this Avalonia.Controls.WindowBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.WindowBase.OwnerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.WindowBase OnBindingOwner(this Avalonia.Controls.WindowBase obj, Action<Avalonia.Controls.WindowBase, IObservable<BindingValue<Avalonia.Controls.WindowBase>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.WindowBase.OwnerProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOwnerChanged(this Avalonia.Controls.WindowBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.WindowBase.OwnerProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.WindowBase OnOwnerChanged(this Avalonia.Controls.WindowBase obj, Action<Avalonia.Controls.WindowBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.WindowBase.OwnerProperty);
         handler(obj, observable);
         return obj;
     }
@@ -188,6 +280,54 @@ public static partial class WindowBaseExtensions
     public static T OnTopmost<T>(this T obj, Action<Avalonia.Controls.WindowBase, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.WindowBase
     {
         var observable = obj.GetObservable(Avalonia.Controls.WindowBase.TopmostProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingTopmost(this Avalonia.Controls.WindowBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.WindowBase.TopmostProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTopmost<T>(this T obj, Action<Avalonia.Controls.WindowBase, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.WindowBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.WindowBase.TopmostProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTopmostChanged(this Avalonia.Controls.WindowBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.WindowBase.TopmostProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTopmostChanged<T>(this T obj, Action<Avalonia.Controls.WindowBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.WindowBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.WindowBase.TopmostProperty);
         handler(obj, observable);
         return obj;
     }

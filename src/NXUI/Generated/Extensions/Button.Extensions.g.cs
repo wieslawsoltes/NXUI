@@ -105,6 +105,54 @@ public static partial class ButtonExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ClickMode>> ObserveBindingClickMode(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Button.ClickModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingClickMode<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<Avalonia.Controls.ClickMode>>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Button.ClickModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveClickModeChanged(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Button.ClickModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnClickModeChanged<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Button.ClickModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> property value to <see cref="Avalonia.Controls.ClickMode.Release"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -226,6 +274,54 @@ public static partial class ButtonExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Button.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Windows.Input.ICommand>> ObserveBindingCommand(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Button.CommandProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Button.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<System.Windows.Input.ICommand>>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Button.CommandProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Button.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCommandChanged(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Button.CommandProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Button.CommandProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCommandChanged<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Button.CommandProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Button.CommandParameterProperty
 
     /// <summary>
@@ -320,6 +416,54 @@ public static partial class ButtonExtensions
     public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Object>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.CommandParameterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingCommandParameter(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Button.CommandParameterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Button.CommandParameterProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCommandParameterChanged(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Button.CommandParameterProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCommandParameterChanged<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Button.CommandParameterProperty);
         handler(obj, observable);
         return obj;
     }
@@ -422,6 +566,54 @@ public static partial class ButtonExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsDefault(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Button.IsDefaultProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsDefault<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Button.IsDefaultProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsDefaultChanged(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Button.IsDefaultProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsDefaultChanged<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Button.IsDefaultProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Button.IsCancelProperty
 
     /// <summary>
@@ -520,6 +712,54 @@ public static partial class ButtonExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsCancel(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Button.IsCancelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsCancel<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Button.IsCancelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsCancelChanged(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Button.IsCancelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsCancelChanged<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Button.IsCancelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Button.IsPressedProperty
 
     /// <summary>
@@ -560,6 +800,52 @@ public static partial class ButtonExtensions
     public static Avalonia.Controls.Button OnIsPressed(this Avalonia.Controls.Button obj, Action<Avalonia.Controls.Button, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.IsPressedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Button.IsPressedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsPressed(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Button.IsPressedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Button.IsPressedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Button OnBindingIsPressed(this Avalonia.Controls.Button obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Button.IsPressedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Button.IsPressedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsPressedChanged(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Button.IsPressedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Button.IsPressedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Button OnIsPressedChanged(this Avalonia.Controls.Button obj, Action<Avalonia.Controls.Button, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Button.IsPressedProperty);
         handler(obj, observable);
         return obj;
     }
@@ -658,6 +944,54 @@ public static partial class ButtonExtensions
     public static T OnFlyout<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.FlyoutProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>> ObserveBindingFlyout(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Button.FlyoutProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFlyout<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Button.FlyoutProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFlyoutChanged(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Button.FlyoutProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFlyoutChanged<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Button.FlyoutProperty);
         handler(obj, observable);
         return obj;
     }

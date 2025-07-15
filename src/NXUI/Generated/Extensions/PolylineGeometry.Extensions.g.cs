@@ -104,6 +104,54 @@ public static partial class PolylineGeometryExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.Generic.IList<Avalonia.Point>>> ObserveBindingPoints(this Avalonia.Media.PolylineGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PolylineGeometry.PointsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPoints<T>(this T obj, Action<Avalonia.Media.PolylineGeometry, IObservable<BindingValue<System.Collections.Generic.IList<Avalonia.Point>>>> handler) where T : Avalonia.Media.PolylineGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PolylineGeometry.PointsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePointsChanged(this Avalonia.Media.PolylineGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PolylineGeometry.PointsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPointsChanged<T>(this T obj, Action<Avalonia.Media.PolylineGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.PolylineGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PolylineGeometry.PointsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.PolylineGeometry.IsFilledProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class PolylineGeometryExtensions
     public static T OnIsFilled<T>(this T obj, Action<Avalonia.Media.PolylineGeometry, IObservable<System.Boolean>> handler) where T : Avalonia.Media.PolylineGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.PolylineGeometry.IsFilledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsFilled(this Avalonia.Media.PolylineGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PolylineGeometry.IsFilledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsFilled<T>(this T obj, Action<Avalonia.Media.PolylineGeometry, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Media.PolylineGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PolylineGeometry.IsFilledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsFilledChanged(this Avalonia.Media.PolylineGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PolylineGeometry.IsFilledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsFilledChanged<T>(this T obj, Action<Avalonia.Media.PolylineGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.PolylineGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PolylineGeometry.IsFilledProperty);
         handler(obj, observable);
         return obj;
     }

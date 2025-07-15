@@ -104,6 +104,54 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingAbove(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AboveProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAbove<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AboveProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAboveChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AboveProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAboveChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AboveProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class RelativePanelExtensions
     public static T OnAlignBottomWithPanel<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAlignBottomWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignBottomWithPanel<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignBottomWithPanelChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignBottomWithPanelChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingAlignBottomWith(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignBottomWithProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignBottomWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignBottomWithProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignBottomWithChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignBottomWithProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignBottomWithChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignBottomWithProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class RelativePanelExtensions
     public static T OnAlignHorizontalCenterWithPanel<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Boolean>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAlignHorizontalCenterWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignHorizontalCenterWithPanel<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignHorizontalCenterWithPanelChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignHorizontalCenterWithPanelChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty);
         handler(obj, observable);
         return obj;
     }
@@ -496,6 +688,54 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAlignLeftWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignLeftWithPanel<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignLeftWithPanelChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignLeftWithPanelChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RelativePanel.AlignLeftWithProperty
 
     /// <summary>
@@ -590,6 +830,54 @@ public static partial class RelativePanelExtensions
     public static T OnAlignLeftWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingAlignLeftWith(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignLeftWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignLeftWithChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignLeftWithChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
         handler(obj, observable);
         return obj;
     }
@@ -692,6 +980,54 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAlignRightWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignRightWithPanel<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignRightWithPanelChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignRightWithPanelChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RelativePanel.AlignRightWithProperty
 
     /// <summary>
@@ -786,6 +1122,54 @@ public static partial class RelativePanelExtensions
     public static T OnAlignRightWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingAlignRightWith(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignRightWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignRightWithChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignRightWithChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
         handler(obj, observable);
         return obj;
     }
@@ -888,6 +1272,54 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAlignTopWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignTopWithPanel<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignTopWithPanelChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignTopWithPanelChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RelativePanel.AlignTopWithProperty
 
     /// <summary>
@@ -982,6 +1414,54 @@ public static partial class RelativePanelExtensions
     public static T OnAlignTopWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingAlignTopWith(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignTopWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignTopWithChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignTopWithChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1084,6 +1564,54 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingAlignVerticalCenterWithPanel(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignVerticalCenterWithPanel<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignVerticalCenterWithPanelChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignVerticalCenterWithPanelChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty
 
     /// <summary>
@@ -1178,6 +1706,54 @@ public static partial class RelativePanelExtensions
     public static T OnAlignVerticalCenterWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingAlignVerticalCenterWith(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingAlignVerticalCenterWith<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveAlignVerticalCenterWithChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnAlignVerticalCenterWithChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
         handler(obj, observable);
         return obj;
     }
@@ -1280,6 +1856,54 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingBelow(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.BelowProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingBelow<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.BelowProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBelowChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.BelowProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBelowChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.BelowProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RelativePanel.LeftOfProperty
 
     /// <summary>
@@ -1378,6 +2002,54 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingLeftOf(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.LeftOfProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLeftOf<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.LeftOfProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLeftOfChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.LeftOfProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLeftOfChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.LeftOfProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RelativePanel.RightOfProperty
 
     /// <summary>
@@ -1472,6 +2144,54 @@ public static partial class RelativePanelExtensions
     public static T OnRightOf<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<System.Object>> handler) where T : Avalonia.Layout.Layoutable
     {
         var observable = obj.GetObservable(Avalonia.Controls.RelativePanel.RightOfProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingRightOf(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RelativePanel.RightOfProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingRightOf<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RelativePanel.RightOfProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRightOfChanged(this Avalonia.Layout.Layoutable obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.RightOfProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnRightOfChanged<T>(this T obj, Action<Avalonia.Layout.Layoutable, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.Layoutable
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RelativePanel.RightOfProperty);
         handler(obj, observable);
         return obj;
     }

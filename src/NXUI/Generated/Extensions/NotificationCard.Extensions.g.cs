@@ -50,6 +50,52 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsClosing(this Avalonia.Controls.Notifications.NotificationCard obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Notifications.NotificationCard OnBindingIsClosing(this Avalonia.Controls.Notifications.NotificationCard obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsClosingChanged(this Avalonia.Controls.Notifications.NotificationCard obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.Notifications.NotificationCard OnIsClosingChanged(this Avalonia.Controls.Notifications.NotificationCard obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty
 
     /// <summary>
@@ -148,6 +194,54 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsClosed(this Avalonia.Controls.Notifications.NotificationCard obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsClosed<T>(this T obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsClosedChanged(this Avalonia.Controls.Notifications.NotificationCard obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsClosedChanged<T>(this T obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty
 
     /// <summary>
@@ -242,6 +336,54 @@ public static partial class NotificationCardExtensions
     public static T OnNotificationType<T>(this T obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<Avalonia.Controls.Notifications.NotificationType>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
     {
         var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Notifications.NotificationType>> ObserveBindingNotificationType(this Avalonia.Controls.Notifications.NotificationCard obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingNotificationType<T>(this T obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<BindingValue<Avalonia.Controls.Notifications.NotificationType>>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveNotificationTypeChanged(this Avalonia.Controls.Notifications.NotificationCard obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnNotificationTypeChanged<T>(this T obj, Action<Avalonia.Controls.Notifications.NotificationCard, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty);
         handler(obj, observable);
         return obj;
     }
@@ -388,6 +530,54 @@ public static partial class NotificationCardExtensions
     public static T OnCloseOnClick<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Boolean>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingCloseOnClick(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCloseOnClick<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCloseOnClickChanged(this Avalonia.Controls.Button obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCloseOnClickChanged<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Button
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty);
         handler(obj, observable);
         return obj;
     }

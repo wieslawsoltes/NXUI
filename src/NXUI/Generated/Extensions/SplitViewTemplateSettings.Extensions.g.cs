@@ -104,6 +104,54 @@ public static partial class SplitViewTemplateSettingsExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingClosedPaneWidth(this Avalonia.Controls.Primitives.SplitViewTemplateSettings obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingClosedPaneWidth<T>(this T obj, Action<Avalonia.Controls.Primitives.SplitViewTemplateSettings, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveClosedPaneWidthChanged(this Avalonia.Controls.Primitives.SplitViewTemplateSettings obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnClosedPaneWidthChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.SplitViewTemplateSettings, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class SplitViewTemplateSettingsExtensions
     public static T OnPaneColumnGridLength<T>(this T obj, Action<Avalonia.Controls.Primitives.SplitViewTemplateSettings, IObservable<Avalonia.Controls.GridLength>> handler) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.GridLength>> ObserveBindingPaneColumnGridLength(this Avalonia.Controls.Primitives.SplitViewTemplateSettings obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingPaneColumnGridLength<T>(this T obj, Action<Avalonia.Controls.Primitives.SplitViewTemplateSettings, IObservable<BindingValue<Avalonia.Controls.GridLength>>> handler) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePaneColumnGridLengthChanged(this Avalonia.Controls.Primitives.SplitViewTemplateSettings obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPaneColumnGridLengthChanged<T>(this T obj, Action<Avalonia.Controls.Primitives.SplitViewTemplateSettings, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty);
         handler(obj, observable);
         return obj;
     }

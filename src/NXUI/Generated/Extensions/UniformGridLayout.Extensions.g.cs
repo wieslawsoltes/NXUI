@@ -105,6 +105,54 @@ public static partial class UniformGridLayoutExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.UniformGridLayoutItemsJustification>> ObserveBindingItemsJustification(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemsJustification<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<BindingValue<Avalonia.Layout.UniformGridLayoutItemsJustification>>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemsJustificationChanged(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemsJustificationChanged<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.Start"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -275,6 +323,54 @@ public static partial class UniformGridLayoutExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.UniformGridLayoutItemsStretch>> ObserveBindingItemsStretch(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingItemsStretch<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<BindingValue<Avalonia.Layout.UniformGridLayoutItemsStretch>>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveItemsStretchChanged(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnItemsStretchChanged<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsStretch.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>
@@ -408,6 +504,54 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinColumnSpacing(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinColumnSpacing<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinColumnSpacingChanged(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinColumnSpacingChanged<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.UniformGridLayout.MinItemHeightProperty
 
     /// <summary>
@@ -502,6 +646,54 @@ public static partial class UniformGridLayoutExtensions
     public static T OnMinItemHeight<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<System.Double>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinItemHeight(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinItemHeight<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinItemHeightChanged(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinItemHeightChanged<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty);
         handler(obj, observable);
         return obj;
     }
@@ -604,6 +796,54 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinItemWidth(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinItemWidth<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinItemWidthChanged(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinItemWidthChanged<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty
 
     /// <summary>
@@ -698,6 +938,54 @@ public static partial class UniformGridLayoutExtensions
     public static T OnMinRowSpacing<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<System.Double>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingMinRowSpacing(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMinRowSpacing<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMinRowSpacingChanged(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMinRowSpacingChanged<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty);
         handler(obj, observable);
         return obj;
     }
@@ -800,6 +1088,54 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingMaximumRowsOrColumns(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingMaximumRowsOrColumns<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveMaximumRowsOrColumnsChanged(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnMaximumRowsOrColumnsChanged<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Layout.UniformGridLayout.OrientationProperty
 
     /// <summary>
@@ -894,6 +1230,54 @@ public static partial class UniformGridLayoutExtensions
     public static T OnOrientation<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<Avalonia.Layout.Orientation>> handler) where T : Avalonia.Layout.UniformGridLayout
     {
         var observable = obj.GetObservable(Avalonia.Layout.UniformGridLayout.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Layout.Orientation>> ObserveBindingOrientation(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<BindingValue<Avalonia.Layout.Orientation>>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Layout.UniformGridLayout.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Layout.UniformGridLayout obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Layout.UniformGridLayout, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Layout.UniformGridLayout
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Layout.UniformGridLayout.OrientationProperty);
         handler(obj, observable);
         return obj;
     }

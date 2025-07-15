@@ -99,6 +99,52 @@ public static partial class GeometryDrawingExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingGeometry(this Avalonia.Media.GeometryDrawing obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GeometryDrawing OnBindingGeometry(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveGeometryChanged(this Avalonia.Media.GeometryDrawing obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GeometryDrawing OnGeometryChanged(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.GeometryDrawing.BrushProperty
 
     /// <summary>
@@ -192,6 +238,52 @@ public static partial class GeometryDrawingExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBrush(this Avalonia.Media.GeometryDrawing obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GeometryDrawing OnBindingBrush(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveBrushChanged(this Avalonia.Media.GeometryDrawing obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GeometryDrawing OnBrushChanged(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.GeometryDrawing.PenProperty
 
     /// <summary>
@@ -281,6 +373,52 @@ public static partial class GeometryDrawingExtensions
     public static Avalonia.Media.GeometryDrawing OnPen(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IPen>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.PenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IPen>> ObserveBindingPen(this Avalonia.Media.GeometryDrawing obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.PenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GeometryDrawing OnBindingPen(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<BindingValue<Avalonia.Media.IPen>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.PenProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePenChanged(this Avalonia.Media.GeometryDrawing obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.GeometryDrawing.PenProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.GeometryDrawing OnPenChanged(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.GeometryDrawing.PenProperty);
         handler(obj, observable);
         return obj;
     }

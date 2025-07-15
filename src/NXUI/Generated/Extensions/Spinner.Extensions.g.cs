@@ -105,6 +105,54 @@ public static partial class SpinnerExtensions
     }
 
     /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.ValidSpinDirections>> ObserveBindingValidSpinDirection(this Avalonia.Controls.Spinner obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Spinner.ValidSpinDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingValidSpinDirection<T>(this T obj, Action<Avalonia.Controls.Spinner, IObservable<BindingValue<Avalonia.Controls.ValidSpinDirections>>> handler) where T : Avalonia.Controls.Spinner
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Spinner.ValidSpinDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveValidSpinDirectionChanged(this Avalonia.Controls.Spinner obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Spinner.ValidSpinDirectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnValidSpinDirectionChanged<T>(this T obj, Action<Avalonia.Controls.Spinner, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Spinner
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Spinner.ValidSpinDirectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property value to <see cref="Avalonia.Controls.ValidSpinDirections.None"/>.
     /// </summary>
     /// <param name="obj">The target object.</param>

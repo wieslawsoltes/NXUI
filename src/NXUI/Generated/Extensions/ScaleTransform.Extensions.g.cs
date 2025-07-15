@@ -99,6 +99,52 @@ public static partial class ScaleTransformExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ScaleTransform.ScaleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingScaleX(this Avalonia.Media.ScaleTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ScaleTransform.ScaleXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ScaleTransform.ScaleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ScaleTransform OnBindingScaleX(this Avalonia.Media.ScaleTransform obj, Action<Avalonia.Media.ScaleTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ScaleTransform.ScaleXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ScaleTransform.ScaleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveScaleXChanged(this Avalonia.Media.ScaleTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ScaleTransform.ScaleXProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ScaleTransform.ScaleXProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ScaleTransform OnScaleXChanged(this Avalonia.Media.ScaleTransform obj, Action<Avalonia.Media.ScaleTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ScaleTransform.ScaleXProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.ScaleTransform.ScaleYProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class ScaleTransformExtensions
     public static Avalonia.Media.ScaleTransform OnScaleY(this Avalonia.Media.ScaleTransform obj, Action<Avalonia.Media.ScaleTransform, IObservable<System.Double>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ScaleTransform.ScaleYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ScaleTransform.ScaleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingScaleY(this Avalonia.Media.ScaleTransform obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ScaleTransform.ScaleYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ScaleTransform.ScaleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ScaleTransform OnBindingScaleY(this Avalonia.Media.ScaleTransform obj, Action<Avalonia.Media.ScaleTransform, IObservable<BindingValue<System.Double>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ScaleTransform.ScaleYProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ScaleTransform.ScaleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveScaleYChanged(this Avalonia.Media.ScaleTransform obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ScaleTransform.ScaleYProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ScaleTransform.ScaleYProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ScaleTransform OnScaleYChanged(this Avalonia.Media.ScaleTransform obj, Action<Avalonia.Media.ScaleTransform, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ScaleTransform.ScaleYProperty);
         handler(obj, observable);
         return obj;
     }

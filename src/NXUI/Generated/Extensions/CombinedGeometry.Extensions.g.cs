@@ -104,6 +104,54 @@ public static partial class CombinedGeometryExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingGeometry1(this Avalonia.Media.CombinedGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingGeometry1<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler) where T : Avalonia.Media.CombinedGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveGeometry1Changed(this Avalonia.Media.CombinedGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnGeometry1Changed<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.CombinedGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.CombinedGeometry.Geometry2Property
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class CombinedGeometryExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingGeometry2(this Avalonia.Media.CombinedGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingGeometry2<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler) where T : Avalonia.Media.CombinedGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveGeometry2Changed(this Avalonia.Media.CombinedGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnGeometry2Changed<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.CombinedGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class CombinedGeometryExtensions
     public static T OnGeometryCombineMode<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<Avalonia.Media.GeometryCombineMode>> handler) where T : Avalonia.Media.CombinedGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.GeometryCombineMode>> ObserveBindingGeometryCombineMode(this Avalonia.Media.CombinedGeometry obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingGeometryCombineMode<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<BindingValue<Avalonia.Media.GeometryCombineMode>>> handler) where T : Avalonia.Media.CombinedGeometry
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveGeometryCombineModeChanged(this Avalonia.Media.CombinedGeometry obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnGeometryCombineModeChanged<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.CombinedGeometry
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
         handler(obj, observable);
         return obj;
     }

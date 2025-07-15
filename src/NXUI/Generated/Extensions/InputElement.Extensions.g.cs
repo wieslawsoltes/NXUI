@@ -104,6 +104,54 @@ public static partial class InputElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingFocusable(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.FocusableProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingFocusable<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.FocusableProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveFocusableChanged(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.FocusableProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnFocusableChanged<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.FocusableProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.InputElement.IsEnabledProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class InputElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsEnabled(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.IsEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsEnabled<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.IsEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsEnabledChanged(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsEnabledChanged<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.InputElement.IsEffectivelyEnabledProperty
 
     /// <summary>
@@ -242,6 +338,52 @@ public static partial class InputElementExtensions
     public static Avalonia.Input.InputElement OnIsEffectivelyEnabled(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Input.InputElement.IsEffectivelyEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.IsEffectivelyEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsEffectivelyEnabled(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.IsEffectivelyEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.IsEffectivelyEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Input.InputElement OnBindingIsEffectivelyEnabled(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.IsEffectivelyEnabledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.IsEffectivelyEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsEffectivelyEnabledChanged(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsEffectivelyEnabledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.IsEffectivelyEnabledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Input.InputElement OnIsEffectivelyEnabledChanged(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsEffectivelyEnabledProperty);
         handler(obj, observable);
         return obj;
     }
@@ -344,6 +486,54 @@ public static partial class InputElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Input.Cursor>> ObserveBindingCursor(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.CursorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCursor<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<Avalonia.Input.Cursor>>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.CursorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCursorChanged(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.CursorProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCursorChanged<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.CursorProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty
 
     /// <summary>
@@ -388,6 +578,52 @@ public static partial class InputElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsKeyboardFocusWithin(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Input.InputElement OnBindingIsKeyboardFocusWithin(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsKeyboardFocusWithinChanged(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Input.InputElement OnIsKeyboardFocusWithinChanged(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.InputElement.IsFocusedProperty
 
     /// <summary>
@@ -428,6 +664,52 @@ public static partial class InputElementExtensions
     public static Avalonia.Input.InputElement OnIsFocused(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Input.InputElement.IsFocusedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.IsFocusedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsFocused(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.IsFocusedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.IsFocusedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Input.InputElement OnBindingIsFocused(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.IsFocusedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.IsFocusedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsFocusedChanged(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsFocusedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.IsFocusedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Input.InputElement OnIsFocusedChanged(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsFocusedProperty);
         handler(obj, observable);
         return obj;
     }
@@ -530,6 +812,54 @@ public static partial class InputElementExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsHitTestVisible(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.IsHitTestVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsHitTestVisible<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.IsHitTestVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsHitTestVisibleChanged(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsHitTestVisibleProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsHitTestVisibleChanged<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsHitTestVisibleProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.InputElement.IsPointerOverProperty
 
     /// <summary>
@@ -570,6 +900,52 @@ public static partial class InputElementExtensions
     public static Avalonia.Input.InputElement OnIsPointerOver(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Input.InputElement.IsPointerOverProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.IsPointerOverProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsPointerOver(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.IsPointerOverProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.IsPointerOverProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Input.InputElement OnBindingIsPointerOver(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.IsPointerOverProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.IsPointerOverProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsPointerOverChanged(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsPointerOverProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.IsPointerOverProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Input.InputElement OnIsPointerOverChanged(this Avalonia.Input.InputElement obj, Action<Avalonia.Input.InputElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsPointerOverProperty);
         handler(obj, observable);
         return obj;
     }

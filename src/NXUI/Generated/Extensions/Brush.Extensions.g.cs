@@ -104,6 +104,54 @@ public static partial class BrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Brush.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingOpacity(this Avalonia.Media.Brush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Brush.OpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Brush.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOpacity<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Media.Brush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Brush.OpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Brush.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOpacityChanged(this Avalonia.Media.Brush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Brush.OpacityProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Brush.OpacityProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOpacityChanged<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.Brush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Brush.OpacityProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.Brush.TransformProperty
 
     /// <summary>
@@ -202,6 +250,54 @@ public static partial class BrushExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Brush.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.ITransform>> ObserveBindingTransform(this Avalonia.Media.Brush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Brush.TransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Brush.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTransform<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<BindingValue<Avalonia.Media.ITransform>>> handler) where T : Avalonia.Media.Brush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Brush.TransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Brush.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTransformChanged(this Avalonia.Media.Brush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Brush.TransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Brush.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTransformChanged<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.Brush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Brush.TransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.Brush.TransformOriginProperty
 
     /// <summary>
@@ -296,6 +392,54 @@ public static partial class BrushExtensions
     public static T OnTransformOrigin<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<Avalonia.RelativePoint>> handler) where T : Avalonia.Media.Brush
     {
         var observable = obj.GetObservable(Avalonia.Media.Brush.TransformOriginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.Brush.TransformOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.RelativePoint>> ObserveBindingTransformOrigin(this Avalonia.Media.Brush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.Brush.TransformOriginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.Brush.TransformOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTransformOrigin<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<BindingValue<Avalonia.RelativePoint>>> handler) where T : Avalonia.Media.Brush
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.Brush.TransformOriginProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.Brush.TransformOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTransformOriginChanged(this Avalonia.Media.Brush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.Brush.TransformOriginProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.Brush.TransformOriginProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTransformOriginChanged<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Media.Brush
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.Brush.TransformOriginProperty);
         handler(obj, observable);
         return obj;
     }

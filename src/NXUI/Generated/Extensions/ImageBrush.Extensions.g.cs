@@ -98,4 +98,50 @@ public static partial class ImageBrushExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.ImageBrush.SourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.IImageBrushSource>> ObserveBindingSource(this Avalonia.Media.ImageBrush obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.ImageBrush.SourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.ImageBrush.SourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ImageBrush OnBindingSource(this Avalonia.Media.ImageBrush obj, Action<Avalonia.Media.ImageBrush, IObservable<BindingValue<Avalonia.Media.IImageBrushSource>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.ImageBrush.SourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.ImageBrush.SourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSourceChanged(this Avalonia.Media.ImageBrush obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.ImageBrush.SourceProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.ImageBrush.SourceProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.ImageBrush OnSourceChanged(this Avalonia.Media.ImageBrush obj, Action<Avalonia.Media.ImageBrush, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.ImageBrush.SourceProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

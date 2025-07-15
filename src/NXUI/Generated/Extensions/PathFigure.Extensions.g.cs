@@ -99,6 +99,52 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsClosed(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PathFigure.IsClosedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PathFigure OnBindingIsClosed(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PathFigure.IsClosedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsClosedChanged(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PathFigure.IsClosedProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PathFigure OnIsClosedChanged(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PathFigure.IsClosedProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.PathFigure.IsFilledProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class PathFigureExtensions
     public static Avalonia.Media.PathFigure OnIsFilled(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.IsFilledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsFilled(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PathFigure.IsFilledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PathFigure OnBindingIsFilled(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PathFigure.IsFilledProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsFilledChanged(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PathFigure.IsFilledProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PathFigure OnIsFilledChanged(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PathFigure.IsFilledProperty);
         handler(obj, observable);
         return obj;
     }
@@ -285,6 +377,52 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.PathSegments>> ObserveBindingSegments(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PathFigure.SegmentsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PathFigure OnBindingSegments(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<BindingValue<Avalonia.Media.PathSegments>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PathFigure.SegmentsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSegmentsChanged(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PathFigure.SegmentsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PathFigure OnSegmentsChanged(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PathFigure.SegmentsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.PathFigure.StartPointProperty
 
     /// <summary>
@@ -374,6 +512,52 @@ public static partial class PathFigureExtensions
     public static Avalonia.Media.PathFigure OnStartPoint(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PathFigure.StartPointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Point>> ObserveBindingStartPoint(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PathFigure.StartPointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PathFigure OnBindingStartPoint(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<BindingValue<Avalonia.Point>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PathFigure.StartPointProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveStartPointChanged(this Avalonia.Media.PathFigure obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PathFigure.StartPointProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PathFigure OnStartPointChanged(this Avalonia.Media.PathFigure obj, Action<Avalonia.Media.PathFigure, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PathFigure.StartPointProperty);
         handler(obj, observable);
         return obj;
     }

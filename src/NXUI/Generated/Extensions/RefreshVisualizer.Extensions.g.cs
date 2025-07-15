@@ -50,6 +50,52 @@ public static partial class RefreshVisualizerExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.RefreshVisualizerState>> ObserveBindingRefreshVisualizerState(this Avalonia.Controls.RefreshVisualizer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.RefreshVisualizer OnBindingRefreshVisualizerState(this Avalonia.Controls.RefreshVisualizer obj, Action<Avalonia.Controls.RefreshVisualizer, IObservable<BindingValue<Avalonia.Controls.RefreshVisualizerState>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveRefreshVisualizerStateChanged(this Avalonia.Controls.RefreshVisualizer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object reference.</returns>
+    public static Avalonia.Controls.RefreshVisualizer OnRefreshVisualizerStateChanged(this Avalonia.Controls.RefreshVisualizer obj, Action<Avalonia.Controls.RefreshVisualizer, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RefreshVisualizer.RefreshVisualizerStateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.RefreshVisualizer.OrientationProperty
 
     /// <summary>
@@ -144,6 +190,54 @@ public static partial class RefreshVisualizerExtensions
     public static T OnOrientation<T>(this T obj, Action<Avalonia.Controls.RefreshVisualizer, IObservable<Avalonia.Controls.RefreshVisualizerOrientation>> handler) where T : Avalonia.Controls.RefreshVisualizer
     {
         var observable = obj.GetObservable(Avalonia.Controls.RefreshVisualizer.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.RefreshVisualizerOrientation>> ObserveBindingOrientation(this Avalonia.Controls.RefreshVisualizer obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.RefreshVisualizer.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOrientation<T>(this T obj, Action<Avalonia.Controls.RefreshVisualizer, IObservable<BindingValue<Avalonia.Controls.RefreshVisualizerOrientation>>> handler) where T : Avalonia.Controls.RefreshVisualizer
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.RefreshVisualizer.OrientationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOrientationChanged(this Avalonia.Controls.RefreshVisualizer obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.RefreshVisualizer.OrientationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOrientationChanged<T>(this T obj, Action<Avalonia.Controls.RefreshVisualizer, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.RefreshVisualizer
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.RefreshVisualizer.OrientationProperty);
         handler(obj, observable);
         return obj;
     }

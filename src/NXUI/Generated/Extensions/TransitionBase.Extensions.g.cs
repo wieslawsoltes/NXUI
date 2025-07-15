@@ -104,6 +104,54 @@ public static partial class TransitionBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.TimeSpan>> ObserveBindingDuration(this Avalonia.Animation.TransitionBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.TransitionBase.DurationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDuration<T>(this T obj, Action<Avalonia.Animation.TransitionBase, IObservable<BindingValue<System.TimeSpan>>> handler) where T : Avalonia.Animation.TransitionBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.TransitionBase.DurationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDurationChanged(this Avalonia.Animation.TransitionBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.TransitionBase.DurationProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDurationChanged<T>(this T obj, Action<Avalonia.Animation.TransitionBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Animation.TransitionBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.TransitionBase.DurationProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Animation.TransitionBase.DelayProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class TransitionBaseExtensions
     public static T OnDelay<T>(this T obj, Action<Avalonia.Animation.TransitionBase, IObservable<System.TimeSpan>> handler) where T : Avalonia.Animation.TransitionBase
     {
         var observable = obj.GetObservable(Avalonia.Animation.TransitionBase.DelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.TimeSpan>> ObserveBindingDelay(this Avalonia.Animation.TransitionBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.TransitionBase.DelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingDelay<T>(this T obj, Action<Avalonia.Animation.TransitionBase, IObservable<BindingValue<System.TimeSpan>>> handler) where T : Avalonia.Animation.TransitionBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.TransitionBase.DelayProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveDelayChanged(this Avalonia.Animation.TransitionBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.TransitionBase.DelayProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnDelayChanged<T>(this T obj, Action<Avalonia.Animation.TransitionBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Animation.TransitionBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.TransitionBase.DelayProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class TransitionBaseExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.Easings.Easing>> ObserveBindingEasing(this Avalonia.Animation.TransitionBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.TransitionBase.EasingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingEasing<T>(this T obj, Action<Avalonia.Animation.TransitionBase, IObservable<BindingValue<Avalonia.Animation.Easings.Easing>>> handler) where T : Avalonia.Animation.TransitionBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.TransitionBase.EasingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveEasingChanged(this Avalonia.Animation.TransitionBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.TransitionBase.EasingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnEasingChanged<T>(this T obj, Action<Avalonia.Animation.TransitionBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Animation.TransitionBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.TransitionBase.EasingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Animation.TransitionBase.PropertyProperty
 
     /// <summary>
@@ -394,6 +538,54 @@ public static partial class TransitionBaseExtensions
     public static T OnProperty<T>(this T obj, Action<Avalonia.Animation.TransitionBase, IObservable<Avalonia.AvaloniaProperty>> handler) where T : Avalonia.Animation.TransitionBase
     {
         var observable = obj.GetObservable(Avalonia.Animation.TransitionBase.PropertyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.AvaloniaProperty>> ObserveBindingProperty(this Avalonia.Animation.TransitionBase obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Animation.TransitionBase.PropertyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingProperty<T>(this T obj, Action<Avalonia.Animation.TransitionBase, IObservable<BindingValue<Avalonia.AvaloniaProperty>>> handler) where T : Avalonia.Animation.TransitionBase
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Animation.TransitionBase.PropertyProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePropertyChanged(this Avalonia.Animation.TransitionBase obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Animation.TransitionBase.PropertyProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnPropertyChanged<T>(this T obj, Action<Avalonia.Animation.TransitionBase, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Animation.TransitionBase
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Animation.TransitionBase.PropertyProperty);
         handler(obj, observable);
         return obj;
     }

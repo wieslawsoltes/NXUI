@@ -99,6 +99,52 @@ public static partial class PopupRootExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupRoot.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.Transform>> ObserveBindingTransform(this Avalonia.Controls.Primitives.PopupRoot obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupRoot.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.PopupRoot OnBindingTransform(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<BindingValue<Avalonia.Media.Transform>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupRoot.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTransformChanged(this Avalonia.Controls.Primitives.PopupRoot obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupRoot.TransformProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.PopupRoot OnTransformChanged(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class PopupRootExtensions
     public static Avalonia.Controls.Primitives.PopupRoot OnWindowManagerAddShadowHint(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<System.Boolean>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingWindowManagerAddShadowHint(this Avalonia.Controls.Primitives.PopupRoot obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.PopupRoot OnBindingWindowManagerAddShadowHint(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<BindingValue<System.Boolean>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveWindowManagerAddShadowHintChanged(this Avalonia.Controls.Primitives.PopupRoot obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Controls.Primitives.PopupRoot OnWindowManagerAddShadowHintChanged(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty);
         handler(obj, observable);
         return obj;
     }

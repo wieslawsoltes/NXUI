@@ -104,6 +104,54 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingOffContent(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOffContent<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOffContentChanged(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOffContentChanged<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class ToggleSwitchExtensions
     public static T OnOffContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ToggleSwitch
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingOffContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOffContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOffContentTemplateChanged(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOffContentTemplateChanged<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
         handler(obj, observable);
         return obj;
     }
@@ -300,6 +396,54 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Object>> ObserveBindingOnContent(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOnContent<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOnContentChanged(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOnContentChanged<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty
 
     /// <summary>
@@ -398,6 +542,54 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingOnContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingOnContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveOnContentTemplateChanged(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnOnContentTemplateChanged<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty
 
     /// <summary>
@@ -492,6 +684,54 @@ public static partial class ToggleSwitchExtensions
     public static T OnKnobTransitions<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<Avalonia.Animation.Transitions>> handler) where T : Avalonia.Controls.ToggleSwitch
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Animation.Transitions>> ObserveBindingKnobTransitions(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingKnobTransitions<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<Avalonia.Animation.Transitions>>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveKnobTransitionsChanged(this Avalonia.Controls.ToggleSwitch obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnKnobTransitionsChanged<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ToggleSwitch
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty);
         handler(obj, observable);
         return obj;
     }

@@ -98,4 +98,50 @@ public static partial class PolyBezierSegmentExtensions
         handler(obj, observable);
         return obj;
     }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.PolyBezierSegment.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Points>> ObserveBindingPoints(this Avalonia.Media.PolyBezierSegment obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.PolyBezierSegment.PointsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.PolyBezierSegment.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PolyBezierSegment OnBindingPoints(this Avalonia.Media.PolyBezierSegment obj, Action<Avalonia.Media.PolyBezierSegment, IObservable<BindingValue<Avalonia.Points>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.PolyBezierSegment.PointsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.PolyBezierSegment.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePointsChanged(this Avalonia.Media.PolyBezierSegment obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.PolyBezierSegment.PointsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.PolyBezierSegment.PointsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.PolyBezierSegment OnPointsChanged(this Avalonia.Media.PolyBezierSegment obj, Action<Avalonia.Media.PolyBezierSegment, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.PolyBezierSegment.PointsProperty);
+        handler(obj, observable);
+        return obj;
+    }
 }

@@ -99,6 +99,52 @@ public static partial class QuadraticBezierSegmentExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Point>> ObserveBindingPoint1(this Avalonia.Media.QuadraticBezierSegment obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.QuadraticBezierSegment.Point1Property);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.QuadraticBezierSegment OnBindingPoint1(this Avalonia.Media.QuadraticBezierSegment obj, Action<Avalonia.Media.QuadraticBezierSegment, IObservable<BindingValue<Avalonia.Point>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.QuadraticBezierSegment.Point1Property);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePoint1Changed(this Avalonia.Media.QuadraticBezierSegment obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.QuadraticBezierSegment.Point1Property);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.QuadraticBezierSegment OnPoint1Changed(this Avalonia.Media.QuadraticBezierSegment obj, Action<Avalonia.Media.QuadraticBezierSegment, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.QuadraticBezierSegment.Point1Property);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Media.QuadraticBezierSegment.Point2Property
 
     /// <summary>
@@ -188,6 +234,52 @@ public static partial class QuadraticBezierSegmentExtensions
     public static Avalonia.Media.QuadraticBezierSegment OnPoint2(this Avalonia.Media.QuadraticBezierSegment obj, Action<Avalonia.Media.QuadraticBezierSegment, IObservable<Avalonia.Point>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.QuadraticBezierSegment.Point2Property);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Point>> ObserveBindingPoint2(this Avalonia.Media.QuadraticBezierSegment obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Media.QuadraticBezierSegment.Point2Property);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.QuadraticBezierSegment OnBindingPoint2(this Avalonia.Media.QuadraticBezierSegment obj, Action<Avalonia.Media.QuadraticBezierSegment, IObservable<BindingValue<Avalonia.Point>>> handler)
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Media.QuadraticBezierSegment.Point2Property);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObservePoint2Changed(this Avalonia.Media.QuadraticBezierSegment obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Media.QuadraticBezierSegment.Point2Property);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <returns>The target object.</returns>
+    public static Avalonia.Media.QuadraticBezierSegment OnPoint2Changed(this Avalonia.Media.QuadraticBezierSegment obj, Action<Avalonia.Media.QuadraticBezierSegment, IObservable<AvaloniaPropertyChangedEventArgs>> handler)
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Media.QuadraticBezierSegment.Point2Property);
         handler(obj, observable);
         return obj;
     }

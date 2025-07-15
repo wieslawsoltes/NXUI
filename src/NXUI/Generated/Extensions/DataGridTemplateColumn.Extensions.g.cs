@@ -104,6 +104,54 @@ public static partial class DataGridTemplateColumnExtensions
         return obj;
     }
 
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingCellTemplate(this Avalonia.Controls.DataGridTemplateColumn obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCellTemplate<T>(this T obj, Action<Avalonia.Controls.DataGridTemplateColumn, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.DataGridTemplateColumn
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCellTemplateChanged(this Avalonia.Controls.DataGridTemplateColumn obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCellTemplateChanged<T>(this T obj, Action<Avalonia.Controls.DataGridTemplateColumn, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridTemplateColumn
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty
 
     /// <summary>
@@ -198,6 +246,54 @@ public static partial class DataGridTemplateColumnExtensions
     public static T OnCellEditingTemplate<T>(this T obj, Action<Avalonia.Controls.DataGridTemplateColumn, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.DataGridTemplateColumn
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingCellEditingTemplate(this Avalonia.Controls.DataGridTemplateColumn obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingCellEditingTemplate<T>(this T obj, Action<Avalonia.Controls.DataGridTemplateColumn, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.DataGridTemplateColumn
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveCellEditingTemplateChanged(this Avalonia.Controls.DataGridTemplateColumn obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnCellEditingTemplateChanged<T>(this T obj, Action<Avalonia.Controls.DataGridTemplateColumn, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.DataGridTemplateColumn
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty);
         handler(obj, observable);
         return obj;
     }
