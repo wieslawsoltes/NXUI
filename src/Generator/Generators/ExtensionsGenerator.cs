@@ -120,8 +120,12 @@ public class ExtensionsGenerator
                     continue;
 
                 var template = c.IsSealed
-                    ? Templates.RoutedEventMethodsTemplateSealed
-                    : Templates.RoutedEventMethodsTemplate;
+                    ? (e.EventType.IsGenericType
+                        ? Templates.RoutedEventMethodsTemplateSealed
+                        : Templates.RoutedEventMethodsTemplateSealedNonGeneric)
+                    : (e.EventType.IsGenericType
+                        ? Templates.RoutedEventMethodsTemplate
+                        : Templates.RoutedEventMethodsTemplateNonGeneric);
 
                 var eventBuilder = new StringBuilder(template);
 
