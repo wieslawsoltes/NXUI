@@ -3225,7 +3225,7 @@ public static partial class TextBoxExtensions
     public static T OnCopyingToClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.CopyingToClipboard += h, 
                 h => obj.CopyingToClipboard -= h)
             .Select(x => x.EventArgs);
@@ -3241,7 +3241,7 @@ public static partial class TextBoxExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboardEvent(this Avalonia.Controls.TextBox obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.CopyingToClipboard += h, 
                 h => obj.CopyingToClipboard -= h)
             .Select(x => x.EventArgs);
@@ -3259,7 +3259,7 @@ public static partial class TextBoxExtensions
     public static T OnCuttingToClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.CuttingToClipboard += h, 
                 h => obj.CuttingToClipboard -= h)
             .Select(x => x.EventArgs);
@@ -3275,7 +3275,7 @@ public static partial class TextBoxExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCuttingToClipboardEvent(this Avalonia.Controls.TextBox obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.CuttingToClipboard += h, 
                 h => obj.CuttingToClipboard -= h)
             .Select(x => x.EventArgs);
@@ -3293,7 +3293,7 @@ public static partial class TextBoxExtensions
     public static T OnPastingFromClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.PastingFromClipboard += h, 
                 h => obj.PastingFromClipboard -= h)
             .Select(x => x.EventArgs);
@@ -3309,7 +3309,7 @@ public static partial class TextBoxExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPastingFromClipboardEvent(this Avalonia.Controls.TextBox obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.PastingFromClipboard += h, 
                 h => obj.PastingFromClipboard -= h)
             .Select(x => x.EventArgs);
@@ -3327,7 +3327,7 @@ public static partial class TextBoxExtensions
     public static T OnTextChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.TextChangedEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.TextChangedEventArgs>, Avalonia.Controls.TextChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.TextChangedEventArgs>, Avalonia.Controls.TextChangedEventArgs>(
                 h => obj.TextChanged += h, 
                 h => obj.TextChanged -= h)
             .Select(x => x.EventArgs);
@@ -3343,7 +3343,7 @@ public static partial class TextBoxExtensions
     public static IObservable<Avalonia.Controls.TextChangedEventArgs> ObserveOnTextChangedEvent(this Avalonia.Controls.TextBox obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.TextChangedEventArgs>, Avalonia.Controls.TextChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.TextChangedEventArgs>, Avalonia.Controls.TextChangedEventArgs>(
                 h => obj.TextChanged += h, 
                 h => obj.TextChanged -= h)
             .Select(x => x.EventArgs);
@@ -3361,7 +3361,7 @@ public static partial class TextBoxExtensions
     public static T OnTextChangingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.TextChangingEventArgs>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.TextChangingEventArgs>, Avalonia.Controls.TextChangingEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.TextChangingEventArgs>, Avalonia.Controls.TextChangingEventArgs>(
                 h => obj.TextChanging += h, 
                 h => obj.TextChanging -= h)
             .Select(x => x.EventArgs);
@@ -3377,7 +3377,7 @@ public static partial class TextBoxExtensions
     public static IObservable<Avalonia.Controls.TextChangingEventArgs> ObserveOnTextChangingEvent(this Avalonia.Controls.TextBox obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.TextChangingEventArgs>, Avalonia.Controls.TextChangingEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.TextChangingEventArgs>, Avalonia.Controls.TextChangingEventArgs>(
                 h => obj.TextChanging += h, 
                 h => obj.TextChanging -= h)
             .Select(x => x.EventArgs);

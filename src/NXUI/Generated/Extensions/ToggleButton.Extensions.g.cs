@@ -263,7 +263,7 @@ public static partial class ToggleButtonExtensions
     public static T OnIsCheckedChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ToggleButton
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.IsCheckedChanged += h, 
                 h => obj.IsCheckedChanged -= h)
             .Select(x => x.EventArgs);
@@ -279,7 +279,7 @@ public static partial class ToggleButtonExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnIsCheckedChangedEvent(this Avalonia.Controls.Primitives.ToggleButton obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.IsCheckedChanged += h, 
                 h => obj.IsCheckedChanged -= h)
             .Select(x => x.EventArgs);

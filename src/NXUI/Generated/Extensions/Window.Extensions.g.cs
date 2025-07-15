@@ -1774,7 +1774,7 @@ public static partial class WindowExtensions
     public static T OnClosingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.WindowClosingEventArgs>> handler) where T : Avalonia.Controls.Window
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.WindowClosingEventArgs>, Avalonia.Controls.WindowClosingEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.WindowClosingEventArgs>, Avalonia.Controls.WindowClosingEventArgs>(
                 h => obj.Closing += h, 
                 h => obj.Closing -= h)
             .Select(x => x.EventArgs);
@@ -1790,7 +1790,7 @@ public static partial class WindowExtensions
     public static IObservable<Avalonia.Controls.WindowClosingEventArgs> ObserveOnClosingEvent(this Avalonia.Controls.Window obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.WindowClosingEventArgs>, Avalonia.Controls.WindowClosingEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.WindowClosingEventArgs>, Avalonia.Controls.WindowClosingEventArgs>(
                 h => obj.Closing += h, 
                 h => obj.Closing -= h)
             .Select(x => x.EventArgs);

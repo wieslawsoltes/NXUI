@@ -263,7 +263,7 @@ public static partial class TransitioningContentControlExtensions
     public static T OnTransitionCompletedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.TransitionCompletedEventArgs>> handler) where T : Avalonia.Controls.TransitioningContentControl
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.TransitionCompletedEventArgs>, Avalonia.Controls.TransitionCompletedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.TransitionCompletedEventArgs>, Avalonia.Controls.TransitionCompletedEventArgs>(
                 h => obj.TransitionCompleted += h, 
                 h => obj.TransitionCompleted -= h)
             .Select(x => x.EventArgs);
@@ -279,7 +279,7 @@ public static partial class TransitioningContentControlExtensions
     public static IObservable<Avalonia.Controls.TransitionCompletedEventArgs> ObserveOnTransitionCompletedEvent(this Avalonia.Controls.TransitioningContentControl obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.TransitionCompletedEventArgs>, Avalonia.Controls.TransitionCompletedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.TransitionCompletedEventArgs>, Avalonia.Controls.TransitionCompletedEventArgs>(
                 h => obj.TransitionCompleted += h, 
                 h => obj.TransitionCompleted -= h)
             .Select(x => x.EventArgs);

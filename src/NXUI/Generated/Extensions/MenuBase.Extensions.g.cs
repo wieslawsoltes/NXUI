@@ -160,7 +160,7 @@ public static partial class MenuBaseExtensions
     public static T OnOpenedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.MenuBase
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Opened += h, 
                 h => obj.Opened -= h)
             .Select(x => x.EventArgs);
@@ -176,7 +176,7 @@ public static partial class MenuBaseExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnOpenedEvent(this Avalonia.Controls.MenuBase obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Opened += h, 
                 h => obj.Opened -= h)
             .Select(x => x.EventArgs);
@@ -194,7 +194,7 @@ public static partial class MenuBaseExtensions
     public static T OnClosedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.MenuBase
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Closed += h, 
                 h => obj.Closed -= h)
             .Select(x => x.EventArgs);
@@ -210,7 +210,7 @@ public static partial class MenuBaseExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnClosedEvent(this Avalonia.Controls.MenuBase obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Closed += h, 
                 h => obj.Closed -= h)
             .Select(x => x.EventArgs);

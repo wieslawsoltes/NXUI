@@ -165,7 +165,7 @@ public static partial class ThumbExtensions
     public static T OnDragStartedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler) where T : Avalonia.Controls.Primitives.Thumb
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
                 h => obj.DragStarted += h, 
                 h => obj.DragStarted -= h)
             .Select(x => x.EventArgs);
@@ -181,7 +181,7 @@ public static partial class ThumbExtensions
     public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragStartedEvent(this Avalonia.Controls.Primitives.Thumb obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
                 h => obj.DragStarted += h, 
                 h => obj.DragStarted -= h)
             .Select(x => x.EventArgs);
@@ -199,7 +199,7 @@ public static partial class ThumbExtensions
     public static T OnDragDeltaEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler) where T : Avalonia.Controls.Primitives.Thumb
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
                 h => obj.DragDelta += h, 
                 h => obj.DragDelta -= h)
             .Select(x => x.EventArgs);
@@ -215,7 +215,7 @@ public static partial class ThumbExtensions
     public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragDeltaEvent(this Avalonia.Controls.Primitives.Thumb obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
                 h => obj.DragDelta += h, 
                 h => obj.DragDelta -= h)
             .Select(x => x.EventArgs);
@@ -233,7 +233,7 @@ public static partial class ThumbExtensions
     public static T OnDragCompletedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler) where T : Avalonia.Controls.Primitives.Thumb
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
                 h => obj.DragCompleted += h, 
                 h => obj.DragCompleted -= h)
             .Select(x => x.EventArgs);
@@ -249,7 +249,7 @@ public static partial class ThumbExtensions
     public static IObservable<Avalonia.Input.VectorEventArgs> ObserveOnDragCompletedEvent(this Avalonia.Controls.Primitives.Thumb obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Input.VectorEventArgs>, Avalonia.Input.VectorEventArgs>(
                 h => obj.DragCompleted += h, 
                 h => obj.DragCompleted -= h)
             .Select(x => x.EventArgs);

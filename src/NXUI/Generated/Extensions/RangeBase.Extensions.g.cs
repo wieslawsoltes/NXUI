@@ -557,7 +557,7 @@ public static partial class RangeBaseExtensions
     public static T OnValueChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.RangeBase
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>, Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>, Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>(
                 h => obj.ValueChanged += h, 
                 h => obj.ValueChanged -= h)
             .Select(x => x.EventArgs);
@@ -573,7 +573,7 @@ public static partial class RangeBaseExtensions
     public static IObservable<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs> ObserveOnValueChangedEvent(this Avalonia.Controls.Primitives.RangeBase obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>, Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>, Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>(
                 h => obj.ValueChanged += h, 
                 h => obj.ValueChanged -= h)
             .Select(x => x.EventArgs);

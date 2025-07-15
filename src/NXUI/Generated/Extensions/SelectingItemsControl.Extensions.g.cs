@@ -900,7 +900,7 @@ public static partial class SelectingItemsControlExtensions
     public static T OnSelectionChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.SelectionChangedEventArgs>, Avalonia.Controls.SelectionChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.SelectionChangedEventArgs>, Avalonia.Controls.SelectionChangedEventArgs>(
                 h => obj.SelectionChanged += h, 
                 h => obj.SelectionChanged -= h)
             .Select(x => x.EventArgs);
@@ -916,7 +916,7 @@ public static partial class SelectingItemsControlExtensions
     public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChangedEvent(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.SelectionChangedEventArgs>, Avalonia.Controls.SelectionChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.SelectionChangedEventArgs>, Avalonia.Controls.SelectionChangedEventArgs>(
                 h => obj.SelectionChanged += h, 
                 h => obj.SelectionChanged -= h)
             .Select(x => x.EventArgs);

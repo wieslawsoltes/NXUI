@@ -3677,7 +3677,7 @@ public static partial class DataGridExtensions
     public static T OnHorizontalScrollEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.Primitives.ScrollEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.Primitives.ScrollEventArgs>, Avalonia.Controls.Primitives.ScrollEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.Primitives.ScrollEventArgs>, Avalonia.Controls.Primitives.ScrollEventArgs>(
                 h => obj.HorizontalScroll += h, 
                 h => obj.HorizontalScroll -= h)
             .Select(x => x.EventArgs);
@@ -3693,7 +3693,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.Primitives.ScrollEventArgs> ObserveOnHorizontalScrollEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.Primitives.ScrollEventArgs>, Avalonia.Controls.Primitives.ScrollEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.Primitives.ScrollEventArgs>, Avalonia.Controls.Primitives.ScrollEventArgs>(
                 h => obj.HorizontalScroll += h, 
                 h => obj.HorizontalScroll -= h)
             .Select(x => x.EventArgs);
@@ -3711,7 +3711,7 @@ public static partial class DataGridExtensions
     public static T OnVerticalScrollEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.Primitives.ScrollEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.Primitives.ScrollEventArgs>, Avalonia.Controls.Primitives.ScrollEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.Primitives.ScrollEventArgs>, Avalonia.Controls.Primitives.ScrollEventArgs>(
                 h => obj.VerticalScroll += h, 
                 h => obj.VerticalScroll -= h)
             .Select(x => x.EventArgs);
@@ -3727,7 +3727,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.Primitives.ScrollEventArgs> ObserveOnVerticalScrollEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.Primitives.ScrollEventArgs>, Avalonia.Controls.Primitives.ScrollEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.Primitives.ScrollEventArgs>, Avalonia.Controls.Primitives.ScrollEventArgs>(
                 h => obj.VerticalScroll += h, 
                 h => obj.VerticalScroll -= h)
             .Select(x => x.EventArgs);
@@ -3745,7 +3745,7 @@ public static partial class DataGridExtensions
     public static T OnAutoGeneratingColumnEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs>, Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs>, Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs>(
                 h => obj.AutoGeneratingColumn += h, 
                 h => obj.AutoGeneratingColumn -= h)
             .Select(x => x.EventArgs);
@@ -3761,7 +3761,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs> ObserveOnAutoGeneratingColumnEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs>, Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs>, Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs>(
                 h => obj.AutoGeneratingColumn += h, 
                 h => obj.AutoGeneratingColumn -= h)
             .Select(x => x.EventArgs);
@@ -3779,7 +3779,7 @@ public static partial class DataGridExtensions
     public static T OnBeginningEditEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridBeginningEditEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridBeginningEditEventArgs>, Avalonia.Controls.DataGridBeginningEditEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridBeginningEditEventArgs>, Avalonia.Controls.DataGridBeginningEditEventArgs>(
                 h => obj.BeginningEdit += h, 
                 h => obj.BeginningEdit -= h)
             .Select(x => x.EventArgs);
@@ -3795,7 +3795,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridBeginningEditEventArgs> ObserveOnBeginningEditEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridBeginningEditEventArgs>, Avalonia.Controls.DataGridBeginningEditEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridBeginningEditEventArgs>, Avalonia.Controls.DataGridBeginningEditEventArgs>(
                 h => obj.BeginningEdit += h, 
                 h => obj.BeginningEdit -= h)
             .Select(x => x.EventArgs);
@@ -3813,7 +3813,7 @@ public static partial class DataGridExtensions
     public static T OnCellEditEndedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridCellEditEndedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridCellEditEndedEventArgs>, Avalonia.Controls.DataGridCellEditEndedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridCellEditEndedEventArgs>, Avalonia.Controls.DataGridCellEditEndedEventArgs>(
                 h => obj.CellEditEnded += h, 
                 h => obj.CellEditEnded -= h)
             .Select(x => x.EventArgs);
@@ -3829,7 +3829,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridCellEditEndedEventArgs> ObserveOnCellEditEndedEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridCellEditEndedEventArgs>, Avalonia.Controls.DataGridCellEditEndedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridCellEditEndedEventArgs>, Avalonia.Controls.DataGridCellEditEndedEventArgs>(
                 h => obj.CellEditEnded += h, 
                 h => obj.CellEditEnded -= h)
             .Select(x => x.EventArgs);
@@ -3847,7 +3847,7 @@ public static partial class DataGridExtensions
     public static T OnCellEditEndingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridCellEditEndingEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridCellEditEndingEventArgs>, Avalonia.Controls.DataGridCellEditEndingEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridCellEditEndingEventArgs>, Avalonia.Controls.DataGridCellEditEndingEventArgs>(
                 h => obj.CellEditEnding += h, 
                 h => obj.CellEditEnding -= h)
             .Select(x => x.EventArgs);
@@ -3863,7 +3863,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridCellEditEndingEventArgs> ObserveOnCellEditEndingEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridCellEditEndingEventArgs>, Avalonia.Controls.DataGridCellEditEndingEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridCellEditEndingEventArgs>, Avalonia.Controls.DataGridCellEditEndingEventArgs>(
                 h => obj.CellEditEnding += h, 
                 h => obj.CellEditEnding -= h)
             .Select(x => x.EventArgs);
@@ -3881,7 +3881,7 @@ public static partial class DataGridExtensions
     public static T OnCellPointerPressedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridCellPointerPressedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridCellPointerPressedEventArgs>, Avalonia.Controls.DataGridCellPointerPressedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridCellPointerPressedEventArgs>, Avalonia.Controls.DataGridCellPointerPressedEventArgs>(
                 h => obj.CellPointerPressed += h, 
                 h => obj.CellPointerPressed -= h)
             .Select(x => x.EventArgs);
@@ -3897,7 +3897,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridCellPointerPressedEventArgs> ObserveOnCellPointerPressedEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridCellPointerPressedEventArgs>, Avalonia.Controls.DataGridCellPointerPressedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridCellPointerPressedEventArgs>, Avalonia.Controls.DataGridCellPointerPressedEventArgs>(
                 h => obj.CellPointerPressed += h, 
                 h => obj.CellPointerPressed -= h)
             .Select(x => x.EventArgs);
@@ -3915,7 +3915,7 @@ public static partial class DataGridExtensions
     public static T OnColumnDisplayIndexChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridColumnEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
                 h => obj.ColumnDisplayIndexChanged += h, 
                 h => obj.ColumnDisplayIndexChanged -= h)
             .Select(x => x.EventArgs);
@@ -3931,7 +3931,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridColumnEventArgs> ObserveOnColumnDisplayIndexChangedEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
                 h => obj.ColumnDisplayIndexChanged += h, 
                 h => obj.ColumnDisplayIndexChanged -= h)
             .Select(x => x.EventArgs);
@@ -3949,7 +3949,7 @@ public static partial class DataGridExtensions
     public static T OnColumnReorderedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridColumnEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
                 h => obj.ColumnReordered += h, 
                 h => obj.ColumnReordered -= h)
             .Select(x => x.EventArgs);
@@ -3965,7 +3965,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridColumnEventArgs> ObserveOnColumnReorderedEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
                 h => obj.ColumnReordered += h, 
                 h => obj.ColumnReordered -= h)
             .Select(x => x.EventArgs);
@@ -3983,7 +3983,7 @@ public static partial class DataGridExtensions
     public static T OnColumnReorderingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridColumnReorderingEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridColumnReorderingEventArgs>, Avalonia.Controls.DataGridColumnReorderingEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridColumnReorderingEventArgs>, Avalonia.Controls.DataGridColumnReorderingEventArgs>(
                 h => obj.ColumnReordering += h, 
                 h => obj.ColumnReordering -= h)
             .Select(x => x.EventArgs);
@@ -3999,7 +3999,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridColumnReorderingEventArgs> ObserveOnColumnReorderingEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridColumnReorderingEventArgs>, Avalonia.Controls.DataGridColumnReorderingEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridColumnReorderingEventArgs>, Avalonia.Controls.DataGridColumnReorderingEventArgs>(
                 h => obj.ColumnReordering += h, 
                 h => obj.ColumnReordering -= h)
             .Select(x => x.EventArgs);
@@ -4017,7 +4017,7 @@ public static partial class DataGridExtensions
     public static T OnCurrentCellChangedEvent<T>(this T obj, Action<T, IObservable<System.EventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<System.EventArgs>, System.EventArgs>(
+            .FromEventPattern<System.EventHandler<System.EventArgs>, System.EventArgs>(
                 h => obj.CurrentCellChanged += h, 
                 h => obj.CurrentCellChanged -= h)
             .Select(x => x.EventArgs);
@@ -4033,7 +4033,7 @@ public static partial class DataGridExtensions
     public static IObservable<System.EventArgs> ObserveOnCurrentCellChangedEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<System.EventArgs>, System.EventArgs>(
+            .FromEventPattern<System.EventHandler<System.EventArgs>, System.EventArgs>(
                 h => obj.CurrentCellChanged += h, 
                 h => obj.CurrentCellChanged -= h)
             .Select(x => x.EventArgs);
@@ -4051,7 +4051,7 @@ public static partial class DataGridExtensions
     public static T OnLoadingRowEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridRowEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowEventArgs>, Avalonia.Controls.DataGridRowEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowEventArgs>, Avalonia.Controls.DataGridRowEventArgs>(
                 h => obj.LoadingRow += h, 
                 h => obj.LoadingRow -= h)
             .Select(x => x.EventArgs);
@@ -4067,7 +4067,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridRowEventArgs> ObserveOnLoadingRowEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowEventArgs>, Avalonia.Controls.DataGridRowEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowEventArgs>, Avalonia.Controls.DataGridRowEventArgs>(
                 h => obj.LoadingRow += h, 
                 h => obj.LoadingRow -= h)
             .Select(x => x.EventArgs);
@@ -4085,7 +4085,7 @@ public static partial class DataGridExtensions
     public static T OnPreparingCellForEditEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridPreparingCellForEditEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridPreparingCellForEditEventArgs>, Avalonia.Controls.DataGridPreparingCellForEditEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridPreparingCellForEditEventArgs>, Avalonia.Controls.DataGridPreparingCellForEditEventArgs>(
                 h => obj.PreparingCellForEdit += h, 
                 h => obj.PreparingCellForEdit -= h)
             .Select(x => x.EventArgs);
@@ -4101,7 +4101,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridPreparingCellForEditEventArgs> ObserveOnPreparingCellForEditEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridPreparingCellForEditEventArgs>, Avalonia.Controls.DataGridPreparingCellForEditEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridPreparingCellForEditEventArgs>, Avalonia.Controls.DataGridPreparingCellForEditEventArgs>(
                 h => obj.PreparingCellForEdit += h, 
                 h => obj.PreparingCellForEdit -= h)
             .Select(x => x.EventArgs);
@@ -4119,7 +4119,7 @@ public static partial class DataGridExtensions
     public static T OnRowEditEndedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridRowEditEndedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowEditEndedEventArgs>, Avalonia.Controls.DataGridRowEditEndedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowEditEndedEventArgs>, Avalonia.Controls.DataGridRowEditEndedEventArgs>(
                 h => obj.RowEditEnded += h, 
                 h => obj.RowEditEnded -= h)
             .Select(x => x.EventArgs);
@@ -4135,7 +4135,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridRowEditEndedEventArgs> ObserveOnRowEditEndedEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowEditEndedEventArgs>, Avalonia.Controls.DataGridRowEditEndedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowEditEndedEventArgs>, Avalonia.Controls.DataGridRowEditEndedEventArgs>(
                 h => obj.RowEditEnded += h, 
                 h => obj.RowEditEnded -= h)
             .Select(x => x.EventArgs);
@@ -4153,7 +4153,7 @@ public static partial class DataGridExtensions
     public static T OnRowEditEndingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridRowEditEndingEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowEditEndingEventArgs>, Avalonia.Controls.DataGridRowEditEndingEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowEditEndingEventArgs>, Avalonia.Controls.DataGridRowEditEndingEventArgs>(
                 h => obj.RowEditEnding += h, 
                 h => obj.RowEditEnding -= h)
             .Select(x => x.EventArgs);
@@ -4169,7 +4169,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridRowEditEndingEventArgs> ObserveOnRowEditEndingEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowEditEndingEventArgs>, Avalonia.Controls.DataGridRowEditEndingEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowEditEndingEventArgs>, Avalonia.Controls.DataGridRowEditEndingEventArgs>(
                 h => obj.RowEditEnding += h, 
                 h => obj.RowEditEnding -= h)
             .Select(x => x.EventArgs);
@@ -4187,7 +4187,7 @@ public static partial class DataGridExtensions
     public static T OnSelectionChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.SelectionChangedEventArgs>, Avalonia.Controls.SelectionChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.SelectionChangedEventArgs>, Avalonia.Controls.SelectionChangedEventArgs>(
                 h => obj.SelectionChanged += h, 
                 h => obj.SelectionChanged -= h)
             .Select(x => x.EventArgs);
@@ -4203,7 +4203,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.SelectionChangedEventArgs> ObserveOnSelectionChangedEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.SelectionChangedEventArgs>, Avalonia.Controls.SelectionChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.SelectionChangedEventArgs>, Avalonia.Controls.SelectionChangedEventArgs>(
                 h => obj.SelectionChanged += h, 
                 h => obj.SelectionChanged -= h)
             .Select(x => x.EventArgs);
@@ -4221,7 +4221,7 @@ public static partial class DataGridExtensions
     public static T OnSortingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridColumnEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
                 h => obj.Sorting += h, 
                 h => obj.Sorting -= h)
             .Select(x => x.EventArgs);
@@ -4237,7 +4237,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridColumnEventArgs> ObserveOnSortingEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridColumnEventArgs>, Avalonia.Controls.DataGridColumnEventArgs>(
                 h => obj.Sorting += h, 
                 h => obj.Sorting -= h)
             .Select(x => x.EventArgs);
@@ -4255,7 +4255,7 @@ public static partial class DataGridExtensions
     public static T OnUnloadingRowEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridRowEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowEventArgs>, Avalonia.Controls.DataGridRowEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowEventArgs>, Avalonia.Controls.DataGridRowEventArgs>(
                 h => obj.UnloadingRow += h, 
                 h => obj.UnloadingRow -= h)
             .Select(x => x.EventArgs);
@@ -4271,7 +4271,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridRowEventArgs> ObserveOnUnloadingRowEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowEventArgs>, Avalonia.Controls.DataGridRowEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowEventArgs>, Avalonia.Controls.DataGridRowEventArgs>(
                 h => obj.UnloadingRow += h, 
                 h => obj.UnloadingRow -= h)
             .Select(x => x.EventArgs);
@@ -4289,7 +4289,7 @@ public static partial class DataGridExtensions
     public static T OnLoadingRowDetailsEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridRowDetailsEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
                 h => obj.LoadingRowDetails += h, 
                 h => obj.LoadingRowDetails -= h)
             .Select(x => x.EventArgs);
@@ -4305,7 +4305,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridRowDetailsEventArgs> ObserveOnLoadingRowDetailsEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
                 h => obj.LoadingRowDetails += h, 
                 h => obj.LoadingRowDetails -= h)
             .Select(x => x.EventArgs);
@@ -4323,7 +4323,7 @@ public static partial class DataGridExtensions
     public static T OnRowDetailsVisibilityChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridRowDetailsEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
                 h => obj.RowDetailsVisibilityChanged += h, 
                 h => obj.RowDetailsVisibilityChanged -= h)
             .Select(x => x.EventArgs);
@@ -4339,7 +4339,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridRowDetailsEventArgs> ObserveOnRowDetailsVisibilityChangedEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
                 h => obj.RowDetailsVisibilityChanged += h, 
                 h => obj.RowDetailsVisibilityChanged -= h)
             .Select(x => x.EventArgs);
@@ -4357,7 +4357,7 @@ public static partial class DataGridExtensions
     public static T OnUnloadingRowDetailsEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridRowDetailsEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
                 h => obj.UnloadingRowDetails += h, 
                 h => obj.UnloadingRowDetails -= h)
             .Select(x => x.EventArgs);
@@ -4373,7 +4373,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridRowDetailsEventArgs> ObserveOnUnloadingRowDetailsEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowDetailsEventArgs>, Avalonia.Controls.DataGridRowDetailsEventArgs>(
                 h => obj.UnloadingRowDetails += h, 
                 h => obj.UnloadingRowDetails -= h)
             .Select(x => x.EventArgs);
@@ -4391,7 +4391,7 @@ public static partial class DataGridExtensions
     public static T OnLoadingRowGroupEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>, Avalonia.Controls.DataGridRowGroupHeaderEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>, Avalonia.Controls.DataGridRowGroupHeaderEventArgs>(
                 h => obj.LoadingRowGroup += h, 
                 h => obj.LoadingRowGroup -= h)
             .Select(x => x.EventArgs);
@@ -4407,7 +4407,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridRowGroupHeaderEventArgs> ObserveOnLoadingRowGroupEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>, Avalonia.Controls.DataGridRowGroupHeaderEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>, Avalonia.Controls.DataGridRowGroupHeaderEventArgs>(
                 h => obj.LoadingRowGroup += h, 
                 h => obj.LoadingRowGroup -= h)
             .Select(x => x.EventArgs);
@@ -4425,7 +4425,7 @@ public static partial class DataGridExtensions
     public static T OnUnloadingRowGroupEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>, Avalonia.Controls.DataGridRowGroupHeaderEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>, Avalonia.Controls.DataGridRowGroupHeaderEventArgs>(
                 h => obj.UnloadingRowGroup += h, 
                 h => obj.UnloadingRowGroup -= h)
             .Select(x => x.EventArgs);
@@ -4441,7 +4441,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridRowGroupHeaderEventArgs> ObserveOnUnloadingRowGroupEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>, Avalonia.Controls.DataGridRowGroupHeaderEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>, Avalonia.Controls.DataGridRowGroupHeaderEventArgs>(
                 h => obj.UnloadingRowGroup += h, 
                 h => obj.UnloadingRowGroup -= h)
             .Select(x => x.EventArgs);
@@ -4459,7 +4459,7 @@ public static partial class DataGridExtensions
     public static T OnCopyingRowClipboardContentEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.DataGridRowClipboardEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowClipboardEventArgs>, Avalonia.Controls.DataGridRowClipboardEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowClipboardEventArgs>, Avalonia.Controls.DataGridRowClipboardEventArgs>(
                 h => obj.CopyingRowClipboardContent += h, 
                 h => obj.CopyingRowClipboardContent -= h)
             .Select(x => x.EventArgs);
@@ -4475,7 +4475,7 @@ public static partial class DataGridExtensions
     public static IObservable<Avalonia.Controls.DataGridRowClipboardEventArgs> ObserveOnCopyingRowClipboardContentEvent(this Avalonia.Controls.DataGrid obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.DataGridRowClipboardEventArgs>, Avalonia.Controls.DataGridRowClipboardEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.DataGridRowClipboardEventArgs>, Avalonia.Controls.DataGridRowClipboardEventArgs>(
                 h => obj.CopyingRowClipboardContent += h, 
                 h => obj.CopyingRowClipboardContent -= h)
             .Select(x => x.EventArgs);

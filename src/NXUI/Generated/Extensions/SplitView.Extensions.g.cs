@@ -1212,7 +1212,7 @@ public static partial class SplitViewExtensions
     public static T OnPaneClosedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.PaneClosed += h, 
                 h => obj.PaneClosed -= h)
             .Select(x => x.EventArgs);
@@ -1228,7 +1228,7 @@ public static partial class SplitViewExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPaneClosedEvent(this Avalonia.Controls.SplitView obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.PaneClosed += h, 
                 h => obj.PaneClosed -= h)
             .Select(x => x.EventArgs);
@@ -1246,7 +1246,7 @@ public static partial class SplitViewExtensions
     public static T OnPaneClosingEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
                 h => obj.PaneClosing += h, 
                 h => obj.PaneClosing -= h)
             .Select(x => x.EventArgs);
@@ -1262,7 +1262,7 @@ public static partial class SplitViewExtensions
     public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnPaneClosingEvent(this Avalonia.Controls.SplitView obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
                 h => obj.PaneClosing += h, 
                 h => obj.PaneClosing -= h)
             .Select(x => x.EventArgs);
@@ -1280,7 +1280,7 @@ public static partial class SplitViewExtensions
     public static T OnPaneOpenedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.PaneOpened += h, 
                 h => obj.PaneOpened -= h)
             .Select(x => x.EventArgs);
@@ -1296,7 +1296,7 @@ public static partial class SplitViewExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnPaneOpenedEvent(this Avalonia.Controls.SplitView obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.PaneOpened += h, 
                 h => obj.PaneOpened -= h)
             .Select(x => x.EventArgs);
@@ -1314,7 +1314,7 @@ public static partial class SplitViewExtensions
     public static T OnPaneOpeningEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
                 h => obj.PaneOpening += h, 
                 h => obj.PaneOpening -= h)
             .Select(x => x.EventArgs);
@@ -1330,7 +1330,7 @@ public static partial class SplitViewExtensions
     public static IObservable<Avalonia.Interactivity.CancelRoutedEventArgs> ObserveOnPaneOpeningEvent(this Avalonia.Controls.SplitView obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.CancelRoutedEventArgs>, Avalonia.Interactivity.CancelRoutedEventArgs>(
                 h => obj.PaneOpening += h, 
                 h => obj.PaneOpening -= h)
             .Select(x => x.EventArgs);

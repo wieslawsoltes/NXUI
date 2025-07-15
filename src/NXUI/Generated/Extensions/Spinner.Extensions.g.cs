@@ -201,7 +201,7 @@ public static partial class SpinnerExtensions
     public static T OnSpinEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler) where T : Avalonia.Controls.Spinner
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.SpinEventArgs>, Avalonia.Controls.SpinEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.SpinEventArgs>, Avalonia.Controls.SpinEventArgs>(
                 h => obj.Spin += h, 
                 h => obj.Spin -= h)
             .Select(x => x.EventArgs);
@@ -217,7 +217,7 @@ public static partial class SpinnerExtensions
     public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpinEvent(this Avalonia.Controls.Spinner obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.SpinEventArgs>, Avalonia.Controls.SpinEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.SpinEventArgs>, Avalonia.Controls.SpinEventArgs>(
                 h => obj.Spin += h, 
                 h => obj.Spin -= h)
             .Select(x => x.EventArgs);

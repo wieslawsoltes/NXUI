@@ -686,10 +686,10 @@ public static partial class TopLevelExtensions
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnOpenedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.TopLevel
+    public static T OnOpenedEvent<T>(this T obj, Action<T, IObservable<System.EventArgs>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = Observable
-            .FromEventPattern<EventHandler, EventArgs>(
+            .FromEventPattern<System.EventHandler, System.EventArgs>(
                 h => obj.Opened += h, 
                 h => obj.Opened -= h)
             .Select(x => x.EventArgs);
@@ -702,10 +702,10 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable for the `Opened` event on the specified object.</returns>
-    public static IObservable<EventArgs> ObserveOnOpenedEvent(this Avalonia.Controls.TopLevel obj)
+    public static IObservable<System.EventArgs> ObserveOnOpenedEvent(this Avalonia.Controls.TopLevel obj)
     {
         return Observable
-            .FromEventPattern<EventHandler, EventArgs>(
+            .FromEventPattern<System.EventHandler, System.EventArgs>(
                 h => obj.Opened += h, 
                 h => obj.Opened -= h)
             .Select(x => x.EventArgs);
@@ -720,10 +720,10 @@ public static partial class TopLevelExtensions
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnClosedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.TopLevel
+    public static T OnClosedEvent<T>(this T obj, Action<T, IObservable<System.EventArgs>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = Observable
-            .FromEventPattern<EventHandler, EventArgs>(
+            .FromEventPattern<System.EventHandler, System.EventArgs>(
                 h => obj.Closed += h, 
                 h => obj.Closed -= h)
             .Select(x => x.EventArgs);
@@ -736,10 +736,10 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable for the `Closed` event on the specified object.</returns>
-    public static IObservable<EventArgs> ObserveOnClosedEvent(this Avalonia.Controls.TopLevel obj)
+    public static IObservable<System.EventArgs> ObserveOnClosedEvent(this Avalonia.Controls.TopLevel obj)
     {
         return Observable
-            .FromEventPattern<EventHandler, EventArgs>(
+            .FromEventPattern<System.EventHandler, System.EventArgs>(
                 h => obj.Closed += h, 
                 h => obj.Closed -= h)
             .Select(x => x.EventArgs);
@@ -754,10 +754,10 @@ public static partial class TopLevelExtensions
     /// <param name="handler">The handler to be called when the event is raised.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnScalingChangedEvent<T>(this T obj, Action<T, IObservable<EventArgs>> handler) where T : Avalonia.Controls.TopLevel
+    public static T OnScalingChangedEvent<T>(this T obj, Action<T, IObservable<System.EventArgs>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = Observable
-            .FromEventPattern<EventHandler, EventArgs>(
+            .FromEventPattern<System.EventHandler, System.EventArgs>(
                 h => obj.ScalingChanged += h, 
                 h => obj.ScalingChanged -= h)
             .Select(x => x.EventArgs);
@@ -770,10 +770,10 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable for the `ScalingChanged` event on the specified object.</returns>
-    public static IObservable<EventArgs> ObserveOnScalingChangedEvent(this Avalonia.Controls.TopLevel obj)
+    public static IObservable<System.EventArgs> ObserveOnScalingChangedEvent(this Avalonia.Controls.TopLevel obj)
     {
         return Observable
-            .FromEventPattern<EventHandler, EventArgs>(
+            .FromEventPattern<System.EventHandler, System.EventArgs>(
                 h => obj.ScalingChanged += h, 
                 h => obj.ScalingChanged -= h)
             .Select(x => x.EventArgs);
@@ -791,7 +791,7 @@ public static partial class TopLevelExtensions
     public static T OnBackRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.BackRequested += h, 
                 h => obj.BackRequested -= h)
             .Select(x => x.EventArgs);
@@ -807,7 +807,7 @@ public static partial class TopLevelExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnBackRequestedEvent(this Avalonia.Controls.TopLevel obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.BackRequested += h, 
                 h => obj.BackRequested -= h)
             .Select(x => x.EventArgs);

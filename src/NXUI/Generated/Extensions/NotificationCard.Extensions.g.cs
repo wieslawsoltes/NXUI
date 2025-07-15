@@ -453,7 +453,7 @@ public static partial class NotificationCardExtensions
     public static T OnNotificationClosedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.NotificationClosed += h, 
                 h => obj.NotificationClosed -= h)
             .Select(x => x.EventArgs);
@@ -469,7 +469,7 @@ public static partial class NotificationCardExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnNotificationClosedEvent(this Avalonia.Controls.Notifications.NotificationCard obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.NotificationClosed += h, 
                 h => obj.NotificationClosed -= h)
             .Select(x => x.EventArgs);

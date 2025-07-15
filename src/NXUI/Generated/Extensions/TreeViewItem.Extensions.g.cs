@@ -258,7 +258,7 @@ public static partial class TreeViewItemExtensions
     public static T OnExpandedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TreeViewItem
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Expanded += h, 
                 h => obj.Expanded -= h)
             .Select(x => x.EventArgs);
@@ -274,7 +274,7 @@ public static partial class TreeViewItemExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnExpandedEvent(this Avalonia.Controls.TreeViewItem obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Expanded += h, 
                 h => obj.Expanded -= h)
             .Select(x => x.EventArgs);
@@ -292,7 +292,7 @@ public static partial class TreeViewItemExtensions
     public static T OnCollapsedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TreeViewItem
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Collapsed += h, 
                 h => obj.Collapsed -= h)
             .Select(x => x.EventArgs);
@@ -308,7 +308,7 @@ public static partial class TreeViewItemExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCollapsedEvent(this Avalonia.Controls.TreeViewItem obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Collapsed += h, 
                 h => obj.Collapsed -= h)
             .Select(x => x.EventArgs);

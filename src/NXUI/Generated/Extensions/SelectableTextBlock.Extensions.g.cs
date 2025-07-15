@@ -547,7 +547,7 @@ public static partial class SelectableTextBlockExtensions
     public static T OnCopyingToClipboardEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.SelectableTextBlock
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.CopyingToClipboard += h, 
                 h => obj.CopyingToClipboard -= h)
             .Select(x => x.EventArgs);
@@ -563,7 +563,7 @@ public static partial class SelectableTextBlockExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnCopyingToClipboardEvent(this Avalonia.Controls.SelectableTextBlock obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.CopyingToClipboard += h, 
                 h => obj.CopyingToClipboard -= h)
             .Select(x => x.EventArgs);

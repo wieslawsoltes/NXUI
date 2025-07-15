@@ -311,7 +311,7 @@ public static partial class RefreshContainerExtensions
     public static T OnRefreshRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.RefreshRequestedEventArgs>> handler) where T : Avalonia.Controls.RefreshContainer
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.RefreshRequestedEventArgs>, Avalonia.Controls.RefreshRequestedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.RefreshRequestedEventArgs>, Avalonia.Controls.RefreshRequestedEventArgs>(
                 h => obj.RefreshRequested += h, 
                 h => obj.RefreshRequested -= h)
             .Select(x => x.EventArgs);
@@ -327,7 +327,7 @@ public static partial class RefreshContainerExtensions
     public static IObservable<Avalonia.Controls.RefreshRequestedEventArgs> ObserveOnRefreshRequestedEvent(this Avalonia.Controls.RefreshContainer obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.RefreshRequestedEventArgs>, Avalonia.Controls.RefreshRequestedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.RefreshRequestedEventArgs>, Avalonia.Controls.RefreshRequestedEventArgs>(
                 h => obj.RefreshRequested += h, 
                 h => obj.RefreshRequested -= h)
             .Select(x => x.EventArgs);

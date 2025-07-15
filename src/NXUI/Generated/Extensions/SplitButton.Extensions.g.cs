@@ -361,7 +361,7 @@ public static partial class SplitButtonExtensions
     public static T OnClickEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Click += h, 
                 h => obj.Click -= h)
             .Select(x => x.EventArgs);
@@ -377,7 +377,7 @@ public static partial class SplitButtonExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnClickEvent(this Avalonia.Controls.SplitButton obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Click += h, 
                 h => obj.Click -= h)
             .Select(x => x.EventArgs);

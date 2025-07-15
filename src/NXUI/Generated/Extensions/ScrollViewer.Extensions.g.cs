@@ -1747,7 +1747,7 @@ public static partial class ScrollViewerExtensions
     public static T OnScrollChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.ScrollChangedEventArgs>> handler) where T : Avalonia.Controls.ScrollViewer
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.ScrollChangedEventArgs>, Avalonia.Controls.ScrollChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.ScrollChangedEventArgs>, Avalonia.Controls.ScrollChangedEventArgs>(
                 h => obj.ScrollChanged += h, 
                 h => obj.ScrollChanged -= h)
             .Select(x => x.EventArgs);
@@ -1763,7 +1763,7 @@ public static partial class ScrollViewerExtensions
     public static IObservable<Avalonia.Controls.ScrollChangedEventArgs> ObserveOnScrollChangedEvent(this Avalonia.Controls.ScrollViewer obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.ScrollChangedEventArgs>, Avalonia.Controls.ScrollChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.ScrollChangedEventArgs>, Avalonia.Controls.ScrollChangedEventArgs>(
                 h => obj.ScrollChanged += h, 
                 h => obj.ScrollChanged -= h)
             .Select(x => x.EventArgs);

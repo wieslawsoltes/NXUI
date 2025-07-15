@@ -257,7 +257,7 @@ public static partial class RefreshVisualizerExtensions
     public static T OnRefreshRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.RefreshRequestedEventArgs>> handler) where T : Avalonia.Controls.RefreshVisualizer
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.RefreshRequestedEventArgs>, Avalonia.Controls.RefreshRequestedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.RefreshRequestedEventArgs>, Avalonia.Controls.RefreshRequestedEventArgs>(
                 h => obj.RefreshRequested += h, 
                 h => obj.RefreshRequested -= h)
             .Select(x => x.EventArgs);
@@ -273,7 +273,7 @@ public static partial class RefreshVisualizerExtensions
     public static IObservable<Avalonia.Controls.RefreshRequestedEventArgs> ObserveOnRefreshRequestedEvent(this Avalonia.Controls.RefreshVisualizer obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.RefreshRequestedEventArgs>, Avalonia.Controls.RefreshRequestedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.RefreshRequestedEventArgs>, Avalonia.Controls.RefreshRequestedEventArgs>(
                 h => obj.RefreshRequested += h, 
                 h => obj.RefreshRequested -= h)
             .Select(x => x.EventArgs);

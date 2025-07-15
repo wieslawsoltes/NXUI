@@ -655,7 +655,7 @@ public static partial class ControlExtensions
     public static T OnContextRequestedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.ContextRequestedEventArgs>> handler) where T : Avalonia.Controls.Control
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(
                 h => obj.ContextRequested += h, 
                 h => obj.ContextRequested -= h)
             .Select(x => x.EventArgs);
@@ -671,7 +671,7 @@ public static partial class ControlExtensions
     public static IObservable<Avalonia.Controls.ContextRequestedEventArgs> ObserveOnContextRequestedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.ContextRequestedEventArgs>, Avalonia.Controls.ContextRequestedEventArgs>(
                 h => obj.ContextRequested += h, 
                 h => obj.ContextRequested -= h)
             .Select(x => x.EventArgs);
@@ -689,7 +689,7 @@ public static partial class ControlExtensions
     public static T OnLoadedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Control
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Loaded += h, 
                 h => obj.Loaded -= h)
             .Select(x => x.EventArgs);
@@ -705,7 +705,7 @@ public static partial class ControlExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnLoadedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Loaded += h, 
                 h => obj.Loaded -= h)
             .Select(x => x.EventArgs);
@@ -723,7 +723,7 @@ public static partial class ControlExtensions
     public static T OnUnloadedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Control
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Unloaded += h, 
                 h => obj.Unloaded -= h)
             .Select(x => x.EventArgs);
@@ -739,7 +739,7 @@ public static partial class ControlExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnUnloadedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.Unloaded += h, 
                 h => obj.Unloaded -= h)
             .Select(x => x.EventArgs);
@@ -757,7 +757,7 @@ public static partial class ControlExtensions
     public static T OnSizeChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SizeChangedEventArgs>> handler) where T : Avalonia.Controls.Control
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.SizeChangedEventArgs>, Avalonia.Controls.SizeChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.SizeChangedEventArgs>, Avalonia.Controls.SizeChangedEventArgs>(
                 h => obj.SizeChanged += h, 
                 h => obj.SizeChanged -= h)
             .Select(x => x.EventArgs);
@@ -773,7 +773,7 @@ public static partial class ControlExtensions
     public static IObservable<Avalonia.Controls.SizeChangedEventArgs> ObserveOnSizeChangedEvent(this Avalonia.Controls.Control obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.SizeChangedEventArgs>, Avalonia.Controls.SizeChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.SizeChangedEventArgs>, Avalonia.Controls.SizeChangedEventArgs>(
                 h => obj.SizeChanged += h, 
                 h => obj.SizeChanged -= h)
             .Select(x => x.EventArgs);

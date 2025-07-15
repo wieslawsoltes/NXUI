@@ -434,7 +434,7 @@ public static partial class VirtualizingStackPanelExtensions
     public static T OnHorizontalSnapPointsChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.VirtualizingStackPanel
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.HorizontalSnapPointsChanged += h, 
                 h => obj.HorizontalSnapPointsChanged -= h)
             .Select(x => x.EventArgs);
@@ -450,7 +450,7 @@ public static partial class VirtualizingStackPanelExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnHorizontalSnapPointsChangedEvent(this Avalonia.Controls.VirtualizingStackPanel obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.HorizontalSnapPointsChanged += h, 
                 h => obj.HorizontalSnapPointsChanged -= h)
             .Select(x => x.EventArgs);
@@ -468,7 +468,7 @@ public static partial class VirtualizingStackPanelExtensions
     public static T OnVerticalSnapPointsChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.VirtualizingStackPanel
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.VerticalSnapPointsChanged += h, 
                 h => obj.VerticalSnapPointsChanged -= h)
             .Select(x => x.EventArgs);
@@ -484,7 +484,7 @@ public static partial class VirtualizingStackPanelExtensions
     public static IObservable<Avalonia.Interactivity.RoutedEventArgs> ObserveOnVerticalSnapPointsChangedEvent(this Avalonia.Controls.VirtualizingStackPanel obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Interactivity.RoutedEventArgs>, Avalonia.Interactivity.RoutedEventArgs>(
                 h => obj.VerticalSnapPointsChanged += h, 
                 h => obj.VerticalSnapPointsChanged -= h)
             .Select(x => x.EventArgs);

@@ -2277,7 +2277,7 @@ public static partial class NumericUpDownExtensions
     public static T OnSpinnedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.SpinEventArgs>, Avalonia.Controls.SpinEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.SpinEventArgs>, Avalonia.Controls.SpinEventArgs>(
                 h => obj.Spinned += h, 
                 h => obj.Spinned -= h)
             .Select(x => x.EventArgs);
@@ -2293,7 +2293,7 @@ public static partial class NumericUpDownExtensions
     public static IObservable<Avalonia.Controls.SpinEventArgs> ObserveOnSpinnedEvent(this Avalonia.Controls.NumericUpDown obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.SpinEventArgs>, Avalonia.Controls.SpinEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.SpinEventArgs>, Avalonia.Controls.SpinEventArgs>(
                 h => obj.Spinned += h, 
                 h => obj.Spinned -= h)
             .Select(x => x.EventArgs);
@@ -2311,7 +2311,7 @@ public static partial class NumericUpDownExtensions
     public static T OnValueChangedEvent<T>(this T obj, Action<T, IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.NumericUpDownValueChangedEventArgs>, Avalonia.Controls.NumericUpDownValueChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.NumericUpDownValueChangedEventArgs>, Avalonia.Controls.NumericUpDownValueChangedEventArgs>(
                 h => obj.ValueChanged += h, 
                 h => obj.ValueChanged -= h)
             .Select(x => x.EventArgs);
@@ -2327,7 +2327,7 @@ public static partial class NumericUpDownExtensions
     public static IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs> ObserveOnValueChangedEvent(this Avalonia.Controls.NumericUpDown obj)
     {
         return Observable
-            .FromEventPattern<EventHandler<Avalonia.Controls.NumericUpDownValueChangedEventArgs>, Avalonia.Controls.NumericUpDownValueChangedEventArgs>(
+            .FromEventPattern<System.EventHandler<Avalonia.Controls.NumericUpDownValueChangedEventArgs>, Avalonia.Controls.NumericUpDownValueChangedEventArgs>(
                 h => obj.ValueChanged += h, 
                 h => obj.ValueChanged -= h)
             .Select(x => x.EventArgs);
