@@ -1,0 +1,18 @@
+<Project>
+  <UsingTask TaskName="NXUI.BuildTasks.NXUIGeneratorTask" AssemblyFile="$(MSBuildThisFileDirectory)bin\$(Configuration)\net8.0\NXUI.BuildTasks.dll" />
+  <PropertyGroup>
+    <NXUIGeneratedDir>$(IntermediateOutputPath)NXUI.Generated</NXUIGeneratedDir>
+  </PropertyGroup>
+  <Target Name="RunNXUIGenerator" BeforeTargets="CoreCompile" Inputs="@(Compile)" Outputs="$(NXUIGeneratedDir)\_completed">
+    <ItemGroup>
+      <_NXUIReferences Include="@(ReferencePath)" />
+      <_NXUIReferences Include="@(NXUIAssemblyPaths)" />
+    </ItemGroup>
+    <MakeDir Directories="$(NXUIGeneratedDir)" />
+    <NXUIGeneratorTask OutputPath="$(NXUIGeneratedDir)" AssemblyPaths="@(_NXUIReferences)" IncludeAssemblies="@(NXUIIncludeAssemblies)" />
+    <WriteLinesToFile File="$(NXUIGeneratedDir)\_completed" Lines="done" Overwrite="true" />
+    <ItemGroup>
+      <Compile Include="$(NXUIGeneratedDir)\**\*.cs" />
+    </ItemGroup>
+  </Target>
+</Project>

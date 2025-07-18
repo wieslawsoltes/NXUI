@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\NXUI.Desktop\NXUI.Desktop.csproj" />
+    <ProjectReference Include="..\NXUI.Sample.CustomControls\NXUI.Sample.CustomControls.csproj" />
+  </ItemGroup>
+  <Import Project="..\..\src\NXUI\NXUI.props" />
+  <Import Project="..\..\src\NXUI.Desktop\NXUI.props" />
+</Project>

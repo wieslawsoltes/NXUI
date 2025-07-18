@@ -78,13 +78,26 @@ AppBuilder.Configure<Application>()
 Minimalistic Desktop app:
 ```csharp
 Run(
-  () => Window().Content(Label().Content("NXUI")), 
-  "NXUI", 
-  args, 
+  () => Window().Content(Label().Content("NXUI")),
+  "NXUI",
+  args,
   ThemeVariant.Dark);
 ```
 
+### Custom controls sample
+
+The `NXUI.Sample.CustomControlsApp` project demonstrates using NXUI with a
+custom control and a user control defined in `NXUI.Sample.CustomControls`.
+All UI is built in code using the generated extension methods.
+
 # Generate
+
+Instead of running the generator manually you can now reference the
+`NXUI.BuildTasks` package. MSBuild will run the generator at design time
+and before compilation and automatically include the produced sources.
+You may add additional assemblies for generation using the
+`NXUIIncludeAssemblies` and `NXUIAssemblyPaths` item groups in your
+project file.
 
 C#
 ```bash
