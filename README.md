@@ -86,8 +86,9 @@ Run(
 
 # Generate
 
-The source generators are executed automatically when building the **NXUI** project.
-If you prefer to run them manually you can still use the console application:
+The source generators are executed automatically when building the **NXUI** project
+using a custom MSBuild task. If you prefer to run them manually you can still use
+the console application:
 
 C#
 ```bash
