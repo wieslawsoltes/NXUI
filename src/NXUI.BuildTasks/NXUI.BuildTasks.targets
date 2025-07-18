@@ -1,5 +1,5 @@
 <Project>
-  <UsingTask TaskName="NXUI.BuildTasks.NXUIGeneratorTask" AssemblyFile="$(MSBuildThisFileDirectory)bin\$(Configuration)\net8.0\NXUI.BuildTasks.dll" />
+  <UsingTask TaskName="NXUI.BuildTasks.NXUIGeneratorTask" AssemblyFile="$(MSBuildThisFileDirectory)..\lib\net8.0\NXUI.BuildTasks.dll" />
   <PropertyGroup>
     <NXUIGeneratedDir>$(IntermediateOutputPath)NXUI.Generated</NXUIGeneratedDir>
   </PropertyGroup>
