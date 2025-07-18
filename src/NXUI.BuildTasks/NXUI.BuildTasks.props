@@ -1,0 +1,3 @@
+<Project>
+  <Import Project="$(IntermediateOutputPath)NXUI.Generated/ImplicitUsings.props" Condition="Exists('$(IntermediateOutputPath)NXUI.Generated/ImplicitUsings.props')" />
+</Project>

@@ -23,5 +23,10 @@
       <Pack>true</Pack>
       <PackagePath>build\;buildTransitive\</PackagePath>
     </Content>
+    <Content Include="NXUI.BuildTasks.props">
+      <Pack>true</Pack>
+      <PackagePath>build\;buildTransitive\</PackagePath>
+    </Content>
+    <EmbeddedResource Include="ImplicitUsingsTemplate.props" />
   </ItemGroup>
 </Project>

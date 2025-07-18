@@ -97,7 +97,8 @@ Instead of running the generator manually you can now reference the
 and before compilation and automatically include the produced sources.
 You may add additional assemblies for generation using the
 `NXUIIncludeAssemblies` and `NXUIAssemblyPaths` item groups in your
-project file.
+project file. Implicit using directives for generated types will be created
+automatically.
 
 C#
 ```bash

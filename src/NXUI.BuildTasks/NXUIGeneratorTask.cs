@@ -3,10 +3,13 @@ using MSBuildTask = Microsoft.Build.Utilities.Task;
 using System;
 using System.IO;
 using System.Reflection;
+using System.Linq;
+using System.Collections.Generic;
 using Avalonia;
 using Avalonia.Controls;
 using Generator;
 using Reflectonia;
+using Reflectonia.Model;
 
 namespace NXUI.BuildTasks;
 
@@ -18,6 +21,15 @@ public class NXUIGeneratorTask : MSBuildTask
     public ITaskItem[]? AssemblyPaths { get; set; }
 
     public ITaskItem[]? IncludeAssemblies { get; set; }
+
+    private static string GetImplicitUsingsTemplate()
+    {
+        using var stream = typeof(NXUIGeneratorTask).Assembly.GetManifestResourceStream("NXUI.BuildTasks.ImplicitUsingsTemplate.props");
+        if (stream is null)
+            return string.Empty;
+        using var reader = new StreamReader(stream);
+        return reader.ReadToEnd();
+    }
 
     public override bool Execute()
     {
@@ -61,7 +73,9 @@ public class NXUIGeneratorTask : MSBuildTask
         var log = new ReflectoniaLog();
         var factory = new ReflectoniaFactory(log);
 
-        void Generate() => new MainGenerator(factory, log).Generate(
+        List<Class> classes = new();
+
+        List<Class> Generate() => new MainGenerator(factory, log).Generate(
             OutputPath,
             a =>
             {
@@ -83,9 +97,23 @@ public class NXUIGeneratorTask : MSBuildTask
                 var ___ = new ItemsRepeater();
                 var ____ = new DataGrid();
                 var _____ = new TreeDataGrid();
-                Generate();
+                classes = Generate();
             })
             .SetupWithoutStarting();
+
+        var template = GetImplicitUsingsTemplate();
+        if (!string.IsNullOrEmpty(template))
+        {
+            var namespaces = classes
+                .Select(c => c.Type.Namespace)
+                .Where(n => !string.IsNullOrEmpty(n))
+                .Distinct()
+                .OrderBy(x => x);
+
+            var additional = string.Join(Environment.NewLine, namespaces.Select(n => $"    <Using Include=\"{n}\" />"));
+            var propsContent = template.Replace("%NAMESPACES%", additional);
+            File.WriteAllText(Path.Combine(OutputPath, "ImplicitUsings.props"), propsContent);
+        }
 
         return !Log.HasLoggedErrors;
     }

@@ -30,7 +30,7 @@ public class MainGenerator
 
     public SettersGenerator SettersGenerator { get; }
 
-    public void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
+    public List<Class> Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
         var buildersPath = Path.Combine(outputPath, "Builders");
         var propertiesPath = Path.Combine(outputPath, "Properties");
@@ -42,7 +42,7 @@ public class MainGenerator
 
         if (classes is null)
         {
-            return;
+            return new List<Class>();
         }
 
         if (!Directory.Exists(buildersPath))
@@ -74,5 +74,7 @@ public class MainGenerator
             Directory.CreateDirectory(settersPath);
         }
         SettersGenerator.Generate(settersPath, classes);
+
+        return classes;
     }
 }
