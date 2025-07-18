@@ -6,7 +6,7 @@
   <PropertyGroup>
     <NXUIGeneratedDir>$(IntermediateOutputPath)NXUI.Generated</NXUIGeneratedDir>
   </PropertyGroup>
-  <Target Name="RunNXUIGenerator" BeforeTargets="CoreCompile" Inputs="@(Compile)" Outputs="$(NXUIGeneratedDir)\_completed">
+  <Target Name="RunNXUIGenerator" BeforeTargets="ResolveAssemblyReferencesDesignTime;CoreCompile" Inputs="@(Compile)" Outputs="$(NXUIGeneratedDir)\_completed">
     <ItemGroup>
       <_NXUIReferences Include="@(ReferencePath)" />
       <_NXUIReferences Include="@(NXUIAssemblyPaths)" />

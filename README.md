@@ -101,6 +101,8 @@ project file. Implicit using directives for generated types will be created
 automatically. If you reference the `NXUI.BuildTasks` project directly,
 import its `NXUI.BuildTasks.targets` file so MSBuild can locate the task
 assembly.
+The task now also runs during design-time builds so IntelliSense picks up the
+generated extension methods without needing a full compile.
 
 C#
 ```bash
