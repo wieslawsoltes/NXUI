@@ -33,6 +33,7 @@ public class NXUIGeneratorTask : MSBuildTask
 
     public override bool Execute()
     {
+        Environment.SetEnvironmentVariable("AVALONIA_HEADLESS", "1");
         var includedAssemblies = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
         {
             "Avalonia.Base",
@@ -89,17 +90,20 @@ public class NXUIGeneratorTask : MSBuildTask
                 return true;
             });
 
-        AppBuilder.Configure<Application>()
-            .UsePlatformDetect()
-            .AfterSetup(_ =>
-            {
-                var __ = new ColorPicker();
-                var ___ = new ItemsRepeater();
-                var ____ = new DataGrid();
-                var _____ = new TreeDataGrid();
-                classes = Generate();
-            })
-            .SetupWithoutStarting();
+        try
+        {
+            AppBuilder.Configure<Application>()
+                .UsePlatformDetect()
+                .AfterSetup(_ =>
+                {
+                    classes = Generate();
+                })
+                .SetupWithoutStarting();
+        }
+        catch (InvalidOperationException)
+        {
+            classes = Generate();
+        }
 
         var template = GetImplicitUsingsTemplate();
         if (!string.IsNullOrEmpty(template))

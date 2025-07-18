@@ -1,5 +1,8 @@
 <Project>
-  <UsingTask TaskName="NXUI.BuildTasks.NXUIGeneratorTask" AssemblyFile="$(MSBuildThisFileDirectory)..\lib\net8.0\NXUI.BuildTasks.dll" />
+  <!-- When consumed via NuGet the task assembly is under lib/net8.0 -->
+  <UsingTask TaskName="NXUI.BuildTasks.NXUIGeneratorTask" AssemblyFile="$(MSBuildThisFileDirectory)..\lib\net8.0\NXUI.BuildTasks.dll" Condition="Exists('$(MSBuildThisFileDirectory)..\lib\net8.0\NXUI.BuildTasks.dll')" />
+  <!-- When referenced as a project use the local build output -->
+  <UsingTask TaskName="NXUI.BuildTasks.NXUIGeneratorTask" AssemblyFile="$(MSBuildThisFileDirectory)bin\$(Configuration)\net8.0\NXUI.BuildTasks.dll" Condition="!Exists('$(MSBuildThisFileDirectory)..\lib\net8.0\NXUI.BuildTasks.dll')" />
   <PropertyGroup>
     <NXUIGeneratedDir>$(IntermediateOutputPath)NXUI.Generated</NXUIGeneratedDir>
   </PropertyGroup>

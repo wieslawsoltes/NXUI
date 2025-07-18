@@ -92,13 +92,15 @@ All UI is built in code using the generated extension methods.
 
 # Generate
 
-Instead of running the generator manually you can now reference the
+Instead of running the generator manually you can reference the
 `NXUI.BuildTasks` package. MSBuild will run the generator at design time
 and before compilation and automatically include the produced sources.
 You may add additional assemblies for generation using the
 `NXUIIncludeAssemblies` and `NXUIAssemblyPaths` item groups in your
 project file. Implicit using directives for generated types will be created
-automatically.
+automatically. If you reference the `NXUI.BuildTasks` project directly,
+import its `NXUI.BuildTasks.targets` file so MSBuild can locate the task
+assembly.
 
 C#
 ```bash
