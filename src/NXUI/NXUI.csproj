@@ -24,5 +24,14 @@
       <PackagePath>build\;buildTransitive\</PackagePath>
     </Content>
   </ItemGroup>
+  <PropertyGroup>
+    <!-- Allows disabling generator execution during build -->
+    <RunNXUIGenerator>true</RunNXUIGenerator>
+  </PropertyGroup>
+  <Target Name="RunNXUIGenerator"
+          BeforeTargets="BeforeBuild;DesignTimeBuild"
+          Condition="'$(RunNXUIGenerator)' == 'true'">
+    <Exec Command="dotnet run --project &quot;$(MSBuildThisFileDirectory)..\Generator\Generator.csproj&quot; -- &quot;$(MSBuildThisFileDirectory)Generated&quot;" />
+  </Target>
   <Import Project="NXUI.props" />
 </Project>
