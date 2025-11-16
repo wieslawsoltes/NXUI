@@ -16,6 +16,7 @@ public class MainGenerator
         EventsGenerator = new EventsGenerator(reflectoniaFactory, log);
         ExtensionsGenerator = new ExtensionsGenerator(reflectoniaFactory, log);
         SettersGenerator = new SettersGenerator(reflectoniaFactory, log);
+        MetadataGenerator = new MetadataGenerator(reflectoniaFactory, log);
     }
 
     private ReflectoniaFactory ReflectoniaFactory { get; }
@@ -30,6 +31,8 @@ public class MainGenerator
 
     public SettersGenerator SettersGenerator { get; }
 
+    public MetadataGenerator MetadataGenerator { get; }
+
     public void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
         var buildersPath = Path.Combine(outputPath, "Builders");
@@ -37,6 +40,7 @@ public class MainGenerator
         var eventsPath = Path.Combine(outputPath, "Events");
         var extensionsPath = Path.Combine(outputPath, "Extensions");
         var settersPath = Path.Combine(outputPath, "Setters");
+        var hotReloadPath = Path.Combine(outputPath, "HotReload");
 
         var classes = ReflectoniaFactory.CreateClasses(assemblyFilter, typeFilter);
 
@@ -74,5 +78,7 @@ public class MainGenerator
             Directory.CreateDirectory(settersPath);
         }
         SettersGenerator.Generate(settersPath, classes);
+
+        MetadataGenerator.Generate(hotReloadPath, classes);
     }
 }

@@ -1,10 +1,57 @@
 namespace NXUI.Extensions;
 
+#if NXUI_HOTRELOAD
+using NXUI.HotReload.Nodes;
+#endif
+
 /// <summary>
 /// 
 /// </summary>
 public static partial class StyledElementExtensions
 {
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Records builder styles for a styled element.
+    /// </summary>
+    public static ElementBuilder<TElement> Styles<TElement, TStyle>(
+        this ElementBuilder<TElement> styledElement,
+        params ElementBuilder<TStyle>[] styles)
+        where TElement : StyledElement
+        where TStyle : AvaloniaObject, IStyle
+    {
+        return styledElement.WithChildren(
+            styles,
+            static (parentObj, builtStyles) =>
+            {
+                var target = (StyledElement)parentObj;
+                var targetStyles = target.Styles ?? throw new InvalidOperationException("StyledElement.Styles collection is not initialized.");
+
+                for (var i = 0; i < builtStyles.Count; i++)
+                {
+                    if (builtStyles[i] is IStyle builtStyle)
+                    {
+                        targetStyles.Add(builtStyle);
+                    }
+                }
+            });
+    }
+
+    /// <summary>
+    /// Records a builder resource dictionary for a styled element.
+    /// </summary>
+    public static ElementBuilder<TElement> Resources<TElement>(
+        this ElementBuilder<TElement> styledElement,
+        ElementBuilder<ResourceDictionary> resources)
+        where TElement : StyledElement
+    {
+        return styledElement.WithChild(
+            resources,
+            static (parentObj, builtResources) =>
+            {
+                ((StyledElement)parentObj).Resources = (IResourceDictionary)builtResources;
+            });
+    }
+#endif
     // Name
 
     /// <summary>

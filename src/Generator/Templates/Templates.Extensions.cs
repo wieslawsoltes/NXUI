@@ -6,6 +6,77 @@ namespace Generator;
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 public static partial class Templates
 {
+    public static string PropertyMethodsHotReloadTemplate = """
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="%ClassType%.%Name%Property"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The owner type for the builder.</typeparam>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% %MethodName%%BuilderGeneric%(this %BuilderType% builder, %ValueType% value)%BuilderConstraint%
+    {
+        return builder.WithValue(PropertyMetadata.%PropertyId%, %ClassType%.%Name%Property, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="%ClassType%.%Name%Property"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The owner type for the builder.</typeparam>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% %MethodName%%BuilderGeneric%(
+        this %BuilderType% builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)%BuilderConstraint%
+    {
+        return builder.WithBinding(PropertyMetadata.%PropertyId%, %ClassType%.%Name%Property, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="%ClassType%.%Name%Property"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The owner type for the builder.</typeparam>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% %MethodName%%BuilderGeneric%(
+        this %BuilderType% builder,
+        IObservable<%ValueType%> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)%BuilderConstraint%
+    {
+        return builder.WithBinding(PropertyMetadata.%PropertyId%, %ClassType%.%Name%Property, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+""";
+
+    public static string PropertyMethodEnumHotReloadTemplate = """
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="%ClassType%.%Name%Property"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <typeparam name="T">The owner type for the builder.</typeparam>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% %Name%%EnumValue%%BuilderGeneric%(this %BuilderType% builder)%BuilderConstraint%
+    {
+        return builder.WithValue(PropertyMetadata.%PropertyId%, %ClassType%.%Name%Property, %ValueType%.%EnumValue%);
+    }
+
+#endif
+""";
+
     public static string PropertyMethodEnumTemplate = """
 
     /// <summary>
@@ -416,6 +487,53 @@ public static partial class Templates
     }
 """;
 
+    public static string RoutedEventMethodsHotReloadTemplate = """
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The owner type for the builder.</typeparam>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% On%Name%Handler%BuilderGeneric%(
+        this %BuilderType% builder,
+        Action<%HandlerType%, %ArgsType%> action,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)%BuilderConstraint%
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (%OwnerType%)target;
+            typed.AddHandler(%OwnerType%.%Name%Event, (_, args) => action(%HandlerInvocation%, args), routes);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The owner type for the builder.</typeparam>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% On%Name%%BuilderGeneric%(
+        this %BuilderType% builder,
+        Action<%HandlerType%, IObservable<%ArgsType%>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)%BuilderConstraint%
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (%OwnerType%)target;
+            var observable = typed.GetObservable(%OwnerType%.%Name%Event, routes);
+            handler(%HandlerInvocation%, observable);
+        }));
+    }
+
+#endif
+""";
+
     public static string RoutedEventMethodsTemplate = """
     // %OwnerType%.%Name%Event
 
@@ -465,6 +583,53 @@ public static partial class Templates
     {
         return obj.GetObservable(%OwnerType%.%Name%Event, routes);
     }
+""";
+
+    public static string RoutedEventMethodsHotReloadTemplateNonGeneric = """
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action executed when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The owner type for the builder.</typeparam>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% On%Name%Handler%BuilderGeneric%(
+        this %BuilderType% builder,
+        Action<%HandlerType%, %ArgsType%> action,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)%BuilderConstraint%
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (%OwnerType%)target;
+            typed.AddHandler(%OwnerType%.%Name%Event, (object _, %ArgsType% args) => action(%HandlerInvocation%, args), routes);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <typeparam name="T">The owner type for the builder.</typeparam>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% On%Name%%BuilderGeneric%(
+        this %BuilderType% builder,
+        Action<%HandlerType%, IObservable<%ArgsType%>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)%BuilderConstraint%
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (%OwnerType%)target;
+            var observable = typed.GetObservable<%ArgsType%>(%OwnerType%.%Name%Event, routes);
+            handler(%HandlerInvocation%, observable);
+        }));
+    }
+
+#endif
 """;
 
     public static string RoutedEventMethodsTemplateNonGeneric = """
@@ -612,6 +777,33 @@ public static partial class Templates
     {
         return obj.GetObservable<%ArgsType%>(%OwnerType%.%Name%Event, routes);
     }
+""";
+
+    public static string EventMethodsHotReloadTemplate = """
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <typeparam name="T">The owner type for the builder.</typeparam>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% On%Name%Event%BuilderGeneric%(this %BuilderType% builder, Action<%HandlerType%, IObservable<%ArgsType%>> handler)%BuilderConstraint%
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (%OwnerType%)target;
+            var observable = Observable
+                .FromEventPattern<%EventHandler%, %ArgsType%>(
+                    h => typed.%Name% += h,
+                    h => typed.%Name% -= h)
+                .Select(x => x.EventArgs);
+            handler(%HandlerInvocation%, observable);
+        }));
+    }
+
+#endif
 """;
 
     public static string EventMethodsTemplate = """

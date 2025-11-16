@@ -7,11 +7,14 @@
     <IsPackable>false</IsPackable>
     <RootNamespace>TempConv</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <EnableNXUIHotReload>true</EnableNXUIHotReload>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\NXUI\NXUI.csproj" />
+    <ProjectReference Include="..\..\..\src\NXUI.Desktop\NXUI.Desktop.csproj" />
   </ItemGroup>
   <Import Project="..\..\..\src\NXUI\NXUI.props" />
 </Project>

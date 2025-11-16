@@ -1,4 +1,6 @@
-﻿Window Build()
+﻿using NXUI.HotReload;
+
+object Build()
 {
   Border(out var border)
     .Background(Brushes.WhiteSmoke)
@@ -186,11 +188,7 @@ Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle)
           KeyFrame().Cue(0.0).SetRotateTransformAngle(startAngle),
           KeyFrame().Cue(1.0).SetRotateTransformAngle(endAngle)));
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme()
-  .WithApplicationName("ControlCatalog")
-  .StartWithClassicDesktopLifetime(Build, args);
+return HotReloadHost.Run(Build, "ControlCatalog", args);
 
 internal class CustomBehavior : Behavior
 {

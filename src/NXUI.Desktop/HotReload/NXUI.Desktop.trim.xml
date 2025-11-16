@@ -1,0 +1,5 @@
+<linker>
+  <assembly fullname="NXUI.Desktop" feature="NXUI.HotReload.Enabled" featurevalue="true">
+    <namespace fullname="NXUI.HotReload" />
+  </assembly>
+</linker>

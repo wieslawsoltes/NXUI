@@ -24,5 +24,15 @@
       <PackagePath>build\;buildTransitive\</PackagePath>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="HotReload\NXUI.HotReload.trim.xml">
+      <Pack>true</Pack>
+      <PackagePath>build\HotReload\;buildTransitive\HotReload\</PackagePath>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\\NXUI.Analyzers\\NXUI.Analyzers.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
   <Import Project="NXUI.props" />
 </Project>

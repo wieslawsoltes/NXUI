@@ -1,7 +1,13 @@
-﻿var celsius = new Subject<double?>();
+﻿using System;
+using System.Linq;
+using System.Reactive.Linq;
+using System.Reactive.Subjects;
+using NXUI.HotReload;
+
+var celsius = new Subject<double?>();
 var fahrenheit = new Subject<double?>();
 
-Window Build()
+object Build()
   => Window()
     .Title("TempConv").Padding(12).Width(450).Height(200)
     .Content(
@@ -21,11 +27,7 @@ Window Build()
             .HorizontalAlignmentCenter().VerticalAlignmentCenter()
             .Content("Fahrenheit")));
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme()
-  .WithApplicationName("TempConv")
-  .StartWithClassicDesktopLifetime(Build, args);
+return HotReloadHost.Run(Build, "TempConv", args);
 
 static void OnNextValue(TextBox textBox, string s, IObserver<double?> subject, Func<double, double> conv)
 {

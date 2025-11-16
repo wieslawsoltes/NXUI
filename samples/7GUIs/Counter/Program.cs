@@ -1,6 +1,9 @@
-﻿var count = new BehaviorSubject<int>(0);
+﻿using System.Reactive.Subjects;
+using NXUI.HotReload;
 
-Window Build()
+var count = new BehaviorSubject<int>(0);
+
+object Build()
   => Window()
     .Title("Counter").Padding(12).Width(300).Height(200)
     .Content(
@@ -14,8 +17,4 @@ Window Build()
             .OnClick((_, o) => o.Subscribe(_ => count.OnNext(count.Value + 1)))
             .Content("Count")));
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme()
-  .WithApplicationName("Counter")
-  .StartWithClassicDesktopLifetime(Build, args);
+return HotReloadHost.Run(Build, "Counter", args);

@@ -1,3 +1,15 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildThisFileDirectory)\ImplicitUsings.props"/>
+
+  <ItemGroup Condition="'$(NXUIHotReloadOptionConfigured)' != 'true'">
+    <RuntimeHostConfigurationOption Include="NXUI.HotReload.Enabled" Value="$(EnableNXUIHotReload)" Trim="true" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(NXUIHotReloadOptionConfigured)' != 'true'">
+    <NXUIHotReloadOptionConfigured>true</NXUIHotReloadOptionConfigured>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <TrimmerRootDescriptor Include="$(MSBuildThisFileDirectory)HotReload\NXUI.HotReload.trim.xml" />
+  </ItemGroup>
 </Project>

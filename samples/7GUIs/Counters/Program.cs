@@ -1,6 +1,10 @@
-﻿var counters = Enumerable.Range(0, 5).Select(i => new BehaviorSubject<int>(i));
+﻿using System.Linq;
+using System.Reactive.Subjects;
+using NXUI.HotReload;
 
-Window Build()
+var counters = Enumerable.Range(0, 5).Select(i => new BehaviorSubject<int>(i));
+
+object Build()
   => Window()
     .Title("Counters")
     .Padding(12).Width(300).Height(200)
@@ -19,8 +23,4 @@ Window Build()
           , true))
         .ItemsSource(counters));
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme()
-  .WithApplicationName("Counters")
-  .StartWithClassicDesktopLifetime(Build, args);
+return HotReloadHost.Run(Build, "Counters", args);

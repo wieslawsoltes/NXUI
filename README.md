@@ -276,3 +276,42 @@ workflows:
 
 Together these extensions enable complex, reactive UIs built entirely in code
 while managing resources with minimal overhead.
+
+## Hot Reload
+
+### Enable NXUI Hot Reload
+
+1. **Opt in via MSBuild** – add `<EnableNXUIHotReload>true</EnableNXUIHotReload>` to the project or `Directory.Build.props`. Debug builds keep the flag on; disable it explicitly in Release if you do not want the runtime shipped.
+2. **Run through the host** – wrap your entry point with `HotReloadHost.Run` so NXUI can register the component and reconcile live instances:
+
+   ```csharp
+   using NXUI.HotReload;
+
+   object Build() =>
+       Window()
+           .Title("NXUI Hot Reload")
+           .Content(Label().Content("Edit a file and save to trigger hot reload."));
+
+   return HotReloadHost.Run(Build, "SampleApp", args);
+   ```
+
+3. **Use `dotnet watch` or IDE hot reload** – the runtime listens for metadata updates and calls `NodeRenderer.Reconcile` with the previous node snapshot. The window stays mounted and control state (e.g., `TextBox.Text`) survives.
+4. **Turn on diagnostics when needed** – set `NXUI_HOTRELOAD_DIAGNOSTICS=1` to see per-reconciliation summaries, including counts for property sets, child add/remove/move operations, and replacements.
+
+### Troubleshooting
+
+- **No updates apply** – ensure the assembly was built with `EnableNXUIHotReload` and that you are returning an `ElementNode` tree (not `.Mount()`ed controls) from the delegate passed to `HotReloadHost.Run`.
+- **State resets on list changes** – provide explicit `.Key("stable-id")` for repeating builders or wrap complex containers with `.HotReloadBoundary()` so the diff engine can reason about reuse. See `docs/hot-reload-best-practices.md` for patterns.
+- **Bindings/events stop firing** – check analyzer warnings (see `NXUI.Analyzers`) and confirm you are not instantiating Avalonia controls manually when the hot reload flag is enabled.
+- **Layout thrash during updates** – enable diagnostics to ensure excessive replacements are not happening; large replace counts often mean missing keys or boundaries.
+
+### Release Builds
+
+- Release builds can keep `<EnableNXUIHotReload>false</EnableNXUIHotReload>` and rely on trimming: `NXUI` ships `ILLink` descriptors that only root `NXUI.HotReload.*` namespaces when the flag is `true`, so `dotnet publish -c Release -p:PublishTrimmed=true` removes the runtime automatically.
+- When you need hot reload in a trimmed build (e.g., diagnostic channels), set the property to `true` before publishing so the `RuntimeHostConfigurationOption` injected by `NXUI.props` keeps the runtime reachable.
+
+### Further Reading
+
+- `docs/hot-reload-architecture.md` – end-to-end design.
+- `docs/hot-reload-implementation-plan.md` – milestone tracking.
+- `docs/hot-reload-best-practices.md` – guidance for `Key()` and `HotReloadBoundary()` usage.

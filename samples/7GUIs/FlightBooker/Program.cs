@@ -1,4 +1,10 @@
-﻿const string format = "dd.MM.yyyy";
+﻿using System;
+using System.Globalization;
+using System.Reactive.Linq;
+using System.Reactive.Subjects;
+using NXUI.HotReload;
+
+const string format = "dd.MM.yyyy";
 
 var startValue = new BehaviorSubject<string>(DateTime.Now.ToString(format));
 var startDate = startValue.Select(ParseDateTime);
@@ -19,7 +25,7 @@ var isEndEnabled = selected.Select(x => x == 1);
 var showMessageDialog = new BehaviorSubject<bool>(false);
 var bookMessage = new BehaviorSubject<string>("");
 
-Window Build()
+object Build()
   => Window()
     .Title("Book Flight").Padding(12).Width(500).Height(200)
     .Content(
@@ -77,8 +83,4 @@ Window Build()
   return (valid, date);
 }
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme()
-  .WithApplicationName("FlightBooker")
-  .StartWithClassicDesktopLifetime(Build, args);
+return HotReloadHost.Run(Build, "FlightBooker", args);

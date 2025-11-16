@@ -1,4 +1,7 @@
-﻿Window Build()
+﻿using System.Reactive.Linq;
+using NXUI.HotReload;
+
+object Build()
   => Window()
     .Title("DrawLine").Width(500).Height(400)
     .Content(MainView());
@@ -64,8 +67,4 @@ Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle, Rel
           KeyFrame().Cue(0.0).SetRotateTransformAngle(startAngle),
           KeyFrame().Cue(1.0).SetRotateTransformAngle(endAngle)));
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme()
-  .WithApplicationName("DrawLine")
-  .StartWithClassicDesktopLifetime(Build, args);
+return HotReloadHost.Run(Build, "DrawLine", args);

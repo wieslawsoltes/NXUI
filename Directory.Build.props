@@ -18,4 +18,10 @@
     <AvaloniaControlsItemsRepeaterVersion>11.1.5</AvaloniaControlsItemsRepeaterVersion>
     <SystemReactiveVersion>6.0.1</SystemReactiveVersion>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(EnableNXUIHotReload)' == ''">
+    <EnableNXUIHotReload>true</EnableNXUIHotReload>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(EnableNXUIHotReload)' == 'true'">
+    <DefineConstants>$(DefineConstants);NXUI_HOTRELOAD</DefineConstants>
+  </PropertyGroup>
 </Project>

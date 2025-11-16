@@ -2,8 +2,17 @@
 open Avalonia
 open Avalonia.Controls
 open Avalonia.Data
+open Avalonia.Media
 open Avalonia.Styling
 open NXUI.Extensions
+open NXUI.HotReload
+
+// Hot reload quickstart:
+// 1. Run `dotnet watch --project samples/NXUI.Sample.FSharp.Desktop`.
+// 2. Keep the window open while editing the fluent builder – NXUI diffs the ElementNode tree and patches the live controls.
+// Troubleshooting:
+// - Ensure the Debug configuration sets <EnableNXUIHotReload>true</EnableNXUIHotReload>.
+// - Export NXUI_HOTRELOAD_DIAGNOSTICS=1 to log patch summaries (property sets, child add/remove/move, replacements).
 
 let buttons(counter: BehaviorSubject<int>) =
     
@@ -45,6 +54,10 @@ let counter() =
         .VerticalAlignmentCenter()
         .Children(
             TextBlock()
+                .TextWrapping(TextWrapping.Wrap)
+                .Text("Run `dotnet watch --project samples/NXUI.Sample.FSharp.Desktop` to see hot reload in action. Missing updates typically mean the project was built without EnableNXUIHotReload set to true.")
+                .DockTop(),
+            TextBlock()
                 .Text(counterText |> _.ToBinding())
                 .DockTop(),
             decrement.DockBottom(),
@@ -61,9 +74,5 @@ let Build () =
         .Content(counter())
 
 [<EntryPoint>]
-let main argv = 
-    AppBuilder.Configure<Application>()
-      .UsePlatformDetect()
-      .UseFluentTheme(ThemeVariant.Dark)
-      .WithApplicationName("NXUI F# Demo")
-      .StartWithClassicDesktopLifetime(Build, argv);
+let main argv =
+    HotReloadHost.Run(Build, "NXUI F# Demo", argv, ThemeVariant.Dark)
