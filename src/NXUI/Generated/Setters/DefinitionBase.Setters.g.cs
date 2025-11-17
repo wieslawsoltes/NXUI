@@ -11,6 +11,37 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class DefinitionBaseSetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetDefinitionBaseSharedSizeGroup(this ElementBuilder<Style> builder, System.String value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetDefinitionBaseSharedSizeGroup(this ElementBuilder<KeyFrame> builder, System.String value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty
 
     /// <summary>
@@ -36,6 +67,37 @@ public static partial class DefinitionBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetDefinitionBaseSharedSizeGroup(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetDefinitionBaseSharedSizeGroup(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/>.
     /// </summary>
@@ -59,6 +121,37 @@ public static partial class DefinitionBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetDefinitionBaseSharedSizeGroup(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetDefinitionBaseSharedSizeGroup(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty"/>.
     /// </summary>

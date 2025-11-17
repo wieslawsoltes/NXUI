@@ -11,6 +11,37 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class SectorSetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetSectorStartAngle(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.StartAngleProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetSectorStartAngle(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.StartAngleProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Controls.Shapes.Sector.StartAngleProperty
 
     /// <summary>
@@ -36,6 +67,37 @@ public static partial class SectorSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.StartAngleProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetSectorStartAngle(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.StartAngleProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetSectorStartAngle(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.StartAngleProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/>.
     /// </summary>
@@ -59,6 +121,37 @@ public static partial class SectorSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.StartAngleProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetSectorStartAngle(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.StartAngleProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetSectorStartAngle(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.StartAngleProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/>.
     /// </summary>
@@ -83,6 +176,37 @@ public static partial class SectorSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetSectorSweepAngle(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.SweepAngleProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetSectorSweepAngle(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.SweepAngleProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Controls.Shapes.Sector.SweepAngleProperty
 
     /// <summary>
@@ -108,6 +232,37 @@ public static partial class SectorSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.SweepAngleProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetSectorSweepAngle(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.SweepAngleProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetSectorSweepAngle(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.SweepAngleProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/>.
     /// </summary>
@@ -131,6 +286,37 @@ public static partial class SectorSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.SweepAngleProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetSectorSweepAngle(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.SweepAngleProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetSectorSweepAngle(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Sector.SweepAngleProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/>.
     /// </summary>

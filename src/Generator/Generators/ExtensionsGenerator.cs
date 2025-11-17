@@ -5,7 +5,7 @@ using Reflectonia.Model;
 // ReSharper disable once CheckNamespace
 namespace Generator;
 
-public class ExtensionsGenerator
+public partial class ExtensionsGenerator
 {
     public ExtensionsGenerator(ReflectoniaFactory reflectoniaFactory, IReflectoniaLog log)
     {
@@ -73,6 +73,7 @@ public class ExtensionsGenerator
                 addedProperties.Add(p.Name);
 
                 var propertyConstName = MetadataNameUtility.GetPropertyConstName(c.Name, p.Name);
+                var builderMeta = (BuilderType: string.Empty, BuilderGeneric: string.Empty, BuilderConstraint: string.Empty, HandlerType: string.Empty, HandlerInvocation: string.Empty);
                 var template = p.IsReadOnly
                     ? Templates.PropertyMethodsTemplateReadOnly
                     : c.IsSealed
@@ -84,7 +85,7 @@ public class ExtensionsGenerator
                 if (!p.IsReadOnly)
                 {
                     var hotReloadBuilder = new StringBuilder(Templates.PropertyMethodsHotReloadTemplate);
-                    var builderMeta = GetBuilderMetadata(p.OwnerType);
+                    builderMeta = GetBuilderMetadata(p.OwnerType);
                     hotReloadBuilder.Replace("%BuilderType%", builderMeta.BuilderType);
                     hotReloadBuilder.Replace("%BuilderGeneric%", builderMeta.BuilderGeneric);
                     hotReloadBuilder.Replace("%BuilderConstraint%", builderMeta.BuilderConstraint);
@@ -104,6 +105,11 @@ public class ExtensionsGenerator
                 propertyBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
 
                 WriteLine(propertyBuilder.ToString());
+
+                if (!p.IsReadOnly)
+                {
+                    EmitConvenienceOverloads(c, p, builderMeta, WriteLine);
+                }
 
                 if (p.IsEnum && !p.IsReadOnly && p.EnumNames is { })
                 {

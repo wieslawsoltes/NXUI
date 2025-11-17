@@ -11,6 +11,37 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class CombinedGeometrySetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCombinedGeometryGeometry1(this ElementBuilder<Style> builder, Avalonia.Media.Geometry value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry1Property, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCombinedGeometryGeometry1(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Geometry value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry1Property, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.CombinedGeometry.Geometry1Property
 
     /// <summary>
@@ -36,6 +67,37 @@ public static partial class CombinedGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry1Property, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCombinedGeometryGeometry1(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Geometry> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry1Property, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCombinedGeometryGeometry1(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Geometry> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry1Property, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/>.
     /// </summary>
@@ -59,6 +121,37 @@ public static partial class CombinedGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry1Property, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCombinedGeometryGeometry1(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry1Property, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCombinedGeometryGeometry1(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry1Property, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/>.
     /// </summary>
@@ -83,6 +176,37 @@ public static partial class CombinedGeometrySetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCombinedGeometryGeometry2(this ElementBuilder<Style> builder, Avalonia.Media.Geometry value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry2Property, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCombinedGeometryGeometry2(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Geometry value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry2Property, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.CombinedGeometry.Geometry2Property
 
     /// <summary>
@@ -108,6 +232,37 @@ public static partial class CombinedGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry2Property, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCombinedGeometryGeometry2(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Geometry> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry2Property, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCombinedGeometryGeometry2(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Geometry> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry2Property, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/>.
     /// </summary>
@@ -131,6 +286,37 @@ public static partial class CombinedGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry2Property, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCombinedGeometryGeometry2(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry2Property, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCombinedGeometryGeometry2(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.Geometry2Property, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/>.
     /// </summary>
@@ -155,6 +341,37 @@ public static partial class CombinedGeometrySetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCombinedGeometryGeometryCombineMode(this ElementBuilder<Style> builder, Avalonia.Media.GeometryCombineMode value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCombinedGeometryGeometryCombineMode(this ElementBuilder<KeyFrame> builder, Avalonia.Media.GeometryCombineMode value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty
 
     /// <summary>
@@ -180,6 +397,37 @@ public static partial class CombinedGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCombinedGeometryGeometryCombineMode(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.GeometryCombineMode> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCombinedGeometryGeometryCombineMode(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.GeometryCombineMode> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/>.
     /// </summary>
@@ -203,6 +451,37 @@ public static partial class CombinedGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCombinedGeometryGeometryCombineMode(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCombinedGeometryGeometryCombineMode(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/>.
     /// </summary>

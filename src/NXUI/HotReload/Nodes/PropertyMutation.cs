@@ -22,6 +22,7 @@ public sealed class PropertyMutation
     private readonly IReadOnlyList<ElementNode>? _childNodes;
     private readonly Action<AvaloniaObject, AvaloniaObject>? _childAttach;
     private readonly Action<AvaloniaObject, IReadOnlyList<AvaloniaObject>>? _childrenAttach;
+    private readonly Action<AvaloniaObject>? _action;
 
     private PropertyMutation(
         PropertyMutationKind kind,
@@ -32,7 +33,8 @@ public sealed class PropertyMutation
         ElementNode? childNode,
         IReadOnlyList<ElementNode>? childNodes,
         Action<AvaloniaObject, AvaloniaObject>? childAttach,
-        Action<AvaloniaObject, IReadOnlyList<AvaloniaObject>>? childrenAttach)
+        Action<AvaloniaObject, IReadOnlyList<AvaloniaObject>>? childrenAttach,
+        Action<AvaloniaObject>? action)
     {
         _kind = kind;
         _propertyId = propertyId;
@@ -43,6 +45,7 @@ public sealed class PropertyMutation
         _childNodes = childNodes;
         _childAttach = childAttach;
         _childrenAttach = childrenAttach;
+        _action = action;
     }
 
     /// <summary>
@@ -59,7 +62,8 @@ public sealed class PropertyMutation
             childNode: null,
             childNodes: null,
             childAttach: null,
-            childrenAttach: null);
+            childrenAttach: null,
+            action: null);
     }
 
     /// <summary>
@@ -78,7 +82,8 @@ public sealed class PropertyMutation
             childNode: null,
             childNodes: null,
             childAttach: null,
-            childrenAttach: null);
+            childrenAttach: null,
+            action: null);
     }
 
     /// <summary>
@@ -98,7 +103,8 @@ public sealed class PropertyMutation
             childNode,
             childNodes: null,
             attach,
-            childrenAttach: null);
+            childrenAttach: null,
+            action: null);
     }
 
     /// <summary>
@@ -118,7 +124,28 @@ public sealed class PropertyMutation
             childNode: null,
             childNodes,
             childAttach: null,
-            attach);
+            attach,
+            action: null);
+    }
+
+    /// <summary>
+    /// Creates a mutation that invokes a custom action once the control is instantiated.
+    /// </summary>
+    public static PropertyMutation ForAction(Action<AvaloniaObject> action)
+    {
+        ArgumentNullException.ThrowIfNull(action);
+
+        return new PropertyMutation(
+            PropertyMutationKind.InvokeAction,
+            PropertyMetadata.InvalidPropertyId,
+            property: null,
+            value: null,
+            bindingDescriptor: null,
+            childNode: null,
+            childNodes: null,
+            childAttach: null,
+            childrenAttach: null,
+            action);
     }
 
     /// <summary>
@@ -145,6 +172,10 @@ public sealed class PropertyMutation
 
             case PropertyMutationKind.AttachChildren:
                 AttachChildren(target);
+                break;
+
+            case PropertyMutationKind.InvokeAction:
+                _action!(target);
                 break;
 
             default:
@@ -184,6 +215,8 @@ public sealed class PropertyMutation
 
     internal Action<AvaloniaObject, IReadOnlyList<AvaloniaObject>>? ChildrenAttach => _childrenAttach;
 
+    internal Action<AvaloniaObject>? Action => _action;
+
     private static object? MaterializeValue(object? value)
     {
         return value switch
@@ -202,5 +235,6 @@ internal enum PropertyMutationKind
     SetBinding,
     AttachChild,
     AttachChildren,
+    InvokeAction,
 }
 #endif

@@ -77,4 +77,36 @@ public class NodeRendererTests
 
         Assert.Equal("Hello", border.Resources["Greeting"]);
     }
+
+    [Fact]
+    public void WithAction_Invokes_Delegate_Exactly_Once()
+    {
+        var invocationCount = 0;
+
+        var builder = Border()
+            .WithAction(border =>
+            {
+                invocationCount++;
+                border.Width = 123;
+            });
+
+        var border = builder.Mount();
+
+        Assert.Equal(1, invocationCount);
+        Assert.Equal(123, border.Width);
+    }
+
+    [Fact]
+    public void WithAction_Receives_Control_Instance()
+    {
+        Border? captured = null;
+
+        var builder = Border()
+            .WithAction(border => captured = border);
+
+        var border = builder.Mount();
+
+        Assert.NotNull(captured);
+        Assert.Same(border, captured);
+    }
 }

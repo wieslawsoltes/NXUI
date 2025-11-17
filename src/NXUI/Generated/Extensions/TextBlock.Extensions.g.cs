@@ -404,6 +404,60 @@ public static partial class TextBlockExtensions
         handler(obj, observable);
         return obj;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> literal value using a uniform length for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> Padding<T>(this ElementBuilder<T> builder, double uniformLength) where T : Avalonia.Controls.TextBlock
+    {
+        return builder.Padding(new Avalonia.Thickness(uniformLength));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> literal value using horizontal and vertical lengths for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> Padding<T>(this ElementBuilder<T> builder, double horizontal, double vertical) where T : Avalonia.Controls.TextBlock
+    {
+        return builder.Padding(new Avalonia.Thickness(horizontal, vertical));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> literal value using individual edge lengths for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> Padding<T>(this ElementBuilder<T> builder, double left, double top, double right, double bottom) where T : Avalonia.Controls.TextBlock
+    {
+        return builder.Padding(new Avalonia.Thickness(left, top, right, bottom));
+    }
+
+#endif
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> value using a uniform length.
+    /// </summary>
+    public static T Padding<T>(this T obj, double uniformLength) where T : Avalonia.Controls.TextBlock
+    {
+        return obj.Padding(new Avalonia.Thickness(uniformLength));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> value using horizontal and vertical lengths.
+    /// </summary>
+    public static T Padding<T>(this T obj, double horizontal, double vertical) where T : Avalonia.Controls.TextBlock
+    {
+        return obj.Padding(new Avalonia.Thickness(horizontal, vertical));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> value using individual edge lengths.
+    /// </summary>
+    public static T Padding<T>(this T obj, double left, double top, double right, double bottom) where T : Avalonia.Controls.TextBlock
+    {
+        return obj.Padding(new Avalonia.Thickness(left, top, right, bottom));
+    }
+
+
 
 #if NXUI_HOTRELOAD
 

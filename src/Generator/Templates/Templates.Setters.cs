@@ -47,6 +47,40 @@ public static partial class %ClassName%Setters
     }
 """;
 
+    public static string PropertySettersValueHotReloadTemplate = """
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="%ClassType%.%Name%Property"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> Set%ClassName%%Name%(this ElementBuilder<Style> builder, %ValueType% value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(%ClassType%.%Name%Property, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="%ClassType%.%Name%Property"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> Set%ClassName%%Name%(this ElementBuilder<KeyFrame> builder, %ValueType% value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(%ClassType%.%Name%Property, value));
+        });
+    }
+
+#endif
+""";
+
     public static string PropertySettersObservableTemplate = """
     /// <summary>
     /// Adds a style setter for an <see cref="%ClassType%.%Name%Property"/>.
@@ -73,6 +107,40 @@ public static partial class %ClassName%Setters
     }
 """;
 
+    public static string PropertySettersObservableHotReloadTemplate = """
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="%ClassType%.%Name%Property"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> Set%ClassName%%Name%(this ElementBuilder<Style> builder, IObservable<%ValueType%> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(%ClassType%.%Name%Property, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="%ClassType%.%Name%Property"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> Set%ClassName%%Name%(this ElementBuilder<KeyFrame> builder, IObservable<%ValueType%> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(%ClassType%.%Name%Property, observable.ToBinding()));
+        });
+    }
+
+#endif
+""";
+
     public static string PropertySettersBindingTemplate = """
     /// <summary>
     /// Adds a style setter for an <see cref="%ClassType%.%Name%Property"/>.
@@ -97,5 +165,39 @@ public static partial class %ClassName%Setters
         keyFrame.Setters.Add(new Setter(%ClassType%.%Name%Property, binding));
         return keyFrame;
     }
+""";
+
+    public static string PropertySettersBindingHotReloadTemplate = """
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="%ClassType%.%Name%Property"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> Set%ClassName%%Name%(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(%ClassType%.%Name%Property, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="%ClassType%.%Name%Property"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> Set%ClassName%%Name%(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(%ClassType%.%Name%Property, binding));
+        });
+    }
+
+#endif
 """;
 }

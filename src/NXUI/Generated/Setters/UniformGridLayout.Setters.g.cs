@@ -11,6 +11,37 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class UniformGridLayoutSetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutItemsJustification(this ElementBuilder<Style> builder, Avalonia.Layout.UniformGridLayoutItemsJustification value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutItemsJustification(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.UniformGridLayoutItemsJustification value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty
 
     /// <summary>
@@ -36,6 +67,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutItemsJustification(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.UniformGridLayoutItemsJustification> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutItemsJustification(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.UniformGridLayoutItemsJustification> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/>.
     /// </summary>
@@ -59,6 +121,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutItemsJustification(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutItemsJustification(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/>.
     /// </summary>
@@ -83,6 +176,37 @@ public static partial class UniformGridLayoutSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutItemsStretch(this ElementBuilder<Style> builder, Avalonia.Layout.UniformGridLayoutItemsStretch value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutItemsStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.UniformGridLayoutItemsStretch value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.ItemsStretchProperty
 
     /// <summary>
@@ -108,6 +232,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutItemsStretch(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.UniformGridLayoutItemsStretch> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutItemsStretch(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.UniformGridLayoutItemsStretch> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/>.
     /// </summary>
@@ -131,6 +286,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutItemsStretch(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutItemsStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/>.
     /// </summary>
@@ -155,6 +341,37 @@ public static partial class UniformGridLayoutSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinColumnSpacing(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinColumnSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty
 
     /// <summary>
@@ -180,6 +397,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinColumnSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinColumnSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/>.
     /// </summary>
@@ -203,6 +451,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinColumnSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinColumnSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/>.
     /// </summary>
@@ -227,6 +506,37 @@ public static partial class UniformGridLayoutSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinItemHeight(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinItemHeight(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.MinItemHeightProperty
 
     /// <summary>
@@ -252,6 +562,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinItemHeight(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinItemHeight(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/>.
     /// </summary>
@@ -275,6 +616,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinItemHeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinItemHeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/>.
     /// </summary>
@@ -299,6 +671,37 @@ public static partial class UniformGridLayoutSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinItemWidth(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinItemWidth(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.MinItemWidthProperty
 
     /// <summary>
@@ -324,6 +727,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinItemWidth(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinItemWidth(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/>.
     /// </summary>
@@ -347,6 +781,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinItemWidth(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinItemWidth(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/>.
     /// </summary>
@@ -371,6 +836,37 @@ public static partial class UniformGridLayoutSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinRowSpacing(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinRowSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty
 
     /// <summary>
@@ -396,6 +892,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinRowSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinRowSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/>.
     /// </summary>
@@ -419,6 +946,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMinRowSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMinRowSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/>.
     /// </summary>
@@ -443,6 +1001,37 @@ public static partial class UniformGridLayoutSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMaximumRowsOrColumns(this ElementBuilder<Style> builder, System.Int32 value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMaximumRowsOrColumns(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty
 
     /// <summary>
@@ -468,6 +1057,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMaximumRowsOrColumns(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMaximumRowsOrColumns(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/>.
     /// </summary>
@@ -491,6 +1111,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutMaximumRowsOrColumns(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutMaximumRowsOrColumns(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/>.
     /// </summary>
@@ -515,6 +1166,37 @@ public static partial class UniformGridLayoutSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutOrientation(this ElementBuilder<Style> builder, Avalonia.Layout.Orientation value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.OrientationProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.Orientation value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.OrientationProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.OrientationProperty
 
     /// <summary>
@@ -540,6 +1222,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.OrientationProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutOrientation(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.OrientationProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutOrientation(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.OrientationProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/>.
     /// </summary>
@@ -563,6 +1276,37 @@ public static partial class UniformGridLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetUniformGridLayoutOrientation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.OrientationProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetUniformGridLayoutOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Layout.UniformGridLayout.OrientationProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/>.
     /// </summary>

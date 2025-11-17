@@ -11,6 +11,37 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class PullGestureRecognizerSetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetPullGestureRecognizerPullDirection(this ElementBuilder<Style> builder, Avalonia.Input.PullDirection value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetPullGestureRecognizerPullDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Input.PullDirection value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Input.PullGestureRecognizer.PullDirectionProperty
 
     /// <summary>
@@ -36,6 +67,37 @@ public static partial class PullGestureRecognizerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetPullGestureRecognizerPullDirection(this ElementBuilder<Style> builder, IObservable<Avalonia.Input.PullDirection> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetPullGestureRecognizerPullDirection(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Input.PullDirection> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/>.
     /// </summary>
@@ -59,6 +121,37 @@ public static partial class PullGestureRecognizerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetPullGestureRecognizerPullDirection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetPullGestureRecognizerPullDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/>.
     /// </summary>

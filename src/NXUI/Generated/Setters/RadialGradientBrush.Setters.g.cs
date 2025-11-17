@@ -11,6 +11,37 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class RadialGradientBrushSetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushCenter(this ElementBuilder<Style> builder, Avalonia.RelativePoint value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.CenterProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushCenter(this ElementBuilder<KeyFrame> builder, Avalonia.RelativePoint value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.CenterProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.RadialGradientBrush.CenterProperty
 
     /// <summary>
@@ -36,6 +67,37 @@ public static partial class RadialGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.CenterProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushCenter(this ElementBuilder<Style> builder, IObservable<Avalonia.RelativePoint> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.CenterProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushCenter(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.RelativePoint> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.CenterProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/>.
     /// </summary>
@@ -59,6 +121,37 @@ public static partial class RadialGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.CenterProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushCenter(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.CenterProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushCenter(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.CenterProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/>.
     /// </summary>
@@ -83,6 +176,37 @@ public static partial class RadialGradientBrushSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushGradientOrigin(this ElementBuilder<Style> builder, Avalonia.RelativePoint value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.GradientOriginProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushGradientOrigin(this ElementBuilder<KeyFrame> builder, Avalonia.RelativePoint value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.GradientOriginProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.RadialGradientBrush.GradientOriginProperty
 
     /// <summary>
@@ -108,6 +232,37 @@ public static partial class RadialGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.GradientOriginProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushGradientOrigin(this ElementBuilder<Style> builder, IObservable<Avalonia.RelativePoint> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.GradientOriginProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushGradientOrigin(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.RelativePoint> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.GradientOriginProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/>.
     /// </summary>
@@ -131,6 +286,37 @@ public static partial class RadialGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.GradientOriginProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushGradientOrigin(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.GradientOriginProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushGradientOrigin(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.GradientOriginProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/>.
     /// </summary>
@@ -155,6 +341,37 @@ public static partial class RadialGradientBrushSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushRadiusX(this ElementBuilder<Style> builder, Avalonia.RelativeScalar value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushRadiusX(this ElementBuilder<KeyFrame> builder, Avalonia.RelativeScalar value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.RadialGradientBrush.RadiusXProperty
 
     /// <summary>
@@ -180,6 +397,37 @@ public static partial class RadialGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushRadiusX(this ElementBuilder<Style> builder, IObservable<Avalonia.RelativeScalar> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushRadiusX(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.RelativeScalar> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
     /// </summary>
@@ -203,6 +451,37 @@ public static partial class RadialGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushRadiusX(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushRadiusX(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusXProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/>.
     /// </summary>
@@ -227,6 +506,37 @@ public static partial class RadialGradientBrushSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushRadiusY(this ElementBuilder<Style> builder, Avalonia.RelativeScalar value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushRadiusY(this ElementBuilder<KeyFrame> builder, Avalonia.RelativeScalar value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.RadialGradientBrush.RadiusYProperty
 
     /// <summary>
@@ -252,6 +562,37 @@ public static partial class RadialGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushRadiusY(this ElementBuilder<Style> builder, IObservable<Avalonia.RelativeScalar> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushRadiusY(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.RelativeScalar> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
     /// </summary>
@@ -275,6 +616,37 @@ public static partial class RadialGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetRadialGradientBrushRadiusY(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetRadialGradientBrushRadiusY(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.RadialGradientBrush.RadiusYProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/>.
     /// </summary>

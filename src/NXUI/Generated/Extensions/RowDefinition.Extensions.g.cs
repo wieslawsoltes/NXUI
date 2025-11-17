@@ -601,4 +601,42 @@ public static partial class RowDefinitionExtensions
         handler(obj, observable);
         return obj;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> literal value using a pixel value for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> Height<T>(this ElementBuilder<T> builder, double value) where T : Avalonia.Controls.RowDefinition
+    {
+        return builder.Height(new Avalonia.Controls.GridLength(value));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> literal value using the specified grid unit type for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> Height<T>(this ElementBuilder<T> builder, double value, Avalonia.Controls.GridUnitType unitType) where T : Avalonia.Controls.RowDefinition
+    {
+        return builder.Height(new Avalonia.Controls.GridLength(value, unitType));
+    }
+
+#endif
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> value using a pixel value.
+    /// </summary>
+    public static T Height<T>(this T obj, double value) where T : Avalonia.Controls.RowDefinition
+    {
+        return obj.Height(new Avalonia.Controls.GridLength(value));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> value using the specified grid unit type.
+    /// </summary>
+    public static T Height<T>(this T obj, double value, Avalonia.Controls.GridUnitType unitType) where T : Avalonia.Controls.RowDefinition
+    {
+        return obj.Height(new Avalonia.Controls.GridLength(value, unitType));
+    }
+
+
 }

@@ -10,7 +10,7 @@ object Build()
     .Padding(12).Width(300).Height(200)
     .Content(
       ItemsControl()
-        .ItemTemplate(new FuncDataTemplate<BehaviorSubject<int>>((count, _) =>
+        .ItemTemplate(FuncDataTemplate<BehaviorSubject<int>, StackPanel>((count, _) =>
             StackPanel()
               .OrientationHorizontal().Spacing(12).HorizontalAlignmentCenter().VerticalAlignmentCenter()
               .Children(
@@ -19,8 +19,8 @@ object Build()
                   .Content(count.ToBinding()),
                 Button()
                   .OnClick((_, o) => o.Subscribe(_ => count.OnNext(count.Value + 1)))
-                  .Content("Count"))
-          , true))
+                  .Content("Count")),
+          true))
         .ItemsSource(counters));
 
 return HotReloadHost.Run(Build, "Counters", args);

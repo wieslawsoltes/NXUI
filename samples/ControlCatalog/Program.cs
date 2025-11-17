@@ -91,7 +91,7 @@ object Build()
     .Text("TextBox");
 
   TabControl(out var controls)
-    .ItemsPanel(new FuncTemplate<Panel>(StackPanel))
+    .ItemsPanel(FuncTemplate(StackPanel))
     .TabStripPlacementLeft()
     .Classes("tabControl")
     .ItemsSource(

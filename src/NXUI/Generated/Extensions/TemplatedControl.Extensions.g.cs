@@ -876,6 +876,60 @@ public static partial class TemplatedControlExtensions
         handler(obj, observable);
         return obj;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> literal value using a uniform length for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> BorderThickness<T>(this ElementBuilder<T> builder, double uniformLength) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.BorderThickness(new Avalonia.Thickness(uniformLength));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> literal value using horizontal and vertical lengths for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> BorderThickness<T>(this ElementBuilder<T> builder, double horizontal, double vertical) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.BorderThickness(new Avalonia.Thickness(horizontal, vertical));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> literal value using individual edge lengths for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> BorderThickness<T>(this ElementBuilder<T> builder, double left, double top, double right, double bottom) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.BorderThickness(new Avalonia.Thickness(left, top, right, bottom));
+    }
+
+#endif
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> value using a uniform length.
+    /// </summary>
+    public static T BorderThickness<T>(this T obj, double uniformLength) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return obj.BorderThickness(new Avalonia.Thickness(uniformLength));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> value using horizontal and vertical lengths.
+    /// </summary>
+    public static T BorderThickness<T>(this T obj, double horizontal, double vertical) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return obj.BorderThickness(new Avalonia.Thickness(horizontal, vertical));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> value using individual edge lengths.
+    /// </summary>
+    public static T BorderThickness<T>(this T obj, double left, double top, double right, double bottom) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return obj.BorderThickness(new Avalonia.Thickness(left, top, right, bottom));
+    }
+
+
 
 #if NXUI_HOTRELOAD
 
@@ -1073,6 +1127,60 @@ public static partial class TemplatedControlExtensions
         handler(obj, observable);
         return obj;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> literal value using a uniform radius for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> CornerRadius<T>(this ElementBuilder<T> builder, double uniformRadius) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.CornerRadius(new Avalonia.CornerRadius(uniformRadius));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> literal value using top and bottom radii for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> CornerRadius<T>(this ElementBuilder<T> builder, double top, double bottom) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.CornerRadius(new Avalonia.CornerRadius(top, bottom));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> literal value using per-corner radii for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> CornerRadius<T>(this ElementBuilder<T> builder, double topLeft, double topRight, double bottomRight, double bottomLeft) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.CornerRadius(new Avalonia.CornerRadius(topLeft, topRight, bottomRight, bottomLeft));
+    }
+
+#endif
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> value using a uniform radius.
+    /// </summary>
+    public static T CornerRadius<T>(this T obj, double uniformRadius) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return obj.CornerRadius(new Avalonia.CornerRadius(uniformRadius));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> value using top and bottom radii.
+    /// </summary>
+    public static T CornerRadius<T>(this T obj, double top, double bottom) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return obj.CornerRadius(new Avalonia.CornerRadius(top, bottom));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> value using per-corner radii.
+    /// </summary>
+    public static T CornerRadius<T>(this T obj, double topLeft, double topRight, double bottomRight, double bottomLeft) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return obj.CornerRadius(new Avalonia.CornerRadius(topLeft, topRight, bottomRight, bottomLeft));
+    }
+
+
 
 #if NXUI_HOTRELOAD
 
@@ -3429,6 +3537,60 @@ public static partial class TemplatedControlExtensions
         handler(obj, observable);
         return obj;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> literal value using a uniform length for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> Padding<T>(this ElementBuilder<T> builder, double uniformLength) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.Padding(new Avalonia.Thickness(uniformLength));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> literal value using horizontal and vertical lengths for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> Padding<T>(this ElementBuilder<T> builder, double horizontal, double vertical) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.Padding(new Avalonia.Thickness(horizontal, vertical));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> literal value using individual edge lengths for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> Padding<T>(this ElementBuilder<T> builder, double left, double top, double right, double bottom) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return builder.Padding(new Avalonia.Thickness(left, top, right, bottom));
+    }
+
+#endif
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> value using a uniform length.
+    /// </summary>
+    public static T Padding<T>(this T obj, double uniformLength) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return obj.Padding(new Avalonia.Thickness(uniformLength));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> value using horizontal and vertical lengths.
+    /// </summary>
+    public static T Padding<T>(this T obj, double horizontal, double vertical) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return obj.Padding(new Avalonia.Thickness(horizontal, vertical));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> value using individual edge lengths.
+    /// </summary>
+    public static T Padding<T>(this T obj, double left, double top, double right, double bottom) where T : Avalonia.Controls.Primitives.TemplatedControl
+    {
+        return obj.Padding(new Avalonia.Thickness(left, top, right, bottom));
+    }
+
+
 
 #if NXUI_HOTRELOAD
 

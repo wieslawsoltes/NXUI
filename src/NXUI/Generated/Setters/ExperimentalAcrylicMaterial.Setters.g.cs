@@ -11,6 +11,37 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class ExperimentalAcrylicMaterialSetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialTintColor(this ElementBuilder<Style> builder, Avalonia.Media.Color value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialTintColor(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Color value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty
 
     /// <summary>
@@ -36,6 +67,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialTintColor(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Color> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialTintColor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Color> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/>.
     /// </summary>
@@ -59,6 +121,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialTintColor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialTintColor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/>.
     /// </summary>
@@ -83,6 +176,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialBackgroundSource(this ElementBuilder<Style> builder, Avalonia.Media.AcrylicBackgroundSource value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialBackgroundSource(this ElementBuilder<KeyFrame> builder, Avalonia.Media.AcrylicBackgroundSource value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty
 
     /// <summary>
@@ -108,6 +232,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialBackgroundSource(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.AcrylicBackgroundSource> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialBackgroundSource(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.AcrylicBackgroundSource> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/>.
     /// </summary>
@@ -131,6 +286,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialBackgroundSource(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialBackgroundSource(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/>.
     /// </summary>
@@ -155,6 +341,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialTintOpacity(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialTintOpacity(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty
 
     /// <summary>
@@ -180,6 +397,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialTintOpacity(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialTintOpacity(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/>.
     /// </summary>
@@ -203,6 +451,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialTintOpacity(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialTintOpacity(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/>.
     /// </summary>
@@ -227,6 +506,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialMaterialOpacity(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialMaterialOpacity(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty
 
     /// <summary>
@@ -252,6 +562,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialMaterialOpacity(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialMaterialOpacity(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/>.
     /// </summary>
@@ -275,6 +616,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialMaterialOpacity(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialMaterialOpacity(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/>.
     /// </summary>
@@ -299,6 +671,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialPlatformTransparencyCompensationLevel(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialPlatformTransparencyCompensationLevel(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty
 
     /// <summary>
@@ -324,6 +727,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialPlatformTransparencyCompensationLevel(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialPlatformTransparencyCompensationLevel(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/>.
     /// </summary>
@@ -347,6 +781,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialPlatformTransparencyCompensationLevel(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialPlatformTransparencyCompensationLevel(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/>.
     /// </summary>
@@ -371,6 +836,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialFallbackColor(this ElementBuilder<Style> builder, Avalonia.Media.Color value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialFallbackColor(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Color value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty
 
     /// <summary>
@@ -396,6 +892,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialFallbackColor(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Color> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialFallbackColor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Color> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/>.
     /// </summary>
@@ -419,6 +946,37 @@ public static partial class ExperimentalAcrylicMaterialSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetExperimentalAcrylicMaterialFallbackColor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicMaterialFallbackColor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/>.
     /// </summary>

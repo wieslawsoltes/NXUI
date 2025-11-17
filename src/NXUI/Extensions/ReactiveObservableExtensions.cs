@@ -9,6 +9,9 @@ using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 using Avalonia.Threading;
 using System.Reflection;
+#if NXUI_HOTRELOAD
+using NXUI.HotReload.Nodes;
+#endif
 
 namespace NXUI.Extensions;
 
@@ -50,6 +53,16 @@ public static class ReactiveObservableExtensions
     {
         return new FuncDataTemplate<T>((item, _) => build(item), supportsRecycling);
     }
+
+#if NXUI_HOTRELOAD
+    public static FuncDataTemplate<T> DataTemplate<T, TControl>(Func<T, ElementBuilder<TControl>> build, bool supportsRecycling = false)
+        where T : class
+        where TControl : Control
+    {
+        ArgumentNullException.ThrowIfNull(build);
+        return new FuncDataTemplate<T>((item, _) => build(item).Mount(), supportsRecycling);
+    }
+#endif
 
 
     public static IObservable<TResult> WhenAnyValue<T, TResult>(this T source,

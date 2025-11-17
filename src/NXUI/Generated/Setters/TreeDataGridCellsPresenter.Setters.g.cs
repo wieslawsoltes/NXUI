@@ -11,6 +11,37 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class TreeDataGridCellsPresenterSetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTreeDataGridCellsPresenterRows(this ElementBuilder<Style> builder, Avalonia.Controls.Models.TreeDataGrid.IRows value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTreeDataGridCellsPresenterRows(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Models.TreeDataGrid.IRows value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty
 
     /// <summary>
@@ -36,6 +67,37 @@ public static partial class TreeDataGridCellsPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTreeDataGridCellsPresenterRows(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTreeDataGridCellsPresenterRows(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty"/>.
     /// </summary>
@@ -59,6 +121,37 @@ public static partial class TreeDataGridCellsPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTreeDataGridCellsPresenterRows(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTreeDataGridCellsPresenterRows(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCellsPresenter.RowsProperty"/>.
     /// </summary>

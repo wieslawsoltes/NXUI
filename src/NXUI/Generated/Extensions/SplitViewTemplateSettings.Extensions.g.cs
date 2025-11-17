@@ -404,4 +404,42 @@ public static partial class SplitViewTemplateSettingsExtensions
         handler(obj, observable);
         return obj;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> literal value using a pixel value for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> PaneColumnGridLength<T>(this ElementBuilder<T> builder, double value) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return builder.PaneColumnGridLength(new Avalonia.Controls.GridLength(value));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> literal value using the specified grid unit type for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> PaneColumnGridLength<T>(this ElementBuilder<T> builder, double value, Avalonia.Controls.GridUnitType unitType) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return builder.PaneColumnGridLength(new Avalonia.Controls.GridLength(value, unitType));
+    }
+
+#endif
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> value using a pixel value.
+    /// </summary>
+    public static T PaneColumnGridLength<T>(this T obj, double value) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return obj.PaneColumnGridLength(new Avalonia.Controls.GridLength(value));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> value using the specified grid unit type.
+    /// </summary>
+    public static T PaneColumnGridLength<T>(this T obj, double value, Avalonia.Controls.GridUnitType unitType) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return obj.PaneColumnGridLength(new Avalonia.Controls.GridLength(value, unitType));
+    }
+
+
 }

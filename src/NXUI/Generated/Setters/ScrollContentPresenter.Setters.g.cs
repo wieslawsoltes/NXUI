@@ -11,6 +11,37 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class ScrollContentPresenterSetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterCanHorizontallyScroll(this ElementBuilder<Style> builder, System.Boolean value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterCanHorizontallyScroll(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty
 
     /// <summary>
@@ -36,6 +67,37 @@ public static partial class ScrollContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterCanHorizontallyScroll(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterCanHorizontallyScroll(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
     /// </summary>
@@ -59,6 +121,37 @@ public static partial class ScrollContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterCanHorizontallyScroll(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterCanHorizontallyScroll(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/>.
     /// </summary>
@@ -83,6 +176,37 @@ public static partial class ScrollContentPresenterSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterCanVerticallyScroll(this ElementBuilder<Style> builder, System.Boolean value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterCanVerticallyScroll(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty
 
     /// <summary>
@@ -108,6 +232,37 @@ public static partial class ScrollContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterCanVerticallyScroll(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterCanVerticallyScroll(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
     /// </summary>
@@ -131,6 +286,37 @@ public static partial class ScrollContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterCanVerticallyScroll(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterCanVerticallyScroll(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/>.
     /// </summary>
@@ -155,6 +341,37 @@ public static partial class ScrollContentPresenterSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterOffset(this ElementBuilder<Style> builder, Avalonia.Vector value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Vector value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty
 
     /// <summary>
@@ -180,6 +397,37 @@ public static partial class ScrollContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterOffset(this ElementBuilder<Style> builder, IObservable<Avalonia.Vector> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterOffset(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Vector> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
     /// </summary>
@@ -203,6 +451,37 @@ public static partial class ScrollContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterOffset(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/>.
     /// </summary>

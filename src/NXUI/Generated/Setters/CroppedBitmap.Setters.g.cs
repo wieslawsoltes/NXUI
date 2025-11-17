@@ -11,6 +11,37 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class CroppedBitmapSetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCroppedBitmapSource(this ElementBuilder<Style> builder, Avalonia.Media.IImage value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCroppedBitmapSource(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IImage value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.Imaging.CroppedBitmap.SourceProperty
 
     /// <summary>
@@ -36,6 +67,37 @@ public static partial class CroppedBitmapSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCroppedBitmapSource(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IImage> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCroppedBitmapSource(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IImage> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/>.
     /// </summary>
@@ -59,6 +121,37 @@ public static partial class CroppedBitmapSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCroppedBitmapSource(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCroppedBitmapSource(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/>.
     /// </summary>
@@ -83,6 +176,37 @@ public static partial class CroppedBitmapSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCroppedBitmapSourceRect(this ElementBuilder<Style> builder, Avalonia.PixelRect value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCroppedBitmapSourceRect(this ElementBuilder<KeyFrame> builder, Avalonia.PixelRect value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, value));
+        });
+    }
+
+#endif
     // Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty
 
     /// <summary>
@@ -108,6 +232,37 @@ public static partial class CroppedBitmapSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, value));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCroppedBitmapSourceRect(this ElementBuilder<Style> builder, IObservable<Avalonia.PixelRect> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCroppedBitmapSourceRect(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.PixelRect> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/>.
     /// </summary>
@@ -131,6 +286,37 @@ public static partial class CroppedBitmapSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, observable.ToBinding()));
         return keyFrame;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetCroppedBitmapSourceRect(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetCroppedBitmapSourceRect(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, binding));
+        });
+    }
+
+#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/>.
     /// </summary>

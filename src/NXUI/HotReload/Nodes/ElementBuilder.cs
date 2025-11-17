@@ -170,6 +170,16 @@ public readonly struct ElementBuilder<TControl>
     }
 
     /// <summary>
+    /// Adds a mutation that invokes a custom action when the control is instantiated.
+    /// </summary>
+    public ElementBuilder<TControl> WithAction(Action<TControl> action)
+    {
+        ArgumentNullException.ThrowIfNull(action);
+        Node.AddProperty(PropertyMutation.ForAction(target => action((TControl)target)));
+        return this;
+    }
+
+    /// <summary>
     /// Implicitly converts the builder to a child wrapper so it can participate in heterogeneous collections (e.g., Panel.Children).
     /// </summary>
     public static implicit operator ElementChildBuilder(ElementBuilder<TControl> builder)

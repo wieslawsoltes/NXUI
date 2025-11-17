@@ -65,7 +65,14 @@ public class SettersGenerator
 
                 // value
 
+                var hotValueBuilder = new StringBuilder(Templates.PropertySettersValueHotReloadTemplate);
                 var valueBuilder = new StringBuilder(Templates.PropertySettersValueTemplate);
+
+                hotValueBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
+                hotValueBuilder.Replace("%ClassName%", c.Name);
+                hotValueBuilder.Replace("%Name%", p.Name);
+                hotValueBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
+                WriteLine(hotValueBuilder.ToString());
 
                 valueBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                 valueBuilder.Replace("%ClassName%", c.Name);
@@ -76,7 +83,14 @@ public class SettersGenerator
 
                 // observable
 
+                var hotObservableBuilder = new StringBuilder(Templates.PropertySettersObservableHotReloadTemplate);
                 var observableBuilder = new StringBuilder(Templates.PropertySettersObservableTemplate);
+
+                hotObservableBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
+                hotObservableBuilder.Replace("%ClassName%", c.Name);
+                hotObservableBuilder.Replace("%Name%", p.Name);
+                hotObservableBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
+                WriteLine(hotObservableBuilder.ToString());
 
                 observableBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                 observableBuilder.Replace("%ClassName%", c.Name);
@@ -89,7 +103,14 @@ public class SettersGenerator
 
                 if (p.ValueType != typeof(Avalonia.Data.IBinding))
                 {
+                    var hotBindingBuilder = new StringBuilder(Templates.PropertySettersBindingHotReloadTemplate);
                     var bindingBuilder = new StringBuilder(Templates.PropertySettersBindingTemplate);
+
+                    hotBindingBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
+                    hotBindingBuilder.Replace("%ClassName%", c.Name);
+                    hotBindingBuilder.Replace("%Name%", p.Name);
+                    hotBindingBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
+                    WriteLine(hotBindingBuilder.ToString());
 
                     bindingBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
                     bindingBuilder.Replace("%ClassName%", c.Name);

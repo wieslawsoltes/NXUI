@@ -207,6 +207,60 @@ public static partial class ExperimentalAcrylicBorderExtensions
         handler(obj, observable);
         return obj;
     }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> literal value using a uniform radius for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> CornerRadius<T>(this ElementBuilder<T> builder, double uniformRadius) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return builder.CornerRadius(new Avalonia.CornerRadius(uniformRadius));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> literal value using top and bottom radii for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> CornerRadius<T>(this ElementBuilder<T> builder, double top, double bottom) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return builder.CornerRadius(new Avalonia.CornerRadius(top, bottom));
+    }
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> literal value using per-corner radii for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<T> CornerRadius<T>(this ElementBuilder<T> builder, double topLeft, double topRight, double bottomRight, double bottomLeft) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return builder.CornerRadius(new Avalonia.CornerRadius(topLeft, topRight, bottomRight, bottomLeft));
+    }
+
+#endif
+
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> value using a uniform radius.
+    /// </summary>
+    public static T CornerRadius<T>(this T obj, double uniformRadius) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return obj.CornerRadius(new Avalonia.CornerRadius(uniformRadius));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> value using top and bottom radii.
+    /// </summary>
+    public static T CornerRadius<T>(this T obj, double top, double bottom) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return obj.CornerRadius(new Avalonia.CornerRadius(top, bottom));
+    }
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> value using per-corner radii.
+    /// </summary>
+    public static T CornerRadius<T>(this T obj, double topLeft, double topRight, double bottomRight, double bottomLeft) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return obj.CornerRadius(new Avalonia.CornerRadius(topLeft, topRight, bottomRight, bottomLeft));
+    }
+
+
 
 #if NXUI_HOTRELOAD
 
