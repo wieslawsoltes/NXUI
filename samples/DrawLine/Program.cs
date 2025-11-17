@@ -1,12 +1,19 @@
 ﻿using System.Reactive.Linq;
 using NXUI.HotReload;
+#if NXUI_HOTRELOAD
+using NXUI.HotReload.Nodes;
+#endif
 
 object Build()
   => Window()
     .Title("DrawLine").Width(500).Height(400)
     .Content(MainView());
 
-object MainView()
+#if NXUI_HOTRELOAD
+ElementBuilder<Canvas> MainView()
+#else
+Canvas MainView()
+#endif
   => Canvas()
     .Background(Brushes.WhiteSmoke)
     .Var(default(Line), out var line)
@@ -52,7 +59,7 @@ Style LineStyle()
 
   Style(out var style)
     .Selector(x => x.OfType<Line>())
-    .SetShapeStroke(Brushes.Red)
+    .SetShapeStroke(Brushes.Blue)
     .SetShapeStrokeThickness(strokeThicknessObservable);
   return style;
 }
