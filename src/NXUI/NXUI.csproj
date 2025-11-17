@@ -15,6 +15,10 @@
   <PropertyGroup Condition="'$(EnableNXUIHotReload)' == 'true'">
     <DefineConstants>$(DefineConstants);NXUI_HOTRELOAD</DefineConstants>
   </PropertyGroup>
+  <PropertyGroup>
+    <!-- Reference assemblies trigger file locks on Linux CI when generator executes in parallel. -->
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
