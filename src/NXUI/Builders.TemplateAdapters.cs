@@ -25,6 +25,17 @@ public static partial class Builders
     }
 
     /// <summary>
+    /// Wraps a builder factory in a template typed to a base control type.
+    /// </summary>
+    public static FuncTemplate<TBase> FuncTemplate<TBase, TControl>(Func<ElementBuilder<TControl>> build)
+        where TBase : Control
+        where TControl : TBase
+    {
+        ArgumentNullException.ThrowIfNull(build);
+        return new FuncTemplate<TBase>(() => build().Mount());
+    }
+
+    /// <summary>
     /// Creates a <see cref="FuncDataTemplate{TItem}"/> from a builder factory.
     /// </summary>
     public static FuncDataTemplate<TItem> FuncDataTemplate<TItem, TControl>(
@@ -58,6 +69,17 @@ public static partial class Builders
     {
         ArgumentNullException.ThrowIfNull(build);
         return new FuncTemplate<TControl>(build);
+    }
+
+    /// <summary>
+    /// Wraps a control factory in a template typed to a base control type.
+    /// </summary>
+    public static FuncTemplate<TBase> FuncTemplate<TBase, TControl>(Func<TControl> build)
+        where TBase : Control
+        where TControl : TBase
+    {
+        ArgumentNullException.ThrowIfNull(build);
+        return new FuncTemplate<TBase>(() => build());
     }
 
     /// <summary>

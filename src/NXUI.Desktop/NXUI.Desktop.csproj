@@ -9,6 +9,12 @@
     <RootNamespace>NXUI.Desktop</RootNamespace>
     <PackageId>NXUI.Desktop</PackageId>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(EnableNXUIHotReload)' == ''">
+    <EnableNXUIHotReload>true</EnableNXUIHotReload>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(EnableNXUIHotReload)' == 'true'">
+    <DefineConstants>$(DefineConstants);NXUI_HOTRELOAD</DefineConstants>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
   </ItemGroup>
@@ -26,7 +32,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NXUI\NXUI.csproj" />
+    <ProjectReference Include="..\NXUI\NXUI.csproj">
+      <AdditionalProperties>EnableNXUIHotReload=$(EnableNXUIHotReload)</AdditionalProperties>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="NXUI.props" />
 </Project>

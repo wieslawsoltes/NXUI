@@ -6,7 +6,7 @@ object Build()
     .Title("DrawLine").Width(500).Height(400)
     .Content(MainView());
 
-Control MainView()
+object MainView()
   => Canvas()
     .Background(Brushes.WhiteSmoke)
     .Var(default(Line), out var line)
@@ -15,7 +15,10 @@ Control MainView()
       {
         if (line is null)
         {
-          line = Line().Styles(LineStyle()).StartPoint(x).EndPoint(x);
+          line = Line(out var createdLine)
+            .Styles(LineStyle())
+            .StartPoint(x)
+            .EndPoint(x);
           canvas.Children(line);
         }
       }))
@@ -29,7 +32,7 @@ Control MainView()
             (line.StartPoint.X + line.EndPoint.X) / 2,
             (line.StartPoint.Y + line.EndPoint.Y) / 2,
             RelativeUnit.Absolute);
-          line.RenderTransform(RotateTransform());
+          line.RenderTransform(RotateTransform(out _));
           line.Styles(RotateAnimation(TimeSpan.FromSeconds(5), 0d, 360d, origin));
           line = null;
         }
@@ -46,25 +49,40 @@ Style LineStyle()
   var strokeThicknessObservable = Observable
     .Timer(TimeSpan.Zero, TimeSpan.FromSeconds(1))
     .Select(_ => strokeThickness += 0.5d);
-  return Style()
+
+  Style(out var style)
     .Selector(x => x.OfType<Line>())
     .SetShapeStroke(Brushes.Red)
     .SetShapeStrokeThickness(strokeThicknessObservable);
+  return style;
 }
 
 Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle, RelativePoint origin)
-  => Style()
+{
+  Style(out var style)
     .Selector(x => x.Is<Control>())
     .SetVisualClipToBounds(false)
-    .SetVisualRenderTransformOrigin(origin)
-    .Animations(
-      Animation()
-        .Duration(duration)
-        .IterationCountInfinite()
-        .PlaybackDirectionNormal()
-        .Easing(new SpringEasing(1, 200, 2))
-        .KeyFrames(
-          KeyFrame().Cue(0.0).SetRotateTransformAngle(startAngle),
-          KeyFrame().Cue(1.0).SetRotateTransformAngle(endAngle)));
+    .SetVisualRenderTransformOrigin(origin);
+
+  Animation(out var animation)
+    .Duration(duration)
+    .IterationCountInfinite()
+    .PlaybackDirectionNormal()
+    .Easing(new SpringEasing(1, 200, 2));
+
+  KeyFrame(out var startFrame)
+    .Cue(0.0)
+    .SetRotateTransformAngle(startAngle);
+
+  KeyFrame(out var endFrame)
+    .Cue(1.0)
+    .SetRotateTransformAngle(endAngle);
+
+  animation.Children.Add(startFrame);
+  animation.Children.Add(endFrame);
+
+  style.Animations(animation);
+  return style;
+}
 
 return HotReloadHost.Run(Build, "DrawLine", args);

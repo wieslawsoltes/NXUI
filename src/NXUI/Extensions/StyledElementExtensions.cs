@@ -11,6 +11,59 @@ public static partial class StyledElementExtensions
 {
 #if NXUI_HOTRELOAD
     /// <summary>
+    /// Records a name assignment and scope registration for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<TElement> Name<TElement>(
+        this ElementBuilder<TElement> builder,
+        string value,
+        INameScope scope)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(scope);
+        return builder.WithAction(styledElement =>
+        {
+            styledElement[Avalonia.StyledElement.NameProperty] = value;
+            scope.Register(value, styledElement);
+        });
+    }
+
+    /// <summary>
+    /// Records class additions for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<TElement> Classes<TElement>(
+        this ElementBuilder<TElement> builder,
+        params string[] items)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(items);
+        return builder.WithAction(styledElement =>
+        {
+            styledElement.Classes.AddRange(items);
+        });
+    }
+
+    /// <summary>
+    /// Records pseudo class additions for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<TElement> PseudoClasses<TElement>(
+        this ElementBuilder<TElement> builder,
+        params string[] items)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(items);
+        return builder.WithAction(styledElement =>
+        {
+            if (styledElement.Classes is IPseudoClasses pseudoClasses)
+            {
+                foreach (var item in items)
+                {
+                    pseudoClasses.Add(item);
+                }
+            }
+        });
+    }
+
+    /// <summary>
     /// Records builder styles for a styled element.
     /// </summary>
     public static ElementBuilder<TElement> Styles<TElement, TStyle>(
@@ -37,6 +90,22 @@ public static partial class StyledElementExtensions
     }
 
     /// <summary>
+    /// Records style instances for a styled element.
+    /// </summary>
+    public static ElementBuilder<TElement> Styles<TElement>(
+        this ElementBuilder<TElement> styledElement,
+        params IStyle[] styles)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(styles);
+        return styledElement.WithAction(target =>
+        {
+            var collection = target.Styles ?? throw new InvalidOperationException("StyledElement.Styles collection is not initialized.");
+            collection.AddRange(styles);
+        });
+    }
+
+    /// <summary>
     /// Records a builder resource dictionary for a styled element.
     /// </summary>
     public static ElementBuilder<TElement> Resources<TElement>(
@@ -50,6 +119,31 @@ public static partial class StyledElementExtensions
             {
                 ((StyledElement)parentObj).Resources = (IResourceDictionary)builtResources;
             });
+    }
+
+    /// <summary>
+    /// Records a resource dictionary assignment.
+    /// </summary>
+    public static ElementBuilder<TElement> Resources<TElement>(
+        this ElementBuilder<TElement> styledElement,
+        IResourceDictionary resources)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(resources);
+        return styledElement.WithAction(target => target.Resources = resources);
+    }
+
+    /// <summary>
+    /// Records a single resource entry.
+    /// </summary>
+    public static ElementBuilder<TElement> Resource<TElement>(
+        this ElementBuilder<TElement> styledElement,
+        object key,
+        object value)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(key);
+        return styledElement.WithAction(target => target.Resources[key] = value);
     }
 #endif
     // Name

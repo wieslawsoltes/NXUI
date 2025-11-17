@@ -9,6 +9,12 @@
     <RootNamespace>NXUI</RootNamespace>
     <PackageId>NXUI</PackageId>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(EnableNXUIHotReload)' == ''">
+    <EnableNXUIHotReload>true</EnableNXUIHotReload>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(EnableNXUIHotReload)' == 'true'">
+    <DefineConstants>$(DefineConstants);NXUI_HOTRELOAD</DefineConstants>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />

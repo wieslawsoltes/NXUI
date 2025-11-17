@@ -74,7 +74,7 @@ public static partial class PanelExtensions
             static (parent, builtChild) => parent.Children.Add((Control)builtChild));
     }
 
-#else
+#endif
 
     /// <summary>
     /// 
@@ -101,6 +101,4 @@ public static partial class PanelExtensions
         panel.Children.AddRange(children);
         return panel;
     }
-
-#endif
 }
