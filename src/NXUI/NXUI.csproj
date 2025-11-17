@@ -41,8 +41,5 @@
       <Visible>false</Visible>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\\NXUI.Analyzers\\NXUI.Analyzers.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-  </ItemGroup>
   <Import Project="NXUI.props" />
 </Project>
