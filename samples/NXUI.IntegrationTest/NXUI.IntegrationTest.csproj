@@ -15,4 +15,5 @@
       <AdditionalProperties>EnableNXUIHotReload=$(EnableNXUIHotReload)</AdditionalProperties>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\..\src\NXUI\NXUI.props" />
 </Project>

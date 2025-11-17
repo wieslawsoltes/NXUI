@@ -36,16 +36,22 @@ object Build()
             ComboBox()
               .ItemsSource(new[] { "one-way flight", "return flight" })
               .SelectedIndex(selected.Value)
-              .OnSelectedIndex((_, o) => o.Subscribe(x => selected.OnNext(x))),
+              .OnSelectionChanged((comboBox, o) => o
+                .Select(_ => comboBox.SelectedIndex)
+                .Subscribe(x => selected.OnNext(x))),
             TextBox()
               .Text(startValue)
               .Errors(startDateErrors)
-              .OnText((_, o) => o.Subscribe(x => startValue.OnNext(x))),
+              .OnTextChanged((textBox, o) => o
+                .Select(_ => textBox.Text ?? string.Empty)
+                .Subscribe(x => startValue.OnNext(x))),
             TextBox()
               .Text(endValue)
               .IsEnabled(isEndEnabled)
               .Errors(endDateErrors)
-              .OnText((_, o) => o.Subscribe(x => endValue.OnNext(x))),
+              .OnTextChanged((textBox, o) => o
+                .Select(_ => textBox.Text ?? string.Empty)
+                .Subscribe(x => endValue.OnNext(x))),
             Button()
               .Content("Book")
               .HorizontalAlignmentStretch()

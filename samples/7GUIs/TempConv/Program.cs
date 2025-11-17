@@ -16,13 +16,17 @@ object Build()
         .Children(
           TextBox()
             .Text(celsius.Select(x => x.ToString()))
-            .OnText((tc, o) => o.Subscribe(x => OnNextValue(tc, x, fahrenheit, ToFahrenheit))),
+            .OnTextChanged((tc, o) => o
+              .Select(_ => tc.Text ?? string.Empty)
+              .Subscribe(x => OnNextValue(tc, x, fahrenheit, ToFahrenheit))),
           Label()
             .HorizontalAlignmentCenter().VerticalAlignmentCenter()
             .Content("Celsius = "),
           TextBox()
             .Text(fahrenheit.Select(x => x.ToString()))
-            .OnText((tf, o) => o.Subscribe(x => OnNextValue(tf, x, celsius, ToCelsius))),
+            .OnTextChanged((tf, o) => o
+              .Select(_ => tf.Text ?? string.Empty)
+              .Subscribe(x => OnNextValue(tf, x, celsius, ToCelsius))),
           Label()
             .HorizontalAlignmentCenter().VerticalAlignmentCenter()
             .Content("Fahrenheit")));

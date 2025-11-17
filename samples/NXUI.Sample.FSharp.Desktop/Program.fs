@@ -65,13 +65,14 @@ let counter() =
             increment.DockBottom()
         )
 
-let Build () =
+let Build () : obj =
     Window()
         .Title("Hello NXUI From F#")
         .Height(400)
         .Width(400)
         .FontFamily("Fira Code,Cascadia Code,Consolas,Monospace")
         .Content(counter())
+    |> box
 
 [<EntryPoint>]
 let main argv =
